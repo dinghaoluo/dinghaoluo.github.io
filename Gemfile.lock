@@ -291,7 +291,6 @@ DEPENDENCIES
   http_parser.rb (~> 0.6.0)
   jekyll-feed (~> 0.12)
   kramdown-parser-gfm
-  minima (~> 2.5)
   minimal-mistakes-jekyll
   nokogiri
   rack (~> 2.2.4)
