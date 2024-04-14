@@ -1,0 +1,114 @@
+{%- assign item = include.item | default: page -%}
+{%- assign show_kind = true -%}
+{%- if include.show_kind == false -%}
+  {%- assign show_kind = false -%}
+{%- endif -%}
+{%- assign show_title_zh = true -%}
+{%- if include.show_title_zh == false -%}
+  {%- assign show_title_zh = false -%}
+{%- endif -%}
+{%- assign show_date = true -%}
+{%- if include.show_date == false -%}
+  {%- assign show_date = false -%}
+{%- endif -%}
+{%- if item.show_meta_date == false -%}
+  {%- assign show_date = false -%}
+{%- endif -%}
+{%- assign show_isbn = true -%}
+{%- if include.show_isbn == false -%}
+  {%- assign show_isbn = false -%}
+{%- endif -%}
+{%- assign show_links = false -%}
+{%- if include.show_links == true -%}
+  {%- assign show_links = true -%}
+{%- elsif include.show_links == false -%}
+  {%- assign show_links = false -%}
+{%- endif -%}
+{%- assign show_author = true -%}
+{%- if include.show_author == false -%}
+  {%- assign show_author = false -%}
+{%- endif -%}
+{%- if item.show_meta_author == false -%}
+  {%- assign show_author = false -%}
+{%- endif -%}
+{%- assign show_outlet = true -%}
+{%- if include.show_outlet == false -%}
+  {%- assign show_outlet = false -%}
+{%- endif -%}
+{%- if item.show_meta_outlet == false -%}
+  {%- assign show_outlet = false -%}
+{%- endif -%}
+{%- assign show_updated = true -%}
+{%- if include.show_updated == false -%}
+  {%- assign show_updated = false -%}
+{%- endif -%}
+{%- assign type_class = include.type_class | default: "writing-piece-meta__type" -%}
+{%- assign date_format = include.date_format | default: "%-d %b %Y" -%}
+{%- assign kind = item.type | default: "writing" -%}
+{%- if kind == "feature" or kind == "scicomm" -%}
+  {%- assign kind = "science" -%}
+{%- endif -%}
+{%- assign collaborator_note = item.collaborator | default: "" -%}
+{%- assign outlet_has_collaborator_note = false -%}
+{%- if item.outlet and collaborator_note != "" -%}
+  {%- assign outlet_has_collaborator_note = true -%}
+{%- endif -%}
+{%- assign outlet_rendered = false -%}
+{%- assign meta_started = false -%}
+{%- if show_kind -%}
+  <span class="{{ type_class }}">{{ kind }}</span>
+  {%- assign meta_started = true -%}
+{%- endif -%}
+{%- if show_title_zh and item.title_zh -%}
+  <span>{% if meta_started %} · {% endif %}{{ item.title_zh }}</span>
+  {%- assign meta_started = true -%}
+{%- endif -%}
+{%- if item.meta_outlet_first and show_outlet and item.outlet -%}
+  <span>{% if meta_started %} · {% endif %}{{ item.outlet }}{% if item.outlet_en %} ({{ item.outlet_en }}){% endif %}{% if collaborator_note != "" %} (collab. {{ collaborator_note }}){% endif %}</span>
+  {%- assign meta_started = true -%}
+  {%- assign outlet_rendered = true -%}
+{%- endif -%}
+{%- if item.issue -%}
+  <span class="writing-entry__meta-issue">{% if meta_started %}<span class="writing-entry__meta-sep"> · </span>{% endif %}{{ item.issue }}</span>
+  {%- assign meta_started = true -%}
+{%- endif -%}
+{%- if show_date and item.date and item.issue == nil -%}
+  <span>{% if meta_started %} · {% endif %}{{ item.date | date: date_format }}</span>
+  {%- assign meta_started = true -%}
+{%- endif -%}
+{%- if show_author and item.byline and outlet_has_collaborator_note != true -%}
+  <span>{% if meta_started %} · {% endif %}{{ item.byline }}</span>
+  {%- assign meta_started = true -%}
+{%- endif -%}
+{%- if show_author and item.source_author -%}
+  <span>{% if meta_started %} · {% endif %}{{ item.source_author }}</span>
+  {%- assign meta_started = true -%}
+{%- elsif show_author and item.creator -%}
+  <span>{% if meta_started %} · {% endif %}{{ item.creator }}</span>
+  {%- assign meta_started = true -%}
+{%- endif -%}
+{%- if show_outlet and item.outlet and outlet_rendered != true -%}
+  <span>{% if meta_started %} · {% endif %}{{ item.outlet }}{% if item.outlet_en %} ({{ item.outlet_en }}){% endif %}{% if collaborator_note != "" %} (collab. {{ collaborator_note }}){% endif %}</span>
+  {%- assign meta_started = true -%}
+{%- endif -%}
+{%- if show_links and item.links.size > 0 -%}
+  {%- for link in item.links -%}
+    <span class="writing-entry__meta-link">{% if meta_started %} · {% endif %}<a href="{{ link.url }}">{{ link.label }}</a></span>
+    {%- assign meta_started = true -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- if show_isbn and item.isbn -%}
+  <span class="writing-entry__meta-isbn">{% if meta_started %}<span class="writing-entry__meta-sep"> · </span>{% endif %}ISBN {{ item.isbn }}</span>
+  {%- assign meta_started = true -%}
+{%- endif -%}
+{%- if include.content -%}
+  <span>{% if meta_started %}<span class="writing-meta__sep"> · </span>{% endif %}<span class="writing-meta__read-time">{% include read-time.html content=include.content %}</span></span>
+  {%- assign meta_started = true -%}
+{%- endif -%}
+{%- if show_updated and item.last_updated and item.last_updated != item.date -%}
+  {%- assign updated_ym = item.last_updated | date: "%Y%m" -%}
+  {%- assign orig_ym = item.date | date: "%Y%m" -%}
+  {%- if updated_ym != orig_ym -%}
+    <span style="display: block; opacity: 0.55; font-size: 0.92em; line-height: 1.2; margin-top: 0.1em;">updated {{ item.last_updated | date: "%b %Y" }}</span>
+  {%- endif -%}
+{%- endif -%}

@@ -1,0 +1,139 @@
+---
+layout: default
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
+
+{% assign breadcrumbs_enabled = false %}
+{% if page.breadcrumbs != null %}
+  {% assign breadcrumbs_enabled = page.breadcrumbs %}
+{% endif %}
+{% if breadcrumbs_enabled %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <article class="page h-entry{% if page.collection == 'writing' %} writing-piece{% if page.type %} writing-piece--{{ page.type | slugify }}{% endif %}{% if page.dropcap %} has-dropcap{% endif %}{% endif %}" itemscope itemtype="https://schema.org/CreativeWork">
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
+
+    <div class="page__inner-wrap">
+      {% include page-header.html %}
+
+      <section class="page__content e-content" itemprop="text">
+        {% assign show_writing_masthead = false %}
+        {% if page.collection == 'writing' and page.feature_banner and page.banner_image %}
+          {% assign show_writing_masthead = true %}
+        {% endif %}
+        {% if page.collection == 'writing' and page.title %}
+          {% if show_writing_masthead %}
+            <header
+              class="writing-piece-masthead"
+              style="--writing-banner-image: url('{{ page.banner_image | relative_url }}');{% if page.banner_position %} --writing-banner-position: {{ page.banner_position }};{% endif %}{% if page.banner_size %} --writing-banner-size: {{ page.banner_size }};{% endif %}{% if page.banner_bg %} --writing-banner-bg: {{ page.banner_bg }};{% endif %}"
+            >
+              {% if page.banner_image_alt %}
+                <span class="screen-reader-text">{{ page.banner_image_alt }}</span>
+              {% endif %}
+              <div class="writing-piece-masthead__body">
+                <h1 id="page-title" class="page__title p-name" itemprop="headline">{{ page.title_display | default: page.title }}</h1>
+              </div>
+            </header>
+          {% else %}
+            <h1 id="page-title" class="page__title p-name" itemprop="headline">{{ page.title_display | default: page.title }}</h1>
+          {% endif %}
+        {% endif %}
+        {% if page.lede %}
+          <div class="page__lede">{{ page.lede | markdownify }}</div>
+        {% endif %}
+        {% assign show_writing_meta_block = true %}
+        {% if page.show_page_meta == false and page.show_page_awards == false and page.show_page_links == false %}
+          {% assign show_writing_meta_block = false %}
+        {% endif %}
+        {% if page.collection == 'writing' and show_writing_meta_block %}
+          <div class="writing-piece-meta">
+            {% unless page.show_page_meta == false %}
+              {% include writing-meta.html item=page show_title_zh=false content=content %}
+            {% endunless %}
+            {% if page.awards and page.show_page_awards != false %}
+              <div class="writing-piece-meta__awards">
+                {% for award in page.awards %}
+                  {% assign award_label = award.label | default: award %}
+                  {% if award.url %}
+                    <a class="writing-entry__award" href="{{ award.url }}">{{ award_label }}</a>
+                  {% else %}
+                    <span class="writing-entry__award">{{ award_label }}</span>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+            {% if page.links.size > 0 and page.show_page_links != false %}
+              <div class="writing-piece-meta__links">
+                {% for link in page.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+        {% if page.toc %}
+          <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
+              {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
+            </nav>
+          </aside>
+        {% endif %}
+        {{ content }}
+        {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+      </section>
+
+      {% if page.share %}{% include social-share.html %}{% endif %}
+
+      {% include post_pagination.html %}
+
+    </div>
+
+    {% if page.author_profile or layout.author_profile %}
+      <div id="footer" class="page__author-footer">
+        {% include author-profile.html profile_position='footer' %}
+      </div>
+    {% endif %}
+
+    {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
+      {% include comments.html %}
+    {% endif %}
+  </article>
+
+  {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
+  {% if page.id and page.related and site.related_posts.size > 0 %}
+    <div class="page__related">
+      <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
+      <div class="grid__wrapper">
+        {% for post in site.related_posts limit:4 %}
+          {% include archive-single.html type="grid" %}
+        {% endfor %}
+      </div>
+    </div>
+  {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}
+  {% elsif page.id and page.related %}
+    <div class="page__related">
+      <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h2>
+      <div class="grid__wrapper">
+        {% for post in site.posts limit:4 %}
+          {% if post.id == page.id %}
+            {% continue %}
+          {% endif %}
+          {% include archive-single.html type="grid" %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+</div>
