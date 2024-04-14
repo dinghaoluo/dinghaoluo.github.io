@@ -126,24 +126,21 @@ author:
   location         : "Jupiter, FL, US"
   email            :
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
+    - label: "my email"
+      icon: "far fa-fw fa-at"
+      url: "mailto:dinghao.luo@outlook.com"
+    - label: "my twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://twitter.com/dinghaoluo"
+    - label: "my github"
+      icon: "fab fa-fw fa-github-square"
+      url: "https://github.com/dinghaoluo"
+    - label: "my reddit"
+      icon: "fab fa-fw fa-reddit-square"
+      url: "https://www.reddit.com/user/amoxdl24/"
+    - label: "my instagram"
+      icon: "fab fa-fw fa-instagram-square"
+      url: "https://www.instagram.com/amoxitoxin"
 
 # Site Footer
 footer:
@@ -307,3 +304,4 @@ defaults:
       share: true
       related: true
       show_date: true
+      author_profile: true
