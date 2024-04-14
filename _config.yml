@@ -2,4 +2,13 @@ title: Dinghao Luo
 # logo: 
 description: PhD student at Max Planck Neuroscience Institute, Florida
 show_downloads: False
-theme: jekyll-theme-dinky  
+theme: minima
+
+minima:
+  skin: auto
+  date_format: "%d-%b-%Y"
+  social_links:
+    - { platform: linkedin,       user_url: "https://www.linkedin.com/in/dinghaoluo/" }
+    - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/24328081/dinghaoluo" }
+    - { platform: x,              user_url: "https://twitter.com/dinghaoluo" }
+    - { platform: instagram,      user_url: "https://www.instagram.com/amoxitoxin" }
