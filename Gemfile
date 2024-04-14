@@ -36,3 +36,9 @@ source 'https://rubygems.org'
 gem 'nokogiri'
 gem 'rack', '~> 2.2.4'
 gem 'rspec'
+
+# added webrick manually since the ruby version was >3.0 when installed, Dinghao, 14 Apr 24
+gem "webrick", "~> 1.8"
+
+# install minimal mistakes theme as a Gem-based theme, Dinghao, 14 Apr 24
+gem "minimal-mistakes-jekyll"
