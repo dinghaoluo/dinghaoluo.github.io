@@ -124,8 +124,11 @@ author:
   avatar           : "/assets/images/avatar.jpg"
   bio              : "PhD student at Max Planck Florida Institute for Neuroscience."
   location         : "Jupiter, FL, US"
-  email            :
+  email            : "dinghao.luo@outlook.com"
   links:
+    - label: "ORCID"
+      icon: "fab fa-fw fa-orcid"
+      url: "https://orcid.org/0000-0002-3036-1187"
     - label: "email"
       icon: "far fa-fw fa-at"
       url: "mailto:dinghao.luo@outlook.com"
@@ -146,8 +149,8 @@ author:
 footer:
   links:
     - label: " "
-      icon: "far fa-fw fa-at"
-      url: "mailto:dinghao.luo@outlook.com"
+      icon: "fab fa-fw fa-orcid"
+      url: "https://orcid.org/0000-0002-3036-1187"
     - label: " "
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/dinghaoluo"
