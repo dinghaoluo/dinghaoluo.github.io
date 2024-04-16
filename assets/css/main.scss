@@ -14,7 +14,7 @@ $link-color: #420420;
 @import "minimal-mistakes"; // main partials
 
 html {
-    font-size: 10px; // change to whatever
+    font-size: 14px; // change to whatever
   
     @include breakpoint($medium) {
       font-size: 16px; // change to whatever
