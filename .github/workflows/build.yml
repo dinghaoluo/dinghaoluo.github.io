@@ -1,0 +1,33 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Check HTML
+        run: |
+          gem install html-proofer
+          htmlproofer _site \
+            --ignore-urls "/fonts.googleapis.com/,/fonts.gstatic.com/,/mp.weixin.qq.com/,/book.douban.com/,/bandcamp.com/,/lichess.org/,/reddit.com/,/#.+/,/\/lost-path/,/\/the_zone_site/,/\/assets\/docs\//,/\/writing\/neuromyths/,/\/writing\/working-memory/" \
+            --ignore-status-codes "403,429,999" \
+            --no-enforce-https \
+            --swap-urls "^https\://dinghaoluo.github.io:" \
+            --disable-external
