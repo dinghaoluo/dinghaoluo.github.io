@@ -1,0 +1,67 @@
+{% assign article = include.article %}
+{% assign archive_title = article.archive_title | default: article.title_display | default: article.title %}
+{% assign writing_kind = "essay" %}
+{% if article.type == "feature" or article.type == "science" or article.type == "scicomm" or article.section == "online" %}
+  {% assign writing_kind = "science" %}
+{% elsif article.type == "fiction" %}
+  {% assign writing_kind = "story" %}
+{% elsif article.type == "journal" %}
+  {% assign writing_kind = "journal" %}
+{% endif %}
+{% assign display_type = article.type %}
+{% if writing_kind == "science" %}
+  {% assign display_type = "science" %}
+{% endif %}
+{% assign _content_for_preview = article.content %}
+{% assign _cfp_start = _content_for_preview | strip | slice: 0, 3 %}
+{% if _cfp_start == '<h1' or _cfp_start == '<h2' or _cfp_start == '<h3' or _cfp_start == '<h4' %}
+  {% if _cfp_start == '<h1' %}{% assign _hclose = '</h1>' %}{% elsif _cfp_start == '<h2' %}{% assign _hclose = '</h2>' %}{% elsif _cfp_start == '<h3' %}{% assign _hclose = '</h3>' %}{% else %}{% assign _hclose = '</h4>' %}{% endif %}
+  {% assign _hparts = _content_for_preview | split: _hclose %}
+  {% assign _content_for_preview = '' %}
+  {% for _hp in _hparts %}{% unless forloop.first %}{% if _content_for_preview == '' %}{% assign _content_for_preview = _hp %}{% else %}{% assign _content_for_preview = _content_for_preview | append: _hclose | append: _hp %}{% endif %}{% endunless %}{% endfor %}
+{% endif %}
+{% assign _safe_source = _content_for_preview | replace: '<em>', '⟪em⟫' | replace: '</em>', '⟪/em⟫' | replace: '<i>', '⟪em⟫' | replace: '</i>', '⟪/em⟫' | newline_to_br | replace: '<br />', ' ' | replace: '<br/>', ' ' | replace: '<br>', ' ' | replace: '</p>', ' ' | replace: '</li>', ' ' | replace: '</h1>', ' ' | replace: '</h2>', ' ' | replace: '</h3>', ' ' | replace: '</h4>', ' ' | replace: '</h5>', ' ' | replace: '</h6>', ' ' %}
+{% assign _safe = _safe_source | strip_html | strip_newlines | strip | replace: '  ', ' ' | replace: '  ', ' ' | replace: '  ', ' ' %}
+{% assign _hr_parts = _content_for_preview | split: '<hr' %}
+{% assign _first_text_source = _hr_parts[0] | newline_to_br | replace: '<br />', ' ' | replace: '<br/>', ' ' | replace: '<br>', ' ' | replace: '</p>', ' ' | replace: '</li>', ' ' | replace: '</h1>', ' ' | replace: '</h2>', ' ' | replace: '</h3>', ' ' | replace: '</h4>', ' ' | replace: '</h5>', ' ' | replace: '</h6>', ' ' %}
+{% assign _first_text = _first_text_source | strip_html | strip_newlines | strip | replace: '  ', ' ' | replace: '  ', ' ' | replace: '  ', ' ' %}
+{% assign _first_len = _first_text | size %}
+{% if _hr_parts.size > 1 and _first_len < 200 and _first_len > 0 %}
+  {% assign _first_safe_source = _hr_parts[0] | replace: '<em>', '⟪em⟫' | replace: '</em>', '⟪/em⟫' | replace: '<i>', '⟪em⟫' | replace: '</i>', '⟪/em⟫' | newline_to_br | replace: '<br />', ' ' | replace: '<br/>', ' ' | replace: '<br>', ' ' | replace: '</p>', ' ' | replace: '</li>', ' ' | replace: '</h1>', ' ' | replace: '</h2>', ' ' | replace: '</h3>', ' ' | replace: '</h4>', ' ' | replace: '</h5>', ' ' | replace: '</h6>', ' ' %}
+  {% assign _first_safe = _first_safe_source | strip_html | strip_newlines | strip | replace: '  ', ' ' | replace: '  ', ' ' | replace: '  ', ' ' %}
+  {% assign _preview_raw = _safe | remove_first: _first_safe | strip | truncate: 300, "" %}
+{% else %}
+  {% assign _preview_raw = _safe | truncate: 300, "" %}
+{% endif %}
+{% assign entry_preview = _preview_raw | replace: '⟪em⟫', '<em>' | replace: '⟪/em⟫', '</em>' %}
+{% assign _open_count = entry_preview | split: '<em>' | size | minus: 1 %}
+{% assign _close_count = entry_preview | split: '</em>' | size | minus: 1 %}
+{% if _open_count > _close_count %}{% assign entry_preview = entry_preview | append: '</em>' %}{% endif %}
+<div
+  id="{{ archive_title | strip_html | slugify }}"
+  class="writing-entry writing-entry--archive writing-entry--kind-{{ writing_kind }}"
+  data-kind="{{ writing_kind }}"
+  data-title="{{ article.title | strip_html | escape }}"
+  data-date="{{ article.date | date: '%Y-%m-%d' }}"
+  data-search="{{ article.title | append: ' ' | append: article.title_zh | append: ' ' | append: archive_title | append: ' ' | append: display_type | append: ' ' | append: article.type | append: ' ' | append: article.outlet | append: ' ' | append: article.outlet_en | append: ' ' | append: article.byline | append: ' ' | append: article.collaborator | append: ' ' | append: entry_preview | strip_html | strip_newlines | escape }}"
+>
+<div class="writing-entry__body">
+    <div class="writing-entry__kicker">
+      <span class="writing-entry__kicker-main">
+        <span class="writing-entry__type">{{ display_type }}</span>
+        <span class="writing-entry__date"><span class="writing-entry__date-text">{{ article.date | date: "%-d %b %Y" }}</span><span class="writing-entry__date-sep"> · </span><span class="writing-entry__read-time">{% include read-time.html content=article.content %}</span></span>
+      </span>
+    </div>
+    <h3 class="writing-entry__title">
+      <a href="{{ article.url }}">{{ archive_title }}</a>
+    </h3>
+    {% if article.byline or article.source_author or article.creator or article.outlet or article.isbn %}
+    <div class="writing-entry__meta">
+      {% include writing-meta.html item=article show_kind=false show_title_zh=false show_date=false show_updated=false %}
+    </div>
+    {% endif %}
+    {% if entry_preview != '' %}
+    <div class="writing-entry__text">{{ entry_preview }}</div>
+    {% endif %}
+  </div>
+</div>

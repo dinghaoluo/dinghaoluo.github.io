@@ -291,6 +291,12 @@ compress_html:
 
 
 # Defaults
+collections:
+  writing:
+    output: true
+    permalink: /writing/:title/
+
+
 defaults:
   # _posts
   - scope:
