@@ -2,7 +2,11 @@
 layout: home
 author_profile: true
 ---
-Hi! This is Dinghao. I am currently a PhD student at Max Planck Florida Institute for Neuroscience. You can find my [CV](https://dinghaoluo.github.io/cv/) here.
+*Hi, Dinghao here :)*
+
+I'm a PhD student at the Max Planck Florida Institute for Neuroscience, studying how the brain forms and retrieves memories. I'm in my third year and spend most of my time running mice through mazes and patching neurons.
+
+Reach out: [dinghao.luo@outlook.com](mailto:dinghao.luo@outlook.com)<br>Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.com/user/amoxdl24/) · [Instagram](https://www.instagram.com/amoxitoxin) · [CV](https://dinghaoluo.github.io/cv/)
 
 ---
 
