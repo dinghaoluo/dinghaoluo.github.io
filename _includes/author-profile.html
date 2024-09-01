@@ -254,6 +254,20 @@
       {% include author-profile-custom-links.html %}
     </ul>
   </div>
+
+  {% assign thoughts = site.data.thoughts | sort: 'posted' | reverse %}
+  {% if thoughts %}
+  <div class="author__sidebar-thoughts">
+    <h4 class="author__sidebar-thoughts-label">my thoughts on&hellip;</h4>
+    {% for thought in thoughts limit:60 %}
+    <a href="/thoughts/#{% if thought.title_en and thought.type != 'book' %}{{ thought.title_en | slugify }}{% else %}{{ thought.title | slugify }}{% endif %}" class="sidebar-thought" style="display:none">
+      <span class="sidebar-thought__title">{{ thought.title }}</span>
+      {% assign preview_text = thought.text | replace: '<u>', '' | replace: '</u>', '' | markdownify | replace: '</p>', ' ' | replace: '<br />', ' ' | strip_html | strip_newlines | strip %}
+      <span class="sidebar-thought__preview">{{ preview_text }}</span>
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
   {% endunless %}
 
   {% if profile_position == 'footer' and author.links %}
