@@ -7,6 +7,8 @@
   float: left;
   margin-left: 0;
   margin-right: 0;
+  padding-left: 2em;
+  padding-right: 2em; 
   width: 100%;
   margin-top: 3em;
   color: $muted-text-color;
@@ -42,12 +44,12 @@
   .fab,
   .far,
   .fal {
-    color: $muted-text-color;
+    color: $code-background-color;
   }
 }
 
 .page__footer-copyright {
-  font-family: $global-font-family;
+  font-family: $fira;
   font-size: $type-size-7;
 }
 
