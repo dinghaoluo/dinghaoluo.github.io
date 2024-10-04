@@ -70,9 +70,10 @@ $background-color: #fff !default;
 $code-background-color: #fafafa !default;
 $code-background-color-dark: $light-gray !default;
 $text-color: $dark-gray !default;
-$muted-text-color: mix(#fff, $text-color, 20%) !default;
+$muted-text-color: mix(#fefefe, $text-color, 20%) !default;
 $border-color: $lighter-gray !default;
 $form-background-color: $lighter-gray !default;
+$footer-text-color: $gray !default;  // added to use on footer text, Dinghao 4 Oct 2024
 $footer-background-color: #fff !default;  // changed to blend in with background, Dinghao, 4 Oct 2024
 
 $primary-color: #6f777d !default;
