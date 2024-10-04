@@ -33,14 +33,14 @@ plugins:
 
 # Site settings
 locale: "en-GB"
-title: "dinghao's research journal"
+title: "cereniq:"
 email: dinghao.luo@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://dinghaoluo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://cereniq.blog" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "dinghaoluo/dinghaoluo.github.io"
 logo: "assets/images/masthead.png"
 #breadcrumbs: true
@@ -130,7 +130,7 @@ author:
       icon: "fab fa-fw fa-orcid"
       url: "https://orcid.org/0000-0002-3036-1187"
     - label: "email"
-      icon: "far fa-fw fa-at"
+      icon: "fa fa-at"
       url: "mailto:dinghao.luo@outlook.com"
     - label: "twitter"
       icon: "fab fa-fw fa-twitter-square"
