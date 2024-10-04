@@ -5,15 +5,13 @@ search: false
 
 @charset "utf-8";
 
-$serif: "Fira Code";
-$sans-serif: "Fira Code";
-
 $link-color: #420420;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
 html {
+  
     font-size: 16px; // change to whatever
   
     @include breakpoint($medium) {
