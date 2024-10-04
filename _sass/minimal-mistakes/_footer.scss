@@ -49,12 +49,16 @@
 }
 
 .page__footer-copyright {
+  margin: 0 auto; 
+  text-align: center;
   padding: 2em;
   font-family: $fira;
   font-size: $type-size-7;
 }
 
 .page__footer-follow {
+  margin: 0 auto;
+  text-align: center;
   padding: 2em;
   font-family: $fira;
   ul {
