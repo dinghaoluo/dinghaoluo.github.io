@@ -11,7 +11,7 @@
   padding-right: 2em; 
   width: 100%;
   margin-top: 3em;
-  color: $muted-text-color;
+  color: $code-background-color;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.45s;
@@ -49,11 +49,14 @@
 }
 
 .page__footer-copyright {
+  padding: 2em;
   font-family: $fira;
   font-size: $type-size-7;
 }
 
 .page__footer-follow {
+  padding: 2em;
+  font-family: $fira;
   ul {
     margin: 0;
     padding: 0;
