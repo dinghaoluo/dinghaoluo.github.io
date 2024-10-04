@@ -1,5 +1,6 @@
 ---
-layout: home
+layout: single
+classes: wide
 author_profile: true
 ---
-Hi! This is Dinghao. I am currently a PhD student at Max Planck Florida Institute for Neuroscience. You can find my [CV](https://dinghaoluo.github.io/cv/) here.
+Hi, I am glad you landed here! This is Dinghao. I am currently a PhD student studying how the brain works and what modulates our memory. 
