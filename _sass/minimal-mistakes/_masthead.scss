@@ -24,7 +24,8 @@
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    // justify-content: space-between;
+    justify-content: center;  // centre the content
     font-family: $fira;
 
     @include breakpoint($x-large) {
@@ -55,12 +56,12 @@
   // z-index: 20;
 }
 
-.site-subtitle {
+/* .site-subtitle {
   display: block;
   font-size: $type-size-8;
-}
+} */
 
-.masthead__menu {
+/* .masthead__menu {
   float: left;
   margin-left: 0;
   margin-right: 0;
@@ -93,3 +94,4 @@
     font-weight: 700;
   }
 }
+ */
