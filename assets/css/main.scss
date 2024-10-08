@@ -34,16 +34,17 @@ html {
   }
 
   body {
-    font-family: 'JetBrains Mono', monospace;  // apply Victor Mono to the body text as well
+    font-family: 'JetBrains Mono', monospace; 
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'JetBrains Mono', monospace;  // apply Victor Mono to all headings
-    font-weight: 400;  // bold for headings
+    font-family: 'JetBrains Mono', monospace; 
+    font-weight: 400;  // Regular
   }
   
   p {
     font-family: 'JetBrains Mono', monospace;  // apply the font to paragraph text
-    font-weight: 100;  // normal weight for paragraph text
+    font-weight: 300;  // Light
+    font-size: 16px;
     font-optical-sizing: auto;  // auto-size the font
   }
