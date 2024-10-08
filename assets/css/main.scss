@@ -7,6 +7,9 @@ search: false
 
 $link-color: #420420;
 
+// custom fonts go here 
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
@@ -25,4 +28,21 @@ html {
     @include breakpoint($x-large) {
       font-size: 20px; // change to whatever
     }
+
+    // apply custom font 
+    font-family: 'Victor Mono', monospace;
+  }
+
+  body {
+    font-family: 'Victor Mono', monospace;  // apply Victor Mono to the body text as well
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Victor Mono', monospace;  // apply Victor Mono to all headings
+    font-weight: 700;  // bold for headings
+  }
+  
+  p {
+    font-family: 'Victor Mono', monospace;  // apply the font to paragraph text
+    font-weight: 400;  // normal weight for paragraph text
   }

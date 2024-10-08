@@ -13,7 +13,7 @@ $paragraph-indent: false !default; // true, false (default)
 $indent-var: 1.3em !default;
 
 /* customs font */
-$fira: 'Fira Code', monospace !important;
+$fira: 'Fira Code', monospace;
 
 /* system typefaces */
 $serif: Georgia, Times, serif !default;
@@ -34,9 +34,9 @@ $bodoni: "Bodoni MT", serif !default;
 $calisto: "Calisto MT", serif !default;
 $garamond: Garamond, serif !default;
 
-$global-font-family: $fira !default;
-$header-font-family: $fira !default;
-$caption-font-family: $fira !default;
+$global-font-family: $fira;
+$header-font-family: $fira;
+$caption-font-family: $fira;
 
 /* type scale */
 $type-size-1: 2.441em !default; // ~39.056px
