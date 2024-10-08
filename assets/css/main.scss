@@ -7,8 +7,40 @@ search: false
 
 $link-color: #4169e1;
 
-// import fonts (local scripts)
-@import '/_sass/minimal-mistakes/fonts';
+/* 
+font block
+this is because GitHub pages failed to find the separate _fonts.scss file created for custom fonts
+no matter where I put it
+8 Oct 2024, Dinghao 
+ */
+@font-face {
+  font-family: 'Mononoki';
+  src: url('/assets/fonts/mononoki/mononoki-Regular.ttf') format('truetype'),
+       url('/assets/fonts/mononoki/mononoki-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mononoki';
+  src: url('/assets/fonts/mononoki/mononoki-Bold.ttf') format('truetype'),
+       url('/assets/fonts/mononoki/mononoki-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mononoki';
+  src: url('/assets/fonts/mononoki/mononoki-BoldItalic.ttf') format('truetype'),
+       url('/assets/fonts/mononoki/mononoki-BoldItalic.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Mononoki';
+  src: url('/assets/fonts/mononoki/mononoki-Italic.ttf') format('truetype'),
+       url('/assets/fonts/mononoki/mononoki-Italic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
 
 // custom fonts from Google fonts go here 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');  // JetBrains Mono
