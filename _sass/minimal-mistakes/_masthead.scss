@@ -26,7 +26,6 @@
     -ms-flex-pack: justify;
     // justify-content: space-between;
     justify-content: center;  // centre the content
-    font-family: $fira;
 
     @include breakpoint($x-large) {
       max-width: $max-width;

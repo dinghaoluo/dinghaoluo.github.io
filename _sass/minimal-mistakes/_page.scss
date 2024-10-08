@@ -83,7 +83,6 @@ body {
 }
 
 .page__lead {
-  font-family: $global-font-family;
   font-size: $type-size-4;
 }
 
@@ -155,13 +154,11 @@ body {
 
   dt {
     margin-top: 1em;
-    font-family: $fira;
     font-weight: bold;
   }
 
   dd {
     margin-left: 1em;
-    font-family: $fira;
     font-size: $type-size-6;
   }
 
@@ -246,7 +243,6 @@ body {
   margin: 0 auto;
   padding: 2px 5px;
   color: #fff;
-  font-family: $caption-font-family;
   font-size: $type-size-7;
   background: #000;
   text-align: right;
