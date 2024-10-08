@@ -42,7 +42,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cereniq.blog" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "dinghaoluo/dinghaoluo.github.io"
-logo: "assets/images/masthead.png"
+# logo: "assets/images/masthead.png"
 #breadcrumbs: true
 words_per_minute: 200
 comments:
