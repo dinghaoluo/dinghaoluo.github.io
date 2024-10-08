@@ -2,4 +2,7 @@
 layout: single
 author_profile: false
 ---
-Hi, I am glad you landed here! This is Dinghao. I am currently a PhD student studying how the brain works and what modulates our memory. 
+Hi, I am glad you landed here! This is Dinghao. I am currently a PhD student studying how the brain works and what modulates our memory. I do want to tell you a bit more about that, but first, in case you came here for this--you can reach me *via*:
+
+emails: <[dinghao.luo@outlook.com](dinghao.luo@outlook.com)> (personal) or <[dinghao.luo@mpfi.org](dinghao.luo@mpfi.org)> (work)
+<[github](https://github.com/dinghaoluo)>, <[linkedin](https://www.linkedin.com/in/dinghaoluo/)>, <[bandcamp](https://amoxitoxin.bandcamp.com/)> or <[reddit](https://www.reddit.com/user/amoxdl24/)>
