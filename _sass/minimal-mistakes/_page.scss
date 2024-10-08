@@ -6,8 +6,8 @@
   @include clearfix;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2em;
-  padding-right: 2em; 
+  padding-left: 1em;  // decreased from 2em to 1em, 8 Oct Dinghao
+  padding-right: 1em; 
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   max-width: 100%;
@@ -113,7 +113,7 @@ body {
   li,
   dl {
     font-size: 18px;  // force font size to 18px due to Mononoki being smaller, 8 Oct 2024
-    line-height: 1.7;  // force line spacing to be 1.7x font size; slightly higher lines improve readability, 8 Oct 2024
+    line-height: 1.6;  // force line spacing to be 1.6x font size, 8 Oct 2024
   }
 
   /* paragraph indents */
