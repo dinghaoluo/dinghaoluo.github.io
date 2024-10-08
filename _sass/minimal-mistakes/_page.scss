@@ -112,8 +112,8 @@ body {
   p,
   li,
   dl {
-    // font-size: 1em;
-    font-size: 16px;
+    font-size: 16px;  // force font size to 16px, 8 Oct 2024
+    line-height: 1.6;  // force line spacing to be 1.6x font size 
   }
 
   /* paragraph indents */
