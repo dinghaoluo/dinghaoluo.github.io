@@ -124,6 +124,8 @@ blockquote {
 /* links */
 
 a {
+  color: $link-color;
+
   &:focus {
     @extend %tab-focus;
   }

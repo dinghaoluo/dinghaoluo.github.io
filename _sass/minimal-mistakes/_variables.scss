@@ -25,8 +25,6 @@ $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
 $sans-serif-narrow: $sans-serif !default;
 $helvetica: Helvetica, "Helvetica Neue", Arial, sans-serif !default;
 
-$link-color: #4169e1;
-
 /* serif typefaces */
 $georgia: Georgia, serif !default;
 $times: Times, serif !default;
@@ -118,8 +116,8 @@ $xing-color: #006567 !default;
 
 /* links */
 $link-color: #4f74e3 !default;
-$link-color-hover: mix(#000, $link-color, 25%) !default;
-$link-color-visited: mix(#fff, $link-color, 15%) !default;
+$link-color-hover: #676e82 !default;
+$link-color-visited: #264191 !default;
 $masthead-link-color: $primary-color !default;
 $masthead-link-color-hover: mix(#000, $primary-color, 25%) !default;
 $navicon-link-color-hover: mix(#fff, $primary-color, 75%) !default;
