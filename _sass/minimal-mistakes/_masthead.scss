@@ -13,9 +13,8 @@
 
   &__inner-wrap {
     @include clearfix;
-    /* margin-left: auto;
-    margin-right: auto; */
-    margin: 0 auto; 
+    margin-left: auto;
+    margin-right: auto;
     text-align: left;
     padding: 1em;
     max-width: 100%;
@@ -25,7 +24,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     // justify-content: space-between;
-    justify-content: center;  // centre the content
+    justify-content: flex-start;  // centre the content
 
     @include breakpoint($x-large) {
       max-width: $max-width;
