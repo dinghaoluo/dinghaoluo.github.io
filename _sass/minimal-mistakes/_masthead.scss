@@ -24,7 +24,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     // justify-content: space-between;
-    justify-content: flex-start;  // centre the content
+    justify-content: flex-start;
 
     @include breakpoint($x-large) {
       max-width: $max-width;
@@ -48,8 +48,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-  align-self: center;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
   font-weight: bold;
   // z-index: 20;
 }
