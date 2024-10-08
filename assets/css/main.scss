@@ -7,7 +7,10 @@ search: false
 
 $link-color: #4169e1;
 
-// custom fonts go here 
+// import fonts (local scripts)
+@import 'partials/fonts';
+
+// custom fonts from Google fonts go here 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');  // JetBrains Mono
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
@@ -30,21 +33,32 @@ html {
     }
 
     // apply custom font 
-    font-family: 'JetBrains Mono', monospace;
+    // font-family: 'JetBrains Mono', monospace;
+    font-family: 'Mononoki', sans-serif;
   }
 
   body {
-    font-family: 'JetBrains Mono', monospace; 
+    font-family: 'Mononoki', sans-serif;
+    font-weight: normal;
+    font-style: normal;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'JetBrains Mono', monospace; 
-    font-weight: 400;  // Regular
+    font-family: 'Mononoki', sans-serif;;
+    font-weight: normal;
   }
   
   p {
-    font-family: 'JetBrains Mono', monospace;  // apply the font to paragraph text
-    font-weight: 300;  // Light
+    font-family: 'Mononoki', sans-serif;  // apply the font to paragraph text
     font-size: 16px;
-    font-optical-sizing: auto;  // auto-size the font
+  }
+
+  em, i {
+    font-family: 'Mononoki', sans-serif;
+    font-style: italic;
+  }
+
+  strong {
+    font-family: 'Mononoki', sans-serif;
+    font-style: italic;
   }
