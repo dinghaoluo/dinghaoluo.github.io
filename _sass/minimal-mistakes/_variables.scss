@@ -67,7 +67,8 @@ $lighter-gray: mix(#fff, $gray, 90%) !default;
 $background-color: #fff !default;
 $code-background-color: #fafafa !default;
 $code-background-color-dark: $light-gray !default;
-$text-color: #101010 !default;  // changed to a darker shade, 8 Oct 2024
+$text-color: #151515 !default;  // changed to a darker shade, 8 Oct 2024
+$header-color: #050505 !default;  // added 8 Oct 2024
 $muted-text-color: mix(#fefefe, $text-color, 20%) !default;
 $border-color: $lighter-gray !default;
 $form-background-color: $lighter-gray !default;

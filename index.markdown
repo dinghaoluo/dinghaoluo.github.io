@@ -21,13 +21,13 @@ or find me on:<br>
 When I am not doing [research](#my-research), I spend most of my time listening and creating [music](#music). I am also a professional English-Chinese translator and have dedicated a lot of time to [scientific communication](#scientific-communication). If these are not to your taste, I am also passionate for some [other stuff](#other-stuff) that you may find interesting!
 <br>
 
-### my research 
+## my research 
 
 
-### music 
+## music 
 
 
-### scientific communication
+## scientific communication
 
 
-### other stuff
+## other stuff
