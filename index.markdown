@@ -2,7 +2,6 @@
 layout: single
 author_profile: false
 ---
-<br><br><br><br>
 <div style="text-align:left;">
   <img src="assets/images/cereniq.png" alt="cereniq:" style="width: 180px;">
 </div>
