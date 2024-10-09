@@ -2,6 +2,8 @@
 layout: single
 author_profile: false
 ---
+<br><br><br><br>
+![cereniq:](assets\images\cereniq.png)
 Hi, I am glad you landed here! This is Dinghao. I am currently a PhD student studying how the brain works and what modulates our memory. I do want to tell you a bit more about that, but first, in case you came here for this—
 
 you can reach me *via*:<br>
