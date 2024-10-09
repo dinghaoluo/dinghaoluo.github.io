@@ -4,7 +4,7 @@ author_profile: false
 ---
 <br><br><br><br>
 <div style="text-align:left;">
-  <img src="assets/images/cereniq.png" alt="cereniq:" style="width: 300px;">
+  <img src="assets/images/cereniq.png" alt="cereniq:" style="width: 180px;">
 </div>
 Hi, I am glad you landed here! This is Dinghao. I am currently a PhD student studying how the brain works and what modulates our memory. I do want to tell you a bit more about that, but first, in case you came here for this—
 
