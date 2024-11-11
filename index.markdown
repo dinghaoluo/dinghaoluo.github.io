@@ -16,4 +16,4 @@ Since my undergraduate years at Cambridge, and now through my PhD, I have also w
 
 ---
 
-I read compulsively: novels, histories, science, whatever pulls me in for a week. My mom says I used to devour everything I could get my hands on as a kid, and the habit stuck. The writers I keep returning to right now are Paul Auster and Roberto Bolaño, though Pynchon is always there in the background.
+I read compulsively: novels, histories, science, whatever pulls me in for a week. My mom says I used to devour everything I could get my hands on as a kid, and the habit stuck. The writers I keep returning to right now are Paul Auster, Roberto Bolaño, and Thomas Pynchon.
