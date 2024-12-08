@@ -2,7 +2,7 @@
 title: "AlphaFold, or how to fold graciously"
 outlet: "Scientific American China"
 date: 2020-12-02
-last_updated: 2022-07-01
+last_updated: 2024-11-11
 section: "online"
 show_meta_outlet: false
 dropcap: true
@@ -52,7 +52,13 @@ The achievement also marks a pivot for DeepMind itself. Earlier in 2020, *Nature
 
 ## After CASP14
 
-On 15 July 2021, DeepMind published the full AlphaFold2 method and open-sourced its code in *Nature* (Jumper et al., 'Highly accurate protein structure prediction with AlphaFold'). In the same month, DeepMind partnered with the European Molecular Biology Laboratory's European Bioinformatics Institute (EMBL-EBI) to launch the AlphaFold Protein Structure Database. The initial release covered the proteomes of twenty-one model organisms, including the entire human proteome. In July 2022, the database expanded to over 200 million predicted structures, covering nearly all catalogued protein sequences. What had been a bottleneck lasting years, sometimes decades, was reduced to a database query.
+On 15 July 2021, DeepMind published the full AlphaFold2 method and open-sourced its code in *Nature* (Jumper et al., 'Highly accurate protein structure prediction with AlphaFold'). The paper has since accumulated over 30,000 citations, a figure that reflects not merely interest but active use. In the same month, DeepMind partnered with the European Molecular Biology Laboratory's European Bioinformatics Institute (EMBL-EBI) to launch the AlphaFold Protein Structure Database. The initial release covered the proteomes of twenty-one model organisms, including the entire human proteome. In July 2022, the database expanded to over 200 million predicted structures, covering nearly all catalogued protein sequences. More than three million users in over 190 countries have accessed AlphaFold tools, many of them working on organisms and proteins for which no experimental structure had ever been determined. What had been a bottleneck lasting years, sometimes decades, was reduced to a database query.
+
+In May 2024, DeepMind published AlphaFold3 in *Nature*. The third generation replaced the structure module with a diffusion-based architecture and introduced a unified framework capable of predicting the structures of complexes involving proteins, DNA, RNA, small molecules, and ions. On the PoseBusters benchmark for protein-ligand binding, AlphaFold3 achieved 76 per cent accuracy, against 50 to 60 per cent for traditional docking methods. The expansion from single-chain protein prediction to multi-molecular complex modelling marks a qualitative shift in scope.
+
+AlphaFold3's release was accompanied by controversy. Unlike AlphaFold2, whose code was made freely available, DeepMind did not release AlphaFold3's code alongside the paper. *Nature* drew criticism for publishing a method that could not be independently reproduced. Independent groups responded by building their own implementations, including OpenFold3 and Boltz-1. DeepMind eventually released AlphaFold3 code and model parameters for academic, non-commercial use on 11 November 2024, resolving the immediate dispute but not the underlying tension between scientific openness and commercial interest.
+
+In October 2024, the Nobel Committee awarded the Prize in Chemistry jointly to David Baker, for computational protein design, and to Demis Hassabis and John Jumper, for protein structure prediction. The award was notable for its speed: the interval between the achievement and the prize was roughly four years, unusually short for the Nobel. The committee's citation acknowledged both the practical consequences and the conceptual significance of the work.
 
 ## Limitations
 
@@ -71,6 +77,12 @@ Novel folds present a further limitation. AlphaFold2 was trained on the Protein 
 
 These are not failures of engineering. They are consequences of the problem AlphaFold chose to solve, and did solve. But they circumscribe where the tool can be trusted and where it cannot.
 
+## Scientific impact
+
+The immediate practical consequences have been broad. In structural biology, AlphaFold predictions have accelerated the determination of structures that resisted experimental methods for decades. The nuclear pore complex, the massive protein assembly that regulates traffic between the nucleus and cytoplasm of every eukaryotic cell, had eluded full structural characterisation for years; AlphaFold predictions contributed to determining its complete architecture. In enzyme engineering, researchers have used AlphaFold-predicted structures to guide the design of PET-degrading enzymes, proteins capable of breaking down the plastic polyethylene terephthalate, a line of work with direct relevance to plastic pollution.
+
+In neglected tropical diseases, the impact has been particularly striking. The Drugs for Neglected Diseases initiative (DNDi) has used AlphaFold predictions for virtual screening against parasitic targets in Chagas disease (*Trypanosoma cruzi*), leishmaniasis, and schistosomiasis, diseases that collectively affect hundreds of millions of people but attract comparatively little pharmaceutical investment. AlphaFold predictions for *Plasmodium falciparum* proteins have opened new avenues in malaria drug discovery. In each case, the logic is the same: where experimental structures were absent or incomplete, AlphaFold supplies a starting point that would otherwise have required years of crystallography or cryo-EM work.
+
 ## What remains
 
 What lingers is a question the result does not answer, and it is older than the result itself.
@@ -85,7 +97,7 @@ Bryngelson and Wolynes, drawing on spin-glass models from statistical physics, p
 
 AlphaFold bypasses the funnel entirely. It learns the statistical correlations between sequence and structure from the Protein Data Bank and predicts the endpoint. It has no representation of the energy landscape, no model of the folding pathway, no physics of the transition state. This is not a criticism; it is a description. The prediction problem and the folding problem are different problems, and solving one does not entail solving the other.
 
-Dill's third problem is the design problem: given a desired structure, can one create a sequence that folds into it? This is the inverse of prediction, and it has its own trajectory. David Baker's laboratory at the University of Washington has pursued computational protein design for over two decades. AlphaFold aids design indirectly, by providing rapid structural validation of candidate sequences, but the design problem requires generative methods, not predictive ones. It remains an active and partially open frontier.
+Dill's third problem is the design problem: given a desired structure, can one create a sequence that folds into it? This is the inverse of prediction, and it has its own trajectory. David Baker's laboratory at the University of Washington has pursued computational protein design for over two decades, work recognised by the same Nobel Prize that honoured Hassabis and Jumper. AlphaFold aids design indirectly, by providing rapid structural validation of candidate sequences, but the design problem requires generative methods, not predictive ones. It remains an active and partially open frontier.
 
 The fifty-year problem had always been three problems wearing one name. AlphaFold has dispensed with the first, the one that consumed the most labour and the most careers. The second, the physical mechanism of folding, the one that would let biologists comprehend rather than merely predict, remains open. The third, design, is advancing on its own terms. What AlphaFold achieved is not diminished by what it did not attempt. But the deeper question, the one Levinthal asked in that room in Illinois, the question of how a chain of amino acids finds its way home through a space larger than the universe, persists. That is the work that comes next.
 
@@ -102,6 +114,7 @@ The fifty-year problem had always been three problems wearing one name. AlphaFol
 8. Levinthal, C. (1969). How to fold graciously. In *Mossbauer Spectroscopy in Biological Systems: Proceedings of a Meeting Held at Allerton House, Monticello, Illinois* (pp. 22-24).
 9. Senior, A. W. et al. (2020). Improved protein structure prediction using potentials from deep evolution. *Nature*, 577(7792), 706-710.
 10. Wolynes, P. G., Onuchic, J. N. & Thirumalai, D. (1995). Navigating the folding routes. *Science*, 267(5204), 1619-1620.
+11. Abramson, J. et al. (2024). Accurate structure prediction of biomolecular interactions with AlphaFold 3. *Nature*, 630(8016), 493-500.
 12. Varadi, M. et al. (2022). AlphaFold Protein Structure Database: Massively expanding the structural coverage of protein-sequence space with high-accuracy models. *Nucleic Acids Research*, 50(D1), D439-D444.
 
 *Originally published in Chinese as 「[AlphaFold，或如何优雅地折叠](https://mp.weixin.qq.com/s/un5RPtoRn5mlUEkn2-BA1A)」 on Scientific American China.*
