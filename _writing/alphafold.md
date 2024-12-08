@@ -2,7 +2,7 @@
 title: "AlphaFold, or how to fold graciously"
 outlet: "Scientific American China"
 date: 2020-12-02
-last_updated: 2024-11-11
+last_updated: 2024-12-08
 section: "online"
 show_meta_outlet: false
 dropcap: true
