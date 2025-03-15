@@ -1,0 +1,273 @@
+syllables:
+  - ul
+  - va
+  - no
+  - kel
+  - mor
+  - dra
+  - sa
+  - lin
+  - vek
+  - qua
+  - esh
+  - tor
+  - wyth
+  - ar
+  - caul
+  - dun
+  - ner
+  - vel
+  - trin
+  - yor
+  - hal
+  - rhe
+  - sol
+  - mer
+  - thren
+  - ast
+  - lo
+  - fen
+  - vor
+  - ail
+
+nouns:
+  - room
+  - shelf
+  - catalogue
+  - corridor
+  - index
+  - mirror
+  - page
+  - margin
+  - lamp
+  - stairwell
+  - door
+  - threshold
+  - hall
+  - archive
+  - annex
+  - ledger
+  - card
+  - drawer
+  - ceiling
+  - floor
+  - window
+  - switchboard
+  - projector
+  - screen
+  - signal
+  - sentence
+  - manuscript
+  - binding
+  - copy
+  - register
+
+adjectives:
+  - fifth
+  - blind
+  - drowned
+  - red
+  - false
+  - inward
+  - black
+  - missing
+  - electric
+  - hollow
+  - erased
+  - outer
+  - inner
+  - nameless
+  - wet
+  - borrowed
+  - stalled
+  - burnt
+  - mute
+  - late
+  - vacant
+  - wrong
+  - dim
+  - off-stage
+
+locations:
+  - reading room
+  - service corridor
+  - projection booth
+  - motel car park
+  - treeline
+  - waterfront
+  - basement archive
+  - records office
+  - stair landing
+  - maintenance hall
+  - side entrance
+  - lodge hallway
+  - observation room
+  - storage wing
+  - riverbank
+  - upper annex
+  - lower stacks
+  - office after hours
+  - back room
+  - long corridor
+
+materials:
+  - ash
+  - dust
+  - static
+  - rainwater
+  - lake water
+  - toner
+  - varnish
+  - soot
+  - damp paper
+  - carbon
+  - fog
+  - condensation
+  - tape hiss
+  - old glue
+  - wet wood
+  - cold metal
+
+light:
+  - red light
+  - projector glow
+  - fluorescent hum
+  - emergency striplight
+  - pale beam
+  - late television light
+  - reflected waterlight
+  - hallway bulb
+  - failing neon
+  - torchlight
+  - screen glare
+  - dim lamp
+
+catalogue_terms:
+  - accession line
+  - shelfmark
+  - catalogue note
+  - marginalia
+  - filing error
+  - card entry
+  - reference copy
+  - amended record
+  - withdrawn page
+  - duplicate index
+  - unfiled note
+  - damaged binding
+
+signal_terms:
+  - transmission
+  - echo
+  - carrier wave
+  - hiss
+  - interference
+  - dead channel
+  - reply tone
+  - open frequency
+  - buried signal
+  - feedback line
+  - voiceprint
+  - black broadcast
+
+water_terms:
+  - black water
+  - undertow
+  - flooded stairwell
+  - drowned shore
+  - rain on concrete
+  - lake surface
+  - wet threshold
+  - river-dark
+  - standing water
+  - water in the walls
+
+domestic_images:
+  - the hallway light left on
+  - a chair facing the wrong way
+  - a coffee cup gone cold on the desk
+  - the phone left off the hook
+  - a curtain moving without wind
+  - the television speaking to an empty room
+  - shoes left neatly by the wrong door
+  - a key where no key should be
+  - the last lamp still awake
+  - an open drawer in the dark
+
+memory_phrases:
+  - remember the wrong corridor first
+  - the map was clearer yesterday
+  - this happened in another version of the building
+  - you have stood here before, but not like this
+  - the room arrives before the memory does
+  - the name comes back crossed out
+  - the missing page knows your place
+  - something here has already been read
+  - this was easier to understand at a distance
+  - the staircase continues after the plan ends
+
+threshold_phrases:
+  - not the correct door
+  - the page behind the page
+  - the room without entry
+  - the hallway after the hallway
+  - the index of mirrors
+  - the fifth shelf
+  - the last clean page
+  - the name crossed out twice
+  - the wrong corridor remembered perfectly
+  - the signal beneath the lake
+  - the door that opens onto itself
+  - the shelf behind the wall
+
+narrative_clauses:
+  - something is already waiting there
+  - the sentence keeps turning back on itself
+  - the story has started without permission
+  - the record persists after deletion
+  - the light reaches the room too late
+  - the voice arrives with no speaker
+  - the page continues after the binding stops
+  - the corridor refuses to end where it should
+  - the copy survives the original
+  - the evidence is still rearranging itself
+  - the room is trying to remember you
+  - the signal is clearer under water
+
+hard_cuts:
+  - or almost.
+  - not this one.
+  - the rest is missing.
+  - start again.
+  - nothing after this line.
+  - the page ends here.
+  - wrong copy.
+  - not the first version.
+  - the light goes out here.
+  - read backwards from the margin.
+
+ghost_terms:
+  - red room
+  - wrong corridor
+  - black water
+  - erased index
+  - fifth shelf
+  - silent projector
+  - drowned page
+  - dead channel
+  - false door
+  - archive annex
+  - the page behind the page
+  - not the correct door
+  - shelfmark missing
+  - signal beneath the lake
+  - fluorescent hum
+  - a chair facing the wrong way
+  - the name crossed out twice
+  - margin of the night
+  - reference copy
+  - late television light
+  - hallway after the hallway
+  - buried signal
+  - service corridor
+  - the room without entry
