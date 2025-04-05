@@ -707,3 +707,1384 @@ body:not(.home) .page__content h6 * {
 .home .page__content .header-link {
   display: none;
 }
+
+.home .page__content a[href^="http"]:not(.site-nav-link),
+.home .page__content a[href^="mailto"]:not(.site-nav-link) {
+  color: $morandi-muted;
+  font-weight: normal;
+  &:visited { color: $morandi-muted; }
+  &:hover,
+  &:focus-visible { color: $morandi-ink; }
+}
+
+// -------------------------
+// homepage cover mosaic - floated grid of thought covers
+// -------------------------
+.home-thoughts-block {
+  display: flow-root;
+  margin-bottom: 1.55rem;
+}
+
+.home-thoughts-block + .home-thoughts-block {
+  margin-top: 1.65rem;
+}
+
+.home-thoughts-links {
+  margin: 0.8em 0 0;
+  font-size: 0.9em;
+  a {
+    color: $morandi-clay-deep;
+    font-weight: 600;
+    &, &:visited { color: $morandi-clay-deep; }
+    &:hover,
+    &:focus-visible { color: $morandi-clay; }
+  }
+}
+
+.home-covers {
+  float: right;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+  width: 240px;
+  margin: 0.1em 0 0.8em 1.4em;
+  border-radius: 3px;
+  overflow: hidden;
+  max-height: calc(5 * (60px + 3px) + 30px);
+  mask-image: linear-gradient(to bottom, #000 75%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 75%, transparent 100%);
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 1px;
+    opacity: 0.92;
+    transition: opacity 0.2s ease, transform 0.25s ease;
+
+    &:hover,
+    &:focus-visible {
+      opacity: 1;
+      transform: scale(1.06);
+      z-index: 2;
+      position: relative;
+    }
+  }
+
+  @media (max-width: 480px) {
+    float: none;
+    display: flex;
+    width: 100%;
+    grid-template-columns: none;
+    margin: 0.05em 0 0.85em;
+    padding-top: 0.65em;
+    padding-bottom: 0.2em;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    max-height: none;
+    mask-image: linear-gradient(to right, #000 0%, #000 calc(100% - 2.15rem), transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, #000 0%, #000 calc(100% - 2.15rem), transparent 100%);
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: #{$large - 1px}) {
+    width: 196px;
+    max-width: 48%;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 1em;
+    max-height: none;
+  }
+
+  @include breakpoint($x-large) {
+    grid-template-columns: repeat(3, 1fr);
+    width: 222px;
+    max-height: 441px;
+    mask-image: linear-gradient(to bottom, #000 82%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent 100%);
+  }
+}
+
+// -------------------------
+// homepage album recommendation covers - static decorative strip
+// -------------------------
+.home-album-covers {
+  display: flex;
+  gap: 6px;
+  margin: 1em 0 0.6em;
+  overflow: hidden;
+  border-radius: 3px;
+
+  img {
+    flex: 1 1 0;
+    min-width: 0;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 3px;
+    border: 1px solid rgba(155, 146, 138, 0.18);
+    opacity: 0.92;
+    filter: saturate(0.92) contrast(1.02);
+    transition: opacity 0.2s ease, filter 0.2s ease;
+
+    &:hover {
+      opacity: 1;
+      filter: saturate(1) contrast(1.04);
+    }
+  }
+}
+
+.home-covers--screen,
+.home-covers--games {
+  max-height: 267px;
+
+  @media (min-width: 481px) and (max-width: #{$large - 1px}) {
+    max-height: none;
+  }
+
+  @include breakpoint($x-large) {
+    max-height: 330px;
+  }
+}
+
+// -------------------------
+// thoughts cards - expandable cards (JS-animated, no <details>)
+// -------------------------
+.thoughts-card {
+  display: flex;
+  gap: 1.2em;
+  padding: 0.9em 0.5em;
+  margin: 0 -0.5em;
+  border-bottom: 1px solid $overlay-muted-soft;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.18s ease, box-shadow 0.18s ease;
+  animation: haothings-card-load 0.42s ease both;
+
+  // stagger cards on load
+  @for $i from 1 through 20 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{($i - 1) * 0.05}s;
+    }
+  }
+
+  &:last-of-type { border-bottom: none; }
+  &:hover,
+  &:focus-visible {
+    background: $shadow-faint;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px $shadow-subtle;
+  }
+}
+
+.thoughts-card--pinned {
+  border-left: 2px solid $overlay-clay-soft;
+  padding-left: 0.85em;
+  background: linear-gradient(90deg, $overlay-oat-soft, $overlay-white-clear);
+}
+
+.thoughts-pin-lead {
+  margin: -0.4em 0 0.55em;
+  color: $site-text-muted;
+
+  p {
+    margin: 0.22em 0 0;
+    font-size: 0.95em;
+    line-height: 1.55;
+  }
+}
+
+.thoughts-pin-lead__label {
+  display: inline-block;
+  font-size: 0.84em;
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+  color: $morandi-clay-deep;
+}
+
+.thoughts-card--spotlight {
+  background: linear-gradient(90deg, rgba($morandi-oat, 0.78), $overlay-white-clear);
+  box-shadow: 0 4px 14px rgba(63, 57, 52, 0.06);
+  border-left: 2px solid rgba($morandi-clay-deep, 0.38);
+}
+
+.thoughts-card--spotlight .thoughts-card__title {
+  color: $morandi-clay-deep;
+}
+
+.thoughts-card--spotlight .thoughts-card__toggle {
+  border-color: rgba($morandi-blue-deep, 0.28);
+  color: $morandi-blue-deep;
+}
+
+.thoughts-card__img-wrap {
+  flex-shrink: 0;
+  overflow: hidden;   // keeps image scale within its own bounds
+  border-radius: 2px;
+}
+
+.thoughts-card__img {
+  display: block;
+  width: 96px;
+  height: 144px;  // image trims to 2:3 vertical
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 1px 5px $shadow-soft;
+  transition: transform 0.22s ease;
+
+  &--placeholder {
+    background: $site-surface-muted;
+    width: 96px;
+    height: 144px;
+    display: block;
+    border-radius: 2px;
+  }
+}
+
+.thoughts-card:hover .thoughts-card__img,
+.thoughts-card:focus-visible .thoughts-card__img {
+  transform: scale(1.04);
+}
+
+.thoughts-card__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.thoughts-card__meta {
+  font-size: 1.2em;
+  color: $morandi-muted;
+  margin-bottom: 0.18em;
+  line-height: 1.55;
+}
+
+.thoughts-card__title-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0.62em;
+  row-gap: 0;
+  line-height: 1.3;
+}
+
+.thoughts-card__badges {
+  display: flex;
+  align-items: center;
+  gap: 0.38em;
+  width: fit-content;
+  margin: 0.1em 0 0.36em;
+  line-height: 1;
+}
+
+.thoughts-card__badges .thoughts-card__pin,
+.thoughts-card__badges .thoughts-card__eval {
+  font-size: 0.72em;
+}
+
+.thoughts-card__creator-wrap {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-left: 0;
+}
+
+.thoughts-card__sep {
+  display: none;
+}
+
+.thoughts-card__title {
+  font-family: $reforma-stack;
+  font-weight: normal;
+  font-size: 0.88em;
+  color: $morandi-ink;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.thoughts-card__title-main[data-title-script='cyrl'],
+.thoughts-card__title-main[data-title-script='grek'] {
+  font-family: $intl-stack, sans-serif;
+}
+
+.thoughts-card__title-main[data-title-script='arab'] {
+  display: inline-block;
+  direction: rtl;
+  font-family: $arabic-stack;
+  unicode-bidi: isolate;
+}
+
+.thoughts-card__title-main[data-title-script='hang'] {
+  font-family: $korean-stack;
+}
+
+.thoughts-card__title-main[data-title-script='jpan'] {
+  font-family: $japanese-stack;
+}
+
+.thoughts-card__title-main[data-title-script='thai'] {
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.thoughts-card__title-main[data-title-script='hebr'] {
+  display: inline-block;
+  direction: rtl;
+  font-family: $hebrew-stack, serif;
+  unicode-bidi: isolate;
+}
+
+.thoughts-card__year {
+  margin-left: 0.62em;
+  font-size: 0.74em;
+  font-weight: normal;
+  color: $morandi-muted-soft;
+  white-space: nowrap;
+}
+
+.thoughts-card__season {
+  font-size: 0.86em;
+  color: $morandi-muted;
+  font-weight: normal;
+}
+
+.thoughts-card__title-en {
+  font-size: 0.86em;
+  color: $morandi-muted;
+  font-weight: normal;
+  margin-left: 0.35em;
+}
+
+.thoughts-card__title-en.lang-he {
+  display: inline-block;
+  direction: rtl;
+  margin-left: 0.42em;
+  vertical-align: baseline;
+}
+
+.thoughts-card__creator {
+  font-size: 0.84em;
+  color: $morandi-muted;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.thoughts-card__translator {
+  display: inline-block;
+}
+
+.thoughts-card__posted {
+  font-size: 0.84em;
+  color: $morandi-muted;
+  margin-top: -0.18em;
+  margin-bottom: 0.55em;
+  line-height: 1.35;
+}
+
+.thoughts-card__posted-date {
+  color: $morandi-muted;
+}
+
+.thoughts-card__posted-sep,
+.thoughts-card__read-time {
+  color: rgba($morandi-muted, 0.72);
+}
+
+.thoughts-card__posted-sep {
+  margin: 0 0.26em;
+}
+
+// text wrap: clipped to ~2 lines with bottom fade; JS animates open/close
+.thoughts-card__text-wrap {
+  overflow: hidden;
+  // 2 lines: line-height 1.65 x font 0.88em = ~2.9em per 2 lines
+  max-height: 4.4em;
+  position: relative;
+  -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
+  mask-image:         linear-gradient(to bottom, black 30%, transparent 100%);
+  // JS adds/removes inline transition; no CSS transition here to avoid conflicts
+}
+
+.thoughts-card.is-open .thoughts-card__text-wrap {
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+.thoughts-card__text {
+  font-family: $reforma-stack;
+  font-size: 0.98em;
+  color: $site-text-body;
+  line-height: 1.62;
+  letter-spacing: 0.008em;
+
+  * { font-family: inherit; }
+}
+
+.thoughts-card__text p {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.66;
+  letter-spacing: 0.014em;
+}
+
+.thoughts-card__text p + p {
+  margin-top: 0.9em;
+}
+
+// expand arrow button - pushed down as card expands
+.thoughts-card__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 0;
+  width: 1.28rem;
+  height: 1.24rem;
+  flex: 0 0 auto;
+  font-size: 0.85em;
+  color: $morandi-muted-soft;
+  cursor: pointer;
+  transition: color 0.15s ease;
+  line-height: 1;
+
+  &:hover,
+  &:focus-visible { color: $link-color; }
+
+}
+
+.thoughts-card__toggle span,
+.thoughts-card__permalink span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+}
+
+.thoughts-card__permalink span {
+  transform: translateY(0.16rem);
+}
+
+.thoughts-card__footer {
+  display: flex;
+  align-items: center;
+  gap: 0.32em;
+  margin-top: 0.42rem;
+}
+
+.thoughts-card__permalink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.28rem;
+  height: 1.24rem;
+  flex: 0 0 auto;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: rgba($morandi-muted, 0.62);
+  font-family: $mono-stack;
+  font-size: 0.68em;
+  line-height: 1;
+  text-decoration: none !important;
+  transition: opacity 0.18s ease, transform 0.18s ease, color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    background: transparent;
+    color: $morandi-blue-deep;
+    text-decoration: none !important;
+  }
+
+  &.is-copied {
+    background: transparent;
+    color: $morandi-clay-deep;
+  }
+
+  &.is-copy-failed {
+    background: transparent;
+    color: $morandi-rose-deep;
+  }
+}
+
+.thoughts-card__copy-status {
+  display: inline-flex;
+  align-items: center;
+  width: 7.8em;
+  min-height: 1.24rem;
+  color: $morandi-clay-deep;
+  font-family: $mono-stack;
+  font-size: 0.64em;
+  line-height: 1;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(1px);
+  transition: opacity 0.18s ease, transform 0.18s ease, color 0.15s ease;
+}
+
+.thoughts-card.has-copied-link .thoughts-card__copy-status,
+.thoughts-card.has-copy-failed .thoughts-card__copy-status {
+  opacity: 0.9;
+  transform: translateY(0);
+}
+
+.thoughts-card.has-copy-failed .thoughts-card__copy-status {
+  color: $morandi-rose-deep;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .thoughts-card__permalink {
+    opacity: 0;
+  }
+
+  .thoughts-card:hover .thoughts-card__permalink,
+  .thoughts-card:focus-within .thoughts-card__permalink,
+  .thoughts-card.has-copied-link .thoughts-card__permalink,
+  .thoughts-card.has-copy-failed .thoughts-card__permalink {
+    opacity: 0.72;
+  }
+
+  .thoughts-card__permalink:hover,
+  .thoughts-card__permalink:focus-visible,
+  .thoughts-card__permalink.is-copied,
+  .thoughts-card__permalink.is-copy-failed {
+    opacity: 1;
+  }
+}
+
+.thoughts-card__pin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.28em 0.72em;
+  border-radius: 999px;
+  font-size: 0.74em;
+  line-height: 1;
+  color: $morandi-clay-deep;
+  background: rgba($morandi-oat, 0.9);
+  border: 1px solid rgba($morandi-clay-deep, 0.16);
+  white-space: nowrap;
+}
+
+.thoughts-card__eval {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.28em 0.72em;
+  border-radius: 999px;
+  font-size: 0.74em;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.thoughts-card__eval--loved {
+  background: mix($morandi-blue, $morandi-blue-soft, 42%);
+  color: $morandi-blue-deep;
+}
+
+.thoughts-card__eval--liked {
+  background: mix($morandi-sage, $morandi-grey-soft, 38%);
+  color: $morandi-sage-deep;
+}
+
+.thoughts-card__eval--meh {
+  background: mix($morandi-olive, $morandi-grey-soft, 28%);
+  color: mix($morandi-olive, $morandi-muted, 60%);
+}
+
+.thoughts-card__eval--disliked {
+  background: mix($morandi-clay, $morandi-grey-soft, 34%);
+  color: $morandi-clay-deep;
+}
+
+.thoughts-card__eval--hated {
+  background: mix($morandi-rose, $morandi-stone, 48%);
+  color: mix($morandi-rose-deep, $morandi-ink, 82%);
+}
+
+// desktop thoughts entries: keep the text stack at writing-preview scale
+@include breakpoint($large) {
+  .thoughts-card__meta { font-size: 1.2em; }
+  .thoughts-card__posted { font-size: 0.85em; }
+  .thoughts-card__text { font-size: 0.98em; }
+  .thoughts-card__text p { font-size: 1em; }
+
+  .thoughts-card__badges .thoughts-card__pin,
+  .thoughts-card__badges .thoughts-card__eval {
+    font-size: 0.605em;
+  }
+}
+
+::selection {
+  background: rgba($morandi-lavender, 0.25);
+  color: inherit;
+}
+
+// -------------------------
+// entrance animations
+// -------------------------
+
+// full fade+lift for main content
+@keyframes haothings-fade-up {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+// subtle load for brief cards
+@keyframes haothings-card-load {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+// transform-only slide for sidebar - avoids conflicting with _sidebar.scss opacity:0.75
+@keyframes haothings-slide-up {
+  from { transform: translateY(7px); }
+  to   { transform: translateY(0);   }
+}
+
+// Portrait tablets / tall narrow windows get extra reading margins without
+// applying the same treatment to phones.
+@media (orientation: portrait) and (min-width: #{$medium}) and (max-width: #{$large - 1px}) {
+  #main {
+    padding-top: 0 !important;
+    padding-left: 2.65rem;
+    padding-right: 2.65rem;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  .archive > .page__title,
+  .page__title {
+    margin-top: 0 !important;
+  }
+
+  .sidebar {
+    display: none !important;
+  }
+
+  .page__author-footer {
+    display: block;
+    clear: both;
+    margin-top: 0 !important;
+    padding-top: 2.2rem !important;
+    border-top: 1px solid rgba($morandi-muted, 0.14);
+  }
+
+  .page__content > :last-child {
+    margin-bottom: 0;
+  }
+
+  .page__content > hr:last-child {
+    margin-bottom: 0;
+  }
+
+  .page__author-footer .h-card--footer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.7rem 0.8rem;
+    width: 100%;
+  }
+
+  .thoughts-controls-row {
+    width: calc(100vw - 5.3rem);
+    max-width: 95%;
+    gap: 0.65rem;
+  }
+
+  .thoughts-search-wrap {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .thoughts-luck-btn {
+    font-size: 0.84em;
+  }
+
+  .page__title {
+    max-width: 8.6ch;
+    font-size: 3.15rem;
+    letter-spacing: -0.06em;
+    margin-top: 0;
+    margin-bottom: 1.45rem;
+  }
+
+  .home .author__bio--mobile {
+    line-height: 0.92;
+    margin-top: 0.02em;
+  }
+
+  .author__bio--mobile p {
+    display: none;
+  }
+
+  .author__bio--mobile::before {
+    content: 'phd in neuroscience\A data science · science journalism';
+    display: block;
+    white-space: pre-line;
+    line-height: 1.04;
+  }
+
+  .home .author__bio--mobile::before {
+    line-height: 0.96;
+  }
+
+  body:not(.home) .sidebar .h-card {
+    grid-template-columns: 42px minmax(0, 1fr);
+    column-gap: 0.18em;
+    align-items: end;
+  }
+
+  body:not(.home) .sidebar .author__avatar {
+    width: 42px;
+    height: 42px;
+  }
+
+  body:not(.home) .sidebar .author__avatar img {
+    width: 42px;
+    height: 42px;
+    border-radius: 4px;
+  }
+
+  body:not(.home) .sidebar .author__content::after {
+    content: 'a postmodernist parsing the information age';
+    font-size: 0.94em;
+    line-height: 1;
+    white-space: nowrap;
+    font-style: italic;
+    margin-top: auto;
+  }
+
+}
+
+// Landscape tablets (iPad Pro landscape, etc.) - header+nav occupies too much
+// vertical space when viewport height is limited.
+@media (orientation: landscape) and (min-width: #{$large}) and (max-height: 900px) {
+  .page-header {
+    padding-top: 1rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .page-header__home {
+    font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+    margin-bottom: 0.3em;
+  }
+
+  .page-header__nav-stack {
+    gap: 0.08em;
+
+    a {
+      font-size: clamp(0.95rem, 1.7vw, 1.1rem);
+      padding: 0.08em 0;
+    }
+
+    a.is-current {
+      font-size: clamp(1.5rem, 3.2vw, 2.4rem);
+    }
+  }
+}
+
+// page text fades gently upward on load
+.page__inner-wrap {
+  animation: haothings-fade-up 0.38s ease both;
+}
+
+// sidebar slides in slightly after content (layered feel), no opacity so dim-on-idle still works
+.sidebar {
+  @include breakpoint($large) {
+    animation: haothings-slide-up 0.38s ease both;
+    animation-delay: 0.06s;
+  }
+}
+
+// respect prefers-reduced-motion
+@media (prefers-reduced-motion: reduce) {
+  .page__inner-wrap,
+  .sidebar,
+  .home .page__content h2,
+  .thoughts-card {
+    animation: none;
+  }
+}
+
+// -------------------------
+// mobile overrides
+// -------------------------
+
+// thoughts sidebar preview: hide on mobile for all pages
+@include breakpoint(max-width $large - 1px) {
+  #main {
+    padding-top: 0 !important;
+    padding-left: 1.28em;
+    padding-right: 1.28em;
+    padding-bottom: 0 !important;
+  }
+
+  body {
+    padding-bottom: 0;
+  }
+
+  .breadcrumbs {
+    display: none;
+  }
+
+  .archive > .page__title,
+  .page__title {
+    margin-top: 0 !important;
+    margin-bottom: 1.4rem;
+  }
+
+  .sidebar {
+    display: none !important;
+  }
+
+  .page__author-footer {
+    display: block;
+    clear: both;
+    margin-top: 0 !important;
+    padding-top: 1.4rem !important;
+    border-top: 1px solid rgba($morandi-muted, 0.14);
+  }
+
+  .page__content {
+    min-height: 0;
+  }
+
+  .page__content > hr:last-child {
+    margin-bottom: 0;
+  }
+
+  .page__author-footer .h-card--footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0.7rem 0.8rem;
+    width: 100%;
+  }
+
+  .page__author-footer .author__avatar {
+    flex: 0 0 auto;
+    align-self: center;
+    margin: 0;
+    margin-right: 0.65rem;
+  }
+
+  .page__author-footer .author__content {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .page__author-footer .author__footer-links {
+    flex: 0 0 auto;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.18em;
+    margin: 0;
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .author__sidebar-thoughts {
+    display: none;
+  }
+
+  .thoughts-filter-strip,
+  .thoughts-controls-row,
+  .thoughts-controls-row {
+    margin: 0 auto 1rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.55rem;
+  }
+
+  .thoughts-search-wrap {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+  }
+
+  .thoughts-luck-btn {
+    flex: 0 0 auto;
+    align-self: auto;
+    margin-top: 0;
+  }
+
+  // hide entire contact section on mobile - multiple layers to beat MM specificity
+  .author__urls-wrapper { display: none !important; }
+  .author__urls-wrapper .author__urls-toggle { display: none !important; }
+  .author__urls-wrapper .author__urls,
+  .author__urls-wrapper ul.author__urls,
+  ul.author__urls.social-icons {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    position: static !important;
+  }
+
+  // show mobile bio, hide desktop bio
+  .author__bio--desktop { display: none !important; }
+  .author__bio--mobile  { display: block !important; }
+
+  .home .author__bio--mobile {
+    line-height: 0.88;
+    margin-top: 0.02em;
+  }
+
+  .home .author__bio--mobile br {
+    margin-top: -0.03em;
+  }
+
+  .home .author__bio--mobile p {
+    line-height: inherit;
+  }
+
+  body:not(.home) .sidebar .h-card {
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr);
+    column-gap: 0.12em;
+    align-items: end;
+  }
+
+  body:not(.home) .sidebar .author__avatar {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 0;
+
+    img {
+      width: 28px;
+      height: 28px;
+      border-radius: 4px;
+    }
+  }
+
+  body:not(.home) .sidebar .author__content {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding-bottom: 0.01em;
+  }
+
+  body:not(.home) .sidebar .author__content::after {
+    content: 'a postmodernist parsing the information age';
+    display: block;
+    font-size: 0.77em;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: $site-text-soft;
+    font-style: italic;
+    margin-top: auto;
+  }
+
+  body:not(.home) .sidebar .author__name {
+    display: none !important;
+  }
+
+  body:not(.home) .sidebar .author__name-zh {
+    display: none !important;
+  }
+
+  body:not(.home) .sidebar .author__bio {
+    display: none !important;
+  }
+
+  @media (min-width: 560px) {
+  }
+}
+
+@include breakpoint($large) {
+}
+
+// -------------------------
+// thoughts filter strip - elegant outer box with sliding inner highlight
+// -------------------------
+.thoughts-filter-strip {
+  position: relative;
+  display: flex;                          // full-width flex
+  align-items: center;
+  width: 95%;                             // wider, aligned with controls row
+  background: rgba($morandi-grey-soft, 0.38);  // half transparent outer box
+  border-radius: 1000px;                 // highly rounded
+  padding: 0.12em 0.18em;
+  margin: 0 auto;
+  margin-bottom: 1.8em;
+  user-select: none;
+  box-shadow: inset 0 0 0 1px rgba($morandi-muted, 0.06);
+}
+
+.thoughts-filter-strip--type {
+  margin-bottom: 0.45em;
+}
+
+.thoughts-controls-row {
+  --controls-h: 1.8rem;
+  width: 95%;
+  margin: 0 auto 0.4em;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.thoughts-pagination {
+  width: 95%;
+  margin: 0 auto 1.1em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: $mono-stack;
+  font-size: 0.86em;
+  color: $site-text-soft;
+
+  &[hidden] { display: none; }
+}
+
+.thoughts-pagination--bottom {
+  margin: 1.6em auto 0;
+}
+
+.thoughts-pagination__btn {
+  background: none;
+  border: 1px solid rgba($morandi-muted, 0.22);
+  border-radius: 4px;
+  color: inherit;
+  font-size: 1.25em;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.15em 0.35em;
+  transition: color 0.18s ease, opacity 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+
+  &:hover:not(:disabled),
+  &:focus-visible:not(:disabled) {
+    color: $site-text-nav;
+    border-color: rgba($morandi-muted, 0.4);
+    background: rgba($morandi-muted, 0.06);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+
+}
+
+.thoughts-pagination__status {
+  min-width: 3.2em;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.thoughts-pagination__input {
+  width: 2.4em;
+  text-align: center;
+  background: none;
+  border: 1px solid rgba($morandi-muted, 0.22);
+  border-radius: 4px;
+  padding: 0.28em 0.2em;
+  margin: 0;
+  font-family: $mono-stack;
+  font-size: 1em;
+  line-height: 1;
+  color: inherit;
+  box-shadow: none;
+  -moz-appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: rgba($morandi-muted, 0.4);
+    color: $site-text-nav;
+  }
+}
+
+.thoughts-pagination__range {
+  font-size: 0.95em;
+  color: $morandi-muted-soft;
+  margin-right: auto;
+}
+
+.thoughts-luck-btn {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  height: var(--controls-h);
+  box-sizing: border-box;
+  font-family: $mono-stack;
+  font-size: 0.9em;
+  color: $morandi-blue-deep;
+  background: rgba($morandi-blue, 0.1);
+  border: 1px solid rgba($morandi-blue-deep, 0.22);
+  border-radius: 1000px;
+  padding: 0 0.9em;
+  transition: color 0.18s ease, border-color 0.18s ease, background 0.18s ease, opacity 0.18s ease;
+
+  &:hover:not(:disabled),
+  &:focus-visible:not(:disabled) {
+    color: $site-text-nav-soft;
+    border-color: rgba($morandi-blue-deep, 0.22);
+    background: rgba($morandi-oat, 0.8);
+  }
+
+  &:disabled,
+  &.is-disabled {
+    cursor: default;
+    opacity: 0.46;
+  }
+}
+
+.thoughts-search-wrap {
+  position: relative;
+  flex: 1 1 24rem;
+  height: var(--controls-h);
+  min-width: 0;
+  width: auto;
+  margin: 0;
+}
+
+.thoughts-search-input {
+  width: 100%;
+  height: var(--controls-h);
+  box-sizing: border-box;
+  font-family: $mono-stack;
+  font-size: 0.9em;
+  background: rgba($morandi-grey-soft, 0.18);
+  border: 1px solid rgba($morandi-muted, 0.18);
+  border-radius: 1000px;
+  outline: none;
+  padding: 0 1.6em 0 0.85em;
+  color: $site-text-nav;
+  opacity: 0.74;
+  transition: opacity 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+
+  &:focus {
+    opacity: 1;
+    border-color: rgba($morandi-blue-deep, 0.3);
+    background: rgba($morandi-grey-soft, 0.28);
+  }
+
+  &::placeholder {
+    color: $site-text-soft;
+    opacity: 0.75;
+  }
+
+  &::-webkit-search-cancel-button {
+    display: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+}
+
+.thoughts-search-enter {
+  position: absolute;
+  right: 0.65em;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: $mono-stack;
+  font-size: 1em;
+  line-height: 1;
+  color: $site-text-soft;
+  opacity: 0.55;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
+.thoughts-search-wrap:focus-within .thoughts-search-enter {
+  opacity: 0.9;
+  color: $site-text-nav;
+}
+
+.thoughts-search-clear {
+  position: absolute;
+  right: 0.45em;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0 0.18em;
+  font-size: 1.1em;
+  line-height: 1;
+  color: $site-text-soft;
+  opacity: 0.65;
+  cursor: pointer;
+  transition: opacity 0.15s ease, color 0.15s ease;
+
+  &:hover,
+  &:focus-visible { opacity: 1; color: $site-text-nav; }
+  &[hidden] ~ .thoughts-search-enter { display: flex; }
+  &:not([hidden]) ~ .thoughts-search-enter { display: none; }
+}
+
+.thoughts-filter-pill {
+  position: absolute;
+  top: 0.12em;
+  left: 0.18em;
+  height: calc(100% - 0.24em);
+  background: $site-bg;
+  border-radius: 1000px;  // match outer box shape
+  box-shadow: 0 1px 3px $shadow-faint;
+  transition: left 0.32s cubic-bezier(0.34, 1.56, 0.64, 1),
+              width 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.thoughts-filter-btn {
+  position: relative;
+  z-index: 1;
+  flex: 1;                         // equal width - fills the strip evenly
+  text-align: center;
+  background: none;
+  border: none;
+  padding: 0.22em 0;
+  font-family: $mono-stack;
+  font-size: 1em;                  // match main text size
+  color: $site-text-soft;
+  cursor: pointer;
+  border-radius: 1000px;
+  transition: color 0.22s ease;
+  white-space: nowrap;
+
+  &.active {
+    color: $site-text;
+  }
+  &:hover,
+  &:focus-visible { color: $site-text-nav-soft; }
+
+}
+
+mark.thoughts-highlight {
+  background: linear-gradient(180deg, rgba($morandi-oat, 0.3), rgba($morandi-clay, 0.28));
+  color: $morandi-clay-deep;
+  padding: 0 0.12em;
+  border-radius: 0.16em;
+  box-shadow: inset 0 -0.55em 0 rgba($morandi-clay, 0.22);
+  border-bottom: 1px solid rgba($morandi-clay-deep, 0.34);
+  font-family: inherit;
+  font-weight: bold;
+}
+
+@media (max-width: 560px) {
+  .thoughts-card {
+    display: grid;
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 0.15em 0.85em;
+    align-items: start;
+  }
+
+  .thoughts-card__body {
+    display: contents;
+  }
+
+  .thoughts-card__img-wrap {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    width: 72px;
+  }
+
+  .thoughts-card__img,
+  .thoughts-card__img--placeholder {
+    width: 72px;
+    height: 108px;
+  }
+
+  .thoughts-card__meta {
+    grid-column: 2;
+    grid-row: 2;
+    margin-bottom: 0;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15em;
+    align-self: end;
+    line-height: 1.12;
+  }
+
+  .thoughts-card__sep {
+    display: none;
+  }
+
+  .thoughts-card__title-line {
+    display: block;
+  }
+
+  .thoughts-card__creator-wrap {
+    display: block;
+    margin-left: 0;
+  }
+
+  .thoughts-card__badges,
+  .thoughts-card__title,
+  .thoughts-card__creator {
+    display: block;
+  }
+
+  .thoughts-card__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.32em;
+    margin: 0 0 0.48em;
+    line-height: 1;
+  }
+
+  .thoughts-card__title {
+    font-size: 1.12em;
+    line-height: 1.22;
+  }
+
+  .thoughts-card__year {
+    font-size: 0.78em;
+  }
+
+  .thoughts-card__creator {
+    margin-top: 0.08em;
+    font-size: 0.82em;
+    line-height: 1.22;
+  }
+
+  .thoughts-card__posted {
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    align-items: flex-start;
+    align-self: start;
+    margin-top: 0.12em;
+    margin-bottom: 0;
+    font-size: 0.82em;
+    line-height: 1.22;
+  }
+
+  .thoughts-card__text-wrap {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    margin-top: 0.5rem;
+  }
+
+  .thoughts-card__footer {
+    grid-column: 1 / -1;
+    grid-row: 5;
+    justify-self: start;
+    margin-top: 0.45em;
+  }
+
+  .thoughts-card__toggle {
+    margin-top: 0;
+  }
+}

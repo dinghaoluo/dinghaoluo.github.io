@@ -13,4 +13,9 @@
 <!-- keep browser back/forward navigation anchored to the reader's last position -->
 <script>if ('scrollRestoration' in history) { history.scrollRestoration = 'auto'; }</script>
 
+{% if page.classes == 'home' %}
+<link rel="prefetch" href="{{ '/thoughts/' | relative_url }}">
+<link rel="prefetch" href="{{ '/music/' | relative_url }}">
+{% endif %}
+
 <!-- end custom head snippets -->
