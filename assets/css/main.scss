@@ -1,0 +1,709 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+// -------------------------
+// colour system - centralise palette and semantic tokens here
+// -------------------------
+// Morandi palette - two accent families: blue (brand/UI) + sage (links).
+$morandi-clay:        #b78e79;
+$morandi-clay-deep:   #8d6959;
+$morandi-oat:         #faf7f2;
+$morandi-stone:       #ddd3c8;
+$morandi-ink:         #3f3934;
+$morandi-muted:       #756c65;
+$morandi-muted-soft:  #817872;
+$morandi-blue:        #90a4b0;
+$morandi-blue-soft:   #dde5e8;
+$morandi-blue-deep:   #627884;
+$morandi-grey-soft:   #e8e2db;
+$morandi-grey-deep:   #8b837c;
+$morandi-rose:        #bb9891;
+$morandi-rose-soft:   #ebddda;
+$morandi-rose-deep:   #7d605b;
+$morandi-sage:        #a8b5a2;
+$morandi-sage-deep:   #6c8f7e;
+$morandi-teal:        #85a0a8;
+$morandi-haze:        #a5b5c5;
+$morandi-lavender:    #b4acbe;
+$morandi-olive:       #a4a98a;
+
+// semantic site tokens
+$site-bg:             #ffffff;
+$site-bg-soft:        $morandi-oat;
+$site-surface:        #eaeae8;
+$site-surface-soft:   #f0ebe5;
+$site-surface-muted:  #e8e3de;
+$site-border:         #e0dbd5;
+$site-border-soft:    #ece8e3;
+$site-border-strong:  #d4d4d0;
+$site-border-footer:  #d0c8c0;
+$site-border-page:    #e8e3de;
+$site-chrome-bg:      rgba($morandi-blue-soft, 0.18);
+$site-chrome-footer:  rgba($morandi-oat, 0.62);
+$site-chrome-line:    rgba($morandi-muted, 0.16);
+$site-separator:      rgba($morandi-muted, 0.18);
+$site-separator-soft: rgba($morandi-muted, 0.12);
+$site-text:           $morandi-ink;
+$site-text-muted:     $morandi-muted;
+$site-text-soft:      $morandi-muted-soft;
+$site-text-subtle:    #6a6a6a;
+$site-text-nav:       #4a4a4a;
+$site-text-nav-soft:  #5a5a5a;
+$site-text-icon:      #707070;
+$site-text-body:      #3a3a3a;
+
+// shadow and overlay tokens
+$shadow-strong:       rgba($morandi-ink, 0.85);
+$shadow-medium:       rgba($morandi-ink, 0.5);
+$shadow-dark:         rgba($morandi-ink, 0.25);
+$shadow-soft:         rgba($morandi-ink, 0.13);
+$shadow-light:        rgba($morandi-ink, 0.11);
+$shadow-subtle:       rgba($morandi-ink, 0.07);
+$shadow-faint:        rgba($morandi-ink, 0.05);
+$shadow-ultra-faint:  rgba($morandi-ink, 0.032);
+$shadow-barely:       rgba($morandi-ink, 0.018);
+$overlay-white-strong: rgba(#ffffff, 0.96);
+$overlay-white-soft:  rgba(#ffffff, 0.025);
+$overlay-white-clear: rgba(#ffffff, 0);
+$overlay-muted-soft:  rgba($morandi-muted, 0.1);
+$overlay-muted-med:   rgba($morandi-muted, 0.14);
+$overlay-clay-soft:   rgba($morandi-clay-deep, 0.34);
+$overlay-oat-strong:  rgba($morandi-oat, 0.78);
+$overlay-oat-soft:    rgba($morandi-oat, 0.58);
+
+$primary-color:       $morandi-clay;
+$link-color:          $morandi-clay-deep;
+$link-color-visited:  $morandi-clay-deep;
+$background-color:    $site-bg;
+$large:               974px;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// CJK fallback stack - LXGW WenKai Mono TC at weight 700 only (no 400 loaded,
+// so the browser's font-matching algorithm maps normal-weight text to the
+// 700 face automatically, giving CJK strokes enough density next to Reforma.
+// Keep broader international fallbacks ahead of CJK in the global stacks so
+// Cyrillic, Greek, accented Latin, Arabic, Thai, etc. do not get captured by
+// Chinese/Japanese/Korean faces before reaching a better script match.
+$cjk-stack: 'LXGW WenKai Mono TC', 'Noto Sans Mono CJK TC', 'Noto Sans Mono CJK SC', 'Source Han Mono TC', 'Source Han Mono SC', 'PingFang TC', 'PingFang SC', 'Microsoft JhengHei', 'Microsoft YaHei';
+$intl-stack: 'Noto Sans', 'Noto Sans Arabic', 'Noto Sans Thai';
+$arabic-stack: 'Noto Sans Arabic', 'Geeza Pro', 'Segoe UI', Tahoma, sans-serif;
+$hebrew-stack: 'Noto Serif Hebrew', 'Noto Sans Hebrew', $intl-stack;
+$japanese-stack: 'Noto Sans JP', 'Noto Sans CJK JP', 'Yu Gothic', 'Hiragino Sans', Meiryo, sans-serif;
+$korean-stack: 'Noto Sans KR', 'Noto Sans CJK KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+$mono-stack: 'Mononoki', $intl-stack, $cjk-stack, monospace;
+$reforma-stack: 'Reforma 2018', Georgia, 'Times New Roman', $intl-stack, $cjk-stack, serif;
+$font-prose: $reforma-stack;
+$font-display: $reforma-stack;
+$font-ui: $mono-stack;
+$font-code: $mono-stack;
+$writing-title-stack: $reforma-stack;
+$writing-title-italic-stack: $reforma-stack;
+$content-width: 760px;
+$media-block-gap: 1.45rem;
+$media-float-gap: 0.35rem;
+$media-float-gutter: 1.55rem;
+$media-caption-gap: 0.32rem;
+$media-radius: 5px;
+$media-pair-gap: 0.55rem;
+
+// -------------------------
+// base
+// -------------------------
+html {
+  box-sizing: border-box;
+  font-size: 15.75px;
+  font-family: $font-ui;
+
+  @include breakpoint($medium)  { font-size: 16px; }
+  @include breakpoint($large)   { font-size: 16.25px; }
+  @include breakpoint($x-large) { font-size: 16px; }
+}
+
+body * {
+  font-family: inherit;
+}
+
+.fa,
+.fas,
+.far,
+.fal {
+  font-family: "Font Awesome 5 Free" !important;
+}
+
+.fa,
+.fas {
+  font-weight: 900;
+}
+
+.far {
+  font-weight: 400;
+}
+
+.fab {
+  font-family: "Font Awesome 5 Brands" !important;
+}
+
+figcaption,
+figcaption *,
+.page__hero-caption,
+.page__hero-caption *,
+.archive__item-caption,
+.archive__item-caption * {
+  font-family: inherit;
+}
+
+figcaption {
+  margin-top: $media-caption-gap;
+  margin-bottom: 0;
+  color: $site-text-muted;
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+body {
+  font-weight: normal;
+  line-height: 1.85;
+  background-color: $background-color;
+}
+
+// -------------------------
+// typography
+// -------------------------
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+}
+
+code, pre, kbd, samp {
+  font-family: $font-code;
+}
+
+em, i  { font-style: italic; }
+strong { font-weight: bold; font-style: normal; }
+
+a {
+  color: $link-color;
+  transition: color 0.18s ease;
+  &:visited { color: $link-color; }
+  &:hover,
+  &:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+a.site-nav-link {
+  color: $morandi-clay-deep;
+  font-weight: 600;
+  &, &:visited { color: $morandi-clay-deep; }
+  &:hover,
+  &:focus-visible { color: $morandi-clay; }
+}
+
+hr {
+  border: none;
+  border-top: 1px solid $site-separator;
+  width: 10ch;
+  max-width: 100%;
+  margin: 2.7em 0 2.3em;
+  opacity: 0.82;
+}
+
+// -------------------------
+// stacked subpage navigation - vertical stack with current page prominent
+// -------------------------
+.page-header {
+  margin-bottom: 2.2rem;
+  padding-top: 1.4rem;
+
+  @include breakpoint($large) {
+    padding-top: 1.8rem;
+    margin-bottom: 2.6rem;
+  }
+}
+
+.page-header__home {
+  display: block;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  color: $morandi-clay-deep;
+  text-decoration: none;
+  font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+  line-height: 1;
+  margin-bottom: 0.45em;
+
+  strong { font-weight: 600; }
+
+  &:hover,
+  &:focus-visible {
+    color: $morandi-clay;
+    text-decoration: none;
+  }
+}
+
+.page-header__nav-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15em;
+  position: relative;
+
+  a {
+    display: inline-block;
+    font-family: $mono-stack;
+    color: $morandi-muted;
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    letter-spacing: -0.025em;
+    text-decoration: none;
+    line-height: 1.18;
+    padding: 0.12em 0;
+    position: relative;
+    transition: color 0.18s ease, letter-spacing 0.3s ease;
+
+    &::before {
+      content: '\203A';
+      margin-right: 0.3em;
+      opacity: 0.35;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1.5px;
+      background: currentColor;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.2s ease;
+      opacity: 0.82;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: $morandi-clay-deep;
+      &::after { transform: scaleX(1); }
+    }
+
+    &:focus {
+      outline: 2px solid $morandi-clay-deep;
+      outline-offset: 3px;
+      color: $morandi-clay-deep;
+    }
+
+    &.is-current {
+      display: inline-block;
+      font-family: $mono-stack;
+      color: $site-text;
+      font-style: italic;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      letter-spacing: 0.01em;
+      line-height: 0.96;
+      text-decoration: none;
+      margin-top: 0.06em;
+      margin-bottom: 0.15em;
+
+      &::before { display: none; }
+      &::after { display: none; }
+
+      &:hover,
+      &:focus-visible {
+        color: $site-text;
+      }
+    }
+  }
+}
+
+.page-header__nav-stack a.is-current[href$="/writing/"] {
+  letter-spacing: 0.024em;
+}
+
+// suppress the empty MM masthead shell if present
+.masthead { display: none !important; }
+
+// The gem sets .page .page__inner-wrap { margin-top: 1em } which,
+// without the old masthead/sidebar, collapses through every borderless
+// container up to body - creating a blank gap at the top of the page.
+// Fix: zero the margin AND break the collapsing chain on #main.
+.page .page__inner-wrap { margin-top: 0 !important; }
+#main { display: flow-root; }
+
+// -------------------------
+// constrained main content column - matches masthead inner width
+// -------------------------
+#main {
+  padding-bottom: 0 !important;
+
+  @include breakpoint($x-large) {
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0 !important;
+  }
+}
+
+body {
+  padding-bottom: 0;
+}
+
+// -------------------------
+// author sidebar
+// -------------------------
+.author__avatar {
+  text-align: left;
+
+  img {
+    width: 50px;            // mobile default - reduced for compact sidebar
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: none;
+    box-shadow: none;
+    opacity: 1 !important;
+    filter: none !important;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+
+    &:hover,
+    &:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 14px $shadow-light !important;
+    }
+
+    @include breakpoint($large) {
+      width: 110px;         // restore full size on desktop
+      height: 110px;
+    }
+  }
+}
+
+.author__name {
+  font-size: 1.05em;
+  font-weight: normal;
+  margin-top: 0.7em;
+  margin-bottom: 0;
+}
+
+.author__name-zh {
+  font-size: 0.82em;
+  color: $morandi-muted-soft;
+  margin-top: 0.2em;           // tight gap below English name
+  margin-bottom: 0.4em;        // slightly tighter gap before bio
+  letter-spacing: 0.04em;
+}
+
+.author__bio {
+  font-size: 0.92em;
+  font-style: normal;
+  color: $site-text-nav;
+  line-height: 1.24;           // compact the three-line role stack a little more
+  margin-top: 0.5rem;
+
+  br { display: block; content: ""; margin-top: 0.06em; }
+
+  // _sidebar.scss overrides p/li to sans-serif; force Mononoki here
+  p {
+    margin: 0;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: $mono-stack !important;
+  }
+}
+
+// Belt-and-suspenders: catch any direct text nodes wrapped by markdownify
+.author__bio { font-family: $mono-stack !important; }
+
+.home .author__urls-wrapper { display: none; }
+.author__sidebar-thoughts { display: none; }
+
+.home .author__bio {
+  line-height: 1.08;
+  margin-top: 0.34em;
+
+  br { margin-top: 0.02em; }
+}
+
+// desktop: show full bio, hide mobile variant
+@include breakpoint($large) {
+  .author__bio--desktop { display: block; }
+  .author__bio--mobile  { display: none; }
+}
+
+.author__urls-wrapper {
+  margin-top: 0.75em;
+  font-size: 0.96em;
+
+  // hide the Follow toggle button on desktop
+  @include breakpoint($large) {
+    .author__urls-toggle { display: none; }
+    .author__urls { display: block !important; }
+  }
+}
+
+.author__urls {
+  font-size: 0.86em;
+  line-height: 1.22;
+
+  li, a, .label { font-size: inherit; }
+
+  li {
+    margin-bottom: 0;
+    line-height: inherit;
+  }
+
+  a {
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: inherit;
+  }
+
+  // monochrome icons
+  i.fas, i.fab, i.fa {
+    color: $site-text-icon !important;
+  }
+
+  a {
+    color: $site-text-nav-soft;
+    &:hover,
+    &:focus-visible {
+      color: $link-color;
+      i.fas, i.fab, i.fa { color: $link-color !important; }
+    }
+  }
+
+  @include breakpoint($x-large) {
+    margin-top: 0.14rem;
+
+    li {
+      display: block;
+      margin-bottom: 0.42em;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      display: block;
+      line-height: 1.34;
+      padding-top: 0.08em;
+      padding-bottom: 0.08em;
+    }
+  }
+}
+
+// hide Follow button entirely on desktop
+.btn--inverse {
+  @include breakpoint($large) { display: none; }
+  font-size: 0.86em;
+  font-weight: normal;
+  border-radius: 2px;
+  padding: 0.25em 0.65em;
+}
+
+// -------------------------
+// page layout - single centered column, sidebar hidden on desktop
+// -------------------------
+.page {
+  float: none;
+  width: 100%;
+  max-width: $content-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 0;
+  box-sizing: border-box;
+
+  .page__inner-wrap {
+    float: none;
+    width: 100%;
+    max-width: $content-width;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+}
+
+.sidebar { display: none !important; }
+
+// -------------------------
+// page big-title - 404 design language
+// -------------------------
+.page-bigtitle {
+  display: inline-block;
+  margin: 0.2rem 0 2rem;
+  padding: 0;
+  font-size: clamp(2.2rem, 4.8vw, 3.6rem);
+  line-height: 0.96;
+  letter-spacing: -0.045em;
+  font-weight: normal;
+  color: $site-text;
+  text-transform: lowercase;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.12em;
+
+  @include breakpoint($large) {
+    margin: 0.4rem 0 2.4rem;
+  }
+}
+
+@include breakpoint($x-large) {
+  .author__bio--desktop {
+    line-height: 1.02;
+
+    p {
+      line-height: inherit;
+    }
+
+    br {
+      margin-top: 0.03em;
+    }
+  }
+}
+
+// -------------------------
+// TOC (right sidebar) - REMOVED to expand main content
+// -------------------------
+.toc {
+  display: none;
+}
+
+// -------------------------
+// page content
+// -------------------------
+.page__content {
+  p,
+  li,
+  dl {
+    line-height: 1.76;
+  }
+
+  p {
+    margin-bottom: 0.9em;
+  }
+
+  h2 {
+    font-family: $mono-stack;
+    font-size: 1.15em;
+    font-weight: normal;
+    text-transform: lowercase;
+    letter-spacing: 0.02em;
+    margin-top: 2em;
+    padding-bottom: 0.35em;
+    border-bottom: none;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 10ch;
+      border-bottom: 1px solid $site-separator-soft;
+    }
+  }
+
+  h3 {
+    font-size: 1.05em;
+    margin-top: 1.5em;
+  }
+}
+
+body:not(.home) .page__content {
+  font-family: $font-prose;
+}
+
+body:not(.home) .page__content p,
+body:not(.home) .page__content li,
+body:not(.home) .page__content dl,
+body:not(.home) .page__content blockquote,
+body:not(.home) .page__content figcaption,
+body:not(.home) .page__content table,
+body:not(.home) .page__content .page__lede,
+body:not(.home) .page__content .writing-entry__text,
+body:not(.home) .page__content .thoughts-card__text,
+body:not(.home) .page__content .photos-intro,
+body:not(.home) .page__content .photo-section__note-text {
+  font-family: $font-prose;
+}
+
+body:not(.home) .page__content p *,
+body:not(.home) .page__content li *,
+body:not(.home) .page__content dl *,
+body:not(.home) .page__content blockquote *,
+body:not(.home) .page__content figcaption *,
+body:not(.home) .page__content table *,
+body:not(.home) .page__content .page__lede *,
+body:not(.home) .page__content .writing-entry__text *,
+body:not(.home) .page__content .thoughts-card__text *,
+body:not(.home) .page__content .photos-intro *,
+body:not(.home) .page__content .photo-section__note-text * {
+  font-family: inherit;
+}
+
+body:not(.home) .page__content h1,
+body:not(.home) .page__content h2,
+body:not(.home) .page__content h3,
+body:not(.home) .page__content h4,
+body:not(.home) .page__content h5,
+body:not(.home) .page__content h6,
+body:not(.home) .page__content h1 *,
+body:not(.home) .page__content h2 *,
+body:not(.home) .page__content h3 *,
+body:not(.home) .page__content h4 *,
+body:not(.home) .page__content h5 *,
+body:not(.home) .page__content h6 * {
+  font-family: $font-display;
+}
+
+.home,
+.home .page__content,
+.home .page__content *,
+.home figcaption,
+.home figcaption * {
+  font-family: $mono-stack;
+}
+
+// homepage section headers - bold Mononoki with subtle animation
+.home .page__content h2 {
+  font-family: $mono-stack;
+  font-size: 1.45em;
+  font-weight: bold;
+  text-transform: lowercase;
+  letter-spacing: -0.02em;
+  color: $morandi-ink;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0.4em;
+  animation: haothings-scale-in 0.34s ease both;
+
+  &::after {
+    display: none;
+  }
+}
+
+@keyframes haothings-scale-in {
+  from { opacity: 0; transform: scale(0.98); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.home .page__content h2 a {
+  color: inherit;
+  text-decoration: none;
+  &:hover,
+  &:focus-visible { color: inherit; }
+}
+
+.home .page__content .header-link {
+  display: none;
+}
