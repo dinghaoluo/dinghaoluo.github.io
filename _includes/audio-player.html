@@ -1,0 +1,7 @@
+{% comment %}
+  Audio player component.
+  Parameters: src, title, waveform (optional), duration (optional)
+{% endcomment %}
+<figure class="audio-track" data-src="{{ include.src | relative_url }}"{% if include.waveform %} data-waveform="{{ include.waveform | relative_url }}"{% endif %}>
+  <figcaption class="audio-track__title">{{ include.title }}</figcaption>
+</figure>
