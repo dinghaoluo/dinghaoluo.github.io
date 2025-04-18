@@ -45,6 +45,35 @@ I listen to far more than I make, which is probably healthy. Prog used to be at 
 
 ---
 
-## reading
+## thoughts
 
-I read compulsively: novels, histories, science, whatever pulls me in for a week. My mom says I used to devour everything I could get my hands on as a kid, and the habit stuck. The writers I keep returning to right now are Paul Auster, Roberto Bolaño, and Thomas Pynchon.
+{% assign all_thoughts = site.data.thoughts | sort: 'posted' | reverse %}
+{% assign book_thoughts = all_thoughts | where: 'type', 'book' %}
+
+<div class="home-thoughts-block home-thoughts-block--books" markdown="1">
+<div class="home-covers home-covers--books" aria-hidden="true" data-count="12" data-mobile-count="15">
+  {% for t in book_thoughts %}{% if t.image %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
+</div>
+
+My mom says I used to devour all the books that I could get my hands on as a kid, and reading was probably my favourite pastime from childhood through to my college years. The early years of my PhD interrupted the habit for a while, and it was Paul Auster's [***Moon Palace***](/thoughts/#moon-palace) (1989) that pulled me back in. Since then I have been making up for lost time. The writers I return to most, for now, are Thomas Pynchon and Roberto Bolaño. If you are looking for inspiration and haven't read any of these, I promise you won't regret your time:
+
+- Thomas Pynchon's [***Vineland*** (1990)](/thoughts/#vineland) if you want a weird, sad, and very American novel about the death of the 1960s
+- [***Capitalist Realism*** (2009)](/thoughts/#capitalist-realism-is-there-no-alternative) by Mark Fisher was a 3-hour read that sharpened my politics
+- [***When We Cease to Understand the World*** (2020)](/thoughts/#when-we-cease-to-understand-the-world) by Benjamín Labatut was part physics history, part fever dream, and shook my physics-uninitiated heart
+
+<p class="home-thoughts-links"><a href="/thoughts/?type=book">→ books</a></p>
+</div>
+
+<div class="home-thoughts-block home-thoughts-block--screen" markdown="1">
+<div class="home-covers home-covers--screen" aria-hidden="true" data-count="12" data-tablet-count="9" data-mobile-count="15">
+  {% for t in all_thoughts %}{% if t.image and t.type == 'film' %}<a href="/thoughts/#{% if t.title_en %}{{ t.title_en | slugify }}{% else %}{{ t.title | slugify }}{% endif %}" class="home-covers__link" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% if t.image and t.type == 'tv' %}<a href="/thoughts/#{% if t.title_en %}{{ t.title_en | slugify }}{% else %}{{ t.title | slugify }}{% endif %}" class="home-covers__link" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
+</div>
+
+I came to film late. I write about films and TV shows when their scenes keep coming back afterwards, and here are some:
+
+- Lee Chang-dong's [***Poetry*** (2010)](/thoughts/#poetry) takes on the almost impossible task of seeing the world clearly and still finding beauty in it
+- [***Aftersun*** (2022)](/thoughts/#aftersun) by Charlotte Wells made me tear up with a remix of Queen and Bowie's 'Under Pressure' (1981)
+- Emir Kusturica's [***Underground*** (1995)](/thoughts/#underground) if you want Yugoslav history as a three-hour brass-band epic that ends *Solaris* (1972)-style
+
+<p class="home-thoughts-links"><a href="/thoughts/?type=film">→ films</a> · <a href="/thoughts/?type=tv">→ tv</a></p>
+</div>
