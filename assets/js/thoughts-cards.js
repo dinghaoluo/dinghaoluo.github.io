@@ -23,7 +23,7 @@
       if (card.classList.contains('is-open')) {
         wrap.style.transition = 'max-height 0.32s ease';
         wrap.style.maxHeight  = collapsedH + 'px';
-        card.classList.toggle('is-open');
+        card.classList.remove('is-open');
         if (toggle) toggle.setAttribute('aria-expanded', 'false');
         wrap.addEventListener('transitionend', function handler() {
           wrap.style.maxHeight  = '';
