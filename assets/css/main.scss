@@ -958,7 +958,7 @@ body:not(.home) .page__content h6 * {
 .thoughts-card__meta {
   font-size: 1.2em;
   color: $morandi-muted;
-  margin-bottom: 0.22em;
+  margin-bottom: 0.18em;
   line-height: 1.55;
 }
 
@@ -1150,6 +1150,8 @@ body:not(.home) .page__content h6 * {
   font-size: 0.85em;
   color: $morandi-muted-soft;
   cursor: pointer;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: transparent;
   transition: color 0.15s ease;
   line-height: 1;
 
