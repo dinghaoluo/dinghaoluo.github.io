@@ -49,6 +49,7 @@ I listen to far more than I make, which is probably healthy. Prog used to be at 
 
 {% assign all_thoughts = site.data.thoughts | sort: 'posted' | reverse %}
 {% assign book_thoughts = all_thoughts | where: 'type', 'book' %}
+{% assign game_thoughts = all_thoughts | where: 'type', 'game' %}
 
 <div class="home-thoughts-block home-thoughts-block--books" markdown="1">
 <div class="home-covers home-covers--books" aria-hidden="true" data-count="12" data-mobile-count="15">
@@ -76,4 +77,18 @@ I came to film late. I write about films and TV shows when their scenes keep com
 - Emir Kusturica's [***Underground*** (1995)](/thoughts/#underground) if you want Yugoslav history as a three-hour brass-band epic that ends *Solaris* (1972)-style
 
 <p class="home-thoughts-links"><a href="/thoughts/?type=film">→ films</a> · <a href="/thoughts/?type=tv">→ tv</a></p>
+</div>
+
+<div class="home-thoughts-block home-thoughts-block--games" markdown="1">
+<div class="home-covers home-covers--games" aria-hidden="true" data-count="12" data-tablet-count="9" data-mobile-count="15">
+  {% for t in game_thoughts %}{% if t.image %}<a href="/thoughts/#{% if t.title_en %}{{ t.title_en | slugify }}{% else %}{{ t.title | slugify }}{% endif %}" class="home-covers__link" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
+</div>
+
+I've played games casually since I was a kid, until *Dark Souls* (2011) made me take them seriously. It taught me that games could demand the same depth of attention to their worlds and characters that novels do, and I got hooked on that: the challenge, the exploration, and the stories that long outlast the play sessions. These are some of the games that drew me in most:
+
+- [***Outer Wilds*** (2019)](/thoughts/#outer-wilds) (Mobius Digital) is a love letter to the beautiful ephemerality of organic civilisations
+- Remedy Entertainment's [***Alan Wake 2*** (2023)](/thoughts/#alan-wake-2) blends cosmic horror with a philosophical unravelling of authorship
+- [***Elden Ring*** (2022)](/thoughts/#elden-ring) by FromSoftware demonstrates how a game can tell a thousand wordless stories with hand-crafted environments
+
+<p class="home-thoughts-links"><a href="/thoughts/?type=game">→ games</a></p>
 </div>
