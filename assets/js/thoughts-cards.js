@@ -77,6 +77,7 @@
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
         activeFilter = btn.getAttribute('data-filter') || 'all';
+        if (searchInput) searchInput.value = '';
         btns.forEach(function (b) { b.classList.remove('is-active'); });
         btn.classList.add('is-active');
         applyFilter();
