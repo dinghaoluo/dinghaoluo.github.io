@@ -23,6 +23,9 @@
 {% if page.url == "/thoughts/" or page.classes contains "home" %}
   <script src="{{ '/assets/js/thoughts-cards.js' | relative_url }}"></script>
 {% endif %}
+{% if page.url == "/writing/" %}
+  <script src="{{ '/assets/js/writing-archive.js' | relative_url }}"></script>
+{% endif %}
 {% if site.after_footer_scripts %}
   {% for script in site.after_footer_scripts %}
     <script src="{{ script | relative_url }}"></script>
