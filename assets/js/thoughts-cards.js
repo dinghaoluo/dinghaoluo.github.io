@@ -17,7 +17,7 @@
     var cards = Array.from(cardsRoot.querySelectorAll('.thoughts-card'));
     var btns = Array.from(document.querySelectorAll('.thoughts-filter-btn'));
     var searchInput = document.querySelector('.thoughts-search-input');
-    var PAGE_SIZE = 32;
+    var PAGE_SIZE = 24;
     var currentPage = 1;
     var activeFilter = 'all';
     var matchedCards = cards.slice();
