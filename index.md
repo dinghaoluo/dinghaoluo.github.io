@@ -11,7 +11,7 @@ Reach out: [dinghao.luo@outlook.com](mailto:dinghao.luo@outlook.com)<br>Find me:
 
 ---
 
-## writing
+<h2 id="writing"><a href="/writing/">writing :)</a></h2>
 
 I have been writing since I was fifteen, mostly in Chinese under the pen-name `amoxitoxin`, and mostly on a WeChat blog called 阿莫東森的無聊生活 that I started in secondary school. Some of these pieces, along with newer English ones, are now on the [writing](/writing/) page.
 
@@ -21,7 +21,7 @@ Since my undergraduate years at Cambridge, and now through my PhD, I have also w
 
 ---
 
-## music
+<h2 id="music"><a href="/music/">music :)</a></h2>
 
 I also make music, under the same name: a one-person prog-rock project with some singles, an EP, and one full-length album. You can find me on [Bandcamp](https://amoxitoxin.bandcamp.com/).
 
@@ -45,7 +45,7 @@ I listen to far more than I make, which is probably healthy. Prog used to be at 
 
 ---
 
-## thoughts
+<h2 id="thoughts"><a href="/thoughts/">thoughts :)</a></h2>
 
 {% assign all_thoughts = site.data.thoughts | sort: 'posted' | reverse %}
 {% assign book_thoughts = all_thoughts | where: 'type', 'book' %}
