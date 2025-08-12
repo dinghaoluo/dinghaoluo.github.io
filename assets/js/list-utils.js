@@ -1,0 +1,109 @@
+/* list-utils.js - shared utilities for filter/search/pagination pages */
+(function () {
+  'use strict';
+
+  function normalise(str) {
+    return (str || '').toLowerCase().replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+
+  function scrollToFilter(strip) {
+    if (!strip) return;
+    var top = strip.getBoundingClientRect().top + window.pageYOffset - 18;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  }
+
+  function movePill(container, pillEl, target) {
+    if (!container || !pillEl || !target) return;
+    var sr = container.getBoundingClientRect();
+    var br = target.getBoundingClientRect();
+    pillEl.style.left = (br.left - sr.left) + 'px';
+    pillEl.style.width = br.width + 'px';
+  }
+
+  function updateSearchClear(input, clearBtn) {
+    var hasQuery = !!(input && input.value);
+    if (clearBtn) clearBtn.hidden = !hasQuery;
+    if (input && input.parentNode) {
+      input.parentNode.classList.toggle('has-query', hasQuery);
+    }
+  }
+
+  function debounce(fn, ms) {
+    var timer = null;
+    return function () {
+      clearTimeout(timer);
+      var args = arguments;
+      var ctx = this;
+      timer = setTimeout(function () { fn.apply(ctx, args); }, ms);
+    };
+  }
+
+  function totalPages(matchedCount, perPage) {
+    return Math.max(1, Math.ceil(matchedCount / perPage));
+  }
+
+  function updatePagination(opts) {
+    var page = opts.page;
+    var tp = opts.totalPages;
+    var perPage = opts.perPage;
+    var matchedCount = opts.matchedCount;
+    var start = (page - 1) * perPage;
+    var end = Math.min(start + perPage, matchedCount);
+    var rangeText = matchedCount ? (start + 1) + '-' + end + ' of ' + matchedCount : '';
+
+    if (opts.inputEls) {
+      opts.inputEls.forEach(function (el) { el.value = page; el.max = tp; });
+    }
+    if (opts.totalEls) {
+      opts.totalEls.forEach(function (el) { el.textContent = tp; });
+    }
+    if (opts.rangeEls) {
+      opts.rangeEls.forEach(function (el) { el.textContent = rangeText; });
+    }
+    if (opts.prevBtns) {
+      opts.prevBtns.forEach(function (btn) { btn.disabled = page <= 1; });
+    }
+    if (opts.nextBtns) {
+      opts.nextBtns.forEach(function (btn) { btn.disabled = page >= tp; });
+    }
+    if (opts.navEls) {
+      opts.navEls.forEach(function (wrap) { wrap.hidden = tp <= 1; });
+    }
+  }
+
+
+  function escapeRegExp(str) {
+    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  function handlePageInput(inputEl, totalPagesFn, goToPageFn) {
+    var val = parseInt(inputEl.value, 10);
+    if (isNaN(val) || val < 1) val = 1;
+    var tp = totalPagesFn();
+    if (val > tp) val = tp;
+    goToPageFn(val);
+  }
+
+  function restoreOrder(items, container, attr) {
+    var sorted = items.slice().sort(function (a, b) {
+      return Number(a.dataset[attr]) - Number(b.dataset[attr]);
+    });
+    var fragment = document.createDocumentFragment();
+    sorted.forEach(function (item) { fragment.appendChild(item); });
+    container.appendChild(fragment);
+    return sorted;
+  }
+
+  window.ListUtils = {
+    normalise: normalise,
+    escapeRegExp: escapeRegExp,
+    scrollToFilter: scrollToFilter,
+    movePill: movePill,
+    updateSearchClear: updateSearchClear,
+    debounce: debounce,
+    totalPages: totalPages,
+    updatePagination: updatePagination,
+    handlePageInput: handlePageInput,
+    restoreOrder: restoreOrder
+  };
+})();
