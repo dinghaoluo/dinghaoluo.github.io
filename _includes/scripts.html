@@ -20,6 +20,10 @@
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
+
+{% if page.url == "/thoughts/" or page.classes contains "home" or page.url == "/music/" or page.url == "/writing/" %}
+<script src="{{ '/assets/js/list-utils.js' | relative_url }}"></script>
+{% endif %}
 {% if page.url == "/thoughts/" or page.classes contains "home" %}
   <script src="{{ '/assets/js/thoughts-cards.js' | relative_url }}"></script>
 {% endif %}
