@@ -94,6 +94,39 @@
     return sorted;
   }
 
+  function handleHash(opts) {
+    var hash = window.location.hash;
+    if (!hash || hash.length < 2) return false;
+    var targetId = decodeURIComponent(hash.slice(1));
+    var target = document.getElementById(targetId);
+    if (!target || !opts.matches(target)) return false;
+
+    if (opts.prepare) opts.prepare(target);
+
+    var items = opts.items();
+    var idx = items.indexOf(target);
+    if (idx === -1 && opts.fallback) {
+      opts.fallback(target);
+      items = opts.items();
+      idx = items.indexOf(target);
+    }
+    if (idx === -1) return false;
+
+    var perPage = opts.perPage();
+    opts.setPage(Math.floor(idx / perPage) + 1);
+    opts.render();
+
+    setTimeout(function () {
+      if (opts.open) {
+        opts.open(target);
+      } else {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 350);
+
+    return true;
+  }
+
   window.ListUtils = {
     normalise: normalise,
     escapeRegExp: escapeRegExp,
@@ -104,6 +137,7 @@
     totalPages: totalPages,
     updatePagination: updatePagination,
     handlePageInput: handlePageInput,
-    restoreOrder: restoreOrder
+    restoreOrder: restoreOrder,
+    handleHash: handleHash
   };
 })();
