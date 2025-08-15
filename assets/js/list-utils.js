@@ -2,8 +2,21 @@
 (function () {
   'use strict';
 
+  var nonWordRe = /[^a-z0-9一-鿿\s]/g;
+  try {
+    nonWordRe = new RegExp('[^\\p{L}\\p{N}\\s]', 'gu');
+  } catch (_) {
+    // browser doesn't support unicode property escapes; CJK range above is fine
+  }
+
   function normalise(str) {
-    return (str || '').toLowerCase().replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
+    return (str || '')
+      .normalize('NFD')
+      .replace(/[̀-ͯ]/g, '')
+      .toLowerCase()
+      .replace(nonWordRe, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
   }
 
   function scrollToFilter(strip) {
@@ -71,27 +84,12 @@
     }
   }
 
-
-  function escapeRegExp(str) {
-    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  }
-
   function handlePageInput(inputEl, totalPagesFn, goToPageFn) {
     var val = parseInt(inputEl.value, 10);
     if (isNaN(val) || val < 1) val = 1;
     var tp = totalPagesFn();
     if (val > tp) val = tp;
     goToPageFn(val);
-  }
-
-  function restoreOrder(items, container, attr) {
-    var sorted = items.slice().sort(function (a, b) {
-      return Number(a.dataset[attr]) - Number(b.dataset[attr]);
-    });
-    var fragment = document.createDocumentFragment();
-    sorted.forEach(function (item) { fragment.appendChild(item); });
-    container.appendChild(fragment);
-    return sorted;
   }
 
   function handleHash(opts) {
@@ -127,9 +125,22 @@
     return true;
   }
 
+  function escapeRegExp(str) {
+    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  function restoreOrder(items, container, attr) {
+    var sorted = items.slice().sort(function (a, b) {
+      return Number(a.dataset[attr]) - Number(b.dataset[attr]);
+    });
+    var fragment = document.createDocumentFragment();
+    sorted.forEach(function (item) { fragment.appendChild(item); });
+    container.appendChild(fragment);
+    return sorted;
+  }
+
   window.ListUtils = {
     normalise: normalise,
-    escapeRegExp: escapeRegExp,
     scrollToFilter: scrollToFilter,
     movePill: movePill,
     updateSearchClear: updateSearchClear,
@@ -137,7 +148,8 @@
     totalPages: totalPages,
     updatePagination: updatePagination,
     handlePageInput: handlePageInput,
-    restoreOrder: restoreOrder,
-    handleHash: handleHash
+    handleHash: handleHash,
+    escapeRegExp: escapeRegExp,
+    restoreOrder: restoreOrder
   };
 })();
