@@ -92,7 +92,7 @@
   });
 })();
 
-/* thoughts filter strip - category filtering, search, shuffle, pagination, and hash navigation */
+/* thoughts filter strip - category filtering, search, weighted reshuffle, pagination, and hash navigation */
 (function () {
   'use strict';
 
@@ -265,6 +265,17 @@
       });
     }
 
+    function reactionWeight(card) {
+      var reaction = (card.getAttribute('data-reaction') || '').toLowerCase();
+
+      if (reaction === 'loved' || reaction === 'hated') return 5;
+      if (reaction === 'liked' || reaction === 'disliked') return 3;
+      return 1;
+    }
+
+    function weightedShuffle(list) {
+      return ListUtils.weightedShuffle(list, reactionWeight);
+    }
 
     function reorderCards(orderedCards) {
       var fragment = document.createDocumentFragment();
@@ -510,7 +521,7 @@
           return;
         }
 
-        var pool = matchedCards.slice(); matchedCards = []; while (pool.length) { var idx = Math.floor(Math.random() * pool.length); matchedCards.push(pool.splice(idx, 1)[0]); }
+        matchedCards = weightedShuffle(matchedCards);
         var shuffledSet = new Set(matchedCards);
         reorderCards(matchedCards.concat(cards.filter(function (card) {
           return !shuffledSet.has(card);

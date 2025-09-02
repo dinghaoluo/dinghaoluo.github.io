@@ -19,6 +19,10 @@
       .trim();
   }
 
+  function escapeRegExp(str) {
+    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
   function scrollToFilter(strip) {
     if (!strip) return;
     var top = strip.getBoundingClientRect().top + window.pageYOffset - 18;
@@ -62,7 +66,7 @@
     var matchedCount = opts.matchedCount;
     var start = (page - 1) * perPage;
     var end = Math.min(start + perPage, matchedCount);
-    var rangeText = matchedCount ? (start + 1) + '-' + end + ' of ' + matchedCount : '';
+    var rangeText = matchedCount ? (start + 1) + '–' + end + ' of ' + matchedCount : '';
 
     if (opts.inputEls) {
       opts.inputEls.forEach(function (el) { el.value = page; el.max = tp; });
@@ -90,6 +94,33 @@
     var tp = totalPagesFn();
     if (val > tp) val = tp;
     goToPageFn(val);
+  }
+
+  function weightedShuffle(items, weightFn) {
+    var pool = items.slice();
+    var result = [];
+    while (pool.length) {
+      var total = 0;
+      for (var i = 0; i < pool.length; i++) total += weightFn(pool[i]);
+      var threshold = Math.random() * total;
+      var idx = pool.length - 1;
+      for (var j = 0; j < pool.length; j++) {
+        threshold -= weightFn(pool[j]);
+        if (threshold <= 0) { idx = j; break; }
+      }
+      result.push(pool.splice(idx, 1)[0]);
+    }
+    return result;
+  }
+
+  function restoreOrder(items, container, attr) {
+    var sorted = items.slice().sort(function (a, b) {
+      return Number(a.dataset[attr]) - Number(b.dataset[attr]);
+    });
+    var fragment = document.createDocumentFragment();
+    sorted.forEach(function (item) { fragment.appendChild(item); });
+    container.appendChild(fragment);
+    return sorted;
   }
 
   function handleHash(opts) {
@@ -125,22 +156,9 @@
     return true;
   }
 
-  function escapeRegExp(str) {
-    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  }
-
-  function restoreOrder(items, container, attr) {
-    var sorted = items.slice().sort(function (a, b) {
-      return Number(a.dataset[attr]) - Number(b.dataset[attr]);
-    });
-    var fragment = document.createDocumentFragment();
-    sorted.forEach(function (item) { fragment.appendChild(item); });
-    container.appendChild(fragment);
-    return sorted;
-  }
-
   window.ListUtils = {
     normalise: normalise,
+    escapeRegExp: escapeRegExp,
     scrollToFilter: scrollToFilter,
     movePill: movePill,
     updateSearchClear: updateSearchClear,
@@ -148,8 +166,8 @@
     totalPages: totalPages,
     updatePagination: updatePagination,
     handlePageInput: handlePageInput,
-    handleHash: handleHash,
-    escapeRegExp: escapeRegExp,
-    restoreOrder: restoreOrder
+    weightedShuffle: weightedShuffle,
+    restoreOrder: restoreOrder,
+    handleHash: handleHash
   };
 })();
