@@ -5,7 +5,7 @@ classes: home
 ---
 *Hi, Dinghao here :)*
 
-I'm a PhD student at the Max Planck Florida Institute for Neuroscience, studying how a tiny brainstem nucleus uses dopamine to tune memory accuracy in the hippocampus. I'm in my fourth year and spend most of my time imaging neurons and running behavioural experiments.
+I'm a PhD student at the Max Planck Florida Institute for Neuroscience, studying how a tiny brainstem nucleus uses dopamine to rapidly tune memory accuracy in the hippocampus. I'm finishing my fourth year and starting to think about what comes next.
 
 Reach out: [dinghao.luo@outlook.com](mailto:dinghao.luo@outlook.com)<br>Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.com/user/amoxdl24/) · [Instagram](https://www.instagram.com/amoxitoxin) · [CV](https://dinghaoluo.github.io/cv/)
 
