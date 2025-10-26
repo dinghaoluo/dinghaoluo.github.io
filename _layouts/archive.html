@@ -26,6 +26,8 @@ layout: default
     {% endif %}
     {{ content }}
 
+    {% include drift-link.html %}
+
     {% if page.author_profile or layout.author_profile %}
       <div class="page__author-footer">
         {% include author-profile.html profile_position='footer' %}
