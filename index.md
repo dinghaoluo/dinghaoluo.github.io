@@ -17,6 +17,8 @@ I have been writing since I was fifteen, mostly in Chinese under the pen-name `a
 
 Since my undergraduate years at Cambridge, and now through my PhD, I have also written about science. I was one of the earliest members of Neu-Reality (神經現實), a Chinese-language neuroscience science communication platform, and spent three years as science editor and translator there. After that were seven months at *Scientific American* China, where I wrote weekly news on their digital platform, edited translations of each month's *SciAm* magazine, and finished a print feature on the Accelerating Research on Consciousness initiative.
 
+My longest writing project was translating Merlin Sheldrake's ***Entangled Life*** (2020) into Chinese ([《菌絡萬象》](https://www.amazon.com/dp/7559677754)), taking almost 3 years as I was juggling my PhD experiments and analyses on the side.
+
 <a href="/writing/" class="site-nav-link">→ writing</a>
 
 ---
