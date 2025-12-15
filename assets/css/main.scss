@@ -828,7 +828,6 @@ body:not(.home) .page__content h6 * {
     border-radius: 3px;
     border: 1px solid rgba(155, 146, 138, 0.18);
     opacity: 0.92;
-    will-change: opacity;
     filter: saturate(0.92) contrast(1.02);
     transition: opacity 0.2s ease, filter 0.2s ease;
 
@@ -861,7 +860,6 @@ body:not(.home) .page__content h6 * {
   padding: 0.9em 0.5em;
   margin: 0 -0.5em;
   border-bottom: 1px solid $overlay-muted-soft;
-  transition: border-color 0.18s ease;
   border-radius: 3px;
   cursor: pointer;
   transition: background 0.15s ease, transform 0.18s ease, box-shadow 0.18s ease;
@@ -2206,8 +2204,8 @@ body.writing-page .page__content .writing-entry__title em {
 
 .writing-entry {
   display: flex;
-  gap: 1.35rem;
-  padding: 1.5rem 0;
+  gap: 1.2rem;
+  padding: 1.3rem 0;
   border-bottom: 1px solid $overlay-muted-soft;
 
   &:last-child { border-bottom: none; }

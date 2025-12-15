@@ -1,5 +1,25 @@
 # entries ordered most-recent-first by posted date
 
+- title: "Solenoid"
+  type: "book"
+  creator: "Mircea Cărtărescu, trans. Sean Cotter (EN)"
+  creator_role: "by"
+  year: 2015
+  pin: true
+  pin_order: "01-book-01"
+  eval: "loved"
+  image: "/assets/images/thoughts/books/solenoid.jpg"
+  posted: "2025-11-29"
+  revised: "2025-11-29"
+  text: |
+    I have a full review of ***Solenoid*** here: [Nothing Is Strange to a Child](/writing/solenoid/).
+
+    'Bucharest is not at all a real city in my books. It's a state of mind and it's a metaphor,' Cărtărescu said in a [2022 interview](https://theuntranslated.wordpress.com/2022/10/06/mircea-cartarescus-interview-for-de-reactor-on-solenoid-mites-butterflies-kafka-untranslatability-censorship-a-paradise-in-ruins-and-his-latest-novel-theodoros/). That state of mind, that metaphor, wrapped in Cărtărescu's masterful maximalism, creates a whole distinct and (borrowing a central notion from the book) child-like world. The book's Bucharest is 1980s tramlines, factories, apartment blocks, vacant lots, hospital wards, and labyrinthine school corridors, rendered with such precision and such sensory saturation that its ordinary surfaces begin to feel like organic tissue. Cărtărescu attacks the readers with an overwhelming barrage of details so vivid that the familiar feels strange again, similar to how staring at a word for too long often renders the word unfamiliar. Cărtărescu examines the banal and the familiar so deeply that structure starts to give way to minutiae, and we are forced to examine with him and question our heuristics and *a priori* believes.
+    
+    And this is the way Cărtărescu lays the groundwork for the strangeness of his Bucharest. After such banalities as lice in the narrator's hair and taking the tram to work, Cărtărescu introduces us to the solenoid buried under a boat-shaped house that the narrator just bought (six such solenoids are revealed across the novel). The narrator, after having sex in the house's bedroom with Irina (another teacher from the school in which he teaches), sees that his partner has been lifted from the bed. Surprised? Not quite, as the narrator just acknolwedges it as a fact. It's something that just *happens*, like all the other strangenesses in Cărtărescu's Bucharest. The city is at once literal and impossible, its architecture obeying dream-logic while remaining stubbornly, concretely Eastern European.
+
+    I rarely wait so long after finishing a title before I write down my thoughts. It's just that even weeks after finishing ***Solenoid***, I am still finding that ordinary objects (a school corridor, a pavement, a friend's bookshelf, the skin on the back of one's hand) have started to feel slightly wrong, as though Cărtărescu had walked through them first and left a hum that I cannot quite locate. Moving through Cărtărescu's Bucharest, thus, is one of the greatest and most impactful reading experiences of my life.
+
 - title: "Flesh"
   type: "book"
   creator: "David Szalay"
@@ -2089,6 +2109,61 @@
 
 
 
+
+- title: "یک تصادف ساده"
+  title_en: "It Was Just an Accident"
+  type: "film"
+  creator: "Jafar Panahi"
+  creator_role: "dir."
+  year: 2025
+  eval: "disliked"
+  image: "/assets/images/thoughts/films/it_was_just_an_accident.jpg"
+  posted: "2025-11-30"
+  revised: "2025-11-30"
+  text: |
+    It is hard to imagine that this was made by a director willing to endure imprisonment for his political convictions. The setup is promising: Vahid (Vahid Mobasseri), a mechanic, believes he has recognised, from a prosthetic-leg sound and a garage encounter, his secret-police torturer Eghbal (Ebrahim Azizi), and the film should radiate with the voltage of that uncertainty. Instead, every character is a cardboard ideological stereotype; the proclamations are tired and unoriginal; and the film drifts towards an absolution-shaped ambiguity, as though the foot soldiers of the state apparatus were merely following orders and are therefore innocent, free to kill with impunity and deserving of release when all is said and done. We have not heard quite enough of that argument since the Nuremberg trials? Iranian cinema needs new blood; there is no longer any reason to wait for Panahi.
+
+- title: "Bugonia"
+  type: "film"
+  creator: "Yorgos Lanthimos"
+  creator_role: "dir."
+  year: 2025
+  eval: "loved"
+  image: "/assets/images/thoughts/films/bugonia.jpg"
+  posted: "2025-11-30"
+  revised: "2025-11-30"
+  text: |
+    This is Lanthimos's cleanest, most coherently told film, and sufficient proof, unlike *Poor Things* (2023), that he is capable of sustaining his own style while working across a broad, straightforwardly presented canvas. The remake's bones come from Jang Joon-hwan's *Save the Green Planet!* (2003), that cult monument to Korean absurdism, and Lanthimos has the good sense not to smother the source: the captor-captive dynamic, class hierarchy, and conspiracy-as-theology all survive the transplant intact. Jesse Plemons and Aidan Delbis make for a wonderfully mismatched pair of true believers, and Emma Stone's CEO, deadpan and impenetrable, is the film's still centre around which all the delusion orbits.
+
+    The critique of capital is muted, present more as atmosphere than argument, but that restraint is itself a formal choice: the film leaves the System unexplained and renders, viscerally, how the System produces the men inside it. The title's entomological mythology, ***bugonia***, the ancient fantasy of bees spontaneously generated from a bovine carcass, sits perfectly over the film's horror: that conspiracy thinking is not an aberration but a metabolic process, the mind's attempt to generate meaning from the rotting body of late capitalism. Anyone might end up as a human specimen in Teddy's laboratory; in 2025, that feels like plain description.
+
+- title: "어쩔 수가 없다"
+  title_en: "No Other Choice"
+  type: "film"
+  creator: "Park Chan-wook"
+  creator_role: "dir."
+  year: 2025
+  eval: "liked"
+  image: "/assets/images/thoughts/films/cant_help_it.jpg"
+  posted: "2025-11-25"
+  revised: "2025-11-25"
+  text: |
+    The title is spoken first by the American executives who fire Yoo Man-su: the market leaves them no other choice. It recurs as Man-su himself adopts it, a phrase that migrates from the language of capital to the language of murder without changing its grammar. Park Chan-wook spent twenty years developing this adaptation of Donald Westlake's *The Ax*, and one senses the patience in every frame: the tonal architecture, shifting from slapstick to horror to something closer to economic theology, is controlled with a precision that makes *Parasite* (2019) look comparatively blunt in its class mechanics. Park understands what Bong's film only gestured towards: late capitalism creates competitors before it creates monsters. Man-su does not target the executives who destroyed his livelihood; he targets his fellow laid-off workers, the people who should be his comrades, because the System has made solidarity unthinkable and competition the only available grammar of survival.
+    I recognised something in Man-su that I did not want to recognise. Lee Byung-hun, opposite Son Ye-jin as his wife Mi-ri, builds the performance around a specific contradiction: a craftsman who loves papermaking, who valued his twenty-five years of labour, and who is blindsided by the discovery that capital does not care what one produces or who produces it. The worsening toothache is a precise metaphor, moral decay made somatic, and Park lets it do its work without commentary. The Žižekian disavowal is everywhere: 'I know this is wrong, but I have no other choice' is the formula that enables every killing, every lie, every domestic betrayal. And the ending is the bleakest joke of all: Man-su gets the job, walks into a paper mill run entirely by machines, and stands alone in a mausoleum of automation. The competition is over. The competitors are dead. The job no longer requires a human being. I left the cinema thinking about every application I have ever sent into a market that was not designed to answer. Park has said it is hard to be optimistic, and the film honours that difficulty without flinching.
+
+- title: "If I Had Legs I'd Kick You"
+  type: "film"
+  creator: "Mary Bronstein"
+  creator_role: "dir."
+  year: 2025
+  eval: "loved"
+  image: "/assets/images/thoughts/films/if_i_had_legs_id_kick_you.jpg"
+  posted: "2025-11-23"
+  revised: "2025-11-23"
+  text: |
+    Several times nearly unable to breathe: hard to believe this runs under two hours. Mary Bronstein's debut takes the figure of the hole as its organising principle and means it literally twice over. Linda (Rose Byrne, in a performance of terrifying physical commitment) is a psychotherapist whose daughter depends on a gastric feeding tube; a hole in the bedroom ceiling opens one night and will not close. The two apertures rhyme, and Linda's magical thinking binds them: she cannot separate the wound in her child's body from the wound in the architecture, and the film's claustrophobic grammar refuses to separate them either. Her husband Charles (Christian Slater) is at sea, unreachable; her own therapist (Conan O'Brien, in a turn of unnerving flatness) offers nothing she can use. Byrne plays Linda as unstoppable kinetic energy hurling itself against real and invented enemies alike, which makes the moments when she stops, drinks, and goes helpless all the more frightening, as though no force, however fierce, can survive the weight of anxiety and parenthood combined.
+
+    Maternal overwhelm is not sentiment but phenomenology: a texture of experience that most cinema gestures towards and then domesticates into something manageable. Bronstein refuses management. A$AP Rocky's James, the motel superintendent, radiates a warmth that Linda cannot absorb; the supporting cast compound what she already carries, each presence another demand on a body that has nothing left to give. She removes the feeding tube herself in a sequence that feels simultaneously like liberation and catastrophe; the two holes in the film collapse into one. The distance between what a parent needs and what a parent can bear is the weather the film inhabits, and weather does not resolve. I sat afterwards in something that resembles the silence after a ceiling has given way.
 
 - title: "One Battle After Another"
   type: "film"
@@ -6467,6 +6542,36 @@
 
 
 
+
+- title: "Constance"
+  type: "game"
+  creator: "Blue Backpack / btf Games"
+  creator_role: "by"
+  year: 2025
+  eval: "disliked"
+  genre: "metroidvania"
+  image: "/assets/images/thoughts/games/constance.jpg"
+  posted: "2025-11-30"
+  revised: "2025-11-30"
+  text: |
+    Higher expectations, harder the fall. A paintbrush as weapon promises untapped mechanical potential: none of it is realised here. The skill set lifts almost wholesale from the standout metroidvanias of the past decade, the wall-dash being the sole exception; on boss design, every encounter follows the same numbing loop of death, memorisation, and repetition, with no interactive wrinkle to distinguish one from another. In a year when metroidvania boss design is getting good, ***Constance*** is a reminder that studios with no instinct for encounter design still exist.
+
+    The map is useless in the manner of *Hyper Light Drifter* (2016)'s, forcing the player to build their own mental model of the environment rather than following a prescribed path, except that here the obscurity reads as oversight rather than intention. Exploration rewards are negligible; there is no equivalent of the hidden currencies or lore discoveries that make backtracking worthwhile in the genre's better entries. Fluid animations remain, in search of a game that deserves them.
+
+- title: "Lumines Arise"
+  type: "game"
+  creator: "Enhance / Monstars Inc."
+  creator_role: "by"
+  year: 2025
+  eval: "loved"
+  genre: "rhythm"
+  image: "/assets/images/thoughts/games/lumines_arise.jpg"
+  posted: "2025-11-29"
+  revised: "2025-11-29"
+  text: |
+    After the triumph of *Tetris Effect* (2018), it seemed implausible that Mizuguchi Tetsuya could push the concept further. What remained to be done? The answer, in ***Lumines Arise***, turns out to be texture. Each block type carries a distinct tactile quality, a haptic signature that gives every stage its own feel under the fingers; combined with the visual macro-scale, where the optical flow alone merits study by every rhythm-game developer working today, and the tight audio synchronisation that has been the series' signature since the original *Lumines* (2004), the whole thing finally earns the word 'synesthetic'. A simple falling-block game becomes a full sensory event: not a game with music, but a game that is music.
+
+    In interviews, Ishihara has described his ambition as 感動 (kando): to move emotionally. A modest word for an immodest goal, and ***Lumines Arise*** exceeds even that framing. The thirty-odd stages of Journey Mode build a cumulative intensity that dissolves time: one enters a flow-state in which the distinction between seeing and hearing softens until one is uncertain which sense is doing the work. The faint repetitiveness in the back half of the Journey and the occasional readability issues amid heavier visual effects are minor friction in a game that achieves what the Lumines series has always reached towards. We are, at last, hearing colours and seeing sounds. Mizuguchi and Ishihara can rest.
 
 - title: "The Outer Worlds 2"
   type: "game"
