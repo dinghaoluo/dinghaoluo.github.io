@@ -1,5 +1,35 @@
 # entries ordered most-recent-first by posted date
 
+- title: "Models of the Mind"
+  type: "book"
+  creator: "Grace Lindsay"
+  creator_role: "by"
+  year: 2021
+  eval: "loved"
+  image: "/assets/images/thoughts/books/models_of_the_mind.jpg"
+  posted: "2025-12-14"
+  revised: "2025-12-14"
+  text: |
+    Grace Lindsay's central claim in ***Models of the Mind*** is straightforward, (mostly) uncontroversial, but still often unrecognised in the field of neuroscience: the brain, often described as the most complex object in the known universe, simply cannot be understood without mathematics. Out of a palpable desire to convince the remaining non-believers, Lindsay then walks through twelve chapters of how the field has done that, from spherical-cow-style simplifications of single neurones (Hodgkin-Huxley axon dynamics, integrate-and-fire models) through learning rules (Hebb, the Perceptron, backpropagation), memory (Hopfield networks, attractor dynamics), dimensionality reduction (low-dimensional motor control), Bayesian decision-making, and so on, finally landing on the grand unified theories (ironically in the plural): Friston's free energy, Hawkins' thousand brains, Tononi's integrated information. The book is quite short for this ambitious scope, with the obvious goal to not overwhelm the casual reader; the mathematics is, however, merely hidden away in the appendix, allowing any curious soul to wander in for a deeper adventure.
+
+    Now, this is really not a typical popular-science book. Lindsay actively avoids flattening the models into metaphor. The Perceptron is the Perceptron; Hodgkin-Huxley is a system of differential equations and is named as such; predictive coding is shown to be a specific computational claim, not vibes about expectation. Each chapter pairs the model with its history (e.g. McCulloch and Pitts in 1943, Hodgkin and Huxley at Plymouth before the war), which is inevitably entangled with mathematics, physics, philosophy, computer science, dialogues between fields with birthdates centuries apart: mathematics in the field of neuroscience was never an imposition from outside biology, but a series of moves biologists themselves made when verbal description ran out (one is reminded of [how postwar British biophysics actually came into being](https://www.kcl.ac.uk/randall/history): John Randall, the Birmingham physicist who co-invented the cavity magnetron that won the radar war, took the Wheatstone Chair of Physics at King's in 1946 and founded the MRC Biophysics Research Unit that would, within a few years, house Rosalind Franklin and produce Photograph 51). By the final chapter, Lindsay has spent eleven chapters showing what a working model of the brain looks like, so when she then dismisses the grand unified theories as a category, one trusts that she knows what she is dismissing.
+
+- title: "The Call of Cthulhu and Other Weird Stories"
+  type: "book"
+  creator: "H.P. Lovecraft, ed. S.T. Joshi"
+  creator_role: "by"
+  year: 2016
+  eval: "liked"
+  image: "/assets/images/thoughts/books/call_of_cthulhu.jpg"
+  posted: "2025-12-08"
+  revised: "2025-12-08"
+  text: |
+    I am grateful that my first literary contact with Lovecraft was compiled by S. T. Joshi, who wrote the two-volume Lovecraft biography *I Am Providence* (2010) and spent decades restoring Lovecraft's texts to the forms he actually wrote, after years of textual mishandling by August Derleth (who, beyond standard editorial alterations, [marketed sixteen of his own stories as posthumous collaborations](https://www.hplovecraft.com/writings/derleth.aspx) with Lovecraft, mostly built from 'one or more ideas' from Lovecraft's *Commonplace Book*). Joshi orders the volume chronologically, starting with *Dagon* (1917) and early stories less embedded in the Lovecraft mythos, building gradually and organically to *The Call of Cthulhu* (1928) and *The Shadow Over Innsmouth* (1936). 
+    
+    There is, of course, much discussion to be had on Lovecraft as a human being: Penguin has decided to include compilations of his works in collections that decide 'what counts as great American literature'. Whether one accepts such a decision depends on how much one can stomach the racism and xenophobia that sit not at the margins of Lovecraft's fiction but at its centre. We see that what horrifies Lovecraft most reliably is a Black character, a foreign cult, a Polish-Jewish landlord, the half-human inhabitants of Innsmouth. It's hard to imagine that Joshi would be unaware of such propensities of Lovecraft, but one thing about compilations is that they create a layered dissociation between texts and their authors: in this case that is a good thing, since the Lovecraftian stories are more easily enjoyed as standalone pieces embedded in an almost preconceived world, with Lovecraft's bigotry as a backdrop that lingers without permeating through the reading experience.
+
+    Surprisingly (at least to me), the shorter stories are much more bone-chilling and palatable. My favourite passages and scenes are mostly in the shorts: the bleeding roof in *The Picture in the House* (1920), the narrator's despair in *The Outsider* (1926) looking into the mirror, the slow chromatic contamination in *The Colour Out of Space* (1927). Lovecraft's prose is famously purple and his characters flat, but the compression of the short story format keeps both problems below the threshold where they would damage the atmosphere; in the longer novellas (*At the Mountains of Madness* (1936) being the obvious example), the purple prose has more square footage to occupy, and the flatness of the narrator becomes harder to ignore. However, seeing the successes of David Lynch, Remedy Entertainment, Mark Danielewski makes me believe that one thing is for sure: people return to Lovecraft, even past the prose and the politics, for the specific cold feeling of human scale dissolving against something vast, indifferent, and very, very old.
+
 - title: "Solenoid"
   type: "book"
   creator: "Mircea Cărtărescu, trans. Sean Cotter (EN)"
@@ -5238,6 +5268,18 @@
 
 
 
+- title: "The Chair Company Season 1"
+  type: "tv"
+  creator: "Tim Robinson / Zach Kanin"
+  creator_role: "dir."
+  year: 2025
+  eval: "disliked"
+  image: "/assets/images/thoughts/tv/chair_company_season_1.jpg"
+  posted: "2025-12-07"
+  revised: "2025-12-07"
+  text: |
+    Robinson and Kanin built their reputation on *I Think You Should Leave* (2019)'s anarchic precision: sketches that detonated social discomfort in under ninety seconds. ***The Chair Company*** inherits the conspiratorial instincts but none of the comic discipline. The premise, a man's office chair collapses and he spirals into a corporate conspiracy, promises Pynchonesque paranoia; what arrives is a detective procedural dressed in conspiracy-thriller aesthetics that it has not earned, each plot thread laboriously assembled and then resolved through reveals that feel neither foreshadowed nor surprising. The mystery never generates genuine mystery; the audience is asked to care about connections that the show itself treats as interchangeable. Eight episodes and thirty minutes each is enough rope for Robinson to hang the format with, and he does.
+
 - title: "The Wire Season 1"
   type: "tv"
   creator: "David Simon"
@@ -6542,6 +6584,21 @@
 
 
 
+
+- title: "Dispatch"
+  type: "game"
+  creator: "AdHoc Studio"
+  creator_role: "by"
+  year: 2025
+  eval: "loved"
+  genre: "interactive fiction"
+  image: "/assets/images/thoughts/games/dispatch.jpg"
+  posted: "2025-12-02"
+  revised: "2025-12-02"
+  text: |
+    A couple of years ago, AdHoc Studio walked away from *The Wolf Among Us 2*, citing creative differences with the reconstituted Telltale team. In ***Dispatch***, the shape of that disagreement becomes visible. Where *The Wolf* (2013) excelled at societal scope, at weaving class, corruption, and systemic injustice into a detective narrative, AdHoc's strengths lie in a different territory entirely: the intimate, the individual, the felt. ***Dispatch*** goes all-in on character. Robert Robertson, a retired superhero voiced by Aaron Paul with precisely the right mixture of weariness and stubborn warmth, joins a Superhero Dispatch Network to manage former supervillains, and the interactive-fiction format, with its carefully weighted choices and branching dialogue, makes it effortless to inhabit him. Guilt, regret, relief, satisfaction: each emotional beat reads as one's own, not the protagonist's, because the choice design never signals the 'right' answer.
+
+    ***Dispatch*** differs from *The Wolf* (2013), and from most narrative games of its generation, in the depth of its secondary cast. Every character is knowable: not reduced to a type or a function, but given enough texture that one's attachment accrues naturally across eight episodes. The emotion that surfaces is felt, not externally imposed by orchestral swells or slow-motion close-ups. By chapter seven, I was crying in a way I had not cried at a game since *Life Is Strange* (2015): not from sadness alone, but from the accumulated weight of having known these people and made decisions on their behalf. The production quality is superb. I am deeply curious about what AdHoc does next. Whatever their disagreement with Telltale was, the evidence suggests they were right.
 
 - title: "Constance"
   type: "game"
