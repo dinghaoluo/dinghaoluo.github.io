@@ -18,6 +18,8 @@ awards:
     url: "https://m.sohu.com/a/970954278_122097022"
   - label: "Scientific American China 2024 Best Science Reading"
     url: "https://www.huanqiukexue.com/?p=2031"
+  - label: "Douban 2025 Top 10 Science & New Knowledge"
+    url: "https://book.douban.com/annual/2025/"
 isbn: "9787559677754"
 section: "print"
 image: "/assets/images/writing/entangled-life-chinese.jpg"
@@ -28,7 +30,7 @@ excerpt: "My Chinese translation of Merlin Sheldrake's <i>Entangled Life</i> (20
 
 The original *Entangled Life* (2020) by Merlin Sheldrake won the [2021 Royal Society Science Book Prize](https://royalsociety.org/grants-schemes-awards/book-prizes/science-book-prize/2021/) and the [Wainwright Prize](https://www.wainwrightprize.com/) for global conservation writing. [Goodreads](https://www.goodreads.com/book/show/52668915).
 
-My Chinese translation, published by Houlang Books (ISBN 9787559677754), won the [2025 Pingshan Natural History Museum Book Award](https://m.sohu.com/a/970954278_122097022) and was selected for [Scientific American China's 2024 Best Science Reading list](https://www.huanqiukexue.com/?p=2031). [Douban](https://book.douban.com/subject/37088268/), [Amazon](https://www.amazon.com/dp/7559677754).
+My Chinese translation, published by Houlang Books (ISBN 9787559677754), won the [2025 Pingshan Natural History Museum Book Award](https://m.sohu.com/a/970954278_122097022), was selected for [Scientific American China's 2024 Best Science Reading list](https://www.huanqiukexue.com/?p=2031), and was named to [Douban's 2025 Top 10 Science & New Knowledge list](https://book.douban.com/annual/2025/). [Douban](https://book.douban.com/subject/37088268/), [Amazon](https://www.amazon.com/dp/7559677754).
 
 *Originally published by [The Paper](https://m.thepaper.cn/newsDetail_forward_31899782) on 5 November 2025. Co-conducted with Songyan for Houlang Books' science editorial team.*
 
