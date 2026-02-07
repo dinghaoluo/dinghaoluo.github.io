@@ -94,3 +94,20 @@ I've played games casually since I was a kid, until *Dark Souls* (2011) made me 
 
 <p class="home-thoughts-links"><a href="/thoughts/?type=game">→ games</a></p>
 </div>
+
+---
+
+<h2 id="photos"><a href="/photos/">photos :)</a></h2>
+
+I have photographed things compulsively since middle school, mostly out of an anxiety about losing the texture of precious moments. My dad gave me his Nikon D90 when I was old enough to care about framing, and that was when it became a practice rather than a reflex. I take long camera walks through cities, and places like Cambridge, London, Amman, and New York always surprise me with how alive our world is. On those walks, things keep making me stop: a window, a surface, a pattern of light that will dissipate in a few seconds and never to be seen again...
+
+<div class="home-photo-strip" aria-label="photo preview">
+  <a href="/photos/#london" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-london-tower-cloud-2018-b80bff72.webp" alt="The Tower of London under heavy cloud." loading="lazy"></a>
+  <a href="/photos/#georgia" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-tbilisi-cable-street-2026-4336ced0.webp" alt="A Tbilisi street with cable lines overhead." loading="lazy"></a>
+  <a href="/photos/#beijing" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-beijing-ginkgo-street-2020-f5c0d401.webp" alt="A Beijing street lined with golden ginkgo trees." loading="lazy"></a>
+  <a href="/photos/#lisbon" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-lisbon-street-tram-2026-48c18cc4.webp" alt="A Lisbon street opening to a small tram and bright buildings." loading="lazy"></a>
+  <a href="/photos/#singapore" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-singapore-macaque-family-2021-704730f0.webp" alt="A macaque family grooming with a dark infant between them." loading="lazy"></a>
+  <a href="/photos/#death-valley" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-death-valley-salt-walker-2023-002317b0.webp" alt="A tiny walker on the Death Valley salt flats beneath dark mountains." loading="lazy"></a>
+</div>
+
+<a href="/photos/" class="site-nav-link">→ photos</a>
