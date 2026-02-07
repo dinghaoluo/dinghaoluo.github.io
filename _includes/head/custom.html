@@ -13,6 +13,11 @@
 <!-- keep browser back/forward navigation anchored to the reader's last position -->
 <script>if ('scrollRestoration' in history) { history.scrollRestoration = 'auto'; }</script>
 
+<!-- theme toggle: apply saved preference before first paint to prevent FOUC -->
+<script>
+(function(){var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){var s=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';if(t!==s)document.documentElement.setAttribute('data-theme',t);else localStorage.removeItem('theme');}})();
+</script>
+
 {% if page.classes == 'home' %}
 <link rel="prefetch" href="{{ '/thoughts/' | relative_url }}">
 <link rel="prefetch" href="{{ '/music/' | relative_url }}">

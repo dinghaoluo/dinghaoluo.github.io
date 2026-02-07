@@ -27,12 +27,18 @@
 {% if page.url == "/thoughts/" or page.classes contains "home" %}
   <script src="{{ '/assets/js/thoughts-cards.js' | relative_url }}"></script>
 {% endif %}
+{% if page.classes contains "home" %}
+  <script src="{{ '/assets/js/home-section-nav.js' | relative_url }}"></script>
+{% endif %}
 {% if page.url == "/writing/" %}
   <script src="{{ '/assets/js/writing-archive.js' | relative_url }}"></script>
 {% endif %}
 {% if page.url == "/music/" %}
   <script src="{{ '/assets/js/audio-player.js' | relative_url }}"></script>
 {% endif %}
+<script src="{{ '/assets/js/haothings-nav.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/nav-justify.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/drift-link.js' | relative_url }}"></script>
 {% if site.after_footer_scripts %}
   {% for script in site.after_footer_scripts %}
