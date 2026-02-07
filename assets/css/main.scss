@@ -3442,6 +3442,8 @@ body.writing-page .page__content .writing-entry__title em {
 // Theme toggle - fixed d / l in top-right corner
 // =========================================================================
 #theme-toggle {
+  opacity: 0;
+  animation: haothings-fade-up 0.3s ease 0.1s forwards;
   position: absolute;
   top: 0.55rem;
   right: 0.65rem;
