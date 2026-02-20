@@ -917,6 +917,52 @@ body:not(.home) .page__content h6 * {
   }
 }
 
+
+// -------------------------
+// homepage photo strip - horizontal scroll with fade
+// -------------------------
+.home-photo-strip {
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+  margin: 1em 0 0.6em;
+  padding-bottom: 4px;
+  mask-image: linear-gradient(to right, #000 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, #000 85%, transparent 100%);
+
+  &::-webkit-scrollbar { display: none; }
+  scrollbar-width: none;
+
+  &__link {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    display: block;
+    width: 110px;
+    height: 110px;
+
+    @media (max-width: 600px) { width: 90px; height: 90px; }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    border: 1px solid rgba(155, 146, 138, 0.18);
+    opacity: 0.92;
+    filter: saturate(0.92) contrast(1.02);
+    transition: opacity 0.2s ease, filter 0.2s ease;
+
+    &:hover, &:focus-visible {
+      opacity: 1;
+      filter: saturate(1) contrast(1.04);
+    }
+  }
+}
+
 .home-covers--screen,
 .home-covers--games {
   max-height: 267px;
@@ -3442,8 +3488,6 @@ body.writing-page .page__content .writing-entry__title em {
 // Theme toggle - fixed d / l in top-right corner
 // =========================================================================
 #theme-toggle {
-  opacity: 0;
-  animation: haothings-fade-up 0.3s ease 0.1s forwards;
   position: absolute;
   top: 0.55rem;
   right: 0.65rem;
@@ -4005,6 +4049,11 @@ body.writing-page .page__content .writing-entry__title em {
     &:hover, &:focus-visible { opacity: 0.95; }
   }
 
+  .home-photo-strip img {
+    opacity: 0.82;
+    &:hover, &:focus-visible { opacity: 0.98; }
+  }
+
   ::selection {
     background: rgba(#b4acbe, 0.30);
     color: #e8e2db;
@@ -4205,6 +4254,5 @@ body.writing-page .page__content .writing-entry__title em {
 html[data-theme="dark"] {
   @include dark-colors;
 }
-
 @import "site/photos";
 @import "site/photos-dark";
