@@ -2,7 +2,7 @@
 title: "Just one centimetre deeper: Place cells and the brain's cartography"
 outlet: "Neu-Reality"
 date: 2022-05-23
-last_updated: 2020-08-01
+last_updated: 2026-03-01
 section: "online"
 show_meta_outlet: false
 dropcap: true

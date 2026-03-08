@@ -4254,7 +4254,7 @@ body.writing-page .page__content .writing-entry__title em {
 html[data-theme="dark"] {
   @include dark-colors;
 }
-@import "site/cv";
-@import "site/cv-dark";
 @import "site/photos";
 @import "site/photos-dark";
+@import "site/cv";
+@import "site/cv-dark";
