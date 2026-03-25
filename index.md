@@ -13,7 +13,31 @@ Reach out: [dinghao.luo@outlook.com](mailto:dinghao.luo@outlook.com)<br>Find me:
 
 <h2 id="writing"><a href="/writing/">writing :)</a></h2>
 
-I have been writing since I was fifteen, mostly in Chinese under the pen-name `amoxitoxin`, and mostly on a WeChat blog called 阿莫東森的無聊生活 that I started in secondary school. Some of these pieces, along with newer English ones, are now on the [writing](/writing/) page.
+Writing, along with reading, was one of my first true passions. Like many kids, I kept a journal as I grew up, and the advent of the Internet age allowed me to transform things I wrote in my journal into an online repository. I wrote under the pen-name `amoxitoxin` in both Chinese and English since I was 15, and have translated selected pieces into English, which can be found on the <a href="/writing/" class="site-nav-link">writing</a> page. Here are some of the pieces of which I am proudest:
+
+<div class="home-writing-shelf" aria-label="featured writing">
+  <a class="home-writing-tile home-writing-tile--place-cells" href="/writing/place-cells/">
+    <img class="home-writing-tile__image" src="/assets/images/writing/place-cells-hippocampus-cleaned.jpg" alt="" loading="lazy">
+    <span class="home-writing-tile__glass">
+      <span class="home-writing-tile__kicker">sci-comm</span>
+      <span class="home-writing-tile__title">Place Cells and the Brain's Cartography</span>
+    </span>
+  </a>
+  <a class="home-writing-tile home-writing-tile--freedoms" href="/writing/two-freedoms/">
+    <img class="home-writing-tile__image" src="/assets/images/personal/two-freedoms.webp" alt="" loading="lazy">
+    <span class="home-writing-tile__glass">
+      <span class="home-writing-tile__kicker">journal</span>
+      <span class="home-writing-tile__title">Two Freedoms</span>
+    </span>
+  </a>
+  <a class="home-writing-tile home-writing-tile--shanwei" href="/writing/shanwei/">
+    <img class="home-writing-tile__image" src="/assets/images/personal/shanwei.webp" alt="" loading="lazy">
+    <span class="home-writing-tile__glass">
+      <span class="home-writing-tile__kicker">journal</span>
+      <span class="home-writing-tile__title">Shanwei</span>
+    </span>
+  </a>
+</div>
 
 Since my undergraduate years at Cambridge, and now through my PhD, I have also written about science. I was one of the earliest members of Neu-Reality (神經現實), a Chinese-language neuroscience science communication platform, and spent three years as science editor and translator there. After that were seven months at *Scientific American* China, where I wrote weekly news on their digital platform, edited translations of each month's *SciAm* magazine, and finished a print feature on the Accelerating Research on Consciousness initiative.
 
