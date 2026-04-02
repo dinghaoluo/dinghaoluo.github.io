@@ -4,7 +4,7 @@ author_profile: true
 permalink: /cv/
 title: "cv"
 classes: cv-page
-last_updated: 2026-03-28
+last_updated: 2026-04-02
 toc: true
 toc_label: "on this page"
 toc_icon: ""

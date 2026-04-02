@@ -5,7 +5,7 @@ title_zh: "理论对抗：意识从何而来"
 type: "feature"
 outlet: "<em>Scientific American</em> China"
 date: 2021-03-01
-last_updated: 2021-03-01
+last_updated: 2026-04-01
 issue: "March 2021 print issue"
 meta_outlet_first: true
 section: "print"
@@ -15,11 +15,11 @@ banner_image: "/assets/images/writing/arc-consciousness-banner.webp"
 banner_position: "center 48%"
 banner_bg: "#f2eee5"
 banner_image_alt: "abstract diagram of competing paths crossing a measured field"
-excerpt: "My print feature for <i>Scientific American</i> China, based on original interviews with Anil Seth, Hakwan Lau, David Rosenthal, and others. I wrote it while engulfing consciousness-adjacent books: Hofstadter, Melanie Mitchell on analogy and complexity, Dehaene on the global workspace. The piece traces three decades of research from Crick and Koch's neural-correlates programme through the Templeton adversarial collaborations, and asks whether rival theories can be tested against each other when they disagree about what kind of question consciousness is. Translated and adapted into English."
+excerpt: "My print feature for <i>Scientific American</i> China, based on original interviews with Anil Seth, Hakwan Lau, David Rosenthal, and others. I wrote it while engulfing consciousness-adjacent books: Hofstadter, Melanie Mitchell on analogy and complexity, Dehaene on the global workspace. The piece traces three decades of research from Crick and Koch's neural-correlates programme through the Templeton adversarial collaborations, and asks whether rival theories can be tested against each other when they disagree about what kind of question consciousness is. The English version here has been revised and substantially expanded in 2026."
 dropcap: true
 ---
 
-*Originally published in Chinese in Scientific American China, March 2021 print issue. Translated and adapted into English.*
+*Originally published in Chinese in Scientific American China, March 2021 print issue. Revised and substantially expanded in English, 2026, with updated results from the COGITATE adversarial collaboration, the Koch–Chalmers bet, and the open letter controversy. The original 2021 article can be read [here](/writing/arc-consciousness-2021/).*
 
 ---
 
@@ -123,6 +123,8 @@ ARC launched five adversarial collaborations testing eight theories in total. Th
 
 COGITATE (the Consciousness-Oriented Global Investigation of Awareness through Evidence) recruited 256 participants across six laboratories on three continents. Participants viewed visual stimuli while their brain activity was recorded using fMRI, MEG, and intracranial EEG. Before data collection began, proponents of IIT and GNW preregistered their predictions in detail, specifying not just which brain regions would be active during conscious perception but *how* that activity would unfold over time, and what patterns of connectivity would be present.
 
+The results, [published in *Nature* in April 2025](https://doi.org/10.1038/s41586-025-08888-1), were neither a clean victory for one theory nor a simple refutation of the other.
+
 IIT had predicted that conscious perception would be associated with sustained activity in the posterior cortex, with rich connectivity patterns among visual and temporal regions reflecting the integrated information structure that the theory considers identical with consciousness. Two of IIT's three preregistered predictions were supported: consciousness was indeed more closely linked to posterior cortical activity than to prefrontal activity, and the sustained temporal profile predicted by IIT was observed. But the third prediction, that synchronised connectivity between early visual and mid-level visual areas would track consciousness, was not confirmed. The specific signature of information integration that IIT considers its deepest commitment was absent from the data.
 
 GNW had predicted a rapid 'ignition' signature in prefrontal and parietal regions, with content-specific information broadcast from posterior to anterior cortex. The results were less kind. Ignition following stimulus onset was observed, but no corresponding signal appeared at stimulus offset, when, according to GNW, the workspace should also fire. More damaging, the prefrontal cortex showed minimal representation of the identity and orientation of the consciously perceived stimulus. The content of consciousness, according to the COGITATE data, was not in the place that GNW said it would be.
@@ -158,6 +160,8 @@ The open letter also revealed the limits of adversarial collaboration. ARC was d
 {: .pullquote .pullquote--compact .pullquote--wide}
 
 <hr class="section-break">
+
+Where does this leave the science of consciousness in 2026?
 
 The COGITATE results have done what adversarial collaboration is supposed to do: they have made the field's ignorance *specific*. Before COGITATE, one could gesture vaguely at the prefrontal cortex or the posterior cortex and claim support for one's preferred theory. After COGITATE, the gestures must answer to data. The prefrontal cortex did not represent conscious content in the way GNW predicted. The posterior cortex did not show the connectivity signatures that IIT predicted. Both theories survived the collaboration, but both emerged diminished.
 
