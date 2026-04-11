@@ -1,12 +1,12 @@
 # main links
 main:
-  - title: "Home"
-    url: https://dinghaoluo.github.io/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "research"
+    url: /research/
+  - title: "writing"
+    url: /writing/
+  - title: "music"
+    url: /music/
+  - title: "photos"
+    url: /photos/
+  - title: "cv"
+    url: /cv/

@@ -5,11 +5,11 @@ search: false
 
 @charset "utf-8";
 
-/* 
+/*
 font block
 this is because GitHub pages failed to find the separate _fonts.scss file created for custom fonts
 no matter where I put it
-8 Oct 2024, Dinghao 
+8 Oct 2024, Dinghao
  */
 @font-face {
   font-family: 'Mononoki';
@@ -40,54 +40,185 @@ no matter where I put it
   font-style: italic;
 }
 
-// custom fonts from Google fonts go here 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');  // JetBrains Mono
+// -------------------------
+// colour overrides
+// these must come BEFORE the skin import so !default picks them up
+// -------------------------
+$primary-color:    #c47c5a;   // warm terracotta — badges, UI accents
+$link-color:       #b5651d;   // saddlebrown — all links
+$background-color: #faf9f7;   // slightly warm white
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+// -------------------------
+// base layout
+// -------------------------
 html {
-    box-sizing: border-box;  // set box-sizing for the entire page
-    font-size: 16px; // change to whatever
-  
-    @include breakpoint($medium) {
-      font-size: 16px; // change to whatever
-    }
-  
-    @include breakpoint($large) {
-      font-size: 18px; // change to whatever
-    }
-  
-    @include breakpoint($x-large) {
-      font-size: 20px; // change to whatever
-    }
+  box-sizing: border-box;
+  font-size: 16px;
 
-    // apply custom font 
-    // font-family: 'JetBrains Mono', monospace;
-    font-family: 'Mononoki', sans-serif;
+  @include breakpoint($medium) {
+    font-size: 16px;
   }
 
-/*  
-font rules for texts
-*/
-  body {
-    font-family: 'Mononoki', sans-serif;
+  @include breakpoint($large) {
+    font-size: 18px;
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 20px;
+  }
+
+  font-family: 'Mononoki', monospace;
+}
+
+// -------------------------
+// typography
+// -------------------------
+body {
+  font-family: 'Mononoki', monospace;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.85;        // monospace needs more breathing room
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Mononoki', monospace;
+  font-weight: normal;
+  letter-spacing: -0.01em;
+}
+
+p {
+  font-family: 'Mononoki', monospace;
+  font-size: 0.95em;
+}
+
+em, i {
+  font-family: 'Mononoki', monospace;
+  font-style: italic;
+}
+
+strong {
+  font-family: 'Mononoki', monospace;
+  font-weight: bold;
+  font-style: normal;
+}
+
+// -------------------------
+// links
+// -------------------------
+a {
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+// -------------------------
+// horizontal rules — clean and minimal
+// -------------------------
+hr {
+  border: none;
+  border-top: 1px solid #e0dbd5;
+  margin: 2.5em 0;
+}
+
+// -------------------------
+// masthead — keep it clean, add subtle separator
+// -------------------------
+.masthead {
+  border-bottom: 1px solid #e8e3de;
+  background-color: $background-color;
+
+  &__inner-wrap {
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+  }
+}
+
+.site-title {
+  font-family: 'Mononoki', monospace;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+}
+
+.greedy-nav {
+  background: $background-color;
+
+  a {
+    font-family: 'Mononoki', monospace;
     font-weight: normal;
-    font-style: normal;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
   }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Mononoki', sans-serif;;
-    font-weight: normal;
+
+  .visible-links a {
+    &::before {
+      // remove the default underline animation, use hover underline instead
+      background: transparent;
+    }
   }
-  p {
-    font-family: 'Mononoki', sans-serif;
-    font-size: 17px;
+}
+
+// -------------------------
+// author sidebar
+// -------------------------
+.author__name {
+  font-family: 'Mononoki', monospace;
+  font-weight: normal;
+}
+
+.author__bio {
+  font-family: 'Mononoki', monospace;
+  font-style: italic;
+  font-size: 0.85em;
+  color: mix(#fff, #3d4144, 20%);
+}
+
+.author__avatar img {
+  border-radius: 4px;   // slightly rounded, not a circle — feels less corporate
+  border: none;
+  box-shadow: none;
+}
+
+// -------------------------
+// page content
+// -------------------------
+.page__content {
+  h2 {
+    margin-top: 2em;
+    padding-bottom: 0.25em;
+    border-bottom: 1px solid #e8e3de;
+    font-size: 1em;
+    text-transform: lowercase;
+    letter-spacing: 0.02em;
   }
-  em, i {
-    font-family: 'Mononoki', sans-serif;
-    font-style: italic;
+
+  h3 {
+    font-size: 0.95em;
+    margin-top: 1.5em;
   }
-  strong {
-    font-family: 'Mononoki', sans-serif;
-    font-style: italic;
+}
+
+// -------------------------
+// footer
+// -------------------------
+.page__footer {
+  font-family: 'Mononoki', monospace;
+  font-size: 0.8em;
+  background: $background-color;
+  border-top: 1px solid #e8e3de;
+  color: mix(#fff, #3d4144, 30%);
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: $link-color;
+    }
   }
+}

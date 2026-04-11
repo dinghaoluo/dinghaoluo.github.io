@@ -2,32 +2,38 @@
 layout: single
 author_profile: false
 ---
-<div style="text-align:left;">
-  <img src="assets/images/cereniq.png" alt="cereniq:" style="width: 180px;">
+<div style="margin-bottom: 2em;">
+  <img src="assets/images/cereniq.png" alt="cereniq:" style="width: 160px;">
 </div>
-Hi, I am glad you landed here! This is Dinghao. I am currently a PhD student studying how the brain works and what modulates our memory. I do want to tell you a bit more about that, but first, in case you came here for this—
 
-you can reach me *via*:<br>
-<!-- TIL: you can actually just add 2 spaces... but I prefer to explicitly declare line breaks! 8 Oct 2024 -->
-<!-- also, used alt+0+1+6+0 to insert hard-spaces, or OPTION+SPACE on a Mac -->
-    <[dinghao.luo@outlook.com](mailto:dinghao.luo@outlook.com)> or<br>
-    <[dinghao.luo@mpfi.org](mailto:dinghao.luo@mpfi.org)><br>
-or find me on:<br>
-    <[github](https://github.com/dinghaoluo)>,<br>
-    <[linkedin](https://www.linkedin.com/in/dinghaoluo/)>,<br>
-    <[bandcamp](https://amoxitoxin.bandcamp.com/)> or <br>
-    <[reddit](https://www.reddit.com/user/amoxdl24/)>
+Hi — I'm Dinghao (罗丁豪).
 
-When I am not doing [research](#my-research), I spend most of my time listening and creating [music](#music). I am also a professional English-Chinese translator and have dedicated a lot of time to [scientific communication](#scientific-communication). If these are not to your taste, I am also passionate for some [other stuff](#other-stuff) that you may find interesting!
-<br>
+I'm a neuroscience PhD student at the [Max Planck Florida Institute for Neuroscience](https://www.mpfi.org), finishing in late 2026. My project is about how the locus coeruleus uses phasic dopamine to modulate memory circuits in the hippocampus — on timescales and with specificity that the classical picture of neuromodulation doesn't quite account for.
 
-## my research 
+I did my undergrad in Natural Sciences at Cambridge (Magdalene College) and spent time at UCL before heading to South Florida. Outside the lab, I translate science between English and Chinese — I translated Merlin Sheldrake's *Entangled Life* into Chinese ([《菌络万象》](https://www.houlang.com/), 2024) and spent seven months as a science editor at *Scientific American* China. I also make music.
 
+This site has my [research](/research/), [writing](/writing/), [music](/music/), and [photos](/photos/). There's a [CV](/cv/) too.
 
-## music 
+---
 
+## research
 
-## scientific communication
+How does a small cluster of neurons in the brainstem shape what gets remembered and what doesn't? I study how phasic dopamine from the locus coeruleus modulates functional subpopulations of CA1 hippocampal cells — with Python analysis pipelines and a computational model to match.
 
+[→ research](/research/)
 
-## other stuff
+---
+
+## writing
+
+I've translated Sheldrake's *Entangled Life*, edited for *Scientific American* China, and written for [Neu-Reality](https://neu-reality.com/) (神经现实) for three years. I'm interested in making neuroscience legible to people who don't spend their days reading papers about it.
+
+[→ writing & translation](/writing/)
+
+---
+
+## music
+
+Under the name *amoxitoxin*, I make progressive art-rock. Several albums on [Bandcamp](https://amoxitoxin.bandcamp.com/).
+
+[→ music](/music/)
