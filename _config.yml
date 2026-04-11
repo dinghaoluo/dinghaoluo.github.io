@@ -121,8 +121,7 @@ analytics:
 author:
   name             : "Dinghao Luo"
   avatar           : "/assets/images/avatar.jpg"
-  bio              : "PhD Neuroscientist | Data Science | Scientific Journalism"
-  location         : "Jupiter, FL"
+  bio              : "PhD Neuroscientist<br>Data Science<br>Scientific Journalism"
   email            : "dinghao.luo@outlook.com"
   links:
     - label: "email"

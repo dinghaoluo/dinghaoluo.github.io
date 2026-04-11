@@ -101,59 +101,63 @@ hr {
 }
 
 // -------------------------
-// masthead — plain flexbox, bypasses greedy-nav JS
+// masthead — clean-room rebuild using IDs only
+// no MM class selectors can interfere here
 // -------------------------
-.masthead {
-  background-color: #f0ebe5;
+#cereniq-masthead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f0ebe5;
   border-bottom: 1px solid #d0c8c0;
+  padding: 0.65em 1.5em;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 
-  &__inner-wrap {
-    display: flex !important;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.65em 1.5em;
-    max-width: 1440px;
-    margin: 0 auto;
-
-    @include breakpoint($large) {
-      padding: 0.65em 2em;
-    }
+  @media (min-width: 64em) {
+    padding: 0.65em 2.5em;
   }
 }
 
-.site-title {
+#cereniq-site-title {
+  font-family: 'Mononoki', monospace !important;
   font-size: 1em;
   font-weight: normal;
   letter-spacing: -0.02em;
   color: #2c2c2c !important;
   text-decoration: none !important;
-  flex: 0 0 auto;
+  flex-shrink: 0;
 
   &:hover { color: $link-color !important; }
 }
 
-.site-nav-links {
+#cereniq-nav {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 0.1em 1.4em;
-  max-width: 50%;
+  max-width: 55%;
 
   a {
+    font-family: 'Mononoki', monospace !important;
     font-size: 0.85em;
-    color: #4a4a4a;
-    text-decoration: none;
+    color: #4a4a4a !important;
+    text-decoration: none !important;
     letter-spacing: 0.02em;
     white-space: nowrap;
 
     &:hover {
-      color: $link-color;
-      text-decoration: underline;
+      color: $link-color !important;
+      text-decoration: underline !important;
       text-underline-offset: 3px;
     }
   }
 }
+
+// suppress the empty MM masthead shell if present
+.masthead { display: none !important; }
 
 // -------------------------
 // wider main content column
@@ -181,25 +185,28 @@ hr {
 }
 
 .author__bio {
-  font-size: 0.88em;
-  font-style: normal;       // headline, not italic
-  color: #4a4a4a;
-  line-height: 1.5;
+  font-size: 0.82em;        // 0.82em — see STYLESHEET.md
+  font-style: normal;
+  color: #5a5a5a;
+  line-height: 1.7;
   margin-top: 0.3em;
+
+  // each line (separated by <br> in config) gets a bit of breathing room
+  br { display: block; content: ""; margin-top: 0.15em; }
 }
 
 .author__urls-wrapper {
-  margin-top: 0.6em;
+  margin-top: 0.5em;
 }
 
 .author__urls {
-  font-size: 0.88em;
-  line-height: 1.9;
+  font-size: 0.78em;        // 0.78em — see STYLESHEET.md
+  line-height: 1.85;
 
   li, a, .label { font-size: inherit; }
 
   a {
-    color: #4a4a4a;
+    color: #5a5a5a;
     &:hover { color: $link-color; }
   }
 }
@@ -223,6 +230,7 @@ hr {
   .nav__title i { display: none; }
 
   .nav__title {
+    font-family: 'Mononoki', monospace !important;  // explicit — * rule can lose to theme specificity
     font-size: 0.82em;
     font-weight: normal;
     text-transform: lowercase;
