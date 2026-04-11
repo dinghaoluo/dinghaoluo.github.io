@@ -15,21 +15,15 @@ title: "brief takes"
     {% if take.image and take.image != "" %}
       <img class="brief-card__img" src="{{ take.image | relative_url }}" alt="{{ take.title }}">
     {% else %}
-      <div class="brief-card__img brief-card__img--placeholder"></div>
+      <div class="brief-card__img--placeholder"></div>
     {% endif %}
   </div>
-  <details class="brief-card__details">
-    <summary class="brief-card__summary">
-      <div class="brief-card__meta">
-        <span class="brief-card__type">{{ take.type }}</span><span class="brief-card__sep"> · </span><span class="brief-card__title">{{ take.title }}</span><span class="brief-card__sep"> · </span><span class="brief-card__creator">{{ take.creator_role }} {{ take.creator }}</span>
-      </div>
-      <div class="brief-card__text brief-card__text--clamped">{{ take.text }}</div>
-    </summary>
-    <div class="brief-card__expand">
-      <div class="brief-card__expand-inner">
-        <div class="brief-card__text">{{ take.text }}</div>
-      </div>
+  <div class="brief-card__body">
+    <div class="brief-card__meta">
+      <span class="brief-card__type">{{ take.type }}</span><span class="brief-card__sep"> · </span><span class="brief-card__title">{{ take.title }}</span><span class="brief-card__sep"> · </span><span class="brief-card__creator">{{ take.creator_role }} {{ take.creator }}</span>
     </div>
-  </details>
+    <div class="brief-card__text-wrap"><p class="brief-card__text">{{ take.text }}</p></div>
+    <button class="brief-card__toggle" aria-expanded="false" aria-label="expand review">↓</button>
+  </div>
 </div>
 {% endfor %}
