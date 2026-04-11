@@ -125,15 +125,15 @@ hr {
 }
 
 // -------------------------
-// masthead — keep it clean, add subtle separator
+// masthead — visible nav ribbon
 // -------------------------
 .masthead {
-  border-bottom: 1px solid #e8e3de;
-  background-color: $background-color;
+  background-color: #f0ebe5;   // warm off-white, distinct from page body
+  border-bottom: 1px solid #d8cfc6;
 
   &__inner-wrap {
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
   }
 }
 
@@ -141,48 +141,138 @@ hr {
   font-family: 'Mononoki', monospace;
   font-weight: normal;
   letter-spacing: -0.02em;
+  color: #2c2c2c !important;
 }
 
 .greedy-nav {
-  background: $background-color;
+  background: #f0ebe5;
 
   a {
     font-family: 'Mononoki', monospace;
     font-weight: normal;
+    color: #2c2c2c;
 
     &:hover {
+      color: $link-color;
       text-decoration: underline;
       text-underline-offset: 3px;
     }
   }
 
-  .visible-links a {
-    &::before {
-      // remove the default underline animation, use hover underline instead
-      background: transparent;
+  .visible-links {
+    a {
+      font-size: 0.88em;
+      letter-spacing: 0.02em;
+
+      &::before {
+        background: transparent;  // remove default underline animation
+      }
     }
+  }
+
+  // hamburger menu button
+  .navicon,
+  .navicon::before,
+  .navicon::after {
+    background: #2c2c2c;
+  }
+}
+
+// hidden overflow links dropdown
+.hidden-links {
+  font-family: 'Mononoki', monospace;
+  background: #f0ebe5;
+  border: 1px solid #d8cfc6;
+
+  a {
+    font-family: 'Mononoki', monospace;
+    font-size: 0.88em;
   }
 }
 
 // -------------------------
-// author sidebar
+// author sidebar — full Mononoki coverage
 // -------------------------
+.author__avatar img {
+  border-radius: 4px;
+  border: none;
+  box-shadow: none;
+}
+
+.author__content,
+.author__name,
+.author__bio,
+.author__urls-wrapper,
+.author__urls,
+.author__urls li,
+.author__urls a,
+.author__urls .label {
+  font-family: 'Mononoki', monospace !important;
+}
+
 .author__name {
-  font-family: 'Mononoki', monospace;
   font-weight: normal;
+  font-size: 1em;
 }
 
 .author__bio {
-  font-family: 'Mononoki', monospace;
   font-style: italic;
-  font-size: 0.85em;
-  color: mix(#fff, #3d4144, 20%);
+  font-size: 0.82em;
+  color: #6a6a6a;
 }
 
-.author__avatar img {
-  border-radius: 4px;   // slightly rounded, not a circle — feels less corporate
+.author__urls {
+  font-size: 0.82em;
+}
+
+// the 'Follow' toggle button
+.btn--inverse {
+  font-family: 'Mononoki', monospace !important;
+  font-size: 0.78em;
+  font-weight: normal;
+  border-radius: 2px;
+  padding: 0.3em 0.7em;
+}
+
+// -------------------------
+// TOC (right sidebar) — Mononoki, no jarring styles
+// -------------------------
+.toc {
+  font-family: 'Mononoki', monospace;
   border: none;
+  background: transparent;
   box-shadow: none;
+
+  .nav__title {
+    font-family: 'Mononoki', monospace;
+    font-size: 0.78em;
+    font-weight: normal;
+    text-transform: lowercase;
+    letter-spacing: 0.04em;
+    color: #8a8a8a;
+    background: transparent;
+    padding: 0;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #e0dbd5;
+    padding-bottom: 0.4em;
+  }
+
+  ol,
+  ul,
+  li,
+  a {
+    font-family: 'Mononoki', monospace;
+    font-size: 0.8em;
+    color: #6a6a6a;
+  }
+
+  a {
+    &:hover {
+      color: $link-color;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  }
 }
 
 // -------------------------
@@ -204,21 +294,42 @@ hr {
   }
 }
 
+// page title (the big h1 at top of subpages)
+.page__title {
+  font-family: 'Mononoki', monospace;
+  font-weight: normal;
+  text-transform: lowercase;
+  font-size: 1.2em;
+  letter-spacing: -0.01em;
+}
+
 // -------------------------
 // footer
 // -------------------------
 .page__footer {
   font-family: 'Mononoki', monospace;
   font-size: 0.8em;
-  background: $background-color;
-  border-top: 1px solid #e8e3de;
-  color: mix(#fff, #3d4144, 30%);
+  background: #f0ebe5;
+  border-top: 1px solid #d8cfc6;
+  color: #8a8a8a;
 
   a {
     color: inherit;
+    font-family: 'Mononoki', monospace;
 
     &:hover {
       color: $link-color;
     }
   }
+}
+
+// -------------------------
+// breadcrumbs, meta, pagination — catch-all
+// -------------------------
+.breadcrumbs,
+.page__meta,
+.pagination,
+.page__related,
+.search-content {
+  font-family: 'Mononoki', monospace;
 }

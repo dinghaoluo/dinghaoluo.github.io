@@ -315,6 +315,6 @@ defaults:
       path: "_pages"
       type: pages
     values:
-      layout: archive
+      layout: single
       author_profile: true
-      toc: true
+      toc: false
