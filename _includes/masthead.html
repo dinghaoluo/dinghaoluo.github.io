@@ -3,7 +3,7 @@
     <a id="cereniq-site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
     <nav id="cereniq-nav">
       {%- for link in site.data.navigation.main -%}
-        <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
+        <a href="{{ link.url | relative_url }}"{% if link.class %} class="{{ link.class }}"{% endif %}>{{ link.title }}</a>
       {%- endfor -%}
     </nav>
   </div>

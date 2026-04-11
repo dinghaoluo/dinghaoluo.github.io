@@ -5,7 +5,7 @@ permalink: /brief-takes/
 title: "brief takes"
 ---
 
-*Films, books, and whatever else. Not proper reviews.*
+*Films, books, and whatever else — a running record of things that have been on my mind.*
 
 ---
 
