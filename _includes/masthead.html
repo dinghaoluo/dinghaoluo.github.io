@@ -1,9 +1,9 @@
 <div class="masthead">
-  <div class="masthead__inner-wrap">
-    <a class="site-title" href="{{ '/' | relative_url }}">
+  <div class="masthead__inner-wrap" style="display:flex;align-items:center;justify-content:space-between;padding:0.65em 1.5em;max-width:1440px;margin:0 auto;">
+    <a class="site-title" href="{{ '/' | relative_url }}" style="text-decoration:none;flex-shrink:0;">
       {{ site.masthead_title | default: site.title }}
     </a>
-    <nav class="site-nav-links">
+    <nav class="site-nav-links" style="display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:0.1em 1.4em;max-width:50%;">
       {%- for link in site.data.navigation.main -%}
         <a href="{{ link.url | relative_url }}"{% if link.description %} title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
       {%- endfor -%}

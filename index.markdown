@@ -2,19 +2,23 @@
 layout: single
 author_profile: false
 ---
-<div style="margin-bottom: 1.5em;">
-  <img src="assets/images/cereniq.png" alt="cereniq:" style="width: 160px;">
+<div style="margin-bottom:1.5em;overflow:hidden;display:inline-block;">
+  <img src="assets/images/cereniq.png" alt="cereniq:" style="width:185px;margin-left:-18px;display:block;">
 </div>
 
 <div class="home-profile">
-  <span class="home-profile__name">Dinghao Luo &nbsp;·&nbsp; 罗丁豪</span>
-  <span class="home-profile__links">
+  <img class="home-profile__avatar" src="/assets/images/avatar.jpg" alt="Dinghao Luo">
+  <div class="home-profile__name">
+    <span class="home-profile__en">Dinghao Luo</span>
+    <span class="home-profile__zh">罗丁豪</span>
+  </div>
+  <div class="home-profile__links">
     <a href="mailto:dinghao.luo@outlook.com">email</a>
     <a href="https://github.com/dinghaoluo">github</a>
     <a href="https://www.linkedin.com/in/dinghaoluo/">linkedin</a>
     <a href="https://amoxitoxin.bandcamp.com/">bandcamp</a>
     <a href="https://www.instagram.com/amoxitoxin">instagram</a>
-  </span>
+  </div>
 </div>
 
 I'm a neuroscience PhD student at the [Max Planck Florida Institute for Neuroscience](https://www.mpfi.org), finishing in late 2026. My project is about how the locus coeruleus uses phasic dopamine to modulate memory circuits in the hippocampus — on timescales and with specificity that the classical picture of neuromodulation doesn't quite account for.
