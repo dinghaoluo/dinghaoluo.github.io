@@ -370,6 +370,11 @@ hr {
   border-bottom: 1px solid #e8e3de;
 
   em { font-style: italic; }
+
+  em.currently-substance {
+    color: #8a8a8a;
+    font-style: italic;
+  }
 }
 
 .page__title {
@@ -511,13 +516,28 @@ hr {
 
 .brief-card__creator { color: #7a7a7a; }
 
-.brief-card__preview {
+// shared text style — used both clamped (in summary) and full (in expand)
+.brief-card__text {
   font-size: 0.88em;
   color: #3a3a3a;
   line-height: 1.65;
+  white-space: pre-wrap;   // respect line breaks from YAML block scalar
+
+  // collapsed: clamp to 3 lines with fade
+  &--clamped {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
 
 // grid-rows animation — smooth expand/collapse pushing content below
+// summary hides the text when open; expand panel shows it
+.brief-card__details[open] .brief-card__summary .brief-card__text--clamped {
+  display: none;
+}
+
 .brief-card__expand {
   display: grid;
   grid-template-rows: 0fr;
@@ -531,11 +551,8 @@ hr {
 .brief-card__expand-inner {
   overflow: hidden;
 
-  p {
-    font-size: 0.88em;
-    line-height: 1.72;
-    color: #3a3a3a;
-    margin-top: 0.7em;
+  .brief-card__text {
+    margin-top: 0.4em;
     margin-bottom: 0;
   }
 }
@@ -615,6 +632,27 @@ hr {
 
   // hide the "Follow:" label
   .page__footer-follow li:first-child {
+    display: none;
+  }
+}
+
+// -------------------------
+// mobile overrides (< $large = 1024px)
+// -------------------------
+
+// .page__content p/li/dl are hardcoded at 18px in _page.scss to compensate for
+// Mononoki's optical size — fine on desktop, but too large on narrow screens
+@media (max-width: 1023px) {
+  .page__content p,
+  .page__content li,
+  .page__content dl {
+    font-size: 1em;  // inherit html base (12px mobile, 13px at $medium)
+  }
+}
+
+// brief-takes sidebar preview: show on all pages on desktop; mobile-only on homepage
+@media (max-width: 1023px) {
+  body:not(.home) .author__sidebar-takes {
     display: none;
   }
 }

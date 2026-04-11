@@ -23,11 +23,11 @@ title: "brief takes"
       <div class="brief-card__meta">
         <span class="brief-card__type">{{ take.type }}</span><span class="brief-card__sep"> · </span><span class="brief-card__title">{{ take.title }}</span><span class="brief-card__sep"> · </span><span class="brief-card__creator">{{ take.creator_role }} {{ take.creator }}</span>
       </div>
-      <div class="brief-card__preview">{{ take.preview }}</div>
+      <div class="brief-card__text brief-card__text--clamped">{{ take.text }}</div>
     </summary>
     <div class="brief-card__expand">
       <div class="brief-card__expand-inner">
-        {{ take.full | markdownify }}
+        <div class="brief-card__text">{{ take.text }}</div>
       </div>
     </div>
   </details>

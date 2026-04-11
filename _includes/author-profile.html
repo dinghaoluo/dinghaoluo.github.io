@@ -254,7 +254,7 @@
     {% for take in takes limit:3 %}
     <a href="/brief-takes/" class="sidebar-take">
       <span class="sidebar-take__title">{{ take.title }}</span>
-      <span class="sidebar-take__preview">{{ take.preview }}</span>
+      <span class="sidebar-take__preview">{{ take.preview | default: take.text }}</span>
     </a>
     {% endfor %}
   </div>
