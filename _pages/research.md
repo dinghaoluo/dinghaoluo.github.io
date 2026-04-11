@@ -4,7 +4,8 @@ author_profile: true
 permalink: /research/
 title: "research"
 toc: true
-toc_label: " "
+toc_label: "on this page"
+toc_icon: ""
 ---
 
 I'm a PhD student in *[advisor's name]*'s lab at the [Max Planck Florida Institute for Neuroscience](https://www.mpfi.org), finishing in December 2026. My work is broadly about how neuromodulatory systems shape memory circuits — faster and more precisely than the classical picture suggests.

@@ -6,11 +6,9 @@ search: false
 @charset "utf-8";
 
 /*
-font block
-this is because GitHub pages failed to find the separate _fonts.scss file created for custom fonts
-no matter where I put it
+font block — kept inline because GitHub Pages ignores separate _fonts.scss
 8 Oct 2024, Dinghao
- */
+*/
 @font-face {
   font-family: 'Mononoki';
   src: url('/assets/fonts/mononoki/mononoki-Regular.ttf') format('truetype'),
@@ -41,83 +39,61 @@ no matter where I put it
 }
 
 // -------------------------
-// colour overrides
-// these must come BEFORE the skin import so !default picks them up
+// colour overrides — before skin import so !default picks them up
 // -------------------------
-$primary-color:    #c47c5a;   // warm terracotta — badges, UI accents
-$link-color:       #b5651d;   // saddlebrown — all links
-$background-color: #faf9f7;   // slightly warm white
+$primary-color:    #c47c5a;
+$link-color:       #b5651d;
+$background-color: #faf9f7;
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
 
 // -------------------------
-// base layout
+// base
 // -------------------------
 html {
   box-sizing: border-box;
   font-size: 16px;
-
-  @include breakpoint($medium) {
-    font-size: 16px;
-  }
-
-  @include breakpoint($large) {
-    font-size: 18px;
-  }
-
-  @include breakpoint($x-large) {
-    font-size: 20px;
-  }
-
   font-family: 'Mononoki', monospace;
+
+  @include breakpoint($medium) { font-size: 16px; }
+  @include breakpoint($large)  { font-size: 18px; }
+  @include breakpoint($x-large) { font-size: 20px; }
+}
+
+// Force Mononoki everywhere — wildcard is safe here because
+// we explicitly set weight/style on each element below
+* {
+  font-family: 'Mononoki', monospace;
+}
+
+body {
+  font-weight: normal;
+  line-height: 1.85;
+  background-color: $background-color;
 }
 
 // -------------------------
 // typography
 // -------------------------
-body {
-  font-family: 'Mononoki', monospace;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 1.85;        // monospace needs more breathing room
-}
-
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Mononoki', monospace;
   font-weight: normal;
   letter-spacing: -0.01em;
 }
 
-p {
-  font-family: 'Mononoki', monospace;
-  font-size: 0.95em;
-}
+p { font-size: 0.95em; }
 
-em, i {
-  font-family: 'Mononoki', monospace;
-  font-style: italic;
-}
+em, i  { font-style: italic; }
+strong { font-weight: bold; font-style: normal; }
 
-strong {
-  font-family: 'Mononoki', monospace;
-  font-weight: bold;
-  font-style: normal;
-}
-
-// -------------------------
-// links
-// -------------------------
 a {
+  color: $link-color;
   &:hover {
     text-decoration: underline;
     text-underline-offset: 3px;
   }
 }
 
-// -------------------------
-// horizontal rules — clean and minimal
-// -------------------------
 hr {
   border: none;
   border-top: 1px solid #e0dbd5;
@@ -125,32 +101,51 @@ hr {
 }
 
 // -------------------------
-// masthead — visible nav ribbon
+// masthead — plain flexbox, bypasses greedy-nav JS
 // -------------------------
 .masthead {
-  background-color: #f0ebe5;   // warm off-white, distinct from page body
-  border-bottom: 1px solid #d8cfc6;
+  background-color: #f0ebe5;
+  border-bottom: 1px solid #d0c8c0;
 
   &__inner-wrap {
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.65em 1.5em;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @include breakpoint($large) {
+      padding: 0.65em 2em;
+    }
   }
 }
 
 .site-title {
-  font-family: 'Mononoki', monospace;
+  font-size: 1em;
   font-weight: normal;
   letter-spacing: -0.02em;
   color: #2c2c2c !important;
+  text-decoration: none !important;
+  flex: 0 0 auto;
+
+  &:hover { color: $link-color !important; }
 }
 
-.greedy-nav {
-  background: #f0ebe5;
+.site-nav-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.1em 1.4em;
+  max-width: 50%;
 
   a {
-    font-family: 'Mononoki', monospace;
-    font-weight: normal;
-    color: #2c2c2c;
+    font-size: 0.85em;
+    color: #4a4a4a;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
 
     &:hover {
       color: $link-color;
@@ -158,115 +153,95 @@ hr {
       text-underline-offset: 3px;
     }
   }
-
-  .visible-links {
-    a {
-      font-size: 0.88em;
-      letter-spacing: 0.02em;
-
-      &::before {
-        background: transparent;  // remove default underline animation
-      }
-    }
-  }
-
-  // hamburger menu button
-  .navicon,
-  .navicon::before,
-  .navicon::after {
-    background: #2c2c2c;
-  }
 }
 
-// hidden overflow links dropdown
-.hidden-links {
-  font-family: 'Mononoki', monospace;
-  background: #f0ebe5;
-  border: 1px solid #d8cfc6;
-
-  a {
-    font-family: 'Mononoki', monospace;
-    font-size: 0.88em;
+// -------------------------
+// wider main content column
+// -------------------------
+#main {
+  @include breakpoint($x-large) {
+    max-width: 1440px;
   }
 }
 
 // -------------------------
-// author sidebar — full Mononoki coverage
+// author sidebar
 // -------------------------
 .author__avatar img {
   border-radius: 4px;
   border: none;
   box-shadow: none;
-}
-
-.author__content,
-.author__name,
-.author__bio,
-.author__urls-wrapper,
-.author__urls,
-.author__urls li,
-.author__urls a,
-.author__urls .label {
-  font-family: 'Mononoki', monospace !important;
+  opacity: 1 !important;
+  filter: none !important;   // remove any washed/faded effect
 }
 
 .author__name {
-  font-weight: normal;
   font-size: 1em;
+  font-weight: normal;
 }
 
 .author__bio {
-  font-style: italic;
-  font-size: 0.82em;
-  color: #6a6a6a;
+  font-size: 0.88em;
+  font-style: normal;       // headline, not italic
+  color: #4a4a4a;
+  line-height: 1.5;
+  margin-top: 0.3em;
+}
+
+.author__urls-wrapper {
+  margin-top: 0.6em;
 }
 
 .author__urls {
-  font-size: 0.82em;
+  font-size: 0.88em;
+  line-height: 1.9;
+
+  li, a, .label { font-size: inherit; }
+
+  a {
+    color: #4a4a4a;
+    &:hover { color: $link-color; }
+  }
 }
 
-// the 'Follow' toggle button
 .btn--inverse {
-  font-family: 'Mononoki', monospace !important;
-  font-size: 0.78em;
+  font-size: 0.8em;
   font-weight: normal;
   border-radius: 2px;
-  padding: 0.3em 0.7em;
+  padding: 0.25em 0.65em;
 }
 
 // -------------------------
-// TOC (right sidebar) — Mononoki, no jarring styles
+// TOC (right sidebar)
 // -------------------------
 .toc {
-  font-family: 'Mononoki', monospace;
   border: none;
   background: transparent;
   box-shadow: none;
 
+  // hide the document icon, keep label text
+  .nav__title i { display: none; }
+
   .nav__title {
-    font-family: 'Mononoki', monospace;
-    font-size: 0.78em;
+    font-size: 0.82em;
     font-weight: normal;
     text-transform: lowercase;
     letter-spacing: 0.04em;
     color: #8a8a8a;
     background: transparent;
-    padding: 0;
+    padding: 0 0 0.4em 0;
     margin-bottom: 0.5em;
     border-bottom: 1px solid #e0dbd5;
-    padding-bottom: 0.4em;
   }
 
-  ol,
-  ul,
-  li,
+  ol, ul { padding-left: 0; list-style: none; }
+
   a {
-    font-family: 'Mononoki', monospace;
-    font-size: 0.8em;
+    font-size: 0.88em;   // was too small before
     color: #6a6a6a;
-  }
+    text-decoration: none;
+    line-height: 1.8;
 
-  a {
     &:hover {
       color: $link-color;
       text-decoration: underline;
@@ -280,12 +255,13 @@ hr {
 // -------------------------
 .page__content {
   h2 {
+    font-size: 1em;
+    font-weight: normal;
+    text-transform: lowercase;
+    letter-spacing: 0.02em;
     margin-top: 2em;
     padding-bottom: 0.25em;
     border-bottom: 1px solid #e8e3de;
-    font-size: 1em;
-    text-transform: lowercase;
-    letter-spacing: 0.02em;
   }
 
   h3 {
@@ -294,42 +270,62 @@ hr {
   }
 }
 
-// page title (the big h1 at top of subpages)
 .page__title {
-  font-family: 'Mononoki', monospace;
+  font-size: 1.2em;
   font-weight: normal;
   text-transform: lowercase;
-  font-size: 1.2em;
   letter-spacing: -0.01em;
+}
+
+// -------------------------
+// homepage author bar
+// -------------------------
+.home-profile {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.4em 1.2em;
+  font-size: 0.82em;
+  padding: 0.65em 0;
+  margin-bottom: 2em;
+  border-top: 1px solid #e0dbd5;
+  border-bottom: 1px solid #e0dbd5;
+  color: #6a6a6a;
+
+  &__name {
+    color: #2c2c2c;
+    white-space: nowrap;
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1em 1em;
+
+    a {
+      color: #6a6a6a;
+      text-decoration: none;
+      &:hover { color: $link-color; text-decoration: underline; }
+    }
+  }
 }
 
 // -------------------------
 // footer
 // -------------------------
 .page__footer {
-  font-family: 'Mononoki', monospace;
-  font-size: 0.8em;
+  font-size: 0.82em;
   background: #f0ebe5;
-  border-top: 1px solid #d8cfc6;
-  color: #8a8a8a;
+  border-top: 1px solid #d0c8c0;
+  color: #6a6a6a;
 
   a {
-    color: inherit;
-    font-family: 'Mononoki', monospace;
-
-    &:hover {
-      color: $link-color;
-    }
+    color: #6a6a6a;
+    &:hover { color: $link-color; }
   }
-}
 
-// -------------------------
-// breadcrumbs, meta, pagination — catch-all
-// -------------------------
-.breadcrumbs,
-.page__meta,
-.pagination,
-.page__related,
-.search-content {
-  font-family: 'Mononoki', monospace;
+  // hide the "Follow:" label
+  .page__footer-follow li:first-child {
+    display: none;
+  }
 }

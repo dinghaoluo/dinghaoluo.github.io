@@ -4,7 +4,8 @@ author_profile: true
 permalink: /cv/
 title: "cv"
 toc: true
-toc_label: " "
+toc_label: "on this page"
+toc_icon: ""
 ---
 
 [dinghao.luo@mpfi.org](mailto:dinghao.luo@mpfi.org) · [dinghao.luo@outlook.com](mailto:dinghao.luo@outlook.com)

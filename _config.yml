@@ -39,7 +39,7 @@ description: >-
   Personal website of Dinghao Luo — neuroscientist, translator, and musician.
   PhD student at Max Planck Florida Institute for Neuroscience.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://cereniq.blog" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://dinghaoluo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "dinghaoluo/dinghaoluo.github.io"
 # logo: "assets/images/masthead.png"
 #breadcrumbs: true
@@ -121,7 +121,7 @@ analytics:
 author:
   name             : "Dinghao Luo"
   avatar           : "/assets/images/avatar.jpg"
-  bio              : "neuroscientist, translator, musician."
+  bio              : "PhD Neuroscientist | Data Science | Scientific Journalism"
   location         : "Jupiter, FL"
   email            : "dinghao.luo@outlook.com"
   links:
@@ -134,9 +134,6 @@ author:
     - label: "linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/dinghaoluo/"
-    - label: "orcid"
-      icon: "fab fa-fw fa-orcid"
-      url: "https://orcid.org/0000-0002-3036-1187"
     - label: "bandcamp"
       icon: "fab fa-fw fa-bandcamp"
       url: "https://amoxitoxin.bandcamp.com/"
@@ -147,27 +144,20 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:dinghao.luo@outlook.com"
     - label: "github"
-      # icon: "fab fa-fw fa-github-square"
-      icon: " "
+      icon: "fab fa-fw fa-github"
       url: "https://github.com/dinghaoluo"
     - label: "linkedin"
-      icon: " "
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/dinghaoluo/"
     - label: "bandcamp"
-      icon: " "
+      icon: "fab fa-fw fa-bandcamp"
       url: "https://amoxitoxin.bandcamp.com/"
-    - label: "orcid"
-      # icon: "fab fa-fw fa-orcid"
-      icon: " "
-      url: "https://orcid.org/0000-0002-3036-1187"
-    - label: "reddit"
-      # icon: "fab fa-fw fa-reddit-square"
-      icon: " "
-      url: "https://www.reddit.com/user/amoxdl24/"
     - label: "instagram"
-      # icon: "fab fa-fw fa-instagram-square"
-      icon: " "
+      icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/amoxitoxin"
 
 

@@ -2,11 +2,20 @@
 layout: single
 author_profile: false
 ---
-<div style="margin-bottom: 2em;">
+<div style="margin-bottom: 1.5em;">
   <img src="assets/images/cereniq.png" alt="cereniq:" style="width: 160px;">
 </div>
 
-Hi — I'm Dinghao (罗丁豪).
+<div class="home-profile">
+  <span class="home-profile__name">Dinghao Luo &nbsp;·&nbsp; 罗丁豪</span>
+  <span class="home-profile__links">
+    <a href="mailto:dinghao.luo@outlook.com">email</a>
+    <a href="https://github.com/dinghaoluo">github</a>
+    <a href="https://www.linkedin.com/in/dinghaoluo/">linkedin</a>
+    <a href="https://amoxitoxin.bandcamp.com/">bandcamp</a>
+    <a href="https://www.instagram.com/amoxitoxin">instagram</a>
+  </span>
+</div>
 
 I'm a neuroscience PhD student at the [Max Planck Florida Institute for Neuroscience](https://www.mpfi.org), finishing in late 2026. My project is about how the locus coeruleus uses phasic dopamine to modulate memory circuits in the hippocampus — on timescales and with specificity that the classical picture of neuromodulation doesn't quite account for.
 

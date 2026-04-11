@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh pr create --title 'portfolio redesign: structure, styling, and content scaffold' --body ':*)",
+      "Bash(winget install:*)",
+      "Bash(where gh:*)"
+    ]
+  }
+}
