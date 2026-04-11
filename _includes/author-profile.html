@@ -246,4 +246,14 @@
       {% include author-profile-custom-links.html %}
     </ul>
   </div>
+
+  {% assign c = site.data.currently %}
+  {% if c %}
+  <div class="author__currently">
+    <h4 class="author__currently-label">currently</h4>
+    {% if c.reading %}<p><span class="currently-key">reading</span> {{ c.reading }}</p>{% endif %}
+    {% if c.learning %}<p><span class="currently-key">learning</span> {{ c.learning }}</p>{% endif %}
+    {% if c.lately %}<p><span class="currently-key">lately</span> {{ c.lately }}</p>{% endif %}
+  </div>
+  {% endif %}
 </div>

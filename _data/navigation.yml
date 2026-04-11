@@ -4,6 +4,8 @@ main:
     url: /research/
   - title: "writing"
     url: /writing/
+  - title: "短評"
+    url: /reviews/
   - title: "music"
     url: /music/
   - title: "photos"
