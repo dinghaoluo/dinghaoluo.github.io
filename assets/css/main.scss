@@ -139,7 +139,7 @@ hr {
 
 #cereniq-nav {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 0.1em 1.4em;
@@ -157,13 +157,6 @@ hr {
       color: $link-color !important;
       text-decoration: underline !important;
       text-underline-offset: 3px;
-    }
-
-    // brief_takes sits visually closer to writing — slightly smaller, a touch quieter
-    &.nav-brief {
-      font-size: 0.78em;
-      color: #6a6a6a !important;
-      margin-right: -0.4em;   // pull it slightly closer to the next item
     }
   }
 }
@@ -277,59 +270,24 @@ hr {
 }
 
 .page {
-  @include breakpoint($large) {
-    padding-right: 220px;
-  }
-  @include breakpoint($x-large) {
-    width: calc(100% - 260px);
-    padding-right: 260px;
-  }
+  // TOC removed; page expands to use full available width
 }
 
 // -------------------------
-// TOC (right sidebar)
+// TOC (right sidebar) — REMOVED to expand main content
 // -------------------------
 .toc {
-  border: none;
-  background: transparent;
-  box-shadow: none;
-
-  // hide the document icon, keep label text
-  .nav__title i { display: none; }
-
-  .nav__title {
-    font-family: 'Mononoki', monospace !important;  // explicit — * rule can lose to theme specificity
-    font-size: 0.82em;
-    font-weight: normal;
-    text-transform: lowercase;
-    letter-spacing: 0.04em;
-    color: #8a8a8a;
-    background: transparent;
-    padding: 0 0 0.4em 0;
-    margin-bottom: 0.5em;
-    border-bottom: 1px solid #e0dbd5;
-  }
-
-  ol, ul { padding-left: 0; list-style: none; }
-
-  a {
-    font-size: 0.88em;   // was too small before
-    color: #6a6a6a;
-    text-decoration: none;
-    line-height: 1.8;
-
-    &:hover {
-      color: $link-color;
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
-  }
+  display: none;
 }
 
 // -------------------------
 // page content
 // -------------------------
 .page__content {
+  p, li, dl {
+    font-size: 1.2em;  // scales with html base (12→14.4px, 13→15.6px, 14→16.8px, 15→18px)
+  }
+
   h2 {
     font-size: 1em;
     font-weight: normal;
@@ -363,7 +321,6 @@ hr {
 // currently intro paragraph on home page
 .currently-intro {
   font-size: 0.95em;
-  color: #3a3a3a;
   line-height: 1.75;
   margin-bottom: 1.6em;
   padding-bottom: 1.4em;
@@ -516,43 +473,45 @@ hr {
 
 .brief-card__creator { color: #7a7a7a; }
 
-// shared text style — used both clamped (in summary) and full (in expand)
+// shared text style — single text field for both collapsed and expanded
 .brief-card__text {
   font-size: 0.88em;
   color: #3a3a3a;
   line-height: 1.65;
-  white-space: pre-wrap;   // respect line breaks from YAML block scalar
+  white-space: pre-wrap;
+}
 
-  // collapsed: clamp to 3 lines with fade
-  &--clamped {
+// in summary: clamp to 2 lines with fade effect on third line
+.brief-card__summary {
+  position: relative;
+  display: block;
+
+  .brief-card__text {
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+
+    // fade gradient on third line
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
   }
 }
 
-// grid-rows animation — smooth expand/collapse pushing content below
-// summary hides the text when open; expand panel shows it
-.brief-card__details[open] .brief-card__summary .brief-card__text--clamped {
-  display: none;
-}
-
+// smooth expand/collapse: max-height animation pushes arrow and cards below downward
 .brief-card__expand {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.38s ease;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease;
 }
 
 .brief-card__details[open] .brief-card__expand {
-  grid-template-rows: 1fr;
+  max-height: 5000px;  // large enough for any content
 }
 
 .brief-card__expand-inner {
-  overflow: hidden;
-
   .brief-card__text {
-    margin-top: 0.4em;
+    margin-top: 0.6em;
     margin-bottom: 0;
   }
 }
