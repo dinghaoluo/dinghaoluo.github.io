@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3"
+gem "bigdecimal"  # required explicitly from Ruby 3.4+
 gem "jekyll-sass-converter", "~> 2.0"  # 3.x breaks minimal-mistakes sass imports
 gem "minimal-mistakes-jekyll"
 gem "webrick"
