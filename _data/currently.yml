@@ -1,9 +1,10 @@
 # -------------------------------------------------------
 # Update these whenever you like.
-# They appear in the sidebar on every page.
-# All fields are optional — comment out any you don't want shown.
+# They appear in the opening paragraph on the home page.
+# All three fields are used in the sentence:
+#   "Recently I've been reading ___, learning ___, and thinking ___."
 # -------------------------------------------------------
 
-reading: "Mason & Dixon — Thomas Pynchon"
+reading: "Mason & Dixon"
 learning: "SQL for analytics; picking up scikit-learn"
-lately: "Thinking about what it means for a neuron to 'represent' something"
+thinking: "about what it means for a neuron to 'represent' something"

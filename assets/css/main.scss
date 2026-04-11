@@ -180,8 +180,8 @@ hr {
   text-align: left;
 
   img {
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
     object-fit: cover;
     border-radius: 4px;
     border: none;
@@ -194,15 +194,15 @@ hr {
 .author__name {
   font-size: 1.05em;
   font-weight: normal;
-  margin-top: 0.6em;
+  margin-top: 0.7em;
   margin-bottom: 0;
 }
 
 .author__name-zh {
   font-size: 0.78em;
   color: #8a8a8a;
-  margin-top: 0.55em;          // more breathing room below the English name
-  margin-bottom: 0.5em;
+  margin-top: 0.85em;          // generous gap below English name
+  margin-bottom: 0.6em;
   letter-spacing: 0.04em;
 }
 
@@ -210,10 +210,10 @@ hr {
   font-size: 0.88em;
   font-style: normal;
   color: #4a4a4a;
-  line-height: 1.7;
+  line-height: 1.35;           // tighter interline for the role lines
   margin-top: 0.5em;
 
-  br { display: block; content: ""; margin-top: 0.1em; }
+  br { display: block; content: ""; margin-top: 0.2em; }
 
   p { margin: 0; font-size: inherit; }
 }
@@ -339,6 +339,32 @@ hr {
   }
 }
 
+// homepage section headers — larger, JetBrains Mono Bold
+.home .page__content h2 {
+  font-family: 'JetBrains Mono', 'Mononoki', monospace;
+  font-size: 1.15em;
+  font-weight: 700;
+  text-transform: lowercase;
+  letter-spacing: -0.02em;
+  color: #1a1a1a;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-top: 2.2em;
+  margin-bottom: 0.4em;
+}
+
+// currently intro paragraph on home page
+.currently-intro {
+  font-size: 0.95em;
+  color: #3a3a3a;
+  line-height: 1.75;
+  margin-bottom: 1.6em;
+  padding-bottom: 1.4em;
+  border-bottom: 1px solid #e8e3de;
+
+  em { font-style: italic; }
+}
+
 .page__title {
   font-size: 1.2em;
   font-weight: normal;
@@ -347,105 +373,164 @@ hr {
 }
 
 // -------------------------
-// currently — sidebar section
+// sidebar brief takes preview
 // -------------------------
-.author__currently {
+.author__sidebar-takes {
   margin-top: 1.2em;
   padding-top: 0.9em;
   border-top: 1px solid #e0dbd5;
-  font-size: 0.8em;
-  color: #5a5a5a;
-  line-height: 1.65;
-
-  p { font-size: inherit; margin: 0 0 0.35em; }
 }
 
-.author__currently-label {
+.author__sidebar-takes-label {
   font-size: 0.78em;
   font-weight: normal;
   text-transform: lowercase;
   letter-spacing: 0.04em;
   color: #9a9a9a;
-  margin: 0 0 0.5em;
+  margin: 0 0 0.55em;
   padding-bottom: 0.3em;
   border-bottom: 1px solid #ece8e3;
 }
 
-.currently-key {
-  color: #9a9a9a;
-  &::after { content: " · "; }
+.sidebar-take {
+  display: block;
+  text-decoration: none !important;
+  margin-bottom: 0.65em;
+  color: inherit;
+
+  &:hover .sidebar-take__title { color: $link-color; }
+}
+
+.sidebar-take__title {
+  display: block;
+  font-size: 0.82em;
+  font-weight: bold;
+  color: #2c2c2c;
+  margin-bottom: 0.1em;
+  transition: color 0.15s ease;
+}
+
+.sidebar-take__preview {
+  display: block;
+  font-size: 0.77em;
+  color: #5a5a5a;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  // fade from readable left → invisible right
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.85) 20%, transparent 92%);
+  mask-image: linear-gradient(to right, rgba(0,0,0,0.85) 20%, transparent 92%);
 }
 
 // -------------------------
-// 短評 review cards
+// brief takes — expandable cards
 // -------------------------
-.review-card {
+.brief-card {
   display: flex;
-  gap: 1.1em;
-  margin-bottom: 2.2em;
-  padding-bottom: 2.2em;
-  border-bottom: 1px solid #e8e3de;
+  gap: 1.2em;
+  padding: 0.9em 0.5em;
+  margin: 0 -0.5em;
+  border-bottom: 1px solid #ece8e3;
+  border-radius: 3px;
+  transition: background 0.15s ease;
 
   &:last-of-type { border-bottom: none; }
+  &:hover { background: rgba(0,0,0,0.022); }
 }
 
-.review-tag {
-  display: inline-block;
-  font-size: 0.72em;
-  letter-spacing: 0.06em;
-  padding: 0.1em 0.5em;
-  border-radius: 2px;
-  background: #ece8e4;
-  color: #6a6060;
-  margin-left: 0.4em;
-  vertical-align: middle;
-  text-transform: lowercase;
+.brief-card__img-wrap {
+  flex-shrink: 0;
 }
 
-.review-cover {
-  width: 72px;
-  min-width: 72px;
-  height: auto;
-  border-radius: 2px;
+.brief-card__img {
+  display: block;
+  width: 120px;
+  height: 90px;       // 4:3
   object-fit: cover;
-  align-self: flex-start;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
-}
-
-.review-cover-placeholder {
-  width: 72px;
-  min-width: 72px;
-  height: 100px;
   border-radius: 2px;
-  background: #ece8e4;
-  align-self: flex-start;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.13);
+
+  &--placeholder {
+    background: #e8e3de;
+  }
 }
 
-.review-body {
+.brief-card__details {
   flex: 1;
+  min-width: 0;
+}
 
-  h3 {
-    font-size: 0.95em;
-    font-weight: bold;
-    margin: 0 0 0.15em;
-    text-transform: none;
-    border: none;
-    padding: 0;
-    letter-spacing: 0;
-    text-decoration: none;
+.brief-card__summary {
+  list-style: none;
+  cursor: pointer;
+  outline: none;
+
+  &::-webkit-details-marker { display: none; }
+  &::marker { display: none; }
+
+  // subtle expand indicator
+  &::after {
+    content: '↓';
+    font-size: 0.7em;
+    color: #b8b0a8;
+    margin-left: 0.5em;
+    display: inline-block;
+    transition: transform 0.3s ease;
   }
+}
 
-  .review-meta {
-    font-size: 0.8em;
-    color: #8a8a8a;
-    margin: 0 0 0.65em;
-  }
+.brief-card__details[open] .brief-card__summary::after {
+  transform: rotate(180deg);
+}
 
-  .review-text {
-    font-size: 0.9em;
-    line-height: 1.75;
-    color: #2c2c2c;
-    margin: 0;
+.brief-card__meta {
+  font-size: 0.82em;
+  color: #5a5a5a;
+  margin-bottom: 0.3em;
+  line-height: 1.4;
+}
+
+.brief-card__type {
+  color: #9a9a9a;
+  text-transform: lowercase;
+  letter-spacing: 0.04em;
+}
+
+.brief-card__sep { color: #c0b8b0; }
+
+.brief-card__title {
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.brief-card__creator { color: #7a7a7a; }
+
+.brief-card__preview {
+  font-size: 0.88em;
+  color: #3a3a3a;
+  line-height: 1.65;
+}
+
+// grid-rows animation — smooth expand/collapse pushing content below
+.brief-card__expand {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.38s ease;
+}
+
+.brief-card__details[open] .brief-card__expand {
+  grid-template-rows: 1fr;
+}
+
+.brief-card__expand-inner {
+  overflow: hidden;
+
+  p {
+    font-size: 0.88em;
+    line-height: 1.72;
+    color: #3a3a3a;
+    margin-top: 0.7em;
+    margin-bottom: 0;
   }
 }
 

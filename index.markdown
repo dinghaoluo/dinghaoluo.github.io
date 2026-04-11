@@ -1,17 +1,18 @@
 ---
 layout: single
 author_profile: true
+classes: home
 ---
 
-I'm a neuroscience PhD student at the [Max Planck Florida Institute for Neuroscience](https://www.mpfi.org), finishing in late 2026. My project is about how the locus coeruleus uses phasic dopamine to modulate memory circuits in the hippocampus — on timescales and with specificity that the classical picture of neuromodulation doesn't quite account for.
+<p class="currently-intro">Hi, Dinghao here. Recently I've been reading <em>{{ site.data.currently.reading }}</em>, learning <em>{{ site.data.currently.learning }}</em>, and thinking <em>{{ site.data.currently.thinking }}</em>.</p>
 
-I did my undergrad in Natural Sciences at Cambridge (Magdalene College) and spent time at UCL before heading to South Florida. Outside the lab, I translate science between English and Chinese — I translated Merlin Sheldrake's *Entangled Life* into Chinese ([《菌络万象》](https://www.houlang.com/), 2024) and spent seven months as a science editor at *Scientific American* China. I also make music.
+I'm finishing my PhD in neuroscience at the [Max Planck Florida Institute for Neuroscience](https://www.mpfi.org) — working on how a tiny cluster of brainstem neurons shapes what the hippocampus remembers, on timescales that the classical picture of neuromodulation doesn't account for. Before that: Cambridge, UCL, a stint as a science editor at *Scientific American* China, and a book translation. I also make music under the name *amoxitoxin*.
 
 ---
 
 ## research
 
-How does a small cluster of neurons in the brainstem shape what gets remembered and what doesn't? I study how phasic dopamine from the locus coeruleus modulates functional subpopulations of CA1 hippocampal cells — with **Python** analysis pipelines and a computational model to match.
+Phasic dopamine from the locus coeruleus, hippocampal CA1 subpopulations, and what it all means for how memories get encoded. **Python** pipelines and a computational model; paper in preparation.
 
 [→ research](/research/)
 
@@ -19,22 +20,22 @@ How does a small cluster of neurons in the brainstem shape what gets remembered 
 
 ## writing
 
-I've translated Sheldrake's *Entangled Life*, edited for *Scientific American* China, and written for [Neu-Reality](https://neu-reality.com/) (神经现实) for three years. I'm interested in making neuroscience legible to people who don't spend their days reading papers about it.
+Three years at Neu-Reality (神经现实), seven months at *Scientific American* China, and a translation of Merlin Sheldrake's *Entangled Life* — winner of the 2025 Pingshan Natural History Museum Book Award.
 
 [→ writing & translation](/writing/)
 
 ---
 
-## 短評
+## brief_takes
 
-Books, films, and other things that have been on my mind. Brief takes, not proper reviews.
+Books, films, and other things that have been on my mind.
 
-[→ 短評](/reviews/)
+[→ brief takes](/brief-takes/)
 
 ---
 
 ## music
 
-Under the name *amoxitoxin*, I make progressive art-rock. Several albums on [Bandcamp](https://amoxitoxin.bandcamp.com/).
+Progressive art-rock as *amoxitoxin*. Several albums on [Bandcamp](https://amoxitoxin.bandcamp.com/).
 
 [→ music](/music/)
