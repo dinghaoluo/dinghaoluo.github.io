@@ -105,18 +105,23 @@ hr {
 // no MM class selectors can interfere here
 // -------------------------
 #cereniq-masthead {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #f0ebe5;
-  border-bottom: 1px solid #d0c8c0;
-  padding: 0.65em 1.5em;
+  background: #eaeae8;
+  border-bottom: 1px solid #d4d4d0;
   position: sticky;
   top: 0;
   z-index: 999;
+}
 
-  @media (min-width: 64em) {
-    padding: 0.65em 2.5em;
+#cereniq-masthead-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0.65em 1em;
+  max-width: 100%;
+
+  @include breakpoint($x-large) {
+    max-width: 1440px;
   }
 }
 
@@ -216,6 +221,28 @@ hr {
   font-weight: normal;
   border-radius: 2px;
   padding: 0.25em 0.65em;
+}
+
+// -------------------------
+// wider author sidebar (~1.25x default MM widths)
+// -------------------------
+.sidebar {
+  @include breakpoint($large) {
+    width: calc(250px - 1em);
+  }
+  @include breakpoint($x-large) {
+    width: calc(375px - 1em);
+  }
+}
+
+.page {
+  @include breakpoint($large) {
+    padding-right: 250px;
+  }
+  @include breakpoint($x-large) {
+    width: calc(100% - 375px);
+    padding-right: 375px;
+  }
 }
 
 // -------------------------

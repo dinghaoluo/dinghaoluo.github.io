@@ -1,8 +1,10 @@
 <header id="cereniq-masthead">
-  <a id="cereniq-site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-  <nav id="cereniq-nav">
-    {%- for link in site.data.navigation.main -%}
-      <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
-    {%- endfor -%}
-  </nav>
+  <div id="cereniq-masthead-inner">
+    <a id="cereniq-site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav id="cereniq-nav">
+      {%- for link in site.data.navigation.main -%}
+        <a href="{{ link.url | relative_url }}">{{ link.title }}</a>
+      {%- endfor -%}
+    </nav>
+  </div>
 </header>

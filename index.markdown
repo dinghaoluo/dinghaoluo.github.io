@@ -3,7 +3,7 @@ layout: single
 author_profile: false
 ---
 <div style="margin-bottom:1.5em;overflow:hidden;display:inline-block;">
-  <img src="assets/images/cereniq.png" alt="cereniq:" style="width:185px;margin-left:-18px;display:block;">
+  <img src="assets/images/cereniq.png" alt="cereniq:" style="width:185px;display:block;">
 </div>
 
 <div class="home-profile">
