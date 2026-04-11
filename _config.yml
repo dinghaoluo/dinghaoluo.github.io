@@ -120,8 +120,9 @@ analytics:
 # Site Author
 author:
   name             : "Dinghao Luo"
+  name_zh          : "罗丁豪"
   avatar           : "/assets/images/avatar.jpg"
-  bio              : "PhD Neuroscientist<br>Data Science<br>Scientific Journalism"
+  bio              : "PhD student · Neuroscience<br>Data Science · Science Journalism"
   email            : "dinghao.luo@outlook.com"
   links:
     - label: "email"

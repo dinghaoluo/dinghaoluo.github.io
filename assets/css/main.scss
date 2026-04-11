@@ -53,12 +53,12 @@ $background-color: #faf9f7;
 // -------------------------
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Mononoki', monospace;
 
-  @include breakpoint($medium) { font-size: 16px; }
-  @include breakpoint($large)  { font-size: 18px; }
-  @include breakpoint($x-large) { font-size: 20px; }
+  @include breakpoint($medium) { font-size: 14px; }
+  @include breakpoint($large)  { font-size: 15px; }
+  @include breakpoint($x-large) { font-size: 16px; }
 }
 
 // Force Mononoki everywhere — wildcard is safe here because
@@ -176,47 +176,81 @@ hr {
 // -------------------------
 // author sidebar
 // -------------------------
-.author__avatar img {
-  border-radius: 4px;
-  border: none;
-  box-shadow: none;
-  opacity: 1 !important;
-  filter: none !important;   // remove any washed/faded effect
-}
+.author__avatar {
+  text-align: left;
 
-.author__name {
-  font-size: 1em;
-  font-weight: normal;
-}
-
-.author__bio {
-  font-size: 0.82em;        // 0.82em — see STYLESHEET.md
-  font-style: normal;
-  color: #5a5a5a;
-  line-height: 1.7;
-  margin-top: 0.3em;
-
-  // each line (separated by <br> in config) gets a bit of breathing room
-  br { display: block; content: ""; margin-top: 0.15em; }
-}
-
-.author__urls-wrapper {
-  margin-top: 0.5em;
-}
-
-.author__urls {
-  font-size: 0.78em;        // 0.78em — see STYLESHEET.md
-  line-height: 1.85;
-
-  li, a, .label { font-size: inherit; }
-
-  a {
-    color: #5a5a5a;
-    &:hover { color: $link-color; }
+  img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: none;
+    box-shadow: none;
+    opacity: 1 !important;
+    filter: none !important;
   }
 }
 
+.author__name {
+  font-size: 1.05em;
+  font-weight: normal;
+  margin-top: 0.6em;
+  margin-bottom: 0;
+}
+
+.author__name-zh {
+  font-size: 0.78em;
+  color: #8a8a8a;
+  margin-top: 0.1em;
+  margin-bottom: 0.4em;
+  letter-spacing: 0.04em;
+}
+
+.author__bio {
+  font-size: 0.88em;
+  font-style: normal;
+  color: #4a4a4a;
+  line-height: 1.7;
+  margin-top: 0.5em;
+
+  br { display: block; content: ""; margin-top: 0.1em; }
+
+  p { margin: 0; font-size: inherit; }
+}
+
+.author__urls-wrapper {
+  margin-top: 0.75em;
+
+  // hide the Follow toggle button on desktop — links are always visible
+  @include breakpoint($large) {
+    .author__urls-toggle { display: none; }
+    .author__urls { display: block !important; }
+  }
+}
+
+.author__urls {
+  font-size: 0.82em;
+  line-height: 2;
+
+  li, a, .label { font-size: inherit; }
+
+  // monochrome icons — suppress all brand colours
+  i.fas, i.fab, i.fa {
+    color: #7a7a7a !important;
+  }
+
+  a {
+    color: #5a5a5a;
+    &:hover {
+      color: $link-color;
+      i.fas, i.fab, i.fa { color: $link-color !important; }
+    }
+  }
+}
+
+// hide Follow button entirely on desktop (redundant on personal site)
 .btn--inverse {
+  @include breakpoint($large) { display: none; }
   font-size: 0.8em;
   font-weight: normal;
   border-radius: 2px;
@@ -224,24 +258,24 @@ hr {
 }
 
 // -------------------------
-// wider author sidebar (~1.25x default MM widths)
+// author sidebar width (~1.1x default MM widths, middle panel gets more room)
 // -------------------------
 .sidebar {
   @include breakpoint($large) {
-    width: calc(250px - 1em);
+    width: calc(220px - 1em);
   }
   @include breakpoint($x-large) {
-    width: calc(375px - 1em);
+    width: calc(260px - 1em);
   }
 }
 
 .page {
   @include breakpoint($large) {
-    padding-right: 250px;
+    padding-right: 220px;
   }
   @include breakpoint($x-large) {
-    width: calc(100% - 375px);
-    padding-right: 375px;
+    width: calc(100% - 260px);
+    padding-right: 260px;
   }
 }
 

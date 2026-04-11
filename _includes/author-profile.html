@@ -15,6 +15,9 @@
     <h3 class="author__name p-name" itemprop="name">
       <a class="u-url" rel="me" href="{{ author.home | default: '/' | absolute_url }}" itemprop="url">{{ author.name }}</a>
     </h3>
+    {% if author.name_zh %}
+      <div class="author__name-zh">{{ author.name_zh }}</div>
+    {% endif %}
     {% if author.bio %}
       <div class="author__bio p-note" itemprop="description">
         {{ author.bio | markdownify }}
@@ -23,7 +26,7 @@
   </div>
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
+    <button class="btn btn--inverse author__urls-toggle">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">

@@ -3,7 +3,20 @@
     "allow": [
       "Bash(gh pr create --title 'portfolio redesign: structure, styling, and content scaffold' --body ':*)",
       "Bash(winget install:*)",
-      "Bash(where gh:*)"
+      "Bash(where gh:*)",
+      "Bash(gh run:*)",
+      "Read(//l/projects/dinghaoluo.github.io/**)",
+      "Bash(bundle exec:*)",
+      "Bash(where ruby:*)",
+      "Bash(ls /c/Ruby*)",
+      "Read(//c//**)",
+      "Bash(/c/Ruby34-x64/bin/bundle exec:*)",
+      "Bash(/c/Ruby34-x64/bin/bundle.cmd exec:*)",
+      "Bash(cmd //c \"cd /d L:\\\\projects\\\\dinghaoluo.github.io && C:\\\\Ruby34-x64\\\\bin\\\\bundle.bat exec jekyll build 2>&1\")",
+      "Bash(cmd //c \"set PATH=C:\\\\Ruby34-x64\\\\bin;%PATH% && cd /d L:\\\\projects\\\\dinghaoluo.github.io && bundle exec jekyll build 2>&1\")",
+      "Bash(curl -s \"https://api.github.com/repos/dinghaoluo/dinghaoluo.github.io/pages\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(d.get\\('status','?'\\), d.get\\('error','no error'\\)\\)\")",
+      "Bash(curl -s \"https://api.github.com/repos/dinghaoluo/dinghaoluo.github.io/deployments?per_page=3\")"
     ]
   }
 }
