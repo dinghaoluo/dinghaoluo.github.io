@@ -5,13 +5,12 @@ main:
   - title: "brief_takes"
     url: /brief-takes/
     class: "nav-brief"
-  - title: "research"
+  - title: "science"
     url: /research/
     break_before: true
   - title: "music"
     url: /music/
   - title: "photos"
     url: /photos/
-  - title: "cv"
-    url: /cv/
-    class: "nav-cv"
+  - title: "other"
+    url: /#other-stuff

@@ -215,11 +215,11 @@ hr {
 // nav brief_takes link — smaller, close to writing but with breathing room
 .nav-brief {
   font-size: 0.72em !important;    // desktop: slightly smaller
-  margin-left: -0.9em !important;  // desktop: close but not glued
+  margin-left: -1.1em !important;  // desktop: snug against writing
 
   @media (max-width: 1023px) {
     font-size: 0.65em !important;  // mobile: clearly smaller
-    margin-left: -0.35em !important;
+    margin-left: -0.55em !important;
   }
 }
 
@@ -240,7 +240,7 @@ hr {
 #main {
   // on mobile: account for sticky masthead height so sidebar isn't covered on first load
   @media (max-width: 1023px) {
-    margin-top: 2.8em;  // space below sticky nav
+    margin-top: 2em;  // space below sticky nav
   }
 
   @include breakpoint($x-large) {
@@ -445,6 +445,27 @@ hr {
 .currently-greeting {
   color: #8a8a8a;
   font-style: normal;
+}
+
+.reach-out {
+  font-size: 0.88em;
+  color: #5a5a5a;
+  margin-top: -0.6em;    // pull tight under currently-intro
+  margin-bottom: 1.4em;
+}
+
+.page-nav {
+  font-size: 0.85em;
+  color: #7a7a7a;
+  line-height: 1.7;
+  margin-top: 0.8em;
+  margin-bottom: 1.6em;
+
+  a {
+    color: #5a5a5a;
+    text-decoration: none;
+    &:hover { color: $link-color; text-decoration: none; }
+  }
 }
 
 .page__title {
