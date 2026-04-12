@@ -108,13 +108,9 @@ hr {
 #haothings-masthead {
   background: #eaeae8;
   border-bottom: 1px solid #d4d4d0;
-  position: static;  // mobile: scroll with content
+  position: sticky;
+  top: 0;
   z-index: 999;
-
-  @include breakpoint($large) {
-    position: sticky;  // desktop: stay at top
-    top: 0;
-  }
 }
 
 #haothings-masthead-inner {
@@ -242,6 +238,11 @@ hr {
 // constrained main content column — matches masthead inner width
 // -------------------------
 #main {
+  // on mobile: account for sticky masthead height so sidebar isn't covered on first load
+  @media (max-width: 1023px) {
+    margin-top: 3.5em;  // space below sticky nav
+  }
+
   @include breakpoint($x-large) {
     max-width: 1100px;
   }
