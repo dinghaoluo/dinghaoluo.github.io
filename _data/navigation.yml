@@ -13,3 +13,4 @@ main:
     url: /photos/
   - title: "cv"
     url: /cv/
+    class: "nav-cv"

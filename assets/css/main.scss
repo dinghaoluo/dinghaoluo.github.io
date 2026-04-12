@@ -166,7 +166,7 @@ hr {
 
 #cereniq-nav {
   display: flex;
-  align-items: flex-end;       // bottom-align so brief_takes text baseline matches others
+  align-items: baseline;       // true text-baseline alignment across different font sizes
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 0.1em 1.4em;
@@ -210,11 +210,11 @@ hr {
 
 // nav brief_takes link — smaller, close to writing but with breathing room
 .nav-brief {
-  font-size: 0.75em !important;
+  font-size: 0.8em !important;     // desktop: slightly larger than before
   margin-left: -0.9em !important;  // desktop: close but not glued
 
   @media (max-width: 1023px) {
-    font-size: 0.72em !important;  // visibly smaller on mobile
+    font-size: 0.65em !important;  // mobile: clearly smaller
     margin-left: -0.35em !important;
   }
 }
@@ -565,6 +565,7 @@ hr {
 
 .brief-card__title {
   font-weight: bold;
+  font-size: 1.18em;   // emphasise the title — ~1.2x the surrounding meta text
   color: #1a1a1a;
 }
 
@@ -643,14 +644,14 @@ hr {
 // -------------------------
 .brief-filter-strip {
   position: relative;
-  display: inline-flex;
+  display: flex;                          // full-width flex
   align-items: center;
+  width: 95%;                             // span almost full column width
   background: rgba(237, 232, 226, 0.5);  // half transparent outer box
   border-radius: 1000px;                 // highly rounded
   padding: 0.12em 0.18em;
   margin-bottom: 1.8em;
   user-select: none;
-  min-width: 280px;  // approx width of a brief-card
 }
 
 .brief-filter-pill {
@@ -670,11 +671,13 @@ hr {
 .brief-filter-btn {
   position: relative;
   z-index: 1;
+  flex: 1;                         // equal width — fills the strip evenly
+  text-align: center;
   background: none;
   border: none;
-  padding: 0.15em 0.7em;
+  padding: 0.22em 0;
   font-family: 'Mononoki', monospace;
-  font-size: 0.78em;
+  font-size: 1em;                  // match main text size
   color: #8a8a8a;
   cursor: pointer;
   border-radius: 1000px;
@@ -683,7 +686,6 @@ hr {
 
   &.active {
     color: #1a1a1a;
-    font-weight: normal;
   }
   &:hover { color: #5a5a5a; }
 }
@@ -709,6 +711,9 @@ hr {
     gap: 0 0.85em;
     a { line-height: 1.25; }
   }
+
+  // hide cv on mobile — keeps nav to 2 rows
+  .nav-cv { display: none !important; }
 
   // hide entire contact section on mobile — multiple layers to beat MM specificity
   .author__urls-wrapper { display: none !important; }
