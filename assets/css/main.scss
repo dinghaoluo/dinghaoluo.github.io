@@ -108,9 +108,13 @@ hr {
 #haothings-masthead {
   background: #eaeae8;
   border-bottom: 1px solid #d4d4d0;
-  position: sticky;
-  top: 0;
+  position: static;  // mobile: scroll with content
   z-index: 999;
+
+  @include breakpoint($large) {
+    position: sticky;  // desktop: stay at top
+    top: 0;
+  }
 }
 
 #haothings-masthead-inner {
