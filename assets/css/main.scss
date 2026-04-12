@@ -138,7 +138,11 @@ hr {
   text-decoration: none !important;
   flex-shrink: 0;
   position: relative;
-  font-size: 1.12em;
+  font-size: 1em;
+
+  @include breakpoint($large) {
+    font-size: 1.3em;  // larger on desktop so it's prominent
+  }
 
   // matching sliding underline to nav links
   &::after {
@@ -176,15 +180,16 @@ hr {
     letter-spacing: 0.01em;
     white-space: nowrap;
     position: relative;
+    padding-bottom: 2px;
 
     // sliding underline — replaces browser default
     &::after {
       content: '';
       position: absolute;
-      bottom: -1px;
+      bottom: -2px;
       left: 0;
       width: 100%;
-      height: 1px;
+      height: 1.5px;
       background: $link-color;
       transform: scaleX(0);
       transform-origin: left;
@@ -203,10 +208,15 @@ hr {
 // suppress the empty MM masthead shell if present
 .masthead { display: none !important; }
 
-// nav brief_takes link — slightly smaller than other nav items, pulled closer to writing
+// nav brief_takes link — much smaller, glued to writing on desktop
 .nav-brief {
-  font-size: 0.88em !important;
-  margin-left: -0.7em !important;
+  font-size: 0.75em !important;
+  margin-left: -1.2em !important;
+
+  @media (max-width: 1023px) {
+    font-size: 0.82em !important;
+    margin-left: -0.5em !important;
+  }
 }
 
 // -------------------------
@@ -629,29 +639,30 @@ hr {
 }
 
 // -------------------------
-// brief-takes filter strip
+// brief-takes filter strip — elegant outer box with sliding inner highlight
 // -------------------------
 .brief-filter-strip {
   position: relative;
   display: inline-flex;
   align-items: center;
-  background: #ede8e2;
-  border-radius: 100px;
-  padding: 0.22em 0.28em;
+  background: rgba(237, 232, 226, 0.5);  // half transparent outer box
+  border-radius: 1000px;                 // highly rounded
+  padding: 0.12em 0.18em;
   margin-bottom: 1.8em;
   user-select: none;
+  min-width: 280px;  // approx width of a brief-card
 }
 
 .brief-filter-pill {
   position: absolute;
-  top: 0.22em;
-  left: 0.28em;
-  height: calc(100% - 0.44em);
+  top: 0.12em;
+  left: 0.18em;
+  height: calc(100% - 0.24em);
   background: #faf9f7;
-  border-radius: 100px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
-  transition: left 0.26s cubic-bezier(0.4, 0, 0.2, 1),
-              width 0.26s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 1000px;  // match outer box shape
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  transition: left 0.32s cubic-bezier(0.34, 1.56, 0.64, 1),
+              width 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
   pointer-events: none;
   z-index: 0;
 }
@@ -661,20 +672,20 @@ hr {
   z-index: 1;
   background: none;
   border: none;
-  padding: 0.18em 0.82em;
+  padding: 0.15em 0.7em;
   font-family: 'Mononoki', monospace;
-  font-size: 0.82em;
-  color: #9a9a9a;
+  font-size: 0.78em;
+  color: #8a8a8a;
   cursor: pointer;
-  border-radius: 100px;
-  transition: color 0.2s ease, transform 0.18s ease;
+  border-radius: 1000px;
+  transition: color 0.22s ease;
   white-space: nowrap;
 
-  &.active { color: #1a1a1a; }
-  &:hover:not(.active) {
-    color: #4a4a4a;
-    transform: scale(1.02);
+  &.active {
+    color: #1a1a1a;
+    font-weight: normal;
   }
+  &:hover { color: #5a5a5a; }
 }
 
 // -------------------------
@@ -699,13 +710,12 @@ hr {
     a { line-height: 1.25; }
   }
 
-  // hide Follow toggle on mobile, always show contacts
-  .author__urls-wrapper .author__urls-toggle { display: none !important; }
-  .author__urls-wrapper .author__urls        { display: block !important; }
+  // hide entire contact list on mobile (takes up too much space)
+  .author__urls-wrapper { display: none !important; }
 
   // show mobile bio, hide desktop bio
-  .author__bio--desktop { display: none; }
-  .author__bio--mobile  { display: block; }
+  .author__bio--desktop { display: none !important; }
+  .author__bio--mobile  { display: block !important; }
 }
 
 // -------------------------
