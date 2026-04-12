@@ -80,3 +80,60 @@
     }
   });
 })();
+
+/* brief filter strip — category filtering with smooth pill animation */
+(function () {
+  'use strict';
+  document.addEventListener('DOMContentLoaded', function () {
+    var strip = document.getElementById('brief-filter-strip');
+    if (!strip) return;
+
+    var pill  = document.getElementById('brief-filter-pill');
+    var btns  = strip.querySelectorAll('.brief-filter-btn');
+    var cards = document.querySelectorAll('.brief-card');
+
+    function movePill(btn) {
+      var sr = strip.getBoundingClientRect();
+      var br = btn.getBoundingClientRect();
+      pill.style.left  = (br.left  - sr.left)  + 'px';
+      pill.style.width =  br.width             + 'px';
+    }
+
+    // initialise pill under the active button
+    var active = strip.querySelector('.brief-filter-btn.active');
+    if (active) requestAnimationFrame(function () { movePill(active); });
+
+    btns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        btns.forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        movePill(btn);
+
+        var filter = btn.getAttribute('data-filter');
+
+        cards.forEach(function (card) {
+          var t = (card.getAttribute('data-type') || '').toLowerCase();
+          var show = filter === 'all'
+                  || t === filter
+                  || (filter === 'other' && t !== 'book' && t !== 'film');
+
+          if (show) {
+            card.style.display = '';
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(5px)';
+            requestAnimationFrame(function () {
+              card.style.transition = 'opacity 0.24s ease, transform 0.24s ease';
+              card.style.opacity    = '1';
+              card.style.transform  = '';
+            });
+          } else {
+            card.style.transition = 'opacity 0.18s ease, transform 0.18s ease';
+            card.style.opacity    = '0';
+            card.style.transform  = 'translateY(5px)';
+            setTimeout(function () { card.style.display = 'none'; }, 190);
+          }
+        });
+      });
+    });
+  });
+})();

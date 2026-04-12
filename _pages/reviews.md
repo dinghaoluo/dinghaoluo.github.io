@@ -9,8 +9,16 @@ title: "brief takes"
 
 ---
 
+<div class="brief-filter-strip" id="brief-filter-strip">
+  <div class="brief-filter-pill" id="brief-filter-pill"></div>
+  <button class="brief-filter-btn active" data-filter="all">all</button>
+  <button class="brief-filter-btn" data-filter="book">books</button>
+  <button class="brief-filter-btn" data-filter="film">films</button>
+  <button class="brief-filter-btn" data-filter="other">others</button>
+</div>
+
 {% for take in site.data.brief_takes %}
-<div class="brief-card">
+<div class="brief-card" data-type="{{ take.type }}">
   <div class="brief-card__img-wrap">
     {% if take.image and take.image != "" %}
       <img class="brief-card__img" src="{{ take.image | relative_url }}" alt="{{ take.title }}">

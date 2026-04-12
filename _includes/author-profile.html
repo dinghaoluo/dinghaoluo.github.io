@@ -19,8 +19,13 @@
       <div class="author__name-zh">{{ author.name_zh }}</div>
     {% endif %}
     {% if author.bio %}
-      <div class="author__bio p-note" itemprop="description">
+      <div class="author__bio p-note author__bio--desktop" itemprop="description">
         {{ author.bio | markdownify }}
+      </div>
+    {% endif %}
+    {% if author.bio_mobile %}
+      <div class="author__bio author__bio--mobile">
+        {{ author.bio_mobile | markdownify }}
       </div>
     {% endif %}
   </div>

@@ -88,6 +88,7 @@ strong { font-weight: bold; font-style: normal; }
 
 a {
   color: $link-color;
+  transition: color 0.18s ease;
   &:hover {
     text-decoration: underline;
     text-underline-offset: 3px;
@@ -137,15 +138,7 @@ hr {
   text-decoration: none !important;
   flex-shrink: 0;
   position: relative;
-
-  // hide original "cereniq:" text and show ":)" instead
-  font-size: 0;
-
-  &::before {
-    content: ':)';
-    font-size: 1.12em;   // slightly larger than nav (1em)
-    display: inline-block;
-  }
+  font-size: 1.12em;
 
   // matching sliding underline to nav links
   &::after {
@@ -210,9 +203,10 @@ hr {
 // suppress the empty MM masthead shell if present
 .masthead { display: none !important; }
 
-// nav brief_takes link — slightly smaller than other nav items
+// nav brief_takes link — slightly smaller than other nav items, pulled closer to writing
 .nav-brief {
   font-size: 0.88em !important;
+  margin-left: -0.7em !important;
 }
 
 // -------------------------
@@ -231,8 +225,8 @@ hr {
   text-align: left;
 
   img {
-    width: 80px;            // mobile default — feels right on narrow screens
-    height: 80px;
+    width: 50px;            // mobile default — reduced for compact sidebar
+    height: 50px;
     object-fit: cover;
     border-radius: 4px;
     border: none;
@@ -283,6 +277,12 @@ hr {
 
 // Belt-and-suspenders: catch any direct text nodes wrapped by markdownify
 .author__bio { font-family: 'Mononoki', monospace !important; }
+
+// desktop: show full bio, hide mobile variant
+@media (min-width: 1024px) {
+  .author__bio--desktop { display: block; }
+  .author__bio--mobile  { display: none; }
+}
 
 .author__urls-wrapper {
   margin-top: 0.75em;
@@ -376,7 +376,7 @@ hr {
   }
 }
 
-// homepage section headers — bold Mononoki
+// homepage section headers — bold Mononoki with subtle animation
 .home .page__content h2 {
   font-family: 'Mononoki', monospace;
   font-size: 1.15em;
@@ -388,6 +388,12 @@ hr {
   padding-bottom: 0;
   margin-top: 2.2em;
   margin-bottom: 0.4em;
+  animation: cereniq-scale-in 0.34s ease both;
+}
+
+@keyframes cereniq-scale-in {
+  from { opacity: 0; transform: scale(0.98); }
+  to   { opacity: 1; transform: scale(1); }
 }
 
 // currently intro paragraph on home page
@@ -482,6 +488,14 @@ hr {
   border-radius: 3px;
   cursor: pointer;
   transition: background 0.15s ease, transform 0.18s ease, box-shadow 0.18s ease;
+  animation: cereniq-card-load 0.42s ease both;
+
+  // stagger cards on load
+  @for $i from 1 through 20 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{($i - 1) * 0.05}s;
+    }
+  }
 
   &:last-of-type { border-bottom: none; }
   &:hover {
@@ -591,61 +605,6 @@ hr {
 }
 
 // -------------------------
-// homepage author bar (legacy — kept in case referenced elsewhere)
-// -------------------------
-.home-profile {
-  display: flex;
-  align-items: flex-end;   // everything bottom-aligned
-  gap: 1.4em;
-  padding-bottom: 1.25em;
-  margin-bottom: 2em;
-  border-bottom: 1px solid #e0dbd5;
-
-  &__avatar {
-    width: 58px;
-    height: 58px;
-    object-fit: cover;
-    border-radius: 3px;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  &__name {
-    display: flex;
-    flex-direction: column;
-    gap: 0.08em;
-    flex-shrink: 0;
-  }
-
-  &__en {
-    font-size: 0.9em;
-    color: #2c2c2c;
-    line-height: 1.3;
-  }
-
-  &__zh {
-    font-size: 0.74em;
-    color: #8a8a8a;
-    line-height: 1.3;
-  }
-
-  &__links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.15em 0.9em;
-    font-size: 0.78em;
-    line-height: 1.5;
-
-    a {
-      color: #6a6a6a;
-      text-decoration: none;
-      white-space: nowrap;
-      &:hover { color: $link-color; text-decoration: underline; }
-    }
-  }
-}
-
-// -------------------------
 // footer
 // -------------------------
 .page__footer {
@@ -670,14 +629,83 @@ hr {
 }
 
 // -------------------------
+// brief-takes filter strip
+// -------------------------
+.brief-filter-strip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background: #ede8e2;
+  border-radius: 100px;
+  padding: 0.22em 0.28em;
+  margin-bottom: 1.8em;
+  user-select: none;
+}
+
+.brief-filter-pill {
+  position: absolute;
+  top: 0.22em;
+  left: 0.28em;
+  height: calc(100% - 0.44em);
+  background: #faf9f7;
+  border-radius: 100px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+  transition: left 0.26s cubic-bezier(0.4, 0, 0.2, 1),
+              width 0.26s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.brief-filter-btn {
+  position: relative;
+  z-index: 1;
+  background: none;
+  border: none;
+  padding: 0.18em 0.82em;
+  font-family: 'Mononoki', monospace;
+  font-size: 0.82em;
+  color: #9a9a9a;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: color 0.2s ease, transform 0.18s ease;
+  white-space: nowrap;
+
+  &.active { color: #1a1a1a; }
+  &:hover:not(.active) {
+    color: #4a4a4a;
+    transform: scale(1.02);
+  }
+}
+
+// -------------------------
 // mobile overrides
 // -------------------------
 
-// brief-takes sidebar preview: show on homepage only at mobile widths (desktop shows everywhere)
+// brief-takes sidebar preview: hide on mobile for all pages
 @media (max-width: 1023px) {
-  body:not(.home) .author__sidebar-takes {
+  .author__sidebar-takes {
     display: none;
   }
+
+  // tighten masthead on mobile
+  #cereniq-masthead-inner {
+    padding-top: 0.28em;
+    padding-bottom: 0.28em;
+  }
+
+  // zero row-gap for wrapped nav, reduce line-height on nav links
+  #cereniq-nav {
+    gap: 0 0.85em;
+    a { line-height: 1.25; }
+  }
+
+  // hide Follow toggle on mobile, always show contacts
+  .author__urls-wrapper .author__urls-toggle { display: none !important; }
+  .author__urls-wrapper .author__urls        { display: block !important; }
+
+  // show mobile bio, hide desktop bio
+  .author__bio--desktop { display: none; }
+  .author__bio--mobile  { display: block; }
 }
 
 // -------------------------
@@ -687,6 +715,12 @@ hr {
 // full fade+lift for main content
 @keyframes cereniq-fade-up {
   from { opacity: 0; transform: translateY(7px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+// subtle load for brief cards
+@keyframes cereniq-card-load {
+  from { opacity: 0; transform: translateY(4px); }
   to   { opacity: 1; transform: translateY(0);   }
 }
 
@@ -712,7 +746,9 @@ hr {
 // respect prefers-reduced-motion
 @media (prefers-reduced-motion: reduce) {
   .page__inner-wrap,
-  .sidebar {
+  .sidebar,
+  .home .page__content h2,
+  .brief-card {
     animation: none;
   }
 }
