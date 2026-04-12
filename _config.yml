@@ -123,7 +123,7 @@ author:
   name_zh          : "羅 丁豪"
   avatar           : "/assets/images/avatar.jpg"
   bio              : "PhD Neuroscientist<br>Data Science<br>Science Journalism"
-  bio_mobile       : "PhD Neuroscientist<br>Data Science · Sci. Comm."
+  bio_mobile       : "PhD Neuroscientist<br>Data Science · Sci. Journalism"
   links:
     - label: "email"
       icon: "fas fa-fw fa-envelope"

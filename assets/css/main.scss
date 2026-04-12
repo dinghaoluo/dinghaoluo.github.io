@@ -208,14 +208,14 @@ hr {
 // suppress the empty MM masthead shell if present
 .masthead { display: none !important; }
 
-// nav brief_takes link — much smaller, glued to writing on desktop
+// nav brief_takes link — smaller, close to writing but with breathing room
 .nav-brief {
   font-size: 0.75em !important;
-  margin-left: -1.2em !important;
+  margin-left: -0.9em !important;  // desktop: close but not glued
 
   @media (max-width: 1023px) {
-    font-size: 0.82em !important;
-    margin-left: -0.5em !important;
+    font-size: 0.72em !important;  // visibly smaller on mobile
+    margin-left: -0.35em !important;
   }
 }
 
@@ -710,8 +710,18 @@ hr {
     a { line-height: 1.25; }
   }
 
-  // hide entire contact list on mobile (takes up too much space)
+  // hide entire contact section on mobile — multiple layers to beat MM specificity
   .author__urls-wrapper { display: none !important; }
+  .author__urls-wrapper .author__urls-toggle { display: none !important; }
+  .author__urls-wrapper .author__urls,
+  .author__urls-wrapper ul.author__urls,
+  ul.author__urls.social-icons {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    position: static !important;
+  }
 
   // show mobile bio, hide desktop bio
   .author__bio--desktop { display: none !important; }
