@@ -14,3 +14,4 @@ main:
     url: /photos/
   - title: "other"
     url: /#other-stuff
+    class: "nav-other"

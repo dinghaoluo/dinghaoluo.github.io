@@ -41,9 +41,10 @@ font block — kept inline because GitHub Pages ignores separate _fonts.scss
 // -------------------------
 // colour overrides — before skin import so !default picks them up
 // -------------------------
-$primary-color:    #c47c5a;
-$link-color:       #b5651d;
-$background-color: #faf9f7;
+$primary-color:       #c47c5a;
+$link-color:          #b5651d;
+$link-color-visited:  #cf9b6c;  // lighter warm brown — visually distinct but harmonious
+$background-color:    #faf9f7;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
@@ -240,7 +241,7 @@ hr {
 #main {
   // on mobile: account for sticky masthead height so sidebar isn't covered on first load
   @media (max-width: 1023px) {
-    margin-top: 2em;  // space below sticky nav
+    margin-top: 1.5em;  // space below sticky nav
   }
 
   @include breakpoint($x-large) {
@@ -447,24 +448,32 @@ hr {
   font-style: normal;
 }
 
-.reach-out {
+.currently-reach-out {
+  display: block;
   font-size: 0.88em;
   color: #5a5a5a;
-  margin-top: -0.6em;    // pull tight under currently-intro
-  margin-bottom: 1.4em;
+  margin-top: 0.35em;
 }
 
 .page-nav {
   font-size: 0.85em;
   color: #7a7a7a;
-  line-height: 1.7;
+  line-height: 1.5;
   margin-top: 0.8em;
   margin-bottom: 1.6em;
+}
+
+.page-nav__links {
+  display: block;
+  padding-left: 1.2em;
 
   a {
-    color: #5a5a5a;
-    text-decoration: none;
-    &:hover { color: $link-color; text-decoration: none; }
+    color: $link-color;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: rgba(181, 101, 29, 0.45);
+    &:hover { text-decoration-color: $link-color; }
+    &:visited { color: $link-color-visited; text-decoration-color: rgba(207, 155, 108, 0.45); }
   }
 }
 
@@ -759,8 +768,8 @@ hr {
     a { line-height: 1.25; }
   }
 
-  // hide cv on mobile — keeps nav to 2 rows
-  .nav-cv { display: none !important; }
+  // hide cv and other on mobile — keeps nav to 2 rows
+  .nav-cv, .nav-other { display: none !important; }
 
   // hide entire contact section on mobile — multiple layers to beat MM specificity
   .author__urls-wrapper { display: none !important; }
