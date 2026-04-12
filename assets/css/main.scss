@@ -53,12 +53,12 @@ $background-color: #faf9f7;
 // -------------------------
 html {
   box-sizing: border-box;
-  font-size: 13px;   // mobile base — slightly bumped so text is readable on phone
+  font-size: 15px;   // mobile base
   font-family: 'Mononoki', monospace;
 
-  @include breakpoint($medium)  { font-size: 14px; }
-  @include breakpoint($large)   { font-size: 14px; }
-  @include breakpoint($x-large) { font-size: 15px; }
+  @include breakpoint($medium)  { font-size: 15px; }
+  @include breakpoint($large)   { font-size: 16px; }
+  @include breakpoint($x-large) { font-size: 16px; }
 }
 
 // Force Mononoki everywhere — wildcard is safe here because
@@ -121,7 +121,7 @@ hr {
   max-width: 100%;
 
   @include breakpoint($x-large) {
-    max-width: 1250px;
+    max-width: 1100px;
   }
 }
 
@@ -133,8 +133,26 @@ hr {
   color: #2c2c2c !important;
   text-decoration: none !important;
   flex-shrink: 0;
+  position: relative;
 
-  &:hover { color: $link-color !important; }
+  // matching sliding underline to nav links
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: $link-color;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.22s ease;
+  }
+
+  &:hover {
+    color: $link-color !important;
+    &::after { transform: scaleX(1); }
+  }
 }
 
 #cereniq-nav {
@@ -152,11 +170,27 @@ hr {
     text-decoration: none !important;
     letter-spacing: 0.01em;
     white-space: nowrap;
+    position: relative;
+
+    // sliding underline — replaces browser default
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: $link-color;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.22s ease;
+    }
 
     &:hover {
       color: $link-color !important;
-      text-decoration: underline !important;
-      text-underline-offset: 3px;
+      text-decoration: none !important;
+
+      &::after { transform: scaleX(1); }
     }
   }
 }
@@ -169,7 +203,7 @@ hr {
 // -------------------------
 #main {
   @include breakpoint($x-large) {
-    max-width: 1250px;
+    max-width: 1100px;
   }
 }
 
@@ -188,6 +222,12 @@ hr {
     box-shadow: none;
     opacity: 1 !important;
     filter: none !important;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 14px rgba(0,0,0,0.11) !important;
+    }
 
     @include breakpoint($large) {
       width: 110px;         // restore full size on desktop
@@ -206,7 +246,7 @@ hr {
 .author__name-zh {
   font-size: 0.78em;
   color: #8a8a8a;
-  margin-top: 0.85em;          // generous gap below English name
+  margin-top: 0.2em;           // tight gap below English name
   margin-bottom: 0.6em;
   letter-spacing: 0.04em;
 }
@@ -220,8 +260,12 @@ hr {
 
   br { display: block; content: ""; margin-top: 0.2em; }
 
-  p { margin: 0; font-size: inherit; }
+  // _sidebar.scss overrides p/li to sans-serif; force Mononoki here
+  p { margin: 0; font-size: inherit; font-family: 'Mononoki', monospace !important; }
 }
+
+// Belt-and-suspenders: catch any direct text nodes wrapped by markdownify
+.author__bio { font-family: 'Mononoki', monospace !important; }
 
 .author__urls-wrapper {
   margin-top: 0.75em;
@@ -275,13 +319,13 @@ hr {
 }
 
 .page {
-  // TOC removed — override the right-sidebar padding from _page.scss
+  // TOC removed; widths exclude the left author sidebar (220px/260px) with no right padding
   @include breakpoint($large) {
     padding-right: 0;
-    width: 100%;
+    width: calc(100% - 220px);
   }
   @include breakpoint($x-large) {
-    width: 100%;
+    width: calc(100% - 260px);
     padding-right: 0;
   }
 }
@@ -315,11 +359,11 @@ hr {
   }
 }
 
-// homepage section headers — larger, JetBrains Mono Bold
+// homepage section headers — bold Mononoki
 .home .page__content h2 {
-  font-family: 'JetBrains Mono', 'Mononoki', monospace;
+  font-family: 'Mononoki', monospace;
   font-size: 1.15em;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: lowercase;
   letter-spacing: -0.02em;
   color: #1a1a1a;
@@ -362,9 +406,9 @@ hr {
 }
 
 .author__sidebar-takes-label {
-  font-family: 'JetBrains Mono', 'Mononoki', monospace;
+  font-family: 'Mononoki', monospace;
   font-size: 0.82em;
-  font-weight: 700;
+  font-weight: bold;
   letter-spacing: -0.01em;
   color: #5a5a5a;
   margin: 0 0 0.55em;
@@ -378,8 +422,13 @@ hr {
   text-decoration: none !important;
   margin-bottom: 0.65em;
   color: inherit;
+  transition: transform 0.18s ease;
 
-  &:hover .sidebar-take__title { color: $link-color; }
+  &:hover {
+    transform: translateX(3px);
+
+    .sidebar-take__title { color: $link-color; }
+  }
 }
 
 .sidebar-take__title {
@@ -413,14 +462,21 @@ hr {
   margin: 0 -0.5em;
   border-bottom: 1px solid #ece8e3;
   border-radius: 3px;
-  transition: background 0.15s ease;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.18s ease, box-shadow 0.18s ease;
 
   &:last-of-type { border-bottom: none; }
-  &:hover { background: rgba(0,0,0,0.022); }
+  &:hover {
+    background: rgba(0,0,0,0.032);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+  }
 }
 
 .brief-card__img-wrap {
   flex-shrink: 0;
+  overflow: hidden;   // keeps image scale within its own bounds
+  border-radius: 2px;
 }
 
 .brief-card__img {
@@ -430,6 +486,7 @@ hr {
   object-fit: cover;
   border-radius: 2px;
   box-shadow: 0 1px 5px rgba(0,0,0,0.13);
+  transition: transform 0.22s ease;
 
   &--placeholder {
     background: #e8e3de;
@@ -438,6 +495,10 @@ hr {
     display: block;
     border-radius: 2px;
   }
+}
+
+.brief-card:hover .brief-card__img {
+  transform: scale(1.04);
 }
 
 .brief-card__body {
@@ -570,7 +631,7 @@ hr {
 // footer
 // -------------------------
 .page__footer {
-  font-size: 0.82em;
+  font-size: 0.9em;
   background: #f0ebe5;
   border-top: 1px solid #d0c8c0;
   color: #4a4a4a;
@@ -598,5 +659,42 @@ hr {
 @media (max-width: 1023px) {
   body:not(.home) .author__sidebar-takes {
     display: none;
+  }
+}
+
+// -------------------------
+// entrance animations
+// -------------------------
+
+// full fade+lift for main content
+@keyframes cereniq-fade-up {
+  from { opacity: 0; transform: translateY(7px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+// transform-only slide for sidebar — avoids conflicting with _sidebar.scss opacity:0.75
+@keyframes cereniq-slide-up {
+  from { transform: translateY(7px); }
+  to   { transform: translateY(0);   }
+}
+
+// page text fades gently upward on load
+.page__inner-wrap {
+  animation: cereniq-fade-up 0.38s ease both;
+}
+
+// sidebar slides in slightly after content (layered feel), no opacity so dim-on-idle still works
+.sidebar {
+  @include breakpoint($large) {
+    animation: cereniq-slide-up 0.38s ease both;
+    animation-delay: 0.06s;
+  }
+}
+
+// respect prefers-reduced-motion
+@media (prefers-reduced-motion: reduce) {
+  .page__inner-wrap,
+  .sidebar {
+    animation: none;
   }
 }

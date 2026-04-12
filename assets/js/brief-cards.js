@@ -6,18 +6,33 @@
     document.querySelectorAll('.brief-card').forEach(function (card) {
       var wrap   = card.querySelector('.brief-card__text-wrap');
       var toggle = card.querySelector('.brief-card__toggle');
-      if (!wrap || !toggle) return;
+      if (!wrap) return;
 
       // Record the CSS-defined collapsed height (2 lines)
       var collapsedH = wrap.offsetHeight;
+      var hoverTimer = null;
 
-      toggle.addEventListener('click', function (e) {
-        e.stopPropagation();
+      // Click anywhere on the card to toggle open/close
+      card.addEventListener('click', function () {
         if (card.classList.contains('is-open')) {
           closeCard(card, wrap, toggle, collapsedH);
         } else {
           openCard(card, wrap, toggle);
         }
+      });
+
+      // Hover for 2 seconds to auto-open (only when closed)
+      card.addEventListener('mouseenter', function () {
+        if (!card.classList.contains('is-open')) {
+          hoverTimer = setTimeout(function () {
+            openCard(card, wrap, toggle);
+          }, 2000);
+        }
+      });
+
+      card.addEventListener('mouseleave', function () {
+        clearTimeout(hoverTimer);
+        hoverTimer = null;
       });
     });
 
@@ -32,7 +47,7 @@
       void wrap.offsetHeight;
 
       card.classList.add('is-open');
-      toggle.setAttribute('aria-expanded', 'true');
+      if (toggle) toggle.setAttribute('aria-expanded', 'true');
 
       wrap.style.transition = 'max-height 0.42s ease';
       wrap.style.maxHeight  = targetH + 'px';
@@ -52,7 +67,7 @@
       void wrap.offsetHeight; // reflow
 
       card.classList.remove('is-open');
-      toggle.setAttribute('aria-expanded', 'false');
+      if (toggle) toggle.setAttribute('aria-expanded', 'false');
 
       wrap.style.transition = 'max-height 0.32s ease';
       wrap.style.maxHeight  = collapsedH + 'px';
