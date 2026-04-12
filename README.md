@@ -1,4 +1,4 @@
-# cereniq: — Personal Website
+# hao things — Personal Website
 
 A clean, minimal portfolio built on **Jekyll** with a customized **Minimal Mistakes** theme, deployed via GitHub Pages.
 
@@ -44,7 +44,7 @@ The site is hosted on **GitHub Pages** and auto-deploys on push to `main` branch
 All customization lives in `assets/css/main.scss`. Key overrides:
 
 #### Masthead (Navigation Bar)
-- **Clean-room rebuild** using CSS IDs only to avoid Minimal Mistakes class interference (`#cereniq-masthead`, `#cereniq-masthead-inner`, `#cereniq-nav`)
+- **Clean-room rebuild** using CSS IDs only to avoid Minimal Mistakes class interference (`#haothings-masthead`, `#haothings-masthead-inner`, `#haothings-nav`)
 - **Desktop (≥1024px):** masthead padding `0.65em 1em`; nav font-size `1em` (body text size)
 - **Mobile (<1024px):** tighter padding `0.45em 1em`; nav wraps with reduced font sizes
 - **Mobile wrap control:** flex line-break span (`.nav-line-break`) forces nav items to wrap after `brief_takes`
@@ -152,7 +152,7 @@ See `_config.yml` for full settings.
 ## License & Attribution
 
 - **Minimal Mistakes Theme:** Licensed under MIT by Michael Rose (mmistakes)
-- **Custom code & styling:** Part of cereniq.blog portfolio
+- **Custom code & styling:** Personal site styling
 
 ---
 

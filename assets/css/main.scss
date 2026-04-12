@@ -105,7 +105,7 @@ hr {
 // masthead — clean-room rebuild using IDs only
 // no MM class selectors can interfere here
 // -------------------------
-#cereniq-masthead {
+#haothings-masthead {
   background: #eaeae8;
   border-bottom: 1px solid #d4d4d0;
   position: sticky;
@@ -113,7 +113,7 @@ hr {
   z-index: 999;
 }
 
-#cereniq-masthead-inner {
+#haothings-masthead-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -130,7 +130,7 @@ hr {
   }
 }
 
-#cereniq-site-title {
+#haothings-site-title {
   font-family: 'Mononoki', monospace !important;
   font-weight: normal;
   letter-spacing: -0.02em;
@@ -164,7 +164,7 @@ hr {
   }
 }
 
-#cereniq-nav {
+#haothings-nav {
   display: flex;
   align-items: baseline;       // true text-baseline alignment across different font sizes
   flex-wrap: wrap;
@@ -409,10 +409,10 @@ hr {
   padding-bottom: 0;
   margin-top: 2.2em;
   margin-bottom: 0.4em;
-  animation: cereniq-scale-in 0.34s ease both;
+  animation: haothings-scale-in 0.34s ease both;
 }
 
-@keyframes cereniq-scale-in {
+@keyframes haothings-scale-in {
   from { opacity: 0; transform: scale(0.98); }
   to   { opacity: 1; transform: scale(1); }
 }
@@ -514,7 +514,7 @@ hr {
   border-radius: 3px;
   cursor: pointer;
   transition: background 0.15s ease, transform 0.18s ease, box-shadow 0.18s ease;
-  animation: cereniq-card-load 0.42s ease both;
+  animation: haothings-card-load 0.42s ease both;
 
   // stagger cards on load
   @for $i from 1 through 20 {
@@ -718,13 +718,13 @@ hr {
   }
 
   // tighten masthead on mobile
-  #cereniq-masthead-inner {
+  #haothings-masthead-inner {
     padding-top: 0.28em;
     padding-bottom: 0.28em;
   }
 
   // zero row-gap for wrapped nav, reduce line-height on nav links
-  #cereniq-nav {
+  #haothings-nav {
     gap: 0 0.85em;
     a { line-height: 1.25; }
   }
@@ -755,32 +755,32 @@ hr {
 // -------------------------
 
 // full fade+lift for main content
-@keyframes cereniq-fade-up {
+@keyframes haothings-fade-up {
   from { opacity: 0; transform: translateY(7px); }
   to   { opacity: 1; transform: translateY(0);   }
 }
 
 // subtle load for brief cards
-@keyframes cereniq-card-load {
+@keyframes haothings-card-load {
   from { opacity: 0; transform: translateY(4px); }
   to   { opacity: 1; transform: translateY(0);   }
 }
 
 // transform-only slide for sidebar — avoids conflicting with _sidebar.scss opacity:0.75
-@keyframes cereniq-slide-up {
+@keyframes haothings-slide-up {
   from { transform: translateY(7px); }
   to   { transform: translateY(0);   }
 }
 
 // page text fades gently upward on load
 .page__inner-wrap {
-  animation: cereniq-fade-up 0.38s ease both;
+  animation: haothings-fade-up 0.38s ease both;
 }
 
 // sidebar slides in slightly after content (layered feel), no opacity so dim-on-idle still works
 .sidebar {
   @include breakpoint($large) {
-    animation: cereniq-slide-up 0.38s ease both;
+    animation: haothings-slide-up 0.38s ease both;
     animation-delay: 0.06s;
   }
 }

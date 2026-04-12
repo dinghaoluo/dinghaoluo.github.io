@@ -1,4 +1,4 @@
-# cereniq.blog — stylesheet reference
+# hao things — stylesheet reference
 
 ## font
 
@@ -43,7 +43,7 @@ line-height: 1.85 (body)
 
 - max content width: 1440px (at x-large breakpoint)
 - masthead: sticky, z-index 999
-- masthead uses ID selectors (#cereniq-masthead etc.) — immune to MM CSS
+- masthead uses ID selectors (#haothings-masthead etc.) — immune to MM CSS
 
 ## key file locations
 

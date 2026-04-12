@@ -1,7 +1,7 @@
-<header id="cereniq-masthead">
-  <div id="cereniq-masthead-inner">
-    <a id="cereniq-site-title" href="{{ '/' | relative_url }}">:)</a>
-    <nav id="cereniq-nav">
+<header id="haothings-masthead">
+  <div id="haothings-masthead-inner">
+    <a id="haothings-site-title" href="{{ '/' | relative_url }}">:)</a>
+    <nav id="haothings-nav">
       {%- for link in site.data.navigation.main -%}
         {%- if link.break_before -%}<span class="nav-line-break"></span>{%- endif -%}
         <a href="{{ link.url | relative_url }}"{% if link.class %} class="{{ link.class }}"{% endif %}>{{ link.title }}</a>
