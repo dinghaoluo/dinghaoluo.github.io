@@ -4,7 +4,7 @@ author_profile: true
 classes: home
 ---
 
-<p class="currently-intro">Hi, Dinghao here :)<br>Recently I've been reading <em class="currently-substance">{{ site.data.currently.reading }}</em>, learning <em class="currently-substance">{{ site.data.currently.learning }}</em>, and thinking <em class="currently-substance">{{ site.data.currently.thinking }}</em>.</p>
+<p class="currently-intro"><span class="currently-greeting">Hi, Dinghao here :)</span><br>Recently I've been reading <em class="currently-substance">{{ site.data.currently.reading }}</em>, learning <em class="currently-substance">{{ site.data.currently.learning }}</em>, and thinking about <em class="currently-substance">{{ site.data.currently.thinking }}</em>.</p>
 
 I'm finishing my PhD in neuroscience at the [Max Planck Florida Institute for Neuroscience](https://www.mpfi.org) — working on how a tiny cluster of brainstem neurons shapes what the hippocampus remembers, on timescales that the classical picture of neuromodulation doesn't account for. Before that: Cambridge, UCL, a stint as a science editor at *Scientific American* China, and a book translation. I also make music under the name *amoxitoxin*. There's also a [CV](/cv/).
 

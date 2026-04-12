@@ -7,6 +7,7 @@ main:
     class: "nav-brief"
   - title: "research"
     url: /research/
+    break_before: true
   - title: "music"
     url: /music/
   - title: "photos"
