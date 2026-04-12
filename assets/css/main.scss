@@ -240,7 +240,7 @@ hr {
 #main {
   // on mobile: account for sticky masthead height so sidebar isn't covered on first load
   @media (max-width: 1023px) {
-    margin-top: 3.5em;  // space below sticky nav
+    margin-top: 2.8em;  // space below sticky nav
   }
 
   @include breakpoint($x-large) {
