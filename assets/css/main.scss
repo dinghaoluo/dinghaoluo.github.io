@@ -117,8 +117,12 @@ hr {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0.65em 1em;
+  padding: 0.45em 1em;   // tighter on mobile
   max-width: 100%;
+
+  @include breakpoint($large) {
+    padding: 0.65em 1em;  // restore at larger screens
+  }
 
   @include breakpoint($x-large) {
     max-width: 1100px;
@@ -127,13 +131,21 @@ hr {
 
 #cereniq-site-title {
   font-family: 'Mononoki', monospace !important;
-  font-size: 1em;              // matches html base exactly — same as nav + body
   font-weight: normal;
   letter-spacing: -0.02em;
   color: #2c2c2c !important;
   text-decoration: none !important;
   flex-shrink: 0;
   position: relative;
+
+  // hide original "cereniq:" text and show ":)" instead
+  font-size: 0;
+
+  &::before {
+    content: ':)';
+    font-size: 1.12em;   // slightly larger than nav (1em)
+    display: inline-block;
+  }
 
   // matching sliding underline to nav links
   &::after {
@@ -197,6 +209,11 @@ hr {
 
 // suppress the empty MM masthead shell if present
 .masthead { display: none !important; }
+
+// nav brief_takes link — slightly smaller than other nav items
+.nav-brief {
+  font-size: 0.88em !important;
+}
 
 // -------------------------
 // constrained main content column — matches masthead inner width
@@ -403,10 +420,11 @@ hr {
   margin-top: 1.2em;
   padding-top: 0.9em;
   border-top: 1px solid #e0dbd5;
+  overflow: hidden;   // prevents scrollbar when sidebar-take items transform on hover
 }
 
 .author__sidebar-takes-label {
-  font-family: 'Mononoki', monospace;
+  font-family: 'Mononoki', monospace !important;
   font-size: 0.82em;
   font-weight: bold;
   letter-spacing: -0.01em;
