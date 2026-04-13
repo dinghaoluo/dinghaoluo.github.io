@@ -523,7 +523,8 @@ hr {
   font-size: 0.82em;
   font-weight: bold;
   color: #2c2c2c;
-  margin-bottom: 0.03em;
+  margin-bottom: 0;
+  line-height: 1.18;
   font-style: italic;
   transition: color 0.15s ease;
 }
@@ -540,7 +541,7 @@ hr {
   display: block;
   font-size: 0.77em;
   color: #5a5a5a;
-  line-height: 1.35;
+  line-height: 1.28;
   white-space: nowrap;
   overflow: hidden;
   // fade from readable left → invisible right
