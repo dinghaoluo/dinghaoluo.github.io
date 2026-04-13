@@ -650,13 +650,14 @@ hr {
 }
 
 .brief-card__meta {
-  font-size: 0.82em;
+  font-size: 1em;
   color: $morandi-muted;
   margin-bottom: 0.45em;
-  line-height: 1.4;
+  line-height: 1.35;
 }
 
 .brief-card__type {
+  font-size: 0.88em;
   color: $morandi-muted-soft;
   text-transform: lowercase;
   letter-spacing: 0.04em;
@@ -670,27 +671,31 @@ hr {
 
 .brief-card__title {
   font-weight: bold;
-  font-size: 1.18em;   // emphasise the title — ~1.2x the surrounding meta text
+  font-size: 1.08em;
   color: $morandi-ink;
 }
 
 .brief-card__year {
   margin-left: 0.62em;
-  font-size: 0.62em;
+  font-size: 0.78em;
   font-weight: normal;
   color: $morandi-muted-soft;
   white-space: nowrap;
 }
 
-.brief-card__creator { color: $morandi-muted; }
+.brief-card__creator {
+  font-size: 0.88em;
+  color: $morandi-muted;
+}
 
 .brief-card__posted {
-  font-size: 0.82em;
+  font-size: 0.78em;
   color: $morandi-muted-soft;
   margin-top: -0.1em;
   margin-bottom: 0.55em;
   line-height: 1.35;
 }
+
 
 // text wrap: clipped to ~2 lines with bottom fade; JS animates open/close
 .brief-card__text-wrap {
@@ -709,7 +714,7 @@ hr {
 }
 
 .brief-card__text {
-  font-size: 0.88em;
+  font-size: 1em;
   color: $site-text-body;
   line-height: 1.65;
 }
@@ -918,17 +923,17 @@ hr {
   }
 
   .brief-card__type {
-    font-size: 0.8em;
+    font-size: 0.86em;
     line-height: 1.05;
   }
 
   .brief-card__title {
-    font-size: 1.06em;
+    font-size: 1.12em;
     line-height: 1.08;
   }
 
   .brief-card__year {
-    font-size: 0.7em;
+    font-size: 0.76em;
   }
 
   .brief-card__creator {
@@ -945,7 +950,7 @@ hr {
     align-self: start;
     margin-top: 0.22em;
     margin-bottom: 0;
-    font-size: 0.74em;
+    font-size: 0.76em;
     line-height: 1.08;
   }
 
@@ -1000,8 +1005,8 @@ hr {
 
   body:not(.home) .sidebar .h-card {
     display: grid;
-    grid-template-columns: 40px minmax(0, 1fr);
-    column-gap: 0.75em;
+    grid-template-columns: 28px minmax(0, 1fr);
+    column-gap: 0.55em;
     align-items: center;
   }
 
@@ -1009,20 +1014,30 @@ hr {
     margin-bottom: 0;
 
     img {
-      width: 40px;
-      height: 40px;
-      border-radius: 5px;
+      width: 28px;
+      height: 28px;
+      border-radius: 4px;
     }
   }
 
   body:not(.home) .sidebar .author__content {
     min-width: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  body:not(.home) .sidebar .author__content::before {
+    content: 'neuroscience \00b7 data science \00b7 science journalism';
+    display: block;
+    font-size: 0.58em;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    color: $site-text-soft;
+    white-space: nowrap;
   }
 
   body:not(.home) .sidebar .author__name {
-    margin-top: 0;
-    font-size: 0.96em;
-    line-height: 1.2;
+    display: none !important;
   }
 
   body:not(.home) .sidebar .author__name-zh {
@@ -1030,17 +1045,7 @@ hr {
   }
 
   body:not(.home) .sidebar .author__bio {
-    margin-top: 0.15em;
-    font-size: 0.8em;
-    line-height: 1.25;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
-
-    br {
-      display: none;
-    }
+    display: none !important;
   }
 }
 
@@ -1088,6 +1093,8 @@ hr {
     animation: none;
   }
 }
+
+
 
 
 
