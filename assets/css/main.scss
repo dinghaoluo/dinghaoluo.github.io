@@ -497,20 +497,11 @@ hr {
   font-size: 0.82em;
   font-weight: bold;
   letter-spacing: -0.01em;
-  color: transparent;
+  color: #5a5a5a;
   margin: 0 0 0.68em;
   padding-bottom: 0.3em;
   border-bottom: 1px solid #ece8e3;
   text-transform: lowercase;
-  position: relative;
-
-  &::before {
-    content: 'my brief takes on...';
-    color: #5a5a5a;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
 }
 
 .sidebar-take {
