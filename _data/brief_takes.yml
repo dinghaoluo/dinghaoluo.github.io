@@ -3,15 +3,27 @@
 # Add new entries at the TOP so the most recent appears first.
 #
 # Fields:
-#   title       — title of the work
-#   type        — book / film / tv / game / music
-#   creator     — author, director, etc.
+#   title        — title of the work
+#   type         — book / film / tv / game / music
+#   creator      — author, director, etc.
 #   creator_role — "by" / "dir." / etc.
-#   year        — year of release
-#   image       — path to image, e.g. /assets/images/brief_takes/title.jpg
-#                 leave empty ("") for placeholder
-#   text        — full take (markdown OK); shown in card, clamped to ~3 lines, expands on click
+#   year         — year of release
+#   image        — path to image, e.g. /assets/images/brief_takes/title.jpg
+#                  leave empty ("") for placeholder
+#   text         — markdown; shown in card, clamped to ~3 lines, expands on click
 # -------------------------------------------------------
+
+- title: "Gravity's Rainbow"
+  type: "book"
+  creator: "Thomas Pynchon"
+  creator_role: "by"
+  year: 1973
+  image: "/assets/images/brief_takes/gravitys_rainbow.jpg"
+  posted: "2026-03-01"
+  text: |
+    My favourite of all the 'Pynchon-lites'. Set in 2001 (that strange year when after the attack, people had not yet settled on what to call it — '11 September'? '9/11'? ...), *Bleeding Edge* turns the world into a web of unexpected connections. The invisible lines between Silicon Alley start-ups, the FBI, Gulf money, and the coming security state run through characters who at first seem to have nothing to do with one another. Ah, the **grand web of paranoia** that Pynchon fans are so familiar with... What gives the book its peculiar tension is that Pynchon holds the 9/11 attacks back until surprisingly late, so that much of the novel unfolds under a suspended future terror everyone already knew was coming.<br><br>
+    It is also the most humane of the 'Pynchon-lites'. Maxine may initially resemble Oedipa Maas (quick, intuitive, alert to hidden patterns) but she is far more distinct and fully realised. Pynchon stays unusually close to her consciousness, and that closeness gives the novel an emotional weight rare in his other works (bar maybe *Mason & Dixon*). I think of Maxine and Horst's half-broken, half-enduring relationship, her life with Otis and Ziggy, and March's antithetically broken family... Critics often note the book's domestic core, and they are right to do so: beneath all the paranoia, this is one of Pynchon's warmest novels.<br><br>
+    That warmth is what makes the novel linger. Yes, it does capture the moment when the internet age curdles into the age of terror and 'security'; and yes, DeepArcher remains one of Pynchon's most haunting creations. But what stays with me is that *Bleeding Edge*, for all its conspiracies and terrors, never loses sight of ordinary emotions (clearly exemplified in both the opening and ending chapters of the book). Well, this is only my personal opinion: of all the later Pynchons, this is the one PTA should adapt.
 
 - title: "Bleeding Edge"
   type: "book"

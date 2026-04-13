@@ -258,7 +258,7 @@
     <h4 class="author__sidebar-takes-label">my brief takes on&thinsp;…</h4>
     {% for take in takes limit:3 %}
     <a href="/brief-takes/" class="sidebar-take">
-      <span class="sidebar-take__title">{{ take.title }}</span>
+      <span class="sidebar-take__title">{{ take.title }}{% if take.posted and take.posted != '' %}<span class="sidebar-take__date">{{ take.posted | date: '%-d %b' }}</span>{% endif %}</span>
       <span class="sidebar-take__preview">{{ take.text | strip_html | strip_newlines | strip }}</span>
     </a>
     {% endfor %}

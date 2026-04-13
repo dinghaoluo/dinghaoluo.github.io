@@ -29,7 +29,7 @@ title: 'brief takes'
   </div>
   <div class='brief-card__body'>
     <div class='brief-card__meta'>
-      <span class='brief-card__type'>{{ take.type }}</span><span class='brief-card__sep'> &middot; </span><span class='brief-card__title'>{{ take.title }}{% if take.year and take.year != '' %}<span class='brief-card__year'>{{ take.year }}</span>{% endif %}</span><span class='brief-card__sep'> &middot; </span><span class='brief-card__creator'>{{ take.creator_role }} {{ take.creator }}</span>
+      <span class='brief-card__type'>{{ take.type }}</span><span class='brief-card__sep'>&middot;</span><span class='brief-card__title'>{{ take.title }}{% if take.year and take.year != '' %}<span class='brief-card__year'>{{ take.year }}</span>{% endif %}</span><span class='brief-card__sep'>&middot;</span><span class='brief-card__creator'>{{ take.creator_role }} {{ take.creator }}</span>
     </div>
     {% if take.posted and take.posted != '' %}
       <div class='brief-card__posted'>

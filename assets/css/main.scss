@@ -497,17 +497,26 @@ hr {
   font-size: 0.82em;
   font-weight: bold;
   letter-spacing: -0.01em;
-  color: #5a5a5a;
-  margin: 0 0 0.55em;
+  color: transparent;
+  margin: 0 0 0.68em;
   padding-bottom: 0.3em;
   border-bottom: 1px solid #ece8e3;
   text-transform: lowercase;
+  position: relative;
+
+  &::before {
+    content: 'my brief takes on...';
+    color: #5a5a5a;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .sidebar-take {
   display: block;
   text-decoration: none !important;
-  margin-bottom: 0.65em;
+  margin-bottom: 0.58em;
   color: inherit;
   transition: transform 0.18s ease;
 
@@ -523,15 +532,24 @@ hr {
   font-size: 0.82em;
   font-weight: bold;
   color: #2c2c2c;
-  margin-bottom: 0.1em;
+  margin-bottom: 0.03em;
+  font-style: italic;
   transition: color 0.15s ease;
+}
+
+.sidebar-take__date {
+  margin-left: 0.45em;
+  font-size: 0.58em;
+  font-style: normal;
+  color: #9a9a9a;
+  white-space: nowrap;
 }
 
 .sidebar-take__preview {
   display: block;
   font-size: 0.77em;
   color: #5a5a5a;
-  line-height: 1.4;
+  line-height: 1.35;
   white-space: nowrap;
   overflow: hidden;
   // fade from readable left → invisible right
@@ -614,7 +632,11 @@ hr {
   letter-spacing: 0.04em;
 }
 
-.brief-card__sep { color: #c0b8b0; }
+.brief-card__sep {
+  display: inline-block;
+  margin: 0 0.16em;
+  color: #c0b8b0;
+}
 
 .brief-card__title {
   font-weight: bold;
@@ -623,7 +645,7 @@ hr {
 }
 
 .brief-card__year {
-  margin-left: 0.58em;
+  margin-left: 0.62em;
   font-size: 0.62em;
   font-weight: normal;
   color: #8a8a8a;
