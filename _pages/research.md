@@ -18,7 +18,7 @@ The locus coeruleus (LC) is a small brainstem nucleus that releases dopamine and
 
 Specifically, I study how phasic LC dopamine release modulates functional subpopulations of CA1 hippocampal cells. The hypothesis is that these transient dopamine signals do something more structured than a global gain change — they interact selectively with cell populations in ways that matter for how memories are encoded and retrieved.
 
-I designed the experiments, built the analysis pipelines in Python, and developed the computational model. A paper is in preparation.
+I designed the experiments, built the analysis pipelines in **Python**, and developed the **computational model**. A paper is in preparation.
 
 My background is in the Paulsen lab at Cambridge, where my undergraduate thesis looked at dopamine's role in CA3–CA1 synaptic plasticity — so the LC–hippocampus axis has been a thread throughout.
 

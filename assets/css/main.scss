@@ -41,9 +41,10 @@ font block — kept inline because GitHub Pages ignores separate _fonts.scss
 // -------------------------
 // colour overrides — before skin import so !default picks them up
 // -------------------------
-$primary-color:    #c47c5a;
-$link-color:       #b5651d;
-$background-color: #faf9f7;
+$primary-color:       #c47c5a;
+$link-color:          #b5651d;
+$link-color-visited:  #cf9b6c;  // lighter warm brown — visually distinct but harmonious
+$background-color:    #faf9f7;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
@@ -53,12 +54,12 @@ $background-color: #faf9f7;
 // -------------------------
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 15px;   // mobile base
   font-family: 'Mononoki', monospace;
 
-  @include breakpoint($medium) { font-size: 16px; }
-  @include breakpoint($large)  { font-size: 18px; }
-  @include breakpoint($x-large) { font-size: 20px; }
+  @include breakpoint($medium)  { font-size: 15px; }
+  @include breakpoint($large)   { font-size: 16px; }
+  @include breakpoint($x-large) { font-size: 16px; }
 }
 
 // Force Mononoki everywhere — wildcard is safe here because
@@ -81,13 +82,14 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.01em;
 }
 
-p { font-size: 0.95em; }
+// no global p font-size override — let everything inherit html base so nav and body match
 
 em, i  { font-style: italic; }
 strong { font-weight: bold; font-style: normal; }
 
 a {
   color: $link-color;
+  transition: color 0.18s ease;
   &:hover {
     text-decoration: underline;
     text-underline-offset: 3px;
@@ -104,54 +106,106 @@ hr {
 // masthead — clean-room rebuild using IDs only
 // no MM class selectors can interfere here
 // -------------------------
-#cereniq-masthead {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #f0ebe5;
-  border-bottom: 1px solid #d0c8c0;
-  padding: 0.65em 1.5em;
+#haothings-masthead {
+  background: #eaeae8;
+  border-bottom: 1px solid #d4d4d0;
   position: sticky;
   top: 0;
   z-index: 999;
+}
 
-  @media (min-width: 64em) {
-    padding: 0.65em 2.5em;
+#haothings-masthead-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0.45em 1em;   // tighter on mobile
+  max-width: 100%;
+
+  @include breakpoint($large) {
+    padding: 0.65em 1em;  // restore at larger screens
+  }
+
+  @include breakpoint($x-large) {
+    max-width: 1100px;
   }
 }
 
-#cereniq-site-title {
+#haothings-site-title {
   font-family: 'Mononoki', monospace !important;
-  font-size: 1em;
   font-weight: normal;
   letter-spacing: -0.02em;
   color: #2c2c2c !important;
   text-decoration: none !important;
   flex-shrink: 0;
+  position: relative;
+  font-size: 1em;
 
-  &:hover { color: $link-color !important; }
+  strong {
+    font-weight: 600;  // bold the "hao things" text
+  }
+
+  @include breakpoint($large) {
+    font-size: 1.3em;  // larger on desktop so it's prominent
+  }
+
+  // matching sliding underline to nav links
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: $link-color;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.22s ease;
+  }
+
+  &:hover {
+    color: $link-color !important;
+    &::after { transform: scaleX(1); }
+  }
 }
 
-#cereniq-nav {
+#haothings-nav {
   display: flex;
-  align-items: center;
+  align-items: baseline;       // true text-baseline alignment across different font sizes
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 0.1em 1.4em;
-  max-width: 55%;
+  gap: 0.1em 1.2em;
+  max-width: 60%;
 
   a {
     font-family: 'Mononoki', monospace !important;
-    font-size: 0.85em;
+    font-size: 1em;            // same as html base — matches body text exactly
     color: #4a4a4a !important;
     text-decoration: none !important;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
     white-space: nowrap;
+    position: relative;
+    padding-bottom: 2px;
+
+    // sliding underline — replaces browser default
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1.5px;
+      background: $link-color;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.22s ease;
+    }
 
     &:hover {
       color: $link-color !important;
-      text-decoration: underline !important;
-      text-underline-offset: 3px;
+      text-decoration: none !important;
+
+      &::after { transform: scaleX(1); }
     }
   }
 }
@@ -159,59 +213,141 @@ hr {
 // suppress the empty MM masthead shell if present
 .masthead { display: none !important; }
 
+// nav brief_takes link — smaller, close to writing but with breathing room
+.nav-brief {
+  font-size: 0.72em !important;    // desktop: slightly smaller
+  margin-left: -1.1em !important;  // desktop: snug against writing
+
+  @media (max-width: 1023px) {
+    font-size: 0.65em !important;  // mobile: clearly smaller
+    margin-left: -0.55em !important;
+  }
+}
+
+// flex line break for mobile nav — forces wrap after brief_takes
+.nav-line-break {
+  display: none;
+  flex-basis: 100%;
+  height: 0;
+}
+
+@media (max-width: 1023px) {
+  .nav-line-break { display: block; }
+}
+
 // -------------------------
-// wider main content column
+// constrained main content column — matches masthead inner width
 // -------------------------
 #main {
+  // on mobile: account for sticky masthead height so sidebar isn't covered on first load
+  @media (max-width: 1023px) {
+    margin-top: 1.5em;  // space below sticky nav
+  }
+
   @include breakpoint($x-large) {
-    max-width: 1440px;
+    max-width: 1100px;
   }
 }
 
 // -------------------------
 // author sidebar
 // -------------------------
-.author__avatar img {
-  border-radius: 4px;
-  border: none;
-  box-shadow: none;
-  opacity: 1 !important;
-  filter: none !important;   // remove any washed/faded effect
-}
+.author__avatar {
+  text-align: left;
 
-.author__name {
-  font-size: 1em;
-  font-weight: normal;
-}
+  img {
+    width: 50px;            // mobile default — reduced for compact sidebar
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: none;
+    box-shadow: none;
+    opacity: 1 !important;
+    filter: none !important;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
 
-.author__bio {
-  font-size: 0.82em;        // 0.82em — see STYLESHEET.md
-  font-style: normal;
-  color: #5a5a5a;
-  line-height: 1.7;
-  margin-top: 0.3em;
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 14px rgba(0,0,0,0.11) !important;
+    }
 
-  // each line (separated by <br> in config) gets a bit of breathing room
-  br { display: block; content: ""; margin-top: 0.15em; }
-}
-
-.author__urls-wrapper {
-  margin-top: 0.5em;
-}
-
-.author__urls {
-  font-size: 0.78em;        // 0.78em — see STYLESHEET.md
-  line-height: 1.85;
-
-  li, a, .label { font-size: inherit; }
-
-  a {
-    color: #5a5a5a;
-    &:hover { color: $link-color; }
+    @include breakpoint($large) {
+      width: 110px;         // restore full size on desktop
+      height: 110px;
+    }
   }
 }
 
+.author__name {
+  font-size: 1.05em;
+  font-weight: normal;
+  margin-top: 0.7em;
+  margin-bottom: 0;
+}
+
+.author__name-zh {
+  font-size: 0.78em;
+  color: #8a8a8a;
+  margin-top: 0.2em;           // tight gap below English name
+  margin-bottom: 0.4em;        // slightly tighter gap before bio
+  letter-spacing: 0.04em;
+}
+
+.author__bio {
+  font-size: 0.88em;
+  font-style: normal;
+  color: #4a4a4a;
+  line-height: 1.35;           // tighter interline for the role lines
+  margin-top: 0.5em;
+
+  br { display: block; content: ""; margin-top: 0.2em; }
+
+  // _sidebar.scss overrides p/li to sans-serif; force Mononoki here
+  p { margin: 0; font-size: inherit; font-family: 'Mononoki', monospace !important; }
+}
+
+// Belt-and-suspenders: catch any direct text nodes wrapped by markdownify
+.author__bio { font-family: 'Mononoki', monospace !important; }
+
+// desktop: show full bio, hide mobile variant
+@media (min-width: 1024px) {
+  .author__bio--desktop { display: block; }
+  .author__bio--mobile  { display: none; }
+}
+
+.author__urls-wrapper {
+  margin-top: 0.75em;
+
+  // hide the Follow toggle button on desktop — links are always visible
+  @include breakpoint($large) {
+    .author__urls-toggle { display: none; }
+    .author__urls { display: block !important; }
+  }
+}
+
+.author__urls {
+  font-size: 0.82em;
+  line-height: 1.6;
+
+  li, a, .label { font-size: inherit; }
+
+  // monochrome icons — suppress all brand colours
+  i.fas, i.fab, i.fa {
+    color: #7a7a7a !important;
+  }
+
+  a {
+    color: #5a5a5a;
+    &:hover {
+      color: $link-color;
+      i.fas, i.fab, i.fa { color: $link-color !important; }
+    }
+  }
+}
+
+// hide Follow button entirely on desktop (redundant on personal site)
 .btn--inverse {
+  @include breakpoint($large) { display: none; }
   font-size: 0.8em;
   font-weight: normal;
   border-radius: 2px;
@@ -219,51 +355,44 @@ hr {
 }
 
 // -------------------------
-// TOC (right sidebar)
+// author sidebar width (~1.1x default MM widths, middle panel gets more room)
+// -------------------------
+.sidebar {
+  @include breakpoint($large) {
+    width: calc(220px - 1em);
+  }
+  @include breakpoint($x-large) {
+    width: calc(260px - 1em);
+  }
+}
+
+.page {
+  // TOC removed; widths exclude the left author sidebar (220px/260px) with no right padding
+  @include breakpoint($large) {
+    padding-right: 0;
+    width: calc(95% - 220px);
+  }
+  @include breakpoint($x-large) {
+    width: calc(95% - 260px);
+    padding-right: 0;
+  }
+}
+
+// -------------------------
+// TOC (right sidebar) — REMOVED to expand main content
 // -------------------------
 .toc {
-  border: none;
-  background: transparent;
-  box-shadow: none;
-
-  // hide the document icon, keep label text
-  .nav__title i { display: none; }
-
-  .nav__title {
-    font-family: 'Mononoki', monospace !important;  // explicit — * rule can lose to theme specificity
-    font-size: 0.82em;
-    font-weight: normal;
-    text-transform: lowercase;
-    letter-spacing: 0.04em;
-    color: #8a8a8a;
-    background: transparent;
-    padding: 0 0 0.4em 0;
-    margin-bottom: 0.5em;
-    border-bottom: 1px solid #e0dbd5;
-  }
-
-  ol, ul { padding-left: 0; list-style: none; }
-
-  a {
-    font-size: 0.88em;   // was too small before
-    color: #6a6a6a;
-    text-decoration: none;
-    line-height: 1.8;
-
-    &:hover {
-      color: $link-color;
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
-  }
+  display: none;
 }
 
 // -------------------------
 // page content
 // -------------------------
 .page__content {
+  // font-size for p/li/dl is set to 1em in _page.scss; no override needed here
+
   h2 {
-    font-size: 1em;
+    font-size: 1.15em;    // noticeably larger than body text
     font-weight: normal;
     text-transform: lowercase;
     letter-spacing: 0.02em;
@@ -273,8 +402,76 @@ hr {
   }
 
   h3 {
-    font-size: 0.95em;
+    font-size: 1.05em;    // between body and h2
     margin-top: 1.5em;
+  }
+}
+
+// homepage section headers — bold Mononoki with subtle animation
+.home .page__content h2 {
+  font-family: 'Mononoki', monospace;
+  font-size: 1.15em;
+  font-weight: bold;
+  text-transform: lowercase;
+  letter-spacing: -0.02em;
+  color: #1a1a1a;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-top: 2.2em;
+  margin-bottom: 0.4em;
+  animation: haothings-scale-in 0.34s ease both;
+}
+
+@keyframes haothings-scale-in {
+  from { opacity: 0; transform: scale(0.98); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+// currently intro paragraph on home page
+.currently-intro {
+  font-size: 0.95em;
+  line-height: 1.75;
+  margin-bottom: 1.6em;
+
+  em { font-style: italic; }
+
+  em.currently-substance {
+    color: #6a6a6a;
+    font-style: italic;
+  }
+}
+
+.currently-greeting {
+  color: #8a8a8a;
+  font-style: normal;
+}
+
+.currently-reach-out {
+  display: block;
+  font-size: 0.88em;
+  color: #5a5a5a;
+  margin-top: 0.35em;
+}
+
+.page-nav {
+  font-size: 0.85em;
+  color: #7a7a7a;
+  line-height: 1.5;
+  margin-top: 0.8em;
+  margin-bottom: 1.6em;
+}
+
+.page-nav__links {
+  display: block;
+  padding-left: 1.2em;
+
+  a {
+    color: $link-color;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: rgba(181, 101, 29, 0.45);
+    &:hover { text-decoration-color: $link-color; }
+    &:visited { color: $link-color-visited; text-decoration-color: rgba(207, 155, 108, 0.45); }
   }
 }
 
@@ -286,65 +483,196 @@ hr {
 }
 
 // -------------------------
-// homepage author bar
+// sidebar brief takes preview
 // -------------------------
-.home-profile {
+.author__sidebar-takes {
+  margin-top: 1.2em;
+  padding-top: 0.9em;
+  border-top: 1px solid #e0dbd5;
+  overflow: hidden;   // prevents scrollbar when sidebar-take items transform on hover
+}
+
+.author__sidebar-takes-label {
+  font-family: 'Mononoki', monospace !important;
+  font-size: 0.82em;
+  font-weight: bold;
+  letter-spacing: -0.01em;
+  color: #5a5a5a;
+  margin: 0 0 0.55em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #ece8e3;
+  text-transform: lowercase;
+}
+
+.sidebar-take {
+  display: block;
+  text-decoration: none !important;
+  margin-bottom: 0.65em;
+  color: inherit;
+  transition: transform 0.18s ease;
+
+  &:hover {
+    transform: translateX(3px);
+
+    .sidebar-take__title { color: $link-color; }
+  }
+}
+
+.sidebar-take__title {
+  display: block;
+  font-size: 0.82em;
+  font-weight: bold;
+  color: #2c2c2c;
+  margin-bottom: 0.1em;
+  transition: color 0.15s ease;
+}
+
+.sidebar-take__preview {
+  display: block;
+  font-size: 0.77em;
+  color: #5a5a5a;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  // fade from readable left → invisible right
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.85) 20%, transparent 92%);
+  mask-image: linear-gradient(to right, rgba(0,0,0,0.85) 20%, transparent 92%);
+}
+
+// -------------------------
+// brief takes — expandable cards (JS-animated, no <details>)
+// -------------------------
+.brief-card {
   display: flex;
-  align-items: flex-end;   // everything bottom-aligned
-  gap: 1.4em;
-  padding-bottom: 1.25em;
-  margin-bottom: 2em;
-  border-bottom: 1px solid #e0dbd5;
+  gap: 1.2em;
+  padding: 0.9em 0.5em;
+  margin: 0 -0.5em;
+  border-bottom: 1px solid #ece8e3;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.18s ease, box-shadow 0.18s ease;
+  animation: haothings-card-load 0.42s ease both;
 
-  &__avatar {
-    width: 58px;
-    height: 58px;
-    object-fit: cover;
-    border-radius: 3px;
-    flex-shrink: 0;
-    display: block;
-  }
-
-  &__name {
-    display: flex;
-    flex-direction: column;
-    gap: 0.08em;
-    flex-shrink: 0;
-  }
-
-  &__en {
-    font-size: 0.9em;
-    color: #2c2c2c;
-    line-height: 1.3;
-  }
-
-  &__zh {
-    font-size: 0.74em;
-    color: #8a8a8a;
-    line-height: 1.3;
-  }
-
-  &__links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.15em 0.9em;
-    font-size: 0.78em;
-    line-height: 1.5;
-
-    a {
-      color: #6a6a6a;
-      text-decoration: none;
-      white-space: nowrap;
-      &:hover { color: $link-color; text-decoration: underline; }
+  // stagger cards on load
+  @for $i from 1 through 20 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{($i - 1) * 0.05}s;
     }
   }
+
+  &:last-of-type { border-bottom: none; }
+  &:hover {
+    background: rgba(0,0,0,0.032);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+  }
+}
+
+.brief-card__img-wrap {
+  flex-shrink: 0;
+  overflow: hidden;   // keeps image scale within its own bounds
+  border-radius: 2px;
+}
+
+.brief-card__img {
+  display: block;
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.13);
+  transition: transform 0.22s ease;
+
+  &--placeholder {
+    background: #e8e3de;
+    width: 120px;
+    height: 90px;
+    display: block;
+    border-radius: 2px;
+  }
+}
+
+.brief-card:hover .brief-card__img {
+  transform: scale(1.04);
+}
+
+.brief-card__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.brief-card__meta {
+  font-size: 0.82em;
+  color: #5a5a5a;
+  margin-bottom: 0.45em;
+  line-height: 1.4;
+}
+
+.brief-card__type {
+  color: #9a9a9a;
+  text-transform: lowercase;
+  letter-spacing: 0.04em;
+}
+
+.brief-card__sep { color: #c0b8b0; }
+
+.brief-card__title {
+  font-weight: bold;
+  font-size: 1.18em;   // emphasise the title — ~1.2x the surrounding meta text
+  color: #1a1a1a;
+}
+
+.brief-card__creator { color: #7a7a7a; }
+
+// text wrap: clipped to ~2 lines with bottom fade; JS animates open/close
+.brief-card__text-wrap {
+  overflow: hidden;
+  // 2 lines: line-height 1.65 × font 0.88em = ~2.9em per 2 lines
+  max-height: 2.9em;
+  position: relative;
+  -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
+  mask-image:         linear-gradient(to bottom, black 30%, transparent 100%);
+  // JS adds/removes inline transition; no CSS transition here to avoid conflicts
+}
+
+.brief-card.is-open .brief-card__text-wrap {
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+.brief-card__text {
+  font-size: 0.88em;
+  color: #3a3a3a;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+// expand arrow button — pushed down as card expands
+.brief-card__toggle {
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 0.5em;
+  font-size: 0.75em;
+  color: #b8b0a8;
+  cursor: pointer;
+  transition: transform 0.38s ease, color 0.15s ease;
+  line-height: 1;
+
+  &:hover { color: $link-color; }
+}
+
+.brief-card.is-open .brief-card__toggle {
+  transform: rotate(180deg);
 }
 
 // -------------------------
 // footer
 // -------------------------
 .page__footer {
-  font-size: 0.82em;
+  font-size: 1.05em;
   background: #f0ebe5;
   border-top: 1px solid #d0c8c0;
   color: #4a4a4a;
@@ -361,5 +689,145 @@ hr {
   // hide the "Follow:" label
   .page__footer-follow li:first-child {
     display: none;
+  }
+}
+
+// -------------------------
+// brief-takes filter strip — elegant outer box with sliding inner highlight
+// -------------------------
+.brief-filter-strip {
+  position: relative;
+  display: flex;                          // full-width flex
+  align-items: center;
+  width: 85%;                             // narrower, centered
+  background: rgba(237, 232, 226, 0.5);  // half transparent outer box
+  border-radius: 1000px;                 // highly rounded
+  padding: 0.12em 0.18em;
+  margin: 0 auto;
+  margin-bottom: 1.8em;
+  user-select: none;
+}
+
+.brief-filter-pill {
+  position: absolute;
+  top: 0.12em;
+  left: 0.18em;
+  height: calc(100% - 0.24em);
+  background: #faf9f7;
+  border-radius: 1000px;  // match outer box shape
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  transition: left 0.32s cubic-bezier(0.34, 1.56, 0.64, 1),
+              width 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.brief-filter-btn {
+  position: relative;
+  z-index: 1;
+  flex: 1;                         // equal width — fills the strip evenly
+  text-align: center;
+  background: none;
+  border: none;
+  padding: 0.22em 0;
+  font-family: 'Mononoki', monospace;
+  font-size: 1em;                  // match main text size
+  color: #8a8a8a;
+  cursor: pointer;
+  border-radius: 1000px;
+  transition: color 0.22s ease;
+  white-space: nowrap;
+
+  &.active {
+    color: #1a1a1a;
+  }
+  &:hover { color: #5a5a5a; }
+}
+
+// -------------------------
+// mobile overrides
+// -------------------------
+
+// brief-takes sidebar preview: hide on mobile for all pages
+@media (max-width: 1023px) {
+  .author__sidebar-takes {
+    display: none;
+  }
+
+  // tighten masthead on mobile
+  #haothings-masthead-inner {
+    padding-top: 0.28em;
+    padding-bottom: 0.28em;
+  }
+
+  // zero row-gap for wrapped nav, reduce line-height on nav links
+  #haothings-nav {
+    gap: 0 0.85em;
+    a { line-height: 1.25; }
+  }
+
+  // hide cv and other on mobile — keeps nav to 2 rows
+  .nav-cv, .nav-other { display: none !important; }
+
+  // hide entire contact section on mobile — multiple layers to beat MM specificity
+  .author__urls-wrapper { display: none !important; }
+  .author__urls-wrapper .author__urls-toggle { display: none !important; }
+  .author__urls-wrapper .author__urls,
+  .author__urls-wrapper ul.author__urls,
+  ul.author__urls.social-icons {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    position: static !important;
+  }
+
+  // show mobile bio, hide desktop bio
+  .author__bio--desktop { display: none !important; }
+  .author__bio--mobile  { display: block !important; }
+}
+
+// -------------------------
+// entrance animations
+// -------------------------
+
+// full fade+lift for main content
+@keyframes haothings-fade-up {
+  from { opacity: 0; transform: translateY(7px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+// subtle load for brief cards
+@keyframes haothings-card-load {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+// transform-only slide for sidebar — avoids conflicting with _sidebar.scss opacity:0.75
+@keyframes haothings-slide-up {
+  from { transform: translateY(7px); }
+  to   { transform: translateY(0);   }
+}
+
+// page text fades gently upward on load
+.page__inner-wrap {
+  animation: haothings-fade-up 0.38s ease both;
+}
+
+// sidebar slides in slightly after content (layered feel), no opacity so dim-on-idle still works
+.sidebar {
+  @include breakpoint($large) {
+    animation: haothings-slide-up 0.38s ease both;
+    animation-delay: 0.06s;
+  }
+}
+
+// respect prefers-reduced-motion
+@media (prefers-reduced-motion: reduce) {
+  .page__inner-wrap,
+  .sidebar,
+  .home .page__content h2,
+  .brief-card {
+    animation: none;
   }
 }

@@ -15,15 +15,23 @@
     <h3 class="author__name p-name" itemprop="name">
       <a class="u-url" rel="me" href="{{ author.home | default: '/' | absolute_url }}" itemprop="url">{{ author.name }}</a>
     </h3>
+    {% if author.name_zh %}
+      <div class="author__name-zh">{{ author.name_zh }}</div>
+    {% endif %}
     {% if author.bio %}
-      <div class="author__bio p-note" itemprop="description">
+      <div class="author__bio p-note author__bio--desktop" itemprop="description">
         {{ author.bio | markdownify }}
+      </div>
+    {% endif %}
+    {% if author.bio_mobile %}
+      <div class="author__bio author__bio--mobile">
+        {{ author.bio_mobile | markdownify }}
       </div>
     {% endif %}
   </div>
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
+    <button class="btn btn--inverse author__urls-toggle">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
@@ -243,4 +251,17 @@
       {% include author-profile-custom-links.html %}
     </ul>
   </div>
+
+  {% assign takes = site.data.brief_takes %}
+  {% if takes %}
+  <div class="author__sidebar-takes">
+    <h4 class="author__sidebar-takes-label">my brief takes on&thinsp;…</h4>
+    {% for take in takes limit:3 %}
+    <a href="/brief-takes/" class="sidebar-take">
+      <span class="sidebar-take__title">{{ take.title }}</span>
+      <span class="sidebar-take__preview">{{ take.preview | default: take.text }}</span>
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
 </div>

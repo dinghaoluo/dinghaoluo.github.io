@@ -1,12 +1,17 @@
 # main links
 main:
-  - title: "research"
-    url: /research/
   - title: "writing"
     url: /writing/
+  - title: "brief_takes"
+    url: /brief-takes/
+    class: "nav-brief"
+  - title: "science"
+    url: /research/
+    break_before: true
   - title: "music"
     url: /music/
   - title: "photos"
     url: /photos/
-  - title: "cv"
-    url: /cv/
+  - title: "other"
+    url: /#other-stuff
+    class: "nav-other"

@@ -33,7 +33,7 @@ plugins:
 
 # Site settings
 locale: "en-GB"
-title: "cereniq:"
+title: "hao things"
 email: dinghao.luo@outlook.com
 description: >-
   Personal website of Dinghao Luo — neuroscientist, translator, and musician.
@@ -120,9 +120,10 @@ analytics:
 # Site Author
 author:
   name             : "Dinghao Luo"
+  name_zh          : "羅 丁豪"
   avatar           : "/assets/images/avatar.jpg"
-  bio              : "PhD Neuroscientist<br>Data Science<br>Scientific Journalism"
-  email            : "dinghao.luo@outlook.com"
+  bio              : "PhD Neuroscientist<br>Data Science<br>Science Journalism"
+  bio_mobile       : "PhD Neuroscientist<br>Data Science · Sci. Journalism"
   links:
     - label: "email"
       icon: "fas fa-fw fa-envelope"
