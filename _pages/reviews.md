@@ -36,7 +36,9 @@ title: "brief takes"
         {{ take.posted | date: '%-d %b %Y' }}
       </div>
     {% endif %}
-    <div class="brief-card__text-wrap"><div class="brief-card__text">{{ take.text | markdownify }}</div>
+    <div class="brief-card__text-wrap">
+      <div class="brief-card__text">{{ take.text | markdownify }}</div>
+    </div>
     <button class="brief-card__toggle" aria-expanded="false" aria-label="expand review">↓</button>
   </div>
 </div>
