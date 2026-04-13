@@ -576,8 +576,8 @@ hr {
 
 .brief-card__img {
   display: block;
-  width: 120px;
-  height: 90px;
+  width: 96px;
+  height: 128px;  // image trims to 3:4 vertical
   object-fit: cover;
   border-radius: 2px;
   box-shadow: 0 1px 5px rgba(0,0,0,0.13);
@@ -585,8 +585,8 @@ hr {
 
   &--placeholder {
     background: #e8e3de;
-    width: 120px;
-    height: 90px;
+    width: 96px;
+    height: 128px;
     display: block;
     border-radius: 2px;
   }
@@ -768,6 +768,56 @@ hr {
     display: none;
   }
 
+  .brief-card {
+    display: grid;
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 0.15em 0.85em;
+    align-items: start;
+  }
+
+  .brief-card__body {
+    display: contents;
+  }
+
+  .brief-card__img-wrap {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 72px;
+  }
+
+  .brief-card__img,
+  .brief-card__img--placeholder {
+    width: 72px;
+    height: 96px;
+  }
+
+  .brief-card__meta {
+    grid-column: 2;
+    grid-row: 1;
+    margin-bottom: 0;
+    line-height: 1.35;
+  }
+
+  .brief-card__posted {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 0.1em;
+    margin-bottom: 0;
+  }
+
+  .brief-card__text-wrap {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    margin-top: 0.5em;
+  }
+
+  .brief-card__toggle {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    justify-self: start;
+    margin-top: 0.45em;
+  }
+
   // tighten masthead on mobile
   #haothings-masthead-inner {
     padding-top: 0.28em;
@@ -799,6 +849,51 @@ hr {
   // show mobile bio, hide desktop bio
   .author__bio--desktop { display: none !important; }
   .author__bio--mobile  { display: block !important; }
+
+  body:not(.home) .sidebar .h-card {
+    display: grid;
+    grid-template-columns: 40px minmax(0, 1fr);
+    column-gap: 0.75em;
+    align-items: center;
+  }
+
+  body:not(.home) .sidebar .author__avatar {
+    margin-bottom: 0;
+
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+    }
+  }
+
+  body:not(.home) .sidebar .author__content {
+    min-width: 0;
+  }
+
+  body:not(.home) .sidebar .author__name {
+    margin-top: 0;
+    font-size: 0.96em;
+    line-height: 1.2;
+  }
+
+  body:not(.home) .sidebar .author__name-zh {
+    display: none !important;
+  }
+
+  body:not(.home) .sidebar .author__bio {
+    margin-top: 0.15em;
+    font-size: 0.8em;
+    line-height: 1.25;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 // -------------------------
