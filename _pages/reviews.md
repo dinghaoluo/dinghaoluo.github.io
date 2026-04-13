@@ -17,7 +17,8 @@ title: "brief takes"
   <button class="brief-filter-btn" data-filter="other">others</button>
 </div>
 
-{% for take in site.data.brief_takes %}
+{% assign sorted_takes = site.data.brief_takes | sort: 'posted' | reverse %}
+{% for take in sorted_takes %}
 <div class="brief-card" data-type="{{ take.type }}">
   <div class="brief-card__img-wrap">
     {% if take.image and take.image != "" %}
@@ -30,7 +31,12 @@ title: "brief takes"
     <div class="brief-card__meta">
       <span class="brief-card__type">{{ take.type }}</span><span class="brief-card__sep"> · </span><span class="brief-card__title">{{ take.title }}</span><span class="brief-card__sep"> · </span><span class="brief-card__creator">{{ take.creator_role }} {{ take.creator }}</span>
     </div>
-    <div class="brief-card__text-wrap"><p class="brief-card__text">{{ take.text }}</p></div>
+    {% if take.posted and take.posted != "" %}
+      <div class="brief-card__posted">
+        {{ take.posted | date: '%-d %b %Y' }}
+      </div>
+    {% endif %}
+    <div class="brief-card__text-wrap"><div class="brief-card__text">{{ take.text | markdownify }}</div>
     <button class="brief-card__toggle" aria-expanded="false" aria-label="expand review">↓</button>
   </div>
 </div>

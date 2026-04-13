@@ -624,11 +624,19 @@ hr {
 
 .brief-card__creator { color: #7a7a7a; }
 
+.brief-card__posted {
+  font-size: 0.82em;
+  color: #8a8a8a;
+  margin-top: -0.1em;
+  margin-bottom: 0.55em;
+  line-height: 1.35;
+}
+
 // text wrap: clipped to ~2 lines with bottom fade; JS animates open/close
 .brief-card__text-wrap {
   overflow: hidden;
   // 2 lines: line-height 1.65 × font 0.88em = ~2.9em per 2 lines
-  max-height: 2.9em;
+  max-height: 4.4em;
   position: relative;
   -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
   mask-image:         linear-gradient(to bottom, black 30%, transparent 100%);
@@ -644,8 +652,14 @@ hr {
   font-size: 0.88em;
   color: #3a3a3a;
   line-height: 1.65;
-  white-space: pre-wrap;
+}
+
+.brief-card__text p {
   margin: 0;
+}
+
+.brief-card__text p + p {
+  margin-top: 0.8em;
 }
 
 // expand arrow button — pushed down as card expands

@@ -10,7 +10,6 @@
 #   year        — year of release
 #   image       — path to image, e.g. /assets/images/brieftakes/mason-dixon.jpg
 #                 leave empty ("") for placeholder
-#   preview     — short teaser line (shown in sidebar)
 #   text        — full take (markdown OK); shown in card, clamped to ~3 lines, expands on click
 # -------------------------------------------------------
 
@@ -19,10 +18,13 @@
   creator: "Merlin Sheldrake"
   creator_role: "by"
   year: 2020
-  image: ""
-  preview: "I translated this — so I've spent more time with it than almost anything I've read."
+  image: "/assets/images/brief_takes/entangled_life_chinese.jpg"
+  posted: "2024-10-01"
   text: |
-    I translated this into Chinese, so I've spent more time with it than with almost anything else I've read — every sentence twice. What surprised me was how much the translation revealed: Sheldrake's sentences are doing a lot of quiet structural work that I had to unpack to render. The book's argument is simple and seductive (fungi are weirder and more important than you think) but the writing is what earns it. Sheldrake takes mushrooms seriously as things that push back against the categories we use to understand life, and the book is more philosophically interesting than it lets on.
+    I translated Merlin Sheldrake's *Entangled Life*, which was published in Chinese (《菌络万象》) in October 2024.<br>
+    The translation's release feels long overdue. From childhood memories of Frodo sneakily picking mushrooms in *The Lord of the Rings*, to hiking during my uni years in search of fungi, I have had my share of encounters with the fungal world, but never a way to explore it in depth. So when Editor Fei from HouLang Press reached out more than three years ago to ask whether I would be interested in translating this famed work by Sheldrake, I agreed without hesitation.<br>
+    I did not expect that decision to unfold into three years of work. Over that time, my understanding of fungi was turned completely inside out. Abstract terms became tangible structures; within the entanglement and interweaving of mycelium, I found myself tracing systems of communication, rules of life, forms of exchange, and a kind of unity across all things.<br>
+    Looking back on this journey, I am especially grateful to my wife for constant encouragement and support; to Editor Fei, whose brilliant editorial care has bordered on the meticulous; to Zhou for rigorous and knowledgeable proofreading; and to Congcong for a cover design full of quiet vitality. This translation only exists because of all of them.
 
 - title: "Mason & Dixon"
   type: "book"
@@ -30,6 +32,6 @@
   creator_role: "by"
   year: 1997
   image: ""
-  preview: "Takes about a hundred pages before the prose stops feeling like a wall."
+  posted: "2026-04-13"
   text: |
     It takes about a hundred pages before the prose stops feeling like a wall and starts feeling like a room you're living in. The joke density is absurd — Pynchon is genuinely funny, which I don't think he gets enough credit for. The two title characters are a kind of odd couple drawn across a continent that doesn't quite exist yet, and the book is at its best when it sits in that gap between the map and the territory. I keep putting it down for weeks and then picking it back up like I never left.
