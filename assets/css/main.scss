@@ -622,6 +622,14 @@ hr {
   color: #1a1a1a;
 }
 
+.brief-card__year {
+  margin-left: 0.45em;
+  font-size: 0.62em;
+  font-weight: normal;
+  color: #8a8a8a;
+  white-space: nowrap;
+}
+
 .brief-card__creator { color: #7a7a7a; }
 
 .brief-card__posted {
@@ -771,6 +779,7 @@ hr {
   .brief-card {
     display: grid;
     grid-template-columns: 72px minmax(0, 1fr);
+    grid-template-rows: 1fr auto auto auto auto;
     gap: 0.15em 0.85em;
     align-items: start;
   }
@@ -781,7 +790,7 @@ hr {
 
   .brief-card__img-wrap {
     grid-column: 1;
-    grid-row: 1 / span 2;
+    grid-row: 1 / span 3;
     width: 72px;
   }
 
@@ -793,13 +802,13 @@ hr {
 
   .brief-card__meta {
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 2;
     margin-bottom: 0;
-    min-height: 72px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    line-height: 1.2;
+    gap: 0.03em;
+    align-self: end;
+    line-height: 1.08;
   }
 
   .brief-card__sep {
@@ -813,40 +822,45 @@ hr {
   }
 
   .brief-card__type {
-    font-size: 0.76em;
+    font-size: 0.8em;
+    line-height: 1.05;
   }
 
   .brief-card__title {
-    font-size: 1em;
-    line-height: 1.2;
+    font-size: 1.06em;
+    line-height: 1.08;
+  }
+
+  .brief-card__year {
+    font-size: 0.7em;
   }
 
   .brief-card__creator {
-    font-size: 0.82em;
-    line-height: 1.2;
+    font-size: 0.86em;
+    line-height: 1.08;
   }
 
   .brief-card__posted {
     grid-column: 2;
-    grid-row: 2;
-    min-height: 24px;
+    grid-row: 3;
     display: flex;
-    align-items: flex-end;
-    margin-top: 0;
+    align-items: flex-start;
+    align-self: start;
+    margin-top: 0.22em;
     margin-bottom: 0;
     font-size: 0.74em;
-    line-height: 1.1;
+    line-height: 1.08;
   }
 
   .brief-card__text-wrap {
     grid-column: 1 / -1;
-    grid-row: 3;
+    grid-row: 4;
     margin-top: 0.5em;
   }
 
   .brief-card__toggle {
     grid-column: 1 / -1;
-    grid-row: 4;
+    grid-row: 5;
     justify-self: start;
     margin-top: 0.45em;
   }
