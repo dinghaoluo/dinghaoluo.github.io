@@ -671,7 +671,7 @@ hr {
 
 .brief-card__title {
   font-weight: bold;
-  font-size: 1.08em;
+  font-size: 1em;
   color: $morandi-ink;
 }
 
@@ -763,13 +763,13 @@ hr {
 }
 
 .brief-card__eval--loved {
-  background: $morandi-blue-soft;
+  background: mix($morandi-blue, $morandi-blue-soft, 42%);
   color: $morandi-blue-deep;
 }
 
 .brief-card__eval--liked {
-  background: mix($morandi-blue-soft, $morandi-grey-soft, 70%);
-  color: $morandi-blue-deep;
+  background: mix($morandi-blue-soft, $morandi-grey-soft, 78%);
+  color: mix($morandi-blue-deep, $morandi-muted, 72%);
 }
 
 .brief-card__eval--meh {
@@ -778,13 +778,13 @@ hr {
 }
 
 .brief-card__eval--disliked {
-  background: $morandi-rose-soft;
+  background: mix($morandi-rose, $morandi-rose-soft, 34%);
   color: $morandi-rose-deep;
 }
 
 .brief-card__eval--hated {
-  background: mix($morandi-rose-soft, $morandi-stone, 75%);
-  color: $morandi-rose-deep;
+  background: mix($morandi-rose, $morandi-stone, 48%);
+  color: mix($morandi-rose-deep, $morandi-ink, 82%);
 }
 
 .brief-card.is-open .brief-card__toggle {
@@ -1006,8 +1006,8 @@ hr {
   body:not(.home) .sidebar .h-card {
     display: grid;
     grid-template-columns: 28px minmax(0, 1fr);
-    column-gap: 0.55em;
-    align-items: center;
+    column-gap: 0.38em;
+    align-items: end;
   }
 
   body:not(.home) .sidebar .author__avatar {
@@ -1023,13 +1023,13 @@ hr {
   body:not(.home) .sidebar .author__content {
     min-width: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
   }
 
   body:not(.home) .sidebar .author__content::before {
     content: 'neuroscience \00b7 data science \00b7 science journalism';
     display: block;
-    font-size: 0.58em;
+    font-size: 0.67em;
     line-height: 1.05;
     letter-spacing: -0.01em;
     color: $site-text-soft;
