@@ -8,16 +8,32 @@
 #   creator      — author, director, etc.
 #   creator_role — "by" / "dir." / etc.
 #   year         — year of release
+#   eval         - loved / liked / meh... / disliked / hated
 #   image        — path to image, e.g. /assets/images/brief_takes/title.jpg
 #                  leave empty ("") for placeholder
 #   text         — markdown; shown in card, clamped to ~3 lines, expands on click
 # -------------------------------------------------------
+
+- title: "The City & the City"
+  type: "book"
+  creator: "China Miéville"
+  creator_role: "by"
+  year: 2009
+  eval: "meh..."
+  image: "/assets/images/brief_takes/the_city_the_city.jpg"
+  posted: "2026-01-18"
+  text: |
+    Marketed as 'new weird', though in truth neither especially new nor especially weird. What The City & the City does have is a superb premise: Beszel and Ul Qoma occupying the same physical space, their citizens drilled into the discipline of 'unseeing', and a murder that slips between the two and involves a 'Big Other'. The problem is that the idea is stronger than the world built to sustain it.<br><br>
+    That weakness becomes harder to ignore in the second half. At first the conceit is so elegant that one is willing to go along with almost anything. Later, the seams start showing, and the suspension of disbelief becomes hard to maintain: What happens if a Beszel dog runs into Ul Qoma? Why do objects not constantly drift physically into the other city? The novel works far better as allegory (selective perception, social training, learned blindness etc.) than as an actual inhabited world. Once the literal mechanics start demanding attention and conscious recalibration from the reader in order to work, suspension of disbelief begins to thin out fast.<br><br>
+    What disappointed me most, though, was the ending. For much of the novel, Breach and Orciny hang over everything with the promise of something truly uncanny. Then the final stretch shrinks that charge into something half-political, half-conspiratorial, almost bureaucratic in its smallness. Clever, yes. Haunting, not really. A premise this good should have opened into something stranger, darker, and more disorienting. Instead it settles for being ingenious. Guess I should have tried harder to manage my expectations.
+
 
 - title: "Gravity's Rainbow"
   type: "book"
   creator: "Thomas Pynchon"
   creator_role: "by"
   year: 1973
+  eval: "loved"
   image: "/assets/images/brief_takes/gravitys_rainbow.jpg"
   posted: "2026-03-01"
   text: |
@@ -30,6 +46,7 @@
   creator: "Thomas Pynchon"
   creator_role: "by"
   year: 2013
+  eval: "loved"
   image: "/assets/images/brief_takes/bleeding_edge.jpg"
   posted: "2026-03-11"
   text: |
@@ -42,6 +59,7 @@
   creator: "Robert Macfarlane"
   creator_role: "by"
   year: 2025
+  eval: "disliked"
   image: "/assets/images/brief_takes/is_a_river_alive.jpg"
   posted: "2026-03-20"
   text: |
@@ -54,6 +72,7 @@
   creator: "Mark Fisher"
   creator_role: "by"
   year: 2009
+  eval: "loved"
   image: "/assets/images/brief_takes/capitalist_realism.jpg"
   posted: "2026-03-18"
   text: |
@@ -66,6 +85,7 @@
   creator: "Merlin Sheldrake"
   creator_role: "by"
   year: 2020
+  eval: "loved"
   image: "/assets/images/brief_takes/entangled_life_chinese.jpg"
   posted: "2024-10-01"
   text: |
@@ -73,3 +93,4 @@
     The translation's release feels long overdue. From childhood memories of Frodo sneakily picking mushrooms in *The Lord of the Rings*, to hiking during my uni years in search of fungi, I have had my share of encounters with the fungal world, but never a way to explore it in depth. So when Editor Fei from HouLang Press reached out more than three years ago to ask whether I would be interested in translating this famed work by Sheldrake, I agreed without hesitation.<br><br>
     I did not expect that decision to unfold into three years of work. Over that time, my understanding of fungi was turned completely inside out. Abstract terms became tangible structures; within the entanglement and interweaving of mycelium, I found myself tracing systems of communication, rules of life, forms of exchange, and a kind of unity across all things.<br><br>
     Looking back on this journey, I am especially grateful to my wife for constant encouragement and support; to Editor Fei, whose brilliant editorial care has bordered on the meticulous; to Zhou for rigorous and knowledgeable proofreading; and to Congcong for a cover design full of quiet vitality. This translation only exists because of all of them.
+

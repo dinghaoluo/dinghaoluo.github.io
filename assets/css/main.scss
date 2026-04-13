@@ -39,12 +39,50 @@ font block — kept inline because GitHub Pages ignores separate _fonts.scss
 }
 
 // -------------------------
-// colour overrides — before skin import so !default picks them up
+// colour system - centralise palette and semantic tokens here
 // -------------------------
-$primary-color:       #c47c5a;
-$link-color:          #b5651d;
-$link-color-visited:  #cf9b6c;  // lighter warm brown — visually distinct but harmonious
-$background-color:    #faf9f7;
+// Morandi palette for the site - keep future custom colours within this family.
+$morandi-clay:        #b78e79;
+$morandi-clay-deep:   #8d6959;
+$morandi-oat:         #faf7f2;
+$morandi-stone:       #ddd3c8;
+$morandi-ink:         #3f3934;
+$morandi-muted:       #7f766f;
+$morandi-muted-soft:  #9b928a;
+$morandi-blue:        #90a4b0;
+$morandi-blue-soft:   #dde5e8;
+$morandi-blue-deep:   #627884;
+$morandi-grey-soft:   #e8e2db;
+$morandi-grey-deep:   #8b837c;
+$morandi-rose:        #bb9891;
+$morandi-rose-soft:   #ebddda;
+$morandi-rose-deep:   #7d605b;
+
+// semantic site tokens
+$site-bg:             #ffffff;
+$site-bg-soft:        $morandi-oat;
+$site-surface:        #eaeae8;
+$site-surface-soft:   #f0ebe5;
+$site-surface-muted:  #e8e3de;
+$site-border:         #e0dbd5;
+$site-border-soft:    #ece8e3;
+$site-border-strong:  #d4d4d0;
+$site-border-footer:  #d0c8c0;
+$site-border-page:    #e8e3de;
+$site-text:           $morandi-ink;
+$site-text-muted:     $morandi-muted;
+$site-text-soft:      $morandi-muted-soft;
+$site-text-subtle:    #6a6a6a;
+$site-text-nav:       #4a4a4a;
+$site-text-nav-soft:  #5a5a5a;
+$site-text-icon:      #7a7a7a;
+$site-text-body:      #3a3a3a;
+$site-link-visited:   #c6a596;
+
+$primary-color:       $morandi-clay;
+$link-color:          $morandi-clay-deep;
+$link-color-visited:  $site-link-visited;
+$background-color:    $site-bg;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
@@ -98,7 +136,7 @@ a {
 
 hr {
   border: none;
-  border-top: 1px solid #e0dbd5;
+  border-top: 1px solid $site-border;
   margin: 2.5em 0;
 }
 
@@ -107,8 +145,8 @@ hr {
 // no MM class selectors can interfere here
 // -------------------------
 #haothings-masthead {
-  background: #eaeae8;
-  border-bottom: 1px solid #d4d4d0;
+  background: $site-surface;
+  border-bottom: 1px solid $site-border-strong;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -135,7 +173,7 @@ hr {
   font-family: 'Mononoki', monospace !important;
   font-weight: normal;
   letter-spacing: -0.02em;
-  color: #2c2c2c !important;
+  color: $site-text !important;
   text-decoration: none !important;
   flex-shrink: 0;
   position: relative;
@@ -180,7 +218,7 @@ hr {
   a {
     font-family: 'Mononoki', monospace !important;
     font-size: 1em;            // same as html base — matches body text exactly
-    color: #4a4a4a !important;
+    color: $site-text-nav !important;
     text-decoration: none !important;
     letter-spacing: 0.01em;
     white-space: nowrap;
@@ -287,7 +325,7 @@ hr {
 
 .author__name-zh {
   font-size: 0.78em;
-  color: #8a8a8a;
+  color: $morandi-muted-soft;
   margin-top: 0.2em;           // tight gap below English name
   margin-bottom: 0.4em;        // slightly tighter gap before bio
   letter-spacing: 0.04em;
@@ -296,7 +334,7 @@ hr {
 .author__bio {
   font-size: 0.88em;
   font-style: normal;
-  color: #4a4a4a;
+  color: $site-text-nav;
   line-height: 1.35;           // tighter interline for the role lines
   margin-top: 0.5em;
 
@@ -333,11 +371,11 @@ hr {
 
   // monochrome icons — suppress all brand colours
   i.fas, i.fab, i.fa {
-    color: #7a7a7a !important;
+    color: $site-text-icon !important;
   }
 
   a {
-    color: #5a5a5a;
+    color: $site-text-nav-soft;
     &:hover {
       color: $link-color;
       i.fas, i.fab, i.fa { color: $link-color !important; }
@@ -398,7 +436,7 @@ hr {
     letter-spacing: 0.02em;
     margin-top: 2em;
     padding-bottom: 0.25em;
-    border-bottom: 1px solid #e8e3de;
+    border-bottom: 1px solid $site-border-page;
   }
 
   h3 {
@@ -414,7 +452,7 @@ hr {
   font-weight: bold;
   text-transform: lowercase;
   letter-spacing: -0.02em;
-  color: #1a1a1a;
+  color: $morandi-ink;
   border-bottom: none;
   padding-bottom: 0;
   margin-top: 2.2em;
@@ -436,26 +474,26 @@ hr {
   em { font-style: italic; }
 
   em.currently-substance {
-    color: #6a6a6a;
+    color: $site-text-subtle;
     font-style: italic;
   }
 }
 
 .currently-greeting {
-  color: #8a8a8a;
+  color: $morandi-muted-soft;
   font-style: normal;
 }
 
 .currently-reach-out {
   display: block;
   font-size: 0.88em;
-  color: #5a5a5a;
+  color: $morandi-muted;
   margin-top: 0.35em;
 }
 
 .page-nav {
   font-size: 0.85em;
-  color: #7a7a7a;
+  color: $site-text-icon;
   line-height: 1.5;
   margin-top: 0.8em;
   margin-bottom: 1.6em;
@@ -488,7 +526,7 @@ hr {
 .author__sidebar-takes {
   margin-top: 1.2em;
   padding-top: 0.9em;
-  border-top: 1px solid #e0dbd5;
+  border-top: 1px solid $site-border;
   overflow: hidden;   // prevents scrollbar when sidebar-take items transform on hover
 }
 
@@ -497,10 +535,10 @@ hr {
   font-size: 0.82em;
   font-weight: bold;
   letter-spacing: -0.01em;
-  color: #5a5a5a;
-  margin: 0 0 0.68em;
+  color: $morandi-muted;
+  margin: 0 0 0.74em;
   padding-bottom: 0.3em;
-  border-bottom: 1px solid #ece8e3;
+  border-bottom: 1px solid $site-border-soft;
   text-transform: lowercase;
 }
 
@@ -522,8 +560,8 @@ hr {
   display: block;
   font-size: 0.82em;
   font-weight: bold;
-  color: #2c2c2c;
-  margin-bottom: 0;
+  color: $morandi-ink;
+  margin-bottom: 0.02em;
   line-height: 1.18;
   font-style: italic;
   transition: color 0.15s ease;
@@ -531,17 +569,17 @@ hr {
 
 .sidebar-take__date {
   margin-left: 0.45em;
-  font-size: 0.58em;
+  font-size: 0.62em;
   font-style: normal;
-  color: #9a9a9a;
+  color: $morandi-muted-soft;
   white-space: nowrap;
 }
 
 .sidebar-take__preview {
   display: block;
   font-size: 0.77em;
-  color: #5a5a5a;
-  line-height: 1.28;
+  color: $morandi-muted;
+  line-height: 1.32;
   white-space: nowrap;
   overflow: hidden;
   // fade from readable left → invisible right
@@ -557,7 +595,7 @@ hr {
   gap: 1.2em;
   padding: 0.9em 0.5em;
   margin: 0 -0.5em;
-  border-bottom: 1px solid #ece8e3;
+  border-bottom: 1px solid $site-border-soft;
   border-radius: 3px;
   cursor: pointer;
   transition: background 0.15s ease, transform 0.18s ease, box-shadow 0.18s ease;
@@ -594,7 +632,7 @@ hr {
   transition: transform 0.22s ease;
 
   &--placeholder {
-    background: #e8e3de;
+    background: $site-surface-muted;
     width: 96px;
     height: 144px;
     display: block;
@@ -613,13 +651,13 @@ hr {
 
 .brief-card__meta {
   font-size: 0.82em;
-  color: #5a5a5a;
+  color: $morandi-muted;
   margin-bottom: 0.45em;
   line-height: 1.4;
 }
 
 .brief-card__type {
-  color: #9a9a9a;
+  color: $morandi-muted-soft;
   text-transform: lowercase;
   letter-spacing: 0.04em;
 }
@@ -627,28 +665,28 @@ hr {
 .brief-card__sep {
   display: inline-block;
   margin: 0 0.16em;
-  color: #c0b8b0;
+  color: $morandi-stone;
 }
 
 .brief-card__title {
   font-weight: bold;
   font-size: 1.18em;   // emphasise the title — ~1.2x the surrounding meta text
-  color: #1a1a1a;
+  color: $morandi-ink;
 }
 
 .brief-card__year {
   margin-left: 0.62em;
   font-size: 0.62em;
   font-weight: normal;
-  color: #8a8a8a;
+  color: $morandi-muted-soft;
   white-space: nowrap;
 }
 
-.brief-card__creator { color: #7a7a7a; }
+.brief-card__creator { color: $morandi-muted; }
 
 .brief-card__posted {
   font-size: 0.82em;
-  color: #8a8a8a;
+  color: $morandi-muted-soft;
   margin-top: -0.1em;
   margin-bottom: 0.55em;
   line-height: 1.35;
@@ -672,7 +710,7 @@ hr {
 
 .brief-card__text {
   font-size: 0.88em;
-  color: #3a3a3a;
+  color: $site-text-body;
   line-height: 1.65;
 }
 
@@ -690,14 +728,58 @@ hr {
   background: none;
   border: none;
   padding: 0;
-  margin-top: 0.5em;
+  margin-top: 0;
   font-size: 0.75em;
-  color: #b8b0a8;
+  color: $morandi-muted-soft;
   cursor: pointer;
   transition: transform 0.38s ease, color 0.15s ease;
   line-height: 1;
 
   &:hover { color: $link-color; }
+}
+
+.brief-card__footer {
+  display: flex;
+  align-items: center;
+  gap: 0.55em;
+  margin-top: 0.5em;
+}
+
+.brief-card__eval {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.24em 0.64em;
+  border-radius: 999px;
+  font-size: 0.66em;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.brief-card__eval--loved {
+  background: $morandi-blue-soft;
+  color: $morandi-blue-deep;
+}
+
+.brief-card__eval--liked {
+  background: mix($morandi-blue-soft, $morandi-grey-soft, 70%);
+  color: $morandi-blue-deep;
+}
+
+.brief-card__eval--meh {
+  background: $morandi-grey-soft;
+  color: $morandi-grey-deep;
+}
+
+.brief-card__eval--disliked {
+  background: $morandi-rose-soft;
+  color: $morandi-rose-deep;
+}
+
+.brief-card__eval--hated {
+  background: mix($morandi-rose-soft, $morandi-stone, 75%);
+  color: $morandi-rose-deep;
 }
 
 .brief-card.is-open .brief-card__toggle {
@@ -709,13 +791,13 @@ hr {
 // -------------------------
 .page__footer {
   font-size: 1.05em;
-  background: #f0ebe5;
-  border-top: 1px solid #d0c8c0;
-  color: #4a4a4a;
+  background: $site-surface-soft;
+  border-top: 1px solid $site-border-footer;
+  color: $site-text-nav;
 
   a {
-    color: #4a4a4a;       // no accent colour — plain dark text
-    &:hover { color: #2c2c2c; text-decoration: underline; }
+    color: $site-text-nav;       // no accent colour - plain dark text
+    &:hover { color: $site-text; text-decoration: underline; }
   }
 
   i.fas, i.fab, i.fa {
@@ -736,7 +818,7 @@ hr {
   display: flex;                          // full-width flex
   align-items: center;
   width: 85%;                             // narrower, centered
-  background: rgba(237, 232, 226, 0.5);  // half transparent outer box
+  background: rgba($morandi-grey-soft, 0.5);  // half transparent outer box
   border-radius: 1000px;                 // highly rounded
   padding: 0.12em 0.18em;
   margin: 0 auto;
@@ -749,7 +831,7 @@ hr {
   top: 0.12em;
   left: 0.18em;
   height: calc(100% - 0.24em);
-  background: #faf9f7;
+  background: $site-bg;
   border-radius: 1000px;  // match outer box shape
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   transition: left 0.32s cubic-bezier(0.34, 1.56, 0.64, 1),
@@ -768,16 +850,16 @@ hr {
   padding: 0.22em 0;
   font-family: 'Mononoki', monospace;
   font-size: 1em;                  // match main text size
-  color: #8a8a8a;
+  color: $site-text-soft;
   cursor: pointer;
   border-radius: 1000px;
   transition: color 0.22s ease;
   white-space: nowrap;
 
   &.active {
-    color: #1a1a1a;
+    color: $site-text;
   }
-  &:hover { color: #5a5a5a; }
+  &:hover { color: $site-text-nav-soft; }
 }
 
 // -------------------------
@@ -873,11 +955,15 @@ hr {
     margin-top: 0.5em;
   }
 
-  .brief-card__toggle {
+  .brief-card__footer {
     grid-column: 1 / -1;
     grid-row: 5;
     justify-self: start;
     margin-top: 0.45em;
+  }
+
+  .brief-card__toggle {
+    margin-top: 0;
   }
 
   // tighten masthead on mobile
@@ -1002,3 +1088,6 @@ hr {
     animation: none;
   }
 }
+
+
+

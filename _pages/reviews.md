@@ -39,7 +39,12 @@ title: 'brief takes'
     <div class="brief-card__text-wrap">
       <div class="brief-card__text">{{ take.text | markdownify }}</div>
     </div>
-    <button class="brief-card__toggle" aria-expanded="false" aria-label="expand review">&darr;</button>
+    <div class="brief-card__footer">
+      <button class="brief-card__toggle" aria-expanded="false" aria-label="expand review">&darr;</button>
+      {% if take.eval and take.eval != '' %}
+        <span class="brief-card__eval brief-card__eval--{{ take.eval | slugify }}">{{ take.eval }}</span>
+      {% endif %}
+    </div>
   </div>
 </div>
 {% endfor %}
