@@ -587,7 +587,7 @@ hr {
 .brief-card__img {
   display: block;
   width: 96px;
-  height: 128px;  // image trims to 3:4 vertical
+  height: 144px;  // image trims to 2:3 vertical
   object-fit: cover;
   border-radius: 2px;
   box-shadow: 0 1px 5px rgba(0,0,0,0.13);
@@ -596,7 +596,7 @@ hr {
   &--placeholder {
     background: #e8e3de;
     width: 96px;
-    height: 128px;
+    height: 144px;
     display: block;
     border-radius: 2px;
   }
@@ -811,7 +811,7 @@ hr {
   .brief-card__img,
   .brief-card__img--placeholder {
     width: 72px;
-    height: 96px;
+    height: 108px;
   }
 
   .brief-card__meta {
