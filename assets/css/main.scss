@@ -795,14 +795,47 @@ hr {
     grid-column: 2;
     grid-row: 1;
     margin-bottom: 0;
-    line-height: 1.35;
+    min-height: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.2;
+  }
+
+  .brief-card__sep {
+    display: none;
+  }
+
+  .brief-card__type,
+  .brief-card__title,
+  .brief-card__creator {
+    display: block;
+  }
+
+  .brief-card__type {
+    font-size: 0.76em;
+  }
+
+  .brief-card__title {
+    font-size: 1em;
+    line-height: 1.2;
+  }
+
+  .brief-card__creator {
+    font-size: 0.82em;
+    line-height: 1.2;
   }
 
   .brief-card__posted {
     grid-column: 2;
     grid-row: 2;
-    margin-top: 0.1em;
+    min-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 0;
     margin-bottom: 0;
+    font-size: 0.74em;
+    line-height: 1.1;
   }
 
   .brief-card__text-wrap {
