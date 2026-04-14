@@ -434,6 +434,16 @@ hr {
 }
 
 @include breakpoint($x-large) {
+  .author__bio--desktop {
+    line-height: 1.07;
+  }
+
+  .author__urls {
+    line-height: 1.38;
+  }
+}
+
+@include breakpoint($x-large) {
   .page__inner-wrap {
     float: none;
     max-width: 720px;
@@ -641,9 +651,9 @@ hr {
   font-weight: bold;
   letter-spacing: -0.01em;
   color: $morandi-muted;
-  margin: 0 0 0.74em;
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid rgba($morandi-muted, 0.1);
+  margin: 0 0 1.08em;
+  padding-bottom: 0;
+  border-bottom: none;
   text-transform: lowercase;
 }
 
@@ -1046,8 +1056,11 @@ hr {
 }
 
 .takes-search-wrap {
+  width: 85%;
   margin-top: 0.65em;
   margin-bottom: 1.15em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .takes-search-input {
@@ -1370,6 +1383,14 @@ hr {
   body:not(.home) .sidebar .author__bio {
     display: none !important;
   }
+}
+
+mark.takes-highlight {
+  background: rgba($morandi-oat, 0.96);
+  color: $morandi-clay-deep;
+  padding: 0 0.06em;
+  border-radius: 0.14em;
+  box-shadow: inset 0 -1px 0 rgba($morandi-clay, 0.16);
 }
 
 // -------------------------

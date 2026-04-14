@@ -109,8 +109,15 @@
       return searchInput ? normalise(searchInput.value) : '';
     }
 
+    function queryTerms(query) {
+      return query ? query.split(' ').filter(Boolean) : [];
+    }
+
     function cardMatchesQuery(card, query) {
       if (!query) return true;
+
+      var terms = queryTerms(query);
+      if (!terms.length) return true;
 
       var haystack = normalise([
         card.getAttribute('data-title'),
@@ -121,7 +128,37 @@
         card.getAttribute('data-text')
       ].join(' '));
 
-      return haystack.indexOf(query) !== -1;
+      return terms.every(function (term) {
+        return haystack.indexOf(term) !== -1;
+      });
+    }
+
+    function escapeRegExp(str) {
+      return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    function restoreHighlights(card) {
+      card.querySelectorAll('.brief-card__title, .brief-card__creator, .brief-card__text').forEach(function (node) {
+        if (node._originalHtml) {
+          node.innerHTML = node._originalHtml;
+        } else {
+          node._originalHtml = node.innerHTML;
+        }
+      });
+    }
+
+    function highlightTerms(card, query) {
+      var terms = queryTerms(query).filter(function (term) {
+        return term.length > 1;
+      });
+
+      restoreHighlights(card);
+      if (!terms.length) return;
+
+      var regex = new RegExp('(' + terms.map(escapeRegExp).join('|') + ')', 'gi');
+      card.querySelectorAll('.brief-card__title, .brief-card__creator, .brief-card__text').forEach(function (node) {
+        node.innerHTML = node.innerHTML.replace(regex, '<mark class="takes-highlight">$1</mark>');
+      });
     }
 
     function movePill(btn) {
@@ -142,6 +179,8 @@
                        || (filterValue === 'other' && cardType !== 'book' && cardType !== 'film');
         var matchesQuery = cardMatchesQuery(card, query);
         var matches = matchesType && matchesQuery;
+
+        highlightTerms(card, matches ? query : '');
 
         if (matches) {
           // show card

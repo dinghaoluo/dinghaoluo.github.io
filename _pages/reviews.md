@@ -1,6 +1,6 @@
 ---
 layout: single
-author_profile: false
+author_profile: true
 permalink: /thoughts/
 title: 'thoughts'
 ---
@@ -31,14 +31,14 @@ title: 'thoughts'
 {% assign pinned_takes = site.data.brief_takes | where: 'pin', true | sort: 'posted' | reverse %}
 {% assign regular_takes = site.data.brief_takes | where_exp: 'take', 'take.pin != true' | sort: 'posted' | reverse %}
 {% if pinned_takes.size > 0 %}
-  <div class="thoughts-pin-lead">
-    <span class="thoughts-pin-lead__label">pinned</span>
-    <p>A couple of entries I especially want near the top.</p>
-  </div>
-  {% for take in pinned_takes %}
-    {% include thought-card.html take=take %}
-  {% endfor %}
+<div class="thoughts-pin-lead">
+  <span class="thoughts-pin-lead__label">pinned</span>
+  <p>A couple of entries I especially want near the top.</p>
+</div>
+{% for take in pinned_takes %}
+{% include thought-card.html take=take %}
+{% endfor %}
 {% endif %}
 {% for take in regular_takes %}
-  {% include thought-card.html take=take %}
+{% include thought-card.html take=take %}
 {% endfor %}
