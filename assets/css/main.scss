@@ -1007,7 +1007,7 @@ hr {
     display: grid;
     grid-template-columns: 28px minmax(0, 1fr);
     column-gap: 0.38em;
-    align-items: end;
+    align-items: stretch;
   }
 
   body:not(.home) .sidebar .author__avatar {
@@ -1023,7 +1023,9 @@ hr {
   body:not(.home) .sidebar .author__content {
     min-width: 0;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex_end;
+    height: 100%;
   }
 
   body:not(.home) .sidebar .author__content::before {

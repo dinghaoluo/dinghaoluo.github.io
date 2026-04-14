@@ -1,8 +1,6 @@
 # -------------------------------------------------------
-# Update these whenever you like.
-# They appear in the opening paragraph on the home page.
-# All three fields are used in the sentence:
-#   "Recently I've been reading ___, learning ___, and thinking ___."
+# For dynamic updating of recent status:
+#   "... Recently I've been reading ___, learning ___, and thinking ___."
 # -------------------------------------------------------
 
 reading: "Mason & Dixon"
