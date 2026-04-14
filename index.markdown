@@ -4,9 +4,13 @@ author_profile: true
 classes: home
 ---
 
-<p class="currently-intro"><span class="currently-greeting">Hi, Dinghao here :)</span><br>... Recently I've been reading <em class="currently-substance">{{ site.data.currently.reading }}</em>, learning <em class="currently-substance">{{ site.data.currently.learning }}</em>, and thinking about <em class="currently-substance">{{ site.data.currently.thinking }}</em>.<br><span class="currently-reach-out">reach out to me: <a href="mailto:dinghao.luo@outlook.com">[dinghao.luo@outlook.com]</a></span></p>
+Hi, Dinghao here! I am currently a PhD neuroscientist at the [Max Planck Institute for Neuroscience](https://www.mpfi.org) (FL, US), studying the hippocampus, dopamine, and more :)
 
-I'm finishing my PhD at the [Max Planck Institute for Neuroscience](https://www.mpfi.org) (FL, US) in December 2026, working on hippocampus, dopamine, and more.
+<p class="currently-intro">... Recently I've been reading <em class="currently-substance">{{ site.data.currently.reading }}</em>, learning <em class="currently-substance">{{ site.data.currently.learning }}</em>, and thinking about <em class="currently-substance">{{ site.data.currently.thinking }}</em>.</p>
+
+Reach out to me: <a href="mailto:dinghao.luo@outlook.com">[dinghao.luo@outlook.com]</a>
+
+I'm graduating in December 2026.
 
 <p class="page-nav">on this page:<br><span class="page-nav__links"><a href="#thoughts">thoughts</a> · <a href="#writing">writing</a> · <a href="#science">science</a> · <a href="#music">music</a> · <a href="#photos">photos</a> · <a href="#other-stuff">other stuff</a></span></p>
 
@@ -14,7 +18,7 @@ I'm finishing my PhD at the [Max Planck Institute for Neuroscience](https://www.
 
 <h2 id="thoughts">thoughts :)</h2>
 
-Day-to-day thoughts on books, films, and other things that have been on my mind lately.
+I also have some more day-to-day thoughts on various books, films, and other things that have been on my mind.
 
 [→ thoughts](/thoughts/)
 
