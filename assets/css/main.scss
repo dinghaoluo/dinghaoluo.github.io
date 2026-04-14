@@ -503,6 +503,8 @@ hr {
 
 #haothings-nav-toggle {
   display: none;
+  appearance: none;
+  -webkit-appearance: none;
   align-items: center;
   justify-content: center;
   gap: 0.22em;
@@ -528,6 +530,12 @@ hr {
   &.open {
     span:nth-child(1) { transform: translateX(-0.06rem); }
     span:nth-child(3) { transform: translateX(0.06rem); }
+  }
+}
+
+@media (min-width: 1024px) {
+  #haothings-nav-toggle {
+    display: none !important;
   }
 }
 
@@ -1119,14 +1127,20 @@ hr {
   // tighten masthead on mobile
   #haothings-masthead-inner {
     position: relative;
-    padding-top: 0.28em;
-    padding-bottom: 0.28em;
+    padding-top: 0.42em;
+    padding-bottom: 0.42em;
     padding-left: 1.28em;
     padding-right: 1.28em;
   }
 
+  #haothings-site-title {
+    font-size: 1.1em;
+  }
+
   #haothings-nav-toggle {
     display: inline-flex;
+    width: 2.7rem;
+    height: 2.2rem;
   }
 
   #haothings-nav {
@@ -1195,18 +1209,22 @@ hr {
   .author__bio--mobile  { display: block !important; }
 
   .home .author__bio--mobile {
-    line-height: 1.14;
-    margin-top: 0.2em;
+    line-height: 1.02;
+    margin-top: 0.08em;
   }
 
   .home .author__bio--mobile br {
     margin-top: 0;
   }
 
+  .home .author__bio--mobile p {
+    line-height: inherit;
+  }
+
   body:not(.home) .sidebar .h-card {
     display: grid;
     grid-template-columns: 28px minmax(0, 1fr);
-    column-gap: 0.38em;
+    column-gap: 0.22em;
     align-items: stretch;
   }
 
@@ -1226,16 +1244,18 @@ hr {
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
+    padding-bottom: 0.01em;
   }
 
   body:not(.home) .sidebar .author__content::before {
     content: 'neuroscience \00b7 data science \00b7 science journalism';
     display: block;
     font-size: 0.67em;
-    line-height: 1.05;
+    line-height: 0.98;
     letter-spacing: -0.01em;
     color: $site-text-soft;
     white-space: nowrap;
+    margin-bottom: -0.02em;
   }
 
   body:not(.home) .sidebar .author__name {
@@ -1277,8 +1297,14 @@ hr {
 // applying the same treatment to phones.
 @media (orientation: portrait) and (min-width: 768px) and (max-width: 1023px) {
   #haothings-masthead-inner {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     padding-left: clamp(2.2rem, 5.7vw, 3.45rem);
     padding-right: clamp(2.2rem, 5.7vw, 3.45rem);
+  }
+
+  #haothings-site-title {
+    font-size: 1.16em;
   }
 
   #main {
@@ -1331,8 +1357,8 @@ hr {
   }
 
   .home .author__bio--mobile {
-    line-height: 1.08;
-    margin-top: 0.12em;
+    line-height: 0.98;
+    margin-top: 0.04em;
   }
 
   .author__bio--mobile p {
@@ -1347,7 +1373,7 @@ hr {
   }
 
   .home .author__bio--mobile::before {
-    line-height: 1.06;
+    line-height: 1;
   }
 
   .page__footer footer {
