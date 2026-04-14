@@ -1,8 +1,8 @@
 ---
 layout: single
 author_profile: true
-permalink: /research/
-title: "research"
+permalink: /science/
+title: "science"
 toc: true
 toc_label: "on this page"
 toc_icon: ""

@@ -6,7 +6,7 @@ main:
     url: /brief-takes/
     class: "nav-brief"
   - title: "science"
-    url: /research/
+    url: /science/
     break_before: true
   - title: "music"
     url: /music/
