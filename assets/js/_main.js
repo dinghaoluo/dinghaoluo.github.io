@@ -3,6 +3,8 @@
    ========================================================================== */
 
 $(function() {
+  var mobileNavBreakpoint = 1023;
+
   // FitVids init
   $("#main").fitVids();
 
@@ -27,6 +29,23 @@ $(function() {
     stickySideBar();
   });
 
+  var closeMobileNav = function() {
+    $("#haothings-nav").removeClass("is--visible");
+    $("#haothings-nav-toggle").removeClass("open").attr("aria-expanded", "false");
+  };
+
+  $("#haothings-nav-toggle").on("click", function() {
+    var isOpen = $("#haothings-nav").toggleClass("is--visible").hasClass("is--visible");
+    $(this).toggleClass("open", isOpen).attr("aria-expanded", isOpen ? "true" : "false");
+  });
+
+  $(document).on("click", function(e) {
+    if ($(window).width() > mobileNavBreakpoint) return;
+    if (!$(e.target).closest("#haothings-masthead-inner").length) {
+      closeMobileNav();
+    }
+  });
+
   // Follow menu drop down
   $(".author__urls-wrapper").find("button").on("click", function() {
     $(".author__urls").toggleClass("is--visible");
@@ -36,6 +55,7 @@ $(function() {
   // Close search screen with Esc key
   $(document).keyup(function(e) {
     if (e.keyCode === 27) {
+      closeMobileNav();
       if ($(".initial-content").hasClass("is--hidden")) {
         $(".search-content").toggleClass("is--visible");
         $(".initial-content").toggleClass("is--hidden");
@@ -131,6 +151,16 @@ $(function() {
       anchor.innerHTML = '<span class=\"sr-only\">Permalink</span><i class=\"fas fa-link\"></i>';
       anchor.title = "Permalink";
       $(this).append(anchor);
+    }
+  });
+
+  $("#haothings-nav").find("a").on("click", function() {
+    closeMobileNav();
+  });
+
+  $(window).on("resize", function() {
+    if ($(window).width() > mobileNavBreakpoint) {
+      closeMobileNav();
     }
   });
 });

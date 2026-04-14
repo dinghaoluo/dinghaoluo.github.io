@@ -1,7 +1,12 @@
 <header id="haothings-masthead">
   <div id="haothings-masthead-inner">
     <a id="haothings-site-title" href="{{ '/' | relative_url }}"><strong>hao things</strong> :)</a>
-    <nav id="haothings-nav">
+    <button id="haothings-nav-toggle" type="button" aria-expanded="false" aria-controls="haothings-nav" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="haothings-nav" aria-label="Primary navigation">
       {%- for link in site.data.navigation.main -%}
         {%- if link.break_before -%}<span class="nav-line-break"></span>{%- endif -%}
         <a href="{{ link.url | relative_url }}"{% if link.class %} class="{{ link.class }}"{% endif %}>{{ link.title }}</a>
