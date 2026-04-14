@@ -560,7 +560,7 @@ hr {
 }
 
 .currently-greeting {
-  color: $morandi-muted-soft;
+  color: $morandi-ink;
   font-style: normal;
 }
 
@@ -1255,7 +1255,7 @@ hr {
   }
 
   body:not(.home) .sidebar .author__content::before {
-    content: 'neuroscience \00b7 data science \00b7 sci. journalism';
+    content: 'neuroscience · data science · sci. journalism';
     display: block;
     font-size: 0.8em;
     line-height: 0.9;
@@ -1375,7 +1375,7 @@ hr {
   }
 
   .author__bio--mobile::before {
-    content: 'PhD Neuroscientist\A Data Science \00b7 Science Journalism';
+    content: 'phd neuroscientist\A data science · science journalism';
     display: block;
     white-space: pre-line;
     line-height: 1;
@@ -1403,7 +1403,7 @@ hr {
   }
 
   body:not(.home) .sidebar .author__content::before {
-    content: 'neuroscience \00b7 data science \00b7 science journalism';
+    content: 'neuroscience · data science · science journalism';
     font-size: 1em;
     line-height: 0.98;
     margin-bottom: 0;

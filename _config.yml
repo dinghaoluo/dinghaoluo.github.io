@@ -122,8 +122,8 @@ author:
   name             : "Dinghao Luo"
   name_zh          : "羅 丁豪"
   avatar           : "/assets/images/avatar.jpg"
-  bio              : "PhD Neuroscientist<br>Data Science<br>Science Journalism"
-  bio_mobile       : "PhD Neuroscientist<br>Data Science · Sci. Journalism"
+  bio              : "phd neuroscientist<br>data science<br>science journalism"
+  bio_mobile       : "phd neuroscientist<br>data science · sci. Journalism"
   links:
     - label: "email"
       icon: "fas fa-fw fa-envelope"
