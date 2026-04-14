@@ -1147,7 +1147,7 @@ hr {
     padding: 0.72em 0.78em 0.78em;
     border: 1px solid rgba($morandi-muted, 0.12);
     border-radius: 0.78rem;
-    background: rgba($morandi-oat, 0.94);
+    background: rgba(255,255,255,0.97);
     box-shadow: 0 7px 18px rgba(63,57,52,0.055);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -1207,7 +1207,7 @@ hr {
   }
 
   .home .author__bio--mobile br {
-    margin-top: -0.08em;
+    margin-top: -0.03em;
   }
 
   .home .author__bio--mobile p {
@@ -1366,11 +1366,11 @@ hr {
     content: 'phd neuroscientist\A data science · science journalism';
     display: block;
     white-space: pre-line;
-    line-height: 1;
+    line-height: 1.04;
   }
 
   .home .author__bio--mobile::before {
-    line-height: 0.92;
+    line-height: 0.96;
   }
 
   body:not(.home) .sidebar .h-card {
