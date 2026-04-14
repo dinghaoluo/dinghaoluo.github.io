@@ -108,7 +108,7 @@ html {
 // Force Mononoki everywhere — wildcard is safe here because
 // we explicitly set weight/style on each element below
 * {
-  font-family: 'Mononoki', monospace;
+  font-family: 'Mononoki', 'Noto Sans Mono CJK SC', 'Source Han Mono SC', 'Microsoft YaHei Mono', monospace;
 }
 
 body {
@@ -433,6 +433,15 @@ hr {
   }
 }
 
+@include breakpoint($x-large) {
+  .page__inner-wrap {
+    float: none;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 // -------------------------
 // TOC (right sidebar) — REMOVED to expand main content
 // -------------------------
@@ -492,7 +501,7 @@ hr {
   color: $morandi-ink;
   border-bottom: none;
   padding-bottom: 0;
-  margin-top: 2.2em;
+  margin-top: 0;
   margin-bottom: 0.4em;
   animation: haothings-scale-in 0.34s ease both;
 
@@ -556,6 +565,34 @@ hr {
   em.currently-substance {
     color: $site-text-subtle;
     font-style: italic;
+  }
+}
+
+.home .page__content h2 {
+  position: sticky;
+  top: 3.25rem;
+  z-index: 60;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding-top: 0.5em;
+  padding-right: 0.2em;
+  margin-top: 0;
+}
+
+@include breakpoint($large) {
+  .home .page__content h2 {
+    top: 3.55rem;
+  }
+
+  .sticky {
+    top: calc(3.55rem + 1em);
+  }
+}
+
+@include breakpoint($x-large) {
+  .sticky {
+    top: calc(3.55rem + 1em);
   }
 }
 
@@ -683,6 +720,31 @@ hr {
     transform: translateY(-2px);
     box-shadow: 0 3px 10px rgba(0,0,0,0.07);
   }
+}
+
+.brief-card--pinned {
+  border-left: 2px solid rgba($morandi-clay-deep, 0.34);
+  padding-left: 0.85em;
+  background: linear-gradient(90deg, rgba($morandi-oat, 0.58), rgba(255,255,255,0));
+}
+
+.thoughts-pin-lead {
+  margin: 0.2em 0 1.05em;
+  color: $site-text-muted;
+
+  p {
+    margin: 0.22em 0 0;
+    font-size: 0.88em;
+    line-height: 1.55;
+  }
+}
+
+.thoughts-pin-lead__label {
+  display: inline-block;
+  font-size: 0.78em;
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+  color: $morandi-clay-deep;
 }
 
 .brief-card__img-wrap {
@@ -817,6 +879,20 @@ hr {
   align-items: center;
   gap: 0.55em;
   margin-top: 0.5em;
+}
+
+.brief-card__pin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.24em 0.62em;
+  border-radius: 999px;
+  font-size: 0.66em;
+  line-height: 1;
+  color: $morandi-clay-deep;
+  background: rgba($morandi-oat, 0.9);
+  border: 1px solid rgba($morandi-clay-deep, 0.16);
+  white-space: nowrap;
 }
 
 .brief-card__eval {
@@ -967,6 +1043,35 @@ hr {
   margin-bottom: 1.8em;
   user-select: none;
   box-shadow: inset 0 0 0 1px rgba($morandi-muted, 0.06);
+}
+
+.takes-search-wrap {
+  margin-top: 0.65em;
+  margin-bottom: 1.15em;
+}
+
+.takes-search-input {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.92em;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba($morandi-muted, 0.34);
+  outline: none;
+  padding: 0.34em 0;
+  color: $site-text-nav;
+  opacity: 0.74;
+  transition: opacity 0.15s ease, border-color 0.15s ease;
+
+  &:focus {
+    opacity: 1;
+    border-bottom-color: rgba($morandi-clay-deep, 0.4);
+  }
+
+  &::placeholder {
+    color: $site-text-soft;
+    opacity: 0.75;
+  }
 }
 
 .brief-filter-pill {

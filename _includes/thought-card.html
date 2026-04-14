@@ -1,0 +1,39 @@
+<div
+  class="brief-card{% if include.take.pin %} brief-card--pinned{% endif %}"
+  data-type="{{ include.take.type | downcase }}"
+  data-title="{{ include.take.title | escape }}"
+  data-author="{{ include.take.creator | escape }}"
+  data-year="{{ include.take.year }}"
+  data-reaction="{{ include.take.eval | default: '' | downcase | escape }}"
+  data-text="{{ include.take.text | strip_html | strip_newlines | escape }}"
+  data-pinned="{% if include.take.pin %}true{% else %}false{% endif %}">
+  <div class="brief-card__img-wrap">
+    {% if include.take.image and include.take.image != '' %}
+      <img class="brief-card__img" src="{{ include.take.image | relative_url }}" alt="{{ include.take.title }}">
+    {% else %}
+      <div class="brief-card__img--placeholder"></div>
+    {% endif %}
+  </div>
+  <div class="brief-card__body">
+    <div class="brief-card__meta">
+      <span class="brief-card__type">{{ include.take.type }}</span><span class="brief-card__sep">&middot;</span><span class="brief-card__title">{{ include.take.title }}{% if include.take.year and include.take.year != '' %}<span class="brief-card__year">{{ include.take.year }}</span>{% endif %}</span><span class="brief-card__sep">&middot;</span><span class="brief-card__creator">{{ include.take.creator_role }} {{ include.take.creator }}</span>
+    </div>
+    {% if include.take.posted and include.take.posted != '' %}
+      <div class="brief-card__posted">
+        {{ include.take.posted | date: '%-d %b %Y' }}
+      </div>
+    {% endif %}
+    <div class="brief-card__text-wrap">
+      <div class="brief-card__text">{{ include.take.text | markdownify }}</div>
+    </div>
+    <div class="brief-card__footer">
+      <button class="brief-card__toggle" aria-expanded="false" aria-label="expand thought">&darr;</button>
+      {% if include.take.pin %}
+        <span class="brief-card__pin">pinned</span>
+      {% endif %}
+      {% if include.take.eval and include.take.eval != '' %}
+        <span class="brief-card__eval brief-card__eval--{{ include.take.eval | slugify }}">{{ include.take.eval }}</span>
+      {% endif %}
+    </div>
+  </div>
+</div>

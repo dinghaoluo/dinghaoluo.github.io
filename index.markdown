@@ -8,14 +8,10 @@ classes: home
 
 I am finishing my PhD in neuroscience at the [Max Planck Institute for Neuroscience](https://www.mpfi.org), working on how a tiny cluster of brainstem neurones uses dopamine to shape how animals remember. Graduating December 2026, and actively looking for data science/analysis roles in Europe.
 
-<p class="currently-intro">... Recently I've been reading <em class="currently-substance">{{ site.data.currently.reading }}</em>, learning <em class="currently-substance">{{ site.data.currently.learning }}</em>, and thinking about <em class="currently-substance">{{ site.data.currently.thinking }}</em>.</p>
+<p class="currently-intro">Recently I've been reading <em class="currently-substance">{{ site.data.currently.reading }}</em>, learning <em class="currently-substance">{{ site.data.currently.learning }}</em>, and thinking about <em class="currently-substance">{{ site.data.currently.thinking }}</em>.</p>
 
 Reach out to me: <a href="mailto:dinghao.luo@outlook.com">[dinghao.luo@outlook.com]</a>  
 Find me on: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.com/user/amoxdl24/) · [Instagram](https://www.instagram.com/amoxitoxin) · [LinkedIn](https://www.linkedin.com/in/dinghaoluo/)
-
----
-
-<p class="page-nav">on this page:<br><span class="page-nav__links"><a href="#thoughts">thoughts</a> · <a href="#writing">writing</a> · <a href="#science">science</a> · <a href="#music">music</a> · <a href="#photos">photos</a> · <a href="#other-stuff">other stuff</a></span></p>
 
 ---
 

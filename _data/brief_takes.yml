@@ -1,5 +1,5 @@
 # -------------------------------------------------------
-# Brief takes — one entry per item.
+# Thoughts — one entry per item.
 # Add new entries at the TOP so the most recent appears first.
 #
 # Fields:
@@ -8,6 +8,7 @@
 #   creator      — author, director, etc.
 #   creator_role — "by" / "dir." / etc.
 #   year         — year of release
+#   pin          — optional true / false; pinned thoughts surface first
 #   eval         - loved / liked / meh... / disliked / hated
 #   image        — path to image, e.g. /assets/images/brief_takes/title.jpg
 #                  leave empty ("") for placeholder
@@ -96,6 +97,7 @@
   creator: "Thomas Pynchon"
   creator_role: "by"
   year: 1973
+  pin: true
   eval: "loved"
   image: "/assets/images/brief_takes/gravitys_rainbow.jpg"
   posted: "2026-03-01"
@@ -135,6 +137,7 @@
   creator: "Mark Fisher"
   creator_role: "by"
   year: 2009
+  pin: true
   eval: "loved"
   image: "/assets/images/brief_takes/capitalist_realism.jpg"
   posted: "2026-03-18"

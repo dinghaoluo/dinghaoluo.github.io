@@ -1,6 +1,6 @@
 ---
 layout: single
-author_profile: true
+author_profile: false
 permalink: /thoughts/
 title: 'thoughts'
 ---
@@ -17,34 +17,28 @@ title: 'thoughts'
   <button class="brief-filter-btn" data-filter="other">others</button>
 </div>
 
-{% assign sorted_takes = site.data.brief_takes | sort: 'posted' | reverse %}
-{% for take in sorted_takes %}
-<div class="brief-card" data-type="{{ take.type }}">
-  <div class="brief-card__img-wrap">
-    {% if take.image and take.image != '' %}
-      <img class="brief-card__img" src="{{ take.image | relative_url }}" alt="{{ take.title }}">
-    {% else %}
-      <div class="brief-card__img--placeholder"></div>
-    {% endif %}
-  </div>
-  <div class="brief-card__body">
-    <div class="brief-card__meta">
-      <span class="brief-card__type">{{ take.type }}</span><span class="brief-card__sep">&middot;</span><span class="brief-card__title">{{ take.title }}{% if take.year and take.year != '' %}<span class="brief-card__year">{{ take.year }}</span>{% endif %}</span><span class="brief-card__sep">&middot;</span><span class="brief-card__creator">{{ take.creator_role }} {{ take.creator }}</span>
-    </div>
-    {% if take.posted and take.posted != '' %}
-      <div class="brief-card__posted">
-        {{ take.posted | date: '%-d %b %Y' }}
-      </div>
-    {% endif %}
-    <div class="brief-card__text-wrap">
-      <div class="brief-card__text">{{ take.text | markdownify }}</div>
-    </div>
-    <div class="brief-card__footer">
-      <button class="brief-card__toggle" aria-expanded="false" aria-label="expand thought">&darr;</button>
-      {% if take.eval and take.eval != '' %}
-        <span class="brief-card__eval brief-card__eval--{{ take.eval | slugify }}">{{ take.eval }}</span>
-      {% endif %}
-    </div>
-  </div>
+<div class="takes-search-wrap">
+  <input
+    type="search"
+    id="takes-search"
+    class="takes-search-input"
+    placeholder="search titles, authors, topics..."
+    autocomplete="off"
+    spellcheck="false"
+  />
 </div>
+
+{% assign pinned_takes = site.data.brief_takes | where: 'pin', true | sort: 'posted' | reverse %}
+{% assign regular_takes = site.data.brief_takes | where_exp: 'take', 'take.pin != true' | sort: 'posted' | reverse %}
+{% if pinned_takes.size > 0 %}
+  <div class="thoughts-pin-lead">
+    <span class="thoughts-pin-lead__label">pinned</span>
+    <p>A couple of entries I especially want near the top.</p>
+  </div>
+  {% for take in pinned_takes %}
+    {% include thought-card.html take=take %}
+  {% endfor %}
+{% endif %}
+{% for take in regular_takes %}
+  {% include thought-card.html take=take %}
 {% endfor %}

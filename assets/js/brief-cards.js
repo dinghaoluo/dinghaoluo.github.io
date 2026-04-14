@@ -92,8 +92,37 @@
     var pill  = document.getElementById('brief-filter-pill');
     var btns  = strip.querySelectorAll('.brief-filter-btn');
     var cards = document.querySelectorAll('.brief-card');
+    var searchInput = document.getElementById('takes-search');
+    var searchTimer = null;
 
     if (!btns.length || !cards.length) return;
+
+    function normalise(str) {
+      return (str || '')
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    function currentQuery() {
+      return searchInput ? normalise(searchInput.value) : '';
+    }
+
+    function cardMatchesQuery(card, query) {
+      if (!query) return true;
+
+      var haystack = normalise([
+        card.getAttribute('data-title'),
+        card.getAttribute('data-author'),
+        card.getAttribute('data-year'),
+        card.getAttribute('data-type'),
+        card.getAttribute('data-reaction'),
+        card.getAttribute('data-text')
+      ].join(' '));
+
+      return haystack.indexOf(query) !== -1;
+    }
 
     function movePill(btn) {
       if (!btn || !pill) return;
@@ -104,11 +133,15 @@
     }
 
     function applyFilter(filterValue) {
+      var query = currentQuery();
+
       cards.forEach(function (card) {
         var cardType = (card.getAttribute('data-type') || '').toLowerCase();
-        var matches = filterValue === 'all'
-                   || cardType === filterValue
-                   || (filterValue === 'other' && cardType !== 'book' && cardType !== 'film');
+        var matchesType = filterValue === 'all'
+                       || cardType === filterValue
+                       || (filterValue === 'other' && cardType !== 'book' && cardType !== 'film');
+        var matchesQuery = cardMatchesQuery(card, query);
+        var matches = matchesType && matchesQuery;
 
         if (matches) {
           // show card
@@ -133,6 +166,7 @@
     var active = strip.querySelector('.brief-filter-btn.active');
     if (active) {
       setTimeout(function () { movePill(active); }, 100);
+      applyFilter(active.getAttribute('data-filter'));
     }
 
     // Attach click handlers
@@ -152,6 +186,17 @@
         applyFilter(filter);
       });
     });
+
+    if (searchInput) {
+      searchInput.addEventListener('input', function () {
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(function () {
+          var activeBtn = strip.querySelector('.brief-filter-btn.active');
+          var filter = activeBtn ? activeBtn.getAttribute('data-filter') : 'all';
+          applyFilter(filter);
+        }, 180);
+      });
+    }
   }
 
   // Run after DOM ready
