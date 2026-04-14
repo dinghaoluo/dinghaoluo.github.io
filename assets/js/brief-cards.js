@@ -10,7 +10,6 @@
 
       // Record the CSS-defined collapsed height (2 lines)
       var collapsedH = wrap.offsetHeight;
-      var hoverTimer = null;
 
       // Click anywhere on the card to toggle open/close
       card.addEventListener('click', function () {
@@ -19,20 +18,6 @@
         } else {
           openCard(card, wrap, toggle);
         }
-      });
-
-      // Hover for 2 seconds to auto-open (only when closed)
-      card.addEventListener('mouseenter', function () {
-        if (!card.classList.contains('is-open')) {
-          hoverTimer = setTimeout(function () {
-            openCard(card, wrap, toggle);
-          }, 2000);
-        }
-      });
-
-      card.addEventListener('mouseleave', function () {
-        clearTimeout(hoverTimer);
-        hoverTimer = null;
       });
     });
 
