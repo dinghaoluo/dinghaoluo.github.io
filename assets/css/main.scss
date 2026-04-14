@@ -92,12 +92,12 @@ $background-color:    $site-bg;
 // -------------------------
 html {
   box-sizing: border-box;
-  font-size: 15px;   // mobile base
+  font-size: 15.25px;   // mobile base — a touch larger for easier reading
   font-family: 'Mononoki', monospace;
 
-  @include breakpoint($medium)  { font-size: 15px; }
-  @include breakpoint($large)   { font-size: 16px; }
-  @include breakpoint($x-large) { font-size: 16px; }
+  @include breakpoint($medium)  { font-size: 15.5px; }
+  @include breakpoint($large)   { font-size: 15.75px; }
+  @include breakpoint($x-large) { font-size: 15.75px; }
 }
 
 // Force Mononoki everywhere — wildcard is safe here because
@@ -429,6 +429,16 @@ hr {
 .page__content {
   // font-size for p/li/dl is set to 1em in _page.scss; no override needed here
 
+  p,
+  li,
+  dl {
+    line-height: 1.76;
+  }
+
+  p {
+    margin-bottom: 1.12em;
+  }
+
   h2 {
     font-size: 1.15em;    // noticeably larger than body text
     font-weight: normal;
@@ -716,7 +726,7 @@ hr {
 .brief-card__text {
   font-size: 1em;
   color: $site-text-body;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 .brief-card__text p {
@@ -724,7 +734,7 @@ hr {
 }
 
 .brief-card__text p + p {
-  margin-top: 0.8em;
+  margin-top: 0.9em;
 }
 
 // expand arrow button — pushed down as card expands
@@ -1071,6 +1081,15 @@ hr {
 @keyframes haothings-slide-up {
   from { transform: translateY(7px); }
   to   { transform: translateY(0);   }
+}
+
+// Portrait tablets / tall narrow windows get extra reading margins without
+// applying the same treatment to phones.
+@media (orientation: portrait) and (min-width: 768px) and (max-width: 1023px) {
+  #main {
+    padding-left: 2.35em;
+    padding-right: 2.35em;
+  }
 }
 
 // page text fades gently upward on load
