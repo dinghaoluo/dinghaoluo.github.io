@@ -1,10 +1,9 @@
 # main links
 main:
+  - title: "thoughts"
+    url: /thoughts/
   - title: "writing"
     url: /writing/
-  - title: "brief_takes"
-    url: /brief-takes/
-    class: "nav-brief"
   - title: "science"
     url: /science/
     break_before: true

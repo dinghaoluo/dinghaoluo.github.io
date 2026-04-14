@@ -8,7 +8,15 @@ classes: home
 
 I'm finishing my PhD at the [Max Planck Institute for Neuroscience](https://www.mpfi.org) (FL, US) in December 2026, working on hippocampus, dopamine, and more.
 
-<p class="page-nav">on this page:<br><span class="page-nav__links"><a href="#writing">writing</a> · <a href="#brief-takes">brief takes</a> · <a href="#science">science</a> · <a href="#music">music</a> · <a href="#photos">photos</a> · <a href="#other-stuff">other stuff</a></span></p>
+<p class="page-nav">on this page:<br><span class="page-nav__links"><a href="#thoughts">thoughts</a> · <a href="#writing">writing</a> · <a href="#science">science</a> · <a href="#music">music</a> · <a href="#photos">photos</a> · <a href="#other-stuff">other stuff</a></span></p>
+
+---
+
+<h2 id="thoughts">thoughts :)</h2>
+
+Day-to-day thoughts on books, films, and other things that have been on my mind lately.
+
+[→ thoughts](/thoughts/)
 
 ---
 
@@ -17,12 +25,6 @@ I'm finishing my PhD at the [Max Planck Institute for Neuroscience](https://www.
 Three years at Neu-Reality (神经现实), seven months at *Scientific American* China, and a translation of Merlin Sheldrake's *Entangled Life* — winner of the 2025 Pingshan Natural History Museum Book Award.
 
 [→ writing & translation](/writing/)
-
-<span id="brief-takes"></span>
-
-I also have some more day-to-day **brief takes** on various books, films, and other things that have been on my mind.
-
-[→ brief takes](/brief-takes/)
 
 ---
 

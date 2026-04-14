@@ -1,8 +1,8 @@
 ---
 layout: single
 author_profile: true
-permalink: /brief-takes/
-title: 'brief takes'
+permalink: /thoughts/
+title: 'thoughts'
 ---
 
 *Films, books, and whatever else &mdash; a running record of things that have been on my mind.*
@@ -40,7 +40,7 @@ title: 'brief takes'
       <div class="brief-card__text">{{ take.text | markdownify }}</div>
     </div>
     <div class="brief-card__footer">
-      <button class="brief-card__toggle" aria-expanded="false" aria-label="expand review">&darr;</button>
+      <button class="brief-card__toggle" aria-expanded="false" aria-label="expand thought">&darr;</button>
       {% if take.eval and take.eval != '' %}
         <span class="brief-card__eval brief-card__eval--{{ take.eval | slugify }}">{{ take.eval }}</span>
       {% endif %}
