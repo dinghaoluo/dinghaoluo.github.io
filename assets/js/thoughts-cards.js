@@ -1,11 +1,11 @@
-/* brief-cards.js — smooth expand/collapse for brief-take cards */
+/* thoughts-cards.js — smooth expand/collapse for thought cards */
 (function () {
   'use strict';
 
   document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.brief-card').forEach(function (card) {
-      var wrap   = card.querySelector('.brief-card__text-wrap');
-      var toggle = card.querySelector('.brief-card__toggle');
+    document.querySelectorAll('.thoughts-card').forEach(function (card) {
+      var wrap   = card.querySelector('.thoughts-card__text-wrap');
+      var toggle = card.querySelector('.thoughts-card__toggle');
       if (!wrap) return;
 
       // Record the CSS-defined collapsed height (2 lines)
@@ -66,17 +66,17 @@
   });
 })();
 
-/* brief filter strip — category filtering with smooth pill animation */
+/* thoughts filter strip — category filtering with smooth pill animation */
 (function () {
   'use strict';
 
   function initFilter() {
-    var strip = document.getElementById('brief-filter-strip');
+    var strip = document.getElementById('thoughts-filter-strip');
     if (!strip) return;
 
-    var pill  = document.getElementById('brief-filter-pill');
-    var btns  = strip.querySelectorAll('.brief-filter-btn');
-    var cards = document.querySelectorAll('.brief-card');
+    var pill  = document.getElementById('thoughts-filter-pill');
+    var btns  = strip.querySelectorAll('.thoughts-filter-btn');
+    var cards = document.querySelectorAll('.thoughts-card');
     var searchInput = document.getElementById('takes-search');
     var searchTimer = null;
 
@@ -123,7 +123,7 @@
     }
 
     function restoreHighlights(card) {
-      card.querySelectorAll('.brief-card__title, .brief-card__creator, .brief-card__text').forEach(function (node) {
+      card.querySelectorAll('.thoughts-card__title, .thoughts-card__creator, .thoughts-card__text').forEach(function (node) {
         if (node._originalHtml) {
           node.innerHTML = node._originalHtml;
         } else {
@@ -141,8 +141,8 @@
       if (!terms.length) return;
 
       var regex = new RegExp('(' + terms.map(escapeRegExp).join('|') + ')', 'gi');
-      card.querySelectorAll('.brief-card__title, .brief-card__creator, .brief-card__text').forEach(function (node) {
-        node.innerHTML = node.innerHTML.replace(regex, '<mark class="takes-highlight">$1</mark>');
+      card.querySelectorAll('.thoughts-card__title, .thoughts-card__creator, .thoughts-card__text').forEach(function (node) {
+        node.innerHTML = node.innerHTML.replace(regex, '<mark class="thoughts-highlight">$1</mark>');
       });
     }
 
@@ -187,7 +187,7 @@
     }
 
     // Initialize pill position
-    var active = strip.querySelector('.brief-filter-btn.active');
+    var active = strip.querySelector('.thoughts-filter-btn.active');
     if (active) {
       setTimeout(function () { movePill(active); }, 100);
       applyFilter(active.getAttribute('data-filter'));
@@ -215,7 +215,7 @@
       searchInput.addEventListener('input', function () {
         clearTimeout(searchTimer);
         searchTimer = setTimeout(function () {
-          var activeBtn = strip.querySelector('.brief-filter-btn.active');
+          var activeBtn = strip.querySelector('.thoughts-filter-btn.active');
           var filter = activeBtn ? activeBtn.getAttribute('data-filter') : 'all';
           applyFilter(filter);
         }, 180);

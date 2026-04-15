@@ -8,8 +8,15 @@
     </button>
     <nav id="haothings-nav" aria-label="Primary navigation">
       {%- for link in site.data.navigation.main -%}
+        {%- assign current_path = page.url | replace: '/index.html', '/' -%}
+        {%- assign link_path = link.url | split: '#' | first | replace: '/index.html', '/' -%}
+        {%- assign is_current = false -%}
+        {%- if link.url contains '#' -%}
+        {%- elsif current_path == link_path -%}
+          {%- assign is_current = true -%}
+        {%- endif -%}
         {%- if link.break_before -%}<span class="nav-line-break"></span>{%- endif -%}
-        <a href="{{ link.url | relative_url }}"{% if link.class %} class="{{ link.class }}"{% endif %}>{{ link.title }}</a>
+        <a href="{{ link.url | relative_url }}"{% if link.class or is_current %} class="{% if link.class %}{{ link.class }}{% endif %}{% if link.class and is_current %} {% endif %}{% if is_current %}is-current{% endif %}"{% endif %}{% if is_current %} aria-current="page"{% endif %}>{{ link.title }}</a>
       {%- endfor -%}
     </nav>
   </div>

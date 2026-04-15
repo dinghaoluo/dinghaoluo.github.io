@@ -255,6 +255,17 @@ hr {
 
       &::after { transform: scaleX(1); }
     }
+
+    &.is-current {
+      color: $link-color !important;
+      text-decoration: none !important;
+      font-style: italic;
+
+      &::after {
+        transform: scaleX(1);
+        height: 2px;
+      }
+    }
   }
 }
 
@@ -704,9 +715,9 @@ hr {
 }
 
 // -------------------------
-// brief takes — expandable cards (JS-animated, no <details>)
+// thoughts cards — expandable cards (JS-animated, no <details>)
 // -------------------------
-.brief-card {
+.thoughts-card {
   display: flex;
   gap: 1.2em;
   padding: 0.9em 0.5em;
@@ -732,7 +743,7 @@ hr {
   }
 }
 
-.brief-card--pinned {
+.thoughts-card--pinned {
   border-left: 2px solid rgba($morandi-clay-deep, 0.34);
   padding-left: 0.85em;
   background: linear-gradient(90deg, rgba($morandi-oat, 0.58), rgba(255,255,255,0));
@@ -757,13 +768,13 @@ hr {
   color: $morandi-clay-deep;
 }
 
-.brief-card__img-wrap {
+.thoughts-card__img-wrap {
   flex-shrink: 0;
   overflow: hidden;   // keeps image scale within its own bounds
   border-radius: 2px;
 }
 
-.brief-card__img {
+.thoughts-card__img {
   display: block;
   width: 96px;
   height: 144px;  // image trims to 2:3 vertical
@@ -781,42 +792,42 @@ hr {
   }
 }
 
-.brief-card:hover .brief-card__img {
+.thoughts-card:hover .thoughts-card__img {
   transform: scale(1.04);
 }
 
-.brief-card__body {
+.thoughts-card__body {
   flex: 1;
   min-width: 0;
 }
 
-.brief-card__meta {
+.thoughts-card__meta {
   font-size: 1em;
   color: $morandi-muted;
   margin-bottom: 0.45em;
   line-height: 1.35;
 }
 
-.brief-card__type {
+.thoughts-card__type {
   font-size: 0.88em;
   color: $morandi-muted-soft;
   text-transform: lowercase;
   letter-spacing: 0.04em;
 }
 
-.brief-card__sep {
+.thoughts-card__sep {
   display: inline-block;
   margin: 0 0.16em;
   color: $morandi-stone;
 }
 
-.brief-card__title {
+.thoughts-card__title {
   font-weight: bold;
   font-size: 1em;
   color: $morandi-ink;
 }
 
-.brief-card__year {
+.thoughts-card__year {
   margin-left: 0.62em;
   font-size: 0.78em;
   font-weight: normal;
@@ -824,12 +835,12 @@ hr {
   white-space: nowrap;
 }
 
-.brief-card__creator {
+.thoughts-card__creator {
   font-size: 0.88em;
   color: $morandi-muted;
 }
 
-.brief-card__posted {
+.thoughts-card__posted {
   font-size: 0.78em;
   color: $morandi-muted-soft;
   margin-top: -0.1em;
@@ -839,7 +850,7 @@ hr {
 
 
 // text wrap: clipped to ~2 lines with bottom fade; JS animates open/close
-.brief-card__text-wrap {
+.thoughts-card__text-wrap {
   overflow: hidden;
   // 2 lines: line-height 1.65 × font 0.88em = ~2.9em per 2 lines
   max-height: 4.4em;
@@ -849,27 +860,27 @@ hr {
   // JS adds/removes inline transition; no CSS transition here to avoid conflicts
 }
 
-.brief-card.is-open .brief-card__text-wrap {
+.thoughts-card.is-open .thoughts-card__text-wrap {
   -webkit-mask-image: none;
   mask-image: none;
 }
 
-.brief-card__text {
+.thoughts-card__text {
   font-size: 1em;
   color: $site-text-body;
   line-height: 1.7;
 }
 
-.brief-card__text p {
+.thoughts-card__text p {
   margin: 0;
 }
 
-.brief-card__text p + p {
+.thoughts-card__text p + p {
   margin-top: 0.9em;
 }
 
 // expand arrow button — pushed down as card expands
-.brief-card__toggle {
+.thoughts-card__toggle {
   display: block;
   background: none;
   border: none;
@@ -884,14 +895,14 @@ hr {
   &:hover { color: $link-color; }
 }
 
-.brief-card__footer {
+.thoughts-card__footer {
   display: flex;
   align-items: center;
   gap: 0.55em;
   margin-top: 0.5em;
 }
 
-.brief-card__pin {
+.thoughts-card__pin {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -905,7 +916,7 @@ hr {
   white-space: nowrap;
 }
 
-.brief-card__eval {
+.thoughts-card__eval {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -917,32 +928,32 @@ hr {
   white-space: nowrap;
 }
 
-.brief-card__eval--loved {
+.thoughts-card__eval--loved {
   background: mix($morandi-blue, $morandi-blue-soft, 42%);
   color: $morandi-blue-deep;
 }
 
-.brief-card__eval--liked {
+.thoughts-card__eval--liked {
   background: mix($morandi-blue-soft, $morandi-grey-soft, 78%);
   color: mix($morandi-blue-deep, $morandi-muted, 72%);
 }
 
-.brief-card__eval--meh {
+.thoughts-card__eval--meh {
   background: $morandi-grey-soft;
   color: $morandi-grey-deep;
 }
 
-.brief-card__eval--disliked {
+.thoughts-card__eval--disliked {
   background: mix($morandi-rose, $morandi-rose-soft, 34%);
   color: $morandi-rose-deep;
 }
 
-.brief-card__eval--hated {
+.thoughts-card__eval--hated {
   background: mix($morandi-rose, $morandi-stone, 48%);
   color: mix($morandi-rose-deep, $morandi-ink, 82%);
 }
 
-.brief-card.is-open .brief-card__toggle {
+.thoughts-card.is-open .thoughts-card__toggle {
   transform: rotate(180deg);
 }
 
@@ -1039,9 +1050,9 @@ hr {
 }
 
 // -------------------------
-// brief-takes filter strip — elegant outer box with sliding inner highlight
+// thoughts filter strip — elegant outer box with sliding inner highlight
 // -------------------------
-.brief-filter-strip {
+.thoughts-filter-strip {
   position: relative;
   display: flex;                          // full-width flex
   align-items: center;
@@ -1087,7 +1098,7 @@ hr {
   }
 }
 
-.brief-filter-pill {
+.thoughts-filter-pill {
   position: absolute;
   top: 0.12em;
   left: 0.18em;
@@ -1101,7 +1112,7 @@ hr {
   z-index: 0;
 }
 
-.brief-filter-btn {
+.thoughts-filter-btn {
   position: relative;
   z-index: 1;
   flex: 1;                         // equal width — fills the strip evenly
@@ -1127,7 +1138,7 @@ hr {
 // mobile overrides
 // -------------------------
 
-// brief-takes sidebar preview: hide on mobile for all pages
+// thoughts sidebar preview: hide on mobile for all pages
 @media (max-width: 1023px) {
   #main {
     padding-left: 1.28em;
@@ -1138,7 +1149,7 @@ hr {
     display: none;
   }
 
-  .brief-card {
+  .thoughts-card {
     display: grid;
     grid-template-columns: 72px minmax(0, 1fr);
     grid-template-rows: 1fr auto auto auto auto;
@@ -1146,23 +1157,23 @@ hr {
     align-items: start;
   }
 
-  .brief-card__body {
+  .thoughts-card__body {
     display: contents;
   }
 
-  .brief-card__img-wrap {
+  .thoughts-card__img-wrap {
     grid-column: 1;
     grid-row: 1 / span 3;
     width: 72px;
   }
 
-  .brief-card__img,
-  .brief-card__img--placeholder {
+  .thoughts-card__img,
+  .thoughts-card__img--placeholder {
     width: 72px;
     height: 108px;
   }
 
-  .brief-card__meta {
+  .thoughts-card__meta {
     grid-column: 2;
     grid-row: 2;
     margin-bottom: 0;
@@ -1173,37 +1184,37 @@ hr {
     line-height: 1.08;
   }
 
-  .brief-card__sep {
+  .thoughts-card__sep {
     display: none;
   }
 
-  .brief-card__type,
-  .brief-card__title,
-  .brief-card__creator {
+  .thoughts-card__type,
+  .thoughts-card__title,
+  .thoughts-card__creator {
     display: block;
   }
 
-  .brief-card__type {
+  .thoughts-card__type {
     font-size: 0.86em;
     line-height: 1.05;
   }
 
-  .brief-card__title {
+  .thoughts-card__title {
     font-size: 1.12em;
     line-height: 1.08;
   }
 
-  .brief-card__year {
+  .thoughts-card__year {
     font-size: 0.76em;
   }
 
-  .brief-card__creator {
+  .thoughts-card__creator {
     margin-top: 0.08em;
     font-size: 0.86em;
     line-height: 1.08;
   }
 
-  .brief-card__posted {
+  .thoughts-card__posted {
     grid-column: 2;
     grid-row: 3;
     display: flex;
@@ -1215,20 +1226,20 @@ hr {
     line-height: 1.08;
   }
 
-  .brief-card__text-wrap {
+  .thoughts-card__text-wrap {
     grid-column: 1 / -1;
     grid-row: 4;
     margin-top: 0.5em;
   }
 
-  .brief-card__footer {
+  .thoughts-card__footer {
     grid-column: 1 / -1;
     grid-row: 5;
     justify-self: start;
     margin-top: 0.45em;
   }
 
-  .brief-card__toggle {
+  .thoughts-card__toggle {
     margin-top: 0;
   }
 
@@ -1360,16 +1371,15 @@ hr {
     padding-bottom: 0.01em;
   }
 
-  body:not(.home) .sidebar .author__content::before {
-    content: 'a postmodernist parsing the information age\A neuroscience · data science · sci. journalism';
+  body:not(.home) .sidebar .author__content::after {
+    content: 'a postmodernist parsing the information age';
     display: block;
     font-size: 0.8em;
-    line-height: 1.02;
+    line-height: 1;
     letter-spacing: -0.01em;
     color: $site-text-soft;
-    white-space: pre-line;
-    margin-bottom: 0.04em;
-    transform: translateY(-0.02em);
+    font-style: italic;
+    margin-top: auto;
   }
 
   body:not(.home) .sidebar .author__name {
@@ -1385,7 +1395,7 @@ hr {
   }
 }
 
-mark.takes-highlight {
+mark.thoughts-highlight {
   background: linear-gradient(180deg, rgba($morandi-oat, 0.3), rgba($morandi-clay, 0.28));
   color: $morandi-clay-deep;
   padding: 0 0.12em;
@@ -1518,13 +1528,13 @@ mark.takes-highlight {
     border-radius: 4px;
   }
 
-  body:not(.home) .sidebar .author__content::before {
-    content: 'a postmodernist parsing the information age\A neuroscience · data science · science journalism';
+  body:not(.home) .sidebar .author__content::after {
+    content: 'a postmodernist parsing the information age';
     font-size: 1em;
-    line-height: 1.05;
-    margin-bottom: 0.06em;
-    white-space: pre-line;
-    transform: translateY(-0.03em);
+    line-height: 1;
+    white-space: normal;
+    font-style: italic;
+    margin-top: auto;
   }
 
   .page__footer footer {
@@ -1551,7 +1561,7 @@ mark.takes-highlight {
   .page__inner-wrap,
   .sidebar,
   .home .page__content h2,
-  .brief-card {
+  .thoughts-card {
     animation: none;
   }
 }

@@ -9,12 +9,12 @@ title: 'thoughts'
 
 ---
 
-<div class="brief-filter-strip" id="brief-filter-strip">
-  <div class="brief-filter-pill" id="brief-filter-pill"></div>
-  <button class="brief-filter-btn active" data-filter="all">all</button>
-  <button class="brief-filter-btn" data-filter="book">books</button>
-  <button class="brief-filter-btn" data-filter="film">films</button>
-  <button class="brief-filter-btn" data-filter="other">others</button>
+<div class="thoughts-filter-strip" id="thoughts-filter-strip">
+  <div class="thoughts-filter-pill" id="thoughts-filter-pill"></div>
+  <button class="thoughts-filter-btn active" data-filter="all">all</button>
+  <button class="thoughts-filter-btn" data-filter="book">books</button>
+  <button class="thoughts-filter-btn" data-filter="film">films</button>
+  <button class="thoughts-filter-btn" data-filter="other">others</button>
 </div>
 
 <div class="takes-search-wrap">

@@ -5,21 +5,36 @@ layout: default
 
 <style type="text/css" media="screen">
   .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
+    margin: 4.5rem auto 5rem;
+    max-width: 38rem;
+    padding: 0 1.4rem;
+    text-align: left;
   }
   h1 {
-    margin: 30px 0;
-    font-size: 4em;
+    margin: 0 0 1.2rem;
+    font-size: 3.3em;
     line-height: 1;
-    letter-spacing: -1px;
+    letter-spacing: -0.04em;
+  }
+  .lost-note {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #3f3934;
+  }
+  .lost-note a {
+    color: #8d6959;
+  }
+  .lost-note a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
 </style>
 
 <div class="container">
   <h1>404</h1>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <div class="lost-note">
+    <p><strong>This page seems to have wandered off into one of the less-indexed stacks.</strong></p>
+    <p>Try the <a href="{{ '/' | relative_url }}">front page</a>, or consult the <a href="https://libraryofbabel.info/" rel="noopener noreferrer">Library of Babel</a> if you are in the mood for a more baroque kind of lostness.</p>
+  </div>
 </div>
