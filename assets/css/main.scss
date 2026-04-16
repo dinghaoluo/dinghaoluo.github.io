@@ -464,19 +464,19 @@ hr {
 
 @include breakpoint($x-large) {
   .author__bio--desktop {
-    line-height: 0.94;
+    line-height: 1.02;
 
     p {
       line-height: inherit;
     }
 
     br {
-      margin-top: 0;
+      margin-top: 0.03em;
     }
   }
 
   .author__urls {
-    line-height: 1.1;
+    line-height: 1.18;
 
     li {
       line-height: inherit;
@@ -696,7 +696,7 @@ hr {
   font-weight: bold;
   letter-spacing: -0.01em;
   color: $morandi-muted;
-  margin: 0 0 1.42em;
+  margin: 0 0 1.72em;
   padding-bottom: 0;
   border-bottom: none;
   text-transform: lowercase;
@@ -705,7 +705,7 @@ hr {
 .sidebar-take {
   display: block;
   text-decoration: none !important;
-  margin-bottom: 0.58em;
+  margin-bottom: 0.78em;
   color: inherit;
   transition: transform 0.18s ease, opacity 0.18s ease;
 
@@ -722,7 +722,7 @@ hr {
   font-size: 0.82em;
   font-weight: bold;
   color: $morandi-ink;
-  margin-bottom: 0.02em;
+  margin-bottom: -0.08em;
   line-height: 1.18;
   font-style: italic;
   transition: color 0.15s ease;
