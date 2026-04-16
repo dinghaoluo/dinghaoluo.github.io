@@ -356,10 +356,10 @@ hr {
   font-size: 0.88em;
   font-style: normal;
   color: $site-text-nav;
-  line-height: 1.35;           // tighter interline for the role lines
+  line-height: 1.24;           // compact the three-line role stack a little more
   margin-top: 0.5em;
 
-  br { display: block; content: ""; margin-top: 0.2em; }
+  br { display: block; content: ""; margin-top: 0.06em; }
 
   // _sidebar.scss overrides p/li to sans-serif; force Mononoki here
   p { margin: 0; font-size: inherit; font-family: 'Mononoki', monospace !important; }
@@ -369,10 +369,10 @@ hr {
 .author__bio { font-family: 'Mononoki', monospace !important; }
 
 .home .author__bio {
-  line-height: 1.18;
+  line-height: 1.08;
   margin-top: 0.34em;
 
-  br { margin-top: 0.04em; }
+  br { margin-top: 0.02em; }
 }
 
 // desktop: show full bio, hide mobile variant
@@ -393,9 +393,15 @@ hr {
 
 .author__urls {
   font-size: 0.82em;
-  line-height: 1.6;
+  line-height: 1.42;
 
   li, a, .label { font-size: inherit; }
+
+  a {
+    margin-bottom: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
 
   // monochrome icons — suppress all brand colours
   i.fas, i.fab, i.fa {
@@ -429,6 +435,7 @@ hr {
   }
   @include breakpoint($x-large) {
     width: calc(260px - 1em);
+    margin-left: 0.95rem;
   }
 }
 
@@ -446,11 +453,11 @@ hr {
 
 @include breakpoint($x-large) {
   .author__bio--desktop {
-    line-height: 1.07;
+    line-height: 1.02;
   }
 
   .author__urls {
-    line-height: 1.38;
+    line-height: 1.24;
   }
 }
 
@@ -662,7 +669,7 @@ hr {
   font-weight: bold;
   letter-spacing: -0.01em;
   color: $morandi-muted;
-  margin: 0 0 1.08em;
+  margin: 0 0 1.42em;
   padding-bottom: 0;
   border-bottom: none;
   text-transform: lowercase;
