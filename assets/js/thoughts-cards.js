@@ -77,7 +77,7 @@
     var pill  = document.getElementById('thoughts-filter-pill');
     var btns  = strip.querySelectorAll('.thoughts-filter-btn');
     var cards = document.querySelectorAll('.thoughts-card');
-    var searchInput = document.getElementById('takes-search');
+    var searchInput = document.getElementById('thoughts-search');
     var searchTimer = null;
 
     if (!btns.length || !cards.length) return;

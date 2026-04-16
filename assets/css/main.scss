@@ -272,7 +272,7 @@ hr {
 // suppress the empty MM masthead shell if present
 .masthead { display: none !important; }
 
-// nav brief_takes link — smaller, close to writing but with breathing room
+// nav thoughts link — smaller, close to writing but with breathing room
 .nav-brief {
   font-size: 0.72em !important;    // desktop: slightly smaller
   margin-left: -1.1em !important;  // desktop: snug against writing
@@ -283,7 +283,7 @@ hr {
   }
 }
 
-// flex line break for mobile nav — forces wrap after brief_takes
+// flex line break for mobile nav — forces wrap after thoughts
 .nav-line-break {
   display: none;
   flex-basis: 100%;
@@ -388,6 +388,7 @@ hr {
 
 .author__urls-wrapper {
   margin-top: 0.75em;
+  font-size: 0.96em;
 
   // hide the Follow toggle button on desktop — links are always visible
   @include breakpoint($large) {
@@ -397,8 +398,8 @@ hr {
 }
 
 .author__urls {
-  font-size: 0.82em;
-  line-height: 1.24;
+  font-size: 0.8em;
+  line-height: 1.22;
 
   li, a, .label { font-size: inherit; }
 
@@ -654,8 +655,17 @@ hr {
 }
 
 @include breakpoint($x-large) {
-  .sticky {
-    top: calc(3.55rem + 1em);
+  .author__sidebar-thoughts {
+    padding-top: 1.06em;
+  }
+
+  .author__sidebar-thoughts-label {
+    display: block;
+    margin-bottom: 1.12em;
+  }
+
+  .sidebar-thought__date {
+    font-size: 0.68em;
   }
 }
 
@@ -689,39 +699,40 @@ hr {
 }
 
 // -------------------------
-// sidebar brief takes preview
+// sidebar thoughts preview
 // -------------------------
-.author__sidebar-takes {
+.author__sidebar-thoughts {
   margin-top: 1.2em;
   padding-top: 0.9em;
   border-top: 1px solid $site-separator-soft;
-  overflow: hidden;   // prevents scrollbar when sidebar-take items transform on hover
+  overflow: hidden;   // prevents scrollbar when sidebar-thought items transform on hover
 
   @include breakpoint($x-large) {
-    padding-top: 1.02em;
+    padding-top: 1.06em;
   }
 }
 
-.author__sidebar-takes-label {
+.author__sidebar-thoughts-label {
+  display: block;
   font-family: 'Mononoki', monospace !important;
   font-size: 0.82em;
   font-weight: bold;
   letter-spacing: -0.01em;
   color: $morandi-muted;
-  margin: 0 0 1.95em;
+  margin: 0 0 0.92em;
   padding-bottom: 0;
   border-bottom: none;
   text-transform: lowercase;
 
   @include breakpoint($x-large) {
-    margin-bottom: 2.18em;
+    margin-bottom: 1.12em;
   }
 }
 
-.sidebar-take {
+.sidebar-thought {
   display: block;
   text-decoration: none !important;
-  margin-bottom: 0.78em;
+  margin-bottom: 0.9em;
   color: inherit;
   transition: transform 0.18s ease, opacity 0.18s ease;
 
@@ -729,30 +740,30 @@ hr {
     transform: translateX(2px);
     opacity: 0.94;
 
-    .sidebar-take__title { color: $link-color; }
+    .sidebar-thought__title { color: $link-color; }
   }
 }
 
-.sidebar-take__title {
+.sidebar-thought__title {
   display: block;
   font-size: 0.82em;
   font-weight: bold;
   color: $morandi-ink;
-  margin-bottom: -0.08em;
+  margin-bottom: 0.06em;
   line-height: 1.18;
   font-style: italic;
   transition: color 0.15s ease;
 }
 
-.sidebar-take__date {
+.sidebar-thought__date {
   margin-left: 0.45em;
-  font-size: 0.62em;
+  font-size: 0.68em;
   font-style: normal;
   color: $morandi-muted-soft;
   white-space: nowrap;
 }
 
-.sidebar-take__preview {
+.sidebar-thought__preview {
   display: block;
   font-size: 0.77em;
   color: $morandi-muted;
@@ -1116,15 +1127,15 @@ hr {
   box-shadow: inset 0 0 0 1px rgba($morandi-muted, 0.06);
 }
 
-.takes-search-wrap {
+.thoughts-search-wrap {
   width: 85%;
-  margin-top: 0.65em;
+  margin-top: 0.3em;
   margin-bottom: 1.15em;
   margin-left: auto;
   margin-right: auto;
 }
 
-.takes-search-input {
+.thoughts-search-input {
   width: 100%;
   font-family: inherit;
   font-size: 0.92em;
@@ -1195,7 +1206,7 @@ hr {
     padding-right: 1.28em;
   }
 
-  .author__sidebar-takes {
+  .author__sidebar-thoughts {
     display: none;
   }
 
@@ -1424,7 +1435,7 @@ hr {
   body:not(.home) .sidebar .author__content::after {
     content: 'a postmodernist parsing the information age';
     display: block;
-    font-size: 0.8em;
+    font-size: 0.77em;
     line-height: 1;
     letter-spacing: -0.01em;
     color: $site-text-soft;
@@ -1580,9 +1591,9 @@ mark.thoughts-highlight {
 
   body:not(.home) .sidebar .author__content::after {
     content: 'a postmodernist parsing the information age';
-    font-size: 1em;
+    font-size: 0.94em;
     line-height: 1;
-    white-space: normal;
+    white-space: nowrap;
     font-style: italic;
     margin-top: auto;
   }

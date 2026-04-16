@@ -17,28 +17,28 @@ title: 'thoughts'
   <button class="thoughts-filter-btn" data-filter="other">others</button>
 </div>
 
-<div class="takes-search-wrap">
+<div class="thoughts-search-wrap">
   <input
     type="search"
-    id="takes-search"
-    class="takes-search-input"
+    id="thoughts-search"
+    class="thoughts-search-input"
     placeholder="search titles, authors, topics..."
     autocomplete="off"
     spellcheck="false"
   />
 </div>
 
-{% assign pinned_takes = site.data.thoughts | where: 'pin', true | sort: 'posted' | reverse %}
-{% assign regular_takes = site.data.thoughts | where_exp: 'take', 'take.pin != true' | sort: 'posted' | reverse %}
-{% if pinned_takes.size > 0 %}
+{% assign pinned_thoughts = site.data.thoughts | where: 'pin', true | sort: 'posted' | reverse %}
+{% assign regular_thoughts = site.data.thoughts | where_exp: 'thought', 'thought.pin != true' | sort: 'posted' | reverse %}
+{% if pinned_thoughts.size > 0 %}
 <div class="thoughts-pin-lead">
   <span class="thoughts-pin-lead__label">pinned</span>
   <p>A couple of entries I especially want near the top.</p>
 </div>
-{% for take in pinned_takes %}
-{% include thought-card.html take=take %}
+{% for thought in pinned_thoughts %}
+{% include thought-card.html take=thought %}
 {% endfor %}
 {% endif %}
-{% for take in regular_takes %}
-{% include thought-card.html take=take %}
+{% for thought in regular_thoughts %}
+{% include thought-card.html take=thought %}
 {% endfor %}
