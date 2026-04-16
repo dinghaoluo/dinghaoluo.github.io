@@ -67,6 +67,24 @@ layout: default
     max-width: 10ch;
   }
 
+  .lost-title__line {
+    display: block;
+  }
+
+  .lost-title__line--stretch {
+    display: block;
+    width: 100%;
+    text-align: justify;
+    text-align-last: justify;
+    text-justify: inter-character;
+  }
+
+  .lost-title__line--stretch::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+
   .lost-dek {
     margin: 1.35rem 0 0;
     font-size: 0.95rem;
@@ -189,7 +207,11 @@ layout: default
 
   <div class='lost-main'>
     <p class='lost-kicker'>404</p>
-    <h1 class='lost-title'>this page is not in the catalogue</h1>
+    <h1 class='lost-title'>
+      <span class='lost-title__line'>this page is not</span>
+      <span class='lost-title__line lost-title__line--stretch'>the</span>
+      <span class='lost-title__line'>in the catalogue</span>
+    </h1>
 
     <p class='lost-dek'>
       The address resolves to a trace, but not to a room.
