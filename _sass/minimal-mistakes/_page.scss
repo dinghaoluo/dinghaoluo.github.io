@@ -56,6 +56,10 @@ body {
     width: 100%;
     clear: both;
 
+    @media (max-width: 1023px) {
+      margin-top: 0;
+    }
+
     .page__content,
     .page__meta,
     .page__share {

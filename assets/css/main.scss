@@ -1327,15 +1327,6 @@ hr {
     padding-right: 1.28em;
   }
 
-  .initial-content,
-  .archive,
-  .page,
-  .page .page__inner-wrap,
-  .page__content {
-    margin-top: -0.9rem !important;
-    padding-top: 0 !important;
-  }
-
   .breadcrumbs {
     display: none;
   }
@@ -1352,8 +1343,17 @@ hr {
 
   .page__author-footer {
     display: block;
-    margin-top: 8.5rem !important;
-    padding-top: 2.8rem !important;
+    margin-top: 3.25rem !important;
+    padding-top: 2.2rem !important;
+    border-top: 1px solid rgba($morandi-muted, 0.14);
+  }
+
+  .page__content > :last-child {
+    margin-bottom: 0;
+  }
+
+  .page__content > hr:last-child {
+    margin-bottom: 0;
   }
 
   .page__author-footer .h-card--footer {
@@ -1680,15 +1680,6 @@ mark.thoughts-highlight {
     padding-right: 2.65rem;
   }
 
-  .initial-content,
-  .archive,
-  .page,
-  .page .page__inner-wrap,
-  .page__content {
-    margin-top: -0.7rem !important;
-    padding-top: 0 !important;
-  }
-
   .breadcrumbs {
     display: none;
   }
@@ -1704,8 +1695,17 @@ mark.thoughts-highlight {
 
   .page__author-footer {
     display: block;
-    margin-top: 6.5rem !important;
-    padding-top: 2.4rem !important;
+    margin-top: 3.4rem !important;
+    padding-top: 2.2rem !important;
+    border-top: 1px solid rgba($morandi-muted, 0.14);
+  }
+
+  .page__content > :last-child {
+    margin-bottom: 0;
+  }
+
+  .page__content > hr:last-child {
+    margin-bottom: 0;
   }
 
   .page__author-footer .h-card--footer {
