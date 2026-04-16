@@ -3,38 +3,423 @@ permalink: /404.html
 layout: default
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 4.5rem auto 5rem;
-    max-width: 38rem;
-    padding: 0 1.4rem;
-    text-align: left;
-  }
-  h1 {
-    margin: 0 0 1.2rem;
-    font-size: 3.3em;
-    line-height: 1;
-    letter-spacing: -0.04em;
-  }
-  .lost-note {
-    font-size: 1rem;
-    line-height: 1.8;
+<style type='text/css' media='screen'>
+  .lost-shell {
+    position: relative;
+    max-width: 42rem;
+    margin: 5.5rem auto 6rem;
+    padding: 0 1.5rem;
     color: #3f3934;
   }
-  .lost-note a {
+
+  .lost-main {
+    position: relative;
+    z-index: 2;
+  }
+
+  .lost-ghostfield {
+    position: absolute;
+    inset: -2.5rem -7rem;
+    z-index: 1;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .lost-ghost {
+    position: absolute;
+    display: inline-block;
+    max-width: 18rem;
+    line-height: 1.15;
+    color: rgba(141, 105, 89, 0.14);
+    filter: blur(10px);
+    opacity: 0.32;
+    transform: translate3d(0, 0, 0) rotate(var(--rot, 0deg)) scale(1);
+    transform-origin: center;
+    transition:
+      filter 260ms ease,
+      opacity 260ms ease,
+      transform 260ms ease,
+      color 260ms ease,
+      letter-spacing 260ms ease;
+    pointer-events: auto;
+    user-select: none;
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+  }
+
+  .lost-kicker {
+    margin: 0 0 0.6rem;
+    font-size: 0.86rem;
+    letter-spacing: 0.08em;
+    text-transform: lowercase;
     color: #8d6959;
   }
-  .lost-note a:hover {
-    text-decoration: underline;
-    text-underline-offset: 3px;
+
+  .lost-title {
+    margin: 0 0 1rem;
+    font-size: clamp(2rem, 5vw, 3.6rem);
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+    font-weight: bold;
+  }
+
+  .lost-dek {
+    margin: 0 0 1.8rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 36rem;
+  }
+
+  .lost-panel {
+    margin: 2rem 0 2.2rem;
+    padding: 1rem 1.1rem 1.05rem;
+    background: rgba(250, 247, 242, 0.82);
+    border: 1px solid rgba(127, 118, 111, 0.16);
+    border-radius: 0.45rem;
+    box-shadow: 0 10px 30px rgba(63, 57, 52, 0.04);
+  }
+
+  .lost-panel-label {
+    margin: 0 0 0.55rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    text-transform: lowercase;
+    color: #7f766f;
+  }
+
+  .lost-path {
+    color: #8d6959;
+    word-break: break-word;
+  }
+
+  .lost-fragment {
+    margin: 0;
+    font-size: 0.97rem;
+    line-height: 1.88;
+    color: #3f3934;
+  }
+
+  .lost-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem 1.2rem;
+    margin-top: 1.2rem;
+  }
+
+  .lost-actions a {
+    color: #8d6959;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px;
+  }
+
+  .lost-actions a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.18s ease;
+    opacity: 0.72;
+  }
+
+  .lost-actions a:hover::after {
+    transform: scaleX(1);
+  }
+
+  .lost-note {
+    margin-top: 1.8rem;
+    font-size: 0.86rem;
+    line-height: 1.7;
+    color: #7f766f;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .lost-ghost:hover {
+      filter: blur(5.5px);
+      opacity: 0.64;
+      color: rgba(141, 105, 89, 0.22);
+      transform: translate3d(0, 0, 0) rotate(var(--rot, 0deg)) scale(1.03);
+      letter-spacing: 0.035em;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .lost-ghostfield {
+      inset: -1.5rem -1.25rem;
+    }
+
+    .lost-ghost {
+      max-width: 11rem;
+    }
   }
 </style>
 
-<div class="container">
-  <h1>404</h1>
+<div class='lost-shell'>
+  <div class='lost-ghostfield' id='lost-ghostfield' aria-hidden='true'></div>
 
-  <div class="lost-note">
-    <p><strong>This page seems to have wandered off into one of the less-indexed stacks.</strong></p>
-    <p>Try the <a href="{{ '/' | relative_url }}">front page</a>, or consult the <a href="https://libraryofbabel.info/" rel="noopener noreferrer">Library of Babel</a> if you are in the mood for a more baroque kind of lostness.</p>
+  <div class='lost-main'>
+    <p class='lost-kicker'>404</p>
+    <h1 class='lost-title'>this page is not in the catalogue</h1>
+
+    <p class='lost-dek'>
+      The address resolves to a corridor, but not to a room.
+    </p>
+
+    <div class='lost-panel'>
+      <p class='lost-panel-label'>
+        catalogue fragment for <span class='lost-path' id='lost-path'></span>
+      </p>
+      <p class='lost-fragment' id='lost-fragment'></p>
+    </div>
+
+    <div class='lost-actions'>
+      <a href='{{ '/' | relative_url }}'>return to the front page</a>
+      <a href='https://libraryofbabel.info/' target='_blank' rel='noopener noreferrer'>consult the Library of Babel</a>
+    </div>
+
+    <p class='lost-note'>
+      The fragment below is generated locally from the missing path. Edit <code>_data/404_lexicon.yml</code> whenever you want to change the vocabulary.
+    </p>
   </div>
 </div>
+
+<script>
+  (function () {
+    var lexicon = {{ site.data.404_lexicon | jsonify }};
+    var path = window.location.pathname || '/404/';
+    var pathEl = document.getElementById('lost-path');
+    var fragEl = document.getElementById('lost-fragment');
+    var ghostfieldEl = document.getElementById('lost-ghostfield');
+
+    if (pathEl) {
+      pathEl.textContent = path;
+    }
+
+    var seed = 0;
+    for (var i = 0; i < path.length; i++) {
+      seed = (seed * 131 + path.charCodeAt(i)) >>> 0;
+    }
+
+    function rand() {
+      seed = (1664525 * seed + 1013904223) >>> 0;
+      return seed / 4294967296;
+    }
+
+    function chance(probability) {
+      return rand() < probability;
+    }
+
+    function pick(list) {
+      if (!list || !list.length) {
+        return '';
+      }
+      return list[Math.floor(rand() * list.length)];
+    }
+
+    function pickFrom(keys) {
+      var merged = [];
+      for (var i = 0; i < keys.length; i++) {
+        var list = lexicon[keys[i]] || [];
+        merged = merged.concat(list);
+      }
+      return pick(merged);
+    }
+
+    function noiseWord() {
+      var out = '';
+      var count = 2 + Math.floor(rand() * 3);
+
+      for (var i = 0; i < count; i++) {
+        out += pick(lexicon.syllables);
+      }
+
+      return out;
+    }
+
+    function nounCore() {
+      return pickFrom([
+        'nouns',
+        'catalogue_terms',
+        'signal_terms',
+        'water_terms'
+      ]);
+    }
+
+    function knownPhrase() {
+      return pickFrom([
+        'threshold_phrases',
+        'memory_phrases',
+        'domestic_images',
+        'narrative_clauses'
+      ]);
+    }
+
+    function nounPhrase() {
+      var mode = Math.floor(rand() * 5);
+
+      if (mode === 0) {
+        return 'the ' + pick(lexicon.adjectives) + ' ' + nounCore();
+      }
+
+      if (mode === 1) {
+        return 'the ' + nounCore();
+      }
+
+      if (mode === 2) {
+        return pick(lexicon.locations);
+      }
+
+      if (mode === 3) {
+        return pick(lexicon.light);
+      }
+
+      return knownPhrase();
+    }
+
+    function strangeUnit() {
+      if (chance(0.58)) {
+        return noiseWord();
+      }
+
+      return knownPhrase();
+    }
+
+    function clause() {
+      var mode = Math.floor(rand() * 8);
+
+      if (mode === 0) {
+        return nounPhrase() + ' beside ' + strangeUnit();
+      }
+
+      if (mode === 1) {
+        return nounPhrase() + ' in ' + pick(lexicon.materials);
+      }
+
+      if (mode === 2) {
+        return strangeUnit() + ' under ' + nounPhrase();
+      }
+
+      if (mode === 3) {
+        return 'there is ' + nounPhrase() + ' where ' + strangeUnit() + ' should be';
+      }
+
+      if (mode === 4) {
+        return nounPhrase() + ', ' + strangeUnit();
+      }
+
+      if (mode === 5) {
+        return pick(lexicon.memory_phrases) + ', ' + nounPhrase();
+      }
+
+      if (mode === 6) {
+        return pick(lexicon.threshold_phrases) + ', ' + pick(lexicon.narrative_clauses);
+      }
+
+      return strangeUnit() + ' beside ' + nounPhrase();
+    }
+
+    function sentence() {
+      var parts = [];
+      var count = 2 + Math.floor(rand() * 2);
+
+      for (var i = 0; i < count; i++) {
+        parts.push(clause());
+      }
+
+      var text = parts.join(', ');
+      text = text.charAt(0).toUpperCase() + text.slice(1);
+
+      if (chance(0.38)) {
+        text += ' ' + pick(lexicon.hard_cuts);
+      } else {
+        text += '.';
+      }
+
+      return text;
+    }
+
+    function buildFragment() {
+      var sentences = [];
+      var count = 2 + Math.floor(rand() * 2);
+
+      for (var i = 0; i < count; i++) {
+        sentences.push(sentence());
+      }
+
+      return sentences.join(' ');
+    }
+
+    function buildGhostTerms() {
+      var terms = [];
+      var count = window.innerWidth < 720 ? 7 : 13;
+
+      for (var i = 0; i < count; i++) {
+        if (chance(0.62)) {
+          terms.push(pick(lexicon.ghost_terms));
+        } else if (chance(0.5)) {
+          terms.push(pick(lexicon.threshold_phrases));
+        } else {
+          terms.push(nounPhrase());
+        }
+      }
+
+      return terms;
+    }
+
+    function placeGhost(span, index) {
+      var top = 4 + rand() * 88;
+      var left;
+
+      if (index % 2 === 0) {
+        left = -2 + rand() * 18;
+      } else {
+        left = 78 + rand() * 18;
+      }
+
+      if (chance(0.16)) {
+        top = rand() * 14;
+      }
+
+      if (chance(0.14)) {
+        top = 82 + rand() * 14;
+      }
+
+      var size = 0.85 + rand() * 0.62;
+      var rot = (rand() * 8) - 4;
+
+      span.style.top = top.toFixed(2) + '%';
+      span.style.left = left.toFixed(2) + '%';
+      span.style.fontSize = size.toFixed(2) + 'rem';
+      span.style.setProperty('--rot', rot.toFixed(2) + 'deg');
+    }
+
+    function renderGhosts() {
+      if (!ghostfieldEl) {
+        return;
+      }
+
+      ghostfieldEl.innerHTML = '';
+
+      var terms = buildGhostTerms();
+
+      for (var i = 0; i < terms.length; i++) {
+        var span = document.createElement('span');
+        span.className = 'lost-ghost';
+        span.textContent = terms[i];
+        placeGhost(span, i);
+        ghostfieldEl.appendChild(span);
+      }
+    }
+
+    if (fragEl) {
+      fragEl.textContent = buildFragment();
+    }
+
+    renderGhosts();
+  })();
+</script>
