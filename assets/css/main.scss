@@ -362,7 +362,12 @@ hr {
   br { display: block; content: ""; margin-top: 0.06em; }
 
   // _sidebar.scss overrides p/li to sans-serif; force Mononoki here
-  p { margin: 0; font-size: inherit; font-family: 'Mononoki', monospace !important; }
+  p {
+    margin: 0;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: 'Mononoki', monospace !important;
+  }
 }
 
 // Belt-and-suspenders: catch any direct text nodes wrapped by markdownify
@@ -393,14 +398,20 @@ hr {
 
 .author__urls {
   font-size: 0.82em;
-  line-height: 1.42;
+  line-height: 1.24;
 
   li, a, .label { font-size: inherit; }
 
+  li {
+    margin-bottom: 0;
+    line-height: inherit;
+  }
+
   a {
-    margin-bottom: 2px;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: inherit;
   }
 
   // monochrome icons — suppress all brand colours
@@ -453,11 +464,27 @@ hr {
 
 @include breakpoint($x-large) {
   .author__bio--desktop {
-    line-height: 1.02;
+    line-height: 0.94;
+
+    p {
+      line-height: inherit;
+    }
+
+    br {
+      margin-top: 0;
+    }
   }
 
   .author__urls {
-    line-height: 1.24;
+    line-height: 1.1;
+
+    li {
+      line-height: inherit;
+    }
+
+    a {
+      line-height: inherit;
+    }
   }
 }
 
