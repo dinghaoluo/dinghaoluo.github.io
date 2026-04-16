@@ -306,7 +306,6 @@ defaults:
       share: false
       related: true
       show_date: true
-      author_profile: true
   - scope:
       path: "_pages"
       type: pages
