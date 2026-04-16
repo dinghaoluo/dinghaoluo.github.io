@@ -28,7 +28,7 @@ Personal website built with Jekyll and the Minimal Mistakes remote theme.
 - `assets/css/main.scss` is the main stylesheet entry point. It imports Minimal Mistakes and defines the local Mononoki font faces from `assets/fonts/mononoki/`.
 - `_includes/head/custom.html` adds favicon tags and extra `<head>` markup.
 - `_includes/scripts.html` loads `assets/js/main.min.js`, `assets/js/thoughts-cards.js`, and `assets/js/haothings-nav.js`.
-- `assets/js/thoughts-cards.js` handles thoughts card expansion, filtering, and search highlighting.
+- `assets/js/thoughts-cards.js` handles thoughts card expansion, filtering, and the thoughts search input.
 - `assets/js/haothings-nav.js` handles the mobile navigation toggle.
 
 ## Local Development

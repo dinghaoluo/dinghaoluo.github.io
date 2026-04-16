@@ -78,7 +78,9 @@
     var btns  = strip.querySelectorAll('.thoughts-filter-btn');
     var cards = document.querySelectorAll('.thoughts-card');
     var searchInput = document.getElementById('thoughts-search');
+    var luckBtn = document.getElementById('thoughts-luck-btn');
     var searchTimer = null;
+    var spotlightCard = null;
 
     if (!btns.length || !cards.length) return;
 
@@ -154,6 +156,75 @@
       pill.style.width =  br.width             + 'px';
     }
 
+    function clearSpotlight() {
+      if (!spotlightCard) return;
+      spotlightCard.classList.remove('thoughts-card--spotlight');
+      spotlightCard = null;
+    }
+
+    function visibleCards() {
+      return Array.prototype.slice.call(cards).filter(function (card) {
+        return card.style.display !== 'none';
+      });
+    }
+
+    function reactionWeight(card) {
+      var reaction = (card.getAttribute('data-reaction') || '').toLowerCase();
+      var pinned = card.getAttribute('data-pinned') === 'true';
+      var weight = 1;
+
+      if (reaction === 'loved' || reaction === 'hated') {
+        weight = 5;
+      } else if (reaction === 'liked' || reaction === 'disliked') {
+        weight = 3;
+      } else if (reaction === 'meh') {
+        weight = 1;
+      }
+
+      if (pinned) {
+        weight = Math.max(1, weight - 1);
+      }
+
+      return weight;
+    }
+
+    function pickWeightedCard(pool) {
+      var total = pool.reduce(function (sum, card) {
+        return sum + reactionWeight(card);
+      }, 0);
+      var threshold = Math.random() * total;
+
+      for (var i = 0; i < pool.length; i++) {
+        threshold -= reactionWeight(pool[i]);
+        if (threshold <= 0) {
+          return pool[i];
+        }
+      }
+
+      return pool[pool.length - 1] || null;
+    }
+
+    function spotlight(card) {
+      if (!card) return;
+
+      clearSpotlight();
+      spotlightCard = card;
+      card.classList.add('thoughts-card--spotlight');
+
+      if (!card.classList.contains('is-open')) {
+        card.click();
+      }
+
+      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function updateLuckState() {
+      if (!luckBtn) return;
+      var hasVisibleCards = visibleCards().length > 0;
+      luckBtn.disabled = !hasVisibleCards;
+      luckBtn.setAttribute('aria-disabled', hasVisibleCards ? 'false' : 'true');
+    }
+
     function applyFilter(filterValue) {
       var query = currentQuery();
 
@@ -168,14 +239,15 @@
         highlightTerms(card, matches ? query : '');
 
         if (matches) {
-          // show card
           card.style.display = '';
-          card.offsetHeight;  // force reflow
+          card.offsetHeight;
           card.style.transition = 'opacity 0.28s ease, transform 0.28s ease';
           card.style.opacity = '1';
           card.style.transform = 'translateY(0)';
         } else {
-          // hide card
+          if (spotlightCard === card) {
+            clearSpotlight();
+          }
           card.style.transition = 'opacity 0.22s ease, transform 0.22s ease';
           card.style.opacity = '0';
           card.style.transform = 'translateY(4px)';
@@ -184,28 +256,22 @@
           }, 230);
         }
       });
+
+      updateLuckState();
     }
 
-    // Initialize pill position
     var active = strip.querySelector('.thoughts-filter-btn.active');
     if (active) {
       setTimeout(function () { movePill(active); }, 100);
       applyFilter(active.getAttribute('data-filter'));
     }
 
-    // Attach click handlers
     btns.forEach(function (btn) {
       btn.addEventListener('click', function (e) {
         e.preventDefault();
-
-        // Update active state
         btns.forEach(function (b) { b.classList.remove('active'); });
         btn.classList.add('active');
-
-        // Move pill
         movePill(btn);
-
-        // Apply filter
         var filter = btn.getAttribute('data-filter');
         applyFilter(filter);
       });
@@ -220,6 +286,15 @@
           applyFilter(filter);
         }, 180);
       });
+    }
+
+    if (luckBtn) {
+      luckBtn.addEventListener('click', function () {
+        var pool = visibleCards();
+        var card = pickWeightedCard(pool);
+        spotlight(card);
+      });
+      updateLuckState();
     }
   }
 

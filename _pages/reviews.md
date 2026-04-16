@@ -17,6 +17,10 @@ title: 'thoughts'
   <button class="thoughts-filter-btn" data-filter="other">others</button>
 </div>
 
+<div class="thoughts-discovery-row">
+  <button class="thoughts-luck-btn" id="thoughts-luck-btn" type="button">try your luck</button>
+</div>
+
 <div class="thoughts-search-wrap">
   <input
     type="search"
