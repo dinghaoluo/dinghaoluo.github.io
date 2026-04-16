@@ -1326,13 +1326,24 @@ hr {
     padding-right: 1.28em;
   }
 
+  .archive,
+  .page__inner-wrap,
+  .page__content {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .archive > .page__title {
+    margin-bottom: 1.6rem;
+  }
+
   .sidebar {
     display: none !important;
   }
 
   .page__author-footer {
     display: block;
-    margin-top: 4.9rem;
+    margin-top: 6.25rem;
   }
 
   .page__author-footer .h-card--footer {
