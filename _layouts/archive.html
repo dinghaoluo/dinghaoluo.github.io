@@ -21,6 +21,15 @@ layout: default
     {% unless page.header.overlay_color or page.header.overlay_image %}
       <h1 id="page-title" class="page__title">{{ page.title }}</h1>
     {% endunless %}
+    {% if page.lede %}
+      <div class="page__lede">{{ page.lede | markdownify }}</div>
+    {% endif %}
     {{ content }}
+
+    {% if page.author_profile or layout.author_profile %}
+      <div class="page__author-footer">
+        {% include author-profile.html profile_position='footer' %}
+      </div>
+    {% endif %}
   </div>
 </div>

@@ -39,6 +39,9 @@ layout: default
       <!-- removed header, Dinghao, 4 Oct 2024 -->
 
       <section class="page__content e-content" itemprop="text">
+        {% if page.lede %}
+          <div class="page__lede">{{ page.lede | markdownify }}</div>
+        {% endif %}
         {% if page.toc %}
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
             <nav class="toc">
@@ -64,6 +67,12 @@ layout: default
 
       {% include post_pagination.html %}
     </div>
+
+    {% if page.author_profile or layout.author_profile %}
+      <div class="page__author-footer">
+        {% include author-profile.html profile_position='footer' %}
+      </div>
+    {% endif %}
 
     {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
       {% include comments.html %}

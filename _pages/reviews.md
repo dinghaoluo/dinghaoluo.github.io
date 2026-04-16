@@ -3,6 +3,7 @@ layout: single
 author_profile: true
 permalink: /thoughts/
 title: 'thoughts'
+lede: "A running catalogue of films, books, and other encounters, with order intact until you decide to disturb it."
 ---
 
 *Films, books, and whatever else &mdash; a running record of things that have been on my mind.*
@@ -17,27 +18,27 @@ title: 'thoughts'
   <button class="thoughts-filter-btn" data-filter="other">others</button>
 </div>
 
-<div class="thoughts-discovery-row">
+<div class="thoughts-controls-row">
+  <div class="thoughts-search-wrap">
+    <input
+      type="search"
+      id="thoughts-search"
+      class="thoughts-search-input"
+      placeholder="search titles, authors, topics..."
+      autocomplete="off"
+      spellcheck="false"
+    />
+  </div>
   <button class="thoughts-luck-btn" id="thoughts-luck-btn" type="button">try your luck</button>
-</div>
-
-<div class="thoughts-search-wrap">
-  <input
-    type="search"
-    id="thoughts-search"
-    class="thoughts-search-input"
-    placeholder="search titles, authors, topics..."
-    autocomplete="off"
-    spellcheck="false"
-  />
 </div>
 
 {% assign pinned_thoughts = site.data.thoughts | where: 'pin', true | sort: 'posted' | reverse %}
 {% assign regular_thoughts = site.data.thoughts | where_exp: 'thought', 'thought.pin != true' | sort: 'posted' | reverse %}
+<div class="thoughts-cards" id="thoughts-cards">
 {% if pinned_thoughts.size > 0 %}
-<div class="thoughts-pin-lead">
+<div class="thoughts-pin-lead" id="thoughts-pin-lead">
   <span class="thoughts-pin-lead__label">pinned</span>
-  <p>A couple of entries I especially want near the top.</p>
+  <p>A few entries I wanted to mark, even if the deck gets reshuffled.</p>
 </div>
 {% for thought in pinned_thoughts %}
 {% include thought-card.html take=thought %}
@@ -46,3 +47,5 @@ title: 'thoughts'
 {% for thought in regular_thoughts %}
 {% include thought-card.html take=thought %}
 {% endfor %}
+</div>
+

@@ -692,10 +692,83 @@ hr {
 }
 
 .page__title {
-  font-size: 1.2em;
+  position: relative;
+  margin: 0 0 2.2rem;
+  max-width: 11ch;
+  font-size: 2.15rem;
   font-weight: normal;
   text-transform: lowercase;
-  letter-spacing: -0.01em;
+  line-height: 0.94;
+  letter-spacing: -0.045em;
+
+  @media (min-width: 700px) {
+    font-size: 2.85rem;
+  }
+
+  @include breakpoint($large) {
+    font-size: 3.75rem;
+  }
+}
+
+.page__lede {
+  max-width: 34rem;
+  margin: -0.85rem 0 2.45rem;
+  color: $site-text-muted;
+  font-size: 0.94rem;
+  line-height: 1.78;
+}
+
+.page__lede p {
+  margin: 0;
+}
+
+.page__lede + hr,
+.page__title + hr {
+  margin-top: 0;
+}
+
+.page__content > :first-child {
+  margin-top: 0;
+}
+
+.page__author-footer {
+  display: none;
+  margin-top: 3.25rem;
+  padding-top: 1.35rem;
+  border-top: 1px solid rgba($morandi-muted, 0.14);
+}
+
+.h-card--footer {
+  max-width: 34rem;
+}
+
+.h-card--footer .author__sidebar-thoughts {
+  display: none;
+}
+
+.h-card--footer .author__urls-wrapper {
+  display: block !important;
+  margin-top: 1rem;
+}
+
+.h-card--footer .author__urls,
+.h-card--footer ul.author__urls.social-icons {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.h-card--footer .author__urls li {
+  margin-bottom: 0.12rem;
+}
+
+.h-card--footer .author__bio--desktop {
+  display: block !important;
+}
+
+.h-card--footer .author__bio--mobile {
+  display: none !important;
 }
 
 // -------------------------
@@ -1142,23 +1215,25 @@ hr {
   box-shadow: inset 0 0 0 1px rgba($morandi-muted, 0.06);
 }
 
-.thoughts-discovery-row {
+.thoughts-controls-row {
   width: 85%;
-  margin: -0.95em auto 0.5em;
+  margin: -0.95em auto 1.15em;
   display: flex;
-  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 0.9rem;
 }
 
 .thoughts-luck-btn {
+  flex: 0 0 auto;
   font-family: 'Mononoki', monospace;
-  font-size: 0.76em;
+  font-size: 0.8em;
   line-height: 1;
   color: $site-text-soft;
   background: rgba($morandi-grey-soft, 0.26);
   border: 1px solid rgba($morandi-muted, 0.14);
   border-radius: 1000px;
-  padding: 0.42em 0.82em 0.46em;
-  transition: color 0.18s ease, border-color 0.18s ease, background 0.18s ease, transform 0.18s ease;
+  padding: 0.56em 0.92em 0.58em;
+  transition: color 0.18s ease, border-color 0.18s ease, background 0.18s ease, transform 0.18s ease, opacity 0.18s ease;
 
   &:hover:not(:disabled) {
     color: $site-text-nav-soft;
@@ -1167,18 +1242,18 @@ hr {
     transform: translateY(-1px);
   }
 
-  &:disabled {
+  &:disabled,
+  &.is-disabled {
     cursor: default;
     opacity: 0.46;
   }
 }
 
 .thoughts-search-wrap {
-  width: 85%;
-  margin-top: 0.3em;
-  margin-bottom: 1.15em;
-  margin-left: auto;
-  margin-right: auto;
+  flex: 1 1 24rem;
+  min-width: 0;
+  width: auto;
+  margin: 0;
 }
 
 .thoughts-search-input {
@@ -1256,9 +1331,24 @@ hr {
     display: none;
   }
 
+  .thoughts-controls-row {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .thoughts-search-wrap {
+    width: 100%;
+  }
+
+  .thoughts-luck-btn {
+    align-self: flex-start;
+  }
+
   .thoughts-card {
     display: grid;
-    grid-template-columns: 72px minmax(0, 1fr);
     grid-template-rows: 1fr auto auto auto auto;
     gap: 0.15em 0.85em;
     align-items: start;
@@ -1379,7 +1469,7 @@ hr {
     gap: 0.7em;
     min-width: auto;
     width: fit-content;
-    max-width: min(42vw, 7.25rem);
+    max-width: 7.25rem;
     padding: 0.72em 0.78em 0.78em;
     border: 1px solid rgba($morandi-muted, 0.12);
     border-radius: 0.78rem;
@@ -1540,8 +1630,8 @@ mark.thoughts-highlight {
   #haothings-masthead-inner {
     padding-top: 0.56em;
     padding-bottom: 0.56em;
-    padding-left: clamp(2.2rem, 5.7vw, 3.45rem);
-    padding-right: clamp(2.2rem, 5.7vw, 3.45rem);
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
   }
 
   #haothings-site-title {
@@ -1549,8 +1639,8 @@ mark.thoughts-highlight {
   }
 
   #main {
-    padding-left: clamp(2.65rem, 6.2vw, 4rem);
-    padding-right: clamp(2.65rem, 6.2vw, 4rem);
+    padding-left: 2.65rem;
+    padding-right: 2.65rem;
   }
 
   #haothings-nav-toggle {
@@ -1645,8 +1735,8 @@ mark.thoughts-highlight {
   }
 
   .page__footer footer {
-    padding-left: clamp(2.2rem, 5.7vw, 3.45rem);
-    padding-right: clamp(2.2rem, 5.7vw, 3.45rem);
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
   }
 }
 

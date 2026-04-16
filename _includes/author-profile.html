@@ -1,7 +1,9 @@
 {% assign author = page.author | default: page.authors[0] | default: site.author %}
 {% assign author = site.data.authors[author] | default: author %}
 
-<div itemscope itemtype="https://schema.org/Person" class="h-card">
+{% assign profile_position = include.profile_position | default: 'sidebar' %}
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card{% if profile_position == 'footer' %} h-card--footer{% endif %}">
 
   {% if author.avatar %}
     <div class="author__avatar">

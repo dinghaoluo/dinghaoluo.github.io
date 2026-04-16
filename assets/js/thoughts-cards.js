@@ -8,10 +8,8 @@
       var toggle = card.querySelector('.thoughts-card__toggle');
       if (!wrap) return;
 
-      // Record the CSS-defined collapsed height (2 lines)
       var collapsedH = wrap.offsetHeight;
 
-      // Click anywhere on the card to toggle open/close
       card.addEventListener('click', function () {
         if (card.classList.contains('is-open')) {
           closeCard(card, wrap, toggle, collapsedH);
@@ -22,13 +20,11 @@
     });
 
     function openCard(card, wrap, toggle) {
-      // Measure natural (full) height
       var startH  = wrap.offsetHeight;
       wrap.style.maxHeight = 'none';
       var targetH = wrap.scrollHeight;
       wrap.style.maxHeight = startH + 'px';
 
-      // Trigger reflow so browser registers the start value
       void wrap.offsetHeight;
 
       card.classList.add('is-open');
@@ -38,18 +34,17 @@
       wrap.style.maxHeight  = targetH + 'px';
 
       wrap.addEventListener('transitionend', function handler() {
-        wrap.style.maxHeight  = 'none'; // let height be natural after open
+        wrap.style.maxHeight  = 'none';
         wrap.style.transition = '';
         wrap.removeEventListener('transitionend', handler);
       });
     }
 
     function closeCard(card, wrap, toggle, collapsedH) {
-      // Pin current height before removing is-open so transition starts from full
       var currentH = wrap.offsetHeight;
       wrap.style.maxHeight = currentH + 'px';
 
-      void wrap.offsetHeight; // reflow
+      void wrap.offsetHeight;
 
       card.classList.remove('is-open');
       if (toggle) toggle.setAttribute('aria-expanded', 'false');
@@ -58,7 +53,7 @@
       wrap.style.maxHeight  = collapsedH + 'px';
 
       wrap.addEventListener('transitionend', function handler() {
-        wrap.style.maxHeight  = ''; // let CSS max-height (2.9em) take over
+        wrap.style.maxHeight  = '';
         wrap.style.transition = '';
         wrap.removeEventListener('transitionend', handler);
       });
@@ -66,7 +61,7 @@
   });
 })();
 
-/* thoughts filter strip — category filtering with smooth pill animation */
+/* thoughts filter strip — category filtering, search, and weighted reshuffle */
 (function () {
   'use strict';
 
@@ -74,15 +69,21 @@
     var strip = document.getElementById('thoughts-filter-strip');
     if (!strip) return;
 
-    var pill  = document.getElementById('thoughts-filter-pill');
-    var btns  = strip.querySelectorAll('.thoughts-filter-btn');
-    var cards = document.querySelectorAll('.thoughts-card');
+    var pill = document.getElementById('thoughts-filter-pill');
+    var cardsRoot = document.getElementById('thoughts-cards');
+    var pinLead = document.getElementById('thoughts-pin-lead');
+    var btns = strip.querySelectorAll('.thoughts-filter-btn');
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.thoughts-card'));
     var searchInput = document.getElementById('thoughts-search');
     var luckBtn = document.getElementById('thoughts-luck-btn');
     var searchTimer = null;
-    var spotlightCard = null;
+    var isShuffled = false;
 
-    if (!btns.length || !cards.length) return;
+    if (!btns.length || !cards.length || !cardsRoot) return;
+
+    cards.forEach(function (card, index) {
+      card.dataset.originalIndex = String(index);
+    });
 
     function normalise(str) {
       return (str || '')
@@ -152,70 +153,66 @@
       if (!btn || !pill) return;
       var sr = strip.getBoundingClientRect();
       var br = btn.getBoundingClientRect();
-      pill.style.left  = (br.left  - sr.left)  + 'px';
-      pill.style.width =  br.width             + 'px';
-    }
-
-    function clearSpotlight() {
-      if (!spotlightCard) return;
-      spotlightCard.classList.remove('thoughts-card--spotlight');
-      spotlightCard = null;
+      pill.style.left = (br.left - sr.left) + 'px';
+      pill.style.width = br.width + 'px';
     }
 
     function visibleCards() {
-      return Array.prototype.slice.call(cards).filter(function (card) {
+      return cards.filter(function (card) {
         return card.style.display !== 'none';
       });
     }
 
     function reactionWeight(card) {
       var reaction = (card.getAttribute('data-reaction') || '').toLowerCase();
-      var pinned = card.getAttribute('data-pinned') === 'true';
-      var weight = 1;
 
-      if (reaction === 'loved' || reaction === 'hated') {
-        weight = 5;
-      } else if (reaction === 'liked' || reaction === 'disliked') {
-        weight = 3;
-      } else if (reaction === 'meh') {
-        weight = 1;
-      }
-
-      if (pinned) {
-        weight = Math.max(1, weight - 1);
-      }
-
-      return weight;
+      if (reaction === 'loved' || reaction === 'hated') return 5;
+      if (reaction === 'liked' || reaction === 'disliked') return 3;
+      return 1;
     }
 
-    function pickWeightedCard(pool) {
-      var total = pool.reduce(function (sum, card) {
-        return sum + reactionWeight(card);
-      }, 0);
-      var threshold = Math.random() * total;
+    function weightedShuffle(list) {
+      var pool = list.slice();
+      var shuffled = [];
 
-      for (var i = 0; i < pool.length; i++) {
-        threshold -= reactionWeight(pool[i]);
-        if (threshold <= 0) {
-          return pool[i];
+      while (pool.length) {
+        var total = pool.reduce(function (sum, card) {
+          return sum + reactionWeight(card);
+        }, 0);
+        var threshold = Math.random() * total;
+        var pickedIndex = pool.length - 1;
+
+        for (var i = 0; i < pool.length; i++) {
+          threshold -= reactionWeight(pool[i]);
+          if (threshold <= 0) {
+            pickedIndex = i;
+            break;
+          }
         }
+
+        shuffled.push(pool.splice(pickedIndex, 1)[0]);
       }
 
-      return pool[pool.length - 1] || null;
+      return shuffled;
     }
 
-    function spotlight(card) {
-      if (!card) return;
+    function reorderCards(orderedCards) {
+      orderedCards.forEach(function (card) {
+        cardsRoot.appendChild(card);
+      });
+    }
 
-      clearSpotlight();
-      spotlightCard = card;
-      card.classList.add('thoughts-card--spotlight');
+    function restoreChronologicalOrder() {
+      reorderCards(cards.slice().sort(function (a, b) {
+        return Number(a.dataset.originalIndex) - Number(b.dataset.originalIndex);
+      }));
+      isShuffled = false;
+      updatePinLead();
+    }
 
-      if (!card.classList.contains('is-open')) {
-        card.click();
-      }
-
-      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    function updatePinLead() {
+      if (!pinLead) return;
+      pinLead.hidden = isShuffled;
     }
 
     function updateLuckState() {
@@ -223,6 +220,7 @@
       var hasVisibleCards = visibleCards().length > 0;
       luckBtn.disabled = !hasVisibleCards;
       luckBtn.setAttribute('aria-disabled', hasVisibleCards ? 'false' : 'true');
+      luckBtn.classList.toggle('is-disabled', !hasVisibleCards);
     }
 
     function applyFilter(filterValue) {
@@ -231,8 +229,8 @@
       cards.forEach(function (card) {
         var cardType = (card.getAttribute('data-type') || '').toLowerCase();
         var matchesType = filterValue === 'all'
-                       || cardType === filterValue
-                       || (filterValue === 'other' && cardType !== 'book' && cardType !== 'film');
+          || cardType === filterValue
+          || (filterValue === 'other' && cardType !== 'book' && cardType !== 'film');
         var matchesQuery = cardMatchesQuery(card, query);
         var matches = matchesType && matchesQuery;
 
@@ -245,9 +243,6 @@
           card.style.opacity = '1';
           card.style.transform = 'translateY(0)';
         } else {
-          if (spotlightCard === card) {
-            clearSpotlight();
-          }
           card.style.transition = 'opacity 0.22s ease, transform 0.22s ease';
           card.style.opacity = '0';
           card.style.transform = 'translateY(4px)';
@@ -258,6 +253,7 @@
       });
 
       updateLuckState();
+      updatePinLead();
     }
 
     var active = strip.querySelector('.thoughts-filter-btn.active');
@@ -272,8 +268,7 @@
         btns.forEach(function (b) { b.classList.remove('active'); });
         btn.classList.add('active');
         movePill(btn);
-        var filter = btn.getAttribute('data-filter');
-        applyFilter(filter);
+        applyFilter(btn.getAttribute('data-filter'));
       });
     });
 
@@ -291,14 +286,28 @@
     if (luckBtn) {
       luckBtn.addEventListener('click', function () {
         var pool = visibleCards();
-        var card = pickWeightedCard(pool);
-        spotlight(card);
+        if (!pool.length) {
+          updateLuckState();
+          return;
+        }
+
+        reorderCards(weightedShuffle(pool).concat(cards.filter(function (card) {
+          return pool.indexOf(card) === -1;
+        })));
+        isShuffled = true;
+        updatePinLead();
       });
       updateLuckState();
     }
+
+    window.addEventListener('resize', function () {
+      var activeBtn = strip.querySelector('.thoughts-filter-btn.active');
+      if (activeBtn) movePill(activeBtn);
+    });
+
+    restoreChronologicalOrder();
   }
 
-  // Run after DOM ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initFilter);
   } else {
