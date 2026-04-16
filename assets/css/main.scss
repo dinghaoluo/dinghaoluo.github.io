@@ -728,6 +728,10 @@ hr {
   line-height: 1.78;
 }
 
+.layout--single .page__lede {
+  margin-top: 0;
+}
+
 .page__lede p {
   margin: 0;
 }
@@ -1331,6 +1335,7 @@ hr {
     display: none;
   }
 
+  .layout--single .page__lede,
   .archive > .page__title,
   .page__title {
     margin-top: 0 !important;
@@ -1684,6 +1689,7 @@ mark.thoughts-highlight {
     display: none;
   }
 
+  .layout--single .page__lede,
   .archive > .page__title,
   .page__title {
     margin-top: 0 !important;

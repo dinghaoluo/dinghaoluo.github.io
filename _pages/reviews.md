@@ -8,8 +8,6 @@ lede: "A running catalogue of films, books, and other encounters, with order int
 
 *Films, books, and whatever else &mdash; a running record of things that have been on my mind.*
 
----
-
 <div class="thoughts-filter-strip" id="thoughts-filter-strip">
   <div class="thoughts-filter-pill" id="thoughts-filter-pill"></div>
   <button class="thoughts-filter-btn active" data-filter="all">all</button>
