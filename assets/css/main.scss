@@ -1331,16 +1331,13 @@ hr {
   .archive,
   .page,
   .page .page__inner-wrap,
-  .page__content,
-  body.layout--archive #main > .archive,
-  body.layout--single .page .page__inner-wrap {
-    margin-top: 0 !important;
+  .page__content {
+    margin-top: -0.9rem !important;
     padding-top: 0 !important;
   }
 
   .breadcrumbs {
-    margin-bottom: 0.2rem;
-    padding-bottom: 0;
+    display: none;
   }
 
   .archive > .page__title,
@@ -1356,7 +1353,7 @@ hr {
   .page__author-footer {
     display: block;
     margin-top: 8.5rem !important;
-    padding-top: 0 !important;
+    padding-top: 2.8rem !important;
   }
 
   .page__author-footer .h-card--footer {
@@ -1687,16 +1684,13 @@ mark.thoughts-highlight {
   .archive,
   .page,
   .page .page__inner-wrap,
-  .page__content,
-  body.layout--archive #main > .archive,
-  body.layout--single .page .page__inner-wrap {
-    margin-top: 0 !important;
+  .page__content {
+    margin-top: -0.7rem !important;
     padding-top: 0 !important;
   }
 
   .breadcrumbs {
-    margin-bottom: 0.25rem;
-    padding-bottom: 0;
+    display: none;
   }
 
   .archive > .page__title,
@@ -1711,6 +1705,7 @@ mark.thoughts-highlight {
   .page__author-footer {
     display: block;
     margin-top: 6.5rem !important;
+    padding-top: 2.4rem !important;
   }
 
   .page__author-footer .h-card--footer {
