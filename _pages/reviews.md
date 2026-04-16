@@ -28,8 +28,8 @@ title: 'thoughts'
   />
 </div>
 
-{% assign pinned_takes = site.data.brief_takes | where: 'pin', true | sort: 'posted' | reverse %}
-{% assign regular_takes = site.data.brief_takes | where_exp: 'take', 'take.pin != true' | sort: 'posted' | reverse %}
+{% assign pinned_takes = site.data.thoughts | where: 'pin', true | sort: 'posted' | reverse %}
+{% assign regular_takes = site.data.thoughts | where_exp: 'take', 'take.pin != true' | sort: 'posted' | reverse %}
 {% if pinned_takes.size > 0 %}
 <div class="thoughts-pin-lead">
   <span class="thoughts-pin-lead__label">pinned</span>

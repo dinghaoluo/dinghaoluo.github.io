@@ -19,7 +19,7 @@ Personal website built with Jekyll and the Minimal Mistakes remote theme.
 
 - `_data/navigation.yml` defines the primary navigation.
 - `_data/currently.yml` feeds the homepage "Recently I've been..." line.
-- `_data/brief_takes.yml` stores the entries shown on `/thoughts/`.
+- `_data/thoughts.yml` stores the entries shown on `/thoughts/`.
 - `_data/ui-text.yml` contains Minimal Mistakes UI strings.
 
 ## Styling And Scripts

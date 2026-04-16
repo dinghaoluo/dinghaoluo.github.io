@@ -10,10 +10,24 @@
 #   year         — year of release
 #   pin          — optional true / false; pinned thoughts surface first
 #   eval         - loved / liked / meh... / disliked / hated
-#   image        — path to image, e.g. /assets/images/brief_takes/title.jpg
+#   image        — path to image, e.g. /assets/images/thoughts/title.jpg
 #                  leave empty ("") for placeholder
 #   text         — markdown; shown in card, clamped to ~3 lines, expands on click
 # -------------------------------------------------------
+
+- title: "Satantango"
+  type: "book"
+  creator: "László Krasznahorkai, trans. George Szirtes"
+  creator_role: "by"
+  year: 1985
+  eval: "loved"
+  image: "/assets/images/thoughts/satantango.jpg"
+  posted: "2025-10-18"
+  text: |
+    Krasznahorkai writes the comings and goings of a desolate Hungarian village like a stage play that has somehow been left out in the rain. The twelve chapters answer to the steps of a tango, moving forward and back, from the bells, organ-thunder, rain, and dancing feet of the opening to the bell that returns at the end. That formal circularity could have felt too neat in another book, but here it gives the whole thing a grim, trance-like inevitability. Everyone seems to be moving, but only within a choreography already laid down for them. A mechanistic bureaucracy of human lives, if one wills.<br><br>
+    It's incredible how compact the novel feels. The sentences are long, of course, but never muddy. One can follow Krasznahorkai's prose almost physically, scene by scene, voice by voice, as if the whole village were being slowly lit on a stage. The book's bleakness is real, but it is never monotonous. Again and again, misery tips over into absurdity, and absurdity into something close to comedy.<br><br>
+    And then there is the doctor, still my favourite presence in the book: sitting by the window with his palinka, draining one glass and pouring the next, watching the world outside through his overgrown room and spinning out endless, pointless, magnificent conjectures. He feels like a perfect Krasznahorkai figure, half ridiculous and half tragic, at once detached from the village and totally trapped inside its orbit. *Satantango* is full of human wreckage, but it is arranged with such precision, and such bitter comic timing, that the whole ruin starts to feel almost musical.
+    
 
 - title: "When Breath Becomes Air"
   type: "book"
@@ -21,7 +35,7 @@
   creator_role: "by"
   year: 2016
   eval: "disliked"
-  image: "/assets/images/brief_takes/when_breath_becomes_air.jpg"
+  image: "/assets/images/thoughts/when_breath_becomes_air.jpg"
   posted: "2025-10-25"
   text: |
     I went into *When Breath Becomes Air* hoping for a serious meditation on death, cancer, and the limits of medicine. Instead, I found a memoir that too often mistakes literary name-dropping for intellectual depth. Yeats, Eliot, Wittgenstein and others appear, but mostly as cultural shorthand rather than as thinkers Paul seems to have wrestled with in any sustained way. The same goes for the book's gestures towards philosophy and atheism. This may be harsh, but cancer does not automatically turn someone into a good writer.<br><br>
@@ -33,7 +47,7 @@
   creator_role: "by"
   year: 1992
   eval: "liked"
-  image: "/assets/images/brief_takes/secret_history.jpg"
+  image: "/assets/images/thoughts/secret_history.jpg"
   posted: "2025-10-25"
   text: |
     My first Donna Tartt, and the prose is exactly as advertised: fluid, elegant, almost indecently easy to keep reading. What surprised me more was the texture of it. For long stretches, *The Secret History* feels less like a conventional psychological thriller than like a postmodern novel that happens to have wandered into a murder plot. After the opening chapters, I kept thinking: this is what Paul Auster always seemed to want to be, and never quite managed. Tartt understands that the real engine is not the mystery itself, but atmosphere, self-mythologising, and the slow corruption of perception. No wonder the novel has had the reception it has; it flatters the reader into complicity almost as well as Richard flatters himself.<br><br>
@@ -46,7 +60,7 @@
   creator_role: "by"
   year: 1951
   eval: "loved"
-  image: "/assets/images/brief_takes/waiting_for_godot.jpg"
+  image: "/assets/images/thoughts/waiting_for_godot.jpg"
   posted: "2025-10-26"
   text: |
     What's funny is that the supposedly 'anti-meaning' *Waiting for Godot* has ended up generating an absurd surplus of meanings. That is part of Beckett's trick. The stage is nearly bare, the tree signifies almost nothing except waiting itself, and Godot remains at once named and unknowable. Yet the emptier the apparatus becomes, the more violently readers and audiences try to fill it. Beckett strips drama back to a road, a tree, a pair of bodies, and a delay, and somehow that near-vacuum keeps behaving like a meaning factory.<br><br>
@@ -59,7 +73,7 @@
   creator_role: "by"
   year: 1997
   eval: "liked"
-  image: "/assets/images/brief_takes/as_she_climbed.jpg"
+  image: "/assets/images/thoughts/as_she_climbed.jpg"
   posted: "2025-10-31"
   text: |
     Isn't this just one of the most romantic science-fiction novels? *As She Climbed Across the Table* takes a premise that could easily have collapsed into pure gimmickry (a physicist falling in love with a void called Lack) and turns it into something at once absurd, tender, and... cosmic. One can't help but admire Lethem's tonal balance: Lethem keeps folding quantum uncertainty, obsession, and emotional blindness into one another without ever becoming pompous about it.<br><br>
@@ -71,7 +85,7 @@
   creator_role: "by"
   year: 1980
   eval: "loved"
-  image: "/assets/images/brief_takes/maus.jpg"
+  image: "/assets/images/thoughts/maus.jpg"
   posted: "2025-11-06"
   text: |
     Books like *Maus* only become more and more relevant in times like this. One of the book's most quietly devastating moments comes near the end of the second volume: after everything Vladek has lived through, after the camps, the family breaking apart, his son Richieu's death, his wife Anja's suicide, his parents turned into smoke through the crematoria, he still reacts with disgust when his younger son Art and Francoise (Art's fiancée) pick up a Black hitchhiker. Art's response is the obvious one: how can someone who suffered so much still be racist. Vladek's answer is worse precisely because it is so familiar: 'you don't understand. We were different.'<br><br>
@@ -84,7 +98,7 @@
   creator_role: "by"
   year: 1963
   eval: "loved"
-  image: "/assets/images/brief_takes/v.jpg"
+  image: "/assets/images/thoughts/v.jpg"
   posted: "2025-11-17"
   text: |
     My second favourite read of 2025. *V.* reads like young Pynchon was teaching himself just how much a novel could hold. Egypt, Virginia, New York, Malta, Paris, South-West Africa: every pocket of the book seems to be hiding another system, another ruin, another dead zone where history has gone slightly inanimate. The great subjects are already here in embryo: the deconstruction of the individual, the fake animosity between flesh and mechanism (SHROUD & SHOCK was such an interesting idea), slavery and colonial trade (South-west Africa makes its reappearances in later Pynchon novels as well), waste, plastics, prosthetics, siege, fetish, entropy. It's ingenious that Pynchon centres the novel partially around the idea of 'yo-yo'... Yo-yoing is not just Benny Profane's gimmick. It is the book's state of mind.
@@ -97,7 +111,7 @@
   creator_role: "by"
   year: 2025
   eval: "hated"
-  image: "/assets/images/brief_takes/flesh.jpg"
+  image: "/assets/images/thoughts/flesh.jpg"
   posted: "2025-11-18"
   text: |
     One can see what admirers of *Flesh* are responding to. Szalay's stripped-down style has been praised as brutally pared back, all surface and bone, and most would be amiss to deny the novel's exteriority, inarticulacy, and how it portrays a man pushed along by forces larger than itself. Istvan's journey from Hungary through war, migration, money, and sex is clearly meant to register as a European life reduced to impulse, contingency, and damage. On paper, that sounds severe in an interesting way.<br><br>
@@ -110,7 +124,7 @@
   creator_role: "by"
   year: 2015
   eval: "loved"
-  image: "/assets/images/brief_takes/solenoid.jpg"
+  image: "/assets/images/thoughts/solenoid.jpg"
   posted: "2025-11-29"
   text: |
     I finished Mircea Cărtărescu's *Solenoid* over the course of nearly two weeks near the end of the year. Before that, I knew him only as one of those 'perennial Nobel names', and little more. And by the time I finished *Solenoid*, I had already placed Cărtărescu beside Pynchon as one of my two favourite living writers.
@@ -123,7 +137,7 @@
   creator_role: "by"
   year: 1928
   eval: "liked"
-  image: "/assets/images/brief_takes/call_of_cthulhu.jpg"
+  image: "/assets/images/thoughts/call_of_cthulhu.jpg"
   posted: "2025-12-08"
   text: |
     My first Penguin Orange, and S.T. Joshi's editing is excellent. What he does especially well is give the collection a real gradient: it begins with the earlier, less fully mythos-bound pieces like *Dagon* and the smaller thrillers, then gradually moves towards the heavier, more fully embedded novellas like *The Call of Cthulhu* and *The Shadow over Innsmouth*. That structure suits Lovecraft unusually well. One can feel the mythos thickening story by story, without the book ever collapsing into a mere sampler of the 'famous ones'.<br><br>
@@ -136,7 +150,7 @@
   creator_role: "by"
   year: 2021
   eval: "loved"
-  image: "/assets/images/brief_takes/models_of_the_mind.jpg"
+  image: "/assets/images/thoughts/models_of_the_mind.jpg"
   posted: "2025-12-14"
   text: |
     Within a relatively slim volume, Grace Lindsay pulls off something borderline marvelous: a lucid, genuinely readable survey of the major models in neuroscience, from perceptrons and attractors to deep convolutional networks, Bayesian inference, and beyond. That alone would already be an impressive feat. What makes *Models of the Mind* stand out, though, is the book's deeper architecture: the historical through-lines, the scientist-profiles, the knack for finding metaphors that clarify without dumbing anything down. For me, it has become the only truly indispensable introductory book for anyone trying to understand computational neuroscience as a field rather than as a scattered heap of fashionable terms.<br><br>
@@ -148,7 +162,7 @@
   creator_role: "by"
   year: 2009
   eval: "liked"
-  image: "/assets/images/brief_takes/inherent_vice.jpg"
+  image: "/assets/images/thoughts/inherent_vice.jpg"
   posted: "2025-12-19"
   text: |
     Another 'Pynchon-lite'. *Inherent Vice* reads much more smoothly than *Shadow Ticket*, and the jokes and puns land far more often for me (than did the ones in *Shadow Ticket*), but I still couldn't help but felt that faint, lingering sense that Pynchon is not especially good at writing dense dialogue. Watching PTA's adaptation gave me the same feeling. Counter-intuitively, Pynchon's prose is deeply dialogic: He is always dropping subjects, bending syntax, making the narration itself sound half-spoken... and yet when he actually writes extended dialogue, it can start to feel oddly theatrical.<br><br<
@@ -161,7 +175,7 @@
   creator_role: "by"
   year: 1220
   eval: "liked"
-  image: "/assets/images/brief_takes/prose_edda.jpg"
+  image: "/assets/images/thoughts/prose_edda.jpg"
   posted: "2025-12-24"
   text: |
     Compared with the mythologies of many other religions and peoples, the Norse myths preserved in the *Prose Edda* feel much looser and less orderly, but also darker and far more direct. Snorri and the old Norse mythologised almost everything (e.g. wind, war, clouds) and yet the world they built never really hardened into a stable moral or intellectual system. That looseness is part of what makes the *Prose Edda* so distinctive.<br><br>
@@ -174,7 +188,7 @@
   creator_role: "by"
   year: 2009
   eval: "meh..."
-  image: "/assets/images/brief_takes/the_city_the_city.jpg"
+  image: "/assets/images/thoughts/the_city_the_city.jpg"
   posted: "2026-01-18"
   text: |
     Marketed as 'new weird', though in truth neither especially new nor especially weird. What The City & the City does have is a superb premise: Beszel and Ul Qoma occupying the same physical space, their citizens drilled into the discipline of 'unseeing', and a murder that slips between the two and involves a 'Big Other'. The problem is that the idea is stronger than the world built to sustain it.<br><br>
@@ -188,7 +202,7 @@
   year: 1973
   pin: true
   eval: "loved"
-  image: "/assets/images/brief_takes/gravitys_rainbow.jpg"
+  image: "/assets/images/thoughts/gravitys_rainbow.jpg"
   posted: "2026-03-01"
   text: |
     Years later, I will still remember the V2 fragments scattered across London, the Kryptosam message hidden inside them, and the four tragedies behind that message. I will still remember Katje's ancestor Frans van der Groov and the dodos of Mauritius, the Hereros in Südwest Afrika, and the genocide of Europe's Jews. I will still remember the air in Germany's postwar 'Zone', with its creosote and fuel, and that thin, diffused hope drifting through it all. What *Gravity's Rainbow* never allows is the comfort of treating these as separate histories. Pynchon keeps binding them into one continuum, one long modern history in which extermination recurs, and in which progress seems to refine technique far more reliably than it does conscience.<br><br>
@@ -201,7 +215,7 @@
   creator_role: "by"
   year: 2013
   eval: "loved"
-  image: "/assets/images/brief_takes/bleeding_edge.jpg"
+  image: "/assets/images/thoughts/bleeding_edge.jpg"
   posted: "2026-03-11"
   text: |
     My favourite of all the 'Pynchon-lites'. Set in 2001 (that strange year when after the attack, people had not yet settled on what to call it — '11 September'? '9/11'? ...), *Bleeding Edge* turns the world into a web of unexpected connections. The invisible lines between Silicon Alley start-ups, the FBI, Gulf money, and the coming security state run through characters who at first seem to have nothing to do with one another. Ah, the **grand web of paranoia** that Pynchon fans are so familiar with... What gives the book its peculiar tension is that Pynchon holds the 9/11 attacks back until surprisingly late, so that much of the novel unfolds under a suspended future terror everyone already knew was coming.<br><br>
@@ -214,7 +228,7 @@
   creator_role: "by"
   year: 2025
   eval: "disliked"
-  image: "/assets/images/brief_takes/is_a_river_alive.jpg"
+  image: "/assets/images/thoughts/is_a_river_alive.jpg"
   posted: "2026-03-20"
   text: |
     Does Robert Macfarlane really care about rivers? To say 'no' would be unfair: Indeed, it must have taken a lot of effort to follow Giuliana, Yuvan, and others through three river worlds in Ecuador, India, and eastern Canada, and Macfarlane has been partaking for years in the wider 'Rights of Nature' conversation. But to say 'yes' without qualification would not be justified. For a book with such an ambitious question as the title, the rivers themselves often feel strangely out of focus, displaced by companions, by advocacy, by atmosphere. Well... what *about* the rivers?<br><br>
@@ -228,7 +242,7 @@
   year: 2009
   pin: true
   eval: "loved"
-  image: "/assets/images/brief_takes/capitalist_realism.jpg"
+  image: "/assets/images/thoughts/capitalist_realism.jpg"
   posted: "2026-03-18"
   text: |
     I finished Mark Fisher's first 'pamphlet' while travelling. Reading the afterword, I kept thinking of Fisher in that small cabin, sorting through scattered notes on the eve of Occupy Wall Street and the Egyptian revolution, and felt an uncontrollable rush of admiration as well as sadness. There is something especially moving about encountering *Capitalist Realism* from the specific historical threshold of 2009/2010: before the cracks had fully opened, before anti-capitalism briefly recovered the sense that it might once again speak in the future tense.<br><br>
@@ -241,7 +255,7 @@
   creator_role: "by"
   year: 2020
   eval: "liked"
-  image: "/assets/images/brief_takes/entangled_life_chinese.jpg"
+  image: "/assets/images/thoughts/entangled_life_chinese.jpg"
   posted: "2024-10-01"
   text: |
     I translated this book by Sheldrake into Chinese, which was published as 《菌络万象》 by HouLang Press in October 2024.<br><br>

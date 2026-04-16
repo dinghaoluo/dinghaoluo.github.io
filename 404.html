@@ -190,7 +190,7 @@ layout: default
 
 <script>
   (function () {
-    var lexicon = {{ site.data.404_lexicon | jsonify }};
+    var lexicon = {{ site.data['404_lexicon'] | jsonify }};
     var path = window.location.pathname || '/404/';
     var pathEl = document.getElementById('lost-path');
     var fragEl = document.getElementById('lost-fragment');

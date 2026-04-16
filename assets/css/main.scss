@@ -426,6 +426,21 @@ hr {
       i.fas, i.fab, i.fa { color: $link-color !important; }
     }
   }
+
+  @include breakpoint($x-large) {
+    line-height: 1.32 !important;
+
+    li {
+      line-height: inherit;
+      margin-bottom: 0.2em;
+    }
+
+    a {
+      line-height: inherit;
+      padding-top: 0.05em;
+      padding-bottom: 0.05em;
+    }
+  }
 }
 
 // hide Follow button entirely on desktop (redundant on personal site)
@@ -472,18 +487,6 @@ hr {
 
     br {
       margin-top: 0.03em;
-    }
-  }
-
-  .author__urls {
-    line-height: 1.18;
-
-    li {
-      line-height: inherit;
-    }
-
-    a {
-      line-height: inherit;
     }
   }
 }
@@ -696,7 +699,7 @@ hr {
   font-weight: bold;
   letter-spacing: -0.01em;
   color: $morandi-muted;
-  margin: 0 0 1.72em;
+  margin: 0 0 1.95em;
   padding-bottom: 0;
   border-bottom: none;
   text-transform: lowercase;
