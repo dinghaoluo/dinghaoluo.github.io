@@ -1348,6 +1348,7 @@ hr {
 
   .page__author-footer {
     display: block;
+    clear: both;
     margin-top: 5.4rem !important;
     padding-top: 2.35rem !important;
     border-top: 1px solid rgba($morandi-muted, 0.14);
@@ -1701,6 +1702,7 @@ mark.thoughts-highlight {
 
   .page__author-footer {
     display: block;
+    clear: both;
     margin-top: 3.4rem !important;
     padding-top: 2.2rem !important;
     border-top: 1px solid rgba($morandi-muted, 0.14);
