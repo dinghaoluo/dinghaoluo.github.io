@@ -1348,13 +1348,13 @@ hr {
 
   .page__author-footer {
     display: block;
-    margin-top: 3.25rem !important;
-    padding-top: 2.2rem !important;
+    margin-top: 5.4rem !important;
+    padding-top: 2.35rem !important;
     border-top: 1px solid rgba($morandi-muted, 0.14);
   }
 
-  .page__content > :last-child {
-    margin-bottom: 0;
+  .page__content {
+    min-height: 0;
   }
 
   .page__content > hr:last-child {

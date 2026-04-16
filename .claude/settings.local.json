@@ -13,7 +13,9 @@
       "Bash(git commit -m ' *)",
       "Bash(git push *)",
       "Bash(rtk git *)",
-      "Bash(rtk bundle *)"
+      "Bash(rtk bundle *)",
+      "Bash(rtk grep *)",
+      "Bash(rtk ls *)"
     ]
   }
 }

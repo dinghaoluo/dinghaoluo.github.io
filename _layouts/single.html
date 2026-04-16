@@ -8,11 +8,11 @@ layout: default
   {% include page__hero_video.html %}
 {% endif %}
 
-{% assign breadcrumbs_enabled = site.breadcrumbs %}
+{% assign breadcrumbs_enabled = false %}
 {% if page.breadcrumbs != null %}
   {% assign breadcrumbs_enabled = page.breadcrumbs %}
 {% endif %}
-{% if page.url != "/" and breadcrumbs_enabled %}
+{% if breadcrumbs_enabled %}
   {% unless paginator %}
     {% include breadcrumbs.html %}
   {% endunless %}
