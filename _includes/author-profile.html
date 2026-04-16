@@ -268,5 +268,15 @@
   </div>
   {% endif %}
   {% endunless %}
+
+  {% if profile_position == 'footer' and author.links %}
+    <div class="author__footer-links">
+      {%- for link in author.links -%}
+        {%- if link.label and link.url -%}
+          <a href="{{ link.url }}" rel="nofollow noopener noreferrer me">{{ link.label }}</a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  {% endif %}
 </div>
 

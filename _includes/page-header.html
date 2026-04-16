@@ -1,0 +1,15 @@
+<div class="page-header">
+  <a class="page-header__title" href="{{ '/' | relative_url }}"><strong>hao things</strong> :)</a>
+  <nav class="page-header__nav" aria-label="Primary navigation">
+    {%- for link in site.data.navigation.main -%}
+      {%- assign current_path = page.url | replace: '/index.html', '/' -%}
+      {%- assign link_path = link.url | split: '#' | first | replace: '/index.html', '/' -%}
+      {%- assign is_current = false -%}
+      {%- if link.url contains '#' -%}
+      {%- elsif current_path == link_path -%}
+        {%- assign is_current = true -%}
+      {%- endif -%}
+      <a href="{{ link.url | relative_url }}"{% if is_current %} class="is-current" aria-current="page"{% endif %}>{{ link.title }}</a>
+    {%- endfor -%}
+  </nav>
+</div>

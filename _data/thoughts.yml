@@ -15,18 +15,57 @@
 #   text         — markdown; shown in card, clamped to ~3 lines, expands on click
 # -------------------------------------------------------
 
+- title: "Moon Palace"
+  type: "book"
+  creator: "Paul Auster"
+  creator_role: "by"
+  year: 1989
+  eval: "loved"
+  image: "/assets/images/thoughts/moon_palace.jpg"
+  posted: "2025-08-10"
+  text: |
+    For all my dissatisfaction with how Auster writes several of the female characters in *Moon Palace* (especially Kitty Wu and Mrs Hume), I still cannot resist the novel's startling literariness. This is one of those books where Auster's machinery of chance, drift, and sudden revelation finally acquires real grace. The plot keeps turning almost by accident, as if the novel were discovering its own destiny in passing, and one keeps reading in a kind of daze, half for the story and half for the pleasure of how casually it is told. Even people who find Auster schematic elsewhere often admit that *Moon Palace* is where his coincidences feel truly like gorgeously egregious myth.<br><br>
+    What I love most is the way the book lets deprivation, wandering, and dependency exist without sinking into self-pity. Marco Fogg and his uncle's life together is precarious, but never miserable in the usual literary way. The same goes for Fogg's homelessness in Central Park, which Auster writes with a strange blend of material exactness and metaphysical lightness. He is already doing what he does best here: turning New York into both a real city and a philosophical apparatus, a place where lines like 'A here exists only in relation to a there' can appear almost offhandedly and still reorganise the whole novel.<br><br>
+    By the time Fogg has gone west, failed to find Effing's cave, and lost himself in the American desert, *Moon Palace* has become something larger than a quest novel or a picaresque. It is still recognisably Auster, full of magical-realist coincidence and improbable convergence, but the emotional landing is much surer than in many of the later books. Watching the moon finally 'find its place in the darkness', Marco Fogg reaches something like reconciliation with his own life. The feeling is close to the end of a long drift, or perhaps the end of a very American illusion that drift itself might count as purpose.
+
+- title: "The Crying of Lot 49"
+  type: "book"
+  creator: "Thomas Pynchon"
+  creator_role: "by"
+  year: 1966
+  eval: "loved"
+  image: "/assets/images/thoughts/crying_of_lot_49.jpg"
+  posted: "2025-08-11"
+  text: |
+    Pynchon's sentences in *The Crying of Lot 49* go off like little grenades. The instant one reads them, they are already in pieces, and the only option is to crouch amongst the debris with Oedipa Maas and start assembling a world from shards. That is not a flaw. It is the whole pleasure of his books. Oedipa fights through, like the reader, the shards of 1960s Southern California, trying to solve the Tristero mystery, or else persuade herself that no mystery exists at all. In front of her, every clue opens not onto resolution, but onto another layer of noise, pattern, and possible hallucination.<br><br>
+    Oedipa herself is a big part of what keeps the book from becoming mere postmodern trickery. Her paranoia, curiosity, and mounting estrangement make her feel less like a puzzle-solver than like one of the great countercultural figures of the decade: hyper-alert, half-radicalised, and slowly losing her grip on the reality she is trying to decode. Pynchon keeps cutting away every ordinary support structure around her. A loveless marriage, a meaningless affair, a psychologist who cannot remain outside the chemical fog, a whole social world that seems either exhausted or deranged. By the time she reaches the auction room, she has almost nothing left except her obsession with the truth.<br><br>
+    All of that gives this debut novel of Pynchon's so much of its potency. Beneath all the jokes, acronyms, stamps, muted horns, and communication breakdowns, *Lot 49* is about a woman standing opposite Leviathan and finding that the alternative network may be no less maddening than the official one. Oedipa is part Josef K., part noir detective, part doomed initiate. She wants revelation, but what she gets is the modern world in Pynchon's preferred form: overconnected, underexplained, and forever humming just below the threshold of proof.
+
+- title: "Leviathan"
+  type: "book"
+  creator: "Paul Auster"
+  creator_role: "by"
+  year: 1992
+  eval: "liked"
+  image: "/assets/images/thoughts/leviathan.jpg"
+  posted: "2025-08-14"
+  text: |
+    Auster writes at the start of *The New York Trilogy* that 'nothing was real except chance'. That line could just as easily stand over *Leviathan*. As in *Moon Palace*, he uses coincidence and the infinite pressure of unrealised possibilities to build a world that feels at once familiar and slightly estranged from itself. Sachs's life is shaped by one accident after another, one encounter after another, until even the origin of 'Leviathan' comes from a grotesque mixture of crime, curiosity, and contingency. This is one of Auster's great strengths at his best: chance in his fiction is never just decorative plot machinery, but the very medium through which a self takes shape.<br><br>
+    What makes *Leviathan* more unsettling is that it keeps brushing up against politics without ever becoming a truly political novel in any straightforward sense. Sachs's final 'political' acts do not read to me as the expression of a coherent cause, but as the mangled afterlife of guilt and pain. He wants to believe, and wants others to believe, that he has entered history on behalf of some larger struggle. But the novel keeps undercutting that self-image. His actions feel less like commitment than compensation, less like ideology than wound management. In that sense, all the rhetoric of justice and courage that gathers around him gradually collapses into something far smaller and sadder.<br><br>
+    So was Sachs a hypocrite? Perhaps not in the simple moralising sense, but he was certainly engaged in a form of self-deception. His life and his politics never fully join; by the end he is still trying to force them into alignment, trying to lend historical dignity to something far more private and inarticulate. The bravado, the remorse, the talk of purpose all seem to converge into a kind of cowardice he cannot quite name even to himself. In the end, Leviathan is less an enemy in the world than an adversary Sachs invents in order not to look too directly at himself.
+
 - title: "We Have Always Lived in the Castle"
   type: "book"
   creator: "Shirley Jackson"
   creator_role: "by"
-  year: 1987
+  year: 1962
   eval: "liked"
-  image: "/assets/images/thoughts/new_york_trilogy.jpg"
-  posted: "2025-08-24"
+  image: "/assets/images/thoughts/we_have_always_lived_in_the_castle.jpg"
+  posted: "2025-08-15"
   text: |
-    Already in these early books, Auster's prose carries a faint premonition of *Moon Palace* and *Leviathan*: the same easy flow, the same dependence on coincidence, the same sense that narrative is always one accident away from sliding out of realism and into obsession. The three 'detective' stories are 'detective' only in the loosest, most postmodern sense. They refuse the usual satisfactions of the form. No proper solution, no clean reversals, no real ending. Instead, each story turns the investigative impulse back onto the investigator, until detection becomes self-dissolution.<br><br>
-    Quinn, consumed by a case that cannot yield a stable answer, ends up unable even to solve the 'Paul Auster' problem placed right in front of him. Blue, trapped in the sterile theatre of Black and White, never reaches any satisfying account of why he has been hired to watch. Fanshawe remains a hole at the centre of the last novella, less a man than an absence everyone else is forced to organise themselves around. This is the trilogy's real subject: not mystery, but identity under pressure, identity as something contingent, performative, and always half on the verge of disintegration.
-    One can also already see many of the images and habits Auster would keep returning to later: China, erotic charge born out of coincidence, the fusion of opposed feelings, estrangement, doubling. At the same time, the book also exposes several weaknesses that never really left him. The women are thinly drawn, and once the psychological terrain becomes more complicated, Auster's handling of it can turn blurry rather than subtle. Still, as an early statement of intent, *The New York Trilogy* is hugely impressive: a set of anti-detective stories in which the real unsolved case is always the self.
+    Merricat's dream of living quietly with her sister is built on stasis, repetition, and a refusal of history. In Shirley Jackson's gothic village-and-castle world, everything feels caught in a vicious little loop, like the crack in the pavement outside Stella's cafe, '... it was always there'. Since the night of the grand poisoning, life inside the house has essentially stopped: the arsenic sugar bowl, the old books nailed to the tree, the locked gates, the rituals that try to hold time still. Jackson is often praised for turning domestic space into something uncanny, and this may be her cleanest example of it. The house is not just haunted. It is a machine for suspending change.<br><br>
+    But Merricat can already feel that suspension failing. '... changes were in the air.' The nailed book falls from the tree, the unwanted cousin enters, and the whole arrangement begins to tremble at its edges. What makes the novel so good is that Merricat does not simply resist collapse. She becomes collapse. Jackson gives us one of the great unreliable narrators, but Merricat is not merely unreliable in the usual technical sense. She is a child of dread, fantasy, malice, and wounded will, and through her Jackson reaches something very close to what Mark Fisher called the eerie: not just strangeness, but a disturbance in what should be there, and what should not.<br><br>
+    The result is a novel that feels static and volatile at the same time. Everything has already ended, and everything is still on the verge of ending again. Merricat and Constance do not so much live in the castle as linger inside the afterimage of a crime, trying to turn ruin into routine. Few novels are this quiet, this vicious, or this strange.
 
 - title: "The New York Trilogy"
   type: "book"
