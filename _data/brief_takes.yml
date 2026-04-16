@@ -15,6 +15,95 @@
 #   text         — markdown; shown in card, clamped to ~3 lines, expands on click
 # -------------------------------------------------------
 
+- title: "When Breath Becomes Air"
+  type: "book"
+  creator: "Paul Kalanithi"
+  creator_role: "by"
+  year: 2016
+  eval: "disliked"
+  image: "/assets/images/brief_takes/when_breath_becomes_air.jpg"
+  posted: "2025-10-25"
+  text: |
+    I went into *When Breath Becomes Air* hoping for a serious meditation on death, cancer, and the limits of medicine. Instead, I found a memoir that too often mistakes literary name-dropping for intellectual depth. Yeats, Eliot, Wittgenstein and others appear, but mostly as cultural shorthand rather than as thinkers Paul seems to have wrestled with in any sustained way. The same goes for the book's gestures towards philosophy and atheism. This may be harsh, but cancer does not automatically turn someone into a good writer.<br><br>
+    What I found harder to accept, though, was the family ethic at the book's centre. Knowing he was dying, knowing he would never be able to put any real labour into raising a child, Paul still chose to have one with Lucy, and even returned to the OR after learning she was pregnant. The book clearly wants this to read as courage, vocation, fullness of life. I could only see a gifted neurosurgeon making choices that felt, at best, deeply questionable. By the end, I was less moved by his reflections than saddened by the loss of an exceptionally skilled surgeon. For a book so often praised for its wisdom on mortality, it left me thinking mostly about what was missing.
+
+- title: "The Secret History"
+  type: "book"
+  creator: "Donna Tartt"
+  creator_role: "by"
+  year: 1992
+  eval: "liked"
+  image: "/assets/images/brief_takes/secret_history.jpg"
+  posted: "2025-10-25"
+  text: |
+    My first Donna Tartt, and the prose is exactly as advertised: fluid, elegant, almost indecently easy to keep reading. What surprised me more was the texture of it. For long stretches, *The Secret History* feels less like a conventional psychological thriller than like a postmodern novel that happens to have wandered into a murder plot. After the opening chapters, I kept thinking: this is what Paul Auster always seemed to want to be, and never quite managed. Tartt understands that the real engine is not the mystery itself, but atmosphere, self-mythologising, and the slow corruption of perception. No wonder the novel has had the reception it has; it flatters the reader into complicity almost as well as Richard flatters himself.<br><br>
+    The first half is excellent. The suspense is kept unusually clean, and the characters arrive with real contour rather than mere function. Charles and Francis in particular have that slightly excessive, faintly doomed vividness the book needs. Tartt is also very good at making the whole Hampden apparatus feel both ridiculous and dangerous, which is probably why the novel still towers over so many later dark-academia imitators.<br><br>
+    The problem is that the second half does lose something. The plot and character work flatten out more than they should, and what had felt poisonous and singular starts, regrettably, to edge towards cliche. Even so, the final dissolution is deeply satisfying. Tartt clearly understands that a novel like this lives or dies by disintegration, by the sense that what was once hermetic and self-enclosed must eventually leak, fray, and rot. Looking back, one can imagine a leaner three-hundred-page version of *The Secret History* becoming an almost perfectly compact suspense novel, with tighter attention to its crucial nodes of action. At well over five hundred pages, the narrative does sprawl. But then again, this was Tartt's debut. As first novels go, it is still a little monstrous in the best way.
+
+- title: "Waiting for Godot"
+  type: "book"
+  creator: "Samuel Beckett"
+  creator_role: "by"
+  year: 1951
+  eval: "loved"
+  image: "/assets/images/brief_takes/waiting_for_godot.jpg"
+  posted: "2025-10-26"
+  text: |
+    What's funny is that the supposedly 'anti-meaning' *Waiting for Godot* has ended up generating an absurd surplus of meanings. That is part of Beckett's trick. The stage is nearly bare, the tree signifies almost nothing except waiting itself, and Godot remains at once named and unknowable. Yet the emptier the apparatus becomes, the more violently readers and audiences try to fill it. Beckett strips drama back to a road, a tree, a pair of bodies, and a delay, and somehow that near-vacuum keeps behaving like a meaning factory.<br><br>
+    In this baren world, we see residue of terror lying around the play's edges. Estragon is beaten, apparently as a matter of routine. Pozzo calls Lucky 'Pig' and drags him on a rope like a slave. The boy, or boys, arrive from Godot with their baffling little reports, carrying traces of threat and hierarchy they cannot themselves understand. Beckett gives us a world full of oppression, but wrapped in clowning, cross-talk, hat-swaps, and the exhausted shell of vaudeville. Apart from a few moments from Vladimir, almost nobody really takes any of it seriously.<br><br>
+    That, I suppose, is where the sense of 'exactness' comes from. The play's emptiness is never really empty. Beneath all the waiting, repetition, and anti-meaning, one keeps seeing the ordinary social life of suffering: visible, undeniable, and somehow still treated as background noise. Beckett's world is absurd, yes, but it is also uncomfortably familiar.
+
+- title: "As She Climbed Across the Table"
+  type: "book"
+  creator: "Jonathan Lethem"
+  creator_role: "by"
+  year: 1997
+  eval: "liked"
+  image: "/assets/images/brief_takes/as_she_climbed.jpg"
+  posted: "2025-10-31"
+  text: |
+    Isn't this just one of the most romantic science-fiction novels? *As She Climbed Across the Table* takes a premise that could easily have collapsed into pure gimmickry (a physicist falling in love with a void called Lack) and turns it into something at once absurd, tender, and... cosmic. One can't help but admire Lethem's tonal balance: Lethem keeps folding quantum uncertainty, obsession, and emotional blindness into one another without ever becoming pompous about it.<br><br>
+    What really pushes it into the 'cult-classic' territory is the prose. The book is full of jokes, puns, and conceptual mischief, but never in the dead, overengineered way this sort of novel often risks. Lethem understands that a premise like this only works if it keeps its lightness. The result is a novel that moves between the miniature and the immense, between private jealousy and something like metaphysical longing, while remaining tremendous fun almost line by line. That playfulness is exactly why the romance lands. He does not take the whole thing too seriously, which is what lets it feel serious in the right places.
+
+- title: "Maus"
+  type: "book"
+  creator: "Art Spiegelman"
+  creator_role: "by"
+  year: 1980
+  eval: "loved"
+  image: "/assets/images/brief_takes/maus.jpg"
+  posted: "2025-11-06"
+  text: |
+    Books like *Maus* only become more and more relevant in times like this. One of the book's most quietly devastating moments comes near the end of the second volume: after everything Vladek has lived through, after the camps, the family breaking apart, his son Richieu's death, his wife Anja's suicide, his parents turned into smoke through the crematoria, he still reacts with disgust when his younger son Art and Francoise (Art's fiancée) pick up a Black hitchhiker. Art's response is the obvious one: how can someone who suffered so much still be racist. Vladek's answer is worse precisely because it is so familiar: 'you don't understand. We were different.'<br><br>
+    That scene is where *Maus* cuts deepest. It refuses the comforting lie that suffering automatically makes people better, broader, or more humane. Pain does not guarantee solidarity. Memory does not necessarily enlarge moral vision. One can survive catastrophe and still cling to the same brutal logic of 'us' and 'them'. In that sense, *Maus* is not just a Holocaust narrative or a book about inherited trauma. It is also a book about the limits of suffering as moral education.<br><br>
+    Reading that scene, I could not help thinking of earlier genocides that Europe either ignored or absorbed with very little fuss, the same historical murk that Pynchon drags into *V.*. If one stays silent when others suffer, on what grounds does one later demand that one's own suffering be seen? *Maus* does not ask that question directly, but it leaves it hanging there all the same.
+
+- title: "V."
+  type: "book"
+  creator: "Thomas Pynchon"
+  creator_role: "by"
+  year: 1963
+  eval: "loved"
+  image: "/assets/images/brief_takes/v.jpg"
+  posted: "2025-11-17"
+  text: |
+    My second favourite read of 2025. *V.* reads like young Pynchon was teaching himself just how much a novel could hold. Egypt, Virginia, New York, Malta, Paris, South-West Africa: every pocket of the book seems to be hiding another system, another ruin, another dead zone where history has gone slightly inanimate. The great subjects are already here in embryo: the deconstruction of the individual, the fake animosity between flesh and mechanism (SHROUD & SHOCK was such an interesting idea), slavery and colonial trade (South-west Africa makes its reappearances in later Pynchon novels as well), waste, plastics, prosthetics, siege, fetish, entropy. It's ingenious that Pynchon centres the novel partially around the idea of 'yo-yo'... Yo-yoing is not just Benny Profane's gimmick. It is the book's state of mind.
+    The idea of a yo-yo is probably still my favourite thing in this novel. Anyone who has seen one can understand Profane drifting on the New York subway, shuttling between termini with all the pathos of movement and none of the dignity of progress. One can understand what Fausto Maijstral means by history's repetitions. One can understand why so many of the book's lives feel trapped in recoil, return, and re-enactment. The trajectories pile up more and more densely until identity itself begins to lose contour. The yo-yo keeps moving, but only within the limits of its string. That is what makes *V.* feel so different from the more monumental later Pynchons: it is already full of world-historical dread, but the dread is still spring-loaded, still comic, still flickering with schlemihl energy.
+    Another thing that stays with me is how much of the novel is organised around the gradual victory of the inanimate. Machines, plastic, prosthetic surfaces, dead landscapes, human beings treated as objects and finally treating themselves the same way: all of it gives *V.* its peculiar chill. The book is still baggier than Pynchon's more mature masterpieces, and sometimes one can feel Pynchon reaching past his current grasp. But that is part of the thrill. The lines of force are already there, crossing and tangling like yo-yos on too few strings. Characters meet, miss, collide, return to origin, and set off again. One push, one release, back to the start. It is a novel of recurrences, and one of the very few debuts that already feels written by someone who has seen the whole sick circuitry.
+
+- title: "Flesh"
+  type: "book"
+  creator: "David Szalay"
+  creator_role: "by"
+  year: 2025
+  eval: "hated"
+  image: "/assets/images/brief_takes/flesh.jpg"
+  posted: "2025-11-18"
+  text: |
+    One can see what admirers of *Flesh* are responding to. Szalay's stripped-down style has been praised as brutally pared back, all surface and bone, and most would be amiss to deny the novel's exteriority, inarticulacy, and how it portrays a man pushed along by forces larger than itself. Istvan's journey from Hungary through war, migration, money, and sex is clearly meant to register as a European life reduced to impulse, contingency, and damage. On paper, that sounds severe in an interesting way.<br><br>
+    Nonetheless, in practice I found the book almost impossible to take seriously. Szalay's prose seems to depend on a kind of calculated quirkiness: the one-line paragraphs, the clipped present tense, the habit of stating something and then restating it in the next paragraph as though repetition by itself could generate force. Plenty of quirky novels exist, and much better ones too. Here the method feels almost technique-free, as if style had been reduced to a few visible tics and then left to do all the lifting. What others read as austere minimalism or a perfect match for Istvan's damaged inarticulacy, I mostly experienced as hollowness. By the second half, the whole thing had started to resemble a script draft with the connective tissue stripped out.<br><br>
+    That is what finally put me off *Flesh*. I can sympathise with flatness, if it opens onto something harder, stranger, or more exact. Here it rarely does. The scenes arrive, the scenes stop, the bodies keep moving, and one is meant to infer depth from the blankness. Sometimes that works. More often it feels like being handed an affectless sequence of gestures and being asked to mistake omission for seriousness. Perhaps there are readers who genuinely enjoy being parcelled through a novel one thin paragraph at a time. I am not one of them.
+
 - title: "Solenoid"
   type: "book"
   creator: "Mircea Cărtărescu, trans. Sean Cotter"
@@ -28,7 +117,7 @@
     Cărtărescu's Romania exudes a magical realism that is grounded in reality but never confined by it, and the novel finds a strange equilibrium between the grotesque and the ingenious. What impressed me most was how thoroughly it rewired my sense of what belonged to the novel and what belonged to the world. When the Voynich manuscript appeared, I half-assumed, idiotically, that it too must be one of Cărtărescu's inventions ('Well this surely sounds fictional enough...'). Then came Charles Hinton, The Gadfly, the fourth dimension, and all the rest. Reading *Solenoid* felt like (borrowing a phrase from the book) returning to a child's mode of perception, where dreams and memories, myths and facts, all seem made from the same substance.
     And then there is Bucharest itself, which in *Solenoid* becomes a gigantic living thing. The city sings, with its solenoids humming through blind walls, labyrinthine school corridors, ship-shaped houses, mortuaries full of Picketists crying for help, and nightmare after nightmare that leaves one short of breath. Beneath all this, the novel keeps asking the largest questions in the most intimate way. What is reality? What is memory? How do we escape? (And escape from what?) This was my favourite read of 2025, and not by a small margin.
 
-- title: "The Call of Cthulhu"
+- title: "The Call of Cthulhu and Other Weird Stories"
   type: "book"
   creator: "H.P. Lovecraft, ed. S.T. Joshi"
   creator_role: "by"

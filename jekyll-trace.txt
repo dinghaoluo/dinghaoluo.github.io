@@ -1,0 +1,76 @@
+C:/Ruby33-x64/lib/ruby/3.3.0/win32/registry.rb:2: warning: fiddle was loaded from the standard library, but will no longer be part of the default gems starting from Ruby 3.5.0.
+You can add fiddle to your Gemfile or gemspec to silence this warning.
+To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+Configuration file: C:/code_dinghao_other/dinghaoluo.github.io/_config.yml
+            Source: C:/code_dinghao_other/dinghaoluo.github.io
+       Destination: C:/code_dinghao_other/dinghaoluo.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+[33m        Pagination: Pagination is enabled, but I couldn't find an index.html page to use as the pagination template. Skipping pagination.[0m
+       Jekyll Feed: Generating feed for posts
+[33m    Liquid Warning: Liquid syntax error (line 188): Expected id but found number in "{{ site.data.404_lexicon | jsonify }}" in 404.html[0m
+[31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'assets/css/main.scss':[0m
+[31m                    Internal Error: Incompatible units: 'rem' and 'vw'. [0m
+C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-sass-converter-2.2.0/lib/jekyll/converters/scss.rb:200:in `rescue in sass_convert': Internal Error: Incompatible units: 'rem' and 'vw'. (Jekyll::Converters::Scss::SyntaxError)
+
+        raise SyntaxError, e.to_s
+              ^^^^^^^^^^^^^^^^^^^
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-sass-converter-2.2.0/lib/jekyll/converters/scss.rb:192:in `sass_convert'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-sass-converter-2.2.0/lib/jekyll/converters/scss.rb:186:in `convert'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:105:in `block in convert'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:104:in `each'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:104:in `reduce'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:104:in `convert'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:84:in `render_document'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:63:in `run'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:572:in `render_regenerated'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:564:in `block in render_pages'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:563:in `each'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:563:in `render_pages'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:211:in `render'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:80:in `process'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:28:in `process_site'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:65:in `build'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:36:in `process'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `block in process_with_graceful_fail'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `each'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `process_with_graceful_fail'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:18:in `block (2 levels) in init_with_program'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `block in execute'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `each'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `execute'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/program.rb:44:in `go'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary.rb:21:in `program'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/exe/jekyll:15:in `<top (required)>'
+	from C:/Users/luod/AppData/Local/Microsoft/WindowsApps/jekyll:25:in `load'
+	from C:/Users/luod/AppData/Local/Microsoft/WindowsApps/jekyll:25:in `<main>'
+C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/sassc-2.4.0/lib/sassc/engine.rb:50:in `render': Internal Error: Incompatible units: 'rem' and 'vw'. (SassC::SyntaxError)
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-sass-converter-2.2.0/lib/jekyll/converters/scss.rb:195:in `sass_convert'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-sass-converter-2.2.0/lib/jekyll/converters/scss.rb:186:in `convert'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:105:in `block in convert'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:104:in `each'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:104:in `reduce'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:104:in `convert'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:84:in `render_document'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:63:in `run'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:572:in `render_regenerated'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:564:in `block in render_pages'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:563:in `each'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:563:in `render_pages'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:211:in `render'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:80:in `process'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:28:in `process_site'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:65:in `build'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:36:in `process'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `block in process_with_graceful_fail'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `each'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `process_with_graceful_fail'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:18:in `block (2 levels) in init_with_program'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `block in execute'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `each'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `execute'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/program.rb:44:in `go'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary.rb:21:in `program'
+	from C:/Users/luod/.local/share/gem/ruby/3.3.0/gems/jekyll-4.4.1/exe/jekyll:15:in `<top (required)>'
+	from C:/Users/luod/AppData/Local/Microsoft/WindowsApps/jekyll:25:in `load'
+	from C:/Users/luod/AppData/Local/Microsoft/WindowsApps/jekyll:25:in `<main>'

@@ -1,9 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(gh pr create --title 'portfolio redesign: structure, styling, and content scaffold' --body ':*)",
-      "Bash(winget install:*)",
-      "Bash(where gh:*)"
+      "Bash(bundle exec *)",
+      "Bash(python *)",
+      "WebSearch",
+      "WebFetch(domain:fonts.google.com)",
+      "WebFetch(domain:fontsource.org)",
+      "WebFetch(domain:fonts.adobe.com)",
+      "Bash(git show *)",
+      "Bash(git checkout *)"
     ]
   }
 }
