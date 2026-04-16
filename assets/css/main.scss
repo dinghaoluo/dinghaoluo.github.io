@@ -1322,20 +1322,31 @@ hr {
 // thoughts sidebar preview: hide on mobile for all pages
 @media (max-width: 1023px) {
   #main {
+    padding-top: 0 !important;
     padding-left: 1.28em;
     padding-right: 1.28em;
   }
 
+  .initial-content,
   .archive,
+  .page,
   .page .page__inner-wrap,
-  .page__content {
+  .page__content,
+  body.layout--archive #main > .archive,
+  body.layout--single .page .page__inner-wrap {
     margin-top: 0 !important;
     padding-top: 0 !important;
   }
 
-  .archive > .page__title {
-    margin-top: 0;
-    margin-bottom: 1.6rem;
+  .breadcrumbs {
+    margin-bottom: 0.2rem;
+    padding-bottom: 0;
+  }
+
+  .archive > .page__title,
+  .page__title {
+    margin-top: 0 !important;
+    margin-bottom: 1.4rem;
   }
 
   .sidebar {
@@ -1344,7 +1355,8 @@ hr {
 
   .page__author-footer {
     display: block;
-    margin-top: 7.25rem;
+    margin-top: 8.5rem !important;
+    padding-top: 0 !important;
   }
 
   .page__author-footer .h-card--footer {
@@ -1666,20 +1678,30 @@ mark.thoughts-highlight {
   }
 
   #main {
+    padding-top: 0 !important;
     padding-left: 2.65rem;
     padding-right: 2.65rem;
   }
 
+  .initial-content,
   .archive,
+  .page,
   .page .page__inner-wrap,
-  .page__content {
+  .page__content,
+  body.layout--archive #main > .archive,
+  body.layout--single .page .page__inner-wrap {
     margin-top: 0 !important;
     padding-top: 0 !important;
   }
 
+  .breadcrumbs {
+    margin-bottom: 0.25rem;
+    padding-bottom: 0;
+  }
+
   .archive > .page__title,
   .page__title {
-    margin-top: 0;
+    margin-top: 0 !important;
   }
 
   .sidebar {
@@ -1688,7 +1710,7 @@ mark.thoughts-highlight {
 
   .page__author-footer {
     display: block;
-    margin-top: 5.5rem;
+    margin-top: 6.5rem !important;
   }
 
   .page__author-footer .h-card--footer {
