@@ -298,11 +298,6 @@ hr {
 // constrained main content column — matches masthead inner width
 // -------------------------
 #main {
-  // on mobile: account for sticky masthead height so sidebar isn't covered on first load
-  @media (max-width: 1023px) {
-    margin-top: 1.5em;  // space below sticky nav
-  }
-
   @include breakpoint($x-large) {
     max-width: 1100px;
   }
@@ -748,9 +743,9 @@ hr {
 
 .page__author-footer {
   display: none;
-  margin-top: 3.25rem;
-  padding-top: 1.35rem;
-  border-top: 1px solid rgba($morandi-muted, 0.14);
+  margin-top: 4.9rem;
+  padding-top: 0;
+  border-top: none;
 }
 
 .sidebar .h-card--footer {
@@ -763,23 +758,6 @@ hr {
 
 .h-card--footer .author__sidebar-thoughts {
   display: none;
-}
-
-.h-card--footer .author__urls-wrapper {
-  display: block !important;
-  margin-top: 1rem;
-}
-
-.h-card--footer .author__urls,
-.h-card--footer ul.author__urls.social-icons {
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  pointer-events: auto !important;
-}
-
-.h-card--footer .author__urls li {
-  margin-bottom: 0.12rem;
 }
 
 .h-card--footer .author__bio--desktop {
@@ -1224,7 +1202,7 @@ hr {
   position: relative;
   display: flex;                          // full-width flex
   align-items: center;
-  width: 85%;                             // narrower, centered
+  width: 95%;                             // wider, aligned with controls row
   background: rgba($morandi-grey-soft, 0.38);  // half transparent outer box
   border-radius: 1000px;                 // highly rounded
   padding: 0.12em 0.18em;
@@ -1354,6 +1332,7 @@ hr {
 
   .page__author-footer {
     display: block;
+    margin-top: 4.9rem;
   }
 
   .page__author-footer .h-card--footer {

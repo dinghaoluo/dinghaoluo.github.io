@@ -71,30 +71,45 @@ layout: default
     display: block;
   }
 
-  .lost-title__line--stretch {
-    display: block;
-    width: 100%;
-    text-align: justify;
-    text-align-last: justify;
-    text-justify: inter-character;
-  }
-
-  .lost-title__line--stretch::after {
-    content: '';
-    display: inline-block;
-    width: 100%;
+  .lost-title__line--tight {
+    letter-spacing: -0.03em;
   }
 
   .lost-dek {
-    margin: 1.35rem 0 0;
+    margin: 1.5rem 0 0;
     font-size: 0.95rem;
     line-height: 1.82;
-    max-width: 28rem;
+    max-width: 29rem;
     color: #7f766f;
   }
 
-  .lost-panel {
+  .lost-record {
     margin: 2.35rem 0 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .lost-record-head {
+    display: grid;
+    gap: 0.3rem;
+  }
+
+  .lost-record-label {
+    margin: 0;
+    font-size: 0.74rem;
+    letter-spacing: 0.08em;
+    text-transform: lowercase;
+    color: #8d6959;
+  }
+
+  .lost-record-title {
+    margin: 0;
+    font-size: 1.08rem;
+    line-height: 1.4;
+    color: #3f3934;
+  }
+
+  .lost-panel {
     padding: 1.1rem 1.15rem 1.2rem;
     background: linear-gradient(180deg, rgba(250, 247, 242, 0.9), rgba(250, 247, 242, 0.72));
     border: 1px solid rgba(127, 118, 111, 0.16);
@@ -105,8 +120,8 @@ layout: default
   }
 
   .lost-panel-label {
-    margin: 0 0 0.78rem;
-    font-size: 0.74rem;
+    margin: 0 0 0.48rem;
+    font-size: 0.72rem;
     letter-spacing: 0.08em;
     text-transform: lowercase;
     color: #7f766f;
@@ -130,7 +145,7 @@ layout: default
     display: flex;
     flex-wrap: wrap;
     gap: 0.8rem 1.3rem;
-    margin-top: 1.45rem;
+    margin-top: 0.1rem;
   }
 
   .lost-actions a {
@@ -160,7 +175,7 @@ layout: default
   }
 
   .lost-note {
-    margin-top: 1.45rem;
+    margin: 0;
     font-size: 0.8rem;
     line-height: 1.7;
     color: #7f766f;
@@ -208,29 +223,41 @@ layout: default
   <div class='lost-main'>
     <p class='lost-kicker'>404</p>
     <h1 class='lost-title'>
-      <span class='lost-title__line'>this page is not</span>
-      <span class='lost-title__line lost-title__line--stretch'>the</span>
-      <span class='lost-title__line'>in the catalogue</span>
+      <span class='lost-title__line'>this page</span>
+      <span class='lost-title__line'>is not in</span>
+      <span class='lost-title__line lost-title__line--tight'>the</span>
+      <span class='lost-title__line'>catalogue</span>
     </h1>
 
     <p class='lost-dek'>
-      The address resolves to a trace, but not to a room.
+      What you requested still leaves a trace, but not an entry anyone meant to shelve.
     </p>
 
-    <div class='lost-panel'>
-      <p class='lost-panel-label'>
-        catalogue fragment for <span class='lost-path' id='lost-path'></span>
+    <section class='lost-record' aria-label='missing catalogue record'>
+      <div class='lost-record-head'>
+        <p class='lost-record-label'>catalogue note</p>
+        <p class='lost-record-title'>No indexed room answers to this reference.</p>
+      </div>
+
+      <div class='lost-panel'>
+        <p class='lost-panel-label'>requested path</p>
+        <p class='lost-fragment'><span class='lost-path' id='lost-path'></span></p>
+      </div>
+
+      <div class='lost-panel'>
+        <p class='lost-panel-label'>catalogue fragment</p>
+        <p class='lost-fragment' id='lost-fragment'></p>
+      </div>
+
+      <div class='lost-actions'>
+        <a href='{{ '/' | relative_url }}'>return to the front page</a>
+        <a href='{{ '/thoughts/' | relative_url }}'>browse the catalogue instead</a>
+      </div>
+
+      <p class='lost-note'>
+        The fragment is generated locally from the missing path using <code>_data/404_lexicon.yml</code>.
       </p>
-      <p class='lost-fragment' id='lost-fragment'></p>
-    </div>
-
-    <div class='lost-actions'>
-      <a href='{{ '/' | relative_url }}'>return to the front page</a>
-    </div>
-
-    <p class='lost-note'>
-      The fragment is generated locally from the missing path using <code>_data/404_lexicon.yml</code>.
-    </p>
+    </section>
   </div>
 </div>
 

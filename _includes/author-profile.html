@@ -32,6 +32,7 @@
     {% endif %}
   </div>
 
+  {% unless profile_position == 'footer' %}
   <div class="author__urls-wrapper">
     <button class="btn btn--inverse author__urls-toggle">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
     <ul class="author__urls social-icons">
@@ -266,5 +267,6 @@
     {% endfor %}
   </div>
   {% endif %}
+  {% endunless %}
 </div>
 
