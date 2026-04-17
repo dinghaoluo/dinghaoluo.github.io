@@ -1115,7 +1115,9 @@ body.home .page__author-footer {
 
 .thoughts-card__text p {
   margin: 0;
-  line-height: 1.62;
+  font-size: 1.04em;
+  line-height: 1.66;
+  letter-spacing: 0.014em;
 }
 
 .thoughts-card__text p + p {
@@ -2110,7 +2112,7 @@ mark.thoughts-highlight {
   }
 
   .page__content {
-    color: #c8c0b6;
+    color: #d4cdc4;
   }
 
   .page__content a {
@@ -2168,7 +2170,7 @@ mark.thoughts-highlight {
   }
 
   .thoughts-card__text {
-    color: #c8c0b6;
+    color: #d4cdc4;
   }
 
   .thoughts-card__posted {
@@ -2194,41 +2196,41 @@ mark.thoughts-highlight {
   }
 
   .thoughts-filter-strip {
-    background: rgba(#3a3530, 0.6);
+    background: rgba(#3a3530, 0.82);
   }
 
   .thoughts-filter-pill {
-    background: #1c1917;
+    background: #2a2724;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   }
 
   .thoughts-filter-btn {
-    color: #9b928a;
+    color: #b8b0a6;
     &.active { color: #e8e2db; }
   }
 
   .thoughts-search-input {
-    background: rgba(#3a3530, 0.5);
+    background: rgba(#3a3530, 0.6);
     color: #ddd3c8;
-    border-color: rgba(#9b928a, 0.18);
-    &::placeholder { color: #8b837c; }
+    border-color: rgba(#9b928a, 0.32);
+    &::placeholder { color: #9b928a; }
   }
 
   .thoughts-luck-btn {
     color: #90a4b0;
-    border-color: rgba(#90a4b0, 0.28);
-    background: rgba(#90a4b0, 0.08);
-    &:hover { color: #a5b5c5; border-color: rgba(#a5b5c5, 0.4); background: rgba(#90a4b0, 0.14); }
+    border-color: rgba(#90a4b0, 0.42);
+    background: rgba(#90a4b0, 0.12);
+    &:hover { color: #a5b5c5; border-color: rgba(#a5b5c5, 0.5); background: rgba(#90a4b0, 0.18); }
   }
 
   .thoughts-pagination__btn {
-    color: #9b928a;
+    color: #b8b0a6;
     &:hover { color: #90a4b0; }
     &:disabled { color: #5a5450; }
   }
 
   .thoughts-pagination__status {
-    color: #8b837c;
+    color: #9b928a;
   }
 
   .thoughts-card__eval--loved {
@@ -2259,8 +2261,8 @@ mark.thoughts-highlight {
   }
 
   .thoughts-card__toggle {
-    color: #8b837c;
-    border-color: rgba(#9b928a, 0.15);
+    color: #9b928a;
+    border-color: rgba(#9b928a, 0.22);
     &:hover {
       color: #90a4b0;
       border-color: rgba(#90a4b0, 0.3);
