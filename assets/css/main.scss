@@ -699,12 +699,12 @@ hr {
   letter-spacing: -0.01em;
   color: $morandi-muted;
   margin: 0 !important;
-  padding: 0 0 2.2em !important;
+  padding: 0 0 0.7em !important;
   border-bottom: none;
   text-transform: lowercase;
 
   @include breakpoint($large) {
-    padding-bottom: 2.4em !important;
+    padding-bottom: 0.8em !important;
   }
 }
 
