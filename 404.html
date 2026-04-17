@@ -75,38 +75,19 @@ layout: default
     display: block;
   }
 
-  .lost-dek {
-    margin: 1.5rem 0 0;
-    font-size: 0.95rem;
-    line-height: 1.82;
+  .lost-lede {
+    margin: 1.4rem 0 0;
+    font-size: 1.18rem;
+    line-height: 1.42;
     max-width: 29rem;
-    color: #7f766f;
+    color: #3f3934;
+    letter-spacing: -0.01em;
   }
 
   .lost-record {
-    margin: 2.35rem 0 0;
+    margin: 2.1rem 0 0;
     display: grid;
     gap: 1rem;
-  }
-
-  .lost-record-head {
-    display: grid;
-    gap: 0.3rem;
-  }
-
-  .lost-record-label {
-    margin: 0;
-    font-size: 0.74rem;
-    letter-spacing: 0.08em;
-    text-transform: lowercase;
-    color: #8d6959;
-  }
-
-  .lost-record-title {
-    margin: 0;
-    font-size: 1.08rem;
-    line-height: 1.4;
-    color: #3f3934;
   }
 
   .lost-panel {
@@ -142,44 +123,32 @@ layout: default
   }
 
   .lost-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem 1.3rem;
-    margin-top: 0.1rem;
+    margin-top: 0.4rem;
   }
 
-  .lost-actions a {
+  .lost-actions__primary {
+    display: inline-block;
+    color: #3f3934;
+    font-size: 1.08rem;
+    letter-spacing: -0.01em;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.28em;
+    transition: color 0.18s ease, text-decoration-thickness 0.18s ease;
+  }
+
+  .lost-actions__primary:hover {
     color: #8d6959;
-    text-decoration: none;
-    position: relative;
-    padding-bottom: 2px;
-    font-size: 0.92rem;
-  }
-
-  .lost-actions a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background: currentColor;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.18s ease;
-    opacity: 0.68;
-  }
-
-  .lost-actions a:hover::after {
-    transform: scaleX(1);
+    text-decoration-thickness: 3px;
   }
 
   .lost-note {
-    margin: 0;
-    font-size: 0.8rem;
-    line-height: 1.7;
-    color: #7f766f;
-    opacity: 0.9;
+    margin: 0.4rem 0 0;
+    font-size: 0.78rem;
+    line-height: 1.6;
+    color: #a79f97;
+    font-style: italic;
+    letter-spacing: 0.005em;
   }
 
   @media (hover: hover) and (pointer: fine) {
@@ -229,16 +198,9 @@ layout: default
       <span class='lost-title__line'>catalogue</span>
     </h1>
 
-    <p class='lost-dek'>
-      What you requested still leaves a trace, but not an entry anyone meant to shelve.
-    </p>
+    <p class='lost-lede'>No indexed room exists at the requested path.</p>
 
     <section class='lost-record' aria-label='missing catalogue record'>
-      <div class='lost-record-head'>
-        <p class='lost-record-label'>catalogue note</p>
-        <p class='lost-record-title'>No indexed room answers to this reference.</p>
-      </div>
-
       <div class='lost-panel'>
         <p class='lost-panel-label'>requested path</p>
         <p class='lost-fragment'><span class='lost-path' id='lost-path'></span></p>
@@ -250,12 +212,11 @@ layout: default
       </div>
 
       <div class='lost-actions'>
-        <a href='{{ '/' | relative_url }}'>return to the front page</a>
-        <a href='{{ '/thoughts/' | relative_url }}'>browse the catalogue instead</a>
+        <a href='{{ '/' | relative_url }}' class='lost-actions__primary'>return to the front page</a>
       </div>
 
       <p class='lost-note'>
-        The fragment is generated locally from the missing path using <code>_data/404_lexicon.yml</code>.
+        the fragment drifts in from the missing path.
       </p>
     </section>
   </div>
