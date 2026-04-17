@@ -1918,7 +1918,7 @@ mark.thoughts-highlight {
 // Theme toggle — fixed d / l in top-right corner
 // =========================================================================
 #theme-toggle {
-  position: fixed;
+  position: absolute;
   top: 0.85rem;
   right: 1rem;
   z-index: 9999;
