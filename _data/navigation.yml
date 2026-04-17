@@ -6,11 +6,7 @@ main:
     url: /writing/
   - title: "science"
     url: /science/
-    break_before: true
   - title: "music"
     url: /music/
   - title: "photos"
     url: /photos/
-  - title: "other"
-    url: /#other-stuff
-    class: "nav-other"

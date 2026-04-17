@@ -19,7 +19,6 @@ layout: default
 {% endif %}
 
 <div id="main" role="main">
-  {% include page-header.html %}
   {% include sidebar.html %}
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
@@ -29,6 +28,7 @@ layout: default
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
 
     <div class="page__inner-wrap">
+      {% include page-header.html %}
 
       <section class="page__content e-content" itemprop="text">
         {% if page.lede %}
@@ -58,6 +58,10 @@ layout: default
       {% if page.share %}{% include social-share.html %}{% endif %}
 
       {% include post_pagination.html %}
+
+      <div class="page__drift">
+        <a href="#" class="drift-link" onclick="event.preventDefault();var c='abcdefghijklmnopqrstuvwxyz0123456789',s='';for(var i=0;i<3+Math.floor(Math.random()*5);i++)s+=c[Math.floor(Math.random()*c.length)];window.location.href='/'+s;">wander off</a>
+      </div>
     </div>
 
     {% if page.author_profile or layout.author_profile %}
@@ -65,10 +69,6 @@ layout: default
         {% include author-profile.html profile_position='footer' %}
       </div>
     {% endif %}
-
-    <div class="page__drift">
-      <a href="#" class="drift-link" onclick="event.preventDefault();var c='abcdefghijklmnopqrstuvwxyz0123456789',s='';for(var i=0;i<3+Math.floor(Math.random()*5);i++)s+=c[Math.floor(Math.random()*c.length)];window.location.href='/'+s;">wander off</a>
-    </div>
 
     {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
       {% include comments.html %}

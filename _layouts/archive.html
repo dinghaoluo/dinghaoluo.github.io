@@ -26,6 +26,10 @@ layout: default
     {% endif %}
     {{ content }}
 
+    <div class="page__drift">
+      <a href="#" class="drift-link" onclick="event.preventDefault();var c='abcdefghijklmnopqrstuvwxyz0123456789',s='';for(var i=0;i<3+Math.floor(Math.random()*5);i++)s+=c[Math.floor(Math.random()*c.length)];window.location.href='/'+s;">wander off</a>
+    </div>
+
     {% if page.author_profile or layout.author_profile %}
       <div class="page__author-footer">
         {% include author-profile.html profile_position='footer' %}
