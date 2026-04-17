@@ -9,15 +9,22 @@ title: "music"
   .music-player-wrap {
     max-width: 700px;
     margin: 2.4rem 0 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+
+  .music-track {
     border-radius: 0.36rem;
     overflow: hidden;
     border: 1px solid rgba(127, 118, 111, 0.12);
-    box-shadow: 0 4px 16px rgba(63, 57, 52, 0.06);
+    box-shadow: 0 2px 8px rgba(63, 57, 52, 0.04);
   }
 
-  .music-player-wrap iframe {
+  .music-track iframe {
     display: block;
     width: 100%;
+    height: 120px;
     border: none;
   }
 
@@ -30,18 +37,18 @@ title: "music"
   }
 
   @media (prefers-color-scheme: dark) {
-    html:not([data-theme="light"]) .music-player-wrap {
+    html:not([data-theme="light"]) .music-track {
       border-color: rgba(155, 146, 138, 0.16);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     }
     html:not([data-theme="light"]) .music-note {
       color: #6a6360;
     }
   }
 
-  html[data-theme="dark"] .music-player-wrap {
+  html[data-theme="dark"] .music-track {
     border-color: rgba(155, 146, 138, 0.16);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   }
   html[data-theme="dark"] .music-note {
     color: #6a6360;
@@ -53,22 +60,21 @@ title: "music"
 ---
 
 <div class="music-player-wrap">
-  <iframe
-    id="bc-player"
-    style="width: 100%; height: 470px;"
-    seamless>
-    <a href="https://amoxitoxin.bandcamp.com/album/the-maze">The Maze by amoxitoxin</a>
-  </iframe>
+  <div class="music-track"><iframe class="bc-track" data-track="1915815379" seamless><a href="https://amoxitoxin.bandcamp.com/track/kitty-kat-and-the-stars">宇宙貓 (kitty kat and the stars)</a></iframe></div>
+  <div class="music-track"><iframe class="bc-track" data-track="2704602144" seamless><a href="https://amoxitoxin.bandcamp.com/track/central-pattern-generator">中樞模式發生器 (central pattern generator)</a></iframe></div>
+  <div class="music-track"><iframe class="bc-track" data-track="3943970932" seamless><a href="https://amoxitoxin.bandcamp.com/track/feat-reflections">倒影 (feat. 王江山) (reflections)</a></iframe></div>
+  <div class="music-track"><iframe class="bc-track" data-track="745767449" seamless><a href="https://amoxitoxin.bandcamp.com/track/the-rain-on-the-cam">雨後康河無人泛舟 (the rain on the Cam)</a></iframe></div>
+  <div class="music-track"><iframe class="bc-track" data-track="1667904940" seamless><a href="https://amoxitoxin.bandcamp.com/track/the-maze">迷宮 (the maze)</a></iframe></div>
 </div>
 
 <p class="music-note">All releases are on <a href="https://amoxitoxin.bandcamp.com/">Bandcamp</a>.</p>
 
 <script>
   (function () {
-    var base = 'https://bandcamp.com/EmbeddedPlayer/album=4228822450/size=large/artwork=small/transparent=false/';
-    var light = base + 'bgcol=faf7f2/linkcol=8d6959/';
-    var dark  = base + 'bgcol=1c1917/linkcol=c49a85/';
-    var frame = document.getElementById('bc-player');
+    var base = 'https://bandcamp.com/EmbeddedPlayer/size=large/artwork=small/transparent=false/';
+    var lightSuffix = 'bgcol=faf7f2/linkcol=8d6959/';
+    var darkSuffix  = 'bgcol=1c1917/linkcol=c49a85/';
+    var frames = document.querySelectorAll('.bc-track');
 
     function effectiveTheme() {
       var saved = document.documentElement.getAttribute('data-theme');
@@ -77,9 +83,13 @@ title: "music"
     }
 
     function sync() {
-      var src = effectiveTheme() === 'dark' ? dark : light;
-      if (frame.getAttribute('src') !== src) {
-        frame.setAttribute('src', src);
+      var suffix = effectiveTheme() === 'dark' ? darkSuffix : lightSuffix;
+      for (var i = 0; i < frames.length; i++) {
+        var trackId = frames[i].getAttribute('data-track');
+        var src = base + 'track=' + trackId + '/' + suffix;
+        if (frames[i].getAttribute('src') !== src) {
+          frames[i].setAttribute('src', src);
+        }
       }
     }
 
