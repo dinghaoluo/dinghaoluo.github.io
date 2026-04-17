@@ -5,7 +5,7 @@ permalink: /writing/
 title: "writing"
 ---
 
-*Words borrowed from science and returned with feeling.*
+*Translating between languages, and between science and the rest.*
 
 ---
 

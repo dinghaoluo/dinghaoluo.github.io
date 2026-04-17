@@ -5,7 +5,7 @@ permalink: /thoughts/
 title: 'thoughts'
 ---
 
-*Everything leaves a mark — here are the ones I kept.*
+*Notes on things that refused to leave quietly.*
 
 ---
 

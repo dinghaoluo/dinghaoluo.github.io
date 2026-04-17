@@ -17,6 +17,17 @@ Find me on: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.redd
 
 <h2 id="thoughts">thoughts :)</h2>
 
+<div class="thoughts-preview-inline">
+  <span class="thoughts-preview-inline__label">latest</span>
+  {% assign thoughts = site.data.thoughts | sort: 'posted' | reverse %}
+  {% for thought in thoughts limit:3 %}
+  <a href="/thoughts/" class="thoughts-preview-inline__item">
+    <span class="thoughts-preview-inline__title">{{ thought.title }}</span>
+    <span class="thoughts-preview-inline__text">{{ thought.text | strip_html | strip_newlines | strip | truncate: 60, '…' }}</span>
+  </a>
+  {% endfor %}
+</div>
+
 I also have some more day-to-day thoughts on various books, films, and other things that have been on my mind.
 
 [→ thoughts](/thoughts/)

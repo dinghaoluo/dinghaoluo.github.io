@@ -61,7 +61,7 @@ layout: default
   .lost-title {
     margin: 0;
     font-size: clamp(2.15rem, 5vw, 3.7rem);
-    line-height: 0.96;
+    line-height: 1.02;
     letter-spacing: -0.045em;
     font-weight: normal;
     max-width: 10ch;
@@ -200,6 +200,27 @@ layout: default
 
     .lost-panel {
       padding: 0.95rem 0.95rem 1rem;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .lost-shell { color: #ddd3c8; }
+    .lost-kicker { color: #c49a85; }
+    .lost-lede { color: #c8c0b6; }
+    .lost-fragment { color: #c8c0b6; }
+    .lost-panel {
+      background: linear-gradient(180deg, rgba(42, 39, 36, 0.9), rgba(42, 39, 36, 0.72));
+      border-color: rgba(155, 146, 138, 0.16);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+    }
+    .lost-panel-label { color: #8b837c; }
+    .lost-path { color: #c49a85; }
+    .lost-actions__primary { color: #ddd3c8; }
+    .lost-actions__primary:hover { color: #c49a85; }
+    .lost-note { color: #6a6360; }
+    .lost-ghost {
+      color: rgba(196, 154, 133, 0.12);
+      text-shadow: 0 0 18px rgba(28, 25, 23, 0.12);
     }
   }
 </style>

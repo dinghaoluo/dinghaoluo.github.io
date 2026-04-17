@@ -5,7 +5,7 @@ permalink: /music/
 title: "music"
 ---
 
-*Sound made under a different name, for a different kind of attention.*
+*Sound made under another name.*
 
 ---
 

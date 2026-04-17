@@ -8,7 +8,7 @@ toc_label: "on this page"
 toc_icon: ""
 ---
 
-*Asking how the brain remembers what it shouldn't forget.*
+*Studying how the brain decides what to keep.*
 
 ---
 

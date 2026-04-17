@@ -219,20 +219,19 @@ hr {
     }
 
     &.is-current {
-      display: block;
+      display: inline-block;
       color: $site-text;
       font-style: italic;
       font-size: clamp(1.8rem, 4vw, 3rem);
       letter-spacing: -0.045em;
       line-height: 0.96;
-      text-decoration: none;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 0.12em;
       margin-top: 0.06em;
       margin-bottom: 0.15em;
 
-      &::after {
-        transform: scaleX(1);
-        height: 2px;
-      }
+      &::after { display: none; }
 
       &:hover {
         color: $site-text;
@@ -730,7 +729,7 @@ body.home .page__author-footer {
 
 .page__drift {
   text-align: left;
-  margin-top: 5rem;
+  margin-top: 8rem;
   padding-bottom: 1rem;
 
   .drift-link {
@@ -1719,7 +1718,10 @@ mark.thoughts-highlight {
   }
 
   .page__author-footer .h-card--footer {
-    display: block;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.7rem 0.8rem;
   }
 
   .thoughts-controls-row {
@@ -1758,7 +1760,7 @@ mark.thoughts-highlight {
   }
 
   .author__bio--mobile::before {
-    content: 'phd neuroscientist\A data science · science journalism';
+    content: 'phd in neuroscience\A data science · science journalism';
     display: block;
     white-space: pre-line;
     line-height: 1.04;
@@ -1816,6 +1818,390 @@ mark.thoughts-highlight {
   .home .page__content h2,
   .thoughts-card {
     animation: none;
+  }
+}
+
+// -------------------------
+// thoughts preview inline — mobile/vertical homepage only
+// -------------------------
+.thoughts-preview-inline {
+  display: none;
+
+  @media (max-width: 1023px) {
+    display: block;
+    float: right;
+    width: 44%;
+    max-width: 14rem;
+    margin: 0.15em 0 0.6em 1.2em;
+    padding: 0.7em 0.85em;
+    background: rgba($morandi-stone, 0.28);
+    border: 1px solid rgba($morandi-muted, 0.12);
+    border-radius: 0.32rem;
+    font-size: 0.88em;
+  }
+
+  @media (max-width: 480px) {
+    width: 48%;
+    max-width: none;
+    margin-left: 0.8em;
+    font-size: 0.84em;
+  }
+}
+
+.thoughts-preview-inline__label {
+  display: block;
+  font-family: 'Mononoki', monospace;
+  font-size: 0.72em;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  text-transform: lowercase;
+  color: $morandi-muted;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid rgba($morandi-muted, 0.12);
+}
+
+.thoughts-preview-inline__item {
+  display: block;
+  text-decoration: none !important;
+  color: inherit;
+  margin-bottom: 0.4em;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+
+  &:hover {
+    transform: translateX(2px);
+    opacity: 0.9;
+    .thoughts-preview-inline__title { color: $link-color; }
+  }
+
+  &:last-child { margin-bottom: 0; }
+}
+
+.thoughts-preview-inline__title {
+  display: block;
+  font-size: 0.84em;
+  font-weight: bold;
+  font-style: italic;
+  color: $morandi-ink;
+  line-height: 1.2;
+  margin-bottom: 0.08em;
+  transition: color 0.15s ease;
+}
+
+.thoughts-preview-inline__text {
+  display: block;
+  font-size: 0.76em;
+  color: $morandi-muted;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// =========================================================================
+// DARK MODE — auto-engage via prefers-color-scheme
+// Warm Morandi palette inverted: deep brown-black background, stone text
+// =========================================================================
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1c1917;
+    color: #ddd3c8;
+  }
+
+  #main {
+    background-color: #1c1917;
+  }
+
+  a {
+    color: #c49a85;
+    &:hover { color: #d4a88f; }
+    &:visited { color: #c6a596; }
+  }
+
+  hr {
+    border-top-color: rgba(#9b928a, 0.2);
+  }
+
+  .page-header__home {
+    color: #c49a85;
+    &:hover { color: #d4a88f; }
+  }
+
+  .page-header__nav-stack a {
+    color: #ddd3c8;
+    &:hover { color: #c49a85; }
+    &.is-current { color: #ddd3c8; }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #e8e2db;
+  }
+
+  .page-bigtitle {
+    color: #e8e2db;
+  }
+
+  .sidebar {
+    background-color: #1c1917;
+  }
+
+  .author__name a,
+  .author__name {
+    color: #e8e2db;
+  }
+
+  .author__bio,
+  .author__bio--desktop,
+  .author__bio--mobile {
+    color: #9b928a;
+  }
+
+  .author__urls a {
+    color: #b8b0a6;
+    &:hover { color: #c49a85; }
+  }
+
+  .author__urls i.fas,
+  .author__urls i.fab,
+  .author__urls i.fa {
+    color: #8b837c !important;
+  }
+
+  .author__sidebar-thoughts {
+    border-top-color: rgba(#9b928a, 0.15);
+  }
+
+  .author__sidebar-thoughts-label {
+    color: #8b837c;
+  }
+
+  .sidebar-thought__title {
+    color: #ddd3c8;
+  }
+
+  .sidebar-thought__date {
+    color: #8b837c;
+  }
+
+  .sidebar-thought__preview {
+    color: #8b837c;
+  }
+
+  .sidebar-thought:hover .sidebar-thought__title {
+    color: #c49a85;
+  }
+
+  .page__content {
+    color: #c8c0b6;
+  }
+
+  .page__content a {
+    color: #c49a85;
+    &:hover { color: #d4a88f; }
+  }
+
+  .page__lede {
+    color: #9b928a;
+  }
+
+  .page__author-footer {
+    border-top-color: rgba(#9b928a, 0.15);
+  }
+
+  .h-card--footer .author__content {
+    color: #9b928a;
+  }
+
+  .author__footer-links a {
+    color: #b8b0a6;
+    i { color: #8b837c !important; }
+    &:hover {
+      color: #c49a85;
+      i { color: #c49a85 !important; }
+    }
+  }
+
+  body:not(.home) .sidebar .author__content::after {
+    color: #8b837c;
+  }
+
+  .drift-link {
+    color: #6a6360;
+    &:hover { color: #c49a85; }
+  }
+
+  .thoughts-card {
+    border-bottom-color: rgba(#9b928a, 0.1);
+    &:hover {
+      background: rgba(255, 255, 255, 0.025);
+    }
+  }
+
+  .thoughts-card__title {
+    color: #e8e2db;
+  }
+
+  .thoughts-card__creator {
+    color: #9b928a;
+  }
+
+  .thoughts-card__meta {
+    color: #8b837c;
+  }
+
+  .thoughts-card__text {
+    color: #c8c0b6;
+  }
+
+  .thoughts-card__posted {
+    color: #8b837c;
+  }
+
+  .thoughts-card--pinned {
+    border-left-color: rgba(#c49a85, 0.34);
+    background: linear-gradient(90deg, rgba(#2a2724, 0.58), rgba(#1c1917, 0));
+  }
+
+  .thoughts-card--spotlight {
+    background: linear-gradient(90deg, rgba(#2a2724, 0.78), rgba(#1c1917, 0));
+    border-left-color: rgba(#c49a85, 0.38);
+  }
+
+  .thoughts-pin-lead__label {
+    color: #c49a85;
+  }
+
+  .thoughts-pin-lead p {
+    color: #8b837c;
+  }
+
+  .thoughts-filter-strip {
+    background: rgba(#3a3530, 0.6);
+  }
+
+  .thoughts-filter-pill {
+    background: #1c1917;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .thoughts-filter-btn {
+    color: #9b928a;
+    &.active { color: #e8e2db; }
+  }
+
+  .thoughts-search-input {
+    background: rgba(#3a3530, 0.5);
+    color: #ddd3c8;
+    border-color: rgba(#9b928a, 0.15);
+    &::placeholder { color: #8b837c; }
+  }
+
+  .thoughts-luck-btn {
+    color: #9b928a;
+    border-color: rgba(#9b928a, 0.2);
+    &:hover { color: #c49a85; border-color: rgba(#c49a85, 0.3); }
+  }
+
+  .thoughts-pagination__btn {
+    color: #9b928a;
+    &:hover { color: #c49a85; }
+    &:disabled { color: #5a5450; }
+  }
+
+  .thoughts-pagination__status {
+    color: #8b837c;
+  }
+
+  .thoughts-card__eval--loved {
+    background: rgba(#627884, 0.25);
+    color: #90a4b0;
+  }
+  .thoughts-card__eval--liked {
+    background: rgba(#627884, 0.15);
+    color: #8b9da8;
+  }
+  .thoughts-card__eval--meh {
+    background: rgba(#8b837c, 0.15);
+    color: #8b837c;
+  }
+  .thoughts-card__eval--disliked {
+    background: rgba(#7d605b, 0.2);
+    color: #bb9891;
+  }
+  .thoughts-card__eval--hated {
+    background: rgba(#7d605b, 0.3);
+    color: #c4908a;
+  }
+
+  .thoughts-card__pin {
+    color: #c49a85;
+    background: rgba(#2a2724, 0.9);
+    border-color: rgba(#c49a85, 0.16);
+  }
+
+  .thoughts-card__toggle {
+    color: #8b837c;
+    border-color: rgba(#9b928a, 0.15);
+    &:hover {
+      color: #c49a85;
+      border-color: rgba(#c49a85, 0.3);
+    }
+  }
+
+  .thoughts-card__img {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .thoughts-card__img-placeholder {
+    background: #2a2724;
+    color: #6a6360;
+  }
+
+  mark.thoughts-highlight {
+    background: linear-gradient(180deg, rgba(#2a2724, 0.3), rgba(#c49a85, 0.2));
+    color: #d4a88f;
+    box-shadow: inset 0 -0.55em 0 rgba(#c49a85, 0.15);
+    border-bottom-color: rgba(#c49a85, 0.34);
+  }
+
+  .thoughts-preview-inline {
+    background: rgba(#2a2724, 0.5);
+    border-color: rgba(#9b928a, 0.12);
+  }
+
+  .thoughts-preview-inline__label {
+    color: #8b837c;
+    border-bottom-color: rgba(#9b928a, 0.12);
+  }
+
+  .thoughts-preview-inline__title {
+    color: #ddd3c8;
+  }
+
+  .thoughts-preview-inline__text {
+    color: #8b837c;
+  }
+
+  .thoughts-preview-inline__item:hover .thoughts-preview-inline__title {
+    color: #c49a85;
+  }
+
+  .home .page__content h2 {
+    background: rgba(#1c1917, 0.96);
+  }
+
+  .page-nav__links a {
+    text-decoration-color: rgba(#c49a85, 0.35);
+    &:visited { text-decoration-color: rgba(#d4a88f, 0.35); }
+  }
+
+  ::selection {
+    background: rgba(#c49a85, 0.3);
+    color: #e8e2db;
+  }
+
+  .page__content img {
+    opacity: 0.92;
   }
 }
 

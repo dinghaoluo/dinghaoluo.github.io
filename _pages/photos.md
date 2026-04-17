@@ -5,7 +5,7 @@ permalink: /photos/
 title: "photos"
 ---
 
-*What the eye kept after the moment passed.*
+*Proof that I sometimes look up from the page.*
 
 <!--
   To add photos later:
