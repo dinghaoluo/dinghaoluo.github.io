@@ -14,4 +14,9 @@
 <!-- disable browser scroll restoration so Edge/Chrome don't scroll down on refresh -->
 <script>if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }</script>
 
+<!-- theme toggle: apply saved preference before first paint to prevent FOUC -->
+<script>
+(function(){var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+</script>
+
 <!-- end custom head snippets -->
