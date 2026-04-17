@@ -77,11 +77,11 @@ layout: default
 
   .lost-lede {
     margin: 1.4rem 0 0;
-    font-size: 1.18rem;
+    font-size: 1.14rem;
     line-height: 1.42;
-    max-width: 29rem;
+    max-width: none;
     color: #3f3934;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.012em;
   }
 
   .lost-record {
@@ -123,23 +123,40 @@ layout: default
   }
 
   .lost-actions {
-    margin-top: 0.4rem;
+    margin-top: 0.2rem;
   }
 
   .lost-actions__primary {
     display: inline-block;
+    position: relative;
     color: #3f3934;
-    font-size: 1.08rem;
-    letter-spacing: -0.01em;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 0.28em;
-    transition: color 0.18s ease, text-decoration-thickness 0.18s ease;
+    font-size: 1.05rem;
+    letter-spacing: -0.008em;
+    text-decoration: none;
+    padding-bottom: 3px;
+    transition: color 0.18s ease;
+  }
+
+  .lost-actions__primary::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.5px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.22s ease;
+    opacity: 0.82;
   }
 
   .lost-actions__primary:hover {
     color: #8d6959;
-    text-decoration-thickness: 3px;
+  }
+
+  .lost-actions__primary:hover::after {
+    transform: scaleX(1);
   }
 
   .lost-note {

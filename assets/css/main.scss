@@ -209,24 +209,42 @@ hr {
 
   a {
     color: $site-text;
-    font-size: 0.98em;
-    letter-spacing: -0.005em;
+    font-family: 'Mononoki', monospace;
+    font-size: 0.95em;
+    letter-spacing: -0.01em;
     white-space: nowrap;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.24em;
-    transition: color 0.18s ease, text-decoration-thickness 0.18s ease;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 3px;
+    transition: color 0.18s ease;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1.5px;
+      background: currentColor;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.2s ease;
+      opacity: 0.82;
+    }
 
     &:hover {
       color: $link-color;
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
+      text-decoration: none;
+      &::after { transform: scaleX(1); }
     }
 
     &.is-current {
       color: $link-color;
       font-style: italic;
-      text-decoration-thickness: 2px;
+      &::after {
+        transform: scaleX(1);
+        height: 2px;
+      }
     }
   }
 }
@@ -923,7 +941,7 @@ body {
 .thoughts-card__text {
   font-size: 1em;
   color: $site-text-body;
-  line-height: 1.7;
+  line-height: 1.55;
 }
 
 .thoughts-card__text p {
