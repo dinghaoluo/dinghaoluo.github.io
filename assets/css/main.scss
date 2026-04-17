@@ -252,6 +252,8 @@ hr {
 
   @include breakpoint($x-large) {
     max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 7.5rem !important;
   }
 }
@@ -1052,12 +1054,12 @@ body.home .page__author-footer {
 .thoughts-card__text {
   font-size: 1em;
   color: $site-text-body;
-  line-height: 1.48;
+  line-height: 1.55;
 }
 
 .thoughts-card__text p {
   margin: 0;
-  line-height: 1.48;
+  line-height: 1.55;
 }
 
 .thoughts-card__text p + p {
