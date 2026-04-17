@@ -67,7 +67,7 @@ font block — kept inline because GitHub Pages ignores separate _fonts.scss
 // -------------------------
 // colour system - centralise palette and semantic tokens here
 // -------------------------
-// Morandi palette for the site - keep future custom colours within this family.
+// Morandi palette — two accent families: blue (brand/UI) + sage (links).
 $morandi-clay:        #b78e79;
 $morandi-clay-deep:   #8d6959;
 $morandi-oat:         #faf7f2;
@@ -83,6 +83,12 @@ $morandi-grey-deep:   #8b837c;
 $morandi-rose:        #bb9891;
 $morandi-rose-soft:   #ebddda;
 $morandi-rose-deep:   #7d605b;
+$morandi-sage:        #a8b5a2;
+$morandi-sage-deep:   #6c8f7e;
+$morandi-teal:        #85a0a8;
+$morandi-haze:        #a5b5c5;
+$morandi-lavender:    #b4acbe;
+$morandi-olive:       #a4a98a;
 
 // semantic site tokens
 $site-bg:             #ffffff;
@@ -108,10 +114,10 @@ $site-text-nav:       #4a4a4a;
 $site-text-nav-soft:  #5a5a5a;
 $site-text-icon:      #7a7a7a;
 $site-text-body:      #3a3a3a;
-$site-link-visited:   #c6a596;
+$site-link-visited:   #8faa9c;
 
-$primary-color:       $morandi-clay;
-$link-color:          $morandi-clay-deep;
+$primary-color:       $morandi-teal;
+$link-color:          $morandi-sage-deep;
 $link-color-visited:  $site-link-visited;
 $background-color:    $site-bg;
 
@@ -203,7 +209,7 @@ hr {
   display: block;
   font-weight: normal;
   letter-spacing: -0.02em;
-  color: $morandi-clay-deep;
+  color: $morandi-teal;
   text-decoration: none;
   font-size: clamp(1.3rem, 2.6vw, 1.7rem);
   line-height: 1;
@@ -212,7 +218,7 @@ hr {
   strong { font-weight: 600; }
 
   &:hover {
-    color: $morandi-clay;
+    color: $morandi-haze;
     text-decoration: none;
   }
 }
@@ -250,7 +256,7 @@ hr {
     }
 
     &:hover {
-      color: $link-color;
+      color: $morandi-teal;
       &::after { transform: scaleX(1); }
     }
 
@@ -693,9 +699,9 @@ body:not(.home) {
     color: $link-color;
     text-decoration: underline;
     text-underline-offset: 2px;
-    text-decoration-color: rgba(181, 101, 29, 0.45);
+    text-decoration-color: rgba($morandi-sage-deep, 0.45);
     &:hover { text-decoration-color: $link-color; }
-    &:visited { color: $link-color-visited; text-decoration-color: rgba(207, 155, 108, 0.45); }
+    &:visited { color: $link-color-visited; text-decoration-color: rgba($morandi-sage, 0.45); }
   }
 }
 
@@ -960,7 +966,7 @@ body.home .page__author-footer {
 }
 
 .thoughts-card--pinned {
-  border-left: 2px solid rgba($morandi-clay-deep, 0.34);
+  border-left: 2px solid rgba($morandi-teal, 0.34);
   padding-left: 0.85em;
   background: linear-gradient(90deg, rgba($morandi-oat, 0.58), rgba(255,255,255,0));
 }
@@ -981,22 +987,22 @@ body.home .page__author-footer {
   font-size: 0.78em;
   letter-spacing: 0.08em;
   text-transform: lowercase;
-  color: $morandi-clay-deep;
+  color: $morandi-teal;
 }
 
 .thoughts-card--spotlight {
   background: linear-gradient(90deg, rgba($morandi-oat, 0.78), rgba(255,255,255,0));
   box-shadow: 0 4px 14px rgba(63, 57, 52, 0.06);
-  border-left: 2px solid rgba($morandi-clay-deep, 0.38);
+  border-left: 2px solid rgba($morandi-teal, 0.38);
 }
 
 .thoughts-card--spotlight .thoughts-card__title {
-  color: $link-color;
+  color: $morandi-teal;
 }
 
 .thoughts-card--spotlight .thoughts-card__toggle {
-  border-color: rgba($morandi-clay-deep, 0.28);
-  color: $morandi-clay-deep;
+  border-color: rgba($morandi-blue-deep, 0.28);
+  color: $morandi-blue-deep;
 }
 
 .thoughts-card__img-wrap {
@@ -1147,9 +1153,9 @@ body.home .page__author-footer {
   border-radius: 999px;
   font-size: 0.66em;
   line-height: 1;
-  color: $morandi-clay-deep;
+  color: $morandi-blue-deep;
   background: rgba($morandi-oat, 0.9);
-  border: 1px solid rgba($morandi-clay-deep, 0.16);
+  border: 1px solid rgba($morandi-blue-deep, 0.16);
   white-space: nowrap;
 }
 
@@ -1171,18 +1177,18 @@ body.home .page__author-footer {
 }
 
 .thoughts-card__eval--liked {
-  background: mix($morandi-blue-soft, $morandi-grey-soft, 78%);
-  color: mix($morandi-blue-deep, $morandi-muted, 72%);
+  background: mix($morandi-sage, $morandi-grey-soft, 38%);
+  color: $morandi-sage-deep;
 }
 
 .thoughts-card__eval--meh {
-  background: $morandi-grey-soft;
-  color: $morandi-grey-deep;
+  background: mix($morandi-olive, $morandi-grey-soft, 28%);
+  color: mix($morandi-olive, $morandi-muted, 60%);
 }
 
 .thoughts-card__eval--disliked {
-  background: mix($morandi-rose, $morandi-rose-soft, 34%);
-  color: $morandi-rose-deep;
+  background: mix($morandi-clay, $morandi-grey-soft, 34%);
+  color: $morandi-clay-deep;
 }
 
 .thoughts-card__eval--hated {
@@ -1315,9 +1321,9 @@ body.home .page__author-footer {
   font-family: 'Mononoki', monospace;
   font-size: 0.8em;
   line-height: 1;
-  color: $morandi-clay-deep;
-  background: rgba($morandi-clay, 0.1);
-  border: 1px solid rgba($morandi-clay-deep, 0.22);
+  color: $morandi-blue-deep;
+  background: rgba($morandi-blue, 0.1);
+  border: 1px solid rgba($morandi-blue-deep, 0.22);
   border-radius: 1000px;
   padding: 0.44em 0.9em 0.52em;
   transform: translateY(-0.08rem);
@@ -1325,7 +1331,7 @@ body.home .page__author-footer {
 
   &:hover:not(:disabled) {
     color: $site-text-nav-soft;
-    border-color: rgba($morandi-clay-deep, 0.22);
+    border-color: rgba($morandi-blue-deep, 0.22);
     background: rgba($morandi-oat, 0.8);
     transform: translateY(-0.16rem);
   }
@@ -1361,7 +1367,7 @@ body.home .page__author-footer {
 
   &:focus {
     opacity: 1;
-    border-color: rgba($morandi-clay-deep, 0.3);
+    border-color: rgba($morandi-blue-deep, 0.3);
     background: rgba($morandi-grey-soft, 0.28);
   }
 
@@ -1704,13 +1710,18 @@ body.home .page__author-footer {
 }
 
 mark.thoughts-highlight {
-  background: linear-gradient(180deg, rgba($morandi-oat, 0.3), rgba($morandi-clay, 0.28));
-  color: $morandi-clay-deep;
+  background: linear-gradient(180deg, rgba($morandi-oat, 0.3), rgba($morandi-sage, 0.22));
+  color: $morandi-sage-deep;
   padding: 0 0.12em;
   border-radius: 0.16em;
-  box-shadow: inset 0 -0.55em 0 rgba($morandi-clay, 0.22);
-  border-bottom: 1px solid rgba($morandi-clay-deep, 0.34);
+  box-shadow: inset 0 -0.55em 0 rgba($morandi-sage, 0.18);
+  border-bottom: 1px solid rgba($morandi-sage-deep, 0.34);
   font-weight: bold;
+}
+
+::selection {
+  background: rgba($morandi-lavender, 0.25);
+  color: inherit;
 }
 
 // -------------------------
@@ -1999,7 +2010,7 @@ mark.thoughts-highlight {
 
 // =========================================================================
 // DARK MODE — mixin shared by system preference and manual toggle
-// Warm Morandi palette inverted: deep brown-black background, stone text
+// Cool Morandi palette: sage links, haze-blue brand, blue controls
 // =========================================================================
 @mixin dark-colors {
   body {
@@ -2012,9 +2023,9 @@ mark.thoughts-highlight {
   }
 
   a {
-    color: #c49a85;
-    &:hover { color: #d4a88f; }
-    &:visited { color: #c6a596; }
+    color: #a8b5a2;
+    &:hover { color: #b8c5b2; }
+    &:visited { color: #8faa9c; }
   }
 
   hr {
@@ -2022,13 +2033,13 @@ mark.thoughts-highlight {
   }
 
   .page-header__home {
-    color: #c49a85;
-    &:hover { color: #d4a88f; }
+    color: #a5b5c5;
+    &:hover { color: #b8c8d6; }
   }
 
   .page-header__nav-stack a {
     color: #ddd3c8;
-    &:hover { color: #c49a85; }
+    &:hover { color: #a5b5c5; }
     &.is-current { color: #ddd3c8; }
   }
 
@@ -2065,7 +2076,7 @@ mark.thoughts-highlight {
 
   .author__urls a {
     color: #b8b0a6;
-    &:hover { color: #c49a85; }
+    &:hover { color: #a5b5c5; }
   }
 
   .author__urls i.fas,
@@ -2095,7 +2106,7 @@ mark.thoughts-highlight {
   }
 
   .sidebar-thought:hover .sidebar-thought__title {
-    color: #c49a85;
+    color: #a5b5c5;
   }
 
   .page__content {
@@ -2103,8 +2114,8 @@ mark.thoughts-highlight {
   }
 
   .page__content a {
-    color: #c49a85;
-    &:hover { color: #d4a88f; }
+    color: #a8b5a2;
+    &:hover { color: #b8c5b2; }
   }
 
   .page__lede {
@@ -2123,8 +2134,8 @@ mark.thoughts-highlight {
     color: #b8b0a6;
     i { color: #8b837c !important; }
     &:hover {
-      color: #c49a85;
-      i { color: #c49a85 !important; }
+      color: #a5b5c5;
+      i { color: #a5b5c5 !important; }
     }
   }
 
@@ -2134,7 +2145,7 @@ mark.thoughts-highlight {
 
   .drift-link {
     color: #6a6360;
-    &:hover { color: #c49a85; }
+    &:hover { color: #a5b5c5; }
   }
 
   .thoughts-card {
@@ -2165,17 +2176,17 @@ mark.thoughts-highlight {
   }
 
   .thoughts-card--pinned {
-    border-left-color: rgba(#c49a85, 0.34);
+    border-left-color: rgba(#85a0a8, 0.34);
     background: linear-gradient(90deg, rgba(#2a2724, 0.58), rgba(#1c1917, 0));
   }
 
   .thoughts-card--spotlight {
     background: linear-gradient(90deg, rgba(#2a2724, 0.78), rgba(#1c1917, 0));
-    border-left-color: rgba(#c49a85, 0.38);
+    border-left-color: rgba(#85a0a8, 0.38);
   }
 
   .thoughts-pin-lead__label {
-    color: #c49a85;
+    color: #85a0a8;
   }
 
   .thoughts-pin-lead p {
@@ -2204,15 +2215,15 @@ mark.thoughts-highlight {
   }
 
   .thoughts-luck-btn {
-    color: #c49a85;
-    border-color: rgba(#c49a85, 0.28);
-    background: rgba(#c49a85, 0.08);
-    &:hover { color: #d4a88f; border-color: rgba(#d4a88f, 0.4); background: rgba(#c49a85, 0.14); }
+    color: #90a4b0;
+    border-color: rgba(#90a4b0, 0.28);
+    background: rgba(#90a4b0, 0.08);
+    &:hover { color: #a5b5c5; border-color: rgba(#a5b5c5, 0.4); background: rgba(#90a4b0, 0.14); }
   }
 
   .thoughts-pagination__btn {
     color: #9b928a;
-    &:hover { color: #c49a85; }
+    &:hover { color: #90a4b0; }
     &:disabled { color: #5a5450; }
   }
 
@@ -2225,16 +2236,16 @@ mark.thoughts-highlight {
     color: #90a4b0;
   }
   .thoughts-card__eval--liked {
-    background: rgba(#627884, 0.15);
-    color: #8b9da8;
+    background: rgba(#6c8f7e, 0.2);
+    color: #a8b5a2;
   }
   .thoughts-card__eval--meh {
-    background: rgba(#8b837c, 0.15);
-    color: #8b837c;
+    background: rgba(#7a7f65, 0.2);
+    color: #a4a98a;
   }
   .thoughts-card__eval--disliked {
-    background: rgba(#7d605b, 0.2);
-    color: #bb9891;
+    background: rgba(#8d6959, 0.2);
+    color: #b78e79;
   }
   .thoughts-card__eval--hated {
     background: rgba(#7d605b, 0.3);
@@ -2242,17 +2253,17 @@ mark.thoughts-highlight {
   }
 
   .thoughts-card__pin {
-    color: #c49a85;
+    color: #90a4b0;
     background: rgba(#2a2724, 0.9);
-    border-color: rgba(#c49a85, 0.16);
+    border-color: rgba(#90a4b0, 0.16);
   }
 
   .thoughts-card__toggle {
     color: #8b837c;
     border-color: rgba(#9b928a, 0.15);
     &:hover {
-      color: #c49a85;
-      border-color: rgba(#c49a85, 0.3);
+      color: #90a4b0;
+      border-color: rgba(#90a4b0, 0.3);
     }
   }
 
@@ -2266,10 +2277,10 @@ mark.thoughts-highlight {
   }
 
   mark.thoughts-highlight {
-    background: linear-gradient(180deg, rgba(#2a2724, 0.3), rgba(#c49a85, 0.2));
-    color: #d4a88f;
-    box-shadow: inset 0 -0.55em 0 rgba(#c49a85, 0.15);
-    border-bottom-color: rgba(#c49a85, 0.34);
+    background: linear-gradient(180deg, rgba(#2a2724, 0.3), rgba(#a8b5a2, 0.18));
+    color: #b8c5b2;
+    box-shadow: inset 0 -0.55em 0 rgba(#a8b5a2, 0.12);
+    border-bottom-color: rgba(#a8b5a2, 0.34);
   }
 
   .thoughts-preview-inline {
@@ -2291,7 +2302,7 @@ mark.thoughts-highlight {
   }
 
   .thoughts-preview-inline__item:hover .thoughts-preview-inline__title {
-    color: #c49a85;
+    color: #a5b5c5;
   }
 
   .home .page__content h2 {
@@ -2299,12 +2310,12 @@ mark.thoughts-highlight {
   }
 
   .page-nav__links a {
-    text-decoration-color: rgba(#c49a85, 0.35);
-    &:visited { text-decoration-color: rgba(#d4a88f, 0.35); }
+    text-decoration-color: rgba(#a8b5a2, 0.35);
+    &:visited { text-decoration-color: rgba(#8faa9c, 0.35); }
   }
 
   ::selection {
-    background: rgba(#c49a85, 0.3);
+    background: rgba(#b4acbe, 0.30);
     color: #e8e2db;
   }
 
