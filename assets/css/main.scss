@@ -114,10 +114,10 @@ $site-text-nav:       #4a4a4a;
 $site-text-nav-soft:  #5a5a5a;
 $site-text-icon:      #7a7a7a;
 $site-text-body:      #3a3a3a;
-$site-link-visited:   #8faa9c;
+$site-link-visited:   #c6a596;
 
 $primary-color:       $morandi-clay;
-$link-color:          $morandi-sage-deep;
+$link-color:          $morandi-clay-deep;
 $link-color-visited:  $site-link-visited;
 $background-color:    $site-bg;
 
@@ -699,9 +699,9 @@ body:not(.home) {
     color: $link-color;
     text-decoration: underline;
     text-underline-offset: 2px;
-    text-decoration-color: rgba($morandi-sage-deep, 0.45);
+    text-decoration-color: rgba($morandi-clay-deep, 0.45);
     &:hover { text-decoration-color: $link-color; }
-    &:visited { color: $link-color-visited; text-decoration-color: rgba($morandi-sage, 0.45); }
+    &:visited { color: $link-color-visited; text-decoration-color: rgba($morandi-clay, 0.45); }
   }
 }
 
@@ -1153,9 +1153,9 @@ body.home .page__author-footer {
   border-radius: 999px;
   font-size: 0.66em;
   line-height: 1;
-  color: $morandi-blue-deep;
+  color: $morandi-clay-deep;
   background: rgba($morandi-oat, 0.9);
-  border: 1px solid rgba($morandi-blue-deep, 0.16);
+  border: 1px solid rgba($morandi-clay-deep, 0.16);
   white-space: nowrap;
 }
 
@@ -1710,12 +1710,12 @@ body.home .page__author-footer {
 }
 
 mark.thoughts-highlight {
-  background: linear-gradient(180deg, rgba($morandi-oat, 0.3), rgba($morandi-sage, 0.22));
-  color: $morandi-sage-deep;
+  background: linear-gradient(180deg, rgba($morandi-oat, 0.3), rgba($morandi-clay, 0.28));
+  color: $morandi-clay-deep;
   padding: 0 0.12em;
   border-radius: 0.16em;
-  box-shadow: inset 0 -0.55em 0 rgba($morandi-sage, 0.18);
-  border-bottom: 1px solid rgba($morandi-sage-deep, 0.34);
+  box-shadow: inset 0 -0.55em 0 rgba($morandi-clay, 0.22);
+  border-bottom: 1px solid rgba($morandi-clay-deep, 0.34);
   font-weight: bold;
 }
 
@@ -2023,9 +2023,9 @@ mark.thoughts-highlight {
   }
 
   a {
-    color: #a8b5a2;
-    &:hover { color: #b8c5b2; }
-    &:visited { color: #8faa9c; }
+    color: #c49a85;
+    &:hover { color: #d4a88f; }
+    &:visited { color: #c6a596; }
   }
 
   hr {
@@ -2114,8 +2114,8 @@ mark.thoughts-highlight {
   }
 
   .page__content a {
-    color: #a8b5a2;
-    &:hover { color: #b8c5b2; }
+    color: #c49a85;
+    &:hover { color: #d4a88f; }
   }
 
   .page__lede {
@@ -2253,9 +2253,9 @@ mark.thoughts-highlight {
   }
 
   .thoughts-card__pin {
-    color: #90a4b0;
+    color: #c49a85;
     background: rgba(#2a2724, 0.9);
-    border-color: rgba(#90a4b0, 0.16);
+    border-color: rgba(#c49a85, 0.16);
   }
 
   .thoughts-card__toggle {
@@ -2277,10 +2277,10 @@ mark.thoughts-highlight {
   }
 
   mark.thoughts-highlight {
-    background: linear-gradient(180deg, rgba(#2a2724, 0.3), rgba(#a8b5a2, 0.18));
-    color: #b8c5b2;
-    box-shadow: inset 0 -0.55em 0 rgba(#a8b5a2, 0.12);
-    border-bottom-color: rgba(#a8b5a2, 0.34);
+    background: linear-gradient(180deg, rgba(#2a2724, 0.3), rgba(#c49a85, 0.2));
+    color: #d4a88f;
+    box-shadow: inset 0 -0.55em 0 rgba(#c49a85, 0.15);
+    border-bottom-color: rgba(#c49a85, 0.34);
   }
 
   .thoughts-preview-inline {
@@ -2310,8 +2310,8 @@ mark.thoughts-highlight {
   }
 
   .page-nav__links a {
-    text-decoration-color: rgba(#a8b5a2, 0.35);
-    &:visited { text-decoration-color: rgba(#8faa9c, 0.35); }
+    text-decoration-color: rgba(#c49a85, 0.35);
+    &:visited { text-decoration-color: rgba(#d4a88f, 0.35); }
   }
 
   ::selection {
