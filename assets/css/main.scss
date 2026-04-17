@@ -251,7 +251,7 @@ hr {
   padding-bottom: 6rem !important;
 
   @include breakpoint($x-large) {
-    max-width: 900px;
+    max-width: 1040px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 7.5rem !important;
@@ -513,7 +513,7 @@ body:not(.home) {
 @include breakpoint($x-large) {
   .page__inner-wrap {
     float: none;
-    max-width: 720px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
   }
