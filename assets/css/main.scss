@@ -448,7 +448,7 @@ body:not(.home) {
     .page {
       float: none;
       width: calc(100% - 80px);
-      max-width: 900px;
+      max-width: 1000px;
       padding-right: 0;
       margin-left: auto;
       margin-right: auto;
@@ -460,7 +460,7 @@ body:not(.home) {
   @include breakpoint($x-large) {
     .page {
       width: calc(100% - 80px);
-      max-width: 960px;
+      max-width: 1060px;
       padding-right: 0;
     }
   }
@@ -1051,7 +1051,7 @@ body.home .page__author-footer {
 .thoughts-card__text {
   font-size: 1em;
   color: $site-text-body;
-  line-height: 1.18;
+  line-height: 1.08;
 }
 
 .thoughts-card__text p {
@@ -1261,9 +1261,9 @@ body.home .page__author-footer {
   font-family: 'Mononoki', monospace;
   font-size: 0.8em;
   line-height: 1;
-  color: $site-text-soft;
-  background: rgba($morandi-grey-soft, 0.26);
-  border: 1px solid rgba($morandi-muted, 0.14);
+  color: $morandi-clay-deep;
+  background: rgba($morandi-clay, 0.1);
+  border: 1px solid rgba($morandi-clay-deep, 0.22);
   border-radius: 1000px;
   padding: 0.44em 0.9em 0.52em;
   transform: translateY(-0.08rem);
@@ -1296,18 +1296,19 @@ body.home .page__author-footer {
   width: 100%;
   font-family: inherit;
   font-size: 0.92em;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid rgba($morandi-muted, 0.34);
+  background: rgba($morandi-grey-soft, 0.18);
+  border: 1px solid rgba($morandi-muted, 0.18);
+  border-radius: 1000px;
   outline: none;
-  padding: 0.34em 1.6em 0.34em 0;
+  padding: 0.38em 1.6em 0.38em 0.85em;
   color: $site-text-nav;
   opacity: 0.74;
-  transition: opacity 0.15s ease, border-color 0.15s ease;
+  transition: opacity 0.15s ease, border-color 0.15s ease, background 0.15s ease;
 
   &:focus {
     opacity: 1;
-    border-bottom-color: rgba($morandi-clay-deep, 0.4);
+    border-color: rgba($morandi-clay-deep, 0.3);
+    background: rgba($morandi-grey-soft, 0.28);
   }
 
   &::placeholder {
@@ -1318,8 +1319,8 @@ body.home .page__author-footer {
 
 .thoughts-search-enter {
   position: absolute;
-  right: 0.1em;
-  bottom: 0.32em;
+  right: 0.65em;
+  bottom: 0.38em;
   font-family: 'Mononoki', monospace;
   font-size: 1em;
   line-height: 1;
@@ -1423,13 +1424,14 @@ body.home .page__author-footer {
     align-items: center;
     flex-wrap: nowrap;
     gap: 0.7rem 0.8rem;
+    width: 100%;
   }
 
   .page__author-footer .author__avatar {
     flex: 0 0 auto;
     align-self: center;
     margin: 0;
-    margin-right: 0.2rem;
+    margin-right: 0.65rem;
   }
 
   .page__author-footer .author__content {
@@ -1445,6 +1447,7 @@ body.home .page__author-footer {
     align-items: flex-end;
     gap: 0.18em;
     margin: 0;
+    margin-left: auto;
     text-align: right;
   }
 
@@ -1722,6 +1725,7 @@ mark.thoughts-highlight {
     flex-wrap: nowrap;
     align-items: center;
     gap: 0.7rem 0.8rem;
+    width: 100%;
   }
 
   .thoughts-controls-row {
@@ -1896,6 +1900,8 @@ mark.thoughts-highlight {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.85) 40%, transparent 95%);
+  mask-image: linear-gradient(to right, rgba(0,0,0,0.85) 40%, transparent 95%);
 }
 
 // =========================================================================
@@ -1935,6 +1941,14 @@ mark.thoughts-highlight {
 
   h1, h2, h3, h4, h5, h6 {
     color: #e8e2db;
+  }
+
+  .home .page__content h2 {
+    color: #e8e2db;
+  }
+
+  .currently-intro em.currently-substance {
+    color: #b8b0a6;
   }
 
   .page-bigtitle {
@@ -2092,14 +2106,15 @@ mark.thoughts-highlight {
   .thoughts-search-input {
     background: rgba(#3a3530, 0.5);
     color: #ddd3c8;
-    border-color: rgba(#9b928a, 0.15);
+    border-color: rgba(#9b928a, 0.18);
     &::placeholder { color: #8b837c; }
   }
 
   .thoughts-luck-btn {
-    color: #9b928a;
-    border-color: rgba(#9b928a, 0.2);
-    &:hover { color: #c49a85; border-color: rgba(#c49a85, 0.3); }
+    color: #c49a85;
+    border-color: rgba(#c49a85, 0.28);
+    background: rgba(#c49a85, 0.08);
+    &:hover { color: #d4a88f; border-color: rgba(#d4a88f, 0.4); background: rgba(#c49a85, 0.14); }
   }
 
   .thoughts-pagination__btn {

@@ -23,7 +23,7 @@ title: 'thoughts'
       type="search"
       id="thoughts-search"
       class="thoughts-search-input"
-      placeholder="search titles, authors, topics..."
+      placeholder="search for..."
       autocomplete="off"
       spellcheck="false"
     />
@@ -44,7 +44,6 @@ title: 'thoughts'
 {% if pinned_thoughts.size > 0 %}
 <div class="thoughts-pin-lead" id="thoughts-pin-lead">
   <span class="thoughts-pin-lead__label">pinned</span>
-  <p>A few entries I wanted to mark, even if the deck gets reshuffled.</p>
 </div>
 {% for thought in pinned_thoughts %}
 {% include thought-card.html take=thought %}

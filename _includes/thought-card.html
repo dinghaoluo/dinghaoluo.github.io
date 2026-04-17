@@ -1,4 +1,5 @@
 <div
+  id="{{ include.take.title | slugify }}"
   class="thoughts-card{% if include.take.pin %} thoughts-card--pinned{% endif %}"
   data-type="{{ include.take.type | downcase }}"
   data-title="{{ include.take.title | escape }}"

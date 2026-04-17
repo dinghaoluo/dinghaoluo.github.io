@@ -259,9 +259,9 @@
   {% if thoughts %}
   <div class="author__sidebar-thoughts">
     <h4 class="author__sidebar-thoughts-label">my thoughts on&hellip;</h4>
-    {% for thought in thoughts limit:5 %}
-    <a href="/thoughts/" class="sidebar-thought">
-      <span class="sidebar-thought__title">{{ thought.title }}{% if thought.posted and thought.posted != '' %}<span class="sidebar-thought__date">{{ thought.posted | date: '%-d %b' }}</span>{% endif %}</span>
+    {% for thought in thoughts limit:15 %}
+    <a href="/thoughts/#{{ thought.title | slugify }}" class="sidebar-thought" style="display:none">
+      <span class="sidebar-thought__title">{{ thought.title }}</span>
       <span class="sidebar-thought__preview">{{ thought.text | strip_html | strip_newlines | strip }}</span>
     </a>
     {% endfor %}
