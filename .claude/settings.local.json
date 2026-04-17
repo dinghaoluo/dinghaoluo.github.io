@@ -4,7 +4,27 @@
       "Bash(gh pr create --title 'portfolio redesign: structure, styling, and content scaffold' --body ':*)",
       "Bash(winget install:*)",
       "Bash(where gh:*)",
-      "Bash(rtk git *)"
+      "Bash(rtk git *)",
+      "Bash(python3 *)",
+      "Bash(start *)",
+      "WebFetch(domain:fonts.google.com)",
+      "WebSearch",
+      "WebFetch(domain:pampatype.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(rtk gh *)",
+      "Bash(gh api *)",
+      "WebFetch(domain:www.fontsquirrel.com)",
+      "WebFetch(domain:www.1001fonts.com)",
+      "Bash(curl -L -o \"/tmp/reforma.zip\" \"https://www.1001fonts.com/download/reforma.zip\")",
+      "Bash(cd /tmp)",
+      "Bash(unzip -o reforma.zip -d reforma_extracted)",
+      "Bash(curl -L -o \"/tmp/reforma2018-gris.ttf\" \"https://st.1001fonts.net/download/font/reforma.2018-gris.ttf\")",
+      "Bash(curl -L -o reforma2018-gris-italica.ttf \"https://st.1001fonts.net/download/font/reforma.2018-gris-italica.ttf\")",
+      "Bash(curl -L -o reforma2018-negra.ttf \"https://st.1001fonts.net/download/font/reforma.2018-negra.ttf\")",
+      "Bash(curl -L -o reforma2018-negra-italica.ttf \"https://st.1001fonts.net/download/font/reforma.2018-negra-italica.ttf\")",
+      "Bash(curl -L -o reforma2018-blanca.ttf \"https://st.1001fonts.net/download/font/reforma.2018-blanca.ttf\")",
+      "Bash(curl -L -o reforma2018-blanca-italica.ttf \"https://st.1001fonts.net/download/font/reforma.2018-blanca-italica.ttf\")",
+      "WebFetch(domain:colordrop.io)"
     ]
   }
 }

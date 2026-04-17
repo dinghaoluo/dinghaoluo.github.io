@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en" data-mode="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Morandi Colour Trial — Expanded Palette</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Faculty+Glyphic&family=Noto+Serif+SC:wght@600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+@font-face { font-family: 'Mononoki'; src: url('../assets/fonts/mononoki/mononoki-Regular.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Mononoki'; src: url('../assets/fonts/mononoki/mononoki-Bold.ttf') format('truetype'); font-weight: bold; font-style: normal; }
+@font-face { font-family: 'Mononoki'; src: url('../assets/fonts/mononoki/mononoki-Italic.ttf') format('truetype'); font-weight: normal; font-style: italic; }
+@font-face { font-family: 'Reforma 2018'; src: url('../assets/fonts/reforma/reforma2018-gris.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Reforma 2018'; src: url('../assets/fonts/reforma/reforma2018-gris-italica.ttf') format('truetype'); font-weight: normal; font-style: italic; }
+@font-face { font-family: 'Reforma 2018'; src: url('../assets/fonts/reforma/reforma2018-negra.ttf') format('truetype'); font-weight: bold; font-style: normal; }
+
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #1c1917;
+}
+
+[data-mode="light"] {
+  --bg: #ffffff; --bg-soft: #faf7f2; --surface: #f0ebe5; --border: #e0dbd5;
+  --text: #3f3934; --text-body: #3a3a3a; --text-muted: #7f766f;
+  --text-soft: #9b928a; --text-subtle: #6a6a6a; --heading: #3f3934;
+  --separator: rgba(127,118,111,0.18);
+}
+[data-mode="dark"] {
+  --bg: #1c1917; --bg-soft: #222; --surface: #2a2724; --border: rgba(155,146,138,0.16);
+  --text: #ddd3c8; --text-body: #c8c0b6; --text-muted: #9b928a;
+  --text-soft: #8b837c; --text-subtle: #6a6360; --heading: #e8e2db;
+  --separator: rgba(155,146,138,0.15);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Mononoki', monospace; }
+html { font-size: 15.5px; }
+body { background: var(--bg); color: var(--text); line-height: 1.75; padding: 2rem 2.5rem 4rem; max-width: 1100px; margin: 0 auto; transition: background 0.3s, color 0.3s; }
+::selection { background: rgba(183,142,121,0.25); color: var(--heading); }
+
+h1 { font-size: 1.35rem; font-weight: bold; letter-spacing: -0.02em; margin-bottom: 0.1em; color: var(--heading); }
+.sub { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 2.2rem; line-height: 1.5; }
+
+.mode-toggle { position: fixed; top: 1rem; right: 1.5rem; display: flex; gap: 0.4em; z-index: 99; }
+.mode-toggle button { background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 0.25em 0.7em; border-radius: 3px; cursor: pointer; font-family: 'Mononoki', monospace; font-size: 0.75rem; transition: all 0.2s; }
+.mode-toggle button.active { background: var(--text); color: var(--bg); }
+
+.section { margin-bottom: 3rem; padding-bottom: 2.5rem; border-bottom: 1px solid var(--separator); }
+.section:last-child { border-bottom: none; }
+.section > h2 { font-family: 'JetBrains Mono', monospace; font-size: 1rem; font-weight: normal; text-transform: lowercase; letter-spacing: 0.02em; margin-bottom: 0.2em; color: var(--heading); }
+.desc { font-size: 0.78rem; color: var(--text-muted); font-style: italic; margin-bottom: 1.3rem; }
+
+/* --- swatches --- */
+.family-label { font-size: 0.72rem; font-weight: bold; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.5em; margin-top: 1.2em; }
+.family-label:first-child { margin-top: 0; }
+.swatch-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.8rem; }
+.sw { width: 80px; border-radius: 4px; overflow: hidden; border: 1px solid var(--border); cursor: pointer; transition: transform 0.15s; }
+.sw:hover { transform: scale(1.06); }
+.sw__c { height: 42px; }
+.sw__l { padding: 0.2em 0.35em; font-size: 0.55rem; color: var(--text-muted); background: var(--bg); line-height: 1.3; }
+.sw__h { font-size: 0.52rem; color: var(--text-soft); }
+.sw--current { border-color: var(--heading); border-width: 2px; }
+
+/* --- comparison panels --- */
+.compare-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1rem; }
+.panel { padding: 1.1em 1.2em; border: 1px solid var(--border); border-radius: 4px; }
+.panel__label { font-size: 0.62rem; font-weight: bold; letter-spacing: 0.06em; text-transform: uppercase; display: inline-block; padding: 0.15em 0.55em; border-radius: 2px; margin-bottom: 0.6em; }
+.panel__label--dark { background: var(--text); color: var(--bg); }
+.panel__label--accent { color: #fff; }
+.panel__label--outline { border: 1px solid var(--border); color: var(--text-muted); background: transparent; }
+
+/* --- demo elements --- */
+.demo-link { text-decoration: underline; text-underline-offset: 2px; transition: color 0.18s; }
+.demo-link:hover { opacity: 0.8; }
+
+.demo-nav { display: flex; flex-direction: column; gap: 0.12em; }
+.demo-nav a { font-family: 'JetBrains Mono', monospace; font-size: 0.95rem; letter-spacing: -0.025em; text-decoration: none; line-height: 1.18; padding: 0.1em 0; }
+
+.demo-card { padding: 0.7em 0; border-bottom: 1px solid var(--separator); }
+.demo-card__meta { font-size: 0.85em; line-height: 1.45; margin-bottom: 0.15em; }
+.demo-card__title { font-family: 'Faculty Glyphic', serif; font-weight: normal; font-size: 0.88em; }
+.demo-card__text { font-family: 'Reforma 2018', serif; font-size: 0.95em; line-height: 1.58; letter-spacing: 0.008em; margin-top: 0.4em; }
+
+.eval-row { display: flex; gap: 0.4em; flex-wrap: wrap; }
+.eval { font-size: 0.68rem; padding: 0.2em 0.55em; border-radius: 3px; font-weight: bold; }
+
+.btn-demo { display: inline-block; font-family: 'Mononoki', monospace; font-size: 0.72rem; padding: 0.3em 0.7em; border-radius: 4px; border: 1px solid; cursor: pointer; transition: all 0.15s; }
+
+.filter-row { display: flex; gap: 0.4em; flex-wrap: wrap; align-items: center; }
+.pill { font-family: 'Mononoki', monospace; font-size: 0.72rem; padding: 0.25em 0.55em; border: none; border-radius: 3px; cursor: pointer; transition: all 0.15s; }
+
+.input-demo { font-family: 'Mononoki', monospace; font-size: 0.75rem; padding: 0.3em 0.6em; border-radius: 4px; outline: none; }
+
+/* grid helpers */
+.g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.g3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; }
+.g4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+
+@media (max-width: 700px) { .g2, .g3, .g4, .compare-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+
+<body>
+<div class="mode-toggle">
+  <button id="btn-light" class="active" onclick="setMode('light')">light</button>
+  <button id="btn-dark" onclick="setMode('dark')">dark</button>
+</div>
+
+<h1>morandi colour trial — expanded</h1>
+<p class="sub">
+  A drastically expanded Morandi palette for the site. Colours marked with a thick border are currently in use.<br>
+  Toggle light/dark at top-right. Each section shows how candidate colours perform in real UI roles.
+</p>
+
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- 1. FULL EXPANDED PALETTE                       -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="section">
+  <h2>1. expanded morandi palette</h2>
+  <p class="desc">All candidate colours grouped by hue family. Thick-bordered swatches = currently in main.scss.</p>
+
+  <div class="family-label">warm whites &amp; creams</div>
+  <div class="swatch-row">
+    <div class="sw sw--current"><div class="sw__c" style="background:#faf7f2"></div><div class="sw__l">oat<br><span class="sw__h">#faf7f2</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#f5f0eb"></div><div class="sw__l">chalk<br><span class="sw__h">#f5f0eb</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#ede8e0"></div><div class="sw__l">linen<br><span class="sw__h">#ede8e0</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#e8e0d5"></div><div class="sw__l">ivory<br><span class="sw__h">#e8e0d5</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#f0ead9"></div><div class="sw__l">parchment<br><span class="sw__h">#f0ead9</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#f2e7b1"></div><div class="sw__l">warm hay<br><span class="sw__h">#f2e7b1</span></div></div>
+  </div>
+
+  <div class="family-label">clay, taupe &amp; warm brown</div>
+  <div class="swatch-row">
+    <div class="sw sw--current"><div class="sw__c" style="background:#b78e79"></div><div class="sw__l">clay<br><span class="sw__h">#b78e79</span></div></div>
+    <div class="sw sw--current"><div class="sw__c" style="background:#8d6959"></div><div class="sw__l">clay-deep<br><span class="sw__h">#8d6959</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#c2ab96"></div><div class="sw__l">camel<br><span class="sw__h">#c2ab96</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#bdb0a4"></div><div class="sw__l">taupe<br><span class="sw__h">#bdb0a4</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#c8bbad"></div><div class="sw__l">sand<br><span class="sw__h">#c8bbad</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#b8aa9c"></div><div class="sw__l">warm stone<br><span class="sw__h">#b8aa9c</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#afa098"></div><div class="sw__l">mushroom<br><span class="sw__h">#afa098</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#a08878"></div><div class="sw__l">walnut<br><span class="sw__h">#a08878</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#7a6355"></div><div class="sw__l">umber<br><span class="sw__h">#7a6355</span></div></div>
+  </div>
+
+  <div class="family-label">dusty rose &amp; muted pink</div>
+  <div class="swatch-row">
+    <div class="sw sw--current"><div class="sw__c" style="background:#bb9891"></div><div class="sw__l">rose<br><span class="sw__h">#bb9891</span></div></div>
+    <div class="sw sw--current"><div class="sw__c" style="background:#ebddda"></div><div class="sw__l">rose-soft<br><span class="sw__h">#ebddda</span></div></div>
+    <div class="sw sw--current"><div class="sw__c" style="background:#7d605b"></div><div class="sw__l">rose-deep<br><span class="sw__h">#7d605b</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#f0d5d0"></div><div class="sw__l">blush<br><span class="sw__h">#f0d5d0</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#d4b5b0"></div><div class="sw__l">dusty blush<br><span class="sw__h">#d4b5b0</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#c4a9a7"></div><div class="sw__l">antique rose<br><span class="sw__h">#c4a9a7</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#b89e9c"></div><div class="sw__l">mauve<br><span class="sw__h">#b89e9c</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#b8a09e"></div><div class="sw__l">smoky pink<br><span class="sw__h">#b8a09e</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#a0807a"></div><div class="sw__l">terracotta<br><span class="sw__h">#a0807a</span></div></div>
+  </div>
+
+  <div class="family-label">sage green &amp; muted green</div>
+  <div class="swatch-row">
+    <div class="sw"><div class="sw__c" style="background:#6c8f7e"></div><div class="sw__l">sage deep<br><span class="sw__h">#6c8f7e</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#a8b5a2"></div><div class="sw__l">sage<br><span class="sw__h">#a8b5a2</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#b2beac"></div><div class="sw__l">muted sage<br><span class="sw__h">#b2beac</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#bfcbb8"></div><div class="sw__l">eucalyptus<br><span class="sw__h">#bfcbb8</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#98a992"></div><div class="sw__l">dusty fern<br><span class="sw__h">#98a992</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#909e89"></div><div class="sw__l">smoky moss<br><span class="sw__h">#909e89</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#a4a98a"></div><div class="sw__l">ash olive<br><span class="sw__h">#a4a98a</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#788c78"></div><div class="sw__l">deep fern<br><span class="sw__h">#788c78</span></div></div>
+  </div>
+
+  <div class="family-label">dusty blue &amp; muted teal</div>
+  <div class="swatch-row">
+    <div class="sw sw--current"><div class="sw__c" style="background:#90a4b0"></div><div class="sw__l">blue<br><span class="sw__h">#90a4b0</span></div></div>
+    <div class="sw sw--current"><div class="sw__c" style="background:#dde5e8"></div><div class="sw__l">blue-soft<br><span class="sw__h">#dde5e8</span></div></div>
+    <div class="sw sw--current"><div class="sw__c" style="background:#627884"></div><div class="sw__l">blue-deep<br><span class="sw__h">#627884</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#b1c8d4"></div><div class="sw__l">sky dust<br><span class="sw__h">#b1c8d4</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#8fa3b1"></div><div class="sw__l">morandi blue<br><span class="sw__h">#8fa3b1</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#85a0a8"></div><div class="sw__l">muted teal<br><span class="sw__h">#85a0a8</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#a5b5c5"></div><div class="sw__l">haze blue<br><span class="sw__h">#a5b5c5</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#8e9eb0"></div><div class="sw__l">dusty slate<br><span class="sw__h">#8e9eb0</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#96a8b8"></div><div class="sw__l">ash steel<br><span class="sw__h">#96a8b8</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#506878"></div><div class="sw__l">deep slate<br><span class="sw__h">#506878</span></div></div>
+  </div>
+
+  <div class="family-label">dusty lavender &amp; muted purple</div>
+  <div class="swatch-row">
+    <div class="sw"><div class="sw__c" style="background:#b4acbe"></div><div class="sw__l">lavender<br><span class="sw__h">#b4acbe</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#bbaec8"></div><div class="sw__l">smoky lilac<br><span class="sw__h">#bbaec8</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#aaa0b8"></div><div class="sw__l">faded violet<br><span class="sw__h">#aaa0b8</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#c0b5cc"></div><div class="sw__l">wisteria<br><span class="sw__h">#c0b5cc</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#a89aae"></div><div class="sw__l">dusty plum<br><span class="sw__h">#a89aae</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#8a7e96"></div><div class="sw__l">deep plum<br><span class="sw__h">#8a7e96</span></div></div>
+  </div>
+
+  <div class="family-label">neutral greys (current)</div>
+  <div class="swatch-row">
+    <div class="sw sw--current"><div class="sw__c" style="background:#3f3934"></div><div class="sw__l">ink<br><span class="sw__h">#3f3934</span></div></div>
+    <div class="sw sw--current"><div class="sw__c" style="background:#7f766f"></div><div class="sw__l">muted<br><span class="sw__h">#7f766f</span></div></div>
+    <div class="sw sw--current"><div class="sw__c" style="background:#9b928a"></div><div class="sw__l">muted-soft<br><span class="sw__h">#9b928a</span></div></div>
+    <div class="sw sw--current"><div class="sw__c" style="background:#ddd3c8"></div><div class="sw__l">stone<br><span class="sw__h">#ddd3c8</span></div></div>
+    <div class="sw sw--current"><div class="sw__c" style="background:#e8e2db"></div><div class="sw__l">grey-soft<br><span class="sw__h">#e8e2db</span></div></div>
+    <div class="sw sw--current"><div class="sw__c" style="background:#8b837c"></div><div class="sw__l">grey-deep<br><span class="sw__h">#8b837c</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#b8b0a8"></div><div class="sw__l">warm grey<br><span class="sw__h">#b8b0a8</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#a8adb5"></div><div class="sw__l">cool ash<br><span class="sw__h">#a8adb5</span></div></div>
+  </div>
+
+  <div class="family-label">dark mode backgrounds</div>
+  <div class="swatch-row">
+    <div class="sw sw--current"><div class="sw__c" style="background:#1c1917; border:1px solid #333"></div><div class="sw__l">current bg<br><span class="sw__h">#1c1917</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#1a1a1e; border:1px solid #333"></div><div class="sw__l">cool night<br><span class="sw__h">#1a1a1e</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#201e1b; border:1px solid #333"></div><div class="sw__l">warm dark<br><span class="sw__h">#201e1b</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#1e1d1a; border:1px solid #333"></div><div class="sw__l">deep olive<br><span class="sw__h">#1e1d1a</span></div></div>
+    <div class="sw"><div class="sw__c" style="background:#191c1e; border:1px solid #333"></div><div class="sw__l">slate night<br><span class="sw__h">#191c1e</span></div></div>
+    <div class="sw sw--current"><div class="sw__c" style="background:#2a2724; border:1px solid #333"></div><div class="sw__l">surface<br><span class="sw__h">#2a2724</span></div></div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- 2. LINK COLOUR ALTERNATIVES                    -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="section">
+  <h2>2. link colour alternatives</h2>
+  <p class="desc">Testing different Morandi hues as the primary link colour. Current = clay-deep (#8d6959).</p>
+
+  <div class="compare-grid">
+    <div class="panel">
+      <span class="panel__label panel__label--accent" style="background:#8d6959">current · clay-deep</span>
+      <div style="line-height:1.76;">
+        Published by <a class="demo-link" href="#" style="color:#8d6959; text-decoration-color:rgba(141,105,89,0.45)">Houlang Press</a>.
+        Interview on <a class="demo-link" href="#" style="color:#8d6959; text-decoration-color:rgba(141,105,89,0.45)">The Paper</a> and
+        <a class="demo-link" href="#" style="color:#8d6959; text-decoration-color:rgba(141,105,89,0.45)">WeChat</a>.
+      </div>
+    </div>
+    <div class="panel">
+      <span class="panel__label panel__label--accent" style="background:#7d605b">rose-deep</span>
+      <div style="line-height:1.76;">
+        Published by <a class="demo-link" href="#" style="color:#7d605b; text-decoration-color:rgba(125,96,91,0.45)">Houlang Press</a>.
+        Interview on <a class="demo-link" href="#" style="color:#7d605b; text-decoration-color:rgba(125,96,91,0.45)">The Paper</a> and
+        <a class="demo-link" href="#" style="color:#7d605b; text-decoration-color:rgba(125,96,91,0.45)">WeChat</a>.
+      </div>
+    </div>
+    <div class="panel">
+      <span class="panel__label panel__label--accent" style="background:#627884">blue-deep</span>
+      <div style="line-height:1.76;">
+        Published by <a class="demo-link" href="#" style="color:#627884; text-decoration-color:rgba(98,120,132,0.45)">Houlang Press</a>.
+        Interview on <a class="demo-link" href="#" style="color:#627884; text-decoration-color:rgba(98,120,132,0.45)">The Paper</a> and
+        <a class="demo-link" href="#" style="color:#627884; text-decoration-color:rgba(98,120,132,0.45)">WeChat</a>.
+      </div>
+    </div>
+    <div class="panel">
+      <span class="panel__label panel__label--accent" style="background:#6c8f7e">sage-deep</span>
+      <div style="line-height:1.76;">
+        Published by <a class="demo-link" href="#" style="color:#6c8f7e; text-decoration-color:rgba(108,143,126,0.45)">Houlang Press</a>.
+        Interview on <a class="demo-link" href="#" style="color:#6c8f7e; text-decoration-color:rgba(108,143,126,0.45)">The Paper</a> and
+        <a class="demo-link" href="#" style="color:#6c8f7e; text-decoration-color:rgba(108,143,126,0.45)">WeChat</a>.
+      </div>
+    </div>
+    <div class="panel">
+      <span class="panel__label panel__label--accent" style="background:#8a7e96">deep plum</span>
+      <div style="line-height:1.76;">
+        Published by <a class="demo-link" href="#" style="color:#8a7e96; text-decoration-color:rgba(138,126,150,0.45)">Houlang Press</a>.
+        Interview on <a class="demo-link" href="#" style="color:#8a7e96; text-decoration-color:rgba(138,126,150,0.45)">The Paper</a> and
+        <a class="demo-link" href="#" style="color:#8a7e96; text-decoration-color:rgba(138,126,150,0.45)">WeChat</a>.
+      </div>
+    </div>
+    <div class="panel">
+      <span class="panel__label panel__label--accent" style="background:#a08878">walnut</span>
+      <div style="line-height:1.76;">
+        Published by <a class="demo-link" href="#" style="color:#a08878; text-decoration-color:rgba(160,136,120,0.45)">Houlang Press</a>.
+        Interview on <a class="demo-link" href="#" style="color:#a08878; text-decoration-color:rgba(160,136,120,0.45)">The Paper</a> and
+        <a class="demo-link" href="#" style="color:#a08878; text-decoration-color:rgba(160,136,120,0.45)">WeChat</a>.
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-size:0.85em; margin-top:1.5em; margin-bottom:0.8em; color:var(--text-muted);">Dark mode link colours</h3>
+  <div class="compare-grid">
+    <div class="panel" style="background:#1c1917; color:#c8c0b6; border-color:#333;">
+      <span class="panel__label panel__label--accent" style="background:#c49a85">current dark</span>
+      <div style="line-height:1.76;">
+        Published by <a class="demo-link" href="#" style="color:#c49a85; text-decoration-color:rgba(196,154,133,0.35)">Houlang Press</a>.
+        Interview on <a class="demo-link" href="#" style="color:#c49a85; text-decoration-color:rgba(196,154,133,0.35)">The Paper</a>.
+      </div>
+    </div>
+    <div class="panel" style="background:#1c1917; color:#c8c0b6; border-color:#333;">
+      <span class="panel__label panel__label--accent" style="background:#90a4b0">blue</span>
+      <div style="line-height:1.76;">
+        Published by <a class="demo-link" href="#" style="color:#90a4b0; text-decoration-color:rgba(144,164,176,0.35)">Houlang Press</a>.
+        Interview on <a class="demo-link" href="#" style="color:#90a4b0; text-decoration-color:rgba(144,164,176,0.35)">The Paper</a>.
+      </div>
+    </div>
+    <div class="panel" style="background:#1c1917; color:#c8c0b6; border-color:#333;">
+      <span class="panel__label panel__label--accent" style="background:#a8b5a2">sage</span>
+      <div style="line-height:1.76;">
+        Published by <a class="demo-link" href="#" style="color:#a8b5a2; text-decoration-color:rgba(168,181,162,0.35)">Houlang Press</a>.
+        Interview on <a class="demo-link" href="#" style="color:#a8b5a2; text-decoration-color:rgba(168,181,162,0.35)">The Paper</a>.
+      </div>
+    </div>
+    <div class="panel" style="background:#1c1917; color:#c8c0b6; border-color:#333;">
+      <span class="panel__label panel__label--accent" style="background:#b4acbe">lavender</span>
+      <div style="line-height:1.76;">
+        Published by <a class="demo-link" href="#" style="color:#b4acbe; text-decoration-color:rgba(180,172,190,0.35)">Houlang Press</a>.
+        Interview on <a class="demo-link" href="#" style="color:#b4acbe; text-decoration-color:rgba(180,172,190,0.35)">The Paper</a>.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- 3. EVALUATION BADGE ALTERNATIVES               -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="section">
+  <h2>3. evaluation badge palettes</h2>
+  <p class="desc">Different Morandi hue families mapped to the loved → hated scale.</p>
+
+  <div style="margin-bottom:1em;">
+    <div style="font-size:0.72rem; color:var(--text-muted); margin-bottom:0.4em; font-weight:bold; letter-spacing:0.05em; text-transform:uppercase;">Current (blue → grey → rose)</div>
+    <div class="eval-row">
+      <span class="eval" style="background:rgba(98,120,132,0.12); color:#627884;">loved</span>
+      <span class="eval" style="background:rgba(98,120,132,0.08); color:#6a8a98;">liked</span>
+      <span class="eval" style="background:rgba(139,131,124,0.1); color:#8b837c;">meh</span>
+      <span class="eval" style="background:rgba(125,96,91,0.1); color:#7d605b;">disliked</span>
+      <span class="eval" style="background:rgba(125,96,91,0.15); color:#a06058;">hated</span>
+    </div>
+  </div>
+
+  <div style="margin-bottom:1em;">
+    <div style="font-size:0.72rem; color:var(--text-muted); margin-bottom:0.4em; font-weight:bold; letter-spacing:0.05em; text-transform:uppercase;">Alt A: sage → grey → terracotta</div>
+    <div class="eval-row">
+      <span class="eval" style="background:rgba(108,143,126,0.15); color:#6c8f7e;">loved</span>
+      <span class="eval" style="background:rgba(168,181,162,0.15); color:#788c78;">liked</span>
+      <span class="eval" style="background:rgba(139,131,124,0.1); color:#8b837c;">meh</span>
+      <span class="eval" style="background:rgba(160,128,122,0.12); color:#a0807a;">disliked</span>
+      <span class="eval" style="background:rgba(122,99,85,0.15); color:#7a6355;">hated</span>
+    </div>
+  </div>
+
+  <div style="margin-bottom:1em;">
+    <div style="font-size:0.72rem; color:var(--text-muted); margin-bottom:0.4em; font-weight:bold; letter-spacing:0.05em; text-transform:uppercase;">Alt B: lavender → grey → rose</div>
+    <div class="eval-row">
+      <span class="eval" style="background:rgba(180,172,190,0.15); color:#8a7e96;">loved</span>
+      <span class="eval" style="background:rgba(192,181,204,0.12); color:#a89aae;">liked</span>
+      <span class="eval" style="background:rgba(139,131,124,0.1); color:#8b837c;">meh</span>
+      <span class="eval" style="background:rgba(187,152,145,0.12); color:#7d605b;">disliked</span>
+      <span class="eval" style="background:rgba(125,96,91,0.15); color:#a06058;">hated</span>
+    </div>
+  </div>
+
+  <div>
+    <div style="font-size:0.72rem; color:var(--text-muted); margin-bottom:0.4em; font-weight:bold; letter-spacing:0.05em; text-transform:uppercase;">Alt C: blue → sage → warm → rose (full spectrum)</div>
+    <div class="eval-row">
+      <span class="eval" style="background:rgba(98,120,132,0.12); color:#627884;">loved</span>
+      <span class="eval" style="background:rgba(108,143,126,0.12); color:#6c8f7e;">liked</span>
+      <span class="eval" style="background:rgba(164,169,138,0.12); color:#a4a98a;">meh</span>
+      <span class="eval" style="background:rgba(183,142,121,0.12); color:#8d6959;">disliked</span>
+      <span class="eval" style="background:rgba(125,96,91,0.15); color:#7d605b;">hated</span>
+    </div>
+  </div>
+
+  <h3 style="font-size:0.85em; margin-top:1.5em; margin-bottom:0.8em; color:var(--text-muted);">Dark mode eval badges</h3>
+  <div style="background:#1c1917; padding:1em; border-radius:4px; border:1px solid #333;">
+    <div style="font-size:0.72rem; color:#8b837c; margin-bottom:0.4em;">Current dark</div>
+    <div class="eval-row" style="margin-bottom:0.8em;">
+      <span class="eval" style="background:rgba(98,120,132,0.25); color:#90a4b0;">loved</span>
+      <span class="eval" style="background:rgba(98,120,132,0.15); color:#8b9da8;">liked</span>
+      <span class="eval" style="background:rgba(139,131,124,0.15); color:#8b837c;">meh</span>
+      <span class="eval" style="background:rgba(125,96,91,0.2); color:#bb9891;">disliked</span>
+      <span class="eval" style="background:rgba(125,96,91,0.3); color:#c4908a;">hated</span>
+    </div>
+    <div style="font-size:0.72rem; color:#8b837c; margin-bottom:0.4em;">Alt C dark (full spectrum)</div>
+    <div class="eval-row">
+      <span class="eval" style="background:rgba(98,120,132,0.25); color:#90a4b0;">loved</span>
+      <span class="eval" style="background:rgba(108,143,126,0.22); color:#a8b5a2;">liked</span>
+      <span class="eval" style="background:rgba(164,169,138,0.18); color:#b0b59a;">meh</span>
+      <span class="eval" style="background:rgba(196,154,133,0.18); color:#c49a85;">disliked</span>
+      <span class="eval" style="background:rgba(125,96,91,0.3); color:#c4908a;">hated</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- 4. THOUGHTS CARD — ACCENT ALTERNATIVES         -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="section">
+  <h2>4. thoughts card — accent colour</h2>
+  <p class="desc">The pinned/spotlight left border and card hover. Which accent hue?</p>
+
+  <div class="compare-grid">
+    <div class="panel">
+      <span class="panel__label panel__label--accent" style="background:#8d6959">current · clay-deep</span>
+      <div class="demo-card" style="border-left:2px solid rgba(141,105,89,0.38); padding-left:0.8em;">
+        <div class="demo-card__meta"><span style="color:var(--text-muted)">book</span> <span style="color:var(--text-soft);">&middot;</span> <span class="demo-card__title" style="color:var(--heading);">Entangled Life</span></div>
+        <div class="demo-card__text" style="color:var(--text-body);">There is something profoundly unsettling about fungi...</div>
+      </div>
+    </div>
+    <div class="panel">
+      <span class="panel__label panel__label--accent" style="background:#627884">blue-deep</span>
+      <div class="demo-card" style="border-left:2px solid rgba(98,120,132,0.38); padding-left:0.8em;">
+        <div class="demo-card__meta"><span style="color:var(--text-muted)">book</span> <span style="color:var(--text-soft);">&middot;</span> <span class="demo-card__title" style="color:var(--heading);">Entangled Life</span></div>
+        <div class="demo-card__text" style="color:var(--text-body);">There is something profoundly unsettling about fungi...</div>
+      </div>
+    </div>
+    <div class="panel">
+      <span class="panel__label panel__label--accent" style="background:#6c8f7e">sage-deep</span>
+      <div class="demo-card" style="border-left:2px solid rgba(108,143,126,0.38); padding-left:0.8em;">
+        <div class="demo-card__meta"><span style="color:var(--text-muted)">book</span> <span style="color:var(--text-soft);">&middot;</span> <span class="demo-card__title" style="color:var(--heading);">Entangled Life</span></div>
+        <div class="demo-card__text" style="color:var(--text-body);">There is something profoundly unsettling about fungi...</div>
+      </div>
+    </div>
+    <div class="panel">
+      <span class="panel__label panel__label--accent" style="background:#8a7e96">plum</span>
+      <div class="demo-card" style="border-left:2px solid rgba(138,126,150,0.38); padding-left:0.8em;">
+        <div class="demo-card__meta"><span style="color:var(--text-muted)">book</span> <span style="color:var(--text-soft);">&middot;</span> <span class="demo-card__title" style="color:var(--heading);">Entangled Life</span></div>
+        <div class="demo-card__text" style="color:var(--text-body);">There is something profoundly unsettling about fungi...</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- 5. NAVIGATION — ACCENT ON HOVER                -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="section">
+  <h2>5. navigation hover accent</h2>
+  <p class="desc">Which colour should nav links turn on hover?</p>
+
+  <div class="g3">
+    <div class="panel">
+      <span class="panel__label panel__label--accent" style="background:#8d6959">current · clay-deep</span>
+      <div class="demo-nav">
+        <a href="#" style="color:var(--text);">thoughts</a>
+        <a href="#" style="color:#8d6959;">writing (hover)</a>
+        <a href="#" style="color:var(--text);">science</a>
+      </div>
+    </div>
+    <div class="panel">
+      <span class="panel__label panel__label--accent" style="background:#627884">blue-deep</span>
+      <div class="demo-nav">
+        <a href="#" style="color:var(--text);">thoughts</a>
+        <a href="#" style="color:#627884;">writing (hover)</a>
+        <a href="#" style="color:var(--text);">science</a>
+      </div>
+    </div>
+    <div class="panel">
+      <span class="panel__label panel__label--accent" style="background:#6c8f7e">sage-deep</span>
+      <div class="demo-nav">
+        <a href="#" style="color:var(--text);">thoughts</a>
+        <a href="#" style="color:#6c8f7e;">writing (hover)</a>
+        <a href="#" style="color:var(--text);">science</a>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-size:0.85em; margin-top:1.5em; margin-bottom:0.8em; color:var(--text-muted);">Dark mode nav hover</h3>
+  <div class="g3">
+    <div class="panel" style="background:#1c1917; border-color:#333;">
+      <span class="panel__label panel__label--accent" style="background:#c49a85">current dark</span>
+      <div class="demo-nav">
+        <a href="#" style="color:#ddd3c8;">thoughts</a>
+        <a href="#" style="color:#c49a85;">writing (hover)</a>
+        <a href="#" style="color:#ddd3c8;">science</a>
+      </div>
+    </div>
+    <div class="panel" style="background:#1c1917; border-color:#333;">
+      <span class="panel__label panel__label--accent" style="background:#90a4b0">blue</span>
+      <div class="demo-nav">
+        <a href="#" style="color:#ddd3c8;">thoughts</a>
+        <a href="#" style="color:#90a4b0;">writing (hover)</a>
+        <a href="#" style="color:#ddd3c8;">science</a>
+      </div>
+    </div>
+    <div class="panel" style="background:#1c1917; border-color:#333;">
+      <span class="panel__label panel__label--accent" style="background:#a8b5a2">sage</span>
+      <div class="demo-nav">
+        <a href="#" style="color:#ddd3c8;">thoughts</a>
+        <a href="#" style="color:#a8b5a2;">writing (hover)</a>
+        <a href="#" style="color:#ddd3c8;">science</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- 6. BUTTON & FILTER STRIP ALTERNATIVES          -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="section">
+  <h2>6. interactive controls</h2>
+  <p class="desc">"I'm feeling lucky" button and filter pill active state — different accent colours.</p>
+
+  <div class="compare-grid">
+    <div class="panel">
+      <span class="panel__label panel__label--accent" style="background:#8d6959">current · clay</span>
+      <div class="filter-row" style="margin-bottom:0.6em;">
+        <span class="pill" style="background:var(--surface); color:var(--heading); box-shadow:0 1px 3px rgba(0,0,0,0.08);">all</span>
+        <span class="pill" style="color:var(--text-soft);">book</span>
+        <span class="pill" style="color:var(--text-soft);">film</span>
+      </div>
+      <button class="btn-demo" style="color:#8d6959; border-color:rgba(141,105,89,0.28); background:rgba(141,105,89,0.08);">I'm feeling lucky</button>
+    </div>
+    <div class="panel">
+      <span class="panel__label panel__label--accent" style="background:#627884">blue-deep</span>
+      <div class="filter-row" style="margin-bottom:0.6em;">
+        <span class="pill" style="background:var(--surface); color:var(--heading); box-shadow:0 1px 3px rgba(0,0,0,0.08);">all</span>
+        <span class="pill" style="color:var(--text-soft);">book</span>
+        <span class="pill" style="color:var(--text-soft);">film</span>
+      </div>
+      <button class="btn-demo" style="color:#627884; border-color:rgba(98,120,132,0.28); background:rgba(98,120,132,0.08);">I'm feeling lucky</button>
+    </div>
+    <div class="panel">
+      <span class="panel__label panel__label--accent" style="background:#6c8f7e">sage-deep</span>
+      <div class="filter-row" style="margin-bottom:0.6em;">
+        <span class="pill" style="background:var(--surface); color:var(--heading); box-shadow:0 1px 3px rgba(0,0,0,0.08);">all</span>
+        <span class="pill" style="color:var(--text-soft);">book</span>
+        <span class="pill" style="color:var(--text-soft);">film</span>
+      </div>
+      <button class="btn-demo" style="color:#6c8f7e; border-color:rgba(108,143,126,0.28); background:rgba(108,143,126,0.08);">I'm feeling lucky</button>
+    </div>
+    <div class="panel">
+      <span class="panel__label panel__label--accent" style="background:#8a7e96">plum</span>
+      <div class="filter-row" style="margin-bottom:0.6em;">
+        <span class="pill" style="background:var(--surface); color:var(--heading); box-shadow:0 1px 3px rgba(0,0,0,0.08);">all</span>
+        <span class="pill" style="color:var(--text-soft);">book</span>
+        <span class="pill" style="color:var(--text-soft);">film</span>
+      </div>
+      <button class="btn-demo" style="color:#8a7e96; border-color:rgba(138,126,150,0.28); background:rgba(138,126,150,0.08);">I'm feeling lucky</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- 7. FULL PAGE SIMULATION — LIGHT                -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="section">
+  <h2>7. full page simulation — light</h2>
+  <p class="desc">A realistic slice of the site with current colours vs alternatives.</p>
+
+  <div class="g2">
+    <!-- Current -->
+    <div class="panel" style="background:#ffffff; color:#3f3934;">
+      <span class="panel__label panel__label--accent" style="background:#8d6959">current palette</span>
+
+      <div style="margin-bottom:0.8em;">
+        <a href="#" style="color:#8d6959; text-decoration:none; font-size:1rem; letter-spacing:-0.02em;"><strong>hao things</strong> :)</a>
+      </div>
+      <div class="demo-nav" style="margin-bottom:1em;">
+        <a href="#" style="color:#3f3934; font-size:0.9rem;">thoughts</a>
+        <a href="#" style="color:#3f3934; font-size:0.9rem;">writing</a>
+        <a href="#" style="color:#3f3934; font-size:0.9rem;">science</a>
+      </div>
+
+      <div style="font-family:'JetBrains Mono',monospace; font-size:0.95em; font-weight:normal; text-transform:lowercase; letter-spacing:0.02em; color:#3f3934; padding-bottom:0.3em; border-bottom:1px solid rgba(127,118,111,0.12); margin-bottom:0.7em;">translation</div>
+      <div style="line-height:1.76; font-size:0.92em;">
+        <strong>《菌络万象》</strong> — <em>Entangled Life</em> by Merlin Sheldrake<br>
+        Chinese translation · <a class="demo-link" href="#" style="color:#8d6959; text-decoration-color:rgba(141,105,89,0.45)">Houlang Press</a> · October 2024
+      </div>
+    </div>
+
+    <!-- Alt: sage links + blue accents -->
+    <div class="panel" style="background:#ffffff; color:#3f3934;">
+      <span class="panel__label panel__label--accent" style="background:#6c8f7e">alt: sage links</span>
+
+      <div style="margin-bottom:0.8em;">
+        <a href="#" style="color:#6c8f7e; text-decoration:none; font-size:1rem; letter-spacing:-0.02em;"><strong>hao things</strong> :)</a>
+      </div>
+      <div class="demo-nav" style="margin-bottom:1em;">
+        <a href="#" style="color:#3f3934; font-size:0.9rem;">thoughts</a>
+        <a href="#" style="color:#3f3934; font-size:0.9rem;">writing</a>
+        <a href="#" style="color:#3f3934; font-size:0.9rem;">science</a>
+      </div>
+
+      <div style="font-family:'JetBrains Mono',monospace; font-size:0.95em; font-weight:normal; text-transform:lowercase; letter-spacing:0.02em; color:#3f3934; padding-bottom:0.3em; border-bottom:1px solid rgba(127,118,111,0.12); margin-bottom:0.7em;">translation</div>
+      <div style="line-height:1.76; font-size:0.92em;">
+        <strong>《菌络万象》</strong> — <em>Entangled Life</em> by Merlin Sheldrake<br>
+        Chinese translation · <a class="demo-link" href="#" style="color:#6c8f7e; text-decoration-color:rgba(108,143,126,0.45)">Houlang Press</a> · October 2024
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- 8. FULL PAGE SIMULATION — DARK                 -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="section">
+  <h2>8. full page simulation — dark</h2>
+  <p class="desc">Same realistic slice in dark mode.</p>
+
+  <div class="g2">
+    <!-- Current dark -->
+    <div class="panel" style="background:#1c1917; color:#ddd3c8; border-color:#333;">
+      <span class="panel__label panel__label--accent" style="background:#c49a85">current dark</span>
+
+      <div style="margin-bottom:0.8em;">
+        <a href="#" style="color:#c49a85; text-decoration:none; font-size:1rem; letter-spacing:-0.02em;"><strong>hao things</strong> :)</a>
+      </div>
+      <div class="demo-nav" style="margin-bottom:1em;">
+        <a href="#" style="color:#ddd3c8; font-size:0.9rem;">thoughts</a>
+        <a href="#" style="color:#ddd3c8; font-size:0.9rem;">writing</a>
+        <a href="#" style="color:#ddd3c8; font-size:0.9rem;">science</a>
+      </div>
+
+      <div style="font-family:'JetBrains Mono',monospace; font-size:0.95em; color:#e8e2db; padding-bottom:0.3em; border-bottom:1px solid rgba(155,146,138,0.12); margin-bottom:0.7em;">translation</div>
+      <div style="line-height:1.76; font-size:0.92em; color:#c8c0b6;">
+        <strong>《菌络万象》</strong> — <em>Entangled Life</em> by Merlin Sheldrake<br>
+        Chinese translation · <a class="demo-link" href="#" style="color:#c49a85; text-decoration-color:rgba(196,154,133,0.35)">Houlang Press</a> · October 2024
+      </div>
+    </div>
+
+    <!-- Alt: sage links dark -->
+    <div class="panel" style="background:#1c1917; color:#ddd3c8; border-color:#333;">
+      <span class="panel__label panel__label--accent" style="background:#a8b5a2">alt: sage dark</span>
+
+      <div style="margin-bottom:0.8em;">
+        <a href="#" style="color:#a8b5a2; text-decoration:none; font-size:1rem; letter-spacing:-0.02em;"><strong>hao things</strong> :)</a>
+      </div>
+      <div class="demo-nav" style="margin-bottom:1em;">
+        <a href="#" style="color:#ddd3c8; font-size:0.9rem;">thoughts</a>
+        <a href="#" style="color:#ddd3c8; font-size:0.9rem;">writing</a>
+        <a href="#" style="color:#ddd3c8; font-size:0.9rem;">science</a>
+      </div>
+
+      <div style="font-family:'JetBrains Mono',monospace; font-size:0.95em; color:#e8e2db; padding-bottom:0.3em; border-bottom:1px solid rgba(155,146,138,0.12); margin-bottom:0.7em;">translation</div>
+      <div style="line-height:1.76; font-size:0.92em; color:#c8c0b6;">
+        <strong>《菌络万象》</strong> — <em>Entangled Life</em> by Merlin Sheldrake<br>
+        Chinese translation · <a class="demo-link" href="#" style="color:#a8b5a2; text-decoration-color:rgba(168,181,162,0.35)">Houlang Press</a> · October 2024
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- 9. SELECTION HIGHLIGHT ALTERNATIVES            -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="section">
+  <h2>9. text selection highlight</h2>
+  <p class="desc">Select text in each box to compare highlight colours.</p>
+
+  <div class="g3">
+    <div class="panel" style="padding:0.8em;">
+      <span class="panel__label panel__label--outline">current · clay</span>
+      <div style="font-size:0.88em; line-height:1.6;">
+        <style>.sel-clay::selection { background: rgba(183,142,121,0.25); }</style>
+        <span class="sel-clay">The fragment drifts in from the missing path. There is a quiet room where the catalogue should be.</span>
+      </div>
+    </div>
+    <div class="panel" style="padding:0.8em;">
+      <span class="panel__label panel__label--outline">blue</span>
+      <div style="font-size:0.88em; line-height:1.6;">
+        <style>.sel-blue::selection { background: rgba(144,164,176,0.28); }</style>
+        <span class="sel-blue">The fragment drifts in from the missing path. There is a quiet room where the catalogue should be.</span>
+      </div>
+    </div>
+    <div class="panel" style="padding:0.8em;">
+      <span class="panel__label panel__label--outline">sage</span>
+      <div style="font-size:0.88em; line-height:1.6;">
+        <style>.sel-sage::selection { background: rgba(168,181,162,0.28); }</style>
+        <span class="sel-sage">The fragment drifts in from the missing path. There is a quiet room where the catalogue should be.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════ -->
+<!-- 10. BACKGROUND TEMPERATURE                     -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="section">
+  <h2>10. background temperature</h2>
+  <p class="desc">Light and dark mode background alternatives — warmer, cooler, or neutral.</p>
+
+  <div class="g4">
+    <div style="padding:1em; background:#ffffff; color:#3f3934; border:1px solid #e0dbd5; border-radius:4px;">
+      <div style="font-size:0.65rem; color:#9b928a; margin-bottom:0.3em;">current #ffffff</div>
+      <div style="font-size:0.88em; line-height:1.6;">Body text on pure white background.</div>
+    </div>
+    <div style="padding:1em; background:#faf7f2; color:#3f3934; border:1px solid #e0dbd5; border-radius:4px;">
+      <div style="font-size:0.65rem; color:#9b928a; margin-bottom:0.3em;">oat #faf7f2</div>
+      <div style="font-size:0.88em; line-height:1.6;">Body text on warm oat background.</div>
+    </div>
+    <div style="padding:1em; background:#f5f0eb; color:#3f3934; border:1px solid #e0dbd5; border-radius:4px;">
+      <div style="font-size:0.65rem; color:#9b928a; margin-bottom:0.3em;">chalk #f5f0eb</div>
+      <div style="font-size:0.88em; line-height:1.6;">Body text on warm chalk background.</div>
+    </div>
+    <div style="padding:1em; background:#f8f8f6; color:#3f3934; border:1px solid #e0dbd5; border-radius:4px;">
+      <div style="font-size:0.65rem; color:#9b928a; margin-bottom:0.3em;">cool white #f8f8f6</div>
+      <div style="font-size:0.88em; line-height:1.6;">Body text on cool-neutral background.</div>
+    </div>
+  </div>
+
+  <div class="g4" style="margin-top:0.8em;">
+    <div style="padding:1em; background:#1c1917; color:#ddd3c8; border:1px solid #333; border-radius:4px;">
+      <div style="font-size:0.65rem; color:#8b837c; margin-bottom:0.3em;">current #1c1917</div>
+      <div style="font-size:0.88em; line-height:1.6;">Body text on warm dark.</div>
+    </div>
+    <div style="padding:1em; background:#1a1a1e; color:#ddd3c8; border:1px solid #333; border-radius:4px;">
+      <div style="font-size:0.65rem; color:#8b837c; margin-bottom:0.3em;">cool #1a1a1e</div>
+      <div style="font-size:0.88em; line-height:1.6;">Body text on cool dark.</div>
+    </div>
+    <div style="padding:1em; background:#201e1b; color:#ddd3c8; border:1px solid #333; border-radius:4px;">
+      <div style="font-size:0.65rem; color:#8b837c; margin-bottom:0.3em;">warmer #201e1b</div>
+      <div style="font-size:0.88em; line-height:1.6;">Body text on warmer dark.</div>
+    </div>
+    <div style="padding:1em; background:#191c1e; color:#ddd3c8; border:1px solid #333; border-radius:4px;">
+      <div style="font-size:0.65rem; color:#8b837c; margin-bottom:0.3em;">slate #191c1e</div>
+      <div style="font-size:0.88em; line-height:1.6;">Body text on cool slate dark.</div>
+    </div>
+  </div>
+</div>
+
+
+<footer style="margin-top:2rem; padding-top:1rem; border-top:1px solid var(--separator); font-size:0.72rem; color:var(--text-soft); line-height:1.6;">
+  Palette reference: <a class="demo-link" href="https://colordrop.io/palette/60090" style="color:var(--text-muted);">colordrop.io/palette/60090</a><br>
+  Morandi colours: low saturation (10–25%), medium-high lightness (60–80%), dusty/chalky quality, warm undertone even in cool hues.
+</footer>
+
+<script>
+function setMode(mode) {
+  document.documentElement.setAttribute('data-mode', mode);
+  document.getElementById('btn-light').classList.toggle('active', mode === 'light');
+  document.getElementById('btn-dark').classList.toggle('active', mode === 'dark');
+}
+</script>
+</body>
+</html>
