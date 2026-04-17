@@ -33,10 +33,10 @@ lede: "A running catalogue of films, books, and other encounters, with order int
   <button class="thoughts-luck-btn" id="thoughts-luck-btn" type="button">try your luck</button>
 </div>
 
-<nav class="thoughts-pagination" id="thoughts-pagination" aria-label="Pagination" hidden>
-  <button class="thoughts-pagination__btn" id="thoughts-pagination-prev" type="button" aria-label="Previous page">&lsaquo;</button>
-  <span class="thoughts-pagination__status"><span id="thoughts-page-current">1</span> / <span id="thoughts-page-total">1</span></span>
-  <button class="thoughts-pagination__btn" id="thoughts-pagination-next" type="button" aria-label="Next page">&rsaquo;</button>
+<nav class="thoughts-pagination" aria-label="Pagination" hidden>
+  <button class="thoughts-pagination__btn thoughts-pagination__prev" type="button" aria-label="Previous page">&lsaquo;</button>
+  <span class="thoughts-pagination__status"><span class="thoughts-pagination__current">1</span> / <span class="thoughts-pagination__total">1</span></span>
+  <button class="thoughts-pagination__btn thoughts-pagination__next" type="button" aria-label="Next page">&rsaquo;</button>
 </nav>
 
 {% assign pinned_thoughts = site.data.thoughts | where: 'pin', true | sort: 'posted' | reverse %}
@@ -55,4 +55,10 @@ lede: "A running catalogue of films, books, and other encounters, with order int
 {% include thought-card.html take=thought %}
 {% endfor %}
 </div>
+
+<nav class="thoughts-pagination thoughts-pagination--bottom" aria-label="Pagination" hidden>
+  <button class="thoughts-pagination__btn thoughts-pagination__prev" type="button" aria-label="Previous page">&lsaquo;</button>
+  <span class="thoughts-pagination__status"><span class="thoughts-pagination__current">1</span> / <span class="thoughts-pagination__total">1</span></span>
+  <button class="thoughts-pagination__btn thoughts-pagination__next" type="button" aria-label="Next page">&rsaquo;</button>
+</nav>
 

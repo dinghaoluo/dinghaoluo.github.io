@@ -65,7 +65,7 @@
 (function () {
   'use strict';
 
-  var PAGE_SIZE = 20;
+  var PAGE_SIZE = 10;
 
   function initFilter() {
     var strip = document.getElementById('thoughts-filter-strip');
@@ -78,11 +78,11 @@
     var cards = Array.prototype.slice.call(document.querySelectorAll('.thoughts-card'));
     var searchInput = document.getElementById('thoughts-search');
     var luckBtn = document.getElementById('thoughts-luck-btn');
-    var paginationWrap = document.getElementById('thoughts-pagination');
-    var pageCurrentEl = document.getElementById('thoughts-page-current');
-    var pageTotalEl = document.getElementById('thoughts-page-total');
-    var prevBtn = document.getElementById('thoughts-pagination-prev');
-    var nextBtn = document.getElementById('thoughts-pagination-next');
+    var paginationWraps = document.querySelectorAll('.thoughts-pagination');
+    var currentEls = document.querySelectorAll('.thoughts-pagination__current');
+    var totalEls = document.querySelectorAll('.thoughts-pagination__total');
+    var prevBtns = document.querySelectorAll('.thoughts-pagination__prev');
+    var nextBtns = document.querySelectorAll('.thoughts-pagination__next');
     var searchTimer = null;
     var isShuffled = false;
     var currentPage = 1;
@@ -238,11 +238,11 @@
 
     function updatePagination() {
       var total = totalPages();
-      if (pageCurrentEl) pageCurrentEl.textContent = currentPage;
-      if (pageTotalEl) pageTotalEl.textContent = total;
-      if (prevBtn) prevBtn.disabled = currentPage <= 1;
-      if (nextBtn) nextBtn.disabled = currentPage >= total;
-      if (paginationWrap) paginationWrap.hidden = total <= 1;
+      currentEls.forEach(function (el) { el.textContent = currentPage; });
+      totalEls.forEach(function (el) { el.textContent = total; });
+      prevBtns.forEach(function (btn) { btn.disabled = currentPage <= 1; });
+      nextBtns.forEach(function (btn) { btn.disabled = currentPage >= total; });
+      paginationWraps.forEach(function (wrap) { wrap.hidden = total <= 1; });
     }
 
     function computeMatched(filterValue, query) {
@@ -346,25 +346,25 @@
       updateLuckState();
     }
 
-    if (prevBtn) {
-      prevBtn.addEventListener('click', function () {
+    prevBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
         if (currentPage > 1) {
           currentPage--;
           renderPage();
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }
       });
-    }
+    });
 
-    if (nextBtn) {
-      nextBtn.addEventListener('click', function () {
+    nextBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
         if (currentPage < totalPages()) {
           currentPage++;
           renderPage();
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }
       });
-    }
+    });
 
     window.addEventListener('resize', function () {
       var activeBtn = strip.querySelector('.thoughts-filter-btn.active');
