@@ -7,24 +7,24 @@ title: "music"
 
 <style>
   .music-player-wrap {
-    max-width: 700px;
+    max-width: 480px;
     margin: 2.4rem 0 1.6rem;
     display: flex;
     flex-direction: column;
-    gap: 0.55rem;
+    gap: 0.35rem;
   }
 
   .music-track {
-    border-radius: 0.36rem;
+    border-radius: 0.28rem;
     overflow: hidden;
-    border: 1px solid rgba(127, 118, 111, 0.12);
-    box-shadow: 0 2px 8px rgba(63, 57, 52, 0.04);
+    border: 1px solid rgba(127, 118, 111, 0.10);
+    box-shadow: 0 1px 4px rgba(63, 57, 52, 0.03);
   }
 
   .music-track iframe {
     display: block;
     width: 100%;
-    height: 120px;
+    height: 42px;
     border: none;
   }
 
@@ -71,7 +71,7 @@ title: "music"
 
 <script>
   (function () {
-    var base = 'https://bandcamp.com/EmbeddedPlayer/size=large/artwork=small/transparent=false/';
+    var base = 'https://bandcamp.com/EmbeddedPlayer/size=small/artwork=small/transparent=false/';
     var lightSuffix = 'bgcol=faf7f2/linkcol=8d6959/';
     var darkSuffix  = 'bgcol=1c1917/linkcol=c49a85/';
     var frames = document.querySelectorAll('.bc-track');

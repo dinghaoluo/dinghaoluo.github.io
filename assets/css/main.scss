@@ -124,10 +124,10 @@ $background-color:    $site-bg;
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-// CJK fallback stack — Noto Serif SC at weight 600 (loaded without 400,
+// CJK fallback stack — LXGW WenKai Mono TC at weight 700 only (no 400 loaded,
 // so the browser's font-matching algorithm maps normal-weight text to the
-// 600 face automatically, giving CJK strokes that match Reforma/Faculty density).
-$cjk-stack: 'Noto Serif SC', 'Noto Sans Mono CJK SC', 'Source Han Mono SC', 'Microsoft YaHei';
+// 700 face automatically, giving CJK strokes enough density next to Reforma/Faculty).
+$cjk-stack: 'LXGW WenKai Mono TC', 'Noto Sans Mono CJK SC', 'Source Han Mono SC', 'Microsoft YaHei';
 
 // -------------------------
 // base
