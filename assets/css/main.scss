@@ -38,6 +38,32 @@ font block — kept inline because GitHub Pages ignores separate _fonts.scss
   font-style: italic;
 }
 
+// Reforma 2018 — self-hosted serif for literary body text (thoughts, writing)
+@font-face {
+  font-family: 'Reforma 2018';
+  src: url('/assets/fonts/reforma/reforma2018-gris.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Reforma 2018';
+  src: url('/assets/fonts/reforma/reforma2018-gris-italica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Reforma 2018';
+  src: url('/assets/fonts/reforma/reforma2018-negra.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Reforma 2018';
+  src: url('/assets/fonts/reforma/reforma2018-negra-italica.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
 // -------------------------
 // colour system - centralise palette and semantic tokens here
 // -------------------------
@@ -92,6 +118,11 @@ $background-color:    $site-bg;
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
+// CJK fallback stack — Noto Serif SC at weight 600 (loaded without 400,
+// so the browser's font-matching algorithm maps normal-weight text to the
+// 600 face automatically, giving CJK strokes that match Reforma/Faculty density).
+$cjk-stack: 'Noto Serif SC', 'Noto Sans Mono CJK SC', 'Source Han Mono SC', 'Microsoft YaHei';
+
 // -------------------------
 // base
 // -------------------------
@@ -108,7 +139,7 @@ html {
 // Force Mononoki everywhere — wildcard is safe here because
 // we explicitly set weight/style on each element below
 * {
-  font-family: 'Mononoki', 'Noto Sans Mono CJK SC', 'Source Han Mono SC', 'Microsoft YaHei Mono', monospace;
+  font-family: 'Mononoki', $cjk-stack, monospace;
 }
 
 body {
@@ -123,6 +154,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   letter-spacing: -0.01em;
+}
+
+code, pre, kbd, samp {
+  font-family: 'IBM Plex Mono', $cjk-stack, monospace;
 }
 
 // no global p font-size override — let everything inherit html base so nav and body match
@@ -220,6 +255,7 @@ hr {
 
     &.is-current {
       display: inline-block;
+      font-family: 'JetBrains Mono', $cjk-stack, monospace;
       color: $site-text;
       font-style: italic;
       font-size: clamp(1.8rem, 4vw, 3rem);
@@ -543,6 +579,7 @@ body:not(.home) {
   }
 
   h2 {
+    font-family: 'JetBrains Mono', $cjk-stack, monospace;
     font-size: 1.15em;    // noticeably larger than body text
     font-weight: normal;
     text-transform: lowercase;
@@ -570,7 +607,7 @@ body:not(.home) {
 
 // homepage section headers — bold Mononoki with subtle animation
 .home .page__content h2 {
-  font-family: 'Mononoki', monospace;
+  font-family: 'JetBrains Mono', $cjk-stack, monospace;
   font-size: 1.15em;
   font-weight: bold;
   text-transform: lowercase;
@@ -862,8 +899,9 @@ body.home .page__author-footer {
 
 .sidebar-thought__title {
   display: block;
+  font-family: 'Faculty Glyphic', $cjk-stack, serif;
   font-size: 0.82em;
-  font-weight: bold;
+  font-weight: normal;
   color: $morandi-ink;
   margin-bottom: 0.06em;
   line-height: 1.18;
@@ -1014,7 +1052,8 @@ body.home .page__author-footer {
 }
 
 .thoughts-card__title {
-  font-weight: bold;
+  font-family: 'Faculty Glyphic', $cjk-stack, serif;
+  font-weight: normal;
   font-size: 1em;
   color: $morandi-ink;
 }
@@ -1058,6 +1097,7 @@ body.home .page__author-footer {
 }
 
 .thoughts-card__text {
+  font-family: 'Reforma 2018', $cjk-stack, serif;
   font-size: 1em;
   color: $site-text-body;
   line-height: 1.55;
@@ -1893,8 +1933,9 @@ mark.thoughts-highlight {
 
 .thoughts-preview-inline__title {
   display: block;
+  font-family: 'Faculty Glyphic', $cjk-stack, serif;
   font-size: 0.84em;
-  font-weight: bold;
+  font-weight: normal;
   font-style: italic;
   color: $morandi-ink;
   line-height: 1.2;
