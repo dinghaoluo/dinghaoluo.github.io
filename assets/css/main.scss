@@ -220,17 +220,18 @@ hr {
 .page-header__nav-stack {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 0.15em;
   position: relative;
 
   a {
     display: inline-block;
+    font-family: 'JetBrains Mono', $cjk-stack, monospace;
     color: $site-text;
     font-size: clamp(0.95rem, 1.8vw, 1.2rem);
     letter-spacing: -0.025em;
     text-decoration: none;
     line-height: 1.18;
-    padding: 0.04em 0;
+    padding: 0.12em 0;
     position: relative;
     transition: color 0.18s ease, letter-spacing 0.3s ease;
 
@@ -1035,7 +1036,7 @@ body.home .page__author-footer {
   font-size: 1em;
   color: $morandi-muted;
   margin-bottom: 0.45em;
-  line-height: 1.35;
+  line-height: 1.45;
 }
 
 .thoughts-card__type {
@@ -1054,7 +1055,7 @@ body.home .page__author-footer {
 .thoughts-card__title {
   font-family: 'Faculty Glyphic', $cjk-stack, serif;
   font-weight: normal;
-  font-size: 0.94em;
+  font-size: 0.88em;
   color: $morandi-ink;
 }
 
@@ -1098,16 +1099,17 @@ body.home .page__author-footer {
 
 .thoughts-card__text {
   font-family: 'Reforma 2018', $cjk-stack, serif;
-  font-size: 1em;
+  font-size: 1.02em;
   color: $site-text-body;
-  line-height: 1.55;
+  line-height: 1.62;
+  letter-spacing: 0.008em;
 
   * { font-family: inherit; }
 }
 
 .thoughts-card__text p {
   margin: 0;
-  line-height: 1.55;
+  line-height: 1.62;
 }
 
 .thoughts-card__text p + p {
@@ -1555,9 +1557,9 @@ body.home .page__author-footer {
     margin-bottom: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.03em;
+    gap: 0.15em;
     align-self: end;
-    line-height: 1.08;
+    line-height: 1.12;
   }
 
   .thoughts-card__sep {
