@@ -3,10 +3,9 @@ layout: single
 author_profile: true
 permalink: /thoughts/
 title: 'thoughts'
-lede: "A running catalogue of films, books, and other encounters, with order intact until you decide to disturb it."
 ---
 
-*Films, books, and whatever else &mdash; a running record of things that have been on my mind.*
+*Everything leaves a mark — here are the ones I kept.*
 
 ---
 

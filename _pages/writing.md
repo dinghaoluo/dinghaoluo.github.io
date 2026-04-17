@@ -3,10 +3,9 @@ layout: single
 author_profile: true
 permalink: /writing/
 title: "writing"
-lede: "Dispatches, translations, and science pieces arranged less like a portfolio than a shelf of marked pages."
 ---
 
-I write about science for general audiences and translate between English and Chinese. Most of my work sits at the intersection of neuroscience, ecology, and ideas about mind and consciousness.
+*Words borrowed from science and returned with feeling.*
 
 ---
 

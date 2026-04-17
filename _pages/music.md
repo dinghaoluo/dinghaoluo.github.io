@@ -5,9 +5,9 @@ permalink: /music/
 title: "music"
 ---
 
-I make music as *amoxitoxin*.
+*Sound made under a different name, for a different kind of attention.*
 
-*[2–3 sentences about the project — what kind of music, when you started, what it means to you, influences, etc. This is a personal page so you can be as candid or oblique as you like.]*
+---
 
 All releases are on [Bandcamp](https://amoxitoxin.bandcamp.com/).
 
