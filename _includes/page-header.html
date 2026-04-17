@@ -1,6 +1,6 @@
 <div class="page-header">
-  <a class="page-header__title" href="{{ '/' | relative_url }}"><strong>hao things</strong> :)</a>
-  <nav class="page-header__nav" aria-label="Primary navigation">
+  <a class="page-header__home" href="{{ '/' | relative_url }}"><strong>hao things</strong> :)</a>
+  <nav class="page-header__nav-stack" aria-label="Primary navigation">
     {%- for link in site.data.navigation.main -%}
       {%- assign current_path = page.url | replace: '/index.html', '/' -%}
       {%- assign link_path = link.url | split: '#' | first | replace: '/index.html', '/' -%}

@@ -151,100 +151,68 @@ hr {
 // -------------------------
 // inline page header — replaces the old sticky masthead
 // -------------------------
+// -------------------------
+// stacked subpage navigation — vertical stack with current page prominent
+// -------------------------
 .page-header {
-  margin-bottom: 2.4rem;
+  margin-bottom: 2.2rem;
   padding-top: 1.6rem;
-  padding-bottom: 1.2rem;
-  border-bottom: 1px solid $site-separator-soft;
 
   @include breakpoint($large) {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 1.2em;
     padding-top: 2rem;
-    padding-bottom: 1.3rem;
-    margin-bottom: 2.8rem;
+    margin-bottom: 2.6rem;
   }
 }
 
-.page-header__title {
+.page-header__home {
   display: block;
   font-weight: normal;
   letter-spacing: -0.02em;
-  color: $site-text;
+  color: $morandi-clay-deep;
   text-decoration: none;
-  font-size: 1.24em;
+  font-size: clamp(1.3rem, 2.6vw, 1.7rem);
   line-height: 1;
+  margin-bottom: 0.45em;
 
   strong { font-weight: 600; }
 
-  @include breakpoint($large) {
-    font-size: 1.35em;
-  }
-
   &:hover {
-    color: $link-color;
+    color: $morandi-clay;
     text-decoration: none;
   }
 }
 
-.page-header__nav {
+.page-header__nav-stack {
   display: flex;
-  flex-wrap: nowrap;
-  gap: 0.15em 1.2em;
-  margin-top: 0.9em;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
-
-  &::-webkit-scrollbar { display: none; }
-
-  @include breakpoint($large) {
-    margin-top: 0;
-    gap: 0.15em 1.3em;
-    justify-content: flex-end;
-    overflow-x: visible;
-  }
+  flex-direction: column;
+  gap: 0;
 
   a {
+    display: inline-block;
     color: $site-text;
-    font-family: 'Mononoki', monospace;
-    font-size: 0.95em;
-    letter-spacing: -0.01em;
-    white-space: nowrap;
+    font-size: clamp(1.1rem, 2.2vw, 1.4rem);
+    letter-spacing: -0.035em;
     text-decoration: none;
-    position: relative;
-    padding-bottom: 3px;
+    line-height: 1.18;
+    padding: 0.04em 0;
     transition: color 0.18s ease;
-
-    &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 1.5px;
-      background: currentColor;
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.2s ease;
-      opacity: 0.82;
-    }
 
     &:hover {
       color: $link-color;
-      text-decoration: none;
-      &::after { transform: scaleX(1); }
     }
 
     &.is-current {
-      color: $link-color;
+      display: inline-block;
+      color: $site-text;
       font-style: italic;
-      &::after {
-        transform: scaleX(1);
-        height: 2px;
-      }
+      font-size: clamp(2.2rem, 4.8vw, 3.6rem);
+      letter-spacing: -0.045em;
+      line-height: 0.96;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 0.12em;
+      margin-top: 0.06em;
+      margin-bottom: 0.15em;
     }
   }
 }
@@ -456,14 +424,21 @@ body:not(.home) {
   @include breakpoint($large) {
     .page {
       float: none;
-      width: calc(95% - 140px);
+      width: calc(100% - 80px);
+      max-width: 900px;
+      padding-right: 0;
       margin-left: auto;
       margin-right: auto;
+    }
+    .page__inner-wrap {
+      float: none;
     }
   }
   @include breakpoint($x-large) {
     .page {
-      width: calc(95% - 160px);
+      width: calc(100% - 80px);
+      max-width: 960px;
+      padding-right: 0;
     }
   }
 }
@@ -715,10 +690,29 @@ body:not(.home) {
 }
 
 .page__author-footer {
-  display: none;
+  display: block;
   margin-top: 4.9rem;
   padding-top: 2.4rem;
-  border-top: none;
+  border-top: 1px solid rgba($morandi-muted, 0.14);
+}
+
+.page__drift {
+  text-align: center;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+
+  .drift-link {
+    font-style: italic;
+    font-size: 0.85em;
+    color: $morandi-muted-soft;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $link-color;
+    }
+  }
 }
 
 .sidebar .h-card--footer {
@@ -727,6 +721,25 @@ body:not(.home) {
 
 .h-card--footer {
   max-width: 34rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem 1rem;
+}
+
+.page__author-footer .author__avatar {
+  flex: 0 0 auto;
+  align-self: center;
+  margin: 0;
+}
+
+.page__author-footer .author__content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.page__author-footer .author__footer-links {
+  flex: 0 0 auto;
+  align-self: center;
 }
 
 .h-card--footer .author__sidebar-thoughts {
@@ -987,7 +1000,7 @@ body:not(.home) {
 .thoughts-card__text {
   font-size: 1em;
   color: $site-text-body;
-  line-height: 1.28;
+  line-height: 1.18;
 }
 
 .thoughts-card__text p {
@@ -1081,16 +1094,26 @@ body:not(.home) {
 // -------------------------
 .author__footer-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.3em 1.1em;
-  margin-top: 1.2em;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.18em;
+  margin-top: 0;
 
   a {
     color: $site-text-nav;
     text-decoration: none;
-    font-size: 0.88em;
+    font-size: 0.82em;
+    line-height: 1.15;
     position: relative;
     padding-bottom: 2px;
+    transition: color 0.18s ease;
+
+    i {
+      margin-left: 0.35em;
+      font-size: 0.92em;
+      color: $morandi-muted !important;
+      transition: color 0.18s ease;
+    }
 
     &::after {
       content: '';
@@ -1110,6 +1133,7 @@ body:not(.home) {
       color: $link-color;
       text-decoration: none;
       &::after { transform: scaleX(1); }
+      i { color: $link-color !important; }
     }
   }
 }

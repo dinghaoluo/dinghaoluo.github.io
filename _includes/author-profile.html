@@ -273,7 +273,7 @@
     <div class="author__footer-links">
       {%- for link in author.links -%}
         {%- if link.label and link.url -%}
-          <a href="{{ link.url }}" rel="nofollow noopener noreferrer me">{{ link.label }}</a>
+          <a href="{{ link.url }}" rel="nofollow noopener noreferrer me">{{ link.label }}{%- if link.icon %} <i class="{{ link.icon }}" aria-hidden="true"></i>{%- endif -%}</a>
         {%- endif -%}
       {%- endfor -%}
     </div>
