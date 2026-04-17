@@ -28,9 +28,16 @@ lede: "A running catalogue of films, books, and other encounters, with order int
       autocomplete="off"
       spellcheck="false"
     />
+    <span class="thoughts-search-enter" aria-hidden="true">&crarr;</span>
   </div>
   <button class="thoughts-luck-btn" id="thoughts-luck-btn" type="button">try your luck</button>
 </div>
+
+<nav class="thoughts-pagination" id="thoughts-pagination" aria-label="Pagination" hidden>
+  <button class="thoughts-pagination__btn" id="thoughts-pagination-prev" type="button" aria-label="Previous page">&lsaquo;</button>
+  <span class="thoughts-pagination__status"><span id="thoughts-page-current">1</span> / <span id="thoughts-page-total">1</span></span>
+  <button class="thoughts-pagination__btn" id="thoughts-pagination-next" type="button" aria-label="Next page">&rsaquo;</button>
+</nav>
 
 {% assign pinned_thoughts = site.data.thoughts | where: 'pin', true | sort: 'posted' | reverse %}
 {% assign regular_thoughts = site.data.thoughts | where_exp: 'thought', 'thought.pin != true' | sort: 'posted' | reverse %}

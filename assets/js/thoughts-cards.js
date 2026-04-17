@@ -61,9 +61,11 @@
   });
 })();
 
-/* thoughts filter strip — category filtering, search, and weighted reshuffle */
+/* thoughts filter strip — category filtering, search, weighted reshuffle, and pagination */
 (function () {
   'use strict';
+
+  var PAGE_SIZE = 20;
 
   function initFilter() {
     var strip = document.getElementById('thoughts-filter-strip');
@@ -76,8 +78,15 @@
     var cards = Array.prototype.slice.call(document.querySelectorAll('.thoughts-card'));
     var searchInput = document.getElementById('thoughts-search');
     var luckBtn = document.getElementById('thoughts-luck-btn');
+    var paginationWrap = document.getElementById('thoughts-pagination');
+    var pageCurrentEl = document.getElementById('thoughts-page-current');
+    var pageTotalEl = document.getElementById('thoughts-page-total');
+    var prevBtn = document.getElementById('thoughts-pagination-prev');
+    var nextBtn = document.getElementById('thoughts-pagination-next');
     var searchTimer = null;
     var isShuffled = false;
+    var currentPage = 1;
+    var matchedCards = cards.slice();
 
     if (!btns.length || !cards.length || !cardsRoot) return;
 
@@ -210,33 +219,58 @@
       updatePinLead();
     }
 
+    function totalPages() {
+      return Math.max(1, Math.ceil(matchedCards.length / PAGE_SIZE));
+    }
+
     function updatePinLead() {
       if (!pinLead) return;
-      pinLead.hidden = isShuffled;
+      pinLead.hidden = isShuffled || currentPage > 1;
     }
 
     function updateLuckState() {
       if (!luckBtn) return;
-      var hasVisibleCards = visibleCards().length > 0;
-      luckBtn.disabled = !hasVisibleCards;
-      luckBtn.setAttribute('aria-disabled', hasVisibleCards ? 'false' : 'true');
-      luckBtn.classList.toggle('is-disabled', !hasVisibleCards);
+      var hasMatches = matchedCards.length > 0;
+      luckBtn.disabled = !hasMatches;
+      luckBtn.setAttribute('aria-disabled', hasMatches ? 'false' : 'true');
+      luckBtn.classList.toggle('is-disabled', !hasMatches);
     }
 
-    function applyFilter(filterValue) {
-      var query = currentQuery();
+    function updatePagination() {
+      var total = totalPages();
+      if (pageCurrentEl) pageCurrentEl.textContent = currentPage;
+      if (pageTotalEl) pageTotalEl.textContent = total;
+      if (prevBtn) prevBtn.disabled = currentPage <= 1;
+      if (nextBtn) nextBtn.disabled = currentPage >= total;
+      if (paginationWrap) paginationWrap.hidden = total <= 1;
+    }
 
-      cards.forEach(function (card) {
+    function computeMatched(filterValue, query) {
+      return cards.filter(function (card) {
         var cardType = (card.getAttribute('data-type') || '').toLowerCase();
         var matchesType = filterValue === 'all'
           || cardType === filterValue
           || (filterValue === 'other' && cardType !== 'book' && cardType !== 'film');
-        var matchesQuery = cardMatchesQuery(card, query);
-        var matches = matchesType && matchesQuery;
+        return matchesType && cardMatchesQuery(card, query);
+      });
+    }
 
-        highlightTerms(card, matches ? query : '');
+    function renderPage() {
+      var total = totalPages();
+      if (currentPage > total) currentPage = total;
+      if (currentPage < 1) currentPage = 1;
 
-        if (matches) {
+      var start = (currentPage - 1) * PAGE_SIZE;
+      var end = start + PAGE_SIZE;
+      var pageSet = matchedCards.slice(start, end);
+      var pageMembership = new Set(pageSet);
+      var query = currentQuery();
+
+      cards.forEach(function (card) {
+        var shouldShow = pageMembership.has(card);
+        highlightTerms(card, shouldShow ? query : '');
+
+        if (shouldShow) {
           card.style.display = '';
           card.offsetHeight;
           card.style.transition = 'opacity 0.28s ease, transform 0.28s ease';
@@ -252,8 +286,21 @@
         }
       });
 
+      updatePagination();
       updateLuckState();
       updatePinLead();
+    }
+
+    function applyFilter(filterValue, opts) {
+      var query = currentQuery();
+      matchedCards = computeMatched(filterValue, query);
+      if (!opts || !opts.preservePage) currentPage = 1;
+      renderPage();
+    }
+
+    function currentFilter() {
+      var activeBtn = strip.querySelector('.thoughts-filter-btn.active');
+      return activeBtn ? activeBtn.getAttribute('data-filter') : 'all';
     }
 
     var active = strip.querySelector('.thoughts-filter-btn.active');
@@ -276,36 +323,53 @@
       searchInput.addEventListener('input', function () {
         clearTimeout(searchTimer);
         searchTimer = setTimeout(function () {
-          var activeBtn = strip.querySelector('.thoughts-filter-btn.active');
-          var filter = activeBtn ? activeBtn.getAttribute('data-filter') : 'all';
-          applyFilter(filter);
+          applyFilter(currentFilter());
         }, 180);
       });
     }
 
     if (luckBtn) {
       luckBtn.addEventListener('click', function () {
-        var pool = visibleCards();
-        if (!pool.length) {
+        if (!matchedCards.length) {
           updateLuckState();
           return;
         }
 
-        reorderCards(weightedShuffle(pool).concat(cards.filter(function (card) {
-          return pool.indexOf(card) === -1;
+        matchedCards = weightedShuffle(matchedCards);
+        reorderCards(matchedCards.concat(cards.filter(function (card) {
+          return matchedCards.indexOf(card) === -1;
         })));
         isShuffled = true;
-        updatePinLead();
+        currentPage = 1;
+        renderPage();
       });
       updateLuckState();
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function () {
+        if (currentPage > 1) {
+          currentPage--;
+          renderPage();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function () {
+        if (currentPage < totalPages()) {
+          currentPage++;
+          renderPage();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
     }
 
     window.addEventListener('resize', function () {
       var activeBtn = strip.querySelector('.thoughts-filter-btn.active');
       if (activeBtn) movePill(activeBtn);
     });
-
-    restoreChronologicalOrder();
   }
 
   if (document.readyState === 'loading') {
