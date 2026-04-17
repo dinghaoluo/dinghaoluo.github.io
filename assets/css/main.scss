@@ -716,6 +716,7 @@ body:not(.home) {
   display: block;
   margin-top: 4.9rem;
   padding-top: 1.4rem;
+  padding-bottom: 3.5rem;
   border-top: 1px solid rgba($morandi-muted, 0.14);
 }
 
@@ -730,7 +731,7 @@ body.home .page__author-footer {
 .page__drift {
   text-align: left;
   margin-top: 8rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2.4rem;
 
   .drift-link {
     font-style: italic;
@@ -768,7 +769,7 @@ body.home .page__author-footer {
 }
 
 .h-card--footer {
-  max-width: 38rem;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 0.7rem 1rem;
@@ -1051,12 +1052,12 @@ body.home .page__author-footer {
 .thoughts-card__text {
   font-size: 1em;
   color: $site-text-body;
-  line-height: 1.38;
+  line-height: 1.48;
 }
 
 .thoughts-card__text p {
   margin: 0;
-  line-height: 1.38;
+  line-height: 1.48;
 }
 
 .thoughts-card__text p + p {
