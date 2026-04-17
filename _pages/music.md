@@ -54,11 +54,42 @@ title: "music"
 
 <div class="music-player-wrap">
   <iframe
+    id="bc-player"
     style="width: 100%; height: 470px;"
-    src="https://bandcamp.com/EmbeddedPlayer/album=4228822450/size=large/bgcol=faf7f2/linkcol=8d6959/artwork=small/transparent=false/"
     seamless>
     <a href="https://amoxitoxin.bandcamp.com/album/the-maze">The Maze by amoxitoxin</a>
   </iframe>
 </div>
 
 <p class="music-note">All releases are on <a href="https://amoxitoxin.bandcamp.com/">Bandcamp</a>.</p>
+
+<script>
+  (function () {
+    var base = 'https://bandcamp.com/EmbeddedPlayer/album=4228822450/size=large/artwork=small/transparent=false/';
+    var light = base + 'bgcol=faf7f2/linkcol=8d6959/';
+    var dark  = base + 'bgcol=1c1917/linkcol=c49a85/';
+    var frame = document.getElementById('bc-player');
+
+    function effectiveTheme() {
+      var saved = document.documentElement.getAttribute('data-theme');
+      if (saved === 'dark' || saved === 'light') return saved;
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    function sync() {
+      var src = effectiveTheme() === 'dark' ? dark : light;
+      if (frame.getAttribute('src') !== src) {
+        frame.setAttribute('src', src);
+      }
+    }
+
+    sync();
+
+    new MutationObserver(sync).observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme']
+    });
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', sync);
+  })();
+</script>
