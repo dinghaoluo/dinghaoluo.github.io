@@ -13,37 +13,47 @@
 | author name | Mononoki | 1em | normal | — |
 | author bio/headline | Mononoki | 0.82em | normal | vertical lines via `<br>` in _config.yml |
 | author links | Mononoki | 0.78em | normal | line-height: 1.85 |
-| toc title | Mononoki | 0.82em | normal | lowercase, explicit !important |
-| toc links | Mononoki | 0.88em | normal | — |
-| home profile name (en) | Mononoki | 0.9em | normal | — |
-| home profile name (zh) | Mononoki | 0.74em | normal | — |
-| home profile links | Mononoki | 0.78em | normal | — |
-| footer | Mononoki | 0.82em | normal | — |
+| theme toggle | Mononoki | 0.82rem | varies | "d" muted / "l" bold in light; swapped in dark |
 
 line-height: 1.85 (body)
 
-## colours
+## colours — Morandi palette
 
-| name | hex | used for |
+| variable | hex | used for |
 |---|---|---|
-| background | `#faf9f7` | page background (warm white) |
-| masthead/footer bg | `#f0ebe5` | header and footer background |
-| masthead/footer border | `#d0c8c0` | top/bottom border lines |
-| text (main) | inherits | body text |
-| text (dark) | `#2c2c2c` | names, titles, strong |
-| text (mid) | `#4a4a4a` | nav links, some ui |
-| text (muted) | `#5a5a5a` | author bio |
-| text (faint) | `#6a6a6a` | home profile links |
-| text (very faint) | `#8a8a8a` | chinese name, toc title |
-| link / accent | `#b5651d` | all links on hover, link colour |
-| ui accent | `#c47c5a` | MM primary-color override (badges etc.) |
-| hr / borders | `#e0dbd5` | horizontal rules, section borders |
+| `$morandi-oat` | `#faf7f2` | warm white, backgrounds |
+| `$morandi-ink` | `#3f3934` | main text colour |
+| `$morandi-clay` | `#b78e79` | primary accent |
+| `$morandi-clay-deep` | `#8d6959` | links, strong accent |
+| `$morandi-stone` | `#ddd3c8` | light background surfaces |
+| `$morandi-muted` | `#7f766f` | muted text |
+| `$morandi-muted-soft` | `#9b928a` | softer muted text |
+| `$morandi-blue` | `#90a4b0` | blue accent (eval badges) |
+| `$morandi-blue-deep` | `#627884` | deeper blue accent |
+| `$morandi-grey-soft` | `#e8e2db` | grey surfaces |
+| `$morandi-grey-deep` | `#8b837c` | grey text |
+| `$morandi-rose` | `#bb9891` | rose accent |
+| `$morandi-rose-deep` | `#7d605b` | deeper rose |
+| `$site-bg` | `#ffffff` | page background |
+| `$site-border` | `#e0dbd5` | horizontal rules, section borders |
+
+## dark mode
+
+Dark mode uses a `@mixin dark-colors` shared by two selectors:
+
+- `@media (prefers-color-scheme: dark) { html:not([data-theme="light"]) { ... } }` — system preference, unless user forced light
+- `html[data-theme="dark"] { ... }` — manual dark override via toggle
+
+Dark background: `#1c1917`. Dark text: `#ddd3c8`. Dark link: `#c49a85`.
+
+A `d / l` toggle button (fixed top-right, `#theme-toggle`) lets users override system preference. Choice persists via `localStorage('theme')`. A FOUC prevention script in `<head>` applies the saved `data-theme` attribute before first paint.
 
 ## layout
 
-- max content width: 1440px (at x-large breakpoint)
-- masthead: sticky, z-index 999
-- masthead uses ID selectors (#haothings-masthead etc.) — immune to MM CSS
+- max `#main` width: 900px (x-large breakpoint)
+- subpage `.page` max-width: 820px (large) / 860px (x-large), centered
+- subpage `.page__inner-wrap`: full width within `.page` container
+- homepage keeps sidebar author profile; subpages hide it, show footer author profile instead
 
 ## key file locations
 
@@ -51,8 +61,13 @@ line-height: 1.85 (body)
 |---|---|
 | main stylesheet | `assets/css/main.scss` |
 | font files | `assets/fonts/mononoki/` |
-| masthead template | `_includes/masthead.html` |
-| author sidebar | `_includes/author-profile.html` (MM default) |
+| layout (base) | `_layouts/default.html` |
+| layout (single page) | `_layouts/single.html` |
+| layout (archive/thoughts) | `_layouts/archive.html` |
+| author sidebar | `_includes/author-profile.html` |
 | navigation data | `_data/navigation.yml` |
 | author config | `_config.yml` → `author:` section |
+| theme toggle JS | `assets/js/theme-toggle.js` |
+| thoughts card JS | `assets/js/thoughts-cards.js` |
+| FOUC prevention | `_includes/head/custom.html` |
 | this file | `_docs/STYLESHEET.md` |
