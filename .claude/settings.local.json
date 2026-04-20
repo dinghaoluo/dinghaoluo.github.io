@@ -24,7 +24,10 @@
       "Bash(curl -L -o reforma2018-negra-italica.ttf \"https://st.1001fonts.net/download/font/reforma.2018-negra-italica.ttf\")",
       "Bash(curl -L -o reforma2018-blanca.ttf \"https://st.1001fonts.net/download/font/reforma.2018-blanca.ttf\")",
       "Bash(curl -L -o reforma2018-blanca-italica.ttf \"https://st.1001fonts.net/download/font/reforma.2018-blanca-italica.ttf\")",
-      "WebFetch(domain:colordrop.io)"
+      "WebFetch(domain:colordrop.io)",
+      "Bash(python *)",
+      "WebFetch(domain:amoxitoxin.bandcamp.com)",
+      "Bash(curl *)"
     ]
   }
 }

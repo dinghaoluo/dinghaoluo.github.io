@@ -15,452 +15,18 @@
 #   text         — markdown; shown in card, clamped to ~3 lines, expands on click
 # -------------------------------------------------------
 
-- title: "The Weird and the Eerie"
+- title: "The Deserters"
   type: "book"
-  creator: "Mark Fisher"
+  creator: "Mathias Énard"
   creator_role: "by"
-  year: 2016
-  eval: "liked"
-  image: "/assets/images/thoughts/weird_and_the_eerie.jpg"
-  posted: "2024-12-25"
-  text: |
-    Much like Zampanò in *House of Leaves*, Fisher starts by worrying at the border between the familiar and the strange, but he ends up carving out two cleaner categories than Freud's old 'unheimlich' ever allowed. For him, the *weird* is not just strangeness in general, but the intrusion of something that does not belong, the outside forcing its way into the everyday. The *eerie* works differently: it appears when agency is missing where it should be, or present where it should not be. That distinction is the book's real gift. It lets Fisher move, with unusual elegance, from *Interstellar* to M.R. James to H.G. Wells without sounding as though he is merely stacking references for prestige. His reading of 'The Door in the Wall' is the high point precisely because it brings the whole framework into focus: longing, absence, another world half-glimpsed, and the suspicion that reality is thinner than it looks.
-
-    The frustration is that Fisher's brilliance here is also somewhat diluted by his method. The book often reads less like one sustained argument than like a cluster of intense, highly suggestive essays, and too many references arrive without enough unpacking to carry their full weight. One keeps wishing he had lingered longer, explained more, pushed further.
-
-    Even so, the best pages remain superb. Few critics could make the weird and the eerie feel at once so precise, so portable, and so immediately usable for thinking about culture. Fisher gives the concepts away almost too generously, then moves on before one is done with them.
-
-- title: "The Outsider"
-  type: "book"
-  creator: "Albert Camus"
-  creator_role: "by"
-  year: 1942
-  eval: "loved"
-  image: "/assets/images/thoughts/outsider.jpg"
-  posted: "2021-01-21"
-  text: |
-    I envy Meursault. Not his emptiness, and not the violence that follows from it, but his terrible freedom from being 'performative'. I do not have that freedom. I cannot speak my feelings plainly. I cannot cleanly refuse someone who loves me. I cannot help pretending to be sad at funerals, pretending to care just enough to remain legible, pretending my way into being an insider. Reading ***The Outsider***, I see with unusual cruelty that society does not only punish crimes. It punishes failures of emotional form. Meursault is intolerable not simply because of what he does, but because he will not say the right things, grieve in the right way, love in the right register.
-
-- title: "Did Somebody Say Totalitarianism?"
-  type: "book"
-  creator: "Slavoj Žižek"
-  creator_role: "by"
-  year: 2012
-  eval: "liked"
-  image: "/assets/images/thoughts/did_somebody_say_totalitarianism.jpg"
-  posted: "2025-06-05"
-  text: |
-    It is evident that Žižek is not defending totalitarianism here. He is trying to show that 'anti-totalitarianism' often functions as one of liberal ideology's favourite alibis, a way for the present order to flatter itself as innocent while turning radical thought into something suspect from the outset. The whole book runs on provocation. One can see that immediately in his handling of Agamben's Muselmann, and in the way he keeps poking at the pieties of both liberals and leftists. This remains one of Žižek's clearest strengths: few theorists can write with such blunt, needling and provocative force.
-
-    The familiar weakness of his, hoewever, is here too. Once the Lacanian machinery really starts to whirr, parts of the book turn murky enough to break the rhythm. Still, that hardly cancels out the book's force at the border of politics and psychoanalysis. The third chapter in particular still lands with embarrassing precision. The aestheticisation of tragedy, the taboo around totalitarianism, the sentimental concretising of the individual, the hardening of myth into doctrine: all of it feels uncomfortably applicable, not only to the obvious authoritarian state, but also to the liberal societies that pride themselves on having transcended such things.
-
-- title: "The Year of Dreaming Dangerously"
-  type: "book"
-  creator: "Slavoj Žižek"
-  creator_role: "by"
-  year: 2012
-  eval: "liked"
-  image: "/assets/images/thoughts/year_of_dreaming_dangerously.jpg"
-  posted: "2025-07-11"
-  text: |
-    Žižek's editorial voice in the past decade hasn't drifted much from his roots: Marx's surplus value thrown into the same cauldron as Lacan's surplus-enjoyment, all of it boiled down into polemic. In ***The Year of Dreaming Dangerously***, he moves through the London streets and Cairo squares of 2011, and through the way those unfinished awakenings were neutralised almost at once, killed, buried, then politely landscaped over by media language and liberal 'common sense'. What makes the book sharper than a lot of post-2011 commentary is that Žižek refuses the old Marxist comfort that history will somehow heal itself, that productive forces will eventually burst through the shell of production relations if one simply waits long enough. He denounces this thinking, and he seems to be calling for something more direct and, if one wills, vehement.
-
-    The capitalism he describes here is not a system heading naturally towards collapse, but a monster that renews itself through crisis, and lives off the very lacks it produces. The book is strongest when it stays with that bleak clarity. 2011 appears not as a failed prelude to imminent transformation, but as one more moment when desire, revolt, and historical possibility briefly became visible, only to be reabsorbed before they could harden into anything durable. Fifteen years later, that diagnosis feels less dated than one might like. We the people are still thirsting for rupture, but nothing of comparable force has really re-emerged.
-
-- title: "Stolen"
-  type: "book"
-  creator: "Ann-Helén Laestadius, trans. Rachel Willson-Broyles"
-  creator_role: "by"
-  year: 2021
+  year: 2023
   eval: "meh..."
-  image: "/assets/images/thoughts/stolen.jpg"
-  posted: "2025-07-27"
+  image: "/assets/images/thoughts/books/deserters.jpg"
+  posted: "2026-03-21"
   text: |
-    A slow-burning Bildungsroman set around the Sami of northern Sweden. What the book does best is not really character arc, but texture: the reindeer killings, the long attrition between Sami herders and white Swedes, the customs, labour, and historical pressure built into everyday life. A lot of the discussion around ***Stolen*** has focused on exactly this strength, that it works as a vivid account of contemporary Sami life under harassment, racism, and legal indifference, while also carrying the weight of a coming-of-age story. As a window into a conflict that rarely gets much space in mainstream fiction or film, especially outside Scandinavia, it is genuinely valuable.
+    Énard braids a foot soldier's trudge against a mathematician's cartography of historical pattern, both arcs reaching toward a totalising sweep of twentieth-century violence and displacement. The premise is sound; the execution is dutiful. ***The Deserters***, however, reads like a novel designed rather than written, each voice mechanically alternating without ever achieving the friction that would make one forget the architecture and simply follow the prose. One finishes it respecting the ambition but emembering almost nothing.
 
-    The problem is that the Bildungsroman side is less persuasive. Even though the novel spans roughly eleven years, from Elsa as a child to Elsa as a young woman, her inner development does not feel especially strong. The same traits remain so fixed that, by the 2019 sections, she can still read less like an adult shaped by time than like the same little girl carrying more plot. In that sense, the book is more convincing as social chronicle than as psychological formation. Some readers have praised its plain force and moral urgency; I kept feeling that the social material was doing more of the work than the character-writing itself.
-
-    Still, I would not dismiss it. Indigenous-colonial conflict is everywhere, but the Scandinavian version of that story appears far less often in widely seen fiction; even the recent screen references one can think of are relatively sparse. So whether as novel or film adaptation, ***Stolen*** remains worth reading or watching for what it brings into view, even if it never fully becomes the great novel of formation it seems to want to be.
-
-- title: "Moon Palace"
-  type: "book"
-  creator: "Paul Auster"
-  creator_role: "by"
-  year: 1989
-  eval: "loved"
-  image: "/assets/images/thoughts/moon_palace.jpg"
-  posted: "2025-08-10"
-  text: |
-    For all my dissatisfaction with how Auster writes several of the female characters in ***Moon Palace*** (especially Kitty Wu and Mrs Hume), I still cannot resist the novel's startling literariness. This is one of those books where Auster's machinery of chance, drift, and sudden revelation finally acquires real grace. The plot keeps turning almost by accident, as if the novel were discovering its own destiny in passing, and one keeps reading in a kind of daze, half for the story and half for the pleasure of how casually it is told. Even people who find Auster schematic elsewhere often admit that ***Moon Palace*** is where his coincidences feel truly like gorgeously egregious myth.
-
-    What I love most is the way the book lets deprivation, wandering, and dependency exist without sinking into self-pity. Marco Fogg and his uncle's life together is precarious, but never miserable in the usual literary way. The same goes for Fogg's homelessness in Central Park, which Auster writes with a strange blend of material exactness and metaphysical lightness. He is already doing what he does best here: turning New York into both a real city and a philosophical apparatus, a place where lines like 'A here exists only in relation to a there' can appear almost offhandedly and still reorganise the whole novel.
-
-    By the time Fogg has gone west, failed to find Effing's cave, and lost himself in the American desert, ***Moon Palace*** has become something larger than a quest novel or a picaresque. It is still recognisably Auster, full of magical-realist coincidence and improbable convergence, but the emotional landing is much surer than in many of the later books. Watching the moon finally 'find its place in the darkness', Marco Fogg reaches something like reconciliation with his own life. The feeling is close to the end of a long drift, or perhaps the end of a very American illusion that drift itself might count as purpose.
-
-- title: "The Crying of Lot 49"
-  type: "book"
-  creator: "Thomas Pynchon"
-  creator_role: "by"
-  year: 1966
-  eval: "loved"
-  image: "/assets/images/thoughts/crying_of_lot_49.jpg"
-  posted: "2025-08-11"
-  text: |
-    Pynchon's sentences in ***The Crying of Lot 49*** go off like little grenades. The instant one reads them, they are already in pieces, and the only option is to crouch amongst the debris with Oedipa Maas and start assembling a world from shards. That is not a flaw. It is the whole pleasure of his books. Oedipa fights through, like the reader, the shards of 1960s Southern California, trying to solve the Tristero mystery, or else persuade herself that no mystery exists at all. In front of her, every clue opens not onto resolution, but onto another layer of noise, pattern, and possible hallucination.
-
-    Oedipa herself is a big part of what keeps the book from becoming mere postmodern trickery. Her paranoia, curiosity, and mounting estrangement make her feel less like a puzzle-solver than like one of the great countercultural figures of the decade: hyper-alert, half-radicalised, and slowly losing her grip on the reality she is trying to decode. Pynchon keeps cutting away every ordinary support structure around her. A loveless marriage, a meaningless affair, a psychologist who cannot remain outside the chemical fog, a whole social world that seems either exhausted or deranged. By the time she reaches the auction room, she has almost nothing left except her obsession with the truth.
-
-    All of that gives this debut novel of Pynchon's so much of its potency. Beneath all the jokes, acronyms, stamps, muted horns, and communication breakdowns, ***Lot 49*** is about a woman standing opposite Leviathan and finding that the alternative network may be no less maddening than the official one. Oedipa is part Josef K., part noir detective, part doomed initiate. She wants revelation, but what she gets is the modern world in Pynchon's preferred form: overconnected, underexplained, and forever humming just below the threshold of proof.
-
-- title: "Leviathan"
-  type: "book"
-  creator: "Paul Auster"
-  creator_role: "by"
-  year: 1992
-  eval: "liked"
-  image: "/assets/images/thoughts/leviathan.jpg"
-  posted: "2025-08-14"
-  text: |
-    Auster writes at the start of *The New York Trilogy* that 'nothing was real except chance'. That line could just as easily stand over ***Leviathan***. As in *Moon Palace*, he uses coincidence and the infinite pressure of unrealised possibilities to build a world that feels at once familiar and slightly estranged from itself. Sachs's life is shaped by one accident after another, one encounter after another, until even the origin of 'Leviathan' comes from a grotesque mixture of crime, curiosity, and contingency. This is one of Auster's great strengths at his best: chance in his fiction is never just decorative plot machinery, but the very medium through which a self takes shape.
-
-    What makes ***Leviathan*** more unsettling is that it keeps brushing up against politics without ever becoming a truly political novel in any straightforward sense. Sachs's final 'political' acts do not read to me as the expression of a coherent cause, but as the mangled afterlife of guilt and pain. He wants to believe, and wants others to believe, that he has entered history on behalf of some larger struggle. But the novel keeps undercutting that self-image. His actions feel less like commitment than compensation, less like ideology than wound management. In that sense, all the rhetoric of justice and courage that gathers around him gradually collapses into something far smaller and sadder.
-
-    So was Sachs a hypocrite? Perhaps not in the simple moralising sense, but he was certainly engaged in a form of self-deception. His life and his politics never fully join; by the end he is still trying to force them into alignment, trying to lend historical dignity to something far more private and inarticulate. The bravado, the remorse, the talk of purpose all seem to converge into a kind of cowardice he cannot quite name even to himself. In the end, ***Leviathan*** is less an enemy in the world than an adversary Sachs invents in order not to look too directly at himself.
-
-- title: "We Have Always Lived in the Castle"
-  type: "book"
-  creator: "Shirley Jackson"
-  creator_role: "by"
-  year: 1962
-  eval: "liked"
-  image: "/assets/images/thoughts/we_have_always_lived_in_the_castle.jpg"
-  posted: "2025-08-15"
-  text: |
-    Merricat's dream of living quietly with her sister is built on stasis, repetition, and a refusal of history. In Shirley Jackson's gothic village-and-castle world, everything feels caught in a vicious little loop, like the crack in the pavement outside Stella's cafe, '... it was always there'. Since the night of the grand poisoning, life inside the house has essentially stopped: the arsenic sugar bowl, the old books nailed to the tree, the locked gates, the rituals that try to hold time still. Jackson is often praised for turning domestic space into something uncanny, and this may be her cleanest example of it. The house is not just haunted. It is a machine for suspending change.
-
-    But Merricat can already feel that suspension failing. '... changes were in the air.' The nailed book falls from the tree, the unwanted cousin enters, and the whole arrangement begins to tremble at its edges. What makes the novel so good is that Merricat does not simply resist collapse. She becomes collapse. Jackson gives us one of the great unreliable narrators, but Merricat is not merely unreliable in the usual technical sense. She is a child of dread, fantasy, malice, and wounded will, and through her Jackson reaches something very close to what Mark Fisher called the eerie: not just strangeness, but a disturbance in what should be there, and what should not.
-
-    The result is a novel that feels static and volatile at the same time. Everything has already ended, and everything is still on the verge of ending again. Merricat and Constance do not so much live in the castle as linger inside the afterimage of a crime, trying to turn ruin into routine. Few novels are this quiet, this vicious, or this strange.
-
-- title: "The New York Trilogy"
-  type: "book"
-  creator: "Paul Auster"
-  creator_role: "by"
-  year: 1987
-  eval: "liked"
-  image: "/assets/images/thoughts/new_york_trilogy.jpg"
-  posted: "2025-08-24"
-  text: |
-    Already in these early books, Auster's prose carries a faint premonition of *Moon Palace* and *Leviathan*: the same easy flow, the same dependence on coincidence, the same sense that narrative is always one accident away from sliding out of realism and into obsession. The three 'detective' stories are 'detective' only in the loosest, most postmodern sense. They refuse the usual satisfactions of the form. No proper solution, no clean reversals, no real ending. Instead, each story turns the investigative impulse back onto the investigator, until detection becomes self-dissolution.
-
-    Quinn, consumed by a case that cannot yield a stable answer, ends up unable even to solve the 'Paul Auster' problem placed right in front of him. Blue, trapped in the sterile theatre of Black and White, never reaches any satisfying account of why he has been hired to watch. Fanshawe remains a hole at the centre of the last novella, less a man than an absence everyone else is forced to organise themselves around. This is the trilogy's real subject: not mystery, but identity under pressure, identity as something contingent, performative, and always half on the verge of disintegration.
-    One can also already see many of the images and habits Auster would keep returning to later: China, erotic charge born out of coincidence, the fusion of opposed feelings, estrangement, doubling. At the same time, the book also exposes several weaknesses that never really left him. The women are thinly drawn, and once the psychological terrain becomes more complicated, Auster's handling of it can turn blurry rather than subtle. Still, as an early statement of intent, ***The New York Trilogy*** is hugely impressive: a set of anti-detective stories in which the real unsolved case is always the self.
-
-- title: "A Pale View of Hills"
-  type: "book"
-  creator: "Kazuo Ishiguro"
-  creator_role: "by"
-  year: 1982
-  eval: "loved"
-  image: "/assets/images/thoughts/pale_view_of_hills.jpg"
-  posted: "2025-08-28"
-  text: |
-    Even having already read one Ishiguro in Chinese (*The Remains of the Day*), I still did not expect him, this early on, to be able to package such dense feeling in language so cold, orderly, and restrained. ***A Pale View of Hills*** is full of broken recollection, evasive turns, and half-said things, yet behind all that calmness sits a mother who is heartbroken, regretful, and unable, at least partially because of social discipline and habit, to speak plainly about what hurts.
-
-    With her daughter Niki's visit home as its occasion, Etsuko keeps circling back to that summer in Nagasaki, and in doing so turns memory itself into the novel's real subject. The book's great achievement is how thoroughly it shows the unreliability of memory without ever making that unreliability feel like a mere trick. Etsuko wants to confide in her daughter, but she also knows that death is not something one simply places on the table. So she can only edge towards it, reconstructing the past in fragments, displacements, and substitutions. 'Keiko was happy that day. We rode on the cable-cars.' The emotion keeps rising through the prose, almost breaking the surface, but only almost.
-
-    That 'almost' is what makes the novel so painful (in a beautiful way). Ishiguro never lets the feeling spill over into open confession; he keeps it pressed down, where it becomes even stronger. The Faber edition ends with several blank pages, and then, after the blankness, that blurred image of distant hills. It is such a perfect ending gesture for this book: grief present, grief obscured, grief still refusing to come fully into focus.
-
-- title: "Invisible"
-  type: "book"
-  creator: "Paul Auster"
-  creator_role: "by"
-  year: 2009
-  eval: "disliked"
-  image: "/assets/images/thoughts/invisible.jpg"
-  posted: "2025-08-30"
-  text: |
-    I kept hoping that, after *The New York Trilogy*, *Moon Palace*, and *Leviathan*, Auster might finally have learned how to write female characters with some real psychological depth. Instead, ***Invisible*** makes the problem worse. Almost every woman in the novel seems to exist as some mixture of sexual allure and narrative function. Margot is one, but once even Gwyn is drawn into the same circuitry, the whole book starts to feel less transgressive than embarrassingly adolescent.
-
-    What makes this more frustrating is that Auster is still using the old machinery of unstable narration, shifting manuscripts, and uncertain truth. But compared with the intricate threads and call-backs of his better novels, the plot here feels oddly thin, almost watery. For all its postmodern gestures, ***Invisible*** often reads like a very polished but ultimately shallow literary thriller.
-
-    So yes, the disappointment is not just that the female characters are flat. It is that Auster had already shown he could do much more with ambiguity, coincidence, and narrative slippage than this.
-
-- title: "4 3 2 1"
-  type: "book"
-  creator: "Paul Auster"
-  creator_role: "by"
-  year: 2017
-  eval: "loved"
-  image: "/assets/images/thoughts/4321.jpg"
-  posted: "2025-09-27"
-  text: |
-    What defines each Ferguson in ***4 3 2 1*** seems, in the end, to be relationships. Love, family, friendship, sex, politics, the particular angle at which the social world presses into private life: all of them become tiny anchoring points with absurdly large consequences. Auster had been writing about chance, possibility, and the unstable border between the actual and the possible since the 1980s, but here the whole project finally reaches full scale.
-
-    Under the economic and political weather of postwar America, Ferguson gradually stops feeling like an individual and starts to resemble a mirror, or one of Auster's own panoramic surfaces. Through him, and through his variants, one keeps seeing the counterculture, the anti-war movement, the student left, the Summer of Love. Each Ferguson is a person, but also a shadow-image of the era, a slightly different route through the same historical pressures. In that sense the novel becomes less a character study than a kind of Austerian ukiyo-e.
-
-    Somewhere around page five or six hundred, I gave up trying to track every event across every Ferguson with complete precision. The moment I stopped reading it as a puzzle and simply let its repetitions, divergences, and echoes wash over me, the rest of the book became pure pleasure.
-
-- title: "Vineland"
-  type: "book"
-  creator: "Thomas Pynchon"
-  creator_role: "by"
-  year: 1990
-  eval: "loved"
-  image: "/assets/images/thoughts/vineland.jpg"
-  posted: "2025-10-9"
-  text: |
-    ***Vineland*** is Pynchon writing about the hundreds of thousands of victims of Nixon's War on Drugs and the long afterlife of the Vietnam era. He writes about the Thanatoids, the students and activists killed by federal violence, the scholars and dropouts swept aside by the turn from the sixties into the seventies and eighties, the loveless marriages and the genuinely loving father-daughter bond at the book's centre. A great deal of the open discourse around ***Vineland*** treats it as Pynchon's elegy for the sixties, but what makes the novel hit so hard is that the elegy never curdles into pure nostalgia. It is (in a good way) too angry, too alert to infiltration, betrayal, surveillance, and the slow bureaucratic seep of repression.
-
-    That also makes the book feel extremely sad. The end of the hippie era is not staged as one dramatic collapse, but as something more humiliating and more American: idealism ground down by cameras, prosecutors, narcotics rhetoric, informants, and the state's endless appetite for turning dissent into spectacle. All those hopes of freedom, the 24fps utopia, the Corvairs, the happiness stored in film stock and basslines, are not defeated in some grand tragic showdown. They are quietly erased, confiscated, edited out. ***Vineland*** understands that this is how a great deal of political defeat actually feels: not heroic, just attritional.
-
-    And yet Pynchon never lets the book become inertly mournful. The jokes are too sharp for that, and the tenderness is real. Beneath all the paranoia, media static, and federal rot, there is still Prairie and Zoyd, still the stubborn possibility of love surviving historical wreckage. The novel 'knows' the Summer of Love is gone, and that fear got planted deep in the movement's roots. But it also knows memory can remain defiant, waiting for another opportunity (which may never come) to sprout. 'I'm not gonna forget.' *While they had it, they really did have some fun.*
-
-- title: "Shadow Ticket"
-  type: "book"
-  creator: "Thomas Pynchon"
-  creator_role: "by"
-  year: 2025
-  eval: "liked"
-  image: "/assets/images/thoughts/shadow_ticket.jpg"
-  posted: "2025-10-13"
-  text: |
-    Perhaps I have not yet sat with it long enough, but ***Shadow Ticket*** is both the funniest and the most hollow Pynchon I have read so far. The fun is obvious enough. The book tears along in a brisk, fleet-footed noir register, full of old-movie repartee, zany set pieces, and the sort of slapstick historical turbulence Pynchon can now produce almost casually: motorcycle gangs ripping across the Hungarian waste, a Czech golem in a Bugatti, a self-aware non-decaying cheese, all of it delivered with that loose, wisecracking late style that makes even the baggiest detour easy to enjoy. A lot of the open discourse around the novel has settled on exactly this point: it is lighter, more accessible, less monstrous than the old doorstoppers, and above all determined to have a good time. That judgment seems right to me. It really is tremendous fun to read.
-
-    Why, then, the faint hollowness? Because unlike *Vineland* or *The Crying of Lot 49*, this one does not do very much ideological excavation. Outside the prewar Nazi ambience in Milwaukee and the wider Central European Zeitgeist of everybody-looking-over-their-shoulder, the book feels oddly content to remain a beautifully engineered entertainment machine. The plot coils, the dialogue crackles, the scenery keeps arriving with vaudevillian precision, but the deeper political and metaphysical pressure one expects from Pynchon is mostly dialled down. It feels less like one of his true labyrinths than like a very well-made soap opera with superior jokes and better wiring. Even so, the worst Pynchon novel is still better than most other people's best efforts, and I cannot pretend I did not enjoy myself immensely. 
-
-- title: "Satantango"
-  type: "book"
-  creator: "László Krasznahorkai, trans. George Szirtes"
-  creator_role: "by"
-  year: 1985
-  eval: "loved"
-  image: "/assets/images/thoughts/satantango.jpg"
-  posted: "2025-10-18"
-  text: |
-    Krasznahorkai writes the comings and goings of a desolate Hungarian village like a stage play that has somehow been left out in the rain. The twelve chapters answer to the steps of a tango, moving forward and back, from the bells, organ-thunder, rain, and dancing feet of the opening to the bell that returns at the end. That formal circularity could have felt too neat in another book, but here it gives the whole thing a grim, trance-like inevitability. Everyone seems to be moving, but only within a choreography already laid down for them. A mechanistic bureaucracy of human lives, if one wills.
-
-    It's incredible how compact the novel feels. The sentences are long, of course, but never muddy. One can follow Krasznahorkai's prose almost physically, scene by scene, voice by voice, as if the whole village were being slowly lit on a stage. The book's bleakness is real, but it is never monotonous. Again and again, misery tips over into absurdity, and absurdity into something close to comedy.
-
-    And then there is the doctor, still my favourite presence in the book: sitting by the window with his palinka, draining one glass and pouring the next, watching the world outside through his overgrown room and spinning out endless, pointless, magnificent conjectures. He feels like a perfect Krasznahorkai figure, half ridiculous and half tragic, at once detached from the village and totally trapped inside its orbit. ***Satantango*** is full of human wreckage, but it is arranged with such precision, and such bitter comic timing, that the whole ruin starts to feel almost musical.
-    
-
-- title: "When Breath Becomes Air"
-  type: "book"
-  creator: "Paul Kalanithi"
-  creator_role: "by"
-  year: 2016
-  eval: "disliked"
-  image: "/assets/images/thoughts/when_breath_becomes_air.jpg"
-  posted: "2025-10-25"
-  text: |
-    I went into ***When Breath Becomes Air*** hoping for a serious meditation on death, cancer, and the limits of medicine. Instead, I found a memoir that too often mistakes literary name-dropping for intellectual depth. Yeats, Eliot, Wittgenstein and others appear, but mostly as cultural shorthand rather than as thinkers Paul seems to have wrestled with in any sustained way. The same goes for the book's gestures towards philosophy and atheism. This may be harsh, but cancer does not automatically turn someone into a good writer.
-
-    What I found harder to accept, though, was the family ethic at the book's centre. Knowing he was dying, knowing he would never be able to put any real labour into raising a child, Paul still chose to have one with Lucy, and even returned to the OR after learning she was pregnant. The book clearly wants this to read as courage, vocation, fullness of life. I could only see a gifted neurosurgeon making choices that felt, at best, deeply questionable. By the end, I was less moved by his reflections than saddened by the loss of an exceptionally skilled surgeon. For a book so often praised for its wisdom on mortality, it left me thinking mostly about what was missing.
-
-- title: "The Secret History"
-  type: "book"
-  creator: "Donna Tartt"
-  creator_role: "by"
-  year: 1992
-  eval: "liked"
-  image: "/assets/images/thoughts/secret_history.jpg"
-  posted: "2025-10-25"
-  text: |
-    My first Donna Tartt, and the prose is exactly as advertised: fluid, elegant, almost indecently easy to keep reading. What surprised me more was the texture of it. For long stretches, ***The Secret History*** feels less like a conventional psychological thriller than like a postmodern novel that happens to have wandered into a murder plot. After the opening chapters, I kept thinking: this is what Paul Auster always seemed to want to be, and never quite managed. Tartt understands that the real engine is not the mystery itself, but atmosphere, self-mythologising, and the slow corruption of perception. No wonder the novel has had the reception it has; it flatters the reader into complicity almost as well as Richard flatters himself.
-
-    The first half is excellent. The suspense is kept unusually clean, and the characters arrive with real contour rather than mere function. Charles and Francis in particular have that slightly excessive, faintly doomed vividness the book needs. Tartt is also very good at making the whole Hampden apparatus feel both ridiculous and dangerous, which is probably why the novel still towers over so many later dark-academia imitators.
-
-    The problem is that the second half does lose something. The plot and character work flatten out more than they should, and what had felt poisonous and singular starts, regrettably, to edge towards cliche. Even so, the final dissolution is deeply satisfying. Tartt clearly understands that a novel like this lives or dies by disintegration, by the sense that what was once hermetic and self-enclosed must eventually leak, fray, and rot. Looking back, one can imagine a leaner three-hundred-page version of ***The Secret History*** becoming an almost perfectly compact suspense novel, with tighter attention to its crucial nodes of action. At well over five hundred pages, the narrative does sprawl. But then again, this was Tartt's debut. As first novels go, it is still a little monstrous in the best way.
-
-- title: "Waiting for Godot"
-  type: "book"
-  creator: "Samuel Beckett"
-  creator_role: "by"
-  year: 1951
-  eval: "loved"
-  image: "/assets/images/thoughts/waiting_for_godot.jpg"
-  posted: "2025-10-26"
-  text: |
-    What's funny is that the supposedly 'anti-meaning' ***Waiting for Godot*** has ended up generating an absurd surplus of meanings. That is part of Beckett's trick. The stage is nearly bare, the tree signifies almost nothing except waiting itself, and Godot remains at once named and unknowable. Yet the emptier the apparatus becomes, the more violently readers and audiences try to fill it. Beckett strips drama back to a road, a tree, a pair of bodies, and a delay, and somehow that near-vacuum keeps behaving like a meaning factory.
-
-    In this baren world, we see residue of terror lying around the play's edges. Estragon is beaten, apparently as a matter of routine. Pozzo calls Lucky 'Pig' and drags him on a rope like a slave. The boy, or boys, arrive from Godot with their baffling little reports, carrying traces of threat and hierarchy they cannot themselves understand. Beckett gives us a world full of oppression, but wrapped in clowning, cross-talk, hat-swaps, and the exhausted shell of vaudeville. Apart from a few moments from Vladimir, almost nobody really takes any of it seriously.
-
-    That, I suppose, is where the sense of 'exactness' comes from. The play's emptiness is never really empty. Beneath all the waiting, repetition, and anti-meaning, one keeps seeing the ordinary social life of suffering: visible, undeniable, and somehow still treated as background noise. Beckett's world is absurd, yes, but it is also uncomfortably familiar.
-
-- title: "As She Climbed Across the Table"
-  type: "book"
-  creator: "Jonathan Lethem"
-  creator_role: "by"
-  year: 1997
-  eval: "liked"
-  image: "/assets/images/thoughts/as_she_climbed.jpg"
-  posted: "2025-10-31"
-  text: |
-    Isn't this just one of the most romantic science-fiction novels? ***As She Climbed Across the Table*** takes a premise that could easily have collapsed into pure gimmickry (a physicist falling in love with a void called Lack) and turns it into something at once absurd, tender, and... cosmic. One can't help but admire Lethem's tonal balance: Lethem keeps folding quantum uncertainty, obsession, and emotional blindness into one another without ever becoming pompous about it.
-
-    What really pushes it into the 'cult-classic' territory is the prose. The book is full of jokes, puns, and conceptual mischief, but never in the dead, overengineered way this sort of novel often risks. Lethem understands that a premise like this only works if it keeps its lightness. The result is a novel that moves between the miniature and the immense, between private jealousy and something like metaphysical longing, while remaining tremendous fun almost line by line. That playfulness is exactly why the romance lands. He does not take the whole thing too seriously, which is what lets it feel serious in the right places.
-
-- title: "Maus"
-  type: "book"
-  creator: "Art Spiegelman"
-  creator_role: "by"
-  year: 1980
-  eval: "loved"
-  image: "/assets/images/thoughts/maus.jpg"
-  posted: "2025-11-06"
-  text: |
-    Books like ***Maus*** only become more and more relevant in times like this. One of the book's most quietly devastating moments comes near the end of the second volume: after everything Vladek has lived through, after the camps, the family breaking apart, his son Richieu's death, his wife Anja's suicide, his parents turned into smoke through the crematoria, he still reacts with disgust when his younger son Art and Francoise (Art's fiancée) pick up a Black hitchhiker. Art's response is the obvious one: how can someone who suffered so much still be racist. Vladek's answer is worse precisely because it is so familiar: 'you don't understand. We were different.'
-
-    That scene is where ***Maus*** cuts deepest. It refuses the comforting lie that suffering automatically makes people better, broader, or more humane. Pain does not guarantee solidarity. Memory does not necessarily enlarge moral vision. One can survive catastrophe and still cling to the same brutal logic of 'us' and 'them'. In that sense, ***Maus*** is not just a Holocaust narrative or a book about inherited trauma. It is also a book about the limits of suffering as moral education.
-
-    Reading that scene, I could not help thinking of earlier genocides that Europe either ignored or absorbed with very little fuss, the same historical murk that Pynchon drags into *V.*. If one stays silent when others suffer, on what grounds does one later demand that one's own suffering be seen? ***Maus*** does not ask that question directly, but it leaves it hanging there all the same.
-
-- title: "V."
-  type: "book"
-  creator: "Thomas Pynchon"
-  creator_role: "by"
-  year: 1963
-  eval: "loved"
-  image: "/assets/images/thoughts/v.jpg"
-  posted: "2025-11-17"
-  text: |
-    My second favourite read of 2025. ***V.*** reads like young Pynchon was teaching himself just how much a novel could hold. Egypt, Virginia, New York, Malta, Paris, South-West Africa: every pocket of the book seems to be hiding another system, another ruin, another dead zone where history has gone slightly inanimate. The great subjects are already here in embryo: the deconstruction of the individual, the fake animosity between flesh and mechanism (SHROUD & SHOCK was such an interesting idea), slavery and colonial trade (South-west Africa makes its reappearances in later Pynchon novels as well), waste, plastics, prosthetics, siege, fetish, entropy. It's ingenious that Pynchon centres the novel partially around the idea of 'yo-yo'... Yo-yoing is not just Benny Profane's gimmick. It is the book's state of mind.
-    The idea of a yo-yo is probably still my favourite thing in this novel. Anyone who has seen one can understand Profane drifting on the New York subway, shuttling between termini with all the pathos of movement and none of the dignity of progress. One can understand what Fausto Maijstral means by history's repetitions. One can understand why so many of the book's lives feel trapped in recoil, return, and re-enactment. The trajectories pile up more and more densely until identity itself begins to lose contour. The yo-yo keeps moving, but only within the limits of its string. That is what makes ***V.*** feel so different from the more monumental later Pynchons: it is already full of world-historical dread, but the dread is still spring-loaded, still comic, still flickering with schlemihl energy.
-    Another thing that stays with me is how much of the novel is organised around the gradual victory of the inanimate. Machines, plastic, prosthetic surfaces, dead landscapes, human beings treated as objects and finally treating themselves the same way: all of it gives ***V.*** its peculiar chill. The book is still baggier than Pynchon's more mature masterpieces, and sometimes one can feel Pynchon reaching past his current grasp. But that is part of the thrill. The lines of force are already there, crossing and tangling like yo-yos on too few strings. Characters meet, miss, collide, return to origin, and set off again. One push, one release, back to the start. It is a novel of recurrences, and one of the very few debuts that already feels written by someone who has seen the whole sick circuitry.
-
-- title: "Flesh"
-  type: "book"
-  creator: "David Szalay"
-  creator_role: "by"
-  year: 2025
-  eval: "hated"
-  image: "/assets/images/thoughts/flesh.jpg"
-  posted: "2025-11-18"
-  text: |
-    One can see what admirers of ***Flesh*** are responding to. Szalay's stripped-down style has been praised as brutally pared back, all surface and bone, and most would be amiss to deny the novel's exteriority, inarticulacy, and how it portrays a man pushed along by forces larger than itself. Istvan's journey from Hungary through war, migration, money, and sex is clearly meant to register as a European life reduced to impulse, contingency, and damage. On paper, that sounds severe in an interesting way.
-
-    Nonetheless, in practice I found the book almost impossible to take seriously. Szalay's prose seems to depend on a kind of calculated quirkiness: the one-line paragraphs, the clipped present tense, the habit of stating something and then restating it in the next paragraph as though repetition by itself could generate force. Plenty of quirky novels exist, and much better ones too. Here the method feels almost technique-free, as if style had been reduced to a few visible tics and then left to do all the lifting. What others read as austere minimalism or a perfect match for Istvan's damaged inarticulacy, I mostly experienced as hollowness. By the second half, the whole thing had started to resemble a script draft with the connective tissue stripped out.
-
-    That is what finally put me off ***Flesh***. I can sympathise with flatness, if it opens onto something harder, stranger, or more exact. Here it rarely does. The scenes arrive, the scenes stop, the bodies keep moving, and one is meant to infer depth from the blankness. Sometimes that works. More often it feels like being handed an affectless sequence of gestures and being asked to mistake omission for seriousness. Perhaps there are readers who genuinely enjoy being parcelled through a novel one thin paragraph at a time. I am not one of them.
-
-- title: "Solenoid"
-  type: "book"
-  creator: "Mircea Cărtărescu, trans. Sean Cotter"
-  creator_role: "by"
-  year: 2015
-  eval: "loved"
-  image: "/assets/images/thoughts/solenoid.jpg"
-  posted: "2025-11-29"
-  text: |
-    I finished Mircea Cărtărescu's ***Solenoid*** over the course of nearly two weeks near the end of the year. Before that, I knew him only as one of those 'perennial Nobel names', and little more. And by the time I finished ***Solenoid***, I had already placed Cărtărescu beside Pynchon as one of my two favourite living writers.
-
-    Cărtărescu's Romania exudes a magical realism that is grounded in reality but never confined by it, and the novel finds a strange equilibrium between the grotesque and the ingenious. What impressed me most was how thoroughly it rewired my sense of what belonged to the novel and what belonged to the world. When the Voynich manuscript appeared, I half-assumed, idiotically, that it too must be one of Cărtărescu's inventions ('Well this surely sounds fictional enough...'). Then came Charles Hinton, *The Gadfly*, the fourth dimension, and all the rest. Reading ***Solenoid*** felt like (borrowing a phrase from the book) returning to a child's mode of perception, where dreams and memories, myths and facts, all seem made from the same substance.
-
-    And then there is Bucharest itself, which in ***Solenoid*** becomes a gigantic living thing. The city sings, with its solenoids humming through blind walls, labyrinthine school corridors, ship-shaped houses, mortuaries full of Picketists crying for help, and nightmare after nightmare that leaves one short of breath. Beneath all this, the novel keeps asking the largest questions in the most intimate way. What is reality? What is memory? How do we escape? (And escape from what?) This was my favourite read of 2025, and not by a small margin.
-
-- title: "The Call of Cthulhu and Other Weird Stories"
-  type: "book"
-  creator: "H.P. Lovecraft, ed. S.T. Joshi"
-  creator_role: "by"
-  year: 1928
-  eval: "liked"
-  image: "/assets/images/thoughts/call_of_cthulhu.jpg"
-  posted: "2025-12-08"
-  text: |
-    My first Penguin Orange, and S.T. Joshi's editing is excellent. What he does especially well is give the collection a real gradient: it begins with the earlier, less fully mythos-bound pieces like *Dagon* and the smaller thrillers, then gradually moves towards the heavier, more fully embedded novellas like *The Call of Cthulhu* and *The Shadow over Innsmouth*. That structure suits Lovecraft unusually well. One can feel the mythos thickening story by story, without the book ever collapsing into a mere sampler of the 'famous ones'.
-
-    What surprised me most was that the short stories are often better, and certainly more durable, than the longer pieces. The moments that stayed with me most are mostly in the shorter works: the blood dripping from the roof in *The Picture in the House*, the despair of *The Outsider* when the narrator finally looks into the mirror. The novellas may be more important to the Lovecraftian superstructure, but the shorter stories often hit harder, with less drag and less pulp flab. They feel closer to the nerve.
-    My favourites, in order: *The Colour Out of Space*, *The Whisperer in Darkness*, *The Picture in the House*, *The Outsider*, and *The Rats in the Walls*.
-
-- title: "Models of the Mind"
-  type: "book"
-  creator: "Grace Lindsay"
-  creator_role: "by"
-  year: 2021
-  eval: "loved"
-  image: "/assets/images/thoughts/models_of_the_mind.jpg"
-  posted: "2025-12-14"
-  text: |
-    Within a relatively slim volume, Grace Lindsay pulls off something borderline marvelous: a lucid, genuinely readable survey of the major models in neuroscience, from perceptrons and attractors to deep convolutional networks, Bayesian inference, and beyond. That alone would already be an impressive feat. What makes ***Models of the Mind*** stand out, though, is the book's deeper architecture: the historical through-lines, the scientist-profiles, the knack for finding metaphors that clarify without dumbing anything down. For me, it has become the only truly indispensable introductory book for anyone trying to understand computational neuroscience as a field rather than as a scattered heap of fashionable terms.
-
-    My favourite passages are still the ones where the conceptual scaffolding briefly gives way to biography and contingency: Hodgkin and Huxley moving through the years before, during, and after the Second World War; Pavlov, still bent over his workbench amid political turbulence; Pitts and McCulloch hashing things out at that fertile border between philosophy, psychology, and early neural-network thinking. Those episodes make the book's larger point impossible to miss. Neuroscience did not spring fully formed from wet-lab empiricism. It is rooted, stubbornly and inescapably, in philosophy and mathematics. Strip either away, and the whole enterprise starts to grope in the dark.
-
-- title: "Inherent Vice"
-  type: "book"
-  creator: "Thomas Pynchon"
-  creator_role: "by"
-  year: 2009
-  eval: "liked"
-  image: "/assets/images/thoughts/inherent_vice.jpg"
-  posted: "2025-12-19"
-  text: |
-    Another 'Pynchon-lite'. ***Inherent Vice*** reads much more smoothly than *Shadow Ticket*, and the jokes and puns land far more often for me (than did the ones in *Shadow Ticket*), but I still couldn't help but felt that faint, lingering sense that Pynchon is not especially good at writing dense dialogue. Watching PTA's adaptation gave me the same feeling. Counter-intuitively, Pynchon's prose is deeply dialogic: He is always dropping subjects, bending syntax, making the narration itself sound half-spoken... and yet when he actually writes extended dialogue, it can start to feel oddly theatrical.
-
-    The film only makes that clearer. Lines that feel airy and playful on the page can become stagey once transferred more or less directly into speech. There is something slightly 'overperformed' about them, as though Pynchon is always at his best when dialogue is filtered through prose rather than left to stand on its own. That does not ruin the novel, but it does give it a particular texture: one is always aware that the voices are being mediated by a stylist, not simply overheard.
-
-    Still, I liked it a great deal. I like Pynchon's detective stories, I like his unique way of disclosing a mystery's 'solution', and I like his sentences too much to mind the awkwardness for long. As with *Shadow Ticket*: it was tremendous fun reading it.
-
-- title: "The Prose Edda"
-  type: "book"
-  creator: "Snorri Sturluson, (ed.) Jesse L. Byock"
-  creator_role: "by"
-  year: 1220
-  eval: "liked"
-  image: "/assets/images/thoughts/prose_edda.jpg"
-  posted: "2025-12-24"
-  text: |
-    Compared with the mythologies of many other religions and peoples, the Norse myths preserved in the ***Prose Edda*** feel much looser and less orderly, but also darker and far more direct. Snorri and the old Norse mythologised almost everything (e.g. wind, war, clouds) and yet the world they built never really hardened into a stable moral or intellectual system. That looseness is part of what makes the ***Prose Edda*** so distinctive.
-
-    What struck me most is that these gods are barely better than human beings, if at all (which reminded me of Greek myths at large). They are violent, morally compromised, and often irrational. Thor, while accompanying Baldr's body to Hel, casually kicks the dwarf Litr to death. Odin steals Suttungr's mead through deception. Loki causes disaster after disaster, and only very late does anyone impose real punishment on him. Again and again, the gods feel less like ideals than like magnified human defects.
-
-    That, to me, is what makes Norse mythology especially singular. Its gods are not humanity's better version, not morally, not intellectually, not even temperamentally. If anything, the giants often seem more impressive in knowledge. What the ***Prose Edda*** gives us is a mythological world in which divinity does not purify human weakness, but enlarges it. That is why it feels stranger, harsher, and more alive than most.
-
-- title: "The City & the City"
-  type: "book"
-  creator: "China Miéville"
-  creator_role: "by"
-  year: 2009
-  eval: "meh..."
-  image: "/assets/images/thoughts/the_city_the_city.jpg"
-  posted: "2026-01-18"
-  text: |
-    Marketed as 'new weird', though in truth neither especially new nor especially weird. What ***The City & the City*** does have is a superb premise: Beszel and Ul Qoma occupying the same physical space, their citizens drilled into the discipline of 'unseeing', and a murder that slips between the two and involves a 'Big Other'. The problem is that the idea is stronger than the world built to sustain it.
-
-    That weakness becomes harder to ignore in the second half. At first the conceit is so elegant that one is willing to go along with almost anything. Later, the seams start showing, and the suspension of disbelief becomes hard to maintain: What happens if a Beszel dog runs into Ul Qoma? Why do objects not constantly drift physically into the other city? The novel works far better as allegory (selective perception, social training, learned blindness etc.) than as an actual inhabited world. Once the literal mechanics start demanding attention and conscious recalibration from the reader in order to work, suspension of disbelief begins to thin out fast.
-
-    What disappointed me most, though, was the ending. For much of the novel, Breach and Orciny hang over everything with the promise of something truly uncanny. Then the final stretch shrinks that charge into something half-political, half-conspiratorial, almost bureaucratic in its smallness. Clever, yes. Haunting, not really. A premise this good should have opened into something stranger, darker, and more disorienting. Instead it settles for being ingenious. Guess I should have tried harder to manage my expectations.
-
-- title: "Gravity's Rainbow"
-  type: "book"
-  creator: "Thomas Pynchon"
-  creator_role: "by"
-  year: 1973
-  pin: true
-  eval: "loved"
-  image: "/assets/images/thoughts/gravitys_rainbow.jpg"
-  posted: "2026-03-01"
-  text: |
-    Years later, I will still remember the V2 fragments scattered across London, the Kryptosam message hidden inside them, and the four tragedies behind that message. I will still remember Katje's ancestor Frans van der Groov and the dodos of Mauritius, the Hereros in Südwest Afrika, and the genocide of Europe's Jews. I will still remember the air in Germany's postwar 'Zone', with its creosote and fuel, and that thin, diffused hope drifting through it all. What ***Gravity's Rainbow*** never allows is the comfort of treating these as separate histories. Pynchon keeps binding them into one continuum, one long modern history in which extermination recurs, and in which progress seems to refine technique far more reliably than it does conscience.
-
-    That is why the V2 matters so much. The German rocket operators fire a calculation; the rocket hits a coordinate. No face, no voice, no legible human life lost. Just... numbers. In that sense the rocket brings colonial horror home: the same anonymity that had long made massacre possible elsewhere (the Namas, the Hereros...) now falls westward on London.
-
-    Against all this stand Franz Pökler and Ilse: while the rocket has its Brennschluss, its differentials and trajectories, Pökler measures time in years, watching his daughter grow up, not knowing that at some point he will no longer be able to see her at all. One also watches helplessly as Slothrop, initially an actual human with intentions, ambitions and hopes, gradually dissolving into a spectre, losing (or gaining?) all of his freedom, becoming eventually only a legend in the wind blowing through 'the Zone'. With language that is at once unruly and exact, Pynchon writes, in some sense, the most anti-mainstream Second World War novel: no clean heroism, no stable moral centre, only the oscillation between 'the System' and 'the Zone', between the terror that everything connects and the terror that nothing does. And so, with Slothrop, as the self comes apart in 'the Zone', I look up at the vast rainbow after the rain and feel every emotion at once — grief, awe, pity, terror — with tears gathering at the rim of the eye.
-
-- title: "Bleeding Edge"
-  type: "book"
-  creator: "Thomas Pynchon"
-  creator_role: "by"
-  year: 2013
-  eval: "loved"
-  image: "/assets/images/thoughts/bleeding_edge.jpg"
-  posted: "2026-03-11"
-  text: |
-    My favourite of all the 'Pynchon-lites'. Set in 2001 (that strange year when after the attack, people had not yet settled on what to call it — '11 September'? '9/11'? ...), ***Bleeding Edge*** turns the world into a web of unexpected connections. The invisible lines between Silicon Alley start-ups, the FBI, Gulf money, and the coming security state run through characters who at first seem to have nothing to do with one another. Ah, the **grand web of paranoia** that Pynchon fans are so familiar with... What gives the book its peculiar tension is that Pynchon holds the 9/11 attacks back until surprisingly late, so that much of the novel unfolds under a suspended future terror everyone already knew was coming.
-
-    It is also the most humane of the 'Pynchon-lites'. Maxine may initially resemble Oedipa Maas (quick, intuitive, alert to hidden patterns) but she is far more distinct and fully realised. Pynchon stays unusually close to her consciousness, and that closeness gives the novel an emotional weight rare in his other works (bar maybe *Mason & Dixon*). I think of Maxine and Horst's half-broken, half-enduring relationship, her life with Otis and Ziggy, and March's antithetically broken family... Critics often note the book's domestic core, and they are right to do so: beneath all the paranoia, this is one of Pynchon's warmest novels.
-
-    That warmth is what makes the novel linger. Yes, it does capture the moment when the internet age curdles into the age of terror and 'security'; and yes, DeepArcher remains one of Pynchon's most haunting creations. But what stays with me is that ***Bleeding Edge***, for all its conspiracies and terrors, never loses sight of ordinary emotions (clearly exemplified in both the opening and ending chapters of the book). Well, this is only my personal opinion: of all the later Pynchons, this is the one PTA should adapt.
+    Énard relies on the long, unbroken sentence, the prose carrying the weight of history in its refusal to pause. Here it feels more like obligation than discovery; the sentences unspool competently without building the momentum that would justify their length. The critical consensus positions Énard as a successor to the French maximalist tradition, and perhaps his other novels earn that comparison; this one does not. <u>The polyphony is technically accomplished and emotionally inert, a structure in search of its own urgency.</u>
 
 - title: "Is a River Alive?"
   type: "book"
@@ -468,14 +34,12 @@
   creator_role: "by"
   year: 2025
   eval: "disliked"
-  image: "/assets/images/thoughts/is_a_river_alive.jpg"
+  image: "/assets/images/thoughts/books/is_a_river_alive.jpg"
   posted: "2026-03-20"
   text: |
-    Does Robert Macfarlane really care about rivers? To say 'no' would be unfair: Indeed, it must have taken a lot of effort to follow Giuliana, Yuvan, and others through three river worlds in Ecuador, India, and eastern Canada, and Macfarlane has been partaking for years in the wider 'Rights of Nature' conversation. But to say 'yes' without qualification would not be justified. For a book with such an ambitious question as the title, the rivers themselves often feel strangely out of focus, displaced by companions, by advocacy, by atmosphere. Well... what *about* the rivers?
+    Does Robert Macfarlane actually care about rivers? The question sounds ungenerous, but ***Is a River Alive?*** earns it. He follows Giuliana, Cosmo, Yuvan and others into three different rivers' stories, which suggests caring. But the rivers are never honoured in their physical form, never allowed to exist on the page as more than rhetorical occasions; the flowing water is named but never felt. <u>The whole thing feels like an extended preamble to an empty thesis.</u> Macfarlane keeps invoking New Zealand's 2017 Whanganui River claim, Ecuador's constitutional provisions, the briefly granted personhood of the Ganges, because there are not many other solid cases, and none of them have meaningfully prevented ecological destruction. The *rights-of-nature* framework is offered with lyrical intensity but without philosophical or legal argument for the proposition that 'a river *is* alive'. Well if that's the case, what is Macfarlane trying to persuade one of?
 
-    Much of the book reads like a long prelude to an argument that never quite arrives. That probably explains the repeated return to the 2017 Whanganui River settlement: it remains one of the clearest and most famous examples available. But even then, the case is more 'invoked' than 'tested'. Macfarlane never really supplies the philosophical or legal rigour needed to make the idea that 'a river *is* alive' feel fully earned. The book seems to want conviction from the reader before it has done enough to engender it.
-
-    That is what makes the book so frustrating. The prose is indeed lyrical, and the urgency is real enough, but the Macfarlane's proposal stays oddly hollow. The content feels thin, the people flatter than they should be, and one keeps coming back to the same question: what exactly is Macfarlane trying to persuade the reader of? By the end, this one unkind thought is hard to shake: 'A river may be alive, but certainly can't say the same for some characters in this book.'
+    The book has been called 'hypnotic' and 'urgent' when it came out, which is precisely the kind of language that flatters urgency without interrogating it. The hollowness of the content and the flatness of the characters end up producing a verdict harsher than I intended: <u>a river may be alive, but some people probably are not really alive.</u> Macfarlane writes beautifully, as always. But beauty without substance is decoration, and one expects more from a writer of his intelligence.
 
 - title: "Capitalist Realism: Is There No Alternative?"
   type: "book"
@@ -484,22 +48,730 @@
   year: 2009
   pin: true
   eval: "loved"
-  image: "/assets/images/thoughts/capitalist_realism.jpg"
+  image: "/assets/images/thoughts/books/capitalist_realism.jpg"
   posted: "2026-03-18"
   text: |
     Reading the afterword to Mark Fisher's first 'pamphlet', I kept picturing him in that small cabin, sorting through scattered notes on the eve of Occupy Wall Street and the Egyptian revolution, and felt an uncontrollable rush of admiration, and of sadness. There is something peculiarly moving about encountering ***Capitalist Realism*** from the threshold of 2009/2010: before the cracks had fully opened, before anti-capitalism briefly recovered the sense that it might once again speak in the future tense.
 
     The usual objection is that the book lacks philosophical substance, that it names a mood rather than constructs an argument. Fair enough: Fisher is not doing *Žižek*, and is not trying to. What he is doing, in barely eighty pages in the first edition, is something rarer: <u>handing an entire generation the vocabulary for what it already felt but could not say</u>. The privatisation of stress. The depoliticisation of mental illness. The way ecological catastrophe gets endlessly 'acknowledged' and then quietly metabolised, as though the acknowledgement itself were the solution. These are not arguments in the academic sense; they are acts of naming, and they land with the force of recognition. The orthodox left will note that Fisher never quite identifies capitalism as a social relation rooted in labour exploitation, that the critique floats as phenomenology unmoored from political economy. There is something to this. But Fisher understood that <u>no amount of 'correct' structural analysis matters if nobody can feel the structure pressing on them, and that making it felt is not ancillary to politics but prerequisite</u>. The very success of the phrase 'capitalist realism' proves the point: it entered the lexicon precisely because it named what was already there, inarticulate and suffocating.
-    
+
     Philosophical arguments aside, Fisher's prose is so compressed and so precise that individual sentences carry the weight of entire chapters elsewhere. That closing line, 'From a situation in which nothing can happen, suddenly anything is possible again', manages to be a political programme and a prayer in the same breath. Knowing now about the unfinished *Acid Communism*, where Fisher was beginning to reframe neoliberalism not as an inevitability but as a counter-revolution against the thinkable, the pamphlet's final pages feel less like a conclusion than a coiled spring. By the end I was close to tears — not because the book solves anything; it does not, and it knows it does not — but because someone found the words.
 
+
+- title: "Bleeding Edge"
+  type: "book"
+  creator: "Thomas Pynchon"
+  creator_role: "by"
+  year: 2013
+  eval: "loved"
+  image: "/assets/images/thoughts/books/bleeding_edge.jpg"
+  posted: "2026-03-11"
+  text: |
+    My favourite among the Pynchon-lites. *Inherent Vice* (2009) entertained me, *Shadow Ticket* (2025) amused me; ***Bleeding Edge*** stayed with me. In the year when nobody quite knew what to call that attack, when '11 September' and '9/11' were still competing for semantic territory, Pynchon charts the invisible threads linking American internet start-ups, the FBI and Gulf states, threading them through seemingly unrelated characters and producing countless set pieces that feel at once absurd and historically precise. <u>The DeepArcher virtual world reads now as elegy for the internet's lost utopian promise, and the novel's paranoid circuitry, its suspicion that *surveillance capitalism* was already embedding itself in the architecture of everyday life, has aged into prophecy.</u>
+
+    It is also the most human of the Pynchon-lites, perhaps of all Pynchon. Maxine's semi-separation from Horst carries real emotional weight; she reads like a sharper, more distinct Oedipa Maas from *The Crying of Lot 49* (1966), a woman whose investigative compulsion is not a retreat from feeling but a form of it. March's family dynamics leave a strong impression. Critics have called it Pynchon's most 'accessible' novel, which is true enough but misses the point: accessibility here is not a concession but a structural choice. <u>The domesticity is the ground against which the conspiracies register.</u> One walks through Silicon Alley alongside Maxine and feels the grief of a city still in shock, still trying to metabolise what happened, and the prose holds both the noir comedy and the mourning in the same breath. Will PTA adapt *Bleeding Edge*? I hope so. But I suspect only Pynchon's sentences can do this particular thing.
+
+- title: "Gravity's Rainbow"
+  type: "book"
+  creator: "Thomas Pynchon"
+  creator_role: "by"
+  year: 1973
+  pin: true
+  eval: "loved"
+  image: "/assets/images/thoughts/books/gravitys_rainbow.jpg"
+  posted: "2026-03-01"
+  text: |
+    Years from now I will still remember the V2 rocket shards scattered across London, the Kryptosam messages hidden inside them, the four tragedies behind those messages. I will still remember Katje's ancestor Frans massacring the dodos of Mauritius, the early twentieth-century German army massacring the Herero people of Africa, the Nazi army massacring European Jews in the Second World War. I will still remember the diffuse hope drifting through the wood-smoke air of the Zone in 1945, after the war ended. <u>These images persist not because Pynchon labours to make them beautiful, though they are, but because the structure of ***Gravity's Rainbow*** lodges them in one's mind the way the rocket's parabola lodges itself in the sky: an arc that contains both ascent and annihilation, both promise and gravity.</u>
+
+    While rockets were calculated with integrals at Brennschluss and the Germans analysed trajectories with differential equations, Franz Pökler was watching his daughter Ilse grow up in units of years, each visit to the camp a data point in a graph he could not bear to read, until she was gone. <u>That is what this novel does better than any other war novel I have read: it makes the mathematics of destruction and the mathematics of a life rhyme, and the rhyme is unbearable.</u> The Pulitzer board called it 'unreadable' and 'obscene'. Both charges contain a grain of truth: Pynchon demands that one read against the current, and the obscenity is the world's, not his. The Zone is the space where national identities dissolve, where the *Elect* and the *Preterite* shuffle past each other in the rubble, where paranoia and anti-paranoia become indistinguishable. The Elect/Preterite distinction is perhaps Pynchon's most original theological contribution: a Calvinist framework repurposed to describe every system of power, every division between those who ride the rocket and those who are crushed beneath it. The novel's own form enacts this entropy, its narrative fragmenting and dissolving as surely as Slothrop does, until the text itself becomes a kind of Zone. Edward Mendelson called it an 'encyclopedic narrative' in the tradition of Dante and Melville. I would add only that it is also a deeply personal one.
+
+    Pynchon, in unruly but precise language, writes the most anti-mainstream Second World War novel imaginable, and <u>I found myself dissolving alongside Slothrop in the Zone, watching a magnificent rainbow arch after the rain, eyes brimming.</u>
+
+- title: "The City & the City"
+  type: "book"
+  creator: "China Miéville"
+  creator_role: "by"
+  year: 2009
+  eval: "meh..."
+  image: "/assets/images/thoughts/books/the_city_the_city.jpg"
+  posted: "2026-01-18"
+  text: |
+    ***The City & the City*** is called *new weird*, but it is neither new nor weird. The premise, two cities occupying the same physical space, is genuinely interesting; it won the Hugo, the Clarke, the World Fantasy, and the Locus, which tells one more about prize committees than about the novel. Miéville's world-building is surprisingly poor for someone whose Bas-Lag novels thrive on maximalist invention. I kept losing suspension of disbelief in the second half: what happens to a dog from Besžel that wanders into Ul Qoma? Why would objects from one city not constantly end up in the other? <u>The concept of *unseeing* is philosophically rich, a Foucauldian disciplinary mechanism internalised as perception, but Miéville never interrogates it with the seriousness it deserves.</u>
+
+    The ending is the real disappointment. The final thirty pages collapse a potentially myth-laden story into something half corporate thriller, half political farce. Breach, which should function as the novel's sublime unknowable, gets explained into banality. I should have tried harder to manage my expectations. <u>There is a version of this book that earns its allegorical weight, that makes the seeing and unseeing feel as strange and inevitable as Kafka's castle.</u> This is not that version.
+
+- title: "Slaughterhouse-Five"
+  type: "book"
+  creator: "Kurt Vonnegut"
+  creator_role: "by"
+  year: 1969
+  eval: "disliked"
+  image: "/assets/images/thoughts/books/slaughterhousefive.jpg"
+  posted: "2026-01-06"
+  text: |
+    I understand the book's canonical status, and Vonnegut's formal nerve is real: compressing the Dresden firebombing into a slim, unstuck-in-time fable takes a kind of courage. But ***Slaughterhouse-Five*** did not work for me. <u>The deadpan repetition of 'So it goes' has been called everything from the most effective literary device of the twentieth century to a morally irresponsible trivialisation of mass death.</u> I lean toward the latter. So it goes.
+
+    Billy Pilgrim's passivity, far from being a radical critique of agency, reads to me as authorial abdication: Vonnegut uses time-travel as a *narrative anaesthetic*, numbing both character and reader to the violence rather than forcing confrontation with it. <u>The result is a novel that mistakes detachment for depth, and repetition for profundity.</u> Perhaps one needs to have read it in the shadow of Vietnam, when the deadpan itself felt like dissent. I came to it too late, and the distance shows.
+
+- title: "The Prose Edda"
+  type: "book"
+  creator: "Snorri Sturluson, (ed.) Jesse L. Byock"
+  creator_role: "by"
+  year: 1220
+  eval: "liked"
+  image: "/assets/images/thoughts/books/prose_edda.jpg"
+  posted: "2025-12-24"
+  text: |
+    Compared to the mythologies of other religions and peoples, Norse mythology as Snorri renders it, rooted in Iceland, filtered through a Christian lens and a *euhemeristic* framing device, is more chaotic, looser, but also darker and more direct. Snorri mythologises everything: wind, war, clouds. His gods are virtually indistinguishable from mortals, their temperaments and knowledge systems riddled with contradictions. Scholars like Anthony Faulkes and Ursula Dronke have long debated how much Snorri's systematising impulse reshaped oral traditions that were originally fragmentary and incoherent; <u>what survives, though, feels less like a polished theology and more like a record of divine dysfunction.</u> The gods slaughter the innocent: Þórr casually kicks the dwarf Litr to death on the way to send Baldr's body to Hel. They are morally bankrupt: Óðinn stealing Suttungr's mead with the self-righteousness of a conqueror. They are irrational: actual punishment for Loki only arriving after he has caused untold damage.
+
+    Norse gods are not a better version of humanity in terms of morality, knowledge, or reason. The giants are actually wiser. <u>That is what makes Norse mythology singular among the world's religious narratives: it does not idealise its own pantheon.</u> The Ragnarök passage, frequently cited as one of the most powerful *eschatological* narratives in world literature, gains its force precisely because the gods who fall are already compromised, already petty, already too human. One reads the ***Prose Edda*** not to worship but to recognise.
+
+- title: "Inherent Vice"
+  type: "book"
+  creator: "Thomas Pynchon"
+  creator_role: "by"
+  year: 2009
+  eval: "liked"
+  image: "/assets/images/thoughts/books/inherent_vice.jpg"
+  posted: "2025-12-19"
+  text: |
+    ***Inherent Vice*** is Pynchon's light novel. It reads far more smoothly than Shadow Ticket, and the jokes and puns suit my taste better, but there is a faint nagging feeling that Pynchon is not great at high-density dialogue. The PTA adaptation exposes this counterintuitively: Pynchon's prose is conversational, he regularly drops subjects mid-sentence, but his dense conversational scenes feel theatrical, and PTA's lines lifted straight from the text carry that same stagey quality. <u>The 'inherent vice' of the title, a legal term for a commodity's tendency to destroy itself, functions as a quiet metaphor for the counterculture's self-destruction at the turn of the seventies, the moment between the Summer of Love and the Manson murders when the dream curdled.</u>
+
+    Still, I love Pynchon's detective stories, love how he reveals the mystery by refusing to resolve it, love his sentences. Doc Sportello is a stoned Philip Marlowe wandering the circuit-board streets of late-sixties Southern California, and if one never quite trusts what he understands, that is the point: epistemological uncertainty as genre principle. Same as Shadow Ticket: it was tremendous fun reading it. And <u>in Pynchon's catalogue, tremendous fun is never just fun.</u>
+
+- title: "Models of the Mind: How Physics, Engineering and Mathematics Have Shaped Our Understanding of the Brain"
+  type: "book"
+  creator: "Grace Lindsay"
+  creator_role: "by"
+  year: 2021
+  eval: "loved"
+  image: "/assets/images/thoughts/books/models_of_the_mind.jpg"
+  posted: "2025-12-14"
+  text: |
+    Fitting a proper survey of neuroscience's major models, Perceptron, attractor networks, DCN, Bayesian models, into a relatively slim volume is already an astonishing feat. Add Lindsay's accounts of each model's development history, sketches of key figures, accessible analogies, and clear examples, and ***Models of the Mind*** becomes, in my mind, the only essential introductory text for understanding computational neuroscience. The field has needed a book like this for years: something that sits between overly technical textbooks and the simplifications of popular science, something that respects the mathematics without weaponising it against the uninitiated. Lindsay, a computational neuroscientist herself, writes with the quiet authority of someone who has actually worked with these models, not merely read about them.
+
+    My favourite passages: Lindsay on Hodgkin and Huxley's research before, during, and after the war, the way a world conflict interrupted and then redirected a programme of work that would reshape our understanding of neural signalling. Pavlov quietly in his lab through years of upheaval, the science continuing as the world outside burned. Pitts and McCulloch discussing philosophy and psychology while developing the first Perceptron, two minds from utterly different backgrounds converging on a formal description of thought itself. <u>Every origin story of these models is a reminder that neuroscience is rooted in philosophy and mathematics.</u> Without both, we would be lost. <u>Lindsay makes one feel this not as a platitude but as a lived intellectual history, and that is rare.</u>
+
+- title: "The Call of Cthulhu and Other Weird Stories"
+  type: "book"
+  creator: "H.P. Lovecraft, ed. S.T. Joshi"
+  creator_role: "by"
+  year: 1926
+  eval: "liked"
+  image: "/assets/images/thoughts/books/call_of_cthulhu.jpg"
+  posted: "2025-12-08"
+  text: |
+    My first Penguin Orange. S. T. Joshi's editing is excellent: starting with *Dagon* and early stories less embedded in the Lovecraft mythos, building gradually to ***The Call of Cthulhu*** and *The Shadow Over Innsmouth*, the collection maps a trajectory from apprentice weird fiction to the fully realised *cosmicism* of the later tales. The Penguin Classics imprimatur did real work for Lovecraft's literary legitimacy, placing him alongside Poe and Hawthorne in a series that implicitly argues for canonical status. <u>Whether one accepts that argument depends on how much one can metabolise the racism, which is not incidental to the fiction but often structural, woven into the very texture of what Lovecraft finds horrifying.</u>
+
+    Surprisingly, the shorter stories are more gripping and more durable. My favourite passages and scenes are mostly in the shorts: the bleeding roof in *The Picture in the House*, the narrator's despair in *The Outsider* looking into the mirror, the slow chromatic contamination in *The Colour Out of Space*. Lovecraft's prose is famously purple, his characters flat, but in the compressed form of the short story these weaknesses matter less; the atmosphere does the work that character cannot. Favourites in order: *The Colour Out of Space*, *The Whisperer in Darkness*, *The Picture in the House*, *The Outsider*, *The Rats in the Walls*. <u>One keeps returning to Lovecraft not for the writing, which is often overwrought, but for the feeling: that cold, vertiginous sensation of the human scale dissolving against something vast, indifferent, and very old.</u>
+
+- title: "Solenoid"
+  type: "book"
+  creator: "Mircea Cărtărescu, trans. Sean Cotter"
+  creator_role: "by"
+  year: 2015
+  eval: "loved"
+  image: "/assets/images/thoughts/books/solenoid.jpg"
+  posted: "2025-11-29"
+  text: |
+    Cărtărescu's Bucharest is a vast living organism. The veins extending from the city centre vibrate with the solenoid's hum, breaking through the gaps in a neighbour's blind wall and the skin between librarian Palamar's thumb and forefinger. His prose is so precise, so sensorily saturated, that after six hundred pages scenes still rise up unbidden: Irina pressing the button by her bed, slowly descending from the ceiling; hundreds of Picketists screaming for help before the city-centre mortuary; the boat-shaped house; the labyrinthine school corridors; the narrator's nightmares pressing down on me too. <u>The failed-poet-turned-schoolteacher who narrates this book is not Cărtărescu, and is entirely Cărtărescu: a consciousness so porous that Bucharest's topography becomes indistinguishable from the topography of thought itself.</u> In a tradition running from Kafka through Borges to Schulz, the city is both literal and impossible, its architecture obeying *dream-logic* while remaining stubbornly, concretely Romanian.
+
+    Between hallucination and dream, between solenoid and belly button, the book asks: what is reality? Is it the navel one can touch, the lice in one's hair? Then what are the other dimensions one cannot see, the ones that might offer answers, an escape plan? Memory is not reality, so what is memory? What lies at the city's edge, reachable by tram 21? Is a god who abandoned us still a god? Does an unreadable text carry meaning? <u>And finally, the question that gives the whole book its gravitational pull: how does one get saved?</u> The usual charge against Cărtărescu is maximalism, excess, a prose so rich it risks toppling into self-indulgence. Fair enough: this is not a novel that respects economy. But the maximalism is structural, not decorative. Every hallucinated image, every recursive nightmare, every obsessively catalogued Bucharest street feeds the same metaphysical engine. The book earns its six hundred pages because each one presses harder on the question of whether reality has an outside.
+
+    What stays with me is the texture: the way Cărtărescu renders consciousness as a space one inhabits rather than a faculty one possesses. The solenoid under the house is not a metaphor. It is the thing itself, the hum beneath the ordinary, the force that warps the floorboards and lifts a woman from her bed. That the Nobel committee finally recognised him feels less like a vindication than a correction. <u>One finishes ***Solenoid*** not with answers but with the physical sensation of having been somewhere, having touched something real that cannot be named.</u> The closest analogue I know is waking from a dream one cannot quite recover, knowing it mattered, knowing it is already dissolving. The Picketists' revolt against death reads as political allegory: a protest movement whose enemy is not a regime but mortality itself, futile and magnificent in equal measure. The Voynich manuscript that threads through the novel is the perfect Cărtărescu object, real yet untranslatable, saturated with meaning that can never be confirmed. And the narrator's failed literary debut, the manuscript rejected by the Romanian establishment, mirrors Cărtărescu's own fraught relationship with a national canon that could never quite contain him.
+
+- title: "Flesh"
+  type: "book"
+  creator: "David Szalay"
+  creator_role: "by"
+  year: 2025
+  eval: "disliked"
+  image: "/assets/images/thoughts/books/flesh.jpg"
+  posted: "2025-11-18"
+  text: |
+    Cannot accept the sheer number of hollow, empty sentences and scenes. Szalay's method in ***Flesh*** seems to depend entirely on a kind of studied quirkiness: his favourite move is 'say it once, then repeat in the next paragraph'. Quirky novels abound, and Szalay's is the least skilful, least substantial version of the impulse. 'He looks in the fridge. He smokes on the balcony. He watches TV.' <u>The critics have been calling this formally audacious; I call it formally vacant.</u>
+
+    The contrast with Cărtărescu is instructive. Where Cărtărescu's maximalism in *Solenoid* (2015) earns its excess through genuine metaphysical ambition, pressing relentlessly against the limits of what fiction can hold, Szalay's minimalism never opens onto anything harder or stranger. <u>The spareness is not restraint; it is the absence of anything that would require restraint.</u> One finishes the book suspecting that the repetition-as-technique is not a style but a crutch, a way of filling pages without the burden of having something to say.
+
+- title: "V."
+  type: "book"
+  creator: "Thomas Pynchon"
+  creator_role: "by"
+  year: 1963
+  eval: "loved"
+  image: "/assets/images/thoughts/books/v.jpg"
+  posted: "2025-11-17"
+  text: |
+    Thousands of themes buried in Pynchon's Egypt, Virginia, New York, Malta, Paris, and mainland Italy: from modernity's dismantling of the individual (SHROUD and SHOCK, the 'Bad Priest's' progressive replacement of flesh with prosthesis and fetish), to the slave trade and pre-war African dealings (Bondelswarts bodies pressed together), to the shift from analogue to digital signal (the Kilroy figure scrawled across half a century). The dual structure, Profane's purposeless drift against Stencil's paranoid quest, enacts the central tension of *postmodern* existence: between entropy and the desperate imposition of meaning. Stencil reads V. into everything because he must; Profane reads nothing into anything because he cannot. <u>Between these two failures of interpretation, Pynchon builds an entire world.</u>
+
+    But among all these themes, my favourite is Pynchon's yo-yo. Anyone who has ever watched a yo-yo understands Profane drifting aimlessly between first and last stops on the New York subway, understands Maijstral's repeating history, understands the tree-fruit-bird-shit-tree cycle in Slab's Cheese Danish No. 35, and can see the dozens of characters looping, crossing, colliding through this novel: dozens of yo-yos, inextricably tangled in eternal motion, their identities losing all meaning. <u>The yo-yo is Pynchon's most elegant image because it contains everything the novel wants to say about determinism and drift without requiring a single explanatory sentence.</u> What scholars call 'encyclopaedic narrative', what the poststructuralists call *ontological instability*, Pynchon calls a yo-yo.
+
+    The Herero genocide chapters remain among the most devastating things Pynchon has written, and he was twenty-six when he wrote them. The systematic extermination in German South-West Africa, rendered with clinical precision and moral fury, announces the scope of Pynchon's moral vision from the very start. V. herself, progressively replacing her body with clockwork and glass until the children of Malta disassemble her on the street, is the novel's darkest joke: the Enlightenment project literalised as self-destruction. <u>One finishes ***V.*** feeling that Pynchon arrived fully formed, already in possession of every tool he would later refine.</u> The yo-yos are still spinning.
+
+- title: "Maus"
+  type: "book"
+  creator: "Art Spiegelman"
+  creator_role: "by"
+  year: 1991
+  eval: "loved"
+  image: "/assets/images/thoughts/books/maus.jpg"
+  posted: "2025-11-06"
+  text: |
+    Perhaps in the current climate, a book like ***Maus*** matters more than ever. Near the end of Part II, after Nazi persecution, family collapse, the eldest son dead, his wife a suicide, the parents reduced to smoke from a concentration camp furnace, the father, seeing his children give a Black man in New York a lift, says: how could you? Art asks: 'How can you, of all people, be racist!?' The father says: you don't understand, we are not like them. Suffering, apparently, is racially stratified too. This is the scene that detonates the entire book, the moment Spiegelman's metafictional apparatus, his mice and cats and pigs, stops being allegory and becomes accusation. <u>The animal masks slip, and what is underneath is not species but ideology.</u>
+
+    This brings to mind Germany's early twentieth-century massacres in southern Africa, the Herero, the Bondelswarts, which Pynchon writes about in *V.* (1963), and nobody said much about Germany then. <u>So: if one does not speak up when others suffer, why should one's own pain deserve to be seen?</u> Maus asks this question not rhetorically but structurally, through the very form of a comic that refuses the consolations of visual realism. Marianne Hirsch coined the term *postmemory* largely in response to this book: the inherited trauma of children who did not experience the event but cannot escape its gravity. Spiegelman dramatises this in the fraught, frequently ugly interviews with his father, in his guilt over his mother Anja's suicide, in the famous scene where he sits at his drawing board surrounded by a pile of corpses wondering whether he has the right to turn suffering into art. No one who has read Maus forgets it. The Tennessee school board that banned it in 2022 understood its power better than they knew: <u>the book makes complicity visible, and complicity does not enjoy being looked at.</u>
+
+- title: "As She Climbed Across the Table"
+  type: "book"
+  creator: "Jonathan Lethem"
+  creator_role: "by"
+  year: 1997
+  eval: "loved"
+  image: "/assets/images/thoughts/books/as_she_climbed.jpg"
+  posted: "2025-10-31"
+  text: |
+    Is ***As She Climbed Across the Table*** not one of the most romantic sci-fi novels ever written? Two hundred pages packed with delightful twists: quantum entanglement, the uncertainty principle, and blindsight woven together into a love story about a man losing his girlfriend to a void. Lack, the experimental anomaly that selectively absorbs some objects and rejects others, including the narrator Philip, is the purest metaphor for romantic rejection I have encountered in fiction. <u>One cannot argue with a hole in spacetime. One cannot persuade it to want you back.</u> The Lacanian resonance is obvious, the void that can never be filled, desire structured around absence, but Lethem wears the theory so lightly that it never suffocates the comedy.
+
+    And what comedy. Lethem's prose elevates an already brilliant premise to cult-classic territory: joke after joke, pun after pun, delivered with the deadpan of someone who understands that the funniest things are also the saddest. The entanglement of the cosmos and consciousness, grand love and small love, calls to mind Nolan's *Interstellar* (2014), Fisher's essay on the same, the way physics occasionally stumbles into the territory of feeling and finds it was already there. What makes the novel work, finally, is that Lethem does not take it too seriously. The lightness is earned, not evasive. Philip's heartbreak is real, his jealousy of a particle-physics experiment genuinely absurd and genuinely painful, and <u>the resolution, such as it is, lands with the tenderness of someone who knows that love is mostly a matter of what the universe decides to let through.</u>
+
+- title: "Waiting for Godot"
+  type: "book"
+  creator: "Samuel Beckett"
+  creator_role: "by"
+  year: 1953
+  eval: "loved"
+  image: "/assets/images/thoughts/books/waiting_for_godot.jpg"
+  posted: "2025-10-26"
+  text: |
+    A play that seems to mean nothing and ends up meaning everything. ***Waiting for Godot*** generates a thousand different meanings in readers and audiences. A literal thinking hat that grants the oppressed a useless voice; a tree that signifies nothing but an eternal wait for the known-but-unknown. Nothing happens, twice, and the repetition is the point: Act II mirrors Act I the way one day mirrors the last, the way history under Beckett's gaze is less progress than stutter. <u>The play's genius is structural. It does not argue that life is meaningless; it constructs meaninglessness so precisely that meaning keeps leaking in through the cracks.</u>
+
+    In Beckett's world one sees the traces of oppression and terror: Estragon's beatings, Vladimir's urinary afflictions, the boy or boys whose messages never clarify, Pozzo's rope around Lucky's neck. The Pozzo-Lucky dynamic reads as capitalism in miniature, master and slave bound in mutual degradation, Lucky performing thought on command until the thought itself collapses into a torrent of fragmented academic language, the Western intellectual tradition choking on its own debris. But aside from a few lines from Vladimir, nobody takes it seriously. Nobody revolts. They wait. They fill time with games, with boots, with carrots and turnips. <u>The passivity is the horror, and it is also, somehow, the comedy.</u>
+
+    Is this not a mirror held up to our own society? Beckett, an Irishman writing in French in the aftermath of a war he lived through as a Resistance member, understood that the most accurate depiction of the human condition is not tragedy but the inability to decide whether one is living a tragedy at all. The tree sprouts leaves between acts, and nothing changes. Vladimir and Estragon consider hanging themselves and conclude that the bough might not hold. One finishes the play, or watches it end, with the sensation that Beckett has described something one already knew but could not say: the paralysis is not imposed from without. <u>It is the waiting itself, the belief that Godot will come, that keeps one rooted to the spot.</u>
+
+- title: "The Secret History"
+  type: "book"
+  creator: "Donna Tartt"
+  creator_role: "by"
+  year: 1992
+  eval: "meh..."
+  image: "/assets/images/thoughts/books/secret_history.jpg"
+  posted: "2025-10-25"
+  text: |
+    My first Donna Tartt. The prose is as advertised: flowing, propulsive, writing psychological thriller in a register that feels like postmodern literature. Reading the first few chapters, I thought: this is what Paul Auster wanted to be but never managed. The inverted mystery structure, borrowed from Greek tragedy, the murder revealed on the first page, is genuinely effective, and the first half sustains its suspense cleanly. <u>The Dionysian frenzy gone wrong, the bacchanal that tips into real death, is a premise good enough to build a career on.</u> Charles and Francis in particular are vivid, drawn with a precision that makes their later unravelling feel earned.
+
+    The characterisation and plotting become rather too cliched and flat in the second half, which is a shame. Tartt has been credited with inventing *dark academia*, and one can see why: the aesthetic is seductive, the Vermont campus rendered with a sensory richness that makes one want to enrol. But the novel's weakness is also its genre's weakness. Once the murder is done, the paranoia and guilt spiral into territory that dozens of lesser thrillers have since colonised, and at five hundred pages the narrative wanders where at three hundred it might have been a compact suspense gem. The final dissolution still satisfies, and for a debut it is already remarkable. <u>But one leaves ***The Secret History*** suspecting that Tartt's gifts, which are considerable, needed a tighter frame to fully ignite.</u>
+
+- title: "When Breath Becomes Air"
+  type: "book"
+  creator: "Paul Kalanithi"
+  creator_role: "by"
+  year: 2016
+  eval: "disliked"
+  image: "/assets/images/thoughts/books/when_breath_becomes_air.jpg"
+  posted: "2025-10-25"
+  text: |
+    I want to know what kind of family produces a Paul who, knowing he is dying and cannot meaningfully contribute to raising children, still decides to have a baby with Lucy, and even returns to the operating room after learning of the pregnancy. Beyond name-dropping Yeats, Eliot, and Wittgenstein, there is nothing in ***When Breath Becomes Air*** that actually demonstrates Paul's love of literature or philosophy. The one attempt at atheism is riddled with errors. <u>Cancer does not automatically make one a good writer, husband, father, or doctor.</u> Came expecting profound reflections on death; left mainly mourning the loss of what was apparently a very skilled neurosurgeon.
+
+    Memoirs of terminal illness carry an implicit *moral authority* that can silence criticism; Kalanithi's book benefits from that silence more than it earns it. The literary name-dropping gestures at depth without achieving it, and the family ethics remain unexamined beneath the elegiac prose. <u>One suspects the book's reputation rests less on what it says than on the fact that its author did not survive to hear the objections.</u>
+
+- title: "Sátántangó"
+  type: "book"
+  creator: "László Krasznahorkai, trans. George Szirtes"
+  creator_role: "by"
+  year: 1985
+  eval: "loved"
+  image: "/assets/images/thoughts/books/satantango.jpg"
+  posted: "2025-10-18"
+  text: |
+    Krasznahorkai writes the comings and goings of a desolate Hungarian village like a stage play: twelve scenes corresponding to tango steps, six forward, six back, from the opening bells through the pipe-organ roar, the rain and dancing footsteps, cycling back to the bells tolling again at the final step. The structure is a closed system. No one escapes. Irimiás, the false messiah who returns to the village with promises of collective salvation, is both darkly comic and genuinely terrifying: a man who manipulates because manipulation is the only form of agency available in a world where the state has withdrawn and left nothing but mud. <u>Susan Sontag called Krasznahorkai the contemporary master of the apocalypse, and ***Sátántangó*** is where the apocalypse begins, not with fire but with rain and pálinka and the slow erosion of the will to resist.</u>
+
+    The whole thing is remarkably compact. The long sentences, which in description sound forbidding, are in practice easy to follow, hypnotic rather than punishing, closer to the experience of walking through heavy rain than of deciphering a puzzle. The images and dialogue are vivid: the doctor sitting by his window with a glass of pálinka, drinking it empty and refilling it over and over, watching the world outside through the weeds in his room, letting his mind drift. There is something grotesque and darkly funny beneath the misery, as if somewhere in Central Europe there really is such a man, such a village, such an endless autumn. Béla Tarr's seven-hour film adaptation understood this tone perfectly, translating the prose's oppressive rhythm into black-and-white duration. <u>But the novel stands on its own as one of the great post-communist European novels: a book about what happens when a system collapses and what is left is not freedom but the unbearable obligation to keep going without any idea where.</u>
+
+- title: "Shadow Ticket"
+  type: "book"
+  creator: "Thomas Pynchon"
+  creator_role: "by"
+  year: 2025
+  eval: "liked"
+  image: "/assets/images/thoughts/books/shadow_ticket.jpg"
+  posted: "2025-10-13"
+  text: |
+    It may be because I have not read it closely enough, but ***Shadow Ticket*** is the funniest and the emptiest Pynchon I have read. Funny because his absurdism and free-associative weirdness are on full display: motorcycle gangs tearing through the Hungarian desert, a golem from Czechoslovakia, <u>a self-aware and imperishable cheese whose maker is essentially the Al Capone of dairy</u>. The private-eye structure, Hicks McTaggart trailing a runaway heiress from Milwaukee through New York to Belgrade and Budapest, invites the *Inherent Vice* (2009) comparison, and it holds to a point: both are detective novels in the loosest sense, both meander gloriously. But where Doc Sportello's California haze carried *epistemological* weight, the 1932 setting here tips the balance toward period intrigue, and the paranoid circuitry never quite connects to a central charge.
+
+    So why empty? Because beyond pre-war Milwaukee's atmosphere of *manufactured compliance* and Central Europe's universal dread, Pynchon does not do much dissection of ideology. The deeper political and metaphysical pressure one expects from Pynchon is present but muted; the political resonances feel gestural rather than structural. Unlike *Vineland* (1990), where government repression seeps into the depths of the crowd and lays fear-bombs at the base of resistance movements, or *The Crying of Lot 49* (1966), where Oedipa's paranoia becomes a genuine epistemological crisis, Shadow Ticket reads more as *reconciliation* than reinvention: a return to signature concerns rather than a late-career departure. <u>Of course, the worst Pynchon is still better than most fiction; within his own catalogue, though, Shadow Ticket is comparatively shallow.</u> But hell, I cannot say I did not have a tremendous time reading it.
+
+- title: "Vineland"
+  type: "book"
+  creator: "Thomas Pynchon"
+  creator_role: "by"
+  year: 1990
+  eval: "loved"
+  image: "/assets/images/thoughts/books/vineland.jpg"
+  posted: "2025-10-09"
+  text: |
+    Pynchon writes the walking wounded of Nixon's War on Drugs and the long shadow of Vietnam: the students and activists killed by federal agents, the scholars swept away by historical tides, the loveless marriages, the stubborn love between a father and a daughter. Through one serious joke after another he paints America's most miserable decades of the twentieth century. At the turn of the seventies and eighties, the end of the hippie era, government repression seeped into the depths of the crowd, laying fear-bombs at the base of every resistance movement. The critical consensus has always been that ***Vineland*** is 'minor Pynchon', more accessible, warmer, less labyrinthine than the major novels. Fair enough: this is not the Pynchon of unruly sentence-architecture and encyclopaedic ambition. <u>What it is, instead, is the Pynchon who loves his people.</u> Brock Vond is one of his most chilling creations precisely because he is banal, a federal enforcer whose violence is institutional rather than demonic; Frenesi Gates, the radical-turned-informant, carries the entire betrayal of the sixties in her camera lens; and Prairie's search for her mother is the most emotionally legible quest in the whole catalogue. The Thanatoids, those television-zombie half-dead, feel less like satire now than prophecy.
+
+    All the idealism and tomorrow-will-be-better hope, shattered by the camera. The beautiful dreams of 24fps and Corvairs, the joy preserved on film and bass lines, so simply erased, seized, cleared, destroyed. <u>Pynchon understood before most that the sixties were not merely defeated but *metabolised*, their imagery and vocabulary absorbed by the very system they opposed.</u> Reagan-era America did not need to suppress the counterculture; it bought the footage. Yet the novel refuses despair outright. 'I'm not gonna forget,' someone says, and means it. Our eternal Summer of Love: 'While we had it, we really had some fun.' I believe him. <u>The warmth in that line is not nostalgia; it is evidence.</u>
+
+- title: "4 3 2 1"
+  type: "book"
+  creator: "Paul Auster"
+  creator_role: "by"
+  year: 2017
+  eval: "loved"
+  image: "/assets/images/thoughts/books/4321.jpg"
+  posted: "2025-09-27"
+  text: |
+    So what defines each Ferguson? Auster's answer seems to be: relationships. Whether each Ferguson's love life, family dynamics, or relationship with the political and social world, all become anchor points, however minor, with far-reaching consequences. Since the eighties Auster has been probing a world of possibility and *coincidence*, and that impulse finally comes into full bloom in ***4 3 2 1***, across eight hundred and sixty-odd pages. Growing up in post-war New England, each Ferguson becomes a mirror for the counterculture, anti-war sentiment, and the Summer of Love. <u>At that point the multiple Fergusons stop feeling like individuals and start feeling like Auster's own version of *ukiyo-e*: reflections of a moment, floating pictures of a world in flux.</u>
+
+    The structure is audacious, four parallel narratives held together by a single origin point, and it invites the obvious comparison to musical counterpoint, four voices playing variations on the same theme. The risk is blurring, and it happens: somewhere around pages five or six hundred, after I gave up tracking each character's specific timeline, the distinctions between Fergusons dissolved. But this turned out to be the point. Auster is not asking one to care equally about each version; he is asking one to feel the weight of contingency itself, the vertigo of lives that could have been otherwise. The novel is deeply autobiographical, almost embarrassingly so, Jewish-American Newark childhood, the writer's vocation, the political turmoil of the sixties. But autobiography metabolised into form becomes something rarer than memoir. This is the book where Auster's lifelong obsession with chance stops being a device and becomes a cosmology: identity is not chosen but assembled through accident, and the four Fergusons are the proof. The rest of the book, once I surrendered to it, was pure pleasure.
+
+- title: "Invisible"
+  type: "book"
+  creator: "Paul Auster"
+  creator_role: "by"
+  year: 2009
+  eval: "disliked"
+  image: "/assets/images/thoughts/books/invisible.jpg"
+  posted: "2025-08-30"
+  text: |
+    I had hoped that after *The New York Trilogy* (1987), *Moon Palace* (1989), and *Leviathan* (1992), Auster might have learned to stop writing flat, stock female characters with exhausted inner lives. He has not. He has doubled down. <u>Auster's women, with the possible exception of Mrs Hume in *Moon Palace*, all seem to be beautiful and desperate to sleep with the protagonist</u>: the French-American beauty Margot in New York, and even the narrator's own sister Gwyn. Compared to the intricate threads and callbacks of his earlier work, the watery plot here is a massive step down. Postmodernism should not have to sink this low.
+
+    For all its *postmodern* gestures, ***Invisible*** reads like a very polished but ultimately shallow literary thriller. The tri-partite narrative structure and the shifting points of view promise a destabilisation of truth that never truly arrives; one can see the machinery but not feel the vertigo. <u>Where Auster's best work makes *coincidence* feel like metaphysics, here the formal tricks feel merely decorative, appliqued onto a story that has nothing underneath to destabilise.</u> The incest subplot, presumably intended to shock, instead reads as a tired provocation, and the Parisian section drifts into travelogue. One finishes the book suspecting that Auster wrote it on autopilot, relying on his established repertoire of doublings and unreliable narrators without interrogating why any of it should matter this time round.
+
+- title: "A Pale View of Hills"
+  type: "book"
+  creator: "Kazuo Ishiguro"
+  creator_role: "by"
+  year: 1982
+  eval: "loved"
+  image: "/assets/images/thoughts/books/pale_view_of_hills.jpg"
+  posted: "2025-08-28"
+  text: |
+    Even having read one Ishiguro in Chinese translation, *The Remains of the Day* (1989), I had not anticipated that he could already, this early, use such calm, precise, spare, detached language to produce such dense emotion. Using her daughter's homecoming as a catalyst, Etsuko renders the *unreliability of memory* in fragments, and behind those unreliable shards is a heartbroken, regretful, socially constrained mother. <u>She wants to tell Niki things, but knows that death cannot just be laid on the table, so she can only reconstruct that summer from decades ago, piece by piece.</u>
+
+    The critical reading that Sachiko is Etsuko's alter ego, a displaced self-portrait narrated in the third person, feels almost too neat, yet the text earns it. Ishiguro threads survivor's guilt, emigration, and maternal failure into a single braid so fine that one only sees the full pattern retrospectively: Sachiko's neglect of Mariko mirrors Etsuko's of Keiko, the unnamed woman by the river haunts both timelines, and the decision to leave Japan carries a guilt that cannot be spoken in any language Etsuko now possesses. <u>What makes ***A Pale View of Hills*** extraordinary is its refusal to resolve. Memory here is not stable archive but emotional negotiation, shaped by grief into something that protects the rememberer at the cost of accuracy.</u> Ishiguro understands, long before *The Remains of the Day* would make it his signature, that the most devastating stories are the ones the narrator cannot quite bring herself to tell.
+
+    'Keiko was happy that day. We rode on the cable-cars.' Suppressed feeling presses against the page, almost but not quite breaking through. Faber placed several blank pages at the back of the edition; behind them, a distant, faint hill in fog. That image stayed with me long after I closed the book.
+
+- title: "The New York Trilogy"
+  type: "book"
+  creator: "Paul Auster"
+  creator_role: "by"
+  year: 1987
+  eval: "liked"
+  image: "/assets/images/thoughts/books/new_york_trilogy.jpg"
+  posted: "2025-08-24"
+  text: |
+    Auster's earliest prose already carries the faint current of *Moon Palace* (1989) and *Leviathan* (1992), and the same dependence on *coincidence*. Three so-called detective stories with no traditional twists or endings, all pointing ultimately toward the protagonist's *deconstruction of self*. Quinn, consumed by an obsession that leads nowhere, never solves the 'Paul Auster mystery'; Blue, lost in a riddle of identity, can never explain Black/White's motives; and what happened to Fanshawe, nobody knows. <u>The trilogy uses detective fiction as scaffolding for something quite different: an interrogation of authorship, identity, and the limits of language.</u> The detective's search for clues becomes a metaphor for the futile search for stable meaning, and the genre's promise of resolution is deliberately, almost cruelly, withheld.
+
+    In ***The New York Trilogy*** one can see many of Auster's recurring images: China, erotic coincidence, merged opposites, alienation, the city as labyrinth. The self-referential gesture of inserting 'Paul Auster' as a character in *City of Glass* is *postmodern* metafiction at its most explicit, but it works because the novel has already destabilised identity so thoroughly that the author's name becomes just another floating signifier. The weaknesses that persist across Auster's later career are already visible here too: female characters written almost entirely flat, complex psychological passages that feel muddled rather than mysterious. These are not minor flaws; they recur with enough consistency to constitute a blind spot. <u>Still, as a debut statement of intent, the Trilogy is formidable. It announced a writer whose world would run on chance, solitude, and the suspicion that narrative itself is a conspiracy we agree to believe in.</u>
+
+- title: "We Have Always Lived in the Castle"
+  type: "book"
+  creator: "Shirley Jackson"
+  creator_role: "by"
+  year: 1962
+  eval: "liked"
+  image: "/assets/images/thoughts/books/we_have_always_lived_in_the_castle.jpg"
+  posted: "2025-08-15"
+  text: |
+    Merricat and her sister's quiet dream-life, in a Gothic village and castle, circles in endless repetition, like the crack on the pavement outside Stella's coffee shop: it was always there. Life inside the castle froze completely after the great poisoning night: the sugar bowl coated in arsenic, old books nailed to trees, the manor gates locked shut. <u>Jackson replaces the traditional Gothic castle with a bourgeois household haunted by family secrets, and inverts the genre's central trope: it is the outside world that poses the threat, not the dark interior.</u> The villagers' hostility is *The Lottery* (1948) writ domestic, a mob driven by resentment of female autonomy and nonconformity.
+
+    But Merricat senses change coming: the nailed-up book falls, an unseen relative crashes in, everything teeters at the edge of collapse, and Merricat chooses to become that collapse itself. What makes ***We Have Always Lived in the Castle*** so unsettling is the gap between Merricat's cheerful tone and the horror of her actions, the way Jackson withholds the revelation of guilt and then frames it through the narrator's own self-justifying logic. One is made complicit in Merricat's worldview long before understanding its true nature. The rituals, the buried objects, the protective incantations, all occupy a zone between childish superstition and genuine menace. <u>Mark Fisher would have called this *eeriness*: the unexpected presence of agency where one expects absence, or the absence of it where one expects presence. Jackson got there decades before anyone named the feeling.</u>
+
+- title: "Leviathan"
+  type: "book"
+  creator: "Paul Auster"
+  creator_role: "by"
+  year: 1992
+  eval: "liked"
+  image: "/assets/images/thoughts/books/leviathan.jpg"
+  posted: "2025-08-14"
+  text: |
+    Auster wrote in the opening of *The New York Trilogy* (1987): 'nothing was real except chance.' He uses *coincidence* and infinite possibility to build worlds that feel familiar and profoundly alien at once, and ***Leviathan*** is perhaps the purest expression of this method. Sachs's life is shaped by dozens of coincidences: meeting Peter, meeting Maria, the fall from a fire escape, the accidental killing. Even the title originates in a coincidence born of Sachs's curiosity after committing a terrible act. <u>The critical reading of Sachs as 'the accidental radical' feels precisely right: his journey from celebrated novelist to domestic terrorist is driven not by ideology but by *contingency*, a chain of events that look like fate only in retrospect.</u> Auster deliberately refuses to give Sachs a satisfying political manifesto, making his violence morally unresolvable.
+
+    In the final chapter, Sachs's 'political act' is really just an expression of guilt and pain. Is he a hypocrite? His life has nothing to do with politics, yet he deceives himself and his friends, insisting he is acting for some 'cause'. All his courage, righteousness, and remorse collapse at the end into a cowardice he cannot even name. <u>The Hobbesian resonance of the title cuts both ways: rather than the state containing chaos, Sachs becomes a one-man leviathan, a self-appointed sovereign acting outside the law, and the irony is that this sovereign is governed entirely by accident.</u> Meanwhile Peter Aaron, whose initials mirror Auster's own, races to write the story before the FBI can define it, making the act of narration itself a *counter-political* gesture. Leviathan is just Sachs's imaginary enemy, and the tragedy is that he never sees this.
+
+- title: "The Crying of Lot 49"
+  type: "book"
+  creator: "Thomas Pynchon"
+  creator_role: "by"
+  year: 1966
+  eval: "loved"
+  image: "/assets/images/thoughts/books/crying_of_lot_49.jpg"
+  posted: "2025-08-11"
+  text: |
+    Pynchon's sentences are little bombs that detonate the instant one reaches them: one is left with the shattered remains of reality, piecing the original story back together oneself. This is not a complaint. With stubborn effort I followed Oedipa Maas through the 'circuit-board' streets of 1960s Southern California, trying to crack the Tristero mystery or convince myself it does not exist. The novel famously offers four possible interpretations and refuses to resolve any of them: the Tristero is real; Oedipa is projecting pattern onto noise; she is the victim of Inverarity's elaborate hoax; or she is simply going mad. <u>Pynchon's genius is to make each reading equally viable, and to insist that the impossibility of choosing between them is itself the point.</u> Oedipa functions as a kind of *Maxwell's Demon*, sorting signal from noise in an information-saturated America, and the novel enacts in its form the same *entropic* uncertainty it describes.
+
+    Oedipa, sliding gradually into conspiracy-theory obsession, is a radical feminist icon of sixties American counterculture, though the text never announces her as such. She is curious, suspicious, postmodern, standing directly across from the Leviathan of patriarchal and corporate America, losing her grip on reality as she dissolves into Tristero's never-sounded horn. Loveless marriage, her one-night stand fleeing with an underage girl, even her therapist succumbing to psychedelics: every male figure in her world fails her, manages her, or disappears. <u>The feminist reading, that her quest for the Tristero is also a quest for *autonomous subjectivity*, feels as structurally essential as the thermodynamic one.</u>
+
+    By the final auction scene Oedipa has almost nothing left, only her obsession with the truth. She is Kafka's Josef K., the Hunter in *Bloodborne* (2015), and Neo in *The Matrix* (1999): trapped in a system whose architecture she can almost perceive but never quite confirm. ***The Crying of Lot 49*** is about to begin. It never does. Pynchon leaves one there, on the threshold, and the silence that follows is the most eloquent thing in the book.
+
+- title: "Moon Palace"
+  type: "book"
+  creator: "Paul Auster"
+  creator_role: "by"
+  year: 1989
+  eval: "loved"
+  image: "/assets/images/thoughts/books/moon_palace.jpg"
+  posted: "2025-08-10"
+  text: |
+    Despite real frustration with Auster's treatment of several female characters, especially Kitty Wu and Mrs Hume, I could not resist ***Moon Palace***'s astonishing literary force. The *coincidences* here are stacked to the point of absurdity: Marco Stanley Fogg, whose very name encodes three famous wanderers, stumbles into employment with his own grandfather, then befriends and loses his own father. One either reads this as *postmodern* allegory or as authorial manipulation, and whether the novel works depends entirely on which side one falls. <u>I fell on the side of allegory, intoxicated by the seemingly offhand plot revelations, by Marco and his uncle Victor's mutual dependence, pitiful but never pitiable, by the casually dropped 'A here exists only in relation to a there', by Fogg's homeless wandering through Central Park like a secular ascetic discovering that dispossession is its own kind of knowledge.</u>
+
+    Auster's obsession with chance has never been mere cleverness; in Moon Palace it reaches something like a *cosmology*. The moon recurs as motif and metaphor: Victor's Moon Palace restaurant, the 1969 lunar landing, the lunar imagery in Effing's desert paintings. The moon is the irrational, the gravitational pull of accident on identity, and Fogg's life orbits it helplessly. <u>Searching for Effing's cave, and through it for meaning, and finding nothing, lost in the American desert, watching the moon finally 'find its place in the darkness': drifting Marco Fogg, like Phileas Fogg returning from his circumnavigation of the globe, finally makes peace with his own life.</u> That final image is one of the most beautiful things Auster ever wrote. I cannot forgive the flat women; I cannot deny the force.
+
+- title: "Stolen"
+  type: "book"
+  creator: "Ann-Helén Laestadius, trans. Rachel Willson-Broyles"
+  creator_role: "by"
+  year: 2021
+  eval: "meh..."
+  image: "/assets/images/thoughts/books/stolen.jpg"
+  posted: "2025-07-27"
+  text: |
+    A *Bildungsroman* set among the Sami indigenous people of northern Sweden. Slow-paced, but illuminating: I learned a great deal about the conflicts between Sami and Swedish settlers over reindeer herding, about Sami customs and the quiet violence of *cultural erasure*. <u>The Scandinavian version of indigenous-settler conflict rarely makes it to screen or page, which gives the novel a certain documentary urgency.</u> Laestadius, who is Sami herself, writes from inside the culture with an authenticity that most outsider accounts of indigenous life conspicuously lack.
+
+    The coming-of-age element is interesting enough, but though eleven years pass in the novel, from 2008 to 2019, Elsa's character arc remains thin. Her personality stays too consistent from childhood to adulthood; she still feels like a little girl by the 2019 sections, and the emotional range narrows rather than deepens. <u>A novel that spans a decade ought to show its protagonist metabolising time, not merely enduring it.</u> Still worth reading for the world it opens, but ***Stolen*** needed stronger bones.
+
+- title: "The Year of Dreaming Dangerously"
+  type: "book"
+  creator: "Slavoj Žižek"
+  creator_role: "by"
+  year: 2012
+  eval: "liked"
+  image: "/assets/images/thoughts/books/year_of_dreaming_dangerously.jpg"
+  posted: "2025-07-11"
+  text: |
+    Žižek the polemicist, stirring Marx's *surplus value* together with Lacan's *surplus enjoyment* in his iron pot, as always. In ***The Year of Dreaming Dangerously*** he writes about the London streets of 2011 and Tahrir Square, about how that year's great awakening was killed, buried, and had flowers planted on the grave by media spectacle and liberal recuperation. The diagnosis is sharp: each uprising briefly punctured the membrane of *capitalist realism*, only to be narrativised into harmlessness by the very system it threatened. What Žižek understands, and what the orthodox left sometimes forgets, is that the problem was never the absence of anger but the absence of a framework capable of converting anger into programme. <u>The protesters could occupy the square but not the concept.</u>
+
+    He no longer believes history will gently self-correct, the way the old-school Marxists waited for productive forces to finally burst through the chains of production relations. Žižek's capitalism is a self-renewing, status-quo-preserving monster, kept alive precisely by crises, feeding on its own contradictions rather than succumbing to them. Institutionally manufactured scarcity, the commodification of dissent, the liberal co-optation of radical energy: these are not bugs but features. We need radical transformation, he insists, and perhaps he is right. But 2011 was fifteen years ago, and nothing that fierce has come back. The book's greatest strength, its sense of urgency, is also the source of its pathos. <u>One finishes it aware that the dreaming was real, the danger was real, and the waking was permanent.</u>
+
+- title: "Did Somebody Say Totalitarianism? Five Interventions in the (Mis)use of a Notion"
+  type: "book"
+  creator: "Slavoj Žižek"
+  creator_role: "by"
+  year: 2001
+  eval: "liked"
+  image: "/assets/images/thoughts/books/did_somebody_say_totalitarianism.jpg"
+  posted: "2025-06-05"
+  text: |
+    Žižek is not defending totalitarianism. He is trying to show that 'anti-totalitarianism' functions as liberal ideology's self-deception mechanism: the conceptual blockade that forecloses any serious left politics by equating every emancipatory project with the Gulag. ***Did Somebody Say Totalitarianism?*** is full of deliberate provocation; using Agamben's 'Muslim' to denote the Muselmann of Nazi concentration camps is a prime example, designed to make the reader flinch and then think about why they flinched. <u>What Žižek grasps, and what makes the provocation more than mere contrarianism, is that the liberal sanctification of suffering has its own ideological function: it turns historical atrocity into a moral absolute that conveniently immunises the present order from critique.</u>
+
+    His strength is directness and sharpness, though some Lacanian concepts remain overly opaque, giving the rhythm an uneven quality, lurching between electrifying polemic and passages that feel like theoretical throat-clearing. But the insight at the intersection of politics and psychoanalysis is undeniable. Chapter three applies almost too obviously to a certain country's current situation, and, more diffusely, to the liberal democracies too: sanctifying tragedy, tabooising totalitarianism, concretising the individual, dogmatising myth. The pattern Žižek identifies, in which the very invocation of 'totalitarianism' becomes a thought-stopper rather than a thought, feels more relevant now than when he wrote it. <u>One does not have to follow every Lacanian loop to recognise the central claim: that the loudest anti-totalitarians are sometimes the ones least willing to examine the structures they defend.</u>
+
+- title: "The Outsider"
+  type: "book"
+  creator: "Albert Camus"
+  creator_role: "by"
+  year: 1942
+  eval: "loved"
+  image: "/assets/images/thoughts/books/outsider.jpg"
+  posted: "2025-01-21"
+  text: |
+    I envy Meursault. I am helplessly unable to say what I mean, helplessly unable to refuse someone who wants me, helplessly performing grief at funerals, helplessly living as an insider. Existing in this society feels like moving behind a membrane I cannot pierce. Pretending to care, just to get through tomorrow.
+
+    That is the raw nerve of ***The Outsider***. Camus writes in terse, paratactic sentences, stripped of causal connectives, and this formal austerity is not mere style: it enacts the absurd at the level of syntax, each sentence landing as a discrete fact unmoored from consequence. Meursault does not weep at his mother's funeral. Meursault shoots a man on a beach. The court condemns him less for the killing than for the failure to perform, and in that gap between act and performance Camus locates the entire indictment of social convention. <u>The justice system does not want truth; it wants legibility. What it cannot read, it destroys.</u>
+
+    Postcolonial criticism rightly notes the unnamed Arab, the colonial violence that Camus renders invisible even as he renders Meursault's alienation visible. One should hold both things at once: the novel's philosophical power and its moral blind spot, the precision of its diagnosis and the narrowness of its sympathy. But what draws me back, what makes me envy Meursault rather than merely analyse him, is simpler and harder to say. <u>He refuses to lie. He refuses the membrane.</u> By the final pages, facing execution, he opens himself to the 'gentle indifference of the world' and finds it fraternal. I have never managed that. I suspect most people have not. Pretending to care, just to get through tomorrow.
+
+- title: "Misogyny"
+  type: "book"
+  creator: "Chizuko Ueno"
+  creator_role: "by"
+  year: 2010
+  eval: "liked"
+  image: "/assets/images/thoughts/books/misogyny.jpg"
+  posted: "2025-01-05"
+  text: |
+    Ueno says in ***Misogyny*** that she has moved beyond her early structuralist phase, and one can tell. Her critique of patriarchy is not limited to a 'structural victim' framework; she tracks individual women and the mother-daughter dynamic as living, evolving things, refusing the temptation to collapse persons into positions. In Ueno's account, patriarchal misogyny takes root inside each individual from the moment men and women enter their designated roles. 'Becoming a man' means the homosocial alliance between men, deriving self-worth from male recognition, alienating and disdaining women, desiring the desire of other men. 'Becoming a woman' means recognising oneself as the object of male sexual projection. Women's value in patriarchal society is entirely determined by men, and only those, whether men or women, who are conscious of this mechanism can meaningfully resist it. <u>The structural insight is not new, but Ueno's achievement is in showing how the structure lives inside the individual, reproducing itself through affect and identification rather than simple coercion.</u>
+
+    The one real flaw: roughly half the argumentation leans on Freud and fictional characters, which produces a curious unevenness, as though the sociological precision of the best passages keeps drifting toward psychoanalytic speculation that cannot quite bear the weight placed on it. But perhaps that is also a kind of honesty about the difficulty of the subject: misogyny is not only a system but a pathology, and pathology invites the clinical gaze even when that gaze is insufficient. What is harder to forgive are some of the reader responses Ueno implicitly addresses, gems like 'women enjoy their gender privileges while playing the victim', which is genuinely embarrassing to encounter in the discourse surrounding a book this serious. <u>Ueno herself would call it what it is: misogyny wearing the mask of rationality.</u>
+
+- title: "The Weird and the Eerie"
+  type: "book"
+  creator: "Mark Fisher"
+  creator_role: "by"
+  year: 2016
+  eval: "liked"
+  image: "/assets/images/thoughts/books/weird_and_the_eerie.jpg"
+  posted: "2024-12-25"
+  text: |
+    Similar to Zampano in Danielewski's *House of Leaves* (2000), Fisher's dismantling of Freud's *unheimlich* depends on a boundary: between 'familiar' and 'strange', between presence and absence, between what should be there and what should not. The weird is the unexpected strangeness inside the everyday; without familiarity there can be no weird. The eerie is the unexpected absence or presence of agency: the importance of love in Nolan's *Interstellar* (2014) is eerie, as are M. R. James's ancient ruins, and, by extension, the agentless operations of capital itself, structures that produce effects beyond anyone's intention. Fisher understood that these were not merely aesthetic categories but political ones. <u>The eerie describes not just a mode of fiction but the logic of late capitalism: a system that seems to run by itself, haunting the present with futures that never arrived.</u>
+
+    My favourite passage is the reading of H. G. Wells's *The Door in the Wall* (1911), where Fisher identifies the eerie as a threshold affect, a feeling generated by the gap between what is glimpsed and what is accessible. His prose is compressed and precise, each sentence carrying more weight than most critics manage in a paragraph. A shame, then, that so many unexplained references dilute that brilliance: the book sometimes assumes a reader who has already done the homework, and the density of allusion can feel exclusionary rather than enriching. But ***The Weird and the Eerie*** is Fisher's last completed work, published weeks before his death, and perhaps there is something fitting about its fragmentary quality, its gestures toward readings that will never be finished. <u>One leaves it wanting more, which is both the book's limitation and its most powerful effect.</u>
+
+- title: "On Intelligence"
+  type: "book"
+  creator: "Jeff Hawkins"
+  creator_role: "by"
+  year: 2004
+  eval: "meh..."
+  image: "/assets/images/thoughts/books/on_intelligence.jpg"
+  posted: "2024-12-07"
+  text: |
+    ***On Intelligence*** closes with a range of specific predictions, some genuinely interesting: for instance, 'if lower brain regions predict incoming signals, higher regions need not process them'. The memory-prediction framework is intuitive and appealingly clean, a hierarchical model in which the neocortex stores temporal sequences and uses them to anticipate sensory input. The trouble is that twenty years of hippocampal and prefrontal recordings have largely complicated or contradicted the picture. Place cells and grid cells suggest the hippocampus is doing something far richer than sitting atop a cortical hierarchy as a passive relay; entorhinal-hippocampal loops are bidirectional and deeply entangled with spatial cognition, relational binding, and episodic memory in ways that resist reduction to sequence storage. The prefrontal cortex, meanwhile, involves working memory, executive control, and rule-based reasoning that cannot be flattened into hierarchical pattern matching. Hawkins treats the cortex as a single, homogeneous algorithm, which is elegant but anatomically untenable: V1 and dorsolateral PFC differ in cytoarchitecture, connectivity, and function in ways his framework cannot accommodate. <u>And the near-total absence of subcortical structures, neuromodulation, and the thalamus from the model is not a simplification but an omission.</u>
+
+    Still, one cannot deny the audacity of the vision. Hawkins was willing to think further and speak more boldly than most neuroscientists or computational scientists, and the memory-prediction framework anticipated aspects of *predictive coding* that would later gain serious traction. <u>Already ahead of most popular neuroscience writers on that score alone, even if the specifics have not aged well.</u>
+
+- title: "Phantoms in the Brain"
+  type: "book"
+  creator: "V. S. Ramachandran, Sandra Blakeslee"
+  creator_role: "by"
+  year: 1998
+  eval: "loved"
+  image: "/assets/images/thoughts/books/phantoms_in_the_brain.jpg"
+  posted: "2024-11-02"
+  text: |
+    Ramachandran writes in the preface of ***Phantoms in the Brain*** that he wanted to be a science communicator like Oliver Sacks. Having finished it: he has succeeded, and in some respects surpassed the model. Both Ramachandran and Sacks make a convincing case for the significance of case studies in modern science, for the stubborn power of careful observation at the bedside. Through conversation, behavioural experiment, and the combination of clinical and neural data, Ramachandran generates highly testable hypotheses from minimal apparatus: a mirror box, a cotton swab, a patient's willingness to talk. The elegance is in the simplicity. <u>Where the field was building ever-larger imaging pipelines, Ramachandran was asking a person with a phantom limb to close their eyes and tell him what they felt.</u>
+
+    Most striking is his discussion of individual rationalisation: the brain does not just perceive, it interprets, and in the course of interpreting, perception inevitably gets re-interpreted against objective reality. A patient with a paralysed left arm believes they 'did not want to raise it', not that they could not. The left hemisphere, that tireless confabulator, constructs a narrative of coherence even when the evidence screams contradiction. Ramachandran's speculation, that our drive for cognitive consistency is so powerful it actively distorts reality, extends far beyond clinical neurology. It is a lesson for non-patients too: every intact brain is performing the same trick, just more quietly. <u>One finishes the book wondering how much of what one calls 'reason' is simply the confabulator working overtime, and how rarely one catches it in the act.</u>
+
+- title: "A Short History of Nearly Everything"
+  type: "book"
+  creator: "Bill Bryson"
+  creator_role: "by"
+  year: 2003
+  eval: "loved"
+  image: "/assets/images/thoughts/books/short_history_of_nearly_everything.jpg"
+  posted: "2024-08-23"
+  text: |
+    I deeply regret only reading this in my third year of a PhD. Bill Bryson covers biology, evolution, geology, climate, ancient humans, and the history of science in a single sweep, treating each topic with real depth and written in the wittiest, most effortless prose of any popular science book I have read. The effortlessness is, of course, the hardest thing to achieve: Bryson spent three years researching the book, and the lightness of the writing conceals an enormous quantity of absorbed knowledge, distilled into anecdotes and explanations that feel as natural as conversation. <u>Where most science communicators choose between rigour and accessibility, Bryson refuses the trade-off, managing to be both precise and funny, often in the same sentence.</u>
+
+    What sets ***A Short History*** apart from other ambitious surveys is Bryson's instinct for the human story behind the discovery. Science here is not a march of disembodied facts but a procession of obsessives, misfits, and feuding personalities whose vanity and brilliance are equally responsible for what we know. The eccentricities of the scientists are not decorative asides; they illuminate how knowledge actually gets made, which is to say, messily, contingently, and often by people who would be unbearable at dinner. <u>One of those books that are simply excellent without faults, and the kind of book that makes one briefly, intensely angry at every science teacher who made the subject feel like a chore.</u>
+
+- title: "Metazoa: Animal Life and the Birth of the Mind"
+  type: "book"
+  creator: "Peter Godfrey-Smith"
+  creator_role: "by"
+  year: 2020
+  eval: "loved"
+  image: "/assets/images/thoughts/books/metazoa.jpg"
+  posted: "2024-03-31"
+  text: |
+    The world of philosophy would be better with more hands-on, empiricist thinkers like Peter Godfrey-Smith. Same experience as with *Other Minds* (2016): what he does best is still the anecdote, the concrete image that carries philosophical weight without needing to announce itself. <u>A female octopus throwing rubbish at a male who keeps harassing her while she builds a nest is an image I will never forget, and it does more argumentative work than a dozen thought experiments about qualia.</u> Godfrey-Smith's central claim, that subjective experience probably evolved as organisms needed to manage increasingly complex bodies, is persuasive precisely because he arrives at it through observation rather than speculation: sponges respond to their environment through chemical signals but lack a nervous system that integrates information in the relevant way, and so probably lack experience. The boundary is not sharp but gradual, consciousness arriving in degrees rather than as a binary switch, which is both philosophically honest and scientifically productive.
+
+    On the evolutionary path, intelligence takes a thousand strange forms, all arising from a simple circuit distinguishing self from other. That thread runs through what looks like a scattered collection of stories about corals, mantis shrimps, reef fish, and cephalopods, binding them into a single argument about how matter becomes mind. Godfrey-Smith's writing is as seductive as his philosophy: patient, precise, willing to sit with uncertainty rather than forcing premature resolution. There is a generosity in this approach, a refusal to treat the hard problem of consciousness as either solved or insoluble, that feels rare in a field dominated by confident declarations from both sides. One leaves ***Metazoa*** not with answers but with a richer sense of the question, and <u>with the conviction that philosophy done in wetsuits and on reefs is philosophy done right.</u>
+
+- title: "On Women"
+  type: "book"
+  creator: "Susan Sontag"
+  creator_role: "by"
+  year: 2023
+  eval: "liked"
+  image: "/assets/images/thoughts/books/on_women.jpg"
+  posted: "2024-01-08"
+  text: |
+    Many of Sontag's observations in ***On Women*** are pointed, sometimes devastatingly so. Capitalist society has men defining femininity as superficial, then concluding that women are superficial: the circularity is so perfect it almost looks designed, which is precisely her point. The liberation of women, Sontag insists, is fundamentally different from the liberation of men, because female liberation requires men to give up part of their power, which is why women's liberation and equality are not the same thing. <u>Equality within existing structures merely distributes the spoils more evenly; liberation demands that the structures themselves be dismantled.</u> These are not arguments that have dated. If anything, the contemporary discourse around 'lean in' feminism, which asks women to succeed on terms defined by patriarchal capitalism, proves Sontag's distinction still cuts.
+
+    The second half is a critique of Leni Riefenstahl: clear in its positions, uncompromising in its refusal to separate aesthetics from politics, but the argumentation is a bit thin, not entirely convincing. Sontag wants to demonstrate that Riefenstahl's visual language is inherently fascist, that the celebration of physical beauty and heroic submission cannot be disentangled from the ideology it served. The claim is strong, perhaps too strong for the evidence marshalled here, which feels compressed to the point of assertion. One senses the essay reaching for the force of *Fascinating Fascism* (1975) without quite achieving it. Still, the collection as a whole serves as a reminder that Sontag's feminism was never comfortable, never programmatic: <u>it was the feminism of someone who resisted the label even as she could not stop thinking about the problem.</u> That discomfort is part of its value.
+
+- title: "When We Cease to Understand the World"
+  type: "book"
+  creator: "Benjamín Labatut"
+  creator_role: "by"
+  year: 2020
+  eval: "loved"
+  image: "/assets/images/thoughts/books/when_we_cease_to_understand_the_world.jpg"
+  posted: "2023-05-31"
+  text: |
+    Labatut has written something that should not work. ***When We Cease to Understand the World*** is a hybrid of essay, speculative biography, and literary fiction, threaded together with a confidence that borders on recklessness: real scientists, real breakthroughs, real atrocities, all laced with invented interiority and hallucinatory prose until the seams between fact and fabrication dissolve entirely. The usual objection writes itself: this is irresponsible, this is fakery. But the book's genius lies precisely in that dissolution. Labatut understands that the history of twentieth-century science is already stranger than fiction, already saturated with moral vertigo, and that the conventional nonfiction frame, with its careful attribution and hedged claims, cannot capture what it felt like to stand at the edge of the unknowable and keep pushing. Fritz Haber's nitrogen fixation feeding the world and gassing the trenches; Schwarzschild solving Einstein's field equations while dying on the Eastern Front; Heisenberg and Schr\u00f6dinger tearing quantum mechanics apart from opposite ends. <u>One story bleeds into the next like a wound that will not close.</u>
+
+    The stories of Grothendieck and Mochizuki Shinichi, though, are what I keep returning to. Grothendieck, retreating from mathematics into hermitic madness, as if the structures he had uncovered were too vast for a single mind to hold without cracking. Mochizuki, publishing a proof so impenetrable that the mathematical community could neither verify nor refute it, sealed inside his own logic like a message in a bottle no one can open. Labatut threads these lives together in the manner of *Cloud Atlas* (2004): one line connecting everyone's fate to the fate of the world, each chapter a step closer to the point where understanding tips into its own negation. The Bola\u00f1o comparison is apt; both are Chilean, both drawn to the intersection of brilliance and destruction. But Labatut is doing something more compressed, more vertiginous. <u>He is asking whether the act of knowing, pushed far enough, becomes indistinguishable from the act of going mad.</u> A week after finishing, the awe had not faded. It still has not.
+
+- title: "The Rise and Fall of the Third Reich"
+  type: "book"
+  creator: "William L. Shirer"
+  creator_role: "by"
+  year: 1960
+  eval: "liked"
+  image: "/assets/images/thoughts/books/rise_and_fall_of_the_third_reich.jpg"
+  posted: "2023-03-04"
+  text: |
+    A fifty-plus-hour monument to the journalistic conviction that being there counts for something. Shirer reported from inside Nazi Germany until 1940, and that proximity gives his narrative an immediacy no purely archival historian can replicate: <u>the texture of rallies witnessed first-hand, the quality of light in rooms where decisions were made.</u> The academic objections are well-rehearsed. Hans Mommsen called it superficial. Gordon Craig questioned the analytical framework. Richard Evans and Deborah Lipstadt have labelled it outdated, and they are not wrong: Shirer leans too heavily on the *Sonderweg* thesis, that old argument about a uniquely German national character marching inevitably toward catastrophe, which later historiography has largely dismantled. The later chapters lean even more heavily on Hitler's deteriorating mental state, and the accuracy of those sources is naturally suspect, filtered through memoirs written by men with every reason to redirect blame.
+
+    What survives, though, is the sheer narrative richness. As a work of moral philosophy or Holocaust scholarship, ***The Rise and Fall of the Third Reich*** has been superseded many times over; one reaches for Primo Levi, for Hannah Arendt, for Evans's own Third Reich trilogy. But as a narrative act, the accumulation of detail, the relentless forward momentum through two decades of escalating horror, the book remains formidable. <u>Shirer was 'just a journalist', his critics said. Perhaps. But journalism of this ambition and this density has its own kind of authority: that of a witness who refused to look away, even when the analytical tools at his disposal were blunter than the moment demanded.</u>
+
+- title: "Time, Love, Memory: A Great Biologist and His Quest for the Origins of Behaviour"
+  type: "book"
+  creator: "Jonathan Weiner"
+  creator_role: "by"
+  year: 1999
+  eval: "liked"
+  image: "/assets/images/thoughts/books/time_love_memory.jpg"
+  posted: "2022-06-22"
+  text: |
+    The journalist's craft is on full display. Weiner builds Seymour Benzer's story the way a good documentary filmmaker constructs a portrait: through interviews, through the texture of a lab, through the faces of collaborators and rivals who leap off the page with startling economy. This is nothing like Eric Kandel's autobiography, which is essentially a career retrospective narrated by its subject; Weiner's approach is more alive, more externally observed, and the liveliness matters. <u>One gets a sense not just of Benzer's intellectual trajectory, from physicist to molecular biologist to neurogenetics pioneer, but of the atmosphere in which that trajectory unfolded: the Caltech corridors, the mutant fly stocks, the Drosophila courtship songs played back on oscilloscopes.</u> The discoveries that would eventually underpin the 2017 Nobel for circadian rhythm research, the period and timeless genes, are rendered here as human stories first, scientific achievements second.
+
+    The inevitable bias is structural. A book about Benzer is a book about the gene, and Weiner cannot help but foreground genetic determinism in a way that the science itself has long since outgrown. Everyone now understands that genes cannot be as deterministic as the early geneticists imagined; the gene-behaviour relationship is probabilistic, contextual, shaped by environment and development in ways Benzer's single-gene mutant screens could not capture. <u>Paired with Sapolsky's *Behave* (2017), which insists on the full causal chain from gene to hormone to neural circuit to culture, ***Time, Love, Memory*** finds its proper place: a brilliant portrait of one end of the explanatory spectrum, best read with the awareness that the other end exists.</u>
+
+- title: "Behave: The Biology of Humans at Our Best and Worst"
+  type: "book"
+  creator: "Robert Sapolsky"
+  creator_role: "by"
+  year: 2017
+  eval: "loved"
+  image: "/assets/images/thoughts/books/behave.jpg"
+  posted: "2022-06-12"
+  text: |
+    More readable than *Why Zebras Don't Get Ulcers* (1994), and broader in scope. Sapolsky's organising conceit is deceptively simple: start with the second before a behaviour occurs (the amygdala fires, the prefrontal cortex does or does not intervene), then zoom out, step by step, through hormones, then neurodevelopment, then genes, then evolution, then culture, until one has traversed the entire causal chain from synapse to civilisation. It is a staggering feat of synthesis, and what makes ***Behave*** work is Sapolsky's refusal to let any single level of explanation claim priority. The gene matters, but so does the hormone; the hormone matters, but so does the childhood; the childhood matters, but so does the culture that shaped the childhood. <u>One finishes the book understanding, viscerally, that the question 'why did this person do this?' never has a single answer.</u>
+
+    Even with a psychology background, I encountered experiments I had never heard of. Two in particular have stayed with me. The drone soldier in the Iraq War: a man who kills by remote control, thousands of miles from the explosion, and still develops PTSD, because the brain does not fully distinguish between pulling a trigger and clicking a mouse when the consequence is a human body coming apart on a screen. <u>And the Christmas truce of 1914: soldiers climbing out of trenches to exchange gifts with men they had been trying to kill hours earlier, because proximity and shared humanity, given even the smallest opening, can override the most powerful propaganda.</u> Sapolsky's determinism has drawn criticism from philosophers who insist on the irreducibility of agency. Perhaps they are right. But the book's moral force does not depend on settling that question. <u>It depends on making one feel, with the weight of seven hundred pages of evidence, that understanding why we behave as we do is the precondition for behaving better.</u>
+
+- title: "The Idiot"
+  type: "book"
+  creator: "Fyodor Dostoevsky"
+  creator_role: "by"
+  year: 1869
+  eval: "loved"
+  image: "/assets/images/thoughts/books/idiot.jpg"
+  posted: "2021-07-26"
+  text: |
+    Dostoevsky set out to write 'a truly beautiful man' and produced instead a figure whose beauty is indistinguishable from catastrophe. Prince Myshkin's innocence, his social blindness, his radical empathy, are not flaws in an otherwise functional character; they are the character, and they make his destruction inevitable from the opening pages. The moment he sees Aglaya and glimpses Nastasya Filippovna's portrait, the architecture of his breakdown is already legible. <u>Two women who function not as love interests in any conventional sense but as a wall between Myshkin and the superficiality of aristocratic life, each representing a dimension of experience his innocence cannot metabolise: Nastasya's suffering, Aglaya's pride, both demanding a response he is constitutionally incapable of giving.</u> The tragedy is structural before it is emotional.
+
+    What makes ***The Idiot*** extraordinary, and what separates it from the more schematic explorations of goodness in literature, is that Dostoevsky never states the opposition directly. The innocent versus the worldly: one expects this to be the thesis, announced and elaborated. Instead, Dostoevsky disperses it across more than a dozen characters whose individual characterisation is remarkably precise, letting the reader arrive at Myshkin's fate only gradually, only in Part IV, through the accumulated weight of social interactions, failed interventions, and mounting dread. The *yurodivyi*, the holy fool of Russian Orthodox tradition, haunts the novel's margins without ever being invoked by name. Rowan Williams reads Myshkin as an experiment in *kenotic love*, self-emptying love, and perhaps that is right: <u>but what Dostoevsky shows is that self-emptying, in a world that runs on self-interest, is not sainthood but annihilation.</u> The 'idiot' is just a gentle child standing on the other side of a gauze curtain. The curtain never lifts.
+
+- title: "Twelve Rules for Life: An Antidote to Chaos"
+  type: "book"
+  creator: "Jordan B. Peterson"
+  creator_role: "by"
+  year: 2018
+  eval: "hated"
+  image: "/assets/images/thoughts/books/twelve_rules_for_life.jpg"
+  posted: "2021-06-01"
+  text: |
+    <u>Opens by bragging about a Quora answer's upvote count, which tells one everything one needs to know about the epistemological standards that follow.</u> ***Twelve Rules for Life*** is a dad-lecture delivered at volume, dressed in Jungian archetypes and lobster neuroscience, with the logic tossed out somewhere around page three and never retrieved. Watch any of Peterson's debates against someone who actually knows their field, Zizek on Marx, any competent biologist on the naturalistic fallacy, and every argument collapses into strategic ambiguity. Our undergraduate professor had a term for this kind of figure: a prime example of an opportunist.
+
+    The lobster hierarchy argument, the book's one claim to scientific grounding, has been demolished by every serious biologist who bothered to engage with it; serotonin does not operate in crustacean nervous systems the way Peterson implies, and the inferential leap from decapod dominance displays to human social organisation is not even wrong, merely vacant. <u>What remains, once the lobsters are dispatched, is a self-help book for people who mistake confidence for competence, dressed in enough Jungian mythology to feel intellectual without requiring any of the intellectual labour.</u>
+
+- title: "Marx: A Very Short Introduction"
+  type: "book"
+  creator: "Peter Singer"
+  creator_role: "by"
+  year: 1980
+  eval: "liked"
+  image: "/assets/images/thoughts/books/marx.jpg"
+  posted: "2021-04-11"
+  text: |
+    The most compelling Marx introduction I have read, and the reason is structural: Singer maps Marx's personal intellectual development alongside the theoretical architecture, so that *alienation*, *surplus value*, and collectivism arrive not as a list of doctrines but as stages in a single mind's confrontation with industrial capitalism. The treatment of *alienation* is particularly strong. Singer traces it from the *1844 Manuscripts* (1844) through to *Capital* (1867) without losing the thread, making a persuasive case that the early Marx and the mature Marx are engaged in the same project, however much the Althusserians insist on an epistemological break. One can disagree; the structuralist objection, that Singer overweights the young Hegelian Marx at the expense of the historical materialist, has force. <u>But ***Marx: A Very Short Introduction*** has the virtue of coherence, and for an introduction, coherence matters more than comprehensiveness.</u>
+
+    The detail that has stayed with me longest is the *Wissenschaft* mistranslation. Marx understood his theory as *Wissenschaft*, a term that in German encompasses systematic knowledge far more broadly than the English 'science'. But it got rendered as 'Science', capital-S, and Karl Popper seized on that translation to attack Marxism for failing the *falsifiability* criterion, a criterion Marx never claimed to meet because he was not doing science in Popper's narrow sense. <u>It is a perfect illustration of how posterity misreads, how a translation error can calcify into a philosophical refutation that generations of students accept without question.</u> Singer spots this and names it cleanly. His final remarks on China, written with a philosopher's caution but a realist's awareness that the Chinese experiment was testing Marx's categories in ways Marx himself could not have anticipated, remain spot-on decades later.
+
+- title: "Order Out of Chaos: Man's New Dialogue with Nature"
+  type: "book"
+  creator: "Ilya Prigogine, Isabelle Stengers"
+  creator_role: "by"
+  year: 1984
+  eval: "meh..."
+  image: "/assets/images/thoughts/books/order_out_of_chaos.jpg"
+  posted: "2021-03-22"
+  text: |
+    I read this in a Chinese translation from the reform era, when the average quality of Chinese translators was genuinely high; the same period gave us superb renderings of Maugham, Fitzgerald, and others. Which makes the translation of ***Order Out of Chaos*** all the more baffling: <u>how neglected did science have to be, how undervalued, for a perfectly solid book to end up mangled in these two translators' hands?</u> The translation is its own case study in institutional decay.
+
+    On the book itself: Prigogine and Stengers promise a revolution in thinking, a new dialogue between the sciences and the humanities built on far-from-equilibrium thermodynamics and dissipative structures. The ambition is real, and the Nobel-level core, the insight that order can emerge spontaneously from non-equilibrium conditions, remains a genuine contribution. But the authors never quite escape the framework they claim to have superseded. For all their talk of fusing different modes of thought, they still operate inside a classic Greek binary: opposition, conflict, thesis and antithesis, the second law versus self-organisation. The actual content on complex systems, which is what drew me to the book, is minimal. <u>One arrives expecting the revolution and gets instead the pamphlet announcing one.</u> Anyone after complexity theory or the non-equilibrium turn would be better served by more recent philosophy or science writing, where the implications have been worked through rather than gestured at.
+
+- title: "The Hitchhiker's Guide to the Galaxy"
+  type: "book"
+  creator: "Douglas Adams"
+  creator_role: "by"
+  year: 1979
+  eval: "loved"
+  image: "/assets/images/thoughts/books/hitchhikers_guide_to_the_galaxy.jpg"
+  posted: "2021-02-01"
+  text: |
+    Hard to justify having only just read ***The Hitchhiker's Guide to the Galaxy*** now, but here we are. <u>Adams is doing something genuinely rare: using comedy as a load-bearing philosophical structure rather than decorating an existing one.</u> The destruction of Earth for a hyperspace bypass, the bureaucratic indifference of the Vogons, the supercomputer that spends millennia computing the answer to life, the universe, and everything only to deliver '42', these are not jokes with philosophical implications; they are philosophical arguments delivered as jokes. The puns are relentless, the setups absurdly patient, Adams spending half a page constructing the scaffolding for a single small gag. That commitment to the bit is what separates him from lesser comic writers.
+
+    What surprised me most was the melancholy. Beneath the absurdism is a genuine bleakness: Arthur Dent is a man who has lost everything, his home, his planet, his species, and the universe responds with paperwork and bad poetry. Slartibartfast explaining how the Vogon demolition fleet arrived, 'That's bureaucracy for you!', is funny precisely because it is terrifying. <u>Adams understood, long before it became fashionable to say so, that the real horror is not malice but indifference; that the universe is not hostile, merely unhelpful.</u> <u>He has people thinking seriously about the role of towels in civilisation, and somehow that sentence is not a joke.</u> I loved every page. The towel stays packed.
+
+- title: "Seven Brief Lessons on Physics"
+  type: "book"
+  creator: "Carlo Rovelli"
+  creator_role: "by"
+  year: 2014
+  eval: "loved"
+  image: "/assets/images/thoughts/books/seven_brief_lessons_on_physics.jpg"
+  posted: "2020-11-30"
+  text: |
+    I came to this after *The Order of Time* (2017), already convinced that Rovelli can write. ***Seven Brief Lessons on Physics*** confirmed it and then some. In barely eighty pages he covers general relativity, quantum mechanics, the architecture of the cosmos, elementary particles, quantum gravity, thermodynamics, and what it means to be human in a universe governed by these laws. <u>The compression alone is an achievement; that it reads like poetry is something else entirely.</u>
+
+    The passage that stayed with me longest connects the second law of thermodynamics to simple probability: heat 'flows' from hot to cold not because of any law commanding it but because that configuration is overwhelmingly more likely to occur. <u>Rovelli makes this feel not like a textbook explanation but like a revelation, a moment when the universe's deepest organising principle turns out to be nothing more exotic than counting.</u> Lesson six is essentially a condensed version of the first half of *The Order of Time*: time's existence is a product of our ignorance; time is not an objective feature of reality but an artefact of our limited access to the world's microscopic details. The final chapter closes with the line 'We are the source of amazement in our own eyes,' and whatever one thinks of Rovelli's physics, that sentence does something to the reader.
+
+    I understand the criticism. Some physicists find his lyrical register suspect, as though writing beautifully about loop quantum gravity were itself evidence of a lack of rigour, even a kind of fakery. The speculative ideas do bleed into the popular writing in ways that make them seem more settled than they are. Fair enough. <u>But Rovelli's ideas and the way he articulates them genuinely move me, and I say this as a neuroscience student who came to physics as a passionate outsider, looking not for technical mastery but for the feeling of a structure glimpsed.</u> A neuroscience student's physics dream.
+
+- title: "How We Remember: Brain Mechanisms of Episodic Memory"
+  type: "book"
+  creator: "Michael Hasselmo"
+  creator_role: "by"
+  year: 2011
+  eval: "loved"
+  image: "/assets/images/thoughts/books/how_we_remember.jpg"
+  posted: "2020-11-25"
+  text: |
+    ***How We Remember*** is the single book that has most shaped my thinking about memory mechanisms. More than Kandel's *In Search of Memory* (2006), which is mostly autobiography dressed as neuroscience; more than any review paper or textbook chapter. <u>Hasselmo does what almost no one else manages: he integrates computational modelling, pharmacology, and systems-level physiology into a coherent account of how the *hippocampus* encodes and retrieves *episodic memory*, with *acetylcholine* as the fulcrum between encoding and retrieval states.</u> The framework is clean without being reductive. One reads it and the hippocampal circuit clicks into place, not as a list of anatomical connections but as a system with dynamics, with states, with reasons for being wired the way it is.
+
+    I first encountered this book early in my PhD, and it set the terms for how I think about the problems I work on daily: what does it mean for a circuit to switch between modes, how do neuromodulators sculpt the computational landscape, what is the relationship between oscillatory dynamics and the information the network carries. These are not abstract questions for me; they are the questions I bring to the recording rig. Hasselmo answered some of them, sharpened others, and made the rest feel tractable. I am planning to re-read it soon. <u>Some books one returns to not because one has forgotten them but because one has grown enough to read them differently.</u>
+
+- title: "Your Brain Is a Time Machine: The Neuroscience and Physics of Time"
+  type: "book"
+  creator: "Dean Buonomano"
+  creator_role: "by"
+  year: 2017
+  eval: "meh..."
+  image: "/assets/images/thoughts/books/your_brain_is_a_time_machine.jpg"
+  posted: "2020-10-25"
+  text: |
+    Misleading title. ***Your Brain Is a Time Machine*** spends far too long on the physics of time, relativity, the block universe, and explains all of it poorly; anyone genuinely interested would do better with Rovelli's *The Order of Time* (2017). The neuroscience half, which ought to be the book's centre of gravity, is where one expects Buonomano to deliver, and he does not. The kappa and tau effect experiments are genuinely striking, but the treatment stops well short of the question that matters: how does the brain actually construct temporal experience? <u>The book meanders between physics, neuroscience, and philosophy without committing to any of them.</u>
+
+    Coming back to this five years into a PhD in hippocampal electrophysiology, the gaps are sharper than I first realised. Buonomano barely touches *time cells*, the hippocampal neurons that fire at specific moments during a temporal interval, despite the fact that they are arguably the strongest evidence for the brain's intrinsic timing capacity beyond the sub-second scale. The distinction between *interval timing*, likely striatal and cerebellar, and the *episodic temporal organisation* performed by hippocampal sequences is never drawn. *Theta phase precession*, the mechanism by which place cells compress behavioural sequences into single oscillatory cycles, goes unmentioned, yet it is perhaps the most elegant neural solution to the problem of binding events across time. Eichenbaum's late reviews remain more focused and more useful. <u>The brain is indeed a time machine; Buonomano simply never opens the hood.</u>
+
+- title: "The Language Instinct: How the Mind Creates Language"
+  type: "book"
+  creator: "Steven Pinker"
+  creator_role: "by"
+  year: 1994
+  eval: "meh..."
+  image: "/assets/images/thoughts/books/language_instinct.jpg"
+  posted: "2020-08-30"
+  text: |
+    Are there references? The e-book has none at all. A bold move for a book whose central claim, that language is an innate biological instinct shaped by natural selection, has been contested by linguists, anthropologists, and connectionists for three decades. <u>One cannot even check.</u>
+
+    Strip the missing citations away and there is still a problem of tone. ***The Language Instinct*** presents the nativist position with a confidence that reads less like scientific conviction than like salesmanship, as though sheer rhetorical momentum could settle a debate that Chomsky himself never managed to close. <u>The book asks for a faith that science should not require, and without references, faith is all it can offer.</u>
+
+- title: "Enlightenment Now: The Case for Reason, Science, Humanism, and Progress"
+  type: "book"
+  creator: "Steven Pinker"
+  creator_role: "by"
+  year: 2018
+  eval: "disliked"
+  image: "/assets/images/thoughts/books/enlightenment_now.jpg"
+  posted: "2020-08-30"
+  text: |
+    <u>Steven Pinker is the walking definition of confirmation bias: select the data that confirm your thesis, ignore the rest, call the result 'reason'.</u> I checked some of the claims after finishing and felt genuinely deceived, and I am still angry about it. <u>Cherry-picked time periods, poverty lines wielded like stage props, ecological catastrophe waved away with a graph that stops before the trend reverses.</u> When critics point this out he accuses them of 'progressophobia', which is the intellectual equivalent of putting one's fingers in one's ears. Plus there has been recent controversy. I cannot stand this man, approximately the same level of dislike I have for Musk.
+
+    The deeper problem with ***Enlightenment Now*** is not the cherry-picking itself but the rhetorical framework that makes the cherry-picking invisible. Pinker presents data as though data were self-interpreting, as though the mere display of a graph settles an argument. The result is a book that mistakes correlation for causation with the confidence of someone who has confused their own optimism for evidence.
+
+- title: "The Origin of Consciousness in the Breakdown of the Bicameral Mind"
+  type: "book"
+  creator: "Julian Jaynes"
+  creator_role: "by"
+  year: 1976
+  eval: "loved"
+  image: "/assets/images/thoughts/books/origin_of_consciousness_in_the_breakdown_of_the_bicameral_mind.jpg"
+  posted: "2020-07-05"
+  text: |
+    ***The Origin of Consciousness in the Breakdown of the Bicameral Mind*** is probably the book that influenced me most deeply during secondary school, before I had any formal training in neuroscience or philosophy of mind, before I had the vocabulary to say why it mattered. Jaynes's thesis is wild and almost certainly wrong in its specifics: that ancient humans lacked subjective *consciousness* as we know it, that the right hemisphere issued commands experienced as the voices of gods, that the *bicameral mind* collapsed under the weight of societal complexity and the invention of writing. The neuroscience does not hold up. The historical evidence, built largely on the contrast between the *Iliad* and the *Odyssey*, reads too much into linguistic absence. Dennett and others have noted that Jaynes defines *consciousness* so narrowly, as metaphor-based introspective narration, that the argument risks circularity.
+
+    None of this diminishes the book's power. <u>What Jaynes understood, and what has aged remarkably well, is the claim that *consciousness* is fundamentally metaphorical: that we grasp the inner world through spatial and physical metaphors, that 'seeing' a point and 'grasping' an idea are not decorative language but the very architecture of self-awareness.</u> This anticipates Lakoff and Johnson, Damasio's narrative self, and a whole tradition of *embodied cognition* that Jaynes could not have known was coming. The thesis that metaphor gave birth to *consciousness* is the thread I still pull on.
+
+    Coming back to it now, what strikes me is not the rightness or wrongness of the *bicameral mind* but the audacity of the question. <u>Jaynes asked how *consciousness* began, not what it is, and in doing so forced everyone who came after him to reckon with the possibility that subjective experience has a history, that it was not always there, that it arrived.</u> I need to re-read it properly someday, with the training I now have. But even the memory of reading it at fifteen, the feeling of an entire framework for understanding the mind snapping into focus, has not faded.
 - title: "Entangled Life"
   type: "book"
   creator: "Merlin Sheldrake"
   creator_role: "by"
   year: 2020
   eval: "liked"
-  image: "/assets/images/thoughts/entangled_life_chinese.jpg"
+  image: "/assets/images/thoughts/books/entangled_life_chinese.jpg"
   posted: "2024-10-01"
   text: |
     I translated this book by Sheldrake into Chinese, which was published as 《菌络万象》 by HouLang Press in October 2024.
