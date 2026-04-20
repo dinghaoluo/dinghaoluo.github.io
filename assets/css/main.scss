@@ -1039,7 +1039,7 @@ body.home .page__author-footer {
 }
 
 .thoughts-card__meta {
-  font-size: 1em;
+  font-size: 1.1em;
   color: $morandi-muted;
   margin-bottom: 0.45em;
   line-height: 1.55;
@@ -1563,6 +1563,7 @@ body.home .page__author-footer {
     grid-column: 2;
     grid-row: 2;
     margin-bottom: 0;
+    font-size: 1em;
     display: flex;
     flex-direction: column;
     gap: 0.15em;

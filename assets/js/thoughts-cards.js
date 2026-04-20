@@ -249,8 +249,7 @@
       return cards.filter(function (card) {
         var cardType = (card.getAttribute('data-type') || '').toLowerCase();
         var matchesType = filterValue === 'all'
-          || cardType === filterValue
-          || (filterValue === 'other' && cardType !== 'book' && cardType !== 'film');
+          || cardType === filterValue;
         return matchesType && cardMatchesQuery(card, query);
       });
     }

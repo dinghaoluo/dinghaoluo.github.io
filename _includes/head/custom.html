@@ -18,7 +18,7 @@
 
 <!-- theme toggle: apply saved preference before first paint to prevent FOUC -->
 <script>
-(function(){var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();
+(function(){var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){var s=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';if(t!==s)document.documentElement.setAttribute('data-theme',t);else localStorage.removeItem('theme');}})();
 </script>
 
 <!-- end custom head snippets -->
