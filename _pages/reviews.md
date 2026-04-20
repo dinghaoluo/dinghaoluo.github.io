@@ -15,6 +15,7 @@ title: 'thoughts'
   <button class="thoughts-filter-btn" data-filter="book">books</button>
   <button class="thoughts-filter-btn" data-filter="film">films</button>
   <button class="thoughts-filter-btn" data-filter="tv">tv</button>
+  <button class="thoughts-filter-btn" data-filter="game">games</button>
 </div>
 
 <div class="thoughts-controls-row">

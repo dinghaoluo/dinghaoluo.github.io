@@ -1039,7 +1039,7 @@ body.home .page__author-footer {
 }
 
 .thoughts-card__meta {
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: $morandi-muted;
   margin-bottom: 0.45em;
   line-height: 1.55;
@@ -1071,6 +1071,12 @@ body.home .page__author-footer {
   font-weight: normal;
   color: $morandi-muted-soft;
   white-space: nowrap;
+}
+
+.thoughts-card__season {
+  font-size: 0.82em;
+  color: $morandi-muted-soft;
+  font-weight: normal;
 }
 
 .thoughts-card__creator {
@@ -1200,6 +1206,206 @@ body.home .page__author-footer {
 
 .thoughts-card.is-open .thoughts-card__toggle {
   transform: rotate(180deg);
+}
+
+// -------------------------
+// album wall — grid of album tiles on music page
+// -------------------------
+.album-wall {
+  margin-top: 2.8rem;
+}
+
+.album-wall__controls {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 1.2rem;
+  max-width: 100%;
+}
+
+.album-wall__search-wrap {
+  flex: 1 1 auto;
+  position: relative;
+  min-width: 0;
+}
+
+.album-wall__search-input {
+  width: 100%;
+  padding: 0.36em 0.7em;
+  border: 1px solid rgba($morandi-stone, 0.55);
+  border-radius: 4px;
+  background: rgba($morandi-oat, 0.5);
+  font-size: 0.84em;
+  font-family: inherit;
+  color: $morandi-ink;
+  outline: none;
+  transition: border-color 0.18s ease;
+
+  &::placeholder { color: $morandi-muted-soft; }
+  &:focus { border-color: $morandi-clay; }
+}
+
+.album-wall__search-enter {
+  position: absolute;
+  right: 0.55em;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.78em;
+  color: $morandi-stone;
+  pointer-events: none;
+}
+
+.album-wall__luck-btn {
+  flex: 0 0 auto;
+  background: none;
+  border: 1px solid rgba($morandi-stone, 0.45);
+  border-radius: 4px;
+  padding: 0.36em 0.72em;
+  font-size: 0.82em;
+  font-family: inherit;
+  color: $morandi-muted;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.15s ease, border-color 0.15s ease;
+
+  &:hover { color: $morandi-clay-deep; border-color: $morandi-clay; }
+  &.is-disabled { opacity: 0.35; cursor: default; }
+}
+
+.album-wall__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.1rem 0.9rem;
+}
+
+.album-tile {
+  min-width: 0;
+  cursor: default;
+}
+
+.album-tile__art-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 3px;
+  overflow: hidden;
+  background: rgba($morandi-stone, 0.18);
+}
+
+.album-tile__art {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.album-tile__art--placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba($morandi-stone, 0.22), rgba($morandi-grey-soft, 0.35));
+}
+
+.album-tile__info {
+  margin-top: 0.38em;
+}
+
+.album-tile__title {
+  font-family: 'Faculty Glyphic', $cjk-stack, serif;
+  font-size: 0.82em;
+  font-weight: normal;
+  line-height: 1.22;
+  color: $morandi-ink;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.album-tile__artist {
+  font-size: 0.74em;
+  color: $morandi-muted;
+  line-height: 1.2;
+  margin-top: 0.08em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.album-tile__eval {
+  display: inline-block;
+  padding: 0.14em 0.48em;
+  border-radius: 999px;
+  font-size: 0.6em;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  margin-top: 0.28em;
+}
+
+.album-tile__eval--loved {
+  background: mix($morandi-blue, $morandi-blue-soft, 42%);
+  color: $morandi-blue-deep;
+}
+.album-tile__eval--liked {
+  background: mix($morandi-sage, $morandi-grey-soft, 38%);
+  color: $morandi-sage-deep;
+}
+.album-tile__eval--meh {
+  background: mix($morandi-olive, $morandi-grey-soft, 28%);
+  color: mix($morandi-olive, $morandi-muted, 60%);
+}
+.album-tile__eval--disliked {
+  background: mix($morandi-clay, $morandi-grey-soft, 34%);
+  color: $morandi-clay-deep;
+}
+.album-tile__eval--hated {
+  background: mix($morandi-rose, $morandi-stone, 48%);
+  color: mix($morandi-rose-deep, $morandi-ink, 82%);
+}
+
+.album-tile__preview-wrap {
+  margin-top: 0.32em;
+  max-height: 3.6em;
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
+}
+
+.album-tile__preview {
+  font-family: 'Reforma 2018', $cjk-stack, serif;
+  font-size: 0.72em;
+  line-height: 1.52;
+  color: $morandi-muted;
+
+  p { margin: 0; }
+  * { font-family: inherit; }
+}
+
+.album-wall__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7em;
+  margin-top: 1.4rem;
+}
+
+.album-wall__page-btn {
+  background: none;
+  border: 1px solid rgba($morandi-stone, 0.45);
+  border-radius: 4px;
+  padding: 0.3em 0.6em;
+  font-size: 0.82em;
+  color: $morandi-muted;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+
+  &:hover:not(:disabled) { color: $morandi-clay-deep; border-color: $morandi-clay; }
+  &:disabled { opacity: 0.3; cursor: default; }
+}
+
+.album-wall__page-info {
+  font-size: 0.78em;
+  color: $morandi-muted-soft;
 }
 
 // -------------------------
@@ -1710,6 +1916,11 @@ body.home .page__author-footer {
   body:not(.home) .sidebar .author__bio {
     display: none !important;
   }
+
+  .album-wall__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.9rem 0.7rem;
+  }
 }
 
 mark.thoughts-highlight {
@@ -1720,6 +1931,17 @@ mark.thoughts-highlight {
   box-shadow: inset 0 -0.55em 0 rgba($morandi-clay, 0.22);
   border-bottom: 1px solid rgba($morandi-clay-deep, 0.34);
   font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .album-wall__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.7rem 0.5rem;
+  }
+
+  .album-tile__preview-wrap {
+    display: none;
+  }
 }
 
 ::selection {
@@ -2307,6 +2529,38 @@ mark.thoughts-highlight {
   .thoughts-preview-inline__item:hover .thoughts-preview-inline__title {
     color: #a5b5c5;
   }
+
+  .album-tile__title { color: #e8e2db; }
+  .album-tile__artist { color: #9b928a; }
+  .album-tile__preview { color: #8b837c; }
+  .album-tile__art-wrap { background: rgba(#2a2724, 0.5); }
+
+  .album-wall__search-input {
+    background: rgba(#2a2724, 0.5);
+    border-color: rgba(#9b928a, 0.22);
+    color: #e8e2db;
+    &::placeholder { color: #6a6360; }
+    &:focus { border-color: #c49a85; }
+  }
+  .album-wall__search-enter { color: #5a5450; }
+  .album-wall__luck-btn {
+    color: #9b928a;
+    border-color: rgba(#9b928a, 0.22);
+    &:hover { color: #c49a85; border-color: rgba(#c49a85, 0.4); }
+  }
+  .album-wall__page-btn {
+    color: #b8b0a6;
+    border-color: rgba(#9b928a, 0.22);
+    &:hover:not(:disabled) { color: #c49a85; border-color: rgba(#c49a85, 0.4); }
+    &:disabled { color: #5a5450; }
+  }
+  .album-wall__page-info { color: #9b928a; }
+
+  .album-tile__eval--loved { background: rgba(#627884, 0.25); color: #90a4b0; }
+  .album-tile__eval--liked { background: rgba(#6c8f7e, 0.2); color: #a8b5a2; }
+  .album-tile__eval--meh { background: rgba(#7a7f65, 0.2); color: #a4a98a; }
+  .album-tile__eval--disliked { background: rgba(#8d6959, 0.2); color: #b78e79; }
+  .album-tile__eval--hated { background: rgba(#7d605b, 0.3); color: #c4908a; }
 
   .home .page__content h2 {
     background: rgba(#1c1917, 0.96);

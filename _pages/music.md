@@ -103,3 +103,9 @@ title: "music"
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', sync);
   })();
 </script>
+
+---
+
+{% include album-wall.html %}
+
+<script src="{{ '/assets/js/album-wall.js' | relative_url }}"></script>

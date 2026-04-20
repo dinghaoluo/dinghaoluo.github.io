@@ -1,0 +1,56 @@
+{% assign albums = site.data.music_thoughts | sort: 'posted' | reverse %}
+
+<div class="album-wall" id="album-wall">
+  <div class="album-wall__controls">
+    <div class="album-wall__search-wrap">
+      <input
+        type="search"
+        id="album-wall-search"
+        class="album-wall__search-input"
+        placeholder="search for..."
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <span class="album-wall__search-enter" aria-hidden="true">&crarr;</span>
+    </div>
+    <button class="album-wall__luck-btn" id="album-wall-luck" type="button">try your luck</button>
+  </div>
+
+  <div class="album-wall__grid" id="album-wall-grid">
+    {% for album in albums %}
+    <div
+      class="album-tile"
+      data-title="{{ album.title | escape }}"
+      data-artist="{{ album.creator | escape }}"
+      data-genre="{{ album.genre | default: '' | escape }}"
+      data-year="{{ album.year }}"
+      data-eval="{{ album.eval | default: '' | downcase | escape }}"
+      data-text="{{ album.text | strip_html | strip_newlines | escape }}"
+    >
+      <div class="album-tile__art-wrap">
+        {% if album.image and album.image != '' %}
+          <img class="album-tile__art" src="{{ album.image | relative_url }}" alt="{{ album.title }}" loading="lazy">
+        {% else %}
+          <div class="album-tile__art--placeholder"></div>
+        {% endif %}
+      </div>
+      <div class="album-tile__info">
+        <div class="album-tile__title">{{ album.title }}</div>
+        <div class="album-tile__artist">{{ album.creator }}</div>
+        {% if album.eval and album.eval != '' %}
+          <span class="album-tile__eval album-tile__eval--{{ album.eval | slugify }}">{{ album.eval }}</span>
+        {% endif %}
+      </div>
+      <div class="album-tile__preview-wrap">
+        <div class="album-tile__preview">{{ album.text | markdownify }}</div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="album-wall__pagination" id="album-wall-pagination" hidden>
+    <button class="album-wall__page-btn" id="album-wall-prev" disabled>&larr;</button>
+    <span class="album-wall__page-info"><span id="album-wall-current">1</span> / <span id="album-wall-total">1</span></span>
+    <button class="album-wall__page-btn" id="album-wall-next">&rarr;</button>
+  </div>
+</div>
