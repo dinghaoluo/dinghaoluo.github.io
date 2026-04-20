@@ -225,7 +225,14 @@
 
     function updatePinLead() {
       if (!pinLead) return;
-      pinLead.hidden = isShuffled || currentPage > 1;
+      if (isShuffled || currentPage > 1) {
+        pinLead.hidden = true;
+        return;
+      }
+      var hasPinnedInFilter = matchedCards.some(function (card) {
+        return card.getAttribute('data-pinned') === 'true';
+      });
+      pinLead.hidden = !hasPinnedInFilter;
     }
 
     function updateLuckState() {

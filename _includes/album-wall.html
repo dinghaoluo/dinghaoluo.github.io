@@ -37,6 +37,9 @@
       <div class="album-tile__info">
         <div class="album-tile__title">{{ album.title }}</div>
         <div class="album-tile__artist">{{ album.creator }}</div>
+        {% if album.genre and album.genre != '' %}
+          <div class="album-tile__genre">{{ album.genre }}</div>
+        {% endif %}
         {% if album.eval and album.eval != '' %}
           <span class="album-tile__eval album-tile__eval--{{ album.eval | slugify }}">{{ album.eval }}</span>
         {% endif %}
@@ -44,6 +47,7 @@
       <div class="album-tile__preview-wrap">
         <div class="album-tile__preview">{{ album.text | markdownify }}</div>
       </div>
+      <button class="album-tile__toggle" aria-expanded="false" aria-label="expand review">&darr;</button>
     </div>
     {% endfor %}
   </div>
