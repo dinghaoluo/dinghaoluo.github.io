@@ -36,7 +36,7 @@
       </div>
       <div class="album-tile__info">
         <div class="album-tile__title">{{ album.title }}</div>
-        <div class="album-tile__artist">{{ album.creator }}</div>
+        <div class="album-tile__artist">{{ album.creator }}{% if album.year and album.year != '' %}<span class="album-tile__year"> ({{ album.year }})</span>{% endif %}</div>
         {% if album.genre and album.genre != '' %}
           <div class="album-tile__genre">{{ album.genre }}</div>
         {% endif %}

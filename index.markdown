@@ -20,7 +20,7 @@ Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.
 <div class="thoughts-preview-inline" id="thoughts-preview-inline">
   <span class="thoughts-preview-inline__label">my thoughts on&hellip;</span>
   {% assign thoughts = site.data.thoughts | sort: 'posted' | reverse %}
-  {% for thought in thoughts limit:15 %}
+  {% for thought in thoughts limit:60 %}
   <a href="/thoughts/#{{ thought.title | slugify }}" class="thoughts-preview-inline__item" style="display:none">
     <span class="thoughts-preview-inline__title">{{ thought.title }}</span>
     <span class="thoughts-preview-inline__text">{{ thought.text | markdownify | strip_html | strip_newlines | strip | truncate: 60, '…' }}</span>

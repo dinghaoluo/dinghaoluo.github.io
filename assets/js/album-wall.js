@@ -1,4 +1,4 @@
-/* album-wall.js — search, weighted shuffle, and pagination for the music album grid */
+/* album-wall.js — search, weighted shuffle, expand/collapse, and pagination for the music album grid */
 (function () {
   'use strict';
 
@@ -22,6 +22,53 @@
 
     tiles.forEach(function (tile, i) {
       tile.dataset.originalIndex = String(i);
+    });
+
+    // expand/collapse on tile click
+    tiles.forEach(function (tile) {
+      var wrap = tile.querySelector('.album-tile__preview-wrap');
+      var toggle = tile.querySelector('.album-tile__toggle');
+      if (!wrap) return;
+
+      var collapsedH = 0;
+      function measureCollapsed() {
+        if (collapsedH === 0 && wrap.offsetHeight > 0) collapsedH = wrap.offsetHeight;
+      }
+
+      tile.addEventListener('click', function (e) {
+        if (e.target.closest('a')) return;
+        measureCollapsed();
+
+        if (tile.classList.contains('is-open')) {
+          var currentH = wrap.offsetHeight;
+          wrap.style.maxHeight = currentH + 'px';
+          void wrap.offsetHeight;
+          tile.classList.remove('is-open');
+          if (toggle) toggle.setAttribute('aria-expanded', 'false');
+          wrap.style.transition = 'max-height 0.32s ease';
+          wrap.style.maxHeight = (collapsedH || '3.6em') + (collapsedH ? 'px' : '');
+          wrap.addEventListener('transitionend', function handler() {
+            wrap.style.maxHeight = '';
+            wrap.style.transition = '';
+            wrap.removeEventListener('transitionend', handler);
+          });
+        } else {
+          var startH = wrap.offsetHeight;
+          wrap.style.maxHeight = 'none';
+          var targetH = wrap.scrollHeight;
+          wrap.style.maxHeight = startH + 'px';
+          void wrap.offsetHeight;
+          tile.classList.add('is-open');
+          if (toggle) toggle.setAttribute('aria-expanded', 'true');
+          wrap.style.transition = 'max-height 0.42s ease';
+          wrap.style.maxHeight = targetH + 'px';
+          wrap.addEventListener('transitionend', function handler() {
+            wrap.style.maxHeight = 'none';
+            wrap.style.transition = '';
+            wrap.removeEventListener('transitionend', handler);
+          });
+        }
+      });
     });
 
     function getColumns() {
@@ -120,7 +167,21 @@
       var visible = new Set(pageSet);
 
       tiles.forEach(function (tile) {
-        tile.style.display = visible.has(tile) ? '' : 'none';
+        var shouldShow = visible.has(tile);
+        if (shouldShow) {
+          tile.style.display = '';
+          tile.offsetHeight;
+          tile.style.transition = 'opacity 0.28s ease, transform 0.28s ease';
+          tile.style.opacity = '1';
+          tile.style.transform = 'translateY(0)';
+        } else {
+          tile.style.transition = 'opacity 0.22s ease, transform 0.22s ease';
+          tile.style.opacity = '0';
+          tile.style.transform = 'translateY(4px)';
+          setTimeout(function () {
+            if (tile.style.opacity === '0') tile.style.display = 'none';
+          }, 230);
+        }
       });
 
       updatePagination();
