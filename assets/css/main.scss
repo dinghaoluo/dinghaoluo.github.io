@@ -1041,12 +1041,12 @@ body.home .page__author-footer {
 .thoughts-card__meta {
   font-size: 1.2em;
   color: $morandi-muted;
-  margin-bottom: 0.45em;
+  margin-bottom: 0.18em;
   line-height: 1.55;
 }
 
 .thoughts-card__type {
-  font-size: 0.88em;
+  font-size: 0.78em;
   color: $morandi-muted-soft;
   text-transform: lowercase;
   letter-spacing: 0.04em;
@@ -1080,14 +1080,14 @@ body.home .page__author-footer {
 }
 
 .thoughts-card__creator {
-  font-size: 0.88em;
+  font-size: 0.78em;
   color: $morandi-muted;
 }
 
 .thoughts-card__posted {
   font-size: 0.78em;
   color: $morandi-muted-soft;
-  margin-top: -0.1em;
+  margin-top: -0.18em;
   margin-bottom: 0.55em;
   line-height: 1.35;
 }
@@ -1851,7 +1851,7 @@ body.home .page__author-footer {
   }
 
   .thoughts-card__type {
-    font-size: 0.86em;
+    font-size: 0.76em;
     line-height: 1.05;
   }
 
@@ -1866,7 +1866,7 @@ body.home .page__author-footer {
 
   .thoughts-card__creator {
     margin-top: 0.08em;
-    font-size: 0.86em;
+    font-size: 0.76em;
     line-height: 1.08;
   }
 
@@ -1876,7 +1876,7 @@ body.home .page__author-footer {
     display: flex;
     align-items: flex-start;
     align-self: start;
-    margin-top: 0.22em;
+    margin-top: 0.12em;
     margin-bottom: 0;
     font-size: 0.76em;
     line-height: 1.08;
