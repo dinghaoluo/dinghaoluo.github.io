@@ -1,5 +1,5 @@
 ---
-title: "The Mind Race: Where Does Consciousness Come From"
+title: "The Adversarial Collaboration on Consciousness"
 type: "feature"
 outlet: "环球科学"
 outlet_en: "Scientific American China"

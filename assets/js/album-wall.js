@@ -279,14 +279,18 @@
       });
     }
 
+    var wall = document.getElementById('album-wall');
+
+    function scrollToWall() {
+      if (wall) wall.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
     prevBtns.forEach(function (btn) {
       btn.addEventListener('click', function () {
         if (currentPage > 1) {
           currentPage--;
           renderPage();
-          if (btn.closest('.album-wall__pagination--bottom')) {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }
+          scrollToWall();
         }
       });
     });
@@ -296,9 +300,7 @@
         if (currentPage < totalPages()) {
           currentPage++;
           renderPage();
-          if (btn.closest('.album-wall__pagination--bottom')) {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }
+          scrollToWall();
         }
       });
     });
@@ -309,9 +311,7 @@
       if (val > totalPages()) val = totalPages();
       currentPage = val;
       renderPage();
-      if (input.closest('.album-wall__pagination--bottom')) {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
+      scrollToWall();
     }
 
     pageInputs.forEach(function (input) {

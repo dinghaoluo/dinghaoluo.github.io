@@ -1,5 +1,5 @@
 ---
-title: "MERS, Drought, and the Camel Virus Waiting in the Wings"
+title: "MERS and the Camel Reservoir"
 type: "feature"
 outlet: "环球科学"
 outlet_en: "Scientific American China"

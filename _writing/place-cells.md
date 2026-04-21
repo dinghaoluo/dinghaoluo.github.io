@@ -1,5 +1,5 @@
 ---
-title: "Place Cells: The Brain's Walking Stick for Exploring the World"
+title: "Place Cells and the Hippocampal Map"
 type: "feature"
 outlet: "神经现实"
 outlet_en: "Neu-Reality"

@@ -1,5 +1,5 @@
 ---
-title: "Can We Manipulate Working Memory Without Opening the Skull?"
+title: "Non-Invasive Modulation of Working Memory"
 type: "feature"
 creator: "Lindsay Li & Dinghao Luo"
 outlet: "神经现实"

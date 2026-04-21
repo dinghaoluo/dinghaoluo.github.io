@@ -459,7 +459,7 @@ body {
 }
 
 // -------------------------
-// author sidebar width (~1.1x default MM widths, middle panel gets more room)
+// author sidebar width (kept for mobile fallback; sidebar hidden on desktop)
 // -------------------------
 .sidebar {
   @include breakpoint($large) {
@@ -472,51 +472,47 @@ body {
 }
 
 .page {
-  // TOC removed; widths exclude the left author sidebar (220px/260px) with no right padding
   @include breakpoint($large) {
     padding-right: 0;
-    width: calc(95% - 220px);
   }
   @include breakpoint($x-large) {
-    width: calc(95% - 260px);
     padding-right: 0;
   }
 }
 
 // -------------------------
-// sub-page layout — single centered column, no author sidebar
-// (home keeps the sidebar; everyone else gets a centered stage)
+// page layout — single centered column, sidebar hidden
 // -------------------------
-body:not(.home) {
-  .sidebar {
+.sidebar {
+  @include breakpoint($large) {
     display: none !important;
   }
+}
 
-  @include breakpoint($large) {
-    .page {
-      float: none;
-      width: calc(100% - 80px);
-      max-width: 820px;
-      padding-right: 0;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .page__inner-wrap {
-      float: none;
-      max-width: none;
-      width: 100%;
-    }
+@include breakpoint($large) {
+  .page {
+    float: none;
+    width: calc(100% - 80px);
+    max-width: 820px;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
-  @include breakpoint($x-large) {
-    .page {
-      width: calc(100% - 80px);
-      max-width: 860px;
-      padding-right: 0;
-    }
-    .page__inner-wrap {
-      max-width: none;
-      width: 100%;
-    }
+  .page__inner-wrap {
+    float: none;
+    max-width: none;
+    width: 100%;
+  }
+}
+@include breakpoint($x-large) {
+  .page {
+    width: calc(100% - 80px);
+    max-width: 860px;
+    padding-right: 0;
+  }
+  .page__inner-wrap {
+    max-width: none;
+    width: 100%;
   }
 }
 
@@ -776,11 +772,7 @@ body:not(.home) {
 }
 
 body.home .page__author-footer {
-  display: none;
-
-  @media (max-width: 1023px) {
-    display: block;
-  }
+  display: block;
 }
 
 .page__drift {
