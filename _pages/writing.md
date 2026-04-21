@@ -5,38 +5,94 @@ permalink: /writing/
 title: "writing"
 ---
 
-*Translating between languages, and between science and the rest.*
+*Writing about science, translating between languages, and making the strange stay strange.*
 
 ---
 
-## translation
+I started writing about neuroscience because I wanted to understand it better myself. The gap between what researchers know and what everyone else hears always felt like a translation problem, not a complexity problem — the ideas are strange and beautiful, and the job is to keep them strange and beautiful in a different register. Three years at Neu-Reality (神经现实) taught me to write about the brain for curious non-specialists; seven months at *Scientific American* China taught me to do it on deadline, to interview researchers like Anil Seth and Cyriel Pennartz about the largest consciousness collaboration ever attempted, and to write a print feature that had to make sense to someone who had never heard of integrated information theory. A Chinese translation of Merlin Sheldrake's *Entangled Life* taught me to carry scientific precision across languages without flattening the prose.
 
-**《菌络万象》** — *Entangled Life* by Merlin Sheldrake
-Chinese translation · [后浪出版 (Houlang Press)](https://www.houlang.com/) · October 2024
-Winner, 2025 Pingshan Natural History Museum Book Award
-
-After finishing the translation, I sat down with Sheldrake for a conversation about the book, fungi, and what it means to think about organisms that don't have brains. The interview was published on [澎湃新闻](https://www.thepaper.cn/) and the Houlang WeChat account.
-
-*[Link to interview — add URL]*
+The writers I admire most — Grace Lindsay making computational neuroscience feel like intellectual history, Merlin Sheldrake following fungi into the root systems of the world, Mark Fisher finding the exact words for what everyone already felt — treat their readers as intelligent and their subjects as genuinely strange. That's what I try to do: respect the strangeness, find the sentence that makes it land, and never flatten a beautiful idea into a digestible one.
 
 ---
 
-## science editing & writing
+{% assign articles = site.writing | sort: 'date' | reverse %}
+{% assign print_articles = articles | where: "section", "print" %}
+{% assign online_articles = articles | where: "section", "online" %}
 
-**Scientific American Chinese edition (环球科学)**
-Science Editor · *[start date]* – *[end date]*, ~7 months
-Weekly science news pieces, plus a full print feature on the ARC (Adversarial Collaboration on Consciousness) project — for which I interviewed Cyriel Pennartz and Anil Seth.
+### print
 
-*[Link to print feature if available]*
-
-**Neu-Reality (神经现实)**
-Editor & Translator · 2021 – present
-One of the earliest members of Neu-Reality, a Chinese-language neuroscience science communication platform. I write and translate pieces on neuroscience research for a general educated audience.
-
-*[Link to Neu-Reality profile or selected pieces]*
+<div class="writing-list">
+{% for article in print_articles %}
+<div class="writing-entry{% if article.featured %} writing-entry--featured{% endif %}">
+  {% if article.image %}
+  <a href="{{ article.url }}" class="writing-entry__img-wrap">
+    <img src="{{ article.image }}" alt="{{ article.title }}" class="writing-entry__img" loading="lazy">
+  </a>
+  {% endif %}
+  <div class="writing-entry__body">
+    <span class="writing-entry__type">{{ article.type }}</span>
+    <h3 class="writing-entry__title">
+      <a href="{{ article.url }}">{{ article.title }}</a>
+    </h3>
+    {% if article.title_zh %}
+    <span class="writing-entry__title-en">{{ article.title_zh }}</span>
+    {% endif %}
+    <div class="writing-entry__meta">
+      {% if article.creator %}{{ article.creator }} · {% endif %}{{ article.outlet }}{% if article.outlet_en %} ({{ article.outlet_en }}){% endif %} · {{ article.date | date: "%B %Y" }}{% if article.isbn %} · ISBN {{ article.isbn }}{% endif %}
+    </div>
+    {% if article.excerpt %}
+    <div class="writing-entry__text">{{ article.excerpt }}</div>
+    {% endif %}
+    {% if article.awards %}
+    <div class="writing-entry__awards">
+      {% for award in article.awards %}
+      <span class="writing-entry__award">{{ award }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% if article.links.size > 0 %}
+    <div class="writing-entry__links">
+      {% for link in article.links %}
+      <a href="{{ link.url }}">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+</div>
 
 ---
 
-## other writing
+### online
 
-*[Essays, blog posts, anything else — add here as you write more.]*
+<div class="writing-list">
+{% for article in online_articles %}
+<div class="writing-entry">
+  {% if article.image %}
+  <a href="{{ article.url }}" class="writing-entry__img-wrap">
+    <img src="{{ article.image }}" alt="{{ article.title }}" class="writing-entry__img" loading="lazy">
+  </a>
+  {% endif %}
+  <div class="writing-entry__body">
+    <span class="writing-entry__type">{{ article.type }}</span>
+    <h3 class="writing-entry__title">
+      <a href="{{ article.url }}">{{ article.title }}</a>
+    </h3>
+    <div class="writing-entry__meta">
+      {% if article.creator %}{{ article.creator }} · {% endif %}{{ article.outlet }}{% if article.outlet_en %} ({{ article.outlet_en }}){% endif %} · {{ article.date | date: "%B %Y" }}
+    </div>
+    {% if article.excerpt %}
+    <div class="writing-entry__text">{{ article.excerpt }}</div>
+    {% endif %}
+    {% if article.links.size > 0 %}
+    <div class="writing-entry__links">
+      {% for link in article.links %}
+      <a href="{{ link.url }}">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+</div>

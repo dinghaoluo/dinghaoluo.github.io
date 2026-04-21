@@ -238,6 +238,13 @@ paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
+# Collections
+collections:
+  writing:
+    output: true
+    permalink: /writing/:title/
+
+
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
@@ -313,3 +320,9 @@ defaults:
       layout: single
       author_profile: true
       toc: false
+  - scope:
+      path: "_writing"
+      type: writing
+    values:
+      layout: single
+      author_profile: true

@@ -24,10 +24,7 @@ Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.
 {% assign t_tv = all_thoughts | where: "type", "tv" %}
 
 <div class="home-covers" aria-hidden="true">
-  {% for t in t_books limit:5 %}{% if t.image %}<img src="{{ t.image }}" alt="" loading="lazy">{% endif %}{% endfor %}
-  {% for t in t_films limit:5 %}{% if t.image %}<img src="{{ t.image }}" alt="" loading="lazy">{% endif %}{% endfor %}
-  {% for t in t_games limit:5 %}{% if t.image %}<img src="{{ t.image }}" alt="" loading="lazy">{% endif %}{% endfor %}
-  {% for t in t_tv limit:3 %}{% if t.image %}<img src="{{ t.image }}" alt="" loading="lazy">{% endif %}{% endfor %}
+  {% for t in all_thoughts limit:30 %}{% if t.image %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
 </div>
 
 I consume things compulsively and I have opinions about most of them. {{ t_books.size }} books — Pynchon's parabolas, Cărtărescu's Bucharest, Mark Fisher finding the words for what an entire generation already felt. {{ t_films.size }} films — Tarkovsky's *Stalker*, Kubrick's corridors, Haneke making you sit with it. {{ t_tv.size }} TV seasons — *The Wire* reshaping what the form can do, Fargo's snow-covered absurdism. {{ t_games.size }} games — *Disco Elysium*'s internal monologue, *Outer Wilds* teaching you to let go, soulslikes that mean it. Some thoughts are long; none are particularly polite about things I didn't like. I write the kind of reviews I wish I'd found before picking up the book or pressing play — not summaries, but real engagement with what the thing is trying to do and whether it pulls it off.

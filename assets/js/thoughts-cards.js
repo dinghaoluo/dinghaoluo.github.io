@@ -393,7 +393,7 @@
   }
 })();
 
-/* preview panel randomization — shuffles sidebar and inline thoughts panels */
+/* preview panel randomization — shuffles sidebar, inline, and frontpage cover panels */
 (function () {
   'use strict';
   function shuffleAndShow(container, count) {
@@ -412,9 +412,14 @@
       }
     }
   }
+  function coverCount() {
+    if (window.innerWidth <= 480) return 14;
+    return 15;
+  }
   function init() {
     shuffleAndShow(document.querySelector('.author__sidebar-thoughts'), 5);
     shuffleAndShow(document.getElementById('thoughts-preview-inline'), 5);
+    shuffleAndShow(document.querySelector('.home-covers'), coverCount());
   }
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);

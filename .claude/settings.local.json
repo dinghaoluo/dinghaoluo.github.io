@@ -57,7 +57,25 @@
       "Bash(gh repo *)",
       "WebFetch(domain:www.steamgriddb.com)",
       "WebFetch(domain:www.igdb.com)",
-      "WebFetch(domain:en.wikipedia.org)"
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:book.douban.com)",
+      "WebFetch(domain:m.thepaper.cn)",
+      "WebFetch(domain:www.amazon.com)",
+      "WebFetch(domain:www.mobygames.com)",
+      "Bash(ls *_new* *_conv* *_wiki* *_base_new*)",
+      "Bash(md5sum last_of_us_part_ii.jpg last_of_us_left_behind.jpg last_of_us_remastered.jpg)",
+      "Bash(md5sum control.jpg control_awe.jpg control_the_foundation.jpg)",
+      "Bash(md5sum alan_wake_2.jpg alan_wake_2_lake_house.jpg alan_wake_2_night_springs.jpg)",
+      "Bash(md5sum lies_of_p.jpg lies_of_p_overture.jpg)",
+      "Bash(bundle exec *)",
+      "WebFetch(domain:127.0.0.1)",
+      "Bash(taskkill //F //IM ruby.exe)",
+      "Bash(disown)",
+      "WebFetch(domain:neu-reality.com)",
+      "WebFetch(domain:mp.weixin.qq.com)",
+      "Bash(pip install *)",
+      "Bash(pkill -f \"jekyll serve\")",
+      "Bash(pkill -f \"jekyll\")"
     ]
   }
 }
