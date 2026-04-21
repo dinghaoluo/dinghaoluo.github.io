@@ -69,7 +69,7 @@
   });
 })();
 
-/* thoughts filter strip — category filtering, search, weighted reshuffle, and pagination */
+/* thoughts filter strip — category filtering, search, weighted reshuffle, pagination, and hash navigation */
 (function () {
   'use strict';
 
@@ -305,6 +305,20 @@
       updatePinLead();
     }
 
+    function switchFilter(filterValue) {
+      btns.forEach(function (b) { b.classList.remove('active'); });
+      var targetBtn = null;
+      btns.forEach(function (btn) {
+        if (btn.getAttribute('data-filter') === filterValue) targetBtn = btn;
+      });
+      if (targetBtn) {
+        targetBtn.classList.add('active');
+        movePill(targetBtn);
+      }
+      if (searchInput) searchInput.value = '';
+      matchedCards = computeMatched(filterValue, '');
+    }
+
     function applyFilter(filterValue, opts) {
       var query = currentQuery();
       matchedCards = computeMatched(filterValue, query);
@@ -317,10 +331,45 @@
       return activeBtn ? activeBtn.getAttribute('data-filter') : 'all';
     }
 
+    function handleHash() {
+      var hash = window.location.hash;
+      if (!hash || hash.length < 2) return false;
+      var targetId = hash.slice(1);
+      var target = document.getElementById(targetId);
+      if (!target || !target.classList.contains('thoughts-card')) return false;
+
+      var cardType = (target.getAttribute('data-type') || '').toLowerCase();
+      switchFilter(cardType);
+
+      var idx = matchedCards.indexOf(target);
+      if (idx === -1) {
+        switchFilter('all');
+        idx = matchedCards.indexOf(target);
+      }
+      if (idx === -1) return false;
+
+      currentPage = Math.floor(idx / PAGE_SIZE) + 1;
+      renderPage();
+
+      setTimeout(function () {
+        if (!target.classList.contains('is-open')) {
+          target.click();
+        }
+        setTimeout(function () {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 120);
+      }, 350);
+
+      return true;
+    }
+
     var active = strip.querySelector('.thoughts-filter-btn.active');
-    if (active) {
-      setTimeout(function () { movePill(active); }, 100);
-      applyFilter(active.getAttribute('data-filter'));
+
+    if (!handleHash()) {
+      if (active) {
+        setTimeout(function () { movePill(active); }, 100);
+        applyFilter(active.getAttribute('data-filter'));
+      }
     }
 
     btns.forEach(function (btn) {
@@ -393,57 +442,44 @@
   }
 })();
 
-/* preview panel randomization — shuffles sidebar, inline, and frontpage cover panels */
+/* frontpage cover wall — weighted shuffle favouring books */
 (function () {
   'use strict';
-  function shuffleAndShow(container, count) {
+  function weightedShuffle(items) {
+    var pool = items.slice();
+    var result = [];
+    while (pool.length) {
+      var total = pool.reduce(function (sum, el) {
+        return sum + (el.getAttribute('data-type') === 'book' ? 3 : 1);
+      }, 0);
+      var threshold = Math.random() * total;
+      var idx = pool.length - 1;
+      for (var i = 0; i < pool.length; i++) {
+        threshold -= (pool[i].getAttribute('data-type') === 'book' ? 3 : 1);
+        if (threshold <= 0) { idx = i; break; }
+      }
+      result.push(pool.splice(idx, 1)[0]);
+    }
+    return result;
+  }
+  function initCovers() {
+    var container = document.querySelector('.home-covers');
     if (!container) return;
     var items = Array.prototype.slice.call(container.querySelectorAll('[style*="display:none"], [style*="display: none"]'));
     if (!items.length) return;
-    for (var i = items.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var tmp = items[i]; items[i] = items[j]; items[j] = tmp;
-    }
-    for (var k = 0; k < items.length; k++) {
+    var count = window.innerWidth <= 480 ? 14 : 15;
+    var shuffled = weightedShuffle(items);
+    for (var k = 0; k < shuffled.length; k++) {
       if (k < count) {
-        items[k].style.display = '';
+        shuffled[k].style.display = '';
       } else {
-        items[k].parentNode.removeChild(items[k]);
+        shuffled[k].parentNode.removeChild(shuffled[k]);
       }
     }
   }
-  function coverCount() {
-    if (window.innerWidth <= 480) return 14;
-    return 15;
-  }
-  function init() {
-    shuffleAndShow(document.querySelector('.author__sidebar-thoughts'), 5);
-    shuffleAndShow(document.getElementById('thoughts-preview-inline'), 5);
-    shuffleAndShow(document.querySelector('.home-covers'), coverCount());
-  }
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', initCovers);
   } else {
-    init();
-  }
-})();
-
-/* hash navigation — scroll to and expand a specific thought card */
-(function () {
-  'use strict';
-  function init() {
-    var hash = window.location.hash;
-    if (!hash || hash.length < 2) return;
-    var target = document.getElementById(hash.slice(1));
-    if (!target || !target.classList.contains('thoughts-card')) return;
-    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    if (!target.classList.contains('is-open')) {
-      target.click();
-    }
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function () { setTimeout(init, 200); });
-  } else {
-    setTimeout(init, 200);
+    initCovers();
   }
 })();

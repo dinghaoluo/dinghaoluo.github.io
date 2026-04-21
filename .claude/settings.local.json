@@ -75,7 +75,8 @@
       "WebFetch(domain:mp.weixin.qq.com)",
       "Bash(pip install *)",
       "Bash(pkill -f \"jekyll serve\")",
-      "Bash(pkill -f \"jekyll\")"
+      "Bash(pkill -f \"jekyll\")",
+      "Bash(xargs grep *)"
     ]
   }
 }

@@ -20,6 +20,7 @@
     {% for album in albums %}
     <div
       class="album-tile"
+      id="{{ album.title | slugify }}"
       data-title="{{ album.title | escape }}"
       data-artist="{{ album.creator | escape }}"
       data-genre="{{ album.genre | default: '' | escape }}"

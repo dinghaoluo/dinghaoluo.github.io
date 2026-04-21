@@ -371,6 +371,7 @@ body {
 .author__bio { font-family: 'Mononoki', monospace !important; }
 
 .home .author__urls-wrapper { display: none; }
+.author__sidebar-thoughts { display: none; }
 
 .home .author__bio {
   line-height: 1.08;
@@ -2219,7 +2220,8 @@ mark.thoughts-highlight {
     float: none;
     width: 100%;
     grid-template-columns: repeat(7, 1fr);
-    margin: 0.6em 0 1em;
+    margin: 0 0 1em;
+    padding-top: 0.8em;
     max-height: calc(2 * (((100vw - 2rem) / 7) * 1.5 + 3px) + ((100vw - 2rem) / 7) * 0.6);
   }
 
@@ -2242,6 +2244,13 @@ mark.thoughts-highlight {
   scrollbar-width: none;
   -ms-overflow-style: none;
   &::-webkit-scrollbar { display: none; }
+
+  .home-albums__link {
+    flex: 0 0 auto;
+    display: block;
+    line-height: 0;
+    text-decoration: none;
+  }
 
   img {
     display: block;

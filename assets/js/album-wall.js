@@ -222,7 +222,36 @@
     }
 
     // initial render
-    applyFilter();
+    if (!handleHash()) {
+      applyFilter();
+    }
+
+    function handleHash() {
+      var hash = window.location.hash;
+      if (!hash || hash.length < 2) return false;
+      var targetId = hash.slice(1);
+      var target = document.getElementById(targetId);
+      if (!target || !target.classList.contains('album-tile')) return false;
+
+      matchedTiles = tiles.slice();
+      var idx = matchedTiles.indexOf(target);
+      if (idx === -1) return false;
+
+      var ps = pageSize();
+      currentPage = Math.floor(idx / ps) + 1;
+      renderPage();
+
+      setTimeout(function () {
+        if (!target.classList.contains('is-open')) {
+          target.click();
+        }
+        setTimeout(function () {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 120);
+      }, 350);
+
+      return true;
+    }
 
     if (searchInput) {
       searchInput.addEventListener('input', function () {
