@@ -10,7 +10,7 @@
 
       var collapsedH = wrap.offsetHeight;
 
-      card.addEventListener('clickk', function () {
+      card.addEventListener('click', function () {
         if (card.classList.contains('is-open')) {
           closeCard(card, wrap, toggle, collapsedH);
         } else {

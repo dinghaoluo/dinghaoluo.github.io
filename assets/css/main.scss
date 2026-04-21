@@ -1326,7 +1326,7 @@ body.home .page__author-footer {
 
 .album-tile__title {
   font-family: 'Faculty Glyphic', $cjk-stack, serif;
-  font-size: 0.82em;
+  font-size: 0.88em;
   font-weight: normal;
   line-height: 1.22;
   color: $morandi-ink;
@@ -1409,7 +1409,7 @@ body.home .page__author-footer {
 
 .album-tile__preview {
   font-family: 'Reforma 2018', $cjk-stack, serif;
-  font-size: 0.82em;
+  font-size: 0.86em;
   line-height: 1.38;
   color: $morandi-muted;
 
@@ -2179,6 +2179,89 @@ mark.thoughts-highlight {
 }
 
 // -------------------------
+// homepage cover mosaic — floated grid of thought covers
+// -------------------------
+.home-covers {
+  float: right;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  width: 180px;
+  margin: 0.1em 0 0.8em 1.4em;
+  border-radius: 3px;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 1px;
+    opacity: 0.92;
+    transition: opacity 0.2s ease, transform 0.25s ease;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.06);
+      z-index: 2;
+      position: relative;
+    }
+  }
+
+  @media (max-width: 480px) {
+    float: none;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 0 1em;
+  }
+
+  @media (min-width: 481px) and (max-width: 1023px) {
+    width: 150px;
+    margin-left: 1em;
+  }
+}
+
+// -------------------------
+// homepage album strip — horizontal scroll of album covers
+// -------------------------
+.home-albums {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 0.2em 0 1em;
+  padding-bottom: 0.4em;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar { display: none; }
+
+  img {
+    display: block;
+    flex: 0 0 auto;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 2px;
+    opacity: 0.88;
+    transition: opacity 0.2s ease, transform 0.22s ease;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.12);
+      z-index: 2;
+      position: relative;
+    }
+  }
+
+  @media (min-width: 481px) {
+    img {
+      width: 72px;
+      height: 72px;
+    }
+  }
+}
+
+// -------------------------
 // thoughts preview inline — mobile/vertical homepage only
 // -------------------------
 .thoughts-preview-inline {
@@ -2294,6 +2377,329 @@ mark.thoughts-highlight {
     font-weight: bold;
     transition: color 0.18s ease, font-weight 0.18s ease;
   }
+}
+
+// -------------------------
+// writing article list — portfolio entries on /writing/
+// -------------------------
+.writing-list {
+  margin-top: 1.2em;
+}
+
+.writing-entry {
+  display: flex;
+  gap: 1.2em;
+  padding: 1.3em 0;
+  border-bottom: 1px solid rgba($morandi-muted, 0.1);
+
+  &:last-child { border-bottom: none; }
+}
+
+.writing-entry--featured {
+  border-left: 2px solid rgba($morandi-clay-deep, 0.34);
+  padding-left: 0.85em;
+  background: linear-gradient(90deg, rgba($morandi-oat, 0.58), rgba(255,255,255,0));
+}
+
+.writing-entry__img-wrap {
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.writing-entry__img {
+  display: block;
+  width: 96px;
+  height: 144px;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.13);
+  transition: transform 0.22s ease;
+}
+
+.writing-entry:hover .writing-entry__img {
+  transform: scale(1.04);
+}
+
+.writing-entry__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.writing-entry--featured {
+  border-left: 2px solid rgba($morandi-clay-deep, 0.34);
+  padding-left: 0.85em;
+  background: linear-gradient(90deg, rgba($morandi-oat, 0.58), rgba(255,255,255,0));
+}
+
+.writing-entry__type {
+  display: inline-block;
+  font-size: 0.72em;
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+  color: $morandi-clay-deep;
+  margin-bottom: 0.3em;
+}
+
+.writing-entry__title {
+  font-family: 'Faculty Glyphic', $cjk-stack, serif;
+  font-size: 1.08em;
+  font-weight: normal;
+  color: $morandi-ink;
+  margin: 0 0 0.1em;
+  line-height: 1.4;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    &:hover { color: $link-color; text-decoration: underline; text-underline-offset: 3px; }
+  }
+}
+
+.writing-entry__title-en {
+  display: block;
+  font-size: 0.88em;
+  font-style: italic;
+  color: $morandi-muted;
+  margin-bottom: 0.3em;
+}
+
+.writing-entry__meta {
+  font-size: 0.82em;
+  color: $morandi-muted-soft;
+  margin-bottom: 0.5em;
+}
+
+.writing-entry__text {
+  font-family: 'Reforma 2018', $cjk-stack, serif;
+  font-size: 0.92em;
+  color: $site-text-body;
+  line-height: 1.65;
+  letter-spacing: 0.008em;
+  margin-bottom: 0.5em;
+
+  p { margin: 0; }
+  p + p { margin-top: 0.5em; }
+  * { font-family: inherit; }
+}
+
+.writing-entry__awards {
+  margin: 0.5em 0 0.3em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35em;
+}
+
+.writing-entry__award {
+  display: inline-block;
+  font-size: 0.7em;
+  color: $morandi-sage-deep;
+  border: 1px solid rgba($morandi-sage, 0.4);
+  border-radius: 3px;
+  padding: 0.15em 0.55em;
+  letter-spacing: 0.01em;
+}
+
+.writing-entry__links {
+  margin-top: 0.5em;
+  font-size: 0.82em;
+
+  a {
+    margin-right: 1em;
+  }
+}
+
+// writing piece page — meta header for individual articles
+.writing-piece-meta {
+  font-size: 0.82em;
+  color: $morandi-muted-soft;
+  margin-bottom: 0.3em;
+  line-height: 1.6;
+}
+
+.writing-piece-meta__type {
+  font-size: 0.88em;
+  letter-spacing: 0.06em;
+  text-transform: lowercase;
+  color: $morandi-clay-deep;
+}
+
+.writing-piece-meta__links {
+  margin-top: 0.3em;
+
+  a {
+    margin-right: 0.8em;
+    font-size: 1em;
+  }
+}
+
+// -------------------------
+// waveform audio player
+// -------------------------
+.wv-player {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: $morandi-oat;
+  border-radius: 6px;
+  border: 1px solid rgba($morandi-stone, 0.35);
+  overflow: hidden;
+  max-width: 480px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover { border-color: rgba($morandi-clay, 0.35); }
+  &.is-error { opacity: 0.5; pointer-events: none; }
+}
+
+.wv-player__play {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: $morandi-clay-deep;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+  border-right: 1px solid rgba($morandi-stone, 0.3);
+
+  &:hover:not(:disabled) { background: rgba($morandi-clay, 0.10); }
+  &:disabled { color: $morandi-muted-soft; cursor: default; }
+}
+
+.wv-player__icon {
+  width: 18px;
+  height: 18px;
+
+  &--pause { display: none; }
+}
+
+.wv-player__body {
+  flex: 1;
+  min-width: 0;
+  padding: 6px 10px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.wv-player__meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.wv-player__title {
+  font-size: 0.78em;
+  font-weight: 500;
+  color: $morandi-ink;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.01em;
+}
+
+.wv-player__time {
+  font-family: 'Mononoki', monospace;
+  font-size: 0.68em;
+  color: $morandi-muted-soft;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.wv-player__sep { margin: 0 0.15em; }
+
+.wv-player__wave {
+  position: relative;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.wv-player__canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.wv-player__vol-wrap {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 8px 0 0;
+}
+
+.wv-player__vol-btn {
+  background: none;
+  border: none;
+  color: $morandi-muted;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  transition: color 0.15s ease;
+
+  &:hover { color: $morandi-clay-deep; }
+}
+
+.wv-player__vol-icon {
+  width: 16px;
+  height: 16px;
+
+  &--mute { display: none; }
+}
+
+.wv-player__vol-slider {
+  width: 52px;
+  height: 3px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: $morandi-stone;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $morandi-clay;
+    cursor: pointer;
+    border: none;
+  }
+
+  &::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $morandi-clay;
+    cursor: pointer;
+    border: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .wv-player__play {
+    width: 40px;
+    height: 40px;
+  }
+
+  .wv-player__icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .wv-player__vol-wrap { display: none; }
+
+  .wv-player__body { padding: 5px 8px 4px; }
+
+  .wv-player__wave { height: 30px; }
 }
 
 // =========================================================================
@@ -2632,6 +3038,16 @@ mark.thoughts-highlight {
     background: rgba(#1c1917, 0.96);
   }
 
+  .home-covers img {
+    opacity: 0.82;
+    &:hover { opacity: 0.95; }
+  }
+
+  .home-albums img {
+    opacity: 0.78;
+    &:hover { opacity: 0.95; }
+  }
+
   .page-nav__links a {
     text-decoration-color: rgba(#c49a85, 0.35);
     &:visited { text-decoration-color: rgba(#d4a88f, 0.35); }
@@ -2648,6 +3064,68 @@ mark.thoughts-highlight {
 
   #theme-toggle .theme-toggle__d { color: #ddd3c8; font-weight: bold; }
   #theme-toggle .theme-toggle__l { color: #6a6360; font-weight: normal; }
+
+  // writing list
+  .writing-entry {
+    border-bottom-color: rgba(#9b928a, 0.12);
+  }
+  .writing-entry--featured {
+    border-left-color: rgba(#c49a85, 0.34);
+    background: linear-gradient(90deg, rgba(#2a2420, 0.78), rgba(#1c1917, 0));
+  }
+  .writing-entry__type {
+    color: #c49a85;
+  }
+  .writing-entry__title {
+    color: #e8e2db;
+    a:hover { color: #d4a88f; }
+  }
+  .writing-entry__title-en {
+    color: #9b928a;
+  }
+  .writing-entry__meta {
+    color: #7a7370;
+  }
+  .writing-entry__text {
+    color: #bbb3a8;
+  }
+  .writing-entry__award {
+    color: #a8b5a2;
+    border-color: rgba(#a8b5a2, 0.3);
+  }
+  .writing-entry__img {
+    box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+  }
+  .writing-piece-meta {
+    color: #7a7370;
+  }
+  .writing-piece-meta__type {
+    color: #c49a85;
+  }
+
+  // waveform player dark overrides
+  .wv-player {
+    background: #1c1917;
+    border-color: rgba(#5a524c, 0.35);
+    &:hover { border-color: rgba(#c49a85, 0.3); }
+  }
+  .wv-player__play {
+    color: #c49a85;
+    border-right-color: rgba(#5a524c, 0.3);
+    &:hover:not(:disabled) { background: rgba(#c49a85, 0.10); }
+    &:disabled { color: #5a524c; }
+  }
+  .wv-player__title { color: #e8e2db; }
+  .wv-player__time { color: #7a7370; }
+  .wv-player__vol-btn {
+    color: #8b837c;
+    &:hover { color: #c49a85; }
+  }
+  .wv-player__vol-slider {
+    background: #3a3530;
+    &::-webkit-slider-thumb { background: #c49a85; }
+    &::-moz-range-thumb { background: #c49a85; }
+  }
 }
 
 // System preference (unless user forced light)

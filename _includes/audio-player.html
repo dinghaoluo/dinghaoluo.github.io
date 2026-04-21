@@ -1,0 +1,42 @@
+{% comment %}
+  Custom waveform audio player.
+  Parameters:
+    src      – path to the audio file (e.g. /assets/audio/track.mp3)
+    title    – display title
+    waveform – (optional) path to pre-generated JSON waveform data
+{% endcomment %}
+<div class="wv-player" data-src="{{ include.src }}"{% if include.waveform %} data-waveform="{{ include.waveform }}"{% endif %}>
+  <button class="wv-player__play" aria-label="Play" disabled>
+    <svg class="wv-player__icon wv-player__icon--play" viewBox="0 0 24 24" fill="currentColor">
+      <polygon points="7,4 21,12 7,20"/>
+    </svg>
+    <svg class="wv-player__icon wv-player__icon--pause" viewBox="0 0 24 24" fill="currentColor">
+      <rect x="5" y="4" width="4.5" height="16" rx="1"/>
+      <rect x="14.5" y="4" width="4.5" height="16" rx="1"/>
+    </svg>
+  </button>
+  <div class="wv-player__body">
+    <div class="wv-player__meta">
+      <span class="wv-player__title">{{ include.title }}</span>
+      <span class="wv-player__time">
+        <span class="wv-player__current">0:00</span>
+        <span class="wv-player__sep">/</span>
+        <span class="wv-player__duration">0:00</span>
+      </span>
+    </div>
+    <div class="wv-player__wave" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+      <canvas class="wv-player__canvas"></canvas>
+    </div>
+  </div>
+  <div class="wv-player__vol-wrap">
+    <button class="wv-player__vol-btn" aria-label="Volume">
+      <svg class="wv-player__vol-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 8.5v7a4.47 4.47 0 002.5-3.5zM14 3.23v2.06a6.51 6.51 0 010 13.42v2.06A8.51 8.51 0 0014 3.23z"/>
+      </svg>
+      <svg class="wv-player__vol-icon wv-player__vol-icon--mute" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M16.5 12A4.5 4.5 0 0014 8.5v2.09l2.44 2.44c.03-.31.06-.63.06-.97zM19 12c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.8 8.8 0 0021 12a8.51 8.51 0 00-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.46 8.46 0 003.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4l-2.1 2.1L12 8.2V4z"/>
+      </svg>
+    </button>
+    <input type="range" class="wv-player__vol-slider" min="0" max="1" step="0.02" value="1" aria-label="Volume level">
+  </div>
+</div>

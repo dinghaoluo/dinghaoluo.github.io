@@ -17,18 +17,20 @@ Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.
 
 <h2 id="thoughts">thoughts :)</h2>
 
-<div class="thoughts-preview-inline" id="thoughts-preview-inline">
-  <span class="thoughts-preview-inline__label">my thoughts on&hellip;</span>
-  {% assign thoughts = site.data.thoughts | sort: 'posted' | reverse %}
-  {% for thought in thoughts limit:60 %}
-  <a href="/thoughts/#{{ thought.title | slugify }}" class="thoughts-preview-inline__item" style="display:none">
-    <span class="thoughts-preview-inline__title">{{ thought.title }}</span>
-    <span class="thoughts-preview-inline__text">{{ thought.text | markdownify | strip_html | strip_newlines | strip | truncate: 60, '…' }}</span>
-  </a>
-  {% endfor %}
+{% assign all_thoughts = site.data.thoughts | sort: 'posted' | reverse %}
+{% assign t_books = all_thoughts | where: "type", "book" %}
+{% assign t_films = all_thoughts | where: "type", "film" %}
+{% assign t_games = all_thoughts | where: "type", "game" %}
+{% assign t_tv = all_thoughts | where: "type", "tv" %}
+
+<div class="home-covers" aria-hidden="true">
+  {% for t in t_books limit:5 %}{% if t.image %}<img src="{{ t.image }}" alt="" loading="lazy">{% endif %}{% endfor %}
+  {% for t in t_films limit:5 %}{% if t.image %}<img src="{{ t.image }}" alt="" loading="lazy">{% endif %}{% endfor %}
+  {% for t in t_games limit:5 %}{% if t.image %}<img src="{{ t.image }}" alt="" loading="lazy">{% endif %}{% endfor %}
+  {% for t in t_tv limit:3 %}{% if t.image %}<img src="{{ t.image }}" alt="" loading="lazy">{% endif %}{% endfor %}
 </div>
 
-I also have some more day-to-day thoughts on various books, films, and other things that have been on my mind.
+I consume things compulsively and I have opinions about most of them. {{ t_books.size }} books — Pynchon's parabolas, Cărtărescu's Bucharest, Mark Fisher finding the words for what an entire generation already felt. {{ t_films.size }} films — Tarkovsky's *Stalker*, Kubrick's corridors, Haneke making you sit with it. {{ t_tv.size }} TV seasons — *The Wire* reshaping what the form can do, Fargo's snow-covered absurdism. {{ t_games.size }} games — *Disco Elysium*'s internal monologue, *Outer Wilds* teaching you to let go, soulslikes that mean it. Some thoughts are long; none are particularly polite about things I didn't like. I write the kind of reviews I wish I'd found before picking up the book or pressing play — not summaries, but real engagement with what the thing is trying to do and whether it pulls it off.
 
 [→ thoughts](/thoughts/)
 
@@ -36,7 +38,7 @@ I also have some more day-to-day thoughts on various books, films, and other thi
 
 <h2 id="writing">writing :)</h2>
 
-Three years at Neu-Reality (神经现实), seven months at *Scientific American* China, and a translation of Merlin Sheldrake's *Entangled Life* — winner of the 2025 Pingshan Natural History Museum Book Award.
+Three years editing neuroscience writing at Neu-Reality (神经现实), one of the earliest Chinese-language science communication platforms, where I translate and write about brain research for a general educated audience. Seven months as a science editor at *Scientific American* China, where I wrote weekly news pieces and a print feature on the ARC project — the largest adversarial collaboration on consciousness ever attempted — for which I got to interview Cyriel Pennartz and Anil Seth. And a Chinese translation of Merlin Sheldrake's *Entangled Life*, which won the 2025 Pingshan Natural History Museum Book Award; after finishing the translation I sat down with Sheldrake to talk about fungi, fermentation, and what it means to think about organisms that don't have brains. Science is what I study; writing about it, in both languages, is how I make sense of it.
 
 [→ writing & translation](/writing/)
 
@@ -44,7 +46,7 @@ Three years at Neu-Reality (神经现实), seven months at *Scientific American*
 
 <h2 id="science">science :)</h2>
 
-Phasic dopamine from the locus coeruleus, hippocampal CA1 subpopulations, and what it all means for how memories get encoded. **Python** pipelines and a computational model; paper in preparation.
+My PhD asks what sounds like a simple question: how does the brain decide what to remember? I study the locus coeruleus, a tiny cluster of brainstem neurones that sends dopamine into the hippocampus. The textbook picture treats the LC as a slow, diffuse modulator — a volume knob on arousal. I'm trying to work out whether that picture is too coarse: whether the phasic dopamine signals do something more precise, selectively shaping which cell populations in hippocampal CA1 fire and which memories survive. I designed the experiments, built the analysis pipelines in **Python**, and developed a computational model to test the idea. Paper getting closer to done. Before this I was in the Paulsen lab at Cambridge, where my undergraduate thesis looked at dopamine's role in CA3–CA1 synaptic plasticity — so the LC–hippocampus axis has been a thread through everything I've done.
 
 [→ science](/science/)
 
@@ -52,7 +54,12 @@ Phasic dopamine from the locus coeruleus, hippocampal CA1 subpopulations, and wh
 
 <h2 id="music">music :)</h2>
 
-Progressive art-rock as *amoxitoxin*. Several albums on [Bandcamp](https://amoxitoxin.bandcamp.com/).
+<div class="home-albums" aria-hidden="true">
+  {% assign albums = site.data.music_thoughts | sort: 'posted' | reverse %}
+  {% for a in albums limit:24 %}{% if a.image %}<img src="{{ a.image }}" alt="" loading="lazy">{% endif %}{% endfor %}
+</div>
+
+I write and record progressive art-rock under the name *amoxitoxin* — one album out so far, with neuroscience and Cambridge seeping into the song titles whether I want them to or not (*central pattern generator*, *the rain on the Cam*). I also listen obsessively: prog, jazz fusion, Canterbury scene, and whatever else catches me. There are {{ albums.size }} albums on the music page with thoughts on each — here are the most recent covers. Some longer thoughts on the ones that stayed with me.
 
 [→ music](/music/)
 
@@ -68,4 +75,4 @@ A running collection of photographs from the field and daily life.
 
 <h2 id="other-stuff">other stuff :)</h2>
 
-There's a [CV](/cv/) too.
+There's a [CV](/cv/), and I'm building [the zone](https://github.com/dinghaoluo/the_zone_site) — a companion site for visualising *Gravity's Rainbow*, because some books won't stay on the page. Seven Pynchon novels in and I'm still finding new threads.
