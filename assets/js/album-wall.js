@@ -53,6 +53,24 @@
             wrap.removeEventListener('transitionend', handler);
           });
         } else {
+          tiles.forEach(function (other) {
+            if (other === tile || !other.classList.contains('is-open')) return;
+            var ow = other.querySelector('.album-tile__preview-wrap');
+            var ot = other.querySelector('.album-tile__toggle');
+            if (!ow) return;
+            var ch = ow.offsetHeight;
+            ow.style.maxHeight = ch + 'px';
+            void ow.offsetHeight;
+            other.classList.remove('is-open');
+            if (ot) ot.setAttribute('aria-expanded', 'false');
+            ow.style.transition = 'max-height 0.32s ease';
+            ow.style.maxHeight = '';
+            ow.addEventListener('transitionend', function handler() {
+              ow.style.transition = '';
+              ow.removeEventListener('transitionend', handler);
+            });
+          });
+
           var startH = wrap.offsetHeight;
           wrap.style.maxHeight = 'none';
           var targetH = wrap.scrollHeight;

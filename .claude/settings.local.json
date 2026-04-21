@@ -27,7 +27,16 @@
       "WebFetch(domain:colordrop.io)",
       "Bash(python *)",
       "WebFetch(domain:amoxitoxin.bandcamp.com)",
-      "Bash(curl *)"
+      "Bash(curl *)",
+      "WebFetch(domain:core.ac.uk)",
+      "WebFetch(domain:www.researchgate.net)",
+      "WebFetch(domain:fileserver-az.core.ac.uk)",
+      "WebFetch(domain:the-artifice.com)",
+      "WebFetch(domain:fsqueek.medium.com)",
+      "WebFetch(domain:philosophyandvideogamesblog.wordpress.com)",
+      "WebFetch(domain:lordsofgaming.net)",
+      "WebFetch(domain:thegeekanthropologist.com)",
+      "WebFetch(domain:press-start.gla.ac.uk)"
     ]
   }
 }

@@ -14,9 +14,17 @@
         if (card.classList.contains('is-open')) {
           closeCard(card, wrap, toggle, collapsedH);
         } else {
+          document.querySelectorAll('.thoughts-card.is-open').forEach(function (other) {
+            if (other === card) return;
+            var otherWrap = other.querySelector('.thoughts-card__text-wrap');
+            var otherToggle = other.querySelector('.thoughts-card__toggle');
+            var otherCollapsedH = parseFloat(other.dataset.collapsedH) || collapsedH;
+            closeCard(other, otherWrap, otherToggle, otherCollapsedH);
+          });
           openCard(card, wrap, toggle);
         }
       });
+      card.dataset.collapsedH = collapsedH;
     });
 
     function openCard(card, wrap, toggle) {
