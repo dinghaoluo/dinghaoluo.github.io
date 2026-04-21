@@ -36,7 +36,28 @@
       "WebFetch(domain:philosophyandvideogamesblog.wordpress.com)",
       "WebFetch(domain:lordsofgaming.net)",
       "WebFetch(domain:thegeekanthropologist.com)",
-      "WebFetch(domain:press-start.gla.ac.uk)"
+      "WebFetch(domain:press-start.gla.ac.uk)",
+      "WebFetch(domain:www.superjumpmagazine.com)",
+      "WebFetch(domain:modelviewculture.com)",
+      "WebFetch(domain:www.amerlit.com)",
+      "WebFetch(domain:lareviewofbooks.org)",
+      "WebFetch(domain:theconversation.com)",
+      "WebFetch(domain:lithub.com)",
+      "WebFetch(domain:orbit.openlibhums.org)",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:niklasriewald.com)",
+      "WebFetch(domain:thomaspynchon.com)",
+      "WebFetch(domain:greatbooksguy.com)",
+      "Bash(awk '/^- title:/ {if \\(count >= 3\\) print title \" \\(\" count \"\\)\"; title=$0; count=0} /<u>/ {count++} END {if \\(count >= 3\\) print title \" \\(\" count \"\\)\"}' _data/thoughts.yml)",
+      "Bash(awk *)",
+      "Bash(git checkout *)",
+      "WebFetch(domain:store.steampowered.com)",
+      "Read(//Users/ohuov8/assets/css/**)",
+      "Read(//c/Users/ohuov8/assets/css/**)",
+      "Bash(gh repo *)",
+      "WebFetch(domain:www.steamgriddb.com)",
+      "WebFetch(domain:www.igdb.com)",
+      "WebFetch(domain:en.wikipedia.org)"
     ]
   }
 }
