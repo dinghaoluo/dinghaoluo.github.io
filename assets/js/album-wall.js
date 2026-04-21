@@ -8,11 +8,12 @@
 
     var searchInput = document.getElementById('album-wall-search');
     var luckBtn = document.getElementById('album-wall-luck');
-    var pagination = document.getElementById('album-wall-pagination');
-    var prevBtn = document.getElementById('album-wall-prev');
-    var nextBtn = document.getElementById('album-wall-next');
-    var currentEl = document.getElementById('album-wall-current');
-    var totalEl = document.getElementById('album-wall-total');
+    var paginationWraps = document.querySelectorAll('.album-wall__pagination');
+    var prevBtns = document.querySelectorAll('.album-wall__prev');
+    var nextBtns = document.querySelectorAll('.album-wall__next');
+    var pageInputs = document.querySelectorAll('.album-wall__page-input');
+    var totalPagesEls = document.querySelectorAll('.album-wall__total-pages');
+    var rangeEls = document.querySelectorAll('.album-wall__range');
 
     var tiles = Array.prototype.slice.call(grid.querySelectorAll('.album-tile'));
     var searchTimer = null;
@@ -159,11 +160,16 @@
       var tp = totalPages();
       if (currentPage > tp) currentPage = tp;
       if (currentPage < 1) currentPage = 1;
-      currentEl.textContent = currentPage;
-      totalEl.textContent = tp;
-      prevBtn.disabled = currentPage <= 1;
-      nextBtn.disabled = currentPage >= tp;
-      pagination.hidden = tp <= 1;
+      var ps = pageSize();
+      var start = (currentPage - 1) * ps;
+      var end = Math.min(start + ps, matchedTiles.length);
+      var rangeText = matchedTiles.length ? (start + 1) + '–' + end + ' of ' + matchedTiles.length : '';
+      pageInputs.forEach(function (el) { el.value = currentPage; el.max = tp; });
+      totalPagesEls.forEach(function (el) { el.textContent = tp; });
+      rangeEls.forEach(function (el) { el.textContent = rangeText; });
+      prevBtns.forEach(function (btn) { btn.disabled = currentPage <= 1; });
+      nextBtns.forEach(function (btn) { btn.disabled = currentPage >= tp; });
+      paginationWraps.forEach(function (wrap) { wrap.hidden = tp <= 1; });
     }
 
     function updateLuckState() {
@@ -273,12 +279,52 @@
       });
     }
 
-    prevBtn.addEventListener('click', function () {
-      if (currentPage > 1) { currentPage--; renderPage(); }
+    prevBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        if (currentPage > 1) {
+          currentPage--;
+          renderPage();
+          if (btn.closest('.album-wall__pagination--bottom')) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+        }
+      });
     });
 
-    nextBtn.addEventListener('click', function () {
-      if (currentPage < totalPages()) { currentPage++; renderPage(); }
+    nextBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        if (currentPage < totalPages()) {
+          currentPage++;
+          renderPage();
+          if (btn.closest('.album-wall__pagination--bottom')) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+        }
+      });
+    });
+
+    function handlePageInput(input) {
+      var val = parseInt(input.value, 10);
+      if (isNaN(val) || val < 1) val = 1;
+      if (val > totalPages()) val = totalPages();
+      currentPage = val;
+      renderPage();
+      if (input.closest('.album-wall__pagination--bottom')) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
+    pageInputs.forEach(function (input) {
+      input.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          handlePageInput(input);
+          input.blur();
+        }
+      });
+      input.addEventListener('blur', function () {
+        handlePageInput(input);
+      });
     });
 
     window.addEventListener('resize', function () {

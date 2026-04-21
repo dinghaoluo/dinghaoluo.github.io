@@ -51,12 +51,23 @@ My PhD asks what sounds like a simple question: how does the brain decide what t
 
 <h2 id="music">music :)</h2>
 
-<div class="home-albums" aria-hidden="true">
-  {% assign albums = site.data.music_thoughts | sort: 'posted' | reverse %}
-  {% for a in albums limit:24 %}{% if a.image %}<a href="/music/#{{ a.title | slugify }}" class="home-albums__link"><img src="{{ a.image }}" alt="{{ a.title }}" loading="lazy"></a>{% endif %}{% endfor %}
+<div class="home-featured-album">
+  <a href="/music/" class="home-featured-album__cover">
+    <img src="/assets/images/the_maze.jpg" alt="amoxitoxin album cover">
+  </a>
+  <div class="home-featured-album__info">
+    <span class="home-featured-album__title">amoxitoxin</span>
+    <p class="home-featured-album__desc">Progressive art-rock, one album out so far, with neuroscience and Cambridge seeping into the song titles whether I want them to or not. Five tracks recorded between lab sessions and sleepless nights.</p>
+    <a href="https://amoxitoxin.bandcamp.com/" class="home-featured-album__link">Bandcamp</a> · <a href="/music/" class="home-featured-album__link">listen here</a>
+  </div>
 </div>
 
-I write and record progressive art-rock under the name *amoxitoxin* — one album out so far, with neuroscience and Cambridge seeping into the song titles whether I want them to or not (*central pattern generator*, *the rain on the Cam*). I also listen obsessively: prog, jazz fusion, Canterbury scene, and whatever else catches me. There are {{ albums.size }} albums on the music page with thoughts on each — here are the most recent covers. Some longer thoughts on the ones that stayed with me.
+<div class="home-albums" aria-hidden="true">
+  {% assign albums = site.data.music_thoughts | sort: 'posted' | reverse %}
+  {% for a in albums limit:40 %}{% if a.image %}<a href="/music/#{{ a.title | slugify }}" class="home-albums__link" style="display:none"><img src="{{ a.image }}" alt="{{ a.title }}" loading="lazy"></a>{% endif %}{% endfor %}
+</div>
+
+I also listen obsessively: prog, jazz fusion, Canterbury scene, and whatever else catches me. There are {{ albums.size }} albums on the music page with thoughts on each. Some longer thoughts on the ones that stayed with me.
 
 [→ music](/music/)
 

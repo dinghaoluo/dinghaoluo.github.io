@@ -91,6 +91,7 @@
     var totalEls = document.querySelectorAll('.thoughts-pagination__total');
     var prevBtns = document.querySelectorAll('.thoughts-pagination__prev');
     var nextBtns = document.querySelectorAll('.thoughts-pagination__next');
+    var rangeEls = document.querySelectorAll('.thoughts-pagination__range');
     var searchTimer = null;
     var isShuffled = false;
     var currentPage = 1;
@@ -253,8 +254,12 @@
 
     function updatePagination() {
       var total = totalPages();
+      var start = (currentPage - 1) * PAGE_SIZE;
+      var end = Math.min(start + PAGE_SIZE, matchedCards.length);
+      var rangeText = matchedCards.length ? (start + 1) + '–' + end + ' of ' + matchedCards.length : '';
       currentEls.forEach(function (el) { el.textContent = currentPage; });
       totalEls.forEach(function (el) { el.textContent = total; });
+      rangeEls.forEach(function (el) { el.textContent = rangeText; });
       prevBtns.forEach(function (btn) { btn.disabled = currentPage <= 1; });
       nextBtns.forEach(function (btn) { btn.disabled = currentPage >= total; });
       paginationWraps.forEach(function (wrap) { wrap.hidden = total <= 1; });
@@ -467,7 +472,7 @@
     if (!container) return;
     var items = Array.prototype.slice.call(container.querySelectorAll('[style*="display:none"], [style*="display: none"]'));
     if (!items.length) return;
-    var count = window.innerWidth <= 480 ? 14 : 15;
+    var count = window.innerWidth <= 480 ? 14 : 20;
     var shuffled = weightedShuffle(items);
     for (var k = 0; k < shuffled.length; k++) {
       if (k < count) {
@@ -481,5 +486,35 @@
     document.addEventListener('DOMContentLoaded', initCovers);
   } else {
     initCovers();
+  }
+})();
+
+/* frontpage album strip — shuffle and limit album covers */
+(function () {
+  'use strict';
+  function initAlbums() {
+    var container = document.querySelector('.home-albums');
+    if (!container) return;
+    var items = Array.prototype.slice.call(container.querySelectorAll('[style*="display:none"], [style*="display: none"]'));
+    if (!items.length) return;
+    var count = window.innerWidth <= 480 ? 16 : 24;
+    var pool = items.slice();
+    var shuffled = [];
+    while (pool.length) {
+      var idx = Math.floor(Math.random() * pool.length);
+      shuffled.push(pool.splice(idx, 1)[0]);
+    }
+    for (var k = 0; k < shuffled.length; k++) {
+      if (k < count) {
+        shuffled[k].style.display = '';
+      } else {
+        shuffled[k].parentNode.removeChild(shuffled[k]);
+      }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAlbums);
+  } else {
+    initAlbums();
   }
 })();

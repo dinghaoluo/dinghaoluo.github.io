@@ -96,3 +96,18 @@ The writers I admire most — Grace Lindsay making computational neuroscience fe
 </div>
 {% endfor %}
 </div>
+
+---
+
+### translations
+
+I also translated and edited work by Michael Graziano, Timothy Lillicrap and Geoffrey Hinton, Jordana Cepelewicz, Alex Mar, and others into Chinese for Neu-Reality.
+
+- Michael Graziano, 'Are We Really Conscious?' — *The Atlantic* · [original](https://www.theatlantic.com/science/archive/2016/03/phlegm-theories-of-consciousness/472812/) · [中文](https://mp.weixin.qq.com/s/dUAQ-v7_Xb_uP1znW4f-0g)
+- Timothy P. Lillicrap, Adam Santoro, Luke Marris, Colin J. Akerman and Geoffrey Hinton, 'Backpropagation and the Brain' — *Nature Reviews Neuroscience* · [original](https://www.nature.com/articles/s41583-020-0277-3) · [中文](https://mp.weixin.qq.com/s/n0cNsT_Gf7RZBFjE3rd_hw)
+- Jordana Cepelewicz, 'In Brain's Electrical Ripples, Markers for Memories Appear' — *Quanta Magazine* · [original](https://www.quantamagazine.org/in-brains-electrical-ripples-markers-for-memories-appear-20190806/) · [中文](https://mp.weixin.qq.com/s/gpKgkS9_EMnG7auZKLDuyw)
+- Grigori Guitchounts, 'An Existential Crisis in Neuroscience' — *Nautilus* · [original](https://nautil.us/an-existential-crisis-in-neuroscience-236115/) · [中文](https://mp.weixin.qq.com/s/TWu-VGcNfIg0oQYeXO3mSg)
+- Kevin Berger, 'Gustav Klimt in the Brain Lab' — *Nautilus* · [original](https://nautil.us/gustav-klimt-in-the-brain-lab-237578/) · [中文](https://mp.weixin.qq.com/s/bZJhnXy4RNnYkSdE2kbGUA)
+- Dyani Lewis, 'Optogenetics: Understanding the Brain One Flash of Light at a Time' — *Cosmos Magazine* · [original](https://cosmosmagazine.com/biology/optogenetics-understanding-the-brain-one-flash-of-light-at-a-time) · [中文](https://mp.weixin.qq.com/s?__biz=MzkxNzg2MzkxNg==&mid=2247539537&idx=1&sn=45a1385d9a380990018731b7f3a7dfd7&source=41)
+- Alex Mar, 'The Uncanny Love of Robot-Making' — *WIRED* · [original](https://www.wired.com/2017/10/hiroshi-ishiguro-when-robots-act-just-like-humans/) · [中文](https://mp.weixin.qq.com/s/AB9Pxh-52b7ZJxSDTfaceA)
+- Steve Ayan, 'The Brain's Autopilot Mechanism Steers Consciousness' — *Scientific American* · [original](https://www.scientificamerican.com/article/the-brains-autopilot-mechanism-steers-consciousness/) · [中文](https://mp.weixin.qq.com/s/edW5JRQ2VZF7k6E5daDkYA)

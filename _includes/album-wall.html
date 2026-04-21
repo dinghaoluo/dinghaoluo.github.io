@@ -16,6 +16,13 @@
     <button class="album-wall__luck-btn" id="album-wall-luck" type="button">try your luck</button>
   </div>
 
+  <div class="album-wall__pagination album-wall__pagination--top" id="album-wall-pagination-top" hidden>
+    <button class="album-wall__page-btn album-wall__prev" disabled>&larr;</button>
+    <span class="album-wall__page-info"><input type="number" class="album-wall__page-input" value="1" min="1" aria-label="Go to page"> / <span class="album-wall__total-pages">1</span></span>
+    <button class="album-wall__page-btn album-wall__next">&rarr;</button>
+    <span class="album-wall__range"></span>
+  </div>
+
   <div class="album-wall__grid" id="album-wall-grid">
     {% for album in albums %}
     <div
@@ -36,8 +43,8 @@
         {% endif %}
       </div>
       <div class="album-tile__info">
-        <div class="album-tile__title">{{ album.title }}</div>
-        <div class="album-tile__artist">{{ album.creator }}{% if album.year and album.year != '' %}<span class="album-tile__year"> ({{ album.year }})</span>{% endif %}</div>
+        <div class="album-tile__title">{{ album.title }}{% if album.year and album.year != '' %}<span class="album-tile__year"> ({{ album.year }})</span>{% endif %}</div>
+        <div class="album-tile__artist">{{ album.creator }}</div>
         {% if album.genre and album.genre != '' %}
           <div class="album-tile__genre">{{ album.genre }}</div>
         {% endif %}
@@ -53,9 +60,10 @@
     {% endfor %}
   </div>
 
-  <div class="album-wall__pagination" id="album-wall-pagination" hidden>
-    <button class="album-wall__page-btn" id="album-wall-prev" disabled>&larr;</button>
-    <span class="album-wall__page-info"><span id="album-wall-current">1</span> / <span id="album-wall-total">1</span></span>
-    <button class="album-wall__page-btn" id="album-wall-next">&rarr;</button>
+  <div class="album-wall__pagination album-wall__pagination--bottom" hidden>
+    <button class="album-wall__page-btn album-wall__prev" disabled>&larr;</button>
+    <span class="album-wall__page-info"><input type="number" class="album-wall__page-input" value="1" min="1" aria-label="Go to page"> / <span class="album-wall__total-pages">1</span></span>
+    <button class="album-wall__page-btn album-wall__next">&rarr;</button>
+    <span class="album-wall__range"></span>
   </div>
 </div>

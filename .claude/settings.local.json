@@ -76,7 +76,13 @@
       "Bash(pip install *)",
       "Bash(pkill -f \"jekyll serve\")",
       "Bash(pkill -f \"jekyll\")",
-      "Bash(xargs grep *)"
+      "Bash(xargs grep *)",
+      "WebFetch(domain:unsplash.com)",
+      "WebFetch(domain:www.pexels.com)",
+      "WebFetch(domain:pixabay.com)",
+      "WebFetch(domain:www.theatlantic.com)",
+      "Bash(PYTHONIOENCODING=utf-8 python *)",
+      "WebFetch(domain:thecyberiam.bandcamp.com)"
     ]
   }
 }

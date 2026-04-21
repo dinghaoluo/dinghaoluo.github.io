@@ -1,0 +1,91 @@
+---
+title: "Phage Therapy's Long Fall and Unlikely Revival"
+type: "feature"
+outlet: "环球科学"
+outlet_en: "Scientific American China"
+date: 2021-03-15
+image: "/assets/images/writing/phage-therapy.jpg"
+section: "online"
+links:
+  - label: "Original (Chinese)"
+    url: "https://mp.weixin.qq.com/s/162wBMyFCG2z4BZwFjTxAQ"
+excerpt: "From Felix d'Herelle's Pasteur Institute discovery to Georgian clinics and US Navy emergency treatments, the long fall and unlikely revival of bacteriophage therapy."
+---
+
+*[Figure: A colourised image of T4 bacteriophages. Credit: Gregory & Marshall/Wellcome Collection]*
+
+In 1919, a French physician observed something modest: blank circles on a culture plate. From that observation came a therapeutic principle, the deployment of bacteriophages against bacterial infection, that would flourish briefly, vanish for half a century, and return only when the thing it had been built to replace began to fail.
+
+When forty-seven-year-old Frenchman Esteban Diaz (a pseudonym) set out for Georgia, he was defying his doctors' advice. He could endure no more. Diaz suffered from cystic fibrosis, a condition that left him acutely vulnerable to bacterial infection; he had been on antibiotics, under medical guidance, since childhood. This time, however, he had contracted *Pseudomonas aeruginosa*, a superbug ravaging his lungs. Every available antibiotic had proved useless. The only way forward, at least as his physicians saw it, was a lung transplant.
+
+Diaz disagreed. A handful of eastern European countries, Georgia among them, offered a treatment known as phage therapy: the introduction of bacteriophages into the human body to combat bacterial infection. After undergoing the procedure, Diaz reported that he recovered within days. The chronic fatigue that had dogged him for decades, the relentless coughing, the shortness of breath, all vanished.
+
+As an ever-growing number of bacterial infections become effectively untreatable, the World Health Organisation (WHO) has designated antibiotic resistance a major threat to global health, food safety, and development; by 2050, an estimated thirty million people worldwide will be affected. For diseases such as pneumonia, tuberculosis, and salmonellosis, antibiotics that were once the first line of defence, penicillin, tetracycline, cephalosporins, are now powerless against many pathogenic bacteria. Numerous countries in Europe and North America have consequently turned to phage therapy. Western researchers have been tackling the formulation and safety challenges, and clinical trials have proliferated. Yet no phage therapy product has received full regulatory approval from either the FDA or the EMA. The field remains, stubbornly, at the stage of early trials and compassionate use.
+
+Phage therapy was already flourishing in eastern Europe by the 1930s. What the West now calls innovation, Georgia calls inheritance.
+
+*[Figure: Left: Electron micrograph of a single bacteriophage. Credit: Miller et al., Microbiol. Mol. Biol. Rev. Right: Electron micrograph showing numerous bacteriophages attached to a bacterial cell wall. Credit: Graham Beards, shared under CC BY-SA 3.0]*
+
+Viruses are ubiquitous and morphologically diverse. One encounters electron micrograph images of viruses for the first time and the thought is immediate: this is extraordinarily intricate. By some estimates, among all the viruses blanketing the planet, bacteriophages alone number at least 10^31. Nearly every biology textbook contains at least one illustration of a bacteriophage as seen under the electron microscope: several 'legs' splaying outward from the tail, the tail connected by a 'shaft' to a head that encases the phage's DNA.
+
+As the name suggests, bacteriophages eat bacteria. The world teems with bacterial species, and the phages that have co-evolved alongside them have diversified into myriad types, each targeting a specific class of bacterium. The well-known T2 phage, for instance, uses *Escherichia coli* as its host, infecting and killing the bacterium. Once a T2 phage has landed on an *E. coli* cell, it injects its genetic material into the bacterial cell. Before long, the bacterium is transformed into a phage factory, assembling components at extraordinary speed. When enough copies have been produced, the phage triggers the lytic cycle: the bacterium ruptures, releasing a multitude of phages into the surrounding environment.
+
+For bacteria, this is decidedly unwelcome. The first human observation of bacteriophages arose from blank circles on laboratory culture plates, patches where bacteria appeared to have vanished, as though some unknown force were suppressing their growth. In 1916, Felix d'Herelle, then working at the Pasteur Institute, was tasked with investigating the cause of dysentery among French soldiers. He noticed that these blank circles appeared more readily on plates containing certain soldiers' stool samples, and that those soldiers typically showed rapid improvement in their dysentery symptoms. D'Herelle grasped at once that whatever inhabited those circles must be alleviating the disease. Three years after this initial observation, he successfully extracted the substance from the blank circles and prepared it as a treatment for patients suffering from haemorrhagic dysentery. To persuade patients and physicians alike, he first drank the concoction himself. 'Not exactly palatable, but at least not too unpleasant,' d'Herelle noted in his records.
+
+*[Figure: One of the culture plates from d'Herelle's laboratory in the 1930s; the blank circles formed by phage-killed bacteria are clearly visible. Credit: Pasteur Institute/Felix d'Herelle Archives]*
+
+After the patients drank d'Herelle's preparation, their haemorrhagic dysentery rapidly subsided. That treatment, over a century ago, marked the first time humans used viruses to combat bacterial infection. Phage therapy research surged forward, entering its golden age in the 1920s. In 1925, the Royal Netherlands Academy of Arts and Sciences (KNAW) awarded d'Herelle the decennial Leeuwenhoek Medal. In 1934, at Stalin's invitation, d'Herelle travelled to the Soviet Union, arriving in Tbilisi, Georgia, where he joined his old acquaintance George Eliava to work at the Tbilisi Institute. The Soviet Union briefly assumed a commanding lead in phage therapy research.
+
+The ascendancy was short-lived. Phage therapy's foothold in the medical marketplace was about to collapse entirely. In 1928, scientists discovered penicillin. In 1930, penicillin's first clinical application succeeded. From the 1940s onward, penicillin and other antibiotics swept across the medical markets of Europe and North America, and research into phage therapy withered.
+
+Then, with the onset of the Cold War, phage therapy vanished from view in most Western countries.
+
+In March 2016, Tom Patterson lay in a bed in an intensive care unit in La Jolla, California. Patterson, a professor of psychiatry, had lost most of his consciousness and respiratory capacity to a severe bacterial infection. 'He was like a living skeleton,' his wife said. He was dying, and the hospital was powerless: every available antibiotic had been tried, to no effect. In desperation, Patterson's physicians decided to take a gamble, sending an urgent message to the United States Navy. The request was straightforward: with all antibiotics having failed, the hospital wished to try the phage therapy the Navy was developing.
+
+Upon receiving the plea, Navy Commander and biologist Theron Hamilton hesitated. In the end, he chose to help. On 17 March, the Navy's phages arrived in La Jolla. They were promptly introduced into Patterson's bloodstream. Two days later, after weeks of coma, Patterson woke.
+
+Like Esteban Diaz, Patterson was one of the tens of millions harmed by antibiotic resistance. Unlike antibiotics, which remain static, bacteria exploit natural selection to overcome new, antibiotic-laden environments. Penicillin? No matter: bacteria can evolve enzymes that degrade it. Tetracycline? No problem: bacteria can evolve efflux pumps that expel the drug from the cell. In the United States alone, drug-resistant bacteria cause at least 23,000 deaths per year, and physicians across most Western nations find themselves without recourse.
+
+With superbugs proliferating, many clinicians have turned to phage therapy, seeking alternatives for a healthcare system besieged by resistant organisms. 'Antibiotic resistance has made the search for alternatives to antibiotics, phage therapy, the only option,' said Mzia Kutateladze, director of the Tbilisi Institute. The Institute had continued operating throughout the Soviet era, and when its scientists first presented their latest phage therapy findings to the international community after the collapse of the Soviet Union, they were met with cold indifference.
+
+Patterson's case broke through that indifference. His wife, Steffanie Strathdee, an infectious disease epidemiologist, co-founded the Center for Innovative Phage Applications and Therapeutics (IPATH) at UC San Diego with Robert 'Chip' Schooley, the physician who had orchestrated Patterson's treatment. IPATH became the primary hub for phage therapy in the United States, treating well over a hundred patients under emergency investigational new drug (eIND) authorisations granted by the FDA. Other centres followed: Baylor, Yale, the Navy Medical Research Center. The architecture of compassionate use, built case by desperate case, became the de facto pathway for phage therapy in America.
+
+But compassionate use is a scaffold, not a building. Mallory Smith was a young American woman with cystic fibrosis who had contracted antibiotic-resistant *Burkholderia cepacia*. Phage therapy was attempted as a last resort; she died in November 2017 before the treatment could be completed. Her mother published her diaries as *Salt in My Soul*. Smith's case became a rallying point for phage therapy advocacy, not because the science had failed, but because the system that controlled access to it could not move fast enough. The scaffold that saved Patterson could not be climbed in time to save her.
+
+Three years after Patterson woke, a case in London demonstrated what engineering could add to the field. In 2019, Isabelle Carnell-Holdaway, a fifteen-year-old cystic fibrosis patient at Great Ormond Street Hospital, was dying of a disseminated *Mycobacterium abscessus* infection. The bacteria had spread across her skin in suppurating nodules after a lung transplant.
+
+Graham Hatfull's laboratory at the University of Pittsburgh identified three mycobacteriophages from its vast collection, genetically engineered two of them to enhance their lytic capacity, and shipped the cocktail to London. The infection receded. Published in *Nature Medicine*, the case marked the first use of genetically engineered phages in a human patient, and it suggested a future in which phages could be tailored, gene by gene, to the pathogen they were meant to destroy.
+
+That future attracted serious capital. Locus Biosciences, based in Research Triangle Park, North Carolina, built a platform called crPhage: CRISPR-Cas3 machinery embedded directly into phage genomes, so that upon infection, the phage would not merely replicate inside the bacterium but actively shred its chromosomal DNA. Their lead candidate, LBP-EC01, targeted *E. coli* in urinary tract infections. The ELIMINATE trial, a Phase 2/3 study, was among the most advanced phage therapy clinical trials ever conducted in a Western country.
+
+It failed to meet its primary endpoint. Topline results were announced in 2023; by the end of that year, Locus Biosciences had shut down.
+
+The trial's collapse was clarifying. Enthusiasm, even enthusiasm armed with CRISPR, had not translated into the kind of large-scale, placebo-controlled clinical success that regulatory agencies require.
+
+This was not the only setback. BiomX, an Israeli biotech developing BX004, an inhaled phage therapy for *Pseudomonas aeruginosa* in cystic fibrosis, produced mixed efficacy results. Ginkgo Bioworks acquired the company in late 2024. The pattern repeated: promising biology, inadequate proof in controlled trials. No phage therapy product has received full regulatory approval from the FDA or the EMA. The field's most dramatic successes remain individual cases, not population-level evidence.
+
+The regulatory landscape reflected this impasse. In the United States, the FDA offered no dedicated pathway for phage therapy; every clinical use outside a formal trial required an eIND, a mechanism designed for emergencies, not for building a treatment paradigm.
+
+Adaptive Phage Therapeutics took a different approach. Funded by BARDA and the US Department of Defense, APT built PhageBank: a curated library of naturally occurring phages against which a patient's bacterial isolate could be screened for susceptibility. No CRISPR, no genetic engineering; instead, the brute empiricism of matching pathogen to predator from a shelf of candidates. APT treated hundreds of patients under eIND authorisations and secured FDA-authorised Phase 1/2 trials for prosthetic joint infections and diabetic foot osteomyelitis. The model was pragmatic, not revolutionary, and perhaps for that reason, it persisted.
+
+In Europe, Belgium became the first country to create a legal framework for phage therapy. Under a 2018 regulation overseen by the Federal Agency for Medicines and Health Products, phages were classified as magistral preparations: compounded medicines prepared for individual patients according to a medical prescription. The system required rigorous phage characterisation, sterility, endotoxin levels, confirmed absence of virulence and resistance genes. At the Queen Astrid Military Hospital in Brussels, Jean-Paul Pirnay, who in his paper 'Phage Therapy in the Year 2035' had envisioned artificial intelligence selecting the optimal virus for each patient's infection, was doing the laborious present-tense work of preparing phages under this framework, one patient at a time.
+
+The European Parliament, recognising the broader need, voted in November 2023 on an antimicrobial resistance resolution calling on the European Commission to create an adapted regulatory pathway for phage therapy across the EU. No such pathway existed yet. Belgium's magistral framework remained the exception: a legal route, but not market authorisation; a proof of concept for regulation, not a solution to the access problem.
+
+Meanwhile, CRISPR-armed phage engineering advanced on other fronts. SNIPR Biome, a Copenhagen-based company, developed SNIPR001: a CRISPR-armed phage cocktail designed to selectively kill *E. coli* in the guts of cancer patients undergoing chemotherapy, reducing the risk of potentially fatal bloodstream infections. It was the first clinical trial of a CRISPR medicine delivered by bacteriophages. Phase 1 data showed the treatment was well-tolerated and achieved selective *E. coli* reduction.
+
+Hatfull's laboratory, whose engineered phages had helped Isabelle Carnell-Holdaway, published a cohort study of roughly twenty patients treated with engineered and natural phages for drug-resistant *M. abscessus*. The treatment was well-tolerated; a significant subset showed favourable responses. But some patients developed neutralising antibodies against the phages, limiting efficacy over time. The immune system, it turned out, did not always cooperate with the cure.
+
+The picture that emerges is a field defined by the gap between individual rescue and systemic deployment. Phage therapy works, spectacularly, in cases where a specific phage or phage cocktail can be matched to a specific patient's pathogen, and where a physician has the connections and the regulatory latitude to procure it. It has not yet proved that it works as a standardised, mass-produced intervention in the way that antibiotics did. Whether this is a fundamental limitation of the biology, the specificity that makes phages effective is also what makes them difficult to trial as one-size-fits-all drugs, or merely a consequence of regulatory frameworks designed for a different kind of medicine, remains an open question.
+
+*[Figure: Bacteriophages produced at the George Eliava Institute. Credit: George Eliava Institute]*
+
+In a present where drug-resistant bacteria kill an estimated 700,000 people annually, patients like Diaz still travel to Tbilisi, to the George Eliava Institute, because the Western regulatory apparatus has not produced an approved alternative. After his recovery, Diaz declared in an interview: 'The fact that phage therapy is so difficult to access is the greatest scandal of modern medicine.' For patients like him, the Institute is not a relic; it is the only functioning door.
+
+The name persists: the George Eliava Institute. Billions of minuscule phages once brought Tom Patterson back from the brink of death. Billions in funding and an influx of researchers have since converged on the same principle d'Herelle demonstrated a century ago, in a room at the Pasteur Institute, with a culture plate and a glass of something not exactly palatable. The most advanced Western clinical trial armed its phages with CRISPR and still could not clear a regulatory bar. Mallory Smith's diaries sit on bookshop shelves. Isabelle Carnell-Holdaway's engineered phages receded an infection that no antibiotic could touch. In Brussels, Pirnay compounds phages one prescription at a time. In Tbilisi, the Institute that d'Herelle helped build continues to treat patients who have nowhere else to go.
+
+The blank circles on the culture plate have not changed. What has changed is the distance between what those circles promise and what the institutions surrounding them have managed to deliver.
+
+---
+
+*Originally published in Chinese on [环球科学 (Scientific American China)](https://mp.weixin.qq.com/s/162wBMyFCG2z4BZwFjTxAQ), March 2021. English version updated and expanded, April 2026.*
