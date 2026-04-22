@@ -4,6 +4,7 @@ title_zh: "无聊"
 category: "journal"
 date: 2018-08-21
 excerpt: "On a grey Brighton morning, the strange nobility of having nothing to do."
+image: /assets/images/personal/boredom.webp
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/TS2lGBaLLbi3HNzcOa7_cw"

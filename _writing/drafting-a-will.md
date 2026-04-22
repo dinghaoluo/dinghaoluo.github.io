@@ -4,6 +4,7 @@ title_zh: "我決定起草一份遺書"
 category: "journal"
 date: 2018-08-16
 excerpt: "On discussing survival in the face of death, and why the contradiction is the point."
+image: /assets/images/personal/drafting-a-will.webp
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/MVnAXcAbeOVGoYaoYJ0qFQ"

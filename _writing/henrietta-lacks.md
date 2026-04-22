@@ -1,5 +1,5 @@
 ---
-title: "Henrietta Lacks and the Immortal Cells"
+title: "Henrietta Lacks and the immortal cells"
 type: "feature"
 outlet: "环球科学"
 outlet_en: "Scientific American China"

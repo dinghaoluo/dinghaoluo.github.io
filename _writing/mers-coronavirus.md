@@ -1,5 +1,5 @@
 ---
-title: "MERS and the Camel Reservoir"
+title: "MERS, drought, and the camel reservoir"
 type: "feature"
 outlet: "环球科学"
 outlet_en: "Scientific American China"

@@ -6,7 +6,7 @@ date: 2018-04-27
 excerpt: "A motorcycle, a Peppa Pig lamp, and two boys fleeing across the desert from a country that would rather they did not exist."
 links:
   - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/OTF1qPxHS8PISF5_W7DLEg"
+    url: "https://mp.weixin.qq.com/s/bnngsv2p1XjdqZUOPwBBYQ"
 ---
 
 ## 1

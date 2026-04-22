@@ -4,6 +4,7 @@ title_zh: "對抗渺小"
 category: "journal"
 date: 2019-06-08
 excerpt: "Two kinds of insignificance: the terror of biological fragility, and the consolation that insignificance can be a reason to keep going."
+image: /assets/images/personal/against-smallness.webp
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/p7KL7vR0PQNt7QyvtPtBtA"

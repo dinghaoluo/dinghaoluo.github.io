@@ -1,5 +1,5 @@
 ---
-title: "Ovotestes and the Genetics of Sex Determination in Moles"
+title: "The ovotestis, or evolution's indifference to sex"
 type: "feature"
 outlet: "环球科学"
 outlet_en: "Scientific American China"

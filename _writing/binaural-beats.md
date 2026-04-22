@@ -1,9 +1,10 @@
 ---
-title: "Can Binaural Beats 'Hijack the Brain'?"
+title: "Binaural beats, or malice as neuroscience"
 title_zh: "用雙聲道拍頻「綁架大腦」？"
 category: "scicomm"
 date: 2020-08-16
 excerpt: "On auditory illusions, entrainment, and why monetising pseudoscience is not stupidity but malice."
+image: /assets/images/personal/binaural-beats.webp
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/JzhwJaYMVK6xeWR-7rjS-Q"

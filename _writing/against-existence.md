@@ -4,6 +4,7 @@ title_zh: "對抗存在"
 category: "journal"
 date: 2019-05-01
 excerpt: "Photography as individual resistance, music as collective surrender, and the question of what a life without communication collapses into."
+image: /assets/images/personal/against-existence.webp
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/OTF1qPxHS8PISF5_W7DLEg"

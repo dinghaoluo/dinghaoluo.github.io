@@ -4,6 +4,7 @@ title_zh: "離別是苟且中難得的展望"
 category: "journal"
 date: 2018-07-26
 excerpt: "A lab intern's first workplace goodbye, melted gel in a heatwave, and the invisible net woven from ten thousand lives."
+image: /assets/images/personal/farewell-as-vista.webp
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/dFnG0Aoxbr8EbqfWGFRVdg"

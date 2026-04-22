@@ -4,6 +4,7 @@ title_zh: "与人类握手"
 category: "journal"
 date: 2018-08-31
 excerpt: "On trusting easily, a cider called Pink Floyd, and the octopus that reached out."
+image: /assets/images/personal/shaking-hands-with-humans.webp
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/BJ_4IQQzk_Ni-z3k9rTfSA"

@@ -5,19 +5,24 @@ permalink: /writing/
 title: "writing"
 ---
 
-*Writing about science, translating between languages, and making the strange stay strange.*
+*Writing about science, translating between languages, telling stories, and making the strange stay strange.*
 
 ---
 
 I started writing about neuroscience because I wanted to understand it better myself. The gap between what researchers know and what everyone else hears always felt like a translation problem, not a complexity problem — the ideas are strange and beautiful, and the job is to keep them strange and beautiful in a different register. Three years at Neu-Reality (神经现实) taught me to write about the brain for curious non-specialists; seven months at *Scientific American* China taught me to do it on deadline, to interview researchers like Anil Seth and Cyriel Pennartz about the largest consciousness collaboration ever attempted, and to write a print feature that had to make sense to someone who had never heard of integrated information theory. A Chinese translation of Merlin Sheldrake's *Entangled Life* taught me to carry scientific precision across languages without flattening the prose.
 
-The writers I admire most — Grace Lindsay making computational neuroscience feel like intellectual history, Merlin Sheldrake following fungi into the root systems of the world, Mark Fisher finding the exact words for what everyone already felt — treat their readers as intelligent and their subjects as genuinely strange. That's what I try to do: respect the strangeness, find the sentence that makes it land, and never flatten a beautiful idea into a digestible one.
+Alongside the science writing, I have kept a personal platform (阿莫東森的無聊生活) since secondary school: fiction, essays, the occasional debunking piece, a long biographical essay on Rachmaninoff. The writers I admire most — Grace Lindsay making computational neuroscience feel like intellectual history, Merlin Sheldrake following fungi into the root systems of the world, Mark Fisher finding the exact words for what everyone already felt — treat their readers as intelligent and their subjects as genuinely strange. That's what I try to do: respect the strangeness, find the sentence that makes it land, and never flatten a beautiful idea into a digestible one.
 
 ---
 
 {% assign articles = site.writing | sort: 'date' | reverse %}
 {% assign print_articles = articles | where: "section", "print" %}
 {% assign online_articles = articles | where: "section", "online" %}
+{% assign fiction_articles = articles | where: "category", "fiction" %}
+{% assign essay_articles = articles | where: "category", "journal" %}
+{% assign scicomm_articles = articles | where: "category", "scicomm" %}
+{% assign encyclopaedic_articles = articles | where: "category", "encyclopaedic" %}
+{% assign personal_articles = fiction_articles | concat: essay_articles | concat: scicomm_articles | concat: encyclopaedic_articles | sort: 'date' | reverse %}
 
 ### print
 
@@ -81,6 +86,83 @@ The writers I admire most — Grace Lindsay making computational neuroscience fe
     </h3>
     <div class="writing-entry__meta">
       {% if article.creator %}{{ article.creator }} · {% endif %}{{ article.outlet }}{% if article.outlet_en %} ({{ article.outlet_en }}){% endif %} · {{ article.date | date: "%B %Y" }}
+    </div>
+    {% if article.excerpt %}
+    <div class="writing-entry__text">{{ article.excerpt }}</div>
+    {% endif %}
+    {% if article.links.size > 0 %}
+    <div class="writing-entry__links">
+      {% for link in article.links %}
+      <a href="{{ link.url }}">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+</div>
+
+---
+
+### fiction
+
+<div class="writing-list">
+{% for article in fiction_articles %}
+<div class="writing-entry">
+  {% if article.image %}
+  <a href="{{ article.url }}" class="writing-entry__img-wrap">
+    <img src="{{ article.image }}" alt="{{ article.title }}" class="writing-entry__img" loading="lazy">
+  </a>
+  {% endif %}
+  <div class="writing-entry__body">
+    <span class="writing-entry__type">{{ article.category }}</span>
+    <h3 class="writing-entry__title">
+      <a href="{{ article.url }}">{{ article.title }}</a>
+    </h3>
+    {% if article.title_zh %}
+    <span class="writing-entry__title-en">{{ article.title_zh }}</span>
+    {% endif %}
+    <div class="writing-entry__meta">
+      {% if article.creator %}{{ article.creator }} · {% endif %}{{ article.date | date: "%B %Y" }}
+    </div>
+    {% if article.excerpt %}
+    <div class="writing-entry__text">{{ article.excerpt }}</div>
+    {% endif %}
+    {% if article.links.size > 0 %}
+    <div class="writing-entry__links">
+      {% for link in article.links %}
+      <a href="{{ link.url }}">{{ link.label }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+</div>
+
+---
+
+### essays
+
+<div class="writing-list">
+{% assign essays_combined = essay_articles | concat: scicomm_articles | concat: encyclopaedic_articles | sort: 'date' | reverse %}
+{% for article in essays_combined %}
+<div class="writing-entry">
+  {% if article.image %}
+  <a href="{{ article.url }}" class="writing-entry__img-wrap">
+    <img src="{{ article.image }}" alt="{{ article.title }}" class="writing-entry__img" loading="lazy">
+  </a>
+  {% endif %}
+  <div class="writing-entry__body">
+    <span class="writing-entry__type">{{ article.category }}</span>
+    <h3 class="writing-entry__title">
+      <a href="{{ article.url }}">{{ article.title }}</a>
+    </h3>
+    {% if article.title_zh %}
+    <span class="writing-entry__title-en">{{ article.title_zh }}</span>
+    {% endif %}
+    <div class="writing-entry__meta">
+      {% if article.creator %}{{ article.creator }} · {% endif %}{{ article.date | date: "%B %Y" }}
     </div>
     {% if article.excerpt %}
     <div class="writing-entry__text">{{ article.excerpt }}</div>

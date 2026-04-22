@@ -1,5 +1,5 @@
 ---
-title: "Non-Invasive Modulation of Working Memory"
+title: "Working memory without the scalpel"
 type: "feature"
 creator: "Lindsay Li & Dinghao Luo"
 outlet: "神经现实"

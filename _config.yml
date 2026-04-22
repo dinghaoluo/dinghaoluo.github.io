@@ -243,9 +243,6 @@ collections:
   writing:
     output: true
     permalink: /writing/:title/
-  personal:
-    output: true
-    permalink: /writing/personal/:title/
 
 
 # Plugins (previously gems:)
@@ -326,12 +323,6 @@ defaults:
   - scope:
       path: "_writing"
       type: writing
-    values:
-      layout: single
-      author_profile: true
-  - scope:
-      path: "_personal"
-      type: personal
     values:
       layout: single
       author_profile: true

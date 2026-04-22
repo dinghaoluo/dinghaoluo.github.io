@@ -1,5 +1,5 @@
 ---
-title: "AlphaFold and the Protein Folding Problem"
+title: "AlphaFold, or how to fold graciously"
 type: "feature"
 outlet: "环球科学"
 outlet_en: "Scientific American China"

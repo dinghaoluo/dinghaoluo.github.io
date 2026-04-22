@@ -4,6 +4,7 @@ title_zh: "生活在"
 category: "journal"
 date: 2020-07-05
 excerpt: "Three years in a dim town, a D90 viewfinder, and an unremarkable day that ended everything."
+image: /assets/images/personal/living-in.webp
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/MiaVy_4JsONrV_JFuTTqTA"

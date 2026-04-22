@@ -82,7 +82,18 @@
       "WebFetch(domain:pixabay.com)",
       "WebFetch(domain:www.theatlantic.com)",
       "Bash(PYTHONIOENCODING=utf-8 python *)",
-      "WebFetch(domain:thecyberiam.bandcamp.com)"
+      "WebFetch(domain:thecyberiam.bandcamp.com)",
+      "Bash(mv rachmaninoff_10.webp rachmaninoff.webp)",
+      "Bash(mv rachmaninoff_8.webp rachmaninoff_young.webp)",
+      "Bash(mv triptych-him.webp triptych.webp)",
+      "Bash(mv triptych-her_3.webp triptych_river.webp)",
+      "Bash(mv triptych-ahming.webp triptych_harbour.webp)",
+      "WebFetch(domain:dinghaoluo.github.io)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "PowerShell(Set-Location \"C:\\\\code_dinghao_other\\\\dinghaoluo.github.io\"; Select-String -Path \"_site\\\\assets\\\\css\\\\main.css\" -Pattern \"page__inner-wrap\" -AllMatches | ForEach-Object { $_.Matches.Count })",
+      "PowerShell(Set-Location \"C:\\\\code_dinghao_other\\\\dinghaoluo.github.io\"; $css = Get-Content \"_site\\\\assets\\\\css\\\\main.css\" -Raw; $parts = $css -split 'page__inner-wrap'; for \\($i = 0; $i -lt [Math]::Min\\($parts.Count - 1, 12\\); $i++\\) { $before = $parts[$i].Substring\\([Math]::Max\\(0, $parts[$i].Length - 200\\)\\); $after = $parts[$i + 1].Substring\\(0, [Math]::Min\\(200, $parts[$i + 1].Length\\)\\); Write-Output \"=== Occurrence $\\($i + 1\\) ===\"; Write-Output \"$before`npage__inner-wrap$after\"; Write-Output \"\" })"
     ]
   }
 }

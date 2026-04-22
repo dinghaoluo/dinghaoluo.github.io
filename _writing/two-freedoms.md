@@ -4,6 +4,7 @@ title_zh: "兩種自由"
 category: "journal"
 date: 2019-07-12
 excerpt: "On the freedom one does not want and the freedom one does."
+image: /assets/images/personal/two-freedoms.webp
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/0igKd0PNqmrCsfIGHoTFfA"

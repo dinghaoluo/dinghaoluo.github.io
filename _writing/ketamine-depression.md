@@ -1,5 +1,5 @@
 ---
-title: "Ketamine's Second Life as an Antidepressant"
+title: "Ketamine's second life as an antidepressant"
 type: "feature"
 outlet: "环球科学"
 outlet_en: "Scientific American China"

@@ -522,12 +522,13 @@ body {
     padding-right: 0;
     margin-left: auto;
     margin-right: auto;
-  }
-  .page__inner-wrap {
-    float: none;
-    max-width: none;
-    width: 100%;
-    margin-top: 0;
+
+    .page__inner-wrap {
+      float: none;
+      max-width: none;
+      width: 100%;
+      margin-top: 0;
+    }
   }
 }
 @include breakpoint($x-large) {
@@ -535,11 +536,12 @@ body {
     width: calc(100% - 80px);
     max-width: 860px;
     padding-right: 0;
-  }
-  .page__inner-wrap {
-    max-width: none;
-    width: 100%;
-    margin-top: 0;
+
+    .page__inner-wrap {
+      max-width: none;
+      width: 100%;
+      margin-top: 0;
+    }
   }
 }
 
@@ -580,7 +582,7 @@ body {
 }
 
 @include breakpoint($x-large) {
-  .page__inner-wrap {
+  .page .page__inner-wrap {
     float: none;
     max-width: 800px;
     margin-left: auto;

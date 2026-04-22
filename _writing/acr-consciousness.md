@@ -1,5 +1,5 @@
 ---
-title: "The Adversarial Collaboration on Consciousness"
+title: "Racing towards a grand theory of consciousness"
 type: "feature"
 outlet: "环球科学"
 outlet_en: "Scientific American China"

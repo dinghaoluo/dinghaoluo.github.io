@@ -9,7 +9,7 @@ title: "personal"
 
 ---
 
-{% assign pieces = site.personal | sort: 'date' | reverse %}
+{% assign pieces = site.writing | sort: 'date' | reverse %}
 {% assign journals = pieces | where: "category", "journal" %}
 {% assign fiction = pieces | where: "category", "fiction" %}
 {% assign scicomm = pieces | where: "category", "scicomm" %}

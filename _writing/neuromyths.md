@@ -1,5 +1,5 @@
 ---
-title: "The Persistence of Neuromyths"
+title: "The persistence of neuromyths"
 type: "feature"
 outlet: "果壳"
 outlet_en: "Guokr"

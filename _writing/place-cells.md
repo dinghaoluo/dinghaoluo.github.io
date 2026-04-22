@@ -1,5 +1,5 @@
 ---
-title: "Place Cells and the Hippocampal Map"
+title: "Place cells and the brain's cartography"
 type: "feature"
 outlet: "神经现实"
 outlet_en: "Neu-Reality"

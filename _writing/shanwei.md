@@ -4,6 +4,7 @@ title_zh: "汕尾"
 category: "journal"
 date: 2020-07-27
 excerpt: "Shark meat, Lighthouse Island, and the sea that will not change."
+image: /assets/images/personal/shanwei.webp
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/rfbpbfc0f3QyMcz7vRYq9w"

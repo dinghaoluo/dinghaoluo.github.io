@@ -4,6 +4,7 @@ title_zh: "夜裡風聲不停"
 category: "journal"
 date: 2019-08-09
 excerpt: "A power outage at King's Cross, a first LTP recording, and the capitalist machinery behind the ivory tower."
+image: /assets/images/personal/wind-at-night.webp
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/-heaWVW02ndzJ__TUJSbXw"

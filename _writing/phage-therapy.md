@@ -1,5 +1,5 @@
 ---
-title: "Phage Therapy's Long Fall and Unlikely Revival"
+title: "Phage therapy's long fall and unlikely revival"
 type: "feature"
 outlet: "环球科学"
 outlet_en: "Scientific American China"

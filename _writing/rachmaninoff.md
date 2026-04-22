@@ -1,9 +1,10 @@
 ---
-title: "Gossamer and Sorrow: The Life of Rachmaninoff"
+title: "Gossamer and sorrow: the life of Rachmaninoff"
 title_zh: "遊絲與憂思：拉赫曼尼諾夫生平"
 category: "encyclopaedic"
 date: 2018-12-01
 excerpt: "From Semyonovo to Beverly Hills: the gambling father, the disastrous premiere, the hypnotist, and the tombstone inscribed only in a language he never mastered."
+image: /assets/images/personal/rachmaninoff.webp
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/k3NGlQeK_wYBdQ9JkuGP6A"
