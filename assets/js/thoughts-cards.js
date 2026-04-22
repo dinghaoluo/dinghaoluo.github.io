@@ -121,6 +121,13 @@
       return query ? query.split(' ').filter(Boolean) : [];
     }
 
+    function cardText(card) {
+      if (card._cachedText !== undefined) return card._cachedText;
+      var el = card.querySelector('.thoughts-card__text');
+      card._cachedText = el ? normalise(el.textContent) : '';
+      return card._cachedText;
+    }
+
     function cardMatchesQuery(card, query) {
       if (!query) return true;
 
@@ -132,9 +139,8 @@
         card.getAttribute('data-author'),
         card.getAttribute('data-year'),
         card.getAttribute('data-type'),
-        card.getAttribute('data-reaction'),
-        card.getAttribute('data-text')
-      ].join(' '));
+        card.getAttribute('data-reaction')
+      ].join(' ')) + ' ' + cardText(card);
 
       return terms.every(function (term) {
         return haystack.indexOf(term) !== -1;
@@ -148,7 +154,7 @@
       var year = normalise(card.getAttribute('data-year'));
       var type = normalise(card.getAttribute('data-type'));
       var reaction = normalise(card.getAttribute('data-reaction'));
-      var text = normalise(card.getAttribute('data-text'));
+      var text = cardText(card);
       var score = 0;
 
       if (title === query) score = 100;

@@ -6,7 +6,6 @@
   data-author="{{ include.take.creator | escape }}"
   data-year="{{ include.take.year }}"
   data-reaction="{{ include.take.eval | default: '' | downcase | escape }}"
-  data-text="{{ include.take.text | strip_html | strip_newlines | escape }}"
   data-pinned="{% if include.take.pin %}true{% else %}false{% endif %}">
   <div class="thoughts-card__img-wrap">
     {% if include.take.image and include.take.image != '' %}
