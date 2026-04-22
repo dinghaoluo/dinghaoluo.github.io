@@ -761,16 +761,16 @@
 
 - title: "In the Blink of an Eye"
   type: "film"
-  creator: "Tan Seng Kiat"
+  creator: "Andrew Stanton"
   creator_role: "dir."
-  year: 2024
+  year: 2026
   eval: "liked"
   image: "/assets/images/thoughts/films/in_the_blink_of_an_eye.jpg"
   posted: "2026-04-04"
   text: |
-    A budget *Cloud Atlas* (2012), executed with more discipline than the premise deserves. The interweaving of three timelines is admirably legible, which is no small achievement: most films attempting this kind of temporal braiding either condescend to the audience with heavy-handed signposting or lose themselves in their own architecture. The central conceit, a single object threading together the fates of otherwise unconnected protagonists, is a cliché, but Tan Seng Kiat knows it is a cliché and does not try to dress it up as something more. <u>There is a quiet intelligence in that restraint.</u>
+    Stanton's return to live action after the *John Carter* (2012) disaster is, at minimum, a more coherent object than its predecessor. The triptych structure, braiding a Neanderthal family's displacement with a present-day anthropologist's grief and a solo astronaut's interstellar mission, is admirably legible: most films attempting this kind of temporal weaving either condescend with heavy-handed signposting or lose themselves in their own architecture, and ***In the Blink of an Eye*** does neither. The prehistoric sequences are the film's strongest register by a considerable margin, shot with a physicality and emotional directness that recalls what Stanton does best in animation: stripped-down storytelling where the image does the argumentative work. Thomas Newman's score carries these scenes with the particular melancholic awe he has always done well.
 
-    What stays with one is the ending, which refuses to inflate. No epiphanic convergence, no swelling score, no final shot contrived to announce its own profundity. The film simply closes, in the manner of something that trusts the audience to complete the circuit themselves. <u>That kind of earned quietude is rarer than it should be.</u>
+    The problem is everything else. The present-day romance between Claire and Greg is inert in the specific way that prestige drama defaults to when it has nothing particular to say about its characters, and Kate McKinnon in the space timeline cannot shed the comedic mannerisms that served her elsewhere, producing a tonal dissonance the film never resolves. At eighty-nine minutes, the scope is too vast for the running time; one senses chapters missing, depth sacrificed to keep the braid moving. The comparisons to *Cloud Atlas* (2012) are inevitable and unflattering. <u>What saves it from dismissal is that prehistoric third, which operates by a different and older logic: bodies in landscapes, love expressed through proximity, death arriving without announcement.</u> One wishes Stanton had trusted that register enough to build the whole film inside it.
 
 - title: "Project Hail Mary"
   type: "film"
@@ -844,6 +844,7 @@
     Michael Shannon's John Givings, the mathematician who has passed through breakdown and returned with the unwanted gift of transparency, is not the film's mad character so much as its only sane one. The madman in this structure is merely an outsider who lights the fuse of what has long been primed. The explosion was always coming. <u>What the film finally refuses to do is to assign guilt, because guilt would imply agency, and the horror it wants to convey is precisely that no one is free enough to be guilty.</u>
 
 - title: "Tardes de soledad"
+  title_en: "Afternoons of Solitude"
   type: "film"
   creator: "Albert Serra"
   creator_role: "dir."
@@ -857,6 +858,7 @@
     <u>Spanish bullfighting has never had anything to do with fairness or courage</u>, and one cannot speak of 'verdad' in the sense Serra reaches for, because the thing in the ring is not truth but spectacle built upon death, performance that requires a corpse to complete itself. And yet, as Serra intuits, the repetition legitimises. 'Repetition legitimises' is not an apology for the institution; it is a diagnosis of why the institution persists, why even the viewer who grieves for the dying animal, who wishes the bull could turn the violence back on the matador, is still carried along by a thousand years of accumulated history. The film does not resolve the contradiction, because the contradiction is the point: <u>we are sucked down into the whirlpool of the absurd, and the film holds us there, and asks us to feel what it is like not to be able to look away.</u>
 
 - title: "O Agente Secreto"
+  title_en: "The Secret Agent"
   type: "film"
   creator: "Kleber Mendonça Filho"
   creator_role: "dir."
@@ -940,7 +942,8 @@
 
     The conspicuously progressive surface, the pointed glance at the Korean War, the afterlife's diverse transit hub, cannot camouflage the conservatism underneath. Luke's sixty-seven-year vigil is framed as devotion; structurally, it functions as a claim, a dead soldier's sacrifice converted into romantic credit that Joan must honour or reject. The film never considers the possibility that Joan might want neither; that eternity, unburdened by mortality, could be the first context in which a woman's desires are not triangulated through men. <u>No amount of conceptual scaffolding rescues a director's unreconstructed gaze from itself.</u>
 
-- title: "2000 Meters to Andriivka"
+- title: "2000 метрів до Андріївки"
+  title_en: "2000 Meters to Andriivka"
   type: "film"
   creator: "Mstyslav Chernov"
   creator_role: "dir."
@@ -966,11 +969,12 @@
   text: |
     Two specials in and one can now trace the shape of Gervais's late period with some confidence: <u>a performer who has run out of things to say, but who cannot stop saying them, and who has come to mistake the act of provocation for the provocation's substance.</u> <u>'Boldness' is not the word for what is left; boldness requires something to risk.</u> Among stand-ups still capable of securing a major-platform special, precious few dare anything at all, and Gervais is no longer among them. The one joke worth remembering involves a waiter clearing his throat. After watching, I went back to some Louis C.K. with a friend, and felt the distance between then and now like a missing tooth.
 
-- title: "It Was Just an Accident"
+- title: "یک تصادف ساده"
+  title_en: "It Was Just an Accident"
   type: "film"
   creator: "Jafar Panahi"
   creator_role: "dir."
-  year: 2024
+  year: 2025
   eval: "disliked"
   image: "/assets/images/thoughts/films/it_was_just_an_accident.jpg"
   posted: "2025-11-30"
@@ -990,16 +994,19 @@
 
     The critique of capital is muted, present more as atmosphere than argument, but that restraint is itself a formal choice: the film is not interested in explaining the system so much as rendering viscerally how the system produces the men inside it. The title's entomological mythology, ***bugonia***, the ancient fantasy of bees spontaneously generated from a carcass, sits perfectly over the film's central horror: that <u>conspiracy thinking is not an aberration but a metabolic process, the mind's attempt to generate meaning from the rotting body of late capitalism.</u> <u>Anyone might end up as a human specimen in Teddy's laboratory; in 2025, that feels less like absurdism than like plain description.</u>
 
-- title: "Can't Help It"
+- title: "어쩔수가없다"
+  title_en: "No Other Choice"
   type: "film"
-  creator: "Park Jae-bum"
+  creator: "Park Chan-wook"
   creator_role: "dir."
   year: 2025
   eval: "liked"
   image: "/assets/images/thoughts/films/cant_help_it.jpg"
   posted: "2025-11-25"
   text: |
-    A disclaimer first: there are indeed some of the male-gaze shots and scenes that Korean male directors seem constitutionally unable to avoid. But the overall theme and critical focus are admirably clear. Everyone's helplessness is a product of disavowal within their respective systems: to use Žižek's formulation, 'I know this is wrong, but...' The American capitalist's helplessness is a product of laziness and greed; Ryu Man-su's helplessness is a fig leaf for a lack of ambition and moral corruption, <u>the kind of abdication that presents itself as victimhood.</u> Are there crowd-pleasing, popcorn moments? Of course. But the scriptwriting concessions Park makes are not excessive, and the film never fully loses the thread of its own argument. The one regret is insufficient focus on capital as such, which makes it easy for audiences to attribute all the evil in the film entirely to Ryu Man-su alone, <u>leaving the structure that produced him perfectly legible, and perfectly intact.</u>
+    The title is spoken first by the American executives who fire Yoo Man-su: the market leaves them no other choice. It recurs as Man-su himself adopts it, a phrase that migrates from the language of capital to the language of murder without changing its grammar. Park Chan-wook spent twenty years developing this adaptation of Donald Westlake's *The Ax*, and one senses the patience in every frame: the tonal architecture, shifting from slapstick to horror to something closer to economic theology, is controlled with a precision that makes *Parasite* (2019) look comparatively blunt in its class mechanics. What Park understands, and what Bong's film only gestured toward, is that the tragedy of late capitalism is not that it creates monsters but that it creates competitors. <u>Man-su does not target the executives who destroyed his livelihood; he targets his fellow laid-off workers, the people who should be his comrades, because the system has made solidarity unthinkable and competition the only available grammar of survival.</u>
+
+    I recognised something in Man-su that I did not want to recognise. Lee Byung-hun builds the performance around a specific contradiction: a craftsman who loves papermaking, who valued his twenty-five years of labour, and who is blindsided by the discovery that capital does not care what one produces or who produces it. The worsening toothache is a precise metaphor, moral decay made somatic, and Park lets it do its work without commentary. The Žižekian disavowal is everywhere: 'I know this is wrong, but I have no other choice' is the formula that enables every killing, every lie, every domestic betrayal. And the ending is the bleakest joke of all: Man-su gets the job, walks into a paper mill run entirely by machines, and stands alone in a mausoleum of automation. <u>The competition is over. The competitors are dead. The job no longer requires a human being.</u> I left the cinema thinking about every application I have ever sent into a market that was not designed to answer. Park has said it is hard to be optimistic, and the film honours that difficulty without flinching.
 
 - title: "If I Had Legs I'd Kick You"
   type: "film"
@@ -1027,7 +1034,8 @@
 
     PTA believes in la revolución, believes Frenesi can escape the grip of Brock Vond, believes that humanism will ultimately prevail, even if the justice at the end arrives through institutions that are themselves compromised. <u>Pynchon's California was sown with dread; PTA's is sown with seeds of hope</u>, and it is precisely this hope, rare and unguarded, that distinguishes ***One Battle After Another*** from *Vineland* (1990) itself. There is so much in the film that moves one to tears, yet PTA adopts a bystander's perspective, recounting the story with as much objectivity as possible: neither rendering the rebels saintly nor making Vond a simple fool. <u>Perhaps PTA did not foresee that even this humble optimism would, by 2025, feel like too much to dream.</u>
 
-- title: "Dogtooth"
+- title: "Κυνόδοντας"
+  title_en: "Dogtooth"
   type: "film"
   creator: "Yorgos Lanthimos"
   creator_role: "dir."
@@ -1053,7 +1061,8 @@
 
     There is a tradition of chamber-drama nuclear films, from Lumet's *Fail Safe* (1964) onward, and A House of Dynamite sits squarely in that lineage while feeling wholly contemporary, wholly now. The characters are recognisable not as types but as specific specimens of institutional behaviour: the careerist who cannot admit error, the analyst who knows the truth but lacks the authority to make it matter, the administrator who confuses procedure with wisdom. One recognises them because they are everywhere, and the film's final horror is that recognition. <u>This is not a film about what could go wrong. It is a film about what already has.</u>
 
-- title: "At the Bench"
+- title: "アット・ザ・ベンチ"
+  title_en: "At the Bench"
   type: "film"
   creator: "Hiroshi Yazaki"
   creator_role: "dir."
@@ -1079,7 +1088,8 @@
 
     Kiyohara's achievement is to make everything feel appropriately weightless, the particular weightlessness of childhood perception, right up until it doesn't. The film's tonal economy is such that when death arrives it arrives without announcement, without swelling score, without the apparatus of cinematic grief; <u>it arrives the way death actually arrives for children, as an abrupt revision of everything that was assumed to be permanent.</u> One sits very still afterward. <u>The red thread stays in the mind long after the screen goes dark.</u>
 
-- title: "Asura"
+- title: "阿修羅のごとく"
+  title_en: "Asura"
   type: "film"
   creator: "Hirokazu Kore-eda"
   creator_role: "dir."
@@ -1092,7 +1102,8 @@
 
     The commercial, soap-operatic visual grammar sits in productive tension with the director's characteristic handling of conversation, where the pauses and the near-misses and the things said slightly sideways carry the real weight of meaning. This is not, strictly speaking, the register of *Shoplifters* (2018) or *Still Walking* (2008); there is something more deliberate about the construction, a formal visibility that one suspects is part of the point, the remake announcing its own artifice. What survives all of this is the writing's essential humanity. <u>In almost every exchange one seems to find a little of oneself, which is, finally, the only criterion that matters.</u>
 
-- title: "Dreams"
+- title: "Drømmer"
+  title_en: "Dreams"
   type: "film"
   creator: "Dag Johan Haugerud"
   creator_role: "dir."
@@ -1120,9 +1131,9 @@
 
 - title: "Sirât"
   type: "film"
-  creator: "Visar Morina"
+  creator: "Óliver Laxe"
   creator_role: "dir."
-  year: 2024
+  year: 2025
   eval: "loved"
   image: "/assets/images/thoughts/films/sirât.jpg"
   posted: "2025-09-23"
@@ -1163,11 +1174,12 @@
 
     What Aster understands that most satirists of this moment do not is that <u>the pathology is not external to ordinary life but continuous with it: the cults grow out of the same soil as the barbecues, the anti-vax sentiment passes through the same social channels as the neighbourhood gossip, and the violence, when it comes, is not a rupture but a completion.</u> ***Eddington*** is the most honest American film about 2020 that 2025 could have produced, which is to say it is not a comfortable film to admire.
 
-- title: "First Kiss"
+- title: "ファーストキス"
+  title_en: "First Kiss"
   type: "film"
-  creator: "Yuki Tanada"
+  creator: "Yuji Sakamoto"
   creator_role: "dir."
-  year: 2024
+  year: 2025
   eval: "disliked"
   image: "/assets/images/thoughts/films/first_kiss.jpg"
   posted: "2025-09-07"
@@ -1202,7 +1214,8 @@
 
     What stays is Donnie Smith, the former quiz-kid, screaming into the strange rain with total sincerity: 'I have love to give. I do! I just don't know where to put it.' That line, delivered at full volume into weather that makes no sense, contains the whole film. <u>The past is not through with one. It never is. But every now and then it rains frogs, and for a moment everyone stops performing.</u>
 
-- title: "No Bears"
+- title: "خرس نیست"
+  title_en: "No Bears"
   type: "film"
   creator: "Jafar Panahi"
   creator_role: "dir."
@@ -1260,18 +1273,18 @@
 
 - title: "The Summer Book"
   type: "film"
-  creator: "Iram Haq"
+  creator: "Charlie McDowell"
   creator_role: "dir."
   year: 2024
   eval: "loved"
   image: "/assets/images/thoughts/films/the_summer_book.jpg"
   posted: "2025-06-09"
   text: |
-    High summer on the Finnish archipelago operates by a different clock. The light refuses to leave. A newly planted willow, a newly arrived storm, a family appearing on the neighbouring island: events of a scale that would be invisible elsewhere arrive here with the full weight of the world. Tove Jansson's 1972 novel understands this tempo precisely, and Iram Haq's adaptation, filmed on location among islands that seem to exist slightly outside ordinary time, has absorbed that understanding into every frame.
+    High summer on the Finnish archipelago operates by a different clock. The light refuses to leave. A newly planted poplar, a newly arrived storm, a family appearing on the neighbouring island: events of a scale that would be invisible elsewhere arrive here with the full weight of the world. Tove Jansson's 1972 novel understands this tempo precisely, and Charlie McDowell's adaptation, shot on 16mm among islands that seem to exist slightly outside ordinary time, has absorbed that understanding into every frame. Sturla Brandth Grøvlen's cinematography captures particular, tactile details of light and texture rather than postcard panoramas; what emerges is a warmth that feels analogue in the oldest sense, as though the film stock itself remembers what digital cannot.
 
-    The film's subject is, on its surface, the relationship between a grandmother and a young girl navigating a summer of loss. But Jansson's structural insight, which Haq preserves, is that grief and vitality occupy the same space in childhood, and that a child can hold both without needing to resolve the contradiction. <u>The island becomes a kind of ontological enclosure in which the end of life and its beginning coexist without embarrassment.</u> One thinks of last year's *The Outrun* (2024): Saoirse on the Orkney grass, standing at the sea's edge, becoming wind, becoming a downpour, becoming part of the world's eternal turning. ***The Summer Book*** achieves something adjacent but quieter, less turbulent in its beauty and therefore more permanent-feeling.
+    The film's subject is, on its surface, the relationship between a grandmother and a nine-year-old girl navigating a summer of loss. But Jansson's structural insight, which McDowell preserves, is that grief and vitality occupy the same space in childhood, and that a child can hold both without needing to resolve the contradiction. <u>The island becomes a kind of ontological enclosure in which the end of life and its beginning coexist without embarrassment.</u> Glenn Close's grandmother is frank about her own approaching death in the way that only the very old and the very young can be: without performance, without the middle-aged machinery of denial. Emily Matthews, in her first role, matches her with an appealingly restless directness. The father, retreated into his illustrations and his numbness, is the grief the film does not narrate but lets one feel through absence.
 
-    The cinematography has its own grammar, unhurried and luminous, and the soundtrack refuses to ornament what the image already says. <u>It is the kind of film that asks very little of one's critical apparatus and takes everything else.</u> The most beautiful film I have seen in years.
+    One thinks of *The Outrun* (2024): Saoirse on the Orkney grass, standing at the sea's edge, becoming wind, becoming a downpour, becoming part of the world's eternal turning. ***The Summer Book*** achieves something adjacent but quieter, less turbulent in its beauty and therefore more permanent-feeling. Hania Rani's score shimmers beneath the surface without ever competing with the ambient sound of waves and wind, and the closing archival footage of Jansson herself, hair decorated with Midsummer flowers on the island that inspired the novel, bridges fiction and autobiography with a grace the film has earned. <u>It asks very little of one's critical apparatus and takes everything else.</u> The most beautiful film I have seen in years.
 
 - title: "The Phoenician Scheme"
   type: "film"
@@ -1334,7 +1347,8 @@
   text: |
     <u>One walked out in a state of bewilderment, the kind produced not by complexity but by its opposite: the sensation of watching a director who apparently did not know what film he was making.</u> ***Mickey 17*** claims to be a love story between Nasha and Mickey; Naomi Ackie's Nasha is characterised so flimsily that the woman present in the final act is functionally a different character from the one introduced in the first, the connective tissue between them simply absent. It claims to satirise Trump-inflected authoritarian populism; the grassroots movement that supposedly sustains Mark Ruffalo's demagogue receives no exposition adequate to the satirical weight the film tries to place on it, and the civilian resistance organisation materialises near the end as though someone remembered it was needed. The film gestures toward the social structure of Niflheim's native creatures, toward the ethics of colonial extermination, toward cross-species communication, toward the personhood of expendable clones, and toward the political economy of a disposable workforce; it develops none of these threads to any point of consequence, dropping each in turn as if attention itself were too costly to sustain. The result belongs to no recognisable genre and earns no description except juvenile. <u>The film's only irony is unintentional: a satire of a leader who does not know what he wants, made by a director who demonstrably did not know what he wanted to make.</u>
 
-- title: "Come and See"
+- title: "Иди и смотри"
+  title_en: "Come and See"
   type: "film"
   creator: "Elem Klimov"
   creator_role: "dir."
@@ -1347,7 +1361,8 @@
 
     The closest comparison in recent cinema is Glazer's *The Zone of Interest* (2023), which approaches the same historical catastrophe through its photographic negative: the violence offscreen, the perpetrators shown in their domestic ordinariness. The two films arrive at the same place by opposite routes. ***Come and See*** puts one inside the horror until the horror becomes the only reality there is. <u>That Klimov never directed another film after completing it is not incidental; it is the only coherent response to having made it.</u>
 
-- title: "Graduation"
+- title: "Bacalaureat"
+  title_en: "Graduation"
   type: "film"
   creator: "Cristian Mungiu"
   creator_role: "dir."
@@ -1373,7 +1388,8 @@
 
     The film's centrepiece is a nearly seventeen-minute unbroken town hall meeting, a scene that functions as a clinical demonstration of how democratic process can become the formal vehicle for something much older and darker. Every perspective in the room has its internal coherence: the capitalist factory owner sees a labour problem; the male chauvinist sees a threat to an order that benefits him; the declining village sees itself being erased. <u>None of them are wrong about their own situation. They are simply wrong about its cause, and the Sri Lankan workers provide an outlet for resentments whose actual sources are diffuse, structural, and impossible to confront in a town meeting.</u> Tensions redirect; the most vulnerable absorb what the system produces; and in the end, as Mungiu's films reliably conclude, no one benefits. <u>The title, a Romanian abbreviation for MRI, is exact: this is imaging of a social body's interior dysfunction, conducted without anaesthetic.</u>
 
-- title: "4 Months 3 Weeks and 2 Days"
+- title: "4 luni, 3 săptămâni și 2 zile"
+  title_en: "4 Months, 3 Weeks and 2 Days"
   type: "film"
   creator: "Cristian Mungiu"
   creator_role: "dir."
@@ -1401,7 +1417,8 @@
 
     One leaves the cinema shaken in a specific way, the way one is shaken when a system's cruelty is finally made visible rather than merely arguable. The law, Miller is saying, is not neutral. It is the shape society gives to its deepest commitments, and for centuries those commitments have included the tacit belief that women's bodies are not fully their own to govern. Tess was told, as a schoolgirl, that her generation would change the world. The play ends on that memory, and on the gap between what was promised and what was delivered. <u>Comer will close that gap. One believes this without reservation, watching her stand in the light alone, having carried everything.</u>
 
-- title: "On the Beach at Night Alone"
+- title: "밤의 해변에서 혼자"
+  title_en: "On the Beach at Night Alone"
   type: "film"
   creator: "Hong Sangsoo"
   creator_role: "dir."
@@ -1414,7 +1431,8 @@
 
     The seams show in the details. Why would a sister not know that her sibling prefers to live alone? Why would a husband, after years of marriage, compliment his wife's cooking and follow it with 'thank you', as though receiving a service from a stranger? Hong's naturalism, usually so precise in its social embarrassments, here feels constructed by someone too absorbed in his own case to observe the people around him. Kim Minhee won the Silver Bear at Berlin for this performance, and her work has a raw exposure that the film does not deserve. <u>The manifesto collapses under the weight of its own falseness.</u>
 
-- title: "The Bastard"
+- title: "Bastarden"
+  title_en: "The Promised Land"
   type: "film"
   creator: "Nikolaj Arcel"
   creator_role: "dir."
@@ -1427,7 +1445,8 @@
 
     I looked up the history afterward. Barbara does not exist; she is a composite or an invention. Kahlen, after six years without result on the heath, abandoned the farming project and returned to military service as an officer. The film knows enough not to tell us this. It ends instead on the image of the heath beginning, just barely, to yield, and that image does what the historical record cannot: <u>it makes the attempt feel sufficient, the trying feel like a form of arriving.</u> The harshness of the land argues its own case. <u>One leaves the cinema with earth under one's fingernails.</u>
 
-- title: "House of Hummingbird"
+- title: "벌새"
+  title_en: "House of Hummingbird"
   type: "film"
   creator: "Bora Kim"
   creator_role: "dir."
@@ -1442,7 +1461,7 @@
 
     The final movement of Park Ji-hoo's performance carries all of this without explaining any of it. Eunhee before is the same Eunhee after, except that something behind the face has shifted its weight. The tumour gets cut out. The life, punctured and painful and entirely hers, gets picked up again. <u>It is one of the most accurate portraits of girlhood I have seen on screen.</u>
 
-- title: "Sometimes I Think about Dying"
+- title: "Sometimes I Think About Dying"
   type: "film"
   creator: "Rachel Lambert"
   creator_role: "dir."
@@ -1451,7 +1470,7 @@
   image: "/assets/images/thoughts/films/sometimes_i_think_about_dying.jpg"
   posted: "2025-02-02"
   text: |
-    The fixed-frame office landscapes recall the visual grammar of Robert Zemeckis's *Here* (2024), though the emotional register could not be further away: where that film reaches for the cosmic, Lambert reaches for the granular, the almost invisible interior life of a woman who has learned to live very far inside herself. The closer comparison is *Fallen Leaves* (2023): the same deadpan warmth, the same faith that loneliness is not a permanent condition so much as a frequency one can shift from, given the right accident of proximity. <u>Fran does not want to die; she imagines it the way one might imagine emigrating, as an abstraction that allows her to live at a safe distance from her actual life.</u>
+    The static office tableaux recall the visual grammar of Robert Zemeckis's *Here* (2024), though the emotional register could not be further away: where that film reaches for the cosmic, Lambert reaches for the granular, the almost invisible interior life of a woman who has learned to live very far inside herself. The closer comparison is *Fallen Leaves* (2023): the same deadpan warmth, the same faith that loneliness is not a permanent condition so much as a frequency one can shift from, given the right accident of proximity. <u>Fran does not want to die; she imagines it the way one might imagine emigrating, as an abstraction that allows her to live at a safe distance from her actual life.</u>
 
     What Lambert understands, and what Daisy Ridley renders with a stillness that feels hard-won, is that the inner world of a withdrawn person is not impoverished. <u>It is excessively full, and the problem is not emptiness but the absence of any circuit between that fullness and the world outside.</u> Robert's arrival does not resolve this. It simply produces one moment, in a restaurant, when the owner looks at them both and says 'you too should come', and something in Fran's face allows it in. I found it very difficult not to smile at that. <u>Clean and pure: a film that earns its tenderness by never once performing it.</u>
 
@@ -1470,7 +1489,8 @@
 
     <u>The cycle of younger, more beautiful: like slamming one's own face against a mirror, again and again, until the mirror wins.</u>
 
-- title: "There's Still Tomorrow"
+- title: "C'è ancora domani"
+  title_en: "There's Still Tomorrow"
   type: "film"
   creator: "Paola Cortellesi"
   creator_role: "dir."
@@ -1540,7 +1560,8 @@
   text: |
     Annie Baker's theatrical practice has always been interested in duration as meaning: her plays earn their length by insisting that the audience remain present alongside characters who do not resolve, who persist. That patience, translated to cinema, produces something I had not quite seen before: <u>a film that captures how a child lives inside a parent's life, not beside it, not safely downstream of it, but submerged.</u> Lacy does not observe her mother Janet from the protected distance that childhood mythology assigns to children. She participates, with a calm and an intensity that occasionally tip into something almost frightening in its maturity. The episodic structure, each chapter organised around an adult who drifts through Janet's orbit and then away, mirrors the way memory actually organises a summer: not as narrative arc but as a sequence of presences. The comparison to Bergman is not facile. There is something in the mother-daughter dynamic here that recalls *Autumn Sonata* (1978) without reproducing it: where Bergman's film is about the violence of retrospection, Baker's is about the subtler damage of living too close. Julianne Nicholson's Janet is warm, damaged, and intermittently oblivious to her daughter in the specific way that self-absorbed love can be oblivious, not cold but somehow not quite enough. <u>Zoe Ziegler as Lacy is an uncanny piece of casting: the watchfulness she brings is not performance but phenomenon.</u> The natural light and fixed camera recall last year's *Anatomy of a Fall* (2023) in their commitment to observational fidelity, but Baker's film is warmer, more interior, less prosecutorial. What it shares is the conviction that two women placed in the same landscape, under pressure, will reveal something irreducible about the nature of being a person among persons. <u>This is distinctive, serious women's cinema, and it moves me more than I can entirely account for.</u>
 
-- title: "Kim Ji-young Born 1982"
+- title: "82년생 김지영"
+  title_en: "Kim Ji-young, Born 1982"
   type: "film"
   creator: "Kim Do-young"
   creator_role: "dir."
@@ -1551,7 +1572,8 @@
   text: |
     A friend observed that this film tells the story of the daughter in '*Lost in the Stars* (2024)', and the lineage is exact: same generational transmission of suffering, same culture of endurance passed from mother to daughter like a heirloom nobody chose. The charge of didacticism is fair and beside the point. When a single woman's life becomes the vessel for three generations of accumulated accommodation, when simply boarding a bus is occasion for fear, when being harmed still invites condemnation, one does not need dialectical complexity. One needs testimony, and the more direct the better. Kim Do-young's restraint is the film's great intelligence. <u>There are no villains constructed for catharsis; there is only a system operating smoothly, its violence distributed so evenly across fathers, husbands, bosses, and well-meaning relatives that no single node is identifiable as the source.</u> Jung Yu-mi inhabits that distributed violence with a precision that avoids both martyrdom and melodrama. <u>The review-bombing campaign by male fans who could not countenance their favourite actress appearing in a feminist film is, of course, the film's argument made more forcefully than the film ever manages.</u> We need exactly this didacticism, and the more the better.
 
-- title: "The Seed of the Sacred Fig"
+- title: "دانه‌ی انجیر معابد"
+  title_en: "The Seed of the Sacred Fig"
   type: "film"
   creator: "Mohammad Rasoulof"
   creator_role: "dir."
@@ -1562,7 +1584,8 @@
   text: |
     Rasoulof shot this film inside Iran while under sentence of imprisonment, then smuggled it out and fled the country before its Cannes premiere. That biographical fact is not separable from the film: one watches it knowing the footage of women burning their hijabs around roadside fires, the images of protesters beaten and killed on Tehran streets, the faces of young people looking directly into phone cameras as if addressing the future directly, is not reconstructed. The documentary material and the fiction share the same air. The domestic allegory is tight and efficient. Iman, the newly promoted investigating judge, becomes the regime in miniature: a man whose authority requires the submission of those closest to him, whose paranoia escalates in proportion to his family's awareness of what is happening outside their windows. The mother's acquiescence, still washing dishes and scrubbing the sink under pressure she has metabolised across a lifetime, is not weakness; it is a survival logic that the film understands even as the daughters cannot fully forgive it. The daughters grew up breathing different air, and they cannot pretend otherwise. 'The world may change, but God's law does not': the film knows that line is not a conviction but a shelter, and treats it accordingly. <u>What the protests represent in Rasoulof's framing is something close to a collective nervous system becoming conscious of itself, a dispersed grief and courage and terror moving through a population simultaneously, each individual act of defiance part of a signal that the whole network is transmitting.</u> That the embers are still there, three years on, is not a comfort exactly. It is something more durable: evidence that the signal cannot be fully suppressed. <u>I came away full of hope for humanity, which is not a sentence I write lightly.</u>
 
-- title: "Lost in the Stars"
+- title: "消失的她"
+  title_en: "Lost in the Stars"
   type: "film"
   creator: "Bai Xue"
   creator_role: "dir."
@@ -1610,7 +1633,8 @@
   text: |
     The script is less clever than its reputation suggests, and the Seymour subplot, in which a prickly eighteen-year-old girl becomes the singular salvation of a middle-aged record obsessive, carries an uncomfortable freight that the film's ironic framing never fully neutralises. Zwigoff has spoken openly about identifying with Seymour; that identification shows, and it softens a gaze that the material arguably demands be kept cold. Scarlett Johansson's Rebecca is underwritten to the point of near-irrelevance, which would be bearable if the writing around her were sharper, but <u>the script mistakes Enid's contempt for the world as a sufficient dramatic engine and keeps mistaking attitude for interiority.</u> <u>Thora Birch does something real with the role; the film around her does rather less.</u>
 
-- title: "How to Make Millions Before Grandma Dies"
+- title: "หลานม่า"
+  title_en: "How to Make Millions Before Grandma Dies"
   type: "film"
   creator: "Pat Boonnitipat"
   creator_role: "dir."
@@ -1662,7 +1686,8 @@
 
     The critical consensus that Kinds of Kindness is Lanthimos on autopilot misreads what autopilot means here. His tics are not laziness; they are a consistent phenomenology of coercion, applied with greater clarity and precision than anything since *The Lobster* (2015). This is a film that trusts its audience to sit inside discomfort without being handed a way out, and the trust is earned. <u>How could one not love it.</u>
 
-- title: "Return to Dust"
+- title: "隐入尘烟"
+  title_en: "Return to Dust"
   type: "film"
   creator: "Li Ruijun"
   creator_role: "dir."
@@ -1677,7 +1702,8 @@
 
     What stays is the love between them, clumsy and tenacious and entirely real. <u>It is not the love of people who have chosen each other from a position of abundance; it is the love of people who have found each other at the edge of being discarded, and made something inside that edge.</u> Their lives are not necessarily less meaningful than city people's. But they are the ones who are sacrificed, and the film knows it, and does not look away.
 
-- title: "Banana Paradise"
+- title: "香蕉天堂"
+  title_en: "Banana Paradise"
   type: "film"
   creator: "Wang Tung"
   creator_role: "dir."
@@ -1688,7 +1714,8 @@
   text: |
     Does anyone truly believe that a man who has been selfish and petty and small his entire life would suddenly find himself, and find clarity, after encountering a single rape narrative? The film wants to use identity fragmentation and the Mainlander experience in Taiwan as its critical frame, and those are real subjects. <u>But underneath the framework sits a story about a backward individual, lazy and incapable and constitutionally unwilling to learn, who simply rots as the times move past him, and whose rot the film treats as tragedy rather than judgement.</u>
 
-- title: "Evil Does Not Exist"
+- title: "悪は存在しない"
+  title_en: "Evil Does Not Exist"
   type: "film"
   creator: "Ryusuke Hamaguchi"
   creator_role: "dir."
@@ -1769,6 +1796,7 @@
     The thematic coherence is looser than in his peak specials. Louis C.K. was never really a narrative comedian in the Seinfeld or Chappelle sense, never someone whose hour builds to a single unified statement, and so the scattered quality of Back to the Garden registers more as freedom than deficiency. The title suggests something pastoral and restorative, and there is something to that: <u>the material has the ease of someone who has made his peace with his situation and returned, without apology, to the work.</u>
 
 - title: "Chłopi"
+  title_en: "The Peasants"
   type: "film"
   creator: "DK Welchman"
   creator_role: "dir."
@@ -1841,7 +1869,8 @@
 
     There is a strain of short review that says it cannot care about a middle-aged man's divorce, as though the show were making that case. <u>The show is not about Toby at all. It is about the stories people tell to avoid the story they are actually living, and about the woman, finally, who names it.</u>
 
-- title: "Monster"
+- title: "怪物"
+  title_en: "Monster"
   type: "film"
   creator: "Hirokazu Kore-eda"
   creator_role: "dir."
@@ -1947,7 +1976,8 @@
 
     The comparison to *Nanette* (2018) is unavoidable, and *Something Special* invites it deliberately. In *Nanette* (2018), Gadsby anatomised the callback as a mechanism for artificially resolving tension, a comedic sleight-of-hand that papers over unhealed wounds. Here, the callback returns, deployed freely and warmly, and the argument implicit in that choice is more interesting than anything said aloud: that the same structural device can signify harm or health depending entirely on the psychic position from which it is deployed. <u>What was once a trap is now just a tool.</u> <u>Gadsby is happy, and the form reflects it, and it is a quietly radical thing to watch a comedian allow the shape of their work to change because their life has.</u> The special is built around a wedding, around queer joy, around the domestic, and it treats these subjects with the same intellectual seriousness it once directed at trauma. This is the rarer achievement.
 
-- title: "The Long Season"
+- title: "漫长的季节"
+  title_en: "The Long Season"
   type: "film"
   creator: "Xin Shuang"
   creator_role: "dir."
@@ -2014,7 +2044,8 @@
 
     Does Charlie make peace with himself at the end? The film ends on an image, not an answer. He rises: literally, improbably, the body finally doing what it has refused for years. Whether this is redemption or simply the last convulsion of a system shutting down is left to the viewer's own need for resolution. One suspects Aronofsky wants it both ways, and one suspects that is the correct artistic instinct. <u>Some whales are too large to land cleanly. The boring chapters were always the point.</u>
 
-- title: "Oasis"
+- title: "오아시스"
+  title_en: "Oasis"
   type: "film"
   creator: "Lee Chang-dong"
   creator_role: "dir."
@@ -2029,7 +2060,8 @@
 
     The magical-realist sequences, in which the palsy lifts and Gong-ju moves freely through her own apartment, are heartbreaking in inverse proportion to how briefly they last. Moon So-ri's performance is one of the most committed physical transformations in the cinema of this period, achieved without prosthetics, without softening. When the film ends one is not certain that anything has been resolved. When do the mad find each other. <u>The <b><i>oasis</i></b> is not an escape from the question; it is the question, briefly habitable.</u>
 
-- title: "A New Old Play"
+- title: "椒麻堂会"
+  title_en: "A New Old Play"
   type: "film"
   creator: "Qiu Jiongjiong"
   creator_role: "dir."
@@ -2070,7 +2102,8 @@
 
     What stays with one longest is not the three-hour runtime but the brevity of certain scenes: that brief exchange at the waste disposal site, which arrives quietly and passes quietly, and yet concentrates the film's entire emotional argument into two or three minutes of parking-lot light. The quietness of a road film, the patience of a theatrical rehearsal, and at its core an emotional depth not far from that of *Burning* (2018), which is to say: <u>something that does not resolve, but opens.</u>
 
-- title: "All Quiet on the Western Front"
+- title: "Im Westen nichts Neues"
+  title_en: "All Quiet on the Western Front"
   type: "film"
   creator: "Edward Berger"
   creator_role: "dir."
@@ -2135,7 +2168,8 @@
 
     The Žižek comparison has limits, which Michael himself half-acknowledges: where Žižek's digressions are the point, some of Michael's feel like a thinker who has not yet found the right vessel for every idea. The final five minutes are the clearest instance of this: what has accumulated as a sustained, flickering argument collapses into something closer to a summary, a tl;dr that underestimates what the preceding hour has already built. It is a genuine misstep, and a frustrating one, because the rest of the special earns the kind of attention one does not usually bring to stand-up. One of one's favourites regardless. <u>The ideas are worth the stumble.</u>
 
-- title: "Why Try to Change Me Now"
+- title: "平原上的摩西"
+  title_en: "Moses on the Plain"
   type: "film"
   creator: "Sicheng Zhao"
   creator_role: "dir."
@@ -2194,9 +2228,9 @@
   image: "/assets/images/thoughts/films/the_english_patient.jpg"
   posted: "2022-11-21"
   text: |
-    Memory and landscape have always been the same thing in Minghella's adaptation: the desert is not a setting but a psychic condition, indifferent to national borders and lethal to anyone who mistakes its beauty for permission. What stays, long after the plot has dissolved, is not the romance between Almásy and Katherine in any conventional sense but the images in which love becomes inseparable from loss: Count Almásy crossing the Saharan emptiness with Katherine dead in his arms, her weight against the heat, the sheer defiant absurdity of the gesture. <u>One carries that image the way one carries certain lines of poetry, not as information but as sensation.</u>
+    Memory and landscape are the same thing in ***The English Patient***: the desert is not a setting but a psychic condition, indifferent to national borders and lethal to anyone who mistakes its beauty for permission. What stays, long after the plot has dissolved, is not the romance between Almásy and Katherine in any conventional sense but the images in which love becomes inseparable from loss: Count Almásy crossing the Saharan emptiness with Katherine dead in his arms, her weight against the heat, the sheer defiant absurdity of the gesture. <u>One carries that image the way one carries certain lines of poetry, not as information but as sensation.</u>
 
-    Minghella's adaptation compresses and reorders Ondaatje's novel, amplifying the central affair while quieting the postcolonial textures that surround it; critics who found the film a romanticisation of the colonial gaze are not wrong, exactly, but they are accounting for a different film than the one Minghella made. The Swimmers' Cave, with its prehistoric rock paintings of figures moving through a sea that no longer exists, gives the story its true register: not tragedy as plot mechanism but tragedy as geological fact, as the record of what was once possible in a world that has since dried out. Kip and Hana's promise to meet at the church stays because it is the kind of promise people make when they already know it will not be kept. <u>The film earns its devastation by refusing to explain it.</u>
+    Minghella compresses and reorders Ondaatje's novel, amplifying the central affair while quieting the postcolonial textures that surround it; critics who found the film a romanticisation of the colonial gaze are not wrong, exactly, but they are accounting for a different film than the one Minghella made. The Swimmers' Cave, with its prehistoric rock paintings of figures moving through a sea that no longer exists, gives the story its true register: not tragedy as plot mechanism but tragedy as geological fact, as the record of what was once possible in a world that has since dried out. Kip and Hana's promise to meet at the church stays because it is the kind of promise people make when they already know it will not be kept. <u>The film earns its devastation by refusing to explain it.</u>
 
 - title: "A Confession"
   type: "film"
@@ -2211,7 +2245,8 @@
 
     <u>Martin Freeman's Steve Fulcher is constructed around a particular contradiction: the man who saves lives by breaking the law becomes the law's sacrifice, while those who hid behind procedure are protected by the very codes they invoked.</u> As Steve says in the final episode, life seems to count for nothing before rigid bureaucratic codes. The cowardly, sheltering behind the banner of 'justice,' use PACE as their shield and let the truly honourable become the sacrifice. Imelda Staunton as Elaine Pickford carries the other weight entirely: what it means to need answers the system has decided are inadmissible. <u>The series is, at its core, a study in institutional cowardice dressed as institutional integrity, and it lands without a shred of comfort.</u>
 
-- title: "When Father Was Away on Business"
+- title: "Otac na službenom putu"
+  title_en: "When Father Was Away on Business"
   type: "film"
   creator: "Emir Kusturica"
   creator_role: "dir."
@@ -2250,7 +2285,8 @@
 
     What earns the five stars is the story about his father. Brennan's father had ten children with four women and, by all accounts, treated none of them well; Brennan tells the story with a compression that makes the pauses between sentences feel load-bearing. Obviously staged, those pauses, rehearsed into apparent spontaneity through months of Off-Broadway performance before Netflix ever touched it. It doesn't matter. <u>The story works precisely because it has been worn smooth, because Brennan has told it enough times to find its exact shape.</u> <u>Some emotions don't require rawness to transmit; they require precision.</u> Emotions transcend time and space, as the original note says, and this one crosses the footlights intact every time.
 
-- title: "Lust, Caution"
+- title: "色，戒"
+  title_en: "Lust, Caution"
   type: "film"
   creator: "Ang Lee"
   creator_role: "dir."
@@ -2263,7 +2299,8 @@
 
     Tang Wei's performance is, without qualification, one of the great debut performances in cinema. She has to be at least four things at once: the student activist, the operative, the woman genuinely lost in what she thought she was only performing, and the person who in her final moments before execution chooses, again, to live for someone else. That last compound of self-erasure and genuine feeling is the film's impossible centre, and she holds it. The irony the original note identifies is real and worth sitting with: Tang Wei was effectively blacklisted from mainland Chinese media following the film's release, her advertisements pulled, her career in China dismantled, while Tony Leung, who shared every explicit scene, faced no consequences whatsoever. <u>The film is about a woman used by everyone around her and then discarded; its aftermath reproduced the structure precisely.</u>
 
-- title: "The Tale of Princess Kaguya"
+- title: "かぐや姫の物語"
+  title_en: "The Tale of Princess Kaguya"
   type: "film"
   creator: "Isao Takahata"
   creator_role: "dir."
@@ -2303,6 +2340,7 @@
     The comparison with Jimmy Carr is instructive. There is a kind of dark comedian who operates by accumulating transgression, by stockpiling the forbidden: the joke is simply that the thing has been said. Gervais has never been that comedian, and the distance between the two positions has widened into something more like a gulf. <u><em>SuperNature</em> is the stand-up set that has made one laugh the most in recent years, and it is not close.</u> The Jimmy Carrs of the world could perhaps have shared a stage with Ricky Gervais five or ten years ago. They cannot anymore.
 
 - title: "Die Wannseekonferenz"
+  title_en: "The Wannsee Conference"
   type: "film"
   creator: "Matti Geschonneck"
   creator_role: "dir."
@@ -2533,7 +2571,8 @@
 
     The radio binds the film's scattered episodes together the way a melody binds variations: Rockaway and Manhattan, working-class family and glamorous studio, all tuned to the same signal. What the film understands, and what makes it quietly devastating rather than merely warm, is that radio voices are the voices of people one never sees, and memory works the same way. Allen's narrator confesses uncertainty, skips over gaps, romanticises without apology, because the point is not reconstruction but feeling: <u>the feeling of a world that existed in full and is now accessible only as signal, and a weakening one at that.</u> From one story to the next, from domestic comedy to radio studio to Rockaway beach, everything circles around voices that belong only to the past. These voices only get dimmer and dimmer.
 
-- title: "The Seventh Seal"
+- title: "Det sjunde inseglet"
+  title_en: "The Seventh Seal"
   type: "film"
   creator: "Ingmar Bergman"
   creator_role: "dir."
@@ -2654,7 +2693,8 @@
   text: |
     The one arresting thing is the motion capture, already mature enough in 2009 to carry an entire world into being: a technical achievement that deserved a better vehicle. Everything else is the furniture of a male-power fantasy from a decade that produced many. The first half establishes a functional enough main storyline between Jake and Neytiri, but the second half dismantles whatever credit the film had accumulated. Female characters become appendages to male agency; Grace Augustine exists to die and propel Jake's arc; Neytiri, for all her initial ferocity, ends the film needing rescue. <u>The Na'vi, assembled from composite colonial fantasies of noble savagery, are there to be saved by a man who absorbs their culture precisely as well as a coloniser imagines he could.</u> Cameron seems to believe his own pro-indigenous framing. <u>That gap between intent and execution is not interesting; it is merely depressing.</u>
 
-- title: "The Return"
+- title: "Возвращение"
+  title_en: "The Return"
   type: "film"
   creator: "Andrei Zvyagintsev"
   creator_role: "dir."
@@ -2780,7 +2820,8 @@
 
     Strangelove's final monologue, the mine-shaft proposal, the survival calculus, the barely suppressed glee, is nothing other than the logic of the figures who surrounded every major populist authoritarian movement of the following half-century: the technocrat who has made his peace with catastrophe and begun to find it useful. One watches it now and recognises the grammar immediately: the conspiratorial cartography, the eugenic undercurrent dressed as crisis management, the sense that the speaker has been waiting a long time for this moment. <u>Kubrick made a film about the early 1960s and accidentally made a repeating template.</u> <u>The laugh-track of history has not worn it out.</u>
 
-- title: "Back to Back, Face to Face"
+- title: "背靠背，脸对脸"
+  title_en: "Back to Back, Face to Face"
   type: "film"
   creator: "Huang Jianzhong"
   creator_role: "dir."
@@ -2843,7 +2884,8 @@
 
     The second half offers almost nothing one could not see coming, and yet the suspense never relents. That is a rarer technical achievement than most critics acknowledge: <u>to generate genuine tension not from uncertainty about plot but from the feeling of inevitability pressing down on people who are still trying to choose.</u> Brian Helgeland and Hanson's adaptation of Ellroy's sprawling novel strips the machinery to the load-bearing elements and not one joint shows. <u>By the end, partial justice is achieved and the institution survives intact, which is the most honest ending a film about the LAPD in the 1950s could possibly have.</u>
 
-- title: "En man som heter Ove / A Man Called Ove"
+- title: "En man som heter Ove"
+  title_en: "A Man Called Ove"
   type: "film"
   creator: "Hannes Holm"
   creator_role: "dir."
@@ -2947,7 +2989,8 @@
 
     What saves the film from being merely a formal exercise is the density of what the courtyard contains. Each apartment is a storyline; each storyline is a possible future for Jeff and Lisa; and the three sections of the narrative, the mystery, the near-resolution, the crisis, divide the film so cleanly that on paper it sounds schematic. Watching, one feels none of the seams. The world contained in that small rectangle of light and sound expands to fill the entire available attention, and by the time Thorwald turns and looks directly back, the rupture of the voyeuristic compact is as physically shocking as anything Hitchcock ever produced. The whole world in a small ***rear window***. <u>The camera never leaves the room, and neither does one.</u>
 
-- title: "La planète sauvage / Fantastic Planet"
+- title: "La planète sauvage"
+  title_en: "Fantastic Planet"
   type: "film"
   creator: "René Laloux"
   creator_role: "dir."
@@ -3148,7 +3191,8 @@
 
     The film works on both registers: as awareness-raising and as storytelling, it is exemplary. The corporations are not populated by cartoon villains but by the logic of routine decision-making, the quiet consensus that profit and concealment are simply how things are done. This is the right way to film corporate horror: not as aberration but as system. PFOA does not break down in the environment or in the body, which is why they are called forever chemicals, and the film has the same quality of permanence, of something that will not leave. <u>One did not know, pressing play, that this film would exist in one's nervous system the way it now does.</u> One rarely does, with the films that matter most.
 
-- title: "To Live"
+- title: "活着"
+  title_en: "To Live"
   type: "film"
   creator: "Zhang Yimou"
   creator_role: "dir."
@@ -3161,7 +3205,8 @@
 
     Fengxia bleeds to death because the trained doctors have been imprisoned as class enemies and the only available help is young Red Guards who have been taught ideology and nothing of medicine. The film was banned in China for saying this, and for saying it without polemic, which is the harder thing. Ge You's Fugui survives everything: the gambling debts, the labour camps, the Great Leap Forward, the Cultural Revolution; not through heroism but through a series of accidents, the passive voice of history. <u>People of that era watched everything happen with no grammar for agency, no framework in which their actions could alter what was coming, and the helplessness simply floated in the air.</u> Ge You's performance captures this not through breakdown but through endurance, which is its own form of horror.
 
-- title: "Let the Bullets Fly"
+- title: "让子弹飞"
+  title_en: "Let the Bullets Fly"
   type: "film"
   creator: "Jiang Wen"
   creator_role: "dir."
@@ -3174,7 +3219,8 @@
 
     The story is told with a fluency that slightly exceeded expectations: a notable achievement, given that the previous Jiang Wen film was *The Sun Also Rises* (2007), where fluency was not the project. The film broke box office records in China in 2010 and was read immediately as political allegory, the bandit-governor opposition mapped onto contemporary power structures, the townspeople's eventual uprising freighted with implications that the censors apparently decided to tolerate. <u>Whether the allegory was the point or the packaging, what remains is a film about the rare pleasure of watching someone refuse to be absorbed, refuse to be bought, refuse to become what the system needs him to be.</u> That refusal is Jiang Wen's consistent subject, and here it is delivered with wit and formal confidence. The ending does not stay; the shape of it does.
 
-- title: "Devils on the Doorstep"
+- title: "鬼子来了"
+  title_en: "Devils on the Doorstep"
   type: "film"
   creator: "Jiang Wen"
   creator_role: "dir."
@@ -3187,7 +3233,8 @@
 
     Power is the other core. Jiang Wen himself has said that people are overlapping, that circumstances merely reveal different facets of the same person, and the film dramatises this with merciless consistency. Hanaya Kosaburo before losing power, then after, then once power is restored: three different men inhabiting the same body. The villagers transform with equal completeness. <u>What remains constant is not character but the pressure applied to it, and what crumbles under pressure turns out to be everything one had assumed was bedrock.</u> Whether under warlord rule or Japanese occupation, the daily business of living and dying in the village remains the same, and that continuity is the film's most devastating observation: history does not interrupt life; life is what history devours.
 
-- title: "The Sun Also Rises"
+- title: "太阳照常升起"
+  title_en: "The Sun Also Rises"
   type: "film"
   creator: "Jiang Wen"
   creator_role: "dir."
@@ -3304,7 +3351,8 @@
 
     Diane Keaton's Sonja is the film's philosophical engine: more articulate than Allen's Boris, less encumbered by cowardice, she combines Natasha's passion with Ivan Karamazov's relentless interrogation of God and mortality. The debates between the two characters carry the same central joke that Dostoevsky carried through five hundred pages, namely that profound philosophical questions yield no satisfying answers, delivered here in vaudeville packaging. The pile of sources, Tolstoyan, Dostoevskian, Shakespearean, Bergmanesque, flagged and catalogued and stitched together, is seamless precisely because Allen understands them well enough to let them contradict each other productively. <u>It arrives at the same place <em>Annie Hall</em> (1977) would, two years later, with the same fundamental conviction: that life is meaningless and also worth every argument about whether it is.</u>
 
-- title: "Paranoia Agent"
+- title: "妄想代理人"
+  title_en: "Paranoia Agent"
   type: "film"
   creator: "Satoshi Kon"
   creator_role: "dir."
@@ -3330,7 +3378,8 @@
 
     The Depression-era setting is not incidental. The film understands why cinema existed in the 1930s as a social institution, why Cecilia goes back every day, why the same film plays to the same audience who mouth the dialogue along with the screen. Allen loves cinema enough to make a film about the cruelty of loving it too much. The ending, Cecilia watching Fred Astaire dance through her tears until the tears dry and something close to consolation settles over her face, is among the most precisely calibrated final images in his filmography. <u>One was still naively waiting for Gil Shepherd when the film ended; the film, having predicted this, had already moved on.</u> It ranks close to *Annie Hall* (1977) in one's estimation, and not by accident.
 
-- title: "You the Living"
+- title: "Du levande"
+  title_en: "You, the Living"
   type: "film"
   creator: "Roy Andersson"
   creator_role: "dir."
@@ -3356,7 +3405,8 @@
 
     Having recently watched *Zelig* (1983), Allen's signature was already legible: the restless formal invention, the comedy that curls back on itself to reveal something bleak underneath. But *Annie Hall* (1977) runs deeper than formal cleverness. The final montage of memories, joyful scenes now coloured by knowledge of loss, achieves something very few films manage: it makes the sadness feel earned rather than manufactured. <u>One came away from it with the specific ache of mourning romantic idealism itself, the impossibility of sustaining the feeling that sustains everything else.</u> Loved it completely.
 
-- title: "Songs from the Second Floor"
+- title: "Sånger från andra våningen"
+  title_en: "Songs from the Second Floor"
   type: "film"
   creator: "Roy Andersson"
   creator_role: "dir."
@@ -3382,7 +3432,8 @@
 
     The visual effects, practical and digital both, remain extraordinary: the rotating hotel corridor built on a gimbal, the folding Paris streetscape, the sequences of genuine zero-gravity choreography. What strikes on re-watch is how much was actually built rather than rendered, how material the dream-world feels. Still, Nolan's *Interstellar* (2014) seems to reach somewhere *Inception* (2010) declines to go; there is a warmth the later film earns that this one keeps at arm's length. That distance is perhaps the point. But one notices it. <u>The top spins and the cut comes, and one is left, as always, not quite sure what one was meant to feel.</u>
 
-- title: "Life Is Beautiful"
+- title: "La vita è bella"
+  title_en: "Life Is Beautiful"
   type: "film"
   creator: "Roberto Benigni"
   creator_role: "dir."
@@ -3486,7 +3537,8 @@
 
     The complaints one wants to register are less about the film itself than about its reception. Reviews from self-identified 'science students' insisting the quantum-mechanical background is 'hardcore' or 'rigorously accurate' deserve a precise objection: whether the Copenhagen interpretation or the Everettian many-worlds reading, quantum theory addresses phenomena at the subatomic scale, and neither framework has been extended to macroscopic objects in any empirical or theoretical context that would justify a comet producing visible parallel-timeline bleed at a dinner party in Los Angeles. <u>The question of why this particular setup is held to be more scientifically rigorous than <em>Your Name</em> (2016)'s comet-and-time-swap is one the film's more credulous admirers have not adequately addressed.</u> Suspension of disbelief is the correct register, and the film earns it honestly. One should not mistake that generosity for physics.
 
-- title: "The 400 Blows"
+- title: "Les quatre cents coups"
+  title_en: "The 400 Blows"
   type: "film"
   creator: "François Truffaut"
   creator_role: "dir."
@@ -3512,7 +3564,8 @@
 
     The ending at the lighthouse gathers everything the film has withheld and presses it into a single ethical question. Teddy Daniels asks whether it is worse to live as a monster or to die as a good man, and the line lands with the weight of a verdict passed from the inside. <u>The horror is not the revelation but the choice: that a mind, fully restored to itself, might deliberately reach back into the dark rather than bear what lucidity costs.</u> Scorsese holds on the lighthouse long enough for its symbolism to collapse into something rawer, not a beacon but a terminus, the place where self-knowledge and self-erasure become indistinguishable. Over three months of half-watched films passed before anything hit with comparable force.
 
-- title: "Poetry"
+- title: "시"
+  title_en: "Poetry"
   type: "film"
   creator: "Lee Chang-dong"
   creator_role: "dir."
@@ -3564,7 +3617,8 @@
 
     <u>The film is not, finally, about whether the boy is guilty; it is about what it costs a man to confront the fact that his certainty was never about the boy at all.</u> Lee J. Cobb's Juror 3 carries a wound that the film discloses slowly and without sentimentality: the estranged son, the photograph, the accumulated damage of a man who loved harshly and cannot account for what was lost. His final breakdown, barely two words, barely a whisper, is not catharsis in the theatrical sense but something rawer: a man finally seeing himself clearly enough to surrender a verdict he has been carrying around in place of grief. The film ends and the boy walks out into sunlight the camera has never shown us, because the story was always about the room.
 
-- title: "Portrait of a Lady on Fire"
+- title: "Portrait de la jeune fille en feu"
+  title_en: "Portrait of a Lady on Fire"
   type: "film"
   creator: "Céline Sciamma"
   creator_role: "dir."
@@ -3587,7 +3641,7 @@
   creator_role: "dir."
   year: 2025
   eval: "loved"
-  image: "/assets/images/thoughts/films/a_knight_of_the_seven_kingdoms_season_1.jpg"
+  image: "/assets/images/thoughts/tv/a_knight_of_the_seven_kingdoms_season_1.jpg"
   posted: "2026-03-31"
   text: |
     It has been a long time since a medieval show felt this alive. Not alive in the way of spectacle, dragons and massacres and the usual currency, but alive in the sense that its world seems to have existed before the camera arrived and will continue to exist after it leaves. The market scenes in episode two alone contain more incidental texture than most prestige television manages in an entire run: the mud, the commerce, the social stratification worn as casually as clothing. Compared to *Game of Thrones* (2011), which at its best rendered Westeros as an empire of consequence, aKotSK feels more inhabited, the way *Kingdom Come: Deliverance 2* (2025) feels inhabited after a long stretch of *Skyrim* (2011): <u>the difference between a simulation and a world.</u>
@@ -3602,7 +3656,7 @@
   creator_role: "dir."
   year: 2006
   eval: "loved"
-  image: "/assets/images/thoughts/films/the_wire_season_4.jpg"
+  image: "/assets/images/thoughts/tv/the_wire_season_4.jpg"
   posted: "2026-02-22"
   text: |
     There is a scene in which Carver goes to plead with a clerk in the foster-care system on behalf of a child he knows is being mistreated. He has the goodwill, the information, the moral clarity. And he earns nothing but a blank stare: the face of the system itself, a stone wall that does not register bodies, does not register children, does not register the particular human being standing in front of it. <u>It registers statistics and political exposure, and nothing else.</u> This is what Season 4 is about: not corruption in the ordinary sense, not villains who could be removed and replaced, but the aggregate indifference of institutions that have ceased to have any relationship to the lives they nominally administer.
@@ -3617,7 +3671,7 @@
   creator_role: "dir."
   year: 2004
   eval: "loved"
-  image: "/assets/images/thoughts/films/the_wire_season_3.jpg"
+  image: "/assets/images/thoughts/tv/the_wire_season_3.jpg"
   posted: "2026-02-22"
   text: |
     Every season of ***The Wire*** is its own Baltimore epic, and the third is the one about the dream of reform: what it looks like, how briefly it holds, and what it costs the people who believed in it. Bunny Colvin's Hamsterdam, that strange, temporary drug utopia carved out of abandoned blocks in West Baltimore, is the season's central provocation, and Simon does something formally interesting with it: he lets it work. Under the influx of social services, the zone becomes something like an incubator for the possible, a space in which human beings who have been written off by every institution can briefly, provisionally, be treated as human beings. The show does not endorse it. But it refuses to dismiss it, and that refusal is political.
@@ -3632,7 +3686,7 @@
   creator_role: "dir."
   year: 2003
   eval: "loved"
-  image: "/assets/images/thoughts/films/the_wire_season_2.jpg"
+  image: "/assets/images/thoughts/tv/the_wire_season_2.jpg"
   posted: "2026-02-02"
   text: |
     Played out on the miniature stage of Baltimore's docks, a compressed image of the global proletarian condition: all that furious effort, and the situation at the end is worse than at the start. David Simon has said the season is about the death of work, and that is precisely right, but it is also about something harder to name, the way that structural abandonment forces moral compromise not from greed but from desperation, the way the institutions that were supposed to protect working people have become instruments of their liquidation. <u>Frank Sobotka is not a villain; he is a man whose love for his people leads him into an impossible position, and Simon offers him no exit.</u>
@@ -3645,7 +3699,7 @@
   creator_role: "dir."
   year: 2025
   eval: "liked"
-  image: "/assets/images/thoughts/films/pluribus_season_1.jpg"
+  image: "/assets/images/thoughts/tv/pluribus_season_1.jpg"
   posted: "2026-01-06"
   text: |
     Among the most visually beautiful television on streaming, and I mean that without qualification: Gilligan's compositional intelligence, his feeling for colour and negative space, is operating at a level that makes almost everything else on streaming look provisional. The Carol and Zosia relationship has a quiet charge that the show's best episodes develop with genuine patience; Manousos's search for truth gives the science-fiction premise its moral spine. All of which makes the structural frustration harder to dismiss. A clean, declarative sci-fi premise of this kind makes an implicit contract with the audience: it promises that the world it builds will eventually cohere into an argument, a feeling, a reckoning with whatever the central concept turns out to mean. <u>After a full season, Gilligan has not yet honoured that contract.</u> Both the emotional and the philosophical threads remain barely unspooled when the finale arrives and then simply stops.
@@ -3658,7 +3712,7 @@
   creator_role: "dir."
   year: 2025
   eval: "disliked"
-  image: "/assets/images/thoughts/films/the_chair_company_season_1.jpg"
+  image: "/assets/images/thoughts/tv/the_chair_company_season_1.jpg"
   posted: "2025-12-07"
   text: |
     The higher the expectation, the greater the disappointment. Somerville built his reputation on *Station Eleven* (2021)'s formal elegance; ***The Chair Company*** inherits none of it, delivering instead an amateur-hour detective procedural dressed up in conspiracy-theory aesthetics it has not earned. The Pynchonesque paranoia one was promised never materialises: what arrives in its place is plot mechanics, laboured reveals, and <u>the dull satisfaction of a mystery that was never mysterious.</u> <u>Some failures are instructive; this one is merely irritating.</u>
@@ -3669,7 +3723,7 @@
   creator_role: "dir."
   year: 2002
   eval: "loved"
-  image: "/assets/images/thoughts/films/the_wire_season_1.jpg"
+  image: "/assets/images/thoughts/tv/the_wire_season_1.jpg"
   posted: "2025-11-18"
   text: |
     A textbook example of something that looks simple but never stays at the surface: little wonder that Žižek too uses ***The Wire*** to diagnose the American Zeitgeist, finding in it the Lacanian Real of a society that cannot look directly at what produces it. What David Simon and Ed Burns built in Season 1 is essentially a sociological system rendered as drama, in which the police bureaucracy and the Barksdale organisation mirror each other so precisely that the show's central moral insight, that <u>institutions grind people up regardless of which side of the wire they are on</u>, arrives not as argument but as form.
@@ -3682,7 +3736,7 @@
   creator_role: "dir."
   year: 2025
   eval: "loved"
-  image: "/assets/images/thoughts/films/the_bear_season_4.jpg"
+  image: "/assets/images/thoughts/tv/the_bear_season_4.jpg"
   posted: "2025-07-21"
   text: |
     One expected this season to wrap things up; after three seasons of accumulated pressure, the show had earned the right to release it. What Christopher Storer does instead is more interesting and more honest: he keeps the pressure on, converts it, allows it to become something almost liveable. The anxiety and unease that defined earlier seasons do not resolve here so much as transmute, rendered through cinematography and dialogue of such personal closeness that the camera often feels like a held breath, the conversation like something overheard through a too-thin wall. <u>If earlier seasons were about collapse, this one is about the silver lining that can only be glimpsed from inside despair, and the show is wise enough not to let it shine too brightly.</u>
@@ -3695,7 +3749,7 @@
   creator_role: "dir."
   year: 2025
   eval: "liked"
-  image: "/assets/images/thoughts/films/poker_face_season_2.jpg"
+  image: "/assets/images/thoughts/tv/poker_face_season_2.jpg"
   posted: "2025-07-16"
   text: |
     Like the first season, ***Poker Face*** remains lodged in an awkward position, oscillating between 'this episode contains some of the best television of the year' and 'this episode makes absolutely no sense.' <u>The show's howcatchem format, <em>Columbo</em>-derived and Natasha Lyonne-propelled, is when it works one of the most purely pleasurable structures on streaming: a showcase for guest performers, a vehicle for Lyonne's preternatural ease, and a demonstration that the procedural can still produce genuine surprise.</u> The con-artist episode this season is exactly that kind of triumph. <u>The final two episodes are not, their logic simply failing to cohere, the formula turning mechanical at the precise moment it should be building to something.</u>
@@ -3706,7 +3760,7 @@
   creator_role: "dir."
   year: 2025
   eval: "loved"
-  image: "/assets/images/thoughts/films/the_rehearsal_season_2.jpg"
+  image: "/assets/images/thoughts/tv/the_rehearsal_season_2.jpg"
   posted: "2025-06-03"
   text: |
     The obvious defence of Nathan Fielder's project has always been available: it is all performance, all simulation, all elaborate play-pretend, and the emotions it produces are therefore contained, deniable, the tears shed over constructed scenarios no more consequential than tears shed at the cinema. <u>Season 2 makes this defence impossible to maintain.</u> Here the emotions are real, the meanings are real, and for once the impact is real in a way that reaches beyond the frame, beyond the simulacra, into something that does not dissolve when the cameras stop.
@@ -3719,7 +3773,7 @@
   creator_role: "dir."
   year: 2025
   eval: "liked"
-  image: "/assets/images/thoughts/films/black_mirror_season_7.jpg"
+  image: "/assets/images/thoughts/tv/black_mirror_season_7.jpg"
   posted: "2025-04-15"
   text: |
     <u>After the accumulated disappointments of Seasons 5 and 6, the bar had been lowered to the point where mere competence would have registered as a triumph.</u> Season 7 manages considerably more than competence. The *Bandersnatch* (2018) connection in Episode 4 is its most inspired gambit: Peter Capaldi's performance anchors an alternate-history premise, and Brooker's return to the Tuckersoft universe demonstrates that the ***Black Mirror*** multiverse can bear the weight of its own mythology without collapsing into fan-service. Episodes 1 and 3 do unusually sustained work on privacy and personhood, the commodification of consciousness in 'Common People' and the posthumous rights of a reconstructed identity in 'Hotel Reverie', territory that feels thought through rather than gesturally invoked. The final episode lands as a properly compelling science fiction narrative in the classic mode.
@@ -3732,7 +3786,7 @@
   creator_role: "dir."
   year: 2025
   eval: "loved"
-  image: "/assets/images/thoughts/films/severance_season_2.jpg"
+  image: "/assets/images/thoughts/tv/severance_season_2.jpg"
   posted: "2025-03-30"
   text: |
     It is rare to encounter a series assembled with this degree of intention: every composition is a considered argument, every transition a quiet thesis statement. Ben Stiller's direction does not merely serve the story; it interrogates it, turning Lumon's fluorescent interiors into a kind of philosophical arena where the question of what constitutes a self is debated not in dialogue but in geometry and light. Season 2 sharpens that debate into something almost unbearable. <u>The show has always known that its central horror is not the loss of memory but the ethical abyss opened by splitting a consciousness in two, and here it commits fully to the implications, staging the innie rights question as genuine moral philosophy rather than speculative decoration.</u> The discourse around Parfit and personal identity that has hovered over fan discussion since Season 1 is now absorbed into the show's own dramatic logic.
@@ -3747,7 +3801,7 @@
   creator_role: "dir."
   year: 2025
   eval: "liked"
-  image: "/assets/images/thoughts/films/adolescence_season_1.jpg"
+  image: "/assets/images/thoughts/tv/adolescence_season_1.jpg"
   posted: "2025-03-29"
   text: |
     Philip Barantini's one-shot technique, already demonstrated in *Boiling Point* (2021), here finds its ideal subject. <u>The absence of cuts is not a formal stunt: it creates a continuous, inescapable present-tense, the same temporal trap in which Jamie Miller and his family are caught.</u> Jack Thorne's script tracks a thirteen-year-old boy arrested for the murder of a female classmate, and the four episodes, each a single unbroken take, move from the police station to the family home to the prison interview room with the remorselessness of a process that has already concluded. Stephen Graham's performance as Jamie's father is the kind of acting that refuses to announce itself; the devastation accumulates in stillness.
@@ -3760,7 +3814,7 @@
   creator_role: "dir."
   year: 2024
   eval: "loved"
-  image: "/assets/images/thoughts/films/the_bear_season_3.jpg"
+  image: "/assets/images/thoughts/tv/the_bear_season_3.jpg"
   posted: "2024-07-11"
   text: |
     Christopher Storer describes Season 3 as a tone poem, and the description is accurate but undersells how much structural ambition is packed into it. Each episode pushes further into formal experimentation: non-linear time, extended interior monologue, episodes that function less as plot units than as sustained emotional states. The critical complaint that the season is slow mistakes pace for aimlessness; what Storer is doing is making room for character interiority that plot-driven television habitually crowds out.
@@ -3775,7 +3829,7 @@
   creator_role: "dir."
   year: 2024
   eval: "loved"
-  image: "/assets/images/thoughts/films/fallout_season_1.jpg"
+  image: "/assets/images/thoughts/tv/fallout_season_1.jpg"
   posted: "2024-04-28"
   text: |
     The ***Fallout*** games have always understood something about American mythology that most satire fumbles: <u>the vault, the wasteland, the Brotherhood, the Ghoul, these are not just genre furniture but a precise archaeology of the national psyche, its optimism curdled into survivalism, its corporate cheerfulness persisting long past the point of obscenity.</u> Wagner and his writers have absorbed this logic completely, and the adaptation's most impressive feat is not the fidelity to surface detail, though the grenades on the Brotherhood aircraft, the vault terminal interface, the retro-futurist costuming are all immaculate, but the fidelity to the games' internal political grammar, the way power in the wasteland is always simultaneously ridiculous and lethal.
@@ -3788,7 +3842,7 @@
   creator_role: "dir."
   year: 2013
   eval: "loved"
-  image: "/assets/images/thoughts/films/happy_valley_season_1.jpg"
+  image: "/assets/images/thoughts/tv/happy_valley_season_1.jpg"
   posted: "2023-10-04"
   text: |
     Sally Wainwright gives every person in the Calder Valley a complete interior life, not as an act of liberal generosity but as a structural commitment: the fabric of the show requires it, because crime in ***Happy Valley*** is never anomalous. It emerges from the same social texture as everything else, from financial pressure and family grief and the specific exhaustion of public service in a community that has been quietly left behind. The supporting characters, the small criminals, the frightened accomplices, the institutional figures hedging their bets, are not furniture. They have reasons, histories, the particular stubbornness of people who have never been given anything easily.
@@ -3801,7 +3855,7 @@
   creator_role: "dir."
   year: 2020
   eval: "loved"
-  image: "/assets/images/thoughts/films/the_crown_season_4.jpg"
+  image: "/assets/images/thoughts/tv/the_crown_season_4.jpg"
   posted: "2023-08-22"
   text: |
     The season's most persistent failure is also its most telling one: Thatcher's economic programme, the defining political fact of her decade, is almost entirely absent. The privatisations, the assault on the unions, the deliberate dismantling of the postwar settlement, the transformation of Britain into a laboratory for Friedmanite shock therapy, none of it registers. What remains is a Thatcher who exists primarily to be cold, inflexible, war-hungry. Britain's most consequential postwar Prime Minister, second only to Attlee in actual historical weight, is reduced to someone who picks unnecessary fights and ignores the vulnerable. ***The Crown*** has always been a drama, not a document, and that caveat has its uses; but the selective amnesia here distorts rather than simplifies, producing a caricature the left loves without asking whether it has earned that love.
@@ -3814,7 +3868,7 @@
   creator_role: "dir."
   year: 2023
   eval: "loved"
-  image: "/assets/images/thoughts/films/the_bear_season_2.jpg"
+  image: "/assets/images/thoughts/tv/the_bear_season_2.jpg"
   posted: "2023-07-14"
   text: |
     <u>Better than Season 1 in nearly every register, which was not a small achievement to surpass.</u> Season 1's urgency was inseparable from its compression, the relentless single-location pressure cooker of the beef sandwich counter; Season 2 expands the frame without losing the pressure. Uncle Jimmy finally gets the screen time the first season withheld from him, and Oliver Platt fills it with a performance of layered, sardonic feeling, a man who loves the family and distrusts it and bankrolls it with full knowledge of all three. Sydney's arc develops into something generous, her competence and ambition granted their proper weight rather than kept subordinate to Carmy's chaos.
@@ -3827,7 +3881,7 @@
   creator_role: "dir."
   year: 2019
   eval: "loved"
-  image: "/assets/images/thoughts/films/for_all_mankind_season_1.jpg"
+  image: "/assets/images/thoughts/tv/for_all_mankind_season_1.jpg"
   posted: "2023-05-29"
   text: |
     The divergence point is a single event: the Soviet Union lands on the Moon first. From that seed Moore and his co-creators grow an entire alternate political ecology, one in which American competitive anxiety accelerates the admission of women to the astronaut corps by a decade, the Equal Rights Amendment moves through a different legislative climate, the slow retreat of racial discrimination happens against a different social backdrop. <u>History as contingency rather than teleology, the argument embedded in the premise itself, the argument that what we call progress is not a direction but a series of pressures and counter-pressures that can be arranged differently given different inputs.</u>
@@ -3840,7 +3894,7 @@
   creator_role: "dir."
   year: 2022
   eval: "liked"
-  image: "/assets/images/thoughts/films/the_bear_season_1.jpg"
+  image: "/assets/images/thoughts/tv/the_bear_season_1.jpg"
   posted: "2023-04-27"
   text: |
     The writing in the first six episodes is uneven, and knowing what arrives later makes that unevenness feel almost calculated: as though Storer were deliberately rationing what the show can do, holding back to make the ambush more complete. <u>The seventh episode is filmed almost in a single sustained take, following a kitchen in freefall with a camera that moves like a trapped animal, and it is one of the most formally accomplished pieces of television.</u> The eighth, quieter and longer, does something the preceding seven episodes had given no indication it was capable of: it reveals that the show has a fully developed capacity for monologue, for stillness, for the kind of extended character revelation that requires a completely different grammar from controlled chaos.
@@ -3853,7 +3907,7 @@
   creator_role: "dir."
   year: 2022
   eval: "liked"
-  image: "/assets/images/thoughts/films/poker_face_season_1.jpg"
+  image: "/assets/images/thoughts/tv/poker_face_season_1.jpg"
   posted: "2023-03-12"
   text: |
     Quite by-the-numbers, and the first half can feel, episode by episode, a little too comfortably inert. The 'howcatchem' format Rian Johnson borrows from *Columbo* (1971) contains an inherent tension: if the audience already knows the killer, the pleasure has to lie entirely in Charlie's unravelling of the crime, and for several early episodes the unravelling is not interesting enough to carry that weight alone. <u>Fortunately the last three episodes represent a dramatic leap in writing quality, finding genuine originality inside the formula, letting the mechanics of the inverted detective story do something other than simply repeat themselves.</u> Special mention to episode nine: without it, the score would barely be passing.
@@ -3864,7 +3918,7 @@
   creator_role: "dir."
   year: 2022
   eval: "loved"
-  image: "/assets/images/thoughts/films/the_capture_season_2.jpg"
+  image: "/assets/images/thoughts/tv/the_capture_season_2.jpg"
   posted: "2023-02-22"
   text: |
     Jaw-dropping, watching Ben Chanan weave together every thread laid across the first five episodes in that final instalment. The architecture of the series is almost ostentatiously ambitious: geopolitical manipulation, AI-fabricated evidence, the slow corruption of institutions that were already compromised before the foreign actors arrived, and a protagonist who can barely trust her own perception of events. <u>That it all lands, and lands cleanly, is the kind of thing one wants to hold up as proof that television can do things film cannot.</u> <u>How is it even possible to tell such a convoluted story so well? And how long before one sees storytelling this brilliant again.</u>
@@ -3875,7 +3929,7 @@
   creator_role: "dir."
   year: 2018
   eval: "loved"
-  image: "/assets/images/thoughts/films/atlanta_season_2.jpg"
+  image: "/assets/images/thoughts/tv/atlanta_season_2.jpg"
   posted: "2022-12-18"
   text: |
     <u>'Teddy Perkins' is thirty minutes of television that does things no other form could do and that almost no other practitioner of the form would have had the nerve to attempt.</u> Donald Glover in full prosthetic disguise as a figure assembled from the wreckage of Michael Jackson, Prince, and every Black entertainer whose talent was extracted and metabolised by a controlling father: it is at once a horror film, a Kubrickian exercise in dread accumulation, and one of the most concentrated statements about the cost of Black excellence under patriarchal and white supremacist systems that American television has produced. Hiro Murai directs with a stillness that generates more unease than any jump-cut ever could.
@@ -3888,7 +3942,7 @@
   creator_role: "dir."
   year: 2022
   eval: "loved"
-  image: "/assets/images/thoughts/films/house_of_the_dragon_season_1.jpg"
+  image: "/assets/images/thoughts/tv/house_of_the_dragon_season_1.jpg"
   posted: "2022-10-30"
   text: |
     The sensation of watching ***House of the Dragon*** in its first season is something close to what one imagines it must have been to watch *Game of Thrones* (2011) when it was at its most commanding: every detail deliberate, every shot weighted with consequence, the political machinery of the Targaryen court turning with a precision that rewards attention rather than punishing it. The Alicent-Rhaenyra opposition, frequently reduced in popular discussion to mere faction loyalty, is given enough texture to function as the emotional spine of the season, <u>two women who understood each other completely and are now arranged against each other by a system that was always going to do this to them.</u>
@@ -3901,10 +3955,10 @@
   creator_role: "dir."
   year: 2021
   eval: "loved"
-  image: "/assets/images/thoughts/films/the_problem_with_jon_stewart_season_1.jpg"
+  image: "/assets/images/thoughts/tv/the_problem_with_jon_stewart_season_1.jpg"
   posted: "2022-10-26"
   text: |
-    I discovered the first season had already aired by the time I came to it. The wait had been long enough: fourteen years during which one watched Trevor Noah erode, episode by episode, the institutional credibility Jon had spent two decades constructing at *The Daily Show*, fourteen years of Stewart appearing in sideline conversations with Colbert and Oliver, radiating <u>the particular restlessness of someone who knows exactly what they would do with a platform they no longer have.</u>
+    I discovered the first season had already aired by the time I came to it. The wait had been long enough: six years during which one watched Trevor Noah sand down, episode by episode, the institutional edge Jon had spent sixteen years constructing at *The Daily Show*, six years of Stewart surfacing in sideline conversations with Colbert and Oliver, radiating <u>the particular restlessness of someone who knows exactly what they would do with a platform they no longer have.</u>
 
     The Problem has fulfilled that wait in ways that were not obvious in advance. The roundtable format, which Stewart had always suited better than the monologue, gives veterans space to be heard rather than processed, their testimony on VA failures and the mental health crisis folding directly into legislative argument without the usual layer of ironic distance. The interviews are razor-sharp and logically fluid in the way his best *Daily Show* work was, but without the defensive comedy that used to cushion the confrontation: <u>Stewart is older, less interested in being liked, more interested in being useful.</u> The subject of veteran care is as urgent as it is deliberately unglamorous. That Jon chose it for his return, rather than something more obviously spectacular, is itself a kind of statement.
 
@@ -3914,7 +3968,7 @@
   creator_role: "dir."
   year: 2021
   eval: "loved"
-  image: "/assets/images/thoughts/films/how_to_with_john_wilson_season_2.jpg"
+  image: "/assets/images/thoughts/tv/how_to_with_john_wilson_season_2.jpg"
   posted: "2022-08-09"
   text: |
     Season two deepens what season one established without simply restating it. <u>The how-to premise is still a Trojan horse: each episode promises utility and delivers something closer to phenomenology, Wilson's hands and camera moving through New York with the patience of someone who believes that if one looks at anything long enough it will confess something true.</u> The associative editing remains the formal engine, cuts that generate meaning through unexpected visual rhyme rather than expository logic, and the second season pushes this further into genuine strangeness without losing the warmth that keeps it habitable.
@@ -3927,7 +3981,7 @@
   creator_role: "dir."
   year: 2016
   eval: "loved"
-  image: "/assets/images/thoughts/films/better_call_saul_season_2.jpg"
+  image: "/assets/images/thoughts/tv/better_call_saul_season_2.jpg"
   posted: "2022-07-14"
   text: |
     Chuck's insecurity is probably a side effect of perfectionism: after years of hard-won struggle, a wild card appears and truly draws out the petty tricks lurking in his heart. Michael McKean plays the deterioration with extraordinary precision, keeping Chuck pitiable and villainous in the same breath, never letting one state excuse the other. <u>The document-splicing sequence at the end of the season is the show crossing a threshold, not just for Jimmy but for itself, the moment <b><i>Better Call Saul</i></b> stops being a <em>Breaking Bad</em> (2008) appendage and becomes its own tragedy.</u>
@@ -3940,7 +3994,7 @@
   creator_role: "dir."
   year: 2012
   eval: "loved"
-  image: "/assets/images/thoughts/films/breaking_bad_season_5.jpg"
+  image: "/assets/images/thoughts/tv/breaking_bad_season_5.jpg"
   posted: "2022-07-11"
   text: |
     The most important thing the fifth season teaches is not about Walter, who by this point has rendered himself unambiguous: it is about the people who watch him and feel something like kinship. The show has always been constructed so that the audience tracks Walter's rationalisation in real time, finding each step locally plausible even as the cumulative direction becomes monstrous; season five removes even the rationalisation, and Walter simply revels. 'Say my name.' 'I did it for me. I liked it.' The honesty is almost restful after the sustained self-deception of the preceding seasons. <u>What is left is the shape of a man who could not accept help, could not accept diminishment, could not let a single slight go unanswered, and paid for that intractability with everyone around him.</u>
@@ -3953,7 +4007,7 @@
   creator_role: "dir."
   year: 2011
   eval: "loved"
-  image: "/assets/images/thoughts/films/breaking_bad_season_4.jpg"
+  image: "/assets/images/thoughts/tv/breaking_bad_season_4.jpg"
   posted: "2022-07-09"
   text: |
     Season four operates on sustained dread, two masterminds circling each other with the patience of people who understand that the first visible move is probably the losing one. <u>Gus Fring is Walter's dark mirror and also his superior: the same pride, the same capacity for cold calculation, the same empire-building under cover of legitimate industry, but without the emotional volatility that keeps undoing Walter at crucial moments.</u> Giancarlo Esposito plays him as a man who has long since metabolised his own grief into something structural, something that runs the whole apparatus, and the season's slow revelation of his backstory makes him tragic rather than merely formidable.
@@ -3966,7 +4020,7 @@
   creator_role: "dir."
   year: 2022
   eval: "loved"
-  image: "/assets/images/thoughts/films/severance_season_1.jpg"
+  image: "/assets/images/thoughts/tv/severance_season_1.jpg"
   posted: "2022-05-03"
   text: |
     The central conceit of ***Severance***, that a surgical procedure can split a worker's consciousness into distinct selves with no shared memory across the threshold of the office door, is more than a science-fiction premise. <u>It is a diagram of something already happening: the demand that workers arrive scrubbed of interiority, productive and cheerful, while the 'outie' self accrues the fatigue and grief that the 'innie' will never be permitted to feel.</u> Dan Erickson's writing metabolises this into something that is simultaneously Kafkaesque workplace horror and a genuine philosophical puzzle about identity, consent, and what it means to be the author of one's own life. Ben Stiller's direction deploys the sterile geometry of Lumon's corridors with Kubrick-esque deliberateness: every symmetrical frame is an argument about control.
@@ -3981,7 +4035,7 @@
   creator_role: "dir."
   year: 2021
   eval: "liked"
-  image: "/assets/images/thoughts/films/clarksons_farm_season_1.jpg"
+  image: "/assets/images/thoughts/tv/clarksons_farm_season_1.jpg"
   posted: "2022-04-21"
   text: |
     <u>Gross profit for the year: £144.</u> That figure arrives with the timing and weight of a punchline, but it is also the show's thesis statement. Farming, as ***Clarkson's Farm*** presents it, is less a profession than a sustained act of institutional optimism, a commitment renewed each season against the accumulated evidence of weather, subsidy policy, mechanical failure, and soil. What the series does unusually well is to put that helplessness on screen without aestheticising it. Jeremy Clarkson is an effective vehicle for this precisely because he is constitutionally unsuited to the role: the bewilderment is never performed, and his periodic fury at bureaucratic obstruction, at Natural England, at the sheer intractability of the land, reads as the authentic response of someone who has spent a career in a domain where competence and resources could solve most problems.
@@ -3994,7 +4048,7 @@
   creator_role: "dir."
   year: 2013
   eval: "loved"
-  image: "/assets/images/thoughts/films/endeavour_season_1.jpg"
+  image: "/assets/images/thoughts/tv/endeavour_season_1.jpg"
   posted: "2022-03-24"
   text: |
     The first series is, by design, fairly conventional in its mysteries: four cases, each self-contained, structured according to the grammar of the British detective drama that ***Endeavour***'s parent text did so much to establish. The score, still finding its footing, does not yet have the elegiac authority it will develop; the production occasionally shows the financial constraints of a series that had to prove itself after a single pilot. None of this matters much. <u>What matters is that Russell Lewis has built the architecture of a career, and that one can already see, in these four episodes, most of the major relationships and moral coordinates that will carry the show through a decade.</u>
@@ -4007,7 +4061,7 @@
   creator_role: "dir."
   year: 2012
   eval: "loved"
-  image: "/assets/images/thoughts/films/silk_season_2.jpg"
+  image: "/assets/images/thoughts/tv/silk_season_2.jpg"
   posted: "2022-01-30"
   text: |
     Season 1 established the architecture: Martha Costello's absolute authority at the bar, the chambers as a system of competing loyalties and suppressed appetites, the law as a profession that requires its practitioners to argue convictions they may not hold. Season 2 takes that architecture and uses it to stage something more searching: an examination of what it costs to hold to values when the institutional structures that were supposed to protect them have been quietly hollowed out. Brendan Kay's case threads through the season with a patience that pays off fully; it is the kind of storyline that stays in the mind for days <u>not because it resolves neatly but because it doesn't, because the feeling of moral residue is the point.</u>
@@ -4020,7 +4074,7 @@
   creator_role: "dir."
   year: 2011
   eval: "loved"
-  image: "/assets/images/thoughts/films/silk_season_1.jpg"
+  image: "/assets/images/thoughts/tv/silk_season_1.jpg"
   posted: "2022-01-29"
   text: |
     <u>Maxine Peake constructs Martha Costello's presence with what can only be called absolute authority: every hesitation, every pivot, every moment of doubt managed and metabolised within the professional carapace of a woman who has learned to trust the argument over the feeling.</u> Peter Moffat, writing from the inside of the bar he once practised at, understands that the ethical drama of criminal advocacy is not about guilt or innocence but about what the system demands of the people who operate it, and what those demands slowly take from them. Six episodes is an unusual constraint, and here it proves a gift: the compression forces Billy, Clive, and Martha into full, indelible life within a duration that most legal dramas would spend on setup.
@@ -4033,7 +4087,7 @@
   creator_role: "dir."
   year: 2021
   eval: "loved"
-  image: "/assets/images/thoughts/films/vigil_season_1.jpg"
+  image: "/assets/images/thoughts/tv/vigil_season_1.jpg"
   posted: "2021-09-27"
   text: |
     Amy on the submarine is probably in a fog from the very beginning: the depth, the recycled air, the claustrophobia compounding her pre-existing PTSD until her cognition is operating at a strange remove from events. By the final episode her thinking seems to have disordered itself, the detective's procedural clarity buckling under the accumulated pressure of the hull around her. This is a generous reading of what might simply be inconsistent writing, but the series invites it, and Suranne Jones plays Amy with exactly the right kind of dissociation: focused and fraying simultaneously.
@@ -4046,7 +4100,7 @@
   creator_role: "dir."
   year: 2014
   eval: "loved"
-  image: "/assets/images/thoughts/films/true_detective_season_1.jpg"
+  image: "/assets/images/thoughts/tv/true_detective_season_1.jpg"
   posted: "2021-07-14"
   text: |
     McConaughey and Harrelson's characters need no advertisement; everyone already knows how good they are. What the reviews tend to underemphasise is how precisely the dual-narrator structure earns those performances. The show operates on three temporal layers simultaneously, and the gap between what Rust Cohle and Marty Hart remember, what they choose to reveal, and what the camera contradicts produces a specific epistemological vertigo. <u>Truth is always perspectival, never singular.</u> Each man's retrospective account is shaped by ego and shame in ways he cannot see. Fukunaga's visual grammar makes this legible without underlining it: Hart in medium shot, ordinary and exposed; Cohle in low angles that suggest both grandeur and vulnerability; the Louisiana landscape dwarfing both of them equally.
@@ -4059,7 +4113,7 @@
   creator_role: "dir."
   year: 2020
   eval: "loved"
-  image: "/assets/images/thoughts/films/the_mandalorian_season_2.jpg"
+  image: "/assets/images/thoughts/tv/the_mandalorian_season_2.jpg"
   posted: "2021-06-19"
   text: |
     The standard objection to Season 1 was that its anthology structure, one mission per episode, one planet per week, kept the narrative from accumulating weight. Season 2 resolves this without abandoning the formula: the episodic container is retained, the Volume technology and Pedro Pascal's helmeted, near-silent characterisation of Din Djarin remain constant, but the episodes are threaded now into the larger Star Wars timeline in a way that makes the world feel inhabited. <u>Tatooine's binary sunset returns carrying everything it was always supposed to carry.</u> Moff Gideon's Dark Troopers give the season its escalating dread. Bo-Katan Kryze, Ahsoka Tano, Boba Fett himself: the reappearances are not merely fan service, though they are that too, but structural joints that connect this corner of the galaxy to a history the audience already knows and therefore does not need explained.
@@ -4072,7 +4126,7 @@
   creator_role: "dir."
   year: 2021
   eval: "loved"
-  image: "/assets/images/thoughts/films/love_death_robots_season_2.jpg"
+  image: "/assets/images/thoughts/tv/love_death_robots_season_2.jpg"
   posted: "2021-05-15"
   text: |
     The honest accounting goes something like this: taken as an anthology, only four or five episodes in Volume 2 have real depth of idea, and two or three are dead on arrival, 'Automated Customer Service' among them, a sketch that mistakes escalation for wit. By any objective measure five stars is a reach. But the subjective experience is a different matter entirely, and this is where criticism that insists on objectivity as a virtue tends to lose the thread.
@@ -4087,7 +4141,7 @@
   creator_role: "dir."
   year: 2020
   eval: "loved"
-  image: "/assets/images/thoughts/films/how_to_with_john_wilson_season_1.jpg"
+  image: "/assets/images/thoughts/tv/how_to_with_john_wilson_season_1.jpg"
   posted: "2021-02-28"
   text: |
     Rather like Woody Allen's narrative digression as a structural method, though on reflection that is simply how ordinary anxious people think: one thing leads sideways to another, and the sideways turn contains more truth than any direct approach would. Wilson's camera, always handheld and voyeuristic, catches New York doing what cities do when no one is watching them, and his deadpan narration treats the footage as evidence for propositions that are never quite stated. <u>Each episode begins with a banal how-to premise and spirals into genuine meditation: loneliness, memory, the social contracts we maintain without knowing why.</u> The risotto episode is somehow about Phish. This is not a flaw.
@@ -4155,7 +4209,7 @@
 
     The build variety that follows from this dual-class foundation is formidable. No previous Team Ninja game has offered so many distinct playthroughs: weapons span odachi and axes on the samurai side to kusarigama and talons for the shinobi; the Guardian Spirit system adds elemental abilities and a temporary transformation; the seven-stat progression is freely respecced at any shrine. <u>Yet the game's greatest achievement is that this abundance never produces chaos.</u> Unlike *Rise of the Ronin* (2024) or the Ubisoft open-world formula, where breadth dilutes intensity, every encounter in Nioh 3 generates tension. The open-area world spans multiple time periods, each visually and mechanically distinct, and the co-op integration is the most frictionless the genre has seen.
 
-    Team Ninja remains Team Ninja, of course: the narrative is complex to the point of opacity, and the English voice acting ranges from serviceable to actively distracting. But these are blemishes on a game whose combat and encounter design set a new standard. With this clarity of strengths and weaknesses, what more could one ask for?
+    Team Ninja remains Team Ninja, of course: the narrative is as thin and nonsensical as the series has ever been, and the English voice acting ranges from serviceable to actively distracting. But these are blemishes on a game whose combat and encounter design set a new standard. With this clarity of strengths and weaknesses, what more could one ask for?
 
 - title: "MIO: Memories in Orbit"
   type: "game"
@@ -5153,7 +5207,7 @@
   image: "/assets/images/thoughts/games/astro_bot.jpg"
   posted: "2024-09-09"
   text: |
-    Realised after platinum: these were the happiest sixteen hours I spent in a game all year. ***Astro Bot*** succeeds because Team Asobi made 'fun' the organising principle of every level's mechanics and puzzles, a decision so simple that it sounds trivial until one considers how few studios actually commit to it. Whether it is an idea reminiscent of *Mario Odyssey* (2017)'s best moments, or a brief, affectionate recreation of Aloy's adventure on the Tallnecks, each level announces its conceit, explores it with precision, and ends before the exploration becomes repetition.
+    ***Astro Bot*** succeeds because Team Asobi made 'fun' the organising principle of every level's mechanics and puzzles, a decision so simple that it sounds trivial until one considers how few studios actually commit to it. Whether it is an idea reminiscent of *Mario Odyssey* (2017)'s best moments, or a brief, affectionate recreation of Aloy's adventure on the Tallnecks, each level announces its conceit, explores it with precision, and ends before the exploration becomes repetition.
 
     <u>Team Asobi remind one that games exist to bring joy, and that joy, properly executed, is as demanding a design goal as any.</u> The one regret: I had seen too many review previews, and certain moments were spoiled. Lucky the surprises were endless anyway. Astro Bot is not a game that redefines the platformer; it is a game that remembers what the platformer was for.
 
@@ -5307,7 +5361,7 @@
   image: "/assets/images/thoughts/games/rise_of_the_ronin.jpg"
   posted: "2024-06-17"
   text: |
-    Subjectively I love ***Rise of the Ronin*** very much: platinum with no regrets, comfortably in my top ten of the year. But objectivity demands the following: Team Ninja produced the worst pathfinding system I have ever seen; the Blue Demon's moveset designer should probably have been let go; it drops frames the moment anything catches fire; and Team Ninja has yet to match *Nioh 2* (2020)'s highs.
+    I love ***Rise of the Ronin*** deeply, and I will not pretend otherwise. Team Ninja produced the worst pathfinding system I have ever seen; the Blue Demon's moveset designer should probably have been let go; it drops frames the moment anything catches fire; and Team Ninja has yet to match *Nioh 2* (2020)'s highs.
 
     And yet. The Bakumatsu setting is vividly realised, the character relationships carry real weight, and the combat, when it works, still carries that unmistakable Team Ninja precision. <u>A deeply flawed game that I loved unreservedly, which is perhaps the most confusing critical position one can occupy.</u>
 
@@ -5465,7 +5519,7 @@
   image: "/assets/images/thoughts/games/ori_and_the_will_of_the_wisps.jpg"
   posted: "2023-10-23"
   text: |
-    Finally got all achievements; and in 2023, ***Ori and the Will of the Wisps*** is still the finest fusion of metroidvania and platforming, surpassing even *Hollow Knight* (2017) in art direction and platforming. Moon Studios took everything that made *Ori and the Blind Forest* (2015) extraordinary and expanded it without dilution: the movement is more fluid, the world larger and more varied, and the boss encounters, a consistent weakness in the original, are here redesigned as cinematic set pieces that serve both the mechanical and narrative arcs.
+    ***Ori and the Will of the Wisps*** remains the finest fusion of metroidvania and platforming, surpassing even *Hollow Knight* (2017) in art direction and movement design. Moon Studios took everything that made *Ori and the Blind Forest* (2015) extraordinary and expanded it without dilution: the movement is more fluid, the world larger and more varied, and the boss encounters, a consistent weakness in the original, are here redesigned as cinematic set pieces that serve both the mechanical and narrative arcs.
 
     <u>The final boss fight is exceptional on every dimension: narrative, art, and mechanics converge into something that feels less like a climax and more like a resolution.</u> Not sure when the next metroidvania this beautiful will appear.
 
@@ -5579,7 +5633,7 @@
   image: "/assets/images/thoughts/games/divinity.jpg"
   posted: "2023-06-22"
   text: |
-    The first game after *The Binding of Isaac* (2011) where I hit 150-plus hours: four playthroughs, tried speedrunning, tried full collectibles, got platinum, and still found new plot threads on the latest run. ***Divinity: Original Sin II***'s reactivity is exceptional: across the main quest, nearly every major choice produces visible, long-term consequences. <u>The world-building, the textual breadth and depth, the scene design: a world this vast and still this detailed is rare even in current triple-A.</u>
+    ***Divinity: Original Sin II***'s reactivity is exceptional: across the main quest, nearly every major choice produces visible, long-term consequences, and even across multiple playthroughs new plot threads continue to surface. <u>The world-building, the textual breadth and depth, the scene design: a world this vast and still this detailed is rare even in current triple-A.</u>
 
     The one disappointment is that the reactivity does not extend everywhere: many non-quest world scenes have quite low responsiveness. But none of that stops DOS2 being one of the greatest CRPGs. <u>It broke new ground in world-building, player agency, and environmental interactivity.</u> The standard against which *Baldur's Gate 3* (2023) would later be measured.
 
@@ -5637,7 +5691,7 @@
   image: "/assets/images/thoughts/games/wo_long_fallen_dynasty.jpg"
   posted: "2023-03-19"
   text: |
-    Since this is Team Ninja, comparison with *Nioh 2* (2020) is inevitable. Compared to that, ***Wo Long: Fallen Dynasty***'s impact is stronger; the weapon and skill systems are simplified, less ARPG-feeling, but the simplification makes enjoying the combat process easier. Having platinumed *Nioh 2* (2020), the platinum here is much lighter: under eighteen hours, versus nearly ninety for Nioh 2.
+    Since this is Team Ninja, comparison with *Nioh 2* (2020) is inevitable. ***Wo Long: Fallen Dynasty***'s moment-to-moment impact is stronger; the weapon and skill systems are simplified, less ARPG-feeling, but the simplification makes the combat more immediately enjoyable. The game is deliberately brief: lean rather than sprawling, scope traded for precision.
 
     <u>Two disappointments: the narrative, though Team Ninja has never made a great narrative in anything, and enemy variety.</u> The latter is a general soulslike problem, but compared to *Jedi: Fallen Order* (2019)'s enemy count, Wo Long already does better. The run is brief but precise; one senses Team Ninja saving their deeper ambitions for *Rise of the Ronin* (2024), and Wo Long is honest enough not to pretend otherwise.
 
@@ -5877,7 +5931,7 @@
   text: |
     The first three hours are excellent, especially the moral dilemmas on Terra 2. Capitalism's company towns versus libertarian defectors: neither side looks right. People on the street notice one is wearing Marauder gear; Grace and Thomas remember what one has done for them. ***The Outer Worlds*** begins with promise and progressively empties.
 
-    <u>From the moment one steps onto the Groundbreaker, the world hollows out; companion backstories are thin enough that even Parvati and Junlei's romance comes as a surprise.</u> The thin story and unfinished systems reflect Obsidian's helplessness at the time. Still, I got platinum, which proves how important CRPG plus immersive-sim combat design is.
+    <u>From the moment one steps onto the Groundbreaker, the world hollows out; companion backstories are thin enough that even Parvati and Junlei's romance comes as a surprise.</u> The thin story and unfinished systems reflect Obsidian's helplessness at the time. Still, the CRPG-plus-immersive-sim combat loop is adhesive enough to carry one through: proof that mechanical design can compensate for a failing narrative, up to a point.
 
 - title: "A Plague Tale: Innocence"
   type: "game"
@@ -5959,7 +6013,7 @@
   image: "/assets/images/thoughts/games/ghost_of_tsushima.jpg"
   posted: "2022-06-28"
   text: |
-    Looking back after platinum, the optimal way to experience ***Ghost of Tsushima: Director's Cut*** is probably to ignore every side quest and play the main story straight through: a normal difficulty curve, minimal repetition. Regardless of approach, this sits alongside *Horizon Zero Dawn* (2017) and *Horizon Forbidden West* (2022) in the open-world canon: the visuals are comparatively superior, and everything else, every strength and every flaw, is indistinguishable from the formula.
+    The optimal way to experience ***Ghost of Tsushima: Director's Cut*** is probably to ignore every side quest and play the main story straight through: a normal difficulty curve, minimal repetition. Regardless of approach, this sits alongside *Horizon Zero Dawn* (2017) and *Horizon Forbidden West* (2022) in the open-world canon: the visuals are comparatively superior, and everything else, every strength and every flaw, is indistinguishable from the formula.
 
     The combat introduces stance-switching as a rock-paper-scissors system that brings a welcome variety rare in open-world games. But those who compare the swordplay to *Sekiro* (2019) are dreaming: one can spam the triangle button to heavy-attack-break-guard through nearly every encounter, and enemy diversity is almost non-existent; four basic human types, two beast types, and bosses without any real challenge. In this respect Ghost of Tsushima mirrors Horizon more than it resembles anything FromSoftware has made; both games let one spam heavy attacks to end fights, except Horizon's machines at least have different canisters and elemental weaknesses to learn. The side quests are worse still. Lady Masako's nine-chapter arc builds toward a duel with the protagonist, after which Ghost simply says 'Don't try to kill me again.' <u>The only side story worth praising is the monk Norio's: a fully realised character in a sea of interchangeable quest-givers.</u>
 

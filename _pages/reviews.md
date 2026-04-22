@@ -28,6 +28,7 @@ title: 'thoughts'
       autocomplete="off"
       spellcheck="false"
     />
+    <button class="thoughts-search-clear" id="thoughts-search-clear" type="button" aria-label="clear search" hidden>&times;</button>
     <span class="thoughts-search-enter" aria-hidden="true">&crarr;</span>
   </div>
   <button class="thoughts-luck-btn" id="thoughts-luck-btn" type="button">try your luck</button>

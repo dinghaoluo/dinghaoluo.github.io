@@ -40,12 +40,12 @@
 
       wrap.style.transition = 'max-height 0.42s ease';
       wrap.style.maxHeight  = targetH + 'px';
+      card.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
       wrap.addEventListener('transitionend', function handler() {
         wrap.style.maxHeight  = 'none';
         wrap.style.transition = '';
         wrap.removeEventListener('transitionend', handler);
-        card.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     }
 
@@ -86,6 +86,7 @@
     var btns = strip.querySelectorAll('.thoughts-filter-btn');
     var cards = Array.prototype.slice.call(document.querySelectorAll('.thoughts-card'));
     var searchInput = document.getElementById('thoughts-search');
+    var searchClear = document.getElementById('thoughts-search-clear');
     var luckBtn = document.getElementById('thoughts-luck-btn');
     var paginationWraps = document.querySelectorAll('.thoughts-pagination');
     var currentEls = document.querySelectorAll('.thoughts-pagination__current');
@@ -138,6 +139,34 @@
       return terms.every(function (term) {
         return haystack.indexOf(term) !== -1;
       });
+    }
+
+    function cardRelevance(card, query) {
+      if (!query) return 0;
+      var title = normalise(card.getAttribute('data-title'));
+      var creator = normalise(card.getAttribute('data-author'));
+      var year = normalise(card.getAttribute('data-year'));
+      var type = normalise(card.getAttribute('data-type'));
+      var reaction = normalise(card.getAttribute('data-reaction'));
+      var text = normalise(card.getAttribute('data-text'));
+      var score = 0;
+
+      if (title === query) score = 100;
+      else if (title.indexOf(query) === 0) score = 80;
+      else if ((' ' + title + ' ').indexOf(' ' + query + ' ') !== -1) score = 60;
+      else if (title.indexOf(query) !== -1) score = 40;
+      else if (creator === query) score = 30;
+      else if (creator.indexOf(query) !== -1) score = 20;
+      else if (year.indexOf(query) !== -1 || type.indexOf(query) !== -1 || reaction.indexOf(query) !== -1) score = 10;
+      else if (text.indexOf(query) !== -1) score = 5;
+
+      var terms = queryTerms(query);
+      if (terms.length > 1) {
+        var titleHits = terms.filter(function (t) { return title.indexOf(t) !== -1; }).length;
+        score += titleHits * 5;
+      }
+
+      return score;
     }
 
     function escapeRegExp(str) {
@@ -267,12 +296,18 @@
     }
 
     function computeMatched(filterValue, query) {
-      return cards.filter(function (card) {
+      var matched = cards.filter(function (card) {
         var cardType = (card.getAttribute('data-type') || '').toLowerCase();
         var matchesType = filterValue === 'all'
           || cardType === filterValue;
         return matchesType && cardMatchesQuery(card, query);
       });
+      if (query) {
+        matched.sort(function (a, b) {
+          return cardRelevance(b, query) - cardRelevance(a, query);
+        });
+      }
+      return matched;
     }
 
     function renderPage() {
@@ -328,6 +363,13 @@
     function applyFilter(filterValue, opts) {
       var query = currentQuery();
       matchedCards = computeMatched(filterValue, query);
+      if (query) {
+        reorderCards(matchedCards.concat(cards.filter(function (c) {
+          return matchedCards.indexOf(c) === -1;
+        })));
+      } else if (!isShuffled) {
+        restoreChronologicalOrder();
+      }
       if (!opts || !opts.preservePage) currentPage = 1;
       renderPage();
     }
@@ -360,10 +402,9 @@
       setTimeout(function () {
         if (!target.classList.contains('is-open')) {
           target.click();
-        }
-        setTimeout(function () {
+        } else {
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 120);
+        }
       }, 350);
 
       return true;
@@ -378,6 +419,10 @@
       }
     }
 
+    window.addEventListener('hashchange', function () {
+      handleHash();
+    });
+
     btns.forEach(function (btn) {
       btn.addEventListener('click', function (e) {
         e.preventDefault();
@@ -388,12 +433,25 @@
       });
     });
 
+    function updateSearchClear() {
+      if (searchClear) searchClear.hidden = !searchInput || !searchInput.value;
+    }
+
     if (searchInput) {
       searchInput.addEventListener('input', function () {
+        updateSearchClear();
         clearTimeout(searchTimer);
         searchTimer = setTimeout(function () {
           applyFilter(currentFilter());
         }, 180);
+      });
+    }
+
+    if (searchClear) {
+      searchClear.addEventListener('click', function () {
+        if (searchInput) { searchInput.value = ''; searchInput.focus(); }
+        updateSearchClear();
+        applyFilter(currentFilter());
       });
     }
 

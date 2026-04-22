@@ -7,6 +7,7 @@
     if (!grid) return;
 
     var searchInput = document.getElementById('album-wall-search');
+    var searchClear = document.getElementById('album-wall-search-clear');
     var luckBtn = document.getElementById('album-wall-luck');
     var paginationWraps = document.querySelectorAll('.album-wall__pagination');
     var prevBtns = document.querySelectorAll('.album-wall__prev');
@@ -217,13 +218,60 @@
       ordered.forEach(function (tile) { grid.appendChild(tile); });
     }
 
+    function tileRelevance(tile, query) {
+      if (!query) return 0;
+      var title = normalise(tile.getAttribute('data-title'));
+      var artist = normalise(tile.getAttribute('data-artist'));
+      var genre = normalise(tile.getAttribute('data-genre'));
+      var year = normalise(tile.getAttribute('data-year'));
+      var reaction = normalise(tile.getAttribute('data-eval'));
+      var text = normalise(tile.getAttribute('data-text'));
+      var score = 0;
+
+      if (title === query) score = 100;
+      else if (title.indexOf(query) === 0) score = 80;
+      else if ((' ' + title + ' ').indexOf(' ' + query + ' ') !== -1) score = 60;
+      else if (title.indexOf(query) !== -1) score = 40;
+      else if (artist === query) score = 30;
+      else if (artist.indexOf(query) !== -1) score = 20;
+      else if (year.indexOf(query) !== -1 || genre.indexOf(query) !== -1 || reaction.indexOf(query) !== -1) score = 10;
+      else if (text.indexOf(query) !== -1) score = 5;
+
+      var terms = queryTerms(query);
+      if (terms.length > 1) {
+        var titleHits = terms.filter(function (t) { return title.indexOf(t) !== -1; }).length;
+        score += titleHits * 5;
+      }
+      return score;
+    }
+
     function computeMatched(query) {
-      return tiles.filter(function (tile) { return tileMatchesQuery(tile, query); });
+      var matched = tiles.filter(function (tile) { return tileMatchesQuery(tile, query); });
+      if (query) {
+        matched.sort(function (a, b) {
+          return tileRelevance(b, query) - tileRelevance(a, query);
+        });
+      }
+      return matched;
+    }
+
+    function restoreChronologicalOrder() {
+      reorderTiles(tiles.slice().sort(function (a, b) {
+        return Number(a.dataset.originalIndex) - Number(b.dataset.originalIndex);
+      }));
+      isShuffled = false;
     }
 
     function applyFilter() {
       var query = currentQuery();
       matchedTiles = computeMatched(query);
+      if (query) {
+        reorderTiles(matchedTiles.concat(tiles.filter(function (t) {
+          return matchedTiles.indexOf(t) === -1;
+        })));
+      } else if (!isShuffled) {
+        restoreChronologicalOrder();
+      }
       currentPage = 1;
       renderPage();
     }
@@ -260,10 +308,23 @@
       return true;
     }
 
+    function updateSearchClear() {
+      if (searchClear) searchClear.hidden = !searchInput || !searchInput.value;
+    }
+
     if (searchInput) {
       searchInput.addEventListener('input', function () {
+        updateSearchClear();
         clearTimeout(searchTimer);
         searchTimer = setTimeout(applyFilter, 180);
+      });
+    }
+
+    if (searchClear) {
+      searchClear.addEventListener('click', function () {
+        if (searchInput) { searchInput.value = ''; searchInput.focus(); }
+        updateSearchClear();
+        applyFilter();
       });
     }
 
