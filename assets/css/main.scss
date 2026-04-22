@@ -311,6 +311,17 @@ hr {
 // suppress the empty MM masthead shell if present
 .masthead { display: none !important; }
 
+// kill the gem's .page .page__inner-wrap { margin-top: 1em } at all widths
+.page .page__inner-wrap { margin-top: 0 !important; }
+
+// DEBUG: visible borders to trace the blank-space source — REMOVE after diagnosis
+.initial-content  { border-top: 3px solid red !important; }
+#main             { border-top: 3px solid blue !important; }
+.sidebar          { border-top: 3px solid orange !important; }
+article.page      { border-top: 3px solid green !important; }
+.page__inner-wrap { border-top: 3px solid purple !important; }
+.page-header      { border-top: 3px solid cyan !important; }
+
 
 // -------------------------
 // constrained main content column — matches masthead inner width
@@ -1280,6 +1291,26 @@ body.home .page__author-footer {
   pointer-events: none;
 }
 
+.album-wall__search-clear {
+  position: absolute;
+  right: 0.35em;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0 0.18em;
+  font-size: 1em;
+  line-height: 1;
+  color: $morandi-stone;
+  opacity: 0.65;
+  cursor: pointer;
+  transition: opacity 0.15s ease, color 0.15s ease;
+
+  &:hover { opacity: 1; color: $morandi-ink; }
+  &[hidden] ~ .album-wall__search-enter { display: inline; }
+  &:not([hidden]) ~ .album-wall__search-enter { display: none; }
+}
+
 .album-wall__luck-btn {
   flex: 0 0 auto;
   background: none;
@@ -1738,6 +1769,25 @@ body.home .page__author-footer {
 .thoughts-search-wrap:focus-within .thoughts-search-enter {
   opacity: 0.9;
   color: $site-text-nav;
+}
+
+.thoughts-search-clear {
+  position: absolute;
+  right: 0.45em;
+  bottom: 0.22em;
+  background: none;
+  border: none;
+  padding: 0 0.18em;
+  font-size: 1.1em;
+  line-height: 1;
+  color: $site-text-soft;
+  opacity: 0.65;
+  cursor: pointer;
+  transition: opacity 0.15s ease, color 0.15s ease;
+
+  &:hover { opacity: 1; color: $site-text-nav; }
+  &[hidden] ~ .thoughts-search-enter { display: inline; }
+  &:not([hidden]) ~ .thoughts-search-enter { display: none; }
 }
 
 .thoughts-filter-pill {
@@ -3071,6 +3121,7 @@ mark.thoughts-highlight {
     border-color: rgba(#9b928a, 0.32);
     &::placeholder { color: #9b928a; }
   }
+  .thoughts-search-clear { color: #9b928a; &:hover { color: #ddd3c8; } }
 
   .thoughts-luck-btn {
     color: #90a4b0;
@@ -3183,6 +3234,7 @@ mark.thoughts-highlight {
     &:focus { border-color: #c49a85; }
   }
   .album-wall__search-enter { color: #5a5450; }
+  .album-wall__search-clear { color: #6a6360; &:hover { color: #e8e2db; } }
   .album-wall__luck-btn {
     color: #9b928a;
     border-color: rgba(#9b928a, 0.22);
