@@ -147,6 +147,7 @@ $background-color:    $site-bg;
 // so the browser's font-matching algorithm maps normal-weight text to the
 // 700 face automatically, giving CJK strokes enough density next to Reforma/Faculty).
 $cjk-stack: 'LXGW WenKai Mono TC', 'Noto Sans Mono CJK SC', 'Source Han Mono SC', 'Microsoft YaHei';
+$intl-stack: 'Noto Sans Arabic', 'Noto Sans Thai', 'Noto Sans';
 
 // -------------------------
 // base
@@ -930,7 +931,7 @@ body.home .page__author-footer {
 
 .sidebar-thought__title {
   display: block;
-  font-family: 'Faculty Glyphic', $cjk-stack, serif;
+  font-family: 'Faculty Glyphic', $cjk-stack, $intl-stack, serif;
   font-size: 0.82em;
   font-weight: normal;
   color: $morandi-ink;
@@ -1083,7 +1084,7 @@ body.home .page__author-footer {
 }
 
 .thoughts-card__title {
-  font-family: 'Faculty Glyphic', $cjk-stack, serif;
+  font-family: 'Faculty Glyphic', $cjk-stack, $intl-stack, serif;
   font-weight: normal;
   font-size: 0.88em;
   color: $morandi-ink;
@@ -1091,23 +1092,22 @@ body.home .page__author-footer {
 
 .thoughts-card__year {
   margin-left: 0.62em;
-  font-size: 0.78em;
+  font-size: 0.74em;
   font-weight: normal;
   color: $morandi-muted-soft;
   white-space: nowrap;
 }
 
 .thoughts-card__season {
-  font-size: 0.82em;
-  color: $morandi-muted-soft;
+  font-size: 0.86em;
+  color: $morandi-muted;
   font-weight: normal;
 }
 
 .thoughts-card__title-en {
-  font-size: 0.82em;
+  font-size: 0.86em;
   color: $morandi-muted;
   font-weight: normal;
-  font-style: italic;
   margin-left: 0.35em;
 }
 
@@ -1393,7 +1393,7 @@ body.home .page__author-footer {
 }
 
 .album-tile__title {
-  font-family: 'Faculty Glyphic', $cjk-stack, serif;
+  font-family: 'Faculty Glyphic', $cjk-stack, $intl-stack, serif;
   font-size: 0.88em;
   font-weight: normal;
   line-height: 1.22;
@@ -1752,7 +1752,8 @@ body.home .page__author-footer {
 .thoughts-search-enter {
   position: absolute;
   right: 0.65em;
-  bottom: 0.38em;
+  top: 50%;
+  transform: translateY(-50%);
   font-family: 'Mononoki', monospace;
   font-size: 1em;
   line-height: 1;
@@ -1770,7 +1771,8 @@ body.home .page__author-footer {
 .thoughts-search-clear {
   position: absolute;
   right: 0.45em;
-  bottom: 0.22em;
+  top: 50%;
+  transform: translateY(-50%);
   background: none;
   border: none;
   padding: 0 0.18em;
@@ -1981,7 +1983,7 @@ body.home .page__author-footer {
   }
 
   .thoughts-card__year {
-    font-size: 0.76em;
+    font-size: 0.72em;
   }
 
   .thoughts-card__creator {
@@ -2655,7 +2657,7 @@ mark.thoughts-highlight {
 }
 
 .writing-entry__title {
-  font-family: 'Faculty Glyphic', $cjk-stack, serif;
+  font-family: 'Faculty Glyphic', $cjk-stack, $intl-stack, serif;
   font-size: 1.08em;
   font-weight: normal;
   color: $morandi-ink;

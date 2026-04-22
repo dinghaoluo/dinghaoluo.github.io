@@ -2,7 +2,8 @@
 # Book Reviews
 # -------------------------------------------------------
 
-- title: "The Deserters"
+- title: "Les Déserteurs"
+  title_en: "The Deserters"
   type: "book"
   creator: "Mathias Énard"
   creator_role: "by"
@@ -221,7 +222,8 @@
 
     And what comedy. Lethem's prose elevates an already brilliant premise to cult-classic territory: joke after joke, pun after pun, delivered with the deadpan of someone who understands that the funniest things are also the saddest. The entanglement of the cosmos and consciousness, grand love and small love, calls to mind Nolan's *Interstellar* (2014), Fisher's essay on the same, the way physics occasionally stumbles into the territory of feeling and finds it was already there. What makes the novel work, finally, is that Lethem does not take it too seriously. The lightness is earned, not evasive. Philip's heartbreak is real, his jealousy of a particle-physics experiment absurd and painful, and <u>the resolution, such as it is, lands with the tenderness of someone who knows that love is mostly a matter of what the universe decides to let through.</u>
 
-- title: "Waiting for Godot"
+- title: "En attendant Godot"
+  title_en: "Waiting for Godot"
   type: "book"
   creator: "Samuel Beckett"
   creator_role: "by"
@@ -409,7 +411,8 @@
 
     Auster's obsession with chance has never been mere cleverness; in Moon Palace it reaches something like a *cosmology*. The moon recurs as motif and metaphor: Victor's Moon Palace restaurant, the 1969 lunar landing, the lunar imagery in Effing's desert paintings. The moon is the irrational, the gravitational pull of accident on identity, and Fogg's life orbits it helplessly. <u>Searching for Effing's cave, and through it for meaning, and finding nothing, lost in the American desert, watching the moon finally 'find its place in the darkness': drifting Marco Fogg, like Phileas Fogg returning from his circumnavigation of the globe, finally makes peace with his own life.</u> That final image is one of the most beautiful things Auster ever wrote. I cannot forgive the flat women; I cannot deny the force.
 
-- title: "Stolen"
+- title: "Stöld"
+  title_en: "Stolen"
   type: "book"
   creator: "Ann-Helén Laestadius, trans. Rachel Willson-Broyles"
   creator_role: "by"
@@ -448,7 +451,8 @@
 
     His strength is directness and sharpness, though some Lacanian concepts remain overly opaque, giving the rhythm an uneven quality, lurching between electrifying polemic and passages that feel like theoretical throat-clearing. But the insight at the intersection of politics and psychoanalysis is undeniable. Chapter three applies almost too obviously to a certain country's current situation, and, more diffusely, to the liberal democracies too: sanctifying tragedy, tabooising totalitarianism, concretising the individual, dogmatising myth. The pattern Žižek identifies, in which the very invocation of 'totalitarianism' becomes a thought-stopper rather than a thought, feels more relevant now than when he wrote it. <u>One does not have to follow every Lacanian loop to recognise the central claim: that the loudest anti-totalitarians are sometimes the ones least willing to examine the structures they defend.</u>
 
-- title: "The Outsider"
+- title: "L'Étranger"
+  title_en: "The Outsider"
   type: "book"
   creator: "Albert Camus"
   creator_role: "by"
@@ -463,7 +467,8 @@
 
     Postcolonial criticism rightly notes the unnamed Arab, the colonial violence that Camus renders invisible even as he renders Meursault's alienation visible. One should hold both things at once: the novel's philosophical power and its moral blind spot, the precision of its diagnosis and the narrowness of its sympathy. But what draws me back, what makes me envy Meursault rather than merely analyse him, is simpler and harder to say. <u>He refuses to lie. He refuses the membrane.</u> By the final pages, facing execution, he opens himself to the 'gentle indifference of the world' and finds it fraternal. I have never managed that. I suspect most people have not. Pretending to care, just to get through tomorrow.
 
-- title: "Misogyny"
+- title: "女ぎらい"
+  title_en: "Misogyny"
   type: "book"
   creator: "Chizuko Ueno"
   creator_role: "by"
@@ -554,7 +559,8 @@
 
     The second half is a critique of Leni Riefenstahl: clear in its positions, uncompromising in its refusal to separate aesthetics from politics, but the argumentation is a bit thin, not entirely convincing. Sontag wants to demonstrate that Riefenstahl's visual language is inherently fascist, that the celebration of physical beauty and heroic submission cannot be disentangled from the ideology it served. The claim is strong, perhaps too strong for the evidence marshalled here, which feels compressed to the point of assertion. One senses the essay reaching for the force of *Fascinating Fascism* (1975) without quite achieving it. Still, the collection as a whole serves as a reminder that Sontag's feminism was never comfortable, never programmatic: <u>it was the feminism of someone who resisted the label even as she could not stop thinking about the problem.</u> That discomfort is part of its value.
 
-- title: "When We Cease to Understand the World"
+- title: "Un verdor terrible"
+  title_en: "When We Cease to Understand the World"
   type: "book"
   creator: "Benjamín Labatut"
   creator_role: "by"
@@ -606,7 +612,8 @@
 
     Even with a psychology background, I encountered experiments I had never heard of. Two in particular have stayed with me. The drone soldier in the Iraq War: a man who kills by remote control, thousands of miles from the explosion, and still develops PTSD, because the brain does not fully distinguish between pulling a trigger and clicking a mouse when the consequence is a human body coming apart on a screen. <u>And the Christmas truce of 1914: soldiers climbing out of trenches to exchange gifts with men they had been trying to kill hours earlier, because proximity and shared humanity, given even the smallest opening, can override the most powerful propaganda.</u> Sapolsky's determinism has drawn criticism from philosophers who insist on the irreducibility of agency. Perhaps they are right. But the book's moral force does not depend on settling that question. <u>It depends on making one feel, with the weight of seven hundred pages of evidence, that understanding why we behave as we do is the precondition for behaving better.</u>
 
-- title: "The Idiot"
+- title: "Идиот"
+  title_en: "The Idiot"
   type: "book"
   creator: "Fyodor Dostoevsky"
   creator_role: "by"
@@ -658,7 +665,8 @@
 
     What surprised me most was the melancholy. Beneath the absurdism runs something bleak: Arthur Dent is a man who has lost everything, his home, his planet, his species, and the universe responds with paperwork and bad poetry. Slartibartfast explaining how the Vogon demolition fleet arrived, 'That's bureaucracy for you!', is funny precisely because it is terrifying. <u>Adams understood, long before it became fashionable to say so, that the real horror is not malice but indifference; that the universe is not hostile, merely unhelpful.</u> <u>He has people thinking seriously about the role of towels in civilisation, and somehow that sentence is not a joke.</u> I loved every page. The towel stays packed.
 
-- title: "Seven Brief Lessons on Physics"
+- title: "Sette brevi lezioni di fisica"
+  title_en: "Seven Brief Lessons on Physics"
   type: "book"
   creator: "Carlo Rovelli"
   creator_role: "by"
@@ -839,7 +847,7 @@
   image: "/assets/images/thoughts/films/revolutionary_road.jpg"
   posted: "2026-02-02"
   text: |
-    Even if one manages to escape ***Revolutionary Road***, to escape the suburb and the job one tells oneself one does not care about, one cannot in the end escape an absurd and meaningless life built inside an absurd and meaningless marriage. What Yates understood, and what Mendes renders with an almost clinical precision, is that the dream of escape, Paris as a destination, the idea of a different life that is almost visible from where one stands, is not disrupted by external circumstance. It is disrupted by the self, by the accumulated sediment of self-deception that makes the dream necessary in the first place. <u>The 'revolution' is structurally futile; the target can be seen but never touched.</u>
+    Even if one manages to escape Revolutionary Road, to escape the suburb and the job one tells oneself one does not care about, one cannot in the end escape an absurd and meaningless life built inside an absurd and meaningless marriage. What Yates understood, and what Mendes renders with an almost clinical precision, is that the dream of escape, Paris as a destination, the idea of a different life that is almost visible from where one stands, is not disrupted by external circumstance. It is disrupted by the self, by the accumulated sediment of self-deception that makes the dream necessary in the first place. <u>The 'revolution' is structurally futile; the target can be seen but never touched.</u>
 
     Michael Shannon's John Givings, the mathematician who has passed through breakdown and returned with the unwanted gift of transparency, is not the film's mad character so much as its only sane one. The madman in this structure is merely an outsider who lights the fuse of what has long been primed. The explosion was always coming. <u>What the film finally refuses to do is to assign guilt, because guilt would imply agency, and the horror it wants to convey is precisely that no one is free enough to be guilty.</u>
 
@@ -1647,7 +1655,7 @@
   image: "/assets/images/thoughts/films/flow.jpg"
   posted: "2024-11-08"
   text: |
-    ***Flow*** is the best animated film I have seen in years, the kind of film I kept hoping *The Wild Robot* (2024) would turn out to be. Made on a tiny budget using open-source software, by a Latvian director and a small team, it achieves visual effects: water simulation, light refraction, the quality of late-afternoon gold through leaves, that rival anything a major studio produced in 2024. But technique is the least of it. What Zilbalodis understands, and what distinguishes the film from almost all its contemporaries, is that the camera is an emotional instrument first. <u>The world is flooded; humans are gone; the animals that remain must navigate structures built for a species that no longer exists.</u> The allegory is legible without ever being laboured.
+    ***Flow*** is the animated film *The Wild Robot* (2024) should have been. Made on a tiny budget using open-source software, by a Latvian director and a small team, it achieves visual effects: water simulation, light refraction, the quality of late-afternoon gold through leaves, that rival anything a major studio has produced. But technique is the least of it. What Zilbalodis understands, and what distinguishes the film from almost all its contemporaries, is that the camera is an emotional instrument first. <u>The world is flooded; humans are gone; the animals that remain must navigate structures built for a species that no longer exists.</u> The allegory is legible without ever being laboured.
 
     The black cat at the centre is, categorically, a cat: solitary, suspicious, reluctant to accept help, constitutionally averse to trust. The film's entire arc is the slow, wordless erosion of that reluctance, and it earns every millimetre of it. The two herons' standoff held me completely still; the capybara's impassive serenity functioned as a kind of running philosophical counterpoint. Every animal moves with a specificity of weight and hesitation that communicates interiority without anthropomorphism, which is an extraordinary technical and imaginative feat.
 
@@ -2423,7 +2431,7 @@
   image: "/assets/images/thoughts/films/dont_look_up.jpg"
   posted: "2022-01-11"
   text: |
-    The satirical premise is sound, and when the film lands it lands with real force: the transformation of a nervous academic into a media-managed celebrity scientist is DiCaprio's best comic work in years, and the bureaucratic inertia of the Planetary Defence sequences has the bleak accuracy of genuine institutional satire. The problem is inconsistency of confidence. McKay seems uncertain whether he is making a film or delivering a brief, and that uncertainty produces sequences, particularly the two post-credits additions and the film's broader treatments of political media, that abandon the register entirely for something closer to sketch comedy. <u>'Dark comedy' names a tonal contract; one cannot honour it selectively.</u> <u>The satire is good when it trusts itself.</u> Everything else is carried by DiCaprio, which is a narrow base for a film of this ambition.
+    The satirical premise is sound, and when the film lands it lands with real force: the transformation of a nervous academic into a media-managed celebrity scientist is DiCaprio's finest comic work, and the bureaucratic inertia of the Planetary Defence sequences has the bleak accuracy of genuine institutional satire. The problem is inconsistency of confidence. McKay seems uncertain whether he is making a film or delivering a brief, and that uncertainty produces sequences, particularly the two post-credits additions and the film's broader treatments of political media, that abandon the register entirely for something closer to sketch comedy. <u>'Dark comedy' names a tonal contract; one cannot honour it selectively.</u> <u>The satire is good when it trusts itself.</u> Everything else is carried by DiCaprio, which is a narrow base for a film of this ambition.
 
 - title: "The Last Duel"
   type: "film"
@@ -2771,7 +2779,7 @@
   image: "/assets/images/thoughts/films/leviathan_левиафан.jpg"
   posted: "2021-02-21"
   text: |
-    The best contemporary Russian film I have seen. Its scope is vast in the way that cold and silence are vast: the Kola Peninsula coastline, the Arctic light, Mikhail Krichman's cinematography making desolation feel like a philosophical argument. Zvyagintsev layers his Leviathans deliberately: Hobbes's sovereign state as sea monster, the biblical beast from the Book of Job, and the literal whale skeleton bleaching on the beach outside Kolya's house. What is most remarkable about that skeleton is what it does not do in the film: it is simply there, passed by, taken for granted, part of the landscape. Nobody in the film stops to contemplate it. Nobody needs to. <u>The deepest impressions are always the ones that the film refuses to underline.</u>
+    ***Leviathan*** is a film of formidable formal discipline. Its scope is vast in the way that cold and silence are vast: the Kola Peninsula coastline, the Arctic light, Mikhail Krichman's cinematography making desolation feel like a philosophical argument. Zvyagintsev layers his Leviathans deliberately: Hobbes's sovereign state as sea monster, the biblical beast from the Book of Job, and the literal whale skeleton bleaching on the beach outside Kolya's house. What is most remarkable about that skeleton is what it does not do in the film: it is simply there, passed by, taken for granted, part of the landscape. Nobody in the film stops to contemplate it. Nobody needs to. <u>The deepest impressions are always the ones that the film refuses to underline.</u>
 
     On finishing it, there is a strange and indescribable alienation, the kind that takes hours to metabolise. The whale skeleton echoes in the mind long after the film has ended, insisting on a meaning that one cannot quite close. Close behind it: the barbecue scene, everyone drinking and eating in the ruins while portraits of the dispossessed, Lenin first among them, serve as shooting targets. History treated as target practice, ideology as something to pot at for sport. The Orthodox church built on the ruins of Kolya's home in the final sequence completes the film's argument about the unholy alliance between state power and religious authority in Putin-era Russia: <u>the individual is devoured, the institution consecrates the devouring, and life continues.</u>
 
@@ -4470,7 +4478,8 @@
 
     Melancholy is the word.
 
-- title: "WUCHANG: Fallen Feathers"
+- title: "明末：渊虚之羽"
+  title_en: "Wuchang: Fallen Feathers"
   type: "game"
   creator: "Leenzee Games"
   creator_role: "by"
@@ -4950,11 +4959,11 @@
   image: "/assets/images/thoughts/games/1000xresist.jpg"
   posted: "2024-12-16"
   text: |
-    I could not have predicted that my game of the year for 2024 would be a half-visual-novel. ***1000xRESIST*** is the most searing narrative I experienced all year: not merely a science-fiction story about memory and forgetting, but a sustained act of self-examination in which individual trauma and collective history fold into each other until neither can be separated from the other.
+    I could not have predicted that a half-visual-novel would dismantle me like this. ***1000xRESIST*** is the most searing narrative I have encountered in games: not merely a science-fiction story about memory and forgetting, but a sustained act of self-examination in which individual trauma and collective history fold into each other until neither can be separated from the other.
 
     The second chapter is a farewell ceremony. Iris opens her suitcase and examines each item: the easel, the notebook, the stuffed whale. Her father brings longevity noodles on her birthday; she only wants pizza. Her mother Clara's flat instructions, 'bring a jacket, do not catch a cold' and 'do not sleep with wet hair', sound mundane and arrive like chains. Iris's rebellion is not a rejection of family but an attempt to escape the weight of inherited memory. Against this, Jiao's arc mirrors the immigrant identity crisis in miniature: she tries desperately to belong, to mirror Iris, to earn closeness, and receives only coldness. <u>The depiction of trauma is precise and unsparing.</u> Clara's sleepwalking re-enacts the 2019 Hong Kong protests without her knowledge: she strikes the balcony glass at night, the image inseparable from police batons and bloodied faces. These wounds pass from mother to daughter through language and behaviour until the cycle devours everyone. The game's deepest complication is that Iris is an unreliable narrator who can alter her own memories; one is never certain whether Clara's betrayal was real or fabricated to justify what follows. This ambiguity is the generational trauma chain itself: Iris's unresolved guilt becomes the foundational wound of the entire Sisters' civilisation, every clone inheriting the consequences of a violence whose justification may be a lie. The Occupants, the game's colonisers, refine human suffering into resource, creating diseases that make people weep without cease so that memory can be harvested. Secretary's line cuts deepest: 'Iris must die, otherwise nothing will change.'
 
-    <u>But most of all, this is a story about the question that lives inside every suitcase: what one chooses to carry and what one chooses to leave behind.</u> The final trial forces a reckoning: whose memory enters the future, whose remains in the past. Some things cannot fit in the backpack. The black umbrellas drifting through subway corridors, the blood, the narrow lanes between tower blocks, the farewell words repeated across generations: these are both the history one cannot escape and the foundation on which one walks forward. Letting go is not betrayal; it is courage. My game of the year.
+    <u>But most of all, this is a story about the question that lives inside every suitcase: what one chooses to carry and what one chooses to leave behind.</u> The final trial forces a reckoning: whose memory enters the future, whose remains in the past. Some things cannot fit in the backpack. The black umbrellas drifting through subway corridors, the blood, the narrow lanes between tower blocks, the farewell words repeated across generations: these are both the history one cannot escape and the foundation on which one walks forward. Letting go is not betrayal; it is courage.
 
 - title: "Portal 2"
   type: "game"
@@ -5056,7 +5065,8 @@
 
     I am convinced the *Golden Idol* (2022) series will enter the history of detective games alongside *Return of the Obra Dinn* (2018). <u>The adaptive music deserves particular mention: the audio and musical shifts responding to the scene as one investigates are perfectly calibrated, and the soundtrack itself is among the best in indie gaming.</u> The way the score modulates as one approaches a solution, tightening its harmonics in sympathetic tension with the player's own cognitive state, is a level of attention to the investigative experience that most detective games never even attempt. One has not been this absorbed in a long time.
 
-- title: "Word Game (文字遊戲)"
+- title: "文字遊戲"
+  title_en: "Word Game"
   type: "game"
   creator: "Team9"
   creator_role: "by"
@@ -5220,7 +5230,7 @@
   image: "/assets/images/thoughts/games/hellblade.jpg"
   posted: "2024-10-02"
   text: |
-    Without question, ***Hellblade: Senua's Sacrifice*** is the most heartbreaking, most emotionally turbulent game I played in 2024. It is rare to see every game mechanic, every visual and auditory design decision, every boss fight and puzzle fused with narrative this completely: a game built with fifteen people that delivers a masterclass in how mechanics can serve psychological portraiture. From the moment one sees Dillion's skull tied to Senua's waist, the game establishes its central conceit: the player is not an observer but the fourteenth voice, one more fragment of Senua's fractured psyche, part of the darkness her father Zynbel cannot see.
+    ***Hellblade: Senua's Sacrifice*** is among the most emotionally complete games I have played: every mechanic, every visual and auditory design decision, every boss fight and puzzle fused with narrative in service of psychological portraiture. A game built with fifteen people that delivers a masterclass in how mechanics can do the work of prose. From the moment one sees Dillion's skull tied to Senua's waist, the game establishes its central conceit: the player is not an observer but the fourteenth voice, one more fragment of Senua's fractured psyche, part of the darkness her father Zynbel cannot see.
 
     Before facing Hela, Senua must pass through two trials that embody different dimensions of her illness. Valravn's illusion trial is psychosis rendered as level design: angles shift, realities overlap, and Ninja Theory use the seamless transitions between planes to externalise Senua's experience of hallucination with terrifying precision. The core question lands not as text but as architecture: what is real, and whose reality is the real one? Surtr's fire, by contrast, is trauma made literal: the flames that consumed Senua's mother Galena at her father's instigation, the Viking slaughter that shattered her world, all crystallised into a single burning gauntlet. Through these two trials, the game assembles Senua's past piece by piece until she recognises Zynbel's manipulation for what it was, until she sees the value in her own dark inner world.
 
@@ -5310,7 +5320,8 @@
 
     All the bosses are good bosses. The shell mechanic is fun. The environmental humour is consistently inventive. But the deliberate spite of Floatsam Vale and Scuttleport cannot be excused; the game is already hard enough without adding 'roundabout unfair difficulty' through geometry rather than combat. <u>Without those two zones, perhaps a five-star game. With them, the generosity of the early hours curdles into frustration.</u>
 
-- title: "Black Myth: Wukong"
+- title: "黑神话：悟空"
+  title_en: "Black Myth: Wukong"
   type: "game"
   creator: "Game Science"
   creator_role: "by"
@@ -5338,7 +5349,8 @@
 
     <u>Having played *The Case of the Golden Idol* (2022), I have even more admiration for Obra Dinn, which inspired the whole genre.</u> Pope's achievement is not merely that he created a detective game of uncommon logical rigour; it is that he made the act of deduction feel like an aesthetic experience, each correct identification landing not with the satisfaction of a puzzle solved but with the weight of a life acknowledged. I love this journey.
 
-- title: "Nine Sols"
+- title: "九日"
+  title_en: "Nine Sols"
   type: "game"
   creator: "Red Candle Games"
   creator_role: "by"
@@ -5660,7 +5672,7 @@
   image: "/assets/images/thoughts/games/katana_zero.jpg"
   posted: "2023-07-10"
   text: |
-    One of the most impactful games I have ever played, by some distance. In just four hours, ***Katana ZERO*** transmits the entire worldbuilding of a post-war alternate setting to the player. The Behemoth plushie under the sofa bed, the herbal tea every night before sleep, the cassette player opened before each mission, the glitch simulating Chronos's effect: using the format of the game itself to show a memory-erased soldier's past, present, and future.
+    One of the most precisely built games I have played. In just four hours, ***Katana ZERO*** transmits the entire worldbuilding of a post-war alternate setting to the player. The Behemoth plushie under the sofa bed, the herbal tea every night before sleep, the cassette player opened before each mission, the glitch simulating Chronos's effect: using the format of the game itself to show a memory-erased soldier's past, present, and future.
 
     <u>Askiisoft understood that brevity is not a concession but a weapon: every scene in Katana ZERO carries the density it does because nothing is wasted.</u> The combat's instant-death mechanic is not mere difficulty; it is a narrative device, each failed attempt a timeline that did not happen, each success the canonical version. Form and content are inseparable. Four hours that leave a mark deeper than most forty-hour games manage.
 
@@ -6258,7 +6270,7 @@
   image: "/assets/images/thoughts/games/nioh_2.jpg"
   posted: "2022-04-27"
   text: |
-    A lot of assets carried over from the original, but ***Nioh 2*** invested heavily in environmental detail: even side missions in the same map feel fresh. <u>The action system does not need analysis: the best combat design of any game I have played.</u> Ki Pulse, stance switching, burst counters, yokai abilities: Team Ninja layered system upon system and somehow produced not complexity but clarity.
+    A lot of assets carried over from the original, but ***Nioh 2*** invested heavily in environmental detail: even side missions in the same map feel fresh. <u>The action system does not need analysis: the most intricate combat design in the soulslike genre.</u> Ki Pulse, stance switching, burst counters, yokai abilities: Team Ninja layered system upon system and somehow produced not complexity but clarity.
 
     With the positives said, the flaws are equally clear. The box-room design limits replayability, and late-game boss design is poor: last-two-chapter bosses have too much hyper-armour, too little recovery animation, most propped up by sheer health. Gets dull toward the end, same as *Elden Ring* (2022)'s late game. But one does not remember a game like this for its endings; one remembers the first time Ki Pulse clicked, the first time three stance-switches threaded a combo through a yokai's guard. The muscle memory stays.
 

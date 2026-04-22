@@ -65,6 +65,21 @@ A `d / l` toggle button (fixed top-right, `#theme-toggle`) lets users override s
 
 Rule of thumb: if a prepositional phrase sits between the head noun and the zero-relative clause (`noun [prep phrase] I verb`), add 'that'. If the relative clause is immediately post-nominal (`noun I verb`), zero-relative is fine.
 
+### Superlative watchlist
+
+Overdramatic or temporally anchored superlatives undercut the timeless register of reviews. Flag and fix any of the following:
+
+| pattern | problem | fix |
+|---|---|---|
+| `best/finest X I have [verb]ed in years` | Temporal anchor makes the claim a snapshot, not a judgement. | Remove 'in years', or replace with a specific claim: 'one of the finest X of its kind', or restructure to lead with what the work does rather than how it ranks. |
+| `my game/film/album of the year for [year]` | Explicit temporal ranking; banned by no-temporal-embedding rule. | Remove entirely; close on a timeless judgement instead. |
+| `the most X I [verb]ed all year / in [year]` | Same problem. | Replace with `the most X I have encountered in [genre/medium]`. |
+| `Without question, … is the most X` | 'Without question' is an unearned intensifier. | Drop it; let the claim stand on its own. |
+| `by some distance` after a superlative | Doubles down on a claim that was already absolute. | Remove. |
+| `best X of any [medium] I have played/seen/read` | All-time personal ranking feels overdramatic. | Make it genre-specific: 'the most X in the soulslike genre', or drop to 'one of the finest'. |
+
+**Defensible superlatives** (do not tone down): those where the category is narrow enough to make the claim precise rather than dramatic — e.g. 'the finest concept album on Alzheimer's disease I have encountered', 'the most compelling Marx introduction I have read'. Specificity of category earns the superlative.
+
 ## key file locations
 
 | what | where |
