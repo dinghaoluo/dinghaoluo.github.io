@@ -197,8 +197,10 @@ hr {
 // -------------------------
 .page-header {
   margin-bottom: 2.2rem;
+  padding-top: 0.8rem;
 
   @include breakpoint($large) {
+    padding-top: 1rem;
     margin-bottom: 2.6rem;
   }
 }
