@@ -55,6 +55,16 @@ A `d / l` toggle button (fixed top-right, `#theme-toggle`) lets users override s
 - subpage `.page__inner-wrap`: full width within `.page` container
 - homepage keeps sidebar author profile; subpages hide it, show footer author profile instead
 
+## prose watchlist
+
+| pattern | problem | fix |
+|---|---|---|
+| `the only X in/of [phrase] I have verb-ed` | Zero relative pronoun after interrupting prepositional phrase creates a garden-path reading; reader parses the prep phrase as the end of the NP, then stumbles on the subject 'I'. | Insert **'that'**: `the only X in/of [phrase] **that** I have verb-ed` |
+| `the same X I have / I feel` | Comparative construction needs a connector. | Insert 'that' or 'as': `the same level of dislike **that** I have for X` |
+| Simple `the [superlative] X I have verb-ed` with no intervening phrase | Fine as-is; zero relative on a directly post-nominal clause is idiomatic English. | No fix needed. |
+
+Rule of thumb: if a prepositional phrase sits between the head noun and the zero-relative clause (`noun [prep phrase] I verb`), add 'that'. If the relative clause is immediately post-nominal (`noun I verb`), zero-relative is fine.
+
 ## key file locations
 
 | what | where |

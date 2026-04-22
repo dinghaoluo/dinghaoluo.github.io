@@ -536,6 +536,7 @@
     for (var k = 0; k < shuffled.length; k++) {
       if (k < count) {
         shuffled[k].style.display = '';
+        container.appendChild(shuffled[k]);
       } else {
         shuffled[k].parentNode.removeChild(shuffled[k]);
       }
@@ -566,6 +567,7 @@
     for (var k = 0; k < shuffled.length; k++) {
       if (k < count) {
         shuffled[k].style.display = '';
+        container.appendChild(shuffled[k]);
       } else {
         shuffled[k].parentNode.removeChild(shuffled[k]);
       }

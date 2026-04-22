@@ -130,7 +130,13 @@
       "WebFetch(domain:jacobin.com)",
       "WebFetch(domain:artsfuse.org)",
       "WebFetch(domain:icsfilm.org)",
-      "WebFetch(domain:tovejansson.com)"
+      "WebFetch(domain:tovejansson.com)",
+      "WebFetch(domain:www.bfi.org.uk)",
+      "WebFetch(domain:www.newstatesman.com)",
+      "PowerShell($html = \\(Invoke-WebRequest -Uri \"https://dinghaoluo.github.io/\" -UseBasicParsing\\).Content; $start = $html.IndexOf\\('home-albums'\\); if \\($start -ge 0\\) { $html.Substring\\($start - 20, 400\\) } else { \"home-albums not found\" })",
+      "PowerShell($html = \\(Invoke-WebRequest -Uri \"https://dinghaoluo.github.io/\" -UseBasicParsing\\).Content; $start = $html.IndexOf\\('class=\"home-albums\"'\\); $end = $html.IndexOf\\('</div>', $start + 200\\); $section = $html.Substring\\($start, $end - $start\\); \\([regex]::Matches\\($section, 'home-albums__link'\\)\\).Count)",
+      "PowerShell($html = \\(Invoke-WebRequest -Uri \"https://dinghaoluo.github.io/\" -UseBasicParsing\\).Content; \\([regex]::Matches\\($html, 'thoughts-cards\\\\.js|album-wall\\\\.js'\\)\\).Value)",
+      "PowerShell($html = \\(Invoke-WebRequest -Uri \"https://dinghaoluo.github.io/\" -UseBasicParsing\\).Content; $start = $html.IndexOf\\('class=\"home-albums\"'\\); $end = $html.IndexOf\\('</div>', $start + 100\\); $section = $html.Substring\\($start, $end - $start\\); [regex]::Matches\\($section, 'alt=\"\\([^\"]+\\)\"'\\) | Select-Object -First 10 | ForEach-Object { $_.Groups[1].Value })"
     ]
   }
 }

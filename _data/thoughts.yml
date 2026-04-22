@@ -721,7 +721,7 @@
   image: "/assets/images/thoughts/books/enlightenment_now.jpg"
   posted: "2020-08-30"
   text: |
-    <u>Steven Pinker is the walking definition of confirmation bias: select the data that confirm your thesis, ignore the rest, call the result 'reason'.</u> I checked some of the claims after finishing and felt deceived, and I am still angry about it. <u>Cherry-picked time periods, poverty lines wielded like stage props, ecological catastrophe waved away with a graph that stops before the trend reverses.</u> When critics point this out he accuses them of 'progressophobia', which is the intellectual equivalent of putting one's fingers in one's ears. Plus there has been recent controversy. I cannot stand this man, approximately the same level of dislike I have for Musk.
+    <u>Steven Pinker is the walking definition of confirmation bias: select the data that confirm your thesis, ignore the rest, call the result 'reason'.</u> I checked some of the claims after finishing and felt deceived, and I am still angry about it. <u>Cherry-picked time periods, poverty lines wielded like stage props, ecological catastrophe waved away with a graph that stops before the trend reverses.</u> When critics point this out he accuses them of 'progressophobia', which is the intellectual equivalent of putting one's fingers in one's ears. Plus there has been recent controversy. I cannot stand this man, approximately the same level of dislike that I have for Musk.
 
     The deeper problem with ***Enlightenment Now*** is not the cherry-picking itself but the rhetorical framework that makes the cherry-picking invisible. Pinker presents data as though data were self-interpreting, as though the mere display of a graph settles an argument. The result is a book that mistakes correlation for causation with the confidence of someone who has confused their own optimism for evidence.
 
@@ -871,18 +871,21 @@
 
     Mendonça Filho has always been a director of place, Recife as a living entity with its own memory and its own grievances, and here the city's past is almost geological, layered beneath the present, accessible only through the kind of patient archaeology that the film itself enacts. Even with incomplete historical coordinates, the metaphor-laden cinematography manages to move profoundly: <u>this is what it looks like when a society tries to forget what its own institutions did to its own people, and what it costs to remember.</u>
 
-- title: "The Voice of Hind Rajab"
+- title: "صوت هند رجب"
+  title_en: "The Voice of Hind Rajab"
   type: "film"
-  creator: "Mehdi Fleifel"
+  creator: "Kaouther Ben Hania"
   creator_role: "dir."
   year: 2025
   eval: "loved"
   image: "/assets/images/thoughts/films/the_voice_of_hind_rajab.jpg"
   posted: "2026-01-24"
   text: |
-    Still impossible to comprehend: how can anyone so despise the ordinary civilians of another people? The question is not rhetorical; it is the question the film asks without flinching, using Hind's own recorded voice as the film's centre of gravity, a six-year-old asking to be taken, the paramedics dispatched to reach her also killed. Documentary cinema has a tradition of bearing witness when institutional language fails, and Fleifel's film belongs in that tradition, though 'tradition' is far too comfortable a word for what this material demands. <u>The contemporary critical habit of separating aesthetic evaluation from moral weight is exactly what the film exposes as obscene.</u>
+    Ben Hania builds the entire film inside a single room: the Palestine Red Crescent call centre in Ramallah, where dispatchers spend three and a half hours trying to coordinate safe passage for an ambulance to reach a six-year-old girl trapped in a car with the bodies of her family. Hind Rajab does not appear on screen. She is present only as a voice, her own recorded voice, and the film places that voice at its centre with a restraint that makes the surrounding silence unbearable. The dispatchers negotiate, plead, follow procedure; the procedure fails; the ambulance is dispatched after claimed approval; contact is lost. Twelve days later the car is found with 335 bullet holes. Everyone is dead: Hind, her six family members, both paramedics.
 
-    The comment sections are equally instructive: if one watches a film addressing a humanitarian catastrophe of this magnitude and still feels compelled to critique the filmmaking technique, to argue that it is overwrought, then the only available word is 'morally bankrupt.' In this respect, contemporary Israel's conduct toward Palestinian civilians seems, from the evidence of the film and the historical record, indistinguishable in its structure from what Germany perpetrated in its own time: the same bureaucratic dehumanisation, the same rhetorical apparatus deployed to make the killing of children legible. <u>The film does not argue this; it shows it. That is what witness means.</u>
+    The formal decision to keep all violence off-screen is not squeamishness; it is an argument about where the obscenity actually resides. What one watches is not killing but bureaucracy: the calls, the waiting, the careful language of coordination that masks the fact that no coordination is possible when one party has decided that a child's life is expendable. <u>The contemporary critical habit of separating aesthetic evaluation from moral weight is exactly what this film exposes as obscene.</u> Some critics, confronted with this material, reached for formal reservations about the ethics of embedding a real child's voice in a dramatic reconstruction. The only available response is that the child is dead, that the recording exists, and that the refusal to hear it is itself a political act. Ben Hania has been characteristically direct: 'When you amplify the voices of Palestinians, you are personally accused of being exploitative. It is another way to silence you.'
+
+    What stays is the structural parallel that the film does not need to argue because the evidence argues it: the same bureaucratic dehumanisation, the same rhetorical apparatus deployed to make the killing of children administratively legible, the same international architecture of looking away. I sat in the dark for a long time afterward. <u>The film does not argue this; it shows it. That is what witness means.</u>
 
 - title: "Blue Moon"
   type: "film"
@@ -1501,6 +1504,19 @@
   text: |
     Is this what feminist filmmaking looks like now: a film steeped in domestic violence that pivots, in its final act, to women's suffrage as the answer? The 1946 ballot is framed as liberation. <u>But tomorrow Delia goes home. Tomorrow she is still married to the same man in the same apartment in the same structural dispensation that a single vote cannot touch.</u> Cortellesi's tonal dissonance, domestic violence staged with the choreography of a musical number, has been defended as Brechtian; one finds it more symptomatic, a film uncertain whether it wants to horrify or charm, choosing both and achieving neither fully. <u>Italy's enthusiasm for the film is legible: it is the kind of cultural object that allows a society to feel its conscience has been pricked without requiring it to sit with any actual discomfort.</u>
 
+- title: "Bird"
+  type: "film"
+  creator: "Andrea Arnold"
+  creator_role: "dir."
+  year: 2024
+  eval: "liked"
+  image: "/assets/images/thoughts/films/bird.jpg"
+  posted: "2025-01-21"
+  text: |
+    Arnold's territory is the working-class British childhood; she has spent twenty years finding images for the specific texture of deprivation: not poverty as backdrop but poverty as medium, the element through which everything moves. ***Bird*** begins in a squat in Gravesend: Bailey, twelve, navigating an absent mother, a chaotic father, a brother already sliding toward criminality, an environment where stability is a concept from elsewhere. Nykiya Adams carries this without performance, reading the world around her with the flat alertness of someone who learned early that the world requires reading. Rogowski's Bird arrives, half-present, moving through Gravesend with a gentleness that refuses the logic of the place, and the film does not announce a shift; it simply allows one to happen.
+
+    Arnold calls it poetic realism rather than magical realism, and the distinction matters: the feathers that eventually appear on Bird are not a symbol to be decoded but a language for what Bailey cannot otherwise say. The central relationship resists categorisation; whether it is love, or the rehearsal of love, or something adjacent that poverty makes available when the recognised forms are foreclosed, is a question the film declines to settle. <u>I do not think it is about love either. But it is about the hunger of a twelve-year-old girl for something that does not need to be named, only reached for; and Arnold, who has spent her career translating that hunger into images, has done it again here without flinching, without sentimentalising, without telling one how to feel.</u>
+
 - title: "Ricky Gervais: Armageddon"
   type: "film"
   creator: "Ricky Gervais"
@@ -1521,7 +1537,7 @@
   image: "/assets/images/thoughts/films/jacqueline_novak_get_on_your_knees.jpg"
   posted: "2025-01-13"
   text: |
-    The only stand-up special in the past two years I have loved, and one of the best-written comedies I know of, in any form. On its surface: a sustained meditation on a specific sex act. In its actual operation: a post-structuralist feminist manifesto about the violence encoded in language, about who gets to name acts and bodies and what those names do to the people named. Why is it called a 'boner' if bones are not involved? Why 'penetrate'? Why 'enter'? <u>These are not jokes building to punchlines; they are arguments, and they are argued with a rigour that most academic feminism cannot match because it cannot also be this funny.</u>
+    The only stand-up special in the past two years that I have loved, and one of the best-written comedies I know of, in any form. On its surface: a sustained meditation on a specific sex act. In its actual operation: a post-structuralist feminist manifesto about the violence encoded in language, about who gets to name acts and bodies and what those names do to the people named. Why is it called a 'boner' if bones are not involved? Why 'penetrate'? Why 'enter'? <u>These are not jokes building to punchlines; they are arguments, and they are argued with a rigour that most academic feminism cannot match because it cannot also be this funny.</u>
 
     Novak, directed by John Early in a staging that transforms the Lucille Lortel Theatre into something between a lecture hall and a confessional, deploys erudite language as a weapon: the elevated register is not affectation but strategy, a claim on the authority that male sexual narrative has always assumed for itself. The metaphorical and allegorical layering accumulates until the special achieves something I had not anticipated: <u>philosophical velocity, the feeling that language is being used to do something language does not usually agree to do.</u>
 
@@ -1537,6 +1553,21 @@
   posted: "2024-12-23"
   text: |
     Bas Devos works in a register so quiet and so precise that it can take a full act before one realises the film has already done something rather extraordinary. There is no plot, not in any conventional sense: Stefan, a Belgian construction worker wrapping up a job before the city empties for winter, crosses paths with Shuxiu, a Chinese-Belgian researcher who studies moss, and something passes between them. A shared bowl of soup. A mutual willingness to stay still in each other's company. That is, essentially, everything. <u>And yet the film does not feel empty; it feels full in the way that presence, as opposed to event, can be full.</u> Devos's fixed camera and his sensitivity to the soft, lateral light at Brussels's edges give the film the texture of careful observation: one senses that each frame has been held long enough for something real to accumulate inside it. The moss is not incidental. Shuxiu's science becomes the film's quiet philosophy, these organisms that persist at the margins, photosynthesising in the cracks, making something from almost nothing. Stefan and Shuxiu are, in their different forms of displacement and solitude, a little like that. The film earns the analogy without pressing on it. What stays is harder to name. The encounter is neither consummated nor abandoned; it simply is, for as long as it lasts, and Devos treats that temporariness with neither melancholy nor forced significance. <u>Within these miracles, a person encounters nature, a person encounters another person, a person encounters themselves.</u> <u>I came out into the street feeling, for a few minutes, that the world was slightly more permeable than I had previously assumed.</u>
+
+- title: "The Outrun"
+  type: "film"
+  creator: "Nora Fingscheidt"
+  creator_role: "dir."
+  year: 2024
+  eval: "loved"
+  image: "/assets/images/thoughts/films/the_outrun.jpg"
+  posted: "2025-01-26"
+  text: |
+    The structure is nonlinear in the way that recovery itself is nonlinear: not a dramatic choice but a phenomenological one, the film spiralling between Orkney's slow, immense present and London's jittery flashbacks as though Rona's memory cannot hold a sequence without the sequence cracking open. Fingscheidt withholds the landscape deliberately. In the first half, Orkney is muted, grey, a place Rona endures rather than inhabits; London, in contrast, blazes with colour and kinetic damage. As sobriety accumulates, the ratio inverts. The cliffs and the North Atlantic open up, frame by frame, as though the land were waiting for her to be capable of seeing it. <u>It is a precise visual argument: the world does not change; one's capacity to receive it does.</u>
+
+    Saoirse Ronan's Rona is flinty and frail in equal measure. The performance operates through the body as much as the face: the physicality of being drunk, the sheer muscular effort of being sober, the moment on the clifftop when she conducts the waves with her arms outstretched as though she could command the storm. I watched that scene and felt something dislodge. I too want to stand like that, proud and certain as though one could truly govern the weather, composed amid nature's merciless absurdity. The 'nerd layer', Liptrot's voiceover passages about corncrakes and selkies and the geological tremors that run through Orkney like a nervous system, gives the film a texture most addiction narratives lack: the sense that the world is not a backdrop to recovery but its instrument. The corncrake, heard but never seen, migrating thousands of miles with a thirty-per-cent survival rate, is a metaphor the film is wise enough never to state aloud.
+
+    <u>What stays is the outrun itself: the rough grazing beyond the cultivated field, where land meets sea, where nothing is domestic and nothing is entirely wild.</u> Rona's recovery happens in precisely that space. By the end I was not thinking about addiction at all; I was thinking about what it would mean to belong to a landscape so completely that the landscape begins to repair what the self could not.
 
 - title: "Anora"
   type: "film"
@@ -3808,6 +3839,19 @@
 
     The temptation is to read the series as a diagnosis of the Andrew Tate moment, and it is that, but the more unsettling implication is that 'Andrew Tate' and 'incel' are not a passing cultural weather system but a permanent feature of a landscape that has been under construction for some time. Those of us born in the late twentieth century are perhaps still in the comfortable denial of believing the environment we grew up in was the norm. It wasn't; it was an interlude. <u>The channels through which boys now receive information about what it means to be a man are unverified, algorithmically amplified, and beyond the reach of any school or parent.</u> ***Adolescence*** names this clearly and with great formal and dramatic skill. What it cannot do, constrained to four episodes and the grammar of tragedy, is offer a way through. Perhaps that is honest: the aftershocks of this particular cultural formation may only become fully legible a decade from now, when the children it has shaped are adults who must be lived with.
 
+- title: "Silo Season 2"
+  type: "tv"
+  creator: "Graham Yost"
+  creator_role: "dir."
+  year: 2024
+  eval: "loved"
+  image: "/assets/images/thoughts/tv/silo_season_2.jpg"
+  posted: "2025-01-18"
+  text: |
+    ***Silo Season 2*** expands outward rather than inward, and that choice is correct. Juliette's escape and her discovery of a second silo reframes the first season's claustrophobic premise as a single cell in a much larger system of organised forgetting; the conspiracy does not terminate in a cabal of identifiable villains but in a structure that outlives anyone who built it, which is the most honest thing a conspiratorial narrative can do. The world above is not dead. The lie runs deeper than any single silo's ruling class. What the second season offers, after the patience demanded by the first, is the specific pleasure of a mystery that has earned its revelations.
+
+    Tim Robbins' Bernard is the season's great achievement: a man who began as an administrator of necessary lies and finds himself administering a lie that no longer holds its own weight. He is not a villain but a rational actor inside a system whose rationality is disintegrating, and watching him adapt, and then fail to adapt, is more interesting than watching villainy straightforwardly defeated. Juliette's return, visibly alive, visibly unclean, holding evidence of a world that exists, catalyses the uprising the second season earns; and the show has the discipline to demonstrate that even uprisings do not simply dissolve the structures they challenge. <u>One comes away with the particular satisfaction of a long curiosity rewarded: not resolved, but deepened, which is what the better kind of science fiction always gives.</u>
+
 - title: "The Bear Season 3"
   type: "tv"
   creator: "Christopher Storer"
@@ -3874,6 +3918,19 @@
     <u>Better than Season 1 in nearly every register, which was not a small achievement to surpass.</u> Season 1's urgency was inseparable from its compression, the relentless single-location pressure cooker of the beef sandwich counter; Season 2 expands the frame without losing the pressure. Uncle Jimmy finally gets the screen time the first season withheld from him, and Oliver Platt fills it with a performance of layered, sardonic feeling, a man who loves the family and distrusts it and bankrolls it with full knowledge of all three. Sydney's arc develops into something generous, her competence and ambition granted their proper weight rather than kept subordinate to Carmy's chaos.
 
     Episode 6, 'Fishes,' is the season's centrepiece and one of the finest single episodes of television in years. The structure is a Christmas Eve family dinner as pressure vessel, Jamie Lee Curtis's Donna building and building until the room itself seems to contract, and the tension-building is several levels above anything in Season 1, the dialogue so precisely placed that each exchange opens onto the next like a door onto a corridor that leads somewhere worse. <u>The Carmy-and-Claire arc gives the season its tenderness and its tragedy: the clearest demonstration that some damage makes ordinary happiness structurally impossible, not through any dramatic failure but through the simple arithmetic of what was done to someone before they had the language to resist it.</u> Series of the year, without question.
+
+- title: "Silo Season 1"
+  type: "tv"
+  creator: "Graham Yost"
+  creator_role: "dir."
+  year: 2023
+  eval: "loved"
+  image: "/assets/images/thoughts/tv/silo_season_1.jpg"
+  posted: "2023-07-03"
+  text: |
+    Yost's adaptation of Hugh Howey begins as world-building and earns its place, gradually, as political diagnosis. The silo: 144 levels, roughly 10,000 inhabitants, sealed from a world the ruling class has taught them to believe is toxic and uninhabitable. It does not ask to be read as metaphor; it is the logic of any closed authoritarian system made literal. The suppression of pre-silo history, the deliberate destruction of any evidence that the narrative might be false, the 'cleaning' ritual by which anyone expressing desire to leave is sent outside with the implicit guarantee of death: these are not symbols but mechanisms. ***Silo*** is patient in establishing them. The first half builds the world with more thoroughness than urgency, Rebecca Ferguson's Juliette Nichols asked to carry more investigative procedure than investigation, and one feels the weight of Howey's source material pressing against the available screen time.
+
+    And then the second half arrives. The anti-utopian form earns its keep not in the description of oppression but in the moment the oppressed discover that the ground itself is fabricated. Juliette obtains video evidence that the outside world is not dead and that the 'clean' image projected to all inhabitants is manufactured; Mayor Bernard's immediate, cold-blooded decision to destroy it is one of the most precisely calibrated scenes of institutional violence in recent television. He destroys the evidence not out of malice but conviction: the system requires the lie, and the lie requires protecting, and this is what authority looks like when it has stopped performing power and simply become it. <u>The back half of Season 1 is exemplary anti-utopian drama: not the genre at its most spectacular but at its most structurally honest, understanding that the lie is not incidental to the order it sustains but foundational to it.</u>
 
 - title: "For All Mankind Season 1"
   type: "tv"
@@ -3960,7 +4017,7 @@
   text: |
     I discovered the first season had already aired by the time I came to it. The wait had been long enough: six years during which one watched Trevor Noah sand down, episode by episode, the institutional edge Jon had spent sixteen years constructing at *The Daily Show*, six years of Stewart surfacing in sideline conversations with Colbert and Oliver, radiating <u>the particular restlessness of someone who knows exactly what they would do with a platform they no longer have.</u>
 
-    The Problem has fulfilled that wait in ways that were not obvious in advance. The roundtable format, which Stewart had always suited better than the monologue, gives veterans space to be heard rather than processed, their testimony on VA failures and the mental health crisis folding directly into legislative argument without the usual layer of ironic distance. The interviews are razor-sharp and logically fluid in the way his best *Daily Show* work was, but without the defensive comedy that used to cushion the confrontation: <u>Stewart is older, less interested in being liked, more interested in being useful.</u> The subject of veteran care is as urgent as it is deliberately unglamorous. That Jon chose it for his return, rather than something more obviously spectacular, is itself a kind of statement.
+    ***The Problem*** has fulfilled that wait in ways that were not obvious in advance. The roundtable format, which Stewart had always suited better than the monologue, gives veterans space to be heard rather than processed, their testimony on VA failures and the mental health crisis folding directly into legislative argument without the usual layer of ironic distance. The interviews are razor-sharp and logically fluid in the way his best *Daily Show* work was, but without the defensive comedy that used to cushion the confrontation: <u>Stewart is older, less interested in being liked, more interested in being useful.</u> The subject of veteran care is as urgent as it is deliberately unglamorous. That Jon chose it for his return, rather than something more obviously spectacular, is itself a kind of statement.
 
 - title: "How to with John Wilson Season 2"
   type: "tv"

@@ -695,26 +695,10 @@ body {
   }
 }
 
-.home .page__content h2 {
-  position: sticky;
-  top: 0;
-  z-index: 60;
-  background: $overlay-white-soft;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  padding-top: 0.5em;
-  padding-right: 0.2em;
-  margin-top: 0;
-}
-
-@include breakpoint($large) {
-  .home .page__content h2 {
-    top: 0;
-  }
-
-  .sticky {
-    top: calc(0rem + 1em);
-  }
+.home .page__content h2 a {
+  color: inherit;
+  text-decoration: none;
+  &:hover { color: inherit; }
 }
 
 @include breakpoint($x-large) {
@@ -1121,8 +1105,9 @@ body.home .page__author-footer {
 
 .thoughts-card__title-en {
   font-size: 0.82em;
-  color: $morandi-muted-soft;
+  color: $morandi-muted;
   font-weight: normal;
+  font-style: italic;
   margin-left: 0.35em;
 }
 
@@ -2452,6 +2437,8 @@ mark.thoughts-highlight {
   scrollbar-width: none;
   -ms-overflow-style: none;
   &::-webkit-scrollbar { display: none; }
+  mask-image: linear-gradient(to right, #000 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, #000 85%, transparent 100%);
 
   .home-albums__link {
     flex: 0 0 auto;
@@ -3270,10 +3257,6 @@ mark.thoughts-highlight {
   .album-tile__eval--meh { background: rgba(#7a7f65, 0.2); color: #a4a98a; }
   .album-tile__eval--disliked { background: rgba(#8d6959, 0.2); color: #b78e79; }
   .album-tile__eval--hated { background: rgba(#7d605b, 0.3); color: #c4908a; }
-
-  .home .page__content h2 {
-    background: rgba(#1c1917, 0.96);
-  }
 
   .home-covers img {
     opacity: 0.82;
