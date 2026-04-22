@@ -10,7 +10,7 @@
   data-pinned="{% if include.take.pin %}true{% else %}false{% endif %}">
   <div class="thoughts-card__img-wrap">
     {% if include.take.image and include.take.image != '' %}
-      <img class="thoughts-card__img" src="{{ include.take.image | relative_url }}" alt="{{ include.take.title }}">
+      <img class="thoughts-card__img" src="{{ include.take.image | relative_url }}" alt="{{ include.take.title }}" loading="lazy">
     {% else %}
       <div class="thoughts-card__img--placeholder"></div>
     {% endif %}
