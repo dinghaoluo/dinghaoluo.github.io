@@ -527,6 +527,7 @@ body {
     float: none;
     max-width: none;
     width: 100%;
+    margin-top: 0;
   }
 }
 @include breakpoint($x-large) {
@@ -538,6 +539,7 @@ body {
   .page__inner-wrap {
     max-width: none;
     width: 100%;
+    margin-top: 0;
   }
 }
 
@@ -583,6 +585,7 @@ body {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
   }
 }
 
