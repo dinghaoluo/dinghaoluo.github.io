@@ -216,10 +216,10 @@ hr {
 // -------------------------
 .page-header {
   margin-bottom: 2.2rem;
-  padding-top: 0.8rem;
+  padding-top: 1.4rem;
 
   @include breakpoint($large) {
-    padding-top: 1rem;
+    padding-top: 1.8rem;
     margin-bottom: 2.6rem;
   }
 }
@@ -251,7 +251,7 @@ hr {
   a {
     display: inline-block;
     font-family: 'JetBrains Mono', $cjk-stack, monospace;
-    color: $site-text;
+    color: $morandi-muted;
     font-size: clamp(0.95rem, 1.8vw, 1.2rem);
     letter-spacing: -0.025em;
     text-decoration: none;
@@ -259,6 +259,13 @@ hr {
     padding: 0.12em 0;
     position: relative;
     transition: color 0.18s ease, letter-spacing 0.3s ease;
+
+    &::before {
+      content: '›';
+      margin-right: 0.3em;
+      opacity: 0.35;
+      @include breakpoint($large) { display: none; }
+    }
 
     &::after {
       content: '';
@@ -299,6 +306,7 @@ hr {
       margin-top: 0.06em;
       margin-bottom: 0.15em;
 
+      &::before { display: none; }
       &::after { display: none; }
 
       &:hover {
