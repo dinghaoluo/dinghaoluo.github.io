@@ -311,16 +311,12 @@ hr {
 // suppress the empty MM masthead shell if present
 .masthead { display: none !important; }
 
-// kill the gem's .page .page__inner-wrap { margin-top: 1em } at all widths
+// The gem sets .page .page__inner-wrap { margin-top: 1em } which,
+// without the old masthead/sidebar, collapses through every borderless
+// container up to body — creating a blank gap at the top of the page.
+// Fix: zero the margin AND break the collapsing chain on #main.
 .page .page__inner-wrap { margin-top: 0 !important; }
-
-// DEBUG: visible borders to trace the blank-space source — REMOVE after diagnosis
-.initial-content  { border-top: 3px solid red !important; }
-#main             { border-top: 3px solid blue !important; }
-.sidebar          { border-top: 3px solid orange !important; }
-article.page      { border-top: 3px solid green !important; }
-.page__inner-wrap { border-top: 3px solid purple !important; }
-.page-header      { border-top: 3px solid cyan !important; }
+#main { display: flow-root; }
 
 
 // -------------------------
@@ -1113,6 +1109,13 @@ body.home .page__author-footer {
   font-size: 0.82em;
   color: $morandi-muted-soft;
   font-weight: normal;
+}
+
+.thoughts-card__title-en {
+  font-size: 0.82em;
+  color: $morandi-muted-soft;
+  font-weight: normal;
+  margin-left: 0.35em;
 }
 
 .thoughts-card__creator {
