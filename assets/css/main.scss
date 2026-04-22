@@ -806,8 +806,9 @@ body.home .page__author-footer {
 }
 
 .page__drift {
+  clear: both;
   text-align: left;
-  padding-top: 4.5rem;
+  padding-top: 7rem;
   padding-bottom: 1rem;
 
   .drift-link {
@@ -2115,6 +2116,7 @@ mark.thoughts-highlight {
   border-radius: 0.16em;
   box-shadow: inset 0 -0.55em 0 rgba($morandi-clay, 0.22);
   border-bottom: 1px solid rgba($morandi-clay-deep, 0.34);
+  font-family: inherit;
   font-weight: bold;
 }
 

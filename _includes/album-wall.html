@@ -54,7 +54,7 @@
         {% endif %}
       </div>
       <div class="album-tile__preview-wrap">
-        <div class="album-tile__preview">{{ album.text | markdownify }}</div>
+        <div class="album-tile__preview">{{ album.text | replace: '<u>', '⟪u⟫' | replace: '</u>', '⟪/u⟫' | markdownify | replace: '⟪u⟫', '<u>' | replace: '⟪/u⟫', '</u>' }}</div>
       </div>
       <button class="album-tile__toggle" aria-expanded="false" aria-label="expand review">&darr;</button>
     </div>

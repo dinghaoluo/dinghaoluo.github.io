@@ -262,7 +262,7 @@
     {% for thought in thoughts limit:60 %}
     <a href="/thoughts/#{{ thought.title | slugify }}" class="sidebar-thought" style="display:none">
       <span class="sidebar-thought__title">{{ thought.title }}</span>
-      <span class="sidebar-thought__preview">{{ thought.text | markdownify | strip_html | strip_newlines | strip }}</span>
+      <span class="sidebar-thought__preview">{{ thought.text | replace: '<u>', '' | replace: '</u>', '' | markdownify | strip_html | strip_newlines | strip }}</span>
     </a>
     {% endfor %}
   </div>

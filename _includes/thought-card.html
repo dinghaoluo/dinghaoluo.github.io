@@ -24,7 +24,7 @@
       </div>
     {% endif %}
     <div class="thoughts-card__text-wrap">
-      <div class="thoughts-card__text">{{ include.take.text | markdownify }}</div>
+      <div class="thoughts-card__text">{{ include.take.text | replace: '<u>', '⟪u⟫' | replace: '</u>', '⟪/u⟫' | markdownify | replace: '⟪u⟫', '<u>' | replace: '⟪/u⟫', '</u>' }}</div>
     </div>
     <div class="thoughts-card__footer">
       <button class="thoughts-card__toggle" aria-expanded="false" aria-label="expand thought">&darr;</button>
