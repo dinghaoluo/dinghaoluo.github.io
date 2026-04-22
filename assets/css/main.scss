@@ -197,10 +197,8 @@ hr {
 // -------------------------
 .page-header {
   margin-bottom: 2.2rem;
-  padding-top: 1.6rem;
 
   @include breakpoint($large) {
-    padding-top: 2rem;
     margin-bottom: 2.6rem;
   }
 }
@@ -1269,8 +1267,8 @@ body.home .page__author-footer {
 
 .album-wall__grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1.1rem 0.9rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem 1rem;
 }
 
 .album-tile {

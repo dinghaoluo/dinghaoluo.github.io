@@ -45,6 +45,7 @@
         wrap.style.maxHeight  = 'none';
         wrap.style.transition = '';
         wrap.removeEventListener('transitionend', handler);
+        card.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     }
 

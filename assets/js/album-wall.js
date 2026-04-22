@@ -85,6 +85,7 @@
             wrap.style.maxHeight = 'none';
             wrap.style.transition = '';
             wrap.removeEventListener('transitionend', handler);
+            tile.scrollIntoView({ behavior: 'smooth', block: 'start' });
           });
         }
       });
