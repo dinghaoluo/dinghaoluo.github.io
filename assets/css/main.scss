@@ -116,6 +116,25 @@ $site-text-icon:      #7a7a7a;
 $site-text-body:      #3a3a3a;
 $site-link-visited:   #c6a596;
 
+// shadow and overlay tokens
+$shadow-strong:       rgba($morandi-ink, 0.85);
+$shadow-medium:       rgba($morandi-ink, 0.5);
+$shadow-dark:         rgba($morandi-ink, 0.25);
+$shadow-soft:         rgba($morandi-ink, 0.13);
+$shadow-light:        rgba($morandi-ink, 0.11);
+$shadow-subtle:       rgba($morandi-ink, 0.07);
+$shadow-faint:        rgba($morandi-ink, 0.05);
+$shadow-ultra-faint:  rgba($morandi-ink, 0.032);
+$shadow-barely:       rgba($morandi-ink, 0.018);
+$overlay-white-strong: rgba(#ffffff, 0.96);
+$overlay-white-soft:  rgba(#ffffff, 0.025);
+$overlay-white-clear: rgba(#ffffff, 0);
+$overlay-muted-soft:  rgba($morandi-muted, 0.1);
+$overlay-muted-med:   rgba($morandi-muted, 0.14);
+$overlay-clay-soft:   rgba($morandi-clay-deep, 0.34);
+$overlay-oat-strong:  rgba($morandi-oat, 0.78);
+$overlay-oat-soft:    rgba($morandi-oat, 0.58);
+
 $primary-color:       $morandi-clay;
 $link-color:          $morandi-clay-deep;
 $link-color-visited:  $site-link-visited;
@@ -260,6 +279,12 @@ hr {
       &::after { transform: scaleX(1); }
     }
 
+    &:focus {
+      outline: 2px solid $morandi-clay-deep;
+      outline-offset: 3px;
+      color: $morandi-clay-deep;
+    }
+
     &.is-current {
       display: inline-block;
       font-family: 'JetBrains Mono', $cjk-stack, monospace;
@@ -324,7 +349,7 @@ body {
 
     &:hover {
       transform: translateY(-2px);
-      box-shadow: 0 5px 14px rgba(0,0,0,0.11) !important;
+      box-shadow: 0 5px 14px $shadow-light !important;
     }
 
     @include breakpoint($large) {
@@ -354,7 +379,7 @@ body {
   font-style: normal;
   color: $site-text-nav;
   line-height: 1.24;           // compact the three-line role stack a little more
-  margin-top: 0.5em;
+  margin-top: 0.5rem;
 
   br { display: block; content: ""; margin-top: 0.06em; }
 
@@ -654,7 +679,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 60;
-  background: rgba(255,255,255,0.96);
+  background: $overlay-white-soft;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding-top: 0.5em;
@@ -927,8 +952,8 @@ body.home .page__author-footer {
   white-space: nowrap;
   overflow: hidden;
   // fade from readable left → invisible right
-  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.85) 20%, transparent 92%);
-  mask-image: linear-gradient(to right, rgba(0,0,0,0.85) 20%, transparent 92%);
+  -webkit-mask-image: linear-gradient(to right, $shadow-strong 20%, transparent 92%);
+  mask-image: linear-gradient(to right, $shadow-strong 20%, transparent 92%);
 }
 
 // -------------------------
@@ -939,7 +964,7 @@ body.home .page__author-footer {
   gap: 1.2em;
   padding: 0.9em 0.5em;
   margin: 0 -0.5em;
-  border-bottom: 1px solid rgba($morandi-muted, 0.1);
+  border-bottom: 1px solid $overlay-muted-soft;
   border-radius: 3px;
   cursor: pointer;
   transition: background 0.15s ease, transform 0.18s ease, box-shadow 0.18s ease;
@@ -954,16 +979,16 @@ body.home .page__author-footer {
 
   &:last-of-type { border-bottom: none; }
   &:hover {
-    background: rgba(0,0,0,0.032);
+    background: $shadow-faint;
     transform: translateY(-2px);
-    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+    box-shadow: 0 3px 10px $shadow-subtle;
   }
 }
 
 .thoughts-card--pinned {
-  border-left: 2px solid rgba($morandi-clay-deep, 0.34);
+  border-left: 2px solid $overlay-clay-soft;
   padding-left: 0.85em;
-  background: linear-gradient(90deg, rgba($morandi-oat, 0.58), rgba(255,255,255,0));
+  background: linear-gradient(90deg, $overlay-oat-soft, $overlay-white-clear);
 }
 
 .thoughts-pin-lead {
@@ -986,7 +1011,7 @@ body.home .page__author-footer {
 }
 
 .thoughts-card--spotlight {
-  background: linear-gradient(90deg, rgba($morandi-oat, 0.78), rgba(255,255,255,0));
+  background: linear-gradient(90deg, rgba($morandi-oat, 0.78), $overlay-white-clear);
   box-shadow: 0 4px 14px rgba(63, 57, 52, 0.06);
   border-left: 2px solid rgba($morandi-clay-deep, 0.38);
 }
@@ -1012,7 +1037,7 @@ body.home .page__author-footer {
   height: 144px;  // image trims to 2:3 vertical
   object-fit: cover;
   border-radius: 2px;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.13);
+  box-shadow: 0 1px 5px $shadow-soft;
   transition: transform 0.22s ease;
 
   &--placeholder {
@@ -1145,7 +1170,7 @@ body.home .page__author-footer {
   display: flex;
   align-items: center;
   gap: 0.55em;
-  margin-top: 0.5em;
+  margin-top: 0.5rem;
 }
 
 .thoughts-card__pin {
@@ -1269,8 +1294,18 @@ body.home .page__author-footer {
 
 .album-wall__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.2rem 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.1rem 0.9rem;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.15rem 0.95rem;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem 1rem;
+  }
 }
 
 .album-tile {
@@ -1282,9 +1317,15 @@ body.home .page__author-footer {
   transition: background 0.15s ease, transform 0.18s ease, box-shadow 0.18s ease;
 
   &:hover {
-    background: rgba(0,0,0,0.032);
+    background: $shadow-faint;
     transform: translateY(-2px);
-    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+    box-shadow: 0 3px 10px $shadow-subtle;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $morandi-clay;
+    outline-offset: 2px;
+    background: $shadow-barely;
   }
 }
 
@@ -1573,7 +1614,7 @@ body.home .page__author-footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 0.35em;
+  gap: 0.35rem;
   font-family: 'Mononoki', monospace;
   font-size: 0.78em;
   color: $site-text-soft;
@@ -1701,7 +1742,7 @@ body.home .page__author-footer {
   height: calc(100% - 0.24em);
   background: $site-bg;
   border-radius: 1000px;  // match outer box shape
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 3px $shadow-faint;
   transition: left 0.32s cubic-bezier(0.34, 1.56, 0.64, 1),
               width 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
   pointer-events: none;
@@ -1913,7 +1954,7 @@ body.home .page__author-footer {
   .thoughts-card__text-wrap {
     grid-column: 1 / -1;
     grid-row: 4;
-    margin-top: 0.5em;
+    margin-top: 0.5rem;
   }
 
   .thoughts-card__footer {
@@ -2296,7 +2337,7 @@ mark.thoughts-highlight {
   display: block;
   font-style: italic;
   font-size: 1em;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.3rem;
   color: inherit;
 }
 
@@ -2414,7 +2455,7 @@ mark.thoughts-highlight {
   letter-spacing: 0.06em;
   text-transform: lowercase;
   color: $morandi-muted;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
   padding-bottom: 0.35em;
   border-bottom: 1px solid rgba($morandi-muted, 0.12);
 }
@@ -2454,8 +2495,8 @@ mark.thoughts-highlight {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.85) 40%, transparent 95%);
-  mask-image: linear-gradient(to right, rgba(0,0,0,0.85) 40%, transparent 95%);
+  -webkit-mask-image: linear-gradient(to right, $shadow-strong 40%, transparent 95%);
+  mask-image: linear-gradient(to right, $shadow-strong 40%, transparent 95%);
 }
 
 // =========================================================================
@@ -2506,17 +2547,17 @@ mark.thoughts-highlight {
 
 .writing-entry {
   display: flex;
-  gap: 1.2em;
-  padding: 1.3em 0;
-  border-bottom: 1px solid rgba($morandi-muted, 0.1);
+  gap: 1.2rem;
+  padding: 1.3rem 0;
+  border-bottom: 1px solid $overlay-muted-soft;
 
   &:last-child { border-bottom: none; }
 }
 
 .writing-entry--featured {
-  border-left: 2px solid rgba($morandi-clay-deep, 0.34);
-  padding-left: 0.85em;
-  background: linear-gradient(90deg, rgba($morandi-oat, 0.58), rgba(255,255,255,0));
+  border-left: 2px solid $overlay-clay-soft;
+  padding-left: 0.85rem;
+  background: linear-gradient(90deg, $overlay-oat-soft, $overlay-white-clear);
 }
 
 .writing-entry__img-wrap {
@@ -2532,7 +2573,7 @@ mark.thoughts-highlight {
   height: 144px;
   object-fit: cover;
   border-radius: 2px;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.13);
+  box-shadow: 0 1px 5px $shadow-soft;
   transition: transform 0.22s ease;
 }
 
@@ -2546,9 +2587,9 @@ mark.thoughts-highlight {
 }
 
 .writing-entry--featured {
-  border-left: 2px solid rgba($morandi-clay-deep, 0.34);
-  padding-left: 0.85em;
-  background: linear-gradient(90deg, rgba($morandi-oat, 0.58), rgba(255,255,255,0));
+  border-left: 2px solid $overlay-clay-soft;
+  padding-left: 0.85rem;
+  background: linear-gradient(90deg, $overlay-oat-soft, $overlay-white-clear);
 }
 
 .writing-entry__type {
@@ -2557,7 +2598,7 @@ mark.thoughts-highlight {
   letter-spacing: 0.08em;
   text-transform: lowercase;
   color: $morandi-clay-deep;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.3rem;
 }
 
 .writing-entry__title {
@@ -2565,7 +2606,7 @@ mark.thoughts-highlight {
   font-size: 1.08em;
   font-weight: normal;
   color: $morandi-ink;
-  margin: 0 0 0.1em;
+  margin: 0 0 0.1rem;
   line-height: 1.4;
 
   a {
@@ -2580,13 +2621,13 @@ mark.thoughts-highlight {
   font-size: 0.88em;
   font-style: italic;
   color: $morandi-muted;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.3rem;
 }
 
 .writing-entry__meta {
   font-size: 0.82em;
   color: $morandi-muted-soft;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 }
 
 .writing-entry__text {
@@ -2595,18 +2636,18 @@ mark.thoughts-highlight {
   color: $site-text-body;
   line-height: 1.65;
   letter-spacing: 0.008em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
 
   p { margin: 0; }
-  p + p { margin-top: 0.5em; }
+  p + p { margin-top: 0.5rem; }
   * { font-family: inherit; }
 }
 
 .writing-entry__awards {
-  margin: 0.5em 0 0.3em;
+  margin: 0.5rem 0 0.3rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35em;
+  gap: 0.35rem;
 }
 
 .writing-entry__award {
@@ -2615,16 +2656,16 @@ mark.thoughts-highlight {
   color: $morandi-sage-deep;
   border: 1px solid rgba($morandi-sage, 0.4);
   border-radius: 3px;
-  padding: 0.15em 0.55em;
+  padding: 0.15rem 0.55rem;
   letter-spacing: 0.01em;
 }
 
 .writing-entry__links {
-  margin-top: 0.5em;
+  margin-top: 0.5rem;
   font-size: 0.82em;
 
   a {
-    margin-right: 1em;
+    margin-right: 1rem;
   }
 }
 
@@ -2632,7 +2673,7 @@ mark.thoughts-highlight {
 .writing-piece-meta {
   font-size: 0.82em;
   color: $morandi-muted-soft;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.3rem;
   line-height: 1.6;
 }
 
@@ -3226,7 +3267,7 @@ mark.thoughts-highlight {
     border-color: rgba(#a8b5a2, 0.3);
   }
   .writing-entry__img {
-    box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+    box-shadow: 0 1px 5px $shadow-dark;
   }
   .writing-piece-meta {
     color: #7a7370;
