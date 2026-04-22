@@ -15,7 +15,7 @@ Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.
 
 ---
 
-<h2 id="thoughts">thoughts :)</h2>
+<h2 id="thoughts"><a href="/thoughts/">thoughts :)</a></h2>
 
 {% assign all_thoughts = site.data.thoughts | sort: 'posted' | reverse %}
 {% assign t_books = all_thoughts | where: "type", "book" %}
@@ -33,7 +33,7 @@ I consume things compulsively and I have opinions about most of them. {{ t_books
 
 ---
 
-<h2 id="writing">writing :)</h2>
+<h2 id="writing"><a href="/writing/">writing :)</a></h2>
 
 Three years editing neuroscience writing at Neu-Reality (神经现实), one of the earliest Chinese-language science communication platforms, where I translate and write about brain research for a general educated audience. Seven months as a science editor at *Scientific American* China, where I wrote weekly news pieces and a print feature on the ARC project — the largest adversarial collaboration on consciousness ever attempted — for which I got to interview Cyriel Pennartz and Anil Seth. And a Chinese translation of Merlin Sheldrake's *Entangled Life*, which won the 2025 Pingshan Natural History Museum Book Award; after finishing the translation I sat down with Sheldrake to talk about fungi, fermentation, and what it means to think about organisms that don't have brains. Science is what I study; writing about it, in both languages, is how I make sense of it.
 
@@ -41,7 +41,7 @@ Three years editing neuroscience writing at Neu-Reality (神经现实), one of t
 
 ---
 
-<h2 id="science">science :)</h2>
+<h2 id="science"><a href="/science/">science :)</a></h2>
 
 My PhD asks what sounds like a simple question: how does the brain decide what to remember? I study the locus coeruleus, a tiny cluster of brainstem neurones that sends dopamine into the hippocampus. The textbook picture treats the LC as a slow, diffuse modulator — a volume knob on arousal. I'm trying to work out whether that picture is too coarse: whether the phasic dopamine signals do something more precise, selectively shaping which cell populations in hippocampal CA1 fire and which memories survive. I designed the experiments, built the analysis pipelines in **Python**, and developed a computational model to test the idea. Paper getting closer to done. Before this I was in the Paulsen lab at Cambridge, where my undergraduate thesis looked at dopamine's role in CA3–CA1 synaptic plasticity — so the LC–hippocampus axis has been a thread through everything I've done.
 
@@ -49,7 +49,7 @@ My PhD asks what sounds like a simple question: how does the brain decide what t
 
 ---
 
-<h2 id="music">music :)</h2>
+<h2 id="music"><a href="/music/">music :)</a></h2>
 
 <div class="home-featured-album">
   <a href="/music/" class="home-featured-album__cover">
@@ -73,7 +73,7 @@ I also listen obsessively: prog, jazz fusion, Canterbury scene, and whatever els
 
 ---
 
-<h2 id="photos">photos :)</h2>
+<h2 id="photos"><a href="/photos/">photos :)</a></h2>
 
 A running collection of photographs from the field and daily life.
 
