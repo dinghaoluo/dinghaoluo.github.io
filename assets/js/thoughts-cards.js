@@ -8,9 +8,12 @@
       var toggle = card.querySelector('.thoughts-card__toggle');
       if (!wrap) return;
 
-      var collapsedH = wrap.offsetHeight;
-
       card.addEventListener('click', function () {
+        if (!card.dataset.collapsedH) {
+          card.dataset.collapsedH = wrap.offsetHeight;
+        }
+        var collapsedH = parseFloat(card.dataset.collapsedH);
+
         if (card.classList.contains('is-open')) {
           closeCard(card, wrap, toggle, collapsedH);
         } else {
@@ -18,13 +21,11 @@
             if (other === card) return;
             var otherWrap = other.querySelector('.thoughts-card__text-wrap');
             var otherToggle = other.querySelector('.thoughts-card__toggle');
-            var otherCollapsedH = parseFloat(other.dataset.collapsedH) || collapsedH;
-            closeCard(other, otherWrap, otherToggle, otherCollapsedH);
+            closeCard(other, otherWrap, otherToggle, parseFloat(other.dataset.collapsedH));
           });
           openCard(card, wrap, toggle);
         }
       });
-      card.dataset.collapsedH = collapsedH;
     });
 
     function openCard(card, wrap, toggle) {
@@ -98,6 +99,8 @@
     var isShuffled = false;
     var currentPage = 1;
     var matchedCards = cards.slice();
+    var previouslyShown = [];
+    var initialized = false;
 
     if (!btns.length || !cards.length || !cardsRoot) return;
 
@@ -226,28 +229,27 @@
     }
 
     function weightedShuffle(list) {
-      var pool = list.slice();
-      var shuffled = [];
+      var arr = list.slice();
+      var n = arr.length;
+      var total = 0;
+      for (var i = 0; i < n; i++) total += reactionWeight(arr[i]);
 
-      while (pool.length) {
-        var total = pool.reduce(function (sum, card) {
-          return sum + reactionWeight(card);
-        }, 0);
+      for (var i = 0; i < n - 1; i++) {
         var threshold = Math.random() * total;
-        var pickedIndex = pool.length - 1;
+        var pickedIndex = i;
 
-        for (var i = 0; i < pool.length; i++) {
-          threshold -= reactionWeight(pool[i]);
-          if (threshold <= 0) {
-            pickedIndex = i;
-            break;
-          }
+        for (var j = i; j < n; j++) {
+          threshold -= reactionWeight(arr[j]);
+          if (threshold <= 0) { pickedIndex = j; break; }
         }
 
-        shuffled.push(pool.splice(pickedIndex, 1)[0]);
+        total -= reactionWeight(arr[pickedIndex]);
+        var tmp = arr[i];
+        arr[i] = arr[pickedIndex];
+        arr[pickedIndex] = tmp;
       }
 
-      return shuffled;
+      return arr;
     }
 
     function reorderCards(orderedCards) {
@@ -324,29 +326,40 @@
       var start = (currentPage - 1) * PAGE_SIZE;
       var end = start + PAGE_SIZE;
       var pageSet = matchedCards.slice(start, end);
-      var pageMembership = new Set(pageSet);
+      var nowShown = new Set(pageSet);
       var query = currentQuery();
 
-      cards.forEach(function (card) {
-        var shouldShow = pageMembership.has(card);
-        highlightTerms(card, shouldShow ? query : '');
+      if (!initialized) {
+        cards.forEach(function (card) {
+          if (!nowShown.has(card)) {
+            card.style.display = 'none';
+          }
+        });
+        initialized = true;
+      } else {
+        previouslyShown.forEach(function (card) {
+          if (!nowShown.has(card)) {
+            restoreHighlights(card);
+            card.style.transition = 'opacity 0.22s ease, transform 0.22s ease';
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(4px)';
+            setTimeout(function () {
+              if (card.style.opacity === '0') card.style.display = 'none';
+            }, 230);
+          }
+        });
+      }
 
-        if (shouldShow) {
-          card.style.display = '';
-          card.offsetHeight;
-          card.style.transition = 'opacity 0.28s ease, transform 0.28s ease';
-          card.style.opacity = '1';
-          card.style.transform = 'translateY(0)';
-        } else {
-          card.style.transition = 'opacity 0.22s ease, transform 0.22s ease';
-          card.style.opacity = '0';
-          card.style.transform = 'translateY(4px)';
-          setTimeout(function () {
-            if (card.style.opacity === '0') card.style.display = 'none';
-          }, 230);
-        }
+      pageSet.forEach(function (card) {
+        highlightTerms(card, query);
+        card.style.display = '';
+        card.offsetHeight;
+        card.style.transition = 'opacity 0.28s ease, transform 0.28s ease';
+        card.style.opacity = '1';
+        card.style.transform = 'translateY(0)';
       });
 
+      previouslyShown = pageSet;
       updatePagination();
       updateLuckState();
       updatePinLead();
@@ -370,8 +383,9 @@
       var query = currentQuery();
       matchedCards = computeMatched(filterValue, query);
       if (query) {
+        var matchedSet = new Set(matchedCards);
         reorderCards(matchedCards.concat(cards.filter(function (c) {
-          return matchedCards.indexOf(c) === -1;
+          return !matchedSet.has(c);
         })));
       } else if (!isShuffled) {
         restoreChronologicalOrder();
@@ -469,8 +483,9 @@
         }
 
         matchedCards = weightedShuffle(matchedCards);
+        var shuffledSet = new Set(matchedCards);
         reorderCards(matchedCards.concat(cards.filter(function (card) {
-          return matchedCards.indexOf(card) === -1;
+          return !shuffledSet.has(card);
         })));
         isShuffled = true;
         currentPage = 1;
