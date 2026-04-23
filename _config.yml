@@ -36,7 +36,7 @@ locale: "en-GB"
 title: "hao things"
 email: dinghao.luo@outlook.com
 description: >-
-  Personal website of Dinghao Luo — neuroscientist, translator, and musician.
+  Personal website of Dinghao Luo: neuroscientist, translator, and musician.
   PhD student at Max Planck Florida Institute for Neuroscience.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dinghaoluo.github.io" # the base hostname & protocol for your site, e.g. http://example.com

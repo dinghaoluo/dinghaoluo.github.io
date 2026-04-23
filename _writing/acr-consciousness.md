@@ -7,6 +7,7 @@ date: 2021-03-01
 section: "print"
 image: "/assets/images/writing/acr_consciousness.jpg"
 excerpt: "A print feature on the ARC project, the largest adversarial collaboration on consciousness ever attempted."
+featured: true
 ---
 
 *Propelled by modern neuroscience, the problem of consciousness has attracted sustained scientific attention. This attention has spawned numerous neuroscientific theories of consciousness, and the conflicts between them have become the focus of intense debate. To convert these theoretical disputes into forward momentum, scientists have launched a large-scale collaboration to accelerate our understanding of consciousness.*

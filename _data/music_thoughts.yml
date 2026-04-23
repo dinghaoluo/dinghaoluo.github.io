@@ -23,6 +23,7 @@
   creator_role: "by"
   year: 2025
   eval: "loved"
+  pin: true
   genre: "jazz fusion"
   image: "/assets/images/music/somni.jpg"
   posted: "2025-11-28"
@@ -715,7 +716,7 @@
   type: "music"
   creator: "Enchant"
   creator_role: "by"
-  year: 1997
+  year: 1993
   eval: "liked"
   genre: "progressive rock"
   image: "/assets/images/music/blueprint_of_the_world.jpg"
@@ -743,7 +744,7 @@
   type: "music"
   creator: "Dream Theater"
   creator_role: "by"
-  year: 2022
+  year: 2021
   eval: "loved"
   genre: "progressive metal"
   image: "/assets/images/music/lost_not_forgotten_archives.jpg"
@@ -1223,6 +1224,7 @@
   creator_role: "by"
   year: 2003
   eval: "loved"
+  pin: true
   genre: "progressive metal"
   image: "/assets/images/music/damnation.jpg"
   posted: "2021-09-03"
@@ -1420,6 +1422,42 @@
     I expected a retread of the first *Colors*, tech-death as the skeleton with prog ornamentation draped over it, the formula that made Between the Buried and Me reliable if rarely revelatory. The opening tracks do little to dispel that assumption. But from the third song onward ***Colors II*** pivots hard, and the prog elements stop being ornamental and start being structural. The compositions unfold with genuine architectural ambition: movements that develop, recapitulate, and transform rather than simply alternating between blast beats and clean interludes. <u>It is the rare sequel that understands what the original was reaching for and then actually gets there.</u>
 
     Some have called the jazz passages clumsy, which strikes me as a peculiar standard to hold against a metal band that has always treated jazz as seasoning rather than cuisine. If these interludes are 'corny', then the *The Great Misdirect*-era digressions were positively embarrassing by comparison, and nobody seemed to mind those at the time. What ***Colors II*** lacks is the ethereal, almost accidental grace of *Coma Ecliptic*, that record's uncanny ability to make the baroque feel effortless. But what it offers instead is sheer compositional density, prog metal that earns the 'prog' prefix not through time-signature arithmetic but through the patient, iterative development of ideas across an album-length arc. <u>This is exceptionally high-calibre progressive metal, the kind that makes one forget the genre's reputation for sterile virtuosity.</u>
+
+- title: "The Mountain"
+  type: "music"
+  creator: "Haken"
+  creator_role: "by"
+  year: 2013
+  eval: "loved"
+  pin: true
+  genre: "progressive metal"
+  image: "/assets/images/music/the_mountain.jpg"
+  posted: "2021-08-19"
+  text: |
+    ***The Mountain*** is where Haken stopped sounding like a band that had listened to Dream Theater and started sounding like Haken. The first two albums were impressive — *Visions* especially so — but the structural debt to their predecessors was too legible, the harmonic language too borrowed. On their third record, something shifted. The influences widened beyond recognition: Gentle Giant's rhythmic eccentricity, jazz-inflected chord voicings, barbershop harmony, synthpop, Middle Eastern modality. Jens Bogren's mix at Fascination Street Studios achieved a clarity that never sacrificed warmth, and the dynamic range across the eleven tracks is vast, the quieter passages carrying as much presence as the heaviest riffs.
+
+    'Cockroach King' is the obvious landmark. A song that opens with barbershop vocal harmony and proceeds through satirical whimsy, odd-time riffing, and a finale of absurdist intensity, arriving somewhere no one could have predicted from its opening bar. It became the first thing anyone mentions when Haken's name arises, and deservedly so: this is the track that crystallised the band's identity. 'Atlas Stone' precedes it with an uplifting epic scope that makes the pivot into strangeness all the more disorienting. 'Falling Back to Earth', the twelve-minute centrepiece, draws on the Icarus myth: ambition ascending, hubris cresting, the fall becoming not defeat but recognition — the album title itself drops as a lyric here. <u>'As Death Embraces' is the emotional zenith, weaving soft piano and exposed vocals into something that achieves grief without sentimentality, and the transition into 'Pareidolia' never fails to raise the hairs on one's arms.</u> 'Pareidolia' is the album's wildest excursion: Middle Eastern ambiance giving way to blast beats and groove-centred rhythms, converging on a late-section groove that lands with almost therapeutic force. 'Somebody', the mournful closer, alternates between 4/4 verses and a 7/8 chorus, giving Ross Jennings room for his most emotionally exposed performance on record.
+
+    It was the last album to feature bassist Thomas MacLean. Jordan Rudess and Mike Portnoy both named it among their top ten albums of 2013, as did Dan Briggs of Between the Buried and Me. <u>These endorsements matter less than what the record itself proves: that Haken had earned a place alongside Dream Theater rather than in their shadow, and the distinction — alongside, not beneath — is the one that separates influence from identity.</u> The mountain metaphor, the ascent, the fall, the open question of whether the narrator rises again, applies as much to the band's own trajectory as to its lyrics. They climbed, they arrived, and everything since has been built on the summit they reached here.
+
+- title: "Octavarium"
+  type: "music"
+  creator: "Dream Theater"
+  creator_role: "by"
+  year: 2005
+  eval: "loved"
+  pin: true
+  genre: "progressive metal"
+  image: "/assets/images/music/octavarium.jpg"
+  posted: "2021-08-18"
+  text: |
+    The concept alone is audacious: eight tracks, each in an ascending key from F through E and back to F, the white keys of a piano mapped across an album, with hidden 'negative time' tracks bridging the songs as the black keys. The back cover spells it out — eight white keys, five black, the five members of Dream Theater standing in the gaps. ***Octavarium*** was the band's eighth studio album, their last on Atlantic Records, the final record made at The Hit Factory in New York. The numbers 8 and 5 pervade everything: the dominos in the booklet, the octagonal maze, the 5:8 blueprint, the spider with eight legs navigating five levels. Yet none of this scaffolding intrudes on the listening. It is architecture one feels without needing to see.
+
+    'The Root of All Evil', the third instalment of the Twelve-Step Suite, opens on the note that closed *Train of Thought*'s 'In the Name of God', establishing the cyclical logic from the first second. The accessible songs are not concessions. 'The Answer Lies Within' marks Dream Theater's first use of a full orchestra, conducted by Jamshied Sharifi, and the strings lend it a warmth the band had never previously achieved. 'I Walk Beside You' wears its U2 influence openly; Portnoy was right to reject the charge of commercialism, because the band genuinely has that side to them and suppressing it would be dishonest. 'Panic Attack' delivers some of the most concentrated rhythmic aggression in the catalogue, its time-signature convulsions serving the song's claustrophobic energy rather than ornamenting it. 'Sacrificed Sons', the ten-minute 9/11 meditation, draws from LaBrie one of his most affecting studio performances, the restraint in his phrasing communicating more than any amount of vocal pyrotechnics could.
+
+    <u>But the title track is the album's argument, and nothing in Dream Theater's catalogue before or since has matched it.</u> Twenty-four minutes across five sections. The opening draws from Pink Floyd's 'Shine On You Crazy Diamond' through Jordan Rudess's continuum fingerboard and lap steel guitar, a spacious, Floydian drift that lasts nearly nine minutes before the first vocal enters. 'Full Circle' is Portnoy's love letter to progressive rock history: every lyric line ends with the title of an influence, and the beginning of the next reference is embedded seamlessly, Pink Floyd bookending the entire passage. 'Intervals' plays audio samples from each preceding track while Portnoy calls out scale degrees, a structural gambit so daring it should feel indulgent and instead feels inevitable. And in the closing 'Razor's Edge', LaBrie screams 'Trapped inside this Octavarium' to a G5, the highest note on any Dream Theater studio recording to that point, a vocal intensity he had not summoned in over a decade. The song ends on the same note with which 'The Root of All Evil' begins, one octave higher. The circle closes. <u>One does not resist starting the album from the beginning again; the music has already decided for you.</u>
+
+    In retrospect *Octavarium* feels like a summation. Dream Theater had made heavier albums, more technically demanding albums, more emotionally raw albums. But they had never organised all of those impulses into a structure this elegant, where the concept deepened the music rather than constraining it. <u>It is my favourite Dream Theater record, and I do not expect that to change.</u>
 
 - title: "The Oubliette"
   type: "music"
@@ -3440,6 +3478,7 @@
   creator_role: "by"
   year: 2008
   eval: "loved"
+  pin: true
   genre: "progressive rock"
   image: "/assets/images/music/blomljud.jpg"
   posted: "2020-11-17"

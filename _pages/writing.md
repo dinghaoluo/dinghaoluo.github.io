@@ -5,24 +5,24 @@ permalink: /writing/
 title: "writing"
 ---
 
-*Writing about science, translating between languages, telling stories, and making the strange stay strange.*
+**Science writing**: I spent three years at Neu-Reality (神经现实), a Chinese science platform, writing about neuroscience for people who wanted to understand the brain without the jargon. I then spent seven months at *Scientific American* China, where I wrote weekly news and interviewed researchers like Anil Seth and Cyriel Pennartz for a print feature on the largest consciousness collaboration ever attempted.
 
----
+**Translation**: I translated Merlin Sheldrake's *Entangled Life* into Chinese; it won the 2025 Pingshan Natural History Museum Book Award.
 
-I started writing about neuroscience because I wanted to understand it better myself. The gap between what researchers know and what everyone else hears always felt like a translation problem, not a complexity problem — the ideas are strange and beautiful, and the job is to keep them strange and beautiful in a different register. Three years at Neu-Reality (神经现实) taught me to write about the brain for curious non-specialists; seven months at *Scientific American* China taught me to do it on deadline, to interview researchers like Anil Seth and Cyriel Pennartz about the largest consciousness collaboration ever attempted, and to write a print feature that had to make sense to someone who had never heard of integrated information theory. A Chinese translation of Merlin Sheldrake's *Entangled Life* taught me to carry scientific precision across languages without flattening the prose.
-
-Alongside the science writing, I have kept a personal platform (阿莫東森的無聊生活) since secondary school: fiction, essays, the occasional debunking piece, a long biographical essay on Rachmaninoff. The writers I admire most — Grace Lindsay making computational neuroscience feel like intellectual history, Merlin Sheldrake following fungi into the root systems of the world, Mark Fisher finding the exact words for what everyone already felt — treat their readers as intelligent and their subjects as genuinely strange. That's what I try to do: respect the strangeness, find the sentence that makes it land, and never flatten a beautiful idea into a digestible one.
+**Fiction and essays**: I've kept a personal platform (阿莫東森的無聊生活) since secondary school - fiction, essays, the occasional debunking piece, a long biographical essay on Rachmaninoff. The writers I return to most are Grace Lindsay, who makes computational neuroscience feel like intellectual history; Merlin Sheldrake, who follows fungi into the root systems of the world; Mark Fisher, who finds the exact words for what everyone already felt.
 
 ---
 
 {% assign articles = site.writing | sort: 'date' | reverse %}
 {% assign print_articles = articles | where: "section", "print" %}
 {% assign online_articles = articles | where: "section", "online" %}
+{% assign binaural_article = articles | where: "title", "Binaural beats, or malice as neuroscience" %}
+{% assign science_articles = online_articles | concat: binaural_article | sort: 'date' | reverse %}
 {% assign fiction_articles = articles | where: "category", "fiction" %}
-{% assign essay_articles = articles | where: "category", "journal" %}
-{% assign scicomm_articles = articles | where: "category", "scicomm" %}
+{% assign journal_articles = articles | where: "category", "journal" %}
+{% assign scicomm_articles = articles | where: "category", "scicomm" | where_exp: "item", "item.title != 'Binaural beats, or malice as neuroscience'" %}
 {% assign encyclopaedic_articles = articles | where: "category", "encyclopaedic" %}
-{% assign personal_articles = fiction_articles | concat: essay_articles | concat: scicomm_articles | concat: encyclopaedic_articles | sort: 'date' | reverse %}
+{% assign journal_combined = journal_articles | concat: scicomm_articles | concat: encyclopaedic_articles | sort: 'date' | reverse %}
 
 ### print
 
@@ -69,14 +69,14 @@ Alongside the science writing, I have kept a personal platform (阿莫東森的�
 
 ---
 
-### online
+### science
 
 <div class="writing-list">
-{% for article in online_articles %}
-<div class="writing-entry">
+{% for article in science_articles %}
+<div class="writing-entry writing-entry--science">
   {% if article.image %}
-  <a href="{{ article.url }}" class="writing-entry__img-wrap">
-    <img src="{{ article.image }}" alt="{{ article.title }}" class="writing-entry__img" loading="lazy">
+  <a href="{{ article.url }}" class="writing-entry__banner-wrap">
+    <img src="{{ article.image }}" alt="{{ article.title }}" class="writing-entry__banner" loading="lazy">
   </a>
   {% endif %}
   <div class="writing-entry__body">
@@ -84,6 +84,9 @@ Alongside the science writing, I have kept a personal platform (阿莫東森的�
     <h3 class="writing-entry__title">
       <a href="{{ article.url }}">{{ article.title }}</a>
     </h3>
+    {% if article.title_zh %}
+    <span class="writing-entry__title-en">{{ article.title_zh }}</span>
+    {% endif %}
     <div class="writing-entry__meta">
       {% if article.creator %}{{ article.creator }} · {% endif %}{{ article.outlet }}{% if article.outlet_en %} ({{ article.outlet_en }}){% endif %} · {{ article.date | date: "%B %Y" }}
     </div>
@@ -108,12 +111,12 @@ Alongside the science writing, I have kept a personal platform (阿莫東森的�
 
 <div class="writing-list">
 {% for article in fiction_articles %}
-<div class="writing-entry">
-  {% if article.image %}
-  <a href="{{ article.url }}" class="writing-entry__img-wrap">
-    <img src="{{ article.image }}" alt="{{ article.title }}" class="writing-entry__img" loading="lazy">
+<div class="writing-entry writing-entry--fiction">
+  <a href="{{ article.url }}" class="writing-entry__banner-wrap">
+    {% if article.image %}
+    <img src="{{ article.image }}" alt="{{ article.title }}" class="writing-entry__banner" loading="lazy">
+    {% endif %}
   </a>
-  {% endif %}
   <div class="writing-entry__body">
     <span class="writing-entry__type">{{ article.category }}</span>
     <h3 class="writing-entry__title">
@@ -142,15 +145,14 @@ Alongside the science writing, I have kept a personal platform (阿莫東森的�
 
 ---
 
-### essays
+### journal
 
-<div class="writing-list">
-{% assign essays_combined = essay_articles | concat: scicomm_articles | concat: encyclopaedic_articles | sort: 'date' | reverse %}
-{% for article in essays_combined %}
-<div class="writing-entry">
+<div class="writing-list writing-list--journal">
+{% for article in journal_combined %}
+<div class="writing-entry writing-entry--journal">
   {% if article.image %}
-  <a href="{{ article.url }}" class="writing-entry__img-wrap">
-    <img src="{{ article.image }}" alt="{{ article.title }}" class="writing-entry__img" loading="lazy">
+  <a href="{{ article.url }}" class="writing-entry__banner-wrap">
+    <img src="{{ article.image }}" alt="{{ article.title }}" class="writing-entry__banner" loading="lazy">
   </a>
   {% endif %}
   <div class="writing-entry__body">

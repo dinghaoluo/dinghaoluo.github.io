@@ -2751,6 +2751,173 @@ mark.thoughts-highlight {
 }
 
 // -------------------------
+// writing entry variants — different layouts per content type
+// -------------------------
+
+// Science writing — full-row with 16:9 banner
+.writing-entry--science {
+  display: block;
+  border-bottom: 1px solid $overlay-muted-soft;
+  padding: 0 0 1.8rem;
+  margin-bottom: 1.8rem;
+
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+.writing-entry--science .writing-entry__banner-wrap {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 28%; // ~18:5 ratio for desktop
+  overflow: hidden;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, $morandi-oat 0%, $morandi-stone 100%);
+
+  @media (max-width: 768px) {
+    padding-top: 56.25%; // 16:9 on mobile
+  }
+}
+
+.writing-entry--science .writing-entry__banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.writing-entry--science:hover .writing-entry__banner {
+  transform: scale(1.02);
+}
+
+// Fiction — full-row with 21:9 low-height banner
+.writing-entry--fiction {
+  display: block;
+  border-bottom: 1px solid $overlay-muted-soft;
+  padding: 0 0 1.8rem;
+  margin-bottom: 1.8rem;
+
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+.writing-entry--fiction .writing-entry__banner-wrap {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 42.86%; // 21:9 ultrawide
+  overflow: hidden;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg,
+    rgba($morandi-rose, 0.15) 0%,
+    rgba($morandi-blue, 0.12) 50%,
+    rgba($morandi-sage, 0.18) 100%);
+}
+
+.writing-entry--fiction .writing-entry__banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.writing-entry--fiction:hover .writing-entry__banner {
+  transform: scale(1.02);
+}
+
+.writing-entry--fiction .writing-entry__title {
+  font-family: 'Reforma 2018', $cjk-stack, serif;
+  font-size: 1.18em;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+}
+
+// Journal — vertical cards, 2-col on desktop
+.writing-list--journal {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 1.2em;
+
+  @include breakpoint($large) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem 2rem;
+  }
+}
+
+.writing-entry--journal {
+  display: block;
+  border: 1px solid $overlay-muted-soft;
+  border-radius: 4px;
+  overflow: hidden;
+  background: $site-bg;
+  transition: box-shadow 0.22s ease, transform 0.22s ease;
+
+  &:hover {
+    box-shadow: 0 2px 12px $shadow-soft;
+    transform: translateY(-2px);
+  }
+}
+
+.writing-entry--journal .writing-entry__banner-wrap {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 30%; // 30:9 banner-like ratio
+  overflow: hidden;
+  background: linear-gradient(135deg, $morandi-oat 0%, $morandi-stone 100%);
+}
+
+.writing-entry--journal .writing-entry__banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.writing-entry--journal:hover .writing-entry__banner {
+  transform: scale(1.05);
+}
+
+.writing-entry--journal .writing-entry__body {
+  padding: 1.2rem 1.3rem 1.4rem;
+}
+
+.writing-entry--journal .writing-entry__type {
+  margin-bottom: 0.4rem;
+}
+
+.writing-entry--journal .writing-entry__title {
+  font-size: 1.05em;
+  margin-bottom: 0.3rem;
+}
+
+.writing-entry--journal .writing-entry__meta {
+  font-size: 0.78em;
+  margin-bottom: 0.6rem;
+}
+
+.writing-entry--journal .writing-entry__text {
+  font-size: 0.88em;
+  line-height: 1.6;
+}
+
+// -------------------------
 // waveform audio player
 // -------------------------
 .wv-player {
@@ -3329,6 +3496,35 @@ mark.thoughts-highlight {
   }
   .writing-piece-meta__type {
     color: #c49a85;
+  }
+
+  // writing entry variants dark mode
+  .writing-entry--science {
+    border-bottom-color: rgba(#9b928a, 0.12);
+  }
+  .writing-entry--science .writing-entry__banner-wrap {
+    background: linear-gradient(135deg, rgba(#2a2420, 0.6) 0%, rgba(#1c1917, 0.8) 100%);
+  }
+
+  .writing-entry--fiction {
+    border-bottom-color: rgba(#9b928a, 0.12);
+  }
+  .writing-entry--fiction .writing-entry__banner-wrap {
+    background: linear-gradient(135deg,
+      rgba(#7d605b, 0.15) 0%,
+      rgba(#627884, 0.12) 50%,
+      rgba(#6c8f7e, 0.18) 100%);
+  }
+
+  .writing-entry--journal {
+    border-color: rgba(#9b928a, 0.15);
+    background: rgba(#1c1917, 0.3);
+    &:hover {
+      box-shadow: 0 2px 12px rgba(#000, 0.4);
+    }
+  }
+  .writing-entry--journal .writing-entry__banner-wrap {
+    background: linear-gradient(135deg, rgba(#2a2420, 0.6) 0%, rgba(#1c1917, 0.8) 100%);
   }
 
   // waveform player dark overrides

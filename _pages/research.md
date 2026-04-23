@@ -14,13 +14,13 @@ toc_icon: ""
 
 ## PhD project
 
-The locus coeruleus (LC) is a small brainstem nucleus that releases dopamine and noradrenaline across the brain. Classical accounts treat it as a slow, diffuse modulator — a volume knob on arousal. My project asks whether that picture is too coarse.
+The locus coeruleus (LC) is a small brainstem nucleus that releases dopamine and noradrenaline across the brain. Classical accounts treat it as a slow, diffuse modulator, a volume knob on arousal. My project asks whether that picture is too coarse.
 
-Specifically, I study how phasic LC dopamine release modulates functional subpopulations of CA1 hippocampal cells. The hypothesis is that these transient dopamine signals do something more structured than a global gain change — they interact selectively with cell populations in ways that matter for how memories are encoded and retrieved.
+Specifically, I study how phasic LC dopamine release modulates functional subpopulations of CA1 hippocampal cells. The hypothesis is that these transient dopamine signals interact selectively with cell populations rather than producing a global gain change, shaping how memories are encoded and retrieved.
 
 I designed the experiments, built the analysis pipelines in **Python**, and developed the **computational model**. A paper is in preparation.
 
-My background is in the Paulsen lab at Cambridge, where my undergraduate thesis looked at dopamine's role in CA3–CA1 synaptic plasticity — so the LC–hippocampus axis has been a thread throughout.
+My background is in the Paulsen lab at Cambridge, where my undergraduate thesis looked at dopamine's role in CA3–CA1 synaptic plasticity; the LC–hippocampus axis has been a thread throughout.
 
 ---
 
@@ -38,7 +38,7 @@ Genetics Society Summer Studentship. *[Brief description of what you worked on.]
 
 ## publications & preprints
 
-Paper in preparation — details soon. In the meantime, see my [ORCID profile](https://orcid.org/0000-0002-3036-1187).
+Paper in preparation; details soon. In the meantime, see my [ORCID profile](https://orcid.org/0000-0002-3036-1187).
 
 ---
 
