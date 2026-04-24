@@ -6,7 +6,7 @@ classes: home
 
 *Dinghao here.*
 
-I am finishing my PhD in neuroscience at the [Max Planck Institute for Neuroscience](https://www.mpfi.org), working on how a small brainstem nucleus called the locus coeruleus sends rapid, spatially precise dopamine signals into the hippocampus to tune neural dynamics during navigation.
+I am finishing my PhD in neuroscience at the [Max Planck Institute for Neuroscience](https://www.mpfi.org), working on how rapid dopamine signals in the hippocampus tune the accuracy of memory during navigation. I am graduating December 2026 and looking for data science roles in Europe.
 
 <p class="currently-intro">Recently, I have been reading <em class="currently-substance">{{ site.data.currently.reading }}</em>, learning <em class="currently-substance">{{ site.data.currently.learning }}</em>, and working on <em class="currently-substance">{{ site.data.currently.working_on }}</em>.</p>
 
