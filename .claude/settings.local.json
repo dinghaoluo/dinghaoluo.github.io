@@ -180,7 +180,8 @@
       "WebFetch(domain:www.vulture.com)",
       "WebFetch(domain:www.theringer.com)",
       "Read(//c/Users/luod/Downloads/**)",
-      "Read(//c/Users/**)"
+      "Read(//c/Users/**)",
+      "WebFetch(domain:archive.org)"
     ]
   }
 }

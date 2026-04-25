@@ -681,20 +681,6 @@ body {
   to   { opacity: 1; transform: scale(1); }
 }
 
-// currently intro paragraph on home page
-.currently-intro {
-  font-size: 0.95em;
-  line-height: 1.75;
-  margin-top: 0.3em;
-  margin-bottom: 1.6em;
-
-  em { font-style: italic; }
-
-  em.currently-substance {
-    color: $site-text-subtle;
-    font-style: italic;
-  }
-}
 
 .home .page__content h2 a {
   color: inherit;

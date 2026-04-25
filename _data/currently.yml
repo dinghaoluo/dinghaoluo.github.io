@@ -1,8 +1,0 @@
-# -------------------------------------------------------
-# For dynamic updating of recent status:
-#   "... Recently I've been reading ___, learning ___, and thinking ___."
-# -------------------------------------------------------
-
-reading: "Mason & Dixon"
-learning: "SQL for analytics; picking up scikit-learn"
-working_on: "the Zone — a companion site for visualising Gravity's Rainbow"

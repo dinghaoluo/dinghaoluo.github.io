@@ -4,18 +4,18 @@ author_profile: true
 classes: home
 ---
 
-*Dinghao here.*
+*Hi, Dinghao here :)*
 
-I am finishing my PhD in neuroscience at the [Max Planck Institute for Neuroscience](https://www.mpfi.org), working on how rapid dopamine signals in the hippocampus tune the accuracy of memory during navigation. I am graduating December 2026 and looking for data science roles in Europe.
+I am finishing my PhD in neuroscience at the [Max Planck Institute for Neuroscience](https://www.mpfi.org), working on how rapid dopamine signals in the hippocampus tune the accuracy of memory. I am graduating December 2026 and looking for data science roles in Europe.
 
-<p class="currently-intro">Recently, I have been reading <em class="currently-substance">{{ site.data.currently.reading }}</em>, learning <em class="currently-substance">{{ site.data.currently.learning }}</em>, and working on <em class="currently-substance">{{ site.data.currently.working_on }}</em>.</p>
+Recently, I have been reading *Mason & Dixon*, learning *SQL and intermediate machine learning*, and working on *a computational analysis of Pynchon's* Gravity's Rainbow.
 
 Reach out to me: <a href="mailto:dinghao.luo@outlook.com">[dinghao.luo@outlook.com]</a>  
 Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.com/user/amoxdl24/) · [Instagram](https://www.instagram.com/amoxitoxin) · [LinkedIn](https://www.linkedin.com/in/dinghaoluo/) · [CV](/cv/)
 
 ---
 
-<h2 id="thoughts"><a href="/thoughts/">thoughts :)</a></h2>
+<h1 id="thoughts"><a href="/thoughts/">thoughts :)</a></h2>
 
 {% assign all_thoughts = site.data.thoughts | sort: 'posted' | reverse %}
 
@@ -23,7 +23,11 @@ Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.
   {% for t in all_thoughts limit:40 %}{% if t.image %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
 </div>
 
-I keep a running log of everything I read, watch, and play, with reviews that range from a paragraph to a small essay. A few titles I will shamelessly push on anyone who asks: *Gravity's Rainbow*, *Solenoid*, Mark Fisher's *Capitalist Realism*, *Aftersun*, *The Zone of Interest*, *Disco Elysium*, *Outer Wilds*, and all five seasons of *The Wire*. If even one of those is new to you, I promise it will be worth your time. The negative reviews are equally honest; nothing here is polite for the sake of being polite.
+Reading was probably my favourite activity from childhood to my teenage years. After a regrettably long pause in reading in the first years of my PhD, I picked up reading again, and have since found tremendous satisfaction in deciphering the world through political, scientific writers of both fiction and non-fiction. This will probably change through the years, but for now, my favourite living writers are Mircea Cărtărescu and Thomas Pynchon. These are a few of the books I loved, and if even one of these is new to you, I promise it will be well worth your time (feel free to check out my reviews by clicking on the titles!):
+- ***Solenoid*** (2015) by Mircea Cărtărescu
+- ***Gravity's Rainbow*** (1973) by Thomas Pynchon 
+- ***Capitalist Realism*** (2009) by Mark Fisher
+- *and if you read Chinese...* my translation of ***Entangled Life*** (2020) by Merlin Sheldrake
 
 [→ thoughts](/thoughts/)
 
