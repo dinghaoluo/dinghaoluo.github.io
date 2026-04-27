@@ -1255,7 +1255,7 @@
   creator: "Rebecca Skloot"
   creator_role: "by"
   year: 2010
-  eval: "liked"
+  eval: "loved"
   image: "/assets/images/thoughts/books/immortal_life_of_henrietta_lacks.jpg"
   posted: "2020-05-20"
   text: |
@@ -1263,20 +1263,19 @@
 
     The ethical dimensions are handled without sentimentality. Skloot does not flatten the researchers who took the cells into villains; the medical culture of the 1950s treated biological samples as institutional property rather than as belonging to the patient, and Lacks was not uniquely wronged so much as paradigmatically wronged in a system that wronged many. <u>The cruelty is not that her cells were taken, but that the family learned from journalists rather than scientists, that they remained poor while institutions profited, and that Henrietta became a cell line before she became a person in the historical record.</u>
 
-- title: "In the Blink of an Eye: A Perspective on Film Editing"
+- title: "In the Blink of an Eye"
+  title_en: "第一只眼"
   type: "book"
-  creator: "Walter Murch"
+  creator: "Andrew Parker, trans. 于翀涵 & 李晨昊 (CN)"
   creator_role: "by"
-  year: 1995
-  eval: "liked"
+  year: 2003
+  eval: "meh..."
   image: "/assets/images/thoughts/books/in_the_blink_of_an_eye.jpg"
   posted: "2020-05-12"
   text: |
-    Walter Murch edited *The Godfather*, *Apocalypse Now*, and *The English Patient*, and ***In the Blink of an Eye*** is his theoretical account of what editing is and how it works. The central question is: why do cuts work? Why does the viewer, presented with a discontinuous sequence of images, not experience them as discontinuous but as a continuous narrative? Murch's answer involves both cognitive psychology and film grammar, but his most provocative claim is that the cut works because it replicates the structure of human memory, which is also a discontinuous sequence of images assembled into apparent continuity by the mind.
+    Andrew Parker spent formative years at the Natural History Museum in London, and ***In the Blink of an Eye*** carries that archive visibly. The book is stocked with natural history, animal optics, and structural colour at a breadth that only long exposure to collections makes possible; many of the animal examples are genuinely interesting, and the prose moves well. As science communication it is enjoyable.
 
-    The discussion of the "rule of six" -- the six criteria Murch ranks, in order, when deciding whether a cut should be made -- is the book's most practically useful section, and it reads not as a rulebook but as a description of editorial intuition made explicit. Emotion is ranked first, above story logic and spatial continuity, because film is a medium of emotion first and grammar second.
-
-    <u>The deepest point is almost casual: Murch notes that the blink itself occurs at moments of cognitive transition, and he suggests that the cut is the filmic equivalent of the blink, a punctuation mark the mind has already prepared for.</u> Whether or not this is literally true, it is a beautiful model.
+    As a case for its own central argument, it is less satisfying. Parker's Light Switch Theory holds that the Cambrian Explosion was triggered by the evolution of eyes in predators, which suddenly made external appearance a matter of survival for prey; it receives surprisingly little dedicated treatment for a book premised on a single thesis. <u>The theory's deeper problem is timing: critics including Martin Brasier have argued that predatory behaviour was already spreading well before camera-type eyes appeared in the fossil record, which means the sequence the theory requires does not hold.</u>
 
 - title: "Complexity: A Guided Tour"
   type: "book"
