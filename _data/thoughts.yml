@@ -73,7 +73,7 @@
 
     Inside each V2, a pendulum device integrated acceleration into velocity to calculate Brennschluss, the instant of engine cutoff where ascent surrendered to gravity. Franz Pökler was watching his daughter Ilse grow up in the same calculus: each annual visit to the camp a single data point, each integral converging, for both rocket and girl, on disappearance. <u>That is what this novel does better than any other war novel I have read: it makes the mathematics of destruction and the mathematics of a life rhyme, and the rhyme is unbearable.</u> The Pulitzer board called it 'unreadable' and 'obscene'. Both charges contain a grain of truth: Pynchon demands that one read against the current, and the obscenity is the world's, not his. The Zone is the space where national identities dissolve, where the *Elect* and the *Preterite* shuffle past each other in the rubble, where paranoia and anti-paranoia become indistinguishable. The Elect/Preterite distinction is perhaps Pynchon's most original theological contribution: a Calvinist framework repurposed to describe every system of power, every division between those who ride the rocket and those who are crushed beneath it. The novel's own form enacts this entropy, its narrative fragmenting and dissolving as surely as Slothrop does, until the text itself becomes a kind of Zone. Edward Mendelson called it an 'encyclopedic narrative' in the tradition of Dante and Melville. I would add only that it is also a deeply personal one.
 
-    Pynchon, in unruly but precise language, writes the most anti-mainstream Second World War novel imaginable, and <u>I found myself dissolving alongside Slothrop in the Zone, watching a magnificent rainbow arch after the rain, eyes brimming.</u>
+    Pynchon, in unruly but precise language, writes the most anti-mainstream Second World War novel imaginable, and I found myself dissolving alongside Slothrop in the Zone, watching a magnificent rainbow arch after the rain, eyes brimming.
 
 - title: "The City & the City"
   type: "book"
@@ -800,7 +800,7 @@
   text: |
     I came to ***Life Ascending*** having already been converted by Lane's *The Vital Question*, and the disappointment was proportional to the expectation. The structure, ten chapters for ten 'great inventions' of evolution, imposes a listicle format on material that resists it. The origin-of-life and complex-cell chapters are strong because they draw on Lane's own bioenergetic research, but the later chapters on consciousness and death read as though Lane felt obligated to fill a quota and reached for topics outside his expertise.
 
-    <u>The writing is competent throughout but lacks the sustained argumentative drive that makes *The Vital Question* thrilling.</u> Lane is at his best when tracing proton gradients across membranes; he is less convincing when speculating about the evolutionary origins of subjective experience. A book that had been five chapters rather than ten, concentrating on what Lane actually knows, would have been twice as good.
+    The writing is competent throughout but lacks the sustained argumentative drive that makes *The Vital Question* thrilling. Lane is at his best when tracing proton gradients across membranes; he is less convincing when speculating about the evolutionary origins of subjective experience. A book that had been five chapters rather than ten, concentrating on what Lane actually knows, would have been twice as good.
 
 - title: "Order out of Chaos"
   title_en: "La nouvelle alliance: Métamorphose de la science"
@@ -808,23 +808,24 @@
   creator: "Ilya Prigogine & Isabelle Stengers, trans. 曾庆宏 & 沈小峰 (CN: 《从混沌到有序》)"
   creator_role: "by"
   year: 1979
-  eval: "liked"
+  eval: "meh..."
   image: "/assets/images/thoughts/books/order_out_of_chaos.jpg"
   posted: "2021-03-22"
   text: |
     The equations of classical mechanics work identically forwards and backwards in time; the second law of thermodynamics does not. ***Order out of Chaos*** opens with this contradiction, not as a curiosity to be filed away but as the fundamental unresolved fracture in physics, the place where the Newtonian synthesis quietly fails. Prigogine and Stengers read this fracture as an opportunity: if irreversibility is real and universal, then the emergence of order from non-equilibrium conditions is not an anomaly to be explained away but the basic mode through which nature produces complexity.
 
-    The concept of dissipative structures -- the Nobel-Prize-winning insight that underpins the book -- is genuinely powerful. Organised patterns sustained far from thermodynamic equilibrium by continuous energy dissipation; structures whose order depends on and reproduces through exchange with an environment. Living organisms, chemical oscillators, atmospheric cells: the framework is exact enough to be rigorous and general enough to reach biology, and the Belousov-Zhabotinsky reaction serves as the sharpest demonstration of a principle that extends well beyond chemistry.
+    The book then oversells itself. Prigogine and Stengers have a habit of gesturing towards consequences the thermodynamic argument cannot reach: biology, consciousness, social complexity are all invoked, but the leap from dissipative structures in Bénard convection cells to 'a new dialogue with nature' is rhetorically exciting and scientifically underspecified. <u>The popular-science register smooths over the places where the argument is genuinely contested or incomplete, and one comes away with a more triumphalist picture than the science warrants.</u>
 
-    <u>Isabelle Stengers' philosophical scaffolding is what makes the book more than a Nobel laureate's popular account; she situates the argument in the history of Western physics from Newton through Bergson, and the genealogy is persuasive: this is not a correction of classical mechanics but a different way of thinking about nature's relationship to time.</u> The book overreaches when it inflates dissipative structures into a general epistemological revolution: the slide from chemical self-organisation to a new metaphysics of complexity is not always rigorous, but the core argument earns its ambition.
+    The book was hugely influential in the 1980s precisely because it arrived when people were hungry for a scientific framework that could accommodate complexity, emergence, and irreversibility, things that felt philosophically urgent but were marginalised in the physics mainstream. That cultural role is real. Reading it now, though, a lot of it has the flavour of promissory notes that did not fully cash out.
 
-- title: "The Self Illusion: How the Social Brain Creates Identity"
+- title: "The Self Illusion"
+  title_en: "自我的本质"
   type: "book"
-  creator: "Bruce Hood"
+  creator: "Bruce Hood, trans. 钱静 (CN)"
   creator_role: "by"
   year: 2012
   eval: "liked"
-  image: "/assets/images/thoughts/books/the_self_illusion.jpg"
+  image: "/assets/images/thoughts/books/self_illusion.jpg"
   posted: "2021-03-15"
   text: |
     ***The Self Illusion*** makes a case familiar from Buddhist philosophy but argued through cognitive neuroscience: the self is not a thing but a process, not a unified agent directing experience but a narrative assembled after the fact from multiple independent neural systems. Hood draws on classic experiments -- the split-brain studies of Gazzaniga, the confabulation work of Ramachandran, priming effects that implicate unconscious processes in what subjects retrospectively report as deliberate choices -- to argue that the coherent "I" who seems to be the author of one's life is a useful fiction rather than a fact.
@@ -833,10 +834,10 @@
 
     <u>The best chapters are the neurological case studies, where the evidence for self-construction is most concrete: patients who confabulate motives, patients who cannot update their self-model after injury, the split-brain patient whose left hemisphere invents explanations for what the right hemisphere has just done.</u> The theoretical ambition slightly exceeds the grip.
 
-- title: "Overcomplicated: Technology at the Limits of Comprehension"
-  title_en: "过于复杂"
+- title: "Overcomplicated"
+  title_en: "为什么需要生物学思维"
   type: "book"
-  creator: "Samuel Arbesman"
+  creator: "Samuel Arbesman, trans. 贾拥民 (CN)"
   creator_role: "by"
   year: 2016
   eval: "liked"
@@ -845,7 +846,7 @@
   text: |
     A solid introduction to complexity as a property of modern technological systems, though not the book for anyone wanting a formal entry into complexity science. Arbesman identifies four factors that generate what he calls 'overcomplicated' systems: accretion, interaction, edge cases, and the sheer passage of time, and argues that we need to abandon the engineering instinct toward abstraction and adopt instead a biological mode of thinking, one attuned to feedback, cascading failures, and emergent behaviour.
 
-    <u>The argument is clear and the examples are well chosen, even if the prose occasionally circles a point longer than necessary.</u> The Chinese translation is decent, despite a few baffling errors. ***Overcomplicated*** is useful for what it is: a readable primer that frames the right questions without claiming to answer them. It does not try to be more, and that restraint is a virtue.
+    The argument is clear and the examples are well chosen, even if the prose occasionally circles a point longer than necessary. The Chinese translation is decent, despite a few baffling errors. ***Overcomplicated*** is useful for what it is: a readable primer that frames the right questions without claiming to answer them. It does not try to be more, and that restraint is a virtue.
 
 - title: "Irrational Man: A Study in Existential Philosophy"
   title_en: "非理性的人"
@@ -980,7 +981,7 @@
   text: |
     Read immediately after *The Vital Question*, ***Power, Sex, Suicide*** covers much of the same bioenergetic ground but with additional sections, above all on the 'warm-blooded revolution,' Lane's argument about how the evolution of endothermy was driven by mitochondrial energy capacity. On that specific claim, Lane's metabolic hypothesis did not quite convince me, but the broader framework is characteristically thrilling: Lane traces the thread of mitochondrial biology through energy production, the evolution of sex (as a mechanism for purging deleterious mitochondrial mutations), and the role of apoptosis in multicellular life, each chapter building on the last with a narrative momentum rare in science writing.
 
-    <u>The prose is as fluid as in *The Vital Question*, written a decade later, confirming that Lane's gift for making dense biochemistry vivid was there from the beginning.</u> The Taiwanese translation is of high quality, though the occasional rendering choices, 'proton pump' as 質子幫浦 rather than the perfectly serviceable 質子泵, required some adjustment. A minor quibble against what is, in substance and ambition, among the finest science books I have encountered.
+    The prose is as fluid as in *The Vital Question*, written a decade later, confirming that Lane's gift for making dense biochemistry vivid was there from the beginning. The Taiwanese translation is of high quality, though the occasional rendering choices, 'proton pump' as 質子幫浦 rather than the perfectly serviceable 質子泵, required some adjustment. A minor quibble against what is, in substance and ambition, among the finest science books I have encountered.
 
 - title: "The Vital Question: Why Is Life the Way It Is?"
   title_en: "复杂生命的起源"
@@ -1145,7 +1146,7 @@
   image: "/assets/images/thoughts/books/language_instinct.jpg"
   posted: "2020-08-30"
   text: |
-    Are there references? The e-book has none at all. A bold move for a book whose central claim, that language is an innate biological instinct shaped by natural selection, has been contested by linguists, anthropologists, and connectionists for three decades. <u>One cannot even check.</u>
+    Are there references? The e-book has none at all. A bold move for a book whose central claim, that language is an innate biological instinct shaped by natural selection, has been contested by linguists, anthropologists, and connectionists for three decades. One cannot even check.
 
     Strip the missing citations away and there is still a problem of tone. ***The Language Instinct*** presents the nativist position with a confidence that reads less like scientific conviction than like salesmanship, as though sheer rhetorical momentum could settle a debate that Chomsky himself never managed to close. <u>The book asks for a faith that science should not require, and without references, faith is all it can offer.</u>
 
@@ -1479,7 +1480,7 @@
 
     The book gave me my first sustained encounter with phenomenology as a practice rather than a theory. Husserl's injunction to go back to the things themselves, to describe experience as it actually presents itself rather than as theory predicts it will, is rendered here as a genuine intellectual revolution with consequences in literature, psychology, and politics. The treatment of Heidegger is admirably honest: Bakewell neither excuses his Nazism nor dismisses his philosophy because of it.
 
-    <u>What I took away most was the portrait of Beauvoir, examined without either the hagiography of the devoted partner or the condescension of the feminist critique, as a philosopher in her own right whose existentialist inheritance shaped her feminism in ways that are still worth arguing about.</u>
+    <u>The portrait of Beauvoir is the book's most valuable contribution: examined without either the hagiography of the devoted partner or the condescension of the feminist critique, she emerges as a philosopher in her own right whose existentialist inheritance shaped her feminism in ways that are still worth arguing about.</u>
 
 - title: "Words of a Dwarf"
   title_en: "侏儒の言叶 / 侏儒の言葉"
@@ -1885,7 +1886,7 @@
 
     The strongest chapters are those where philosophy and marine biology are integrated. Godfrey-Smith's descriptions of observing octopuses in their rocky underwater dens are vivid, and the evolutionary argument about when and why subjective experience arose is carefully constructed. The book is honest about what we do not know: the hard problem of consciousness is not solved here, and the uncertainty is handled with appropriate intellectual rigour rather than papered over with speculation.
 
-    <u>What the book gave me was a cleaner framing of what the question actually is: not whether octopuses are conscious in the way humans are, but whether the distinction between having some experience and having none is as clean as we assume, and what it would mean if it is not.</u> A brief, well-made book for a difficult subject.
+    <u>The question the book clarifies is not whether octopuses are conscious in the way humans are, but whether the distinction between having some experience and having none is as clean as we assume, and what it would mean if it is not.</u> A brief, well-made book for a difficult subject.
 
 - title: "Philosophy of Language"
   type: "book"
@@ -1900,7 +1901,7 @@
 
     The chapters on Grice are the strongest. The distinction between natural and non-natural meaning, and the analysis of utterer's meaning in terms of intentions and recognitions-of-intentions, is explained with a clarity that made me understand why so many subsequent debates in philosophy of language organised themselves around Grice's framework. The chapters on Wittgenstein's later work are necessarily partial; no one compresses the *Philosophical Investigations*. But they do the important thing, which is to make the argument against private language accessible before the reader encounters the original.
 
-    <u>What the book does well is sustain a through-line: language is shown not as a set of names attached to objects but as an activity embedded in practice, a conclusion arrived at gradually through the accumulated failures of more reductive accounts.</u> I used it for a Logic and Philosophy of Language paper at Cambridge, and it holds up as a reference.
+    <u>The through-line is the book's main achievement: language is shown not as a set of names attached to objects but as an activity embedded in practice, a conclusion arrived at gradually through the accumulated failures of more reductive accounts.</u> I used it for a Logic and Philosophy of Language paper at Cambridge, and it holds up as a reference.
 
 - title: "Advice for a Young Investigator"
   type: "book"
@@ -2712,7 +2713,7 @@
   text: |
     The title story is the best thing here. A couple wakes up in the middle of the night with a hunger so overwhelming it can only be understood as metaphysical, and the narrator realises it is connected to an old transgression: years ago he and a friend had attempted to rob a bakery but accepted Wagner records instead of bread, leaving a curse unresolved. The only remedy is to complete the attack. The story's logic, playful and slightly unhinged, is early Murakami at his most appealing.
 
-    The rest of ***The Second Bakery Attack*** is more variable. The other stories feel like sketches: the themes that will later organise his novels are present here in outline, the unexplained losses, the music that arrives at the wrong moment, the women who disappear before they can be understood. Nothing here is bad, but most of it is the blueprint rather than the building. <u>A useful companion to the longer work, but not a destination in itself.</u>
+    The rest of ***The Second Bakery Attack*** is more variable. The other stories feel like sketches: the themes that will later organise his novels are present here in outline, the unexplained losses, the music that arrives at the wrong moment, the women who disappear before they can be understood. Nothing here is bad, but most of it is the blueprint rather than the building. A useful companion to the longer work, but not a destination in itself.
 
 - title: "Twelfth Night"
   type: "book"
@@ -3106,7 +3107,7 @@
 
     And then the second half arrives, and with it, the studio. The emotional machinery, which in the first hour runs quietly beneath the surface, is suddenly dragged into the open and operated at maximum volume. Subtlety is abandoned; several passages feel as though they are pointing at the audience and screaming. There is a particular kind of Hollywood emotional manipulation that works by removing all ambiguity from a scene, so the viewer has no choice but to feel the prescribed feeling at the prescribed moment, and this film, constrained by Amazon and the demands of the mainstream blockbuster, falls into that trap repeatedly in its second half. <u>The grief becomes performance; the wonder becomes instruction.</u>
 
-    One leaves with a sense of waste that is, in its own way, as powerful as any feeling the film intended to produce. It is not often that a film's failure is itself interesting, but here the gap between what the first hour promises and what the second hour delivers is so wide that it becomes its own kind of argument about the structural conditions under which science fiction is allowed to exist in mainstream cinema. <u>Such a terrible waste.</u>
+    One leaves with a sense of waste that is, in its own way, as powerful as any feeling the film intended to produce. It is not often that a film's failure is itself interesting, but here the gap between what the first hour promises and what the second hour delivers is so wide that it becomes its own kind of argument about the structural conditions under which science fiction is allowed to exist in mainstream cinema. Such a terrible waste.
 
 - title: "Hoppers"
   type: "film"
@@ -3149,7 +3150,7 @@
 
     What Zhao adds to the novel is the landscape, the English countryside suffused with an almost mythic luminosity that makes the countryside feel less like backdrop than participant, a world that registers the death of a child as a kind of ontological wound. The non-linear structure, faithful to O'Farrell's, blurs past and present until the living and the dead seem to occupy the same temporal register. In the end, as in the novel, the film is about testing the threshold of death, measuring how much love can survive what it most fears.
 
-    <u>This would have been my favourite film of 2025.</u>
+    This would have been my favourite film of 2025.
 
 - title: "Revolutionary Road"
   type: "film"
