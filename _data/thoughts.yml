@@ -860,24 +860,24 @@
   text: |
     ***Irrational Man*** traces existentialism from Kierkegaard through Nietzsche, Heidegger, and Sartre, and the opening section on the cultural and philosophical context is the most useful part. The four portraits that follow are less reliable: Barrett is more interested in elaborating his own reading than in presenting each thinker on their own terms, and the argument has a self-circling quality -- fragments assembled around a thesis that never fully coheres. As an introduction to existentialism it is serviceable; as a path into the thinkers themselves, a roundabout one.
 
-- title: "The Myth of Mirror Neurons: The Real Neuroscience of Communication and Cognition"
+- title: "The Myth of Mirror Neurons"
   title_en: "神秘的镜像神经元"
   type: "book"
-  creator: "Gregory Hickok, trans. unknown (CN)"
+  creator: "Gregory Hickok, trans. 李婷燕 (CN)"
   creator_role: "by"
   year: 2014
   eval: "meh..."
-  image: "/assets/images/thoughts/books/the_myth_of_mirror_neurons.jpg"
+  image: "/assets/images/thoughts/books/myth_of_mirror_neurons.jpg"
   posted: "2021-03-04"
   text: |
     Hickok's thesis is that the mirror neuron framework, the idea that understanding others' actions requires internally simulating them via a dedicated 'mirror' system, has been vastly overhyped, and that the actual neuroscience of language and action understanding is more distributed and more interesting than the mirror story allows. On this he is largely right. The debunking chapters are effective: Hickok dismantles the strongest claims methodically, showing where the data have been over-interpreted and where alternative explanations fit better.
 
     <u>The problem is that demolition is easier than construction, and Hickok's alternative framework, while sensible, lacks the conceptual vividness that made mirror neurons so seductive in the first place.</u> A necessary corrective, but not quite the 'real neuroscience' the subtitle promises.
 
-- title: "Reality Is Not What It Seems: The Journey to Quantum Gravity"
-  title_en: "现实不似你所见"
+- title: "Reality Is Not What It Seems"
+  title_en: "La realtà non è come ci appare"
   type: "book"
-  creator: "Carlo Rovelli"
+  creator: "Carlo Rovelli, trans. Simon Carnell & Erica Segre"
   creator_role: "by"
   year: 2014
   eval: "loved"
@@ -888,9 +888,10 @@
 
     <u>Rovelli writes about physics the way the best essayists write about anything: as though the reader's understanding were not an obstacle to be overcome but a capacity to be trusted.</u> The chapters on Dante's cosmology and on the philosophical implications of quantum gravity are not digressions; they are the book's argument, that physics has always been entangled with how we imagine reality, and that the imagination is constitutive of the science, not separate from it. As with *Seven Brief Lessons*, the prose is effortlessly fluid, and one comes away not merely informed but altered in how one pictures the world.
 
-- title: "Thing Explainer: Complicated Stuff in Simple Words"
+- title: "Thing Explainer"
+  title_en: "万物解释者"
   type: "book"
-  creator: "Randall Munroe"
+  creator: "Randall Munroe, trans. 孙璐 (CN)"
   creator_role: "by"
   year: 2015
   eval: "disliked"
@@ -899,10 +900,10 @@
   text: |
     Beautifully drawn, and Munroe is as funny as ever, but ***Thing Explainer*** is conceptually hollow. The conceit, explaining complex systems using only the thousand most common English words, sounds charming and produces a book that is almost entirely useless to anyone who actually wants to learn. The 'ring of fire' is the only object in the entire book identified by its real name. <u>Stripping away technical vocabulary is not the same thing as making knowledge accessible; sometimes the jargon is the knowledge, and removing it removes the thing you were trying to explain.</u> An entertaining game that mistakes itself for pedagogy.
 
-- title: "We Are Our Brains: A Neurobiography of the Brain, from the Womb to Alzheimer's"
-  title_en: "我即我脑"
+- title: "We Are Our Brains"
+  title_en: "Wij zijn ons brein"
   type: "book"
-  creator: "Dick Swaab, trans. unknown (CN)"
+  creator: "Dick Swaab, trans. 王奕瑶, 陈琰璟, & 包爱民 (CN: 《我即我脑》)"
   creator_role: "by"
   year: 2014
   eval: "disliked"
@@ -913,10 +914,10 @@
 
     The claim that sexual orientation is 'determined before birth,' supported almost entirely by Swaab's own finding that the SCN is larger in homosexual men, does not constitute the proof he presents it as. And structurally, ***We Are Our Brains*** reads like a snippet collection, each chapter a self-contained vignette with no connective tissue. The book needed an argument; it settled for a bibliography.
 
-- title: "Self as Method: Thinking Through and Beyond"
+- title: "Self as Method"
   title_en: "把自己作为方法"
   type: "book"
-  creator: "Xiang Biao and Wu Qi"
+  creator: "Xiang Biao & Wu Qi, trans. David Ownby (EN)"
   creator_role: "by"
   year: 2020
   eval: "meh..."
@@ -927,7 +928,7 @@
 
     <u>For someone who spent twenty years at Oxford and the Max Planck Institute, Xiang's knowledge of his own institutional environment is oddly thin: he calls the colleges 'mainly for undergraduate teaching,' when anyone who has been through the tutorial system knows that is not what colleges are mainly for.</u> The praise of 'gentry spirit' and the injunction to 'know your own environment' sit uneasily with these lapses.
 
-- title: "Why We Sleep: Unlocking the Power of Sleep and Dreams"
+- title: "Why We Sleep"
   type: "book"
   creator: "Matthew Walker"
   creator_role: "by"
@@ -941,13 +942,13 @@
     <u>The message that sleep matters is uncontroversial; the specific statistical claims are the problem, and a scientist who distorts data in service of a 'good' message is still distorting data.</u> I felt deceived, and I do not forgive books that deceive me.
 
 - title: "The Nao of Brown"
-  title_en: "布朗的世界"
+  title_en: "棕色的世界"
   type: "book"
-  creator: "Glyn Dillon"
+  creator: "Glyn Dillon, trans. 来兹 (CN)"
   creator_role: "by"
   year: 2012
   eval: "loved"
-  image: "/assets/images/thoughts/books/the_nao_of_brown.jpg"
+  image: "/assets/images/thoughts/books/nao_of_brown.jpg"
   posted: "2021-02-14"
   text: |
     Glyn Dillon's watercolour panels are some of the most beautiful artwork I have seen in a graphic novel. Nao Brown works in a London toy shop, collects Japanese vinyl figures, and is tormented by intrusive thoughts of extraordinary violence: visions of stabbing, burning, destroying, arriving without warning and departing without explanation. The book is partly about obsessive-compulsive disorder and partly about the gap between how a person looks from the outside and what is happening within, and Dillon's visual style, lush, warm, suffused with colour, becomes the formal expression of that gap. <u>The world Nao inhabits is red and golden and tender; the world inside her head is none of those things, and the contrast is the book's engine.</u>
@@ -967,12 +968,10 @@
 
     What surprised me most was the melancholy. Beneath the absurdism runs something bleak: Arthur Dent is a man who has lost everything, his home, his planet, his species, and the universe responds with paperwork and bad poetry. Slartibartfast explaining how the Vogon demolition fleet arrived, 'That's bureaucracy for you!', is funny precisely because it is terrifying. <u>Adams understood, long before it became fashionable to say so, that the real horror is not malice but indifference; that the universe is not hostile, merely unhelpful.</u> <u>He has people thinking seriously about the role of towels in civilisation, and somehow that sentence is not a joke.</u> I loved every page. The towel stays packed.
 
-
-
-- title: "Power, Sex, Suicide: Mitochondria and the Meaning of Life"
+- title: "Power, Sex, Suicide"
   title_en: "能量、性、死亡"
   type: "book"
-  creator: "Nick Lane, trans. unknown (TW)"
+  creator: "Nick Lane, trans. 林彥綸 (TW)"
   creator_role: "by"
   year: 2005
   eval: "loved"
@@ -983,21 +982,21 @@
 
     The prose is as fluid as in *The Vital Question*, written a decade later, confirming that Lane's gift for making dense biochemistry vivid was there from the beginning. The Taiwanese translation is of high quality, though the occasional rendering choices, 'proton pump' as 質子幫浦 rather than the perfectly serviceable 質子泵, required some adjustment. A minor quibble against what is, in substance and ambition, among the finest science books I have encountered.
 
-- title: "The Vital Question: Why Is Life the Way It Is?"
+- title: "The Vital Question"
   title_en: "复杂生命的起源"
   type: "book"
   creator: "Nick Lane, trans. 严曦 (CN)"
   creator_role: "by"
   year: 2015
   eval: "loved"
-  image: "/assets/images/thoughts/books/the_vital_question.jpg"
+  image: "/assets/images/thoughts/books/vital_question.jpg"
   posted: "2021-01-22"
   text: |
-    I spent a week reading 严曦's Chinese translation with the attention one reserves for books that reorganise how one thinks about the world, and ***The Vital Question*** did exactly that. Lane's central argument is bioenergetic: the reason complex life exists at all, the reason eukaryotic cells arose only once in four billion years, comes down to energy. Bacteria and archaea are trapped by their own cell membranes: to maintain proton gradients for ATP synthesis, they must distribute copies of their genome near the membrane surface, and the energetic cost of maintaining hundreds of genome copies prevents them from expanding. The endosymbiotic event, an archaeon engulfing a bacterium that became the mitochondrion, liberated the host cell from this constraint, concentrating respiration in a dedicated organelle and freeing the nuclear genome to expand, diversify, and eventually produce every complex organism on Earth.
+    Lane's central argument in ***The Vital Question*** is bioenergetic: the reason complex life exists at all, the reason eukaryotic cells arose only once in four billion years, comes down to energy. Bacteria and archaea are trapped by their own cell membranes: to maintain proton gradients for ATP synthesis, they must distribute copies of their genome near the membrane surface, and the energetic cost of maintaining hundreds of genome copies prevents them from expanding. The endosymbiotic event, an archaeon engulfing a bacterium that became the mitochondrion, liberated the host cell from this constraint, concentrating respiration in a dedicated organelle and freeing the nuclear genome to expand, diversify, and eventually produce every complex organism on Earth.
 
     The alkaline hydrothermal vent hypothesis for the origin of life is the book's other major contribution: Lane argues that life began not in a primordial soup but at submarine vents where natural proton gradients across thin iron-sulphide barriers could drive the reduction of CO₂ by H₂, producing organic molecules without enzymes. <u>The elegance of this proposal is that it explains why all life, from archaea to mitochondria to chloroplasts, uses proton gradients: because life was born inside one.</u>
 
-    Lane does not write down to his reader. The chemistry is real, the terminology is precise, and the translator 严曦 handles the difficulty with a rigour that elevates the Chinese edition into something pleasurable to read. <u>This is the most intellectually thrilling science book I have encountered: a single argument, pursued with total commitment, that redraws the map of life's deepest history.</u>
+    Lane does not write down to his reader; the chemistry is real, the terminology exact. The Chinese translation by 严曦 handles the technical density well. <u>This is the most intellectually thrilling science book I have encountered: a single argument, pursued with total commitment, that redraws the map of life's deepest history.</u>
 
 
 - title: "The Case of the Speluncean Explorers: Nine New Opinions"
