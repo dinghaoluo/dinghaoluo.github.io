@@ -1135,7 +1135,7 @@
 
     Buonomano barely touches *time cells*, the hippocampal neurons that fire at specific moments during a temporal interval, despite the fact that they are arguably the strongest evidence for the brain's intrinsic timing capacity beyond the sub-second scale. The distinction between *interval timing*, likely striatal and cerebellar, and the *episodic temporal organisation* performed by hippocampal sequences is never drawn. *Theta phase precession*, the mechanism by which place cells compress behavioural sequences into single oscillatory cycles, goes unmentioned, yet it is perhaps the most elegant neural solution to the problem of binding events across time. Eichenbaum's late reviews remain more focused and more useful. <u>The brain is indeed a time machine; Buonomano simply never opens the hood.</u>
 
-- title: "The Language Instinct: How the Mind Creates Language"
+- title: "The Language Instinct"
   type: "book"
   creator: "Steven Pinker"
   creator_role: "by"
@@ -1144,9 +1144,9 @@
   image: "/assets/images/thoughts/books/language_instinct.jpg"
   posted: "2020-08-30"
   text: |
-    Are there references? The e-book has none at all. A bold move for a book whose central claim, that language is an innate biological instinct shaped by natural selection, has been contested by linguists, anthropologists, and connectionists for three decades. One cannot even check.
+    ***The Language Instinct*** argues that language is a biological adaptation shaped by natural selection, not a cultural invention transmitted across generations. Pinker marshals genuine observations in support: all human cultures develop language; deaf children exposed to impoverished sign input spontaneously invent systematic sign languages; specific brain regions are implicated in language in ways that suggest specialisation. These are real phenomena and they deserve explanation. The problem is not the observations but the conclusion Pinker draws: that they settle the debate between nativism and its alternatives. Both sides accept these observations; neither side has resolved what they mean.
 
-    Strip the missing citations away and there is still a problem of tone. ***The Language Instinct*** presents the nativist position with a confidence that reads less like scientific conviction than like salesmanship, as though sheer rhetorical momentum could settle a debate that Chomsky himself never managed to close. <u>The book asks for a faith that science should not require, and without references, faith is all it can offer.</u>
+    The poverty-of-stimulus argument, the book's argumentative centrepiece, is its most exposed flank. Sampson demonstrated that its logic would prove all learning impossible: no learner receives negative evidence from nature, and yet learning occurs. Statistical learning research has since shown the stimulus to be far richer than Pinker assumed. The connectionist challenge from Elman and colleagues showed that domain-general networks can acquire grammatical structure without innately specified rules, a finding the book does not adequately address. Evans and Levinson's cross-linguistic survey found no truly universal structural properties: languages exist without nouns and verbs, without tense, without recursive embedding. Even on the nativist side, Chomsky's own revisions to Universal Grammar and his rejection of Pinker's evolutionary account left the foundations looser than the book suggests. The book presents nativism not as a live research programme contested on multiple fronts but as a matter approaching settlement. <u>Pinker's book has the energy of good science writing; it lacks the good faith.</u>
 
 - title: "Enlightenment Now: The Case for Reason, Science, Humanism, and Progress"
   type: "book"
