@@ -15,7 +15,7 @@ Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.
 
 ---
 
-<h1 id="thoughts"><a href="/thoughts/">thoughts :)</a></h2>
+<h2 id="thoughts"><a href="/thoughts/">thoughts :)</a></h2>
 
 {% assign all_thoughts = site.data.thoughts | sort: 'posted' | reverse %}
 
@@ -24,8 +24,9 @@ Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.
 </div>
 
 Reading was the first durable way I found of making sense of the world. The early years of my PhD interrupted the habit; returning to it gave me a sharper vocabulary for political economy, science, and the strange persistence of fiction. The writers I return to most are Mircea Cărtărescu and Thomas Pynchon. These are a few coordinates rather than a canon: books that changed the scale at which I think.
+
 - ***Solenoid*** (2015) by Mircea Cărtărescu
-- ***Gravity's Rainbow*** (1973) by Thomas Pynchon 
+- ***Gravity's Rainbow*** (1973) by Thomas Pynchon
 - ***Capitalist Realism*** (2009) by Mark Fisher
 - *and if you read Chinese...* my translation of ***Entangled Life*** (2020) by Merlin Sheldrake
 
