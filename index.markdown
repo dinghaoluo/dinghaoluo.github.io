@@ -23,7 +23,7 @@ Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.
   {% for t in all_thoughts limit:40 %}{% if t.image %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
 </div>
 
-Reading was probably my favourite activity from childhood to my teenage years. After a regrettably long pause in reading in the first years of my PhD, I picked up reading again, and have since found tremendous satisfaction in deciphering the world through political, scientific writers of both fiction and non-fiction. This will probably change through the years, but for now, my favourite living writers are Mircea Cărtărescu and Thomas Pynchon. These are a few of the books I loved, and if even one of these is new to you, I promise it will be well worth your time (feel free to check out my reviews by clicking on the titles!):
+Reading was the first durable way I found of making sense of the world. The early years of my PhD interrupted the habit; returning to it gave me a sharper vocabulary for political economy, science, and the strange persistence of fiction. The writers I return to most are Mircea Cărtărescu and Thomas Pynchon. These are a few coordinates rather than a canon: books that changed the scale at which I think.
 - ***Solenoid*** (2015) by Mircea Cărtărescu
 - ***Gravity's Rainbow*** (1973) by Thomas Pynchon 
 - ***Capitalist Realism*** (2009) by Mark Fisher
@@ -43,7 +43,7 @@ I spent three years as science editor and translator at Neu-Reality (神经现�
 
 <h2 id="science"><a href="/science/">science :)</a></h2>
 
-My PhD asks what tunes the accuracy of memory. I study the locus coeruleus, a small brainstem nucleus classically treated as a slow, diffuse modulator of arousal. What I found is that it also delivers rapid, spatially confined dopamine signals into hippocampal CA1, and that these signals bias local neural dynamics during time and distance estimation in a navigation task. The dopamine transients decay over seconds and micrometres, selectively recruiting a population of ramping neurons and shifting when the animal initiates reward-seeking. I designed the experiments, built the analysis pipelines in **Python**, and developed a computational model to test the idea. A paper is in preparation. Before this I was in the Paulsen lab at Cambridge, where my undergraduate thesis looked at dopamine's role in CA3–CA1 synaptic plasticity. I am graduating December 2026 and looking for data science roles in Europe; if the overlap between neuroscience, computation, and careful writing sounds useful to you, get in touch.
+My PhD asks what tunes the accuracy of memory. The locus coeruleus, a small brainstem nucleus, is usually treated as a slow arousal system: a diffuse neuromodulatory volume knob. My work starts from a different possibility, that rapid LC dopamine signals in hippocampal CA1 change local neural dynamics on the scale at which a memory-guided decision is made. In a navigation task, these dopamine transients decay over seconds and micrometres, recruit a population of ramping neurons, and shift when the animal initiates reward-seeking. I designed the experiments, built the analysis pipelines in **Python**, and developed a computational model to test the mechanism. A paper is in preparation. Before this I was in the Paulsen lab at Cambridge, where my undergraduate thesis looked at dopamine's role in CA3–CA1 synaptic plasticity. I am graduating December 2026 and looking for data science roles in Europe; if the overlap between neuroscience, computation, and careful writing sounds useful to you, get in touch.
 
 [→ science](/science/)
 
@@ -83,4 +83,4 @@ Photographs from fieldwork, travel, and daily life. Mostly shot on a Fujifilm X-
 
 <h2 id="other-stuff">other stuff :)</h2>
 
-There is a [CV](/cv/) if you need one. I am also building [the Zone](https://github.com/dinghaoluo/the_zone_site), a companion site for visualising *Gravity's Rainbow*: interactive maps, character networks, and cross-reference tools, because some books refuse to stay on the page. Seven Pynchon novels in and still finding new threads.
+There is a [CV](/cv/) if you need one. I am also building [the Zone](https://github.com/dinghaoluo/the_zone_site), a computational companion to *Gravity's Rainbow*: maps, character networks, and cross-reference tools for a book that refuses to stay on the page. After seven Pynchon novels, I am still finding new threads.
