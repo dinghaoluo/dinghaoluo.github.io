@@ -732,8 +732,9 @@
     The problem is the frame. The most damning finding in the book is not that Ranbaxy cheated but that the fraud was structural: Eban documents a two-tiered global supply chain in which higher-quality drugs are routed to Western markets while substandard versions reach HIV patients in Africa and Asia. <u>This is not a story about one company's bad actors; it is a story about a pharmaceutical system that extracts cost from the poorest end of its supply chain, and the book declines to treat it as such.</u> The FDA emerges as under-resourced rather than under-incentivised. The $500 million settlement becomes the resolution. Thakur becomes the hero. The structure stays standing.
 
 - title: "The Remains of the Day"
+  title_en: "长日将近"
   type: "book"
-  creator: "Kazuo Ishiguro, trans. 冯涛 (CN: 《长日将尽》)"
+  creator: "Kazuo Ishiguro, trans. 冯涛 (CN)"
   creator_role: "by"
   year: 1989
   eval: "loved"
@@ -804,7 +805,7 @@
 - title: "Order out of Chaos: Man's New Dialogue with Nature"
   title_en: "从混沌到有序"
   type: "book"
-  creator: "Ilya Prigogine and Isabelle Stengers, trans. 曾庆宏 and 沈小峰 (CH)"
+  creator: "Ilya Prigogine and Isabelle Stengers, trans. 曾庆宏 and 沈小峰 (CN)"
   creator_role: "by"
   year: 1984
   eval: "meh..."
@@ -857,7 +858,7 @@
 - title: "The Myth of Mirror Neurons: The Real Neuroscience of Communication and Cognition"
   title_en: "神秘的镜像神经元"
   type: "book"
-  creator: "Gregory Hickok, trans. unknown (CH)"
+  creator: "Gregory Hickok, trans. unknown (CN)"
   creator_role: "by"
   year: 2014
   eval: "meh..."
@@ -896,7 +897,7 @@
 - title: "We Are Our Brains: A Neurobiography of the Brain, from the Womb to Alzheimer's"
   title_en: "我即我脑"
   type: "book"
-  creator: "Dick Swaab, trans. unknown (CH)"
+  creator: "Dick Swaab, trans. unknown (CN)"
   creator_role: "by"
   year: 2014
   eval: "disliked"
@@ -980,7 +981,7 @@
 - title: "The Vital Question: Why Is Life the Way It Is?"
   title_en: "复杂生命的起源"
   type: "book"
-  creator: "Nick Lane, trans. 严曦 (CH)"
+  creator: "Nick Lane, trans. 严曦 (CN)"
   creator_role: "by"
   year: 2015
   eval: "loved"
@@ -1029,7 +1030,7 @@
 - title: "Crows: Encounters with the Wise Guys of the Avian World"
   title_en: "乌鸦简史"
   type: "book"
-  creator: "Candace Savage, trans. unknown (CH)"
+  creator: "Candace Savage, trans. unknown (CN)"
   creator_role: "by"
   year: 2005
   eval: "liked"
@@ -1046,7 +1047,7 @@
 - title: "The Rules of Contagion: Why Things Spread — and Why They Stop"
   title_en: "传染"
   type: "book"
-  creator: "Adam Kucharski, trans. unknown (CH)"
+  creator: "Adam Kucharski, trans. unknown (CN)"
   creator_role: "by"
   year: 2020
   eval: "liked"
@@ -1193,7 +1194,7 @@
 - title: "Aroused: The History of Hormones and How They Control Just About Everything"
   title_en: "激素小史"
   type: "book"
-  creator: "Randi Hutter Epstein, trans. 杨惠东 (CH)"
+  creator: "Randi Hutter Epstein, trans. 杨惠东 (CN)"
   creator_role: "by"
   year: 2018
   eval: "liked"
@@ -1387,7 +1388,7 @@
 - title: "And Quiet Flows the Don"
   title_en: "静静的顿河 / Тихий Дон"
   type: "book"
-  creator: "Mikhail Sholokhov, trans. 金人 (CH)"
+  creator: "Mikhail Sholokhov, trans. 金人 (CN)"
   creator_role: "by"
   year: 1940
   eval: "loved"
@@ -1434,7 +1435,7 @@
 - title: "Origins of Human Communication"
   title_en: "人类沟通的起源"
   type: "book"
-  creator: "Michael Tomasello, trans. 蔡雅菁 (CH)"
+  creator: "Michael Tomasello, trans. 蔡雅菁 (CN)"
   creator_role: "by"
   year: 2008
   eval: "meh..."
@@ -1448,7 +1449,7 @@
 - title: "Sapiens: A Brief History of Humankind"
   title_en: "人类简史"
   type: "book"
-  creator: "Yuval Noah Harari, trans. 林俊宏 (CH)"
+  creator: "Yuval Noah Harari, trans. 林俊宏 (CN)"
   creator_role: "by"
   year: 2011
   eval: "liked"
@@ -1463,7 +1464,7 @@
 
 - title: "At the Existentialist Café"
   type: "book"
-  creator: "Sarah Bakewell, trans. 沈敏一 (CH)"
+  creator: "Sarah Bakewell, trans. 沈敏一 (CN)"
   creator_role: "by"
   year: 2016
   eval: "loved"
@@ -1609,7 +1610,7 @@
 - title: "Hi Izuru Tokoro no Kōjō"
   title_en: "日出国的工厂 / 日出処の工場"
   type: "book"
-  creator: "Haruki Murakami, trans. 林少华 (CH)"
+  creator: "Haruki Murakami, trans. 林少华 (CN)"
   creator_role: "by"
   year: 1987
   eval: "liked"
@@ -1689,7 +1690,7 @@
 - title: "The Unbearable Lightness of Being"
   title_en: "不能承受的生命之轻"
   type: "book"
-  creator: "Milan Kundera, trans. 许钧 (CH)"
+  creator: "Milan Kundera, trans. 许钧 (CN)"
   creator_role: "by"
   year: 1984
   eval: "loved"
@@ -1854,7 +1855,7 @@
 - title: "A Wild Sheep Chase"
   title_en: "羊をめぐる冒険"
   type: "book"
-  creator: "Haruki Murakami, trans. 林少华 (CH)"
+  creator: "Haruki Murakami, trans. 林少华 (CN)"
   creator_role: "by"
   year: 1982
   eval: "liked"
@@ -1946,7 +1947,7 @@
 - title: "Colorless Tsukuru Tazaki and His Years of Pilgrimage"
   title_en: "色彩を持たない多崎つくると、彼の巡礼の年"
   type: "book"
-  creator: "Haruki Murakami, trans. 施小炜 (CH)"
+  creator: "Haruki Murakami, trans. 施小炜 (CN)"
   creator_role: "by"
   year: 2013
   eval: "liked"
@@ -1975,7 +1976,7 @@
 - title: "Sputnik Sweetheart"
   title_en: "スプートニクの恋人"
   type: "book"
-  creator: "Haruki Murakami, trans. 林少华 (CH)"
+  creator: "Haruki Murakami, trans. 林少华 (CN)"
   creator_role: "by"
   year: 1999
   eval: "meh..."
@@ -1989,7 +1990,7 @@
 - title: "after the quake"
   title_en: "神の子どもたちはみな踊る"
   type: "book"
-  creator: "Haruki Murakami, trans. 林少华 (CH)"
+  creator: "Haruki Murakami, trans. 林少华 (CN)"
   creator_role: "by"
   year: 2000
   eval: "meh..."
@@ -2045,7 +2046,7 @@
 - title: "Underground"
   title_en: "地下 / アンダーグラウンド"
   type: "book"
-  creator: "Haruki Murakami, trans. 林少华 (CH)"
+  creator: "Haruki Murakami, trans. 林少华 (CN)"
   creator_role: "by"
   year: 1997
   eval: "loved"
@@ -2076,7 +2077,7 @@
 - title: "1Q84"
   title_en: "1Q84"
   type: "book"
-  creator: "Haruki Murakami, trans. 施小炜 (CH)"
+  creator: "Haruki Murakami, trans. 施小炜 (CN)"
   creator_role: "by"
   year: 2009
   eval: "meh..."
@@ -2134,7 +2135,7 @@
 - title: "Hard-Boiled Wonderland and the End of the World"
   title_en: "世界の終りとハードボイルド・ワンダーランド"
   type: "book"
-  creator: "Haruki Murakami, trans. 林少华 (CH)"
+  creator: "Haruki Murakami, trans. 林少华 (CN)"
   creator_role: "by"
   year: 1985
   eval: "loved"
@@ -2165,7 +2166,7 @@
 - title: "South of the Border, West of the Sun"
   title_en: "国境の南、太陽の西"
   type: "book"
-  creator: "Haruki Murakami, trans. 林少华 (CH)"
+  creator: "Haruki Murakami, trans. 林少华 (CN)"
   creator_role: "by"
   year: 1992
   eval: "liked"
@@ -2269,7 +2270,7 @@
 - title: "The Prospector"
   title_en: "Le Chercheur d'or"
   type: "book"
-  creator: "J.M.G. Le Clézio, trans. 许钧 (CH)"
+  creator: "J.M.G. Le Clézio, trans. 许钧 (CN)"
   creator_role: "by"
   year: 1985
   eval: "liked"
@@ -2285,7 +2286,7 @@
 - title: "The Autumn of the Patriarch"
   title_en: "族长的秋天"
   type: "book"
-  creator: "Gabriel García Márquez, trans. 轩乐 (CH)"
+  creator: "Gabriel García Márquez, trans. 轩乐 (CN)"
   creator_role: "by"
   year: 1975
   eval: "loved"
@@ -2315,7 +2316,7 @@
 - title: "Leaf Storm"
   title_en: "枯枝败叶"
   type: "book"
-  creator: "Gabriel García Márquez, trans. 刘习良 and 笋季英 (CH)"
+  creator: "Gabriel García Márquez, trans. 刘习良 and 笋季英 (CN)"
   creator_role: "by"
   year: 1955
   eval: "loved"
@@ -2377,7 +2378,7 @@
 - title: "Chronicle of a Death Foretold"
   title_en: "一桩事先张扬的凶杀案"
   type: "book"
-  creator: "Gabriel García Márquez, trans. 魏然 (CH)"
+  creator: "Gabriel García Márquez, trans. 魏然 (CN)"
   creator_role: "by"
   year: 1981
   eval: "liked"
@@ -2409,7 +2410,7 @@
 - title: "No One Writes to the Colonel"
   title_en: "没有人给他写信的上校"
   type: "book"
-  creator: "Gabriel García Márquez, trans. 陶玉平 (CH)"
+  creator: "Gabriel García Márquez, trans. 陶玉平 (CN)"
   creator_role: "by"
   year: 1961
   eval: "loved"
@@ -2439,7 +2440,7 @@
 - title: "Love in the Time of Cholera"
   title_en: "霍乱时期的爱情"
   type: "book"
-  creator: "Gabriel García Márquez, trans. 杨玲 (CH)"
+  creator: "Gabriel García Márquez, trans. 杨玲 (CN)"
   creator_role: "by"
   year: 1985
   eval: "loved"
@@ -2455,7 +2456,7 @@
 - title: "War"
   title_en: "La Guerre"
   type: "book"
-  creator: "J.M.G. Le Clézio, trans. 李焰明 and 袁筱一 (CH)"
+  creator: "J.M.G. Le Clézio, trans. 李焰明 and 袁筱一 (CN)"
   creator_role: "by"
   year: 1970
   eval: "loved"
@@ -2471,7 +2472,7 @@
 - title: "One Hundred Years of Solitude"
   title_en: "百年孤独"
   type: "book"
-  creator: "Gabriel García Márquez, trans. 范晔 (CH)"
+  creator: "Gabriel García Márquez, trans. 范晔 (CN)"
   creator_role: "by"
   year: 1967
   eval: "loved"
@@ -2519,7 +2520,7 @@
 - title: "Strange Tales from Tokyo"
   title_en: "东京奇谭集 / 東京奇譚集"
   type: "book"
-  creator: "Haruki Murakami, trans. 林少华 (CH)"
+  creator: "Haruki Murakami, trans. 林少华 (CN)"
   creator_role: "by"
   year: 2005
   eval: "liked"
@@ -2535,7 +2536,7 @@
 - title: "After Dark"
   title_en: "天黑以后 / アフターダーク"
   type: "book"
-  creator: "Haruki Murakami, trans. 林少华 (CH)"
+  creator: "Haruki Murakami, trans. 林少华 (CN)"
   creator_role: "by"
   year: 2004
   eval: "liked"
@@ -2564,7 +2565,7 @@
 - title: "Dance Dance Dance"
   title_en: "ダンス・ダンス・ダンス"
   type: "book"
-  creator: "Haruki Murakami, trans. 林少华 (CH)"
+  creator: "Haruki Murakami, trans. 林少华 (CN)"
   creator_role: "by"
   year: 1988
   eval: "loved"
@@ -2580,7 +2581,7 @@
 - title: "Men Without Women"
   title_en: "没有女人的男人们"
   type: "book"
-  creator: "Haruki Murakami, trans. 林少华 (CH)"
+  creator: "Haruki Murakami, trans. 林少华 (CN)"
   creator_role: "by"
   year: 2014
   eval: "meh..."
@@ -2594,7 +2595,7 @@
 - title: "Pinball, 1973"
   title_en: "1973年的弹子球"
   type: "book"
-  creator: "Haruki Murakami, trans. 林少华 (CH)"
+  creator: "Haruki Murakami, trans. 林少华 (CN)"
   creator_role: "by"
   year: 1980
   eval: "meh..."
@@ -2623,7 +2624,7 @@
 - title: "Firefly"
   title_en: "萤"
   type: "book"
-  creator: "Haruki Murakami, trans. 林少华 (CH)"
+  creator: "Haruki Murakami, trans. 林少华 (CN)"
   creator_role: "by"
   year: 1984
   eval: "liked"
@@ -2652,7 +2653,7 @@
 - title: "TV People"
   title_en: "电视人"
   type: "book"
-  creator: "Haruki Murakami, trans. 林少华 (CH)"
+  creator: "Haruki Murakami, trans. 林少华 (CN)"
   creator_role: "by"
   year: 1990
   eval: "liked"
@@ -2666,7 +2667,7 @@
 - title: "The Wind-Up Bird Chronicle"
   title_en: "ねじまき鳥クロニクル"
   type: "book"
-  creator: "Haruki Murakami, trans. 林少华 (CH)"
+  creator: "Haruki Murakami, trans. 林少华 (CN)"
   creator_role: "by"
   year: 1994
   eval: "liked"
@@ -2684,7 +2685,7 @@
 - title: "A Slow Boat to China"
   title_en: "去中国的小船"
   type: "book"
-  creator: "Haruki Murakami, trans. 林少华 (CH)"
+  creator: "Haruki Murakami, trans. 林少华 (CN)"
   creator_role: "by"
   year: 1983
   eval: "meh..."
@@ -2698,7 +2699,7 @@
 - title: "The Second Bakery Attack"
   title_en: "再袭面包店"
   type: "book"
-  creator: "Haruki Murakami, trans. 林少华 (CH)"
+  creator: "Haruki Murakami, trans. 林少华 (CN)"
   creator_role: "by"
   year: 1986
   eval: "meh..."
@@ -2725,7 +2726,7 @@
 - title: "The Island"
   title_en: "岛"
   type: "book"
-  creator: "Victoria Hislop, trans. 陈新宇 (CH)"
+  creator: "Victoria Hislop, trans. 陈新宇 (CN)"
   creator_role: "by"
   year: 2005
   eval: "loved"
@@ -2741,7 +2742,7 @@
 - title: "Siddhartha"
   title_en: "悉达多"
   type: "book"
-  creator: "Hermann Hesse, trans. 杨玉功 (CH)"
+  creator: "Hermann Hesse, trans. 杨玉功 (CN)"
   creator_role: "by"
   year: 1922
   eval: "disliked"
@@ -2755,7 +2756,7 @@
 - title: "Zen and the Art of Motorcycle Maintenance"
   title_en: "禅与摩托车维修艺术"
   type: "book"
-  creator: "Robert M. Pirsig, trans. 张国辰 (CH)"
+  creator: "Robert M. Pirsig, trans. 张国辰 (CN)"
   creator_role: "by"
   year: 1974
   eval: "loved"
@@ -2771,7 +2772,7 @@
 - title: "And the Mountains Echoed"
   title_en: "群山回唱"
   type: "book"
-  creator: "Khaled Hosseini, trans. 康慨 (CH)"
+  creator: "Khaled Hosseini, trans. 康慨 (CN)"
   creator_role: "by"
   year: 2013
   eval: "liked"
@@ -2798,7 +2799,7 @@
 - title: "Kafka on the Shore"
   title_en: "海辺のカフカ"
   type: "book"
-  creator: "Haruki Murakami, trans. 林少华 (CH)"
+  creator: "Haruki Murakami, trans. 林少华 (CN)"
   creator_role: "by"
   year: 2002
   eval: "liked"
@@ -2814,7 +2815,7 @@
 - title: "The Alchemist"
   title_en: "牧羊少年奇幻之旅"
   type: "book"
-  creator: "Paulo Coelho (CH)"
+  creator: "Paulo Coelho (CN)"
   creator_role: "by"
   year: 1988
   eval: "liked"
@@ -2841,7 +2842,7 @@
 - title: "Norwegian Wood"
   title_en: "ノルウェイの森"
   type: "book"
-  creator: "Haruki Murakami, trans. 林少华 (CH)"
+  creator: "Haruki Murakami, trans. 林少华 (CN)"
   creator_role: "by"
   year: 1987
   eval: "loved"
@@ -2875,7 +2876,7 @@
 - title: "Naive. Super"
   title_en: "我是个年轻人，我心情不太好"
   type: "book"
-  creator: "Erlend Loe (CH)"
+  creator: "Erlend Loe (CN)"
   creator_role: "by"
   year: 1996
   eval: "liked"
@@ -2902,7 +2903,7 @@
 - title: "Oranges Are Not the Only Fruit"
   title_en: "橘子不是唯一的水果"
   type: "book"
-  creator: "Jeanette Winterson (CH)"
+  creator: "Jeanette Winterson (CN)"
   creator_role: "by"
   year: 1985
   eval: "liked"
@@ -2916,7 +2917,7 @@
 - title: "A Brief History of Time"
   title_en: "时间简史"
   type: "book"
-  creator: "Stephen Hawking, trans. 许明贤, 吴忠超 (CH)"
+  creator: "Stephen Hawking, trans. 许明贤, 吴忠超 (CN)"
   creator_role: "by"
   year: 1988
   eval: "liked"
@@ -2944,7 +2945,7 @@
 - title: "The Wisdom of Life"
   title_en: "人生的智慧"
   type: "book"
-  creator: "Arthur Schopenhauer, trans. 韦启昌 (CH)"
+  creator: "Arthur Schopenhauer, trans. 韦启昌 (CN)"
   creator_role: "by"
   year: 1851
   eval: "liked"
@@ -2958,7 +2959,7 @@
 - title: "Sophie's World"
   title_en: "苏菲的世界"
   type: "book"
-  creator: "Jostein Gaarder, trans. 萧宝森 (CH)"
+  creator: "Jostein Gaarder, trans. 萧宝森 (CN)"
   creator_role: "by"
   year: 1991
   eval: "meh..."
@@ -2972,7 +2973,7 @@
 - title: "Snow Country"
   title_en: "雪国"
   type: "book"
-  creator: "Yasunari Kawabata, trans. 叶渭渠, 唐月梅 (CH)"
+  creator: "Yasunari Kawabata, trans. 叶渭渠, 唐月梅 (CN)"
   creator_role: "by"
   year: 1956
   eval: "meh..."
@@ -3000,7 +3001,7 @@
 - title: "Offending the Audience"
   title_en: "骂观众"
   type: "book"
-  creator: "Peter Handke (CH)"
+  creator: "Peter Handke (CN)"
   creator_role: "by"
   year: 1966
   eval: "loved"
@@ -3016,7 +3017,7 @@
 - title: "Childhood / In the World / My Universities"
   title_en: "童年 / 在人间 / 我的大学"
   type: "book"
-  creator: "Maxim Gorky (CH)"
+  creator: "Maxim Gorky (CN)"
   creator_role: "by"
   year: 1923
   eval: "liked"
@@ -3030,7 +3031,7 @@
 - title: "Mother"
   title_en: "母亲"
   type: "book"
-  creator: "Maxim Gorky (CH)"
+  creator: "Maxim Gorky (CN)"
   creator_role: "by"
   year: 1906
   eval: "liked"
@@ -3044,7 +3045,7 @@
 - title: "A Thousand Splendid Suns"
   title_en: "灿烂千阳"
   type: "book"
-  creator: "Khaled Hosseini, trans. 李继宏 (CH)"
+  creator: "Khaled Hosseini, trans. 李继宏 (CN)"
   creator_role: "by"
   year: 2007
   eval: "liked"
@@ -3058,7 +3059,7 @@
 - title: "The Kite Runner"
   title_en: "追风筝的人"
   type: "book"
-  creator: "Khaled Hosseini, trans. 李继宏 (CH)"
+  creator: "Khaled Hosseini, trans. 李继宏 (CN)"
   creator_role: "by"
   year: 2003
   eval: "loved"
