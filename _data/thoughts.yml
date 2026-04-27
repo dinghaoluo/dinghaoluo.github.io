@@ -1167,15 +1167,13 @@
   creator: "Antonio Damasio, trans. 李恒威 (CN)"
   creator_role: "by"
   year: 2018
-  eval: "liked"
+  eval: "meh..."
   image: "/assets/images/thoughts/books/strange_order_of_things.jpg"
   posted: "2020-08-20"
   text: |
-    Antonio Damasio's argument in ***The Strange Order of Things*** is sweeping and somewhat polemical: that feelings, not reason, are the foundation of human culture, mind, and civilisation, and that this priority of feeling over cognition runs against the dominant narratives of both neuroscience and philosophy. Homeostasis -- the body's management of its own internal state -- is the ground on which feelings are built, and feelings are the bridge between the biological and the cultural; nothing in the latter makes sense without the former.
+    The homeostasis thesis of ***The Strange Order of Things*** is the book at its most persuasive. Damasio traces the development of homeostatic regulation from single-celled organisms through invertebrate nervous systems to the mammalian cortex, building a case that feelings are not uniquely human achievements but elaborations of ancient regulatory mechanisms, biological responses to the imperative of maintaining life. The evolutionary argument is patient and specific, and it is the book's strongest section.
 
-    The evolutionary argument is well constructed. Damasio traces the development of homeostatic regulation from single-celled organisms through invertebrates to the vertebrate nervous system, and the case that feelings are a late elaboration of ancient regulatory mechanisms rather than a uniquely human emergence is persuasive. The chapters on cultural homeostasis, on how art, religion, and political organisation function as homeostatic regulators at the level of societies, are more speculative but genuinely interesting.
-
-    Where the book struggles is in its treatment of cognition. Damasio's insistence that reason without feeling is insufficient is correct and well-evidenced, but he sometimes writes as though reason were merely feeling's servant, which is a different and stronger claim. <u>The book is most convincing when it argues that feelings have been systematically underestimated; it is less convincing when it implies that cognition has been systematically overestimated.</u> An important corrective, moderately overstated.
+    The leap from biological to cultural homeostasis is where the ambition outpaces the argument. In the final hundred pages, religion, music, art, ethics, education, and artificial intelligence each receive a few paragraphs, as though the homeostatic framework's application to culture were self-evident rather than a hypothesis requiring evidence. Damasio's earlier books, *Descartes' Error* and *The Feeling of What Happens*, made the case for feeling's priority through specific clinical cases and careful argument; here the same thesis is restated and then inflated toward a grand cultural narrative that the biology cannot reach. <u>The biological chapters are the book Damasio is qualified to write; the cultural chapters are the book he wanted to write, and the distance between the two is the book's problem.</u>
 
 - title: "Consciousness and the Brain: Deciphering How the Brain Codes Our Thoughts"
   type: "book"
