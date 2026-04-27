@@ -1207,9 +1207,10 @@
 
     What the book trades off for readability is depth. Epstein describes the hormonal system through analogy rather than mechanism, and the analogies are good but not always sufficient; someone who wants to understand how the hypothalamic-pituitary axis actually works -- the feedback loops, the pulse patterns, the receptor dynamics -- will need to look elsewhere. <u>The history is excellent; the science, simplified for a general audience, sacrifices enough precision that a specialist would find it frustrating at the edges.</u>
 
-- title: "How To: Absurd Scientific Advice for Common Real-World Problems"
+- title: "How To"
+  title_en: "如何不切实际地解决实际问题"
   type: "book"
-  creator: "Randall Munroe"
+  creator: "Randall Munroe, trans. Ent (CN)"
   creator_role: "by"
   year: 2019
   eval: "liked"
@@ -1220,35 +1221,33 @@
 
     The charm of the *What If?* franchise is that the physics is real. The absurdity is structural, a product of taking a question seriously that was not meant to be taken seriously, and the educational effect is genuine: by the time one finishes the chapter on digging a hole, one learns something about density gradients and thermal conductivity. Munroe's voice -- precise, deadpan, mildly alarmed by his own conclusions -- carries the book. <u>The most useful entry is the chapter on landing a plane, which explains aerodynamic fundamentals more clearly than any textbook explanation I had encountered, because being told to land a plane without a pilot's licence is an excellent reason to pay attention.</u> Light reading, but Munroe's light is illuminating.
 
-- title: "The Quantum Story: A History in 40 Moments"
+- title: "The Quantum Story"
+  title_en: "量子通史"
   type: "book"
-  creator: "Jim Baggott"
+  creator: "Jim Baggott, trans. 于秀秀 (CN)"
   creator_role: "by"
   year: 2011
   eval: "liked"
-  image: "/assets/images/thoughts/books/the_quantum_story.jpg"
+  image: "/assets/images/thoughts/books/quantum_story.jpg"
   posted: "2020-06-15"
   text: |
-    Jim Baggott structures ***The Quantum Story*** as forty moments in the development of quantum mechanics, from Planck's 1900 paper on blackbody radiation to the early twenty-first century's quantum information and decoherence debates. The format is unusual: each chapter is named for a year and built around a specific paper, experimental result, or theoretical development, and the cumulative effect is something between a history of physics and an annotated bibliography.
+    Jim Baggott trained in physical chemistry at Oxford and has spent two decades writing on quantum theory; ***The Quantum Story*** is the book that expertise makes possible. Structured as forty chapters, each built around a specific paper or experimental result from Planck's 1900 blackbody paper to early-twenty-first-century debates about decoherence and quantum information, the book is a genuine historical record. Characters appear as people with commitments and blind spots rather than as emblems of ideas, Baggott is careful to distinguish what physicists believed from what the evidence supported, and the prose is fluid for material this demanding.
 
-    The historical narrative is well done. The characters are drawn precisely enough to feel like people rather than emblems of ideas, and Baggott is careful about the distinction between what physicists believed at the time and what the evidence, in retrospect, supported. The Copenhagen interpretation's historical dominance is treated as a contingent fact about the community rather than a settled verdict, which is the right approach.
+    The main reservation is scale. The detail is real -- a reader who wants the full sequence of ideas, who presented what argument to whom and when, will find this reliable -- but the book is steep, and the later chapters on quantum information and decoherence are compressed enough that readers without prior background will need to supplement. <u>One does not need to finish it to benefit: the early chapters on the old quantum theory and the Copenhagen debates reward reading even if the later sections remain partially opaque, and the book is less forbidding in practice than most reviewers suggest.</u>
 
-    Where the book thins out is in the later chapters, where the pace of development outstrips the format. The discussion of quantum information, decoherence, and the modern interpretation debates is too compressed to be satisfying, and a reader without existing knowledge of the Everett interpretation or quantum computing will find themselves needing to supplement elsewhere. <u>The book works best as a reference to be dipped into rather than a narrative to be read straight through: the format that gives it coherence at the beginning becomes a limitation at the end.</u>
-
-- title: "Seeing in the Dark: How Amateur Astronomers Are Discovering the Wonders of the Universe"
+- title: "Seeing in the Dark"
+  title_en: "望向星空深处"
   type: "book"
-  creator: "Timothy Ferris"
+  creator: "Timothy Ferris, trans. 迟讷 (CN)"
   creator_role: "by"
   year: 2001
-  eval: "liked"
+  eval: "disliked"
   image: "/assets/images/thoughts/books/seeing_in_the_dark.jpg"
   posted: "2020-06-05"
   text: |
-    Timothy Ferris spent years visiting amateur astronomers across North America and ***Seeing in the Dark*** is the resulting portrait, a book in which the science of the night sky and the sociology of the people who observe it are interleaved with genuine warmth. The amateurs Ferris visits include retired teachers with backyard reflectors and enthusiasts with observatory-grade equipment, but what unites them is the experience of standing under the sky in the dark long enough to let the eyes adapt and the scale register.
+    Timothy Ferris writes beautifully, and ***Seeing in the Dark*** is full of warm, carefully observed portraits of amateur astronomers across North America. As science communication it is a failure. Nothing is explained for a non-specialist; one is lost within the first few pages not because the subject is difficult but because Ferris writes as though his reader already knows the difference between a reflector and a refractor, already understands why aperture matters, and needs no introduction to the terminology of the night sky. The book does not teach; it describes what it is like to already belong.
 
-    The science chapters are well done for a popular audience: the sections on star formation, galaxy clusters, and the scale of the universe are accurate and well pitched. But the book's heart is the human material, the stories of how people came to amateur astronomy, what they are looking for, and what they find. Ferris never sentimentalises this, but he clearly loves the community.
-
-    <u>Amateur astronomers are, the book notes, among the last people in a developed country who regularly spend significant time in actual darkness; and the darkness changes what is possible to perceive: the faint galaxy on the edge of visibility requires a kind of attention the lit world does not cultivate.</u>
+    <u>***Seeing in the Dark*** is the love letter an astronomer writes to their own profession: addressed to the community that already shares the vocabulary and the devotion, not to anyone approaching from outside.</u>
 
 - title: "The Immortal Life of Henrietta Lacks"
   title_en: "永生的海拉"
@@ -1257,7 +1256,7 @@
   creator_role: "by"
   year: 2010
   eval: "liked"
-  image: "/assets/images/thoughts/books/the_immortal_life_of_henrietta_lacks.jpg"
+  image: "/assets/images/thoughts/books/immortal_life_of_henrietta_lacks.jpg"
   posted: "2020-05-20"
   text: |
     Rebecca Skloot spent ten years researching ***The Immortal Life of Henrietta Lacks***, and the research shows. The book weaves three stories together: the scientific history of HeLa cells, the most widely used human cell line in biological research; the biography of Henrietta Lacks herself, a Black woman from Baltimore who died of cervical cancer in 1951 and from whose tumour the cells were taken without her knowledge or consent; and Skloot's own investigation, conducted alongside Henrietta's daughter Deborah, which is as much about the Lacks family's relationship with a history they were excluded from as it is about the cells.
