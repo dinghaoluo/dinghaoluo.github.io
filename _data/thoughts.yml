@@ -677,9 +677,8 @@
 
 - title: "The Idiot"
   type: "book"
-  creator: "Fyodor Dostoevsky"
+  creator: "Fyodor Dostoevsky, trans. Richard Pevear & Larissa Volokhonsky (EN)"
   creator_role: "by"
-  translator: "Richard Pevear and Larissa Volokhonsky"
   year: 1869
   eval: "loved"
   image: "/assets/images/thoughts/books/idiot.jpg"
@@ -999,42 +998,42 @@
     Lane does not write down to his reader; the chemistry is real, the terminology exact. The Chinese translation by 严曦 handles the technical density well. <u>This is the most intellectually thrilling science book I have encountered: a single argument, pursued with total commitment, that redraws the map of life's deepest history.</u>
 
 
-- title: "The Case of the Speluncean Explorers: Nine New Opinions"
+- title: "The Case of the Speluncean Explorers"
   title_en: "洞穴奇案"
   type: "book"
-  creator: "Peter Suber"
+  creator: "Peter Suber, trans. 陈福勇 & 张世泰 (CN)"
   creator_role: "by"
   year: 1998
   eval: "loved"
-  image: "/assets/images/thoughts/books/the_case_of_the_speluncean_explorers.jpg"
+  image: "/assets/images/thoughts/books/case_of_the_speluncean_explorers.jpg"
   posted: "2021-01-16"
   text: |
     A group of cave explorers, trapped underground with no hope of rescue, kill and eat one of their number to survive. The question is whether they should be convicted of murder. Peter Suber takes Lon Fuller's original 1949 hypothetical and extends it with nine fictional judicial opinions, each arguing from a different school of legal philosophy: natural law, positivism, legal realism, feminist jurisprudence, economic analysis, and more. The book is one of the most elegant introductions to legal reasoning I have encountered, and it requires no background in law to follow.
 
     <u>What makes ***The Case of the Speluncean Explorers*** so compelling is the architecture of doubt: each opinion seems persuasive until the next one arrives and dismantles it, so that the reader is constantly revising their own position, discovering that their intuitions rest on philosophical commitments they had not examined.</u> The sequencing is masterful; Suber anticipates exactly where the reader's objections will form and addresses them through the next judge's reasoning, creating a momentum that carries the book in a single sitting.
 
-    The Chinese translation is uneven: the rendering is often ungrammatical in ways that obscure the legal reasoning, with sentence structures that do not exist in standard Chinese. There is no alternative Chinese edition; read the English original if at all possible.
+    One note about the Chinese translation: The translation is uneven, with constructions that frequently obscure the legal reasoning; the English original is undoutedbly the better choice for now.
 
 
-- title: "RHS Genealogy for Gardeners: Plant Families Explored and Explained"
+- title: "RHS Genealogy for Gardeners"
   title_en: "英国皇家园艺学会植物分类指南"
   type: "book"
-  creator: "Ross Bayton and Simon Maughan"
+  creator: "Ross Bayton & Simon Maughan, trans. 刘夙 (CN)"
   creator_role: "by"
   year: 2019
   eval: "loved"
   image: "/assets/images/thoughts/books/rhs_genealogy_for_gardeners.jpg"
   posted: "2021-01-08"
   text: |
-    I had never had the slightest interest in botany or gardening before picking up this book, and ***RHS Genealogy for Gardeners*** dragged me in. The hardback edition is beautiful: the illustrations are precise and generous, the layout invites browsing, and Bayton and Maughan treat plant taxonomy not as a dry classification exercise but as a key to seeing the relationships that connect seemingly unrelated species. One comes away understanding why a strawberry and a rose are cousins, and why that matters.
+    I had never had the slightest interest in botany or gardening before picking up this book, yet ***RHS Genealogy for Gardeners*** managed to drag me in. The hardback edition is beautiful: the illustrations are precise and generous, the layout invites browsing, and Bayton and Maughan treat plant taxonomy not as a dry classification exercise but as a key to seeing the relationships that connect seemingly unrelated species. One comes away understanding why a strawberry and a rose are cousins, and why that matters.
 
     <u>The book turned me into a collector of names, which is perhaps the first symptom of botanical infection.</u> I discovered that I had been mispronouncing 檗 for twenty-one years, which is exactly the kind of humbling, delightful correction that makes taxonomic reading worthwhile. The Chinese edition is handsomely produced. A book that opened a door I did not know existed.
 
 
-- title: "Crows: Encounters with the Wise Guys of the Avian World"
+- title: "Crows"
   title_en: "乌鸦简史"
   type: "book"
-  creator: "Candace Savage, trans. unknown (CN)"
+  creator: "Candace Savage, trans. 贺霞 (CN)"
   creator_role: "by"
   year: 2005
   eval: "liked"
@@ -1045,17 +1044,17 @@
 
     The weakness is the extended treatment of Bernd Heinrich's crow research, which occupies more space than it earns. Heinrich's framework for understanding avian intelligence feels dated, particularly his insistence on a hierarchy in which emotion is more 'primitive' than reason, a view that comparative cognition has moved well past. <u>A book about crows should not make the reader doubt that its principal scientist understands what intelligence is.</u>
 
-    The Chinese edition's title -- 乌鸦简史, 'A Brief History of Crows' -- misrepresents a book structured as encounters, not history; the translation is rough in places.
+    The Chinese edition's title (《乌鸦简史》, 'A Brief History of Crows') misrepresents a book structured as encounters, not history; the translation is very rough in places.
 
 
-- title: "The Rules of Contagion: Why Things Spread — and Why They Stop"
+- title: "The Rules of Contagion"
   title_en: "传染"
   type: "book"
-  creator: "Adam Kucharski, trans. unknown (CN)"
+  creator: "Adam Kucharski, trans. 谷晓阳, 李曈, 王兴伟, & 王雪萍 (CN)"
   creator_role: "by"
   year: 2020
   eval: "liked"
-  image: "/assets/images/thoughts/books/the_rules_of_contagion.jpg"
+  image: "/assets/images/thoughts/books/rules_of_contagion.jpg"
   posted: "2021-01-05"
   text: |
     A rare popular-science book about mathematical modelling that actually explains the models. Kucharski traces the SIR framework from its epidemiological origins through its surprisingly wide applications: sociology, economics, criminology, online virality. The structure is tight, the introduction of technical material is well judged, and the central insight, that the same mathematical architecture describes the spread of diseases, ideas, financial panics, and violent crime, is presented with enough specificity to be instructive rather than merely analogical.
@@ -1064,7 +1063,7 @@
 
 - title: "Great Myths of the Brain"
   type: "book"
-  creator: "Christian Jarrett"
+  creator: "Christian Jarrett, trans. 任楠 & 陈赟 (CN)"
   creator_role: "by"
   year: 2014
   eval: "liked"
@@ -1078,10 +1077,10 @@
     Where the book is weaker is in chapters on myths that remain contested in the literature, where Jarrett's confident demystifications occasionally oversimplify active debates. The neuroplasticity chapter, in particular, corrects some overclaims with other overclaims. Useful as an undergraduate primer or a reference for checking specific claims; not a book to reason with.
 
 - title: "Seven Brief Lessons on Physics"
+  title_en: "Sette brevi lezioni di fisica"
   type: "book"
-  creator: "Carlo Rovelli"
+  creator: "Carlo Rovelli, trans. Simon Carnell & Erica Segre (EN)"
   creator_role: "by"
-  translator: "Simon Carnell and Erica Segre"
   year: 2014
   eval: "loved"
   image: "/assets/images/thoughts/books/seven_brief_lessons_on_physics.jpg"
@@ -1093,7 +1092,7 @@
 
     I understand the criticism. Some physicists find his lyrical register suspect, as though writing beautifully about loop quantum gravity were itself evidence of a lack of rigour, even a kind of fakery. The speculative ideas do bleed into the popular writing in ways that make them seem more settled than they are. Fair enough. <u>But Rovelli's ideas and the way he articulates them move me, and I say this as a neuroscience student who came to physics as a passionate outsider, looking not for technical mastery but for the feeling of a structure glimpsed.</u> A neuroscience student's physics dream.
 
-- title: "How We Remember: Brain Mechanisms of Episodic Memory"
+- title: "How We Remember"
   type: "book"
   creator: "Michael Hasselmo"
   creator_role: "by"
@@ -1106,16 +1105,15 @@
 
     I first encountered this book early in my PhD, and it set the terms for how I think about the problems I work on daily: what does it mean for a circuit to switch between modes, how do neuromodulators sculpt the computational landscape, what is the relationship between oscillatory dynamics and the information the network carries. These are not abstract questions for me; they are the questions I bring to the recording rig. Hasselmo answered some of them, sharpened others, and made the rest feel tractable. <u>Some books one returns to not because one has forgotten them but because one has grown enough to read them differently.</u>
 
-
 - title: "The Elephant Vanishes"
   title_en: "象の消滅"
   type: "book"
-  creator: "Haruki Murakami, trans. Alfred Birnbaum and Jay Rubin"
+  creator: "Haruki Murakami, trans. Alfred Birnbaum & Jay Rubin"
   creator_role: "by"
   year: 1993
   eval: "liked"
-  image: "/assets/images/thoughts/books/the_elephant_vanishes.jpg"
-  posted: "2020-11-15"
+  image: "/assets/images/thoughts/books/elephant_vanishes.jpg"
+  posted: "2020-11-18"
   text: |
     A collection of seventeen short stories that maps the emotional territory Murakami's novels would later colonise. The standout is 'Barn Burning,' in which a young man's wealthy acquaintance casually confesses to burning down barns as a hobby, and the narrator's girlfriend vanishes without explanation. The story operates on the same principle as the best Murakami: something is wrong, the wrongness is never resolved, and the absence of resolution is itself the meaning. Lee Chang-dong's film *Burning* (2018) expanded the class-warfare subtext into a full-blown indictment of Korean inequality, but the original story's power lies in its refusal to explain.
 
@@ -1123,9 +1121,10 @@
 
     The weaker stories, 'A Window,' 'The Second Bakery Attack,' blur together in the way that minor Murakami always does: competent, melancholy, slightly detached. But ***The Elephant Vanishes*** is the collection that established the template, and the best pieces, 'Barn Burning,' 'The Elephant Vanishes,' 'Sleep,' have a compression and a strangeness that the novels do not always achieve.
 
-- title: "Your Brain Is a Time Machine: The Neuroscience and Physics of Time"
+- title: "Your Brain Is a Time Machine"
+  title_en: "大脑是台时光机"
   type: "book"
-  creator: "Dean Buonomano"
+  creator: "Dean Buonomano, trans. 闾佳 (CN)"
   creator_role: "by"
   year: 2017
   eval: "meh..."
@@ -1134,7 +1133,7 @@
   text: |
     Misleading title. ***Your Brain Is a Time Machine*** spends far too long on the physics of time, relativity, the block universe, and explains all of it poorly; anyone interested would do better with Rovelli's *The Order of Time* (2017). The neuroscience half, which ought to be the book's centre of gravity, is where one expects Buonomano to deliver, and he does not. The kappa and tau effect experiments are striking, but the treatment stops well short of the question that matters: how does the brain actually construct temporal experience? <u>The book meanders between physics, neuroscience, and philosophy without committing to any of them.</u>
 
-    Coming back to this five years into a PhD in hippocampal electrophysiology, the gaps are sharper than I first realised. Buonomano barely touches *time cells*, the hippocampal neurons that fire at specific moments during a temporal interval, despite the fact that they are arguably the strongest evidence for the brain's intrinsic timing capacity beyond the sub-second scale. The distinction between *interval timing*, likely striatal and cerebellar, and the *episodic temporal organisation* performed by hippocampal sequences is never drawn. *Theta phase precession*, the mechanism by which place cells compress behavioural sequences into single oscillatory cycles, goes unmentioned, yet it is perhaps the most elegant neural solution to the problem of binding events across time. Eichenbaum's late reviews remain more focused and more useful. <u>The brain is indeed a time machine; Buonomano simply never opens the hood.</u>
+    The omissions are glaring from a neuroscience background. Buonomano barely touches *time cells*, the hippocampal neurons that fire at specific moments during a temporal interval, despite the fact that they are arguably the strongest evidence for the brain's intrinsic timing capacity beyond the sub-second scale. The distinction between *interval timing*, likely striatal and cerebellar, and the *episodic temporal organisation* performed by hippocampal sequences is never drawn. *Theta phase precession*, the mechanism by which place cells compress behavioural sequences into single oscillatory cycles, goes unmentioned, yet it is perhaps the most elegant neural solution to the problem of binding events across time. Eichenbaum's late reviews remain more focused and more useful. <u>The brain is indeed a time machine; Buonomano simply never opens the hood.</u>
 
 - title: "The Language Instinct: How the Mind Creates Language"
   type: "book"
