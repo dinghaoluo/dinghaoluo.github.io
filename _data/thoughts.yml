@@ -485,7 +485,7 @@
 - title: "We Do Not Part"
   title_en: "작별하지 않는다"
   type: "book"
-  creator: "Han Kang, trans. e. yaewon and Paige Aniyah Morris"
+  creator: "Han Kang, trans. 卢鸿金 (CH: 《不做告别》)"
   creator_role: "by"
   year: 2021
   eval: "loved"
@@ -649,7 +649,7 @@
 
     What survives, though, is the sheer narrative richness. As a work of moral philosophy or Holocaust scholarship, ***The Rise and Fall of the Third Reich*** has been superseded many times over; one reaches for Primo Levi, for Hannah Arendt, for Evans's own Third Reich trilogy. But as a narrative act, the accumulation of detail, the relentless forward momentum through two decades of escalating horror, the book remains formidable. <u>Shirer was 'just a journalist', his critics said. Perhaps. But journalism of this ambition and this density has its own kind of authority: that of a witness who refused to look away, even when the analytical tools at his disposal were blunter than the moment demanded.</u>
 
-- title: "Time, Love, Memory: A Great Biologist and His Quest for the Origins of Behaviour"
+- title: "Time, Love, Memory"
   type: "book"
   creator: "Jonathan Weiner"
   creator_role: "by"
@@ -662,7 +662,7 @@
 
     The inevitable bias is structural. A book about Benzer is a book about the gene, and Weiner cannot help but foreground genetic determinism in a way that the science itself has long since outgrown. Everyone now understands that genes cannot be as deterministic as the early geneticists imagined; the gene-behaviour relationship is probabilistic, contextual, shaped by environment and development in ways Benzer's single-gene mutant screens could not capture. <u>Paired with Sapolsky's <em>Behave</em> (2017), which insists on the full causal chain from gene to hormone to neural circuit to culture, ***Time, Love, Memory*** finds its proper place: a brilliant portrait of one end of the explanatory spectrum, best read with the awareness that the other end exists.</u>
 
-- title: "Behave: The Biology of Humans at Our Best and Worst"
+- title: "Behave"
   type: "book"
   creator: "Robert Sapolsky"
   creator_role: "by"
@@ -703,35 +703,33 @@
     The lobster hierarchy argument, the book's one claim to scientific grounding, has been demolished by every serious biologist who bothered to engage with it; serotonin does not operate in crustacean nervous systems the way Peterson implies, and the inferential leap from decapod dominance displays to human social organisation is not even wrong, merely vacant. <u>What remains, once the lobsters are dispatched, is a self-help book for people who mistake confidence for competence, dressed in enough Jungian mythology to feel intellectual without requiring any of the intellectual labour.</u>
 
 
-- title: "The Vaccine Race: Science, Politics, and the Human Costs of Defeating Disease"
+- title: "The Vaccine Race"
   type: "book"
-  creator: "Meredith Wadman"
+  creator: "Meredith Wadman, trans. 罗爽 (CH: 《疫苗竞赛》)"
   creator_role: "by"
   year: 2017
-  eval: "liked"
-  image: "/assets/images/thoughts/books/the_vaccine_race.jpg"
+  eval: "loved"
+  image: "/assets/images/thoughts/books/vaccine_race.jpg"
   posted: "2021-05-15"
   text: |
-    ***The Vaccine Race*** centres on WI-38, the fetal cell line derived by Leonard Hayflick in 1961 that became the basis for vaccines against rubella, rabies, polio, and hepatitis A. Wadman reconstructs the science and the politics simultaneously: how the cell line was developed, why it was controversial, and how the institutions and individuals who controlled it shaped vaccine development for half a century.
+    The standard history of vaccine development is told from the institutional centre outward: Wistar, NIH, Merck, the scientists who filed the patents. ***The Vaccine Race*** moves in the other direction. Wadman's account of WI-38 -- the cell line derived from a fetus aborted in Sweden in 1962, which became the substrate for rubella, rabies, polio, and hepatitis A vaccines -- never lets the anonymous Swedish woman from whom the tissue came drift entirely out of view. She had not been asked for consent; she had not heard her name connected to the science; she found out only when Wadman contacted her, fifty years later. This is science history framed as labour history: it accounts for who paid the costs as well as who accumulated the credit.
 
-    The Hayflick dispute -- in which he took his WI-38 cells from the National Institutes of Health in a quarrel over ownership -- is the book's dramatic spine. Wadman is sympathetic to Hayflick without being credulous: the man was difficult, correct about the science, and operating in a framework that had not yet worked out who owned biological research material. The questions he raises about the ownership of human cell lines remained unresolved at the time of writing, and his case sits in a direct line with the Henrietta Lacks case.
+    The Hayflick dispute gives the book its dramatic spine. Hayflick removed his WI-38 cultures from Wistar to Stanford; the NIH confiscated them; a lawsuit settled ambiguously, clarifying nothing about who owns human biological material, while Merck generated billions annually from the rubella vaccine programme without compensating him. Wadman is sympathetic but not credulous: Hayflick was right about the science, difficult as a person, and operating inside a legal framework that had not yet caught up with what his work made possible. The case sits in direct genealogy with Henrietta Lacks, and Wadman knows it.
 
-    <u>The book is most valuable for its attention to the forgotten figures: the women who donated the fetal tissue, the nurses and assistants whose labour made the cell line possible, and Stanley Plotkin's patient decades-long effort to develop a rubella vaccine that would prevent the disabilities that drove his work.</u> History written outward from the laboratory bench rather than downward from the institutional.
+    <u>The book holds the institutional and the intimate in the same frame: Stanley Plotkin's patient decades of rubella vaccine development, and the twenty thousand children born with congenital rubella syndrome during the 1964-65 epidemic -- the constituency whose suffering motivated the entire project -- are given equal moral weight with the men who ran the trials and filed the patents.</u> The institutionalised children, prisoners, and orphans enrolled in trials they could not refuse are here, receiving the same archival attention as the scientists. Read in the shadow of the mRNA approvals of 2020-21, the questions Wadman raises about consent, ownership, and whose bodies underwrite scientific progress feel considerably more live than historical.
 
-- title: "Bottle of Lies: The Inside Story of the Generic Drug Boom"
+- title: "Bottle of Lies"
   type: "book"
-  creator: "Katherine Eban"
+  creator: "Katherine Eban, trans. 高天羽 (CH: 《仿制药的真相》)"
   creator_role: "by"
   year: 2019
-  eval: "liked"
+  eval: "disliked"
   image: "/assets/images/thoughts/books/bottle_of_lies.jpg"
   posted: "2021-04-20"
   text: |
-    Katherine Eban spent a decade investigating the generic drug industry and ***Bottle of Lies*** is the result: a meticulously reported account of systematic fraud at the Indian pharmaceutical company Ranbaxy, which falsified drug quality data for products sold in the United States and around the world, and of the FDA's failure to detect and deter this fraud for years. The book's principal source is the whistleblower Dinesh Thakur, whose story runs through the narrative as both personal drama and legal case study.
+    ***Bottle of Lies*** is excellently reported. Eban spent a decade on the investigation, and the specific picture she constructs -- data falsification, contaminated products, FDA inspection protocols that gave plants months of advance warning to fabricate compliance -- is thorough and credible. The whistleblower Dinesh Thakur's case against Ranbaxy, which eventually yielded a $500 million settlement, is built with care.
 
-    The investigative reporting is excellent. Eban builds the case through documents, testimony, and on-the-ground reporting in India, and the picture she constructs of a regulatory system unable to effectively audit factories thousands of miles away is both specific and systemic. The FDA emerges not as corrupt but as structurally inadequate: too few inspectors, too dependent on advance notice, too easy to game by companies that know exactly where the agency is looking.
-
-    What makes the book more than a corporate exposé is its attention to the patients at the end of the supply chain: HIV patients in Africa receiving substandard antiretrovirals, patients in the United States whose generic medications were made in conditions the companies' own data showed were unacceptable. <u>The fraud is not abstract; it is a calculation that patients who cannot pay for branded drugs will not be able to verify what they are given, and that calculation was correct for a very long time.</u>
+    The problem is the frame. The most damning finding in the book is not that Ranbaxy cheated but that the fraud was structural: Eban documents a two-tiered global supply chain in which higher-quality drugs are routed to Western markets while substandard versions reach HIV patients in Africa and Asia. <u>This is not a story about one company's bad actors; it is a story about a pharmaceutical system that extracts cost from the poorest end of its supply chain, and the book declines to treat it as such.</u> The FDA emerges as under-resourced rather than under-incentivised. The $500 million settlement becomes the resolution. Thakur becomes the hero. The structure stays standing.
 
 - title: "The Remains of the Day"
   title_en: "日の名残り"
