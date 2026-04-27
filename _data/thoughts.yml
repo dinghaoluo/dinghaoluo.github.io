@@ -1113,7 +1113,7 @@
   year: 1993
   eval: "liked"
   image: "/assets/images/thoughts/books/elephant_vanishes.jpg"
-  posted: "2020-11-18"
+  posted: "2020-11-15"
   text: |
     A collection of seventeen short stories that maps the emotional territory Murakami's novels would later colonise. The standout is 'Barn Burning,' in which a young man's wealthy acquaintance casually confesses to burning down barns as a hobby, and the narrator's girlfriend vanishes without explanation. The story operates on the same principle as the best Murakami: something is wrong, the wrongness is never resolved, and the absence of resolution is itself the meaning. Lee Chang-dong's film *Burning* (2018) expanded the class-warfare subtext into a full-blown indictment of Korean inequality, but the original story's power lies in its refusal to explain.
 
@@ -1144,11 +1144,11 @@
   image: "/assets/images/thoughts/books/language_instinct.jpg"
   posted: "2020-08-30"
   text: |
-    ***The Language Instinct*** argues that language is a biological adaptation shaped by natural selection, not a cultural invention transmitted across generations. Pinker marshals genuine observations in support: all human cultures develop language; deaf children exposed to impoverished sign input spontaneously invent systematic sign languages; specific brain regions are implicated in language in ways that suggest specialisation. These are real phenomena and they deserve explanation. The problem is not the observations but the conclusion Pinker draws: that they settle the debate between nativism and its alternatives. Both sides accept these observations; neither side has resolved what they mean.
+    Pinker argues that language is a biological adaptation shaped by natural selection, not a cultural invention transmitted across generations. Pinker marshals genuine observations in support: all human cultures develop language; deaf children exposed to impoverished sign input spontaneously invent systematic sign languages; specific brain regions are implicated in language in ways that suggest specialisation. These are real phenomena and they deserve explanation. The problem is not the observations but the conclusion Pinker draws: that they settle the debate between nativism and its alternatives. Both sides accept these observations; neither side has resolved what they mean.
 
     The poverty-of-stimulus argument, the book's argumentative centrepiece, is its most exposed flank. Sampson demonstrated that its logic would prove all learning impossible: no learner receives negative evidence from nature, and yet learning occurs. Statistical learning research has since shown the stimulus to be far richer than Pinker assumed. The connectionist challenge from Elman and colleagues showed that domain-general networks can acquire grammatical structure without innately specified rules, a finding the book does not adequately address. Evans and Levinson's cross-linguistic survey found no truly universal structural properties: languages exist without nouns and verbs, without tense, without recursive embedding. Even on the nativist side, Chomsky's own revisions to Universal Grammar and his rejection of Pinker's evolutionary account left the foundations looser than the book suggests. The book presents nativism not as a live research programme contested on multiple fronts but as a matter approaching settlement. <u>Pinker's book has the energy of good science writing; it lacks the good faith.</u>
 
-- title: "Enlightenment Now: The Case for Reason, Science, Humanism, and Progress"
+- title: "Enlightenment Now"
   type: "book"
   creator: "Steven Pinker"
   creator_role: "by"
@@ -1157,20 +1157,18 @@
   image: "/assets/images/thoughts/books/enlightenment_now.jpg"
   posted: "2020-08-30"
   text: |
-    <u>Steven Pinker is the walking definition of confirmation bias: select the data that confirm your thesis, ignore the rest, call the result 'reason'.</u> I checked some of the claims after finishing and felt deceived, and I am still angry about it. <u>Cherry-picked time periods, poverty lines wielded like stage props, ecological catastrophe waved away with a graph that stops before the trend reverses.</u> When critics point this out he accuses them of 'progressophobia', which is the intellectual equivalent of putting one's fingers in one's ears. Plus there has been recent controversy. I cannot stand this man, approximately the same level of dislike that I have for Musk.
+    ***Enlightenment Now*** is a book of graphs. Pinker selects fifteen metrics of human wellbeing and plots their improvement, presenting the display of data as though data were self-interpreting. The method does not bear scrutiny. The poverty line deployed throughout is $1.90 per day, a threshold so low it produces the logical impossibility of fewer people counted as poor than as hungry; what it measures is not poverty but the lower edge of destitution. The violence statistics use per-capita rates across centuries, ignoring the methodological objection that war deaths, as a fat-tailed distribution, cannot be analysed with standard statistics: the century without a world war looks like permanent progress until the next one arrives. The ecological data stops before the trends reverse; wildlife population collapse, declining freshwater availability, and the Genuine Progress Indicator, which peaked in 1978, go unmentioned.
 
-    The deeper problem with ***Enlightenment Now*** is not the cherry-picking itself but the rhetorical framework that makes the cherry-picking invisible. Pinker presents data as though data were self-interpreting, as though the mere display of a graph settles an argument. The result is a book that mistakes correlation for causation with the confidence of someone who has confused their own optimism for evidence.
+    The framework that holds all of this together is the rhetorical move of loading 'Enlightenment' onto whichever side of any argument Pinker favours, and attributing every counterexample to 'anti-Enlightenment forces' or 'progressophobia', an accusation that functions as ridicule rather than rebuttal. The contradiction at the book's ideological core: Pinker credits historical progressive movements for the moral progress his graphs document, then uses those same graphs to dismiss contemporary concerns about inequality, ecological collapse, and structural violence as irrational sentiment. <u>The result is a book that mistakes the optimism of the comfortable for evidence, and calls the discomfort of everyone else a cognitive bias.</u>
 
-
-
-
-- title: "The Strange Order of Things: Life, Feeling, and the Making of Cultures"
+- title: "The Strange Order of Things"
+  title_en: "万物的古怪秩序"
   type: "book"
-  creator: "Antonio Damasio"
+  creator: "Antonio Damasio, trans. 李恒威 (CN)"
   creator_role: "by"
   year: 2018
   eval: "liked"
-  image: "/assets/images/thoughts/books/the_strange_order_of_things.jpg"
+  image: "/assets/images/thoughts/books/strange_order_of_things.jpg"
   posted: "2020-08-20"
   text: |
     Antonio Damasio's argument in ***The Strange Order of Things*** is sweeping and somewhat polemical: that feelings, not reason, are the foundation of human culture, mind, and civilisation, and that this priority of feeling over cognition runs against the dominant narratives of both neuroscience and philosophy. Homeostasis -- the body's management of its own internal state -- is the ground on which feelings are built, and feelings are the bridge between the biological and the cultural; nothing in the latter makes sense without the former.
