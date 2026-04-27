@@ -738,7 +738,7 @@
   creator_role: "by"
   year: 1989
   eval: "loved"
-  image: "/assets/images/thoughts/books/the_remains_of_the_day.jpg"
+  image: "/assets/images/thoughts/books/remains_of_the_day.jpg"
   posted: "2021-04-15"
   text: |
     I came to ***The Remains of the Day*** first through a Chinese translation, years before reading Ishiguro's own prose, and the difference was like hearing a piece of music one knows from a recording performed live: the same structure, the same notes, but a directness the translation could only approximate. Stevens is one of literature's great unreliable narrators, not because he lies but because he has perfected a form of self-deception so total that truth and falsehood have become irrelevant categories. He does not suppress his feelings for Miss Kenton; he has constructed an entire philosophy of professional 'dignity' that makes such feelings structurally invisible.
@@ -775,11 +775,11 @@
 - title: "The Genius of Birds"
   title_en: "鸟类的天赋"
   type: "book"
-  creator: "Jennifer Ackerman"
+  creator: "Jennifer Ackerman, trans. 沈汉忠 & 李思琪 (CN)"
   creator_role: "by"
   year: 2016
   eval: "loved"
-  image: "/assets/images/thoughts/books/the_genius_of_birds.jpg"
+  image: "/assets/images/thoughts/books/genius_of_birds.jpg"
   posted: "2021-04-08"
   text: |
     What ***The Genius of Birds*** does best is dismantle the architecture of a prejudice. 'Bird brain' is not merely an insult; it encodes a specific neuroscientific assumption, that intelligence requires a neocortex, that mammals hold a monopoly on complex cognition, that the avian brain, lacking cortical lamination, must be operating at a lower register. Ackerman demolishes this assumption with the patience of someone who knows the evidence is on her side. New Caledonian crows craft multi-step tools; Clark's nutcrackers cache tens of thousands of seeds and retrieve them months later; songbirds acquire dialects through a developmental process that parallels human language acquisition with uncanny precision.
@@ -788,7 +788,7 @@
 
     The book is organised by cognitive domain, tool use, spatial memory, social intelligence, song, and each chapter builds from field observations to laboratory findings to theoretical implications. Ackerman writes with genuine enthusiasm and without condescension, though the treatment leans toward celebration rather than critical assessment of where the field's claims outrun its evidence. <u>That is a minor fault. The major achievement is making one see birds differently, and once the seeing changes, it does not change back.</u>
 
-- title: "Life Ascending: The Ten Great Inventions of Evolution"
+- title: "Life Ascending"
   title_en: "生命的跃升"
   type: "book"
   creator: "Nick Lane"
@@ -802,17 +802,21 @@
 
     <u>The writing is competent throughout but lacks the sustained argumentative drive that makes *The Vital Question* thrilling.</u> Lane is at his best when tracing proton gradients across membranes; he is less convincing when speculating about the evolutionary origins of subjective experience. A book that had been five chapters rather than ten, concentrating on what Lane actually knows, would have been twice as good.
 
-- title: "Order out of Chaos: Man's New Dialogue with Nature"
-  title_en: "从混沌到有序"
+- title: "Order out of Chaos"
+  title_en: "La nouvelle alliance: Métamorphose de la science"
   type: "book"
-  creator: "Ilya Prigogine and Isabelle Stengers, trans. 曾庆宏 and 沈小峰 (CN)"
+  creator: "Ilya Prigogine & Isabelle Stengers, trans. 曾庆宏 & 沈小峰 (CN: 《从混沌到有序》)"
   creator_role: "by"
-  year: 1984
-  eval: "meh..."
+  year: 1979
+  eval: "liked"
   image: "/assets/images/thoughts/books/order_out_of_chaos.jpg"
   posted: "2021-03-22"
   text: |
-    The quality of Chinese science translation in the early reform era was remarkably high, as one can see from the period's renderings of Maugham and Fitzgerald; that ***Order out of Chaos*** received such a poor translation is its own indictment of how little science was valued at the time. The book itself is a sketch of a revolution: Prigogine wants to emphasise the fusion of different modes of thinking, but his own framework remains stubbornly classical, all binaries and oppositions, every culture reduced to 'conflict.' <u>The sections on complex systems, the very reason I picked the book up, are sparse and unsatisfying.</u> Readers seeking a genuine introduction to non-equilibrium thermodynamics or complexity would do better with more recent work; this book, despite its ambitions, undercuts its own argument.
+    The equations of classical mechanics work identically forwards and backwards in time; the second law of thermodynamics does not. ***Order out of Chaos*** opens with this contradiction, not as a curiosity to be filed away but as the fundamental unresolved fracture in physics, the place where the Newtonian synthesis quietly fails. Prigogine and Stengers read this fracture as an opportunity: if irreversibility is real and universal, then the emergence of order from non-equilibrium conditions is not an anomaly to be explained away but the basic mode through which nature produces complexity.
+
+    The concept of dissipative structures -- the Nobel-Prize-winning insight that underpins the book -- is genuinely powerful. Organised patterns sustained far from thermodynamic equilibrium by continuous energy dissipation; structures whose order depends on and reproduces through exchange with an environment. Living organisms, chemical oscillators, atmospheric cells: the framework is exact enough to be rigorous and general enough to reach biology, and the Belousov-Zhabotinsky reaction serves as the sharpest demonstration of a principle that extends well beyond chemistry.
+
+    <u>Isabelle Stengers' philosophical scaffolding is what makes the book more than a Nobel laureate's popular account; she situates the argument in the history of Western physics from Newton through Bergson, and the genealogy is persuasive: this is not a correction of classical mechanics but a different way of thinking about nature's relationship to time.</u> The book overreaches when it inflates dissipative structures into a general epistemological revolution: the slide from chemical self-organisation to a new metaphysics of complexity is not always rigorous, but the core argument earns its ambition.
 
 - title: "The Self Illusion: How the Social Brain Creates Identity"
   type: "book"
