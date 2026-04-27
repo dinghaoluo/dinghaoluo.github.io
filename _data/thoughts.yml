@@ -1273,13 +1273,14 @@
   image: "/assets/images/thoughts/books/in_the_blink_of_an_eye.jpg"
   posted: "2020-05-12"
   text: |
-    Andrew Parker spent formative years at the Natural History Museum in London, and ***In the Blink of an Eye*** carries that archive visibly. The book is stocked with natural history, animal optics, and structural colour at a breadth that only long exposure to collections makes possible; many of the animal examples are genuinely interesting, and the prose moves well. As science communication it is enjoyable.
+    Andrew Parker's career has moved between the Australian Museum, Oxford, and the Natural History Museum in London, and ***In the Blink of an Eye*** carries the breadth of that accumulated natural history visibly. The book is stocked with animal optics, structural colour, and evolutionary oddities; many of the examples are genuinely interesting, and the prose moves well. As science communication it is enjoyable.
 
     As a case for its own central argument, it is less satisfying. Parker's Light Switch Theory holds that the Cambrian Explosion was triggered by the evolution of eyes in predators, which suddenly made external appearance a matter of survival for prey; it receives surprisingly little dedicated treatment for a book premised on a single thesis. <u>The theory's deeper problem is timing: critics including Martin Brasier have argued that predatory behaviour was already spreading well before camera-type eyes appeared in the fossil record, which means the sequence the theory requires does not hold.</u>
 
-- title: "Complexity: A Guided Tour"
+- title: "Complexity"
+  title_en: "复杂"
   type: "book"
-  creator: "Melanie Mitchell"
+  creator: "Melanie Mitchell, trans. 唐璐 (CN)"
   creator_role: "by"
   year: 2009
   eval: "liked"
@@ -1298,7 +1299,7 @@
   creator_role: "ed."
   year: 2004
   eval: "liked"
-  image: "/assets/images/thoughts/books/the_synaptic_organization_of_the_brain.jpg"
+  image: "/assets/images/thoughts/books/synaptic_organization_of_the_brain.jpg"
   posted: "2020-04-15"
   text: |
     I bought this for the hippocampus chapter and stayed for the first two chapters on synaptic physiology and circuit principles, which provided conceptual scaffolding I had not found elsewhere. As a reference work, ***The Synaptic Organization of the Brain*** does its job: each chapter treats a brain region as a circuit, emphasising the canonical connectivity and the physiological properties of each synapse type.
