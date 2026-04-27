@@ -1175,9 +1175,10 @@
 
     The leap from biological to cultural homeostasis is where the ambition outpaces the argument. In the final hundred pages, religion, music, art, ethics, education, and artificial intelligence each receive a few paragraphs, as though the homeostatic framework's application to culture were self-evident rather than a hypothesis requiring evidence. Damasio's earlier books, *Descartes' Error* and *The Feeling of What Happens*, made the case for feeling's priority through specific clinical cases and careful argument; here the same thesis is restated and then inflated toward a grand cultural narrative that the biology cannot reach. <u>The biological chapters are the book Damasio is qualified to write; the cultural chapters are the book he wanted to write, and the distance between the two is the book's problem.</u>
 
-- title: "Consciousness and the Brain: Deciphering How the Brain Codes Our Thoughts"
+- title: "Consciousness and the Brain"
+  title_en: "脑与意识"
   type: "book"
-  creator: "Stanislas Dehaene"
+  creator: "Stanislas Dehaene, trans. 章熠 (CN)"
   creator_role: "by"
   year: 2014
   eval: "liked"
@@ -1190,7 +1191,7 @@
 
     Where I found the theory less convincing was in its handling of phenomenal consciousness. Dehaene dismisses the hard problem somewhat too quickly for a book that claims to explain consciousness rather than merely its functional correlates. <u>Global workspace theory is a compelling account of access consciousness -- of what becomes available to report and act on -- but the question of why any of it should be experienced at all remains open, and the book proceeds as though closing the functional account were the same as closing the experiential one.</u> Valuable for the neuroscience; incomplete as philosophy.
 
-- title: "Aroused: The History of Hormones and How They Control Just About Everything"
+- title: "Aroused"
   title_en: "激素小史"
   type: "book"
   creator: "Randi Hutter Epstein, trans. 杨惠东 (CN)"
@@ -1200,11 +1201,11 @@
   image: "/assets/images/thoughts/books/aroused.jpg"
   posted: "2020-07-31"
   text: |
-    The history of endocrinology makes for surprisingly good reading. ***Aroused*** moves from the nineteenth-century experimenters who first identified that organs produced chemical messengers into the bloodstream, through the isolation of insulin, oestrogen, testosterone, and cortisol, to the present-day complexity of the hormonal system and the political controversies it has generated. Epstein is a medical journalist, and the book has the journalist's gift for story: the scientists are characters, the discoveries are dramas, and the wrong turns are as interesting as the right ones.
+    The history of endocrinology makes for good reading. ***Aroused*** moves from the nineteenth-century experimenters who first identified that organs produce chemical messengers into the bloodstream, through the isolation of insulin, oestrogen, testosterone, and cortisol, to the present-day complexity of the hormonal system and the political controversies it has generated. Epstein is a medical journalist, and the book has the journalist's gift for story: the scientists are characters, the discoveries are dramas, and the wrong turns are as interesting as the right ones.
 
-    The chapter on testosterone is probably the most carefully handled. The evidence that testosterone causes aggression in humans is far weaker than popular belief requires, and Epstein traces both the studies and the ideology with appropriate scepticism. The chapter on insulin, and the extraordinary disputes over priority and credit behind its discovery, is absorbing.
+    The book is sharpest where science and ideology collide. The testosterone chapter takes on popular claims about aggression with genuine scepticism: the evidence that testosterone causes aggression in humans is far weaker than received wisdom requires, and Epstein traces both the studies and the mythology with care. The insulin chapter is absorbing for different reasons: the extraordinary disputes over priority and credit behind its discovery turn the history of science into something closer to a court case, with consequences for millions of people depending on the result.
 
-    What the book trades off for readability is depth. Someone who wants to understand how the hypothalamic-pituitary axis actually works -- the feedback loops, the pulse patterns, the receptor dynamics -- will need to look elsewhere. Epstein describes the hormonal system with analogy rather than mechanism, and the analogies are good but not always sufficient. <u>The history is excellent; the science, simplified for a general audience, sacrifices enough precision that a specialist would find it frustrating at the edges.</u>
+    What the book trades off for readability is depth. Epstein describes the hormonal system through analogy rather than mechanism, and the analogies are good but not always sufficient; someone who wants to understand how the hypothalamic-pituitary axis actually works -- the feedback loops, the pulse patterns, the receptor dynamics -- will need to look elsewhere. <u>The history is excellent; the science, simplified for a general audience, sacrifices enough precision that a specialist would find it frustrating at the edges.</u>
 
 - title: "How To: Absurd Scientific Advice for Common Real-World Problems"
   type: "book"
