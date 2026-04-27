@@ -5,6 +5,8 @@ permalink: /writing/
 title: "writing"
 ---
 
+Writing came first for me, before the PhD, before most of the science, before I had any sensible idea what I was doing. This page gathers the public-facing version of that habit: science features, translations, fiction, and essays.
+
 **Science writing**: I spent three years at Neu-Reality (神经现实), a Chinese science platform, writing about neuroscience for people who wanted to understand the brain without the jargon. I then spent seven months at *Scientific American* China, where I wrote weekly news and interviewed researchers like Anil Seth and Cyriel Pennartz for a print feature on the largest consciousness collaboration ever attempted.
 
 **Translation**: I translated Merlin Sheldrake's *Entangled Life* into Chinese; it won the 2025 Pingshan Natural History Museum Book Award.

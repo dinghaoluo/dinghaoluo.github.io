@@ -6,9 +6,9 @@ classes: home
 
 *Hi, Dinghao here :)*
 
-I am finishing my PhD in neuroscience at the [Max Planck Institute for Neuroscience](https://www.mpfi.org), working on how rapid dopamine signals in the hippocampus tune the accuracy of memory. I am graduating December 2026 and looking for data science roles in Europe.
+I am in the last stretch of my PhD in neuroscience at the [Max Planck Institute for Neuroscience](https://www.mpfi.org), working on how rapid dopamine signals in the hippocampus tune the accuracy of memory. I am graduating in December 2026 and looking for data science roles in Europe.
 
-Recently, I have been reading *Mason & Dixon*, learning *SQL and intermediate machine learning*, and working on *a computational analysis of Pynchon's* Gravity's Rainbow.
+At the moment I am reading *Mason & Dixon*, learning *SQL and intermediate machine learning*, and building *a computational analysis of Pynchon's* Gravity's Rainbow.
 
 Reach out to me: <a href="mailto:dinghao.luo@outlook.com">[dinghao.luo@outlook.com]</a>  
 Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.com/user/amoxdl24/) · [Instagram](https://www.instagram.com/amoxitoxin) · [LinkedIn](https://www.linkedin.com/in/dinghaoluo/) · [CV](/cv/)
@@ -23,7 +23,7 @@ Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.
   {% for t in all_thoughts limit:40 %}{% if t.image %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
 </div>
 
-Reading was the first durable way I found of making sense of the world. The early years of my PhD interrupted the habit; returning to it gave me a sharper vocabulary for political economy, science, and the strange persistence of fiction. The writers I return to most are Mircea Cărtărescu and Thomas Pynchon. These are a few coordinates rather than a canon: books that changed the scale at which I think.
+Reading was probably my favourite pastime from childhood through my teenage years: the first durable way I found of making sense of the world as a kid. The early years of my PhD (regrettably) interrupted the habit for a while. Returning to books gave me back a method, a way of testing private feeling against politics, science, history, and fiction's strange talent for telling the truth sideways. The writers I return to most, for now, are Mircea Cărtărescu and Thomas Pynchon. These are a few books I love, not a canon; more like coordinates for the way I read now, and possible doorways if one of them is new to you.
 
 - ***Solenoid*** (2015) by Mircea Cărtărescu
 - ***Gravity's Rainbow*** (1973) by Thomas Pynchon
@@ -36,7 +36,7 @@ Reading was the first durable way I found of making sense of the world. The earl
 
 <h2 id="writing"><a href="/writing/">writing :)</a></h2>
 
-I spent three years as science editor and translator at Neu-Reality (神经现实), a Chinese-language neuroscience and philosophy platform, and seven months at *Scientific American* China, where I wrote weekly news and a print feature on the Adversarial Collaboration on Consciousness project, interviewing researchers like Cyriel Pennartz and Anil Seth. The longest project was translating Merlin Sheldrake's *Entangled Life* into Chinese (《菌络万象》); it took the better part of a year and won the 2025 Pingshan Natural History Museum Book Award. Personal essays and short fiction live here too, mostly written between experiments.
+Writing came before most of the official things here. I spent three years as science editor and translator at Neu-Reality (神经现实), a Chinese-language neuroscience and philosophy platform, and seven months at *Scientific American* China, where I wrote weekly news and a print feature on the Adversarial Collaboration on Consciousness project, interviewing researchers like Cyriel Pennartz and Anil Seth. The longest project was translating Merlin Sheldrake's *Entangled Life* into Chinese (《菌络万象》); it took the better part of a year and won the 2025 Pingshan Natural History Museum Book Award. Personal essays and short fiction live here too, mostly written between experiments, moves, and periods of not quite knowing what to do with myself.
 
 [→ writing & translation](/writing/)
 
@@ -44,7 +44,7 @@ I spent three years as science editor and translator at Neu-Reality (神经现�
 
 <h2 id="science"><a href="/science/">science :)</a></h2>
 
-My PhD asks what tunes the accuracy of memory. The locus coeruleus, a small brainstem nucleus, is usually treated as a slow arousal system: a diffuse neuromodulatory volume knob. My work starts from a different possibility, that rapid LC dopamine signals in hippocampal CA1 change local neural dynamics on the scale at which a memory-guided decision is made. In a navigation task, these dopamine transients decay over seconds and micrometres, recruit a population of ramping neurons, and shift when the animal initiates reward-seeking. I designed the experiments, built the analysis pipelines in **Python**, and developed a computational model to test the mechanism. A paper is in preparation. Before this I was in the Paulsen lab at Cambridge, where my undergraduate thesis looked at dopamine's role in CA3–CA1 synaptic plasticity. I am graduating December 2026 and looking for data science roles in Europe; if the overlap between neuroscience, computation, and careful writing sounds useful to you, get in touch.
+My PhD asks what tunes the accuracy of memory, which is another way of asking why some moments stay precise while others blur before we can hold them. The locus coeruleus, a small brainstem nucleus, is usually treated as a slow arousal system: a diffuse neuromodulatory volume knob. My work starts from a different possibility, that rapid LC dopamine signals in hippocampal CA1 change local neural dynamics on the scale at which a memory-guided decision is made. In a navigation task, these dopamine transients decay over seconds and micrometres, recruit a population of ramping neurons, and shift when the animal initiates reward-seeking. I designed the experiments, built the analysis pipelines in **Python**, and developed a computational model to test the mechanism. A paper is in preparation. Before this I was in the Paulsen lab at Cambridge, where my undergraduate thesis looked at dopamine's role in CA3–CA1 synaptic plasticity. I am graduating December 2026 and looking for data science roles in Europe; if the overlap between neuroscience, computation, and careful writing sounds useful to you, get in touch.
 
 [→ science](/science/)
 
@@ -68,7 +68,7 @@ My PhD asks what tunes the accuracy of memory. The locus coeruleus, a small brai
   {% for a in albums limit:40 %}{% if a.image %}<a href="/music/#{{ a.title | slugify }}" class="home-albums__link" style="display:none"><img src="{{ a.image }}" alt="{{ a.title }}" loading="lazy"></a>{% endif %}{% endfor %}
 </div>
 
-I listen to far more than I make: prog, jazz fusion, Canterbury scene, metal, and whatever else pulls me in. There are album reviews here too, several hundred of them, covering everything from King Crimson to Keor to 万能青年旅店.
+I listen to far more than I make, which is probably healthy: prog, jazz fusion, Canterbury scene, metal, and whatever else pulls me in on a given week. There are album reviews here too, several hundred of them, covering everything from King Crimson to Keor to 万能青年旅店.
 
 [→ music](/music/)
 
@@ -76,7 +76,7 @@ I listen to far more than I make: prog, jazz fusion, Canterbury scene, metal, an
 
 <h2 id="photos"><a href="/photos/">photos :)</a></h2>
 
-Photographs from fieldwork, travel, and daily life. Mostly shot on a Fujifilm X-T4; nothing staged, nothing filtered.
+Photographs from fieldwork, travel, and the small daily-life moments that made me stop walking. Mostly shot on a Fujifilm X-T4; nothing staged, nothing filtered.
 
 [→ photos](/photos/)
 

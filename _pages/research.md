@@ -8,13 +8,13 @@ toc_label: "on this page"
 toc_icon: ""
 ---
 
-*Studying how the brain decides what to keep.*
+*Studying why some memories sharpen, and others slip out of shape before we can use them.*
 
 ---
 
 ## PhD project
 
-The locus coeruleus (LC) is a small brainstem nucleus that releases dopamine and noradrenaline across the brain. Classical accounts treat it as a slow, diffuse modulator, a volume knob on arousal. My project asks whether that picture is too coarse.
+My PhD grew out of a stubborn question: memory is often described as storage, but behaviour makes it look more like a negotiation. The locus coeruleus (LC) is a small brainstem nucleus that releases dopamine and noradrenaline across the brain. Classical accounts treat it as a slow, diffuse modulator, a volume knob on arousal. My project asks whether that picture is too coarse.
 
 Specifically, I study how phasic LC dopamine release modulates functional subpopulations of CA1 hippocampal cells. The hypothesis is that these transient dopamine signals interact selectively with cell populations rather than producing a global gain change, shaping how memories are encoded and retrieved.
 

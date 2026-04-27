@@ -26,7 +26,7 @@ title: "music"
   html[data-theme="dark"] .music-note { color: #6a6360; }
 </style>
 
-*Sound made under another name.*
+*Sound made under another name, usually late, usually while I should have been doing something else.*
 
 ---
 

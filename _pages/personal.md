@@ -5,7 +5,7 @@ permalink: /writing/personal/
 title: "personal"
 ---
 
-*Journals, fiction, and short essays written between 2017 and 2020 for a WeChat blog called 阿莫東森的無聊生活. Originally in Chinese; translated here with links to the originals.*
+*Journals, fiction, and short essays from the WeChat blog I started in secondary school, 阿莫東森的無聊生活. Most were written between 2017 and 2020; all began in Chinese, and I have translated them here with links to the originals.*
 
 ---
 

@@ -195,9 +195,15 @@ exclude:
   - package-lock.json
   - Rakefile
   - README
+  - README.md
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  # authoring-only material tracked in git but not published
+  - _docs
+  - font-trials
+  - scripts
+  - styleguides
 keep_files:
   - .git
   - .svn

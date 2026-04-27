@@ -5,7 +5,7 @@ permalink: /thoughts/
 title: 'thoughts'
 ---
 
-*Notes on things that refused to leave quietly.*
+*Books, films, games, and television that refused to leave quietly. Some notes are arguments; some are attempts to remember the exact shape of being moved, annoyed, or ambushed by something.*
 
 ---
 

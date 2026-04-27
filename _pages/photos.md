@@ -5,7 +5,7 @@ permalink: /photos/
 title: "photos"
 ---
 
-*Proof that I sometimes look up from the page.*
+*Proof that I sometimes look up from the page, usually because the light made me stop for a second.*
 
 <!--
   To add photos later:
