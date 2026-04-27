@@ -16,6 +16,7 @@ Writing came first for me, before the PhD, before most of the science, before I 
 ---
 
 {% assign articles = site.writing | sort: 'date' | reverse %}
+{% assign start_here_titles = "Entangled Life|Racing towards a grand theory of consciousness|My Mother" | split: "|" %}
 {% assign print_articles = articles | where: "section", "print" %}
 {% assign online_articles = articles | where: "section", "online" %}
 {% assign binaural_article = articles | where: "title", "Binaural beats, or malice as neuroscience" %}
@@ -25,6 +26,17 @@ Writing came first for me, before the PhD, before most of the science, before I 
 {% assign scicomm_articles = articles | where: "category", "scicomm" | where_exp: "item", "item.title != 'Binaural beats, or malice as neuroscience'" %}
 {% assign encyclopaedic_articles = articles | where: "category", "encyclopaedic" %}
 {% assign journal_combined = journal_articles | concat: scicomm_articles | concat: encyclopaedic_articles | sort: 'date' | reverse %}
+
+### start here
+
+A few possible doorways, depending on what brought you here:
+
+{% for pick_title in start_here_titles %}
+{% assign pick = articles | where: "title", pick_title | first %}
+- [{{ pick.title }}]({{ pick.url }}){% if pick.title_zh %} / {{ pick.title_zh }}{% endif %}: {{ pick.excerpt }}
+{% endfor %}
+
+---
 
 ### print
 
@@ -114,11 +126,11 @@ Writing came first for me, before the PhD, before most of the science, before I 
 <div class="writing-list">
 {% for article in fiction_articles %}
 <div class="writing-entry writing-entry--fiction">
+  {% if article.image %}
   <a href="{{ article.url }}" class="writing-entry__banner-wrap">
-    {% if article.image %}
     <img src="{{ article.image }}" alt="{{ article.title }}" class="writing-entry__banner" loading="lazy">
-    {% endif %}
   </a>
+  {% endif %}
   <div class="writing-entry__body">
     <span class="writing-entry__type">{{ article.category }}</span>
     <h3 class="writing-entry__title">
@@ -147,7 +159,7 @@ Writing came first for me, before the PhD, before most of the science, before I 
 
 ---
 
-### journal
+### essays & journals
 
 <div class="writing-list writing-list--journal">
 {% for article in journal_combined %}
@@ -189,11 +201,11 @@ Writing came first for me, before the PhD, before most of the science, before I 
 
 I also translated and edited work by Michael Graziano, Timothy Lillicrap and Geoffrey Hinton, Jordana Cepelewicz, Alex Mar, and others into Chinese for Neu-Reality.
 
-- Michael Graziano, 'Are We Really Conscious?' — *The Atlantic* · [original](https://www.theatlantic.com/science/archive/2016/03/phlegm-theories-of-consciousness/472812/) · [中文](https://mp.weixin.qq.com/s/dUAQ-v7_Xb_uP1znW4f-0g)
-- Timothy P. Lillicrap, Adam Santoro, Luke Marris, Colin J. Akerman and Geoffrey Hinton, 'Backpropagation and the Brain' — *Nature Reviews Neuroscience* · [original](https://www.nature.com/articles/s41583-020-0277-3) · [中文](https://mp.weixin.qq.com/s/n0cNsT_Gf7RZBFjE3rd_hw)
-- Jordana Cepelewicz, 'In Brain's Electrical Ripples, Markers for Memories Appear' — *Quanta Magazine* · [original](https://www.quantamagazine.org/in-brains-electrical-ripples-markers-for-memories-appear-20190806/) · [中文](https://mp.weixin.qq.com/s/gpKgkS9_EMnG7auZKLDuyw)
-- Grigori Guitchounts, 'An Existential Crisis in Neuroscience' — *Nautilus* · [original](https://nautil.us/an-existential-crisis-in-neuroscience-236115/) · [中文](https://mp.weixin.qq.com/s/TWu-VGcNfIg0oQYeXO3mSg)
-- Kevin Berger, 'Gustav Klimt in the Brain Lab' — *Nautilus* · [original](https://nautil.us/gustav-klimt-in-the-brain-lab-237578/) · [中文](https://mp.weixin.qq.com/s/bZJhnXy4RNnYkSdE2kbGUA)
-- Dyani Lewis, 'Optogenetics: Understanding the Brain One Flash of Light at a Time' — *Cosmos Magazine* · [original](https://cosmosmagazine.com/biology/optogenetics-understanding-the-brain-one-flash-of-light-at-a-time) · [中文](https://mp.weixin.qq.com/s?__biz=MzkxNzg2MzkxNg==&mid=2247539537&idx=1&sn=45a1385d9a380990018731b7f3a7dfd7&source=41)
-- Alex Mar, 'The Uncanny Love of Robot-Making' — *WIRED* · [original](https://www.wired.com/2017/10/hiroshi-ishiguro-when-robots-act-just-like-humans/) · [中文](https://mp.weixin.qq.com/s/AB9Pxh-52b7ZJxSDTfaceA)
-- Steve Ayan, 'The Brain's Autopilot Mechanism Steers Consciousness' — *Scientific American* · [original](https://www.scientificamerican.com/article/the-brains-autopilot-mechanism-steers-consciousness/) · [中文](https://mp.weixin.qq.com/s/edW5JRQ2VZF7k6E5daDkYA)
+- Michael Graziano, 'Are We Really Conscious?' · *The Atlantic* · [original](https://www.theatlantic.com/science/archive/2016/03/phlegm-theories-of-consciousness/472812/) · [中文](https://mp.weixin.qq.com/s/dUAQ-v7_Xb_uP1znW4f-0g)
+- Timothy P. Lillicrap, Adam Santoro, Luke Marris, Colin J. Akerman and Geoffrey Hinton, 'Backpropagation and the Brain' · *Nature Reviews Neuroscience* · [original](https://www.nature.com/articles/s41583-020-0277-3) · [中文](https://mp.weixin.qq.com/s/n0cNsT_Gf7RZBFjE3rd_hw)
+- Jordana Cepelewicz, 'In Brain's Electrical Ripples, Markers for Memories Appear' · *Quanta Magazine* · [original](https://www.quantamagazine.org/in-brains-electrical-ripples-markers-for-memories-appear-20190806/) · [中文](https://mp.weixin.qq.com/s/gpKgkS9_EMnG7auZKLDuyw)
+- Grigori Guitchounts, 'An Existential Crisis in Neuroscience' · *Nautilus* · [original](https://nautil.us/an-existential-crisis-in-neuroscience-236115/) · [中文](https://mp.weixin.qq.com/s/TWu-VGcNfIg0oQYeXO3mSg)
+- Kevin Berger, 'Gustav Klimt in the Brain Lab' · *Nautilus* · [original](https://nautil.us/gustav-klimt-in-the-brain-lab-237578/) · [中文](https://mp.weixin.qq.com/s/bZJhnXy4RNnYkSdE2kbGUA)
+- Dyani Lewis, 'Optogenetics: Understanding the Brain One Flash of Light at a Time' · *Cosmos Magazine* · [original](https://cosmosmagazine.com/biology/optogenetics-understanding-the-brain-one-flash-of-light-at-a-time) · [中文](https://mp.weixin.qq.com/s?__biz=MzkxNzg2MzkxNg==&mid=2247539537&idx=1&sn=45a1385d9a380990018731b7f3a7dfd7&source=41)
+- Alex Mar, 'The Uncanny Love of Robot-Making' · *WIRED* · [original](https://www.wired.com/2017/10/hiroshi-ishiguro-when-robots-act-just-like-humans/) · [中文](https://mp.weixin.qq.com/s/AB9Pxh-52b7ZJxSDTfaceA)
+- Steve Ayan, 'The Brain's Autopilot Mechanism Steers Consciousness' · *Scientific American* · [original](https://www.scientificamerican.com/article/the-brains-autopilot-mechanism-steers-consciousness/) · [中文](https://mp.weixin.qq.com/s/edW5JRQ2VZF7k6E5daDkYA)

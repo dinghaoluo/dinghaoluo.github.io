@@ -8,7 +8,7 @@ section: "online"
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/wyetxNOx5PJPoAvP5apCeQ"
-excerpt: "Four neuromyths that refuse to die, the 10% brain, left-brain/right-brain, gendered cognition, and the Mozart effect, and what makes them so persistent."
+excerpt: "The 10% brain, left-brain/right-brain, gendered cognition, the Mozart effect: four myths that survive because they are useful excuses, not because they are true."
 ---
 
 'Men are from Mars, women are from Venus.' 'We only use 10% of our brains.' 'Left-brain people are logical; right-brain people are creative.' Myths about the brain and the mind are everywhere, and no amount of debunking seems to slow their spread. Pop-psychology bestsellers and corporate training programmes recycle them with abandon, each iteration drifting further from the evidence it claims to summarise. The myths endure not because the science is ambiguous but because the stories are satisfying: they offer tidy explanations for messy human experience. The question is not merely where the myths go wrong, but why they persist, and what it takes to see through them.

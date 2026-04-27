@@ -10,7 +10,7 @@ section: "online"
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/5g1V5Mrtwy2rhFLkOj6N4g"
-excerpt: "A deep-dive on working memory manipulation, from Miller's magical number seven to Luo Huan's alpha-wave entrainment paradigm."
+excerpt: "From Miller's magical number seven to alpha-wave perturbation: how working memory became something one can manipulate without opening the skull."
 ---
 
 **Working memory** is the cognitive system responsible for the temporary storage and online manipulation of information. In a modern world saturated with stimuli, the execution of complex cognitive tasks depends heavily on working memory. Its capacity is therefore a key index of cognitive ability, and one of the most important open problems in cognitive psychology.

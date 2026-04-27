@@ -6,7 +6,7 @@ outlet_en: "Scientific American China"
 date: 2021-03-01
 section: "print"
 image: "/assets/images/writing/acr_consciousness.jpg"
-excerpt: "A print feature on the ARC project, the largest adversarial collaboration on consciousness ever attempted."
+excerpt: "Crick, Koch, Chalmers, Tononi, Dehaene, Lau: a feature on consciousness theories, their quarrels, and the adversarial collaboration trying to make them answer to data."
 featured: true
 ---
 

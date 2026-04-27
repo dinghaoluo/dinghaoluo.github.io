@@ -18,7 +18,7 @@ awards:
 isbn: "9787559677754"
 featured: true
 section: "print"
-excerpt: "Complete Chinese translation of Sheldrake's exploration of how fungi make, remake, and sustain the living world."
+excerpt: "My Chinese translation of Sheldrake's fungal world: a year of mycology, ecology, and sentences that had to stay strange without becoming vague."
 ---
 
 Complete Chinese translation of Merlin Sheldrake's *Entangled Life*, published by Houlang Press (后浪出版) in November 2024. Hardcover, 304 pages. ISBN 9787559677754.

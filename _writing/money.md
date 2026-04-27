@@ -3,7 +3,7 @@ title: "Money"
 title_zh: "錢吶"
 category: "journal"
 date: 2018-06-29
-excerpt: "A train ride with a PI, the cost of a mouse line, and the machinery behind the ivory tower."
+excerpt: "A train ride with a PI, the cost of a mouse line, and the moment academia's ideals acquire a price tag."
 image: /assets/images/personal/money.webp
 links:
   - label: "Original (Chinese)"

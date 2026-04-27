@@ -8,7 +8,7 @@ section: "online"
 links:
   - label: "Original (Chinese)"
     url: "https://neu-reality.com/2022/05/place-cell-history/"
-excerpt: "A feature tracing the history of place cell research, from Tolman's cognitive maps through O'Keefe's Nobel-winning discovery to theta sequences and time cells."
+excerpt: "Tolman's cognitive maps, O'Keefe's place cells, theta sequences, time cells: a history of how the hippocampus became the brain's cartographic system."
 ---
 
 *This article originally appeared in the 'Neural Musings' column, a series on breakthroughs in neuroscience and the mind. From theology to science, from conjecture to experiment, the pursuit of the mind's holy grail has never stopped. As neuroscience advances, seekers may have glimpsed a parsimonious answer: reductionism. But can reducing mental activity and human behaviour to neural activity bring closure to millennia of inquiry?*

@@ -34,6 +34,21 @@ layout: default
         {% if page.lede %}
           <div class="page__lede">{{ page.lede | markdownify }}</div>
         {% endif %}
+        {% if page.collection == 'writing' %}
+          <div class="writing-piece-meta">
+            <span class="writing-piece-meta__type">{% if page.type %}{{ page.type }}{% elsif page.category %}{{ page.category }}{% else %}writing{% endif %}</span>{% if page.title_zh %}<span> · {{ page.title_zh }}</span>{% endif %}{% if page.creator %}<span> · {{ page.creator }}</span>{% endif %}{% if page.outlet %}<span> · {{ page.outlet }}{% if page.outlet_en %} ({{ page.outlet_en }}){% endif %}</span>{% endif %}{% if page.date %}<span> · {{ page.date | date: "%B %Y" }}</span>{% endif %}{% if page.isbn %}<span> · ISBN {{ page.isbn }}</span>{% endif %}
+            {% if page.awards %}
+              <div class="writing-piece-meta__awards">
+                {% for award in page.awards %}<span class="writing-entry__award">{{ award }}</span>{% endfor %}
+              </div>
+            {% endif %}
+            {% if page.links.size > 0 %}
+              <div class="writing-piece-meta__links">
+                {% for link in page.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
         {% if page.toc %}
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
             <nav class="toc">

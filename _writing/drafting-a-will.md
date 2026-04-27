@@ -3,7 +3,7 @@ title: "Drafting a Will"
 title_zh: "我決定起草一份遺書"
 category: "journal"
 date: 2018-08-16
-excerpt: "On discussing survival in the face of death, and why the contradiction is the point."
+excerpt: "A teenage attempt to write a will, less from a wish to die than from the need to say what ordinary life keeps hidden."
 image: /assets/images/personal/drafting-a-will.webp
 links:
   - label: "Original (Chinese)"

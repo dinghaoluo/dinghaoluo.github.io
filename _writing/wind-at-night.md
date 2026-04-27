@@ -3,7 +3,7 @@ title: "The Wind Does Not Stop at Night"
 title_zh: "夜裡風聲不停"
 category: "journal"
 date: 2019-08-09
-excerpt: "A power outage at King's Cross, a first LTP recording, and the capitalist machinery behind the ivory tower."
+excerpt: "A power outage at King's Cross, a first LTP recording, and the morning life planning stopped meaning childhood ambition and started meaning survival."
 image: /assets/images/personal/wind-at-night.webp
 links:
   - label: "Original (Chinese)"

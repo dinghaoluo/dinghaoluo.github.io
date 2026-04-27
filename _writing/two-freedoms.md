@@ -3,7 +3,7 @@ title: "Two Freedoms"
 title_zh: "兩種自由"
 category: "journal"
 date: 2019-07-12
-excerpt: "On the freedom one does not want and the freedom one does."
+excerpt: "Castle Hill after work, Radiohead in the earphones, and the difference between being left alone and being free."
 image: /assets/images/personal/two-freedoms.webp
 links:
   - label: "Original (Chinese)"
