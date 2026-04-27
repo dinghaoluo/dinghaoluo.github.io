@@ -1555,6 +1555,19 @@
 
     <u>The stories work best when the philosophical content generates narrative pressure rather than decorating a story that could exist without it, when the existentialist thesis and the dramatic situation are genuinely the same thing rather than two things held together by authorial will.</u>
 
+- title: "Descartes' Error"
+  type: "book"
+  creator: "Antonio Damasio"
+  creator_role: "by"
+  year: 1994
+  eval: "meh..."
+  image: "/assets/images/thoughts/books/descartes_error.jpg"
+  posted: "2018-05-15"
+  text: |
+    The clinical cases are ***Descartes' Error*** at its best. Elliott, the patient who retained full intellectual function after a frontal tumour removal but could no longer make any decision worth making, is one of the most unsettling figures in modern neuroscience writing; Phineas Gage, the nineteenth-century railway worker who survived a tamping iron through his skull but not the personality he had before it, is reinterpreted through modern neuroimaging to similar effect. These cases make Damasio's central argument almost by themselves: that emotional feedback is not noise contaminating rational deliberation but integral to it, and that Cartesian mind-body dualism is not just philosophically questionable but neurologically false.
+
+    The somatic marker hypothesis -- the formal claim about how bodily states guide reasoning -- is less satisfying. Damasio equivocates between the claim that emotional feedback matters for all reasoning and the narrower, more defensible claim that it matters specifically for social and personal decisions; the clinical evidence supports the latter, not necessarily the former. The mechanistic account of what a somatic marker actually is and how it is computationally instantiated remains gestural. The theoretical chapters repeat and elaborate without sharpening. <u>The cases do the argument's work; the argument cannot quite return the favour.</u>
+
 - title: "We"
   title_en: "我们 / Мы"
   type: "book"
