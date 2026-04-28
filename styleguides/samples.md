@@ -40,25 +40,29 @@ The *Solenoid* review established the newest long-form pattern:
 - Pull from earlier thoughts entries only when the borrowed phrase becomes a genuine hinge: 'topography of thought', 'the hum beneath the ordinary', 'real yet untranslatable', 'how does one get saved?'
 - Preserve translator-consciousness when it is part of the reading, but state limits plainly: 'I do not read Romanian.'
 - Do not place pull quotes directly beside section breaks. The essay should not use two visual hinges for one turn.
-- Pull quotes should feel extracted from the essay's argumentative centre, not written as independent summaries.
+- Pull quotes should feel prepared by the essay's argumentative centre, not written as independent summaries.
 - Sentence-to-sentence joints matter as much as section architecture. Do not jump from 'surrealism is insufficient' to Fisher without a bridge that explains why Fisher is the next necessary tool.
+- Transitional prose must describe the real sequence of the essay. If the draft begins with bodily shock and only then reaches childhood, do not write as if childhood was the literal opening.
 - A strong opening creates a debt. Later sections must escalate, refract, or explain the opening pressure; they cannot merely proceed through topics.
 - The solenoid-as-induction argument became the structural thesis. Bucharest, failure, archive, body, and salvation needed to read as coils preparing that argument, not as adjacent themes.
 - The reception-survey paragraph was cut because it displayed other critics before the essay had finished exerting its own pressure. Hooyman and Perelmuter survive where their terms do actual work.
 - 'Diagnostically useless' is a model for a useful coinage: it begins as a neuroscience-inflected reading of Bucharest, then returns in the formal argument to tighten the whole essay.
 - Closing admiration should be direct. Cut adjective catalogues and hedges once the essay has earned the emotional claim.
-- Pull quote density was reduced. The first pull quote carries the opening premise; the induction pull quote carries the structural thesis. Softer labels about Bucharest and the body belong inside the prose.
+- Pull quote density was reduced. The first pull quote carries the opening premise; the labyrinth/solenoid pull quote carries the structural thesis. Softer labels about Bucharest and the body belong inside the prose.
 - The coiling list in the formal section needed escalation: formal doublings first, then ethical and conceptual friction, so 'induction rather than ordinary progression' arrives as a discovery rather than a summary.
 - When a pull quote is cut, repair the local joints. 'That second clause' worked only while the pull quote supplied the referent; once folded into prose, the next paragraph needed to name salvation directly.
 - The Pynchon comparison needed a short coda for the missing-word image. Compressing a comparison should not force two landings into one breath.
+- A pull quote should not be repeated verbatim in the prose directly beside it. The prose should prepare the pressure; the display line should crystallise it.
+- Source notes for long-form essays should begin with the primary edition actually read, then name outside sources only when they support visible claims in the essay.
 
 Finished-essay lessons:
 
 - The lice opening succeeded because it gave the essay a bodily premise before the metaphysical language arrived. Use the concrete shock as the first hinge, then let abstraction answer it.
-- Pull quotes worked best when they were already live sentences in the essay: 'Strangeness comes first; adulthood teaches us which parts of it to call normal.' A display sentence that only summarises a section should be folded back into prose.
+- Pull quotes worked best when they crystallised pressure already live in the essay. A display sentence that only summarises a section should be folded back into prose.
 - Reception and outside references should enter as pressure, not proof of reading. A paragraph naming critics, interviews, or reviews should clarify a problem the essay is already facing: translation, reception, scale, influence, or a useful disagreement.
 - Superlative admiration is harder to close than grief or shock. Avoid ending by announcing greatness. Close on the changed sensorium: what the work made visible, what bodily residue remains, what question cannot be put down.
 - Length is justified only when each movement tightens the same central pressure. Accumulated brilliance is not structure.
+- Factual source claims should remain specific. Do not smooth a precise sourced detail into a broader claim because the broader version reads more elegantly. When original and translation years both matter, name the relation rather than leaving the year ambiguous.
 
 ## Chinese Sample Notes
 

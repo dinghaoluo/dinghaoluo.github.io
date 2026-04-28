@@ -34,6 +34,10 @@ Reading gives me obsessions; writing tests what I have actually understood. This
 {% if article.type == "feature" %}
   {% assign print_type = "science" %}
 {% endif %}
+{% assign title_is_plain = false %}
+{% if article.type == "translation" or article.title_link == false %}
+  {% assign title_is_plain = true %}
+{% endif %}
 <div class="writing-entry writing-entry--print writing-entry--print-{{ print_type | slugify }}{% if article.type == 'translation' %} writing-entry--translation{% endif %}{% if article.featured %} writing-entry--featured{% endif %}">
   {% if article.image %}
   <a href="{{ article.url }}" class="writing-entry__img-wrap">
@@ -42,19 +46,16 @@ Reading gives me obsessions; writing tests what I have actually understood. This
   {% endif %}
   <div class="writing-entry__body">
     <span class="writing-entry__type">{{ print_type }}</span>
-    <h3 class="writing-entry__title{% if article.type == 'translation' %} writing-entry__title--plain{% endif %}">
-      {% if article.type == "translation" %}
+    <h3 class="writing-entry__title{% if title_is_plain %} writing-entry__title--plain{% endif %}">
+      {% if title_is_plain %}
       <span class="writing-entry__title-main">{{ article.title_display | default: article.title }}</span>
-      {% if article.title_zh %}
-      <span class="writing-entry__title-zh-inline">{{ article.title_zh }}</span>
-      {% endif %}
       {% else %}
       <a href="{{ article.url }}">{{ article.title_display | default: article.title }}</a>
       {% endif %}
+      {% if article.title_zh %}
+      <span class="writing-entry__title-zh-inline">{{ article.title_zh }}</span>
+      {% endif %}
     </h3>
-    {% if article.title_zh and article.type != "translation" %}
-    <span class="writing-entry__title-zh-subtitle">{{ article.title_zh }}</span>
-    {% endif %}
     {% if article.links.size > 0 %}
     <div class="writing-entry__book-links">
       {% for link in article.links %}

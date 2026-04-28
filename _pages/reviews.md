@@ -43,17 +43,31 @@ title: 'thoughts'
 
 {% assign pinned_thoughts = site.data.thoughts | where: 'pin', true | sort: 'posted' | reverse %}
 {% assign regular_thoughts = site.data.thoughts | where_exp: 'thought', 'thought.pin != true' | sort: 'posted' | reverse %}
+{% assign thoughts_initial_page_size = 15 %}
+{% assign thoughts_initial_count = 0 %}
 <div class="thoughts-cards" id="thoughts-cards">
 {% if pinned_thoughts.size > 0 %}
 <div class="thoughts-pin-lead" id="thoughts-pin-lead">
   <span class="thoughts-pin-lead__label">pinned</span>
 </div>
 {% for thought in pinned_thoughts %}
-{% include thought-card.html take=thought %}
+{% assign thought_type = thought.type | downcase %}
+{% assign hide_initial = true %}
+{% if thought_type == 'book' and thoughts_initial_count < thoughts_initial_page_size %}
+  {% assign hide_initial = false %}
+  {% assign thoughts_initial_count = thoughts_initial_count | plus: 1 %}
+{% endif %}
+{% include thought-card.html take=thought initially_hidden=hide_initial %}
 {% endfor %}
 {% endif %}
 {% for thought in regular_thoughts %}
-{% include thought-card.html take=thought %}
+{% assign thought_type = thought.type | downcase %}
+{% assign hide_initial = true %}
+{% if thought_type == 'book' and thoughts_initial_count < thoughts_initial_page_size %}
+  {% assign hide_initial = false %}
+  {% assign thoughts_initial_count = thoughts_initial_count | plus: 1 %}
+{% endif %}
+{% include thought-card.html take=thought initially_hidden=hide_initial %}
 {% endfor %}
 </div>
 

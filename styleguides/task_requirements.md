@@ -27,6 +27,11 @@ This file holds operational rules that used to live in the main style guide. The
 - In long-form review-essays, named critics and reviews should clarify a live problem in the argument. One to three named outside voices in a passage is usually enough. More than that starts to read as a literature survey unless each source performs a distinct function: historical reception, formal comparison, translation context, or a useful disagreement.
 - Aggregated citation should never serve as proof of having consulted the discourse. A reception paragraph should answer: what does the outside conversation make visible that the essay could not make visible alone?
 - For primary-text work, use the text itself when factual accuracy matters.
+- Long-form source notes should begin with the primary edition actually read, including translator, publisher, and year where relevant.
+- For translated works, distinguish the original publication year from the edition or translation year when both are used.
+- Outside sources should appear in source notes only when they support a visible claim, named critic, author statement, translation context, or useful disagreement.
+- When naming a critic in prose, either link the critic's name at first mention or identify the critic and outlet in the source note.
+- When reusing a critic's vocabulary across entries, recheck the original source. Do not let an older site entry's paraphrase become the authority for a later essay.
 
 ## Formatting
 

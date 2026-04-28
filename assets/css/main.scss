@@ -2968,10 +2968,6 @@ body.writing-page .page__content .writing-entry__title em {
   font-family: $writing-title-stack;
   font-weight: normal;
   letter-spacing: 0.045em;
-  text-decoration: underline;
-  text-decoration-color: rgba($morandi-clay-deep, 0.34);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
 }
 
 .writing-entry__title-zh-inline {
@@ -2981,7 +2977,6 @@ body.writing-page .page__content .writing-entry__title em {
 }
 
 .writing-entry__title--plain .writing-entry__title-zh-inline {
-  color: inherit;
   text-decoration: none;
 }
 
@@ -3895,6 +3890,26 @@ body.writing-page .page__content .writing-entry__title em {
   margin: 3.2rem 0;
   border: 0;
   border-top: 1px solid rgba($morandi-muted, 0.28);
+}
+
+.page__content .writing-insert {
+  max-width: 44rem;
+  margin: 3.2rem 0;
+}
+
+.page__content .writing-insert img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.page__content .writing-insert figcaption {
+  margin-top: 0.55rem;
+  color: $site-text-muted;
+  font-family: $reforma-stack;
+  font-size: 0.78rem;
+  line-height: 1.45;
 }
 
 .page__content .source-note {
@@ -4831,10 +4846,8 @@ body.writing-page .page__content .writing-entry__title em {
   .writing-entry__title-zh-inline,
   .writing-entry__title-zh-subtitle {
     color: #9b928a;
-    text-decoration-color: rgba(#c49a85, 0.34);
   }
   .writing-entry__title--plain .writing-entry__title-zh-inline {
-    color: inherit;
     text-decoration: none;
   }
   .writing-entry__title-en {

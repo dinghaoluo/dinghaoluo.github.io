@@ -3,29 +3,33 @@
   'use strict';
 
   document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.thoughts-card').forEach(function (card) {
+    var cardsRoot = document.getElementById('thoughts-cards');
+    if (!cardsRoot) return;
+
+    cardsRoot.addEventListener('click', function (event) {
+      var card = event.target.closest ? event.target.closest('.thoughts-card') : null;
+      if (!card || !cardsRoot.contains(card)) return;
+
       var wrap   = card.querySelector('.thoughts-card__text-wrap');
       var toggle = card.querySelector('.thoughts-card__toggle');
       if (!wrap) return;
 
-      card.addEventListener('click', function () {
-        if (!card.dataset.collapsedH) {
-          card.dataset.collapsedH = wrap.offsetHeight;
-        }
-        var collapsedH = parseFloat(card.dataset.collapsedH);
+      if (!card.dataset.collapsedH) {
+        card.dataset.collapsedH = wrap.offsetHeight;
+      }
+      var collapsedH = parseFloat(card.dataset.collapsedH);
 
-        if (card.classList.contains('is-open')) {
-          closeCard(card, wrap, toggle, collapsedH);
-        } else {
-          document.querySelectorAll('.thoughts-card.is-open').forEach(function (other) {
-            if (other === card) return;
-            var otherWrap = other.querySelector('.thoughts-card__text-wrap');
-            var otherToggle = other.querySelector('.thoughts-card__toggle');
-            closeCard(other, otherWrap, otherToggle, parseFloat(other.dataset.collapsedH));
-          });
-          openCard(card, wrap, toggle);
-        }
-      });
+      if (card.classList.contains('is-open')) {
+        closeCard(card, wrap, toggle, collapsedH);
+      } else {
+        cardsRoot.querySelectorAll('.thoughts-card.is-open').forEach(function (other) {
+          if (other === card) return;
+          var otherWrap = other.querySelector('.thoughts-card__text-wrap');
+          var otherToggle = other.querySelector('.thoughts-card__toggle');
+          closeCard(other, otherWrap, otherToggle, parseFloat(other.dataset.collapsedH));
+        });
+        openCard(card, wrap, toggle);
+      }
     });
 
     function openCard(card, wrap, toggle) {
