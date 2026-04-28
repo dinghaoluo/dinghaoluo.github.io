@@ -232,9 +232,9 @@ Format:
 
 - The Outsider
   - Lines checked: 501-515
-  - Sources consulted: Penguin/Gallimard bibliographic data; summaries of Meursault, mother's funeral, beach killing, trial, and postcolonial criticism of the unnamed Arab
+  - Sources consulted: Penguin/Gallimard bibliographic data; user confirmation of Joseph Laredo Penguin Classics translation; summaries of Meursault, mother's funeral, beach killing, trial, and postcolonial criticism of the unnamed Arab
   - Result: minor edit
-  - Brief reason: Swapped display/original title fields to match book convention. Translator remains uncertain because the prose uses the UK title but quotes a line often associated with another English translation.
+  - Brief reason: Swapped display/original title fields to match book convention and added Joseph Laredo as the confirmed translation read.
 
 - Misogyny
   - Lines checked: 517-529
@@ -580,27 +580,27 @@ Format:
 
 - The Hobbit
   - Lines checked: 1326-1337
-  - Sources consulted: HarperCollins/Tolkien bibliographic data; Chinese edition metadata; plot references for Bilbo, Gollum, Smaug, Thorin and the Ring
-  - Result: minor edit / uncertain
-  - Brief reason: Added Chinese edition title and probable translator metadata because the entry says it was first read in Chinese; exact childhood edition may require Dinghao's memory.
+  - Sources consulted: HarperCollins/Tolkien bibliographic data; user clarification on childhood Chinese reading memory; plot references for Bilbo, Gollum, Smaug, Thorin and the Ring
+  - Result: minor edit
+  - Brief reason: Removed over-specific Chinese edition title and translator metadata; the review text's statement that it was read in Chinese is sufficient.
 
 - The Return of the King
   - Lines checked: 1339-1352
-  - Sources consulted: HarperCollins/Tolkien bibliographic data; Chinese edition metadata; plot references for Scouring of the Shire, Grey Havens, Pelennor Fields, Denethor, Eowyn, Sam and Mount Doom
-  - Result: minor edit / uncertain
-  - Brief reason: Added Chinese edition title and probable translator metadata under the English-original book rule; exact childhood edition may require Dinghao's memory.
+  - Sources consulted: HarperCollins/Tolkien bibliographic data; user clarification on childhood Chinese reading memory; plot references for Scouring of the Shire, Grey Havens, Pelennor Fields, Denethor, Eowyn, Sam and Mount Doom
+  - Result: minor edit
+  - Brief reason: Removed over-specific Chinese edition title and translator metadata; childhood Chinese reading remains in prose only.
 
 - The Two Towers
   - Lines checked: 1354-1367
-  - Sources consulted: HarperCollins/Tolkien bibliographic data; Chinese edition metadata; plot references for Books III/IV, Helm's Deep, Ents/Isengard, Ithilien, Gollum and Treebeard
-  - Result: minor edit / uncertain
-  - Brief reason: Added Chinese edition title and probable translator metadata under the English-original book rule; exact childhood edition may require Dinghao's memory.
+  - Sources consulted: HarperCollins/Tolkien bibliographic data; user clarification on childhood Chinese reading memory; plot references for Books III/IV, Helm's Deep, Ents/Isengard, Ithilien, Gollum and Treebeard
+  - Result: minor edit
+  - Brief reason: Removed over-specific Chinese edition title and translator metadata; no exact childhood edition is recorded.
 
 - The Fellowship of the Ring
   - Lines checked: 1369-1382
-  - Sources consulted: HarperCollins/Tolkien bibliographic data; Chinese edition metadata; plot references for Farmer Maggot, Prancing Pony, Nazgul, Shire, Council of Elrond and appendices/manuscript depth
-  - Result: minor edit / uncertain
-  - Brief reason: Added Chinese edition title and probable translator metadata under the English-original book rule; exact childhood edition may require Dinghao's memory.
+  - Sources consulted: HarperCollins/Tolkien bibliographic data; user clarification on childhood Chinese reading memory; plot references for Farmer Maggot, Prancing Pony, Nazgul, Shire, Council of Elrond and appendices/manuscript depth
+  - Result: minor edit
+  - Brief reason: Removed over-specific Chinese edition title and translator metadata; the entry keeps only the childhood Chinese reading memory in prose.
 
 ## Batch 6, books 2019-09-20 to 2018-03-08
 
@@ -900,7 +900,7 @@ Format:
   - Lines checked: 2122-2136
   - Sources consulted: Murakami bibliographic records; publication chronology for *Underground* and *The Place That Was Promised*; Aum Shinrikyo sarin attack references
   - Result: minor edit
-  - Brief reason: Corrected original-title metadata and year to reflect the two Japanese books later combined in English.
+  - Brief reason: Corrected original-title metadata and year to reflect the two Japanese books later combined in English; follow-up chronology pass removed an unnecessary 'later reread in college' phrase.
 
 - The Age of Insight
   - Lines checked: 2138-2151
@@ -1087,8 +1087,8 @@ Format:
 - Dance Dance Dance
   - Lines checked: 2597-2611
   - Sources consulted: Murakami bibliographic records; plot references for the Dolphin Hotel, Sheep Man, Gotanda, Yumiyoshi and bubble-era setting
-  - Result: OK
-  - Brief reason: Original title, CN metadata and plot claims checked; personal reading-order claim left as personal memory.
+  - Result: minor edit
+  - Brief reason: Original title, CN metadata and plot claims checked; follow-up chronology pass removed a forward-looking reference to reading *A Wild Sheep Chase* after this entry's posted date.
 
 - Men Without Women
   - Lines checked: 2613-2625

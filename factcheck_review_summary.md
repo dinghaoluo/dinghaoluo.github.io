@@ -13,6 +13,7 @@ This is the concise proofread guide for the `_data/thoughts.yml` fact-check and 
 
 - Restored and documented the book-only Chinese-title rule in `styleguides/style.md`: English originals read in Chinese keep the Chinese edition title in `title_en`; non-English originals read in Chinese keep the original-language title in `title_en` and put the Chinese edition title in `creator` as `(CN: 《...》)`.
 - Corrected major book metadata and prose issues in entries including `The Deserters`, `Burnt Heart and Other Romances`, `Hi Izuru Kuni no Kojo`, `TV People`, `The Outsider`, the Tolkien entries, and several Murakami/Akutagawa/Kundera/Garcia Marquez entries.
+- Updated follow-up personal clarifications: `The Outsider` now records Joseph Laredo's Penguin Classics translation, and Tolkien entries no longer record probable childhood Chinese editions or translators.
 - Corrected type and creator metadata for TV entries that had been marked as films, including `Asura`, `Why Try to Change Me Now`, `Unbelievable`, `This Is Going to Hurt`, and `Dopesick`.
 - Fixed concrete game-detail claims in entries including `TUNIC`, `Dark Souls II`, `The Last of Us Part II`, `The Last of Us Remastered`, `Elden Ring`, `Dark Souls: Remastered`, and `The Beginner's Guide`.
 - Fixed film/TV factual overreach in entries including `Better Call Saul S4`, `Severance S2`, `Adolescence`, `The Crown S5`, `The Problem with Jon Stewart S2`, `Inception`, `The Aviator`, and `Coherence`.
@@ -23,13 +24,12 @@ This is the concise proofread guide for the `_data/thoughts.yml` fact-check and 
 - Removed remaining direct-reader `you` usages outside quotations.
 - Replaced unsupported precision with more durable wording rather than adding invented detail.
 - Kept older entries chronologically plausible instead of making them sound like newly written 2026 essays.
+- Follow-up chronology pass removed two unnecessary personal-time markers in `Underground` and `Dance Dance Dance`.
 - Preserved strong judgements where the factual basis held; softened only claims that were wrong, overprecise, or unsupported.
 
 ## Open Questions
 
-- `The Outsider`: the exact translator/edition remains uncertain because the entry uses the UK title while the quoted line may correspond to a different English translation.
-- Tolkien childhood Chinese editions and translators are probable but may need Dinghao's memory to confirm exact editions.
-- Personal reading chronology from high school and college was left as memory unless it conflicted with public facts.
+- Personal reading chronology from high school and college was checked for internal consistency and left as memory unless it conflicted with posted-date chronology.
 - Recent or future-facing 2025/2026 entries were checked against available public material, but some production/release details may still shift.
 
 ## Validation
