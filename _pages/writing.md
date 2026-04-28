@@ -17,13 +17,19 @@ Reading gives me obsessions; writing tests what I have actually understood. This
 ---
 
 {% assign articles = site.writing | sort: 'date' | reverse %}
-{% assign print_articles = articles | where_exp: "item", "item.section == 'print' or item.type == 'translation'" | sort: 'date' | reverse %}
-{% assign digital_articles = articles | where_exp: "item", "item.section != 'print' and item.type != 'translation'" | sort: 'date' | reverse %}
 
 <h2 class="writing-section-title" id="print">print</h2>
 
 <div class="writing-list">
-{% for article in print_articles %}
+{% for article in articles %}
+{% assign is_print_article = false %}
+{% if article.section == "print" %}
+  {% assign is_print_article = true %}
+{% endif %}
+{% if article.type == "translation" %}
+  {% assign is_print_article = true %}
+{% endif %}
+{% if is_print_article %}
 {% assign print_type = article.type %}
 {% if article.type == "feature" %}
   {% assign print_type = "science" %}
@@ -79,6 +85,7 @@ Reading gives me obsessions; writing tests what I have actually understood. This
     {% endif %}
   </div>
 </div>
+{% endif %}
 {% endfor %}
 </div>
 
@@ -121,7 +128,15 @@ Reading gives me obsessions; writing tests what I have actually understood. This
 </nav>
 
 <div class="writing-list writing-list--archive" id="writing-archive">
-{% for article in digital_articles %}
+{% for article in articles %}
+{% assign is_print_article = false %}
+{% if article.section == "print" %}
+  {% assign is_print_article = true %}
+{% endif %}
+{% if article.type == "translation" %}
+  {% assign is_print_article = true %}
+{% endif %}
+{% unless is_print_article %}
 {% assign writing_kind = "essay" %}
 {% if article.type == "feature" or article.section == "online" or article.category == "scicomm" %}
   {% assign writing_kind = "science" %}
@@ -195,6 +210,7 @@ Reading gives me obsessions; writing tests what I have actually understood. This
   </div>
   {% endif %}
 </div>
+{% endunless %}
 {% endfor %}
 </div>
 
