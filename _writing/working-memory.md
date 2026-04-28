@@ -1,7 +1,7 @@
 ---
 title: "Working memory without the scalpel"
 type: "feature"
-creator: "Lindsay Li & Dinghao Luo"
+byline: "Lindsay Li & Dinghao Luo"
 outlet: "神经现实"
 outlet_en: "Neu-Reality"
 date: 2021-03-16
@@ -13,7 +13,7 @@ links:
 excerpt: "From Miller's magical number seven to alpha-wave perturbation: how working memory became something one can manipulate without opening the skull."
 ---
 
-**Working memory** is the cognitive system responsible for the temporary storage and online manipulation of information. In a modern world saturated with stimuli, the execution of complex cognitive tasks depends heavily on working memory. Its capacity is therefore a key index of cognitive ability, and one of the most important open problems in cognitive psychology.
+<span class="dropcap">W</span>**orking memory** is the cognitive system responsible for the temporary storage and online manipulation of information. In a modern world saturated with stimuli, the execution of complex cognitive tasks depends heavily on working memory. Its capacity is therefore a key index of cognitive ability, and one of the most important open problems in cognitive psychology.
 
 Beyond the perhaps most famous finding in the field, George Miller's 7 plus or minus 2 rule,\* working memory has another striking property: information stored within it can resist the erosion of time. For half a century, researchers have sought to explain how. In the 1970s, Alan Baddeley proposed his classic three-system model, which offered an account of the maintenance mechanism: attention, instantiated as the central executive (CE), is essential for sustaining stored information. Though the three-system model remains contested, the concept of the central executive inspired the theory of attentional refreshing, which holds that during the maintenance phase of working memory, attention continuously refreshes stored representations, keeping them in an active state.
 
@@ -60,6 +60,9 @@ The researchers note that this 'dynamic perturbation' paradigm, a non-invasive e
 Following the behavioural results, Luo Huan's laboratory collaborated with Mi Yuanyuan at Chongqing University to model the phenomenon. Consistent with the current consensus, they built a hybrid model combining a continuous attractor with STP. Each neuron on the attractor ring maintains reciprocal connections with a shared inhibitory pool, establishing the 'Mexican hat' connectivity profile commonly used in memory research. This connectivity permits only a single 'bump' of activity on the continuous attractor, corresponding to a specific stimulus orientation; external stimuli can push this bump along the ring. STP stabilises the attractor dynamics. The modelling results show that this hybrid model, when subjected to dynamic perturbation, reproduces the behavioural patterns observed in human participants.
 
 The Luo Huan laboratory has thus developed a non-invasive 'dynamic perturbation' paradigm capable of manipulating human working memory through external stimulation, and, in collaboration with Mi Yuanyuan, has elucidated its putative neural basis. The research team likens the paradigm to a behavioural-level analogue of optogenetic control: a way to reach inside the skull without opening it.
+
+> A way to reach inside the skull without opening it.
+{: .pullquote .pullquote--compact}
 
 ---
 

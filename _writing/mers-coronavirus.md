@@ -14,7 +14,7 @@ excerpt: "MERS kills one in three people it infects, spreads through camels in d
 
 *[Figure: Camels in Marsabit. Credit: Jacob Kushner]*
 
-The first case of Middle East Respiratory Syndrome was confirmed in 2012. Between 2012 and 2021, the virus infected roughly 6,000 people and killed 2,000. For a pathogen that has not yet evolved efficient human-to-human transmission, those numbers are devastating. Scientists cannot rule out the possibility that it will one day spread widely between people. There is still no effective vaccine or drug against it, and as the climate warms, the likelihood of an outbreak rises sharply.
+<span class="dropcap">T</span>he first case of Middle East Respiratory Syndrome was confirmed in 2012. As of March 2026, health authorities had reported over 2,600 confirmed human cases worldwide and 959 deaths. For a pathogen that has not yet evolved efficient human-to-human transmission, those numbers are devastating. Scientists cannot rule out the possibility that it will one day spread widely between people. There is still no licensed vaccine or specific treatment against it, and as the climate warms, the likelihood of an outbreak rises sharply.
 
 Millicent Minayo was not the first person to be kicked by a camel. These seemingly docile mammals can turn remarkably aggressive; one need only try collecting a nasal swab from one. 'It will kick you,' Minayo said. 'It will spit at you. It will urinate on you.'
 
@@ -53,6 +53,9 @@ Although many experts initially believed MERS-CoV would not evolve effective hum
 Beyond advancing research, educating high-risk populations and providing them with protective equipment is equally vital. Marsabit's residents depend on camel milk: 'Camel milk is everything.' Many locals rely on it for trade. They drink it, use it to make tea, and sell it for income. Yet when milking their camels, they do not wear gloves, and usually have none to wear.
 
 Opportunities for contact extend well beyond milking. To find pasture on increasingly arid plains, herders must trek with their animals across vast distances, sometimes for days without returning home. Each night in the field, a herder sleeps pressed against a camel for warmth. During the day, the herder survives on camel milk alone; boiling equipment is too heavy to carry, so the milk is drunk raw. The deadly risk of MERS transmission travels with them every step of the way.
+
+> The deadly risk of MERS transmission travels with them every step of the way.
+{: .pullquote .pullquote--compact}
 
 'We tell them how to protect themselves,' said Dub Wato, Minayo's local colleague. 'Avoid close contact; if contact is unavoidable, wear a mask. After close contact, wash and disinfect your hands; it is no different from fighting COVID-19.' Boiling milk is another crucial precaution: raw milk may harbour any number of zoonotic viruses, and high temperatures inactivate all known varieties.
 

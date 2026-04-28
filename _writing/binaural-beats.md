@@ -10,7 +10,7 @@ links:
     url: "https://mp.weixin.qq.com/s/JzhwJaYMVK6xeWR-7rjS-Q"
 ---
 
-There is no need. Really, there is no need.
+<span class="dropcap">T</span>here is no need. Really, there is no need.
 
 Shanyi tossed me an article from *Real Life Magazine*, casually, saying the contents sounded a lot like quantum speed-reading, and that I should take a look when I had time. I said fine; I like debunking. I spent a long time finishing this work of literary science fiction. The article described an auditory illusion called 'binaural beats'. Its prose exuded a peculiar magnetism, luring the reader into daydreams about healing life's afflictions through music.
 
@@ -34,7 +34,7 @@ This type of intervention, using sound as a stimulus to alter brain activity, fa
 
 Exquisite.
 
-To investigate whether binaural beats genuinely entrain and synchronise neural oscillations, one requires EEG (electroencephalography). This serviceable technique allows us to measure brain electrical activity during stimulation. Put on an EEG cap, sit in an enclosed experimental room, listen to pure tones of different frequencies in each ear, and perform a set of cognitive tasks. The participant's neural activity is extracted via nineteen electrodes and fed to the experimenter's data-processing software. In this way one can determine whether binaural beats truly synchronise brainwaves and enhance cognition. In studies such as [2], researchers found that binaural beats in the beta band (13–35 Hz) improved performance on a vigilance task. By contrast, in studies such as [3], binaural beats in the theta band (4–8 Hz) had no effect on vigilance performance. In 2000, a paper in the *American Journal of Clinical Hypnosis* [4] reported that theta-band binaural beats induced theta oscillations in six participants; however, multiple papers including [5] and [6] failed to replicate the theta-oscillation induction reported in [4]. In particular, a study in the *International Journal of Psychophysiology* [5], by researchers from the National Institutes of Health and Tianjin University, found not only that binaural beats could not induce theta-band oscillations, but that they could not induce oscillations in the alpha-to-beta range either.
+To investigate whether binaural beats actually entrain and synchronise neural oscillations, one requires EEG (electroencephalography). This serviceable technique allows us to measure brain electrical activity during stimulation. Put on an EEG cap, sit in an enclosed experimental room, listen to pure tones of different frequencies in each ear, and perform a set of cognitive tasks. The participant's neural activity is extracted via nineteen electrodes and fed to the experimenter's data-processing software. In this way one can determine whether binaural beats truly synchronise brainwaves and enhance cognition. In studies such as [2], researchers found that binaural beats in the beta band (13–35 Hz) improved performance on a vigilance task. By contrast, in studies such as [3], binaural beats in the theta band (4–8 Hz) had no effect on vigilance performance. In 2000, a paper in the *American Journal of Clinical Hypnosis* [4] reported that theta-band binaural beats induced theta oscillations in six participants; however, multiple papers including [5] and [6] failed to replicate the theta-oscillation induction reported in [4]. In particular, a study in the *International Journal of Psychophysiology* [5], by researchers from the National Institutes of Health and Tianjin University, found not only that binaural beats could not induce theta-band oscillations, but that they could not induce oscillations in the alpha-to-beta range either.
 
 Considering this evidence, two recent papers ([7], [8]) conclude that evidence for binaural beats effectively enhancing cognitive function is scant, and advise against using binaural beats as a substitute for any treatment with established efficacy.
 
@@ -47,6 +47,9 @@ In the early stages of my search, I was relieved that Baidu returned no results 
 There is no need. Really, there is no need. Before '双耳节拍' has had a chance to gain traction, it is time to pull back from the brink. There has been enough fraud committed in the name of neuroscience; every fraud we can prevent is a gain.
 
 In closing: good health to all. See a doctor when one ought to see a doctor; take medication when one ought to take it. I hope we will not see the Chinese internet produce the kind of three-hour binaural-beat video with over 20,000 likes that exists on YouTube. Perhaps binaural beats do work; but at the present state of evidence, making money from them is not stupidity. It is malice.
+
+> Making money from them is not stupidity.<br>It is malice.
+{: .pullquote .pullquote--compact}
 
 ### References
 

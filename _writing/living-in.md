@@ -10,7 +10,7 @@ links:
     url: "https://mp.weixin.qq.com/s/MiaVy_4JsONrV_JFuTTqTA"
 ---
 
-Cambridge is a town of dim evenings. My tutor mentioned this within days of arrival. His name was Stuart Martin, both halves equally plausible as a first name, and for three years I never stopped confusing them. Around the 5th or 6th of October 2017 (a detail of no conceivable importance), he told us to fit front and rear lights to our bicycles and wear helmets, especially after dark. In Cambridge, street lamps are a scarce resource.
+<span class="dropcap">C</span>ambridge is a town of dim evenings. My tutor mentioned this within days of arrival. His name was Stuart Martin, both halves equally plausible as a first name, and for three years I never stopped confusing them. Around the 5th or 6th of October 2017 (a detail of no conceivable importance), he told us to fit front and rear lights to our bicycles and wear helmets, especially after dark. In Cambridge, street lamps are a scarce resource.
 
 Naturally, as a university student of keen observational powers, I did not need Dr Martin's warning to notice the darkness. I still remember the first evening I arrived, late September 2017, sharing a taxi from Heathrow with three classmates. Outside the window: the London skyline in passing, planes descending low to land, dark fields and woods, the villages on the fringe of Cambridgeshire, and finally Cambridge's centuries-old buildings. The driver dropped me outside Westminster College (it would be a year before I learned this was not a Cambridge college). I dragged one large and one small suitcase, shouldering a rucksack of at least five kilograms, and delivered my body to the gates of Magdalene, the Cat College, where I rang the porters' lodge bell.
 
@@ -39,6 +39,9 @@ The most frequent instrument of that recording is my camera (a D90 from over a d
 Life in this dim town ended abruptly in March. On the 21st, before the evening darkness could settle over Magdalene's rooftops, I took a taxi from Cambridge to Heathrow, stealing a last look at the town in a rush. Wu Que walked me to the pick-up point and embraced me. The car arrived. The driver sprayed disinfectant on my suitcase, on my clothes, on my shoes, then turned the nozzle towards Wu Que and asked if he was also getting in. He said no. The driver said right. I said well, I'm off then. Wu Que said okay. I got in. The driver got in. The car pulled away. I wept quietly in the back seat. It was an unremarkable day. I recorded that unremarkable day with my camera. 'What happens next?' 'What will happen then?' 'Will the exams go ahead as normal?' 'Will the PhD still start on time?' The viewpoint behind the viewfinder was on the verge of shattering.
 
 The act of recording is endless, but the viewpoint is not. Like a person, it is always changing. Looking back now at three years in Cambridge, gazing towards the horizon of tomorrow, new feelings arrive. The damp-return days always bring strange dreams; in them I see the Cambridge town at night again, the river threading through Magdalene, St John's, Trinity, King's, Clare, Queens', running south from north, flowing towards morning.
+
+> The act of recording is endless, but the viewpoint is not.
+{: .pullquote .pullquote--compact}
 
 I think of one person running along the Cam towards the sun about to rise, looking down from Castle Hill at the people and traffic ascending and descending. Before long, living elsewhere again.
 

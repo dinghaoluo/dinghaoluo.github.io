@@ -14,7 +14,7 @@ excerpt: "Female Iberian moles carry functional testes alongside their ovaries. 
 
 *[Figure: Iberian mole. Credit: santia3]*
 
-Testes are, by definition, male organs. Moles disagree. Females of at least eight mole species carry both ovaries and testes, fused into a single structure called the ovotestis. A study published in *Science* traces this arrangement to gene triplication and chromosomal inversion, two alterations not in the DNA sequence itself but in its three-dimensional architecture. The finding recasts what biologists thought they knew about how sex is determined.
+<span class="dropcap">T</span>estes are, by definition, male organs. Moles disagree. Females of at least eight mole species carry both ovaries and testes, fused into a single structure called the ovotestis. A study published in *Science* traces this arrangement to gene triplication and chromosomal inversion, two alterations not in the DNA sequence itself but in its three-dimensional architecture. The finding recasts what biologists thought they knew about how sex is determined.
 
 In mammals, sex follows from chromosomes. XY males express SRY, the testis-determining factor on the Y chromosome, which elevates testosterone, suppresses female sex characteristics, and drives male development. XX females, lacking SRY, develop along the female pathway without opposition. Ordinarily, the two programmes do not interfere with one another.
 
@@ -41,6 +41,9 @@ The adaptive logic is plain. Moles live by digging: they forage underground and 
 *[Figure: An intersex Northern Cardinal (left) and a wrasse (right). Credit: Shirley Caldwell (left); Aquarium Domain.com (right)]*
 
 These moles are not anomalies so much as reminders. Intersex Northern Cardinals, South American bees, and wrasses inhabit the same continuum; flatworms fence with their penises, each partner trying to pierce the other's skin to fertilise it. As Mundlos put it, 'sex development is an extremely complex process'; intersexuality is 'a manifestation of natural variation'. The mole's ovotestis is one more datum in a growing body of evidence for a simple proposition: evolution does not care about sex.
+
+> Evolution does not care about sex.
+{: .pullquote .pullquote--compact}
 
 ---
 

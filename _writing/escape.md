@@ -11,7 +11,7 @@ links:
 
 ## 1
 
-From a distance, it was not much. Just a small hump, barely protruding from the brown sand. He came running down from its peak towards me, sitting by the drinks stand, eyes shining with an impossible light. I did not know what he had seen, but I knew it had been a long time since he was this excited.
+<span class="dropcap">F</span>rom a distance, it was not much. Just a small hump, barely protruding from the brown sand. He came running down from its peak towards me, sitting by the drinks stand, eyes shining with an impossible light. I did not know what he had seen, but I knew it had been a long time since he was this excited.
 
 I asked the stand owner (or perhaps he was just an employee?) for a Pepsi. But on the principle of not killing him quite so soon, I reconsidered and asked the owner to swap it for a Gatorade. The owner tossed over the pale blue bottle, turned back, and resumed checking this afternoon's horse racing results. I half-collapsed in my chair, watching the landing sun push his shadow slowly towards me.
 

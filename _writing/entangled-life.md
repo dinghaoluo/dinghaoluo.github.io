@@ -2,7 +2,7 @@
 title: "Entangled Life"
 title_zh: "菌络万象"
 type: "translation"
-creator: "Merlin Sheldrake"
+source_author: "Merlin Sheldrake"
 outlet: "后浪出版"
 outlet_en: "Houlang Press"
 date: 2024-11-01
@@ -21,7 +21,7 @@ section: "print"
 excerpt: "My Chinese translation of Sheldrake's fungal world: a year of mycology, ecology, and sentences that had to stay strange without becoming vague."
 ---
 
-Complete Chinese translation of Merlin Sheldrake's *Entangled Life*, published by Houlang Press (后浪出版) in November 2024. Hardcover, 304 pages. ISBN 9787559677754.
+<span class="dropcap">C</span>omplete Chinese translation of Merlin Sheldrake's *Entangled Life*, published by Houlang Press (后浪出版) in November 2024. Hardcover, 304 pages. ISBN 9787559677754.
 
 The original won the 2021 Royal Society Science Book Prize and the Wainwright Prize for global conservation writing. The Chinese edition won the 2025 Pingshan Natural History Museum Book Award and was named to Douban's 2025 Top 10 Science & New Knowledge list, with an 8.7 rating from over 200 readers.
 
@@ -30,6 +30,9 @@ The original won the 2021 Royal Society Science Book Prize and the Wainwright Pr
 Sheldrake is a tropical ecologist whose PhD at Cambridge took him into Panama's rainforests to study underground fungal networks. *Entangled Life* follows him there and elsewhere, tracking truffles in Italy, studying slime moulds in British labs, as he traces how fungi have shaped life on Earth for over a billion years: decomposing rock into soil, degrading pollutants, surviving in space, producing food and medicine, manipulating animal behaviour, and threading mycorrhizal networks through the root systems of nearly every plant on the planet.
 
 The translation took me from one kind of precision into another: from the technical vocabulary of mycology and ecology into Chinese sentences that had to carry the same weight without flattening the strangeness. Sheldrake's prose is vivid and scientifically rigorous in equal measure; the challenge was preserving both registers in a language where the conventions of science writing tend to flatten one or the other.
+
+> The challenge was preserving both registers without flattening the strangeness.
+{: .pullquote .pullquote--compact}
 
 ---
 

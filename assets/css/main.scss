@@ -148,6 +148,8 @@ $background-color:    $site-bg;
 // 700 face automatically, giving CJK strokes enough density next to Reforma/Faculty).
 $cjk-stack: 'LXGW WenKai Mono TC', 'Noto Sans Mono CJK SC', 'Source Han Mono SC', 'Microsoft YaHei';
 $intl-stack: 'Noto Sans Arabic', 'Noto Sans Thai', 'Noto Sans';
+$hebrew-stack: 'Noto Serif Hebrew', 'Noto Sans Hebrew', $intl-stack;
+$reforma-stack: 'Reforma 2018', Georgia, 'Times New Roman', $cjk-stack, serif;
 
 // -------------------------
 // base
@@ -1098,6 +1100,13 @@ body.home .page__author-footer {
   margin-left: 0.35em;
 }
 
+.thoughts-card__title-en.lang-he {
+  display: inline-block;
+  direction: rtl;
+  margin-left: 0.42em;
+  vertical-align: baseline;
+}
+
 .thoughts-card__creator {
   font-size: 0.78em;
   color: $morandi-muted;
@@ -1129,7 +1138,7 @@ body.home .page__author-footer {
 }
 
 .thoughts-card__text {
-  font-family: 'Reforma 2018', $cjk-stack, serif;
+  font-family: $reforma-stack;
   font-size: 1.02em;
   color: $site-text-body;
   line-height: 1.62;
@@ -1463,7 +1472,7 @@ body.home .page__author-footer {
 }
 
 .album-tile__preview {
-  font-family: 'Reforma 2018', $cjk-stack, serif;
+  font-family: $reforma-stack;
   font-size: 0.86em;
   line-height: 1.38;
   color: $morandi-muted;
@@ -2674,7 +2683,7 @@ mark.thoughts-highlight {
 }
 
 .writing-entry__text {
-  font-family: 'Reforma 2018', $cjk-stack, serif;
+  font-family: $reforma-stack;
   font-size: 0.92em;
   color: $site-text-body;
   line-height: 1.65;
@@ -2713,11 +2722,128 @@ mark.thoughts-highlight {
 }
 
 // writing piece page — meta header for individual articles
+.writing-piece {
+  .page__inner-wrap {
+    max-width: 800px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .page__title {
+    max-width: 24ch;
+    margin-bottom: 1.35rem;
+    color: $site-text;
+    font-family: 'Faculty Glyphic', 'Reforma 2018', Georgia, 'Times New Roman', $cjk-stack, serif;
+    font-size: 2rem;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 0.045em;
+    line-height: 1.12;
+
+    @media (min-width: 700px) {
+      font-size: 2.26rem;
+    }
+
+    @include breakpoint($large) {
+      font-size: 2.52rem;
+    }
+  }
+
+  .page__title::after {
+    width: 7rem;
+    border-top-color: rgba($morandi-clay-deep, 0.24);
+  }
+
+  .page__content {
+    counter-reset: sidenote;
+    font-family: $reforma-stack;
+    font-size: 1.12rem;
+    font-kerning: normal;
+    letter-spacing: 0.012em;
+    text-rendering: optimizeLegibility;
+    word-spacing: 0.04em;
+  }
+
+  .page__content > p,
+  .page__content > ul,
+  .page__content > ol,
+  .page__content > h2,
+  .page__content > h3,
+  .page__content > h4,
+  .page__content > blockquote:not(.pullquote),
+  .writing-piece-meta,
+  .page__lede {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .page__content > p {
+    font-family: $reforma-stack;
+    line-height: 1.88;
+    margin-bottom: 1.45em;
+  }
+
+  .page__content > p *,
+  .page__content > ul *,
+  .page__content > ol *,
+  .page__content > blockquote:not(.pullquote) *,
+  .page__content .source-note * {
+    font-family: inherit;
+  }
+
+  .page__content > ul,
+  .page__content > ol,
+  .page__content > blockquote:not(.pullquote) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .page__content > p + p {
+    margin-top: 0.05em;
+  }
+
+  .page__content a:not(.btn) {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba($morandi-clay-deep, 0.38);
+  }
+
+  .page__lede {
+    max-width: none;
+    margin-bottom: 1.2rem;
+    color: $site-text;
+    font-family: $reforma-stack;
+    font-size: 1.04rem;
+    line-height: 1.62;
+  }
+
+  .page__lede p {
+    margin: 0;
+  }
+}
+
+.page__content .dropcap {
+  float: left;
+  display: block;
+  margin: 0.1rem 0.22rem 0 0;
+  padding: 0;
+  color: $morandi-clay-deep;
+  font-family: $reforma-stack;
+  font-size: 4.05rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
 .writing-piece-meta {
   font-size: 0.82em;
   color: $morandi-muted-soft;
-  margin: 0 0 1.4rem;
-  padding-bottom: 0.85rem;
+  margin: 0 0 1.8rem;
+  padding: 0.85rem 0 1rem;
+  border-top: 1px solid $overlay-muted-soft;
   border-bottom: 1px solid $overlay-muted-soft;
   line-height: 1.6;
 }
@@ -2745,6 +2871,93 @@ mark.thoughts-highlight {
     margin-right: 0.8em;
     font-size: 1em;
   }
+}
+
+.page__content .pullquote {
+  max-width: 28rem;
+  margin: 2.4rem 0 2.4rem auto;
+  padding: 0.18rem 1.15rem 0.22rem 0;
+  color: $morandi-ink;
+  font-family: 'Faculty Glyphic', 'Reforma 2018', Georgia, 'Times New Roman', $cjk-stack, serif;
+  font-size: 1.28rem;
+  font-style: normal;
+  line-height: 1.38;
+  border-left: 0;
+  border-right: 3px solid currentColor;
+  text-align: right;
+
+  p {
+    margin: 0;
+    text-align: inherit;
+  }
+
+  *,
+  p {
+    font-family: inherit;
+  }
+
+  em {
+    font-style: italic;
+  }
+}
+
+.page__content .pullquote--compact {
+  max-width: 28rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.16rem;
+}
+
+.page__content .pullquote--wide {
+  max-width: 46rem;
+}
+
+.page__content .pullquote--right {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.page__content .margin-note,
+.page__content .article-aside {
+  display: block;
+  max-width: 34rem;
+  margin: 1.8rem 0;
+  padding: 0.75rem 0 0.75rem 1rem;
+  color: $site-text-muted;
+  font-size: 0.86rem;
+  line-height: 1.62;
+  border-left: 1px solid rgba($morandi-muted, 0.28);
+}
+
+.page__content .margin-note {
+  @include breakpoint($x-large) {
+    float: right;
+    clear: right;
+    width: 11.5rem;
+    max-width: 11.5rem;
+    margin: 0.25rem -12.7rem 1.2rem 1.7rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    font-size: 0.75rem;
+    line-height: 1.55;
+  }
+}
+
+.page__content hr.section-break {
+  width: 4.5rem;
+  margin: 3.2rem 0;
+  border: 0;
+  border-top: 1px solid rgba($morandi-muted, 0.28);
+}
+
+.page__content .source-note {
+  max-width: 40rem;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid $overlay-muted-soft;
+  color: $site-text-muted;
+  font-size: 0.88rem;
+  line-height: 1.58;
 }
 
 // -------------------------
@@ -2835,7 +3048,7 @@ mark.thoughts-highlight {
 }
 
 .writing-entry--fiction .writing-entry__title {
-  font-family: 'Reforma 2018', $cjk-stack, serif;
+  font-family: $reforma-stack;
   font-size: 1.18em;
   font-weight: normal;
   letter-spacing: 0.01em;
@@ -3082,6 +3295,13 @@ mark.thoughts-highlight {
   .wv-player__wave { height: 30px; }
 }
 
+.lang-he,
+[lang='he'] {
+  font-family: $hebrew-stack, serif;
+  letter-spacing: 0;
+  unicode-bidi: isolate;
+}
+
 // =========================================================================
 // DARK MODE — mixin shared by system preference and manual toggle
 // Cool Morandi palette: sage links, haze-blue brand, blue controls
@@ -3130,6 +3350,10 @@ mark.thoughts-highlight {
   }
 
   .page-bigtitle {
+    color: #e8e2db;
+  }
+
+  .writing-piece .page__title {
     color: #e8e2db;
   }
 
@@ -3194,6 +3418,11 @@ mark.thoughts-highlight {
 
   .page__lede {
     color: #9b928a;
+  }
+
+  .page__content .dropcap,
+  .page__content .pullquote {
+    color: #c49a85;
   }
 
   .page__author-footer {

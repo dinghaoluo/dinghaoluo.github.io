@@ -10,7 +10,7 @@ links:
     url: "https://mp.weixin.qq.com/s/rfbpbfc0f3QyMcz7vRYq9w"
 ---
 
-The shark meat was in my mouth before I remembered that sharks are cartilaginous fish. I chewed twice, crushing the soft bone and swallowing it. The bitter melon added during cooking had left the flesh loose and tender, carrying an astringent trace of bitterness that overpowered the salt of the beef balls and soy sauce.
+<span class="dropcap">T</span>he shark meat was in my mouth before I remembered that sharks are cartilaginous fish. I chewed twice, crushing the soft bone and swallowing it. The bitter melon added during cooking had left the flesh loose and tender, carrying an astringent trace of bitterness that overpowered the salt of the beef balls and soy sauce.
 
 I had never eaten shark meat before. This trip home was the first time I tasted it, and the first time I set foot on an island in Red Bay. 'Lighthouse Island', the place is called; a name blunt enough to match the half-white column of the lighthouse visible from the shore. My parents and I boarded a speedboat from the coast; the hull cracked against the waves and threw up enormous spray, and I thought about having to wipe my glasses again once we landed.
 
@@ -21,6 +21,9 @@ The irony is that this softness owes partly to a linguistic divide. My mother is
 I still have not learned Teochew. But over the three years of university, using the holiday months at home, I dutifully practised basic conversation with my father. The first phrase he taught me was *wáng bā*; he told me it meant 'my father'. He is clearly the sort of teacher who gives one the rod rather than the fish, because from that day on, the Teochew sentence I most enjoyed showing off was 'Hello, this is my father.' Every time I said it, he laughed. Perhaps my Teochew really does sound ridiculous, but at least I had finally made a genuine effort, and could crack dialect jokes with my cousins at the dinner table.
 
 Everything changes. My slow lips and vocal cords chase the archaic phonemes of Teochew; my older cousins have all graduated from students into employees; Shanwei itself is shedding its fishing-village skin, hotel prices climbing year by year. A Hilton has opened in Red Bay; the city centre has its first Lavande. What this place will look like in ten years, nobody knows. But this sea, this sea will not change; that much everyone knows.
+
+> This sea, this sea will not change.
+{: .pullquote .pullquote--compact}
 
 ---
 

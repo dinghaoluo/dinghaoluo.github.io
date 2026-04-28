@@ -21,7 +21,7 @@ layout: default
 <div id="main" role="main">
   {% include sidebar.html %}
 
-  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="page h-entry{% if page.collection == 'writing' %} writing-piece{% if page.category %} writing-piece--{{ page.category | slugify }}{% endif %}{% if page.type %} writing-piece--type-{{ page.type | slugify }}{% endif %}{% if page.article_style %} writing-piece--{{ page.article_style | slugify }}{% endif %}{% if page.dropcap %} has-dropcap{% endif %}{% endif %}" itemscope itemtype="https://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
@@ -31,12 +31,15 @@ layout: default
       {% include page-header.html %}
 
       <section class="page__content e-content" itemprop="text">
+        {% if page.collection == 'writing' and page.title %}
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">{{ page.title_display | default: page.title }}</h1>
+        {% endif %}
         {% if page.lede %}
           <div class="page__lede">{{ page.lede | markdownify }}</div>
         {% endif %}
         {% if page.collection == 'writing' %}
           <div class="writing-piece-meta">
-            <span class="writing-piece-meta__type">{% if page.type %}{{ page.type }}{% elsif page.category %}{{ page.category }}{% else %}writing{% endif %}</span>{% if page.title_zh %}<span> · {{ page.title_zh }}</span>{% endif %}{% if page.creator %}<span> · {{ page.creator }}</span>{% endif %}{% if page.outlet %}<span> · {{ page.outlet }}{% if page.outlet_en %} ({{ page.outlet_en }}){% endif %}</span>{% endif %}{% if page.date %}<span> · {{ page.date | date: "%B %Y" }}</span>{% endif %}{% if page.isbn %}<span> · ISBN {{ page.isbn }}</span>{% endif %}
+            {% include writing-meta.html item=page %}
             {% if page.awards %}
               <div class="writing-piece-meta__awards">
                 {% for award in page.awards %}<span class="writing-entry__award">{{ award }}</span>{% endfor %}

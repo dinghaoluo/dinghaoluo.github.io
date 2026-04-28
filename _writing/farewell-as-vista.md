@@ -10,7 +10,7 @@ links:
     url: "https://mp.weixin.qq.com/s/dFnG0Aoxbr8EbqfWGFRVdg"
 ---
 
-I first became aware of Alan during the heatwave at the start of July. It was the third week of the internship. I crouched at the western blot bench, one hand braced against the warm granite floor, watching for the telltale bubbles of current in the reaction chamber. I did not know Alan existed, nor that someone was running a titration behind the reagent shelf, until the professor walked in, caught my eye, exchanged a smile, and continued straight past me.
+<span class="dropcap">I</span> first became aware of Alan during the heatwave at the start of July. It was the third week of the internship. I crouched at the western blot bench, one hand braced against the warm granite floor, watching for the telltale bubbles of current in the reaction chamber. I did not know Alan existed, nor that someone was running a titration behind the reagent shelf, until the professor walked in, caught my eye, exchanged a smile, and continued straight past me.
 
 Alan spoke with extraordinary volume whenever he mentioned a number or a reagent name, as though broadcasting exactly what he was doing to the entire floor. That afternoon I learned he was one of the professor's graduate students. He wore pale grey glasses; a detail I remember with particular clarity, probably because the frames resembled the round double-hinged windows one sees in early Disney animations.
 
@@ -27,6 +27,9 @@ At moments like these, a muddle of feelings inevitably surfaces. That said, I ha
 I had assumed this unreality would descend upon me at the end of my own internship, and had not remotely expected to confront my first workplace farewell today. I also only learned today that Karen goes on annual leave next week, not returning until the 14th of August, by which time my internship will have ended on the 10th. Karen is a post-doc in the neuroscience institute and the first person who taught me hands-on after I joined Professor Fisher's group. As I left for the day I mentioned that by the time she returned I would already have finished the project. She looked startled, checked the calendar, put both hands on her hips, sighed, and said, 'Huh.'
 
 This is, I think, a rare vista in an otherwise muddling-through sort of life. As we embraced in farewell, Karen said perhaps I should come back to the lab one lunchtime after finishing the project and they could organise a goodbye lunch for me too. For an instant everything felt slightly unreal: a sudden extraction from the daily world of solutions and data, from the short-term planning of 'what needs doing tomorrow' and 'whether to go to Chinatown for fried chicken tonight', placing thought weeks, even months, ahead. Thinking of one's own life, the lives of family, friends, colleagues; thinking that others, too, live through complex yet intense joy and misery; thinking of one's future work, the family one might some day have; thinking of the countless other windows beyond one's own, the countless other beds beside one's own, the countless strangers encircling one, until one perceives, distinctly, the invisible net woven from ten thousand lives. This concise and forceful vista, mixed with the raw taste of sonder: I have come to realise that only farewell can give it.
+
+> Only farewell can give it.
+{: .pullquote .pullquote--compact}
 
 ---
 

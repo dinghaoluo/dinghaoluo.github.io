@@ -11,7 +11,7 @@ links:
 
 ## I
 
-The rear wheels of the bus flung up a spray of wind and rain, soaking Tamako's shoes. In the sudden chill she lost focus, as though the bus had taken the surrounding scenery with it and left only her, standing in place.
+<span class="dropcap">T</span>he rear wheels of the bus flung up a spray of wind and rain, soaking Tamako's shoes. In the sudden chill she lost focus, as though the bus had taken the surrounding scenery with it and left only her, standing in place.
 
 The world was still. The cicadas that should have been singing had been put away by the rain. Tamako opened her umbrella and put the daze away. Raindrops slid along the pale blue edge, fell, shattered on the deep crimson of her shoes. Running away, she thought. This is running away. I will not go back.
 

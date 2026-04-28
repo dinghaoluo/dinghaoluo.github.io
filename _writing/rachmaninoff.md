@@ -10,7 +10,7 @@ links:
     url: "https://mp.weixin.qq.com/s/k3NGlQeK_wYBdQ9JkuGP6A"
 ---
 
-Sergei Vasilyevich Rachmaninoff (Сергей Васильевич Рахманинов) was born on 1 April 1873 (New Style; 20 March in the Julian calendar) near Veliky Novgorod in north-western Russia, in a small town called Semyonovo (Семёново), though the family soon moved to their residence in Onega (Онега). Both parents were amateur pianists, and the young Rachmaninoff took naturally to the instrument: from the age of four, his mother, Butakova (Бутакова), gave him unbroken piano lessons. Although his early progress was unremarkable, his grandfather Arkady Rachmaninoff (Аркадий Рахманинов) was determined to see him become a professional pianist, and brought in Anna Ornatskaya (Анна Орнацкая) from St Petersburg (then the capital of the Russian Empire) as his new teacher.
+<span class="dropcap">S</span>ergei Vasilyevich Rachmaninoff (Сергей Васильевич Рахманинов) was born on 1 April 1873 (New Style; 20 March in the Julian calendar) near Veliky Novgorod in north-western Russia, in a small town called Semyonovo (Семёново), though the family soon moved to their residence in Onega (Онега). Both parents were amateur pianists, and the young Rachmaninoff took naturally to the instrument: from the age of four, his mother, Butakova (Бутакова), gave him unbroken piano lessons. Although his early progress was unremarkable, his grandfather Arkady Rachmaninoff (Аркадий Рахманинов) was determined to see him become a professional pianist, and brought in Anna Ornatskaya (Анна Орнацкая) from St Petersburg (then the capital of the Russian Empire) as his new teacher.
 
 - 1880, age 7: first composition, *Romance in A minor, Op. Posth.*, for violin and piano.
 
@@ -59,7 +59,7 @@ Fortunately, by September 1895 he had already completed his *Symphony No. 1 in D
 - 1896, age 23: *Six Choruses for Women's or Children's Voices, Op. 15* (written for an Orthodox church's Sunday service, for money).
 - 1896, age 23: *Six Moments Musicaux, Op. 16*, for piano.
 
-On 28 March 1897, the premiere of the First Symphony took place in St Petersburg, conducted by Alexander Glazunov (Александр Глазунов). Glazunov squandered rehearsal time and was not an especially gifted conductor. Contemporary musicians described the performance simply as a 'disaster'; Rachmaninoff left the hall in fury before it ended. Also present was his future wife, Natalya Satina (Наталиа Сатина), who wrote in her memoirs: '...Glazunov was absolutely drunk while conducting...' (Glazunov's most famous pupil, Shostakovich, even recalled in his own memoirs that Glazunov kept a tube running from a concealed bottle behind his desk and would sip from it whenever he was not speaking). Of course, the behaviour may simply have reflected contempt for Rachmaninoff: years later, in 1930, Rachmaninoff presented Glazunov with a manuscript of his Fourth Concerto, which was subsequently found abandoned on the back seat of Glazunov's taxi by the driver.
+On 28 March 1897, the premiere of the First Symphony took place in St Petersburg, conducted by Alexander Glazunov. Glazunov squandered rehearsal time and was not an especially gifted conductor. Contemporary musicians described the performance simply as a 'disaster'; Rachmaninoff left the hall in fury before it ended. His future wife, Natalya Satina, later claimed in her memoirs that Glazunov had been drunk while conducting. The charge has followed the premiere ever since, though it remains hard to separate fact, hostile memory, and the sheer awfulness of the performance.
 
 Whatever the cause of Glazunov's failure, Rachmaninoff's reaction was bleak. In his diary he wrote: 'My First Symphony gave me no pleasure whatsoever; it brought me only bitterness and sorrow...' [4]. He never performed the work again in his lifetime. The second public performance came in 1945, two years after his death, after the war was over.
 
@@ -97,7 +97,7 @@ He had begun his *Symphony No. 2* (Op. 27) in 1906 and premiered it in February 
 - 1906, age 33: *Fifteen Songs, Op. 26*.
 - 1908, age 35: *Piano Sonata No. 1 in D minor, Op. 28* (inspired by Goethe's *Faust*; part of his 'Dresden Trilogy' with the Second Symphony and the unfinished opera *Monna Vanna*. The premiere received a lukewarm response, and the sonata remained among his least-performed works).
 
-The following year, at Ivanovka, he completed his *Piano Concerto No. 3 in D minor, Op. 30*, then departed for an American tour. Notably, the concerto's second performance was conducted by Gustav Mahler. Though the tour was extremely well received, homesickness drove Rachmaninoff to return to Russia almost immediately, in early February 1910.
+The following year, at Ivanovka, he completed his *Piano Concerto No. 3 in D minor, Op. 30*, then departed for an American tour. The concerto's second performance was conducted by Gustav Mahler. Though the tour was extremely well received, homesickness drove Rachmaninoff to return to Russia almost immediately, in early February 1910.
 
 He was then appointed Vice-President of the Imperial Russian Musical Society, and completed the *Liturgy of St John Chrysostom, Op. 31* by year's end. In recognition of his achievements, he was also named lifelong conductor of the Moscow Philharmonic Society (though in 1912 he resigned in protest upon learning that the Society had dismissed a musician on grounds of Jewish heritage).
 
@@ -117,7 +117,7 @@ What he did not foresee was that another upheaval was imminent.
 
 In February 1917 (Julian calendar), the February Revolution began in St Petersburg. Within five days the Duma assumed power, established a provisional government, and the Russian Empire became the Russian Republic. Lenin, in opposition, arrived in the renamed 'Petrograd' in April to call upon the peoples of Europe to join the proletarian revolution, overthrow the provisional government, and revolt anew.
 
-Rachmaninoff, standing with the working people, performed 'revolutionary concerts' in Petrograd and Yalta. He did not know that the Yalta performance would be his last on Russian soil. At the end of the year the October Revolution began; his estate at Ivanovka was seized by the Bolsheviks. In his anxiety, Rachmaninoff received an invitation to tour Scandinavia and accepted without hesitation, using it as pretext to flee with his family.
+Rachmaninoff responded by performing 'revolutionary concerts' in Petrograd and Yalta. He did not know that the Yalta performance would be his last on Russian soil. At the end of the year the October Revolution began; his estate at Ivanovka was seized by the Bolsheviks. In his anxiety, Rachmaninoff received an invitation to tour Scandinavia and accepted without hesitation, using it as pretext to flee with his family.
 
 The turmoil once again severed his compositional impulse. From late 1917 he was in constant transit, filling his free time as soloist with various orchestras, perpetually learning and rehearsing new repertoire, with little time to compose. In November 1918 he received invitations from the Boston and Cincinnati Symphony Orchestras to serve as conductor. He declined, but after careful deliberation decided to move his family to America. Their first address was 505 West End Avenue, Manhattan. Shortly after settling, Steinway presented him with a piano for practice and composition. At 505, the Rachmaninoff household continued to live a Russian life: Russian food, Russian servants, Russian customs.
 
@@ -139,6 +139,9 @@ And so he prepared his own funeral. His final performance took place on 17 Febru
 On 26 March he lost consciousness. On the 28th, Rachmaninoff died at his home in Beverly Hills.
 
 He missed his seventieth birthday by four days. His remains are buried at Kensico Cemetery, Westchester County, New York. The tombstone is inscribed only in a language he never mastered, English. Of Russian there is no trace.
+
+> The tombstone is inscribed only in a language he never mastered.
+{: .pullquote .pullquote--compact}
 
 Rachmaninoff never returned to the homeland he longed for.
 

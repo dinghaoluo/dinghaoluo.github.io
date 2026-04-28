@@ -22,10 +22,11 @@ Writing came first for me, before the PhD, before most of the science, before I 
 {% assign binaural_article = articles | where: "title", "Binaural beats, or malice as neuroscience" %}
 {% assign science_articles = online_articles | concat: binaural_article | sort: 'date' | reverse %}
 {% assign fiction_articles = articles | where: "category", "fiction" %}
+{% assign essay_articles = articles | where: "category", "essay" %}
 {% assign journal_articles = articles | where: "category", "journal" %}
 {% assign scicomm_articles = articles | where: "category", "scicomm" | where_exp: "item", "item.title != 'Binaural beats, or malice as neuroscience'" %}
 {% assign encyclopaedic_articles = articles | where: "category", "encyclopaedic" %}
-{% assign journal_combined = journal_articles | concat: scicomm_articles | concat: encyclopaedic_articles | sort: 'date' | reverse %}
+{% assign journal_combined = essay_articles | concat: journal_articles | concat: scicomm_articles | concat: encyclopaedic_articles | sort: 'date' | reverse %}
 
 ### start here
 
@@ -51,13 +52,13 @@ A few possible doorways, depending on what brought you here:
   <div class="writing-entry__body">
     <span class="writing-entry__type">{{ article.type }}</span>
     <h3 class="writing-entry__title">
-      <a href="{{ article.url }}">{{ article.title }}</a>
+      <a href="{{ article.url }}">{{ article.title_display | default: article.title }}</a>
     </h3>
     {% if article.title_zh %}
     <span class="writing-entry__title-en">{{ article.title_zh }}</span>
     {% endif %}
     <div class="writing-entry__meta">
-      {% if article.creator %}{{ article.creator }} · {% endif %}{{ article.outlet }}{% if article.outlet_en %} ({{ article.outlet_en }}){% endif %} · {{ article.date | date: "%B %Y" }}{% if article.isbn %} · ISBN {{ article.isbn }}{% endif %}
+      {% include writing-meta.html item=article show_kind=false show_title_zh=false %}
     </div>
     {% if article.excerpt %}
     <div class="writing-entry__text">{{ article.excerpt }}</div>
@@ -96,13 +97,13 @@ A few possible doorways, depending on what brought you here:
   <div class="writing-entry__body">
     <span class="writing-entry__type">{{ article.type }}</span>
     <h3 class="writing-entry__title">
-      <a href="{{ article.url }}">{{ article.title }}</a>
+      <a href="{{ article.url }}">{{ article.title_display | default: article.title }}</a>
     </h3>
     {% if article.title_zh %}
     <span class="writing-entry__title-en">{{ article.title_zh }}</span>
     {% endif %}
     <div class="writing-entry__meta">
-      {% if article.creator %}{{ article.creator }} · {% endif %}{{ article.outlet }}{% if article.outlet_en %} ({{ article.outlet_en }}){% endif %} · {{ article.date | date: "%B %Y" }}
+      {% include writing-meta.html item=article show_kind=false show_title_zh=false %}
     </div>
     {% if article.excerpt %}
     <div class="writing-entry__text">{{ article.excerpt }}</div>
@@ -132,15 +133,15 @@ A few possible doorways, depending on what brought you here:
   </a>
   {% endif %}
   <div class="writing-entry__body">
-    <span class="writing-entry__type">{{ article.category }}</span>
+    <span class="writing-entry__type">{{ article.type | default: article.category }}</span>
     <h3 class="writing-entry__title">
-      <a href="{{ article.url }}">{{ article.title }}</a>
+      <a href="{{ article.url }}">{{ article.title_display | default: article.title }}</a>
     </h3>
     {% if article.title_zh %}
     <span class="writing-entry__title-en">{{ article.title_zh }}</span>
     {% endif %}
     <div class="writing-entry__meta">
-      {% if article.creator %}{{ article.creator }} · {% endif %}{{ article.date | date: "%B %Y" }}
+      {% include writing-meta.html item=article show_kind=false show_title_zh=false %}
     </div>
     {% if article.excerpt %}
     <div class="writing-entry__text">{{ article.excerpt }}</div>
@@ -170,15 +171,15 @@ A few possible doorways, depending on what brought you here:
   </a>
   {% endif %}
   <div class="writing-entry__body">
-    <span class="writing-entry__type">{{ article.category }}</span>
+    <span class="writing-entry__type">{{ article.type | default: article.category }}</span>
     <h3 class="writing-entry__title">
-      <a href="{{ article.url }}">{{ article.title }}</a>
+      <a href="{{ article.url }}">{{ article.title_display | default: article.title }}</a>
     </h3>
     {% if article.title_zh %}
     <span class="writing-entry__title-en">{{ article.title_zh }}</span>
     {% endif %}
     <div class="writing-entry__meta">
-      {% if article.creator %}{{ article.creator }} · {% endif %}{{ article.date | date: "%B %Y" }}
+      {% include writing-meta.html item=article show_kind=false show_title_zh=false %}
     </div>
     {% if article.excerpt %}
     <div class="writing-entry__text">{{ article.excerpt }}</div>

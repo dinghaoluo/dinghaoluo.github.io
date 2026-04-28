@@ -15,8 +15,9 @@
     {% endif %}
   </div>
   <div class="thoughts-card__body">
+    {% assign title_en_lang = include.take.title_en_lang | default: '' %}
     <div class="thoughts-card__meta">
-      <span class="thoughts-card__type">{{ include.take.type }}</span><span class="thoughts-card__sep">&middot;</span><span class="thoughts-card__title">{% assign title_parts = include.take.title | split: ' Season ' %}{% if title_parts.size > 1 %}{{ title_parts[0] }}<span class="thoughts-card__season"> Season {{ title_parts[1] }}</span>{% else %}{{ include.take.title }}{% endif %}{% if include.take.title_en and include.take.title_en != '' %}<span class="thoughts-card__title-en">{{ include.take.title_en }}</span>{% endif %}{% if include.take.year and include.take.year != '' %}<span class="thoughts-card__year">{{ include.take.year }}</span>{% endif %}</span><span class="thoughts-card__sep">&middot;</span><span class="thoughts-card__creator">{{ include.take.creator_role }} {{ include.take.creator }}</span>
+      <span class="thoughts-card__type">{{ include.take.type }}</span><span class="thoughts-card__sep">&middot;</span><span class="thoughts-card__title">{% assign title_parts = include.take.title | split: ' Season ' %}{% if title_parts.size > 1 %}{{ title_parts[0] }}<span class="thoughts-card__season"> Season {{ title_parts[1] }}</span>{% else %}{{ include.take.title }}{% endif %}{% if include.take.title_en and include.take.title_en != '' %}{% if title_en_lang == 'he' %}<span class="thoughts-card__title-en lang-he" lang="he" dir="rtl">{{ include.take.title_en }}</span>{% else %}<span class="thoughts-card__title-en">{{ include.take.title_en }}</span>{% endif %}{% endif %}{% if include.take.year and include.take.year != '' %}<span class="thoughts-card__year">{{ include.take.year }}</span>{% endif %}</span><span class="thoughts-card__sep">&middot;</span><span class="thoughts-card__creator">{{ include.take.creator_role }} {{ include.take.creator }}</span>
     </div>
     {% if include.take.posted and include.take.posted != '' %}
       <div class="thoughts-card__posted">

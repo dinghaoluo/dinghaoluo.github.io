@@ -9,7 +9,7 @@ links:
     url: "https://mp.weixin.qq.com/s/p0P4DM-iaLFHPNID21K2fw"
 ---
 
-Dinner was decent tonight. I ate and thought about what to do for my mother's forty-seventh birthday.
+<span class="dropcap">D</span>inner was decent tonight. I ate and thought about what to do for my mother's forty-seventh birthday.
 
 She lied again over the meal. This time it was that the meat was overcooked, had no bite. I agreed out loud; inwardly I resented her for always criticising her own cooking. The chestnuts were good. The fish soup base was well-flavoured.
 
@@ -36,6 +36,9 @@ I have been thinking. When I was small the birthday presents I gave her were hai
 After much deliberation, cooking is probably the most practical option. Food is happiness; I think she feels the same way.
 
 After all, the chromosomes are still there. They go nowhere; they simply stay, perfectly still.
+
+> The chromosomes are still there.
+{: .pullquote .pullquote--compact}
 
 I will not say that my entire body is my mother. That would be creepy. But it is a fact.
 

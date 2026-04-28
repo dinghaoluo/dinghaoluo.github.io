@@ -14,7 +14,7 @@ featured: true
 
 ---
 
-In the fifth century BCE, Democritus proposed the earliest atomic theory, using immutable atoms to explain the mutability of all things: not only the cosmos, the planets, and living organisms, but also consciousness itself, invisible and intangible as it is. Democritus held that consciousness was composed of 'fire atoms', and that thought was a product of their motion.
+<span class="dropcap">I</span>n the fifth century BCE, Democritus proposed the earliest atomic theory, using immutable atoms to explain the mutability of all things: not only the cosmos, the planets, and living organisms, but also consciousness itself, invisible and intangible as it is. Democritus held that consciousness was composed of 'fire atoms', and that thought was a product of their motion.
 
 Twenty-four centuries separate Democritus from the present. Human civilisation has entered the information age, and communication between communities has reached extraordinary density. Yet we still know remarkably little about the 1.5-kilogram organ inside our skulls, and the existence of consciousness remains as difficult to explain as ever. Armed with the tools of the information age, some scientists have attempted an answer.
 
@@ -23,6 +23,9 @@ Francis Crick, who won the Nobel Prize for elucidating the structure of DNA, was
 Koch often raised the problem of solipsism: many philosophers have long held that 'I' am merely a conscious entity trapped inside a 'skull prison'; can 'I' ever truly know whether another person is conscious? The search for the neural correlates of consciousness was an assault on precisely this problem. For Koch, if we could identify the minimal unit of conscious experience, if we could somehow quantify the 'degree of consciousness' of every person, even every object, we would have found the key to escape the skull prison.
 
 Three decades after Crick and Koch's paper, the key they sought remains nowhere to be found. Many believe we understand consciousness no better than we did three decades ago. Worse still, the field has not even reached consensus on a definition.
+
+> The field has not even reached consensus on a definition.
+{: .pullquote .pullquote--compact}
 
 ### Information or function?
 
