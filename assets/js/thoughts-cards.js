@@ -106,6 +106,7 @@
     var matchedCards = cards.slice();
     var previouslyShown = [];
     var initialized = false;
+    var orderDirty = false;
 
     if (!btns.length || !cards.length || !cardsRoot) return;
 
@@ -209,13 +210,13 @@
     }
 
     function restoreHighlights(card) {
+      if (!card._hasHighlights) return;
       card.querySelectorAll('.thoughts-card__title, .thoughts-card__creator, .thoughts-card__text').forEach(function (node) {
         if (node._originalHtml) {
           node.innerHTML = node._originalHtml;
-        } else {
-          node._originalHtml = node.innerHTML;
         }
       });
+      card._hasHighlights = false;
     }
 
     function highlightTerms(card, query) {
@@ -228,8 +229,10 @@
 
       var regex = new RegExp('(' + terms.map(escapeRegExp).join('|') + ')', 'gi');
       card.querySelectorAll('.thoughts-card__title, .thoughts-card__creator, .thoughts-card__text').forEach(function (node) {
+        if (!node._originalHtml) node._originalHtml = node.innerHTML;
         node.innerHTML = node.innerHTML.replace(regex, '<mark class="thoughts-highlight">$1</mark>');
       });
+      card._hasHighlights = true;
     }
 
     function movePill(btn) {
@@ -279,16 +282,25 @@
     }
 
     function reorderCards(orderedCards) {
+      var fragment = document.createDocumentFragment();
       orderedCards.forEach(function (card) {
-        cardsRoot.appendChild(card);
+        fragment.appendChild(card);
       });
+      cardsRoot.appendChild(fragment);
+      orderDirty = true;
     }
 
     function restoreChronologicalOrder() {
+      if (!orderDirty) {
+        isShuffled = false;
+        updatePinLead();
+        return;
+      }
       reorderCards(cards.slice().sort(function (a, b) {
         return Number(a.dataset.originalIndex) - Number(b.dataset.originalIndex);
       }));
       isShuffled = false;
+      orderDirty = false;
       updatePinLead();
     }
 
@@ -380,7 +392,11 @@
       }
 
       pageSet.forEach(function (card) {
-        highlightTerms(card, query);
+        if (query) {
+          highlightTerms(card, query);
+        } else {
+          restoreHighlights(card);
+        }
         card.style.display = '';
         card.offsetHeight;
         card.style.transition = 'opacity 0.28s ease, transform 0.28s ease';
