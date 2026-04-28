@@ -27,6 +27,5 @@ I did not make it to London this afternoon, and the soba I had been promised wen
 
 The wind does not stop at night, threading in from the edges of the half-open window, settling where it pleases in the warm room.
 
----
-
 *Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/-heaWVW02ndzJ__TUJSbXw), August 2019.*
+{: .source-note}

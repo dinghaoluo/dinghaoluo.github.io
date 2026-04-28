@@ -60,6 +60,5 @@ Then things became strange. The whole thing had been strange from the beginning,
 
 Ah Ming is gone now. I still think of him, sometimes.
 
----
-
 *Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/F_VGMoq1Ph6SvFj2XTMNuw), October–November 2018.*
+{: .source-note}

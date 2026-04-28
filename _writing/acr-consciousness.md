@@ -1,12 +1,14 @@
 ---
 title: "Racing towards a grand theory of consciousness"
+title_zh: "理论对抗：意识从何而来"
 type: "feature"
 outlet: "环球科学"
 outlet_en: "Scientific American China"
 date: 2021-03-01
+issue: "March 2021 print issue"
 section: "print"
-image: "/assets/images/writing/acr_consciousness.jpg"
-excerpt: "Crick, Koch, Chalmers, Tononi, Dehaene, Lau: a feature on consciousness theories, their quarrels, and the adversarial collaboration trying to make them answer to data."
+image: "/assets/images/writing/acr_consciousness_cover.jpg"
+excerpt: "My March 2021 print feature for Scientific American China, tracing how IIT, GNW, higher-order theory, and the ARC adversarial collaboration turned consciousness from philosophical deadlock into an experimental contest. Built from interviews with Anil Seth, Cyriel Pennartz, Hakwan Lau, and Chinese ARC researchers, it follows the field at the point where grand theory has to answer to data."
 featured: true
 ---
 
@@ -79,15 +81,13 @@ Others considered these concerns somewhat overstated. Luo Huan's laboratory at P
 
 In any case, ARC has built a bridge for discussion among the 'powerful theories' of consciousness. Contrary to the pessimism that dominated consciousness research for over two centuries, one of ARC's founding motivations is to demonstrate that even a problem as formidable as consciousness can yield to scientific debate and adversarial research. In John Horgan's *Mind-Body Problems*, Koch cited the nineteenth-century philosopher Auguste Comte to counter the claim that consciousness is beyond understanding. 'Comte declared that we could never know what the stars are made of. But shortly after he said this, spectroscopy was born, revealing their chemical composition.' Koch remains convinced that science can break through the problem of consciousness, and ARC's launch demonstrates that many scientists share his ambition.
 
----
-
-### Further reading
+<div class="source-note" markdown="1">
+**Further reading**
 
 - Crick, F. and Koch, C. (1990). 'Towards a neurobiological theory of consciousness.' *Seminars in the Neurosciences*, Vol. 2, pp. 263–275.
 - Tononi, G. and Koch, C. (2015). 'Consciousness: here, there and everywhere?' *Phil. Trans. R. Soc. B*, 370: 20140167.
 - Mashour, G., Roelfsema, P., Changeux, J., and Dehaene, S. (2020). 'Conscious Processing and the Global Neuronal Workspace Hypothesis.' *Neuron*, Vol. 105, pp. 776–798.
 - Brown, R., Lau, H., and LeDoux, J. (2019). 'Understanding the Higher-Order Approach to Consciousness.' *Trends Cogn. Sci.*, Vol. 23, No. 9, pp. 754–768.
 
----
-
-*Originally published in Chinese in* 环球科学 *(Scientific American China), March 2021.*
+*Originally published in Chinese in the March 2021 print issue of* 环球科学 *(Scientific American China).*
+</div>

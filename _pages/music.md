@@ -26,7 +26,7 @@ title: "music"
   html[data-theme="dark"] .music-note { color: #6a6360; }
 </style>
 
-*Sound made under another name, usually late, usually while I should have been doing something else.*
+*Music sits here in two forms: tracks I make as amoxitoxin, and the records I keep returning to when I am trying to remember what music can do.*
 
 ---
 

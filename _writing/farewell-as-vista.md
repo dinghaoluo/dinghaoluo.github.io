@@ -31,6 +31,5 @@ This is, I think, a rare vista in an otherwise muddling-through sort of life. As
 > Only farewell can give it.
 {: .pullquote .pullquote--compact}
 
----
-
 *Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/dFnG0Aoxbr8EbqfWGFRVdg), July 2018.*
+{: .source-note}

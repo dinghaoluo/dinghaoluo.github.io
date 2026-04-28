@@ -6,6 +6,9 @@
     var grid = document.getElementById('album-wall-grid');
     if (!grid) return;
 
+    var filterStrip = document.getElementById('album-wall-filter-strip');
+    var filterPill = document.getElementById('album-wall-filter-pill');
+    var filterBtns = filterStrip ? Array.prototype.slice.call(filterStrip.querySelectorAll('.album-wall__filter-btn')) : [];
     var searchInput = document.getElementById('album-wall-search');
     var searchClear = document.getElementById('album-wall-search-clear');
     var luckBtn = document.getElementById('album-wall-luck');
@@ -18,6 +21,7 @@
 
     var tiles = Array.prototype.slice.call(grid.querySelectorAll('.album-tile'));
     var searchTimer = null;
+    var pageInputTimer = null;
     var currentPage = 1;
     var matchedTiles = tiles.slice();
     var isShuffled = false;
@@ -112,6 +116,27 @@
       return searchInput ? normalise(searchInput.value) : '';
     }
 
+    function currentFilter() {
+      if (!filterStrip) return 'all';
+      var active = filterStrip.querySelector('.album-wall__filter-btn.active');
+      return active ? active.getAttribute('data-filter') : 'all';
+    }
+
+    function setFilter(filterValue) {
+      filterBtns.forEach(function (btn) {
+        btn.classList.toggle('active', btn.getAttribute('data-filter') === filterValue);
+      });
+      moveFilterPill(filterStrip ? filterStrip.querySelector('.album-wall__filter-btn.active') : null);
+    }
+
+    function moveFilterPill(btn) {
+      if (!btn || !filterPill || !filterStrip) return;
+      var stripBox = filterStrip.getBoundingClientRect();
+      var btnBox = btn.getBoundingClientRect();
+      filterPill.style.left = (btnBox.left - stripBox.left) + 'px';
+      filterPill.style.width = btnBox.width + 'px';
+    }
+
     function queryTerms(q) {
       return q ? q.split(' ').filter(Boolean) : [];
     }
@@ -129,6 +154,29 @@
         tile.getAttribute('data-text')
       ].join(' '));
       return terms.every(function (t) { return haystack.indexOf(t) !== -1; });
+    }
+
+    function tileMatchesFilter(tile, filter) {
+      if (!filter || filter === 'all') return true;
+
+      var genre = normalise(tile.getAttribute('data-genre'));
+      if (!genre) return false;
+
+      if (filter === 'prog-art') {
+        return (genre.indexOf('prog') !== -1 && genre.indexOf('metal') === -1)
+          || genre.indexOf('art rock') !== -1
+          || genre.indexOf('canterbury') !== -1;
+      }
+
+      if (filter === 'jazz') {
+        return genre.indexOf('jazz') !== -1 || genre.indexOf('fusion') !== -1;
+      }
+
+      if (filter === 'prog-metal') {
+        return genre.indexOf('progressive metal') !== -1 || genre.indexOf('prog metal') !== -1;
+      }
+
+      return false;
     }
 
     function reactionWeight(tile) {
@@ -245,8 +293,10 @@
       return score;
     }
 
-    function computeMatched(query) {
-      var matched = tiles.filter(function (tile) { return tileMatchesQuery(tile, query); });
+    function computeMatched(query, filter) {
+      var matched = tiles.filter(function (tile) {
+        return tileMatchesFilter(tile, filter) && tileMatchesQuery(tile, query);
+      });
       if (query) {
         matched.sort(function (a, b) {
           return tileRelevance(b, query) - tileRelevance(a, query);
@@ -264,7 +314,7 @@
 
     function applyFilter() {
       var query = currentQuery();
-      matchedTiles = computeMatched(query);
+      matchedTiles = computeMatched(query, currentFilter());
       if (query) {
         reorderTiles(matchedTiles.concat(tiles.filter(function (t) {
           return matchedTiles.indexOf(t) === -1;
@@ -277,9 +327,13 @@
     }
 
     // initial render
-    if (!handleHash()) {
+    var handledHash = handleHash();
+    if (!handledHash) {
       applyFilter();
     }
+    setTimeout(function () {
+      moveFilterPill(filterStrip ? filterStrip.querySelector('.album-wall__filter-btn.active') : null);
+    }, 80);
 
     function handleHash() {
       var hash = window.location.hash;
@@ -288,7 +342,9 @@
       var target = document.getElementById(targetId);
       if (!target || !target.classList.contains('album-tile')) return false;
 
-      matchedTiles = tiles.slice();
+      if (searchInput) searchInput.value = '';
+      setFilter('all');
+      matchedTiles = computeMatched('', 'all');
       var idx = matchedTiles.indexOf(target);
       if (idx === -1) return false;
 
@@ -328,6 +384,15 @@
       });
     }
 
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        setFilter(btn.getAttribute('data-filter'));
+        isShuffled = false;
+        currentPage = 1;
+        applyFilter();
+      });
+    });
+
     if (luckBtn) {
       luckBtn.addEventListener('click', function () {
         if (!matchedTiles.length) return;
@@ -343,8 +408,11 @@
 
     var wall = document.getElementById('album-wall');
 
-    function scrollToWall() {
-      if (wall) wall.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    function scrollToFilter() {
+      var target = filterStrip || wall;
+      if (!target) return;
+      var top = target.getBoundingClientRect().top + window.pageYOffset - 18;
+      window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
     }
 
     prevBtns.forEach(function (btn) {
@@ -352,7 +420,7 @@
         if (currentPage > 1) {
           currentPage--;
           renderPage();
-          scrollToWall();
+          scrollToFilter();
         }
       });
     });
@@ -362,7 +430,7 @@
         if (currentPage < totalPages()) {
           currentPage++;
           renderPage();
-          scrollToWall();
+          scrollToFilter();
         }
       });
     });
@@ -371,26 +439,42 @@
       var val = parseInt(input.value, 10);
       if (isNaN(val) || val < 1) val = 1;
       if (val > totalPages()) val = totalPages();
+      if (val === currentPage) {
+        input.value = currentPage;
+        return;
+      }
       currentPage = val;
       renderPage();
-      scrollToWall();
+      scrollToFilter();
     }
 
     pageInputs.forEach(function (input) {
+      input.addEventListener('input', function () {
+        clearTimeout(pageInputTimer);
+        if (!input.value) return;
+        pageInputTimer = setTimeout(function () {
+          handlePageInput(input);
+        }, 220);
+      });
       input.addEventListener('keydown', function (e) {
         if (e.key === 'Enter') {
           e.preventDefault();
+          clearTimeout(pageInputTimer);
           handlePageInput(input);
           input.blur();
         }
       });
       input.addEventListener('blur', function () {
-        handlePageInput(input);
+        clearTimeout(pageInputTimer);
+        if (!input.value || String(input.value) !== String(currentPage)) {
+          handlePageInput(input);
+        }
       });
     });
 
     window.addEventListener('resize', function () {
       renderPage();
+      moveFilterPill(filterStrip ? filterStrip.querySelector('.album-wall__filter-btn.active') : null);
     });
   }
 

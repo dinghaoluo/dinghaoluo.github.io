@@ -141,6 +141,5 @@ Through the 'skylight' I look at the morning, raked by distant police lights. Th
 
 The sirens are getting closer. He says, suddenly, let's go. I say, OK.
 
----
-
 *Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/OTF1qPxHS8PISF5_W7DLEg), 2018.*
+{: .source-note}

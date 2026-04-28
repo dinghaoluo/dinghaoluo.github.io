@@ -51,7 +51,8 @@ In closing: good health to all. See a doctor when one ought to see a doctor; tak
 > Making money from them is not stupidity.<br>It is malice.
 {: .pullquote .pullquote--compact}
 
-### References
+<div class="source-note" markdown="1">
+**References**
 
 1. Wernick, J. S., and Starr, A. (1968). Binaural interaction in the superior olivary complex of the cat: an analysis of field potentials evoked by binaural-beat stimuli. *J. Neurophysiol.* 31, 428–441.
 2. Lane, J. D., Kasian, S. J., Owens, J. E., and Marsh, G. R. (1998). Binaural auditory beats affect vigilance performance and mood. *Physiol. Behav.* 63, 249–252.
@@ -63,6 +64,5 @@ In closing: good health to all. See a doctor when one ought to see a doctor; tak
 8. Perez, H. D. O., Dumas, G., and Lehmann, A. (2020). Binaural Beats through the Auditory Pathway: From Brainstem to Connectivity Patterns. *eNeuro* 0232-19.2020, 1–18.
 9. <http://pomodorotechnique.cn/?p=114>
 
----
-
 *Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/JzhwJaYMVK6xeWR-7rjS-Q), August 2020.*
+</div>

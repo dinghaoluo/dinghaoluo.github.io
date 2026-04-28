@@ -56,23 +56,23 @@ The neuromyths discussed here are far from the only ones in circulation, and the
 
 Combating neuromyths requires not only continued progress in research but a willingness, on the part of each of us, to understand the brain on its own terms rather than reaching for a convenient 'scientific' excuse for the things we cannot do.
 
----
-
-*Originally published in Chinese on [Guokr (果壳)](https://mp.weixin.qq.com/s/wyetxNOx5PJPoAvP5apCeQ), October 2019.*
-
+<div class="source-note" markdown="1">
 **References**
 
-[1] Boyd, R. (2008). 'Do People Only Use 10 Percent of Their Brains?' *Scientific American*.
-[2] Knecht, S., et al. (2000). 'Handedness and hemispheric language dominance in healthy humans.' *Brain*, 123(12), 2512–2518.
-[3] Ibid.
-[4] Gazzaniga, M.S. (2005). 'Forty-five years of split-brain research and still going strong.' *Nature Reviews Neuroscience*, 6(8), 653–659.
-[5] Jarrett, C. (2012). 'Why the Left-Brain Right-Brain Myth Will Probably Never Die.' *Psychology Today*.
-[6] Ibid.
-[7] Dekker, S., et al. (2012). 'Neuromyths in education: Prevalence and predictors of misconceptions among teachers.' *Frontiers in Psychology*, 3, 429.
-[8] Ingalhalikar, M., et al. (2014). 'Sex differences in the structural connectome of the human brain.' *PNAS*, 111(2), 823–828.
-[9] Im, K., et al. (2008). 'Brain Size and Cortical Structure in the Adult Human Brain.' *Cerebral Cortex*, 18(9), 2181–2191.
-[10] Fine, C., et al. (2013). 'Plasticity, plasticity, plasticity… and the rigid problem of sex.' *Trends in Cognitive Sciences*, 17(11), 550–551.
-[11] Rauscher, F., et al. (1993). 'Music and spatial task performance.' *Nature*, 365, 611.
-[12] McKelvie, P. and Low, J. (2002). 'Listening to Mozart does not improve children's spatial ability.' *British Journal of Developmental Psychology*, 20(2), 241–258.
-[13] Schellenberg, E.G. and Hallam, S. (2005). 'Music Listening and Cognitive Abilities in 10- and 11-Year-Olds: The Blur Effect.' *Annals of the New York Academy of Sciences*, 1060, 202–209.
-[14] Pietschnig, J., et al. (2010). 'Mozart effect–Shmozart effect: A meta-analysis.' *Intelligence*, 38(3), 314–323.
+1. Boyd, R. (2008). 'Do People Only Use 10 Percent of Their Brains?' *Scientific American*.
+2. Knecht, S., et al. (2000). 'Handedness and hemispheric language dominance in healthy humans.' *Brain*, 123(12), 2512–2518.
+3. Ibid.
+4. Gazzaniga, M.S. (2005). 'Forty-five years of split-brain research and still going strong.' *Nature Reviews Neuroscience*, 6(8), 653–659.
+5. Jarrett, C. (2012). 'Why the Left-Brain Right-Brain Myth Will Probably Never Die.' *Psychology Today*.
+6. Ibid.
+7. Dekker, S., et al. (2012). 'Neuromyths in education: Prevalence and predictors of misconceptions among teachers.' *Frontiers in Psychology*, 3, 429.
+8. Ingalhalikar, M., et al. (2014). 'Sex differences in the structural connectome of the human brain.' *PNAS*, 111(2), 823–828.
+9. Im, K., et al. (2008). 'Brain Size and Cortical Structure in the Adult Human Brain.' *Cerebral Cortex*, 18(9), 2181–2191.
+10. Fine, C., et al. (2013). 'Plasticity, plasticity, plasticity… and the rigid problem of sex.' *Trends in Cognitive Sciences*, 17(11), 550–551.
+11. Rauscher, F., et al. (1993). 'Music and spatial task performance.' *Nature*, 365, 611.
+12. McKelvie, P. and Low, J. (2002). 'Listening to Mozart does not improve children's spatial ability.' *British Journal of Developmental Psychology*, 20(2), 241–258.
+13. Schellenberg, E.G. and Hallam, S. (2005). 'Music Listening and Cognitive Abilities in 10- and 11-Year-Olds: The Blur Effect.' *Annals of the New York Academy of Sciences*, 1060, 202–209.
+14. Pietschnig, J., et al. (2010). 'Mozart effect–Shmozart effect: A meta-analysis.' *Intelligence*, 38(3), 314–323.
+
+*Originally published in Chinese on [Guokr (果壳)](https://mp.weixin.qq.com/s/wyetxNOx5PJPoAvP5apCeQ), October 2019.*
+</div>

@@ -1,24 +1,30 @@
 ---
 title: "Entangled Life"
 title_zh: "菌络万象"
-type: "translation"
+type: "science"
 source_author: "Merlin Sheldrake"
 outlet: "后浪出版"
 outlet_en: "Houlang Press"
 date: 2024-11-01
-image: "/assets/images/writing/entangled_life.jpg"
+image: "/assets/images/thoughts/books/entangled_life_chinese.jpg"
 links:
-  - label: "Douban"
+  - label: "douban"
     url: "https://book.douban.com/subject/37088268/"
-  - label: "Amazon"
+  - label: "amazon"
     url: "https://www.amazon.com/dp/7559677754"
+  - label: "goodreads"
+    url: "https://www.goodreads.com/book/show/52668915"
+companion_link:
+  label: "<em>The Paper</em> interview"
+  url: "/writing/entangled-life/"
+companion_lede: "read my interview with Merlin Sheldrake"
 awards:
   - "2025 Pingshan Natural History Museum Book Award"
   - "Douban 2025 Top 10 Science & New Knowledge"
 isbn: "9787559677754"
 featured: true
 section: "print"
-excerpt: "My Chinese translation of Sheldrake's fungal world: a year of mycology, ecology, and sentences that had to stay strange without becoming vague."
+excerpt: "My Chinese translation of Sheldrake's fungal world: mycelium, decomposition, symbiosis, and sentences that had to stay scientifically exact without losing their strangeness."
 ---
 
 <span class="dropcap">C</span>omplete Chinese translation of Merlin Sheldrake's *Entangled Life*, published by Houlang Press (后浪出版) in November 2024. Hardcover, 304 pages. ISBN 9787559677754.

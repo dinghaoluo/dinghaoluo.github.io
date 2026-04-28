@@ -145,6 +145,5 @@ He missed his seventieth birthday by four days. His remains are buried at Kensic
 
 Rachmaninoff never returned to the homeland he longed for.
 
----
-
 *Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/k3NGlQeK_wYBdQ9JkuGP6A).*
+{: .source-note}

@@ -90,12 +90,13 @@
     var searchClear = document.getElementById('thoughts-search-clear');
     var luckBtn = document.getElementById('thoughts-luck-btn');
     var paginationWraps = document.querySelectorAll('.thoughts-pagination');
-    var currentEls = document.querySelectorAll('.thoughts-pagination__current');
+    var pageInputs = document.querySelectorAll('.thoughts-pagination__input');
     var totalEls = document.querySelectorAll('.thoughts-pagination__total');
     var prevBtns = document.querySelectorAll('.thoughts-pagination__prev');
     var nextBtns = document.querySelectorAll('.thoughts-pagination__next');
     var rangeEls = document.querySelectorAll('.thoughts-pagination__range');
     var searchTimer = null;
+    var pageInputTimer = null;
     var isShuffled = false;
     var currentPage = 1;
     var matchedCards = cards.slice();
@@ -118,6 +119,27 @@
 
     function currentQuery() {
       return searchInput ? normalise(searchInput.value) : '';
+    }
+
+    function filterFromUrl() {
+      if (!window.URLSearchParams) return null;
+      var params = new URLSearchParams(window.location.search);
+      var requested = normalise(params.get('type') || params.get('filter') || '');
+      var aliases = {
+        books: 'book',
+        movie: 'film',
+        movies: 'film',
+        films: 'film',
+        television: 'tv',
+        shows: 'tv',
+        games: 'game'
+      };
+      requested = aliases[requested] || requested;
+      var exists = false;
+      btns.forEach(function (btn) {
+        if (btn.getAttribute('data-filter') === requested) exists = true;
+      });
+      return exists ? requested : null;
     }
 
     function queryTerms(query) {
@@ -295,7 +317,10 @@
       var start = (currentPage - 1) * PAGE_SIZE;
       var end = Math.min(start + PAGE_SIZE, matchedCards.length);
       var rangeText = matchedCards.length ? (start + 1) + '–' + end + ' of ' + matchedCards.length : '';
-      currentEls.forEach(function (el) { el.textContent = currentPage; });
+      pageInputs.forEach(function (el) {
+        el.value = currentPage;
+        el.max = total;
+      });
       totalEls.forEach(function (el) { el.textContent = total; });
       rangeEls.forEach(function (el) { el.textContent = rangeText; });
       prevBtns.forEach(function (btn) { btn.disabled = currentPage <= 1; });
@@ -399,6 +424,11 @@
       return activeBtn ? activeBtn.getAttribute('data-filter') : 'all';
     }
 
+    function scrollToFilter() {
+      var top = strip.getBoundingClientRect().top + window.pageYOffset - 18;
+      window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+    }
+
     function handleHash() {
       var hash = window.location.hash;
       if (!hash || hash.length < 2) return false;
@@ -431,9 +461,13 @@
     }
 
     var active = strip.querySelector('.thoughts-filter-btn.active');
+    var initialFilter = filterFromUrl();
 
     if (!handleHash()) {
-      if (active) {
+      if (initialFilter) {
+        switchFilter(initialFilter);
+        applyFilter(initialFilter);
+      } else if (active) {
         setTimeout(function () { movePill(active); }, 100);
         applyFilter(active.getAttribute('data-filter'));
       }
@@ -499,7 +533,7 @@
         if (currentPage > 1) {
           currentPage--;
           renderPage();
-          window.scrollTo({ top: 0, behavior: 'smooth' });
+          scrollToFilter();
         }
       });
     });
@@ -509,7 +543,44 @@
         if (currentPage < totalPages()) {
           currentPage++;
           renderPage();
-          window.scrollTo({ top: 0, behavior: 'smooth' });
+          scrollToFilter();
+        }
+      });
+    });
+
+    function handlePageInput(input) {
+      var val = parseInt(input.value, 10);
+      if (isNaN(val) || val < 1) val = 1;
+      if (val > totalPages()) val = totalPages();
+      if (val === currentPage) {
+        input.value = currentPage;
+        return;
+      }
+      currentPage = val;
+      renderPage();
+      scrollToFilter();
+    }
+
+    pageInputs.forEach(function (input) {
+      input.addEventListener('input', function () {
+        clearTimeout(pageInputTimer);
+        if (!input.value) return;
+        pageInputTimer = setTimeout(function () {
+          handlePageInput(input);
+        }, 220);
+      });
+      input.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          clearTimeout(pageInputTimer);
+          handlePageInput(input);
+          input.blur();
+        }
+      });
+      input.addEventListener('blur', function () {
+        clearTimeout(pageInputTimer);
+        if (!input.value || String(input.value) !== String(currentPage)) {
+          handlePageInput(input);
         }
       });
     });
@@ -548,20 +619,26 @@
     return result;
   }
   function initCovers() {
-    var container = document.querySelector('.home-covers');
-    if (!container) return;
-    var items = Array.prototype.slice.call(container.querySelectorAll('[style*="display:none"], [style*="display: none"]'));
-    if (!items.length) return;
-    var count = window.innerWidth <= 480 ? 14 : 20;
-    var shuffled = weightedShuffle(items);
-    for (var k = 0; k < shuffled.length; k++) {
-      if (k < count) {
-        shuffled[k].style.display = '';
-        container.appendChild(shuffled[k]);
-      } else {
-        shuffled[k].parentNode.removeChild(shuffled[k]);
+    var containers = Array.prototype.slice.call(document.querySelectorAll('.home-covers'));
+    containers.forEach(function (container) {
+      var items = Array.prototype.slice.call(container.querySelectorAll('[style*="display:none"], [style*="display: none"]'));
+      if (!items.length) return;
+      var desktopCount = parseInt(container.getAttribute('data-count'), 10);
+      var tabletCount = parseInt(container.getAttribute('data-tablet-count'), 10);
+      var mobileCount = parseInt(container.getAttribute('data-mobile-count'), 10);
+      var count = window.innerWidth <= 480
+        ? (mobileCount || 14)
+        : (window.innerWidth <= 1023 ? (tabletCount || desktopCount || 20) : (desktopCount || 20));
+      var shuffled = weightedShuffle(items);
+      for (var k = 0; k < shuffled.length; k++) {
+        if (k < count) {
+          shuffled[k].style.display = '';
+          container.appendChild(shuffled[k]);
+        } else {
+          shuffled[k].parentNode.removeChild(shuffled[k]);
+        }
       }
-    }
+    });
   }
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initCovers);

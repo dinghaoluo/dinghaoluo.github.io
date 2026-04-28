@@ -37,7 +37,7 @@ title: 'thoughts'
 <nav class="thoughts-pagination" aria-label="Pagination" hidden>
   <span class="thoughts-pagination__range"></span>
   <button class="thoughts-pagination__btn thoughts-pagination__prev" type="button" aria-label="Previous page">&lsaquo;</button>
-  <span class="thoughts-pagination__status"><span class="thoughts-pagination__current">1</span> / <span class="thoughts-pagination__total">1</span></span>
+  <span class="thoughts-pagination__status"><input type="number" class="thoughts-pagination__input" value="1" min="1" aria-label="Go to page"> / <span class="thoughts-pagination__total">1</span></span>
   <button class="thoughts-pagination__btn thoughts-pagination__next" type="button" aria-label="Next page">&rsaquo;</button>
 </nav>
 
@@ -59,7 +59,7 @@ title: 'thoughts'
 
 <nav class="thoughts-pagination thoughts-pagination--bottom" aria-label="Pagination" hidden>
   <button class="thoughts-pagination__btn thoughts-pagination__prev" type="button" aria-label="Previous page">&lsaquo;</button>
-  <span class="thoughts-pagination__status"><span class="thoughts-pagination__current">1</span> / <span class="thoughts-pagination__total">1</span></span>
+  <span class="thoughts-pagination__status"><input type="number" class="thoughts-pagination__input" value="1" min="1" aria-label="Go to page"> / <span class="thoughts-pagination__total">1</span></span>
   <button class="thoughts-pagination__btn thoughts-pagination__next" type="button" aria-label="Next page">&rsaquo;</button>
 </nav>
 

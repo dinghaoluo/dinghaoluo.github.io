@@ -87,6 +87,5 @@ That embrace became two lasts: the last time I held someone without tears, and t
 
 'And I am dumb to tell the lover's tomb / How at my sheet goes the same crooked worm.'
 
----
-
 *Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/sWjAgL4BuutNSZyoK2_McA) (Part 1) and [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/-t2evuYVxol0y3nmdTcKzA) (Part 2), November 2018.*
+{: .source-note}

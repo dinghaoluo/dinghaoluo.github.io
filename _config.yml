@@ -199,7 +199,7 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
-  # authoring-only material tracked in git but not published
+  # authoring-only or local-only material not published
   - _docs
   - font-trials
   - scripts

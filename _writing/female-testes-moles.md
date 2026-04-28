@@ -1,8 +1,7 @@
 ---
 title: "The ovotestis, or evolution's indifference to sex"
 type: "feature"
-outlet: "环球科学"
-outlet_en: "Scientific American China"
+outlet: "Scientific American China"
 date: 2020-11-20
 image: "/assets/images/writing/female-testes-moles.jpg"
 section: "online"
@@ -45,24 +44,16 @@ These moles are not anomalies so much as reminders. Intersex Northern Cardinals,
 > Evolution does not care about sex.
 {: .pullquote .pullquote--compact}
 
----
-
+<div class="source-note" markdown="1">
 **References**
 
-Real, F., Haas, S., Franchini, P., Xiong, P. et al. (2020). *Science*. 09 Oct 2020: Vol. 370, Issue 6513, pp. 208-214. doi: 10.1126/science.aaz2582.
+1. Real, F., Haas, S., Franchini, P., Xiong, P. et al. (2020). *Science*. 09 Oct 2020: Vol. 370, Issue 6513, pp. 208-214. doi: 10.1126/science.aaz2582.
+2. Haeck, J. (1969). 'Colonization of the Mole (*Talpa europaea* L.) in the IJsselmeer Polders.' *Neth. J. Zool.* 19, 145-248. doi: 10.1163/002829669X00107.
+3. Starr, M. (2019). 'This Incredible Bird Is Half Male, Half Female And Totally Real.' *ScienceAlert*.
+4. Starr, M. (2020). 'Scientists Find a Half Male, Half Female Bee, Split Right Down The Middle.' *ScienceAlert*.
+5. Bernal, M.A. & Rocha, L.A. (2012). 'Speciation with Gene Flow in Coral Reef Fishes.' *Proceedings of the American Academy of Underwater Sciences, 31st Symposium*.
+6. Michiels, N.K. & Newman, L.J. (1998). 'Sex and Violence in Hermaphrodites.' *Nature* 391:647.
+7. Max Planck Institute for Molecular Genetics. (2020). 'Moles: Intersexual and Genetically Doped.'
 
-Haeck, J. (1969). 'Colonization of the Mole (*Talpa europaea* L.) in the IJsselmeer Polders.' *Neth. J. Zool.* 19, 145-248. doi: 10.1163/002829669X00107.
-
-Starr, M. (2019). 'This Incredible Bird Is Half Male, Half Female And Totally Real.' *ScienceAlert*.
-
-Starr, M. (2020). 'Scientists Find a Half Male, Half Female Bee, Split Right Down The Middle.' *ScienceAlert*.
-
-Bernal, M.A. & Rocha, L.A. (2012). 'Speciation with Gene Flow in Coral Reef Fishes.' *Proceedings of the American Academy of Underwater Sciences, 31st Symposium*.
-
-Michiels, N.K. & Newman, L.J. (1998). 'Sex and Violence in Hermaphrodites.' *Nature* 391:647.
-
-Max Planck Institute for Molecular Genetics. (2020). 'Moles: Intersexual and Genetically Doped.'
-
----
-
-*Originally published in Chinese on [环球科学 (Scientific American China)](https://mp.weixin.qq.com/s/UO_nJhYRqR_nJaH1UmrCBQ), November 2020.*
+*Originally published in Chinese on [Scientific American China](https://mp.weixin.qq.com/s/UO_nJhYRqR_nJaH1UmrCBQ), November 2020.*
+</div>

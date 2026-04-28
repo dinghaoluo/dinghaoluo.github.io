@@ -1,8 +1,7 @@
 ---
 title: "Henrietta Lacks and the immortal cells"
 type: "feature"
-outlet: "环球科学"
-outlet_en: "Scientific American China"
+outlet: "Scientific American China"
 date: 2020-11-06
 image: "/assets/images/writing/henrietta-lacks.jpg"
 section: "online"
@@ -55,22 +54,16 @@ In March 2010, members of Henrietta Lacks's family finally learned where she had
 
 'I feel at peace. My mother gave so much. Henrietta Lacks is still alive.'
 
-## References
+<div class="source-note" markdown="1">
+**References**
 
-Adey, A., Burton, J. N., Kitzman, J. O., Hiatt, J. B., Lewis, A. P., Martin, B. K., Qiu, R., Lee, C., & Shendure, J. (2013). The haplotype-resolved genome and epigenome of the aneuploid HeLa cancer cell line. *Nature*, 500(7461), 207-211.
+1. Adey, A., Burton, J. N., Kitzman, J. O., Hiatt, J. B., Lewis, A. P., Martin, B. K., Qiu, R., Lee, C., & Shendure, J. (2013). The haplotype-resolved genome and epigenome of the aneuploid HeLa cancer cell line. *Nature*, 500(7461), 207-211.
+2. Korch, C. T., Contreras, C. M., & Bhavnani, S. K. (2017). The impact of misidentified cell lines on research. *BioTechniques*, 63(1), 11-16.
+3. *Moore v. Regents of the University of California*, 51 Cal. 3d 120 (1990).
+4. Nelson-Rees, W. A., Daniels, D. W., & Flandermeyer, R. R. (1981). Cross-contamination of cells in culture. *Science*, 212(4493), 446-452.
+5. Skloot, R. (2010). *The Immortal Life of Henrietta Lacks*. Crown Publishing Group.
+6. Landry, J. J. M., Pyl, P. T., Rausch, T., Zichner, T., Tekkedil, M. M., Stutz, A. M., Jauch, A., Aiyar, R. S., Pau, G., Delhomme, N., Gagneur, J., Korbel, J. O., Huber, W., & Steinmetz, L. M. (2013). The genomic and transcriptomic landscape of a HeLa cell line. *G3: Genes, Genomes, Genetics*, 3(8), 1213-1224.
+7. zur Hausen, H. (2009). Papillomaviruses in the causation of human cancers: a brief historical account. *Virology*, 384(2), 260-265.
 
-Korch, C. T., Contreras, C. M., & Bhavnani, S. K. (2017). The impact of misidentified cell lines on research. *BioTechniques*, 63(1), 11-16.
-
-*Moore v. Regents of the University of California*, 51 Cal. 3d 120 (1990).
-
-Nelson-Rees, W. A., Daniels, D. W., & Flandermeyer, R. R. (1981). Cross-contamination of cells in culture. *Science*, 212(4493), 446-452.
-
-Skloot, R. (2010). *The Immortal Life of Henrietta Lacks*. Crown Publishing Group.
-
-Landry, J. J. M., Pyl, P. T., Rausch, T., Zichner, T., Tekkedil, M. M., Stutz, A. M., Jauch, A., Aiyar, R. S., Pau, G., Delhomme, N., Gagneur, J., Korbel, J. O., Huber, W., & Steinmetz, L. M. (2013). The genomic and transcriptomic landscape of a HeLa cell line. *G3: Genes, Genomes, Genetics*, 3(8), 1213-1224.
-
-zur Hausen, H. (2009). Papillomaviruses in the causation of human cancers: a brief historical account. *Virology*, 384(2), 260-265.
-
----
-
-*Originally published in Chinese on [环球科学 (Scientific American China)](https://mp.weixin.qq.com/s/MSM1A25v0N2iF8UJYYg5KA), November 2020.*
+*Originally published in Chinese on [Scientific American China](https://mp.weixin.qq.com/s/MSM1A25v0N2iF8UJYYg5KA), November 2020.*
+</div>

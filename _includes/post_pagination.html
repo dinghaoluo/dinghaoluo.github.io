@@ -1,4 +1,51 @@
-{% if page.previous or page.next %}
+{% if page.collection == "writing" %}
+  <footer class="writing-piece-footer">
+    {% assign writing_previous = nil %}
+    {% assign writing_next = nil %}
+    {% assign writing_seen_current = false %}
+    {% assign page_is_print = false %}
+    {% if page.section == "print" or page.type == "translation" %}
+      {% assign page_is_print = true %}
+    {% endif %}
+    {% assign writing_pieces = site.writing | sort: "date" %}
+    {% for piece in writing_pieces %}
+      {% assign piece_is_print = false %}
+      {% if piece.section == "print" or piece.type == "translation" %}
+        {% assign piece_is_print = true %}
+      {% endif %}
+      {% if piece_is_print == page_is_print %}
+        {% if piece.url == page.url %}
+          {% assign writing_seen_current = true %}
+        {% elsif writing_seen_current %}
+          {% if writing_next == nil %}
+            {% assign writing_next = piece %}
+          {% endif %}
+        {% else %}
+          {% assign writing_previous = piece %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% if writing_previous or writing_next %}
+      <nav class="pagination writing-piece-pagination" aria-label="writing pagination">
+        {% if writing_previous %}
+          {% assign previous_title = writing_previous.title_display | default: writing_previous.title %}
+          <a href="{{ writing_previous.url | relative_url }}" class="pagination--pager writing-piece-pagination__link writing-piece-pagination__link--previous" title="{{ writing_previous.title | markdownify | strip_html }}">
+            <span class="writing-piece-pagination__label">previous</span>
+            <span class="writing-piece-pagination__title">{{ previous_title }}</span>
+          </a>
+        {% endif %}
+        {% if writing_next %}
+          {% assign next_title = writing_next.title_display | default: writing_next.title %}
+          <a href="{{ writing_next.url | relative_url }}" class="pagination--pager writing-piece-pagination__link writing-piece-pagination__link--next" title="{{ writing_next.title | markdownify | strip_html }}">
+            <span class="writing-piece-pagination__label">next</span>
+            <span class="writing-piece-pagination__title">{{ next_title }}</span>
+          </a>
+        {% endif %}
+      </nav>
+    {% endif %}
+    <a href="{{ '/' | relative_url }}" class="writing-piece-home-link">back to home</a>
+  </footer>
+{% elsif page.previous or page.next %}
   <nav class="pagination">
     {% if page.previous %}
       <a href="{{ page.previous.url | relative_url }}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>

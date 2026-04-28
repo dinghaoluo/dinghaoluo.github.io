@@ -1,8 +1,7 @@
 ---
 title: "Place cells and the brain's cartography"
 type: "feature"
-outlet: "神经现实"
-outlet_en: "Neu-Reality"
+outlet: "Neu-Reality"
 date: 2022-05-23
 section: "online"
 links:
@@ -48,34 +47,20 @@ Similar representations of abstract objects have been found in the primate hippo
 
 From Tolman's classic behavioural experiments, through O'Keefe's discovery of place cells, to the latest findings in the primate brain, research on cognitive maps and place cells has come a long way. Yet even nearly a century later, many questions remain. How do place cell representations guide navigation? Why do place cells remain active during sleep? What mechanisms underlie phase precession? What signals does the hippocampus use to construct place cell representations? With optogenetics, large-scale electrophysiology, and two- and three-photon imaging, the answers may not be far off.
 
----
+<div class="source-note" markdown="1">
+**References**
 
-### References
+1. Redish, D. *Beyond the Cognitive Map: From Place Cell to Episodic Map*. Cambridge (Massachusetts): MIT Press, 1999.
+2. Tolman, E. 'Cognitive Maps in Rats and Men.' *The Psychological Review*, 1947, 55(4): 189–208.
+3. Cheung, A., Ball, D., Milford, M., et al. 'Maintaining a Cognitive Map in Darkness: The Need to Fuse Boundary Knowledge with Path Integration.' *PLoS Comput Biol*, 2012, 8(8): e1002651.
+4. Josselyn, S. A. 'Continuing the Search for the Engram: Examining the Mechanism of Fear Memories.' *Psychiatry Neurosci*, 2010, 35(4): 221–228.
+5. O'Keefe, J. and Dostrovsky, J. 'The Hippocampus as a Spatial Map. Preliminary Evidence from Unit Activity in the Freely-moving Rat.' *Brain Research*, 1971, 34(1): 171–175.
+6. Strictly speaking, O'Keefe used the term 'place unit' rather than 'place cell', since extracellular recording lacks single-cell spatial resolution; 'unit' serves as an approximation for 'cell'.
+7. O'Keefe, J. and Recce, M. L. 'Phase Relationship between Hippocampal Place Units and the EEG Theta Rhythm.' *Hippocampus*, 1993, (3): 317–330.
+8. Kay, K., Chung, J. E., Sosa, M., et al. 'Constant Sub-second Cycling between Representations of Possible Futures in the Hippocampus.' *Cell*, 2020, 180(3): 552–567.
+9. MacDonald, C. J., Lepage, K. Q., Eden, U. T., et al. 'Hippocampal "Time Cell" Bridge the Gap in Memory for Discontiguous Events.' *Neuron*, 2011, 71(4): 737–749.
+10. Qasim, S. E., Fried, I., and Jacobs, J. 'Phase Precession in the Human Hippocampus and Entorhinal Cortex.' *Cell*, 2021, 184(12): 1–14.
+11. Knudsen, E. B. and Wallis, J. D. 'Hippocampal Neurons Construct a Map of an Abstract Value Space.' *Cell*, 2021, 184(18): 4640–4650.
 
-[1] Redish, D. *Beyond the Cognitive Map: From Place Cell to Episodic Map*. Cambridge (Massachusetts): MIT Press, 1999.
-
-[2] Tolman, E. 'Cognitive Maps in Rats and Men.' *The Psychological Review*, 1947, 55(4): 189–208.
-
-[3] Cheung, A., Ball, D., Milford, M., et al. 'Maintaining a Cognitive Map in Darkness: The Need to Fuse Boundary Knowledge with Path Integration.' *PLoS Comput Biol*, 2012, 8(8): e1002651.
-
-[4] Josselyn, S. A. 'Continuing the Search for the Engram: Examining the Mechanism of Fear Memories.' *Psychiatry Neurosci*, 2010, 35(4): 221–228.
-
-[5] O'Keefe, J. and Dostrovsky, J. 'The Hippocampus as a Spatial Map. Preliminary Evidence from Unit Activity in the Freely-moving Rat.' *Brain Research*, 1971, 34(1): 171–175.
-
-[6] Strictly speaking, O'Keefe used the term 'place unit' rather than 'place cell', since extracellular recording lacks single-cell spatial resolution; 'unit' serves as an approximation for 'cell'.
-
-[7] O'Keefe, J. and Recce, M. L. 'Phase Relationship between Hippocampal Place Units and the EEG Theta Rhythm.' *Hippocampus*, 1993, (3): 317–330.
-
-[8] Kay, K., Chung, J. E., Sosa, M., et al. 'Constant Sub-second Cycling between Representations of Possible Futures in the Hippocampus.' *Cell*, 2020, 180(3): 552–567.
-
-[9] MacDonald, C. J., Lepage, K. Q., Eden, U. T., et al. 'Hippocampal "Time Cell" Bridge the Gap in Memory for Discontiguous Events.' *Neuron*, 2011, 71(4): 737–749.
-
-[10] Qasim, S. E., Fried, I., and Jacobs, J. 'Phase Precession in the Human Hippocampus and Entorhinal Cortex.' *Cell*, 2021, 184(12): 1–14.
-
-[11] Knudsen, E. B. and Wallis, J. D. 'Hippocampal Neurons Construct a Map of an Abstract Value Space.' *Cell*, 2021, 184(18): 4640–4650.
-
----
-
-*Cover design by Ache for Neu-Reality and Xinrui Weekly.*
-
-*Originally published in Chinese on [Neu-Reality (神经现实)](https://neu-reality.com/2022/05/place-cell-history/), May 2022.*
+*Originally published in Chinese on [Neu-Reality](https://neu-reality.com/2022/05/place-cell-history/), May 2022.*
+</div>

@@ -33,6 +33,5 @@ So it was that on the road to this freedom I lost my way and found another kind.
 
 The thought that sunset will not come until half past nine today brings a strange comfort. I walked home, leaving the bicycle at the foot of the hill. Back inside, the curtains I had not opened that morning had been drawn by the cleaner, and western sunlight flooded in. I searched for my slippers in the blinding light, finding one of them under the electric piano. The half-eaten cherries were still on the table. I felt a little dazed, opened my phone. My friend was on the other side of Eurasia, just waking up. I held her. The sunlight blinded me. I drew the curtains. In my earphones, 'Qinhuangdao' reached its end. I had listened to this song with her the week before; I knew all the lyrics. Dong Yaqian sings about the young man crossing the strait, proudly perishing for the opposite shore, and then he goes ah ah ah ah ah, and the guitar repeats the main riff a few times, and then a solo with barely any notes. Done. I sat in total darkness, and finally remembered that I am afraid of the dark.
 
----
-
 *Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/0igKd0PNqmrCsfIGHoTFfA), July 2019.*
+{: .source-note}

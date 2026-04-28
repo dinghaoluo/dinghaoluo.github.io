@@ -41,25 +41,25 @@ font block — kept inline because GitHub Pages ignores separate _fonts.scss
 // Reforma 2018 — self-hosted serif for literary body text (thoughts, writing)
 @font-face {
   font-family: 'Reforma 2018';
-  src: url('/assets/fonts/reforma/reforma2018-gris.ttf') format('truetype');
+  src: url('/assets/fonts/reforma/reforma2018-gris-ro.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Reforma 2018';
-  src: url('/assets/fonts/reforma/reforma2018-gris-italica.ttf') format('truetype');
+  src: url('/assets/fonts/reforma/reforma2018-gris-italica-ro.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: 'Reforma 2018';
-  src: url('/assets/fonts/reforma/reforma2018-negra.ttf') format('truetype');
+  src: url('/assets/fonts/reforma/reforma2018-negra-ro.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Reforma 2018';
-  src: url('/assets/fonts/reforma/reforma2018-negra-italica.ttf') format('truetype');
+  src: url('/assets/fonts/reforma/reforma2018-negra-italica-ro.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
 }
@@ -150,6 +150,8 @@ $cjk-stack: 'LXGW WenKai Mono TC', 'Noto Sans Mono CJK SC', 'Source Han Mono SC'
 $intl-stack: 'Noto Sans Arabic', 'Noto Sans Thai', 'Noto Sans';
 $hebrew-stack: 'Noto Serif Hebrew', 'Noto Sans Hebrew', $intl-stack;
 $reforma-stack: 'Reforma 2018', Georgia, 'Times New Roman', $cjk-stack, serif;
+$writing-title-stack: 'Reforma 2018', Georgia, 'Times New Roman', $cjk-stack, $intl-stack, serif;
+$writing-title-italic-stack: 'Reforma 2018', Georgia, 'Times New Roman', $cjk-stack, $intl-stack, serif;
 
 // -------------------------
 // base
@@ -297,15 +299,13 @@ hr {
 
     &.is-current {
       display: inline-block;
-      font-family: 'JetBrains Mono', $cjk-stack, monospace;
+      font-family: 'Mononoki', $cjk-stack, monospace;
       color: $site-text;
       font-style: italic;
       font-size: clamp(1.8rem, 4vw, 3rem);
       letter-spacing: -0.045em;
       line-height: 0.96;
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
-      text-underline-offset: 0.12em;
+      text-decoration: none;
       margin-top: 0.06em;
       margin-bottom: 0.15em;
 
@@ -1243,81 +1243,171 @@ body.home .page__author-footer {
   margin-top: 2.8rem;
 }
 
-.album-wall__controls {
+.album-wall__filter-strip {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 0.55rem;
-  margin-bottom: 1.2rem;
-  max-width: 100%;
+  width: 95%;
+  margin: 0 auto 0.7em;
+  padding: 0.12em 0.18em;
+  background: rgba($morandi-grey-soft, 0.38);
+  border-radius: 1000px;
+  box-shadow: inset 0 0 0 1px rgba($morandi-muted, 0.06);
+  user-select: none;
+  overflow: hidden;
+}
+
+.album-wall__filter-pill {
+  position: absolute;
+  top: 0.12em;
+  left: 0.18em;
+  height: calc(100% - 0.24em);
+  background: $site-bg;
+  border-radius: 1000px;
+  box-shadow: 0 1px 3px $shadow-faint;
+  transition: left 0.32s cubic-bezier(0.34, 1.56, 0.64, 1),
+              width 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.album-wall__filter-btn {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  border: none;
+  border-radius: 1000px;
+  padding: 0.22em 0;
+  color: $site-text-soft;
+  font-family: 'Mononoki', monospace;
+  font-size: 0.92em;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  background: none;
+  cursor: pointer;
+  transition: color 0.22s ease;
+
+  &.active {
+    color: $site-text;
+  }
+
+  &:hover {
+    color: $site-text-nav-soft;
+  }
+}
+
+.album-wall__filter-label-short {
+  display: none;
+}
+
+.album-wall__controls {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  width: 95%;
+  margin: 0 auto 0.4em;
 }
 
 .album-wall__search-wrap {
-  flex: 1 1 auto;
   position: relative;
+  flex: 1 1 24rem;
   min-width: 0;
+  width: auto;
+  margin: 0;
 }
 
 .album-wall__search-input {
   width: 100%;
-  padding: 0.36em 0.7em;
-  border: 1px solid rgba($morandi-stone, 0.55);
-  border-radius: 4px;
-  background: rgba($morandi-oat, 0.5);
-  font-size: 0.84em;
   font-family: inherit;
-  color: $morandi-ink;
+  font-size: 0.92em;
+  background: rgba($morandi-grey-soft, 0.18);
+  border: 1px solid rgba($morandi-muted, 0.18);
+  border-radius: 1000px;
   outline: none;
-  transition: border-color 0.18s ease;
+  padding: 0.38em 1.6em 0.38em 0.85em;
+  color: $site-text-nav;
+  opacity: 0.74;
+  transition: opacity 0.15s ease, border-color 0.15s ease, background 0.15s ease;
 
-  &::placeholder { color: $morandi-muted-soft; }
-  &:focus { border-color: $morandi-clay; }
+  &:focus {
+    opacity: 1;
+    border-color: rgba($morandi-blue-deep, 0.3);
+    background: rgba($morandi-grey-soft, 0.28);
+  }
+
+  &::placeholder {
+    color: $site-text-soft;
+    opacity: 0.75;
+  }
 }
 
 .album-wall__search-enter {
   position: absolute;
-  right: 0.55em;
+  right: 0.65em;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 0.78em;
-  color: $morandi-stone;
+  font-family: 'Mononoki', monospace;
+  font-size: 1em;
+  line-height: 1;
+  color: $site-text-soft;
+  opacity: 0.55;
   pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
+.album-wall__search-wrap:focus-within .album-wall__search-enter {
+  opacity: 0.9;
+  color: $site-text-nav;
 }
 
 .album-wall__search-clear {
   position: absolute;
-  right: 0.35em;
+  right: 0.45em;
   top: 50%;
   transform: translateY(-50%);
   background: none;
   border: none;
   padding: 0 0.18em;
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1;
-  color: $morandi-stone;
+  color: $site-text-soft;
   opacity: 0.65;
   cursor: pointer;
   transition: opacity 0.15s ease, color 0.15s ease;
 
-  &:hover { opacity: 1; color: $morandi-ink; }
+  &:hover { opacity: 1; color: $site-text-nav; }
   &[hidden] ~ .album-wall__search-enter { display: inline; }
   &:not([hidden]) ~ .album-wall__search-enter { display: none; }
 }
 
 .album-wall__luck-btn {
   flex: 0 0 auto;
-  background: none;
-  border: 1px solid rgba($morandi-stone, 0.45);
-  border-radius: 4px;
-  padding: 0.36em 0.72em;
-  font-size: 0.82em;
-  font-family: inherit;
-  color: $morandi-muted;
-  cursor: pointer;
+  font-family: 'Mononoki', monospace;
+  font-size: 0.8em;
+  line-height: 1;
+  color: $morandi-blue-deep;
+  background: rgba($morandi-blue, 0.1);
+  border: 1px solid rgba($morandi-blue-deep, 0.22);
+  border-radius: 1000px;
+  padding: 0.44em 0.9em 0.52em;
+  transform: translateY(-0.08rem);
   white-space: nowrap;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  transition: color 0.18s ease, border-color 0.18s ease, background 0.18s ease, transform 0.18s ease, opacity 0.18s ease;
 
-  &:hover { color: $morandi-clay-deep; border-color: $morandi-clay; }
-  &.is-disabled { opacity: 0.35; cursor: default; }
+  &:hover:not(:disabled) {
+    color: $site-text-nav-soft;
+    border-color: rgba($morandi-blue-deep, 0.22);
+    background: rgba($morandi-oat, 0.8);
+    transform: translateY(-0.16rem);
+  }
+
+  &:disabled,
+  &.is-disabled {
+    cursor: default;
+    opacity: 0.46;
+    transform: translateY(-0.08rem);
+  }
 }
 
 .album-wall__grid {
@@ -1426,10 +1516,12 @@ body.home .page__author-footer {
 }
 
 .album-tile__eval {
-  display: inline-block;
-  padding: 0.18em 0.56em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.28em 0.72em;
   border-radius: 999px;
-  font-size: 0.68em;
+  font-size: 0.74em;
   line-height: 1;
   letter-spacing: 0.01em;
   white-space: nowrap;
@@ -1504,55 +1596,79 @@ body.home .page__author-footer {
 .album-wall__pagination {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.7em;
-  margin-top: 1.4rem;
+  justify-content: flex-end;
+  gap: 0.35rem;
+  width: 95%;
+  margin: 0 auto 1.4em;
+  font-family: 'Mononoki', monospace;
+  font-size: 0.78em;
+  color: $site-text-soft;
+
+  &[hidden] { display: none; }
 }
 
 .album-wall__pagination--top {
-  margin-top: 0;
-  margin-bottom: 1.0rem;
+  margin: 0 auto 1.4em;
+}
+
+.album-wall__pagination--bottom {
+  margin: 1.6em auto 0;
 }
 
 .album-wall__page-btn {
   background: none;
-  border: 1px solid rgba($morandi-stone, 0.45);
-  border-radius: 4px;
-  padding: 0.3em 0.6em;
-  font-size: 0.82em;
-  color: $morandi-muted;
+  border: none;
+  color: inherit;
+  font-size: 1.25em;
+  line-height: 1;
   cursor: pointer;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  padding: 0 0.2em;
+  transition: color 0.18s ease, opacity 0.18s ease;
 
-  &:hover:not(:disabled) { color: $morandi-clay-deep; border-color: $morandi-clay; }
-  &:disabled { opacity: 0.3; cursor: default; }
+  &:hover:not(:disabled) { color: $site-text-nav; }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
 }
 
 .album-wall__page-info {
-  font-size: 0.78em;
-  color: $morandi-muted-soft;
+  min-width: 3.2em;
+  text-align: center;
+  letter-spacing: 0.02em;
 }
 
 .album-wall__page-input {
   width: 2.4em;
   text-align: center;
   background: none;
-  border: 1px solid rgba($morandi-stone, 0.35);
+  border: 1px solid transparent;
   border-radius: 3px;
-  padding: 0.15em 0.2em;
+  padding: 0.1em 0.15em;
+  margin: 0;
   font-family: 'Mononoki', monospace;
   font-size: 1em;
-  color: $morandi-muted;
+  line-height: 1;
+  color: inherit;
+  box-shadow: none;
   -moz-appearance: textfield;
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
-  &:focus { outline: none; border-color: $morandi-clay; color: $morandi-clay-deep; }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: rgba($morandi-muted, 0.24);
+    color: $site-text-nav;
+  }
 }
 
 .album-wall__range {
-  font-size: 0.74em;
+  font-size: 0.95em;
   color: $morandi-muted-soft;
-  margin-left: 0.3em;
+  margin-right: auto;
 }
 
 // desktop widescreen: scale down thoughts card text to match body font
@@ -1676,6 +1792,33 @@ body.home .page__author-footer {
   min-width: 3.2em;
   text-align: center;
   letter-spacing: 0.02em;
+}
+
+.thoughts-pagination__input {
+  width: 2.4em;
+  text-align: center;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 0.1em 0.15em;
+  margin: 0;
+  font-family: 'Mononoki', monospace;
+  font-size: 1em;
+  line-height: 1;
+  color: inherit;
+  box-shadow: none;
+  -moz-appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: rgba($morandi-muted, 0.24);
+    color: $site-text-nav;
+  }
 }
 
 .thoughts-pagination__range {
@@ -1912,12 +2055,30 @@ body.home .page__author-footer {
     gap: 0.55rem;
   }
 
+  .album-wall__controls {
+    width: 95%;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    gap: 0.55rem;
+  }
+
   .thoughts-search-wrap {
     flex: 1 1 auto;
     width: auto;
   }
 
+  .album-wall__search-wrap {
+    flex: 1 1 auto;
+    width: auto;
+  }
+
   .thoughts-luck-btn {
+    flex: 0 0 auto;
+    align-self: auto;
+    margin-top: 0;
+  }
+
+  .album-wall__luck-btn {
     flex: 0 0 auto;
     align-self: auto;
     margin-top: 0;
@@ -2120,6 +2281,18 @@ mark.thoughts-highlight {
     grid-template-columns: repeat(2, 1fr);
     gap: 0.7rem 0.5rem;
   }
+
+  .album-wall__filter-btn {
+    font-size: 0.78em;
+  }
+
+  .album-wall__filter-label-full {
+    display: none;
+  }
+
+  .album-wall__filter-label-short {
+    display: inline;
+  }
 }
 
 ::selection {
@@ -2201,11 +2374,24 @@ mark.thoughts-highlight {
     gap: 0.65rem;
   }
 
+  .album-wall__controls {
+    width: 95%;
+    gap: 0.65rem;
+  }
+
   .thoughts-search-wrap {
     flex: 1 1 auto;
   }
 
+  .album-wall__search-wrap {
+    flex: 1 1 auto;
+  }
+
   .thoughts-luck-btn {
+    font-size: 0.84em;
+  }
+
+  .album-wall__luck-btn {
     font-size: 0.84em;
   }
 
@@ -2296,6 +2482,20 @@ mark.thoughts-highlight {
 // -------------------------
 // homepage cover mosaic — floated grid of thought covers
 // -------------------------
+.home-thoughts-block {
+  display: flow-root;
+  margin-bottom: 1.55rem;
+}
+
+.home-thoughts-block + .home-thoughts-block {
+  margin-top: 1.65rem;
+}
+
+.home-thoughts-links {
+  margin: 0.8em 0 0;
+  font-size: 0.9em;
+}
+
 .home-covers {
   float: right;
   display: grid;
@@ -2351,6 +2551,11 @@ mark.thoughts-highlight {
 // -------------------------
 // homepage featured album — own music highlight
 // -------------------------
+.home-covers--screen,
+.home-covers--games {
+  max-height: 267px;
+}
+
 .home-featured-album {
   display: flex;
   gap: 1em;
@@ -2597,6 +2802,58 @@ mark.thoughts-highlight {
   margin-top: 1.2em;
 }
 
+.writing-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin: 2.3rem 0 1.15rem;
+  color: $morandi-ink;
+  font-family: $writing-title-stack;
+  font-size: 1.42rem;
+  font-weight: 500;
+  letter-spacing: 0.055em;
+  line-height: 1.15;
+  text-decoration: none;
+  text-transform: lowercase;
+
+  &::after {
+    content: "";
+    flex: 1 1 auto;
+    height: 1px;
+    background: linear-gradient(90deg, rgba($morandi-clay-deep, 0.34), rgba($morandi-clay-deep, 0));
+  }
+}
+
+.page__content .writing-section-title {
+  font-family: $writing-title-stack;
+  font-size: 1.42rem;
+  font-weight: 500;
+  letter-spacing: 0.055em;
+}
+
+body.writing-page .page__title,
+body.writing-page .page__content .writing-section-title,
+body.writing-page .page__content .writing-entry__title,
+body.writing-page .page__content .writing-entry__title a,
+body.writing-page .page__content .writing-entry__title * {
+  font-family: $writing-title-stack !important;
+  font-weight: 500;
+}
+
+body.writing-page .page__content .writing-entry__title {
+  margin: 0 0 0.1rem;
+  font-size: 1.26em;
+  line-height: 1.3;
+  letter-spacing: 0.012em;
+}
+
+body.writing-page .page__content .writing-entry__title em {
+  font-family: $writing-title-italic-stack !important;
+  font-style: italic;
+  font-optical-sizing: auto;
+  letter-spacing: 0;
+}
+
 .writing-entry {
   display: flex;
   gap: 1.2rem;
@@ -2612,11 +2869,26 @@ mark.thoughts-highlight {
   background: linear-gradient(90deg, $overlay-oat-soft, $overlay-white-clear);
 }
 
+.writing-entry--translation {
+  padding-top: 1.05rem;
+  padding-bottom: 1.05rem;
+}
+
 .writing-entry__img-wrap {
+  align-self: flex-start;
   flex-shrink: 0;
   overflow: hidden;
   border-radius: 2px;
   text-decoration: none;
+}
+
+.writing-list:not(.writing-list--archive) .writing-entry__img-wrap {
+  align-self: flex-end;
+}
+
+.writing-list:not(.writing-list--archive) .writing-entry__img {
+  width: 112px;
+  height: 168px;
 }
 
 .writing-entry__img {
@@ -2647,25 +2919,76 @@ mark.thoughts-highlight {
 .writing-entry__type {
   display: inline-block;
   font-size: 0.72em;
+  line-height: 1.05;
   letter-spacing: 0.08em;
   text-transform: lowercase;
   color: $morandi-clay-deep;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.28rem;
 }
 
 .writing-entry__title {
-  font-family: 'Faculty Glyphic', $cjk-stack, $intl-stack, serif;
-  font-size: 1.08em;
-  font-weight: normal;
+  font-family: $writing-title-stack;
+  font-size: 1.26em;
+  font-weight: 500;
+  letter-spacing: 0.012em;
   color: $morandi-ink;
   margin: 0 0 0.1rem;
-  line-height: 1.4;
+  line-height: 1.3;
+  text-decoration: none;
 
   a {
+    font-family: $writing-title-stack;
     color: inherit;
-    text-decoration: none;
-    &:hover { color: $link-color; text-decoration: underline; text-underline-offset: 3px; }
+    text-decoration: underline;
+    text-decoration-color: rgba($morandi-clay-deep, 0.42);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    &:hover { color: $link-color; text-decoration-color: $link-color; }
   }
+
+  * {
+    font-family: $writing-title-stack;
+  }
+
+  em {
+    font-family: $writing-title-italic-stack;
+    font-style: italic;
+    font-optical-sizing: auto;
+    letter-spacing: 0;
+  }
+}
+
+.writing-entry__title--plain {
+  color: $morandi-ink;
+}
+
+.writing-entry__title-zh-inline,
+.writing-entry__title-zh-subtitle {
+  color: $morandi-muted;
+  font-family: $writing-title-stack;
+  font-weight: normal;
+  letter-spacing: 0.045em;
+  text-decoration: underline;
+  text-decoration-color: rgba($morandi-clay-deep, 0.34);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.writing-entry__title-zh-inline {
+  display: inline-block;
+  margin-left: 0.58rem;
+  font-size: 0.72em;
+}
+
+.writing-entry__title--plain .writing-entry__title-zh-inline {
+  color: inherit;
+  text-decoration: none;
+}
+
+.writing-entry__title-zh-subtitle {
+  display: block;
+  margin: 0.02rem 0 0.34rem;
+  font-size: 0.78em;
 }
 
 .writing-entry__title-en {
@@ -2721,6 +3044,623 @@ mark.thoughts-highlight {
   }
 }
 
+.writing-entry__book-links {
+  font-family: 'Mononoki', monospace;
+  font-size: 0.74em;
+  line-height: 1.35;
+
+  a {
+    margin-right: 0.95rem;
+  }
+}
+
+.writing-entry__book-links {
+  margin: 0.18rem 0 0.18rem;
+}
+
+.writing-entry__companion-link {
+  margin: 0.62rem 0 0.58rem;
+  font-family: 'Mononoki', monospace;
+  font-size: 0.74em;
+  line-height: 1.4;
+
+  * {
+    font-family: inherit;
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 0.08rem;
+    color: $morandi-blue-deep;
+    text-decoration-color: rgba($morandi-blue-deep, 0.28);
+  }
+}
+
+.writing-entry__companion-lede {
+  display: block;
+  color: $morandi-muted-soft;
+  font-style: italic;
+}
+
+.writing-entry--translation {
+  .writing-entry__book-links {
+    margin: 0.12rem 0 0.12rem;
+  }
+
+  .writing-entry__companion-link {
+    margin: 0.38rem 0 0.34rem;
+    line-height: 1.35;
+  }
+
+  .writing-entry__companion-lede {
+    display: inline;
+  }
+
+  .writing-entry__companion-link a {
+    margin-top: 0;
+    margin-left: 0.42rem;
+  }
+
+  .writing-entry__meta {
+    margin-bottom: 0.34rem;
+    line-height: 1.35;
+  }
+
+  .writing-entry__text {
+    margin-bottom: 0.34rem;
+    line-height: 1.55;
+  }
+
+  .writing-entry__awards {
+    margin: 0.18rem 0 0;
+    gap: 0;
+    line-height: 1.35;
+  }
+
+  .writing-entry__award {
+    border: 0;
+    padding: 0;
+    font-size: 0.72em;
+    color: $morandi-sage-deep;
+  }
+
+  .writing-entry__award + .writing-entry__award::before {
+    content: " · ";
+    color: $morandi-muted-soft;
+  }
+}
+
+.writing-filter-strip {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto 1.8em;
+  padding: 0.12em 0.18em;
+  user-select: none;
+  background: rgba($morandi-grey-soft, 0.38);
+  border-radius: 1000px;
+  box-shadow: inset 0 0 0 1px rgba($morandi-muted, 0.06);
+}
+
+.writing-filter-pill {
+  position: absolute;
+  top: 0.12em;
+  left: 0.18em;
+  z-index: 0;
+  height: calc(100% - 0.24em);
+  background: $site-bg;
+  border-radius: 1000px;
+  box-shadow: 0 1px 3px $shadow-faint;
+  transition: left 0.32s cubic-bezier(0.34, 1.56, 0.64, 1),
+              width 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
+  pointer-events: none;
+}
+
+.writing-filter-btn {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  min-width: 0;
+  padding: 0.22em 0.35em;
+  overflow: hidden;
+  color: $site-text-soft;
+  font-family: 'Mononoki', monospace;
+  font-size: 0.92em;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: none;
+  border: 0;
+  border-radius: 1000px;
+  cursor: pointer;
+  transition: color 0.18s ease, font-weight 0.18s ease;
+
+  &.active {
+    color: $site-text;
+    font-weight: bold;
+  }
+
+  &:hover {
+    color: $link-color;
+  }
+}
+
+.album-wall__filter-strip,
+.thoughts-filter-strip,
+.writing-filter-strip {
+  padding-top: 0.16em;
+  padding-bottom: 0.16em;
+}
+
+.album-wall__filter-pill,
+.thoughts-filter-pill,
+.writing-filter-pill {
+  top: 0.16em;
+  height: calc(100% - 0.32em);
+}
+
+.album-wall__filter-btn,
+.thoughts-filter-btn,
+.writing-filter-btn {
+  padding-top: 0.32em;
+  padding-bottom: 0.34em;
+}
+
+.writing-controls-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  width: 95%;
+  margin: -0.95em auto 0.7em;
+}
+
+.writing-search-wrap {
+  position: relative;
+  flex: 1 1 24rem;
+  min-width: 0;
+  width: auto;
+  margin: 0;
+}
+
+.writing-search-input {
+  width: 100%;
+  padding: 0.38em 1.6em 0.38em 0.85em;
+  color: $site-text-nav;
+  font-family: inherit;
+  font-size: 0.92em;
+  background: rgba($morandi-grey-soft, 0.18);
+  border: 1px solid rgba($morandi-muted, 0.18);
+  border-radius: 1000px;
+  outline: none;
+  opacity: 0.74;
+  transition: opacity 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+
+  &:focus {
+    opacity: 1;
+    border-color: rgba($morandi-blue-deep, 0.3);
+    background: rgba($morandi-grey-soft, 0.28);
+  }
+
+  &::placeholder {
+    color: $site-text-soft;
+    opacity: 0.75;
+  }
+}
+
+.writing-search-enter {
+  position: absolute;
+  top: 50%;
+  right: 0.65em;
+  color: $site-text-soft;
+  font-family: 'Mononoki', monospace;
+  font-size: 1em;
+  line-height: 1;
+  opacity: 0.55;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: opacity 0.15s ease;
+}
+
+.writing-search-wrap:focus-within .writing-search-enter {
+  color: $site-text-nav;
+  opacity: 0.9;
+}
+
+.writing-search-clear {
+  position: absolute;
+  top: 50%;
+  right: 0.45em;
+  padding: 0 0.18em;
+  color: $site-text-soft;
+  font-size: 1.1em;
+  line-height: 1;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  opacity: 0.65;
+  transform: translateY(-50%);
+  transition: opacity 0.15s ease, color 0.15s ease;
+
+  &:hover {
+    color: $site-text-nav;
+    opacity: 1;
+  }
+
+  &[hidden] ~ .writing-search-enter {
+    display: inline;
+  }
+
+  &:not([hidden]) ~ .writing-search-enter {
+    display: none;
+  }
+}
+
+.writing-luck-btn {
+  flex: 0 0 auto;
+  padding: 0.44em 0.9em 0.52em;
+  color: $morandi-blue-deep;
+  font-family: 'Mononoki', monospace;
+  font-size: 0.8em;
+  line-height: 1;
+  white-space: nowrap;
+  background: rgba($morandi-blue, 0.1);
+  border: 1px solid rgba($morandi-blue-deep, 0.22);
+  border-radius: 1000px;
+  transform: translateY(-0.08rem);
+  transition: color 0.18s ease, border-color 0.18s ease, background 0.18s ease, transform 0.18s ease, opacity 0.18s ease;
+
+  &:hover:not(:disabled) {
+    color: $site-text-nav-soft;
+    background: rgba($morandi-oat, 0.8);
+    border-color: rgba($morandi-blue-deep, 0.22);
+    transform: translateY(-0.16rem);
+  }
+
+  &:disabled,
+  &.is-disabled {
+    cursor: default;
+    opacity: 0.46;
+    transform: translateY(-0.08rem);
+  }
+}
+
+.writing-archive-status {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 95%;
+  min-height: 1.2em;
+  margin: 0 auto 0.25rem;
+  color: $morandi-muted-soft;
+  font-family: 'Mononoki', monospace;
+  font-size: 0.74em;
+  text-align: right;
+}
+
+.writing-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.35rem;
+  width: 95%;
+  margin: 0 auto 1.05em;
+  color: $site-text-soft;
+  font-family: 'Mononoki', monospace;
+  font-size: 0.78em;
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.writing-pagination--bottom {
+  margin: 1.3em auto 0;
+}
+
+.writing-pagination__range {
+  margin-right: auto;
+  color: $morandi-muted-soft;
+  font-size: 0.95em;
+}
+
+.writing-pagination__btn {
+  padding: 0 0.2em;
+  color: inherit;
+  font-size: 1.25em;
+  line-height: 1;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  transition: color 0.18s ease, opacity 0.18s ease;
+
+  &:hover:not(:disabled) {
+    color: $site-text-nav;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.3;
+  }
+}
+
+.writing-pagination__status {
+  min-width: 3.2em;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.writing-pagination__input {
+  width: 2.4em;
+  margin: 0;
+  padding: 0.1em 0.15em;
+  color: inherit;
+  font-family: 'Mononoki', monospace;
+  font-size: 1em;
+  line-height: 1;
+  text-align: center;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: none;
+  -moz-appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $site-text-nav;
+    border-color: rgba($morandi-muted, 0.24);
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.writing-list--archive {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.writing-entry--archive {
+  display: block;
+  padding: 1.05rem 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+
+  &[hidden] {
+    display: none;
+  }
+
+  &.writing-entry--has-image {
+    display: grid;
+    grid-template-columns: 72px minmax(0, 1fr);
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .writing-entry__img-wrap {
+    grid-column: 1;
+    grid-row: 1;
+    display: block;
+    position: relative;
+    align-self: stretch;
+    width: 72px;
+  }
+
+  .writing-entry__body {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .writing-entry__links--archive {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 0.32rem;
+  }
+
+  .writing-entry__img {
+    position: absolute;
+    inset: 0;
+    width: 72px;
+    height: 100%;
+    min-height: 0;
+  }
+
+  .writing-entry__img--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba($morandi-ink, 0.62);
+    font-family: $writing-title-stack;
+    font-size: 1.55rem;
+    letter-spacing: 0.05em;
+    background:
+      linear-gradient(135deg, rgba($morandi-oat, 0.88), rgba($morandi-grey-soft, 0.42)),
+      radial-gradient(circle at 20% 18%, rgba($morandi-clay, 0.16), transparent 34%),
+      radial-gradient(circle at 82% 76%, rgba($morandi-blue, 0.16), transparent 38%);
+    box-shadow: inset 0 0 0 1px rgba($morandi-muted, 0.18);
+
+    * {
+      font-family: inherit;
+    }
+  }
+
+  .writing-entry__img--placeholder-science {
+    background:
+      linear-gradient(135deg, rgba($morandi-blue-soft, 0.78), rgba($morandi-grey-soft, 0.4)),
+      radial-gradient(circle at 28% 24%, rgba($morandi-blue-deep, 0.16), transparent 34%);
+  }
+
+  .writing-entry__img--placeholder-story {
+    background:
+      linear-gradient(135deg, rgba($morandi-rose, 0.2), rgba($morandi-grey-soft, 0.42)),
+      radial-gradient(circle at 74% 28%, rgba($morandi-clay, 0.16), transparent 36%);
+  }
+
+  .writing-entry__img--placeholder-journal {
+    background:
+      linear-gradient(135deg, rgba($morandi-oat, 0.9), rgba($morandi-stone, 0.38)),
+      radial-gradient(circle at 24% 76%, rgba($morandi-sage, 0.18), transparent 34%);
+  }
+
+  .writing-entry__meta {
+    margin-bottom: 0.35rem;
+  }
+
+  .writing-entry__text {
+    margin-bottom: 0.35rem;
+  }
+}
+
+.writing-entry--feature-banner {
+  padding: 0;
+  margin: 1.05rem 0 1.35rem;
+  border-bottom: 0;
+}
+
+.writing-entry__feature-banner {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 10.5rem;
+  max-height: 13.5rem;
+  overflow: hidden;
+  color: inherit;
+  text-decoration: none;
+  background-image:
+    linear-gradient(90deg, rgba($morandi-ink, 0.18), rgba($morandi-ink, 0.02) 58%, rgba($morandi-ink, 0.14)),
+    var(--writing-banner-image);
+  background-position: center;
+  background-size: cover;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 1px rgba($morandi-muted, 0.14), 0 1px 6px $shadow-faint;
+  aspect-ratio: 24 / 7;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+.writing-entry__feature-panel {
+  position: absolute;
+  right: 0.8rem;
+  bottom: 0.8rem;
+  width: calc(100% - 2rem);
+  max-width: 32rem;
+  padding: 0.72rem 0.88rem 0.8rem;
+  background: $site-bg;
+  border-left: 2px solid $overlay-clay-soft;
+  box-shadow: 0 2px 12px rgba($morandi-ink, 0.16);
+  transition: transform 0.2s ease;
+
+  .writing-entry__feature-banner:hover & {
+    transform: translateY(-2px);
+  }
+
+  .writing-entry__kicker {
+    margin-bottom: 0.34rem;
+  }
+
+  .writing-entry__title {
+    margin-bottom: 0.28rem;
+    font-size: 1.34em;
+    text-decoration: underline;
+    text-decoration-color: rgba($morandi-clay-deep, 0.42);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  .writing-entry__text {
+    margin-bottom: 0;
+  }
+}
+
+.writing-entry__kicker {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 0.24rem;
+}
+
+.writing-entry__date {
+  flex: 0 0 auto;
+  color: $morandi-muted-soft;
+  font-family: 'Mononoki', monospace;
+  font-size: 0.72em;
+  line-height: 1;
+}
+
+@media (max-width: 560px) {
+  .writing-filter-strip {
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .writing-filter-btn {
+    flex: 0 0 auto;
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+  }
+
+  .writing-controls-row {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  .writing-luck-btn {
+    align-self: flex-end;
+  }
+
+  .writing-pagination {
+    width: 95%;
+    margin-bottom: 0.9em;
+  }
+
+  .writing-entry--archive {
+    &.writing-entry--has-image {
+      grid-template-columns: 58px minmax(0, 1fr);
+      gap: 0.75rem;
+    }
+
+    .writing-entry__img {
+      width: 58px;
+    }
+
+    .writing-entry__img-wrap {
+      width: 58px;
+    }
+  }
+
+  .writing-entry__feature-banner {
+    min-height: 13.25rem;
+    max-height: none;
+    aspect-ratio: auto;
+  }
+
+  .writing-entry__feature-panel {
+    right: 0.7rem;
+    bottom: 0.7rem;
+    width: calc(100% - 1.4rem);
+    padding: 0.7rem 0.78rem 0.78rem;
+  }
+
+  .writing-entry__kicker {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.08rem;
+  }
+}
+
 // writing piece page — meta header for individual articles
 .writing-piece {
   .page__inner-wrap {
@@ -2733,12 +3673,12 @@ mark.thoughts-highlight {
     max-width: 24ch;
     margin-bottom: 1.35rem;
     color: $site-text;
-    font-family: 'Faculty Glyphic', 'Reforma 2018', Georgia, 'Times New Roman', $cjk-stack, serif;
+    font-family: $writing-title-stack;
     font-size: 2rem;
-    font-weight: normal;
+    font-weight: 500;
     text-decoration: none;
     text-transform: none;
-    letter-spacing: 0.045em;
+    letter-spacing: 0.014em;
     line-height: 1.12;
 
     @media (min-width: 700px) {
@@ -2753,6 +3693,13 @@ mark.thoughts-highlight {
   .page__title::after {
     width: 7rem;
     border-top-color: rgba($morandi-clay-deep, 0.24);
+  }
+
+  .page__title em {
+    font-family: $writing-title-italic-stack;
+    font-style: italic;
+    font-optical-sizing: auto;
+    letter-spacing: 0;
   }
 
   .page__content {
@@ -2956,8 +3903,136 @@ mark.thoughts-highlight {
   padding-top: 1rem;
   border-top: 1px solid $overlay-muted-soft;
   color: $site-text-muted;
+  font-family: $reforma-stack;
   font-size: 0.88rem;
   line-height: 1.58;
+}
+
+.page__content .source-note p {
+  margin: 0 0 0.55rem;
+}
+
+.page__content .source-note p:last-child {
+  margin-bottom: 0;
+}
+
+.page__content .source-note ul,
+.page__content .source-note ol {
+  margin: 0.45rem 0 0.65rem 1.15rem;
+  padding-left: 1rem;
+}
+
+.page__content .source-note li {
+  margin-bottom: 0.18rem;
+}
+
+.page__content .source-note li:last-child {
+  margin-bottom: 0;
+}
+
+.writing-piece-footer {
+  clear: both;
+  margin: 2.7rem 0 0;
+  padding-top: 1.15rem;
+  border-top: 1px solid $overlay-muted-soft;
+  text-align: center;
+}
+
+.writing-piece-pagination {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.72rem;
+  float: none;
+  width: 100%;
+  margin: 0 0 0.85rem;
+  padding: 0;
+  border: 0;
+}
+
+.writing-piece-pagination .writing-piece-pagination__link,
+.writing-piece-pagination .writing-piece-pagination__link:first-child,
+.writing-piece-pagination .writing-piece-pagination__link:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  float: none;
+  width: auto;
+  min-height: 4.35rem;
+  margin-left: 0;
+  padding: 0.68rem 0.86rem 0.72rem;
+  color: $site-text-muted;
+  background: transparent;
+  border: 1px solid rgba($morandi-muted, 0.34);
+  border-radius: 3px;
+  box-shadow: none;
+  font-family: 'Mononoki', monospace;
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+  line-height: 1.24;
+  text-align: left;
+  text-decoration: none;
+
+  &:hover {
+    color: $site-text;
+    background: rgba($morandi-oat, 0.42);
+  }
+}
+
+.writing-piece-pagination__link--next {
+  grid-column: 2;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.writing-piece-pagination__label,
+.writing-piece-pagination__title,
+.writing-piece-pagination__title * {
+  font-family: 'Mononoki', monospace;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.writing-piece-pagination__label {
+  display: block;
+  margin-bottom: 0.23rem;
+  color: $morandi-clay-deep;
+  font-size: 0.74rem;
+  text-transform: lowercase;
+}
+
+.writing-piece-pagination__title {
+  display: block;
+  font-size: 0.92rem;
+  line-height: 1.32;
+}
+
+.writing-piece-home-link {
+  display: inline-block;
+  color: $site-text-muted;
+  font-family: 'Mononoki', monospace;
+  font-size: 0.8rem;
+  font-style: italic;
+  line-height: 1.3;
+  text-decoration-color: rgba($morandi-clay-deep, 0.36);
+  text-decoration-thickness: 1px;
+  text-transform: lowercase;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: $site-text;
+  }
+}
+
+@media (max-width: 560px) {
+  .writing-piece-pagination {
+    grid-template-columns: 1fr;
+  }
+
+  .writing-piece-pagination__link--next {
+    grid-column: auto;
+  }
 }
 
 // -------------------------
@@ -3048,10 +4123,10 @@ mark.thoughts-highlight {
 }
 
 .writing-entry--fiction .writing-entry__title {
-  font-family: $reforma-stack;
+  font-family: $writing-title-stack;
   font-size: 1.18em;
-  font-weight: normal;
-  letter-spacing: 0.01em;
+  font-weight: 500;
+  letter-spacing: 0.012em;
 }
 
 // Journal — vertical cards, 2-col on desktop
@@ -3429,6 +4504,35 @@ mark.thoughts-highlight {
     border-top-color: rgba(#9b928a, 0.15);
   }
 
+  .writing-piece-footer {
+    border-top-color: rgba(#9b928a, 0.15);
+  }
+
+  .writing-piece-pagination .writing-piece-pagination__link,
+  .writing-piece-pagination .writing-piece-pagination__link:first-child,
+  .writing-piece-pagination .writing-piece-pagination__link:last-child {
+    color: #b8b0a6;
+    border-color: rgba(#9b928a, 0.22);
+
+    &:hover {
+      color: #e8e2db;
+      background: rgba(#3a3530, 0.38);
+    }
+  }
+
+  .writing-piece-pagination__label {
+    color: #c49a85;
+  }
+
+  .writing-piece-home-link {
+    color: #9b928a;
+    text-decoration-color: rgba(#c49a85, 0.35);
+
+    &:hover {
+      color: #e8e2db;
+    }
+  }
+
   .h-card--footer .author__content {
     color: #9b928a;
   }
@@ -3535,6 +4639,15 @@ mark.thoughts-highlight {
     color: #9b928a;
   }
 
+  .thoughts-pagination__input {
+    color: #b8b0a6;
+    &:hover,
+    &:focus {
+      border-color: rgba(#9b928a, 0.28);
+      color: #e8e2db;
+    }
+  }
+
   .thoughts-pagination__range {
     color: #9b928a;
   }
@@ -3621,31 +4734,45 @@ mark.thoughts-highlight {
   .album-tile__toggle { color: #6a6360; &:hover { color: #90a4b0; } }
   .album-tile:hover { background: rgba(255, 255, 255, 0.025); }
 
-  .album-wall__search-input {
-    background: rgba(#2a2724, 0.5);
-    border-color: rgba(#9b928a, 0.22);
-    color: #e8e2db;
-    &::placeholder { color: #6a6360; }
-    &:focus { border-color: #c49a85; }
+  .album-wall__filter-strip {
+    background: rgba(#3a3530, 0.82);
   }
-  .album-wall__search-enter { color: #5a5450; }
-  .album-wall__search-clear { color: #6a6360; &:hover { color: #e8e2db; } }
+  .album-wall__filter-pill {
+    background: #2a2724;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  .album-wall__filter-btn {
+    color: #b8b0a6;
+    &.active { color: #e8e2db; }
+    &:hover { color: #d4a88f; }
+  }
+
+  .album-wall__search-input {
+    background: rgba(#3a3530, 0.6);
+    color: #ddd3c8;
+    border-color: rgba(#9b928a, 0.32);
+    &::placeholder { color: #9b928a; }
+  }
+  .album-wall__search-clear { color: #9b928a; &:hover { color: #ddd3c8; } }
   .album-wall__luck-btn {
-    color: #9b928a;
-    border-color: rgba(#9b928a, 0.22);
-    &:hover { color: #c49a85; border-color: rgba(#c49a85, 0.4); }
+    color: #90a4b0;
+    border-color: rgba(#90a4b0, 0.42);
+    background: rgba(#90a4b0, 0.12);
+    &:hover { color: #a5b5c5; border-color: rgba(#a5b5c5, 0.5); background: rgba(#90a4b0, 0.18); }
   }
   .album-wall__page-btn {
     color: #b8b0a6;
-    border-color: rgba(#9b928a, 0.22);
-    &:hover:not(:disabled) { color: #c49a85; border-color: rgba(#c49a85, 0.4); }
+    &:hover:not(:disabled) { color: #90a4b0; }
     &:disabled { color: #5a5450; }
   }
   .album-wall__page-info { color: #9b928a; }
   .album-wall__page-input {
     color: #b8b0a6;
-    border-color: rgba(#9b928a, 0.22);
-    &:focus { border-color: #c49a85; color: #c49a85; }
+    &:hover,
+    &:focus {
+      border-color: rgba(#9b928a, 0.28);
+      color: #e8e2db;
+    }
   }
   .album-wall__range { color: #9b928a; }
 
@@ -3701,6 +4828,15 @@ mark.thoughts-highlight {
     color: #e8e2db;
     a:hover { color: #d4a88f; }
   }
+  .writing-entry__title-zh-inline,
+  .writing-entry__title-zh-subtitle {
+    color: #9b928a;
+    text-decoration-color: rgba(#c49a85, 0.34);
+  }
+  .writing-entry__title--plain .writing-entry__title-zh-inline {
+    color: inherit;
+    text-decoration: none;
+  }
   .writing-entry__title-en {
     color: #9b928a;
   }
@@ -3714,8 +4850,91 @@ mark.thoughts-highlight {
     color: #a8b5a2;
     border-color: rgba(#a8b5a2, 0.3);
   }
+  .writing-entry__companion-link a {
+    color: #90a4b0;
+    text-decoration-color: rgba(#90a4b0, 0.34);
+  }
+  .writing-entry__companion-lede {
+    color: #9b928a;
+  }
+  .writing-entry__feature-banner {
+    box-shadow: inset 0 0 0 1px rgba(#9b928a, 0.16), 0 1px 8px rgba(#000, 0.24);
+  }
+  .writing-entry__feature-panel {
+    background: #1c1917;
+    border-left-color: rgba(#c49a85, 0.34);
+    box-shadow: 0 2px 12px rgba(#000, 0.36);
+  }
   .writing-entry__img {
     box-shadow: 0 1px 5px $shadow-dark;
+  }
+  .writing-section-title {
+    color: #e8e2db;
+    &::after {
+      background: linear-gradient(90deg, rgba(#c49a85, 0.36), rgba(#c49a85, 0));
+    }
+  }
+  .writing-filter-strip {
+    background: rgba(#3a3530, 0.52);
+    box-shadow: inset 0 0 0 1px rgba(#9b928a, 0.08);
+  }
+  .writing-filter-pill {
+    background: #1c1917;
+    box-shadow: 0 1px 3px rgba(#000, 0.36);
+  }
+  .writing-filter-btn {
+    color: #9b928a;
+    &.active { color: #e8e2db; }
+    &:hover { color: #d4a88f; }
+  }
+  .writing-search-input {
+    color: #ddd3c8;
+    background: rgba(#3a3530, 0.6);
+    border-color: rgba(#9b928a, 0.32);
+    &::placeholder { color: #9b928a; }
+  }
+  .writing-search-clear {
+    color: #9b928a;
+    &:hover { color: #ddd3c8; }
+  }
+  .writing-search-wrap:focus-within .writing-search-enter {
+    color: #ddd3c8;
+  }
+  .writing-luck-btn {
+    color: #90a4b0;
+    background: rgba(#90a4b0, 0.12);
+    border-color: rgba(#90a4b0, 0.42);
+    &:hover:not(:disabled) {
+      color: #a5b5c5;
+      background: rgba(#90a4b0, 0.18);
+      border-color: rgba(#a5b5c5, 0.5);
+    }
+  }
+  .writing-archive-status,
+  .writing-pagination__range,
+  .writing-pagination__status {
+    color: #9b928a;
+  }
+  .writing-pagination__btn {
+    color: #b8b0a6;
+    &:hover:not(:disabled) { color: #90a4b0; }
+    &:disabled { color: #5a5450; }
+  }
+  .writing-pagination__input {
+    color: #b8b0a6;
+    &:hover,
+    &:focus {
+      color: #e8e2db;
+      border-color: rgba(#9b928a, 0.28);
+    }
+  }
+  .writing-entry__img--placeholder {
+    color: rgba(#e8e2db, 0.62);
+    background:
+      linear-gradient(135deg, rgba(#2a2420, 0.8), rgba(#3a3530, 0.44)),
+      radial-gradient(circle at 20% 18%, rgba(#c49a85, 0.16), transparent 34%),
+      radial-gradient(circle at 82% 76%, rgba(#90a4b0, 0.14), transparent 38%);
+    box-shadow: inset 0 0 0 1px rgba(#9b928a, 0.15), 0 1px 5px $shadow-dark;
   }
   .writing-piece-meta {
     color: #7a7370;
@@ -3789,8 +5008,3 @@ mark.thoughts-highlight {
 html[data-theme="dark"] {
   @include dark-colors;
 }
-
-
-
-
-

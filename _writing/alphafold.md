@@ -1,8 +1,7 @@
 ---
 title: "AlphaFold, or how to fold graciously"
 type: "feature"
-outlet: "环球科学"
-outlet_en: "Scientific American China"
+outlet: "Scientific American China"
 date: 2020-12-02
 image: "/assets/images/writing/alphafold.jpg"
 section: "online"
@@ -97,32 +96,21 @@ Dill's third problem is the design problem: given a desired structure, can one c
 
 The fifty-year problem was always three problems wearing one name. AlphaFold has dispensed with the first, the one that consumed the most labour and the most careers. The second, the physical mechanism of folding, the one that would let biologists not merely predict but comprehend, remains open. The third, design, is advancing on its own terms. What AlphaFold achieved is not diminished by what it did not attempt. But the deeper question, the one Levinthal asked in that room in Illinois, the question of how a chain of amino acids finds its way home through a space larger than the universe, persists. That is the work that comes next.
 
-## References
+<div class="source-note" markdown="1">
+**References**
 
-Anfinsen, C. B. (1973). Principles that govern the folding of protein chains. *Science*, 181(4096), 223-230.
+1. Anfinsen, C. B. (1973). Principles that govern the folding of protein chains. *Science*, 181(4096), 223-230.
+2. Baker, D. (2019). What has de novo protein design taught us about protein folding and biophysics? *Protein Science*, 28(4), 678-683.
+3. Bryngelson, J. D. & Wolynes, P. G. (1987). Spin glasses and the statistical mechanics of protein folding. *Proceedings of the National Academy of Sciences*, 84(21), 7524-7528.
+4. Dill, K. A. & Chan, H. S. (1997). From Levinthal to pathways to funnels. *Nature Structural Biology*, 4(1), 10-19.
+5. Dill, K. A. & MacCallum, J. L. (2012). The protein-folding problem, 50 years on. *Science*, 338(6110), 1042-1046.
+6. Jumper, J. et al. (2021). Highly accurate protein structure prediction with AlphaFold. *Nature*, 596(7873), 583-589.
+7. Leopold, P. E., Montal, M. & Onuchic, J. N. (1992). Protein folding funnels: A kinetic approach to the sequence-structure relationship. *Proceedings of the National Academy of Sciences*, 89(18), 8721-8725.
+8. Levinthal, C. (1969). How to fold graciously. In *Mossbauer Spectroscopy in Biological Systems: Proceedings of a Meeting Held at Allerton House, Monticello, Illinois* (pp. 22-24).
+9. Senior, A. W. et al. (2020). Improved protein structure prediction using potentials from deep evolution. *Nature*, 577(7792), 706-710.
+10. Wolynes, P. G., Onuchic, J. N. & Thirumalai, D. (1995). Navigating the folding routes. *Science*, 267(5204), 1619-1620.
+11. Abramson, J. et al. (2024). Accurate structure prediction of biomolecular interactions with AlphaFold 3. *Nature*, 630(8016), 493-500.
+12. Varadi, M. et al. (2022). AlphaFold Protein Structure Database: Massively expanding the structural coverage of protein-sequence space with high-accuracy models. *Nucleic Acids Research*, 50(D1), D439-D444.
 
-Baker, D. (2019). What has de novo protein design taught us about protein folding and biophysics? *Protein Science*, 28(4), 678-683.
-
-Bryngelson, J. D. & Wolynes, P. G. (1987). Spin glasses and the statistical mechanics of protein folding. *Proceedings of the National Academy of Sciences*, 84(21), 7524-7528.
-
-Dill, K. A. & Chan, H. S. (1997). From Levinthal to pathways to funnels. *Nature Structural Biology*, 4(1), 10-19.
-
-Dill, K. A. & MacCallum, J. L. (2012). The protein-folding problem, 50 years on. *Science*, 338(6110), 1042-1046.
-
-Jumper, J. et al. (2021). Highly accurate protein structure prediction with AlphaFold. *Nature*, 596(7873), 583-589.
-
-Leopold, P. E., Montal, M. & Onuchic, J. N. (1992). Protein folding funnels: A kinetic approach to the sequence-structure relationship. *Proceedings of the National Academy of Sciences*, 89(18), 8721-8725.
-
-Levinthal, C. (1969). How to fold graciously. In *Mossbauer Spectroscopy in Biological Systems: Proceedings of a Meeting Held at Allerton House, Monticello, Illinois* (pp. 22-24).
-
-Senior, A. W. et al. (2020). Improved protein structure prediction using potentials from deep evolution. *Nature*, 577(7792), 706-710.
-
-Wolynes, P. G., Onuchic, J. N. & Thirumalai, D. (1995). Navigating the folding routes. *Science*, 267(5204), 1619-1620.
-
-Abramson, J. et al. (2024). Accurate structure prediction of biomolecular interactions with AlphaFold 3. *Nature*, 630(8016), 493-500.
-
-Varadi, M. et al. (2022). AlphaFold Protein Structure Database: Massively expanding the structural coverage of protein-sequence space with high-accuracy models. *Nucleic Acids Research*, 50(D1), D439-D444.
-
----
-
-*Originally published in Chinese on [环球科学 (Scientific American China)](https://mp.weixin.qq.com/s/un5RPtoRn5mlUEkn2-BA1A), December 2020.*
+*Originally published in Chinese on [Scientific American China](https://mp.weixin.qq.com/s/un5RPtoRn5mlUEkn2-BA1A), December 2020.*
+</div>

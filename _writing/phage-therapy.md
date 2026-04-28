@@ -1,8 +1,7 @@
 ---
 title: "Phage therapy's long fall and unlikely revival"
 type: "feature"
-outlet: "环球科学"
-outlet_en: "Scientific American China"
+outlet: "Scientific American China"
 date: 2021-03-15
 image: "/assets/images/writing/phage-therapy.jpg"
 section: "online"
@@ -87,6 +86,5 @@ The name persists: the George Eliava Institute. Billions of minuscule phages onc
 
 The blank circles on the culture plate have not changed. What has changed is the distance between what those circles promise and what the institutions surrounding them have managed to deliver.
 
----
-
-*Originally published in Chinese on [环球科学 (Scientific American China)](https://mp.weixin.qq.com/s/162wBMyFCG2z4BZwFjTxAQ), March 2021. English version updated and expanded, April 2026.*
+*Originally published in Chinese on [Scientific American China](https://mp.weixin.qq.com/s/162wBMyFCG2z4BZwFjTxAQ), March 2021. English version updated and expanded, April 2026.*
+{: .source-note}

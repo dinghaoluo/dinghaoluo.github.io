@@ -85,6 +85,5 @@ Gradually, Tamako reached an accommodation with the nearsightedness and the tinn
 
 Tamako leapt, and shattered the lake's mirror to pieces.
 
----
-
 *Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/nNYa7YgbiJYZPzMolmqkMw), September 2018.*
+{: .source-note}

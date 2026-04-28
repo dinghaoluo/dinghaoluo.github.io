@@ -7,6 +7,14 @@
 {%- if include.show_title_zh == false -%}
   {%- assign show_title_zh = false -%}
 {%- endif -%}
+{%- assign show_date = true -%}
+{%- if include.show_date == false -%}
+  {%- assign show_date = false -%}
+{%- endif -%}
+{%- assign show_isbn = true -%}
+{%- if include.show_isbn == false -%}
+  {%- assign show_isbn = false -%}
+{%- endif -%}
 {%- assign type_class = include.type_class | default: "writing-piece-meta__type" -%}
 {%- assign date_format = include.date_format | default: "%-d %b %Y" -%}
 {%- assign kind = item.type | default: item.category | default: "writing" -%}
@@ -19,7 +27,7 @@
   <span>{% if meta_started %} · {% endif %}{{ item.title_zh }}</span>
   {%- assign meta_started = true -%}
 {%- endif -%}
-{%- if item.date -%}
+{%- if show_date and item.date -%}
   <span>{% if meta_started %} · {% endif %}{{ item.date | date: date_format }}</span>
   {%- assign meta_started = true -%}
 {%- endif -%}
@@ -38,6 +46,10 @@
   <span>{% if meta_started %} · {% endif %}{{ item.outlet }}{% if item.outlet_en %} ({{ item.outlet_en }}){% endif %}</span>
   {%- assign meta_started = true -%}
 {%- endif -%}
-{%- if item.isbn -%}
+{%- if item.issue -%}
+  <span>{% if meta_started %} · {% endif %}{{ item.issue }}</span>
+  {%- assign meta_started = true -%}
+{%- endif -%}
+{%- if show_isbn and item.isbn -%}
   <span>{% if meta_started %} · {% endif %}ISBN {{ item.isbn }}</span>
 {%- endif -%}

@@ -3,6 +3,10 @@ _site
 .jekyll-cache
 .jekyll-metadata
 /vendor
-.claude/worktrees/
+.claude/
+font-trials/
+factcheck_*.md
+*_factcheck_sweep_*.md
+music_discography_pass_summary.md
 **/.DS_Store
 .codex

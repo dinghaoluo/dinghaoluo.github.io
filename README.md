@@ -43,10 +43,9 @@ These folders are tracked for convenience, but they are not part of the public w
 
 - `styleguides/` contains writing-voice and editing guidance for authoring reviews and site copy.
 - `_docs/` contains implementation notes, stylesheet references, and design records.
-- `font-trials/` contains typography experiments and exported comparison material.
 - `scripts/` contains local utility scripts, such as waveform generation for audio assets.
 
-Before the site is treated as fully live/public, consider moving these authoring-only files to a private notes repo or local workspace. They are useful for writing and maintenance, but they are not meant for readers browsing the website.
+Before the site is treated as fully live/public, consider moving these authoring-only files to a private notes repo or local workspace. They are useful for writing and maintenance, but they are not meant for readers browsing the website. Local typography experiments should stay outside the tracked tree, or in an ignored `font-trials/` folder.
 
 ## Local Development
 

@@ -1,8 +1,7 @@
 ---
 title: "Ketamine's second life as an antidepressant"
 type: "feature"
-outlet: "环球科学"
-outlet_en: "Scientific American China"
+outlet: "Scientific American China"
 date: 2020-10-20
 image: "/assets/images/writing/ketamine-depression.jpg"
 section: "online"
@@ -71,16 +70,13 @@ Given the vast number of people affected by depression, yet also the multiplicit
 > The compound is real.<br>The relief it offers is real.<br>And the harm it can do is real.
 {: .pullquote .pullquote--compact}
 
----
+<div class="source-note" markdown="1">
+**References**
 
-*Originally published in Chinese on [环球科学 (Scientific American China)](https://mp.weixin.qq.com/s/ANf9dzf1U49uRRSKh5eL_A), October 2020. Revised and expanded, April 2026.*
+1. Zanos, P., Moaddel, R., Morris, P.J. et al. NMDAR inhibition-independent antidepressant actions of ketamine metabolites. *Nature* 533, 481–486 (2016).
+2. Williams, N.R., Heifets, B.D., Blasey, C. et al. Attenuation of antidepressant effects of ketamine by opioid receptor antagonism. *American Journal of Psychiatry* 175(12), 1205–1215 (2018).
+3. FDA Drug Safety Communication: FDA warns about serious risks with compounded ketamine products. October 2023.
+4. Utah Senate Bill 0166, Ketamine Clinics Licensure Act. Enacted 2024.
 
-## References
-
-Zanos, P., Moaddel, R., Morris, P.J. et al. NMDAR inhibition-independent antidepressant actions of ketamine metabolites. *Nature* 533, 481–486 (2016).
-
-Williams, N.R., Heifets, B.D., Blasey, C. et al. Attenuation of antidepressant effects of ketamine by opioid receptor antagonism. *American Journal of Psychiatry* 175(12), 1205–1215 (2018).
-
-FDA Drug Safety Communication: FDA warns about serious risks with compounded ketamine products. October 2023.
-
-Utah Senate Bill 0166, Ketamine Clinics Licensure Act. Enacted 2024.
+*Originally published in Chinese on [Scientific American China](https://mp.weixin.qq.com/s/ANf9dzf1U49uRRSKh5eL_A), October 2020. Revised and expanded, April 2026.*
+</div>

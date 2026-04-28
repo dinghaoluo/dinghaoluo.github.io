@@ -18,9 +18,12 @@ Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.
 <h2 id="thoughts"><a href="/thoughts/">thoughts :)</a></h2>
 
 {% assign all_thoughts = site.data.thoughts | sort: 'posted' | reverse %}
+{% assign book_thoughts = all_thoughts | where: 'type', 'book' %}
+{% assign game_thoughts = all_thoughts | where: 'type', 'game' %}
 
-<div class="home-covers" aria-hidden="true">
-  {% for t in all_thoughts limit:40 %}{% if t.image %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
+<div class="home-thoughts-block home-thoughts-block--books" markdown="1">
+<div class="home-covers home-covers--books" aria-hidden="true" data-count="12" data-mobile-count="10">
+  {% for t in book_thoughts %}{% if t.image %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
 </div>
 
 Reading was probably my favourite pastime from childhood through my teenage years: the first durable way I found of making sense of the world as a kid. The early years of my PhD (regrettably) interrupted the habit for a while. Returning to books gave me back a method, a way of testing private feeling against politics, science, history, and fiction's strange talent for telling the truth sideways. The writers I return to most, for now, are Mircea Cărtărescu and Thomas Pynchon. These are a few books I love, not a canon; more like coordinates for the way I read now, and possible doorways if one of them is new to you.
@@ -30,7 +33,34 @@ Reading was probably my favourite pastime from childhood through my teenage year
 - ***Capitalist Realism*** (2009) by Mark Fisher
 - *and if you read Chinese...* my translation of ***Entangled Life*** (2020) by Merlin Sheldrake
 
-[→ thoughts](/thoughts/)
+<p class="home-thoughts-links"><a href="/thoughts/?type=book">→ books</a></p>
+</div>
+
+<div class="home-thoughts-block home-thoughts-block--screen" markdown="1">
+<div class="home-covers home-covers--screen" aria-hidden="true" data-count="12" data-tablet-count="9" data-mobile-count="10">
+  {% for t in all_thoughts %}{% if t.image and t.type == 'film' %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% if t.image and t.type == 'tv' %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
+</div>
+
+Films and television came later than books, but they fit the same habit from another angle: watching rhythm, framing, bodies, rooms, and cuts put pressure on an idea before the explanation arrives. I write about them when a scene keeps its shape afterwards, whether that is a face held too long, a joke with a political aftertaste, or a structure that quietly tells on the world around it.
+
+- ***Interstellar*** (2014) dir. Christopher Nolan
+- ***The Wire*** Season 4 (2006) created by David Simon
+
+<p class="home-thoughts-links"><a href="/thoughts/?type=film">→ films</a> · <a href="/thoughts/?type=tv">→ tv</a></p>
+</div>
+
+<div class="home-thoughts-block home-thoughts-block--games" markdown="1">
+<div class="home-covers home-covers--games" aria-hidden="true" data-count="12" data-tablet-count="9" data-mobile-count="10">
+  {% for t in game_thoughts %}{% if t.image %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
+</div>
+
+Games are where the systems part of my brain gets least restrained: maps, loops, boss phases, knowledge-locks, buildcraft, and the exact point where interaction becomes thought rather than ornament. I am drawn to worlds that respond and to mechanics that carry more than the dialogue can say. I am less patient with games that mistake volume for life.
+
+- ***Outer Wilds*** (2019) by Mobius Digital
+- ***Elden Ring*** (2022) by FromSoftware
+
+<p class="home-thoughts-links"><a href="/thoughts/?type=game">→ games</a></p>
+</div>
 
 ---
 

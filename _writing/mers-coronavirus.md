@@ -1,8 +1,7 @@
 ---
 title: "MERS, drought, and the camel reservoir"
 type: "feature"
-outlet: "环球科学"
-outlet_en: "Scientific American China"
+outlet: "Scientific American China"
 date: 2021-02-01
 image: "/assets/images/writing/mers-coronavirus.jpg"
 section: "online"
@@ -65,6 +64,5 @@ Scientists are doing what they can to prevent the next outbreak: deploying more 
 
 And on those long, hungry journeys, the herders still have no choice but to eat the raw flesh of camels that have died of thirst.
 
----
-
-*Originally published in Chinese on [环球科学 (Scientific American China)](https://mp.weixin.qq.com/s/-Wa20frfTtu63VU-Yg50Gg), February 2021.*
+*Originally published in Chinese on [Scientific American China](https://mp.weixin.qq.com/s/-Wa20frfTtu63VU-Yg50Gg), February 2021.*
+{: .source-note}

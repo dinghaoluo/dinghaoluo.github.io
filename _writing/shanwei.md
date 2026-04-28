@@ -25,6 +25,5 @@ Everything changes. My slow lips and vocal cords chase the archaic phonemes of T
 > This sea, this sea will not change.
 {: .pullquote .pullquote--compact}
 
----
-
 *Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/rfbpbfc0f3QyMcz7vRYq9w), July 2020.*
+{: .source-note}

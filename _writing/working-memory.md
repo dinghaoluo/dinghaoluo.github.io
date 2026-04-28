@@ -2,8 +2,7 @@
 title: "Working memory without the scalpel"
 type: "feature"
 byline: "Lindsay Li & Dinghao Luo"
-outlet: "神经现实"
-outlet_en: "Neu-Reality"
+outlet: "Neu-Reality"
 date: 2021-03-16
 image: "/assets/images/writing/working_memory.jpg"
 section: "online"
@@ -64,9 +63,8 @@ The Luo Huan laboratory has thus developed a non-invasive 'dynamic perturbation'
 > A way to reach inside the skull without opening it.
 {: .pullquote .pullquote--compact}
 
----
-
-### References
+<div class="source-note" markdown="1">
+**References**
 
 1. Cowan, N. 'The magical number 4 in short-term memory: a reconsideration of mental storage capacity.' *Behavioral and Brain Sciences*, 2001, 24: 87–185.
 2. Miller, G. A. 'The magical number seven, plus or minus two: some limits on our capacity for processing information.' *Psychological Review*, 1956, 63: 81–97.
@@ -74,8 +72,5 @@ The Luo Huan laboratory has thus developed a non-invasive 'dynamic perturbation'
 4. Sreenivasan, K. K. and D'Esposito, M. 'The what, where and how of delay activity.' *Nature Reviews Neuroscience*, 2019, 20(8): 466–481.
 5. Li, J., Huang, Q., Han, Q., Mi, Y., and Luo, H. 'Temporally coherent perturbation of neural dynamics during retention alters human multi-item working memory.' *Progress in Neurobiology*, 2021.
 
----
-
-*Cover illustration by COCO for Neu-Reality.*
-
-*Originally published in Chinese on [Neu-Reality (神经现实)](https://mp.weixin.qq.com/s/5g1V5Mrtwy2rhFLkOj6N4g), March 2021.*
+*Originally published in Chinese on [Neu-Reality](https://mp.weixin.qq.com/s/5g1V5Mrtwy2rhFLkOj6N4g), March 2021.*
+</div>

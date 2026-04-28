@@ -1,6 +1,14 @@
 {% assign albums = site.data.music_thoughts | sort: 'posted' | reverse %}
 
 <div class="album-wall" id="album-wall">
+  <div class="album-wall__filter-strip" id="album-wall-filter-strip">
+    <div class="album-wall__filter-pill" id="album-wall-filter-pill"></div>
+    <button class="album-wall__filter-btn active" data-filter="all" type="button">ALL</button>
+    <button class="album-wall__filter-btn" data-filter="prog-art" type="button" aria-label="prog/art rock"><span class="album-wall__filter-label-full">prog/art rock</span><span class="album-wall__filter-label-short">prog/art</span></button>
+    <button class="album-wall__filter-btn" data-filter="jazz" type="button">jazz</button>
+    <button class="album-wall__filter-btn" data-filter="prog-metal" type="button">prog metal</button>
+  </div>
+
   <div class="album-wall__controls">
     <div class="album-wall__search-wrap">
       <input
@@ -17,18 +25,19 @@
     <button class="album-wall__luck-btn" id="album-wall-luck" type="button">try your luck</button>
   </div>
 
-  <div class="album-wall__pagination album-wall__pagination--top" id="album-wall-pagination-top" hidden>
-    <button class="album-wall__page-btn album-wall__prev" disabled>&larr;</button>
-    <span class="album-wall__page-info"><input type="number" class="album-wall__page-input" value="1" min="1" aria-label="Go to page"> / <span class="album-wall__total-pages">1</span></span>
-    <button class="album-wall__page-btn album-wall__next">&rarr;</button>
+  <nav class="album-wall__pagination album-wall__pagination--top" id="album-wall-pagination-top" aria-label="Pagination" hidden>
     <span class="album-wall__range"></span>
-  </div>
+    <button class="album-wall__page-btn album-wall__prev" type="button" aria-label="Previous page" disabled>&lsaquo;</button>
+    <span class="album-wall__page-info"><input type="number" class="album-wall__page-input" value="1" min="1" aria-label="Go to page"> / <span class="album-wall__total-pages">1</span></span>
+    <button class="album-wall__page-btn album-wall__next" type="button" aria-label="Next page">&rsaquo;</button>
+  </nav>
 
   <div class="album-wall__grid" id="album-wall-grid">
     {% for album in albums %}
+    {% assign album_id = album.slug | default: album.title | slugify %}
     <div
       class="album-tile"
-      id="{{ album.title | slugify }}"
+      id="{{ album_id }}"
       data-title="{{ album.title | escape }}"
       data-artist="{{ album.creator | escape }}"
       data-genre="{{ album.genre | default: '' | escape }}"
@@ -61,10 +70,9 @@
     {% endfor %}
   </div>
 
-  <div class="album-wall__pagination album-wall__pagination--bottom" hidden>
-    <button class="album-wall__page-btn album-wall__prev" disabled>&larr;</button>
+  <nav class="album-wall__pagination album-wall__pagination--bottom" aria-label="Pagination" hidden>
+    <button class="album-wall__page-btn album-wall__prev" type="button" aria-label="Previous page" disabled>&lsaquo;</button>
     <span class="album-wall__page-info"><input type="number" class="album-wall__page-input" value="1" min="1" aria-label="Go to page"> / <span class="album-wall__total-pages">1</span></span>
-    <button class="album-wall__page-btn album-wall__next">&rarr;</button>
-    <span class="album-wall__range"></span>
-  </div>
+    <button class="album-wall__page-btn album-wall__next" type="button" aria-label="Next page">&rsaquo;</button>
+  </nav>
 </div>

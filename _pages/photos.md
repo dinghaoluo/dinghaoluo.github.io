@@ -5,7 +5,7 @@ permalink: /photos/
 title: "photos"
 ---
 
-*Proof that I sometimes look up from the page, usually because the light made me stop for a second.*
+*Fieldwork, travel, Cambridge light, Florida rain, and a few ordinary scenes that made walking past feel wrong.*
 
 <!--
   To add photos later:
