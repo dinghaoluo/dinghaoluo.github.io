@@ -18,7 +18,7 @@
 - title: "The Deserters"
   title_en: "Déserter"
   type: "book"
-  creator: "Mathias Énard, trans. Charlotte Mandell"
+  creator: "Mathias Énard, trans. Charlotte Mandell (EN)"
   creator_role: "by"
   year: 2023
   eval: "meh..."
@@ -103,7 +103,7 @@
 
 - title: "The Prose Edda"
   type: "book"
-  creator: "Snorri Sturluson, trans. Jesse L. Byock"
+  creator: "Snorri Sturluson, trans. Jesse L. Byock (EN)"
   creator_role: "by"
   year: 1220
   eval: "liked"
@@ -155,7 +155,7 @@
 
 - title: "Solenoid"
   type: "book"
-  creator: "Mircea Cărtărescu, trans. Sean Cotter"
+  creator: "Mircea Cărtărescu, trans. Sean Cotter (EN)"
   creator_role: "by"
   year: 2015
   eval: "loved"
@@ -225,7 +225,7 @@
 - title: "Waiting for Godot"
   title_en: "En attendant Godot"
   type: "book"
-  creator: "Samuel Beckett, trans. Samuel Beckett"
+  creator: "Samuel Beckett, trans. Samuel Beckett (EN)"
   creator_role: "by"
   year: 1952
   eval: "loved"
@@ -266,7 +266,7 @@
 
 - title: "Sátántangó"
   type: "book"
-  creator: "László Krasznahorkai, trans. George Szirtes"
+  creator: "László Krasznahorkai, trans. George Szirtes (EN)"
   creator_role: "by"
   year: 1985
   eval: "loved"
@@ -430,7 +430,7 @@
 - title: "Stolen"
   title_en: "Stöld"
   type: "book"
-  creator: "Ann-Helén Laestadius, trans. Rachel Willson-Broyles"
+  creator: "Ann-Helén Laestadius, trans. Rachel Willson-Broyles (EN)"
   creator_role: "by"
   year: 2021
   eval: "meh..."
@@ -501,7 +501,7 @@
 - title: "The Outsider"
   title_en: "L'Étranger"
   type: "book"
-  creator: "Albert Camus, trans. Joseph Laredo"
+  creator: "Albert Camus, trans. Joseph Laredo (EN)"
   creator_role: "by"
   year: 1942
   eval: "loved"
@@ -641,7 +641,7 @@
 - title: "When We Cease to Understand the World"
   title_en: "Un verdor terrible"
   type: "book"
-  creator: "Benjamín Labatut, trans. Adrian Nathan West"
+  creator: "Benjamín Labatut, trans. Adrian Nathan West (EN)"
   creator_role: "by"
   year: 2020
   eval: "loved"
@@ -894,7 +894,7 @@
 - title: "Reality Is Not What It Seems"
   title_en: "La realtà non è come ci appare"
   type: "book"
-  creator: "Carlo Rovelli, trans. Simon Carnell & Erica Segre"
+  creator: "Carlo Rovelli, trans. Simon Carnell & Erica Segre (EN)"
   creator_role: "by"
   year: 2014
   eval: "loved"
@@ -1127,7 +1127,7 @@
 - title: "The Elephant Vanishes"
   title_en: "象の消滅"
   type: "book"
-  creator: "Haruki Murakami, trans. Alfred Birnbaum & Jay Rubin"
+  creator: "Haruki Murakami, trans. Alfred Birnbaum & Jay Rubin (EN)"
   creator_role: "by"
   year: 1993
   eval: "liked"
