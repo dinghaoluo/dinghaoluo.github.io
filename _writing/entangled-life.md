@@ -1,6 +1,7 @@
 ---
 title: "Entangled Life"
 title_zh: "菌络万象"
+title_link: false
 type: "science"
 source_author: "Merlin Sheldrake"
 outlet: "后浪出版"
@@ -17,7 +18,7 @@ links:
 companion_link:
   label: "<em>The Paper</em> interview"
   url: "/writing/entangled-life/"
-companion_lede: "read my interview with Merlin Sheldrake"
+companion_lede: "read my interview with Merlin Sheldrake:"
 awards:
   - "2025 Pingshan Natural History Museum Book Award"
   - "Douban 2025 Top 10 Science & New Knowledge"
@@ -27,13 +28,13 @@ section: "print"
 excerpt: "My Chinese translation of Sheldrake's fungal world: mycelium, decomposition, symbiosis, and sentences that had to stay scientifically exact without losing their strangeness."
 ---
 
-<span class="dropcap">C</span>omplete Chinese translation of Merlin Sheldrake's *Entangled Life*, published by Houlang Press (后浪出版) in November 2024. Hardcover, 304 pages. ISBN 9787559677754.
+<span class="dropcap">M</span>y complete Chinese translation of Merlin Sheldrake's *Entangled Life*, published by Houlang Press (后浪出版) in November 2024. Hardcover, 304 pages. ISBN 9787559677754.
 
-The original won the 2021 Royal Society Science Book Prize and the Wainwright Prize for global conservation writing. The Chinese edition won the 2025 Pingshan Natural History Museum Book Award and was named to Douban's 2025 Top 10 Science & New Knowledge list, with an 8.7 rating from over 200 readers.
+The original won the 2021 Royal Society Science Book Prize and the Wainwright Prize for global conservation writing. The Chinese edition won the 2025 Pingshan Natural History Museum Book Award and was named to Douban's 2025 Top 10 Science & New Knowledge list.
 
 ---
 
-Sheldrake is a tropical ecologist whose PhD at Cambridge took him into Panama's rainforests to study underground fungal networks. *Entangled Life* follows him there and elsewhere, tracking truffles in Italy, studying slime moulds in British labs, as he traces how fungi have shaped life on Earth for over a billion years: decomposing rock into soil, degrading pollutants, surviving in space, producing food and medicine, manipulating animal behaviour, and threading mycorrhizal networks through the root systems of nearly every plant on the planet.
+Sheldrake is a tropical ecologist whose PhD at Cambridge took him into Panama's rainforests to study underground fungal networks. *Entangled Life* follows him there and elsewhere: tracking truffles in Italy, studying slime moulds in British labs, and tracing how fungi have shaped life on Earth for over a billion years by decomposing rock into soil, degrading pollutants, surviving in space, producing food and medicine, manipulating animal behaviour, and threading mycorrhizal networks through the root systems of nearly every plant on the planet.
 
 The translation took me from one kind of precision into another: from the technical vocabulary of mycology and ecology into Chinese sentences that had to carry the same weight without flattening the strangeness. Sheldrake's prose is vivid and scientifically rigorous in equal measure; the challenge was preserving both registers in a language where the conventions of science writing tend to flatten one or the other.
 
@@ -50,7 +51,7 @@ The translation took me from one kind of precision into another: from the techni
 
 ---
 
-Merlin Sheldrake's passion for fungi remains undiminished. Since publishing *Entangled Life* in 2020, he has continued venturing into Panama's rainforests, participating in documentary filming, conducting research, giving lectures, and exploring the intersection of music and mycology. In 2024, Houlang brought the book to Chinese readers as 《菌络万象》. On the one-year anniversary of the Chinese edition, we sat down with Sheldrake for a written exchange.
+Merlin Sheldrake's passion for fungi remains undiminished. Since publishing *Entangled Life* in 2020, he has continued venturing into Panama's rainforests, participating in documentary filming, conducting research, giving lectures, and exploring the intersection of music and mycology. In 2024, Houlang brought the book to Chinese readers as 《菌络万象》. On the one-year anniversary of the Chinese edition, we held a written exchange with Sheldrake.
 
 **Merlin Sheldrake:** I have always been fascinated by material transformation: hard wood becoming soil, honey becoming wine, raw dough rising into bread. How does all this happen? These questions repeatedly led me to fungi, which are metabolic virtuosos with astonishing abilities to reshape the world. Fungi can break down rocks and degrade kerosene, and without their decomposing powers, Earth would be buried under kilometres of dead organisms.
 
@@ -106,7 +107,7 @@ This connects to the word 'Life' in the English title. The most common diagram i
 
 **Zhou Songyan:** Hyphae and mycelial networks are hidden underground and almost impossible to see directly. Are there currently research efforts to visualise these structures?
 
-**Merlin:** Yes. I'm collaborating with a Dutch research team, working alongside excellent evolutionary biologists and biophysicists. They are developing new methods using robotics and high-resolution microscopy to image fungi, with the goal of enabling us to map entire fungal networks as they grow and to monitor patterns of material and information flow within them. The data will bring us remarkably close to the real life dynamics of fungi, and will enable us to ask entirely different questions about their growth and behaviour.
+**Merlin:** Yes. I'm collaborating with a Dutch research team, working alongside excellent evolutionary biologists and biophysicists. They are developing new methods using robotics and high-resolution microscopy to image fungi, with the goal of enabling us to map entire fungal networks as they grow and to monitor patterns of material and information flow within them. The data will bring us remarkably close to the real-life dynamics of fungi, and will enable us to ask entirely different questions about their growth and behaviour.
 
 ---
 

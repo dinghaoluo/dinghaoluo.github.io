@@ -15,13 +15,13 @@ She lied again over the meal. This time it was that the meat was overcooked, had
 
 I had planned to make a proper meal for her tomorrow. One bite of tonight's dinner and I began to worry. Fortunately the rice was slightly undercooked; otherwise there would have been nothing to criticise at all.
 
-After eating I did some arithmetic. This year I am eighteen and she is forty-seven. Simple subtraction tells me she was twenty-nine when she had me, belly swelling, telling my father that this child was a troublemaker who kept kicking. My father was thirty. He listened to the kicking inside her and said nothing.
+After eating I did some arithmetic. I am eighteen this year and she is forty-seven. Simple subtraction tells me she was twenty-nine when she had me, belly swelling, telling my father that this child was a troublemaker who kept kicking. My father was thirty. He listened to the kicking inside her and said nothing.
 
 The night I was born the moon was very full. She was twenty-nine; I was not yet a day old. She wondered what life with a child would be like. I thought about nothing, being a multicellular organism whose hippocampus had not finished developing.
 
-Looking back, every cell on this body is made from my parents' flesh and blood. Each pair of chromosomes crossed over during meiosis, exchanging lord knows how many base pairs to arrive at the current version of me. I doubt she understands any of this. But it is extraordinary.
+Looking back, every cell in this body is made from my parents' flesh and blood. Each pair of chromosomes crossed over during meiosis, exchanging lord knows how many base pairs to arrive at the current version of me. I doubt she understands any of this. But it is extraordinary.
 
-I think it was around year nine that I began to worry about her. She developed a lumbar disc herniation; one phone call from her to my dormitory and I was in tears. At the time I thought, how is this going to work. There was not much to be done. The usual advice: less bending, no heavy lifting. The sort of thing that helps no one.
+I think it was around year nine that I began to worry about her. She developed a lumbar disc herniation; one phone call from her to my dormitory and I was in tears. At the time I thought: how is this going to work? There was not much to be done. The usual advice: less bending, no heavy lifting. The sort of thing that helps no one.
 
 Then in year eleven, with a university in mind and a subject I loved, I started thinking about what would happen to her once I left. Her heart is not strong; her back has given trouble. If I could not get home from campus in time, what then. I do not know. I have never been a good liar, and I am not much good at comforting her either. All I know is to tell her that the internet says her condition is easy to recover from, that she just needs rest, while my own worry probably weighs heavier than hers.
 

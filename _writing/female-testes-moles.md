@@ -35,7 +35,7 @@ But there was a second alteration. A chromosomal inversion in the regulatory nei
 
 Mice carry similar sequences. Mundlos and colleagues engineered the equivalent CYP17A1 and FGF9 alterations in female mice. The edited animals showed elevated testosterone and increased muscle strength. A chromosomal inversion, a simple rearrangement within the genome's architecture, was sufficient to shift sex characteristics.
 
-The adaptive logic is plain. Moles live by digging: they forage underground and excavate their own dwellings. Males and females alike have powerful forelimbs and reduced hindlimbs, exceptionally strong forearm musculature, and, unlike most mammals, six digits on each forepaw. The testicular portion of the ovotestis secretes testosterone and androgens, both of which promote aggression and build muscle. The Dutch zoologist J. Haeck called the female mole's physique a 'neutral body type', a concession, he argued, to the brutality of subterranean life.
+The adaptive pressure is plain. Moles live by digging: they forage underground and excavate their own dwellings. Males and females alike have powerful forelimbs and reduced hindlimbs, exceptionally strong forearm musculature, and, unlike most mammals, six digits on each forepaw. The testicular portion of the ovotestis secretes testosterone and androgens, both of which promote aggression and build muscle. The Dutch zoologist J. Haeck called the female mole's physique a 'neutral body type', a concession, he argued, to the brutality of subterranean life.
 
 *[Figure: An intersex Northern Cardinal (left) and a wrasse (right). Credit: Shirley Caldwell (left); Aquarium Domain.com (right)]*
 

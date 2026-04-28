@@ -13,13 +13,13 @@ excerpt: "MERS kills one in three people it infects, spreads through camels in d
 
 *[Figure: Camels in Marsabit. Credit: Jacob Kushner]*
 
-<span class="dropcap">T</span>he first case of Middle East Respiratory Syndrome was confirmed in 2012. As of March 2026, health authorities had reported over 2,600 confirmed human cases worldwide and 959 deaths. For a pathogen that has not yet evolved efficient human-to-human transmission, those numbers are devastating. Scientists cannot rule out the possibility that it will one day spread widely between people. There is still no licensed vaccine or specific treatment against it, and as the climate warms, the likelihood of an outbreak rises sharply.
+<span class="dropcap">T</span>he first case of Middle East Respiratory Syndrome was confirmed in 2012. By early 2026, health authorities had reported over 2,600 confirmed human cases worldwide and over 950 deaths. For a pathogen that has not yet evolved efficient human-to-human transmission, those numbers are devastating. Scientists cannot rule out the possibility that it will one day spread widely between people. There is still no licensed vaccine or specific treatment against it, and as the climate warms, the likelihood of an outbreak rises sharply.
 
 Millicent Minayo was not the first person to be kicked by a camel. These seemingly docile mammals can turn remarkably aggressive; one need only try collecting a nasal swab from one. 'It will kick you,' Minayo said. 'It will spit at you. It will urinate on you.'
 
 'Anyone who comes into contact with them could become infected.'
 
-Minayo has spent years studying camels in Marsabit, northern Kenya. These animals, ambling across the desert, carry a nearly invisible danger: the Middle East Respiratory Syndrome coronavirus, MERS-CoV. It belongs to the same family as SARS-CoV-2, the virus behind the COVID-19 pandemic, but its case fatality rate exceeds 30 per cent. According to the World Health Organisation, approximately 35 per cent of confirmed MERS patients have died, against a figure below 3 per cent for SARS-CoV-2 in most countries.
+Minayo has spent years studying camels in Marsabit, northern Kenya. These animals, ambling across the desert, carry a nearly invisible danger: the Middle East Respiratory Syndrome coronavirus, MERS-CoV. It belongs to the same family as SARS-CoV-2, the virus behind the COVID-19 pandemic, but its case fatality rate exceeds 30 per cent. According to the World Health Organisation, approximately 35 per cent of confirmed MERS patients have died, far above the case fatality ratios reported for SARS-CoV-2 in most settings.
 
 MERS-CoV was first identified in Saudi Arabia in 2012, and within two years it had infected nearly 1,000 people and killed at least 300. The virus does not appear to spread between people without close contact. The most common route of transmission remains camel-to-human, which explains why outbreaks have concentrated in the Middle East.
 
@@ -27,7 +27,7 @@ MERS-CoV was first identified in Saudi Arabia in 2012, and within two years it h
 
 Analyses suggest MERS-CoV may stage a comeback, driven in large part by the conditions humanity has created for itself.
 
-Coronaviruses use animals as natural reservoirs. SARS-CoV-2, SARS-CoV, and MERS-CoV have all jumped from animals to humans through various routes. The most probable origin of SARS-CoV-2 is bats, and the same is true of MERS-CoV. A phylogenetic study in the *Journal of Virology* concluded that the viruses most closely related to MERS-CoV come from bats native to Africa, while serological data from camels indicate that these bat-derived viruses had been circulating in camel populations across the Middle East for over twenty years. Around 2010, camels, as intermediate hosts, began transmitting the virus to the people who raise them.
+Many coronaviruses use animals as natural reservoirs and can reach humans through intermediate hosts. For MERS-CoV, a bat origin remains the leading hypothesis. A phylogenetic study in the *Journal of Virology* concluded that the viruses most closely related to MERS-CoV come from bats native to Africa, while serological data from camels indicate that these bat-derived viruses had been circulating in camel populations across the Middle East for over twenty years. Around 2010, camels, as intermediate hosts, began transmitting the virus to the people who raise them.
 
 Once inside the human body, MERS-CoV infects epithelial cells lining the bronchi. Because of its similarity to SARS-CoV, immunologists initially assumed it used the same receptor, angiotensin-converting enzyme 2 (ACE2). When every drug designed to block that binding failed, scientists discovered MERS-CoV exploits a different receptor, dipeptidyl peptidase 4 (DPP4), which is remarkably conserved across bats, camels, and humans, making cross-species infection unsurprising. The human immune response depends heavily on interferons: signalling proteins that prompt neighbouring cells to produce antiviral defences. MERS-CoV efficiently neutralises them, collapsing this first line of defence. Its high fatality rate owes much to this capability, honed across the virus's long evolutionary history inside bats.
 
@@ -56,7 +56,7 @@ Opportunities for contact extend well beyond milking. To find pasture on increas
 > The deadly risk of MERS transmission travels with them every step of the way.
 {: .pullquote .pullquote--compact}
 
-'We tell them how to protect themselves,' said Dub Wato, Minayo's local colleague. 'Avoid close contact; if contact is unavoidable, wear a mask. After close contact, wash and disinfect your hands; it is no different from fighting COVID-19.' Boiling milk is another crucial precaution: raw milk may harbour any number of zoonotic viruses, and high temperatures inactivate all known varieties.
+'We tell them how to protect themselves,' said Dub Wato, Minayo's local colleague. 'Avoid close contact; if contact is unavoidable, wear a mask. After close contact, wash and disinfect your hands; it is no different from fighting COVID-19.' Boiling milk is another crucial precaution: raw milk may harbour any number of zoonotic viruses, and high temperatures can inactivate them.
 
 *[Figure: PREDICT project members collecting a sample from a camel. Credit: Jacob Kushner]*
 
