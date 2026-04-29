@@ -5,7 +5,7 @@ classes: home
 ---
 *Hi, Dinghao here :)*
 
-I'm a PhD student at the Max Planck Florida Institute for Neuroscience, studying how a tiny brainstem nucleus uses dopamine to rapidly tune memory accuracy in the hippocampus. I'm finishing my fourth year and starting to think about what comes next.
+I'm a PhD student at the Max Planck Florida Institute for Neuroscience, studying how a tiny brainstem nucleus uses dopamine to tune memory accuracy in the hippocampus. I'm in my fourth year and spend most of my time imaging neurons and running behavioural experiments.
 
 Reach out: [dinghao.luo@outlook.com](mailto:dinghao.luo@outlook.com)<br>Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.com/user/amoxdl24/) · [Instagram](https://www.instagram.com/amoxitoxin) · [CV](https://dinghaoluo.github.io/cv/)
 
@@ -30,6 +30,13 @@ Writing, along with reading, was one of my first true passions. Like many kids, 
       <span class="home-writing-tile__title">Two Freedoms</span>
     </span>
   </a>
+  <a class="home-writing-tile home-writing-tile--solenoid" href="/writing/solenoid/">
+    <img class="home-writing-tile__image" src="/assets/images/writing/solenoid.jpg" alt="" loading="lazy">
+    <span class="home-writing-tile__glass">
+      <span class="home-writing-tile__kicker">book review</span>
+      <span class="home-writing-tile__title">On <em>Solenoid</em></span>
+    </span>
+  </a>
   <a class="home-writing-tile home-writing-tile--shanwei" href="/writing/shanwei/">
     <img class="home-writing-tile__image" src="/assets/images/personal/shanwei.webp" alt="" loading="lazy">
     <span class="home-writing-tile__glass">
@@ -39,35 +46,11 @@ Writing, along with reading, was one of my first true passions. Like many kids, 
   </a>
 </div>
 
-Since my undergraduate years at Cambridge, and now through my PhD, I have also written about science. I was one of the earliest members of Neu-Reality (神經現實), a Chinese-language neuroscience science communication platform, and spent three years as science editor and translator there. After that were seven months at *Scientific American* China, where I wrote weekly news on their digital platform, edited translations of each month's *SciAm* magazine, and finished a print feature on the Accelerating Research on Consciousness initiative.
+Since my undergraduate years at Cambridge, however, and now through my PhD, I have written mostly about science. I was one of the earliest members of Neu-Reality (神经现实), a Chinese-language neuroscience science communication platform, and spent three years as science editor and translator there. After that were seven months at *Scientific American* China, where I wrote weekly news on their digital platform, edited translations of each month's *SciAm* magazine, and finished <a href="/writing/arc-consciousness/" class="site-nav-link">a print feature</a> on Templeton World Charity Foundation's Accelerating Research on Consciousness (ARC) initiative, interviewing researchers like Cyriel Pennartz and Anil Seth.
 
-My longest writing project was translating Merlin Sheldrake's ***Entangled Life*** (2020) into Chinese ([《菌絡萬象》](https://www.amazon.com/dp/7559677754)), taking almost 3 years as I was juggling my PhD experiments and analyses on the side. The Chinese edition won the 2025 Pingshan Natural History Museum Book Award.
+My longest writing project was translating Merlin Sheldrake's ***Entangled Life*** (2020) into Chinese ([《菌络万象》](https://www.amazon.com/dp/7559677754)), taking almost 3 years as I was juggling my PhD experiments and analyses on the side. The Chinese edition won the 2025 Pingshan Natural History Museum Book Award.
 
 <a href="/writing/" class="site-nav-link">→ writing</a>
-
----
-
-<h2 id="music"><a href="/music/">music :)</a></h2>
-
-I also make music, under the same name: a one-person prog-rock project with some singles, an EP, and one full-length album. You can find me on [Bandcamp](https://amoxitoxin.bandcamp.com/).
-
-I listen to far more than I make, which is probably healthy. Prog used to be at the centre of everything: I grew up on Dream Theater, King Crimson, Genesis and Yes. But I have moved through Canterbury, jazz fusion, electronic etc., and now spend most of my listening time on a diverse roster of bands like Haken, Bent Knee, Sungazer, Keor, Alabama Shakes... Metal, post-rock, classical, and whatever else pulls me in on a given week fill the gaps. Here are a few favourites:
-
-- If you like semi-heavy, mathy, intricate prog metal: ***The Mountain*** (2013) by Haken
-- For classic prog from the olden days: Genesis's ***Foxtrot*** (1972), or Gentle Giant's ***Octopus*** (1972); despite both being prog and blowing my young mind as a kid, these great musicians went in completely different directions
-- For jazz fusion: Snarky Puppy's new album ***Somni*** (2025) is where I would start right now, or Herbie Hancock's ***Head Hunters*** (1973) if one fancies the genre's foundational crossover into funk
-- And if none of that works, try Keor's ***Petrichor*** (2018): this album carried through the early days of the pandemic back in 2021
-
-<div class="home-album-covers" aria-hidden="true">
-  <img src="/assets/images/albums/the-mountain.jpg" alt="The Mountain by Haken" loading="lazy">
-  <img src="/assets/images/albums/foxtrot.jpg" alt="Foxtrot by Genesis" loading="lazy">
-  <img src="/assets/images/albums/octopus.jpg" alt="Octopus by Gentle Giant" loading="lazy">
-  <img src="/assets/images/albums/somni.jpg" alt="Somni by Snarky Puppy" loading="lazy">
-  <img src="/assets/images/albums/head-hunters.png" alt="Head Hunters by Herbie Hancock" loading="lazy">
-  <img src="/assets/images/albums/petrichor.jpg" alt="Petrichor by Keor" loading="lazy">
-</div>
-
-<a href="/music/" class="site-nav-link">→ music</a>
 
 ---
 
@@ -82,11 +65,14 @@ I listen to far more than I make, which is probably healthy. Prog used to be at 
   {% for t in book_thoughts %}{% if t.image %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
 </div>
 
-My mom says I used to devour all the books that I could get my hands on as a kid, and reading was probably my favourite pastime from childhood through to my college years. The early years of my PhD interrupted the habit for a while, and it was Paul Auster's [***Moon Palace***](/thoughts/#moon-palace) (1989) that pulled me back in. Since then I have been making up for lost time. The writers I return to most, for now, are Thomas Pynchon and Roberto Bolaño. If you are looking for inspiration and haven't read any of these, I promise you won't regret your time:
+My mom says I used to devour all the books that I could get my hands on as a kid, and reading was probably my favourite pastime from childhood through to my college years. The early years of my PhD interrupted the habit for a while, and it was Paul Auster's [***Moon Palace***](/thoughts/#moon-palace) (1989) that pulled me back in. Since then I have been making up for lost time. The writers I return to most, for now, are Mircea <span class="ro-name" lang="ro">Cărtărescu</span> and Thomas Pynchon. If you are looking for inspiration and haven't read any of these, I promise you won't regret your time:
 
-- Thomas Pynchon's [***Vineland*** (1990)](/thoughts/#vineland) if you want a weird, sad, and very American novel about the death of the 1960s
+- Mircea Cărtărescu's [***Solenoid*** (2015)](/thoughts/#solenoid) if you want to break the boundary between the real and the surreal
+- Thomas Pynchon's [***Vineland*** (1990)](/thoughts/#vineland) if you wish *One Battle After Another* (2025) were weirder and sadder
 - [***Capitalist Realism*** (2009)](/thoughts/#capitalist-realism-is-there-no-alternative) by Mark Fisher was a 3-hour read that sharpened my politics
+- Grace Lindsay's [***Models of the Mind*** (2021)](/thoughts/#models-of-the-mind) is an extraordinary neuroscience book on how the mind and the machine meet
 - [***When We Cease to Understand the World*** (2020)](/thoughts/#when-we-cease-to-understand-the-world) by Benjamín Labatut was part physics history, part fever dream, and shook my physics-uninitiated heart
+- ...*and if you read Chinese*, my translation of [***Entangled Life*** (2020)](/thoughts/#entangled-life) by Merlin Sheldrake, which opened my eyes to the secret life of fungi
 
 <p class="home-thoughts-links"><a href="/thoughts/?type=book">→ books</a></p>
 </div>
@@ -118,6 +104,55 @@ I've played games casually since I was a kid, until *Dark Souls* (2011) made me 
 
 <p class="home-thoughts-links"><a href="/thoughts/?type=game">→ games</a></p>
 </div>
+
+---
+
+<h2 id="science"><a href="/science/">science :)</a></h2>
+
+My PhD asks how the brain tunes the accuracy of memory recall on the go, by utilising a fast dopamine signal from the brainstem that modulates hippocampal activity. You can read more about my PhD work <a href="/science/" class="site-nav-link">here</a>.
+
+I stumbled into neuroscience sideways: I started at Cambridge reading psychology, jumped ship to biological natural sciences in my second year, and ended up patching neurons in the Paulsen lab for my undergraduate thesis. My work so far has combined electrophysiology, optogenetics, two-photon imaging, behavioural analysis, end-to-end Python analysis pipelines, and computational modelling. A manuscript is in preparation.
+
+<div class="home-science-strip" aria-label="Science photos">
+  <figure class="home-science-card">
+    <img src="/assets/images/science/genetics-society-summer-school-edinburgh-2018.webp" alt="Participants at the Genetics Society Summer School Workshop in Edinburgh, seated in a conference room." loading="lazy" width="1846" height="1299">
+    <figcaption><span>Genetics Society Summer School, Edinburgh, 2018</span> I realised too late that I had forgotten to get a photo with the Fisher Lab members. I learned so much from such great people that summer at Queen Square.</figcaption>
+  </figure>
+  <figure class="home-science-card">
+    <img src="/assets/images/science/paulsen-lab-cambridge-2019.webp" alt="Members of the Paulsen lab gathered around a dinner table in Cambridge." loading="lazy" width="1500" height="1000">
+    <figcaption><span>Paulsen lab, Cambridge 2019.</span> My first real lab. The late afternoon discussions of synaptic plasticity inspired so much of my neuroscience thinking, and my dear mentor showed me that electrophysiology is mostly patience.</figcaption>
+  </figure>
+  <figure class="home-science-card">
+    <img src="/assets/images/science/wang-lab-mpfi.webp" alt="Members of the Wang Lab gathered in the Max Planck Florida Institute atrium." loading="lazy" width="1920" height="1280">
+    <figcaption><span>Wang Lab, MPFI</span> Where I came into the lab carrying my own question and acquired technical independence to chase it: behaviour rigs, two-photon imaging, and a <em>lot</em> of Python.</figcaption>
+  </figure>
+</div>
+
+<a href="/science/" class="site-nav-link">→ science</a>
+
+---
+
+<h2 id="music"><a href="/music/">music :)</a></h2>
+
+I also make music, under the same name: a one-person prog-rock project with some singles, an EP, and one full-length album. Here is <a href="/music/" class="site-nav-link">how I made my music</a>, and you can find me on <a href="https://amoxitoxin.bandcamp.com/" class="site-nav-link">Bandcamp</a>.
+
+I listen to far more than I make, which is probably healthy. Prog used to be at the centre of everything: I grew up on Dream Theater, King Crimson, Genesis and Yes. But I have moved through Canterbury, jazz fusion, electronic etc., and now spend most of my listening time on a diverse roster of bands like Haken, Bent Knee, Sungazer, Keor, Alabama Shakes... Metal, post-rock, classical, and whatever else pulls me in on a given week fill the gaps. Here are a few favourites:
+
+- If you like semi-heavy, mathy, intricate prog metal: ***The Mountain*** (2013) by Haken
+- For classic prog from the olden days: Genesis's ***Foxtrot*** (1972), or Gentle Giant's ***Octopus*** (1972); despite both being prog and blowing my young mind as a kid, these great musicians went in completely different directions
+- For jazz fusion: Snarky Puppy's new album ***Somni*** (2025) is where I would start right now, or Herbie Hancock's ***Head Hunters*** (1973) if one fancies the genre's foundational crossover into funk
+- And if none of that works, try Keor's ***Petrichor*** (2018): this album carried through the early days of the pandemic back in 2021
+
+<div class="home-album-covers" aria-hidden="true">
+  <img src="/assets/images/albums/the-mountain.jpg" alt="The Mountain by Haken" loading="lazy">
+  <img src="/assets/images/albums/foxtrot.jpg" alt="Foxtrot by Genesis" loading="lazy">
+  <img src="/assets/images/albums/octopus.jpg" alt="Octopus by Gentle Giant" loading="lazy">
+  <img src="/assets/images/albums/somni.jpg" alt="Somni by Snarky Puppy" loading="lazy">
+  <img src="/assets/images/albums/head-hunters.png" alt="Head Hunters by Herbie Hancock" loading="lazy">
+  <img src="/assets/images/albums/petrichor.jpg" alt="Petrichor by Keor" loading="lazy">
+</div>
+
+<a href="/music/" class="site-nav-link">→ music</a>
 
 ---
 
