@@ -27,8 +27,8 @@ This file holds operational rules that used to live in the main style guide. The
 - In long-form review-essays, named critics and reviews should clarify a live problem in the argument. One to three named outside voices in a passage is usually enough. More than that starts to read as a literature survey unless each source performs a distinct function: historical reception, formal comparison, translation context, or a useful disagreement.
 - Aggregated citation should never serve as proof of having consulted the discourse. A reception paragraph should answer: what does the outside conversation make visible that the essay could not make visible alone?
 - For primary-text work, use the text itself when factual accuracy matters.
-- Long-form source notes should begin with the primary edition actually read, including translator, publisher, and year where relevant.
-- For translated works, distinguish the original publication year from the edition or translation year when both are used.
+- Long-form source notes should not inventory the primary text by default; a review assumes the work being reviewed. Name the primary edition only when edition, translation, or original-publication year matters to a visible claim.
+- For translated works, distinguish the original publication year from the edition or translation year when both are used in the prose or source note.
 - Outside sources should appear in source notes only when they support a visible claim, named critic, author statement, translation context, or useful disagreement.
 - When naming a critic in prose, either link the critic's name at first mention or identify the critic and outlet in the source note.
 - When reusing a critic's vocabulary across entries, recheck the original source. Do not let an older site entry's paraphrase become the authority for a later essay.
@@ -44,6 +44,8 @@ This file holds operational rules that used to live in the main style guide. The
 - Inside `<u>` tags, use HTML equivalents for formatting: `<em>` for italic, `<b><i>` for bold italic.
 - Main prose should prefer markdown formatting. Reserve HTML for page-level metadata, source notes, image/banner handling, and layout components.
 - Long-form `_writing/` essays may use `<hr class="section-break">` and markdown pull quotes with Kramdown classes when they clarify structure.
+- Pull quote text in long-form essays must appear verbatim in the main body text so it is searchable and attributable to the prose, not only to the layout.
+- Pull quotes must also work without nearby context. Avoid extracted lines whose key words only make sense because the previous paragraph supplied the referent.
 - Short catalogue reviews should not use headers or bullet points.
 
 ## Metadata And Translation Conventions

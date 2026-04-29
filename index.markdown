@@ -8,9 +8,9 @@ classes: home
 
 I am in the last stretch of my PhD in neuroscience at the [Max Planck Institute for Neuroscience](https://www.mpfi.org), working on how rapid dopamine signals in the hippocampus tune the accuracy of memory. I am graduating in December 2026 and looking for data science roles in Europe.
 
-At the moment I am reading *Mason & Dixon*, learning *SQL and intermediate machine learning*, and building *a computational analysis of Pynchon's* Gravity's Rainbow.
+Recently I've been reading *Mason & Dixon* (1997), learning SQL and intermediate machine learning, and building a computational analysis of Pynchon's *Gravity's Rainbow*.
 
-Reach out to me: <a href="mailto:dinghao.luo@outlook.com">[dinghao.luo@outlook.com]</a>  
+Reach out to me: <a href="mailto:dinghao.luo@outlook.com">[dinghao.luo@outlook.com]</a>
 Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.com/user/amoxdl24/) · [Instagram](https://www.instagram.com/amoxitoxin) · [LinkedIn](https://www.linkedin.com/in/dinghaoluo/) · [CV](/cv/)
 
 ---
@@ -23,7 +23,7 @@ Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.
 
 <div class="home-thoughts-block home-thoughts-block--books" markdown="1">
 <div class="home-covers home-covers--books" aria-hidden="true" data-count="12" data-mobile-count="8">
-  {% for t in book_thoughts %}{% if t.image %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
+  {% for t in book_thoughts %}{% if t.image %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" data-eval="{{ t.eval | default: '' | downcase | escape }}" data-title="{{ t.title | escape }}" data-title-en="{{ t.title_en | default: '' | escape }}" data-cn-edition="{% if t.creator contains '(CN' or t.image contains 'chinese' %}true{% else %}false{% endif %}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
 </div>
 
 Reading was probably my favourite pastime from childhood through my teenage years: the first durable way I found of making sense of the world as a kid. The early years of my PhD (regrettably) interrupted the habit for a while. Returning to books gave me back a method, a way of testing private feeling against politics, science, history, and fiction's strange talent for telling the truth sideways. The writers I return to most, for now, are Mircea Cărtărescu and Thomas Pynchon. These are a few books I love, not a canon; more like coordinates for the way I read now, and possible doorways if one of them is new to you.
@@ -31,14 +31,14 @@ Reading was probably my favourite pastime from childhood through my teenage year
 - ***Solenoid*** (2015) by Mircea Cărtărescu
 - ***Gravity's Rainbow*** (1973) by Thomas Pynchon
 - ***Capitalist Realism*** (2009) by Mark Fisher
-- *and if you read Chinese...* my translation of ***Entangled Life*** (2020) by Merlin Sheldrake
+- ... *and if you read Chinese*, my translation of ***Entangled Life*** (2020) by Merlin Sheldrake
 
 <p class="home-thoughts-links"><a href="/thoughts/?type=book">→ books</a></p>
 </div>
 
 <div class="home-thoughts-block home-thoughts-block--screen" markdown="1">
 <div class="home-covers home-covers--screen" aria-hidden="true" data-count="12" data-tablet-count="9" data-mobile-count="8">
-  {% for t in all_thoughts %}{% if t.image and t.type == 'film' %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% if t.image and t.type == 'tv' %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
+  {% for t in all_thoughts %}{% if t.image and t.type == 'film' %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" data-eval="{{ t.eval | default: '' | downcase | escape }}" data-title="{{ t.title | escape }}" data-title-en="{{ t.title_en | default: '' | escape }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% if t.image and t.type == 'tv' %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" data-eval="{{ t.eval | default: '' | downcase | escape }}" data-title="{{ t.title | escape }}" data-title-en="{{ t.title_en | default: '' | escape }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
 </div>
 
 Films and television came later than books, but they fit the same habit from another angle: watching rhythm, framing, bodies, rooms, and cuts put pressure on an idea before the explanation arrives. I write about them when a scene keeps its shape afterwards, whether that is a face held too long, a joke with a political aftertaste, or a structure that quietly tells on the world around it.
@@ -51,7 +51,7 @@ Films and television came later than books, but they fit the same habit from ano
 
 <div class="home-thoughts-block home-thoughts-block--games" markdown="1">
 <div class="home-covers home-covers--games" aria-hidden="true" data-count="12" data-tablet-count="9" data-mobile-count="8">
-  {% for t in game_thoughts %}{% if t.image %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
+  {% for t in game_thoughts %}{% if t.image %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" data-eval="{{ t.eval | default: '' | downcase | escape }}" data-title="{{ t.title | escape }}" data-title-en="{{ t.title_en | default: '' | escape }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
 </div>
 
 Games are where the systems part of my brain gets least restrained: maps, loops, boss phases, knowledge-locks, buildcraft, and the exact point where interaction becomes thought rather than ornament. I am drawn to worlds that respond and to mechanics that carry more than the dialogue can say. I am less patient with games that mistake volume for life.

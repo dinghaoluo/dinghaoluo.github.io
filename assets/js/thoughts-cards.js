@@ -618,38 +618,94 @@
   }
 })();
 
-/* frontpage cover wall — weighted shuffle favouring books */
+/* frontpage cover wall - weighted shuffle tuned per section */
 (function () {
   'use strict';
-  function weightedShuffle(items) {
-    var pool = items.slice();
+  var WIDE_SCREEN_MIN = 1412;
+  var BOOK_CHINESE_EDITION_MULTIPLIER = 0.18;
+  var BOOK_NON_CHINESE_LOVED_MULTIPLIER = 2.1;
+
+  function hasChineseTitleFallback(el) {
+    var text = [
+      el.getAttribute('data-title'),
+      el.getAttribute('data-title-en')
+    ].join(' ');
+    var hasHan = /[\u3400-\u9fff\uf900-\ufaff]/.test(text);
+    var hasJapaneseOrKorean = /[\u3040-\u30ff\uac00-\ud7af]/.test(text);
+    return hasHan && !hasJapaneseOrKorean;
+  }
+
+  function isChineseEdition(el) {
+    return el.getAttribute('data-cn-edition') === 'true' || hasChineseTitleFallback(el);
+  }
+
+  function coverWeight(el, container) {
+    var type = (el.getAttribute('data-type') || '').toLowerCase();
+    var reaction = (el.getAttribute('data-eval') || '').toLowerCase();
+    var weight = 1;
+
+    if (container.classList.contains('home-covers--books')) {
+      if (reaction === 'loved') weight = 5;
+      else if (reaction === 'liked') weight = 1.4;
+      else if (reaction.indexOf('meh') === 0) weight = 0.8;
+      else if (reaction === 'disliked' || reaction === 'hated') weight = 0.35;
+
+      if (isChineseEdition(el)) {
+        weight *= BOOK_CHINESE_EDITION_MULTIPLIER;
+      } else if (reaction === 'loved') {
+        weight *= BOOK_NON_CHINESE_LOVED_MULTIPLIER;
+      }
+    } else if (container.classList.contains('home-covers--screen')) {
+      if (type === 'film') weight *= 2.4;
+      if (type === 'tv') weight *= 0.75;
+    }
+
+    return Math.max(weight, 0.15);
+  }
+
+  function weightedShuffle(items, container) {
+    var pool = items.map(function (el) {
+      return { el: el, weight: coverWeight(el, container) };
+    });
     var result = [];
     while (pool.length) {
-      var total = pool.reduce(function (sum, el) {
-        return sum + (el.getAttribute('data-type') === 'book' ? 3 : 1);
+      var total = pool.reduce(function (sum, item) {
+        return sum + item.weight;
       }, 0);
       var threshold = Math.random() * total;
       var idx = pool.length - 1;
       for (var i = 0; i < pool.length; i++) {
-        threshold -= (pool[i].getAttribute('data-type') === 'book' ? 3 : 1);
+        threshold -= pool[i].weight;
         if (threshold <= 0) { idx = i; break; }
       }
-      result.push(pool.splice(idx, 1)[0]);
+      result.push(pool.splice(idx, 1)[0].el);
     }
     return result;
   }
+
+  function wideCoverCount(container, wideCount, desktopCount) {
+    if (!Number.isNaN(wideCount)) return wideCount;
+    if (container.classList.contains('home-covers--screen') || container.classList.contains('home-covers--games')) {
+      return 9;
+    }
+    return desktopCount || 20;
+  }
+
   function initCovers() {
     var containers = Array.prototype.slice.call(document.querySelectorAll('.home-covers'));
     containers.forEach(function (container) {
       var items = Array.prototype.slice.call(container.querySelectorAll('[style*="display:none"], [style*="display: none"]'));
       if (!items.length) return;
       var desktopCount = parseInt(container.getAttribute('data-count'), 10);
+      var wideCount = parseInt(container.getAttribute('data-wide-count'), 10);
       var tabletCount = parseInt(container.getAttribute('data-tablet-count'), 10);
       var mobileCount = parseInt(container.getAttribute('data-mobile-count'), 10);
       var count = window.innerWidth <= 480
         ? (mobileCount || 14)
-        : (window.innerWidth <= 1023 ? (tabletCount || desktopCount || 20) : (desktopCount || 20));
-      var shuffled = weightedShuffle(items);
+        : (window.innerWidth <= 1023
+          ? (tabletCount || desktopCount || 20)
+          : (window.innerWidth >= WIDE_SCREEN_MIN ? wideCoverCount(container, wideCount, desktopCount) : (desktopCount || 20)));
+      var shuffled = weightedShuffle(items, container);
       for (var k = 0; k < shuffled.length; k++) {
         if (k < count) {
           shuffled[k].style.display = '';

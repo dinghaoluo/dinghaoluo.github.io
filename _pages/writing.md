@@ -163,7 +163,7 @@ Reading gives me obsessions; writing tests what I have actually understood. This
   data-kind="{{ writing_kind }}"
   data-title="{{ article.title | strip_html | escape }}"
   data-date="{{ article.date | date: '%Y-%m-%d' }}"
-  data-search="{{ article.title | append: ' ' | append: article.title_zh | append: ' ' | append: display_type | append: ' ' | append: article.type | append: ' ' | append: article.category | append: ' ' | append: article.outlet | append: ' ' | append: article.outlet_en | append: ' ' | append: article.excerpt | strip_html | strip_newlines | escape }}"
+  data-search="{{ article.title | append: ' ' | append: article.title_zh | append: ' ' | append: display_type | append: ' ' | append: article.type | append: ' ' | append: article.category | append: ' ' | append: article.outlet | append: ' ' | append: article.outlet_en | append: ' ' | append: article.byline | append: ' ' | append: article.collaborator | append: ' ' | append: article.excerpt | strip_html | strip_newlines | escape }}"
 >
   {% if show_feature_banner %}
   <a

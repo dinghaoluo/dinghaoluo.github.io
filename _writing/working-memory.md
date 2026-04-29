@@ -2,6 +2,7 @@
 title: "Working memory without the scalpel"
 type: "feature"
 byline: "Lindsay Li & Dinghao Luo"
+collaborator: "Lindsay Li"
 outlet: "Neu-Reality"
 date: 2021-03-16
 image: "/assets/images/writing/working_memory.jpg"

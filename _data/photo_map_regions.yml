@@ -1,0 +1,308 @@
+# Responsive map plates for /photos/.
+# Point positions are generated from lon/lat into the same projected SVG coordinate system.
+- id: "northern-hemisphere"
+  title: "northern hemisphere"
+  scope: "overview"
+  view_box: "136.5 49.3 748.3 210.9"
+  aspect: "3.5"
+  points:
+    - label: "Death Valley"
+      target: "edges of walking"
+      section: "edges-of-walking"
+      accent: "haze"
+      x: 10.7
+      y: 51.3
+      label_x: "-5.3rem"
+      label_y: "-1.1rem"
+    - label: "New York"
+      target: "cities seen through glass"
+      section: "cities-through-glass"
+      accent: "blue"
+      x: 25.2
+      y: 45
+      label_x: "0.7rem"
+      label_y: "-1.2rem"
+    - label: "Florida"
+      target: "weather with a nervous system"
+      section: "weather-nervous-system"
+      accent: "sage"
+      x: 21
+      y: 65
+      label_x: "0.7rem"
+      label_y: "0.2rem"
+    - label: "Whitby"
+      target: "edges of walking"
+      section: "edges-of-walking"
+      accent: "haze"
+      x: 48.5
+      y: 26.1
+      label_x: "-3.2rem"
+      label_y: "-1.15rem"
+    - label: "Cambridge"
+      target: "rooms where light did the thinking"
+      section: "rooms-light-thinking"
+      accent: "clay"
+      x: 48.7
+      y: 29
+      label_x: "0.7rem"
+      label_y: "-1.25rem"
+    - label: "London, by train"
+      short_label: "London train"
+      target: "south by train"
+      section: "south-by-train"
+      accent: "stone"
+      x: 48.7
+      y: 29.9
+      label_x: "0.7rem"
+      label_y: "0.1rem"
+    - label: "Stonehenge"
+      target: "south by train"
+      section: "south-by-train"
+      accent: "stone"
+      x: 48.2
+      y: 30.3
+      label_x: "-4.9rem"
+      label_y: "0.05rem"
+    - label: "south coast"
+      short_label: "S. coast"
+      target: "south by train"
+      section: "south-by-train"
+      accent: "stone"
+      x: 48.7
+      y: 30.8
+      label_x: "-4.4rem"
+      label_y: "1rem"
+    - label: "London, return"
+      short_label: "London return"
+      target: "cities seen through glass"
+      section: "cities-through-glass"
+      accent: "blue"
+      x: 48.7
+      y: 29.9
+      label_x: "0.7rem"
+      label_y: "1.15rem"
+    - label: "Swiss Alps"
+      short_label: "Alps"
+      target: "edges of walking"
+      section: "edges-of-walking"
+      accent: "haze"
+      x: 51.1
+      y: 36.4
+      label_x: "0.7rem"
+      label_y: "-1.3rem"
+    - label: "Italy coast"
+      short_label: "Italy"
+      target: "edges of walking"
+      section: "edges-of-walking"
+      accent: "haze"
+      x: 52.6
+      y: 40.1
+      label_x: "0.7rem"
+      label_y: "0.15rem"
+    - label: "Dead Sea"
+      target: "edges of walking"
+      section: "edges-of-walking"
+      accent: "haze"
+      x: 60.5
+      y: 59
+      label_x: "-4.1rem"
+      label_y: "-1.25rem"
+    - label: "Petra"
+      target: "edges of walking"
+      section: "edges-of-walking"
+      accent: "haze"
+      x: 60.6
+      y: 60.9
+      label_x: "0.7rem"
+      label_y: "-0.65rem"
+    - label: "Shanghai"
+      target: "return, underexposed"
+      section: "return-underexposed"
+      accent: "rose"
+      x: 89.3
+      y: 59.5
+      label_x: "0.7rem"
+      label_y: "-1.35rem"
+    - label: "Guangzhou"
+      target: "return, underexposed"
+      section: "return-underexposed"
+      accent: "rose"
+      x: 87.8
+      y: 72.6
+      label_x: "-4.7rem"
+      label_y: "-1.1rem"
+    - label: "Hong Kong"
+      target: "return, underexposed"
+      section: "return-underexposed"
+      accent: "rose"
+      x: 88.3
+      y: 73.9
+      label_x: "0.7rem"
+      label_y: "0.45rem"
+    - label: "Shanwei"
+      target: "return, underexposed"
+      section: "return-underexposed"
+      accent: "rose"
+      x: 88.6
+      y: 73.1
+      label_x: "0.7rem"
+      label_y: "-1.1rem"
+- id: "eastern-asia"
+  title: "eastern asia"
+  scope: "regional"
+  view_box: "723.7 119.8 151 140.4"
+  aspect: "1.1"
+  points:
+    - label: "Shanghai"
+      target: "return, underexposed"
+      section: "return-underexposed"
+      accent: "rose"
+      x: 53.7
+      y: 39.2
+      label_x: "0.7rem"
+      label_y: "-1.35rem"
+    - label: "Guangzhou"
+      target: "return, underexposed"
+      section: "return-underexposed"
+      accent: "rose"
+      x: 46.4
+      y: 58.8
+      label_x: "-4.9rem"
+      label_y: "-1.15rem"
+    - label: "Hong Kong"
+      target: "return, underexposed"
+      section: "return-underexposed"
+      accent: "rose"
+      x: 48.5
+      y: 60.8
+      label_x: "0.7rem"
+      label_y: "0.45rem"
+    - label: "Shanwei"
+      target: "return, underexposed"
+      section: "return-underexposed"
+      accent: "rose"
+      x: 50.2
+      y: 59.6
+      label_x: "0.7rem"
+      label_y: "-1.1rem"
+- id: "europe-west-asia"
+  title: "europe / west asia"
+  scope: "regional"
+  view_box: "391.9 34.3 303 213.5"
+  aspect: "1.4"
+  points:
+    - label: "Whitby"
+      target: "edges of walking"
+      section: "edges-of-walking"
+      accent: "haze"
+      x: 35.6
+      y: 32.8
+      label_x: "-3.2rem"
+      label_y: "-1.1rem"
+    - label: "Cambridge"
+      target: "rooms where light did the thinking"
+      section: "rooms-light-thinking"
+      accent: "clay"
+      x: 36.1
+      y: 35.6
+      label_x: "0.7rem"
+      label_y: "-1.25rem"
+    - label: "London, by train"
+      short_label: "London train"
+      target: "south by train"
+      section: "south-by-train"
+      accent: "stone"
+      x: 35.9
+      y: 36.5
+      label_x: "0.7rem"
+      label_y: "0.1rem"
+    - label: "Stonehenge"
+      target: "south by train"
+      section: "south-by-train"
+      accent: "stone"
+      x: 34.7
+      y: 37
+      label_x: "-4.9rem"
+      label_y: "0.1rem"
+    - label: "south coast"
+      short_label: "S. coast"
+      target: "south by train"
+      section: "south-by-train"
+      accent: "stone"
+      x: 35.9
+      y: 37.4
+      label_x: "-4.4rem"
+      label_y: "1rem"
+    - label: "London, return"
+      short_label: "London return"
+      target: "cities seen through glass"
+      section: "cities-through-glass"
+      accent: "blue"
+      x: 35.9
+      y: 36.5
+      label_x: "0.7rem"
+      label_y: "1.15rem"
+    - label: "Swiss Alps"
+      short_label: "Alps"
+      target: "edges of walking"
+      section: "edges-of-walking"
+      accent: "haze"
+      x: 41.9
+      y: 43
+      label_x: "0.7rem"
+      label_y: "-1.25rem"
+    - label: "Italy coast"
+      short_label: "Italy"
+      target: "edges of walking"
+      section: "edges-of-walking"
+      accent: "haze"
+      x: 45.7
+      y: 46.7
+      label_x: "0.7rem"
+      label_y: "0.1rem"
+    - label: "Dead Sea"
+      target: "edges of walking"
+      section: "edges-of-walking"
+      accent: "haze"
+      x: 65.2
+      y: 65.3
+      label_x: "-4.1rem"
+      label_y: "-1.25rem"
+    - label: "Petra"
+      target: "edges of walking"
+      section: "edges-of-walking"
+      accent: "haze"
+      x: 65.4
+      y: 67.2
+      label_x: "0.7rem"
+      label_y: "-0.65rem"
+- id: "north-america"
+  title: "north america"
+  scope: "regional"
+  view_box: "96 72 355 255"
+  aspect: "1.4"
+  points:
+    - label: "Death Valley"
+      target: "edges of walking"
+      section: "edges-of-walking"
+      accent: "haze"
+      x: 33.9
+      y: 33.5
+      label_x: "-5.35rem"
+      label_y: "-1.15rem"
+    - label: "New York"
+      target: "cities seen through glass"
+      section: "cities-through-glass"
+      accent: "blue"
+      x: 64.6
+      y: 28.3
+      label_x: "0.7rem"
+      label_y: "-1.25rem"
+    - label: "Florida"
+      target: "weather with a nervous system"
+      section: "weather-nervous-system"
+      accent: "sage"
+      x: 55.6
+      y: 44.8
+      label_x: "0.7rem"
+      label_y: "0.15rem"

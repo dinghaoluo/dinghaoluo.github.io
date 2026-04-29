@@ -48,9 +48,9 @@ Long-form `_writing/` essays may use visible architecture: section breaks, pull 
 
 Pull quotes are structural hinges, not decorations. A pull quote should crystallise the centre of a section and help the reader feel the essay's architecture. If it only repeats a nice sentence, cut or rewrite it.
 
-A pull quote should be prepared by the surrounding prose. It may be lightly sharpened for display, but it should not be a newly minted section label. If it only names what the section is about, put that pressure back into the prose or cut it.
+A pull quote must already exist verbatim in the main text. It can be line-broken for display, but it should be searchable as a sentence in the body, not minted only for the visual slot. It must also make sense when read alone: no dangling pronouns, unexplained local terms, or pretty compressions that require the previous paragraph. If it only names what the section is about, put that pressure back into the prose or cut it.
 
-Do not repeat the displayed pull quote verbatim in the sentence immediately before or after it. Let the prose prepare the pressure, then let the display line crystallise it.
+Do not repeat the displayed pull quote in the sentence immediately before or after it. Let enough prose sit between the body sentence and the display line that the pull quote feels like a return, not an accidental echo.
 
 Section breaks are allowed when they mark real conceptual movements. The section on each side still needs its own internal thesis and closure.
 
