@@ -6,13 +6,7 @@ title: "writing"
 classes: writing-page
 ---
 
-Reading gives me obsessions; writing tests what I have actually understood. This is where the writing lives: science features, translation, fiction, journals, and essays.
-
-**Science writing**: I spent three years at [Neu-Reality (神经现实)](https://neu-reality.com/), a Chinese neuroscience and philosophy platform, writing, editing, proofreading, and translating science pieces for a general audience. I then spent seven months at [*Scientific American* China](https://www.huanqiukexue.com/), where I wrote weekly news and interviewed researchers like Anil Seth and Cyriel Pennartz for [a print feature](/writing/acr-consciousness/) on [Accelerating Research on Consciousness](https://www.templetonworldcharity.org/our-priorities/discovery/accelerating-research-consciousness).
-
-**Translation**: I translated Merlin Sheldrake's *Entangled Life* into Chinese, a book that forced the question of whether scientific precision and living strangeness can share a sentence. The Chinese edition has since been recognised by Pingshan, Scientific American China, and Douban.
-
-**Short stories and essays**: I've kept a personal platform (@阿莫東森的無聊生活) since secondary school. There I write short stories, essays, and some occasional sci-comm pieces.
+Writing and translation, arranged for browsing rather than biography: print work first, then digital pieces. The entries carry their own context: outlet, collaborators, ISBNs, awards, and links where those details matter.
 
 ---
 
