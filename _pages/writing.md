@@ -97,10 +97,10 @@ Reading gives me obsessions; writing tests what I have actually understood. This
 <div class="writing-filter-strip" id="writing-filter-strip">
   <div class="writing-filter-pill" id="writing-filter-pill"></div>
   <button class="writing-filter-btn active" data-filter="all" type="button">ALL</button>
-  <button class="writing-filter-btn" data-filter="science" type="button">science</button>
-  <button class="writing-filter-btn" data-filter="essay" type="button">essays</button>
-  <button class="writing-filter-btn" data-filter="story" type="button">short stories</button>
-  <button class="writing-filter-btn" data-filter="journal" type="button">journal</button>
+  <button class="writing-filter-btn" data-filter="science" type="button"><span class="writing-filter-label-full">science</span><span class="writing-filter-label-short">sci</span></button>
+  <button class="writing-filter-btn" data-filter="essay" type="button"><span class="writing-filter-label-full">essays</span><span class="writing-filter-label-short">essay</span></button>
+  <button class="writing-filter-btn" data-filter="story" type="button"><span class="writing-filter-label-full">short stories</span><span class="writing-filter-label-short">story</span></button>
+  <button class="writing-filter-btn" data-filter="journal" type="button"><span class="writing-filter-label-full">journal</span><span class="writing-filter-label-short">notes</span></button>
 </div>
 
 <div class="writing-controls-row">

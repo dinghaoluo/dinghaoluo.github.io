@@ -22,7 +22,7 @@ Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.
 {% assign game_thoughts = all_thoughts | where: 'type', 'game' %}
 
 <div class="home-thoughts-block home-thoughts-block--books" markdown="1">
-<div class="home-covers home-covers--books" aria-hidden="true" data-count="12" data-mobile-count="10">
+<div class="home-covers home-covers--books" aria-hidden="true" data-count="12" data-mobile-count="8">
   {% for t in book_thoughts %}{% if t.image %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
 </div>
 
@@ -37,7 +37,7 @@ Reading was probably my favourite pastime from childhood through my teenage year
 </div>
 
 <div class="home-thoughts-block home-thoughts-block--screen" markdown="1">
-<div class="home-covers home-covers--screen" aria-hidden="true" data-count="12" data-tablet-count="9" data-mobile-count="10">
+<div class="home-covers home-covers--screen" aria-hidden="true" data-count="12" data-tablet-count="9" data-mobile-count="8">
   {% for t in all_thoughts %}{% if t.image and t.type == 'film' %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% if t.image and t.type == 'tv' %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
 </div>
 
@@ -50,7 +50,7 @@ Films and television came later than books, but they fit the same habit from ano
 </div>
 
 <div class="home-thoughts-block home-thoughts-block--games" markdown="1">
-<div class="home-covers home-covers--games" aria-hidden="true" data-count="12" data-tablet-count="9" data-mobile-count="10">
+<div class="home-covers home-covers--games" aria-hidden="true" data-count="12" data-tablet-count="9" data-mobile-count="8">
   {% for t in game_thoughts %}{% if t.image %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
 </div>
 

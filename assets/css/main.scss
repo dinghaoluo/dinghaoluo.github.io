@@ -1254,7 +1254,7 @@ body.home .page__author-footer {
   border-radius: 1000px;
   box-shadow: inset 0 0 0 1px rgba($morandi-muted, 0.06);
   user-select: none;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .album-wall__filter-pill {
@@ -1280,8 +1280,7 @@ body.home .page__author-footer {
   padding: 0.22em 0;
   color: $site-text-soft;
   font-family: 'Mononoki', monospace;
-  font-size: 0.92em;
-  line-height: 1;
+  font-size: 1em;
   text-align: center;
   white-space: nowrap;
   background: none;
@@ -2534,11 +2533,18 @@ mark.thoughts-highlight {
 
   @media (max-width: 480px) {
     float: none;
+    display: flex;
     width: 100%;
-    grid-template-columns: repeat(7, 1fr);
-    margin: 0 0 1em;
-    padding-top: 0.8em;
-    max-height: calc(2 * (((100vw - 2rem) / 7) * 1.5 + 3px) + ((100vw - 2rem) / 7) * 0.6);
+    grid-template-columns: none;
+    margin: 0.05em 0 0.85em;
+    padding-top: 0.65em;
+    max-height: none;
+    mask-image: linear-gradient(to right, #000 0%, #000 calc(100% - 2.15rem), transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, #000 0%, #000 calc(100% - 2.15rem), transparent 100%);
+
+    .home-covers__link {
+      flex: 0 0 calc((100% - 18px) / 7.65);
+    }
   }
 
   @media (min-width: 481px) and (max-width: 1023px) {
@@ -3161,7 +3167,7 @@ body.writing-page .page__content .writing-entry__title em {
   overflow: hidden;
   color: $site-text-soft;
   font-family: 'Mononoki', monospace;
-  font-size: 0.92em;
+  font-size: 1em;
   text-align: center;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -3169,16 +3175,19 @@ body.writing-page .page__content .writing-entry__title em {
   border: 0;
   border-radius: 1000px;
   cursor: pointer;
-  transition: color 0.18s ease, font-weight 0.18s ease;
+  transition: color 0.18s ease;
 
   &.active {
     color: $site-text;
-    font-weight: bold;
   }
 
   &:hover {
     color: $link-color;
   }
+}
+
+.writing-filter-label-short {
+  display: none;
 }
 
 .album-wall__filter-strip,
@@ -3591,34 +3600,44 @@ body.writing-page .page__content .writing-entry__title em {
 
 @media (max-width: 560px) {
   .writing-filter-strip {
-    justify-content: flex-start;
-    overflow-x: auto;
-    scrollbar-width: none;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
+    justify-content: stretch;
+    overflow: visible;
   }
 
   .writing-filter-btn {
-    flex: 0 0 auto;
-    padding-right: 0.75em;
-    padding-left: 0.75em;
+    flex: 1 1 0;
+    padding-right: 0.18em;
+    padding-left: 0.18em;
+  }
+
+  .writing-filter-label-full {
+    display: none;
+  }
+
+  .writing-filter-label-short {
+    display: inline;
   }
 
   .writing-controls-row {
     align-items: stretch;
     flex-direction: column;
     gap: 0.45rem;
+    margin-bottom: 0.35em;
   }
 
   .writing-luck-btn {
     align-self: flex-end;
   }
 
+  .writing-archive-status {
+    min-height: 0;
+    margin-bottom: 0.2rem;
+    font-size: 0.68em;
+  }
+
   .writing-pagination {
     width: 95%;
-    margin-bottom: 0.9em;
+    margin-bottom: 0.65em;
   }
 
   .writing-entry--archive {
@@ -3637,16 +3656,30 @@ body.writing-page .page__content .writing-entry__title em {
   }
 
   .writing-entry__feature-banner {
-    min-height: 13.25rem;
+    display: flex;
+    align-items: stretch;
+    min-height: 0;
     max-height: none;
+    padding-top: 12rem;
     aspect-ratio: auto;
+    background-position: center 34%;
   }
 
   .writing-entry__feature-panel {
-    right: 0.7rem;
-    bottom: 0.7rem;
-    width: calc(100% - 1.4rem);
-    padding: 0.7rem 0.78rem 0.78rem;
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    max-width: none;
+    margin-top: auto;
+    padding: 0.72rem 0.78rem 0.78rem;
+    border-top: 2px solid $overlay-clay-soft;
+    border-left: 0;
+    box-shadow: 0 -2px 12px rgba($morandi-ink, 0.13);
+  }
+
+  .writing-entry__feature-banner:hover .writing-entry__feature-panel {
+    transform: none;
   }
 
   .writing-entry__kicker {
@@ -4876,6 +4909,7 @@ body.writing-page .page__content .writing-entry__title em {
   .writing-entry__feature-panel {
     background: #1c1917;
     border-left-color: rgba(#c49a85, 0.34);
+    border-top-color: rgba(#c49a85, 0.34);
     box-shadow: 0 2px 12px rgba(#000, 0.36);
   }
   .writing-entry__img {
