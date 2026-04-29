@@ -3690,6 +3690,11 @@ body.writing-page .page__content .writing-entry__title em {
     margin-bottom: 0.45rem;
   }
 
+  .writing-search-wrap {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
   .writing-luck-btn {
     align-self: flex-end;
   }
