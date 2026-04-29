@@ -5585,163 +5585,25 @@ body.photos-page {
     }
 
     .photo-map-panel {
-    margin: -0.7rem 0 5.25rem;
-  }
+      margin: -1rem 0 3.9rem;
+    }
 
-  .photo-map-grid {
-    display: block;
-  }
+    .photo-map-grid {
+      gap: 1.12rem;
+    }
 
-  .photo-map-card {
-    display: grid;
-    min-width: 0;
-    gap: 0.5rem;
-  }
+    .photo-map-pin__label {
+      max-width: 6.2rem;
+      padding: 0.13rem 0.24rem 0.14rem;
+      font-size: 0.57rem;
+      line-height: 1.06;
+    }
 
-  .photo-map-card--overview {
-    max-width: 56rem;
-    margin: 0 0 0 auto;
-  }
+    .photo-section__note {
+      display: block;
+    }
 
-  .photo-map-card--regional {
-    display: none;
-  }
-
-  .photo-map-card__title {
-    margin: 0;
-    padding: 0.44rem 0 0;
-    border-top: 1px solid rgba($morandi-muted, 0.18);
-    border-bottom: 0;
-    color: $site-text-nav-soft;
-    font-family: 'Mononoki', monospace;
-    font-size: 0.72rem;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 1.15;
-    text-transform: lowercase;
-  }
-
-  .photo-map-card__title::after {
-    display: none;
-  }
-
-  .photo-map-plate {
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    aspect-ratio: var(--map-aspect, 1.7778);
-    overflow: hidden;
-    border-top: 1px solid rgba($morandi-muted, 0.14);
-    border-bottom: 1px solid rgba($morandi-muted, 0.14);
-    background: rgba($morandi-stone, 0.08);
-  }
-
-  .photo-map__svg {
-    display: block;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  .photo-map__land {
-    fill: rgba($morandi-stone, 0.28);
-    stroke: none;
-  }
-
-  .photo-map__coast {
-    fill: none;
-    stroke: rgba($morandi-muted, 0.72);
-    stroke-width: 1.25;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vector-effect: non-scaling-stroke;
-  }
-
-  .photo-map-pins {
-    position: absolute;
-    inset: 0;
-  }
-
-  .photo-map-pin {
-    --map-pin: #{$morandi-clay-deep};
-    position: absolute;
-    left: var(--x);
-    top: var(--y);
-    width: 1.65rem;
-    height: 1.65rem;
-    transform: translate(-50%, -50%);
-    text-decoration: none;
-    z-index: 1;
-  }
-
-  .photo-map-pin--stone { --map-pin: #{$morandi-grey-deep}; }
-  .photo-map-pin--rose { --map-pin: #{$morandi-rose-deep}; }
-  .photo-map-pin--sage { --map-pin: #{$morandi-sage-deep}; }
-  .photo-map-pin--blue { --map-pin: #{$morandi-blue-deep}; }
-  .photo-map-pin--haze { --map-pin: #{$morandi-teal}; }
-
-  .photo-map-pin__dot {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 0.52rem;
-    height: 0.52rem;
-    border: 2px solid var(--map-pin);
-    border-radius: 999px;
-    background: $site-bg;
-    box-shadow: 0 0 0 2px rgba($site-bg, 0.84);
-    transform: translate(-50%, -50%);
-    transition: width 0.18s ease, height 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
-  }
-
-  .photo-map-pin__label {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    max-width: 8rem;
-    padding: 0.16rem 0.3rem 0.17rem;
-    border-left: 1px solid var(--map-pin);
-    border-radius: 2px;
-    background: rgba($site-bg, 0.83);
-    color: $site-text-nav-soft;
-    font-family: 'Mononoki', monospace;
-    font-size: 0.58rem;
-    line-height: 1.08;
-    white-space: nowrap;
-    opacity: 0.88;
-    pointer-events: none;
-    transform: translate(var(--label-x, 0.72rem), var(--label-y, -50%));
-    transition: color 0.16s ease, opacity 0.16s ease, background 0.16s ease;
-  }
-
-  .photo-map-card--regional .photo-map-pin__label {
-    font-size: 0.62rem;
-  }
-
-  .photo-map-pin:hover,
-  .photo-map-pin:focus,
-  .photo-map-pin.is-active {
-    z-index: 4;
-  }
-
-  .photo-map-pin:hover .photo-map-pin__dot,
-  .photo-map-pin:focus .photo-map-pin__dot,
-  .photo-map-pin.is-active .photo-map-pin__dot {
-    width: 0.74rem;
-    height: 0.74rem;
-    background: var(--map-pin);
-    box-shadow: 0 0 0 3px rgba($site-bg, 0.92), 0 0 0 7px rgba($morandi-clay-deep, 0.08);
-  }
-
-  .photo-map-pin:hover .photo-map-pin__label,
-  .photo-map-pin:focus .photo-map-pin__label,
-  .photo-map-pin.is-active .photo-map-pin__label {
-    color: var(--map-pin);
-    opacity: 1;
-    background: rgba($site-bg, 0.94);
-  }
-
-  .photo-section__index {
+    .photo-section__index {
       display: block;
       margin-bottom: 0.46rem;
     }
@@ -5803,7 +5665,8 @@ body.photos-page {
     .photos-intro { border-bottom-color: rgba(#9b928a, 0.18); }
     .photo-map-card__title { border-top-color: rgba(#9b928a, 0.18); color: #b8b0a6; }
     .photo-map-plate { border-color: rgba(#9b928a, 0.16); background: rgba(#2a2724, 0.24); }
-    .photo-map__land { fill: rgba(#9b928a, 0.13); }`n    .photo-map__coast { stroke: rgba(#9b928a, 0.62); }
+    .photo-map__land { fill: rgba(#9b928a, 0.13); }
+    .photo-map__coast { stroke: rgba(#9b928a, 0.62); }
     .photo-map-pin__dot { background: #1c1917; box-shadow: 0 0 0 2px rgba(#1c1917, 0.8); }
     .photo-map-pin__label { background: rgba(#1c1917, 0.78); color: #b8b0a6; }
     .photo-map-pin:hover .photo-map-pin__dot,
@@ -5826,7 +5689,8 @@ html[data-theme="dark"] body.photos-page {
   .photos-intro { border-bottom-color: rgba(#9b928a, 0.18); }
   .photo-map-card__title { border-top-color: rgba(#9b928a, 0.18); color: #b8b0a6; }
   .photo-map-plate { border-color: rgba(#9b928a, 0.16); background: rgba(#2a2724, 0.24); }
-  .photo-map__land { fill: rgba(#9b928a, 0.13); }`n  .photo-map__coast { stroke: rgba(#9b928a, 0.62); }
+  .photo-map__land { fill: rgba(#9b928a, 0.13); }
+  .photo-map__coast { stroke: rgba(#9b928a, 0.62); }
   .photo-map-pin__dot { background: #1c1917; box-shadow: 0 0 0 2px rgba(#1c1917, 0.8); }
   .photo-map-pin__label { background: rgba(#1c1917, 0.78); color: #b8b0a6; }
   .photo-map-pin:hover .photo-map-pin__dot,
