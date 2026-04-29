@@ -6,17 +6,18 @@ title: "writing"
 classes: writing-page
 ---
 
-Reading gives me obsessions; writing tests what I have actually understood. This page gathers the public-facing versions: science features, translation, fiction, journals, and essays.
+Reading gives me obsessions; writing tests what I have actually understood. This is where the writing lives: science features, translation, fiction, journals, and essays.
 
-**Science writing**: I spent three years at Neu-Reality (神经现实), a Chinese science platform, writing about neuroscience for people who wanted the brain made exact rather than mystified. I then spent seven months at *Scientific American* China, where I wrote weekly news and interviewed researchers like Anil Seth and Cyriel Pennartz for a print feature on the largest consciousness collaboration ever attempted.
+**Science writing**: I spent three years at [Neu-Reality (神经现实)](https://neu-reality.com/), a Chinese neuroscience and philosophy platform, writing, editing, proofreading, and translating science pieces for a general audience. I then spent seven months at [*Scientific American* China](https://www.huanqiukexue.com/), where I wrote weekly news and interviewed researchers like Anil Seth and Cyriel Pennartz for [a print feature](/writing/acr-consciousness/) on [Accelerating Research on Consciousness](https://www.templetonworldcharity.org/our-priorities/discovery/accelerating-research-consciousness).
 
-**Translation**: I translated Merlin Sheldrake's *Entangled Life* into Chinese, a book that made me think hard about how scientific precision and living strangeness can survive in the same sentence. The Chinese edition won the 2025 Pingshan Natural History Museum Book Award.
+**Translation**: I translated Merlin Sheldrake's *Entangled Life* into Chinese, a book that forced the question of whether scientific precision and living strangeness can share a sentence. The Chinese edition has since been recognised by Pingshan, Scientific American China, and Douban.
 
-**Fiction and essays**: I've kept a personal platform (阿莫東森的無聊生活) since secondary school: fiction, essays, the occasional debunking piece, a long biographical essay on Rachmaninoff. The writers I return to most are Grace Lindsay, who makes computational neuroscience feel like intellectual history; Merlin Sheldrake, who follows fungi into the root systems of the world; Mark Fisher, who finds the exact words for what everyone already felt.
+**Short stories and essays**: I've kept a personal platform (@阿莫東森的無聊生活) since secondary school. There I write short stories, essays, and some occasional sci-comm pieces.
 
 ---
 
 {% assign articles = site.writing | sort: 'date' | reverse %}
+{% assign featured_articles = articles | where: "writing_feature", true | sort: "writing_feature_order" %}
 
 <h2 class="writing-section-title" id="print">print</h2>
 
@@ -29,11 +30,13 @@ Reading gives me obsessions; writing tests what I have actually understood. This
 {% if article.type == "translation" %}
   {% assign is_print_article = true %}
 {% endif %}
-{% if is_print_article %}
+{% if is_print_article and article.writing_page != false %}
 {% assign print_type = article.type %}
 {% if article.type == "feature" %}
   {% assign print_type = "science" %}
 {% endif %}
+{% assign print_title = article.archive_title | default: article.title_display | default: article.title %}
+{% assign print_excerpt = article.archive_excerpt | default: article.excerpt %}
 {% assign title_is_plain = false %}
 {% if article.type == "translation" or article.title_link == false %}
   {% assign title_is_plain = true %}
@@ -41,16 +44,18 @@ Reading gives me obsessions; writing tests what I have actually understood. This
 <div class="writing-entry writing-entry--print writing-entry--print-{{ print_type | slugify }}{% if article.type == 'translation' %} writing-entry--translation{% endif %}{% if article.featured %} writing-entry--featured{% endif %}">
   {% if article.image %}
   <a href="{{ article.url }}" class="writing-entry__img-wrap">
-    <img src="{{ article.image }}" alt="{{ article.title }}" class="writing-entry__img" loading="lazy">
+    <img src="{{ article.image }}" alt="{{ print_title | strip_html | escape }}" class="writing-entry__img" loading="lazy">
   </a>
   {% endif %}
   <div class="writing-entry__body">
+    {% unless article.show_archive_type == false %}
     <span class="writing-entry__type">{{ print_type }}</span>
+    {% endunless %}
     <h3 class="writing-entry__title{% if title_is_plain %} writing-entry__title--plain{% endif %}">
       {% if title_is_plain %}
-      <span class="writing-entry__title-main">{{ article.title_display | default: article.title }}</span>
+      <span class="writing-entry__title-main">{{ print_title }}</span>
       {% else %}
-      <a href="{{ article.url }}">{{ article.title_display | default: article.title }}</a>
+      <a href="{{ article.url }}">{{ print_title }}</a>
       {% endif %}
       {% if article.title_zh %}
       <span class="writing-entry__title-zh-inline">{{ article.title_zh }}</span>
@@ -72,15 +77,24 @@ Reading gives me obsessions; writing tests what I have actually understood. This
     </div>
     {% endif %}
     <div class="writing-entry__meta">
-      {% include writing-meta.html item=article show_kind=false show_title_zh=false show_isbn=false %}
+      {% assign show_print_isbn = false %}
+      {% if article.show_archive_isbn == true %}
+        {% assign show_print_isbn = true %}
+      {% endif %}
+      {% include writing-meta.html item=article show_kind=false show_title_zh=false show_isbn=show_print_isbn %}
     </div>
-    {% if article.excerpt %}
-    <div class="writing-entry__text">{{ article.excerpt }}</div>
+    {% if print_excerpt %}
+    <div class="writing-entry__text">{{ print_excerpt }}</div>
     {% endif %}
     {% if article.awards %}
     <div class="writing-entry__awards">
       {% for award in article.awards %}
-      <span class="writing-entry__award">{{ award }}</span>
+      {% assign award_label = award.label | default: award %}
+      {% if award.url %}
+      <a class="writing-entry__award" href="{{ award.url }}">{{ award_label }}</a>
+      {% else %}
+      <span class="writing-entry__award">{{ award_label }}</span>
+      {% endif %}
       {% endfor %}
     </div>
     {% endif %}
@@ -99,7 +113,7 @@ Reading gives me obsessions; writing tests what I have actually understood. This
   <button class="writing-filter-btn active" data-filter="all" type="button">ALL</button>
   <button class="writing-filter-btn" data-filter="science" type="button"><span class="writing-filter-label-full">science</span><span class="writing-filter-label-short">sci</span></button>
   <button class="writing-filter-btn" data-filter="essay" type="button"><span class="writing-filter-label-full">essays</span><span class="writing-filter-label-short">essay</span></button>
-  <button class="writing-filter-btn" data-filter="story" type="button"><span class="writing-filter-label-full">short stories</span><span class="writing-filter-label-short">story</span></button>
+  <button class="writing-filter-btn" data-filter="story" type="button"><span class="writing-filter-label-full">stories</span><span class="writing-filter-label-short">story</span></button>
   <button class="writing-filter-btn" data-filter="journal" type="button"><span class="writing-filter-label-full">journal</span><span class="writing-filter-label-short">notes</span></button>
 </div>
 
@@ -129,6 +143,18 @@ Reading gives me obsessions; writing tests what I have actually understood. This
 </nav>
 
 <div class="writing-list writing-list--archive" id="writing-archive">
+{% for article in featured_articles %}
+{% assign is_print_article = false %}
+{% if article.section == "print" %}
+  {% assign is_print_article = true %}
+{% endif %}
+{% if article.type == "translation" %}
+  {% assign is_print_article = true %}
+{% endif %}
+{% unless is_print_article or article.writing_page == false %}
+{% include writing-archive-entry.html article=article %}
+{% endunless %}
+{% endfor %}
 {% for article in articles %}
 {% assign is_print_article = false %}
 {% if article.section == "print" %}
@@ -137,80 +163,12 @@ Reading gives me obsessions; writing tests what I have actually understood. This
 {% if article.type == "translation" %}
   {% assign is_print_article = true %}
 {% endif %}
-{% unless is_print_article %}
-{% assign writing_kind = "essay" %}
-{% if article.type == "feature" or article.section == "online" or article.category == "scicomm" %}
-  {% assign writing_kind = "science" %}
-{% elsif article.category == "fiction" %}
-  {% assign writing_kind = "story" %}
-{% elsif article.category == "journal" %}
-  {% assign writing_kind = "journal" %}
+{% assign hide_from_archive = false %}
+{% if article.writing_page == false or article.writing_feature %}
+  {% assign hide_from_archive = true %}
 {% endif %}
-{% assign show_feature_banner = false %}
-{% if article.feature_banner and article.banner_image %}
-  {% assign show_feature_banner = true %}
-{% endif %}
-{% assign show_archive_image = false %}
-{% if article.archive_image and article.image and show_feature_banner == false %}
-  {% assign show_archive_image = true %}
-{% endif %}
-{% assign display_type = article.type | default: article.category %}
-{% if writing_kind == "science" %}
-  {% assign display_type = "science" %}
-{% endif %}
-<div
-  class="writing-entry writing-entry--archive writing-entry--kind-{{ writing_kind }}{% if show_archive_image %} writing-entry--has-image{% endif %}{% if show_feature_banner %} writing-entry--feature-banner{% endif %}"
-  data-kind="{{ writing_kind }}"
-  data-title="{{ article.title | strip_html | escape }}"
-  data-date="{{ article.date | date: '%Y-%m-%d' }}"
-  data-search="{{ article.title | append: ' ' | append: article.title_zh | append: ' ' | append: display_type | append: ' ' | append: article.type | append: ' ' | append: article.category | append: ' ' | append: article.outlet | append: ' ' | append: article.outlet_en | append: ' ' | append: article.byline | append: ' ' | append: article.collaborator | append: ' ' | append: article.excerpt | strip_html | strip_newlines | escape }}"
->
-  {% if show_feature_banner %}
-  <a
-    href="{{ article.url }}"
-    class="writing-entry__feature-banner"
-    style="--writing-banner-image: url('{{ article.banner_image | relative_url }}');"
-    aria-label="{{ article.title | strip_html | escape }}"
-  >
-    <div class="writing-entry__feature-panel">
-      <div class="writing-entry__kicker">
-        <span class="writing-entry__type">{{ display_type }}</span>
-        <span class="writing-entry__date">{{ article.date | date: "%-d %b %Y" }}</span>
-      </div>
-      <h3 class="writing-entry__title">{{ article.title_display | default: article.title }}</h3>
-      {% if article.excerpt %}
-      <div class="writing-entry__text">{{ article.excerpt }}</div>
-      {% endif %}
-    </div>
-  </a>
-  {% else %}
-  {% if show_archive_image %}
-  <a href="{{ article.url }}" class="writing-entry__img-wrap">
-    <img src="{{ article.image }}" alt="{{ article.title }}" class="writing-entry__img" loading="lazy">
-  </a>
-  {% endif %}
-  <div class="writing-entry__body">
-    <div class="writing-entry__kicker">
-      <span class="writing-entry__type">{{ display_type }}</span>
-      <span class="writing-entry__date">{{ article.date | date: "%-d %b %Y" }}</span>
-    </div>
-    <h3 class="writing-entry__title">
-      <a href="{{ article.url }}">{{ article.title_display | default: article.title }}</a>
-    </h3>
-    {% if article.title_zh %}
-    <span class="writing-entry__title-en">{{ article.title_zh }}</span>
-    {% endif %}
-    {% if article.byline or article.source_author or article.creator or article.outlet or article.isbn %}
-    <div class="writing-entry__meta">
-      {% include writing-meta.html item=article show_kind=false show_title_zh=false show_date=false %}
-    </div>
-    {% endif %}
-    {% if article.excerpt %}
-    <div class="writing-entry__text">{{ article.excerpt }}</div>
-    {% endif %}
-  </div>
-  {% endif %}
-</div>
+{% unless is_print_article or hide_from_archive %}
+{% include writing-archive-entry.html article=article %}
 {% endunless %}
 {% endfor %}
 </div>

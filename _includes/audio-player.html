@@ -4,9 +4,10 @@
     src      – path to the audio file (e.g. /assets/audio/track.mp3)
     title    – display title
     waveform – (optional) path to pre-generated JSON waveform data
+    duration – (optional) display duration, used before audio is loaded
 {% endcomment %}
-<div class="wv-player" data-src="{{ include.src }}"{% if include.waveform %} data-waveform="{{ include.waveform }}"{% endif %}>
-  <button class="wv-player__play" aria-label="Play" disabled>
+<div class="wv-player" data-src="{{ include.src | relative_url }}"{% if include.waveform %} data-waveform="{{ include.waveform | relative_url }}"{% endif %}>
+  <button class="wv-player__play" aria-label="Play"{% unless include.src %} disabled{% endunless %}>
     <svg class="wv-player__icon wv-player__icon--play" viewBox="0 0 24 24" fill="currentColor">
       <polygon points="7,4 21,12 7,20"/>
     </svg>
@@ -21,7 +22,7 @@
       <span class="wv-player__time">
         <span class="wv-player__current">0:00</span>
         <span class="wv-player__sep">/</span>
-        <span class="wv-player__duration">0:00</span>
+        <span class="wv-player__duration">{{ include.duration | default: '0:00' }}</span>
       </span>
     </div>
     <div class="wv-player__wave" role="slider" aria-label="Seek" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">

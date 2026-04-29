@@ -3,8 +3,19 @@ title: "Gossamer and sorrow: the life of Rachmaninoff"
 title_zh: "遊絲與憂思：拉赫曼尼諾夫生平"
 category: "encyclopaedic"
 date: 2018-12-01
+writing_feature: true
+writing_feature_order: 3
 excerpt: "From Semyonovo to Beverly Hills: the gambling father, the disastrous premiere, the hypnotist, and the tombstone inscribed only in a language he never mastered."
 image: /assets/images/personal/rachmaninoff.webp
+dropcap: true
+feature_banner: true
+banner_image: /assets/images/writing/rachmaninoff-ivanovka-yard.jpg
+banner_image_alt: "The yard at Ivanovka, Sergei Rachmaninoff's estate near Tambov"
+banner_credit: "Unknown photographer via Wikimedia Commons"
+banner_license: "public domain"
+banner_source: "https://commons.wikimedia.org/wiki/File:Ivanovka_yard.jpg"
+banner_position: "center 45%"
+banner_bg: "#f2eee8"
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/k3NGlQeK_wYBdQ9JkuGP6A"

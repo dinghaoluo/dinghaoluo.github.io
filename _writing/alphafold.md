@@ -5,6 +5,7 @@ outlet: "Scientific American China"
 date: 2020-12-02
 image: "/assets/images/writing/alphafold.jpg"
 section: "online"
+dropcap: true
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/un5RPtoRn5mlUEkn2-BA1A"

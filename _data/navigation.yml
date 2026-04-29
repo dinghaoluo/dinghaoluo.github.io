@@ -1,9 +1,9 @@
 # main links
 main:
-  - title: "thoughts"
-    url: /thoughts/
   - title: "writing"
     url: /writing/
+  - title: "thoughts"
+    url: /thoughts/
   - title: "science"
     url: /science/
   - title: "music"

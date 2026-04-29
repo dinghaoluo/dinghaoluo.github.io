@@ -1,5 +1,5 @@
 ---
-title: "Working memory without the scalpel"
+title: "Manipulating working memory from outside the skull"
 type: "feature"
 byline: "Lindsay Li & Dinghao Luo"
 collaborator: "Lindsay Li"

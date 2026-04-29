@@ -3,6 +3,7 @@ title: "Escape"
 title_zh: "逃"
 category: "fiction"
 date: 2018-04-27
+dropcap: true
 excerpt: "A motorcycle, a Peppa Pig lamp, and two boys fleeing across the desert from a country that would rather they did not exist."
 links:
   - label: "Original (Chinese)"

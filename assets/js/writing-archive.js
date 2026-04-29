@@ -98,14 +98,12 @@
     }
 
     function restoreDateOrder() {
-      entries
-        .slice()
-        .sort(function (a, b) {
-          return Number(a.dataset.originalIndex) - Number(b.dataset.originalIndex);
-        })
-        .forEach(function (entry) {
-          archive.appendChild(entry);
-        });
+      entries = entries.slice().sort(function (a, b) {
+        return Number(a.dataset.originalIndex) - Number(b.dataset.originalIndex);
+      });
+      entries.forEach(function (entry) {
+        archive.appendChild(entry);
+      });
       shuffled = false;
     }
 
@@ -236,11 +234,14 @@
           return;
         }
 
-        shuffle(matched).forEach(function (entry) {
-          archive.appendChild(entry);
+        var shuffledMatched = shuffle(matched);
+        var unmatched = entries.filter(function (entry) {
+          return matched.indexOf(entry) === -1;
         });
+
+        entries = shuffledMatched.concat(unmatched);
         entries.forEach(function (entry) {
-          if (matched.indexOf(entry) === -1) archive.appendChild(entry);
+          archive.appendChild(entry);
         });
         shuffled = true;
         currentPage = 1;

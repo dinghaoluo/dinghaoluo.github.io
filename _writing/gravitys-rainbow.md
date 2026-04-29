@@ -5,7 +5,18 @@ category: "essay"
 type: "essay / book review"
 article_style: "analysis"
 date: 2026-04-28
+writing_feature: true
+writing_feature_order: 1
 excerpt: "A reading of Gravity's Rainbow through the V-2's no-warning terror, Brennschluss, colonial distance, Dora, Pökler, and the mathematics of impact."
+dropcap: true
+feature_banner: true
+banner_image: "/assets/images/writing/gravitys-rainbow-v2-launch.jpg"
+banner_image_alt: "A V-2 rocket launch at White Sands, 1948"
+banner_credit: "NOAA / U.S. Army via Wikimedia Commons"
+banner_license: "public domain"
+banner_source: "https://commons.wikimedia.org/wiki/File:A_V-2_Rocket_Launch_(2277-51).jpg"
+banner_position: "center 46%"
+banner_bg: "#eee9e2"
 ---
 
 <span class="dropcap">T</span>he V-2 enters ***Gravity's Rainbow*** by breaking the order in which danger is usually recognised. A conventional bomber raid over London is already terror, but it is terror with stages: engines overhead, sirens, searchlights, the sky briefly turned into an object of fear. The rocket removes the stages. It descends faster than sound, so the blast can arrive before the shriek. Sound becomes evidence, not warning.
@@ -25,7 +36,7 @@ That is why Pynchon's technical seriousness matters. The rocket's mathematics is
 > Calculation becomes dangerous when it forgets what it has excluded.
 {: .pullquote .pullquote--compact}
 
-My own scientific habits make me resistant to an easy anti-calculation reading. I work by making reductions: spike train to firing rate, trajectory to variable, reward to time-stamped event, animal to row in a dataframe. There is no thinking at scale without some violence of selection. The question is whether the reduction remembers that it is a reduction. Good abstraction carries its missing dimensions as a liability. Bad abstraction launders them away. The murderous version says: if my coordinate system cannot represent a prisoner, a daughter, a bird, or a Herero or Nama life, the problem belongs to the unrepresented life.
+My own work makes me resistant to an easy anti-calculation reading. I make reductions: spike train to firing rate, trajectory to variable, reward to time-stamped event, animal to row in a dataframe. There is no thinking at scale without some violence of selection. The question is whether the reduction remembers that it is a reduction. Good abstraction carries its missing dimensions as a liability. Bad abstraction launders them away. The murderous version says: if my coordinate system cannot represent a prisoner, a daughter, a bird, or a Herero or Nama life, the problem belongs to the unrepresented life.
 
 Calculation becomes moral insulation when it keeps working after the human cost has been made invisible to the operator. Pynchon does not ask one to become stupid in order to remain ethical. He asks what intelligence becomes under that condition. The V-2 is a triumph of applied physics and a machine for separating action from recognition. Both facts belong to the same object.
 
@@ -53,7 +64,9 @@ Here the double integration leaves rocketry and becomes life. The rocket integra
 
 <hr class="section-break">
 
-The Schwarzkommando line returns the political problem to the rocket itself. Their project is strange, theatrical, sometimes comic, but it is not arbitrary. It asks whether the passed-over can claim the elect's machine without being reorganised by its logic. The rocket cannot become a clean counter-symbol; it remains an argument under pressure. The colonised return through the coloniser's technology, yet the technology has been engineered inside the same imperial grammar. Pynchon refuses the comforting version in which appropriation automatically becomes liberation.
+The Schwarzkommando line returns the political problem to the rocket itself. Their project is strange, theatrical, sometimes comic, but it is not arbitrary. It gives preterition a collective body. Enzian's search for the Schwarzgerät pulls the Herero past toward a future object: a rocket that seems to promise return, assembly, and chosen direction. The Schwarzkommando are victims, avengers, engineers, performers, and theologians of being passed over at once: by Europe, by Christian election, by colonial archive, by postwar settlement. That tangle makes the rocket seductive. It has already learned how to choose a point, preserve a trajectory, convert scattered forces into directed arrival. For people made discontinuous by empire, directedness can look like continuity.
+
+The trap is that directedness is not freedom. A ballistic system is a politics of set values: launch, cutoff, angle, target, and then the refusal of reciprocal correction. The rocket cannot become a clean counter-symbol; it remains an argument under pressure. The colonised return through the coloniser's technology, but the technology has been engineered inside the same imperial grammar. Pynchon refuses the comforting version in which appropriation automatically becomes liberation. The passed-over can seize the elect's machine and still be reorganised by its logic.
 
 The pursuit of the Schwarzgerät and Rocket 00000 closes the distance the V-2 first seemed to create. The rocket no longer only strikes a body from afar; it carries a body inside its ritual machinery. Gottfried inside Blicero's rocket makes the system human at the point where it most wants transcendence. The rocket dreams of leaving the earth, yet it carries the old terrestrial grammar inside it: master and victim, white commander and sacrificed boy, elect and passed-over, ascent and sacrifice. The future enters space with a camp and a colony inside its memory.
 
@@ -63,7 +76,7 @@ Edward Mendelson's category of encyclopedic narrative remains useful here, but o
 
 By the end, the rainbow cannot console. It is covenant and graph at once, an image of promise forced to share the shape of ballistics. Beauty survives the arithmetic, and that survival is not innocence. Pynchon keeps forcing the clean curve back open: German South West Africa, Dora-Mittelbau, Pökler's yearly measurement of Ilse, Gottfried inside 00000, all the bodies calculation tries to hide.
 
-***Gravity's Rainbow*** offers no clean refusal of the modern world, which is why it remains more useful to me than a simple anti-technology novel would be. The same mathematics can guide a missile, model a brain, tune a synthesiser, or rescue a pattern from noise. The ethical question is what the model is allowed to forget, and who gets converted into an error term. A coordinate cannot mourn; a category cannot recognise the life it has simplified; a double integral cannot tell us what distance has done to the dead. Pynchon writes the discarded dimensions back into the calculation. He makes the coordinate answer back.
+***Gravity's Rainbow*** offers no clean refusal of the modern world, which is why it remains more useful to me than a simple anti-technology novel would be. The same mathematics can guide a missile, model a brain, tune a synthesiser, or rescue a pattern from noise. The ethical question is what the model is allowed to forget, and who gets converted into an error term. A coordinate cannot mourn; a double integral cannot tell us what distance has done to the dead. Pynchon writes the discarded dimensions back into the calculation. He makes the coordinate answer back.
 
 <div class="source-note" markdown="1">
 Read alongside the Smithsonian record for a [V-2 integrating accelerometer](https://www.si.edu/object/accelerometer-integrating-gyro-v-2%3Anasm_A19730008000), Michael J. Neufeld's USHMM account of [Mittelbau](https://encyclopedia.ushmm.org/content/en/article/mittelbau-main-camp-in-depth), the Natural History Museum's account of [the dodo as an extinction icon](https://www.nhm.ac.uk/discover/the-dodo-bird-the-real-facts-about-this-icon-of-extinction.html), Britannica's account of the [German-Herero conflict](https://www.britannica.com/topic/German-Herero-conflict-of-1904-1907), and Edward Mendelson's ['Encyclopedic Narrative'](https://mendelson.org/EncyclopedicNarrative.pdf).

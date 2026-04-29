@@ -3,6 +3,7 @@ title: "Return to the Edge of the World"
 title_zh: "返回世界边缘"
 category: "fiction"
 date: 2018-11-29
+dropcap: true
 excerpt: "Guangzhou, a private school band, Prozac, a girl by the lake, and a Dylan Thomas poem with the last line missing."
 links:
   - label: "Original, Part 1 (Chinese)"

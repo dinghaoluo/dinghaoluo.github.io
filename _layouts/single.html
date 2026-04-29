@@ -37,15 +37,28 @@ layout: default
         {% if page.lede %}
           <div class="page__lede">{{ page.lede | markdownify }}</div>
         {% endif %}
-        {% if page.collection == 'writing' %}
+        {% assign show_writing_meta_block = true %}
+        {% if page.show_page_meta == false and page.show_page_awards == false and page.show_page_links == false %}
+          {% assign show_writing_meta_block = false %}
+        {% endif %}
+        {% if page.collection == 'writing' and show_writing_meta_block %}
           <div class="writing-piece-meta">
-            {% include writing-meta.html item=page %}
-            {% if page.awards %}
+            {% unless page.show_page_meta == false %}
+              {% include writing-meta.html item=page %}
+            {% endunless %}
+            {% if page.awards and page.show_page_awards != false %}
               <div class="writing-piece-meta__awards">
-                {% for award in page.awards %}<span class="writing-entry__award">{{ award }}</span>{% endfor %}
+                {% for award in page.awards %}
+                  {% assign award_label = award.label | default: award %}
+                  {% if award.url %}
+                    <a class="writing-entry__award" href="{{ award.url }}">{{ award_label }}</a>
+                  {% else %}
+                    <span class="writing-entry__award">{{ award_label }}</span>
+                  {% endif %}
+                {% endfor %}
               </div>
             {% endif %}
-            {% if page.links.size > 0 %}
+            {% if page.links.size > 0 and page.show_page_links != false %}
               <div class="writing-piece-meta__links">
                 {% for link in page.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
               </div>
@@ -77,9 +90,7 @@ layout: default
 
       {% include post_pagination.html %}
 
-      <div class="page__drift">
-        <a href="#" class="drift-link" onclick="event.preventDefault();var c='abcdefghijklmnopqrstuvwxyz0123456789',s='';for(var i=0;i<3+Math.floor(Math.random()*5);i++)s+=c[Math.floor(Math.random()*c.length)];window.location.href='/'+s;">not all those who wander are lost</a>
-      </div>
+      {% include drift-link.html %}
     </div>
 
     {% if page.author_profile or layout.author_profile %}

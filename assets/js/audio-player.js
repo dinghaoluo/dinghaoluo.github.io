@@ -36,30 +36,6 @@
     return data;
   }
 
-  function extractWaveform(buffer, numBars) {
-    var raw = buffer.getChannelData(0);
-    var blockSize = Math.floor(raw.length / numBars);
-    var data = [];
-    for (var i = 0; i < numBars; i++) {
-      var sum = 0;
-      var start = i * blockSize;
-      for (var j = 0; j < blockSize; j++) {
-        sum += Math.abs(raw[start + j]);
-      }
-      data.push(sum / blockSize);
-    }
-    var max = 0;
-    for (var k = 0; k < data.length; k++) {
-      if (data[k] > max) max = data[k];
-    }
-    if (max > 0) {
-      for (var m = 0; m < data.length; m++) {
-        data[m] = data[m] / max;
-      }
-    }
-    return data;
-  }
-
   function drawWaveform(canvas, data, progress, hoverPos) {
     var ctx = canvas.getContext('2d');
     var w = canvas.width / DPR;
@@ -118,14 +94,16 @@
     var volMuteIcon = el.querySelector('.wv-player__vol-icon--mute');
 
     var audio = new Audio();
-    audio.preload = 'metadata';
+    audio.preload = 'none';
     audio.crossOrigin = 'anonymous';
 
     var waveData = generatePlaceholder(BARS);
     var ready = false;
+    var sourceLoaded = false;
     var hoverPos = -1;
     var animFrame = null;
     var lastVolume = 1;
+    var pendingSeek = null;
 
     function sizeCanvas() {
       var rect = waveWrap.getBoundingClientRect();
@@ -151,14 +129,58 @@
 
     function setPlaying(playing) {
       playIcon.style.display = playing ? 'none' : '';
-      pauseIcon.style.display = playing ? '' : 'none';
+      pauseIcon.style.display = playing ? 'block' : 'none';
+      playBtn.setAttribute('aria-label', playing ? 'Pause' : 'Play');
       el.classList.toggle('is-playing', playing);
     }
 
     function updateVolIcons() {
       var muted = audio.muted || audio.volume === 0;
       volIcon.style.display = muted ? 'none' : '';
-      volMuteIcon.style.display = muted ? '' : 'none';
+      volMuteIcon.style.display = muted ? 'block' : 'none';
+    }
+
+    function attachSource() {
+      if (sourceLoaded || !src) return;
+      sourceLoaded = true;
+      audio.src = src;
+      audio.load();
+    }
+
+    function pauseOtherPlayers() {
+      document.querySelectorAll('.wv-player.is-playing').forEach(function (other) {
+        if (other !== el) {
+          var otherAudio = other._audio;
+          if (otherAudio && !otherAudio.paused) {
+            otherAudio.pause();
+            other.classList.remove('is-playing');
+            var opi = other.querySelector('.wv-player__icon--play');
+            var opai = other.querySelector('.wv-player__icon--pause');
+            var obtn = other.querySelector('.wv-player__play');
+            if (opi) opi.style.display = '';
+            if (opai) opai.style.display = 'none';
+            if (obtn) obtn.setAttribute('aria-label', 'Play');
+          }
+        }
+      });
+    }
+
+    function playCurrent() {
+      if (!src) return;
+      pauseOtherPlayers();
+      attachSource();
+
+      var playPromise = audio.play();
+      setPlaying(true);
+      tick();
+
+      if (playPromise && typeof playPromise.catch === 'function') {
+        playPromise.catch(function () {
+          setPlaying(false);
+          cancelAnimationFrame(animFrame);
+          render();
+        });
+      }
     }
 
     if (waveformUrl) {
@@ -176,20 +198,20 @@
     }
 
     if (src) {
-      audio.src = src;
-
       audio.addEventListener('loadedmetadata', function () {
         ready = true;
-        playBtn.disabled = false;
         el.classList.add('is-ready');
         durationEl.textContent = formatTime(audio.duration);
+        if (pendingSeek !== null && audio.duration) {
+          audio.currentTime = pendingSeek * audio.duration;
+          pendingSeek = null;
+        }
         render();
       });
 
       audio.addEventListener('canplay', function () {
         if (!ready) {
           ready = true;
-          playBtn.disabled = false;
           el.classList.add('is-ready');
           durationEl.textContent = formatTime(audio.duration);
         }
@@ -204,48 +226,11 @@
         cancelAnimationFrame(animFrame);
         render();
       });
-
-      if (!waveformUrl) {
-        var actx = null;
-        try { actx = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) {}
-        if (actx) {
-          var fetchXhr = new XMLHttpRequest();
-          fetchXhr.open('GET', src);
-          fetchXhr.responseType = 'arraybuffer';
-          fetchXhr.onload = function () {
-            if (fetchXhr.status === 200) {
-              actx.decodeAudioData(fetchXhr.response, function (decoded) {
-                waveData = extractWaveform(decoded, BARS);
-                render();
-              });
-            }
-          };
-          fetchXhr.send();
-        }
-      }
     }
 
     playBtn.addEventListener('click', function () {
-      if (!ready) return;
-
-      document.querySelectorAll('.wv-player.is-playing').forEach(function (other) {
-        if (other !== el) {
-          var otherAudio = other._audio;
-          if (otherAudio && !otherAudio.paused) {
-            otherAudio.pause();
-            other.classList.remove('is-playing');
-            var opi = other.querySelector('.wv-player__icon--play');
-            var opai = other.querySelector('.wv-player__icon--pause');
-            if (opi) opi.style.display = '';
-            if (opai) opai.style.display = 'none';
-          }
-        }
-      });
-
       if (audio.paused) {
-        audio.play();
-        setPlaying(true);
-        tick();
+        playCurrent();
       } else {
         audio.pause();
         setPlaying(false);
@@ -255,10 +240,14 @@
     });
 
     waveWrap.addEventListener('click', function (e) {
-      if (!ready) return;
       var rect = waveWrap.getBoundingClientRect();
       var pct = (e.clientX - rect.left) / rect.width;
       pct = Math.max(0, Math.min(1, pct));
+      if (!ready) {
+        pendingSeek = pct;
+        playCurrent();
+        return;
+      }
       audio.currentTime = pct * audio.duration;
       currentEl.textContent = formatTime(audio.currentTime);
       render();

@@ -5,6 +5,7 @@ outlet: "Scientific American China"
 date: 2021-02-01
 image: "/assets/images/writing/mers-coronavirus.jpg"
 section: "online"
+writing_page: false
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/-Wa20frfTtu63VU-Yg50Gg"

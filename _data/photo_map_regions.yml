@@ -135,16 +135,16 @@
       target: "return, underexposed"
       section: "return-underexposed"
       accent: "rose"
-      x: 88.3
-      y: 73.9
+      x: 88.1
+      y: 73.5
       label_x: "0.7rem"
       label_y: "0.45rem"
     - label: "Shanwei"
       target: "return, underexposed"
       section: "return-underexposed"
       accent: "rose"
-      x: 88.6
-      y: 73.1
+      x: 88.4
+      y: 72.7
       label_x: "0.7rem"
       label_y: "-1.1rem"
 - id: "eastern-asia"
@@ -173,16 +173,16 @@
       target: "return, underexposed"
       section: "return-underexposed"
       accent: "rose"
-      x: 48.5
-      y: 60.8
+      x: 47.4
+      y: 60.2
       label_x: "0.7rem"
       label_y: "0.45rem"
     - label: "Shanwei"
       target: "return, underexposed"
       section: "return-underexposed"
       accent: "rose"
-      x: 50.2
-      y: 59.6
+      x: 49.4
+      y: 58.9
       label_x: "0.7rem"
       label_y: "-1.1rem"
 - id: "europe-west-asia"

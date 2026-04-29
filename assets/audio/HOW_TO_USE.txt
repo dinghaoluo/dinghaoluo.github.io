@@ -2,16 +2,17 @@ Custom waveform audio player — setup steps
 ============================================
 
 1. Place MP3 files here with these exact filenames:
-   - kitty_kat_and_the_stars.mp3
-   - central_pattern_generator.mp3
-   - reflections.mp3
-   - the_rain_on_the_cam.mp3
    - the_maze.mp3
+   - the_rain_on_the_cam.mp3
+   - reflections.mp3
+   - central_pattern_generator.mp3
+   - kitty_kat_and_the_stars.mp3
+   - we_will_meet_again_in_springtime_london.mp3
 
 2. Generate waveform JSON (optional but recommended for instant display):
-   pip install pydub numpy
+   pip install numpy
    python scripts/generate_waveforms.py
-   (requires ffmpeg on PATH)
+   (uses ffmpeg on PATH; pydub is also supported if installed)
 
    This writes 200-bar amplitude data to assets/audio/waveforms/*.json.
 

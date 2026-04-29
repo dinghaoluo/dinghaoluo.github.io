@@ -5,6 +5,8 @@ outlet: "Scientific American China"
 date: 2020-10-20
 image: "/assets/images/writing/ketamine-depression.jpg"
 section: "online"
+writing_page: false
+dropcap: true
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/ANf9dzf1U49uRRSKh5eL_A"

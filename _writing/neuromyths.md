@@ -5,6 +5,7 @@ outlet: "果壳"
 outlet_en: "Guokr"
 date: 2019-10-01
 section: "online"
+dropcap: true
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/wyetxNOx5PJPoAvP5apCeQ"

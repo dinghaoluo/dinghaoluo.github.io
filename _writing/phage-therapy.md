@@ -5,6 +5,8 @@ outlet: "Scientific American China"
 date: 2021-03-15
 image: "/assets/images/writing/phage-therapy.jpg"
 section: "online"
+writing_page: false
+dropcap: true
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/162wBMyFCG2z4BZwFjTxAQ"

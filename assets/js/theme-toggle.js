@@ -22,10 +22,19 @@
       document.documentElement.removeAttribute('data-theme');
       localStorage.removeItem('theme');
     }
+    updateLabel();
+  }
+
+  function updateLabel() {
+    var next = effectiveTheme() === 'dark' ? 'light' : 'dark';
+    btn.setAttribute('data-theme-label', 'switch to ' + next);
+    btn.setAttribute('title', 'Switch to ' + next + ' mode');
   }
 
   btn.addEventListener('click', function () {
     var current = effectiveTheme();
     applyTheme(current === 'dark' ? 'light' : 'dark');
   });
+
+  updateLabel();
 })();

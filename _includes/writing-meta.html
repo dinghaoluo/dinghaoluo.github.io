@@ -11,13 +11,33 @@
 {%- if include.show_date == false -%}
   {%- assign show_date = false -%}
 {%- endif -%}
+{%- if item.show_meta_date == false -%}
+  {%- assign show_date = false -%}
+{%- endif -%}
 {%- assign show_isbn = true -%}
 {%- if include.show_isbn == false -%}
   {%- assign show_isbn = false -%}
 {%- endif -%}
+{%- assign show_author = true -%}
+{%- if include.show_author == false -%}
+  {%- assign show_author = false -%}
+{%- endif -%}
+{%- if item.show_meta_author == false -%}
+  {%- assign show_author = false -%}
+{%- endif -%}
+{%- assign show_outlet = true -%}
+{%- if include.show_outlet == false -%}
+  {%- assign show_outlet = false -%}
+{%- endif -%}
+{%- if item.show_meta_outlet == false -%}
+  {%- assign show_outlet = false -%}
+{%- endif -%}
 {%- assign type_class = include.type_class | default: "writing-piece-meta__type" -%}
 {%- assign date_format = include.date_format | default: "%-d %b %Y" -%}
 {%- assign kind = item.type | default: item.category | default: "writing" -%}
+{%- if kind == "feature" or kind == "scicomm" -%}
+  {%- assign kind = "science" -%}
+{%- endif -%}
 {%- assign collaborator_note = item.collaborator | default: "" -%}
 {%- assign outlet_has_collaborator_note = false -%}
 {%- if item.outlet and collaborator_note != "" -%}
@@ -40,18 +60,18 @@
   <span>{% if meta_started %} · {% endif %}{{ item.date | date: date_format }}</span>
   {%- assign meta_started = true -%}
 {%- endif -%}
-{%- if item.byline and outlet_has_collaborator_note != true -%}
+{%- if show_author and item.byline and outlet_has_collaborator_note != true -%}
   <span>{% if meta_started %} · {% endif %}{{ item.byline }}</span>
   {%- assign meta_started = true -%}
 {%- endif -%}
-{%- if item.source_author -%}
+{%- if show_author and item.source_author -%}
   <span>{% if meta_started %} · {% endif %}{{ item.source_author }}</span>
   {%- assign meta_started = true -%}
-{%- elsif item.creator -%}
+{%- elsif show_author and item.creator -%}
   <span>{% if meta_started %} · {% endif %}{{ item.creator }}</span>
   {%- assign meta_started = true -%}
 {%- endif -%}
-{%- if item.outlet -%}
+{%- if show_outlet and item.outlet -%}
   <span>{% if meta_started %} · {% endif %}{{ item.outlet }}{% if item.outlet_en %} ({{ item.outlet_en }}){% endif %}{% if collaborator_note != "" %} (collab. {{ collaborator_note }}){% endif %}</span>
   {%- assign meta_started = true -%}
 {%- endif -%}

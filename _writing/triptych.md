@@ -5,6 +5,7 @@ category: "fiction"
 date: 2018-10-20
 excerpt: "Three linked stories about closeness, distance, and the light on someone's hair."
 image: /assets/images/personal/triptych.webp
+dropcap: true
 links:
   - label: "Him (Chinese)"
     url: "https://mp.weixin.qq.com/s/F_VGMoq1Ph6SvFj2XTMNuw"

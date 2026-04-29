@@ -622,8 +622,11 @@
 (function () {
   'use strict';
   var WIDE_SCREEN_MIN = 1412;
-  var BOOK_CHINESE_EDITION_MULTIPLIER = 0.18;
-  var BOOK_NON_CHINESE_LOVED_MULTIPLIER = 2.1;
+  var COVER_MIN_WEIGHT = 0.15;
+  var BOOK_CHINESE_EDITION_MULTIPLIER = 0.02;
+  var BOOK_CHINESE_EDITION_MIN_WEIGHT = 0.02;
+  var BOOK_NON_CHINESE_EDITION_MULTIPLIER = 1.5;
+  var BOOK_NON_CHINESE_LOVED_MULTIPLIER = 3.2;
 
   function hasChineseTitleFallback(el) {
     var text = [
@@ -643,6 +646,7 @@
     var type = (el.getAttribute('data-type') || '').toLowerCase();
     var reaction = (el.getAttribute('data-eval') || '').toLowerCase();
     var weight = 1;
+    var minWeight = COVER_MIN_WEIGHT;
 
     if (container.classList.contains('home-covers--books')) {
       if (reaction === 'loved') weight = 5;
@@ -652,15 +656,19 @@
 
       if (isChineseEdition(el)) {
         weight *= BOOK_CHINESE_EDITION_MULTIPLIER;
-      } else if (reaction === 'loved') {
-        weight *= BOOK_NON_CHINESE_LOVED_MULTIPLIER;
+        minWeight = BOOK_CHINESE_EDITION_MIN_WEIGHT;
+      } else {
+        weight *= BOOK_NON_CHINESE_EDITION_MULTIPLIER;
+        if (reaction === 'loved') {
+          weight *= BOOK_NON_CHINESE_LOVED_MULTIPLIER;
+        }
       }
     } else if (container.classList.contains('home-covers--screen')) {
       if (type === 'film') weight *= 2.4;
       if (type === 'tv') weight *= 0.75;
     }
 
-    return Math.max(weight, 0.15);
+    return Math.max(weight, minWeight);
   }
 
   function weightedShuffle(items, container) {

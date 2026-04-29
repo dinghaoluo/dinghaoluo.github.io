@@ -3,7 +3,18 @@ title: "Place cells and the brain's cartography"
 type: "feature"
 outlet: "Neu-Reality"
 date: 2022-05-23
+writing_feature: true
+writing_feature_order: 4
 section: "online"
+dropcap: true
+feature_banner: true
+banner_image: "/assets/images/writing/place-cells-hippocampus-unlabeled.jpg"
+banner_image_alt: "Unlabeled close-up image of the hippocampus in the brain"
+banner_credit: "Andrewmeyerson via Wikimedia Commons"
+banner_license: "CC BY-SA 3.0"
+banner_source: "https://commons.wikimedia.org/wiki/File:Hippocampus_(Brain)_Unlabeled.jpg"
+banner_position: "center 30%"
+banner_bg: "#f4f1ea"
 links:
   - label: "Original (Chinese)"
     url: "https://neu-reality.com/2022/05/place-cell-history/"

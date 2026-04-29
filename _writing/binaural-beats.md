@@ -1,5 +1,5 @@
 ---
-title: "Binaural beats, or malice as neuroscience"
+title: "Malice as Neuroscience"
 title_zh: "用雙聲道拍頻「綁架大腦」？"
 category: "scicomm"
 date: 2020-08-16

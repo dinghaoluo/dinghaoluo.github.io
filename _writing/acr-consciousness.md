@@ -7,8 +7,9 @@ date: 2021-03-01
 issue: "March 2021 print issue"
 section: "print"
 image: "/assets/images/writing/acr_consciousness_cover.jpg"
-excerpt: "My March 2021 print feature for Scientific American China, tracing how IIT, GNW, higher-order theory, and the ARC adversarial collaboration turned consciousness from philosophical deadlock into an experimental contest. Built from interviews with Anil Seth, Cyriel Pennartz, Hakwan Lau, and Chinese ARC researchers, it follows the field at the point where grand theory has to answer to data."
+excerpt: "My March 2021 print feature for Scientific American China, tracing how IIT, GNW, higher-order theory, and Accelerating Research on Consciousness (ARC) turned consciousness from philosophical deadlock into an experimental contest. Built from interviews with Anil Seth, Cyriel Pennartz, Hakwan Lau, and Chinese ARC researchers, it follows the field at the point where grand theory has to answer to data."
 featured: true
+dropcap: true
 ---
 
 *Propelled by modern neuroscience, the problem of consciousness has attracted sustained scientific attention. This attention has spawned numerous neuroscientific theories of consciousness, and the conflicts between them have become the focus of intense debate. To convert these theoretical disputes into forward momentum, scientists have launched a large-scale collaboration to accelerate our understanding of consciousness.*
@@ -66,7 +67,7 @@ Even so, HOT, like every other theory, is far from settled. Only through fair co
 
 ### Adversarial collaboration
 
-In 2019, a $20 million international research initiative was launched. This project, named Accelerating Research on Consciousness (ARC), aims to place competing, even mutually contradictory, theories of consciousness on the same stage and let them compete, thereby accelerating the search for the best theory. As ARC's funder, the Templeton World Charity Foundation has supported research on six theories, including the three major ones described above. Some scientists believe that the 'adversarial collaboration' championed by ARC can answer the core question of consciousness: why does the brain produce subjective experience?
+In 2019, a $20 million international research initiative was launched. This project, named [Accelerating Research on Consciousness (ARC)](https://www.templetonworldcharity.org/our-priorities/discovery/accelerating-research-consciousness), aims to place competing, even mutually contradictory, theories of consciousness on the same stage and let them compete, thereby accelerating the search for the best theory. As ARC's funder, the Templeton World Charity Foundation has supported research on six theories, including the three major ones described above. Some scientists believe that the 'adversarial collaboration' championed by ARC can answer the core question of consciousness: why does the brain produce subjective experience?
 
 The motivation behind ARC is clear. 'The days of the lone genius scientist solving big problems in the laboratory are over,' said Dawid Potgieter, senior programme officer at the Templeton Foundation. ARC's adversarial collaboration model enables researchers to test their disagreements directly. Ideally, participants convene at a round table for seminars driven by evidence-based debate, striving to refute their opponents and reflect on their own theory's weaknesses. Guided by these exchanges, they return to their laboratories to conduct further experiments, funded by Templeton. The foundation also funds replication studies to verify each laboratory's results. Potgieter stated that ARC aspires to be a model for open science: researchers have ample funding and open data, and experimental reproducibility is guaranteed. If this model produces breakthroughs, it will simultaneously demonstrate the superiority of open science over the traditional 'behind closed doors' approach.
 

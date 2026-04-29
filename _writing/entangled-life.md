@@ -1,67 +1,49 @@
 ---
-title: "Entangled Life"
+title: "A conversation with Merlin Sheldrake"
+archive_title: "Entangled Life"
 title_zh: "菌络万象"
 title_link: false
 type: "science"
-source_author: "Merlin Sheldrake"
-outlet: "后浪出版"
-outlet_en: "Houlang Press"
-date: 2024-11-01
+show_archive_type: false
+date: 2025-11-05
 image: "/assets/images/thoughts/books/entangled_life_chinese.jpg"
+show_page_meta: false
+show_page_awards: false
+show_page_links: false
+show_meta_date: false
+show_meta_author: false
+show_meta_outlet: false
+show_archive_isbn: true
 links:
+  - label: "goodreads"
+    url: "https://www.goodreads.com/book/show/52668915"
   - label: "douban"
     url: "https://book.douban.com/subject/37088268/"
   - label: "amazon"
     url: "https://www.amazon.com/dp/7559677754"
-  - label: "goodreads"
-    url: "https://www.goodreads.com/book/show/52668915"
-companion_link:
-  label: "<em>The Paper</em> interview"
-  url: "/writing/entangled-life/"
-companion_lede: "read my interview with Merlin Sheldrake:"
+  - label: "houlang books"
+    url: "https://www.hinabook.com/"
 awards:
-  - "2025 Pingshan Natural History Museum Book Award"
-  - "Douban 2025 Top 10 Science & New Knowledge"
+  - label: "2025 Pingshan Natural History Museum Book Award"
+    url: "https://m.sohu.com/a/970954278_122097022"
+  - label: "Scientific American China 2024 Best Science Reading"
+    url: "https://www.huanqiukexue.com/?p=2031"
+  - label: "Douban 2025 Top 10 Science & New Knowledge"
+    url: "https://book.douban.com/annual/2025/"
 isbn: "9787559677754"
 featured: true
 section: "print"
-excerpt: "My Chinese translation of Sheldrake's fungal world: mycelium, decomposition, symbiosis, and sentences that had to stay scientifically exact without losing their strangeness."
+excerpt: "Originally published by <em>The Paper</em> on 5 November 2025. Co-conducted with Zhou Songyan for Houlang Books' science editorial team."
+archive_excerpt: 'My Chinese translation (<a href="https://www.hinabook.com/">Houlang Books</a>) of <em>Entangled Life</em>: mycelium, decomposition, symbiosis, and sentences that had to stay scientifically exact without losing their strangeness. Read my interview with Merlin Sheldrake: <a href="/writing/entangled-life/"><em>The Paper</em> interview</a>.'
 ---
 
-<span class="dropcap">M</span>y complete Chinese translation of Merlin Sheldrake's *Entangled Life*, published by Houlang Press (后浪出版) in November 2024. Hardcover, 304 pages. ISBN 9787559677754.
+{% include figure image_path="/assets/images/writing/entangled-life-pingshan-award.jpg" alt="Pingshan Natural History Museum Book Award announcement image for Entangled Life" caption="[Pingshan Natural History Museum Book Award](https://m.sohu.com/a/970954278_122097022), 2025." class="writing-insert writing-insert--right writing-insert--award" %}
 
-The original won the 2021 Royal Society Science Book Prize and the Wainwright Prize for global conservation writing. The Chinese edition won the 2025 Pingshan Natural History Museum Book Award and was named to Douban's 2025 Top 10 Science & New Knowledge list.
+The original *Entangled Life* (2020) won the 2021 Royal Society Science Book Prize and the Wainwright Prize for global conservation writing; my Chinese translation ([Houlang Books](https://www.hinabook.com/), ISBN 9787559677754) won the [2025 Pingshan Natural History Museum Book Award](https://m.sohu.com/a/970954278_122097022), was selected for [Scientific American China's 2024 Best Science Reading list](https://www.huanqiukexue.com/?p=2031), and was named to [Douban's 2025 Top 10 Science & New Knowledge list](https://book.douban.com/annual/2025/).
 
----
+Original: [Goodreads](https://www.goodreads.com/book/show/52668915); Chinese edition: [Douban](https://book.douban.com/subject/37088268/), [Amazon](https://www.amazon.com/dp/7559677754), [Houlang Books](https://www.hinabook.com/).
 
-Sheldrake is a tropical ecologist whose PhD at Cambridge took him into Panama's rainforests to study underground fungal networks. *Entangled Life* follows him there and elsewhere: tracking truffles in Italy, studying slime moulds in British labs, and tracing how fungi have shaped life on Earth for over a billion years by decomposing rock into soil, degrading pollutants, surviving in space, producing food and medicine, manipulating animal behaviour, and threading mycorrhizal networks through the root systems of nearly every plant on the planet.
-
-The translation took me from one kind of precision into another: from the technical vocabulary of mycology and ecology into Chinese sentences that had to carry the same weight without flattening the strangeness. Sheldrake's prose is vivid and scientifically rigorous in equal measure; the challenge was preserving both registers in a language where the conventions of science writing tend to flatten one or the other.
-
-> The challenge was preserving both registers without flattening the strangeness.
-{: .pullquote .pullquote--compact}
-
----
-
-## A conversation with Merlin Sheldrake
-
-*A written conversation with Merlin Sheldrake, one year after the Chinese edition of* Entangled Life *(《菌络万象》), on fungi, neural networks, the art-science divide, and why understanding mushrooms begins with fascination. Co-conducted with Zhou Songyan on behalf of Houlang's science editorial team.*
-
-*Originally published in Chinese on [The Paper (澎湃新闻)](https://m.thepaper.cn/newsDetail_forward_31899782), November 2025.*
-
----
-
-Merlin Sheldrake's passion for fungi remains undiminished. Since publishing *Entangled Life* in 2020, he has continued venturing into Panama's rainforests, participating in documentary filming, conducting research, giving lectures, and exploring the intersection of music and mycology. In 2024, Houlang brought the book to Chinese readers as 《菌络万象》. On the one-year anniversary of the Chinese edition, we held a written exchange with Sheldrake.
-
-**Merlin Sheldrake:** I have always been fascinated by material transformation: hard wood becoming soil, honey becoming wine, raw dough rising into bread. How does all this happen? These questions repeatedly led me to fungi, which are metabolic virtuosos with astonishing abilities to reshape the world. Fungi can break down rocks and degrade kerosene, and without their decomposing powers, Earth would be buried under kilometres of dead organisms.
-
-I grew up near Hampstead Heath in London. As a child, I tried to grasp a strange logic: that we actually live in the space created by decomposition. Creators create, decomposers break down; without decomposers, creators would have nothing to work with. This idea changed how I understood the world and drove my curiosity toward organisms that do so much work yet live largely beyond human sight.
-
-I became increasingly interested in symbiosis, intimate relationships between unrelated organisms. Fungi have played key roles in some of the most transformative symbiotic events in Earth's history. For example, plants were able to leave water about 500 million years ago because fungi assisted them, serving as root systems until plants evolved their own. Today, nearly all plants depend on mycorrhizal fungi. These fungi form intricate networks that thread through soil, seeking nutrients to exchange with their plant partners. When we look underground, a bustling subterranean city of exchange unfolds: thousands of threads, difficult to disentangle.
-
-In high school I was taught that plants were autonomous individuals; now I recognise them as products of complex entangled relationships. Mycorrhizal relationships are a more ancient plant trait than stems, leaves, flowers, or even roots. What we call plants may have originated from a symbiosis between fungi and algae, an ancient relationship underpinning the food webs that sustain most terrestrial life.
-
-I studied fungi in Panama, which deepened my understanding. Compared to animals and plants, fungi receive far less attention, and we are only beginning to understand this bewildering kingdom. Unanswered puzzles are everywhere. The more I studied, the more I wanted to write a book with fungi as the protagonists.
+*Originally published by [The Paper](https://m.thepaper.cn/newsDetail_forward_31899782) on 5 November 2025. Co-conducted with Zhou Songyan for Houlang Books' science editorial team.*
 
 ---
 

@@ -5,6 +5,7 @@ outlet: "Scientific American China"
 date: 2020-11-20
 image: "/assets/images/writing/female-testes-moles.jpg"
 section: "online"
+writing_page: false
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/UO_nJhYRqR_nJaH1UmrCBQ"

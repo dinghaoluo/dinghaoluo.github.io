@@ -1,0 +1,86 @@
+{% assign article = include.article %}
+{% assign archive_title = article.archive_title | default: article.title_display | default: article.title %}
+{% assign archive_excerpt = article.archive_excerpt | default: article.excerpt %}
+{% assign writing_kind = "essay" %}
+{% if article.type == "feature" or article.section == "online" or article.category == "scicomm" %}
+  {% assign writing_kind = "science" %}
+{% elsif article.category == "fiction" %}
+  {% assign writing_kind = "story" %}
+{% elsif article.category == "journal" %}
+  {% assign writing_kind = "journal" %}
+{% endif %}
+{% assign show_feature_banner = false %}
+{% if article.writing_feature and article.feature_banner and article.banner_image %}
+  {% assign show_feature_banner = true %}
+{% endif %}
+{% assign show_archive_image = false %}
+{% if article.archive_image and article.image and show_feature_banner == false %}
+  {% assign show_archive_image = true %}
+{% endif %}
+{% assign display_type = article.type | default: article.category %}
+{% if writing_kind == "science" %}
+  {% assign display_type = "science" %}
+{% endif %}
+<div
+  class="writing-entry writing-entry--archive writing-entry--kind-{{ writing_kind }}{% if article.writing_feature %} writing-entry--pinned{% endif %}{% if show_archive_image %} writing-entry--has-image{% endif %}{% if show_feature_banner %} writing-entry--feature-banner{% endif %}"
+  data-kind="{{ writing_kind }}"
+  data-pinned="{% if article.writing_feature %}true{% else %}false{% endif %}"
+  data-title="{{ article.title | strip_html | escape }}"
+  data-date="{{ article.date | date: '%Y-%m-%d' }}"
+  data-search="{{ article.title | append: ' ' | append: article.title_zh | append: ' ' | append: archive_title | append: ' ' | append: display_type | append: ' ' | append: article.type | append: ' ' | append: article.category | append: ' ' | append: article.outlet | append: ' ' | append: article.outlet_en | append: ' ' | append: article.byline | append: ' ' | append: article.collaborator | append: ' ' | append: archive_excerpt | strip_html | strip_newlines | escape }}"
+>
+  {% if show_feature_banner %}
+  <a
+    href="{{ article.url }}"
+    class="writing-entry__feature-banner"
+    style="--writing-banner-image: url('{{ article.banner_image | relative_url }}');{% if article.banner_position %} --writing-banner-position: {{ article.banner_position }};{% endif %}{% if article.banner_size %} --writing-banner-size: {{ article.banner_size }};{% endif %}{% if article.banner_bg %} --writing-banner-bg: {{ article.banner_bg }};{% endif %}"
+    aria-label="{{ archive_title | strip_html | escape }}"
+  >
+    <div class="writing-entry__feature-panel">
+      <div class="writing-entry__kicker">
+        <span class="writing-entry__kicker-main">
+          <span class="writing-entry__type">{{ display_type }}</span>
+        </span>
+        <span class="writing-entry__date">{{ article.date | date: "%-d %b %Y" }}</span>
+      </div>
+      <h3 class="writing-entry__title">
+        {{ archive_title }}
+        {% if article.title_zh %}
+        <span class="writing-entry__title-zh-inline">{{ article.title_zh }}</span>
+        {% endif %}
+      </h3>
+      {% if archive_excerpt %}
+      <div class="writing-entry__text">{{ archive_excerpt }}</div>
+      {% endif %}
+    </div>
+  </a>
+  {% else %}
+  {% if show_archive_image %}
+  <a href="{{ article.url }}" class="writing-entry__img-wrap">
+    <img src="{{ article.image }}" alt="{{ archive_title | strip_html | escape }}" class="writing-entry__img" loading="lazy">
+  </a>
+  {% endif %}
+  <div class="writing-entry__body">
+    <div class="writing-entry__kicker">
+      <span class="writing-entry__kicker-main">
+        <span class="writing-entry__type">{{ display_type }}</span>
+      </span>
+      <span class="writing-entry__date">{{ article.date | date: "%-d %b %Y" }}</span>
+    </div>
+    <h3 class="writing-entry__title">
+      <a href="{{ article.url }}">{{ archive_title }}</a>
+      {% if article.title_zh %}
+      <span class="writing-entry__title-zh-inline">{{ article.title_zh }}</span>
+      {% endif %}
+    </h3>
+    {% if article.byline or article.source_author or article.creator or article.outlet or article.isbn %}
+    <div class="writing-entry__meta">
+      {% include writing-meta.html item=article show_kind=false show_title_zh=false show_date=false %}
+    </div>
+    {% endif %}
+    {% if archive_excerpt %}
+    <div class="writing-entry__text">{{ archive_excerpt }}</div>
+    {% endif %}
+  </div>
+  {% endif %}
+</div>

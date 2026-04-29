@@ -36,13 +36,13 @@ The *Solenoid* review established the newest long-form pattern:
 - Begin with a concrete textual shock: 'Lice came before the fourth dimension.'
 - Let the opening image carry the argument before naming the abstraction.
 - Use pull quotes as section centres: 'In childhood, strangeness is the first condition of reality; adulthood teaches us which parts of it to call normal.'
-- Treat references as tools for a problem already in the essay: Fisher can clarify the weird/eerie threshold when the transition is earned. Remove a comparison if it feels like clever adjacency rather than necessity; the Miéville contrast was cut for this reason.
+- Treat references as tools for a problem already in the essay. The Fisher frame was cut because weird/eerie still implies breach or categorical failure, while the revised Solenoid argument says ordinary reality and strange dream are made of the same material. Remove a comparison when it clarifies the wrong problem.
 - Pull from earlier thoughts entries only when the borrowed phrase becomes a genuine hinge: 'topography of thought', 'the hum beneath the ordinary', 'real yet untranslatable', 'how does one get saved?'
 - Preserve translator-consciousness when it is part of the reading, but state limits plainly: 'I do not read Romanian.'
 - Do not place pull quotes directly beside section breaks. The essay should not use two visual hinges for one turn.
 - Pull quotes should already exist verbatim in the main text. They can be line-broken for display, but they should not be invented only for the visual slot.
 - Pull quotes should also be readable when encountered alone. A sentence like 'Each return alters what the next return can mean' may work inside a paragraph, but it is too context-dependent for display.
-- Sentence-to-sentence joints matter as much as section architecture. Do not jump from 'surrealism is insufficient' to Fisher without a bridge that explains why Fisher is the next necessary tool.
+- Sentence-to-sentence joints matter as much as section architecture. Do not jump from 'surrealism is insufficient' to an outside theorist unless the theory strengthens the essay's actual thesis rather than redirecting it.
 - Transitional prose must describe the real sequence of the essay. If the draft begins with bodily shock and only then reaches childhood, do not write as if childhood was the literal opening.
 - A strong opening creates a debt. Later sections must escalate, refract, or explain the opening pressure; they cannot merely proceed through topics.
 - The solenoid-as-induction argument became the structural thesis. Bucharest, failure, archive, body, and salvation needed to read as coils preparing that argument, not as adjacent themes.

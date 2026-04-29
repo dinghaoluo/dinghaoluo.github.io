@@ -5,6 +5,8 @@ outlet: "Scientific American China"
 date: 2020-11-06
 image: "/assets/images/writing/henrietta-lacks.jpg"
 section: "online"
+writing_page: false
+dropcap: true
 links:
   - label: "Original (Chinese)"
     url: "https://mp.weixin.qq.com/s/MSM1A25v0N2iF8UJYYg5KA"
