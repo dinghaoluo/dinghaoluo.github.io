@@ -3,6 +3,8 @@ title: "Two Freedoms"
 title_zh: "兩種自由"
 category: "journal"
 date: 2019-07-12
+writing_feature: true
+writing_feature_order: 3
 excerpt: "Castle Hill after work, Radiohead in the earphones, and the difference between being left alone and being free."
 image: /assets/images/personal/two-freedoms.webp
 ---
