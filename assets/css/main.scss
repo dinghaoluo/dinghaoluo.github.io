@@ -5777,39 +5777,62 @@ body.photos-page {
       gap: 1.12rem;
     }
 
+    .photo-map-card--overview {
+      display: block;
+      overflow-x: auto;
+      overflow-y: visible;
+      overscroll-behavior-x: contain;
+      padding-bottom: 0.35rem;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+    }
+
     .photo-map-card--overview .photo-map-plate {
+      width: 44rem;
+      min-width: 100%;
+      max-width: none;
       overflow: visible;
     }
 
+    .photo-map-pin {
+      width: 1.55rem;
+      height: 1.55rem;
+    }
+
+    .photo-map-pin__dot {
+      width: 0.48rem;
+      height: 0.48rem;
+    }
+
     .photo-map-pin__label {
-      max-width: 6.2rem;
+      max-width: 6.3rem;
       padding: 0.13rem 0.24rem 0.14rem;
-      font-size: 0.54rem;
+      font-size: 0.56rem;
       line-height: 1.06;
     }
 
     .photo-map-pin--cluster {
-      width: 1.48rem;
-      height: 1.48rem;
+      width: 1.9rem;
+      height: 1.9rem;
     }
 
     .photo-map-pin--cluster .photo-map-pin__dot {
-      width: 0.68rem;
-      height: 0.68rem;
+      width: 0.82rem;
+      height: 0.82rem;
     }
 
     .photo-map-pin--cluster .photo-map-pin__label {
-      font-size: 0.55rem;
+      font-size: 0.58rem;
     }
 
     .photo-map-card--overview .photo-map-pin__label {
-      max-width: 5.6rem;
-      padding: 0.11rem 0.2rem 0.12rem;
-      font-size: 0.49rem;
+      max-width: 5.8rem;
+      padding: 0.11rem 0.21rem 0.12rem;
+      font-size: 0.54rem;
     }
 
     .photo-map-card--overview .photo-map-pin--cluster .photo-map-pin__label {
-      font-size: 0.51rem;
+      font-size: 0.56rem;
     }
 
     .photo-section__note {
