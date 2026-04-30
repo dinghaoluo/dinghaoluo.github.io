@@ -8,10 +8,9 @@ classes: home
 
 I'm finishing my PhD in neuroscience at the [Max Planck Florida Institute for Neuroscience](https://www.mpfi.org), studying how rapid locus coeruleus dopamine signals tune hippocampal dynamics during memory-guided navigation. I am graduating in December 2026 and looking for data science roles in Europe.
 
-Recently I've been reading *Mason & Dixon* (1997), learning SQL and intermediate machine learning, and building a computational analysis of Pynchon's *Gravity's Rainbow*.
+Recently I've been reading *Mason & Dixon* (1997), learning SQL and intermediate machine learning, and working on a computational analysis of Pynchon's *Gravity's Rainbow*.
 
-Reach out to me: <a href="mailto:dinghao.luo@outlook.com">[dinghao.luo@outlook.com]</a><br>
-Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.com/user/amoxdl24/) · [Instagram](https://www.instagram.com/amoxitoxin) · [LinkedIn](https://www.linkedin.com/in/dinghaoluo/) · [CV](/cv/)
+Reach out to me: <a href="mailto:dinghao.luo@outlook.com">[dinghao.luo@outlook.com]</a><br>Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.com/user/amoxdl24/) · [Instagram](https://www.instagram.com/amoxitoxin) · [LinkedIn](https://www.linkedin.com/in/dinghaoluo/) · [CV](/cv/)
 
 ---
 

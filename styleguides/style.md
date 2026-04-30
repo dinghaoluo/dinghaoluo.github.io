@@ -58,6 +58,8 @@ Do not stack a pull quote directly against a section break. Use one visual hinge
 
 Pull quote density should be low. In a medium-length review-essay, two strong pull quotes often read better than three or four. Keep only display lines with real architectural work; fold softer labels back into prose.
 
+Selecting a pull quote: list three or four candidates from the section and pick the one that lands the section's *ethics* or *structural payoff*, not the one that sounds prettiest or names the topic. The first *Gravity's Rainbow* draft used 'A human being disappears into the target area before the rocket ever rises from the launch table' — diagnostically sharp, but slightly literary. The published version uses 'The V-2 does not need hatred at the point of impact. It simply needs procedure.' That second sentence lands the *ethics* of the opening movement, not just its optics; it is also colder, which the section needs. The pretty sentence is rarely the right pull quote.
+
 Long-form length is earned by tightening pressure, not by accumulating intelligence. A 3,000-4,000 word single-work review-essay can be right when each section changes what the reader can see in the work: a new image, formal mechanism, outside reference, personal angle, or complication that could not have arrived earlier. If a later section only adds another smart analogy, another critic, or another version of admiration already established, compress. A useful test: every substantial block should alter the essay's trajectory, not merely extend it.
 
 Reception material should be metabolised at the point of need. Avoid display-case paragraphs that name several critics in sequence before the essay has finished making its own argument. Fold an outside term into the paragraph where it sharpens a live problem; leave general provenance to the source note.
@@ -88,7 +90,13 @@ Coinages can become architecture. If the essay finds a phrase with real diagnost
 
 Avoid formulaic contrast syntax: 'not X but Y', 'less like X than Y', 'this is not A; it is B', 'the result is'. These constructions are allowed when the opposition is the argument, not when it restates an already-clear claim with decorative symmetry. A good test: if either half can be removed without changing the pressure of the sentence, rewrite through positive assertion, sequence, or a sharper verb.
 
-Avoid opaque conceptual coins unless the prose immediately earns them. If a phrase like 'under-redeemed' needs a gloss, either define it through concrete pressure before using it or find a clearer formulation.
+Avoid AI-sounding meta-claim openers. Paragraphs that begin by *announcing why a thing is significant* rather than *showing it* read as machine-generated even when the underlying claim is sharp. Specific tells: 'X matters because Y…', 'The phrase \"Y\" hurts because it is not Z', 'This is the novel's exact cruelty:', 'The point is not that X…', 'And that seems to be the part of the work Y takes most seriously.' Each of these announces an interpretive move before performing it. The fix is to drop the announcement frame and let the next sentence land directly: 'Franz Pökler is the System's frighteningly usable man' beats 'Franz Pökler matters because he is frighteningly usable.'
+
+Avoid self-credentialing in serious essays. Dragging the writer's own profession into a literary argument as a credential — 'my own work makes me resistant to an easy anti-X reading' — collapses the register and converts argument into autobiography. If the substantive observation can be made in third-person or through a list of concrete cases, do that. First-person is for *concession* and *limit* (e.g., 'I do not read Romanian'), not for credential.
+
+Avoid abstract big nouns when concrete ones are available. 'Empire', 'modernity', 'capitalism', 'history' are easier to write than the right specific noun, and they let the reader drift. If the actual claim is about *European colonialism in Namibia*, write that. If the actual claim is about *the V-2 fired westward at civilian London*, write that. Big abstract nouns are usually placeholders for unfinished thinking; replace each with the most specific noun the argument can support.
+
+Avoid opaque conceptual coins unless the prose immediately earns them. If a phrase like 'under-redeemed' needs a gloss, either define it through concrete pressure before using it or find a clearer formulation. Borrowed academic compressions (Foucauldian 'legible to power', Schmittian 'state of exception') are particularly prone to this; when in doubt, write plainly: 'turn the victim into a category, then erase it' beats 'make the victim legible to power before making the victim disappear.'
 
 Avoid empty personal-reaction frames: 'what strikes me most', 'what stayed with me', 'what moved me most', 'what I took away'. State the observation directly unless the personal reaction itself carries content.
 
@@ -98,13 +106,19 @@ Avoid defensive verdicts, generic praise, over-explaining, corporate-speak, and 
 
 Avoid closing on protected admiration: adjective catalogues, over-hedged superlatives, or verdicts that apologise for their own force. If the essay has earned emotional directness, state it cleanly and end on the changed perception or unresolved question.
 
+Avoid two-paragraph closings. A closing should be a single pressurised exhale; if the penultimate paragraph already gestures at conclusion and the final paragraph repeats the gesture, fold them. Solenoid closes in one paragraph that names what the book did to the reader and ends on a single image. *Gravity's Rainbow* originally closed in two and read flabby until the two were merged.
+
 ## Factuality
 
 Factual accuracy outranks rhetorical convenience. Never invent reception claims, author statements, plot details, publication facts, translation claims, or comparisons. If a line depends on a source, check it. If only one translation was read, say so plainly. Direct textual details must be verified against the work or removed.
 
+Technical and scientific claims must be right when the literary argument depends on them. If an essay's thesis leans on a piece of mathematics, engineering, or biology — the V-2's double integration, a gene's mechanism, a physics result — that claim has to be verifiable against a real source, not approximated for rhetorical convenience. The *Gravity's Rainbow* essay had to be rewritten when an early draft described the V-2's accelerometer as performing one integration in flight and a second through ballistic geometry; Pynchon's actual mechanism is two successive integrations inside the rocket, with cutoff triggered by the accumulated distance equalling a target distance. Getting the technical reading wrong forfeits the literary authority that depends on it.
+
 Attribution should be as exact as the prose is ambitious. Do not turn a specific sourced claim into a broader claim because the broader phrasing is smoother. If a critic is named in prose, the reader should be able to find the critic, outlet, and claim without detective work.
 
 Open-discourse texture is allowed, but it must be metabolised into Dinghao's voice. Sparse direct citation is acceptable when the source is specific, verified, and genuinely useful.
+
+Capitalisation should reflect the work's own usage. When a novel deploys a load-bearing capitalised noun — *Gravity's Rainbow*'s **System**, the **Schwarzkommando**, **They** — match that capitalisation rather than normalising it. The capital marks the word as a specific construct inside the work, not a generic term.
 
 ## Registers
 
