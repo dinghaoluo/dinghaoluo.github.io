@@ -10,29 +10,76 @@ classes: photos-page
   <p>Fieldwork, travel, Cambridge light, Florida rain, and a few ordinary scenes that made walking past feel wrong.</p>
 </div>
 
+{% assign overview_region = site.data.photo_map_regions | where: "scope", "overview" | first %}
+{% assign local_regions = site.data.photo_map_regions | where: "scope", "local" %}
+
 <div class="photo-map-panel" aria-label="Regional maps for the photo atlas">
   <div class="photo-map-grid">
-    {% for region in site.data.photo_map_regions %}
-      {% capture region_title_id %}photo-map-svg-{{ region.id }}-title{% endcapture %}
-      <section class="photo-map-card photo-map-card--{{ region.scope | default: 'regional' }} photo-map-card--{{ region.id }}" aria-labelledby="photo-map-{{ region.id }}-title">
-        <p class="photo-map-card__title" id="photo-map-{{ region.id }}-title">{{ region.title }}</p>
-        <div class="photo-map-plate" style="--map-aspect: {{ region.aspect | default: '1.7778' }};">
-          {% include photo-world-map.svg view_box=region.view_box title=region.title title_id=region_title_id %}
+    {% if overview_region %}
+      {% capture overview_title_id %}photo-map-svg-{{ overview_region.id }}-title{% endcapture %}
+      <section class="photo-map-card photo-map-card--overview photo-map-card--{{ overview_region.id }}" aria-labelledby="photo-map-{{ overview_region.id }}-title">
+        <p class="photo-map-card__title" id="photo-map-{{ overview_region.id }}-title">{{ overview_region.title }}</p>
+        <div class="photo-map-plate" style="--map-aspect: {{ overview_region.aspect | default: '1.7778' }};">
+          {% include photo-world-map.svg view_box=overview_region.view_box title=overview_region.title title_id=overview_title_id %}
           <div class="photo-map-pins" aria-hidden="false">
-            {% for point in region.points %}
-              <a class="photo-map-pin photo-map-pin--{{ point.accent | default: 'clay' }}"
-                 href="#{{ point.section }}"
-                 data-section="{{ point.section }}"
-                 aria-label="{{ point.label | escape }}: {{ point.target | escape }}"
-                 style="--x: {{ point.x }}%; --y: {{ point.y }}%; --label-x: {{ point.label_x | default: '0.72rem' }}; --label-y: {{ point.label_y | default: '-50%' }}; --leader-x: {{ point.leader_x | default: '0rem' }}; --leader-y: {{ point.leader_y | default: '0rem' }}; --leader-w: {{ point.leader_w | default: '0rem' }}; --leader-h: {{ point.leader_h | default: '0rem' }}; --leader-opacity: {{ point.leader_opacity | default: '0' }};">
-                <span class="photo-map-pin__dot" aria-hidden="true"></span>
-                <span class="photo-map-pin__label" aria-hidden="true">{{ point.short_label | default: point.label }}</span>
-              </a>
+            {% for point in overview_region.points %}
+              {% assign pin_label = point.short_label | default: point.label %}
+              {% capture pin_style %}--x: {{ point.x }}%; --y: {{ point.y }}%; --label-x: {{ point.label_x | default: '0.72rem' }}; --label-y: {{ point.label_y | default: '-50%' }}; --leader-x: {{ point.leader_x | default: '0rem' }}; --leader-y: {{ point.leader_y | default: '0rem' }}; --leader-w: {{ point.leader_w | default: '0rem' }}; --leader-h: {{ point.leader_h | default: '0rem' }}; --leader-opacity: {{ point.leader_opacity | default: '0' }};{% endcapture %}
+              {% if point.cluster %}
+                <button class="photo-map-pin photo-map-pin--cluster photo-map-pin--{{ point.accent | default: 'clay' }}"
+                        type="button"
+                        data-map-cluster="{{ point.cluster }}"
+                        aria-controls="photo-map-local-{{ point.cluster }}"
+                        aria-expanded="false"
+                        aria-label="{{ point.label | escape }}: open local map"
+                        style="{{ pin_style | strip }}">
+                  <span class="photo-map-pin__dot" aria-hidden="true"></span>
+                  <span class="photo-map-pin__label" aria-hidden="true">{{ pin_label }}</span>
+                </button>
+              {% else %}
+                <a class="photo-map-pin photo-map-pin--{{ point.accent | default: 'clay' }}"
+                   href="#{{ point.section }}"
+                   data-section="{{ point.section }}"
+                   aria-label="{{ point.label | escape }}: {{ point.target | escape }}"
+                   style="{{ pin_style | strip }}">
+                  <span class="photo-map-pin__dot" aria-hidden="true"></span>
+                  <span class="photo-map-pin__label" aria-hidden="true">{{ pin_label }}</span>
+                </a>
+              {% endif %}
             {% endfor %}
           </div>
         </div>
       </section>
-    {% endfor %}
+    {% endif %}
+
+    <div class="photo-map-local-deck" data-map-local-deck aria-live="polite">
+      {% for region in local_regions %}
+        {% capture region_title_id %}photo-map-svg-{{ region.id }}-title{% endcapture %}
+        <section id="photo-map-local-{{ region.id }}"
+                 class="photo-map-card photo-map-card--local photo-map-card--{{ region.id }}"
+                 data-map-local="{{ region.id }}"
+                 aria-labelledby="photo-map-{{ region.id }}-title"
+                 aria-hidden="true"
+                 hidden>
+          <p class="photo-map-card__title" id="photo-map-{{ region.id }}-title">{{ region.title }}</p>
+          <div class="photo-map-plate" style="--map-aspect: {{ region.aspect | default: '1.7778' }};">
+            {% include photo-world-map.svg view_box=region.view_box title=region.title title_id=region_title_id %}
+            <div class="photo-map-pins" aria-hidden="false">
+              {% for point in region.points %}
+                <a class="photo-map-pin photo-map-pin--{{ point.accent | default: 'clay' }}"
+                   href="#{{ point.section }}"
+                   data-section="{{ point.section }}"
+                   aria-label="{{ point.label | escape }}: {{ point.target | escape }}"
+                   style="--x: {{ point.x }}%; --y: {{ point.y }}%; --label-x: {{ point.label_x | default: '0.72rem' }}; --label-y: {{ point.label_y | default: '-50%' }}; --leader-x: {{ point.leader_x | default: '0rem' }}; --leader-y: {{ point.leader_y | default: '0rem' }}; --leader-w: {{ point.leader_w | default: '0rem' }}; --leader-h: {{ point.leader_h | default: '0rem' }}; --leader-opacity: {{ point.leader_opacity | default: '0' }};">
+                  <span class="photo-map-pin__dot" aria-hidden="true"></span>
+                  <span class="photo-map-pin__label" aria-hidden="true">{{ point.short_label | default: point.label }}</span>
+                </a>
+              {% endfor %}
+            </div>
+          </div>
+        </section>
+      {% endfor %}
+    </div>
   </div>
 </div>
 

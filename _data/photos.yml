@@ -306,9 +306,9 @@
       slot: "wide"
       width: 1700
       height: 957
-- id: "kansai"
-  title: "kansai"
-  axis: "2017 / shopfront, shrine, deer"
+- id: "japan"
+  title: "japan"
+  axis: "2017 / Kansai shopfront, shrine, deer"
   note: "Japan appears here as an early small set: a night shop, a shrine threshold, and deer in open shade."
   accent: "sage"
   photos:
