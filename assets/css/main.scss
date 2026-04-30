@@ -5267,6 +5267,7 @@ body.photos-page {
   }
 
   .photo-map-card {
+    position: relative;
     display: grid;
     min-width: 0;
     gap: 0.5rem;
@@ -5290,6 +5291,18 @@ body.photos-page {
   .photo-map-card--overview {
     max-width: none;
     margin: 0;
+  }
+
+  .photo-map-card--overview .photo-map-card__title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
   }
 
   .photo-map-card--local {
@@ -5350,6 +5363,8 @@ body.photos-page {
   .photo-map-pins {
     position: absolute;
     inset: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .photo-map-pin {
@@ -5669,7 +5684,8 @@ body.photos-page {
       display: grid;
       grid-template-columns: 1fr;
       gap: 1.35rem;
-      max-width: 34rem;
+      width: 100%;
+      max-width: none;
     }
 
     .photo-map-card--overview {
@@ -5723,13 +5739,17 @@ body.photos-page {
     }
 
     .photos-intro,
-    .photo-map-panel,
-    .photo-map-grid,
-    .photo-map-card,
-    .photo-map-plate,
     .photo-section,
     .photo-section__note,
     .photo-cluster {
+      width: 21.4rem;
+      max-width: 100%;
+    }
+
+    .photo-map-panel,
+    .photo-map-grid,
+    .photo-map-card,
+    .photo-map-plate {
       width: 21.4rem;
       max-width: 100%;
     }
@@ -5749,6 +5769,10 @@ body.photos-page {
 
     .photo-map-grid {
       gap: 1.12rem;
+    }
+
+    .photo-map-card--overview .photo-map-plate {
+      overflow: visible;
     }
 
     .photo-map-pin__label {
