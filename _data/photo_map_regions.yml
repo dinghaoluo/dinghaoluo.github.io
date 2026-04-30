@@ -559,8 +559,13 @@
       x: 82.0
       y: 25.0
       section: "shanghai"
-      label_x: "0.72rem"
+      label_x: "-4.65rem"
       label_y: "-1.05rem"
+      leader_x: "-1.9rem"
+      leader_y: "0rem"
+      leader_w: "1.78rem"
+      leader_h: "0rem"
+      leader_opacity: "0.34"
     -
       label: "hangzhou"
       target: "hangzhou"
