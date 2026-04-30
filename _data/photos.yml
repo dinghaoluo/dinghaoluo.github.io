@@ -372,6 +372,60 @@
       slot: "panorama"
       width: 1700
       height: 1133
+- id: "cats"
+  title: "cats"
+  axis: "2020-2024 / street cats, house cats, window cats"
+  note: "A smaller animal register: sleep, shadow, petting, grooming, and the sudden dignity of a cat at a window."
+  accent: "sage"
+  photos:
+    - src: "/assets/images/photos/atlas-cats-floor-sleep-20200526.webp"
+      alt: "A long-haired orange and white cat curled near a wooden floor edge."
+      caption: "floor sleep, 2020"
+      slot: "feature"
+      width: 1700
+      height: 1276
+    - src: "/assets/images/photos/atlas-cats-running-shadow-20200526.webp"
+      alt: "A calico cat running through soft tree shadow on pavement."
+      caption: "shadow run, 2020"
+      slot: "wide"
+      width: 1700
+      height: 957
+    - src: "/assets/images/photos/atlas-cats-ginger-rock-20200527.webp"
+      alt: "A ginger cat sitting in profile beside rough stone."
+      caption: "stone profile, 2020"
+      slot: "wide"
+      width: 1700
+      height: 957
+    - src: "/assets/images/photos/atlas-cats-ginger-pet-20201107.webp"
+      alt: "A ginger cat closing its eyes while being petted by a doorway."
+      caption: "doorway pet, 2020"
+      slot: "wide"
+      width: 1700
+      height: 957
+    - src: "/assets/images/photos/atlas-cats-white-porch-20210314.webp"
+      alt: "A white and black cat sitting upright on a sunlit porch."
+      caption: "porch stillness, 2021"
+      slot: "portrait"
+      width: 1700
+      height: 958
+    - src: "/assets/images/photos/atlas-cats-black-white-lap-20210314.webp"
+      alt: "A black and white cat grooming itself on someone's lap."
+      caption: "lap grooming, 2021"
+      slot: "square"
+      width: 1700
+      height: 1129
+    - src: "/assets/images/photos/atlas-cats-hiba-held-20241012.webp"
+      alt: "A person holding a pale cat up beside a bright window."
+      caption: "hiba held up, 2024"
+      slot: "portrait"
+      width: 1700
+      height: 949
+    - src: "/assets/images/photos/atlas-cats-window-perch.webp"
+      alt: "A small cat perched on a desk in front of a tall window."
+      caption: "window perch"
+      slot: "square"
+      width: 1227
+      height: 1204
 - id: "new-york"
   title: "new york"
   axis: "2019-2024 / bridges, museums, gardens, zoo"
