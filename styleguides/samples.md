@@ -86,6 +86,51 @@ Treat [_writing/solenoid.md](../_writing/solenoid.md) as the canonical long-form
 - Stacking visual hinges. No pull quote sits beside a section break.
 - Loose transitional prose. Each new paragraph names which category is dissolving, or which question forces the next move.
 
+## Long-Form Reference: *Fires a Calculation; Hits a Coordinate: On Gravity's Rainbow*
+
+Treat [_writing/gravitys-rainbow.md](../_writing/gravitys-rainbow.md) as the second canonical long-form reference. It demonstrates skills the *Solenoid* essay does not exercise: a literary argument that depends on technical accuracy, a heavy reception/historical apparatus that must be metabolised at point of need, and a structural thesis (the V-2's double integration) that has to be both formally clean and factually correct.
+
+### Architecture
+
+- The essay opens, like *Solenoid*, with a bodily premise rather than an abstraction: the V-2 arrives before its own sound. The opening movement runs two paragraphs and lands on the diagnostic 'The V-2 does not need hatred at the point of impact. It simply needs procedure.'
+- Five movements separated by section breaks: opening (no-warning terror), Brennschluss and the ethics of calculation, Mittelwerk through colonial material to the structural-obscenity claim, Pökler as the System's usable man, Schwarzkommando and the camp inside the spacecraft, and a closing that consolidates paranoia, Mendelson, and the rainbow into a single exhale.
+- The closing is one paragraph. An earlier draft used two and read flabby; the merged paragraph runs from 'The rainbow, by the end, cannot console' to 'makes the coordinate answer back' without a paragraph break, and the final image lands harder for it.
+
+### Technical Accuracy As Literary Authority
+
+- The Brennschluss explanation is the essay's structural lever. An early draft framed it as one integration in flight (acceleration → velocity, cutoff on velocity) and a second through ballistic geometry. Pynchon's actual mechanism — and the historical V-2's PIGA-style accelerometer — performs two integrations inside the rocket (acceleration → velocity → distance), with cutoff when accumulated distance equals a target distance set on the ground. Getting this wrong would have undermined the essay's argument that the System hides ethical action *inside* the device.
+- The lesson generalises: when an essay's literary argument depends on a piece of technical material — math, biology, engineering — verify the technical claim against a real source. The essay inline-links to Niklas Riewald's math gloss as both citation and reader courtesy.
+
+### Reception And Outside Material Metabolised Inline
+
+- Five external references appear inline in the prose, hyperlinked at the moment of need: Mittelwerk (USHMM), the integrating accelerometer (Riewald), the stupid-dodo myth (NHM), the German-Herero conflict (Britannica), Mendelson's 'Encyclopedic Narrative' (PDF). None of these gets a display-case paragraph; each enters because the surrounding prose has produced the problem the link clarifies.
+- The source note opens with Riewald rather than with a 'Read in [edition]' framing. Edition mentions are filler unless edition or translation is materially load-bearing.
+
+### Pull Quotes
+
+- Two pull quotes, both verbatim in the prose, both intelligible standing alone, both line-broken for display.
+  - First pull quote: *'The V-2 does not need hatred at the point of impact. It simply needs procedure.'* This lands the *ethics* of the opening, not its optics. An earlier draft used 'A human being disappears into the target area before the rocket ever rises from the launch table' — diagnostically sharp but slightly literary. The cold, two-clause version is better.
+  - Second pull quote: *'The System integrates absence over time into obedience.'* Mirrors the rocket's double integration onto Pökler's experience of his daughter; the structural thesis at miniature scale.
+- Neither pull quote sits adjacent to a section break. After the second pull quote, the consequence-paragraph ('Love does not stand outside the apparatus as moral exemption. Love can be made into an input.') sits between the display line and the section break that follows.
+
+### The Pökler / Cinema / Frame-by-Frame Insight
+
+- The Pökler section's central insight is that Peenemünde engineers studied rockets through high-speed cinema, splicing test launches into still frames so combustion, trajectory, and failure could be reconstructed across the gaps between exposures. Pökler is then handed his daughter under the same regime — yearly frames, too far apart for biography — and the engineering mind that builds rockets out of discontinuous evidence is asked to build a daughter the same way. The cruelty is that the System has not asked him to believe anything new; it has reused the training.
+- This is the kind of reading the essay exists to provide. A Pynchon essay that does not connect cinema to rocket telemetry to fatherhood under sparse data is leaving the most powerful structural rhyme in the novel on the table.
+
+### Capitalised Work-Internal Terms
+
+- The essay capitalises **System** because Pynchon does. Same with **Schwarzkommando**, **Picketists**-style proper nouns, **They** when used as the novel's collective designation. When a novel deploys a load-bearing capitalised noun, follow that capitalisation rather than normalising it.
+
+### Common Failure Modes The Essay Avoids
+
+- Self-credentialing. An early draft opened the calculation paragraph with 'My own work makes me resistant to an easy anti-calculation reading'; the published version drops the autobiography and lets the list (spike train → firing rate, trajectory → variable, populations → rows in a table) carry the same observation in third-person.
+- Meta-claim openers. 'Franz Pökler matters because he is frighteningly usable' became 'Franz Pökler is the System's frighteningly usable man.' '\"Ilse, some Ilse\" hurts because it is not scepticism' became '\"Ilse, some Ilse\" is not scepticism.' Drop the announcement; let the next sentence land directly.
+- Big abstract nouns. 'For people made discontinuous by empire' became 'by colonialism' — the claim is specifically about colonialism's discontinuities, not about empire as an abstraction.
+- Stacked-clause sentences. The Mittelwerk paragraph originally piled architectural facts plus a list plus a colon plus a thesis into one breath; the rewrite breaks the stack into a sequence of short sentences, each carrying one move.
+- Repetition tics. The closing originally had 'refusal' five times in fourteen lines; the audit cut three of the five. Before publishing, grep for any noun or verb appearing 3+ times in adjacent paragraphs.
+- Two-paragraph closings. Earlier drafts had a 'By the end, the rainbow cannot console' paragraph followed by a separate '*Gravity's Rainbow* offers no clean refusal' paragraph; the merged single paragraph carries the close better.
+
 ## Journal-Mode Reference: *Shanwei*
 
 Treat [_writing/shanwei.md](../_writing/shanwei.md) as the canonical journal-mode reference. Journal entries follow different rules from review-essays: they accumulate rather than argue. The notes below describe what *Shanwei* actually does.
