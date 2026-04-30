@@ -621,7 +621,7 @@
       src: "/assets/images/photos/atlas-glencoe-stitched-climb-2025-bd2a963a.webp"
       alt: "A stitched vertical path with small repeated figures climbing through Glencoe."
       caption: "glencoe, 2025"
-      slot: "portrait"
+      slot: "whole-portrait"
       width: 1080
       height: 1626
 -
@@ -656,7 +656,7 @@
       src: "/assets/images/photos/atlas-beijing-cyclist-shadow-2020-cdce9f4d.webp"
       alt: "A cyclist passing through sharp Beijing autumn shadow."
       caption: "beijing, 2020"
-      slot: "portrait"
+      slot: "whole-portrait"
       width: 956
       height: 1700
     -
@@ -677,7 +677,7 @@
       src: "/assets/images/photos/atlas-beijing-danger-sign-2020-ccaaceac.webp"
       alt: "A red danger sign on an old Beijing brick wall."
       caption: "beijing, 2020"
-      slot: "wide"
+      slot: "whole"
       width: 1700
       height: 957
     -
@@ -786,42 +786,13 @@
       width: 1700
       height: 957
 -
-  id: "southern-china"
-  title: "southern china"
-  axis: "2017-2025 / humid cities, home rooms, coast, river, school"
-  note: "The southern China map stays detailed, but the gallery reads as one long chapter: Guangzhou at the core, with Chongqing, Hong Kong, Shenzhen, Zhuhai, Huazhou, Shanwei, Xiamen, Hangzhou, and Shanghai folded into the same rhythm."
+  id: "pearl-river-delta"
+  title: "pearl river delta"
+  axis: "2017-2025 / Guangzhou, Hong Kong, Shenzhen, Zhuhai"
+  note: "Guangzhou is the centre of gravity here; Hong Kong, Shenzhen, and Zhuhai stay nearby as river, harbour, glass, and humid high-rise edges."
   accent: "rose"
-  layout: "scroll"
+  layout: "delta"
   photos:
-    -
-      src: "/assets/images/photos/atlas-chongqing-cable-fog-2020-897cc33f.webp"
-      alt: "A Chongqing cable car cutting through fog between buildings."
-      caption: "chongqing, 2020"
-      slot: "feature"
-      width: 1700
-      height: 1129
-      anchor: "chongqing"
-    -
-      src: "/assets/images/photos/atlas-chongqing-bridge-haze-2020-701bf412.webp"
-      alt: "A Chongqing bridge barely visible through grey fog."
-      caption: "chongqing, 2020"
-      slot: "portrait"
-      width: 1129
-      height: 1700
-    -
-      src: "/assets/images/photos/atlas-chongqing-road-descent-2020-ffc75010.webp"
-      alt: "A steep Chongqing road descending between trees and towers."
-      caption: "chongqing, 2020"
-      slot: "portrait"
-      width: 1129
-      height: 1700
-    -
-      src: "/assets/images/photos/atlas-chongqing-balcony-road-2020-8c1ebdab.webp"
-      alt: "A Chongqing road seen through branches from above."
-      caption: "chongqing, 2020"
-      slot: "wide"
-      width: 1700
-      height: 957
     -
       src: "/assets/images/photos/atlas-guangzhou-balcony-dusk-2017-2bdf496b.webp"
       alt: "A Guangzhou bridge and river at orange dusk."
@@ -834,23 +805,30 @@
       src: "/assets/images/photos/atlas-guangzhou-river-boat-2017-b5732825.webp"
       alt: "A boat crossing the Guangzhou river under a blue city evening."
       caption: "guangzhou, 2017"
-      slot: "wide"
+      slot: "delta-river"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-guangzhou-two-towers-blue-2017-e7d4d183.webp"
       alt: "Two Guangzhou towers rising into blue sky and cloud."
       caption: "guangzhou, 2017"
-      slot: "wide"
+      slot: "tower-sky"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-guangzhou-two-towers-storm-2017-1c7778d6.webp"
       alt: "Two towers seen against a dark storm sky in Guangzhou."
       caption: "guangzhou, 2017"
-      slot: "wide"
+      slot: "tower-storm"
       width: 1700
       height: 955
+    -
+      src: "/assets/images/photos/atlas-guangzhou-glass-reflection-2018-ba3382ba.webp"
+      alt: "A tower reflected in a gridded Guangzhou glass facade."
+      caption: "guangzhou, 2018"
+      slot: "tower-reflection"
+      width: 1700
+      height: 1129
     -
       src: "/assets/images/photos/atlas-guangzhou-flowering-tree-2017-d533b575.webp"
       alt: "A flowering Guangzhou tree against a pale sky."
@@ -859,13 +837,6 @@
       width: 1700
       height: 956
     -
-      src: "/assets/images/photos/atlas-guangzhou-red-slip-2018-950ce21d.webp"
-      alt: "A hand writing on a red slip of paper."
-      caption: "guangzhou, 2018"
-      slot: "wide"
-      width: 1700
-      height: 955
-    -
       src: "/assets/images/photos/atlas-guangzhou-night-bridge-2018-453ea200.webp"
       alt: "A Guangzhou bridge lit at night over black water."
       caption: "guangzhou, 2018"
@@ -873,36 +844,8 @@
       width: 1700
       height: 955
     -
-      src: "/assets/images/photos/atlas-guangzhou-service-lane-2018-8c32ade5.webp"
-      alt: "A dense Guangzhou lane with bicycles and awnings."
-      caption: "guangzhou, 2018"
-      slot: "wide"
-      width: 1700
-      height: 1129
-    -
-      src: "/assets/images/photos/atlas-guangzhou-glass-reflection-2018-ba3382ba.webp"
-      alt: "A tower reflected in a gridded Guangzhou glass facade."
-      caption: "guangzhou, 2018"
-      slot: "wide"
-      width: 1700
-      height: 1129
-    -
-      src: "/assets/images/photos/atlas-guangzhou-desk-bear-2018-4016deae.webp"
-      alt: "A desk with a small framed portrait and a toy in soft light."
-      caption: "guangzhou, 2018"
-      slot: "wide"
-      width: 1700
-      height: 956
-    -
       src: "/assets/images/photos/atlas-guangzhou-river-palms-2019-11645a2d.webp"
       alt: "Palms beside the Guangzhou river in grey light."
-      caption: "guangzhou, 2019"
-      slot: "wide"
-      width: 1700
-      height: 956
-    -
-      src: "/assets/images/photos/atlas-guangzhou-steam-doorway-2019-ce88b186.webp"
-      alt: "Steam or dust bursting through a green Guangzhou doorway."
       caption: "guangzhou, 2019"
       slot: "wide"
       width: 1700
@@ -924,13 +867,6 @@
     -
       src: "/assets/images/photos/atlas-guangzhou-lychee-2020-9c68e178.webp"
       alt: "Clusters of lychee hanging in Guangzhou summer light."
-      caption: "guangzhou, 2020"
-      slot: "wide"
-      width: 1700
-      height: 957
-    -
-      src: "/assets/images/photos/atlas-guangzhou-basket-floor-2020-ca60d591.webp"
-      alt: "A wicker basket and leaves on a Guangzhou garden floor."
       caption: "guangzhou, 2020"
       slot: "wide"
       width: 1700
@@ -1026,6 +962,43 @@
       src: "/assets/images/photos/atlas-zhuhai-quiet-lighthouse-undated-f48d79d4.webp"
       alt: "A small Zhuhai lighthouse on a low sea wall."
       caption: "zhuhai, undated"
+      slot: "wide"
+      width: 1700
+      height: 957
+-
+  id: "elsewhere-in-china"
+  title: "elsewhere in china"
+  axis: "2018-2021 / Chongqing, Huazhou, Shanwei, Xiamen, Hangzhou, Shanghai"
+  note: "These are not Pearl River Delta photographs: Chongqing's vertical fog, Hangzhou's reading rooms and smoke, Shanwei's coast, Xiamen's courtyards, Huazhou interiors, and a single Shanghai facade sit in their own chapter."
+  accent: "rose"
+  layout: "scroll"
+  photos:
+    -
+      src: "/assets/images/photos/atlas-chongqing-cable-fog-2020-897cc33f.webp"
+      alt: "A Chongqing cable car cutting through fog between buildings."
+      caption: "chongqing, 2020"
+      slot: "feature"
+      width: 1700
+      height: 1129
+      anchor: "chongqing"
+    -
+      src: "/assets/images/photos/atlas-chongqing-bridge-haze-2020-701bf412.webp"
+      alt: "A Chongqing bridge barely visible through grey fog."
+      caption: "chongqing, 2020"
+      slot: "portrait"
+      width: 1129
+      height: 1700
+    -
+      src: "/assets/images/photos/atlas-chongqing-road-descent-2020-ffc75010.webp"
+      alt: "A steep Chongqing road descending between trees and towers."
+      caption: "chongqing, 2020"
+      slot: "portrait"
+      width: 1129
+      height: 1700
+    -
+      src: "/assets/images/photos/atlas-chongqing-balcony-road-2020-8c1ebdab.webp"
+      alt: "A Chongqing road seen through branches from above."
+      caption: "chongqing, 2020"
       slot: "wide"
       width: 1700
       height: 957
@@ -2295,8 +2268,8 @@
 -
   id: "georgia"
   title: "georgia"
-  axis: "2025-2026 / Tbilisi and the Caucasus edge"
-  note: "The Sakartvelo material becomes Georgia here: Tbilisi's lit urban surfaces and the winter church-road material beyond it."
+  axis: "2025-2026 / Tbilisi and Mtskheta"
+  note: "The Georgia material gathers Tbilisi's lit urban surfaces and the winter church-road material around Mtskheta."
   accent: "clay"
   layout: "scroll"
   photos:
@@ -2374,57 +2347,57 @@
     -
       src: "/assets/images/photos/atlas-caucasus-jvari-approach-2026-0d518f0b.webp"
       alt: "A person approaching a hilltop monument in Georgia."
-      caption: "caucasus, 2026"
+      caption: "mtskheta, 2026"
       slot: "portrait"
       width: 1700
       height: 1700
-      anchor: "caucasus"
+      anchor: "mtskheta"
     -
       src: "/assets/images/photos/atlas-caucasus-river-overlook-2026-180ebda1.webp"
       alt: "A river valley overlook in Georgia under grey sky."
-      caption: "caucasus, 2026"
+      caption: "mtskheta, 2026"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-caucasus-church-candles-2026-f824450c.webp"
       alt: "Church candles and a book in warm Georgian interior light."
-      caption: "caucasus, 2026"
+      caption: "mtskheta, 2026"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-caucasus-lone-tree-2026-e959123e.webp"
       alt: "A lone tree on a grey Georgian hillside."
-      caption: "caucasus, 2026"
+      caption: "mtskheta, 2026"
       slot: "portrait"
       width: 1360
       height: 1700
     -
       src: "/assets/images/photos/atlas-caucasus-chandelier-beam-2026-72bb1998.webp"
       alt: "A dark Georgian church interior with a shaft of light."
-      caption: "caucasus, 2026"
+      caption: "mtskheta, 2026"
       slot: "portrait"
       width: 1132
       height: 1700
     -
       src: "/assets/images/photos/atlas-caucasus-icon-corner-2026-db0bdd1a.webp"
       alt: "An icon corner inside a Georgian church."
-      caption: "caucasus, 2026"
+      caption: "mtskheta, 2026"
       slot: "portrait"
       width: 1132
       height: 1700
     -
       src: "/assets/images/photos/atlas-caucasus-snow-village-2026-a3620ce4.webp"
       alt: "A Georgian village street with snowy mountains beyond."
-      caption: "caucasus, 2026"
+      caption: "mtskheta, 2026"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-caucasus-winter-cross-2026-5d8114ad.webp"
       alt: "A cross and winter field at sunset in Georgia."
-      caption: "caucasus, 2026"
+      caption: "mtskheta, 2026"
       slot: "portrait"
       width: 1133
       height: 1700

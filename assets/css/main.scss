@@ -5837,6 +5837,11 @@ body.photos-page {
     vector-effect: non-scaling-stroke;
   }
 
+  .photo-map-card--local .photo-map__coast {
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+  }
+
   .photo-map-pins {
     position: absolute;
     inset: 0;
@@ -6134,6 +6139,32 @@ body.photos-page {
     aspect-ratio: 19 / 8;
   }
 
+  .photo-frame--whole {
+    grid-column: span 8;
+    aspect-ratio: var(--photo-ratio, 1700 / 957);
+  }
+
+  .photo-frame--whole img {
+    object-fit: contain;
+  }
+
+  .photo-frame--whole:hover img {
+    transform: none;
+  }
+
+  .photo-frame--whole-portrait {
+    grid-column: span 3;
+    aspect-ratio: var(--photo-ratio, 956 / 1700);
+  }
+
+  .photo-frame--whole-portrait img {
+    object-fit: contain;
+  }
+
+  .photo-frame--whole-portrait:hover img {
+    transform: none;
+  }
+
   .photo-frame--portrait {
     grid-column: span 3;
     aspect-ratio: 4 / 5;
@@ -6160,6 +6191,57 @@ body.photos-page {
     grid-template-columns: repeat(8, minmax(0, 1fr));
     overflow: visible;
     padding-bottom: 0;
+  }
+
+  .photo-section--delta .photo-cluster {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 0.42rem;
+    align-items: start;
+  }
+
+  .photo-section--delta .photo-frame {
+    box-shadow: 0 1px 7px $shadow-ultra-faint, 0 14px 24px rgba($morandi-ink, 0.045);
+  }
+
+  .photo-section--delta .photo-frame--feature {
+    grid-column: span 7;
+    grid-row: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .photo-section--delta .photo-frame--delta-river {
+    grid-column: span 5;
+    aspect-ratio: 4 / 3;
+    margin-top: 1.15rem;
+  }
+
+  .photo-section--delta .photo-frame--tower-sky {
+    grid-column: 1 / span 8;
+    aspect-ratio: 19 / 8;
+  }
+
+  .photo-section--delta .photo-frame--tower-storm {
+    grid-column: span 4;
+    aspect-ratio: 4 / 5;
+    margin-top: -0.95rem;
+    z-index: 2;
+  }
+
+  .photo-section--delta .photo-frame--tower-reflection {
+    grid-column: 4 / span 6;
+    aspect-ratio: 17 / 9;
+    margin-top: -2.15rem;
+    margin-bottom: 1.25rem;
+    z-index: 3;
+    box-shadow: 0 1px 7px $shadow-ultra-faint, 0 18px 32px rgba($morandi-ink, 0.08);
+  }
+
+  .photo-section--delta .photo-frame--tower-reflection::after {
+    content: "";
+    position: absolute;
+    inset: 0.42rem;
+    border: 1px solid rgba(#ffffff, 0.34);
+    pointer-events: none;
   }
 
   @media (max-width: 960px), (orientation: portrait) {
@@ -6352,6 +6434,8 @@ body.photos-page {
     .photo-frame--feature,
     .photo-frame--wide,
     .photo-frame--panorama,
+    .photo-frame--whole,
+    .photo-frame--whole-portrait,
     .photo-frame--portrait,
     .photo-frame--square,
     .photo-section:nth-child(2n) .photo-frame--feature,
@@ -6361,9 +6445,18 @@ body.photos-page {
     }
 
     .photo-frame--feature,
-    .photo-frame--panorama {
+    .photo-frame--panorama,
+    .photo-frame--whole {
       grid-column: 1 / -1;
       aspect-ratio: 4 / 3;
+    }
+
+    .photo-frame--whole {
+      aspect-ratio: var(--photo-ratio, 1700 / 957);
+    }
+
+    .photo-frame--whole-portrait {
+      aspect-ratio: var(--photo-ratio, 956 / 1700);
     }
     .photo-section--scroll .photo-frame--feature,
     .photo-section--scroll .photo-frame--wide,
@@ -6383,6 +6476,27 @@ body.photos-page {
 
     .photo-section--scroll .photo-frame--portrait {
       aspect-ratio: 4 / 5;
+    }
+
+    .photo-section--delta .photo-cluster {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .photo-section--delta .photo-frame--feature,
+    .photo-section--delta .photo-frame--delta-river,
+    .photo-section--delta .photo-frame--tower-sky,
+    .photo-section--delta .photo-frame--tower-storm,
+    .photo-section--delta .photo-frame--tower-reflection {
+      grid-column: 1 / -1;
+      grid-row: auto;
+      margin-top: 0;
+      margin-bottom: 0;
+      aspect-ratio: 4 / 3;
+    }
+
+    .photo-section--delta .photo-frame--tower-sky,
+    .photo-section--delta .photo-frame--tower-storm {
+      aspect-ratio: 16 / 10;
     }
 
     .photo-frame figcaption {

@@ -104,7 +104,7 @@ classes: photos-page
           {% if section_index == 1 and forloop.index == 1 %}
             {% assign frame_loading = 'eager' %}
           {% endif %}
-          <figure{% if photo.anchor %} id="{{ photo.anchor }}"{% endif %} class="photo-frame photo-frame--{{ photo.slot | default: 'wide' }}">
+          <figure{% if photo.anchor %} id="{{ photo.anchor }}"{% endif %} class="photo-frame photo-frame--{{ photo.slot | default: 'wide' }}" style="--photo-ratio: {{ photo.width }} / {{ photo.height }};">
             <img src="{{ photo.src | relative_url }}"
                  alt="{{ photo.alt | escape }}"
                  width="{{ photo.width }}"
