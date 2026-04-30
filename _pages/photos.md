@@ -24,7 +24,7 @@ classes: photos-page
                  href="#{{ point.section }}"
                  data-section="{{ point.section }}"
                  aria-label="{{ point.label | escape }}: {{ point.target | escape }}"
-                 style="--x: {{ point.x }}%; --y: {{ point.y }}%; --label-x: {{ point.label_x | default: '0.72rem' }}; --label-y: {{ point.label_y | default: '-50%' }};">
+                 style="--x: {{ point.x }}%; --y: {{ point.y }}%; --label-x: {{ point.label_x | default: '0.72rem' }}; --label-y: {{ point.label_y | default: '-50%' }}; --leader-x: {{ point.leader_x | default: '0rem' }}; --leader-y: {{ point.leader_y | default: '0rem' }}; --leader-w: {{ point.leader_w | default: '0rem' }}; --leader-h: {{ point.leader_h | default: '0rem' }}; --leader-opacity: {{ point.leader_opacity | default: '0' }};">
                 <span class="photo-map-pin__dot" aria-hidden="true"></span>
                 <span class="photo-map-pin__label" aria-hidden="true">{{ point.short_label | default: point.label }}</span>
               </a>
