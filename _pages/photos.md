@@ -63,7 +63,11 @@ classes: photos-page
                  hidden>
           <p class="photo-map-card__title" id="photo-map-{{ region.id }}-title">{{ region.title }}</p>
           <div class="photo-map-plate" style="--map-aspect: {{ region.aspect | default: '1.7778' }};">
-            {% include photo-world-map.svg view_box=region.view_box title=region.title title_id=region_title_id %}
+            {% if region.shape %}
+              {% include photo-local-map.svg shape=region.shape view_box=region.view_box title=region.title title_id=region_title_id %}
+            {% else %}
+              {% include photo-world-map.svg view_box=region.view_box title=region.title title_id=region_title_id %}
+            {% endif %}
             <div class="photo-map-pins" aria-hidden="false">
               {% for point in region.points %}
                 <a class="photo-map-pin photo-map-pin--{{ point.accent | default: 'clay' }}"
