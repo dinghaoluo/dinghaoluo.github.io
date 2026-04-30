@@ -5,9 +5,6 @@ category: "journal"
 date: 2019-06-08
 excerpt: "Two kinds of insignificance: the terror of biological fragility, and the consolation that insignificance can be a reason to keep going."
 image: /assets/images/personal/against-smallness.webp
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/p7KL7vR0PQNt7QyvtPtBtA"
 ---
 
 <span class="dropcap">T</span>he last exam of second year was the pathology practical. One of the questions required diagnosing a pathological process from a tissue section. The patient was a seventy-two-year-old man who had collapsed with sudden chest pain while hiking, lost motor function on one side, was airlifted to hospital, and died days later after acute respiratory distress. Answering the question, I could not shake a strange sense of smallness. The past year of pathology had mostly given me this: a recognition of the body's fragility so thorough that I no longer dared treat anyone around me with carelessness.
@@ -18,8 +15,6 @@ The responsibility of an individual life is to reproduce; the responsibility of 
 
 The other side, Legasov's reflection, is a more optimistic smallness. In the final episode he says: 'To be a scientist is to be naïve. We are so focussed on our search for truth, we fail to consider how few actually want us to find it. But it is always there, whether we see it or not, whether we choose to or not. The truth doesn't care about our needs or wants. It doesn't care about our governments, our ideologies, our religions. It will lie in wait, for all time. And this, at last, is the gift of Chernobyl.' I thought for a long time about how to articulate this second kind of smallness, but in the end, Legasov's words captured it better than anything I could say: we do not shrink from insignificance in fear; on the contrary, insignificance is the reason to keep going.
 
-> Insignificance is the reason to keep going.
-{: .pullquote .pullquote--compact}
 
 This second, 'more optimistic' smallness reminded me of a progressive rock duo called Cleft. The guitarist was Dan; the drummer and bassist was John. Dan died of cancer last October. Their website bio reads: 'They really should have grown up by now, but that hasn't happened.' Cancer is perhaps the simplest and deadliest helplessness that nature inflicts on us, rooted in sheer randomness: however many environmental or genetic factors one accounts for, the essence of cancer is stochastic, arising from the very mutations that carbon-based life cannot do without. We cannot fight this randomness, but Dan did not care. He still chatted cheerfully with fans on Twitter; every album sold on Bandcamp came with his and John's signature and a note of thanks. They reminded me that this optimistic smallness does not belong exclusively to scientists like Legasov. It is as universal as the first kind. That, at least, is some consolation.
 

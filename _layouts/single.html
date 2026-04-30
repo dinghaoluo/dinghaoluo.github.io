@@ -45,10 +45,6 @@ layout: default
                 <span class="screen-reader-text">{{ page.banner_image_alt }}</span>
               {% endif %}
               <div class="writing-piece-masthead__body">
-                <div class="writing-piece-masthead__flag">
-                  {% if page.writing_feature %}<span>featured</span>{% endif %}
-                  {% if page.type %}<span>{{ page.type }}</span>{% endif %}
-                </div>
                 <h1 id="page-title" class="page__title p-name" itemprop="headline">{{ page.title_display | default: page.title }}</h1>
               </div>
             </header>
@@ -66,7 +62,7 @@ layout: default
         {% if page.collection == 'writing' and show_writing_meta_block %}
           <div class="writing-piece-meta">
             {% unless page.show_page_meta == false %}
-              {% include writing-meta.html item=page %}
+              {% include writing-meta.html item=page show_title_zh=false %}
             {% endunless %}
             {% if page.awards and page.show_page_awards != false %}
               <div class="writing-piece-meta__awards">

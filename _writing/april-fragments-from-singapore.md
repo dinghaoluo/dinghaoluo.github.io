@@ -5,9 +5,6 @@ category: "journal"
 date: 2021-05-05
 dropcap: true
 excerpt: "A month in Singapore, three temporary rooms, durian in Chinatown, hawker-centre laksa, and the anxiety that would not quite leave."
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/q9jvnI8Rc_HZoEU7MfQBQQ"
 ---
 
 <span class="dropcap">M</span>aybe this only shows how little I have seen, but this was the first time I had ever spent a full month in a country as a tourist. The tropical weather, the clouds in the morning and the rain in the afternoon, the line of boats moored along the shore: over the course of that month, landscapes that did not belong to home gradually became familiar. Only when I was nearly leaving did the place begin to feel stranger again.

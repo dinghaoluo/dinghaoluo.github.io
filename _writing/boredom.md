@@ -5,9 +5,6 @@ category: "journal"
 date: 2018-08-21
 excerpt: "On a grey Brighton morning, the strange nobility of having nothing to do."
 image: /assets/images/personal/boredom.webp
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/TS2lGBaLLbi3HNzcOa7_cw"
 ---
 
 <span class="dropcap">I</span> have only recently noticed that this pattern keeps recurring: every Saturday and Sunday on which I plan a trip, the sky is overcast; every Saturday and Sunday with no plans, the sky is clear. From London to Oxford, from Scarborough to Brighton, whatever the forecast had said, the weekend unfailingly delivers cloud. So consistent is this pattern that by the clouded Saturday in Brighton I had no choice but to accept my bad luck and duck into a Costa by the sea. The shop was playing Oasis. I counted the coins in my pocket and ordered a caramel macchiato. The street outside was a sheet of grey at ten in the morning; two boys with purple-dyed hair leaned against the glass, smoking.
@@ -16,8 +13,6 @@ I was not particularly desperate; the forecast said the sky would clear by noon.
 
 Before this, I had not thought seriously about boredom. The feeling is peculiar, and the peculiarity reaches all the way to questions of meaning. Put simply, boredom compels a person to do things. I remembered an experiment from a few years ago at the University of Virginia: researchers placed students in a chair, beside which was a button that would deliver a harmless electric shock; their task was simply to sit still for fifteen minutes. More than half the male students pressed the button.
 
-> Boredom compels a person to do things.
-{: .pullquote .pullquote--compact}
 
 To the bored version of me sitting in that Costa, the experiment illustrated more than the human need for stimulation; it also suggested that mere existence has no great meaning of its own. I remembered a conversation over ramen with friends, when we each discussed what we were living for. The phrasing was perhaps imprecise, but the answers revealed that nobody wanted to continue living in a state of boredom, as though 'boredom' by definition excludes 'meaning'. At that moment, this seemed right: the bare act of existing, of maintaining the state of 'being alive' for fifteen minutes, is sufficient to drive a person to press a shock button. In some sense, this is not so different from the fragility of life itself.
 

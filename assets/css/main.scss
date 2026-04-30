@@ -4138,14 +4138,6 @@ body.writing-page .page__content .writing-entry__title em {
     text-transform: lowercase;
   }
 
-  .writing-piece-masthead__flag::before {
-    content: "";
-    width: 0.52rem;
-    height: 0.52rem;
-    border: 1px solid rgba($morandi-clay-deep, 0.46);
-    background: rgba($morandi-clay, 0.16);
-  }
-
   .writing-piece-masthead .page__title {
     max-width: 22ch;
     margin: 0;
@@ -4168,7 +4160,7 @@ body.writing-page .page__content .writing-entry__title em {
       align-items: stretch;
       min-height: 0;
       max-height: none;
-      padding-top: 12rem;
+      padding-top: clamp(7.5rem, 34vw, 9rem);
       aspect-ratio: auto;
       background-position: var(--writing-banner-position, center 34%);
     }
@@ -4356,6 +4348,16 @@ body.writing-page .page__content .writing-entry__title em {
   }
 }
 
+.page__content > blockquote:has(> .literary-quote),
+.page__content > blockquote:has(> .pullquote) {
+  margin: 0;
+  padding: 0;
+  border-left: 0;
+  border-right: 0;
+  font-family: $reforma-stack;
+  font-style: normal;
+}
+
 .page__content .literary-quote {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
@@ -4373,6 +4375,8 @@ body.writing-page .page__content .writing-entry__title em {
 
   &::before,
   &::after {
+    display: block;
+    transform: translateY(0.11em);
     color: rgba($morandi-grey-deep, 0.56);
     font-family: Georgia, 'Times New Roman', $intl-stack, serif;
     font-size: 4.4rem;
@@ -4400,8 +4404,8 @@ body.writing-page .page__content .writing-entry__title em {
   margin: 2.4rem 0 2.4rem auto;
   padding: 0.18rem 1.15rem 0.22rem 0;
   color: $morandi-ink;
-  font-family: 'Faculty Glyphic', 'Reforma 2018', Georgia, 'Times New Roman', $cjk-stack, serif;
-  font-size: 1.28rem;
+  font-family: $reforma-stack;
+  font-size: 1.42rem;
   font-style: normal;
   line-height: 1.38;
   border-left: 0;
@@ -4427,7 +4431,7 @@ body.writing-page .page__content .writing-entry__title em {
   max-width: 28rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  font-size: 1.16rem;
+  font-size: 1.32rem;
 }
 
 .page__content .pullquote--wide {
@@ -4500,6 +4504,70 @@ body.writing-page .page__content .writing-entry__title em {
     width: 24rem;
     max-width: 48%;
     margin: 0.2rem 0 1.4rem 1.55rem;
+  }
+}
+
+.page__content .writing-insert--left {
+  width: 100%;
+  max-width: 30rem;
+  margin: 2.4rem auto 2.4rem 0;
+
+  @include breakpoint($large) {
+    float: left;
+    clear: left;
+    width: 24rem;
+    max-width: 48%;
+    margin: 0.2rem 1.55rem 1.4rem 0;
+  }
+}
+
+.page__content .writing-insert--small {
+  @include breakpoint($large) {
+    width: 18rem;
+    max-width: 38%;
+  }
+}
+
+.page__content .writing-insert-pair {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.7rem;
+  width: 100%;
+  max-width: 30rem;
+  margin: 2.4rem auto 2.4rem 0;
+  clear: both;
+
+  figure {
+    flex: 1 1 0;
+    min-width: 0;
+    margin: 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    border-radius: 6px;
+  }
+
+  figcaption {
+    margin-top: 0.28rem;
+    margin-bottom: 0;
+    color: $site-text-muted;
+    font-family: $reforma-stack;
+    font-size: 0.72rem;
+    line-height: 1.42;
+  }
+
+  @include breakpoint($large) {
+    float: left;
+    clear: left;
+    width: 24rem;
+    max-width: 48%;
+    margin: 0.2rem 1.55rem 1.4rem 0;
+    gap: 0.55rem;
   }
 }
 
@@ -5065,11 +5133,6 @@ body.writing-page .page__content .writing-entry__title em {
 
   .writing-piece .writing-piece-masthead__flag {
     color: $dark-link;
-  }
-
-  .writing-piece .writing-piece-masthead__flag::before {
-    border-color: rgba(#c49a85, 0.48);
-    background: rgba(#c49a85, 0.14);
   }
 
   .writing-piece .writing-piece-masthead .page__title {

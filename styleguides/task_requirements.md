@@ -65,6 +65,18 @@ This file holds operational rules that used to live in the main style guide. The
 - Wrapper copy may use reader-facing 'you' sparingly when it feels hospitable.
 - Avoid empty calls to action. Prefer concrete invitations.
 
+## Photo Atlas Requirements
+
+- The `/photos/` page is a curated atlas, not a uniform masonry dump. Default slots are useful, but repeated motifs or emotionally specific sequences should get custom placement when the generic grid makes them read flat. The Guangzhou tower sequence is the reference: similar subjects can be arranged as a composed group rather than tiled evenly.
+- Remove photos from the page by editing `_data/photos.yml`; do not delete image assets unless the user explicitly asks to remove files from disk.
+- Geographic groupings should reflect the user's categories, not only broad map convenience. Guangzhou, Hong Kong, Shenzhen, and Zhuhai belong together as Pearl River Delta material; Chongqing, Hangzhou, Huazhou, Shanwei, Xiamen, and Shanghai belong in a separate "elsewhere in China" chapter.
+- Map data must follow section data. When a photo section is renamed, split, or regrouped, update `_data/photo_map_regions.yml`, local-map IDs, cluster IDs, anchors, and labels together so the overview map and local cards do not point at stale buckets.
+- Zoomed local maps should keep the rough-edged visual language. Avoid silently smoothing coastlines or turning regions into detached islands unless the actual geography warrants it.
+- Preserve the whole photograph when the point of the image lives at the edge, in text, in a pun, or in the full sequence. Chinese characters at the lower-left of a frame, a cyclist/bike composition split by railings, or a stitched vertical walking sequence should not be cropped for a prettier tile. Use full-frame slots such as `whole` or `whole-portrait`, with the rendered `--photo-ratio`, so the actual width/height controls the frame.
+- Cropping is acceptable only when it improves the photograph without deleting the reason the photograph is there. Before assigning a generic `wide`, `portrait`, or `square` slot, check whether the image has edge details, signs, faces, repeated bodies, or text that would be cut.
+- If a page-specific slot is added in `assets/css/main.scss`, include a mobile fallback in the same pass. Custom desktop composition should collapse cleanly on narrow screens.
+- Verification can be lightweight while iterating: YAML parse plus `git diff --check` is enough for small data-only changes. Run a full Jekyll build after Sass, template, map, or renderer changes, and always before pushing a photo update.
+
 ## Music And Game-Specific Rules
 
 - Music reviews should avoid calendar embedding: 'best of the month', 'right now', 'this year', 'recently'.
@@ -75,7 +87,7 @@ This file holds operational rules that used to live in the main style guide. The
 ## Chinese / Douban Requirements
 
 - Douban reviews use traditional Chinese.
-- Use standard Chinese punctuation and book title marks `《》` for Chinese-language titles.
+- Use standard Chinese punctuation. Book, film, game, and album titles take `《》`. Article, essay, short-story, song, and poem titles take `「」`. Do not collapse the distinction; an article title in `《》` reads as a book title.
 - English titles and game terms can remain in English when that is more natural.
 - Short Douban book reviews usually do not open with `《Title》...` because the page context supplies the title.
 - Short Douban book reviews should be compact: roughly 150-250 characters for meh/disliked, 300-450 for liked, longer only when the book demands it.
@@ -116,6 +128,17 @@ Long-form review-essays should hyperlink referenced concepts, places, events, an
 ## Source Note Opening
 
 A long-form source note should open with the outside source most useful to the prose, not with edition data or a 'read in' framing. The *Gravity's Rainbow* source note opens with Riewald's math gloss because the rocket's double integration is what the essay leans hardest on. Reserve primary-edition mentions for cases where edition, translation, or original-publication year materially affects a visible claim. 'Read in the Penguin Classics deluxe edition (2012)' is filler; cut it.
+
+Source notes should not duplicate metadata that already appears in the page's metadata head. The post date is already shown in the kicker (`journal · 27 Jul 2020`); a source-note line saying 'Originally published in Chinese on X, July 2020' repeats it. Drop the date and let the metadata head carry it. Reserve the source note for what the metadata head cannot show: the original-language title, the outlet, the translator, the edition where edition matters.
+
+## Image Captions
+
+Two distinct caption registers, by length:
+
+- **Short captions (single phrase or single sentence)** — used for journal-mode photos and any image whose caption is a tag rather than a paragraph. Lowercase the first word unless it is a proper noun. No full stop at the end. Examples: 'Lighthouse Island, Red Bay' (caps because both terms are proper nouns), 'an old fortress on the island has a window overlooking the surrounding sea' (lowercase because no proper noun starts the line). 'A boat crossing the bay.' is wrong on both counts; 'a boat crossing the bay' is right.
+- **Long captions (multi-sentence descriptive paragraphs)** — used for long-form review-essay figures where the image needs introduction, attribution, and license. Follow normal prose conventions: sentence-case capitalisation, full stops between sentences, attribution and license at the end. The *Solenoid* and *Gravity's Rainbow* essays use this register for their inline figures.
+
+Pick the register before writing the caption. Mixing them — sentence-case opening with no terminal full stop, or lowercase opening on a paragraph caption — reads as inconsistency.
 
 ## Em Dashes And Punctuation Rhythm
 

@@ -5,9 +5,6 @@ category: "journal"
 date: 2020-07-05
 excerpt: "Three years in a dim town, a D90 viewfinder, and an unremarkable day that ended everything."
 image: /assets/images/personal/living-in.webp
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/MiaVy_4JsONrV_JFuTTqTA"
 ---
 
 <span class="dropcap">C</span>ambridge is a town of dim evenings. My tutor mentioned this within days of arrival. His name was Stuart Martin, both halves equally plausible as a first name, and for three years I never stopped confusing them. Around the 5th or 6th of October 2017 (a detail of no conceivable importance), he told us to fit front and rear lights to our bicycles and wear helmets, especially after dark. In Cambridge, street lamps are a scarce resource.
@@ -40,8 +37,6 @@ Life in this dim town ended abruptly in March. On the 21st, before the evening d
 
 The act of recording is endless, but the viewpoint is not. It changes like a person. Looking back now at three years in Cambridge, gazing towards the horizon of tomorrow, new feelings arrive. The damp-return days always bring strange dreams; in them I see the Cambridge town at night again, the river threading through Magdalene, St John's, Trinity, King's, Clare, Queens', running south from north, flowing towards morning.
 
-> The act of recording is endless, but the viewpoint is not.
-{: .pullquote .pullquote--compact}
 
 I think of one person running along the Cam towards the sun about to rise, looking down from Castle Hill at the people and traffic ascending and descending. Before long, living elsewhere again.
 

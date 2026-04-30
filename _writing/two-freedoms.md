@@ -5,9 +5,6 @@ category: "journal"
 date: 2019-07-12
 excerpt: "Castle Hill after work, Radiohead in the earphones, and the difference between being left alone and being free."
 image: /assets/images/personal/two-freedoms.webp
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/0igKd0PNqmrCsfIGHoTFfA"
 ---
 
 <span class="dropcap">I</span> finished work at half past five. At the department entrance a middle-aged man was showing two young children the plaque on the building, the one recording where Hodgkin and Huxley first measured a neuron's action potential. On the way home there was a strange smell of paint, probably from the supermarket being refurbished. The weather was not bad: five in the afternoon and only around twenty degrees. I felt that once I got home I would spend a long time thinking about the day's events. So I did not go home. I rode my bicycle to the hill, earphones playing Thank You Scientist's 'Geronimo'. I had been looping this single for days; I knew every note of the solo but was utterly lost on the lab protocols at work. The last time I watched a sunset was before the summer and the exams. During exams one does not need to think about anything; one just studies, and life is entirely study. After exams one is more exhausted than before, swimming in the ocean of living, on the verge of being flattened by a wave. So two months later, I stood again on the castle ramparts of Castle Hill, switched to Radiohead's 'Planet Telex', and queued 'High and Dry' and Wanqing's 'Qinhuangdao'.
@@ -26,8 +23,6 @@ That thought brings back a passage from a short story I wrote in first year, the
 
 *I felt I was free. And he was freedom.*
 
-> I felt I was free.<br>And he was freedom.
-{: .pullquote .pullquote--compact}
 
 So it was that on the road to this freedom I lost my way and found another kind. How long this life will continue, I do not know. A friend told me to enjoy the present. I said, but there are so many things I want to do in the future; what if this future is gone by tomorrow. He said it will not be; the people one loves are always loved; there is always a future. I said all right, I will keep trying. He said I know you will, just do your best, and whatever happens, face it well. 'Whatever happens, face it well.' Such words are always comforting.
 

@@ -56,7 +56,7 @@ Section breaks are allowed when they mark real conceptual movements. The section
 
 Do not stack a pull quote directly against a section break. Use one visual hinge at a time. Pull quotes should feel prepared by the essay's own argumentative centre, not written as summaries or labels for the section.
 
-Pull quote density should be low. In a medium-length review-essay, two strong pull quotes often read better than three or four. Keep only display lines with real architectural work; fold softer labels back into prose.
+Pull quote density should be low. In a medium-length review-essay, two strong pull quotes often read better than three or four. Keep only display lines with real architectural work; fold softer labels back into prose. Short essays and short journal entries often need none at all — extracting a beautiful sentence from a 600-word piece flatters the sentence at the cost of the prose's rhythm. The default should be zero pull quotes. Add one only when a section has produced an argumentative or emotional landing strong enough that the reader benefits from being told 'this is the centre.' A merely pretty sentence is not enough.
 
 Selecting a pull quote: list three or four candidates from the section and pick the one that lands the section's *ethics* or *structural payoff*, not the one that sounds prettiest or names the topic. The first *Gravity's Rainbow* draft used 'A human being disappears into the target area before the rocket ever rises from the launch table' — diagnostically sharp, but slightly literary. The published version uses 'The V-2 does not need hatred at the point of impact. It simply needs procedure.' That second sentence lands the *ethics* of the opening movement, not just its optics; it is also colder, which the section needs. The pretty sentence is rarely the right pull quote.
 
@@ -65,6 +65,8 @@ Long-form length is earned by tightening pressure, not by accumulating intellige
 Reception material should be metabolised at the point of need. Avoid display-case paragraphs that name several critics in sequence before the essay has finished making its own argument. Fold an outside term into the paragraph where it sharpens a live problem; leave general provenance to the source note.
 
 For short catalogue reviews, paragraph breaks usually do the structural work. Do not import long-form machinery into small entries unless the entry truly needs it.
+
+For journal entries, the same principle holds with extra force. Short journal entries (under ~1000 words) should default to **zero pull quotes and no feature-banner hero**. Hero banners are reserved for featured long-form essays where the work earns the visual weight. A single section break can earn its place when there is a genuine conceptual pivot, but two or more impose argumentative joints the entry is not making. Photos are allowed and can be more playful than in review-essays — two or three small left/right floats scattered down the page, sometimes paired side-by-side, captioned briefly or not at all. A journal accumulates registers around an emotional centre rather than driving an argument; review-essay infrastructure (visual hinges, dense image clusters, hero-banner title backgrounds) forces argumentative joints that the entry is not making. Trust the reader to find the lyrical sentences inside the prose. See [samples.md](samples.md) for the *Shanwei* journal-mode reference.
 
 ## Paragraph And Sentence Rhythm
 

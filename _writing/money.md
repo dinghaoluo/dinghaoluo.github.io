@@ -5,9 +5,6 @@ category: "journal"
 date: 2018-06-29
 excerpt: "A train ride with a PI, the cost of a mouse line, and the moment academia's ideals acquire a price tag."
 image: /assets/images/personal/money.webp
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/oCDlqhXM3ES40RLYNzWGLw"
 ---
 
 <span class="dropcap">W</span>hen I was still living in Cambridge last week, I had to take the train to London every day for work. The lab's PI happened also to live in Cambridge, which is how we came to share the eight o'clock Thursday service. Not daring to strike up conversation on the train, I listened to Audible while covertly observing what she was doing. It looked like a grant application: a mass of figures and names. Inevitable, I thought; September was approaching, old faces leaving and new ones arriving, and grants were an inescapable part of the machinery.
@@ -26,8 +23,6 @@ It is a shrewd arrangement. Over lunch on Tuesday I had the chance to discuss so
 
 The most direct consequence, as I see it, is this: in a research culture that must fight for every pound of experimental funding, thought quickly becomes monetised. When all eyes fix on whether a project can turn a profit, the intrinsic value and cumulative nature of research struggle to enter the frame. The consequences are severe, particularly in the social sciences. In a previous essay I discussed Amy Cuddy's example. Though Cuddy herself presumably bore no ill intent, the wildfire ignited by her 'power posture' experiment does not become any less damaging on account of her good intentions. The public likes research that is simple and clear-cut: a single gesture, a particular posture, and one's interlocutor perceives one as powerful; how thrilling. The reverse side: small sample sizes, repeated failures to replicate, the spectre of p-hacking. None of this has dented the PCR-like amplification of Cuddy's results. The question is: when researchers fighting for grants discover that work of this kind can be enormously lucrative, can they still maintain their composure and continue with what is in front of them?
 
-> Thought quickly becomes monetised.
-{: .pullquote .pullquote--compact}
 
 I do not know. I wish the answer were no, but anyone who has ever been pressed for money understands the magnitude of its temptation. Solutions abound: our lab's professor would prefer to keep science and politics separate; Jess Phoenix would prefer to fuse them. For one ordinary person, all that apparently remains is to grumble here.
 

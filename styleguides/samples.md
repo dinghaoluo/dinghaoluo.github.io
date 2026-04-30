@@ -139,7 +139,7 @@ Treat [_writing/shanwei.md](../_writing/shanwei.md) as the canonical journal-mod
 
 - A review-essay drives toward an argument; a journal entry accumulates registers around an emotional centre. Shanwei moves through bodily detail, place memory, family and language, and finally change. None of those movements is argued; each is shown.
 - Transitions can be paratactic. The journal does not need to justify why the next paragraph follows the previous one. The fourth paragraph of *Shanwei* pivots from the sea to the Hakka–Teochew language divide without a connective sentence; the pivot earns itself because the entry is not arguing toward a thesis.
-- The emotional centre is named once, plainly, and made the pull quote. *'This sea, this sea will not change.'* The line works because the preceding paragraphs have produced everything that *can* change — the cousins graduating, the hotels rising, his own slow lips chasing Teochew phonemes.
+- The emotional centre lands as the closing line, in the prose itself, without extraction: *'But this sea, this sea will not change; that much everyone knows.'* The line works because the preceding paragraphs have produced everything that *can* change — the cousins graduating, the hotels rising, the writer's own slow lips chasing Teochew phonemes.
 
 ### What To Notice In Shanwei
 
@@ -150,12 +150,34 @@ Treat [_writing/shanwei.md](../_writing/shanwei.md) as the canonical journal-mod
 
 ### Code-Switching In Journal Mode
 
-- *Shanwei* is an English version of a Chinese original; specific Chinese-language elements survive untranslated where translation would erase the texture: dialect names (Hakka, Teochew), the phrase wáng bā in pinyin italics, specific local place names (Lighthouse Island, Red Bay).
+- *Shanwei* is an English version of a Chinese original; specific Chinese-language elements survive untranslated where translation would erase the texture: dialect names (Hakka, Teochew), the phrase wáng bā in pinyin italics, specific local place names (Lighthouse Island, Red Bay), and the Mandarin gloss 王八 where the cross-dialect pun depends on it.
 - The rule is preservation of texture, not display of bilingualism. A word stays in the original language when translating it would flatten what it means inside the family or the place.
 
-### Pull Quote In Journal Mode
+### No Pull Quotes In Short Journal Mode
 
-- One pull quote, taken almost verbatim from the closing paragraph: *'This sea, this sea will not change.'* It is the entry's emotional centre, not a structural hinge. Journal pull quotes can be more lyrical and less argumentative than review-essay pull quotes; what they cannot be is invented for the slot.
+- The published *Shanwei* uses no pull quote at all. Earlier drafts extracted 'This sea, this sea will not change' into a display block; the final version dissolves it back into the closing paragraph, where it lands harder because the reader meets it inside the rhythm of the sentence rather than in a layout slot.
+- Pull quotes are review-essay infrastructure. They are architectural hinges that help the reader feel the sequence of an argument. A short journal entry has no such sequence to mark; pulling a sentence out only flatters the sentence.
+- The general rule for journal mode: if the entry is short (under ~1000 words) and accumulative rather than argumentative, no pull quote. Trust the reader to find the lyrical sentences inside the prose. *Shanwei* contains several — 'This sea is the softest place in my heart', 'Like dunes, waves have neither beginning nor end', 'Swells form without warning, carrying their roar into every dream held hostage by this water' — and none is extracted. Each is stronger for staying where it grew.
+
+### Section Breaks In Journal Mode
+
+- Section breaks are not the default in journal mode. Most short journal entries should run without them; the prose accumulates, and the reader follows the rhythm without help from layout.
+- A single section break can earn its place in a short journal entry when there is a genuine conceptual pivot — a turn from one register to another that paragraph breaks alone do not signal. *Shanwei* uses one section break before its closing paragraph, marking the pivot from family/dialect (the wáng bā joke) to time and change ('Everything changes'). The break gives the closing meditation a small silence to land in.
+- Two or more section breaks in a short journal entry impose argumentative joints the entry is not making. If the structure feels like it needs that many, the entry has become a review-essay in disguise; either commit to that or cut the breaks.
+- Longer journal entries (~1500 words and up, multi-day or multi-place) may use section breaks more freely, but still prefer paragraph breaks unless the conceptual shift is unmistakable.
+
+### Image Layout In Journal Mode
+
+- The original Chinese *Shanwei* on WeChat carried fourteen photographs arranged in clusters of three to four. That density works for the WeChat reading flow, where text wraps tightly between image stacks; it does not work for the website's text-first layout.
+- Journal-mode photos can be **scattered** rather than centred — small left-floats and right-floats alternating down the page, mimicking the offhand quality of a personal notebook. Review-essays use centred full-width figures because they are evidence; journal photos are texture, and small floats let the prose stay continuous around them.
+- The published English *Shanwei* uses two photographs: Lighthouse Island (small right-float, captioned 'Lighthouse Island, Red Bay', beside the speedboat paragraph) and the South China Sea framed by an empty stone window (small left-float, captioned 'an old fortress on the island has a window overlooking the surrounding sea', beside the lyrical sea paragraph). One right, one left — the alternation creates the scattered feel without any image dominating the column.
+- Two to three small images is the journal-mode ceiling for a short entry. Four starts to compete for the reader's attention with the prose. Available CSS classes: `.writing-insert--right`, `.writing-insert--left`, `.writing-insert--small`, and `.writing-insert-pair` (a flex container that floats two figures side-by-side as a unit). All defined in `assets/css/main.scss`.
+- Image **pairs** are available as a journal-mode pattern when two related images genuinely work as a single composed unit (one wide horizon plus one detail; two views of the same place at different distances). Most short journal entries are better served by single-image floats spaced out down the page than by a pair packed into one slot.
+- Standalone journal-mode images can be **uncaptioned** when the image is doing pure mood work, but a captioned image is usually safer — the short caption gives the reader a place name or a single phrase to anchor to, without spelling out evidence.
+- Journal entries should not use feature-banner hero images. Hero banners are reserved for featured long-form essays where the work earns the visual weight. A short journal entry that opens its page with a hero-banner background behind the title imposes review-essay grandeur on a piece that does not warrant it.
+- When captions appear, they should be short — a place name, a single noun, a quiet phrase — never explanatory. 'Lighthouse Island, Red Bay' and 'an old fortress on the island has a window overlooking the surrounding sea' are right; 'Lighthouse Island, where the writer first set foot on a Red Bay islet on this trip home' is wrong.
+- **Caption casing**: lowercase everything except proper nouns. 'Lighthouse Island, Red Bay' uses caps because both terms are proper nouns; 'an old fortress on the island has a window overlooking the surrounding sea' opens lowercase because no proper noun begins it. Sentence-case capitalisation reads as headline-y; the lowercase default keeps the caption in the marginalia register.
+- **Caption punctuation**: no full stop on a single-phrase or single-sentence caption. End a one-line caption with the last word, not a period. Use full stops only when the caption runs to two or more sentences and needs them as separators.
 
 ### Emotion In Journal Mode
 

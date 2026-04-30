@@ -5,9 +5,6 @@ category: "journal"
 date: 2019-05-01
 excerpt: "Photography as individual resistance, music as collective surrender, and the question of what a life without communication collapses into."
 image: /assets/images/personal/against-existence.webp
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/OTF1qPxHS8PISF5_W7DLEg"
 ---
 
 <span class="dropcap">L</span>ooking back, my mental state during last summer had a delicate equilibrium. Quiet living. Finish work, come home, cook, eat, read, sleep, go to concerts alone, go to gigs alone, spend the weekend in my room watching all eight *Star Wars* films. Outside working hours, there was no need for communication. A faint sense of crisis may have existed, but it was not acute. Over time, the quiet even became a kind of requirement.
@@ -20,8 +17,6 @@ Only later did I understand that photography and music had become a process of r
 
 Music was the other side of this resistance. Music is collectivity. Music makes one overcome fear and stand at the centre of a crowd, declaring the surrender of one's individual self. At a Twenty One Pilots gig in London a while ago, a boy beside me had brought his father along. Before the show started, the boy aimed his phone's flashlight at the far side of the arena; when he saw people over there flash back, he jumped with excitement. Within minutes, a dozen flashlights were pulsing across both sides. The feeling is similar at every gig: an involuntary echo of Rousseau's social contract, trading one's freedom for society's protection. In music the exchange is different: one trades one's individuality for freedom, and receives in return a sense of immersion, a strange satisfaction in the knowledge that 'I do not matter.'
 
-> Music is collectivity.
-{: .pullquote .pullquote--compact}
 
 This state continued for a while. Only recently have I begun, consciously, to try again to talk to people who are not yet friends. How long this effort, perhaps futile, will last, I do not know.
 

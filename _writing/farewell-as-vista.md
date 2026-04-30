@@ -5,9 +5,6 @@ category: "journal"
 date: 2018-07-26
 excerpt: "A lab intern's first workplace goodbye, melted gel in a heatwave, and the invisible net woven from ten thousand lives."
 image: /assets/images/personal/farewell-as-vista.webp
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/dFnG0Aoxbr8EbqfWGFRVdg"
 ---
 
 <span class="dropcap">I</span> first became aware of Alan during the heatwave at the start of July. It was the third week of the internship. I crouched at the western blot bench, one hand braced against the warm granite floor, watching for the telltale bubbles of current in the reaction chamber. I did not know Alan existed, nor that someone was running a titration behind the reagent shelf, until the professor walked in, caught my eye, exchanged a smile, and continued straight past me.
@@ -28,8 +25,6 @@ I had assumed this unreality would descend upon me at the end of my own internsh
 
 This is, I think, a rare vista in an otherwise muddling-through sort of life. As we embraced in farewell, Karen said perhaps I should come back to the lab one lunchtime after finishing the project and they could organise a goodbye lunch for me too. For an instant everything felt slightly unreal: a sudden extraction from the daily world of solutions and data, from the short-term planning of 'what needs doing tomorrow' and 'whether to go to Chinatown for fried chicken tonight', placing thought weeks, even months, ahead. Thinking of one's own life, the lives of family, friends, colleagues; thinking that others, too, live through complex yet intense joy and misery; thinking of one's future work, the family one might some day have; thinking of the countless other windows beyond one's own, the countless other beds beside one's own, the countless strangers encircling one, until one perceives, distinctly, the invisible net woven from ten thousand lives. That concise, forceful vista, mixed with the raw taste of sonder: I have come to realise that only farewell can give it.
 
-> Only farewell can give it.
-{: .pullquote .pullquote--compact}
 
 *Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/dFnG0Aoxbr8EbqfWGFRVdg), July 2018.*
 {: .source-note}

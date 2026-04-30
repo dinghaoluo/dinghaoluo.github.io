@@ -4,9 +4,6 @@ title_zh: "我媽"
 category: "journal"
 date: 2017-12-12
 excerpt: "Her forty-seventh birthday, a bowl of chestnuts, and the chromosomes that go nowhere."
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/p0P4DM-iaLFHPNID21K2fw"
 ---
 
 <span class="dropcap">D</span>inner was decent tonight. I ate and thought about what to do for my mother's forty-seventh birthday.
@@ -37,8 +34,6 @@ After much deliberation, cooking is probably the most practical option. Food is 
 
 After all, the chromosomes are still there. They go nowhere; they simply stay, perfectly still.
 
-> The chromosomes are still there.
-{: .pullquote .pullquote--compact}
 
 I will not say that my entire body is my mother. That would be creepy. But it is a fact.
 

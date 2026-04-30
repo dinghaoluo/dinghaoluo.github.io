@@ -5,9 +5,6 @@ category: "journal"
 date: 2018-08-31
 excerpt: "On trusting easily, a cider called Pink Floyd, and the octopus that reached out."
 image: /assets/images/personal/shaking-hands-with-humans.webp
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/BJ_4IQQzk_Ni-z3k9rTfSA"
 ---
 
 <span class="dropcap">L</span> was right: I am, by nature, a person who trusts easily. He brought this up while talking about when we first met. We were in Abu Dhabi together for the NYUAD Candidate Weekend. That year's pool of Asian applicants was not large; he was from Afghanistan, and perhaps for that reason, on the bus back from the restaurant, we ended up sitting together. I suspect he is not, by disposition, a gifted conversationalist; neither am I. But that evening, possibly because we had eaten well, I managed (looking back, it really was unusual) to start a conversation. I said, L, you're from Asia? He said yes, you? I said China. He said he was from Afghanistan. I asked which city. He laughed and said I would not have heard of it. I said fair enough. He asked me. I said Guangzhou, though at the time, introducing Guangzhou to foreign friends, one would instinctively reach for 'Canton' first. Only recently did I discover that most people now know 'Guangzhou' and not 'Canton'.
@@ -26,8 +23,6 @@ There had been a stretch in first year when my mood would plummet every evening.
 
 Having eliminated various possibilities, I began to suspect that the sadness stemmed from trusting too easily. Trust has an indirect consequence: expectation. Expectation of the trusted, expectation of at least some trust, some sympathy, in return. Much of the time, sadness seems to arise from the feeling that such expectation has been 'betrayed'. But thought through to the end: trusting others is one's own choice; unrealistic expectation of others is one's own choice; and if both are choices, these 'betrayals' are ultimately choices too.
 
-> Trusting others is one's own choice.
-{: .pullquote .pullquote--compact}
 
 A koi that leaps from its bowl ought to die without regret.
 

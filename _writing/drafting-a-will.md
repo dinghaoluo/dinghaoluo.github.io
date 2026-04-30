@@ -5,9 +5,6 @@ category: "journal"
 date: 2018-08-16
 excerpt: "A teenage attempt to write a will, less from a wish to die than from the need to say what ordinary life keeps hidden."
 image: /assets/images/personal/drafting-a-will.webp
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/MVnAXcAbeOVGoYaoYJ0qFQ"
 ---
 
 <span class="dropcap">I</span> have decided to draft a will.
@@ -18,8 +15,6 @@ I have decided to draft a will. The idea resurfaced recently, sparked by the dim
 
 The first time I decided to draft a will, it was on a summer evening with cicadas at the window. I had just had my first serious fight with my mother. Life felt like a birdcage, the key hanging from the ceiling, and I did not yet know how to fly. That will was immediate and painful, written towards death for the sake of life. Its entire purpose was to tell a world I had not yet touched about the difficulties and sorrows I had known. Its conclusion was a foregone ending, and for that reason, I did not finish it. What attracted me most about the concept of a will was its contradiction: its meaning is to discuss survival in the face of death, yet the people who need one are precisely those who no longer wish to discuss survival.
 
-> Its meaning is to discuss survival in the face of death.
-{: .pullquote .pullquote--compact}
 
 Now this idea seems to have moved somewhere else. The will I want to draft today is not about death, nor is it about living towards death. After the London summer rain arrived, it occurred to me that writing a will is probably just a way to live better. Discussing survival in the face of death: this contradictory act emphasises the emptiness of the latter, and that emptiness is exactly what I do not want. What I need is opportunity, love and ideals, and death only annihilates their opposites; only living can hold them together.
 
