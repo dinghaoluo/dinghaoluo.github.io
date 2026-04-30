@@ -12,665 +12,615 @@
     -
       src: "/assets/images/photos/atlas-cambridge-window-plant-2017-39f74741.webp"
       alt: "A plant in a Cambridge window with blue sky beyond."
-      caption: "window plant, 2017"
+      caption: "cambridge, 2017"
       slot: "portrait"
       width: 1198
       height: 1700
     -
       src: "/assets/images/photos/atlas-cambridge-stained-glass-2017-095fae55.webp"
       alt: "A stained glass Cambridge window glowing in green and gold."
-      caption: "stained glass, 2017"
+      caption: "cambridge, 2017"
       slot: "wide"
       width: 1700
       height: 955
     -
       src: "/assets/images/photos/atlas-cambridge-snow-wall-2018-729b271a.webp"
       alt: "A snowy Cambridge college court enclosed by dark brick walls."
-      caption: "snow wall, 2018"
+      caption: "cambridge, 2018"
       slot: "feature"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-cambridge-cloud-break-2018-7d9703fd.webp"
       alt: "Dark clouds breaking open into bright Cambridge sky."
-      caption: "cloud break, 2018"
+      caption: "cambridge, 2018"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-cambridge-open-window-2018-bb8a9426.webp"
       alt: "A square Cambridge window with a narrow shaft of light."
-      caption: "open window, 2018"
+      caption: "cambridge, 2018"
       slot: "square"
       width: 1700
       height: 1700
     -
       src: "/assets/images/photos/atlas-cambridge-river-autumn-2018-da5b8358.webp"
       alt: "Autumn light on the River Cam under trees."
-      caption: "river autumn, 2018"
+      caption: "cambridge, 2018"
       slot: "wide"
       width: 1700
       height: 955
     -
       src: "/assets/images/photos/atlas-cambridge-oculus-2018-d4286b72.webp"
       alt: "A circular ceiling opening seen from below in darkness."
-      caption: "oculus, 2018"
+      caption: "cambridge, 2018"
       slot: "square"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-cambridge-finally-here-2018-092be962.webp"
       alt: "A yellow notebook titled finally we are here on a desk."
-      caption: "finally here, 2018"
+      caption: "cambridge, 2018"
       slot: "wide"
       width: 1700
       height: 954
     -
       src: "/assets/images/photos/atlas-cambridge-king-s-parade-2019-1debf484.webp"
       alt: "A backlit Cambridge street with people and towers in haze."
-      caption: "king's parade, 2019"
+      caption: "cambridge, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-cambridge-street-shadow-2019-ede45c18.webp"
       alt: "Two figures walking through a curved Cambridge street shadow."
-      caption: "street shadow, 2019"
+      caption: "cambridge, 2019"
       slot: "wide"
       width: 1700
       height: 954
     -
       src: "/assets/images/photos/atlas-cambridge-white-door-2019-4bc7fc4f.webp"
       alt: "A small white door in a brick Cambridge wall beneath a dark tree."
-      caption: "white door, 2019"
+      caption: "cambridge, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-cambridge-spring-court-2019-4892b2b4.webp"
       alt: "A flowering tree in a Cambridge college court."
-      caption: "spring court, 2019"
+      caption: "cambridge, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-cambridge-chimney-row-2019-e7fff8b8.webp"
       alt: "Cambridge chimneys and half-timbered fronts in clear spring light."
-      caption: "chimney row, 2019"
+      caption: "cambridge, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-cambridge-red-box-2019-e02d1e69.webp"
       alt: "A red telephone box framing flowers and green glass."
-      caption: "red box, 2019"
+      caption: "cambridge, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-cambridge-cemetery-angel-2019-923faf58.webp"
       alt: "A stone angel and gravestones in a green Cambridge cemetery."
-      caption: "cemetery angel, 2019"
+      caption: "cambridge, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-cambridge-phone-box-walker-2019-6da84e41.webp"
       alt: "A pedestrian passing a red phone box on a quiet Cambridge road."
-      caption: "phone box walker, 2019"
+      caption: "cambridge, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-cambridge-departure-room-2020-3e725c3c.webp"
       alt: "An empty Cambridge dining room caught in low departure light."
-      caption: "departure room, 2020"
+      caption: "cambridge, 2020"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-cambridge-gate-and-bicycle-2020-217cc315.webp"
       alt: "A Cambridge gate with bicycles in hard spring light."
-      caption: "gate and bicycle, 2020"
+      caption: "cambridge, 2020"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-cambridge-window-reflection-2020-83910e3f.webp"
       alt: "A dark window reflection inside a Cambridge room."
-      caption: "window reflection, 2020"
+      caption: "cambridge, 2020"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-cambridge-cloister-return-2025-9fd27954.webp"
       alt: "A long Cambridge cloister with sunlight falling through pointed windows."
-      caption: "cloister return, 2025"
+      caption: "cambridge, 2025"
       slot: "portrait"
       width: 1700
       height: 1133
 -
-  id: "london"
-  title: "london"
-  axis: "2017-2025 / stations, roofs, street weather"
-  note: "Public architecture and passing surfaces: platforms, bridges, small exits, and hard weather."
+  id: "england"
+  title: "england"
+  axis: "2017-2025 / city weather, coasts, roads, returns"
+  note: "The non-Cambridge England material is gathered as one chapter: London surfaces, southern shorelines, Bristol height, Oxford stone, Stonehenge weather, and Whitby's North Sea edge."
   accent: "stone"
+  layout: "scroll"
   photos:
     -
       src: "/assets/images/photos/atlas-london-guard-wall-2018-774c0841.webp"
       alt: "A guard standing against pale London stone."
-      caption: "guard wall, 2018"
+      caption: "london, 2018"
       slot: "wide"
       width: 1700
       height: 956
+      anchor: "london"
     -
       src: "/assets/images/photos/atlas-london-tower-cloud-2018-b80bff72.webp"
       alt: "A black-and-white tower rising into cloud."
-      caption: "tower cloud, 2018"
+      caption: "london, 2018"
       slot: "portrait"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-london-underground-2018-6842ed9b.webp"
       alt: "A silhouetted figure beside a London Underground train."
-      caption: "underground, 2018"
+      caption: "london, 2018"
       slot: "wide"
       width: 1700
       height: 954
     -
       src: "/assets/images/photos/atlas-london-platform-stride-2018-51c3446a.webp"
       alt: "A person crossing a bright London train platform."
-      caption: "platform stride, 2018"
+      caption: "london, 2018"
       slot: "wide"
       width: 1700
       height: 955
     -
       src: "/assets/images/photos/atlas-london-kew-glasshouse-2019-3762df49.webp"
       alt: "A Kew glasshouse dome under a stormy sky."
-      caption: "kew glasshouse, 2019"
+      caption: "london, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-london-kew-storm-2019-be91f85d.webp"
       alt: "The Kew greenhouse exterior beneath dark clouds."
-      caption: "kew storm, 2019"
+      caption: "london, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-london-river-storm-2019-55ba3217.webp"
       alt: "A lone figure on a bridge under heavy London storm cloud."
-      caption: "river storm, 2019"
+      caption: "london, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-london-lion-dance-2020-eafab32c.webp"
       alt: "A lion dancer moving under red lanterns in Chinatown."
-      caption: "lion dance, 2020"
+      caption: "london, 2020"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-london-red-papers-2020-7919f79b.webp"
       alt: "Red rectangular papers hanging over a London Chinatown table."
-      caption: "red papers, 2020"
+      caption: "london, 2020"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-london-street-statue-2020-f50cd080.webp"
       alt: "A living statue surrounded by Chinatown pedestrians."
-      caption: "street statue, 2020"
+      caption: "london, 2020"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-london-st-paul-s-2025-38b24954.webp"
       alt: "St Paul's Cathedral seen through summer trees."
-      caption: "st paul's, 2025"
+      caption: "london, 2025"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-london-shard-leaves-2025-48347daf.webp"
       alt: "The Shard seen through leaves and London street geometry."
-      caption: "shard leaves, 2025"
+      caption: "london, 2025"
       slot: "portrait"
       width: 1214
       height: 1700
     -
       src: "/assets/images/photos/atlas-london-sunlit-facade-2025-5621e5ac.webp"
       alt: "A bright London facade under tree shade and blue sky."
-      caption: "sunlit facade, 2025"
+      caption: "london, 2025"
       slot: "wide"
       width: 1700
       height: 956
--
-  id: "brighton"
-  title: "brighton"
-  axis: "2018 / pier weather and beach furniture"
-  note: "Seaside as flat colour and bad weather: piers, deckchairs, rooftop paint, and low light."
-  accent: "stone"
-  photos:
     -
       src: "/assets/images/photos/atlas-brighton-clouded-pier-2018-a26f485e.webp"
       alt: "Brighton pier under a heavy blue-grey sky."
-      caption: "clouded pier, 2018"
+      caption: "brighton, 2018"
       slot: "feature"
       width: 1700
       height: 956
+      anchor: "brighton"
     -
       src: "/assets/images/photos/atlas-brighton-overcast-pier-2018-5d1c7b52.webp"
       alt: "A dark Brighton pier edge against a flat sea horizon."
-      caption: "overcast pier, 2018"
+      caption: "brighton, 2018"
       slot: "wide"
       width: 1700
       height: 955
     -
       src: "/assets/images/photos/atlas-brighton-deckchairs-2018-34a7dddf.webp"
       alt: "Striped deckchairs on Brighton beach beneath a pale overcast sky."
-      caption: "deckchairs, 2018"
+      caption: "brighton, 2018"
       slot: "wide"
       width: 1700
       height: 955
     -
       src: "/assets/images/photos/atlas-brighton-air-believe-2018-3c30e46e.webp"
       alt: "A bright rooftop mural in Brighton seen from above."
-      caption: "air believe, 2018"
+      caption: "brighton, 2018"
       slot: "wide"
       width: 1700
       height: 954
     -
       src: "/assets/images/photos/atlas-brighton-cloudy-shore-2018-06aa480c.webp"
       alt: "Small figures walking on a reflective Brighton beach."
-      caption: "cloudy shore, 2018"
+      caption: "brighton, 2018"
       slot: "wide"
       width: 1700
       height: 956
--
-  id: "bristol"
-  title: "bristol"
-  axis: "2019 / cliff, road, river"
-  note: "A short Clifton sequence: infrastructure running through stone and trees."
-  accent: "stone"
-  photos:
     -
       src: "/assets/images/photos/atlas-bristol-clifton-bend-2019-8434f316.webp"
       alt: "A road and river curve through Bristol cliffs and green trees."
-      caption: "clifton bend, 2019"
+      caption: "bristol, 2019"
       slot: "feature"
       width: 1700
       height: 956
+      anchor: "bristol"
     -
       src: "/assets/images/photos/atlas-bristol-river-green-2019-46cd8f16.webp"
       alt: "A high view over trees and brown water near Bristol."
-      caption: "river green, 2019"
+      caption: "bristol, 2019"
       slot: "wide"
       width: 1700
       height: 956
--
-  id: "oxford"
-  title: "oxford"
-  axis: "2019 / one door"
-  note: "One quiet Oxford facade, included because the single image holds its place cleanly."
-  accent: "stone"
-  photos:
     -
       src: "/assets/images/photos/atlas-oxford-winter-door-2019-be1d4948.webp"
       alt: "An Oxford stone facade with a dark arched door and red wreath."
-      caption: "winter door, 2019"
+      caption: "oxford, 2019"
       slot: "feature"
       width: 1700
       height: 1129
--
-  id: "stonehenge"
-  title: "stonehenge"
-  axis: "2018 / road, field, storm, stones"
-  note: "The better frame is the approach: weather, road, field geometry, and the monument almost withholding itself."
-  accent: "stone"
-  photos:
+      anchor: "oxford"
     -
       src: "/assets/images/photos/atlas-stonehenge-road-to-stones-2018-14f7cea1.webp"
       alt: "A narrow road running between fields toward Stonehenge."
-      caption: "road to stones, 2018"
+      caption: "stonehenge, 2018"
       slot: "feature"
       width: 1700
       height: 955
+      anchor: "stonehenge"
     -
       src: "/assets/images/photos/atlas-stonehenge-storm-field-2018-7e486e15.webp"
       alt: "Dark storm clouds over the fields around Stonehenge."
-      caption: "storm field, 2018"
+      caption: "stonehenge, 2018"
       slot: "wide"
       width: 1700
       height: 955
     -
       src: "/assets/images/photos/atlas-stonehenge-distant-line-2018-7064cbab.webp"
       alt: "Visitors crossing the open field near Stonehenge."
-      caption: "distant line, 2018"
+      caption: "stonehenge, 2018"
       slot: "wide"
       width: 1700
       height: 954
     -
       src: "/assets/images/photos/atlas-stonehenge-the-stones-2018-fb4247ef.webp"
       alt: "Stonehenge under a low grey sky."
-      caption: "the stones, 2018"
+      caption: "stonehenge, 2018"
       slot: "wide"
       width: 1700
       height: 955
     -
       src: "/assets/images/photos/atlas-stonehenge-stone-edge-2018-fadb749e.webp"
       alt: "A black-and-white view of Stonehenge with small visitors at the edge."
-      caption: "stone edge, 2018"
+      caption: "stonehenge, 2018"
       slot: "portrait"
       width: 1096
       height: 1700
     -
       src: "/assets/images/photos/atlas-stonehenge-hill-silhouette-2018-3094d791.webp"
       alt: "People in silhouette along a low southern England horizon."
-      caption: "hill silhouette, 2018"
+      caption: "stonehenge, 2018"
       slot: "wide"
       width: 1700
       height: 955
--
-  id: "seaford"
-  title: "seaford"
-  axis: "2025 / chalk and sea"
-  note: "A small late summer cliff sequence: blue, path, chalk, and the sea flattening everything beyond."
-  accent: "haze"
-  photos:
     -
       src: "/assets/images/photos/atlas-seaford-lighthouse-drop-2025-8cd1d07d.webp"
       alt: "A lighthouse below white chalk cliffs and blue sea near Seaford."
-      caption: "lighthouse drop, 2025"
+      caption: "seaford, 2025"
       slot: "portrait"
       width: 1133
       height: 1700
+      anchor: "seaford"
     -
       src: "/assets/images/photos/atlas-seaford-path-to-sea-2025-59890010.webp"
       alt: "A footpath leading through grass toward the Seaford sea."
-      caption: "path to sea, 2025"
+      caption: "seaford, 2025"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-seaford-seven-sisters-2025-33ef7f63.webp"
       alt: "White chalk cliffs at Seaford in low warm light."
-      caption: "seven sisters, 2025"
+      caption: "seaford, 2025"
       slot: "portrait"
       width: 1133
       height: 1700
--
-  id: "whitby"
-  title: "whitby"
-  axis: "2018-2019 / harbour, abbey, sea walls"
-  note: "North Sea light, harbour geometry, and the town as a dark edge against water."
-  accent: "stone"
-  photos:
     -
       src: "/assets/images/photos/atlas-whitby-harbour-mouth-2019-650d52c1.webp"
       alt: "Whitby harbour mouth at dusk with the sea opening beyond."
-      caption: "harbour mouth, 2019"
+      caption: "whitby, 2019"
       slot: "feature"
       width: 1700
       height: 956
+      anchor: "whitby"
     -
       src: "/assets/images/photos/atlas-whitby-dark-beach-2019-c0321d86.webp"
       alt: "A dark reflective beach under evening clouds in Whitby."
-      caption: "dark beach, 2019"
+      caption: "whitby, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-whitby-town-haze-2019-746d69e9.webp"
       alt: "Whitby rooftops receding into mist and low light."
-      caption: "town haze, 2019"
+      caption: "whitby, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-whitby-sea-storm-2019-2715b072.webp"
       alt: "Storm cloud over Whitby surf and dark headland."
-      caption: "sea storm, 2019"
+      caption: "whitby, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-whitby-harbour-sky-2019-9c540176.webp"
       alt: "Whitby harbour under a pale evening sky."
-      caption: "harbour sky, 2019"
+      caption: "whitby, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-whitby-pier-light-2019-7cf303e5.webp"
       alt: "Whitby pier structures against grey sea."
-      caption: "pier light, 2019"
+      caption: "whitby, 2019"
       slot: "wide"
       width: 1700
       height: 955
     -
       src: "/assets/images/photos/atlas-whitby-lighthouse-pier-2019-748c4de5.webp"
       alt: "Whitby lighthouse and pier under blue-grey cloud."
-      caption: "lighthouse pier, 2019"
+      caption: "whitby, 2019"
       slot: "wide"
       width: 1700
       height: 955
     -
       src: "/assets/images/photos/atlas-whitby-abbey-walk-2019-6ec2ce9d.webp"
       alt: "People walking along a stone path beneath Whitby Abbey cliffs."
-      caption: "abbey walk, 2019"
+      caption: "whitby, 2019"
       slot: "wide"
       width: 1700
       height: 956
 -
-  id: "st-andrews"
-  title: "st andrews"
-  axis: "2018 / ruins, sea, colour blocks"
-  note: "A small coastal set, calmer and cleaner than the Edinburgh weather around it."
+  id: "scotland"
+  title: "scotland"
+  axis: "2018-2025 / ruins, rain, city smoke, highland road"
+  note: "A single northern chapter keeps the Scottish places close but distinct through captions: St Andrews, Edinburgh, Glasgow, and Glencoe each keep their first-photo anchor."
   accent: "haze"
+  layout: "scroll"
   photos:
     -
       src: "/assets/images/photos/atlas-st-andrews-cathedral-ruin-2018-17eae829.webp"
       alt: "The St Andrews cathedral ruins standing against a pale sky."
-      caption: "cathedral ruin, 2018"
+      caption: "st andrews, 2018"
       slot: "portrait"
       width: 955
       height: 1700
+      anchor: "st-andrews"
     -
       src: "/assets/images/photos/atlas-st-andrews-sea-bench-2018-654e51d4.webp"
       alt: "Two people sitting on a bench facing the sea at St Andrews."
-      caption: "sea bench, 2018"
+      caption: "st andrews, 2018"
       slot: "wide"
       width: 1700
       height: 955
     -
       src: "/assets/images/photos/atlas-st-andrews-pastel-windows-2018-aa9a1301.webp"
       alt: "Pastel building windows in St Andrews."
-      caption: "pastel windows, 2018"
+      caption: "st andrews, 2018"
       slot: "wide"
       width: 1700
       height: 954
     -
       src: "/assets/images/photos/atlas-st-andrews-pier-edge-2018-e5e2866b.webp"
       alt: "A figure standing at the end of a St Andrews pier."
-      caption: "pier edge, 2018"
+      caption: "st andrews, 2018"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-st-andrews-pier-line-2018-3744d77a.webp"
       alt: "A St Andrews pier cutting into blue water."
-      caption: "pier line, 2018"
+      caption: "st andrews, 2018"
       slot: "wide"
       width: 1700
       height: 953
     -
       src: "/assets/images/photos/atlas-st-andrews-stone-lane-2018-5f133326.webp"
       alt: "A narrow old stone lane in St Andrews."
-      caption: "stone lane, 2018"
+      caption: "st andrews, 2018"
       slot: "wide"
       width: 1700
       height: 954
--
-  id: "edinburgh"
-  title: "edinburgh"
-  axis: "2018 / rain, rock, interior fragments"
-  note: "A northern city reduced to weather marks: a rainbow, a hill figure, a blue door, and bits of shelter."
-  accent: "stone"
-  photos:
     -
       src: "/assets/images/photos/atlas-edinburgh-hill-descent-2018-ceb73396.webp"
       alt: "Two people descending a grassy Edinburgh hillside."
-      caption: "hill descent, 2018"
+      caption: "edinburgh, 2018"
       slot: "wide"
       width: 1700
       height: 955
+      anchor: "edinburgh"
     -
       src: "/assets/images/photos/atlas-edinburgh-rainbow-2018-56c02d06.webp"
       alt: "A vertical rainbow under grey Edinburgh rain."
-      caption: "rainbow, 2018"
+      caption: "edinburgh, 2018"
       slot: "portrait"
       width: 1125
       height: 1700
     -
       src: "/assets/images/photos/atlas-edinburgh-arthur-s-seat-2018-597030e8.webp"
       alt: "A lone figure on a dark Edinburgh hill under grey sky."
-      caption: "arthur's seat, 2018"
+      caption: "edinburgh, 2018"
       slot: "wide"
       width: 1700
       height: 955
     -
       src: "/assets/images/photos/atlas-edinburgh-green-shadow-2018-8d7f3d13.webp"
       alt: "Green Edinburgh path light falling into shadow."
-      caption: "green shadow, 2018"
+      caption: "edinburgh, 2018"
       slot: "square"
       width: 1700
       height: 1360
     -
       src: "/assets/images/photos/atlas-edinburgh-stone-shade-2018-f0c5f4f9.webp"
       alt: "A stone Edinburgh facade half obscured by leaves."
-      caption: "stone shade, 2018"
+      caption: "edinburgh, 2018"
       slot: "wide"
       width: 1700
       height: 1360
     -
       src: "/assets/images/photos/atlas-edinburgh-shore-dusk-2018-24a65636.webp"
       alt: "Small figures on a dusky beach near Edinburgh."
-      caption: "shore dusk, 2018"
+      caption: "edinburgh, 2018"
       slot: "wide"
       width: 1700
       height: 1360
--
-  id: "glasgow"
-  title: "glasgow"
-  axis: "2018-2019 / skyline and smoke"
-  note: "Distant urban weather: greys, smoke, rooftops, and one saturated sign."
-  accent: "stone"
-  photos:
     -
       src: "/assets/images/photos/atlas-glasgow-grey-skyline-2018-7262098e.webp"
       alt: "A broad grey Glasgow skyline from above."
-      caption: "grey skyline, 2018"
+      caption: "glasgow, 2018"
       slot: "wide"
       width: 1700
       height: 956
+      anchor: "glasgow"
     -
       src: "/assets/images/photos/atlas-glasgow-industrial-smoke-2019-d8ce9ca0.webp"
       alt: "Smoke rising over Glasgow under a low grey sky."
-      caption: "industrial smoke, 2019"
+      caption: "glasgow, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-glasgow-station-roofline-2019-d19e6591.webp"
       alt: "Glasgow brick buildings and station roofs from above."
-      caption: "station roofline, 2019"
+      caption: "glasgow, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-glasgow-pink-sign-2019-77f72544.webp"
       alt: "A pink billboard punctuating a black-and-white Glasgow skyline."
-      caption: "pink sign, 2019"
+      caption: "glasgow, 2019"
       slot: "wide"
       width: 1700
       height: 956
--
-  id: "glencoe"
-  title: "glencoe"
-  axis: "2019-2025 / road, loch, valley"
-  note: "A Highland sequence kept generous because the repetitions matter: roads through empty scale, water, sheep, and bodies made small."
-  accent: "haze"
-  photos:
     -
       src: "/assets/images/photos/atlas-glencoe-road-cyclist-2019-c798d7ef.webp"
       alt: "A lone cyclist on a tree-lined Highland road."
-      caption: "road cyclist, 2019"
+      caption: "glencoe, 2019"
       slot: "wide"
       width: 1700
       height: 956
+      anchor: "glencoe"
     -
       src: "/assets/images/photos/atlas-glencoe-green-slope-2025-6751b621.webp"
       alt: "A green Highland mountain slope under blue sky."
-      caption: "green slope, 2025"
+      caption: "glencoe, 2025"
       slot: "wide"
       width: 1700
       height: 1214
     -
       src: "/assets/images/photos/atlas-glencoe-glencoe-valley-2025-39bf2820.webp"
       alt: "A path running into the shadowed valley of Glencoe."
-      caption: "glencoe valley, 2025"
+      caption: "glencoe, 2025"
       slot: "portrait"
       width: 1214
       height: 1700
     -
       src: "/assets/images/photos/atlas-glencoe-loch-sunset-2025-1f4ba6bf.webp"
       alt: "A Highland loch at sunset with mountains in silhouette."
-      caption: "loch sunset, 2025"
+      caption: "glencoe, 2025"
       slot: "portrait"
       width: 1651
       height: 1700
     -
       src: "/assets/images/photos/atlas-glencoe-blue-loch-2025-2693959f.webp"
       alt: "A blue Highland loch under clouded mountains."
-      caption: "blue loch, 2025"
+      caption: "glencoe, 2025"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-glencoe-sheep-valley-2025-d40f7d90.webp"
       alt: "Sheep crossing a path through a Highland valley."
-      caption: "sheep valley, 2025"
+      caption: "glencoe, 2025"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-glencoe-small-walker-2025-ffd16cf7.webp"
       alt: "A small figure walking along a road below steep Highland slopes."
-      caption: "small walker, 2025"
+      caption: "glencoe, 2025"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-glencoe-valley-path-2025-5af8ad41.webp"
       alt: "A winding path leading into a green Highland valley."
-      caption: "valley path, 2025"
+      caption: "glencoe, 2025"
       slot: "portrait"
       width: 1214
       height: 1700
     -
       src: "/assets/images/photos/atlas-glencoe-loch-weather-2025-1e601e97.webp"
       alt: "A grey loch beneath low cloud in the Highlands."
-      caption: "loch weather, 2025"
+      caption: "glencoe, 2025"
       slot: "wide"
       width: 1700
       height: 722
     -
       src: "/assets/images/photos/atlas-glencoe-stitched-climb-2025-bd2a963a.webp"
       alt: "A stitched vertical path with small repeated figures climbing through Glencoe."
-      caption: "stitched climb, 2025"
+      caption: "glencoe, 2025"
       slot: "portrait"
       width: 1080
       height: 1626
@@ -684,91 +634,91 @@
     -
       src: "/assets/images/photos/atlas-beijing-great-wall-green-2020-c3bdc81f.webp"
       alt: "The Great Wall crossing green Beijing mountains."
-      caption: "great wall green, 2020"
+      caption: "beijing, 2020"
       slot: "feature"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-beijing-birds-and-wires-2020-c1f296aa.webp"
       alt: "Birds crossing a grey Beijing sky behind wires."
-      caption: "birds and wires, 2020"
+      caption: "beijing, 2020"
       slot: "wide"
       width: 1700
       height: 958
     -
       src: "/assets/images/photos/atlas-beijing-ginkgo-street-2020-f5c0d401.webp"
       alt: "Yellow ginkgo leaves along a Beijing street."
-      caption: "ginkgo street, 2020"
+      caption: "beijing, 2020"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-beijing-cyclist-shadow-2020-cdce9f4d.webp"
       alt: "A cyclist passing through sharp Beijing autumn shadow."
-      caption: "cyclist shadow, 2020"
+      caption: "beijing, 2020"
       slot: "portrait"
       width: 956
       height: 1700
     -
       src: "/assets/images/photos/atlas-beijing-bench-backs-2020-d4f8a5e7.webp"
       alt: "Two people on a bench under dark trees in Beijing."
-      caption: "bench backs, 2020"
+      caption: "beijing, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-beijing-red-wall-shadow-2020-3c59fe63.webp"
       alt: "A red Beijing wall cut by tree shadow."
-      caption: "red wall shadow, 2020"
+      caption: "beijing, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-beijing-danger-sign-2020-ccaaceac.webp"
       alt: "A red danger sign on an old Beijing brick wall."
-      caption: "danger sign, 2020"
+      caption: "beijing, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-beijing-pavilion-autumn-2020-375e7d4b.webp"
       alt: "A Beijing pavilion roof surrounded by autumn colour."
-      caption: "pavilion autumn, 2020"
+      caption: "beijing, 2020"
       slot: "square"
       width: 1129
       height: 1700
     -
       src: "/assets/images/photos/atlas-beijing-music-stand-2020-b698cc4e.webp"
       alt: "A music stand and orange leaf in a Beijing park."
-      caption: "music stand, 2020"
+      caption: "beijing, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-beijing-chair-and-bars-2020-52aa5153.webp"
       alt: "A chair and railing shadows on a Beijing pavement."
-      caption: "chair and bars, 2020"
+      caption: "beijing, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-beijing-blue-wall-flowers-2020-d1364f01.webp"
       alt: "White flowers against a blue Beijing wall in hard light."
-      caption: "blue wall flowers, 2020"
+      caption: "beijing, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-beijing-window-shadow-2020-f6f718da.webp"
       alt: "A window grid shadow falling across Beijing pavement."
-      caption: "window shadow, 2020"
+      caption: "beijing, 2020"
       slot: "wide"
       width: 1700
       height: 951
     -
       src: "/assets/images/photos/atlas-beijing-red-wall-birds-2021-9c8cdc41.webp"
       alt: "Small white birds against a red Beijing wall."
-      caption: "red wall birds, 2021"
+      caption: "beijing, 2021"
       slot: "wide"
       width: 1700
       height: 957
@@ -782,508 +732,455 @@
     -
       src: "/assets/images/photos/atlas-jilin-window-lamp-2020-f5a173da.webp"
       alt: "A lamp and window looking onto green Jilin trees."
-      caption: "window lamp, 2020"
+      caption: "jilin, 2020"
       slot: "portrait"
       width: 1129
       height: 1700
     -
       src: "/assets/images/photos/atlas-jilin-river-pipes-2020-41b938be.webp"
       alt: "A person near pipes at the edge of a Jilin river."
-      caption: "river pipes, 2020"
+      caption: "jilin, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-jilin-mountain-dam-2020-cec0bb5d.webp"
       alt: "Cars lined along a dam beneath blue Jilin mountains."
-      caption: "mountain dam, 2020"
+      caption: "jilin, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-jilin-autumn-slope-2020-7940aabe.webp"
       alt: "A building tucked into a Jilin mountain slope in autumn."
-      caption: "autumn slope, 2020"
+      caption: "jilin, 2020"
       slot: "portrait"
       width: 1129
       height: 1700
     -
       src: "/assets/images/photos/atlas-jilin-town-mountain-2020-1ca32157.webp"
       alt: "A Jilin town street opening toward a green mountain."
-      caption: "town mountain, 2020"
+      caption: "jilin, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-jilin-market-table-2020-d23d9a83.webp"
       alt: "Small objects laid out on a Jilin market table."
-      caption: "market table, 2020"
+      caption: "jilin, 2020"
       slot: "wide"
       width: 1700
       height: 958
     -
       src: "/assets/images/photos/atlas-jilin-red-leaves-2020-dae19965.webp"
       alt: "Red autumn leaves against pale Jilin rock."
-      caption: "red leaves, 2020"
+      caption: "jilin, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-jilin-mist-mountain-2020-d6eb1dc1.webp"
       alt: "A rocky Jilin mountain under low mist."
-      caption: "mist mountain, 2020"
+      caption: "jilin, 2020"
       slot: "wide"
       width: 1700
       height: 957
 -
-  id: "chongqing"
-  title: "chongqing"
-  axis: "2020 / fog, bridges, vertical city"
-  note: "Chongqing stays compact: fog and height doing most of the work."
+  id: "southern-china"
+  title: "southern china"
+  axis: "2017-2025 / humid cities, home rooms, coast, river, school"
+  note: "The southern China map stays detailed, but the gallery reads as one long chapter: Guangzhou at the core, with Chongqing, Hong Kong, Shenzhen, Zhuhai, Huazhou, Shanwei, Xiamen, Hangzhou, and Shanghai folded into the same rhythm."
   accent: "rose"
+  layout: "scroll"
   photos:
     -
       src: "/assets/images/photos/atlas-chongqing-cable-fog-2020-897cc33f.webp"
       alt: "A Chongqing cable car cutting through fog between buildings."
-      caption: "cable fog, 2020"
+      caption: "chongqing, 2020"
       slot: "feature"
       width: 1700
       height: 1129
+      anchor: "chongqing"
     -
       src: "/assets/images/photos/atlas-chongqing-bridge-haze-2020-701bf412.webp"
       alt: "A Chongqing bridge barely visible through grey fog."
-      caption: "bridge haze, 2020"
+      caption: "chongqing, 2020"
       slot: "portrait"
       width: 1129
       height: 1700
     -
       src: "/assets/images/photos/atlas-chongqing-road-descent-2020-ffc75010.webp"
       alt: "A steep Chongqing road descending between trees and towers."
-      caption: "road descent, 2020"
+      caption: "chongqing, 2020"
       slot: "portrait"
       width: 1129
       height: 1700
     -
       src: "/assets/images/photos/atlas-chongqing-balcony-road-2020-8c1ebdab.webp"
       alt: "A Chongqing road seen through branches from above."
-      caption: "balcony road, 2020"
+      caption: "chongqing, 2020"
       slot: "wide"
       width: 1700
       height: 957
--
-  id: "guangzhou"
-  title: "guangzhou"
-  axis: "2017-2025 / river, school, home, heat"
-  note: "The southern China core: river views, school buildings, domestic objects, lychee, concrete, and humid light."
-  accent: "rose"
-  layout: "scroll"
-  photos:
     -
       src: "/assets/images/photos/atlas-guangzhou-balcony-dusk-2017-2bdf496b.webp"
       alt: "A Guangzhou bridge and river at orange dusk."
-      caption: "balcony dusk, 2017"
+      caption: "guangzhou, 2017"
       slot: "feature"
       width: 1700
       height: 956
+      anchor: "guangzhou"
     -
       src: "/assets/images/photos/atlas-guangzhou-river-boat-2017-b5732825.webp"
       alt: "A boat crossing the Guangzhou river under a blue city evening."
-      caption: "river boat, 2017"
+      caption: "guangzhou, 2017"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-guangzhou-two-towers-blue-2017-e7d4d183.webp"
       alt: "Two Guangzhou towers rising into blue sky and cloud."
-      caption: "two towers blue, 2017"
+      caption: "guangzhou, 2017"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-guangzhou-two-towers-storm-2017-1c7778d6.webp"
       alt: "Two towers seen against a dark storm sky in Guangzhou."
-      caption: "two towers storm, 2017"
+      caption: "guangzhou, 2017"
       slot: "wide"
       width: 1700
       height: 955
     -
       src: "/assets/images/photos/atlas-guangzhou-flowering-tree-2017-d533b575.webp"
       alt: "A flowering Guangzhou tree against a pale sky."
-      caption: "flowering tree, 2017"
+      caption: "guangzhou, 2017"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-guangzhou-red-slip-2018-950ce21d.webp"
       alt: "A hand writing on a red slip of paper."
-      caption: "red slip, 2018"
+      caption: "guangzhou, 2018"
       slot: "wide"
       width: 1700
       height: 955
     -
       src: "/assets/images/photos/atlas-guangzhou-night-bridge-2018-453ea200.webp"
       alt: "A Guangzhou bridge lit at night over black water."
-      caption: "night bridge, 2018"
+      caption: "guangzhou, 2018"
       slot: "wide"
       width: 1700
       height: 955
     -
       src: "/assets/images/photos/atlas-guangzhou-service-lane-2018-8c32ade5.webp"
       alt: "A dense Guangzhou lane with bicycles and awnings."
-      caption: "service lane, 2018"
+      caption: "guangzhou, 2018"
       slot: "wide"
       width: 1700
       height: 1129
     -
       src: "/assets/images/photos/atlas-guangzhou-glass-reflection-2018-ba3382ba.webp"
       alt: "A tower reflected in a gridded Guangzhou glass facade."
-      caption: "glass reflection, 2018"
+      caption: "guangzhou, 2018"
       slot: "wide"
       width: 1700
       height: 1129
     -
       src: "/assets/images/photos/atlas-guangzhou-desk-bear-2018-4016deae.webp"
       alt: "A desk with a small framed portrait and a toy in soft light."
-      caption: "desk bear, 2018"
+      caption: "guangzhou, 2018"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-guangzhou-river-palms-2019-11645a2d.webp"
       alt: "Palms beside the Guangzhou river in grey light."
-      caption: "river palms, 2019"
+      caption: "guangzhou, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-guangzhou-steam-doorway-2019-ce88b186.webp"
       alt: "Steam or dust bursting through a green Guangzhou doorway."
-      caption: "steam doorway, 2019"
+      caption: "guangzhou, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-guangzhou-old-balcony-2019-d7c0ee3e.webp"
       alt: "An old Guangzhou building with balconies and laundry."
-      caption: "old balcony, 2019"
+      caption: "guangzhou, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-guangzhou-home-trees-2020-dd9173db.webp"
       alt: "A Guangzhou apartment facade partly hidden by trees."
-      caption: "home trees, 2020"
+      caption: "guangzhou, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-guangzhou-lychee-2020-9c68e178.webp"
       alt: "Clusters of lychee hanging in Guangzhou summer light."
-      caption: "lychee, 2020"
+      caption: "guangzhou, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-guangzhou-basket-floor-2020-ca60d591.webp"
       alt: "A wicker basket and leaves on a Guangzhou garden floor."
-      caption: "basket floor, 2020"
+      caption: "guangzhou, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-guangzhou-laundry-balcony-2020-2950334f.webp"
       alt: "Rows of laundry hanging along a Guangzhou school balcony."
-      caption: "laundry balcony, 2020"
+      caption: "guangzhou, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-guangzhou-stationery-store-2020-e3096c9f.webp"
       alt: "A student facing a closed stationery store in Guangzhou."
-      caption: "stationery store, 2020"
+      caption: "guangzhou, 2020"
       slot: "portrait"
       width: 1700
       height: 1361
     -
       src: "/assets/images/photos/atlas-guangzhou-pool-window-2020-3ddb5cf7.webp"
       alt: "A swimming pool seen through a half-open window and leaves."
-      caption: "pool window, 2020"
+      caption: "guangzhou, 2020"
       slot: "portrait"
       width: 1700
       height: 1362
     -
       src: "/assets/images/photos/atlas-guangzhou-school-sign-2020-ace5a5ce.webp"
       alt: "A red school sign above trees in Guangzhou."
-      caption: "school sign, 2020"
+      caption: "guangzhou, 2020"
       slot: "wide"
       width: 1700
       height: 1362
     -
       src: "/assets/images/photos/atlas-guangzhou-tree-and-mall-2024-71ff58a1.webp"
       alt: "A Guangzhou mall facade veiled by a bright green tree."
-      caption: "tree and mall, 2024"
+      caption: "guangzhou, 2024"
       slot: "wide"
       width: 1700
       height: 1360
     -
       src: "/assets/images/photos/atlas-guangzhou-old-facade-2025-20ba4609.webp"
       alt: "An old pale Guangzhou apartment facade against blue sky."
-      caption: "old facade, 2025"
+      caption: "guangzhou, 2025"
       slot: "wide"
       width: 1700
       height: 1133
--
-  id: "hong-kong"
-  title: "hong kong"
-  axis: "2018 / stacked city"
-  note: "A brief, dense pair: vertical flats and street signs."
-  accent: "rose"
-  photos:
     -
       src: "/assets/images/photos/atlas-hong-kong-harbour-flats-2018-95a4990f.webp"
       alt: "Hong Kong high-rises under a pale grey sky."
-      caption: "harbour flats, 2018"
+      caption: "hong kong, 2018"
       slot: "wide"
       width: 1700
       height: 955
+      anchor: "hong-kong"
     -
       src: "/assets/images/photos/atlas-hong-kong-street-signs-2018-d5040393.webp"
       alt: "Dense Hong Kong street signs over a narrow street."
-      caption: "street signs, 2018"
+      caption: "hong kong, 2018"
       slot: "wide"
       width: 1700
       height: 956
--
-  id: "shenzhen"
-  title: "shenzhen"
-  axis: "2020 / edge city"
-  note: "A short set where Shenzhen feels like underside, plaza, and weather."
-  accent: "rose"
-  photos:
     -
       src: "/assets/images/photos/atlas-shenzhen-civic-underside-2020-6eb145d3.webp"
       alt: "The underside of a broad Shenzhen civic structure."
-      caption: "civic underside, 2020"
+      caption: "shenzhen, 2020"
       slot: "wide"
       width: 1700
       height: 958
+      anchor: "shenzhen"
     -
       src: "/assets/images/photos/atlas-shenzhen-mountain-plaza-2020-5d0fffb9.webp"
       alt: "A Shenzhen plaza facing mountains between high-rises."
-      caption: "mountain plaza, 2020"
+      caption: "shenzhen, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-shenzhen-cloud-mass-2020-3addcafe.webp"
       alt: "Large cumulus cloud rising over Shenzhen towers."
-      caption: "cloud mass, 2020"
+      caption: "shenzhen, 2020"
       slot: "wide"
       width: 1700
       height: 957
--
-  id: "zhuhai"
-  title: "zhuhai"
-  axis: "undated / theatre and water"
-  note: "Two open coastal forms: polished shell and low horizon."
-  accent: "rose"
-  photos:
     -
       src: "/assets/images/photos/atlas-zhuhai-opera-shell-undated-90acbe86.webp"
       alt: "The Zhuhai opera shell curving into blue sky."
-      caption: "opera shell, undated"
+      caption: "zhuhai, undated"
       slot: "feature"
       width: 1700
       height: 957
+      anchor: "zhuhai"
     -
       src: "/assets/images/photos/atlas-zhuhai-quiet-lighthouse-undated-f48d79d4.webp"
       alt: "A small Zhuhai lighthouse on a low sea wall."
-      caption: "quiet lighthouse, undated"
+      caption: "zhuhai, undated"
       slot: "wide"
       width: 1700
       height: 957
--
-  id: "huazhou"
-  title: "huazhou"
-  axis: "2020 / ancestral room and field edge"
-  note: "Huazhou is not polished into postcard form: fan blur, portrait, courtyard, and working field."
-  accent: "rose"
-  photos:
     -
       src: "/assets/images/photos/atlas-huazhou-ceiling-fan-2020-3af02c0e.webp"
       alt: "A blue fan blurred against a pale Huazhou ceiling."
-      caption: "ceiling fan, 2020"
+      caption: "huazhou, 2020"
       slot: "wide"
       width: 1700
       height: 957
+      anchor: "huazhou"
     -
       src: "/assets/images/photos/atlas-huazhou-wall-portrait-2020-7155ea38.webp"
       alt: "A large portrait on the wall of a Huazhou interior."
-      caption: "wall portrait, 2020"
+      caption: "huazhou, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-huazhou-well-rest-2020-2366af8d.webp"
       alt: "A child resting on a circular well in a Huazhou courtyard."
-      caption: "well rest, 2020"
+      caption: "huazhou, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-huazhou-field-figures-2020-50eb5c88.webp"
       alt: "Small figures working near a Huazhou field and trees."
-      caption: "field figures, 2020"
+      caption: "huazhou, 2020"
       slot: "wide"
       width: 1700
       height: 957
--
-  id: "shanwei"
-  title: "shanwei"
-  axis: "2020 / lighthouse, ruins, sea"
-  note: "Red Bay as fragments: brick, sea window, blue deck paint, boats, and island crossings."
-  accent: "rose"
-  photos:
     -
       src: "/assets/images/photos/atlas-shanwei-island-lighthouse-2020-fbf4d47d.webp"
       alt: "A Shanwei lighthouse rising behind green trees."
-      caption: "island lighthouse, 2020"
+      caption: "shanwei, 2020"
       slot: "feature"
       width: 1700
       height: 957
+      anchor: "shanwei"
     -
       src: "/assets/images/photos/atlas-shanwei-red-bay-2020-d33f4a68.webp"
       alt: "A soft view across Shanwei's Red Bay."
-      caption: "red bay, 2020"
+      caption: "shanwei, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-shanwei-brick-shadow-2020-ca35fb9b.webp"
       alt: "A pale brick wall with shadow in Shanwei."
-      caption: "brick shadow, 2020"
+      caption: "shanwei, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-shanwei-blue-deck-net-2020-0c924eac.webp"
       alt: "Fishing net and rope on a blue Shanwei boat deck."
-      caption: "blue deck net, 2020"
+      caption: "shanwei, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-shanwei-green-rock-water-2020-c4aa1376.webp"
       alt: "Waves breaking around green rocks at Shanwei."
-      caption: "green rock water, 2020"
+      caption: "shanwei, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-shanwei-ruin-and-sea-2020-e22f56b6.webp"
       alt: "A brick ruin above the Shanwei sea."
-      caption: "ruin and sea, 2020"
+      caption: "shanwei, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-shanwei-sea-window-2020-c0c06ab2.webp"
       alt: "The sea framed by a dark ruined window in Shanwei."
-      caption: "sea window, 2020"
+      caption: "shanwei, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-shanwei-crossing-island-2020-1f8d9f51.webp"
       alt: "An island seen from a Shanwei speedboat crossing."
-      caption: "crossing island, 2020"
+      caption: "shanwei, 2020"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-shanwei-boat-on-sea-2020-e708a1ff.webp"
       alt: "A boat moving across open Shanwei water."
-      caption: "boat on sea, 2020"
+      caption: "shanwei, 2020"
       slot: "wide"
       width: 1700
       height: 957
--
-  id: "xiamen"
-  title: "xiamen"
-  axis: "2021 / shore, laundry, tea"
-  note: "A small Xiamen set with a softer, more domestic weather than Guangzhou."
-  accent: "rose"
-  photos:
     -
       src: "/assets/images/photos/atlas-xiamen-shore-child-2021-3fcbb95c.webp"
       alt: "A child and adult at the Xiamen shore under a concrete column."
-      caption: "shore child, 2021"
+      caption: "xiamen, 2021"
       slot: "wide"
       width: 1700
       height: 958
+      anchor: "xiamen"
     -
       src: "/assets/images/photos/atlas-xiamen-courtyard-laundry-2021-dd1a2903.webp"
       alt: "Laundry drying in a sunlit Xiamen courtyard."
-      caption: "courtyard laundry, 2021"
+      caption: "xiamen, 2021"
       slot: "wide"
       width: 1700
       height: 958
     -
       src: "/assets/images/photos/atlas-xiamen-tea-table-2021-11459c28.webp"
       alt: "A tea cup and coffee cup on a wooden Xiamen table."
-      caption: "tea table, 2021"
+      caption: "xiamen, 2021"
       slot: "wide"
       width: 1700
       height: 958
--
-  id: "hangzhou"
-  title: "hangzhou"
-  axis: "2018 / library, garden, temple smoke"
-  note: "Hangzhou is kept as a sharp four-image hinge between modern interior and older garden air."
-  accent: "rose"
-  photos:
     -
       src: "/assets/images/photos/atlas-hangzhou-library-wall-2018-a3d1231a.webp"
       alt: "A tall library wall and reading space in Hangzhou."
-      caption: "library wall, 2018"
+      caption: "hangzhou, 2018"
       slot: "feature"
       width: 1700
       height: 955
+      anchor: "hangzhou"
     -
       src: "/assets/images/photos/atlas-hangzhou-window-readers-2018-6f4350cc.webp"
       alt: "Readers silhouetted beside a tall Hangzhou window."
-      caption: "window readers, 2018"
+      caption: "hangzhou, 2018"
       slot: "portrait"
       width: 956
       height: 1700
     -
       src: "/assets/images/photos/atlas-hangzhou-garden-eaves-2018-5ab4388a.webp"
       alt: "Hangzhou garden eaves and branches in soft light."
-      caption: "garden eaves, 2018"
+      caption: "hangzhou, 2018"
       slot: "wide"
       width: 1700
       height: 955
     -
       src: "/assets/images/photos/atlas-hangzhou-temple-smoke-2018-acac93d2.webp"
       alt: "Smoke rising around Hangzhou temple roof tiles."
-      caption: "temple smoke, 2018"
+      caption: "hangzhou, 2018"
       slot: "wide"
       width: 1700
       height: 956
--
-  id: "shanghai"
-  title: "shanghai"
-  axis: "2019 / facade"
-  note: "One Shanghai surface, dense enough to keep on its own."
-  accent: "rose"
-  photos:
     -
       src: "/assets/images/photos/atlas-shanghai-apartment-grid-2019-66ee5370.webp"
       alt: "A Shanghai apartment facade packed with windows and air conditioners."
-      caption: "apartment grid, 2019"
+      caption: "shanghai, 2019"
       slot: "feature"
       width: 1700
       height: 956
+      anchor: "shanghai"
 -
   id: "osaka"
   title: "osaka"
@@ -1294,21 +1191,21 @@
     -
       src: "/assets/images/photos/atlas-osaka-station-heat-2017-47e2efca.webp"
       alt: "A bright Osaka station frontage in summer light."
-      caption: "station heat, 2017"
+      caption: "osaka, 2017"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-osaka-wall-and-tree-2017-10579429.webp"
       alt: "A person facing a tree and wall in Osaka."
-      caption: "wall and tree, 2017"
+      caption: "osaka, 2017"
       slot: "feature"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-osaka-shrine-steps-2017-3e2d129d.webp"
       alt: "A shrine gate and stone steps in Osaka."
-      caption: "shrine steps, 2017"
+      caption: "osaka, 2017"
       slot: "wide"
       width: 1700
       height: 957
@@ -1322,659 +1219,598 @@
     -
       src: "/assets/images/photos/atlas-singapore-water-leaves-2021-fe8ef34c.webp"
       alt: "Leaves floating beside a low concrete edge in Singapore."
-      caption: "water leaves, 2021"
+      caption: "singapore, 2021"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-singapore-wooded-path-2021-4e571af3.webp"
       alt: "A dark wet path through Singapore forest."
-      caption: "wooded path, 2021"
+      caption: "singapore, 2021"
       slot: "feature"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-singapore-yellow-bird-2021-71cd83b1.webp"
       alt: "A yellow-breasted bird perched in green Singapore foliage."
-      caption: "yellow bird, 2021"
+      caption: "singapore, 2021"
       slot: "wide"
       width: 1700
       height: 956
 -
-  id: "montreal"
-  title: "montreal"
-  axis: "winter / biosphere, street, river"
-  note: "Three cold frames: dome, red car, wheel reflection."
+  id: "canada"
+  title: "canada"
+  axis: "winter / Montreal, Quebec City, Toronto"
+  note: "The Canada photographs are few enough to hold together: snow, river, street, and one reflected tower."
   accent: "blue"
   photos:
     -
       src: "/assets/images/photos/atlas-montreal-biosphere-snow-d46ea70e.webp"
       alt: "The Montreal Biosphere in falling snow."
-      caption: "biosphere snow"
+      caption: "montreal, winter"
       slot: "feature"
       width: 1700
       height: 1133
+      anchor: "montreal"
     -
       src: "/assets/images/photos/atlas-montreal-red-car-snow-aad4318e.webp"
       alt: "A red car and pedestrian on a snowy Montreal street."
-      caption: "red car snow"
+      caption: "montreal, winter"
       slot: "wide"
       width: 1700
       height: 1133
     -
       src: "/assets/images/photos/atlas-montreal-wheel-reflection-70695d91.webp"
       alt: "A Montreal waterfront ferris wheel reflected in still water."
-      caption: "wheel reflection"
+      caption: "montreal, winter"
       slot: "portrait"
       width: 1129
       height: 1700
--
-  id: "quebec-city"
-  title: "quebec city"
-  axis: "winter / river and snow"
-  note: "Quebec City is kept sparse: frozen river, promenade, and an animal encounter."
-  accent: "blue"
-  photos:
     -
       src: "/assets/images/photos/atlas-quebec-city-frozen-river-4b7d1062.webp"
       alt: "A frozen river seen from Quebec City."
-      caption: "frozen river"
+      caption: "quebec city, winter"
       slot: "portrait"
       width: 1700
       height: 1699
+      anchor: "quebec-city"
     -
       src: "/assets/images/photos/atlas-quebec-city-winter-promenade-4f7bd5bf.webp"
       alt: "Two people walking along a snowy Quebec City promenade."
-      caption: "winter promenade"
+      caption: "quebec city, winter"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-quebec-city-snow-wolf-203feeb2.webp"
       alt: "A wolf standing in snow near Quebec City."
-      caption: "snow wolf"
+      caption: "quebec city, winter"
       slot: "square"
       width: 1700
       height: 1699
--
-  id: "toronto"
-  title: "toronto"
-  axis: "winter / one tower reflection"
-  note: "Only one Toronto image is present, but it is specific enough to mark the city."
-  accent: "blue"
-  photos:
     -
       src: "/assets/images/photos/atlas-toronto-cn-tower-reflection-e188def6.webp"
       alt: "The CN Tower reflected in a dark Toronto glass facade."
-      caption: "cn tower reflection"
+      caption: "toronto, winter"
       slot: "feature"
       width: 1700
       height: 1277
+      anchor: "toronto"
 -
-  id: "new-york"
-  title: "new york"
-  axis: "2019-2025 / bridge, station, garden, night"
-  note: "The messy northeast folder resolves mostly into New York: transit, winter streets, botanic garden, zoo, and a few night interiors."
+  id: "northeast-us"
+  title: "northeast us"
+  axis: "2019-2025 / New York, Catskills, Pittsburgh"
+  note: "The formerly messy northeast folder becomes one chapter with clear anchors: New York carries the density, Catskills supplies the green close work, and Pittsburgh remains dusk and distance."
   accent: "blue"
   layout: "scroll"
   photos:
     -
       src: "/assets/images/photos/atlas-new-york-bridge-tower-2019-024dfc6d.webp"
       alt: "One World Trade Center seen from the Brooklyn Bridge cables."
-      caption: "bridge tower, 2019"
+      caption: "new york, 2019"
       slot: "portrait"
       width: 1129
       height: 1700
+      anchor: "new-york"
     -
       src: "/assets/images/photos/atlas-new-york-dusk-stacks-2019-23780756.webp"
       alt: "Industrial stacks and New York buildings at dusk."
-      caption: "dusk stacks, 2019"
+      caption: "new york, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-new-york-vessel-2019-f9036d71.webp"
       alt: "The Vessel stair structure in New York."
-      caption: "vessel, 2019"
+      caption: "new york, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-new-york-station-overpass-2022-44a5617b.webp"
       alt: "People crossing a bright New York station overpass."
-      caption: "station overpass, 2022"
+      caption: "new york, 2022"
       slot: "wide"
       width: 1700
       height: 958
     -
       src: "/assets/images/photos/atlas-new-york-oculus-ceiling-2022-278b2f2b.webp"
       alt: "The ribbed ceiling of the Oculus in New York."
-      caption: "oculus ceiling, 2022"
+      caption: "new york, 2022"
       slot: "portrait"
       width: 1105
       height: 1700
     -
       src: "/assets/images/photos/atlas-new-york-subway-platform-2022-50e4b283.webp"
       alt: "A New York subway platform viewed through pillars."
-      caption: "subway platform, 2022"
+      caption: "new york, 2022"
       slot: "wide"
       width: 1700
       height: 958
     -
       src: "/assets/images/photos/atlas-new-york-brass-band-2022-47358886.webp"
       alt: "A brass band playing in a New York park."
-      caption: "brass band, 2022"
+      caption: "new york, 2022"
       slot: "wide"
       width: 1700
       height: 958
     -
       src: "/assets/images/photos/atlas-new-york-one-world-street-2022-daa1f6e9.webp"
       alt: "One World Trade Center at the end of a narrow New York street."
-      caption: "one world street, 2022"
+      caption: "new york, 2022"
       slot: "portrait"
       width: 1129
       height: 1700
     -
       src: "/assets/images/photos/atlas-new-york-water-tower-2022-1ab926ea.webp"
       alt: "A New York water tower above brick buildings."
-      caption: "water tower, 2022"
+      caption: "new york, 2022"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-new-york-night-street-2023-d388d395.webp"
       alt: "A dark New York street with a small red-lit figure."
-      caption: "night street, 2023"
+      caption: "new york, 2023"
       slot: "portrait"
       width: 954
       height: 1700
     -
       src: "/assets/images/photos/atlas-new-york-bike-crossing-2023-9b5e2846.webp"
       alt: "A cyclist crossing a New York street with One World Trade Center behind."
-      caption: "bike crossing, 2023"
+      caption: "new york, 2023"
       slot: "portrait"
       width: 954
       height: 1700
     -
       src: "/assets/images/photos/atlas-new-york-grey-avenue-2023-7c580dc9.webp"
       alt: "A long New York avenue under grey winter light."
-      caption: "grey avenue, 2023"
+      caption: "new york, 2023"
       slot: "wide"
       width: 1700
       height: 1360
     -
       src: "/assets/images/photos/atlas-new-york-bus-steam-2023-fd807b97.webp"
       alt: "A New York bus emerging through street steam."
-      caption: "bus steam, 2023"
+      caption: "new york, 2023"
       slot: "wide"
       width: 1700
       height: 1360
     -
       src: "/assets/images/photos/atlas-new-york-gallery-wall-2024-87003ba3.webp"
       alt: "A person looking at drawings on a New York gallery wall."
-      caption: "gallery wall, 2024"
+      caption: "new york, 2024"
       slot: "wide"
       width: 1700
       height: 1360
     -
       src: "/assets/images/photos/atlas-new-york-brooklyn-garden-2024-b0e7038e.webp"
       alt: "A torii gate and flowering tree at Brooklyn Botanic Garden."
-      caption: "brooklyn garden, 2024"
+      caption: "new york, 2024"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-new-york-elevated-train-2024-505ebb5e.webp"
       alt: "An elevated train line over a New York street."
-      caption: "elevated train, 2024"
+      caption: "new york, 2024"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-new-york-red-panda-stretch-2023-24a124bc.webp"
       alt: "A red panda stretching on branches at Central Park Zoo."
-      caption: "red panda stretch, 2023"
+      caption: "new york, 2023"
       slot: "wide"
       width: 1700
       height: 958
     -
       src: "/assets/images/photos/atlas-new-york-red-panda-branch-2023-5b6fcf89.webp"
       alt: "A red panda perched across branches at Central Park Zoo."
-      caption: "red panda branch, 2023"
+      caption: "new york, 2023"
       slot: "wide"
       width: 1700
       height: 958
     -
       src: "/assets/images/photos/atlas-new-york-music-stand-2025-512335df.webp"
       alt: "Sheet music on a dark New York music stand."
-      caption: "music stand, 2025"
+      caption: "new york, 2025"
       slot: "portrait"
       width: 1275
       height: 1700
     -
       src: "/assets/images/photos/atlas-new-york-radio-city-2025-8de0dfe6.webp"
       alt: "Radio City Music Hall lit at night."
-      caption: "radio city, 2025"
+      caption: "new york, 2025"
       slot: "portrait"
       width: 899
       height: 1700
--
-  id: "catskills"
-  title: "catskills"
-  axis: "2023 / trailhead and moss"
-  note: "Not a broad New England category: just the Catskills trail material that has a coherent small language."
-  accent: "blue"
-  photos:
     -
       src: "/assets/images/photos/atlas-catskills-trailhead-2023-0579f22a.webp"
       alt: "A person reading a Catskills trailhead map."
-      caption: "trailhead, 2023"
+      caption: "catskills, 2023"
       slot: "wide"
       width: 1700
       height: 956
+      anchor: "catskills"
     -
       src: "/assets/images/photos/atlas-catskills-moss-trunk-2023-3e5b3220.webp"
       alt: "Moss and bracket fungi on a Catskills tree trunk."
-      caption: "moss trunk, 2023"
+      caption: "catskills, 2023"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-catskills-moss-floor-2023-6ae3e4b1.webp"
       alt: "A close green moss floor in the Catskills."
-      caption: "moss floor, 2023"
+      caption: "catskills, 2023"
       slot: "wide"
       width: 1700
       height: 722
--
-  id: "pittsburgh"
-  title: "pittsburgh"
-  axis: "2019 / dusk overlook"
-  note: "A tiny Pittsburgh set, all evening and distance."
-  accent: "blue"
-  photos:
     -
       src: "/assets/images/photos/atlas-pittsburgh-river-overlook-2019-768059ea.webp"
       alt: "Pittsburgh rivers and city lights from an evening overlook."
-      caption: "river overlook, 2019"
+      caption: "pittsburgh, 2019"
       slot: "feature"
       width: 1700
       height: 955
+      anchor: "pittsburgh"
     -
       src: "/assets/images/photos/atlas-pittsburgh-posted-overlook-2019-e58aaa55.webp"
       alt: "A posted sign above a dusk Pittsburgh view."
-      caption: "posted overlook, 2019"
+      caption: "pittsburgh, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-pittsburgh-blue-street-2019-8f58dafc.webp"
       alt: "A dark blue Pittsburgh street after sunset."
-      caption: "blue street, 2019"
+      caption: "pittsburgh, 2019"
       slot: "wide"
       width: 1700
       height: 956
 -
-  id: "palm-beach-gardens"
-  title: "palm beach gardens"
-  axis: "2022-2024 / apartment, mushrooms, room light"
-  note: "The Florida home base is quiet interior work: mushrooms, shells, a wall shadow, and rooms holding light."
+  id: "florida"
+  title: "florida"
+  axis: "2020-2025 / apartment light, Atlantic weather, wet parks"
+  note: "The Florida sequence is one humid system: Palm Beach Gardens rooms, Jupiter weather, wetlands, Miami stone, Keys water, and Tampa interiors."
   accent: "sage"
+  layout: "scroll"
   photos:
     -
       src: "/assets/images/photos/atlas-palm-beach-gardens-mushroom-pins-2022-08fb2aa7.webp"
       alt: "Small mushrooms photographed in dark Palm Beach Gardens light."
-      caption: "mushroom pins, 2022"
+      caption: "palm beach gardens, 2022"
       slot: "wide"
       width: 1700
       height: 958
+      anchor: "palm-beach-gardens"
     -
       src: "/assets/images/photos/atlas-palm-beach-gardens-oyster-mushrooms-2022-6d9f6c1d.webp"
       alt: "Oyster mushrooms growing in a Palm Beach Gardens room."
-      caption: "oyster mushrooms, 2022"
+      caption: "palm beach gardens, 2022"
       slot: "wide"
       width: 1700
       height: 958
     -
       src: "/assets/images/photos/atlas-palm-beach-gardens-harvest-set-2022-8344915b.webp"
       alt: "Shells, stones, and a jar arranged on a Palm Beach Gardens table."
-      caption: "harvest set, 2022"
+      caption: "palm beach gardens, 2022"
       slot: "wide"
       width: 1700
       height: 1133
     -
       src: "/assets/images/photos/atlas-palm-beach-gardens-wall-shadow-2022-4158fb2e.webp"
       alt: "A window shadow falling across a Palm Beach Gardens wall."
-      caption: "wall shadow, 2022"
+      caption: "palm beach gardens, 2022"
       slot: "wide"
       width: 1700
       height: 958
     -
       src: "/assets/images/photos/atlas-palm-beach-gardens-living-room-2023-ef2c24bf.webp"
       alt: "A bright Palm Beach Gardens living room with chairs and tall windows."
-      caption: "living room, 2023"
+      caption: "palm beach gardens, 2023"
       slot: "feature"
       width: 1700
       height: 958
     -
       src: "/assets/images/photos/atlas-palm-beach-gardens-door-light-2024-a45b1548.webp"
       alt: "A dark Palm Beach Gardens doorway with a towel and narrow light."
-      caption: "door light, 2024"
+      caption: "palm beach gardens, 2024"
       slot: "portrait"
       width: 1700
       height: 1133
--
-  id: "jupiter"
-  title: "jupiter"
-  axis: "2020-2025 / beach, storm, scrub, night road"
-  note: "Jupiter is shown as weather and habitat rather than a single beach postcard."
-  accent: "sage"
-  photos:
     -
       src: "/assets/images/photos/atlas-jupiter-soft-shore-2020-10ed1fe3.webp"
       alt: "A soft Jupiter shoreline in pale evening light."
-      caption: "soft shore, 2020"
+      caption: "jupiter, 2020"
       slot: "wide"
       width: 1700
       height: 951
+      anchor: "jupiter"
     -
       src: "/assets/images/photos/atlas-jupiter-sunset-shore-2020-89877ff2.webp"
       alt: "Small figures on a Jupiter beach at sunset."
-      caption: "sunset shore, 2020"
+      caption: "jupiter, 2020"
       slot: "feature"
       width: 1700
       height: 954
     -
       src: "/assets/images/photos/atlas-jupiter-cloud-bloom-2022-9d69a760.webp"
       alt: "A bright cumulus cloud blooming over Jupiter."
-      caption: "cloud bloom, 2022"
+      caption: "jupiter, 2022"
       slot: "portrait"
       width: 1700
       height: 1275
     -
       src: "/assets/images/photos/atlas-jupiter-moon-cloud-2022-4649996e.webp"
       alt: "Moonlit cloud over palms and buildings in Jupiter."
-      caption: "moon cloud, 2022"
+      caption: "jupiter, 2022"
       slot: "wide"
       width: 1700
       height: 958
     -
       src: "/assets/images/photos/atlas-jupiter-pink-waterline-2022-4dbbb238.webp"
       alt: "Pink clouds over a dark Jupiter ocean horizon."
-      caption: "pink waterline, 2022"
+      caption: "jupiter, 2022"
       slot: "wide"
       width: 1700
       height: 958
     -
       src: "/assets/images/photos/atlas-jupiter-pier-water-2022-2d4d7d77.webp"
       alt: "Jupiter pier pilings over dark rippled water."
-      caption: "pier water, 2022"
+      caption: "jupiter, 2022"
       slot: "wide"
       width: 1700
       height: 958
     -
       src: "/assets/images/photos/atlas-jupiter-birds-and-wires-2024-db3182f3.webp"
       alt: "Birds crossing twilight wires in Jupiter."
-      caption: "birds and wires, 2024"
+      caption: "jupiter, 2024"
       slot: "portrait"
       width: 1214
       height: 1700
     -
       src: "/assets/images/photos/atlas-jupiter-gas-station-dusk-2024-2cf929bc.webp"
       alt: "A Jupiter gas station under deep dusk sky."
-      caption: "gas station dusk, 2024"
+      caption: "jupiter, 2024"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-jupiter-scrub-path-2024-1e67b200.webp"
       alt: "A dark green path through Jupiter coastal scrub."
-      caption: "scrub path, 2024"
+      caption: "jupiter, 2024"
       slot: "square"
       width: 1700
       height: 1700
     -
       src: "/assets/images/photos/atlas-jupiter-gulls-and-people-2024-b490d787.webp"
       alt: "Gulls and walkers on a Jupiter beach."
-      caption: "gulls and people, 2024"
+      caption: "jupiter, 2024"
       slot: "wide"
       width: 1700
       height: 600
     -
       src: "/assets/images/photos/atlas-jupiter-pine-flatwoods-2024-34e52014.webp"
       alt: "Sunset through tall pines in Jupiter flatwoods."
-      caption: "pine flatwoods, 2024"
+      caption: "jupiter, 2024"
       slot: "wide"
       width: 1700
       height: 1133
     -
       src: "/assets/images/photos/atlas-jupiter-oak-path-2025-1a30bb51.webp"
       alt: "A Jupiter path under arching oak branches."
-      caption: "oak path, 2025"
+      caption: "jupiter, 2025"
       slot: "wide"
       width: 1700
       height: 1133
--
-  id: "south-florida-wetlands"
-  title: "south florida wetlands"
-  axis: "2021-2024 / birds, water, filtered light"
-  note: "A small between-place section for the wet parks between Jupiter and Miami."
-  accent: "sage"
-  photos:
     -
       src: "/assets/images/photos/atlas-south-florida-wetlands-mourning-dove-2021-c90c184f.webp"
       alt: "A mourning dove perched on a wooden railing in South Florida."
-      caption: "mourning dove, 2021"
+      caption: "south florida wetlands, 2021"
       slot: "wide"
       width: 1700
       height: 958
+      anchor: "south-florida-wetlands"
     -
       src: "/assets/images/photos/atlas-south-florida-wetlands-water-stripes-2023-bd65f503.webp"
       alt: "Sunlit stripes across shallow South Florida wetland water."
-      caption: "water stripes, 2023"
+      caption: "south florida wetlands, 2023"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-south-florida-wetlands-heron-reflection-2023-f67a54bf.webp"
       alt: "A heron reflected in pale South Florida water."
-      caption: "heron reflection, 2023"
+      caption: "south florida wetlands, 2023"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-south-florida-wetlands-green-blades-2024-4775f542.webp"
       alt: "Green wetland leaves in filtered South Florida light."
-      caption: "green blades, 2024"
+      caption: "south florida wetlands, 2024"
       slot: "wide"
       width: 1700
       height: 1133
--
-  id: "miami"
-  title: "miami"
-  axis: "2025 / stone, palms, spiral"
-  note: "Miami is kept as Vizcaya-like architecture and tropical enclosure, not skyline."
-  accent: "sage"
-  photos:
     -
       src: "/assets/images/photos/atlas-miami-stone-crest-2025-66b0283c.webp"
       alt: "A Miami stone crest and palm fronds in hard blue light."
-      caption: "stone crest, 2025"
+      caption: "miami, 2025"
       slot: "wide"
       width: 1700
       height: 1133
+      anchor: "miami"
     -
       src: "/assets/images/photos/atlas-miami-palm-water-2025-37d57826.webp"
       alt: "Palms framing blue water and statues in Miami."
-      caption: "palm water, 2025"
+      caption: "miami, 2025"
       slot: "wide"
       width: 1700
       height: 1133
     -
       src: "/assets/images/photos/atlas-miami-spiral-stair-2025-964b4467.webp"
       alt: "A spiral stair seen from above in Miami."
-      caption: "spiral stair, 2025"
+      caption: "miami, 2025"
       slot: "feature"
       width: 1700
       height: 1133
--
-  id: "key-west"
-  title: "key west"
-  axis: "2023 / bridge water and harbour dusk"
-  note: "A short Keys strip: water, silhouette, and mast lines."
-  accent: "sage"
-  photos:
     -
       src: "/assets/images/photos/atlas-key-west-bridge-water-2023-cde33d01.webp"
       alt: "Water and power poles along the Florida Keys."
-      caption: "bridge water, 2023"
+      caption: "key west, 2023"
       slot: "wide"
       width: 1700
       height: 958
+      anchor: "key-west"
     -
       src: "/assets/images/photos/atlas-key-west-harbour-silhouette-2023-1b8f1b5f.webp"
       alt: "A silhouetted figure beside Key West harbour at dusk."
-      caption: "harbour silhouette, 2023"
+      caption: "key west, 2023"
       slot: "portrait"
       width: 1700
       height: 1362
     -
       src: "/assets/images/photos/atlas-key-west-masts-at-dusk-2023-2d9f1578.webp"
       alt: "Sailboat masts in Key West evening colour."
-      caption: "masts at dusk, 2023"
+      caption: "key west, 2023"
       slot: "portrait"
       width: 955
       height: 1700
--
-  id: "tampa"
-  title: "tampa"
-  axis: "2022 / garage and aquarium"
-  note: "Three Tampa images with the city almost offstage: parking deck, manatees, octopus glass."
-  accent: "sage"
-  photos:
     -
       src: "/assets/images/photos/atlas-tampa-night-garage-2022-3d303b3e.webp"
       alt: "A lone person on a lit Tampa parking garage at night."
-      caption: "night garage, 2022"
+      caption: "tampa, 2022"
       slot: "wide"
       width: 1700
       height: 956
+      anchor: "tampa"
     -
       src: "/assets/images/photos/atlas-tampa-manatees-2022-6b49f509.webp"
       alt: "Manatees underwater at a Tampa aquarium."
-      caption: "manatees, 2022"
+      caption: "tampa, 2022"
       slot: "wide"
       width: 1700
       height: 958
     -
       src: "/assets/images/photos/atlas-tampa-octopus-glass-2022-565d33ef.webp"
       alt: "An octopus tentacle pressed near aquarium glass in Tampa."
-      caption: "octopus glass, 2022"
+      caption: "tampa, 2022"
       slot: "wide"
       width: 1700
       height: 958
 -
-  id: "los-angeles"
-  title: "los angeles"
-  axis: "2023 / aquarium and sea"
-  note: "Los Angeles appears as aquarium texture and open water."
+  id: "west-coast"
+  title: "west coast"
+  axis: "2023 / Los Angeles, Las Vegas, Death Valley"
+  note: "The western set moves from aquarium blue through casino facade to Death Valley scale."
   accent: "haze"
   photos:
     -
       src: "/assets/images/photos/atlas-los-angeles-octopus-texture-2023-85822b25.webp"
       alt: "A close octopus texture at a Los Angeles aquarium."
-      caption: "octopus texture, 2023"
+      caption: "los angeles, 2023"
       slot: "portrait"
       width: 1700
       height: 1362
+      anchor: "los-angeles"
     -
       src: "/assets/images/photos/atlas-los-angeles-jellyfish-blue-2023-50f2e74c.webp"
       alt: "Blue jellyfish drifting in a Los Angeles aquarium."
-      caption: "jellyfish blue, 2023"
+      caption: "los angeles, 2023"
       slot: "wide"
       width: 1700
       height: 958
     -
       src: "/assets/images/photos/atlas-los-angeles-dolphin-water-2023-5440b845.webp"
       alt: "A dolphin breaking grey water off Los Angeles."
-      caption: "dolphin water, 2023"
+      caption: "los angeles, 2023"
       slot: "wide"
       width: 1700
       height: 1362
--
-  id: "las-vegas"
-  title: "las vegas"
-  axis: "2023 / one night facade"
-  note: "One Las Vegas building image, strange enough to hold as a pin."
-  accent: "haze"
-  photos:
     -
       src: "/assets/images/photos/atlas-las-vegas-warped-facade-2023-9b12cf53.webp"
       alt: "A warped Las Vegas building facade lit at night."
-      caption: "warped facade, 2023"
+      caption: "las vegas, 2023"
       slot: "feature"
       width: 1700
       height: 1356
--
-  id: "death-valley"
-  title: "death valley"
-  axis: "2023 / distance, salt, storm"
-  note: "Death Valley has the strongest western sequence: humans reduced to marks against weather and pale ground."
-  accent: "haze"
-  photos:
+      anchor: "las-vegas"
     -
       src: "/assets/images/photos/atlas-death-valley-dune-figures-2023-163c85e9.webp"
       alt: "Small figures on pale Death Valley dunes under grey sky."
-      caption: "dune figures, 2023"
+      caption: "death valley, 2023"
       slot: "feature"
       width: 1700
       height: 956
+      anchor: "death-valley"
     -
       src: "/assets/images/photos/atlas-death-valley-black-bird-2023-039cb72f.webp"
       alt: "A black bird standing in the pale expanse of Death Valley."
-      caption: "black bird, 2023"
+      caption: "death valley, 2023"
       slot: "square"
       width: 1700
       height: 1700
     -
       src: "/assets/images/photos/atlas-death-valley-wide-dunes-2023-a49db79e.webp"
       alt: "People crossing distant Death Valley dunes under low cloud."
-      caption: "wide dunes, 2023"
+      caption: "death valley, 2023"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-death-valley-salt-walker-2023-002317b0.webp"
       alt: "A tiny walker on the Death Valley salt flats beneath dark mountains."
-      caption: "salt walker, 2023"
+      caption: "death valley, 2023"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-death-valley-storm-shelf-2023-b6acc013.webp"
       alt: "A shelf of storm cloud over the Death Valley basin."
-      caption: "storm shelf, 2023"
+      caption: "death valley, 2023"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-death-valley-snow-mountains-2023-4a1d1659.webp"
       alt: "Snow-touched mountains beyond Death Valley at sunset."
-      caption: "snow mountains, 2023"
+      caption: "death valley, 2023"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-death-valley-basin-view-2023-6a87995e.webp"
       alt: "A high view across the Death Valley basin."
-      caption: "basin view, 2023"
+      caption: "death valley, 2023"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-death-valley-last-light-seat-2023-59bf150f.webp"
       alt: "A seated figure overlooking Death Valley in last light."
-      caption: "last light seat, 2023"
+      caption: "death valley, 2023"
       slot: "wide"
       width: 1700
       height: 956
@@ -1988,231 +1824,221 @@
     -
       src: "/assets/images/photos/atlas-chamonix-ridge-rest-2019-1a0d3879.webp"
       alt: "Two people resting on a Chamonix ridge above haze."
-      caption: "ridge rest, 2019"
+      caption: "chamonix, 2019"
       slot: "portrait"
       width: 957
       height: 1700
     -
       src: "/assets/images/photos/atlas-chamonix-glacier-valley-2019-06a8f7a2.webp"
       alt: "A sweeping Chamonix valley and glacier view."
-      caption: "glacier valley, 2019"
+      caption: "chamonix, 2019"
       slot: "feature"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-chamonix-cable-reflection-2019-29b4938d.webp"
       alt: "A colourful reflection from a Chamonix cable car window."
-      caption: "cable reflection, 2019"
+      caption: "chamonix, 2019"
       slot: "portrait"
       width: 1700
       height: 1360
     -
       src: "/assets/images/photos/atlas-chamonix-red-floor-2019-48faa6a1.webp"
       alt: "A red patterned floor and door in high Chamonix light."
-      caption: "red floor, 2019"
+      caption: "chamonix, 2019"
       slot: "portrait"
       width: 1700
       height: 1360
     -
       src: "/assets/images/photos/atlas-chamonix-cloud-slope-2019-8f4edff8.webp"
       alt: "Clouds breaking over a snowy Chamonix slope."
-      caption: "cloud slope, 2019"
+      caption: "chamonix, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-chamonix-paraglider-2019-d89eb857.webp"
       alt: "A paraglider suspended above Chamonix cloud."
-      caption: "paraglider, 2019"
+      caption: "chamonix, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-chamonix-valley-drop-2019-0a3d65c6.webp"
       alt: "A Chamonix valley seen from a high rocky ledge."
-      caption: "valley drop, 2019"
+      caption: "chamonix, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-chamonix-pilgrimage-line-2019-a17ed71c.webp"
       alt: "Tiny climbers crossing a pale Chamonix snowfield."
-      caption: "pilgrimage line, 2019"
+      caption: "chamonix, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-chamonix-snowfield-pair-2019-2dc63363.webp"
       alt: "Two tiny climbers moving across a broad Chamonix snowfield."
-      caption: "snowfield pair, 2019"
+      caption: "chamonix, 2019"
       slot: "wide"
       width: 1700
       height: 956
 -
-  id: "rome"
-  title: "rome"
-  axis: "2019 / dark street, ruins, window"
-  note: "Rome is high contrast: shadowed shopfronts, statues, bubbles, ruins, and a window silhouette."
+  id: "italy"
+  title: "italy"
+  axis: "2019 / Rome, Cinque Terre, Venice"
+  note: "Three Italian registers stay in one chapter: Rome's shade, Cinque Terre's water and cliff colour, and Venice's transit light."
   accent: "clay"
+  layout: "scroll"
   photos:
     -
       src: "/assets/images/photos/atlas-rome-pizzeria-shade-2019-14a49e71.webp"
       alt: "A Rome pizzeria doorway in deep street shadow."
-      caption: "pizzeria shade, 2019"
+      caption: "rome, 2019"
       slot: "wide"
       width: 1700
       height: 956
+      anchor: "rome"
     -
       src: "/assets/images/photos/atlas-rome-statue-silhouette-2019-aa1b9476.webp"
       alt: "A winged Rome statue silhouetted against a pale sky."
-      caption: "statue silhouette, 2019"
+      caption: "rome, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-rome-bubbles-2019-1b799884.webp"
       alt: "Soap bubbles crossing a sunny Rome street scene."
-      caption: "bubbles, 2019"
+      caption: "rome, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-rome-tiny-figures-2019-6a023506.webp"
       alt: "Small toy figures lined along a stone edge in Rome."
-      caption: "tiny figures, 2019"
+      caption: "rome, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-rome-green-bridge-2019-5dc3f06d.webp"
       alt: "A Rome bridge and river seen through green leaves."
-      caption: "green bridge, 2019"
+      caption: "rome, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-rome-forum-dusk-2019-3b1deede.webp"
       alt: "The Roman Forum in warm low light."
-      caption: "forum dusk, 2019"
+      caption: "rome, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-rome-river-leaves-2019-d2490284.webp"
       alt: "The Tiber seen through dark Rome leaves."
-      caption: "river leaves, 2019"
+      caption: "rome, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-rome-window-bust-2019-18558fb4.webp"
       alt: "A bust silhouetted in a Rome window opening."
-      caption: "window bust, 2019"
+      caption: "rome, 2019"
       slot: "wide"
       width: 1700
       height: 956
--
-  id: "cinque-terre"
-  title: "cinque terre"
-  axis: "2019 / cliff towns and water"
-  note: "The Italian coast gets its own section rather than being folded into Rome: cliff colour, swimmers, and blue rock."
-  accent: "clay"
-  photos:
     -
       src: "/assets/images/photos/atlas-cinque-terre-rock-swimmers-2019-f57a3b6c.webp"
       alt: "Swimmers beside dark Cinque Terre rock and green water."
-      caption: "rock swimmers, 2019"
+      caption: "cinque terre, 2019"
       slot: "wide"
       width: 1700
       height: 956
+      anchor: "cinque-terre"
     -
       src: "/assets/images/photos/atlas-cinque-terre-cliff-town-2019-11b5fbad.webp"
       alt: "A Cinque Terre town stacked on a cliff above the sea."
-      caption: "cliff town, 2019"
+      caption: "cinque terre, 2019"
       slot: "feature"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-cinque-terre-boat-watcher-2019-42639552.webp"
       alt: "A figure watching a boat from a Cinque Terre overlook."
-      caption: "boat watcher, 2019"
+      caption: "cinque terre, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-cinque-terre-harbour-town-2019-c54b616b.webp"
       alt: "A Cinque Terre harbour and cliff town in bright sun."
-      caption: "harbour town, 2019"
+      caption: "cinque terre, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-cinque-terre-balcony-view-2019-e464cd4c.webp"
       alt: "Two people on a Cinque Terre balcony above the coast."
-      caption: "balcony view, 2019"
+      caption: "cinque terre, 2019"
       slot: "wide"
       width: 1700
       height: 955
     -
       src: "/assets/images/photos/atlas-cinque-terre-open-water-2019-db591a32.webp"
       alt: "A lone swimmer below dark Cinque Terre rock."
-      caption: "open water, 2019"
+      caption: "cinque terre, 2019"
       slot: "wide"
       width: 1700
       height: 956
--
-  id: "venice"
-  title: "venice"
-  axis: "2019 / canals, masks, transit"
-  note: "Venice is kept intact: water traffic, narrow dusk, masks, ambulance boat, bus reflection."
-  accent: "clay"
-  photos:
     -
       src: "/assets/images/photos/atlas-venice-canal-entry-2019-0359b9ad.webp"
       alt: "A Venice canal entrance with boats and domes."
-      caption: "canal entry, 2019"
+      caption: "venice, 2019"
       slot: "wide"
       width: 1700
       height: 956
+      anchor: "venice"
     -
       src: "/assets/images/photos/atlas-venice-motorboat-2019-fd2569d9.webp"
       alt: "A motorboat cutting through bright Venice water."
-      caption: "motorboat, 2019"
+      caption: "venice, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-venice-narrow-dusk-2019-3c7f080b.webp"
       alt: "A narrow Venice canal fading into dusk."
-      caption: "narrow dusk, 2019"
+      caption: "venice, 2019"
       slot: "portrait"
       width: 1129
       height: 1700
     -
       src: "/assets/images/photos/atlas-venice-mask-mirror-2019-e9f6ee16.webp"
       alt: "Venetian masks reflected in a shop mirror."
-      caption: "mask mirror, 2019"
+      caption: "venice, 2019"
       slot: "wide"
       width: 1700
       height: 955
     -
       src: "/assets/images/photos/atlas-venice-ambulance-boat-2019-d7e48f16.webp"
       alt: "A yellow ambulance boat on a Venice canal."
-      caption: "ambulance boat, 2019"
+      caption: "venice, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-venice-waterbus-reflection-2019-07bb3259.webp"
       alt: "A Venice waterbus interior reflected in glass."
-      caption: "waterbus reflection, 2019"
+      caption: "venice, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-venice-rialto-light-2019-ed7d0b41.webp"
       alt: "Venice bridge and canal water in backlit afternoon."
-      caption: "rialto light, 2019"
+      caption: "venice, 2019"
       slot: "wide"
       width: 1700
       height: 956
@@ -2227,399 +2053,378 @@
     -
       src: "/assets/images/photos/atlas-lisbon-tuk-tuk-square-2026-b16273b8.webp"
       alt: "Lisbon tuk-tuks and umbrellas seen from above."
-      caption: "tuk-tuk square, 2026"
+      caption: "lisbon, 2026"
       slot: "feature"
       width: 1700
       height: 1700
     -
       src: "/assets/images/photos/atlas-lisbon-street-tram-2026-48c18cc4.webp"
       alt: "A Lisbon street opening to a small tram and bright buildings."
-      caption: "street tram, 2026"
+      caption: "lisbon, 2026"
       slot: "portrait"
       width: 942
       height: 1700
     -
       src: "/assets/images/photos/atlas-lisbon-umbrella-street-2026-d58f5f19.webp"
       alt: "Colourful umbrellas over a Lisbon street."
-      caption: "umbrella street, 2026"
+      caption: "lisbon, 2026"
       slot: "wide"
       width: 1700
       height: 1214
     -
       src: "/assets/images/photos/atlas-lisbon-blue-facade-2026-2ee989d7.webp"
       alt: "A blue Lisbon facade rising into hard sun."
-      caption: "blue facade, 2026"
+      caption: "lisbon, 2026"
       slot: "portrait"
       width: 1067
       height: 1700
     -
       src: "/assets/images/photos/atlas-lisbon-steep-street-2026-c2460852.webp"
       alt: "A steep Lisbon street in late light."
-      caption: "steep street, 2026"
+      caption: "lisbon, 2026"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-lisbon-atlantic-cleft-2026-7ac3b75a.webp"
       alt: "Atlantic water rushing between rocks near Lisbon."
-      caption: "atlantic cleft, 2026"
+      caption: "lisbon, 2026"
       slot: "wide"
       width: 1700
       height: 1360
     -
       src: "/assets/images/photos/atlas-lisbon-cliff-chapel-2026-e6d818f1.webp"
       alt: "A small white chapel on a rocky Atlantic cliff near Lisbon."
-      caption: "cliff chapel, 2026"
+      caption: "lisbon, 2026"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-lisbon-rock-lookout-2026-570a7778.webp"
       alt: "People on Atlantic rocks near Lisbon."
-      caption: "rock lookout, 2026"
+      caption: "lisbon, 2026"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-lisbon-lighthouse-birds-2026-c66a307d.webp"
       alt: "A lighthouse with birds in blue sky near Lisbon."
-      caption: "lighthouse birds, 2026"
+      caption: "lisbon, 2026"
       slot: "wide"
       width: 1700
       height: 1133
     -
       src: "/assets/images/photos/atlas-lisbon-river-boats-2026-87f45c60.webp"
       alt: "Small boats on the Lisbon river at dusk."
-      caption: "river boats, 2026"
+      caption: "lisbon, 2026"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-lisbon-beach-dusk-2026-27d1ec64.webp"
       alt: "A Lisbon-area beach at dusk with small boats."
-      caption: "beach dusk, 2026"
+      caption: "lisbon, 2026"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-lisbon-blue-wave-2026-311085f2.webp"
       alt: "A blue Atlantic wave near Lisbon."
-      caption: "blue wave, 2026"
+      caption: "lisbon, 2026"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-lisbon-headland-2026-3399f699.webp"
       alt: "A person standing on a headland near Lisbon at sunset."
-      caption: "headland, 2026"
+      caption: "lisbon, 2026"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-lisbon-atlantic-sun-2026-1af7e273.webp"
       alt: "The sun setting over the Atlantic near Lisbon."
-      caption: "atlantic sun, 2026"
+      caption: "lisbon, 2026"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-lisbon-cabo-lighthouse-2026-c4f299f1.webp"
       alt: "A lighthouse on a cliff near Lisbon at dusk."
-      caption: "cabo lighthouse, 2026"
+      caption: "lisbon, 2026"
       slot: "wide"
       width: 1700
       height: 1133
 -
-  id: "amman"
-  title: "amman"
-  axis: "2025 / window city"
-  note: "Amman is mostly seen from interiors, mirrors, windows, and hill cuts."
+  id: "jordan"
+  title: "jordan"
+  axis: "2025 / Amman, Dead Sea, Petra, Wadi Rum"
+  note: "Jordan is grouped as a single passage through city windows, salt water, canyon stone, and desert night."
   accent: "clay"
   photos:
     -
       src: "/assets/images/photos/atlas-amman-blue-room-2025-46d065a6.webp"
       alt: "A blue Amman room with framed pictures and window light."
-      caption: "blue room, 2025"
+      caption: "amman, 2025"
       slot: "portrait"
       width: 1700
       height: 1275
+      anchor: "amman"
     -
       src: "/assets/images/photos/atlas-amman-palm-city-2025-e7cf7be9.webp"
       alt: "Amman hills and palm trees in clear sun."
-      caption: "palm city, 2025"
+      caption: "amman, 2025"
       slot: "wide"
       width: 1700
       height: 1275
     -
       src: "/assets/images/photos/atlas-amman-mirror-text-2025-9caf6df6.webp"
       alt: "Arabic text and a small mirror in an Amman room."
-      caption: "mirror text, 2025"
+      caption: "amman, 2025"
       slot: "portrait"
       width: 1700
       height: 1275
     -
       src: "/assets/images/photos/atlas-amman-window-street-2025-4edeebfc.webp"
       alt: "Amman street seen through a dark window."
-      caption: "window street, 2025"
+      caption: "amman, 2025"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-amman-curtain-light-2025-94411a8a.webp"
       alt: "Curtains and window light in an Amman interior."
-      caption: "curtain light, 2025"
+      caption: "amman, 2025"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-amman-hill-wall-2025-e4b271f9.webp"
       alt: "Amman hillside buildings under hard blue sky."
-      caption: "hill wall, 2025"
+      caption: "amman, 2025"
       slot: "wide"
       width: 1700
       height: 1275
     -
       src: "/assets/images/photos/atlas-amman-door-slice-2025-14c43a91.webp"
       alt: "A thin slice of Amman seen through a dark doorway."
-      caption: "door slice, 2025"
+      caption: "amman, 2025"
       slot: "portrait"
       width: 1133
       height: 1700
--
-  id: "dead-sea"
-  title: "dead sea"
-  axis: "2025 / salt water and sky mark"
-  note: "Three images, but the smoke curl gives the section its odd punctuation."
-  accent: "clay"
-  photos:
     -
       src: "/assets/images/photos/atlas-dead-sea-salt-edge-2025-2dc29c20.webp"
       alt: "The Dead Sea shoreline with pale salt and blue water."
-      caption: "salt edge, 2025"
+      caption: "dead sea, 2025"
       slot: "wide"
       width: 1700
       height: 1275
+      anchor: "dead-sea"
     -
       src: "/assets/images/photos/atlas-dead-sea-sunset-water-2025-c07ea90b.webp"
       alt: "Sunset over the Dead Sea."
-      caption: "sunset water, 2025"
+      caption: "dead sea, 2025"
       slot: "wide"
       width: 1700
       height: 1275
     -
       src: "/assets/images/photos/atlas-dead-sea-sky-mark-2025-57195e30.webp"
       alt: "A dark smoke-like curl against blue Dead Sea sky."
-      caption: "sky mark, 2025"
+      caption: "dead sea, 2025"
       slot: "wide"
       width: 1572
       height: 1179
--
-  id: "petra"
-  title: "petra"
-  axis: "2025 / canyon, cats, stone"
-  note: "Petra is allowed to be partly about cats because the animals are in the architecture, not a separate aside."
-  accent: "clay"
-  photos:
     -
       src: "/assets/images/photos/atlas-petra-canyon-blue-2025-17178a81.webp"
       alt: "Blue and orange Petra canyon walls."
-      caption: "canyon blue, 2025"
+      caption: "petra, 2025"
       slot: "portrait"
       width: 1275
       height: 1700
+      anchor: "petra"
     -
       src: "/assets/images/photos/atlas-petra-treasury-slit-2025-b22534a0.webp"
       alt: "The Petra Treasury glimpsed through a dark canyon slit."
-      caption: "treasury slit, 2025"
+      caption: "petra, 2025"
       slot: "portrait"
       width: 1275
       height: 1700
     -
       src: "/assets/images/photos/atlas-petra-stone-cats-2025-db8d629f.webp"
       alt: "Cats walking beside a Petra stone wall."
-      caption: "stone cats, 2025"
+      caption: "petra, 2025"
       slot: "wide"
       width: 1275
       height: 1700
     -
       src: "/assets/images/photos/atlas-petra-black-cat-2025-fd979e6a.webp"
       alt: "A black cat being petted in Petra sand."
-      caption: "black cat, 2025"
+      caption: "petra, 2025"
       slot: "wide"
       width: 1700
       height: 1133
     -
       src: "/assets/images/photos/atlas-petra-carved-wall-2025-431bec12.webp"
       alt: "Petra carved stone walls in warm light."
-      caption: "carved wall, 2025"
+      caption: "petra, 2025"
       slot: "wide"
       width: 1700
       height: 1133
--
-  id: "wadi-rum"
-  title: "wadi rum"
-  axis: "2025 / desert scale"
-  note: "One vehicle, one ridge, one night camp; enough to keep the desert distinct from Petra."
-  accent: "clay"
-  photos:
     -
       src: "/assets/images/photos/atlas-wadi-rum-desert-car-2025-1573b532.webp"
       alt: "A small vehicle crossing Wadi Rum desert below cliffs."
-      caption: "desert car, 2025"
+      caption: "wadi rum, 2025"
       slot: "portrait"
       width: 956
       height: 1700
+      anchor: "wadi-rum"
     -
       src: "/assets/images/photos/atlas-wadi-rum-ridge-figures-2025-8b04fae4.webp"
       alt: "Small figures standing on a Wadi Rum ridge against blue sky."
-      caption: "ridge figures, 2025"
+      caption: "wadi rum, 2025"
       slot: "wide"
       width: 1700
       height: 1360
     -
       src: "/assets/images/photos/atlas-wadi-rum-night-camp-2025-1a547859.webp"
       alt: "A Wadi Rum night camp under a blue starry sky."
-      caption: "night camp, 2025"
+      caption: "wadi rum, 2025"
       slot: "portrait"
       width: 1275
       height: 1700
 -
-  id: "tbilisi"
-  title: "tbilisi"
-  axis: "2025-2026 / tower, fireworks, river city"
-  note: "The urban Sakartvelo material becomes Tbilisi rather than a vague Georgia section."
+  id: "georgia"
+  title: "georgia"
+  axis: "2025-2026 / Tbilisi and the Caucasus edge"
+  note: "The Sakartvelo material becomes Georgia here: Tbilisi's lit urban surfaces and the winter church-road material beyond it."
   accent: "clay"
+  layout: "scroll"
   photos:
     -
       src: "/assets/images/photos/atlas-tbilisi-curtain-city-2025-895d6b3f.webp"
       alt: "Tbilisi seen through hotel curtains."
-      caption: "curtain city, 2025"
+      caption: "tbilisi, 2025"
       slot: "portrait"
       width: 1700
       height: 1133
+      anchor: "tbilisi"
     -
       src: "/assets/images/photos/atlas-tbilisi-new-year-square-2025-3902638c.webp"
       alt: "A Tbilisi square lit for New Year."
-      caption: "new year square, 2025"
+      caption: "tbilisi, 2025"
       slot: "portrait"
       width: 956
       height: 1700
     -
       src: "/assets/images/photos/atlas-tbilisi-firework-tower-2025-acde0dcf.webp"
       alt: "Fireworks beside the Tbilisi television tower."
-      caption: "firework tower, 2025"
+      caption: "tbilisi, 2025"
       slot: "wide"
       width: 1700
       height: 1133
     -
       src: "/assets/images/photos/atlas-tbilisi-mother-of-georgia-2026-4eb82950.webp"
       alt: "The Mother of Georgia statue under clouded sky."
-      caption: "mother of georgia, 2026"
+      caption: "tbilisi, 2026"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-tbilisi-purple-tower-2026-9896b4c4.webp"
       alt: "The Tbilisi tower glowing purple in mist."
-      caption: "purple tower, 2026"
+      caption: "tbilisi, 2026"
       slot: "portrait"
       width: 1132
       height: 1700
     -
       src: "/assets/images/photos/atlas-tbilisi-cable-street-2026-4336ced0.webp"
       alt: "A narrow Tbilisi street with a cable car overhead."
-      caption: "cable street, 2026"
+      caption: "tbilisi, 2026"
       slot: "portrait"
       width: 784
       height: 1700
     -
       src: "/assets/images/photos/atlas-tbilisi-ferris-frame-2026-011859f6.webp"
       alt: "A ferris wheel frame above Tbilisi."
-      caption: "ferris frame, 2026"
+      caption: "tbilisi, 2026"
       slot: "portrait"
       width: 956
       height: 1700
     -
       src: "/assets/images/photos/atlas-tbilisi-mountain-city-2026-418b3b2e.webp"
       alt: "A wide view over Tbilisi toward snowy mountains."
-      caption: "mountain city, 2026"
+      caption: "tbilisi, 2026"
       slot: "wide"
       width: 1700
       height: 705
     -
       src: "/assets/images/photos/atlas-tbilisi-tower-close-2026-6b5a2782.webp"
       alt: "A close view of the Tbilisi television tower."
-      caption: "tower close, 2026"
+      caption: "tbilisi, 2026"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-tbilisi-light-column-2026-1d4c8655.webp"
       alt: "A vertical column of lights in Tbilisi at night."
-      caption: "light column, 2026"
+      caption: "tbilisi, 2026"
       slot: "portrait"
       width: 411
       height: 1700
--
-  id: "caucasus"
-  title: "caucasus"
-  axis: "2026 / monastery road and winter hills"
-  note: "The non-urban Sakartvelo images are kept as a broader Caucasus edge rather than forced into Tbilisi."
-  accent: "clay"
-  photos:
     -
       src: "/assets/images/photos/atlas-caucasus-jvari-approach-2026-0d518f0b.webp"
       alt: "A person approaching a hilltop monument in Georgia."
-      caption: "jvari approach, 2026"
+      caption: "caucasus, 2026"
       slot: "portrait"
       width: 1700
       height: 1700
+      anchor: "caucasus"
     -
       src: "/assets/images/photos/atlas-caucasus-river-overlook-2026-180ebda1.webp"
       alt: "A river valley overlook in Georgia under grey sky."
-      caption: "river overlook, 2026"
+      caption: "caucasus, 2026"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-caucasus-church-candles-2026-f824450c.webp"
       alt: "Church candles and a book in warm Georgian interior light."
-      caption: "church candles, 2026"
+      caption: "caucasus, 2026"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-caucasus-lone-tree-2026-e959123e.webp"
       alt: "A lone tree on a grey Georgian hillside."
-      caption: "lone tree, 2026"
+      caption: "caucasus, 2026"
       slot: "portrait"
       width: 1360
       height: 1700
     -
       src: "/assets/images/photos/atlas-caucasus-chandelier-beam-2026-72bb1998.webp"
       alt: "A dark Georgian church interior with a shaft of light."
-      caption: "chandelier beam, 2026"
+      caption: "caucasus, 2026"
       slot: "portrait"
       width: 1132
       height: 1700
     -
       src: "/assets/images/photos/atlas-caucasus-icon-corner-2026-db0bdd1a.webp"
       alt: "An icon corner inside a Georgian church."
-      caption: "icon corner, 2026"
+      caption: "caucasus, 2026"
       slot: "portrait"
       width: 1132
       height: 1700
     -
       src: "/assets/images/photos/atlas-caucasus-snow-village-2026-a3620ce4.webp"
       alt: "A Georgian village street with snowy mountains beyond."
-      caption: "snow village, 2026"
+      caption: "caucasus, 2026"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-caucasus-winter-cross-2026-5d8114ad.webp"
       alt: "A cross and winter field at sunset in Georgia."
-      caption: "winter cross, 2026"
+      caption: "caucasus, 2026"
       slot: "portrait"
       width: 1133
       height: 1700
@@ -2634,168 +2439,168 @@
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-first-cat-2017-6f3597f7.webp"
       alt: "A wide-eyed kitten sitting in a pink tray."
-      caption: "first cat, 2017"
+      caption: "cats and dogs, 2017"
       slot: "square"
       width: 1700
       height: 1700
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-desk-portrait-2018-48d97907.webp"
       alt: "A framed cat picture glowing on a dark desk."
-      caption: "desk portrait, 2018"
+      caption: "cats and dogs, 2018"
       slot: "wide"
       width: 1700
       height: 954
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-coast-dog-2018-9a01c751.webp"
       alt: "A small dog sitting on a beach."
-      caption: "coast dog, 2018"
+      caption: "cats and dogs, 2018"
       slot: "portrait"
       width: 1129
       height: 1700
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-tabby-stare-2019-d89df83e.webp"
       alt: "A tabby cat looking directly from a garden wall."
-      caption: "tabby stare, 2019"
+      caption: "cats and dogs, 2019"
       slot: "wide"
       width: 1700
       height: 955
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-ginger-profile-2019-76a472e7.webp"
       alt: "A ginger and white cat in side profile by a brick wall."
-      caption: "ginger profile, 2019"
+      caption: "cats and dogs, 2019"
       slot: "wide"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-lap-cat-2020-efefe619.webp"
       alt: "A white cat sitting on a lap in warm room light."
-      caption: "lap cat, 2020"
+      caption: "cats and dogs, 2020"
       slot: "wide"
       width: 1700
       height: 1275
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-floor-sleep-2020-8a5a4f8b.webp"
       alt: "A white and ginger cat sleeping on a wooden floor."
-      caption: "floor sleep, 2020"
+      caption: "cats and dogs, 2020"
       slot: "wide"
       width: 1700
       height: 1276
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-running-shadow-2020-2d7b0af8.webp"
       alt: "A calico cat running through dappled shadow."
-      caption: "running shadow, 2020"
+      caption: "cats and dogs, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-ginger-rock-2020-981e766e.webp"
       alt: "A ginger cat resting against grey rock."
-      caption: "ginger rock, 2020"
+      caption: "cats and dogs, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-ginger-pet-2020-2a42438b.webp"
       alt: "A hand stroking a ginger cat in cold light."
-      caption: "ginger pet, 2020"
+      caption: "cats and dogs, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-held-cat-2020-ee282617.webp"
       alt: "A small cat held close in someone's arms."
-      caption: "held cat, 2020"
+      caption: "cats and dogs, 2020"
       slot: "wide"
       width: 1700
       height: 1362
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-ginger-bench-2020-c0251be0.webp"
       alt: "A ginger cat crouched on a stone bench."
-      caption: "ginger bench, 2020"
+      caption: "cats and dogs, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-white-dog-2020-89ac7871.webp"
       alt: "A white fluffy dog lying on pavement."
-      caption: "white dog, 2020"
+      caption: "cats and dogs, 2020"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-white-porch-cat-2021-34a5796e.webp"
       alt: "A black-and-white cat sitting on a sunlit porch."
-      caption: "white porch cat, 2021"
+      caption: "cats and dogs, 2021"
       slot: "wide"
       width: 1700
       height: 958
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-xiamen-lap-cat-2021-eb814f68.webp"
       alt: "A black-and-white cat resting on a lap."
-      caption: "xiamen lap cat, 2021"
+      caption: "cats and dogs, 2021"
       slot: "wide"
       width: 1700
       height: 1129
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-fallen-cat-2023-58ea274f.webp"
       alt: "A cat lying on the ground while being petted."
-      caption: "fallen cat, 2023"
+      caption: "cats and dogs, 2023"
       slot: "wide"
       width: 1700
       height: 958
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-hiba-held-2024-6e57eec3.webp"
       alt: "A smiling person holding a ginger kitten."
-      caption: "hiba held, 2024"
+      caption: "cats and dogs, 2024"
       slot: "wide"
       width: 1700
       height: 953
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-petra-stair-cats-2025-3fe91de1.webp"
       alt: "Small cats on Petra stone stairs."
-      caption: "petra stair cats, 2025"
+      caption: "cats and dogs, 2025"
       slot: "portrait"
       width: 1132
       height: 1700
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-window-perch-2025-f0f3ac85.webp"
       alt: "A tabby cat resting on a window ledge."
-      caption: "window perch, 2025"
+      caption: "cats and dogs, 2025"
       slot: "portrait"
       width: 338
       height: 508
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-stone-sleeper-2026-91d48066.webp"
       alt: "A ginger cat asleep on a stone ledge above hills."
-      caption: "stone sleeper, 2026"
+      caption: "cats and dogs, 2026"
       slot: "wide"
       width: 1700
       height: 1133
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-doorstep-cat-2026-5896c6cc.webp"
       alt: "A striped cat sitting by a dark blue door."
-      caption: "doorstep cat, 2026"
+      caption: "cats and dogs, 2026"
       slot: "wide"
       width: 1700
       height: 1214
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-sun-plaza-cat-2026-ebda1f9d.webp"
       alt: "A white cat sitting in a sunny plaza."
-      caption: "sun plaza cat, 2026"
+      caption: "cats and dogs, 2026"
       slot: "portrait"
       width: 1700
       height: 1700
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-fed-cat-2026-f81ede16.webp"
       alt: "A white cat reaching toward a hand."
-      caption: "fed cat, 2026"
+      caption: "cats and dogs, 2026"
       slot: "portrait"
       width: 1132
       height: 1700
     -
       src: "/assets/images/photos/atlas-cats-and-dogs-window-table-cat-5293b140.webp"
       alt: "A cat perched on a desk by a high window."
-      caption: "window table cat"
+      caption: "cats and dogs, 2017-2026"
       slot: "portrait"
       width: 1227
       height: 1204
@@ -2809,56 +2614,56 @@
     -
       src: "/assets/images/photos/atlas-self-stage-reading-2019-38a3ab81.webp"
       alt: "A person standing at a microphone on a dark stage."
-      caption: "stage reading, 2019"
+      caption: "self, 2019"
       slot: "feature"
       width: 1700
       height: 1700
     -
       src: "/assets/images/photos/atlas-self-book-room-2019-5776b123.webp"
       alt: "A crowded book room with stacks and window light."
-      caption: "book room, 2019"
+      caption: "self, 2019"
       slot: "wide"
       width: 1700
       height: 959
     -
       src: "/assets/images/photos/atlas-self-ltp-traces-2019-c8b7ec13.webp"
       alt: "A lab monitor showing electrophysiology traces."
-      caption: "ltp traces, 2019"
+      caption: "self, 2019"
       slot: "wide"
       width: 1700
       height: 1275
     -
       src: "/assets/images/photos/atlas-self-patch-rig-2019-dcb1cb2b.webp"
       alt: "A patch clamp microscope rig on a lab bench."
-      caption: "patch rig, 2019"
+      caption: "self, 2019"
       slot: "wide"
       width: 1700
       height: 1275
     -
       src: "/assets/images/photos/atlas-self-signal-traces-2021-8a3d7bf8.webp"
       alt: "A screen filled with coloured neural signal traces."
-      caption: "signal traces, 2021"
+      caption: "self, 2021"
       slot: "wide"
       width: 1700
       height: 1133
     -
       src: "/assets/images/photos/atlas-self-masked-portrait-2021-58fe7150.webp"
       alt: "A masked close portrait outdoors."
-      caption: "masked portrait, 2021"
+      caption: "self, 2021"
       slot: "wide"
       width: 1700
       height: 1135
     -
       src: "/assets/images/photos/atlas-self-drinking-portrait-20614d28.webp"
       alt: "A person drinking in an indoor portrait."
-      caption: "drinking portrait"
+      caption: "self, 2019-2024"
       slot: "wide"
       width: 1700
       height: 1129
     -
       src: "/assets/images/photos/atlas-self-mirror-flare-4b7c00e3.webp"
       alt: "A camera mirror portrait obscured by bright flare."
-      caption: "mirror flare"
+      caption: "self, 2019-2024"
       slot: "wide"
       width: 1700
       height: 957
@@ -2872,49 +2677,49 @@
     -
       src: "/assets/images/photos/atlas-two-people-bed-dusk-2024-185d1d68.webp"
       alt: "A bed and window in low domestic dusk."
-      caption: "bed dusk, 2024"
+      caption: "two people, 2024"
       slot: "wide"
       width: 1700
       height: 1133
     -
       src: "/assets/images/photos/atlas-two-people-guitar-shadow-2024-122ace50.webp"
       alt: "A guitar-shaped shadow falling across a room wall."
-      caption: "guitar shadow, 2024"
+      caption: "two people, 2024"
       slot: "wide"
       width: 1700
       height: 1133
     -
       src: "/assets/images/photos/atlas-two-people-storm-note-2024-33c191c2.webp"
       alt: "A note taped to a window over a stormy city view."
-      caption: "storm note, 2024"
+      caption: "two people, 2024"
       slot: "feature"
       width: 1700
       height: 956
     -
       src: "/assets/images/photos/atlas-two-people-blue-selfie-d9addbf6.webp"
       alt: "A close two-person selfie under blue light."
-      caption: "blue selfie"
+      caption: "two people, 2023-2024"
       slot: "portrait"
       width: 1275
       height: 1700
     -
       src: "/assets/images/photos/atlas-two-people-party-blur-7d3154f0.webp"
       alt: "Two people dancing in blurred warm party light."
-      caption: "party blur"
+      caption: "two people, 2023-2024"
       slot: "portrait"
       width: 1139
       height: 1700
     -
       src: "/assets/images/photos/atlas-two-people-toast-503a2bd1.webp"
       alt: "Two people toasting at a restaurant table."
-      caption: "toast"
+      caption: "two people, 2023-2024"
       slot: "wide"
       width: 1700
       height: 957
     -
       src: "/assets/images/photos/atlas-two-people-singer-stage-d491c19b.webp"
       alt: "A singer performing on a small stage with green projection behind."
-      caption: "singer stage"
+      caption: "two people, 2023-2024"
       slot: "wide"
       width: 1700
       height: 1133
@@ -2928,21 +2733,21 @@
     -
       src: "/assets/images/photos/atlas-album-covers-amoxitoxin-on-edamame-d97675db.webp"
       alt: "A square Chinese-text cover using a grey city view."
-      caption: "amoxitoxin on edamame"
+      caption: "album covers, designed stills"
       slot: "square"
       width: 1700
       height: 1693
     -
       src: "/assets/images/photos/atlas-album-covers-subtitled-park-8be90f25.webp"
       alt: "A square cover image of a park lake with Chinese subtitles."
-      caption: "subtitled park"
+      caption: "album covers, designed stills"
       slot: "square"
       width: 1700
       height: 1700
     -
       src: "/assets/images/photos/atlas-album-covers-dark-water-afec767c.webp"
       alt: "A dark blue water still with Chinese text."
-      caption: "dark water"
+      caption: "album covers, designed stills"
       slot: "square"
       width: 1700
       height: 1700

@@ -5674,41 +5674,16 @@ body.photos-page {
   .photo-section:nth-child(3n) .photo-frame--square {
     grid-column: span 2;
   }
+
+  .photo-frame[id] {
+    scroll-margin-top: 4.5rem;
+  }
+
   .photo-section--scroll .photo-cluster {
-    grid-auto-flow: column;
-    grid-auto-columns: minmax(12rem, 22rem);
-    grid-template-columns: none;
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding-bottom: 0.6rem;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    scrollbar-width: thin;
-  }
-
-  .photo-section--scroll .photo-frame {
-    scroll-snap-align: start;
-  }
-
-  .photo-section--scroll .photo-frame--feature,
-  .photo-section--scroll .photo-frame--wide,
-  .photo-section--scroll .photo-frame--panorama,
-  .photo-section--scroll .photo-frame--portrait,
-  .photo-section--scroll .photo-frame--square,
-  .photo-section--scroll:nth-child(2n) .photo-frame--feature,
-  .photo-section--scroll:nth-child(3n) .photo-frame--square {
-    grid-column: auto;
-    grid-row: auto;
-  }
-
-  .photo-section--scroll .photo-frame--feature,
-  .photo-section--scroll .photo-frame--panorama {
-    aspect-ratio: 4 / 3;
-  }
-
-  .photo-section--scroll .photo-frame--portrait {
-    grid-row: span 2;
-    aspect-ratio: 4 / 5;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    overflow: visible;
+    padding-bottom: 0;
   }
 
   @media (max-width: 960px), (orientation: portrait) {
@@ -5868,9 +5843,12 @@ body.photos-page {
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 0.38rem;
     }
+
     .photo-section--scroll .photo-cluster {
-      grid-auto-columns: minmax(10.6rem, 78vw);
-      grid-template-columns: none;
+      grid-auto-flow: dense;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      overflow: visible;
+      padding-bottom: 0;
     }
 
     .photo-frame--feature,
