@@ -6,7 +6,7 @@ title: "writing"
 classes: writing-page
 ---
 
-Writing and translation, arranged for browsing rather than biography: print work first, then digital pieces. The entries carry their own context: outlet, collaborators, ISBNs, awards, and links where those details matter.
+Reading gives me obsessions; writing tests what I have actually understood. This page splits the public-facing pieces into print work, digital science writing, fiction, essays, journals, and translation: the *Entangled Life* Chinese edition, my *Scientific American China* consciousness feature, Neu-Reality pieces, and the long-running personal platform that kept producing stories and odd essays before the site existed.
 
 ---
 
@@ -35,7 +35,11 @@ Writing and translation, arranged for browsing rather than biography: print work
 {% if article.type == "translation" or article.title_link == false %}
   {% assign title_is_plain = true %}
 {% endif %}
-<div class="writing-entry writing-entry--print writing-entry--print-{{ print_type | slugify }}{% if article.type == 'translation' %} writing-entry--translation{% endif %}{% if article.featured %} writing-entry--featured{% endif %}">
+{% assign show_archive_title_zh = true %}
+{% if article.show_archive_title_zh == false %}
+  {% assign show_archive_title_zh = false %}
+{% endif %}
+<div id="{{ print_title | strip_html | slugify }}" class="writing-entry writing-entry--print writing-entry--print-{{ print_type | slugify }}{% if article.type == 'translation' %} writing-entry--translation{% endif %}{% if article.featured %} writing-entry--featured{% endif %}">
   {% if article.image %}
   <a href="{{ article.url }}" class="writing-entry__img-wrap">
     <img src="{{ article.image }}" alt="{{ print_title | strip_html | escape }}" class="writing-entry__img" loading="lazy">
@@ -51,7 +55,7 @@ Writing and translation, arranged for browsing rather than biography: print work
       {% else %}
       <a href="{{ article.url }}">{{ print_title }}</a>
       {% endif %}
-      {% if article.title_zh %}
+      {% if article.title_zh and show_archive_title_zh %}
       <span class="writing-entry__title-zh-inline">{{ article.title_zh }}</span>
       {% endif %}
     </h3>

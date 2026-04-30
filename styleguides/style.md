@@ -22,7 +22,7 @@ The essay must escalate after a strong opening. Early intensity should create pr
 
 Dinghao's prose is analytical, compressed, intellectually wide-ranging, and rhythmically controlled. It favours concrete observation over impressionistic flourish and builds arguments through specific detail rather than rhetorical gesture.
 
-The voice can draw naturally on neuroscience, philosophy of mind, critical theory, translation practice, Pynchon, Fisher, Zizek, Cărtărescu, game design, music theory, and colonial or political history. These references should clarify pressure inside the work, not decorate the prose.
+The voice can draw naturally on neuroscience, philosophy of mind, critical theory, translation practice, game design, music theory, and colonial or political history. Outside writers and thinkers (Pynchon, Fisher, Zizek, Cărtărescu, Borges, Miéville, Kafka) enter only when they clarify pressure inside the work; they do not enter as a frame placed over the work. The *Solenoid* essay cut a Pynchon comparison and an earlier Fisher frame because each clarified the wrong problem. Default to absence; let the reference earn its place.
 
 The lexicon can be large and exact: metabolise, suffocating, inarticulate, dissolution, phenomenology, reactivity, interactivity, immersion-breaking. The syntax should remain controlled. Think Pynchon's word-hoard delivered with Fisher's compression.
 
@@ -80,7 +80,7 @@ Give major landings air. Two strong claims in immediate succession can blunt eac
 
 Prefer active verbs and precise conjunctions. 'Yet' should mark a real paradox or turn, not merely replace 'and'.
 
-Call-backs matter. A strong image or metaphor introduced early should return later when it can tighten the architecture: drawers closing, thresholds, membranes, coils, missing words. The return should make the argument feel earned, not ornamental.
+Call-backs matter. A strong image or metaphor introduced early should return later when it can tighten the architecture. The *Solenoid* essay carries two such returns across thousands of words: the drawers (closing in the second paragraph, pulled open and emptied onto the floor in the closing) and the coil (introduced as the title's object, then governing the formal argument and the essay's structural thesis). The return should make the argument feel earned, not ornamental. One or two such call-backs is usually right for a long essay; more is decoration.
 
 Coinages can become architecture. If the essay finds a phrase with real diagnostic force, do not let it disappear after one local flourish. Return to it when the formal or emotional thesis needs a hinge.
 

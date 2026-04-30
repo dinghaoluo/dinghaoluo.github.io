@@ -16,8 +16,8 @@
 <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/favicon-dark.svg' | relative_url }}?v=2">
 <link rel="apple-touch-icon" href="{{ '/assets/images/favicon-256.png' | relative_url }}">
 
-<!-- disable browser scroll restoration so Edge/Chrome don't scroll down on refresh -->
-<script>if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }</script>
+<!-- keep browser back/forward navigation anchored to the reader's last position -->
+<script>if ('scrollRestoration' in history) { history.scrollRestoration = 'auto'; }</script>
 
 <!-- theme toggle: apply saved preference before first paint to prevent FOUC -->
 <script>

@@ -22,6 +22,7 @@
   {% assign display_type = "science" %}
 {% endif %}
 <div
+  id="{{ archive_title | strip_html | slugify }}"
   class="writing-entry writing-entry--archive writing-entry--kind-{{ writing_kind }}{% if article.writing_feature %} writing-entry--pinned{% endif %}{% if show_archive_image %} writing-entry--has-image{% endif %}{% if show_feature_banner %} writing-entry--feature-banner{% endif %}"
   data-kind="{{ writing_kind }}"
   data-pinned="{% if article.writing_feature %}true{% else %}false{% endif %}"
@@ -45,9 +46,6 @@
       </div>
       <h3 class="writing-entry__title">
         {{ archive_title }}
-        {% if article.title_zh %}
-        <span class="writing-entry__title-zh-inline">{{ article.title_zh }}</span>
-        {% endif %}
       </h3>
       {% if archive_excerpt %}
       <div class="writing-entry__text">{{ archive_excerpt }}</div>
@@ -69,9 +67,6 @@
     </div>
     <h3 class="writing-entry__title">
       <a href="{{ article.url }}">{{ archive_title }}</a>
-      {% if article.title_zh %}
-      <span class="writing-entry__title-zh-inline">{{ article.title_zh }}</span>
-      {% endif %}
     </h3>
     {% if article.byline or article.source_author or article.creator or article.outlet or article.isbn %}
     <div class="writing-entry__meta">

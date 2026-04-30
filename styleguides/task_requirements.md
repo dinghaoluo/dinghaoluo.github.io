@@ -102,6 +102,16 @@ These are rationed rather than mechanically forbidden. Keep one only when it car
 - `at the end of the day`
 - empty reaction frames: `what strikes me most`, `what stayed with me`, `what moved me most`, `what I took away`
 
+## Em Dashes And Punctuation Rhythm
+
+Em dashes are allowed when they carry real syntactic work — for example, when a parenthetical needs to remain inline rather than break out into commas, or when a list within a sentence needs visible boundaries. The *Solenoid* essay uses em dashes for inline lists ('city and body, fact and fiction, biography and counterfactual, flesh and metaphysics') and occasional asides.
+
+Em dashes become a tic when one paragraph carries three or more, or when several em dashes do the same kind of work in succession. Colons and semicolons should still carry most of the rhythm in analytical prose; the *Capitalist Realism* sample is a useful reference for em-dash-free pacing. If a closing paragraph contains multiple em dashes, examine each: usually one is doing real work and the others are reflex.
+
+## Long-Form Vs Journal-Mode Rules
+
+The rules in this file describe review-essay and catalogue prose. Journal-mode entries (those in `_writing/` whose `category` is `journal` rather than `essay`) follow a different logic: they accumulate registers around an emotional centre rather than driving toward an argument. Use [_writing/shanwei.md](../_writing/shanwei.md) as the journal-mode reference, and see the journal-mode notes in [samples.md](samples.md) for what the rules look like there.
+
 ## Translated Article Titles
 
 Chinese source titles are often commercial or clickbait-adjacent. English translations should use descriptive, serious titles that represent the piece as portfolio work rather than traffic bait.

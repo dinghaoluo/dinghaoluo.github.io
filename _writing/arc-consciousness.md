@@ -2,12 +2,19 @@
 title: "Racing towards a grand theory of consciousness"
 title_zh: "理论对抗：意识从何而来"
 type: "feature"
-outlet: "Scientific American China"
+outlet: "<em>Scientific American</em> China"
 date: 2021-03-01
 issue: "March 2021 print issue"
+meta_outlet_first: true
 section: "print"
-image: "/assets/images/writing/acr_consciousness_cover.jpg"
-excerpt: "My March 2021 print feature for Scientific American China, tracing how IIT, GNW, higher-order theory, and Accelerating Research on Consciousness (ARC) turned consciousness from philosophical deadlock into an experimental contest. Built from interviews with Anil Seth, Cyriel Pennartz, Hakwan Lau, and Chinese ARC researchers, it follows the field at the point where grand theory has to answer to data."
+show_archive_title_zh: false
+image: "/assets/images/writing/arc-consciousness-card.webp"
+feature_banner: true
+banner_image: "/assets/images/writing/arc-consciousness-banner.webp"
+banner_position: "center 48%"
+banner_bg: "#f2eee5"
+banner_image_alt: "Abstract diagram of competing paths crossing a measured field."
+excerpt: "My March 2021 print feature for <em>Scientific American</em> China on ARC, the Templeton-backed effort to test rival theories of consciousness against shared experimental predictions. It sketches IIT, GNW, and higher-order theory through interviews with Anil Seth, Cyriel Pennartz, Hakwan Lau, and Chinese ARC researchers."
 featured: true
 dropcap: true
 ---
@@ -67,7 +74,7 @@ Even so, HOT, like every other theory, is far from settled. Only through fair co
 
 ### Adversarial collaboration
 
-In 2019, a $20 million international research initiative was launched. This project, named [Accelerating Research on Consciousness (ARC)](https://www.templetonworldcharity.org/our-priorities/discovery/accelerating-research-consciousness), aims to place competing, even mutually contradictory, theories of consciousness on the same stage and let them compete, thereby accelerating the search for the best theory. As ARC's funder, the Templeton World Charity Foundation has supported research on six theories, including the three major ones described above. Some scientists believe that the 'adversarial collaboration' championed by ARC can answer the core question of consciousness: why does the brain produce subjective experience?
+In 2019, a $20 million international research initiative was launched. This project, named [Accelerating Research on Consciousness (ARC)](https://www.templetonworldcharity.org/our-priorities/discovery/accelerating-research-consciousness), aims to place competing, even mutually contradictory, theories of consciousness on the same stage and let them compete, thereby accelerating the search for the best theory. As ARC's funder, Templeton World Charity Foundation has supported research on six theories, including the three major ones described above. Some scientists believe that the 'adversarial collaboration' championed by ARC can answer the core question of consciousness: why does the brain produce subjective experience?
 
 The motivation behind ARC is clear. 'The days of the lone genius scientist solving big problems in the laboratory are over,' said Dawid Potgieter, senior programme officer at the Templeton Foundation. ARC's adversarial collaboration model enables researchers to test their disagreements directly. Ideally, participants convene at a round table for seminars driven by evidence-based debate, striving to refute their opponents and reflect on their own theory's weaknesses. Guided by these exchanges, they return to their laboratories to conduct further experiments, funded by Templeton. The foundation also funds replication studies to verify each laboratory's results. Potgieter stated that ARC aspires to be a model for open science: researchers have ample funding and open data, and experimental reproducibility is guaranteed. If this model produces breakthroughs, it will simultaneously demonstrate the superiority of open science over the traditional 'behind closed doors' approach.
 
@@ -89,5 +96,5 @@ ARC has nevertheless built a bridge for discussion among the 'powerful theories'
 - Mashour, G., Roelfsema, P., Changeux, J., and Dehaene, S. (2020). 'Conscious Processing and the Global Neuronal Workspace Hypothesis.' *Neuron*, Vol. 105, pp. 776–798.
 - Brown, R., Lau, H., and LeDoux, J. (2019). 'Understanding the Higher-Order Approach to Consciousness.' *Trends Cogn. Sci.*, Vol. 23, No. 9, pp. 754–768.
 
-*Originally published in Chinese in the March 2021 print issue of Scientific American China.*
+Originally published in Chinese in <em>Scientific American</em> China, March 2021 print issue.
 </div>

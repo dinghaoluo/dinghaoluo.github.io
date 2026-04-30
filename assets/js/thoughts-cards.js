@@ -22,6 +22,7 @@
       if (card.classList.contains('is-open')) {
         closeCard(card, wrap, toggle, collapsedH);
       } else {
+        var targetTop = predictedCardTopAfterCollapse(card);
         cardsRoot.querySelectorAll('.thoughts-card.is-open').forEach(function (other) {
           if (other === card) return;
           var otherWrap = other.querySelector('.thoughts-card__text-wrap');
@@ -29,8 +30,25 @@
           closeCard(other, otherWrap, otherToggle, parseFloat(other.dataset.collapsedH));
         });
         openCard(card, wrap, toggle);
+        window.scrollTo({ top: targetTop, behavior: 'smooth' });
       }
     });
+
+    function predictedCardTopAfterCollapse(card) {
+      var top = card.getBoundingClientRect().top + window.pageYOffset;
+      cardsRoot.querySelectorAll('.thoughts-card.is-open').forEach(function (other) {
+        if (other === card) return;
+        if (!(other.compareDocumentPosition(card) & Node.DOCUMENT_POSITION_FOLLOWING)) return;
+
+        var otherWrap = other.querySelector('.thoughts-card__text-wrap');
+        if (!otherWrap) return;
+        if (!other.dataset.collapsedH) {
+          other.dataset.collapsedH = otherWrap.offsetHeight;
+        }
+        top -= Math.max(0, otherWrap.offsetHeight - parseFloat(other.dataset.collapsedH || 0));
+      });
+      return Math.max(0, top);
+    }
 
     function openCard(card, wrap, toggle) {
       var startH  = wrap.offsetHeight;
@@ -45,7 +63,6 @@
 
       wrap.style.transition = 'max-height 0.42s ease';
       wrap.style.maxHeight  = targetH + 'px';
-      card.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
       wrap.addEventListener('transitionend', function handler() {
         wrap.style.maxHeight  = 'none';
@@ -235,12 +252,12 @@
       card._hasHighlights = true;
     }
 
-    function movePill(btn) {
-      if (!btn || !pill) return;
-      var sr = strip.getBoundingClientRect();
+    function movePill(container, pillEl, btn) {
+      if (!container || !btn || !pillEl) return;
+      var sr = container.getBoundingClientRect();
       var br = btn.getBoundingClientRect();
-      pill.style.left = (br.left - sr.left) + 'px';
-      pill.style.width = br.width + 'px';
+      pillEl.style.left = (br.left - sr.left) + 'px';
+      pillEl.style.width = br.width + 'px';
     }
 
     function visibleCards() {
@@ -418,7 +435,7 @@
       });
       if (targetBtn) {
         targetBtn.classList.add('active');
-        movePill(targetBtn);
+        movePill(strip, pill, targetBtn);
       }
       if (searchInput) searchInput.value = '';
       matchedCards = computeMatched(filterValue, '');
@@ -488,7 +505,7 @@
         switchFilter(initialFilter);
         applyFilter(initialFilter);
       } else if (active) {
-        setTimeout(function () { movePill(active); }, 100);
+        setTimeout(function () { movePill(strip, pill, active); }, 100);
         applyFilter(active.getAttribute('data-filter'));
       }
     }
@@ -502,13 +519,17 @@
         e.preventDefault();
         btns.forEach(function (b) { b.classList.remove('active'); });
         btn.classList.add('active');
-        movePill(btn);
+        movePill(strip, pill, btn);
         applyFilter(btn.getAttribute('data-filter'));
       });
     });
 
     function updateSearchClear() {
-      if (searchClear) searchClear.hidden = !searchInput || !searchInput.value;
+      var hasQuery = !!(searchInput && searchInput.value);
+      if (searchClear) searchClear.hidden = !hasQuery;
+      if (searchInput && searchInput.parentNode) {
+        searchInput.parentNode.classList.toggle('has-query', hasQuery);
+      }
     }
 
     if (searchInput) {
@@ -528,6 +549,7 @@
         applyFilter(currentFilter());
       });
     }
+    updateSearchClear();
 
     if (luckBtn) {
       luckBtn.addEventListener('click', function () {
@@ -607,7 +629,7 @@
 
     window.addEventListener('resize', function () {
       var activeBtn = strip.querySelector('.thoughts-filter-btn.active');
-      if (activeBtn) movePill(activeBtn);
+      if (activeBtn) movePill(strip, pill, activeBtn);
     });
   }
 
@@ -627,6 +649,7 @@
   var BOOK_CHINESE_EDITION_MIN_WEIGHT = 0.02;
   var BOOK_NON_CHINESE_EDITION_MULTIPLIER = 1.5;
   var BOOK_NON_CHINESE_LOVED_MULTIPLIER = 3.2;
+  var EXTREME_REACTION_MULTIPLIER = 3;
 
   function hasChineseTitleFallback(el) {
     var text = [
@@ -649,10 +672,11 @@
     var minWeight = COVER_MIN_WEIGHT;
 
     if (container.classList.contains('home-covers--books')) {
-      if (reaction === 'loved') weight = 5;
+      if (reaction === 'loved') weight = 6;
+      else if (reaction === 'hated') weight = 5;
       else if (reaction === 'liked') weight = 1.4;
       else if (reaction.indexOf('meh') === 0) weight = 0.8;
-      else if (reaction === 'disliked' || reaction === 'hated') weight = 0.35;
+      else if (reaction === 'disliked') weight = 1.2;
 
       if (isChineseEdition(el)) {
         weight *= BOOK_CHINESE_EDITION_MULTIPLIER;
@@ -666,6 +690,12 @@
     } else if (container.classList.contains('home-covers--screen')) {
       if (type === 'film') weight *= 2.4;
       if (type === 'tv') weight *= 0.75;
+    }
+
+    if (!container.classList.contains('home-covers--books')) {
+      if (reaction === 'loved' || reaction === 'hated') weight *= EXTREME_REACTION_MULTIPLIER;
+      else if (reaction === 'liked' || reaction === 'disliked') weight *= 1.35;
+      else if (reaction.indexOf('meh') === 0) weight *= 0.75;
     }
 
     return Math.max(weight, minWeight);

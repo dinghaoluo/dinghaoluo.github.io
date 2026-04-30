@@ -31,8 +31,30 @@ layout: default
       {% include page-header.html %}
 
       <section class="page__content e-content" itemprop="text">
+        {% assign show_writing_masthead = false %}
+        {% if page.collection == 'writing' and page.feature_banner and page.banner_image %}
+          {% assign show_writing_masthead = true %}
+        {% endif %}
         {% if page.collection == 'writing' and page.title %}
-          <h1 id="page-title" class="page__title p-name" itemprop="headline">{{ page.title_display | default: page.title }}</h1>
+          {% if show_writing_masthead %}
+            <header
+              class="writing-piece-masthead"
+              style="--writing-banner-image: url('{{ page.banner_image | relative_url }}');{% if page.banner_position %} --writing-banner-position: {{ page.banner_position }};{% endif %}{% if page.banner_size %} --writing-banner-size: {{ page.banner_size }};{% endif %}{% if page.banner_bg %} --writing-banner-bg: {{ page.banner_bg }};{% endif %}"
+            >
+              {% if page.banner_image_alt %}
+                <span class="screen-reader-text">{{ page.banner_image_alt }}</span>
+              {% endif %}
+              <div class="writing-piece-masthead__body">
+                <div class="writing-piece-masthead__flag">
+                  {% if page.writing_feature %}<span>featured</span>{% endif %}
+                  {% if page.type %}<span>{{ page.type }}</span>{% endif %}
+                </div>
+                <h1 id="page-title" class="page__title p-name" itemprop="headline">{{ page.title_display | default: page.title }}</h1>
+              </div>
+            </header>
+          {% else %}
+            <h1 id="page-title" class="page__title p-name" itemprop="headline">{{ page.title_display | default: page.title }}</h1>
+          {% endif %}
         {% endif %}
         {% if page.lede %}
           <div class="page__lede">{{ page.lede | markdownify }}</div>

@@ -43,6 +43,7 @@
 {%- if item.outlet and collaborator_note != "" -%}
   {%- assign outlet_has_collaborator_note = true -%}
 {%- endif -%}
+{%- assign outlet_rendered = false -%}
 {%- assign meta_started = false -%}
 {%- if show_kind -%}
   <span class="{{ type_class }}">{{ kind }}</span>
@@ -51,6 +52,11 @@
 {%- if show_title_zh and item.title_zh -%}
   <span>{% if meta_started %} · {% endif %}{{ item.title_zh }}</span>
   {%- assign meta_started = true -%}
+{%- endif -%}
+{%- if item.meta_outlet_first and show_outlet and item.outlet -%}
+  <span>{% if meta_started %} · {% endif %}{{ item.outlet }}{% if item.outlet_en %} ({{ item.outlet_en }}){% endif %}{% if collaborator_note != "" %} (collab. {{ collaborator_note }}){% endif %}</span>
+  {%- assign meta_started = true -%}
+  {%- assign outlet_rendered = true -%}
 {%- endif -%}
 {%- if item.issue -%}
   <span>{% if meta_started %} · {% endif %}{{ item.issue }}</span>
@@ -71,7 +77,7 @@
   <span>{% if meta_started %} · {% endif %}{{ item.creator }}</span>
   {%- assign meta_started = true -%}
 {%- endif -%}
-{%- if show_outlet and item.outlet -%}
+{%- if show_outlet and item.outlet and outlet_rendered != true -%}
   <span>{% if meta_started %} · {% endif %}{{ item.outlet }}{% if item.outlet_en %} ({{ item.outlet_en }}){% endif %}{% if collaborator_note != "" %} (collab. {{ collaborator_note }}){% endif %}</span>
   {%- assign meta_started = true -%}
 {%- endif -%}

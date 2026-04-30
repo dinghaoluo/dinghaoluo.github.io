@@ -9,7 +9,7 @@ title: 'thoughts'
 
 ---
 
-<div class="thoughts-filter-strip" id="thoughts-filter-strip">
+<div class="thoughts-filter-strip thoughts-filter-strip--type" id="thoughts-filter-strip">
   <div class="thoughts-filter-pill" id="thoughts-filter-pill"></div>
   <button class="thoughts-filter-btn active" data-filter="book">books</button>
   <button class="thoughts-filter-btn" data-filter="film">films</button>

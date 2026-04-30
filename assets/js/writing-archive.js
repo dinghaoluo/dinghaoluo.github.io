@@ -202,7 +202,11 @@
     });
 
     function updateSearchClear() {
-      if (searchClear) searchClear.hidden = !searchInput || !searchInput.value;
+      var hasQuery = !!(searchInput && searchInput.value);
+      if (searchClear) searchClear.hidden = !hasQuery;
+      if (searchInput && searchInput.parentNode) {
+        searchInput.parentNode.classList.toggle('has-query', hasQuery);
+      }
     }
 
     if (searchInput) {

@@ -19,9 +19,14 @@ Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.
 
 Writing, along with reading, was one of my first true passions. Like many kids, I kept a journal as I grew up, and the advent of the Internet age allowed me to transform things I wrote in my journal into an online repository. I wrote under the pen-name `amoxitoxin` in Chinese since I was 15, and have translated selected pieces into English, which can be found on the *writing* page.
 
-Since my undergraduate years at Cambridge, however, and now through my PhD, I have written mostly about science. I was one of the founding members of [**Neu-Reality**](https://neu-reality.com/) (神经现实), a Chinese-language neuroscience and philosophy platform, and spent three years as science editor and translator there. After that were seven months at <a href="https://www.huanqiukexue.com/"><strong><em>Scientific American</em> China</strong></a>, where I wrote weekly news, edited translations of each month's *SciAm* magazine, and finished [a print feature](/writing/acr-consciousness/) on [Accelerating Research on Consciousness](https://www.templetonworldcharity.org/our-priorities/discovery/accelerating-research-consciousness), interviewing researchers like Cyriel Pennartz and Anil Seth.
+Since my undergraduate years at Cambridge, however, and now through my PhD, I have written mostly about science. I was one of the founding members of [**Neu-Reality**](https://neu-reality.com/) (神经现实), a Chinese-language neuroscience and philosophy platform, and spent three years as science editor and translator there. After that were seven months at <a href="https://www.huanqiukexue.com/"><strong><em>Scientific American</em> China</strong></a>, where I wrote weekly news, edited translations of each month's *SciAm* magazine, and finished [a print feature](/writing/arc-consciousness/) on [Templeton World Charity Foundation's Accelerating Research on Consciousness (ARC) initiative](https://www.templetonworldcharity.org/our-priorities/discovery/accelerating-research-consciousness), interviewing researchers like Cyriel Pennartz and Anil Seth.
 
-My longest project was translating Merlin Sheldrake's ***Entangled Life*** into Chinese (《菌络万象》), taking a total of 2 years as I was juggling my PhD experiments and analyses on the side. The efforts paid off, luckily: the Chinese translation is widely loved (sitting at [8.7/10 on Douban](https://book.douban.com/subject/37088268/) ['China's Goodreads']), and won the [2025 Pingshan Natural History Museum Book Award](https://m.sohu.com/a/970954278_122097022) amongst others. I also did a very fun [interview with Sheldrake](/writing/entangled-life/) after the publication of the Chinese edition.
+<figure class="home-writing-award">
+  <img src="/assets/images/writing/entangled-life-pingshan-award.jpg" alt="The Chinese edition of Entangled Life displayed with the Pingshan Natural History Museum Book Award certificate." loading="lazy">
+  <figcaption>Pingshan Natural History Museum Book Award, 2025.</figcaption>
+</figure>
+
+My longest writing project was translating Merlin Sheldrake's ***Entangled Life*** into Chinese ([《菌络万象》](/writing/#entangled-life)), taking a total of 2 years as I was juggling my PhD experiments and analyses on the side. The efforts paid off, luckily: the Chinese translation is widely loved ([8.7/10 on Douban](https://book.douban.com/subject/37088268/)), and won the [2025 Pingshan Natural History Museum Book Award](https://m.sohu.com/a/970954278_122097022) amongst others. I also did a very fun [interview with Sheldrake](/writing/entangled-life/) after the publication of the Chinese edition.
 
 [→ writing & translation](/writing/)
 
@@ -34,22 +39,24 @@ My longest project was translating Merlin Sheldrake's ***Entangled Life*** into 
 {% assign game_thoughts = all_thoughts | where: 'type', 'game' %}
 
 <div class="home-thoughts-block home-thoughts-block--books" markdown="1">
-<div class="home-covers home-covers--books" aria-hidden="true" data-count="12" data-mobile-count="8">
+<div class="home-covers home-covers--books" aria-hidden="true" data-count="12" data-mobile-count="15">
   {% for t in book_thoughts %}{% if t.image %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" data-eval="{{ t.eval | default: '' | downcase | escape }}" data-title="{{ t.title | escape }}" data-title-en="{{ t.title_en | default: '' | escape }}" data-cn-edition="{% if t.creator contains '(CN' or t.image contains 'chinese' %}true{% else %}false{% endif %}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
 </div>
 
-Reading was probably my favourite pastime from childhood through my teenage years: the first durable way I found of making sense of the world as a kid. The early years of my PhD (regrettably) interrupted the habit for a while. Returning to books gave me back a method, a way of testing private feeling against politics, science, history, and fiction's strange talent for telling the truth sideways. The writers I return to most, for now, are Mircea Cărtărescu and Thomas Pynchon.
+Reading was probably my favourite pastime from childhood through my teenage years: the first durable way I found of making sense of the world as a kid. The early years of my PhD (regrettably) interrupted the habit for a while. Returning to books gave me back a method, a way of testing private feeling against politics, science, history, and fiction's strange talent for telling the truth sideways. The writers I return to most, for now, are Mircea <span class="ro-name" lang="ro">Cărtărescu</span> and Thomas Pynchon.
 
-- ***Solenoid*** (2015) by Mircea Cărtărescu
-- ***Gravity's Rainbow*** (1973) by Thomas Pynchon
-- ***Capitalist Realism*** (2009) by Mark Fisher
-- ... *and if you read Chinese*, my translation of ***Entangled Life*** (2020) by Merlin Sheldrake
+- [***Solenoid*** (2015)](/thoughts/#solenoid) by Mircea <span class="ro-name" lang="ro">Cărtărescu</span>
+- [***Vineland*** (1990)](/thoughts/#vineland) by Thomas Pynchon
+- [***Capitalist Realism*** (2009)](/thoughts/#capitalist-realism-is-there-no-alternative) by Mark Fisher
+- [***Models of the Mind*** (2021)](/thoughts/#models-of-the-mind-how-physics-engineering-and-mathematics-have-shaped-our-understanding-of-the-brain) by Grace Lindsay
+- [***When We Cease to Understand the World*** (2020)](/thoughts/#when-we-cease-to-understand-the-world) by Benjamín Labatut
+- ... *and if you read Chinese*, my translation of [***Entangled Life*** (2020)](/thoughts/#entangled-life) by Merlin Sheldrake
 
 <p class="home-thoughts-links"><a href="/thoughts/?type=book">→ books</a></p>
 </div>
 
 <div class="home-thoughts-block home-thoughts-block--screen" markdown="1">
-<div class="home-covers home-covers--screen" aria-hidden="true" data-count="12" data-tablet-count="9" data-mobile-count="8">
+<div class="home-covers home-covers--screen" aria-hidden="true" data-count="12" data-tablet-count="9" data-mobile-count="15">
   {% for t in all_thoughts %}{% if t.image and t.type == 'film' %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" data-eval="{{ t.eval | default: '' | downcase | escape }}" data-title="{{ t.title | escape }}" data-title-en="{{ t.title_en | default: '' | escape }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% if t.image and t.type == 'tv' %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" data-eval="{{ t.eval | default: '' | downcase | escape }}" data-title="{{ t.title | escape }}" data-title-en="{{ t.title_en | default: '' | escape }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
 </div>
 
@@ -62,7 +69,7 @@ Films and television came later than books, but they fit the same habit from ano
 </div>
 
 <div class="home-thoughts-block home-thoughts-block--games" markdown="1">
-<div class="home-covers home-covers--games" aria-hidden="true" data-count="12" data-tablet-count="9" data-mobile-count="8">
+<div class="home-covers home-covers--games" aria-hidden="true" data-count="12" data-tablet-count="9" data-mobile-count="15">
   {% for t in game_thoughts %}{% if t.image %}<a href="/thoughts/#{{ t.title | slugify }}" class="home-covers__link" data-type="{{ t.type }}" data-eval="{{ t.eval | default: '' | downcase | escape }}" data-title="{{ t.title | escape }}" data-title-en="{{ t.title_en | default: '' | escape }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
 </div>
 
@@ -79,6 +86,21 @@ Games are where the systems part of my brain gets least restrained: maps, loops,
 <h2 id="science"><a href="/science/">science :)</a></h2>
 
 My PhD asks how the brain starts a memory-guided action when landmarks are absent. In a virtual-reality navigation task, mice have to estimate elapsed time or distance before initiating reward seeking; I study how phasic LC dopamine signals in hippocampal CA1 tune that computation on the scale of seconds and micrometres. The work combines electrophysiology, optogenetics, two-photon dopamine and calcium imaging, behavioural analysis, **Python** pipelines, and computational modelling. A manuscript is in preparation. Before this I was in the Paulsen lab at Cambridge, where my undergraduate thesis looked at dopamine's role in CA3-CA1 synaptic plasticity.
+
+<div class="home-science-strip" aria-label="Science photos">
+  <figure class="home-science-card">
+    <img src="/assets/images/science/genetics-society-summer-school-edinburgh-2018.webp" alt="Participants at the Genetics Society Summer School Workshop in Edinburgh, seated in a conference room." loading="lazy" width="1846" height="1299">
+    <figcaption><span>Genetics Society, Queen Square, 2018.</span> I only realised later that I had forgotten to take a picture with the Fisher lab members. I really did have such a great time at Queen Square.</figcaption>
+  </figure>
+  <figure class="home-science-card">
+    <img src="/assets/images/science/paulsen-lab-cambridge-2019.webp" alt="Members of the Paulsen lab gathered around a dinner table in Cambridge." loading="lazy" width="1500" height="1000">
+    <figcaption><span>Paulsen lab, Cambridge, 2019.</span> The lab where electrophysiology became a room, a table, and people I learned from.</figcaption>
+  </figure>
+  <figure class="home-science-card">
+    <img src="/assets/images/science/wang-lab-mpfi.webp" alt="Members of the Wang Lab gathered in the Max Planck Florida Institute atrium." loading="lazy" width="1920" height="1280">
+    <figcaption><span>Wang Lab, MPFI.</span> The lab where the PhD work lives now: behaviour, imaging, hippocampal circuits, and the analysis code connecting them.</figcaption>
+  </figure>
+</div>
 
 [→ science](/science/)
 

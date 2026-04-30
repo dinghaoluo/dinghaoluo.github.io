@@ -98,4 +98,4 @@ Wu Y, Mumford P, Noy S, Cleverley K, Mrzyglod A, **Luo D** et al. (2023). Cathep
 
 **Writer, editor, proofreader and translator** · Neu-Reality (神经现实), July 2017 – December 2021. Founded and led the Neuro-Frontier (神经前研) section, co-founded the Neuromancing podcast team, and wrote, edited, proofread, and translated authorised science writing from outlets including Quanta, Nautilus, and Aeon.
 
-**Science journalist** · *Scientific American* China. Wrote weekly news and a print feature on the Accelerating Research on Consciousness project, interviewing researchers including Anil Seth and Cyriel Pennartz.
+**Science journalist** · *Scientific American* China. Wrote weekly news and a print feature on the Accelerating Research on Consciousness (ARC) initiative, interviewing researchers including Anil Seth and Cyriel Pennartz.

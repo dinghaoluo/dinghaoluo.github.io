@@ -88,8 +88,6 @@
     var currentEl = el.querySelector('.wv-player__current');
     var durationEl = el.querySelector('.wv-player__duration');
     var volBtn = el.querySelector('.wv-player__vol-btn');
-    var volSlider = el.querySelector('.wv-player__vol-slider');
-    var volWrap = el.querySelector('.wv-player__vol-wrap');
     var volIcon = el.querySelector('.wv-player__vol-icon');
     var volMuteIcon = el.querySelector('.wv-player__vol-icon--mute');
 
@@ -135,9 +133,14 @@
     }
 
     function updateVolIcons() {
+      if (!volIcon || !volMuteIcon) return;
       var muted = audio.muted || audio.volume === 0;
       volIcon.style.display = muted ? 'none' : '';
       volMuteIcon.style.display = muted ? 'block' : 'none';
+      if (volBtn) {
+        volBtn.setAttribute('aria-label', muted ? 'Unmute' : 'Mute');
+        volBtn.setAttribute('aria-pressed', muted ? 'true' : 'false');
+      }
     }
 
     function attachSource() {
@@ -269,22 +272,13 @@
         if (audio.muted || audio.volume === 0) {
           audio.muted = false;
           audio.volume = lastVolume || 1;
-          volSlider.value = audio.volume;
         } else {
-          lastVolume = audio.volume;
+          lastVolume = audio.volume || lastVolume;
           audio.muted = true;
         }
         updateVolIcons();
       });
-    }
-
-    if (volSlider) {
-      volSlider.addEventListener('input', function () {
-        audio.volume = parseFloat(volSlider.value);
-        audio.muted = audio.volume === 0;
-        lastVolume = audio.volume || lastVolume;
-        updateVolIcons();
-      });
+      updateVolIcons();
     }
 
     var resizeTimer;

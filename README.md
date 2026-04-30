@@ -9,7 +9,7 @@ Personal website built with Jekyll and the Minimal Mistakes remote theme.
 - `404.html` is the custom 404 page.
 - `_pages/reviews.md` renders `/thoughts/`.
 - `_pages/writing.md` renders `/writing/`.
-- `_pages/research.md` renders `/science/`.
+- `_pages/science.md` renders `/science/`.
 - `_pages/music.md` renders `/music/`.
 - `_pages/photos.md` renders `/photos/`.
 - `_pages/cv.markdown` renders `/cv/`.
