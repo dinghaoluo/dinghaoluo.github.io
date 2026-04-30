@@ -1,314 +1,254 @@
 # Curated photo atlas for /photos/.
 # Source derivatives are generated from private catalogue photos; do not auto-sync the whole archive.
-- id: "rooms-light-thinking"
-  title: "rooms where light did the thinking"
-  axis: "period: Cambridge, 2017-2020 / material: brick, cloth, river light"
-  note: "interior weather, thresholds, and the habit of looking before the argument arrives."
+- id: "cambridge"
+  title: "cambridge"
+  axis: "2018-2025 / college courts, rooms, weather"
+  note: "snow, wall light, gates, and the later return to the same stone vocabulary."
   accent: "clay"
   photos:
-    - src: "/assets/images/photos/cambridge-tower-clouds-20171129.webp"
-      alt: "Two stone chimneys rising into a blue Cambridge sky with scattered cloud."
-      caption: "Cambridge, 2017"
+    - src: "/assets/images/photos/atlas-cambridge-snow-wall-20180226.webp"
+      alt: "A snowy Cambridge college court enclosed by dark brick walls."
+      caption: "snow wall, 2018"
       slot: "feature"
       width: 1700
       height: 956
-    - src: "/assets/images/photos/cambridge-window-plant-20180503.webp"
-      alt: "A plant silhouetted against a bright Cambridge window."
-      caption: "window plant, 2018"
+    - src: "/assets/images/photos/atlas-cambridge-cloister-20250817.webp"
+      alt: "A long Cambridge cloister with sunlight falling through pointed windows."
+      caption: "cloister return, 2025"
       slot: "portrait"
       width: 1700
+      height: 1133
+    - src: "/assets/images/photos/atlas-cambridge-cloud-break-20180508.webp"
+      alt: "Dark clouds breaking open into bright Cambridge sky."
+      caption: "cloud break, 2018"
+      slot: "wide"
+      width: 1700
       height: 956
-    - src: "/assets/images/photos/cambridge-rose-brick-20180528.webp"
-      alt: "A red rose growing against a brick wall."
-      caption: "rose on brick, 2018"
+    - src: "/assets/images/photos/atlas-cambridge-gate-bicycle-20200320.webp"
+      alt: "A Cambridge gate with bicycles in hard spring light."
+      caption: "gate and bicycle, 2020"
+      slot: "wide"
+      width: 1700
+      height: 956
+    - src: "/assets/images/photos/atlas-cambridge-light-panels-20181009.webp"
+      alt: "Two glowing wall lights, one white and one warm, in a dark Cambridge interior."
+      caption: "wall light, 2018"
       slot: "square"
       width: 1700
       height: 955
-    - src: "/assets/images/photos/cambridge-curtained-room-20181004.webp"
-      alt: "Green fabric-covered shelves in a sunlit room."
-      caption: "covered shelves, 2018"
-      slot: "wide"
-      width: 1700
-      height: 955
-    - src: "/assets/images/photos/cambridge-lit-corridor-20181009.webp"
-      alt: "A dark corridor ending in a rectangle of daylight."
-      caption: "corridor light, 2018"
-      slot: "portrait"
-      width: 1219
-      height: 1700
-    - src: "/assets/images/photos/cambridge-field-figure-20180611.webp"
-      alt: "A seated figure in a pale field under a cloudy sky."
-      caption: "field weather, 2018"
-      slot: "wide"
-      width: 1700
-      height: 956
-    - src: "/assets/images/photos/cambridge-rooftop-tower-20181021.webp"
-      alt: "A high view over stone towers and Cambridge rooftops."
-      caption: "above the roofs, 2018"
-      slot: "panorama"
-      width: 1700
-      height: 955
-- id: "south-by-train"
-  title: "south by train"
-  axis: "period: England, 2018-2020 / material: chalk, paper, tower, rain"
-  note: "public weather: places entered by timetable, footpath, station exit, and sudden coastline."
+- id: "london"
+  title: "london"
+  axis: "2018-2025 / underground, glass roof, river, signs"
+  note: "public architecture and passing surfaces: the city caught from platforms, bridges, and small exits."
   accent: "stone"
   photos:
-    - src: "/assets/images/photos/london-black-tower-20180707.webp"
-      alt: "A black-and-white London tower rising into cloud."
-      caption: "London, 2018"
+    - src: "/assets/images/photos/atlas-london-station-roof-20190117.webp"
+      alt: "A London train platform under a high arched glass roof."
+      caption: "station roof, 2019"
       slot: "feature"
       width: 1700
-      height: 956
-    - src: "/assets/images/photos/london-river-cloud-20190714.webp"
-      alt: "The London river skyline under a heavy grey cloud bank."
-      caption: "river cloud, 2019"
+      height: 1700
+    - src: "/assets/images/photos/atlas-london-tube-silhouette-20180730.webp"
+      alt: "A silhouetted figure beside a London Underground train."
+      caption: "underground, 2018"
+      slot: "wide"
+      width: 1700
+      height: 954
+    - src: "/assets/images/photos/atlas-london-river-storm-20190714.webp"
+      alt: "London towers across the river under a heavy grey storm cloud."
+      caption: "river storm, 2019"
       slot: "wide"
       width: 1700
       height: 955
-    - src: "/assets/images/photos/london-wall-names-20200122.webp"
-      alt: "A dense wall of printed names and paper slips in London Chinatown."
-      caption: "names on a wall, 2020"
+    - src: "/assets/images/photos/atlas-london-chinatown-names-20200122.webp"
+      alt: "A dense wall of paper slips and printed names in London Chinatown."
+      caption: "names wall, 2020"
       slot: "square"
       width: 1700
       height: 1277
-    - src: "/assets/images/photos/stonehenge-grey-20180811.webp"
-      alt: "Stonehenge under a low grey sky."
-      caption: "Stonehenge, 2018"
-      slot: "wide"
-      width: 1700
-      height: 955
-    - src: "/assets/images/photos/south-coast-woods-20180812.webp"
-      alt: "A green woodland path with filtered light."
-      caption: "south coast path, 2018"
+    - src: "/assets/images/photos/atlas-london-shard-leaves-20250818.webp"
+      alt: "The Shard seen through leaves and London street geometry."
+      caption: "Shard through leaves, 2025"
       slot: "portrait"
-      width: 1700
-      height: 956
-    - src: "/assets/images/photos/uk-coast-dusk-20190828.webp"
-      alt: "A quiet beach at dusk with a long flat horizon."
-      caption: "coast dusk, 2019"
-      slot: "panorama"
-      width: 1700
-      height: 1360
-- id: "return-underexposed"
-  title: "return, underexposed"
-  axis: "period: China and Hong Kong, 2017-2021 / material: concrete, neon, sea air"
-  note: "not a homecoming album; more like light passing through infrastructure and interruption."
+      width: 1214
+      height: 1700
+- id: "china"
+  title: "china"
+  axis: "2017-2025 / Guangzhou, Beijing, Shanghai, Hangzhou, Shanwei"
+  note: "city scale rather than neighbourhood scale: Panyu belongs to Guangzhou; the rest stay at city or coastal-region level."
   accent: "rose"
   photos:
-    - src: "/assets/images/photos/china-mirrored-towers-20170829.webp"
-      alt: "Mirrored towers reflecting a blue sky in China."
-      caption: "before Cambridge, 2017"
+    - src: "/assets/images/photos/atlas-guangzhou-pearl-river-20170808.webp"
+      alt: "The Pearl River in Guangzhou at blue hour with bridge and skyline silhouettes."
+      caption: "Guangzhou, 2017"
       slot: "feature"
       width: 1700
       height: 956
-    - src: "/assets/images/photos/china-bridge-lights-20170912.webp"
-      alt: "A lit bridge and traffic at night."
-      caption: "bridge lights, 2017"
+    - src: "/assets/images/photos/atlas-beijing-great-wall-20200527.webp"
+      alt: "The Great Wall tracing across green hills near Beijing."
+      caption: "Beijing, 2020"
       slot: "wide"
-      width: 1700
-      height: 956
-    - src: "/assets/images/photos/shanghai-night-grid-20180910.webp"
-      alt: "Shanghai seen from high above at night."
-      caption: "Shanghai, 2018"
-      slot: "portrait"
-      width: 1700
-      height: 955
-    - src: "/assets/images/photos/shanghai-residential-facade-20190926.webp"
-      alt: "A residential facade with balconies and street-level shops."
-      caption: "facade, 2019"
-      slot: "wide"
-      width: 1700
-      height: 956
-    - src: "/assets/images/photos/hong-kong-guangzhou-night-bridge-20180922.webp"
-      alt: "A night bridge reflected across water."
-      caption: "night bridge, 2018"
-      slot: "panorama"
-      width: 1700
-      height: 955
-    - src: "/assets/images/photos/guangdong-red-lantern-20200625.webp"
-      alt: "A red lantern hanging beside an old wall in Guangdong."
-      caption: "Guangdong, 2020"
-      slot: "square"
       width: 1700
       height: 957
-    - src: "/assets/images/photos/shanwei-doorway-sea-20200725.webp"
-      alt: "A ruined brick doorway opening onto the sea."
+    - src: "/assets/images/photos/atlas-shanghai-night-grid-20180910.webp"
+      alt: "Shanghai at night from high above, arranged as a dense street grid."
+      caption: "Shanghai, 2018"
+      slot: "wide"
+      width: 1700
+      height: 955
+    - src: "/assets/images/photos/atlas-hangzhou-west-lake-20180915.webp"
+      alt: "Small boats on a quiet Hangzhou lake under pale evening light."
+      caption: "Hangzhou, 2018"
+      slot: "wide"
+      width: 1700
+      height: 956
+    - src: "/assets/images/photos/atlas-shanwei-sea-doorway-20200725.webp"
+      alt: "A ruined brick doorway in Shanwei opening toward the sea."
       caption: "Shanwei, 2020"
       slot: "feature"
       width: 1700
       height: 957
-    - src: "/assets/images/photos/china-grey-sea-birds-20210314.webp"
-      alt: "Small birds over a grey sheet of coastal water."
-      caption: "grey water, 2021"
-      slot: "wide"
+    - src: "/assets/images/photos/atlas-guangzhou-panyu-block-20250104.webp"
+      alt: "An old residential building in Guangzhou under a clean blue sky."
+      caption: "Guangzhou, 2025"
+      slot: "square"
       width: 1700
-      height: 958
-    - src: "/assets/images/photos/china-night-canal-20210315.webp"
-      alt: "A canal and city lights at night."
-      caption: "night canal, 2021"
-      slot: "portrait"
-      width: 1700
-      height: 1129
-- id: "weather-nervous-system"
-  title: "weather with a nervous system"
-  axis: "period: Florida, 2021-2025 / material: rain, heat, birds, soft apocalypse"
-  note: "the daily-life branch of the archive: cloud columns, wet roads, birds, and suburban omens."
+      height: 1133
+- id: "florida-weather"
+  title: "florida weather"
+  axis: "2021-2025 / storms, palms, beach light, live oak"
+  note: "the base years in weather form: clouds treated less like background than like an animal system."
   accent: "sage"
   photos:
-    - src: "/assets/images/photos/florida-palm-sunset-20210611.webp"
-      alt: "Palm trees against a pink and orange Florida sunset."
-      caption: "first Florida light, 2021"
-      slot: "feature"
-      width: 1700
-      height: 956
-    - src: "/assets/images/photos/florida-storm-waterfront-20210930.webp"
+    - src: "/assets/images/photos/atlas-florida-storm-waterfront-20210930.webp"
       alt: "Dark storm clouds over a lit Florida waterfront."
       caption: "waterfront storm, 2021"
-      slot: "panorama"
+      slot: "feature"
       width: 1700
       height: 1275
-    - src: "/assets/images/photos/florida-cloud-column-20220530.webp"
-      alt: "A bright white cloud column against deep blue sky."
+    - src: "/assets/images/photos/atlas-florida-cloud-column-20220530.webp"
+      alt: "A bright white cloud column rising against a saturated blue Florida sky."
       caption: "cloud column, 2022"
       slot: "square"
       width: 1700
       height: 1275
-    - src: "/assets/images/photos/florida-rain-carpark-20230205.webp"
-      alt: "A rain-flooded car park seen through grey weather."
-      caption: "rain on asphalt, 2023"
+    - src: "/assets/images/photos/atlas-florida-storm-beach-20240121.webp"
+      alt: "A dark storm sky over a sparsely occupied Florida beach."
+      caption: "storm beach, 2024"
       slot: "wide"
       width: 1700
-      height: 1275
-    - src: "/assets/images/photos/florida-lit-cloud-palm-20240511.webp"
-      alt: "A gold-lit cloud rising behind palm silhouettes."
+      height: 1133
+    - src: "/assets/images/photos/atlas-florida-lit-cloud-20240511.webp"
+      alt: "A gold-lit Florida cloud rising behind dark palm silhouettes."
       caption: "lit cloud, 2024"
       slot: "wide"
       width: 1700
       height: 1275
-    - src: "/assets/images/photos/florida-egret-sign-20240517.webp"
-      alt: "A white egret standing beside a neighbourhood sign."
-      caption: "egret beside the sign, 2024"
-      slot: "portrait"
-      width: 1275
-      height: 1700
-    - src: "/assets/images/photos/florida-rainbow-20250625.webp"
-      alt: "A rainbow arching over a wet Florida road."
+    - src: "/assets/images/photos/atlas-florida-rainbow-20250625.webp"
+      alt: "A clear rainbow above a wet Florida road."
       caption: "after rain, 2025"
       slot: "wide"
       width: 1700
       height: 1275
-    - src: "/assets/images/photos/florida-bench-garden-20250913.webp"
-      alt: "Two benches in a quiet garden walkway."
-      caption: "garden bench, 2025"
-      slot: "square"
+    - src: "/assets/images/photos/atlas-florida-live-oaks-20250302.webp"
+      alt: "A Florida path under a dense canopy of live oak branches."
+      caption: "live oak path, 2025"
+      slot: "panorama"
       width: 1700
-      height: 1275
-- id: "cities-through-glass"
-  title: "cities seen through glass"
-  axis: "period: crossings, 2019-2025 / material: reflections, stations, towers, wet streets"
-  note: "the city as a surface: something looked through, bounced off, or briefly occupied in transit."
+      height: 1133
+- id: "new-york"
+  title: "new york"
+  axis: "2019-2024 / bridges, museums, gardens, zoo"
+  note: "geometry first, then softness: a city that keeps turning into ribs, stairs, branches, and fur."
   accent: "blue"
   photos:
-    - src: "/assets/images/photos/nyc-vessel-20190411.webp"
+    - src: "/assets/images/photos/atlas-nyc-vessel-20190411.webp"
       alt: "The Vessel in New York seen as a dense stack of angular stairs."
-      caption: "New York, 2019"
+      caption: "Vessel, 2019"
       slot: "feature"
       width: 1700
       height: 955
-    - src: "/assets/images/photos/nyc-bridge-walkway-20190411.webp"
-      alt: "A bridge walkway receding through metal cables."
-      caption: "bridge geometry, 2019"
-      slot: "wide"
+    - src: "/assets/images/photos/atlas-nyc-bridge-walkway-20190411.webp"
+      alt: "A New York bridge walkway receding through cables toward towers."
+      caption: "bridge walkway, 2019"
+      slot: "panorama"
       width: 1700
       height: 956
-    - src: "/assets/images/photos/nyc-oculus-20190411.webp"
-      alt: "The white ribbed interior of the Oculus in New York."
+    - src: "/assets/images/photos/atlas-nyc-oculus-20190411.webp"
+      alt: "The ribbed white interior of the Oculus in New York."
       caption: "Oculus, 2019"
-      slot: "portrait"
+      slot: "wide"
       width: 1700
       height: 956
-    - src: "/assets/images/photos/nyc-red-sky-20230407.webp"
-      alt: "A city street under a saturated red evening sky."
+    - src: "/assets/images/photos/atlas-nyc-red-sky-20230407.webp"
+      alt: "A New York street at dusk under a saturated red sky."
       caption: "red sky, 2023"
-      slot: "wide"
+      slot: "portrait"
       width: 954
       height: 1700
-    - src: "/assets/images/photos/london-thames-shard-20250817.webp"
-      alt: "The Thames and the Shard at dusk."
-      caption: "London return, 2025"
-      slot: "panorama"
-      width: 1700
-      height: 1133
-    - src: "/assets/images/photos/london-shard-through-leaves-20250818.webp"
-      alt: "The Shard seen partly through leaves and street geometry."
-      caption: "Shard through leaves, 2025"
-      slot: "square"
-      width: 1214
-      height: 1700
-    - src: "/assets/images/photos/london-river-skyline-20250818.webp"
-      alt: "A high view of the Thames curving through London."
-      caption: "river curve, 2025"
+    - src: "/assets/images/photos/atlas-nyc-brooklyn-garden-20240405.webp"
+      alt: "A pink flowering tree beside a red torii gate in a New York garden."
+      caption: "Brooklyn garden, 2024"
       slot: "wide"
       width: 1700
-      height: 1133
-- id: "edges-of-walking"
-  title: "edges of walking"
-  axis: "period: farther trips, 2019-2026 / material: salt, rock, cloud, sea"
-  note: "scale pictures: the point where a path, cliff, valley, or horizon turns the body into a measuring device."
+      height: 956
+    - src: "/assets/images/photos/atlas-nyc-red-panda-20230408.webp"
+      alt: "A red panda stretched across branches at Central Park Zoo."
+      caption: "Central Park Zoo, 2023"
+      slot: "wide"
+      width: 1700
+      height: 958
+- id: "farther-out"
+  title: "farther out"
+  axis: "2019-2026 / desert, mountain, coast, old cities"
+  note: "large-scale photographs: places where a path, ridge, valley, or horizon makes the body feel newly small."
   accent: "haze"
   photos:
-    - src: "/assets/images/photos/whitby-pier-storm-20190318.webp"
-      alt: "A dark pier reaching into stormy sea and cloud."
-      caption: "Whitby weather, 2019"
+    - src: "/assets/images/photos/atlas-death-valley-storm-flat-20230110.webp"
+      alt: "A small figure crossing a pale Death Valley flat beneath a dark storm front."
+      caption: "Death Valley, 2023"
       slot: "feature"
       width: 1700
-      height: 955
-    - src: "/assets/images/photos/switzerland-paraglider-cloud-20190904.webp"
-      alt: "A paraglider suspended over a bank of alpine cloud."
-      caption: "above cloud, 2019"
-      slot: "wide"
-      width: 1700
       height: 956
-    - src: "/assets/images/photos/switzerland-glacier-valley-20190904.webp"
-      alt: "A glacier valley dropping away between mountain walls."
-      caption: "glacier valley, 2019"
-      slot: "wide"
-      width: 1700
-      height: 956
-    - src: "/assets/images/photos/italy-cliff-town-20190625.webp"
-      alt: "A cliffside Italian town above the sea."
-      caption: "cliff town, 2019"
-      slot: "square"
-      width: 1700
-      height: 956
-    - src: "/assets/images/photos/desert-canyon-figure-20230109.webp"
-      alt: "A small figure in a pale desert canyon."
-      caption: "canyon scale, 2023"
-      slot: "portrait"
-      width: 1133
-      height: 1700
-    - src: "/assets/images/photos/salt-flat-walker-20230110.webp"
-      alt: "A lone figure walking across a grey salt flat."
-      caption: "salt-flat distance, 2023"
-      slot: "wide"
-      width: 1700
-      height: 956
-    - src: "/assets/images/photos/jordan-petra-canyon-20250109.webp"
-      alt: "Warm light falling through a narrow Petra canyon."
+    - src: "/assets/images/photos/atlas-jordan-petra-light-20250109.webp"
+      alt: "Warm Petra light seen through a narrow dark canyon opening."
       caption: "Petra, 2025"
-      slot: "feature"
+      slot: "portrait"
       width: 1275
       height: 1700
-    - src: "/assets/images/photos/dead-sea-lamp-20250108.webp"
-      alt: "A round lamp above the Dead Sea horizon."
-      caption: "Dead Sea, 2025"
-      slot: "square"
+    - src: "/assets/images/photos/atlas-jordan-wadi-rum-ridge-20250109.webp"
+      alt: "Two small figures standing on a Wadi Rum rock ridge against blue sky."
+      caption: "Wadi Rum, 2025"
+      slot: "wide"
       width: 1700
-      height: 1275
-    - src: "/assets/images/photos/desert-fog-platform-20260112.webp"
-      alt: "A platform and silhouettes disappearing into desert fog."
-      caption: "fog platform, 2026"
-      slot: "panorama"
+      height: 1360
+    - src: "/assets/images/photos/atlas-scotland-glencoe-valley-20250820.webp"
+      alt: "A steep green Scottish valley with a road curving between mountains."
+      caption: "Glencoe, 2025"
+      slot: "portrait"
+      width: 1214
+      height: 1700
+    - src: "/assets/images/photos/atlas-switzerland-paraglider-cloud-20190904.webp"
+      alt: "A paraglider suspended above alpine cloud in Switzerland."
+      caption: "Swiss Alps, 2019"
+      slot: "wide"
+      width: 1700
+      height: 956
+    - src: "/assets/images/photos/atlas-italy-cliff-town-20190625.webp"
+      alt: "An Italian cliff town stacked above bright sea."
+      caption: "Italian coast, 2019"
+      slot: "wide"
+      width: 1700
+      height: 956
+    - src: "/assets/images/photos/atlas-portugal-lighthouse-20260316.webp"
+      alt: "A Portuguese lighthouse on a headland above the Atlantic at dusk."
+      caption: "Portugal, 2026"
+      slot: "wide"
       width: 1700
       height: 1133
+    - src: "/assets/images/photos/atlas-georgia-caucasus-dusk-20260102.webp"
+      alt: "A wide dusk view over Georgia toward pale mountains on the horizon."
+      caption: "Georgia, 2026"
+      slot: "panorama"
+      width: 1700
+      height: 705
