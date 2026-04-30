@@ -10,9 +10,9 @@ links:
     url: "https://mp.weixin.qq.com/s/rfbpbfc0f3QyMcz7vRYq9w"
 ---
 
-<span class="dropcap">T</span>he shark meat was in my mouth before I remembered that sharks are cartilaginous fish. I chewed twice, crushing the soft bone and swallowing it. The bitter melon added during cooking had left the flesh loose and tender, carrying an astringent trace of bitterness that overpowered the salt of the beef balls and soy sauce.
+<span class="dropcap">T</span>he shark meat was in my mouth before I remembered that sharks are cartilaginous fish. I chewed twice, crushing the soft bone and swallowing it. The bitter melon added during cooking had left the flesh loose and tender, carrying an astringent trace of bitterness that overpowered the salt of the beef tendon balls and soy sauce.
 
-I had never eaten shark meat before. On this trip home I tasted it for the first time, and set foot on an island in Red Bay for the first time. 'Lighthouse Island', the place is called; a name blunt enough to match the half-white column of the lighthouse visible from the shore. My parents and I boarded a speedboat from the coast; the hull cracked against the waves and threw up enormous spray, and I thought about having to wipe my glasses again once we landed.
+I had never tasted shark meat before. On this trip home I tasted it for the first time, and set foot on an island in Red Bay for the first time. 'Lighthouse Island', the place is called; a name blunt enough to match the half-white column of the lighthouse visible from the shore. My parents and I boarded a speedboat from the coast; the hull cracked against the waves and threw up enormous spray, and I thought about having to wipe my glasses again once we landed.
 
 This stretch of home coast has governed nearly everything I understand about the sea. Its wind is my wind, its beaches my beaches, its islands my islands, its fishing boats my boats; so that the first time I visited Brighton, confronting a shore made entirely of pebbles, I did not know what to do with myself. Unlike lake water, the deep blue of the sea does not mirror the sky above it; it constitutes a world of its own, projecting wonder and terror in equal measure. Like dunes, waves have neither beginning nor end. Swells form without warning, carrying their roar into every dream held hostage by this water. This sea is the softest place in my heart.
 
@@ -23,7 +23,7 @@ I still have not learned Teochew. Over the three years of university, using the 
 Everything changes. My slow lips and vocal cords chase the archaic phonemes of Teochew; my older cousins have all graduated from students into employees; Shanwei itself is shedding its fishing-village skin, hotel prices climbing year by year. A Hilton has opened in Red Bay; the city centre has its first Lavande. Nobody knows what this place will look like in ten years. But this sea, this sea will not change; that much everyone knows.
 
 > This sea, this sea will not change.
-{: .pullquote .pullquote--compact}
+> {: .pullquote .pullquote--compact}
 
 *Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/rfbpbfc0f3QyMcz7vRYq9w), July 2020.*
 {: .source-note}

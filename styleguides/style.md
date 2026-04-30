@@ -76,6 +76,8 @@ Preserve Dinghao's syntax magic. Editing should not flatten unusual cadence, sha
 
 Lists should build pressure, not flatten it. When a list prepares a central thesis, order the items so they escalate from obvious formal correspondences toward the ethical or conceptual friction that forces the thesis to appear.
 
+Each clause should advance the argument. Sentences that pile architectural facts plus a list plus a colon plus a thesis into one breath ('Two main tunnels under the Kohnstein, cross-tunnels between them, the SS and the Armaments Ministry turning a mountain into a production system, Dora prisoners forced into the underground economy of the rocket: the historical plant was split from the beginning between engineering diagram and camp system') stack rather than progress. The fix is to break the stack into a sequence of short sentences, each carrying one move. A reader should feel the argument unfold step by step, not have it dumped at them with a colon.
+
 After cutting pull quotes, section breaks, or other scaffolding, remove dangling pointer language. Phrases such as 'that clause', 'this point', or 'the above' should not make the reader reconstruct a deleted visual hinge or scan backward across paragraphs for the referent.
 
 Give major landings air. Two strong claims in immediate succession can blunt each other; a short coda paragraph can let the second image resonate without reopening the argument.

@@ -101,6 +101,21 @@ These are rationed rather than mechanically forbidden. Keep one only when it car
 - `notably`
 - `at the end of the day`
 - empty reaction frames: `what strikes me most`, `what stayed with me`, `what moved me most`, `what I took away`
+- meta-claim openers: `X matters because Y`, `Y hurts because Z`, `This is the novel's exact cruelty`, `The point is not that X`, `And that seems to be the part of Y…`. These announce the move instead of making it.
+- big abstract nouns where a specific one is available: `Empire`, `modernity`, `capitalism`, `history`. Replace with the specific noun the argument actually supports.
+- self-credentialing in serious essays: `My own work makes me X`, `As a [profession] I can confirm Y`. Use first-person for concession or limit, not credential.
+
+## Pre-Publication Repetition Audit
+
+Before publishing a long-form essay, grep for any noun or verb that appears three or more times across adjacent paragraphs and decide whether each instance earns its place. Some repetitions are structural callbacks (the *Solenoid* drawers, the *Gravity's Rainbow* coordinate); most are unconscious tics. The published *Gravity's Rainbow* essay had to drop three of five 'refusal' instances in its closing movement before the word stopped feeling like a verbal shrug. If a word recurs and is not a deliberate callback, vary it.
+
+## External Hyperlinks Inline
+
+Long-form review-essays should hyperlink referenced concepts, places, events, and works at the moment they appear in the prose, not only in the source note. The *Solenoid* essay links the Cărtărescu interviews, Hooyman's labyrinth, and Perelmuter's counterfactual reading inline at the moment of need. The *Gravity's Rainbow* essay links Mittelwerk, the dodo myth, the Herero/Nama conflict, the integrating accelerometer, and Mendelson's 'Encyclopedic Narrative' inline. The source note then collects what was actually used. This is not just citation; it is courtesy to the reader who wants to follow a specific reference without scanning the bottom of the page.
+
+## Source Note Opening
+
+A long-form source note should open with the outside source most useful to the prose, not with edition data or a 'read in' framing. The *Gravity's Rainbow* source note opens with Riewald's math gloss because the rocket's double integration is what the essay leans hardest on. Reserve primary-edition mentions for cases where edition, translation, or original-publication year materially affects a visible claim. 'Read in the Penguin Classics deluxe edition (2012)' is filler; cut it.
 
 ## Em Dashes And Punctuation Rhythm
 
