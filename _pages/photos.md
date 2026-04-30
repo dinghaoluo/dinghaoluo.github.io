@@ -86,11 +86,7 @@ classes: photos-page
 <div class="photo-atlas" aria-label="Curated photo atlas">
   {% for section in site.data.photos %}
     {% assign section_index = forloop.index %}
-    {% assign photo_loading = 'lazy' %}
-    {% if section_index == 1 %}
-      {% assign photo_loading = 'eager' %}
-    {% endif %}
-    <section id="{{ section.id }}" class="photo-section photo-section--{{ section.accent | default: 'clay' }}">
+    <section id="{{ section.id }}" class="photo-section photo-section--{{ section.accent | default: 'clay' }}{% if section.layout %} photo-section--{{ section.layout }}{% endif %}">
       <aside class="photo-section__note" aria-labelledby="{{ section.id }}-title">
         <span class="photo-section__index">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
         <h2 id="{{ section.id }}-title">{{ section.title }}</h2>
@@ -100,12 +96,16 @@ classes: photos-page
 
       <div class="photo-cluster">
         {% for photo in section.photos %}
+          {% assign frame_loading = 'lazy' %}
+          {% if section_index == 1 and forloop.index == 1 %}
+            {% assign frame_loading = 'eager' %}
+          {% endif %}
           <figure class="photo-frame photo-frame--{{ photo.slot | default: 'wide' }}">
             <img src="{{ photo.src | relative_url }}"
                  alt="{{ photo.alt | escape }}"
                  width="{{ photo.width }}"
                  height="{{ photo.height }}"
-                 loading="{{ photo_loading }}"
+                 loading="{{ frame_loading }}"
                  decoding="async"{% if section_index == 1 and forloop.index == 1 %}
                  fetchpriority="high"{% endif %}>
             <figcaption>{{ photo.caption }}</figcaption>

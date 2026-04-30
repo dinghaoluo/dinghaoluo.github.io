@@ -5674,6 +5674,42 @@ body.photos-page {
   .photo-section:nth-child(3n) .photo-frame--square {
     grid-column: span 2;
   }
+  .photo-section--scroll .photo-cluster {
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(12rem, 22rem);
+    grid-template-columns: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 0.6rem;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scrollbar-width: thin;
+  }
+
+  .photo-section--scroll .photo-frame {
+    scroll-snap-align: start;
+  }
+
+  .photo-section--scroll .photo-frame--feature,
+  .photo-section--scroll .photo-frame--wide,
+  .photo-section--scroll .photo-frame--panorama,
+  .photo-section--scroll .photo-frame--portrait,
+  .photo-section--scroll .photo-frame--square,
+  .photo-section--scroll:nth-child(2n) .photo-frame--feature,
+  .photo-section--scroll:nth-child(3n) .photo-frame--square {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .photo-section--scroll .photo-frame--feature,
+  .photo-section--scroll .photo-frame--panorama {
+    aspect-ratio: 4 / 3;
+  }
+
+  .photo-section--scroll .photo-frame--portrait {
+    grid-row: span 2;
+    aspect-ratio: 4 / 5;
+  }
 
   @media (max-width: 960px), (orientation: portrait) {
     .photos-intro {
@@ -5737,20 +5773,15 @@ body.photos-page {
       padding-left: 1rem;
       padding-right: 1rem;
     }
-
     .photos-intro,
-    .photo-section,
-    .photo-section__note,
-    .photo-cluster {
-      width: 21.4rem;
-      max-width: 100%;
-    }
-
     .photo-map-panel,
     .photo-map-grid,
     .photo-map-card,
-    .photo-map-plate {
-      width: 21.4rem;
+    .photo-map-plate,
+    .photo-section,
+    .photo-section__note,
+    .photo-cluster {
+      width: 100%;
       max-width: 100%;
     }
 
@@ -5837,6 +5868,10 @@ body.photos-page {
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 0.38rem;
     }
+    .photo-section--scroll .photo-cluster {
+      grid-auto-columns: minmax(10.6rem, 78vw);
+      grid-template-columns: none;
+    }
 
     .photo-frame--feature,
     .photo-frame--wide,
@@ -5853,6 +5888,25 @@ body.photos-page {
     .photo-frame--panorama {
       grid-column: 1 / -1;
       aspect-ratio: 4 / 3;
+    }
+    .photo-section--scroll .photo-frame--feature,
+    .photo-section--scroll .photo-frame--wide,
+    .photo-section--scroll .photo-frame--panorama,
+    .photo-section--scroll .photo-frame--portrait,
+    .photo-section--scroll .photo-frame--square,
+    .photo-section--scroll:nth-child(2n) .photo-frame--feature,
+    .photo-section--scroll:nth-child(3n) .photo-frame--square {
+      grid-column: auto;
+      grid-row: auto;
+    }
+
+    .photo-section--scroll .photo-frame--feature,
+    .photo-section--scroll .photo-frame--panorama {
+      aspect-ratio: 4 / 3;
+    }
+
+    .photo-section--scroll .photo-frame--portrait {
+      aspect-ratio: 4 / 5;
     }
 
     .photo-frame figcaption {
