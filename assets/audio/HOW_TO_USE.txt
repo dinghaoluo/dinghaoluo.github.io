@@ -2,6 +2,14 @@ Custom waveform audio player — setup steps
 ============================================
 
 1. Place MP3 files here with these exact filenames:
+   pre-album tracks:
+   - pre_album_20180420_sainsburys_coffee.mp3
+   - pre_album_20180426_bitter_sweet_symphony_cover.mp3
+   - pre_album_20180609_sedative.mp3
+   - pre_album_20180801_surrender.mp3
+   - pre_album_20181225_project_6.mp3
+
+   The Maze:
    - the_maze.mp3
    - the_rain_on_the_cam.mp3
    - reflections.mp3

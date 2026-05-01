@@ -3,7 +3,7 @@ title: "Against Existence"
 title_zh: "對抗存在"
 category: "journal"
 date: 2019-05-01
-excerpt: "Photography as individual resistance, music as collective surrender, and the question of what a life without communication collapses into."
+excerpt: "Photography becomes individual resistance and music becomes collective surrender, and the question remains of what a life without communication collapses into."
 image: /assets/images/personal/against-existence.webp
 ---
 
@@ -15,7 +15,7 @@ That summer I became acutely sensitive to smells and went out of my way to avoid
 
 Only later did I understand that photography and music had become a process of resisting my own existence. To prevent a life stripped of communication from collapsing, one tries everything. My methods at the time were photography and music. I travelled in order to take photographs, mostly with my phone rather than a camera; the aim was to record a state that could not be transmitted. A photographer with two dogs on the coast, the highland mountains: the meaning these things held for me could never be communicated to a second person. The perspective is postmodern enough: my viewpoint is mine, and no matter how hard I try, it can only ever be mine. It emphasises a particular *situatedness*, akin to Heidegger's concept of thrownness: we can never stand fully in another's position. The states I recorded were ultimately not for sharing, but for my own retrospective encounter with past memory. This recording is the individuality of existence.
 
-Music was the other side of this resistance. Music is collectivity. Music makes one overcome fear and stand at the centre of a crowd, declaring the surrender of one's individual self. At a Twenty One Pilots gig in London a while ago, a boy beside me had brought his father along. Before the show started, the boy aimed his phone's flashlight at the far side of the arena; when he saw people over there flash back, he jumped with excitement. Within minutes, a dozen flashlights were pulsing across both sides. The feeling is similar at every gig: an involuntary echo of Rousseau's social contract, trading one's freedom for society's protection. In music the exchange is different: one trades one's individuality for freedom, and receives in return a sense of immersion, a strange satisfaction in the knowledge that 'I do not matter.'
+Music was the other side of this resistance. Music is collectivity. Music makes one overcome fear and stand at the centre of a crowd, declaring the surrender of one's individual self. At a Twenty One Pilots gig in London a while ago, a boy beside me had brought his father along. Before the show started, the boy aimed his phone's flashlight at the far side of the arena; when he saw people over there flash back, he jumped with excitement. Within minutes, a dozen flashlights were pulsing across both sides. The feeling is similar at every gig: an involuntary echo of Rousseau's social contract, trading one's freedom for society's protection. In music the exchange is different: one trades one's individuality for freedom, and receives in return a sense of immersion, a strange satisfaction in the knowledge that 'I do not matter'.
 
 
 This state continued for a while. Only recently have I begun, consciously, to try again to talk to people who are not yet friends. How long this effort, perhaps futile, will last, I do not know.

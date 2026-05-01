@@ -183,6 +183,26 @@ Treat [_writing/shanwei.md](../_writing/shanwei.md) as the canonical journal-mod
 
 - 'This sea is the softest place in my heart' is the kind of sentence that would be unearned in a review-essay. It is earned here because the preceding paragraphs have grounded it in specific water, specific waves, specific dunes, and a specific Brighton confusion. Journal mode allows direct emotional statement when the surrounding detail has done the grounding.
 
+## Catalogue Film Review Reference: *The Drama*
+
+The *Drama* review in `_data/thoughts.yml` (April 2026) is the canonical reference for a medium-length film catalogue review. It demonstrates principles that the long-form references (*Solenoid*, *Gravity's Rainbow*) and the journal reference (*Shanwei*) do not exercise: first-person thinking-aloud voice in a catalogue entry, inductive scene description that earns analytical verdicts, and extension from a specific scene to a broader cultural argument.
+
+### What To Notice
+
+- **First-person presence throughout.** 'One central scene exemplifies what I am trying to get at'; 'This is what I meant by "the social machinery that processes thought crimes"'. The reviewer is visibly thinking, not delivering settled verdicts.
+- **Epistemic hedging as voice.** 'What interests Borgli, it seems' — not 'What interests Borgli'. 'Probably nobody thinks to care about why' — the 'probably' is both honest (can't know) and sardonic (doesn't need to know). These are distinct from filler hedges.
+- **Inductive structure.** P1 frames the thesis (thought crimes, social machinery) without cashing it out. P2 walks through the confessions game chronologically — characters are introduced through their actions, not listed. The analytical payoff arrives in P3, after the evidence. No backtracking, no conclusion-then-justification.
+- **Characters introduced through action.** 'Mike admits he once used his ex-girlfriend as a human shield'; 'Rachel follows, recounting with disarming levity how as a child she lured a disabled boy into a trailer'. Each character enters at the moment of their confession. The escalation (punchline → horror-as-punchline → evasion → devastating honesty) does argumentative work.
+- **Parenthetical asides doing analytical work.** '(she did not even tell others where the boy was when asked; "out of fear", she said)' — the casual delivery of a horrifying detail, with Rachel's own quoted words damning her. '(a cousin of hers was paralysed in a shooting)' — personal context underplayed for force.
+- **Self-referential callback.** P3 opens: 'This is what I meant by "the social machinery that processes thought crimes", and it extends well beyond Rachel.' The quoted phrase returns from P1 at the moment the scene has made it concrete.
+- **Extend, don't summarise.** P3 does not restate P2's scene; it extends outward: from the dinner table to 'how contemporary American culture processes gun violence at large', to the performance of outrage as self-absolution, to the systemic absence of care. Each move goes further.
+- **Rhetorical question as absent inquiry.** 'Why poke at *the System* when one can comfortably sit in their own moral-highground bubble, protected by that same *System*?' — sardonic ventriloquism of the evasion the review diagnoses.
+- **Underline placement.** Two underlined sentences, both earning their place: general enough to transcend the specific film, insightful enough that the observation is genuinely sharp. A third candidate ('The person who proposed the game...') was de-underlined because 'anybody can make this observation'.
+- **Anti-academic diction.** No psychoanalytic labels, no film-theory jargon. 'She converts the guilt she cannot face inwards into outrage she can direct outwards' IS displacement, described without naming it.
+- **Italics for emphasis and ironic distance.** '*never carried out*' turns the phrase into an accusation; '*the System*' is held at arm's length.
+- **Intensifier as contempt.** 'So much easier' rather than 'easier' — the disparity is grotesque, and the intensifier carries that.
+- **No 'liberal' as culture-critique label.** 'Contemporary American culture', not 'contemporary American liberal culture' — the critique comes from the left, not from the centre.
+
 ## Chinese Sample Notes
 
 Chinese examples should be taken from the live review corpus when possible, especially:
@@ -190,11 +210,13 @@ Chinese examples should be taken from the live review corpus when possible, espe
 - Long analytical game reviews with explicit section architecture.
 - Lyrical reviews built through repetition and image accumulation.
 - Short Douban book reviews with compact pivots, code-switching, and wry closing notes.
+- Douban film reviews: single-paragraph chain-building mode (세계의 주인, 聖蛛) and multi-paragraph analytical mode (Kinds of Kindness, The Drama).
 
 What to notice:
 
 - Analytical mode: systematic structure, claims supported by specific mechanics, clear section logic.
 - Lyrical mode: parallelism, repetition, and image accumulation carry the argument.
 - Book-review mode: compressed, no headers, strong pivot vocabulary, concise closing.
+- Film-review mode: argument builds as a single chain to a formal or emotional landing; illustrative dialogue in parentheses voices social attitudes rather than naming them; code-switching to English for emotional/conceptual terms and full phrases when tonal precision demands it.
 - Code-switching: English terms sit naturally inside Chinese syntax when they preserve precision or tone.
 - Emotional force comes from structure, not adjective accumulation.

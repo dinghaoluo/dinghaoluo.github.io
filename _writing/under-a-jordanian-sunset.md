@@ -4,7 +4,7 @@ title_zh: "約旦落日下，歷史微弱迴響"
 category: "journal"
 date: 2025-01-16
 dropcap: true
-excerpt: "Amman's Roman ruins, Petra's red stone, Wadi Rum at dawn, and history gathering into a faint echo."
+excerpt: "From Amman's Roman ruins to Petra's red stone and Wadi Rum at dawn, history gathers into a faint echo."
 ---
 
 <span class="dropcap">T</span>o walk from downtown Amman to the ruins of the Roman citadel, one has to climb several slopes that are not especially easy. People's houses crowd thickly along them. Now and then a cat darts out, slips lightly past our feet, and vanishes into the shadow of a wall. It is low season, with few tourists. The people moving up and down the slope are people inside ordinary life: groups of three or five carrying gas canisters; others holding fresh fruit and vegetables; children running past in packs, laughing and talking. A few stopped suddenly in front of us, eyes wide, and tried out a halting 'ni hao' in Chinese. Their childish voices carried some part of the old city's vitality.

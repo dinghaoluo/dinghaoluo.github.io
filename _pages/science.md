@@ -20,7 +20,7 @@ Manuscript in preparation.
 
 A mouse running through a cue-free virtual corridor has to estimate when the hidden reward zone is near. There are no landmarks to lean on, so the animal has to integrate self-motion: how long it has been running, how far it has travelled, and when a reward-seeking lick should begin.
 
-My PhD asks how the brain puts that computation into the right state. The project points to a compact answer: phasic activity in the locus coeruleus (LC) produces a fast, local dopamine signal in hippocampal CA1, and that signal biases CA1 population dynamics toward a run-onset **PyrUp** state.
+My PhD asks how the brain puts that computation into the right state. The project points to a compact answer: phasic activity in the locus coeruleus (LC) produces a fast, local dopamine signal in hippocampal CA1, and that signal biases CA1 population dynamics toward a run-onset **PyrUp** state, a population pattern linked to the start of goal-directed running.
 
 ## what we found
 

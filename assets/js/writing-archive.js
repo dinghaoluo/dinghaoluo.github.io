@@ -316,11 +316,9 @@
       movePill(strip.querySelector('.writing-filter-btn.active'));
     });
 
-    setTimeout(function () {
-      movePill(strip.querySelector('.writing-filter-btn.active'));
-      applyFilter({ keepOrder: shuffled });
-      updateSearchClear();
-    }, 80);
+    movePill(strip.querySelector('.writing-filter-btn.active'));
+    applyFilter({ keepOrder: shuffled });
+    updateSearchClear();
   }
 
   if (document.readyState === 'loading') {

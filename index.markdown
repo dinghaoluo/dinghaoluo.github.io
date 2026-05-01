@@ -6,28 +6,68 @@ classes: home
 
 *Hi, Dinghao here :)*
 
-I'm finishing my PhD in neuroscience at the [Max Planck Florida Institute for Neuroscience](https://www.mpfi.org), studying how rapid locus coeruleus dopamine signals tune hippocampal dynamics during memory-guided navigation. I am graduating in December 2026 and looking for data science roles in Europe.
+I'm finishing my PhD in neuroscience at the Max Planck Florida Institute for Neuroscience, studying how a small brainstem nucleus uses dopamine to shape memory in the hippocampus. I'm graduating in December 2026 and looking for data science roles in Europe.
 
 Recently I've been reading *Mason & Dixon* (1997), learning SQL and intermediate machine learning, and working on a computational analysis of Pynchon's *Gravity's Rainbow*.
 
-Reach out to me: <a href="mailto:dinghao.luo@outlook.com">[dinghao.luo@outlook.com]</a><br>Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.com/user/amoxdl24/) · [Instagram](https://www.instagram.com/amoxitoxin) · [LinkedIn](https://www.linkedin.com/in/dinghaoluo/) · [CV](/cv/)
+Reach out to me: <a href="mailto:dinghao.luo@outlook.com" class="site-nav-link">[dinghao.luo@outlook.com]</a><br>Find me: <a href="https://github.com/dinghaoluo" class="site-nav-link">GitHub</a> · <a href="https://www.reddit.com/user/amoxdl24/" class="site-nav-link">Reddit</a> · <a href="https://www.instagram.com/amoxitoxin" class="site-nav-link">Instagram</a> · <a href="https://www.linkedin.com/in/dinghaoluo/" class="site-nav-link">LinkedIn</a> · <a href="/cv/" class="site-nav-link">CV</a>
 
 ---
 
 <h2 id="writing"><a href="/writing/">writing :)</a></h2>
 
-Writing, along with reading, was one of my first true passions. Like many kids, I kept a journal as I grew up, and the advent of the Internet age allowed me to transform things I wrote in my journal into an online repository. I wrote under the pen-name `amoxitoxin` in Chinese since I was 15, and have translated selected pieces into English, which can be found on the *writing* page.
+Writing, along with reading, was one of my first true passions. Like many kids, I kept a journal as I grew up, and the advent of the Internet age allowed me to transform things I wrote in my journal into an online repository. I wrote under the pen-name `amoxitoxin` in Chinese since I was 15, and have translated selected pieces into English, which can be found on the <a href="/writing/" class="site-nav-link">writing</a> page. Here are some of the pieces of which I am proudest:
 
-Since my undergraduate years at Cambridge, however, and now through my PhD, I have written mostly about science. I was one of the founding members of [**Neu-Reality**](https://neu-reality.com/) (神经现实), a Chinese-language neuroscience and philosophy platform, and spent three years as science editor and translator there. After that were seven months at <a href="https://www.huanqiukexue.com/"><strong><em>Scientific American</em> China</strong></a>, where I wrote weekly news, edited translations of each month's *SciAm* magazine, and finished [a print feature](/writing/arc-consciousness/) on [Templeton World Charity Foundation's Accelerating Research on Consciousness (ARC) initiative](https://www.templetonworldcharity.org/our-priorities/discovery/accelerating-research-consciousness), interviewing researchers like Cyriel Pennartz and Anil Seth.
+<div class="home-writing-shelf" aria-label="featured writing">
+  <a class="home-writing-tile home-writing-tile--gravity" href="/writing/gravitys-rainbow/" aria-label="Fires a Calculation; Hits a Coordinate: On Gravity's Rainbow">
+    <img class="home-writing-tile__image" src="/assets/images/writing/gravitys_rainbow_hardcover.jpg" alt="" loading="lazy">
+    <span class="home-writing-tile__glass">
+      <span class="home-writing-tile__kicker">review</span>
+      <span class="home-writing-tile__title">On <em>Gravity's Rainbow</em>:<br><span class="home-writing-tile__title-subtitle">Fires a Calculation; Hits a Coordinate</span></span>
+    </span>
+  </a>
+  <a class="home-writing-tile home-writing-tile--place-cells" href="/writing/place-cells/" aria-label="Just One Centimetre Deeper: Place Cells and the Brain's Cartography">
+    <img class="home-writing-tile__image" src="/assets/images/writing/place-cells-hippocampus-cleaned.jpg" alt="" loading="lazy">
+    <span class="home-writing-tile__glass">
+      <span class="home-writing-tile__kicker">science</span>
+      <span class="home-writing-tile__title">Just One Centimetre Deeper: <span class="home-writing-tile__title-subtitle">Place Cells and the Brain's Cartography</span></span>
+    </span>
+  </a>
+  <a class="home-writing-tile home-writing-tile--freedoms" href="/writing/two-freedoms/" aria-label="Two Freedoms">
+    <img class="home-writing-tile__image" src="/assets/images/personal/two-freedoms.webp" alt="" loading="lazy">
+    <span class="home-writing-tile__glass">
+      <span class="home-writing-tile__kicker">journal</span>
+      <span class="home-writing-tile__title">Two Freedoms</span>
+      <span class="home-writing-tile__title-zh" lang="zh-Hant">兩種自由</span>
+    </span>
+  </a>
+  <a class="home-writing-tile home-writing-tile--solenoid" href="/writing/solenoid/" aria-label="Nothing Is Strange to a Child: On Solenoid">
+    <img class="home-writing-tile__image" src="/assets/images/writing/solenoid.jpg" alt="" loading="lazy">
+    <span class="home-writing-tile__glass">
+      <span class="home-writing-tile__kicker">review</span>
+      <span class="home-writing-tile__title">On <em>Solenoid</em>:<br><span class="home-writing-tile__title-subtitle">Nothing Is Strange to a Child</span></span>
+    </span>
+  </a>
+  <a class="home-writing-tile home-writing-tile--shanwei" href="/writing/shanwei/" aria-label="Shanwei">
+    <img class="home-writing-tile__image" src="/assets/images/personal/shanwei.webp" alt="" loading="lazy">
+    <span class="home-writing-tile__glass">
+      <span class="home-writing-tile__kicker">journal</span>
+      <span class="home-writing-tile__title">Shanwei</span>
+      <span class="home-writing-tile__title-zh" lang="zh-Hant">汕尾</span>
+    </span>
+  </a>
+</div>
+
+Since my undergraduate years at Cambridge, however, and now through my PhD, I have written mostly about science. I was one of the founding members of Neu-Reality (神经现实), a Chinese-language neuroscience and philosophy platform, and spent three years as science editor and translator there. After that were seven months at *Scientific American* China, where I wrote weekly news, edited translations of each month's *SciAm* magazine, and finished <a href="/writing/arc-consciousness/" class="site-nav-link">a print feature</a> on Templeton World Charity Foundation's Accelerating Research on Consciousness (ARC) initiative, interviewing researchers like Cyriel Pennartz and Anil Seth.
 
 <figure class="home-writing-award">
   <img src="/assets/images/writing/entangled-life-pingshan-award.jpg" alt="The Chinese edition of Entangled Life displayed with the Pingshan Natural History Museum Book Award certificate." loading="lazy">
   <figcaption>Pingshan Natural History Museum Book Award, 2025.</figcaption>
 </figure>
 
-My longest writing project was translating Merlin Sheldrake's ***Entangled Life*** into Chinese ([《菌络万象》](/writing/#entangled-life)), taking a total of 2 years as I was juggling my PhD experiments and analyses on the side. The efforts paid off, luckily: the Chinese translation is widely loved ([8.7/10 on Douban](https://book.douban.com/subject/37088268/)), and won the [2025 Pingshan Natural History Museum Book Award](https://m.sohu.com/a/970954278_122097022) amongst others. I also did a very fun [interview with Sheldrake](/writing/entangled-life/) after the publication of the Chinese edition.
+My longest writing project was translating Merlin Sheldrake's ***Entangled Life*** into Chinese ([《菌络万象》](https://www.amazon.com/dp/7559677754)), taking a total of 2 years as I was juggling my PhD experiments and analyses on the side. The Chinese edition is widely loved ([8.7/10 on Douban](https://book.douban.com/subject/37088268/)) and won the 2025 Pingshan Natural History Museum Book Award amongst others. I sat down with Sheldrake afterwards for <a href="/writing/entangled-life/" class="site-nav-link">a conversation about fungi, translation, and strangeness</a>.
 
-[→ writing & translation](/writing/)
+<a href="/writing/" class="site-nav-link">→ writing</a>
 
 ---
 
@@ -84,7 +124,7 @@ Games are where the systems part of my brain gets least restrained: maps, loops,
 
 <h2 id="science"><a href="/science/">science :)</a></h2>
 
-My PhD asks how the brain starts a memory-guided action when landmarks are absent. In a virtual-reality navigation task, mice have to estimate elapsed time or distance before initiating reward seeking; I study how phasic LC dopamine signals in hippocampal CA1 tune that computation on the scale of seconds and micrometres. The work combines electrophysiology, optogenetics, two-photon dopamine and calcium imaging, behavioural analysis, **Python** pipelines, and computational modelling. A manuscript is in preparation. Before this I was in the Paulsen lab at Cambridge, where my undergraduate thesis looked at dopamine's role in CA3-CA1 synaptic plasticity.
+My PhD asks how the brain starts a memory-guided action when landmarks are absent, and how a fast dopamine signal from the brainstem puts the hippocampus into the right state to make that decision. The work combines electrophysiology, optogenetics, two-photon dopamine and calcium imaging, behavioural analysis, **Python** pipelines, and computational modelling. A manuscript is in preparation. Before this I was in the Paulsen lab at Cambridge, where my undergraduate thesis looked at dopamine's role in CA3-CA1 synaptic plasticity.
 
 <div class="home-science-strip" aria-label="Science photos">
   <figure class="home-science-card">
@@ -101,7 +141,7 @@ My PhD asks how the brain starts a memory-guided action when landmarks are absen
   </figure>
 </div>
 
-[→ science](/science/)
+<a href="/science/" class="site-nav-link">→ science</a>
 
 ---
 
@@ -114,7 +154,7 @@ My PhD asks how the brain starts a memory-guided action when landmarks are absen
   <div class="home-featured-album__info">
     <span class="home-featured-album__title">amoxitoxin</span>
     <p class="home-featured-album__desc">One-person prog and art-rock. The first album, 迷宮 (<em>The Maze</em>), was written during two years in Cambridge — five tracks and a bonus coda in English and Mandarin, somewhere between Pink Floyd and Haken.</p>
-    <a href="https://amoxitoxin.bandcamp.com/" class="home-featured-album__link">Bandcamp</a> · <a href="/music/" class="home-featured-album__link">listen here</a>
+    <a href="https://amoxitoxin.bandcamp.com/" class="home-featured-album__link">Bandcamp</a> · <a href="/music/" class="home-featured-album__link site-nav-link">listen here</a>
   </div>
 </div>
 
@@ -125,7 +165,7 @@ My PhD asks how the brain starts a memory-guided action when landmarks are absen
 
 I listen to far more than I make, which is probably healthy: prog, jazz fusion, Canterbury scene, metal, and whatever else pulls me in on a given week. There are album reviews here too, several hundred of them, covering everything from King Crimson to Keor to 万能青年旅店.
 
-[→ music](/music/)
+<a href="/music/" class="site-nav-link">→ music</a>
 
 ---
 
@@ -133,10 +173,10 @@ I listen to far more than I make, which is probably healthy: prog, jazz fusion, 
 
 Photographs from fieldwork, travel, and the small daily-life moments that made me stop walking. Mostly shot on a Fujifilm X-T4; nothing staged, nothing filtered.
 
-[→ photos](/photos/)
+<a href="/photos/" class="site-nav-link">→ photos</a>
 
 ---
 
 <h2 id="other-stuff">other stuff :)</h2>
 
-There is a [CV](/cv/) if you need one. I am also building [the Zone](https://github.com/dinghaoluo/the_zone_site), a computational companion to *Gravity's Rainbow*: maps, character networks, and cross-reference tools for a book that refuses to stay on the page. After seven Pynchon novels, I am still finding new threads.
+There is a <a href="/cv/" class="site-nav-link">CV</a> if you need one. I am also building [the Zone](https://github.com/dinghaoluo/the_zone_site), a computational companion to *Gravity's Rainbow*: maps, character networks, and cross-reference tools for a book that refuses to stay on the page. After seven Pynchon novels, I am still finding new threads.

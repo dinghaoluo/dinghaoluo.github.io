@@ -3,7 +3,7 @@ title: "Shaking Hands with Humans"
 title_zh: "与人类握手"
 category: "journal"
 date: 2018-08-31
-excerpt: "On trusting easily, a cider called Pink Floyd, and the octopus that reached out."
+excerpt: "On trusting easily, drinking a cider called Pink Floyd, and the octopus that reached out."
 image: /assets/images/personal/shaking-hands-with-humans.webp
 ---
 

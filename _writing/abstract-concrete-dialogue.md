@@ -4,7 +4,7 @@ title_zh: "抽象和具体，我要和后者对话"
 category: "essay"
 date: 2022-06-11
 dropcap: true
-excerpt: "The Christmas Truce, Dark Souls duels, deindividuation, and the hard work of speaking to concrete people rather than abstract enemies."
+excerpt: "The Christmas Truce, Dark Souls duels, and deindividuation converge on the hard work of speaking to concrete people rather than abstract enemies."
 ---
 
 <span class="dropcap">A</span>lthough I have heard it countless times, I still feel a strange surge of emotion whenever someone mentions the Christmas Truce between British and German troops during the First World War in 1914. Over the years I have seen many new clues, read reconstructed diaries from soldiers on both sides, and heard different interpretations of the event. But many things that have happened recently keep bringing me back to that century-old Christmas. The British National Archives preserve some of the soldiers' wartime diaries, and several entries have stayed with me. Graham Williams of the Fifth London Rifle Brigade wrote:

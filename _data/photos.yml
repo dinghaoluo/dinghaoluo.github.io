@@ -772,10 +772,10 @@
       width: 1700
       height: 957
 -
-  id: "pearl-river-delta"
-  title: "pearl river delta"
-  axis: "2017-2025 / Guangzhou, Hong Kong, Shenzhen, Zhuhai"
-  note: "Guangzhou is the centre of gravity here; Hong Kong, Shenzhen, and Zhuhai stay nearby as river, harbour, glass, and humid high-rise edges."
+  id: "southern-china"
+  title: "southern china"
+  axis: "2017-2021 / Guangzhou, Chongqing, river cities, coast"
+  note: "Everything south of Beijing and Jilin now stays in one China chapter: Guangzhou holds the tower sequence, while Chongqing, Hong Kong, Shenzhen, Zhuhai, Huazhou, Shanwei, Xiamen, Hangzhou, and Shanghai extend the humid southern field."
   accent: "rose"
   layout: "delta"
   photos:
@@ -809,13 +809,6 @@
       width: 1700
       height: 955
 
-    -
-      src: "/assets/images/photos/atlas-guangzhou-two-towers-dark-2017-bea65760.webp"
-      alt: "Two Guangzhou towers disappearing into a dark storm ceiling."
-      caption: "guangzhou, 2017"
-      slot: "tower-dark"
-      width: 1700
-      height: 955
     -
       src: "/assets/images/photos/atlas-guangzhou-flowering-tree-2017-d533b575.webp"
       alt: "A flowering Guangzhou tree against a pale sky."
@@ -952,14 +945,6 @@
       slot: "wide"
       width: 1700
       height: 957
--
-  id: "elsewhere-in-china"
-  title: "wider china"
-  axis: "2018-2021 / Chongqing, Huazhou, Shanwei, Xiamen, Hangzhou, Shanghai"
-  note: "These are not Pearl River Delta photographs: Chongqing's vertical fog, Hangzhou's reading rooms and smoke, Shanwei's coast, Xiamen's courtyards, Huazhou interiors, and a single Shanghai facade sit in their own chapter."
-  accent: "rose"
-  layout: "scroll"
-  photos:
     -
       src: "/assets/images/photos/atlas-chongqing-cable-fog-2020-897cc33f.webp"
       alt: "A Chongqing cable car cutting through fog between buildings."
@@ -2255,8 +2240,8 @@
 -
   id: "georgia"
   title: "georgia"
-  axis: "2025-2026 / Tbilisi and Mtskheta"
-  note: "The Georgia material gathers Tbilisi's lit urban surfaces and the winter church-road material around Mtskheta."
+  axis: "2025-2026 / Tbilisi and Kakheti"
+  note: "The Georgia material gathers Tbilisi's lit urban surfaces and the winter church-road material around Kakheti."
   accent: "clay"
   layout: "scroll"
   photos:
@@ -2334,57 +2319,57 @@
     -
       src: "/assets/images/photos/atlas-caucasus-jvari-approach-2026-0d518f0b.webp"
       alt: "A person approaching a hilltop monument in Georgia."
-      caption: "mtskheta, 2026"
+      caption: "kakheti, 2026"
       slot: "portrait"
       width: 1700
       height: 1700
-      anchor: "mtskheta"
+      anchor: "kakheti"
     -
       src: "/assets/images/photos/atlas-caucasus-river-overlook-2026-180ebda1.webp"
       alt: "A river valley overlook in Georgia under grey sky."
-      caption: "mtskheta, 2026"
+      caption: "kakheti, 2026"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-caucasus-church-candles-2026-f824450c.webp"
       alt: "Church candles and a book in warm Georgian interior light."
-      caption: "mtskheta, 2026"
+      caption: "kakheti, 2026"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-caucasus-lone-tree-2026-e959123e.webp"
       alt: "A lone tree on a grey Georgian hillside."
-      caption: "mtskheta, 2026"
+      caption: "kakheti, 2026"
       slot: "portrait"
       width: 1360
       height: 1700
     -
       src: "/assets/images/photos/atlas-caucasus-chandelier-beam-2026-72bb1998.webp"
       alt: "A dark Georgian church interior with a shaft of light."
-      caption: "mtskheta, 2026"
+      caption: "kakheti, 2026"
       slot: "poster"
       width: 1132
       height: 1700
     -
       src: "/assets/images/photos/atlas-caucasus-icon-corner-2026-db0bdd1a.webp"
       alt: "An icon corner inside a Georgian church."
-      caption: "mtskheta, 2026"
+      caption: "kakheti, 2026"
       slot: "portrait"
       width: 1132
       height: 1700
     -
       src: "/assets/images/photos/atlas-caucasus-snow-village-2026-a3620ce4.webp"
       alt: "A Georgian village street with snowy mountains beyond."
-      caption: "mtskheta, 2026"
+      caption: "kakheti, 2026"
       slot: "portrait"
       width: 1133
       height: 1700
     -
       src: "/assets/images/photos/atlas-caucasus-winter-cross-2026-5d8114ad.webp"
       alt: "A cross and winter field at sunset in Georgia."
-      caption: "mtskheta, 2026"
+      caption: "kakheti, 2026"
       slot: "poster"
       width: 1133
       height: 1700

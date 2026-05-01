@@ -38,7 +38,10 @@
 
       var collapsedH = 0;
       function measureCollapsed() {
-        if (collapsedH === 0 && wrap.offsetHeight > 0) collapsedH = wrap.offsetHeight;
+        if (collapsedH === 0 && wrap.offsetHeight > 0) {
+          collapsedH = wrap.offsetHeight;
+          tile.dataset.collapsedH = String(collapsedH);
+        }
       }
 
       tile.addEventListener('click', function (e) {
@@ -59,6 +62,8 @@
             wrap.removeEventListener('transitionend', handler);
           });
         } else {
+          var targetTop = predictedTileTopAfterCollapse(tile);
+
           tiles.forEach(function (other) {
             if (other === tile || !other.classList.contains('is-open')) return;
             var ow = other.querySelector('.album-tile__preview-wrap');
@@ -90,11 +95,87 @@
             wrap.style.maxHeight = 'none';
             wrap.style.transition = '';
             wrap.removeEventListener('transitionend', handler);
-            tile.scrollIntoView({ behavior: 'smooth', block: 'start' });
           });
+          window.scrollTo({ top: targetTop, behavior: 'smooth' });
         }
       });
     });
+
+    function collapsedPreviewHeight(tile, wrap) {
+      var stored = parseFloat(tile.dataset.collapsedH || '0');
+      if (stored > 0) return stored;
+      if (!wrap) return 0;
+
+      var computedMax = window.getComputedStyle ? window.getComputedStyle(wrap).maxHeight : '';
+      var computed = parseFloat(computedMax || '0');
+      if (computed > 0) {
+        tile.dataset.collapsedH = String(computed);
+        return computed;
+      }
+
+      return 0;
+    }
+
+    function predictedTileTopAfterCollapse(tile) {
+      var tileRect = tile.getBoundingClientRect();
+      var targetTop = tileRect.top + window.pageYOffset;
+      var rows = [];
+
+      tiles.forEach(function (other) {
+        if (other === tile || !other.classList.contains('is-open')) return;
+        if (other.style.display === 'none') return;
+
+        var rect = other.getBoundingClientRect();
+        if (rect.width === 0 || rect.height === 0) return;
+        if (rect.top >= tileRect.top - 1) return;
+
+        var row = rows.filter(function (candidate) {
+          return Math.abs(candidate.top - rect.top) < 1;
+        })[0];
+        if (!row) {
+          row = { top: rect.top, tiles: [] };
+          rows.push(row);
+        }
+      });
+
+      if (!rows.length) return Math.max(0, targetTop);
+
+      tiles.forEach(function (candidate) {
+        if (candidate.style.display === 'none') return;
+        var rect = candidate.getBoundingClientRect();
+        if (rect.width === 0 || rect.height === 0) return;
+
+        rows.forEach(function (row) {
+          if (Math.abs(row.top - rect.top) < 1) {
+            row.tiles.push({ tile: candidate, height: rect.height });
+          }
+        });
+      });
+
+      rows.forEach(function (row) {
+        var currentRowHeight = 0;
+        var predictedRowHeight = 0;
+
+        row.tiles.forEach(function (item) {
+          currentRowHeight = Math.max(currentRowHeight, item.height);
+
+          var predictedHeight = item.height;
+          if (item.tile.classList.contains('is-open')) {
+            var wrap = item.tile.querySelector('.album-tile__preview-wrap');
+            var collapsedH = collapsedPreviewHeight(item.tile, wrap);
+            if (wrap && collapsedH > 0) {
+              predictedHeight -= Math.max(0, wrap.offsetHeight - collapsedH);
+            }
+          }
+
+          predictedRowHeight = Math.max(predictedRowHeight, predictedHeight);
+        });
+
+        targetTop -= Math.max(0, currentRowHeight - predictedRowHeight);
+      });
+
+      return Math.max(0, targetTop);
+    }
 
     function getColumns() {
       if (!tiles.length) return 5;
@@ -331,9 +412,7 @@
     if (!handledHash) {
       applyFilter();
     }
-    setTimeout(function () {
-      moveFilterPill(filterStrip ? filterStrip.querySelector('.album-wall__filter-btn.active') : null);
-    }, 80);
+    moveFilterPill(filterStrip ? filterStrip.querySelector('.album-wall__filter-btn.active') : null);
 
     function handleHash() {
       var hash = window.location.hash;
@@ -355,10 +434,9 @@
       setTimeout(function () {
         if (!target.classList.contains('is-open')) {
           target.click();
-        }
-        setTimeout(function () {
+        } else {
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 120);
+        }
       }, 350);
 
       return true;

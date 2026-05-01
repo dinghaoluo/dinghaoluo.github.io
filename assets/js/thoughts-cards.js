@@ -505,7 +505,7 @@
         switchFilter(initialFilter);
         applyFilter(initialFilter);
       } else if (active) {
-        setTimeout(function () { movePill(strip, pill, active); }, 100);
+        movePill(strip, pill, active);
         applyFilter(active.getAttribute('data-filter'));
       }
     }

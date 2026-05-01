@@ -52,8 +52,8 @@
       label: "scotland"
       target: "scotland map"
       accent: "clay"
-      x: 45.55
-      y: 23.11
+      x: 44.4
+      y: 21.6
       cluster: "scotland"
       label_x: "-3.9rem"
       label_y: "-1.0rem"
@@ -66,8 +66,8 @@
       label: "england"
       target: "england map"
       accent: "clay"
-      x: 46.49
-      y: 29.12
+      x: 46.8
+      y: 30.8
       cluster: "england"
       label_x: "-3.75rem"
       label_y: "0.38rem"
@@ -141,33 +141,17 @@
       leader_h: "0rem"
       leader_opacity: "0.34"
     -
-      label: "wider china"
-      short_label: "wider china"
-      target: "wider china map"
+      label: "southern china"
+      target: "southern china map"
       accent: "clay"
-      x: 84.9
-      y: 57.3
-      cluster: "elsewhere-in-china"
-      label_x: "-5.35rem"
-      label_y: "-0.95rem"
-      leader_x: "-2.0rem"
-      leader_y: "0rem"
-      leader_w: "1.85rem"
-      leader_h: "0rem"
-      leader_opacity: "0.34"
-    -
-      label: "pearl river delta"
-      short_label: "pearl delta"
-      target: "pearl river delta map"
-      accent: "clay"
-      x: 86.04
-      y: 65.74
-      cluster: "pearl-river-delta"
-      label_x: "-5.85rem"
+      x: 85.1
+      y: 66.7
+      cluster: "southern-china"
+      label_x: "-6.95rem"
       label_y: "0.42rem"
-      leader_x: "-2.05rem"
+      leader_x: "-2.25rem"
       leader_y: "0rem"
-      leader_w: "1.9rem"
+      leader_w: "2.08rem"
       leader_h: "0rem"
       leader_opacity: "0.34"
     -
@@ -192,15 +176,15 @@
   id: "west-coast"
   title: "west coast"
   scope: "local"
-  view_box: "0 0 100 100"
-  aspect: "1"
+  view_box: "28 27 52 49"
+  aspect: "1.06"
   points:
     -
       label: "los angeles"
       target: "los angeles"
       accent: "haze"
-      x: 40.0
-      y: 64.0
+      x: 32.77
+      y: 80.07
       section: "los-angeles"
       label_x: "-5.15rem"
       label_y: "0.45rem"
@@ -213,8 +197,8 @@
       label: "death valley"
       target: "death valley"
       accent: "haze"
-      x: 60.0
-      y: 38.0
+      x: 49.58
+      y: 37.88
       section: "death-valley"
       label_x: "-5.85rem"
       label_y: "-1.0rem"
@@ -227,8 +211,8 @@
       label: "las vegas"
       target: "las vegas"
       accent: "haze"
-      x: 72.0
-      y: 42.0
+      x: 72.58
+      y: 44.01
       section: "las-vegas"
       label_x: "0.7rem"
       label_y: "-0.9rem"
@@ -276,15 +260,15 @@
   id: "northeast-us"
   title: "northeast us"
   scope: "local"
-  view_box: "0 0 100 100"
-  aspect: "1"
+  view_box: "0 20 100 80"
+  aspect: "1.25"
   points:
     -
       label: "pittsburgh"
       target: "pittsburgh"
       accent: "blue"
-      x: 24.0
-      y: 64.0
+      x: 23.11
+      y: 64.11
       section: "pittsburgh"
       label_x: "0.7rem"
       label_y: "0.4rem"
@@ -292,17 +276,22 @@
       label: "catskills"
       target: "catskills"
       accent: "blue"
-      x: 62.0
-      y: 43.0
+      x: 67.69
+      y: 38.24
       section: "catskills"
-      label_x: "0.7rem"
+      label_x: "-5.3rem"
       label_y: "-1.1rem"
+      leader_x: "-1.95rem"
+      leader_y: "0rem"
+      leader_w: "1.82rem"
+      leader_h: "0rem"
+      leader_opacity: "0.34"
     -
       label: "new york"
       target: "new york"
       accent: "blue"
-      x: 72.0
-      y: 60.0
+      x: 69.18
+      y: 60.1
       section: "new-york"
       label_x: "0.7rem"
       label_y: "0.3rem"
@@ -486,33 +475,43 @@
   id: "scotland"
   title: "scotland"
   scope: "local"
-  view_box: "0 0 100 100"
-  aspect: "1"
+  view_box: "0 0 100 78"
+  aspect: "1.28"
   points:
     -
       label: "glencoe"
       target: "glencoe"
       accent: "haze"
-      x: 34.0
-      y: 31.0
+      x: 37.75
+      y: 60.99
       section: "glencoe"
-      label_x: "0.72rem"
+      label_x: "-4.75rem"
       label_y: "-1.1rem"
+      leader_x: "-1.8rem"
+      leader_y: "0rem"
+      leader_w: "1.68rem"
+      leader_h: "0rem"
+      leader_opacity: "0.34"
     -
       label: "glasgow"
       target: "glasgow"
       accent: "stone"
-      x: 42.0
-      y: 70.0
+      x: 47.2
+      y: 80.06
       section: "glasgow"
-      label_x: "0.72rem"
-      label_y: "0.35rem"
+      label_x: "-4.55rem"
+      label_y: "0.45rem"
+      leader_x: "-1.8rem"
+      leader_y: "0rem"
+      leader_w: "1.68rem"
+      leader_h: "0rem"
+      leader_opacity: "0.34"
     -
       label: "edinburgh"
       target: "edinburgh"
       accent: "stone"
-      x: 62.0
-      y: 72.0
+      x: 59.02
+      y: 78.0
       section: "edinburgh"
       label_x: "0.72rem"
       label_y: "0.35rem"
@@ -520,8 +519,8 @@
       label: "st andrews"
       target: "st andrews"
       accent: "haze"
-      x: 70.0
-      y: 58.0
+      x: 63.37
+      y: 68.99
       section: "st-andrews"
       label_x: "0.72rem"
       label_y: "-1.2rem"
@@ -537,8 +536,8 @@
       label: "beijing"
       target: "beijing"
       accent: "rose"
-      x: 35.0
-      y: 63.0
+      x: 37.17
+      y: 57.83
       section: "beijing"
       label_x: "-4.65rem"
       label_y: "0.25rem"
@@ -551,74 +550,15 @@
       label: "jilin"
       target: "jilin"
       accent: "rose"
-      x: 67.0
-      y: 31.0
+      x: 73.39
+      y: 29.73
       section: "jilin"
       label_x: "0.72rem"
       label_y: "-1.05rem"
   shape: "northern-china"
 -
-  id: "pearl-river-delta"
-  title: "pearl river delta"
-  scope: "local"
-  view_box: "0 0 100 100"
-  aspect: "1"
-  points:
-    -
-      label: "guangzhou"
-      target: "guangzhou"
-      accent: "rose"
-      x: 38.0
-      y: 39.0
-      section: "guangzhou"
-      label_x: "-5.15rem"
-      label_y: "-0.75rem"
-      leader_x: "-1.95rem"
-      leader_y: "0rem"
-      leader_w: "1.82rem"
-      leader_h: "0rem"
-      leader_opacity: "0.34"
-    -
-      label: "shenzhen"
-      target: "shenzhen"
-      accent: "rose"
-      x: 62.0
-      y: 65.0
-      section: "shenzhen"
-      label_x: "-4.95rem"
-      label_y: "0.72rem"
-      leader_x: "-1.95rem"
-      leader_y: "0rem"
-      leader_w: "1.82rem"
-      leader_h: "0rem"
-      leader_opacity: "0.34"
-    -
-      label: "hong kong"
-      target: "hong kong"
-      accent: "rose"
-      x: 68.0
-      y: 73.0
-      section: "hong-kong"
-      label_x: "0.72rem"
-      label_y: "0.12rem"
-    -
-      label: "zhuhai"
-      target: "zhuhai"
-      accent: "rose"
-      x: 46.0
-      y: 73.0
-      section: "zhuhai"
-      label_x: "-4.45rem"
-      label_y: "1.42rem"
-      leader_x: "-1.95rem"
-      leader_y: "0rem"
-      leader_w: "1.82rem"
-      leader_h: "0rem"
-      leader_opacity: "0.34"
-  shape: "pearl-river-delta"
--
-  id: "elsewhere-in-china"
-  title: "wider china"
+  id: "southern-china"
+  title: "southern china"
   scope: "local"
   view_box: "0 0 100 100"
   aspect: "1"
@@ -627,17 +567,17 @@
       label: "chongqing"
       target: "chongqing"
       accent: "rose"
-      x: 26.0
-      y: 27.0
+      x: 12.45
+      y: 25.4
       section: "chongqing"
       label_x: "0.72rem"
-      label_y: "-1.15rem"
+      label_y: "-1.1rem"
     -
       label: "shanghai"
       target: "shanghai"
       accent: "rose"
-      x: 82.0
-      y: 25.0
+      x: 85.24
+      y: 14.64
       section: "shanghai"
       label_x: "-4.65rem"
       label_y: "-1.05rem"
@@ -650,17 +590,17 @@
       label: "hangzhou"
       target: "hangzhou"
       accent: "rose"
-      x: 76.0
-      y: 34.0
+      x: 78.81
+      y: 20.81
       section: "hangzhou"
       label_x: "0.72rem"
-      label_y: "0.1rem"
+      label_y: "0.15rem"
     -
       label: "xiamen"
       target: "xiamen"
       accent: "rose"
-      x: 67.0
-      y: 55.0
+      x: 68.73
+      y: 58.19
       section: "xiamen"
       label_x: "0.72rem"
       label_y: "-1.05rem"
@@ -668,26 +608,82 @@
       label: "shanwei"
       target: "shanwei"
       accent: "rose"
-      x: 58.0
-      y: 73.0
+      x: 55.49
+      y: 69.12
       section: "shanwei"
       label_x: "0.72rem"
-      label_y: "0.65rem"
+      label_y: "-0.3rem"
+    -
+      label: "guangzhou"
+      target: "guangzhou"
+      accent: "rose"
+      x: 45.19
+      y: 66.91
+      section: "guangzhou"
+      label_x: "-5.15rem"
+      label_y: "-1.85rem"
+      leader_x: "-4.6rem"
+      leader_y: "-0.9rem"
+      leader_w: "4.45rem"
+      leader_h: "0.9rem"
+      leader_opacity: "0.34"
     -
       label: "huazhou"
       target: "huazhou"
       accent: "rose"
-      x: 30.0
-      y: 78.0
+      x: 32.39
+      y: 76.37
       section: "huazhou"
       label_x: "-4.65rem"
-      label_y: "0.2rem"
+      label_y: "0.35rem"
       leader_x: "-1.95rem"
       leader_y: "0rem"
       leader_w: "1.82rem"
       leader_h: "0rem"
       leader_opacity: "0.34"
-  shape: "elsewhere-china"
+    -
+      label: "shenzhen"
+      target: "shenzhen"
+      accent: "rose"
+      x: 49.06
+      y: 70.69
+      section: "shenzhen"
+      label_x: "0.52rem"
+      label_y: "-2.2rem"
+      leader_x: "0.12rem"
+      leader_y: "-1.08rem"
+      leader_w: "0.34rem"
+      leader_h: "1.08rem"
+      leader_opacity: "0.34"
+    -
+      label: "hong kong"
+      target: "hong kong"
+      accent: "rose"
+      x: 49.61
+      y: 72.13
+      section: "hong-kong"
+      label_x: "-6.35rem"
+      label_y: "-0.85rem"
+      leader_x: "-5.55rem"
+      leader_y: "-0.38rem"
+      leader_w: "5.4rem"
+      leader_h: "0.38rem"
+      leader_opacity: "0.34"
+    -
+      label: "zhuhai"
+      target: "zhuhai"
+      accent: "rose"
+      x: 46.71
+      y: 72.44
+      section: "zhuhai"
+      label_x: "-5.65rem"
+      label_y: "-0.05rem"
+      leader_x: "-5.05rem"
+      leader_y: "0rem"
+      leader_w: "4.9rem"
+      leader_h: "0rem"
+      leader_opacity: "0.34"
+  shape: "southern-china"
 -
   id: "italy"
   title: "italy"
@@ -699,8 +695,8 @@
       label: "venice"
       target: "venice"
       accent: "clay"
-      x: 64.0
-      y: 18.0
+      x: 63.15
+      y: 21.68
       section: "venice"
       label_x: "0.72rem"
       label_y: "-1.1rem"
@@ -708,17 +704,22 @@
       label: "cinque terre"
       target: "cinque terre"
       accent: "clay"
-      x: 31.0
-      y: 39.0
+      x: 37.27
+      y: 35.73
       section: "cinque-terre"
-      label_x: "0.72rem"
+      label_x: "-6.0rem"
       label_y: "-0.95rem"
+      leader_x: "-2.1rem"
+      leader_y: "0rem"
+      leader_w: "2rem"
+      leader_h: "0rem"
+      leader_opacity: "0.34"
     -
       label: "rome"
       target: "rome"
       accent: "clay"
-      x: 54.0
-      y: 62.0
+      x: 64.96
+      y: 58.92
       section: "rome"
       label_x: "0.72rem"
       label_y: "0.35rem"
@@ -780,30 +781,30 @@
   id: "georgia"
   title: "georgia"
   scope: "local"
-  view_box: "0 0 100 100"
-  aspect: "1"
+  view_box: "0 0 100 76"
+  aspect: "1.32"
   points:
     -
       label: "tbilisi"
       target: "tbilisi"
       accent: "clay"
-      x: 70.0
-      y: 57.0
+      x: 58.27
+      y: 75.13
       section: "tbilisi"
-      label_x: "0.72rem"
-      label_y: "0.25rem"
-    -
-      label: "mtskheta"
-      target: "mtskheta"
-      accent: "clay"
-      x: 60.0
-      y: 48.0
-      section: "mtskheta"
-      label_x: "-5.5rem"
-      label_y: "-0.95rem"
-      leader_x: "-2.1rem"
+      label_x: "-4.3rem"
+      label_y: "0.35rem"
+      leader_x: "-1.8rem"
       leader_y: "0rem"
-      leader_w: "2rem"
+      leader_w: "1.68rem"
       leader_h: "0rem"
       leader_opacity: "0.34"
+    -
+      label: "kakheti"
+      target: "kakheti"
+      accent: "clay"
+      x: 67.5
+      y: 74.18
+      section: "kakheti"
+      label_x: "0.72rem"
+      label_y: "-1.05rem"
   shape: "georgia"

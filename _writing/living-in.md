@@ -3,7 +3,7 @@ title: "Living In"
 title_zh: "生活在"
 category: "journal"
 date: 2020-07-05
-excerpt: "Three years in a dim town, a D90 viewfinder, and an unremarkable day that ended everything."
+excerpt: "Three years in a dim town seen through a D90 viewfinder, ending on an unremarkable day that ended everything."
 image: /assets/images/personal/living-in.webp
 ---
 

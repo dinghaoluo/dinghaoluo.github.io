@@ -6,7 +6,7 @@ title: "writing"
 classes: writing-page
 ---
 
-Reading gives me obsessions; writing tests what I have actually understood. This page splits the public-facing pieces into print work, digital science writing, fiction, essays, journals, and translation: the *Entangled Life* Chinese edition, my *Scientific American China* consciousness feature, Neu-Reality pieces, and the long-running personal platform that kept producing stories and odd essays before the site existed.
+Reading gives me obsessions; writing tests what I have actually understood. This page collects the public work: print pieces, digital science writing, fiction, essays, journals, and translation, including the *Entangled Life* Chinese edition, my *Scientific American China* consciousness feature, Neu-Reality pieces, and the long-running personal platform that kept producing stories and odd essays before the site existed.
 
 ---
 
@@ -39,7 +39,7 @@ Reading gives me obsessions; writing tests what I have actually understood. This
 {% if article.show_archive_title_zh == false %}
   {% assign show_archive_title_zh = false %}
 {% endif %}
-<div id="{{ print_title | strip_html | slugify }}" class="writing-entry writing-entry--print writing-entry--print-{{ print_type | slugify }}{% if article.type == 'translation' %} writing-entry--translation{% endif %}{% if article.featured %} writing-entry--featured{% endif %}">
+<div id="{{ print_title | strip_html | slugify }}" class="writing-entry writing-entry--print writing-entry--print-{{ print_type | slugify }}{% if article.type == 'translation' %} writing-entry--translation{% endif %}{% if article.image %} writing-entry--has-image{% endif %}{% if article.featured %} writing-entry--featured{% endif %}">
   {% if article.image %}
   <a href="{{ article.url }}" class="writing-entry__img-wrap">
     <img src="{{ article.image }}" alt="{{ print_title | strip_html | escape }}" class="writing-entry__img" loading="lazy">
@@ -59,13 +59,6 @@ Reading gives me obsessions; writing tests what I have actually understood. This
       <span class="writing-entry__title-zh-inline">{{ article.title_zh }}</span>
       {% endif %}
     </h3>
-    {% if article.links.size > 0 %}
-    <div class="writing-entry__book-links">
-      {% for link in article.links %}
-      <a href="{{ link.url }}">{{ link.label | downcase }}</a>
-      {% endfor %}
-    </div>
-    {% endif %}
     {% if article.companion_link %}
     <div class="writing-entry__companion-link">
       {% if article.companion_lede %}
@@ -79,7 +72,7 @@ Reading gives me obsessions; writing tests what I have actually understood. This
       {% if article.show_archive_isbn == true %}
         {% assign show_print_isbn = true %}
       {% endif %}
-      {% include writing-meta.html item=article show_kind=false show_title_zh=false show_isbn=show_print_isbn %}
+      {% include writing-meta.html item=article show_kind=false show_title_zh=false show_isbn=show_print_isbn show_links=true %}
     </div>
     {% if print_excerpt %}
     <div class="writing-entry__text">{{ print_excerpt }}</div>

@@ -3,7 +3,7 @@ title: "My Mother"
 title_zh: "我媽"
 category: "journal"
 date: 2017-12-12
-excerpt: "Her forty-seventh birthday, a bowl of chestnuts, and the chromosomes that go nowhere."
+excerpt: "On the eve of her forty-seventh birthday, a bowl of chestnuts on the table and the chromosomes that go nowhere."
 ---
 
 <span class="dropcap">D</span>inner was decent tonight. I ate and thought about what to do for my mother's forty-seventh birthday.

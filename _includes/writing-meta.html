@@ -18,6 +18,12 @@
 {%- if include.show_isbn == false -%}
   {%- assign show_isbn = false -%}
 {%- endif -%}
+{%- assign show_links = false -%}
+{%- if include.show_links == true -%}
+  {%- assign show_links = true -%}
+{%- elsif include.show_links == false -%}
+  {%- assign show_links = false -%}
+{%- endif -%}
 {%- assign show_author = true -%}
 {%- if include.show_author == false -%}
   {%- assign show_author = false -%}
@@ -80,6 +86,12 @@
 {%- if show_outlet and item.outlet and outlet_rendered != true -%}
   <span>{% if meta_started %} · {% endif %}{{ item.outlet }}{% if item.outlet_en %} ({{ item.outlet_en }}){% endif %}{% if collaborator_note != "" %} (collab. {{ collaborator_note }}){% endif %}</span>
   {%- assign meta_started = true -%}
+{%- endif -%}
+{%- if show_links and item.links.size > 0 -%}
+  {%- for link in item.links -%}
+    <span>{% if meta_started %} · {% endif %}<a href="{{ link.url }}">{{ link.label }}</a></span>
+    {%- assign meta_started = true -%}
+  {%- endfor -%}
 {%- endif -%}
 {%- if show_isbn and item.isbn -%}
   <span>{% if meta_started %} · {% endif %}ISBN {{ item.isbn }}</span>

@@ -4,7 +4,7 @@ title_zh: "2021：細碎的災難"
 category: "journal"
 date: 2021-12-30
 dropcap: true
-excerpt: "Variants, visas, postponed reunions, and the fear that arrives not as spectacle but as rain."
+excerpt: "The year of variants, visa delays, and postponed reunions, when fear arrived not as spectacle but as rain."
 ---
 
 <span class="dropcap">T</span>his year, especially, I felt the pandemic's most direct effects. From the visa for leaving to start a PhD, to the wish to reunite with the person I love and with my family, too many things in life had already been put on hold for a long time, then pushed farther and farther out of reach by one variant after another. We rocked by boat past so many harbours of expectation. On shore stood crowds of masked people, all waiting for the world to answer their calls.

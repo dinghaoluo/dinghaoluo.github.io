@@ -4,7 +4,7 @@ title_zh: "玉子的夏天"
 category: "fiction"
 date: 2018-09-26
 dropcap: true
-excerpt: "A reunion at a mountain lodge, a black cat, and a girl who went looking for someone who was already gone."
+excerpt: "A girl arrives at a mountain lodge for a reunion, finds a black cat, and goes looking for someone who was already gone."
 ---
 
 ## I

@@ -3,7 +3,7 @@ title: "Farewell as Vista"
 title_zh: "離別是苟且中難得的展望"
 category: "journal"
 date: 2018-07-26
-excerpt: "A lab intern's first workplace goodbye, melted gel in a heatwave, and the invisible net woven from ten thousand lives."
+excerpt: "A lab intern says his first workplace goodbye during a heatwave that melts electrophoresis gels, and begins to see the invisible net woven from ten thousand lives."
 image: /assets/images/personal/farewell-as-vista.webp
 ---
 

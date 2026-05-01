@@ -2,6 +2,19 @@
 
 This file holds operational rules that used to live in the main style guide. The main voice/style principles are in [style.md](style.md). Examples are in [samples.md](samples.md).
 
+## Research Before Writing
+
+Before drafting or expanding any review, research the source material thoroughly. This means: read detailed plot summaries, multiple critical reviews, interviews with the director or author, and any discourse around the work's reception. Understand the sequence of events, the characters' relationships, the structure of key scenes, and the critical conversation before writing a single analytical sentence.
+
+The *Drama* review required five rounds of structural rewriting because the first draft was built on a wrong understanding of the film's plot sequence (the confessions game, who confessed when, and what triggered Rachel's turn). Every factual error in the foundation produced analytical claims that were logically coherent but wrong — and each had to be torn out and rebuilt. Deep research upfront is cheaper than deep revision later.
+
+Specific requirements:
+- **Plot and structure**: know the sequence of events, not just the premise. Who does what, in what order, and what triggers each reaction.
+- **Characters**: know relationships, motivations, and arcs. Do not conflate or misattribute actions.
+- **Critical conversation**: read multiple reviews to understand what the discourse has identified — racial dynamics, tonal choices, structural comparisons to earlier work, directorial patterns. Not all of this enters the review, but understanding it prevents blind spots.
+- **Directorial/authorial context**: know the creator's other work and the through-lines critics have identified. The *Drama* review's opening (thought-crime duology with *Dream Scenario*) came from research, not from the user.
+- **Do not draft analytical claims until the factual foundation is secure.** A sharp reading built on a misunderstood scene is worse than a modest reading built on accurate recall.
+
 ## Review Expansion And Catalogue Work
 
 - Short game/book/film catalogue reviews can be expanded into polished English mini-essays, with length guided by the strength and complexity of the response.
@@ -39,7 +52,7 @@ This file holds operational rules that used to live in the main style guide. The
 - Use *italic* for other work titles.
 - Use *italic* for important concepts sparingly.
 - Use **bold** for emphatic stress sparingly.
-- Use `<u></u>` only for standout sentences that crystallise the argument. One is normal; two is exceptional.
+- Use `<u></u>` only for standout sentences that crystallise the argument. A sentence earns underlining only when it meets both criteria: (1) general enough to transcend the specific work — it names a broader cultural mechanism or truth, and (2) insightful enough that not any careful viewer/reader would independently make the observation. A sentence like 'The person who proposed the game and set the conditions for the exposure becomes the first to weaponise it' fails the second test — anyone watching the film can see this. A sentence like 'Instead they are met with a confessions game at a wine tasting, where the worst thing you have ever done is either a punchline or a prosecution, and only the person who did not act is made to answer for it' passes both. One is normal; two is the maximum. Scarcity is essential; too many dilute the effect.
 - Long-form `_writing/` essays do not need `<u></u>` if pull quotes are already doing the visual emphasis. Use underline for catalogue cards and compact reviews; use pull quotes for essay architecture. Do not make both devices compete for the same sentence.
 - Inside `<u>` tags, use HTML equivalents for formatting: `<em>` for italic, `<b><i>` for bold italic.
 - Main prose should prefer markdown formatting. Reserve HTML for page-level metadata, source notes, image/banner handling, and layout components.
@@ -91,11 +104,13 @@ This file holds operational rules that used to live in the main style guide. The
 - English titles and game terms can remain in English when that is more natural.
 - Short Douban book reviews usually do not open with `《Title》...` because the page context supplies the title.
 - Short Douban book reviews should be compact: roughly 150-250 characters for meh/disliked, 300-450 for liked, longer only when the book demands it.
+- Douban film reviews for deeply engaged films can range from a single dense paragraph to two or three; length and structure follow the argument's shape, not a fixed template. A single paragraph is right when the argument is a continuous chain building to a formal or emotional landing. Multiple paragraphs are right when the review makes distinct moves. The same analytical-opening convention applies: do not open with `《Title》...` unless the title itself is the entry point for the argument.
 - Long-form Chinese game reviews can use explicit section headers and spoiler warnings.
 - Short Douban reviews do not need spoiler warnings.
 - Personal context is acceptable only when it changes the reading of the work.
 - Avoid generic authority frames in Chinese such as `最準的地方在於`, `真正厲害的是`, `最打動我的是`.
-- Avoid grand contrast aphorisms in Chinese, especially `不是X，而是Y`, unless the opposition is genuinely necessary.
+- Avoid grand contrast aphorisms in Chinese, especially `不是X，而是Y`. Default to zero instances per review. The construction earns its place only when the negation is genuinely load-bearing — when the reader would otherwise believe X and must be disabused. When restating a distinction already clear from context, rewrite through positive assertion. If a draft contains even one instance, pressure-test it; if it contains two or more, at least one is decorative.
+- Illustrative dialogue in parentheses is a live technique in Chinese reviews: a parenthetical quote that voices the social attitude the essay is diagnosing — e.g., `（「你看起來那麼開心，不可能被侵害過吧？」）` — is sharper than an abstract claim about that attitude. Use when the attitude is best shown through the words someone would actually say.
 
 ## Common Banned Or Rationed Constructions
 

@@ -22,15 +22,29 @@ The essay must escalate after a strong opening. Early intensity should create pr
 
 Dinghao's prose is analytical, compressed, intellectually wide-ranging, and rhythmically controlled. It favours concrete observation over impressionistic flourish and builds arguments through specific detail rather than rhetorical gesture.
 
+The voice is first-person and thinking-aloud. Reviews read as someone working through their response to a work, not a critic dispensing pre-assembled verdicts. 'I' enters freely; reasoning is shown in real time. 'One central scene exemplifies what I am trying to get at' is the register — present-tense thinking, not past-tense judgment. The review should feel like watching someone think, not reading someone's conclusions.
+
 The voice can draw naturally on neuroscience, philosophy of mind, critical theory, translation practice, game design, music theory, and colonial or political history. Outside writers and thinkers (Pynchon, Fisher, Zizek, Cărtărescu, Borges, Miéville, Kafka) enter only when they clarify pressure inside the work; they do not enter as a frame placed over the work. The *Solenoid* essay cut a Pynchon comparison and an earlier Fisher frame because each clarified the wrong problem. Default to absence; let the reference earn its place.
 
-The lexicon can be large and exact: metabolise, suffocating, inarticulate, dissolution, phenomenology, reactivity, interactivity, immersion-breaking. The syntax should remain controlled. Think Pynchon's word-hoard delivered with Fisher's compression.
+The lexicon can be large and exact: metabolise, suffocating, inarticulate, dissolution, phenomenology, reactivity, interactivity, immersion-breaking. But the diction must not be academic. Show mechanisms rather than naming them. 'She converts the guilt she cannot face inwards into outrage she can direct outwards' is displacement described without the psychoanalytic label. 'Why poke at *the System* when one can comfortably sit in their own moral-highground bubble' is ideology critique in plain, sardonic English. If a phrase would be at home in *Screen* or *Film Quarterly*, or if it sounds like something any AI text generator would produce ('the sharpest structural move', 'precisely observed failure', 'the mechanism that makes this visible', 'epistemology of judgment'), rewrite. The insight should be sharp; the diction should not be pretentious.
+
+The syntax should remain controlled. Think Pynchon's word-hoard delivered with Fisher's compression.
 
 ## Argument
 
 Start from a concrete textual shock, formal detail, object, scene, mechanism, or structural claim. The opening should give the reader something bodily or formal to hold before the abstraction arrives.
 
 Abstract theses can be powerful, but they should usually follow an image. Avoid opening with a clever conceptual proposition if the reader has not yet been grounded in the work.
+
+### Inductive Structure: Evidence Before Verdict
+
+Never deliver an analytical conclusion before showing the evidence that earns it. A review must move: premise → scene/evidence → analysis. If a sentence uses terms whose referents have not yet been established for the reader, it is premature. The *Drama* review originally opened with 'converting guilt into prosecution and calling the prosecution conscience' — the objection was 'what guilt?', because the reader had not yet seen Rachel's crime, Charlie's failures, or the confessions game. The corrected structure: P1 frames the thesis (thought crimes, social machinery), P2 walks through the scene chronologically, P3 extends the analysis outward. The verdict arrives after the evidence, not before.
+
+This applies at every scale. A paragraph should not open with its conclusion and then justify it; it should build toward the landing. An underlined sentence should crystallise what the preceding prose has made inevitable, not announce what the following prose will try to prove.
+
+### Extend, Don't Summarise
+
+The analytical paragraph following a scene description must go *beyond* what the scene showed, not restate it. If the analysis can be summarised as 'what I just showed you is bad / ironic / hypocritical', it needs to extend. Each analytical move should take the argument further outward — from the specific scene to a broader cultural, political, or structural claim. The *Drama* review moves from the dinner table → American gun violence discourse → the systemic absence of care → the sardonic indictment of complicity. Each move goes further.
 
 Move between close observation and broader claim. Each claim should arise from evidence that a reader can recognise: a scene, system, image, rhythm, mechanic, translation choice, political structure, or formal device.
 
@@ -74,7 +88,51 @@ Paragraphs are arguments in miniature: claim, evidence, pivot or reframe. Dingha
 
 Use short declarative sentences for key landings. Use longer sentences when layering pressure, qualification, or accumulation. Colons and semicolons carry much of the rhythm.
 
+### Epistemic Hedging
+
+Claims about directorial intent, character psychology, or audience reception should be softened: 'What interests Borgli, it seems' not 'What interests Borgli'; 'probably nobody thinks to care about why' not 'nobody cares why'. Two functions: (1) epistemic honesty — the reviewer genuinely does not have access to intent or psychology, and (2) voice — the hedges produce the texture of a person thinking in real time, not delivering verdicts. Use sparingly. Declarative analytical assertions are fine when earned by evidence; reserve hedging for moments of genuine uncertainty. This is distinct from the filler hedges banned below ('it's worth noting', 'one might argue'), which pad rather than qualify.
+
+### Parenthetical Asides
+
+Parenthetical asides serve two distinct purposes:
+
+1. **Personal commentary injected mid-thought** — personality, tangent, opinion: '(2023; wonderful acting by Nick Cage, by the way)'. This is voice.
+2. **Damning details underplayed for devastating effect** — information delivered as an aside hits harder because the reader elevates it: '(she did not even tell others where the boy was when asked; "out of fear", she said)'; '(a cousin of hers was paralysed in a shooting)'. The casual delivery of horrifying specifics is a signature.
+
+Semicolons and quoted speech work inside parentheticals. The parenthetical register can carry substantial analytical weight when the understatement is the argument.
+
+### Rhetorical Questions
+
+Use rhetorical questions to dramatise the absence of inquiry — inserting the question that should have been asked but was not. Two modes:
+
+1. **Sincere voice of the missing question**: '("Why? What drove young Emma to have such terrible thoughts?")' — the question the characters should have asked, placed in quote marks.
+2. **Sardonic ventriloquism**: 'Why poke at *the System* when one can comfortably sit in their own moral-highground bubble, protected by that same *System*?' — voicing the evasion in the register of the person committing it.
+
+Where the argument turns on something nobody examined, pose the question directly rather than declaring its absence.
+
+### Self-Referential Callbacks
+
+When an abstraction introduced in an early paragraph is cashed out by later evidence, explicitly reference the earlier phrase with quotation marks and first person: 'This is what I meant by "the social machinery that processes thought crimes"'. This is a deliberate structural habit, used especially when the distance between setup and payoff is two or more paragraphs. The review is a thinking-through; callbacks signal the moment when an earlier idea lands. This is distinct from the architectural image-callbacks described in the long-form section (the *Solenoid* drawers, the coil), which return an image across sections. Self-referential callbacks return the reviewer's own phrase.
+
+### Italics And Intensifiers
+
+Beyond film titles, italics mark: (1) emphasis that alters the reading — 'she *never carried out*', where the italics turn the phrase into an accusation of the room; (2) ironic or conceptual distance — '*the System*', held at arm's length, examined rather than endorsed. One or two per review for emphasis; restraint gives them force.
+
+Intensifiers carry contempt when a disparity is the argument: 'so much easier' rather than 'easier', because the point is not that there is a difference but that the difference is grotesque. Use when the asymmetry itself is what damns.
+
 Preserve Dinghao's syntax magic. Editing should not flatten unusual cadence, sharp vocabulary, or idiosyncratic conceptual phrasing into competent generic criticism. Polish around live sentences rather than replacing them with smoother but deadened prose.
+
+### Scene Description
+
+When describing a scene in a review, move through it chronologically. Introduce characters through their actions, not in a static list. Let the sequence build — the shape of the scene IS an argument.
+
+The *Drama* review introduces each character at the moment of their confession: Mike admits → Rachel recounts → Charlie offers → Emma confesses. The escalation from punchline (Mike) to horror-told-as-punchline (Rachel) to evasion (Charlie) to devastating honesty (Emma) does analytical work that no summary or character-list can replicate.
+
+Do not present a conclusion about a scene and then rewind to describe it. The reader should move through the scene and arrive at the conclusion together with the reviewer.
+
+### Transitions
+
+Transitions between scene and analysis should feel like speech — someone guiding the reader through their reasoning. Use first-person, thinking-aloud transitions: 'One central scene exemplifies what I am trying to get at'; 'This is what I meant by...'. Do not use academic signposting: 'The scene that makes this legible is...'; 'The key structural element here is...'.
 
 Lists should build pressure, not flatten it. When a list prepares a central thesis, order the items so they escalate from obvious formal correspondences toward the ethical or conceptual friction that forces the thesis to appear.
 
@@ -104,7 +162,9 @@ Avoid opaque conceptual coins unless the prose immediately earns them. If a phra
 
 Avoid empty personal-reaction frames: 'what strikes me most', 'what stayed with me', 'what moved me most', 'what I took away'. State the observation directly unless the personal reaction itself carries content.
 
-Avoid filler and hedging: 'it's worth noting', 'one might argue', 'importantly', 'notably', 'at the end of the day', 'genuinely' as an intensifier.
+Avoid filler and hedging: 'it's worth noting', 'one might argue', 'importantly', 'notably', 'at the end of the day', 'genuinely' as an intensifier. Note: this does not apply to epistemic hedging that qualifies genuine uncertainty about intent or psychology ('it seems', 'probably'). The difference is that filler hedges pad; epistemic hedges qualify. See the Epistemic Hedging section above.
+
+Avoid academic and AI-generic diction. Film-theory terms ('displacement', 'epistemology of judgment'), psychoanalytic labels, and sociological jargon should be replaced by describing the mechanism itself. Formulaic evaluative phrases that any AI text generator would produce ('the sharpest structural move', 'precisely observed failure', 'the mechanism that makes this visible', 'representative, not exceptional') should be rewritten with specificity or removed. The test: if the phrase could appear in a generic film review without modification, it is too generic.
 
 Avoid defensive verdicts, generic praise, over-explaining, corporate-speak, and prestige-critical boilerplate.
 
@@ -138,6 +198,8 @@ The sardonic register activates in response to laziness disguised as design, int
 
 The political register is hardline leftist and anti-capitalist. Reviews touching on political economy, labour, Objectivism, neoliberalism, corporate structures, empire, or institutional power default to a critical socialist reading. This position does not need defensive explanation; it is the water, not the fish.
 
+Avoid using 'liberal' as a culture-critique label. The mechanisms being critiqued (guilt-as-prosecution, moral-highground performance, complicity with structural harm) are broader cultural failures, not liberal-specific ones. Using 'liberal' as a pejorative risks aligning with centrist or right-wing discourse, which contradicts the leftist position. Default to 'American culture' or 'contemporary culture' unless the critique is specifically about liberal ideology as distinct from left politics.
+
 ### Emotional
 
 Emotion is direct, never sentimental. 'I cried', 'I was close to tears', 'eyes stinging' are enough when the trigger has been made specific. Vulnerability earns its place through the precision of what caused it, not through heightened language.
@@ -151,6 +213,10 @@ Emotion is direct, never sentimental. 'I cried', 'I was close to tears', 'eyes s
 - **Fragmented storytelling**: environmental or non-linear narrative whose fragments either cohere or remain arbitrarily obscure.
 - **Knowledge-lock**: progress gated by understanding rather than items.
 
+## Thought-Crime Analytical Compound
+
+When a compound term carries allusion, irony, or precision, do not abbreviate it. 'Thought crime' is an Orwellian allusion that frames the film's central irony; abbreviating to 'thought' loses the allusion and half the argument. Similarly, use the full compound every time when the shortened form drops meaningful resonance.
+
 ## Chinese Style
 
 Chinese prose draws on the same intellectual world, but its registers are more sharply separated.
@@ -159,11 +225,17 @@ Analytical Chinese reviews can be explicitly structured, systematic, and almost 
 
 Lyrical Chinese reviews use rhythm, repetition, parallelism, and image accumulation. The argument is carried by structure and cadence rather than by overt explanation. Do not mix analytical and lyrical modes casually.
 
-Code-switching is natural and principled. English terms remain when they are the way the idea is actually thought: hitbox, i-frame, build, NG+, Light Switch Theory, fun fact, pushed to its limit. Code-switching should signal precision, informality, irony, or membership in an Anglophone discourse community, not laziness.
+Code-switching is natural and principled. English terms remain when they are the way the idea is actually thought: hitbox, i-frame, build, NG+, Light Switch Theory, fun fact, pushed to its limit. In film and book reviews, code-switching extends to emotional and conceptual terms (relief, defense mechanism, scene) and occasionally to full English phrases deployed for tonal precision or devastating effect ('surely this is just the director's wish?'). Code-switching should signal precision, informality, irony, or membership in an Anglophone discourse community, not laziness.
+
+Scare quotes signal words under conceptual pressure. When a Chinese term is being questioned or complicated — 「對峙」 for a confrontation that is not quite a confrontation — scare quotes do real work. They are distinct from emphasis quotes and from title quotes.
+
+Chinese analytical prose builds arguments as sequential chains. Each sentence follows from the previous one, advancing the argument step by step. Generated Chinese tends to default to parallel structures (X可以是A，Y可以是B，Z可以是C); the actual voice builds sentence by sentence and lets pressure accumulate through sequence rather than symmetry. Parallel constructions are a lyrical-mode tool; in analytical mode, prefer the chain.
 
 Chinese sardonic prose can be blunter and more colloquial than English. Feigned uncertainty through `可能...吧` can sharpen contempt when the surface softness is doing real tonal work.
 
 Chinese emotional directness follows the English principle: state the feeling plainly and let structure carry the force.
+
+The political register is unchanged in Chinese: hardline leftist and anti-capitalist. State the position as the default rather than defending it. Chinese analytical prose should apply the same structural critique of institutional power, complicity, and ideology that the English register does.
 
 ## Final Notes
 

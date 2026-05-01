@@ -48,6 +48,12 @@ title: "music"
     margin: 0.7rem 0 0;
     font-size: 0.78rem;
   }
+  .music-release--prealbum {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .music-release--prealbum .music-release__body {
+    max-width: 34rem;
+  }
   .music-player-flow {
     grid-column: 1 / -1;
     margin-top: 0.2rem;
@@ -119,6 +125,28 @@ title: "music"
 </style>
 
 *Music sits here in two forms: tracks I make as amoxitoxin, and the records I keep returning to when I am trying to remember what music can do.*
+
+---
+
+<section class="music-release music-release--prealbum" aria-labelledby="pre-album-tracks">
+  <div class="music-release__body">
+    <p class="music-release__eyebrow">amoxitoxin · 2018</p>
+    <h2 class="music-release__title" id="pre-album-tracks">pre-album tracks <span>(before 迷宮)</span></h2>
+  </div>
+
+  <div class="music-player-flow">
+    <div class="music-player-wrap" aria-label="Pre-album track players">
+      {% include audio-player.html src="/assets/audio/pre_album_20180420_sainsburys_coffee.mp3" title="2018-04-20 · 十一點去Sainsbury's買咖啡" waveform="/assets/audio/waveforms/pre_album_20180420_sainsburys_coffee.json" duration="9:04" %}
+      {% include audio-player.html src="/assets/audio/pre_album_20180426_bitter_sweet_symphony_cover.mp3" title="2018-04-26 · Bitter Sweet Symphony (octavarium1999 cover)" waveform="/assets/audio/waveforms/pre_album_20180426_bitter_sweet_symphony_cover.json" duration="4:11" %}
+      {% include audio-player.html src="/assets/audio/pre_album_20180609_sedative.mp3" title="2018-06-09 · Sedative" waveform="/assets/audio/waveforms/pre_album_20180609_sedative.json" duration="5:46" %}
+      {% include audio-player.html src="/assets/audio/pre_album_20180801_surrender.mp3" title="2018-08-01 · surrender" waveform="/assets/audio/waveforms/pre_album_20180801_surrender.json" duration="7:36" %}
+      {% include audio-player.html src="/assets/audio/pre_album_20181225_project_6.mp3" title="2018-12-25 · Project 6" waveform="/assets/audio/waveforms/pre_album_20181225_project_6.json" duration="2:58" %}
+    </div>
+    <div class="music-player-side-text">
+      <p class="music-release__copy">Earlier recordings from 2018, before the album came together.</p>
+    </div>
+  </div>
+</section>
 
 ---
 

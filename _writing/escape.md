@@ -4,7 +4,7 @@ title_zh: "逃"
 category: "fiction"
 date: 2018-04-27
 dropcap: true
-excerpt: "A motorcycle, a Peppa Pig lamp, and two boys fleeing across the desert from a country that would rather they did not exist."
+excerpt: "Two boys flee across the desert on a motorcycle, carrying a Peppa Pig lamp and leaving behind a country that would rather they did not exist."
 ---
 
 ## 1

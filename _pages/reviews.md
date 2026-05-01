@@ -11,11 +11,11 @@ title: 'thoughts'
 
 <div class="thoughts-filter-strip thoughts-filter-strip--type" id="thoughts-filter-strip">
   <div class="thoughts-filter-pill" id="thoughts-filter-pill"></div>
-  <button class="thoughts-filter-btn active" data-filter="book">books</button>
+  <button class="thoughts-filter-btn active" data-filter="all">ALL</button>
+  <button class="thoughts-filter-btn" data-filter="book">books</button>
   <button class="thoughts-filter-btn" data-filter="film">films</button>
   <button class="thoughts-filter-btn" data-filter="tv">tv</button>
   <button class="thoughts-filter-btn" data-filter="game">games</button>
-  <button class="thoughts-filter-btn" data-filter="all">ALL</button>
 </div>
 
 <div class="thoughts-controls-row">
@@ -41,7 +41,7 @@ title: 'thoughts'
   <button class="thoughts-pagination__btn thoughts-pagination__next" type="button" aria-label="Next page">&rsaquo;</button>
 </nav>
 
-{% assign pinned_thoughts = site.data.thoughts | where: 'pin', true | sort: 'posted' | reverse %}
+{% assign pinned_thoughts = site.data.thoughts | where: 'pin', true | sort: 'pin_order' %}
 {% assign regular_thoughts = site.data.thoughts | where_exp: 'thought', 'thought.pin != true' | sort: 'posted' | reverse %}
 {% assign thoughts_initial_page_size = 15 %}
 {% assign thoughts_initial_count = 0 %}
@@ -51,9 +51,8 @@ title: 'thoughts'
   <span class="thoughts-pin-lead__label">pinned</span>
 </div>
 {% for thought in pinned_thoughts %}
-{% assign thought_type = thought.type | downcase %}
 {% assign hide_initial = true %}
-{% if thought_type == 'book' and thoughts_initial_count < thoughts_initial_page_size %}
+{% if thoughts_initial_count < thoughts_initial_page_size %}
   {% assign hide_initial = false %}
   {% assign thoughts_initial_count = thoughts_initial_count | plus: 1 %}
 {% endif %}
@@ -61,9 +60,8 @@ title: 'thoughts'
 {% endfor %}
 {% endif %}
 {% for thought in regular_thoughts %}
-{% assign thought_type = thought.type | downcase %}
 {% assign hide_initial = true %}
-{% if thought_type == 'book' and thoughts_initial_count < thoughts_initial_page_size %}
+{% if thoughts_initial_count < thoughts_initial_page_size %}
   {% assign hide_initial = false %}
   {% assign thoughts_initial_count = thoughts_initial_count | plus: 1 %}
 {% endif %}

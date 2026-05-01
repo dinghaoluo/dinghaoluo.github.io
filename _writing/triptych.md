@@ -3,7 +3,7 @@ title: "Him / Her / Ah Ming"
 title_zh: "他 / 她 / 阿明"
 category: "fiction"
 date: 2018-10-20
-excerpt: "Three linked stories about closeness, distance, and the light on someone's hair."
+excerpt: "Three linked stories about closeness and distance, held together by the light on someone's hair."
 image: /assets/images/personal/triptych.webp
 dropcap: true
 ---
