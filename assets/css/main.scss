@@ -2339,7 +2339,7 @@ mark.thoughts-highlight {
 .writing-section-title {
   display: flex;
   align-items: center;
-  gap: 0.9rem;
+  gap: 0.85rem;
   margin: 2.3rem 0 1.15rem;
   color: $morandi-ink;
   font-family: $font-display;
@@ -3853,6 +3853,53 @@ body.writing-page .page__content .writing-entry__title em {
   }
 }
 
+.home-science-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  align-items: start;
+  gap: 0.72rem;
+  margin: 1.05rem 0 0.88rem;
+}
+
+.home-science-card {
+  min-width: 0;
+  margin: 0;
+}
+
+.home-science-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 0 1px 7px $shadow-ultra-faint;
+  filter: saturate(0.94) contrast(1.02);
+  transition: filter 0.22s ease, transform 0.22s ease;
+}
+
+.home-science-card:hover img,
+.home-science-card:focus-visible img {
+  filter: saturate(1) contrast(1.04);
+  transform: translateY(-1px);
+}
+
+.home-science-card figcaption {
+  margin-top: $media-caption-gap;
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.home-science-card figcaption span {
+  display: block;
+  margin-bottom: 0.16rem;
+  color: $morandi-clay-deep;
+  font-family: $mono-stack;
+  font-size: 0.72rem;
+  font-weight: bold;
+  line-height: 1.18;
+  text-transform: lowercase;
+}
+
 @media (max-width: 620px) {
   .home-writing-shelf {
     --home-writing-shelf-top-gap: 0.92rem;
@@ -3948,6 +3995,29 @@ body.writing-page .page__content .writing-entry__title em {
     max-width: 19rem;
     min-width: 0;
     margin: $media-float-gap 0;
+  }
+
+  .home-science-strip {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.62rem;
+    margin-top: 0.95rem;
+    overflow: visible;
+    padding-bottom: 0;
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
+  .home-science-card {
+    max-width: none;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 0.6rem;
+    align-items: start;
+  }
+
+  .home-science-card figcaption {
+    margin-top: 0;
   }
 }
 
@@ -4460,9 +4530,14 @@ body.writing-page .page__content .writing-entry__title em {
     color: $dark-heading;
   }
 
-  .home-writing-award img {
+  .home-writing-award img,
+  .home-science-card img {
     opacity: 0.86;
     box-shadow: none;
+  }
+
+  .home-science-card figcaption span {
+    color: #d4a88f;
   }
 
   .home-photo-strip img {
@@ -5262,6 +5337,68 @@ body.music-page .mp-prose .wv-player {
   margin-top: $media-caption-gap !important;
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
+}
+
+body.science-page .page__content .writing-insert {
+  --media-block-width: 34rem;
+  --media-float-width: 34rem;
+
+  @include breakpoint($large) {
+    float: none;
+    clear: both;
+    width: 100%;
+    max-width: var(--media-block-width);
+    margin: $media-block-gap auto $media-block-gap 0;
+  }
+
+  @include breakpoint($x-large) {
+    --media-block-width: 40rem;
+  }
+}
+
+body.science-page .page__content .writing-insert--right {
+  @include breakpoint($large) {
+    margin: $media-block-gap 0 $media-block-gap auto;
+  }
+}
+
+body.science-page .page__content .writing-insert--left {
+  @include breakpoint($large) {
+    margin: $media-block-gap auto $media-block-gap 0;
+  }
+}
+
+body.science-page .page__content .writing-insert--small {
+  --media-block-width: 24rem;
+
+  @include breakpoint($large) {
+    --media-float-width: 24rem;
+    --media-float-max: 100%;
+  }
+}
+
+body.science-page .page__content .writing-insert-pair {
+  --media-pair-width: 34rem;
+  --media-pair-float-width: 34rem;
+  --media-pair-float-max: 100%;
+
+  @include breakpoint($large) {
+    float: none;
+    clear: both;
+    width: 100%;
+    max-width: var(--media-pair-width);
+    margin: $media-block-gap auto $media-block-gap 0;
+  }
+
+  @include breakpoint($x-large) {
+    --media-pair-width: 40rem;
+  }
+}
+
+body.science-page .page__content .writing-insert-pair--right {
+  @include breakpoint($large) {
+    margin: $media-block-gap 0 $media-block-gap auto;
+  }
 }
 
 .page__content .source-note {
