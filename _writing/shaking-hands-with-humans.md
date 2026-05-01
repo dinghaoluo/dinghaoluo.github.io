@@ -32,5 +32,5 @@ Reading that passage, I thought: if I were that octopus, I would probably fall, 
 
 Godfrey-Smith writes that after the first touch, the octopus withdrew its arm. He supposes it only wanted to determine whether he was food. I think the octopus must have felt terribly wronged. If it knew that was what Godfrey-Smith thought, it would probably lie awake at night, just as I do.
 
-*Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/BJ_4IQQzk_Ni-z3k9rTfSA), August 2018.*
+*Originally published in Chinese as 「[与人类握手](https://mp.weixin.qq.com/s/BJ_4IQQzk_Ni-z3k9rTfSA)」 on 阿莫東森的無聊生活.*
 {: .source-note}

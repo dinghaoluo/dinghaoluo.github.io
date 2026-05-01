@@ -131,6 +131,18 @@ A long-form source note should open with the outside source most useful to the p
 
 Source notes should not duplicate metadata that already appears in the page's metadata head. The post date is already shown in the kicker (`journal · 27 Jul 2020`); a source-note line saying 'Originally published in Chinese on X, July 2020' repeats it. Drop the date and let the metadata head carry it. Reserve the source note for what the metadata head cannot show: the original-language title, the outlet, the translator, the edition where edition matters.
 
+## Quotation Marks
+
+Use single quotation marks for dialogue, titles within prose, and quoted phrases. Double quotation marks are not used in prose.
+
+- Dialogue: 'Hello,' she said.
+- Titles: Radiohead's 'Planet Telex'
+- Quoted phrases: The priest says 'surely someone can do that'
+
+Nested quotes use double inside single: 'He said "hello" to me.'
+
+This applies to all prose. Markdown/YAML frontmatter and code blocks follow their own conventions.
+
 ## Image Captions
 
 Two distinct caption registers, by length:

@@ -40,5 +40,5 @@ The act of recording is endless, but the viewpoint is not. It changes like a per
 
 I think of one person running along the Cam towards the sun about to rise, looking down from Castle Hill at the people and traffic ascending and descending. Before long, living elsewhere again.
 
-*Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/MiaVy_4JsONrV_JFuTTqTA), July 2020.*
+*Originally published in Chinese as 「[生活在](https://mp.weixin.qq.com/s/MiaVy_4JsONrV_JFuTTqTA)」 on 阿莫東森的無聊生活.*
 {: .source-note}

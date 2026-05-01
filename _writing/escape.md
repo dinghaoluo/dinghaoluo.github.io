@@ -5,9 +5,6 @@ category: "fiction"
 date: 2018-04-27
 dropcap: true
 excerpt: "A motorcycle, a Peppa Pig lamp, and two boys fleeing across the desert from a country that would rather they did not exist."
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/bnngsv2p1XjdqZUOPwBBYQ"
 ---
 
 ## 1
@@ -142,5 +139,5 @@ Through the 'skylight' I look at the morning, raked by distant police lights. Th
 
 The sirens are getting closer. He says, suddenly, let's go. I say, OK.
 
-*Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/OTF1qPxHS8PISF5_W7DLEg), 2018.*
+*Originally published in Chinese as 「[逃](https://mp.weixin.qq.com/s/OTF1qPxHS8PISF5_W7DLEg)」 on 阿莫東森的無聊生活.*
 {: .source-note}

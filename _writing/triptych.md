@@ -6,13 +6,6 @@ date: 2018-10-20
 excerpt: "Three linked stories about closeness, distance, and the light on someone's hair."
 image: /assets/images/personal/triptych.webp
 dropcap: true
-links:
-  - label: "Him (Chinese)"
-    url: "https://mp.weixin.qq.com/s/F_VGMoq1Ph6SvFj2XTMNuw"
-  - label: "Her (Chinese)"
-    url: "https://mp.weixin.qq.com/s/dRDfi2lkxxWYG-JXGPR9gA"
-  - label: "Ah Ming (Chinese)"
-    url: "https://mp.weixin.qq.com/s/wNsY_nWuj-pMutf_r6gpDQ"
 ---
 
 ### Him
@@ -61,5 +54,5 @@ Then things became strange. The whole thing had been strange from the beginning,
 
 Ah Ming is gone now. I still think of him, sometimes.
 
-*Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/F_VGMoq1Ph6SvFj2XTMNuw), October–November 2018.*
+*Originally published in Chinese as 「[他](https://mp.weixin.qq.com/s/F_VGMoq1Ph6SvFj2XTMNuw)」, 「[她](https://mp.weixin.qq.com/s/dRDfi2lkxxWYG-JXGPR9gA)」, and 「[阿明](https://mp.weixin.qq.com/s/wNsY_nWuj-pMutf_r6gpDQ)」 on 阿莫東森的無聊生活.*
 {: .source-note}

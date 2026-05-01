@@ -5,9 +5,6 @@ category: "scicomm"
 date: 2020-08-16
 excerpt: "On auditory illusions, entrainment, and why monetising pseudoscience is not stupidity but malice."
 image: /assets/images/personal/binaural-beats.webp
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/JzhwJaYMVK6xeWR-7rjS-Q"
 ---
 
 <span class="dropcap">T</span>here is no need. Really, there is no need.
@@ -64,5 +61,5 @@ In closing: good health to all. See a doctor when one ought to see a doctor; tak
 8. Perez, H. D. O., Dumas, G., and Lehmann, A. (2020). Binaural Beats through the Auditory Pathway: From Brainstem to Connectivity Patterns. *eNeuro* 0232-19.2020, 1–18.
 9. <http://pomodorotechnique.cn/?p=114>
 
-*Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/JzhwJaYMVK6xeWR-7rjS-Q), August 2020.*
+*Originally published in Chinese as 「[用雙聲道拍頻「綁架大腦」？](https://mp.weixin.qq.com/s/JzhwJaYMVK6xeWR-7rjS-Q)」 on 阿莫東森的無聊生活.*
 </div>

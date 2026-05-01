@@ -5,11 +5,6 @@ category: "fiction"
 date: 2018-11-29
 dropcap: true
 excerpt: "Guangzhou, a private school band, Prozac, a girl by the lake, and a Dylan Thomas poem with the last line missing."
-links:
-  - label: "Original, Part 1 (Chinese)"
-    url: "https://mp.weixin.qq.com/s/sWjAgL4BuutNSZyoK2_McA"
-  - label: "Original, Part 2 (Chinese)"
-    url: "https://mp.weixin.qq.com/s/-t2evuYVxol0y3nmdTcKzA"
 ---
 
 ## 1
@@ -88,5 +83,5 @@ That embrace became two lasts: the last time I held someone without tears, and t
 
 'And I am dumb to tell the lover's tomb / How at my sheet goes the same crooked worm.'
 
-*Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/sWjAgL4BuutNSZyoK2_McA) (Part 1) and [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/-t2evuYVxol0y3nmdTcKzA) (Part 2), November 2018.*
+*Originally published in Chinese as 「[返回世界边缘（上）](https://mp.weixin.qq.com/s/sWjAgL4BuutNSZyoK2_McA)」 and 「[返回世界边缘（下）](https://mp.weixin.qq.com/s/-t2evuYVxol0y3nmdTcKzA)」 on 阿莫東森的無聊生活.*
 {: .source-note}

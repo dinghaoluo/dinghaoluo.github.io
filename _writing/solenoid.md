@@ -6,7 +6,7 @@ type: "essay / book review"
 article_style: "analysis"
 date: 2026-01-29
 writing_feature: true
-writing_feature_order: 2
+writing_feature_order: 4
 image: "/assets/images/thoughts/books/solenoid.jpg"
 archive_image: true
 dropcap: true
@@ -16,7 +16,7 @@ banner_image_alt: "Aerial view of the Berceni housing estate in Bucharest, 1969"
 banner_credit: "Florin Vlădescu / Agerpres via B365.ro / Wikimedia Commons"
 banner_license: "public domain"
 banner_source: "https://commons.wikimedia.org/wiki/File:Berceni_housing_estate_seen_from_the_air_in_1969.jpg"
-excerpt: "A reading of Solenoid as a novel where childhood, failure, body-horror, Bucharest, and metaphysical escape become one pressure system."
+excerpt: "Childhood, failure, body-horror, Bucharest, and metaphysical escape as one pressure system."
 ---
 
 <span class="dropcap">L</span>ice came before the fourth dimension in <span class="ro-name" lang="ro">Cărtărescu</span>'s ***Solenoid***. The novel opens at the protagonist's scalp, where metaphysics touches skin. Before the buried solenoids and levitating bodies, there is a schoolteacher, over a sink, combing lice from his hair and noticing, with horrible calm, the shared organic indignity of their bodies and his. Revelation grows from itch; cosmic escape begins as infestation. The *sur*real and the *meta*physical stem from the real and physical. Moving deeper through the pages of *Solenoid*, however, makes one realise quickly that *surrealism* is too clean a word for what <span class="ro-name" lang="ro">Cărtărescu</span> has created. Surrealism assumes a stable reality later breached by dream. *Solenoid* hangs from a more extreme position: the normal reality *is the same thing* as the strange dream.

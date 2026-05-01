@@ -3838,7 +3838,7 @@ body.writing-page .page__content .writing-entry__title em {
   background-size: cover, var(--writing-banner-size, cover);
   border-radius: 2px;
   box-shadow: inset 0 0 0 1px rgba($morandi-muted, 0.14), 0 1px 6px $shadow-faint;
-  aspect-ratio: 24 / 7;
+  aspect-ratio: 24 / 5;
 
   &:hover {
     color: inherit;
@@ -4024,7 +4024,7 @@ body.writing-page .page__content .writing-entry__title em {
     align-items: stretch;
     min-height: 0;
     max-height: none;
-    padding-top: 12rem;
+    padding-top: 8.5rem;
     aspect-ratio: auto;
     background-position: center 34%;
   }
@@ -4110,7 +4110,7 @@ body.writing-page .page__content .writing-entry__title em {
     background-size: var(--writing-banner-size, cover);
     border-radius: 2px;
     box-shadow: inset 0 0 0 1px rgba($morandi-muted, 0.14), 0 1px 6px $shadow-faint;
-    aspect-ratio: 24 / 7;
+    aspect-ratio: 24 / 5;
   }
 
   .writing-piece-masthead__body {
@@ -4160,7 +4160,7 @@ body.writing-page .page__content .writing-entry__title em {
       align-items: stretch;
       min-height: 0;
       max-height: none;
-      padding-top: clamp(7.5rem, 34vw, 9rem);
+      padding-top: clamp(6rem, 28vw, 7.5rem);
       aspect-ratio: auto;
       background-position: var(--writing-banner-position, center 34%);
     }

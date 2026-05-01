@@ -5,10 +5,8 @@ outlet: "Scientific American China"
 date: 2020-12-02
 image: "/assets/images/writing/alphafold.jpg"
 section: "online"
+show_meta_outlet: false
 dropcap: true
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/un5RPtoRn5mlUEkn2-BA1A"
 excerpt: "How DeepMind's AlphaFold solved biology's fifty-year grand challenge, and what it means for structural biology, drug design, and the future of AI in science."
 ---
 
@@ -113,5 +111,5 @@ The fifty-year problem had always been three problems wearing one name. AlphaFol
 11. Abramson, J. et al. (2024). Accurate structure prediction of biomolecular interactions with AlphaFold 3. *Nature*, 630(8016), 493-500.
 12. Varadi, M. et al. (2022). AlphaFold Protein Structure Database: Massively expanding the structural coverage of protein-sequence space with high-accuracy models. *Nucleic Acids Research*, 50(D1), D439-D444.
 
-*Originally published in Chinese on [Scientific American China](https://mp.weixin.qq.com/s/un5RPtoRn5mlUEkn2-BA1A), December 2020.*
+*Originally published in Chinese as 「[AlphaFold，或如何优雅地折叠](https://mp.weixin.qq.com/s/un5RPtoRn5mlUEkn2-BA1A)」 on Scientific American China.*
 </div>

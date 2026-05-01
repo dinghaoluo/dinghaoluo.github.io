@@ -14,11 +14,6 @@ show_meta_date: false
 show_meta_author: false
 show_meta_outlet: false
 show_archive_isbn: true
-links:
-  - label: "amazon"
-    url: "https://www.amazon.com/dp/7559677754"
-  - label: "douban"
-    url: "https://book.douban.com/subject/37088268/"
 awards:
   - label: "2025 Pingshan Natural History Museum Book Award"
     url: "https://m.sohu.com/a/970954278_122097022"

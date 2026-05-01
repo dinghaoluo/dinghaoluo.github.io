@@ -4,8 +4,9 @@ type: "feature"
 outlet: "Neu-Reality"
 date: 2022-05-23
 writing_feature: true
-writing_feature_order: 4
+writing_feature_order: 3
 section: "online"
+show_meta_outlet: false
 dropcap: true
 feature_banner: true
 banner_image: "/assets/images/writing/place-cells-hippocampus-unlabeled.jpg"
@@ -15,9 +16,6 @@ banner_license: "CC BY-SA 3.0"
 banner_source: "https://commons.wikimedia.org/wiki/File:Hippocampus_(Brain)_Unlabeled.jpg"
 banner_position: "center 30%"
 banner_bg: "#f4f1ea"
-links:
-  - label: "Original (Chinese)"
-    url: "https://neu-reality.com/2022/05/place-cell-history/"
 excerpt: "Tolman's cognitive maps, O'Keefe's place cells, theta sequences, time cells: a history of how the hippocampus became the brain's cartographic system."
 ---
 
@@ -73,5 +71,5 @@ From Tolman's classic behavioural experiments, through O'Keefe's discovery of pl
 10. Qasim, S. E., Fried, I., and Jacobs, J. 'Phase Precession in the Human Hippocampus and Entorhinal Cortex.' *Cell*, 2021, 184(12): 1–14.
 11. Knudsen, E. B. and Wallis, J. D. 'Hippocampal Neurons Construct a Map of an Abstract Value Space.' *Cell*, 2021, 184(18): 4640–4650.
 
-*Originally published in Chinese on [Neu-Reality](https://neu-reality.com/2022/05/place-cell-history/), May 2022.*
+*Originally published in Chinese as 「[位置细胞：大脑探索世界的导盲杖](https://neu-reality.com/2022/05/place-cell-history/)」 on Neu-Reality.*
 </div>

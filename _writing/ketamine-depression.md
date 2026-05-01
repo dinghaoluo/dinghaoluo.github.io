@@ -5,11 +5,9 @@ outlet: "Scientific American China"
 date: 2020-10-20
 image: "/assets/images/writing/ketamine-depression.jpg"
 section: "online"
+show_meta_outlet: false
 writing_page: false
 dropcap: true
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/ANf9dzf1U49uRRSKh5eL_A"
 excerpt: "The strange second life of ketamine, from Vietnam-era anaesthetic to party drug to the first novel antidepressant in decades, and the unresolved questions that shadow its clinical use."
 ---
 
@@ -80,5 +78,5 @@ Given the vast number of people affected by depression, yet also the multiplicit
 3. FDA Drug Safety Communication: FDA warns about serious risks with compounded ketamine products. October 2023.
 4. Utah Senate Bill 0166, Ketamine Clinics Licensure Act. Enacted 2024.
 
-*Originally published in Chinese on [Scientific American China](https://mp.weixin.qq.com/s/ANf9dzf1U49uRRSKh5eL_A), October 2020. Revised and expanded, April 2026.*
+*Originally published in Chinese as 「[氯胺酮的第二次生命](https://mp.weixin.qq.com/s/ANf9dzf1U49uRRSKh5eL_A)」 on Scientific American China. Revised and expanded, April 2026.*
 </div>

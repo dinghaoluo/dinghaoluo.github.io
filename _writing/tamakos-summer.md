@@ -5,9 +5,6 @@ category: "fiction"
 date: 2018-09-26
 dropcap: true
 excerpt: "A reunion at a mountain lodge, a black cat, and a girl who went looking for someone who was already gone."
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/nNYa7YgbiJYZPzMolmqkMw"
 ---
 
 ## I
@@ -86,5 +83,5 @@ Gradually, Tamako reached an accommodation with the nearsightedness and the tinn
 
 Tamako leapt, and shattered the lake's mirror to pieces.
 
-*Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/nNYa7YgbiJYZPzMolmqkMw), September 2018.*
+*Originally published in Chinese as 「[玉子的夏天](https://mp.weixin.qq.com/s/nNYa7YgbiJYZPzMolmqkMw)」 on 阿莫東森的無聊生活.*
 {: .source-note}

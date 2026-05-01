@@ -5,10 +5,8 @@ outlet: "Scientific American China"
 date: 2020-11-20
 image: "/assets/images/writing/female-testes-moles.jpg"
 section: "online"
+show_meta_outlet: false
 writing_page: false
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/UO_nJhYRqR_nJaH1UmrCBQ"
 excerpt: "Female Iberian moles carry functional testes alongside their ovaries. A study in Science traces this to gene triplication and chromosomal inversion, reshaping what we know about sex determination."
 ---
 
@@ -56,5 +54,5 @@ These moles are not anomalies so much as reminders. Intersex Northern Cardinals,
 6. Michiels, N.K. & Newman, L.J. (1998). 'Sex and Violence in Hermaphrodites.' *Nature* 391:647.
 7. Max Planck Institute for Molecular Genetics. (2020). 'Moles: Intersexual and Genetically Doped.'
 
-*Originally published in Chinese on [Scientific American China](https://mp.weixin.qq.com/s/UO_nJhYRqR_nJaH1UmrCBQ), November 2020.*
+*Originally published in Chinese as 「[雌性鼹鼠的睾丸，或进化对性别的漠不关心](https://mp.weixin.qq.com/s/UO_nJhYRqR_nJaH1UmrCBQ)」 on Scientific American China.*
 </div>

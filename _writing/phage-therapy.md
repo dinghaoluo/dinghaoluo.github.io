@@ -5,11 +5,9 @@ outlet: "Scientific American China"
 date: 2021-03-15
 image: "/assets/images/writing/phage-therapy.jpg"
 section: "online"
+show_meta_outlet: false
 writing_page: false
 dropcap: true
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/162wBMyFCG2z4BZwFjTxAQ"
 excerpt: "From Felix d'Herelle's Pasteur Institute discovery to Georgian clinics and US Navy emergency treatments, the long fall and unlikely revival of bacteriophage therapy."
 ---
 
@@ -88,5 +86,5 @@ The name persists: the George Eliava Institute. Billions of minuscule phages onc
 
 The blank circles on the culture plate have not changed. What has changed is the distance between what those circles promise and what the institutions surrounding them have managed to deliver.
 
-*Originally published in Chinese on [Scientific American China](https://mp.weixin.qq.com/s/162wBMyFCG2z4BZwFjTxAQ), March 2021. English version updated and expanded, April 2026.*
+*Originally published in Chinese as 「[噬菌体疗法的漫长衰落与意外复兴](https://mp.weixin.qq.com/s/162wBMyFCG2z4BZwFjTxAQ)」 on Scientific American China. English version updated and expanded, April 2026.*
 {: .source-note}

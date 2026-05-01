@@ -28,5 +28,5 @@ I do not know. I wish the answer were no, but anyone who has ever been pressed f
 
 Money.
 
-*Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/oCDlqhXM3ES40RLYNzWGLw), June 2018.*
+*Originally published in Chinese as 「[錢吶](https://mp.weixin.qq.com/s/oCDlqhXM3ES40RLYNzWGLw)」 on 阿莫東森的無聊生活.*
 {: .source-note}

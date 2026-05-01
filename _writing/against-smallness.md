@@ -18,5 +18,5 @@ The other side, Legasov's reflection, is a more optimistic smallness. In the fin
 
 This second, 'more optimistic' smallness reminded me of a progressive rock duo called Cleft. The guitarist was Dan; the drummer and bassist was John. Dan died of cancer last October. Their website bio reads: 'They really should have grown up by now, but that hasn't happened.' Cancer is perhaps the simplest and deadliest helplessness that nature inflicts on us, rooted in sheer randomness: however many environmental or genetic factors one accounts for, the essence of cancer is stochastic, arising from the very mutations that carbon-based life cannot do without. We cannot fight this randomness, but Dan did not care. He still chatted cheerfully with fans on Twitter; every album sold on Bandcamp came with his and John's signature and a note of thanks. They reminded me that this optimistic smallness does not belong exclusively to scientists like Legasov. It is as universal as the first kind. That, at least, is some consolation.
 
-*Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/p7KL7vR0PQNt7QyvtPtBtA), June 2019.*
+*Originally published in Chinese as 「[對抗渺小](https://mp.weixin.qq.com/s/p7KL7vR0PQNt7QyvtPtBtA)」 on 阿莫東森的無聊生活.*
 {: .source-note}

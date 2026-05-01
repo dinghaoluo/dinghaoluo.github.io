@@ -20,5 +20,5 @@ Now this idea seems to have moved somewhere else. The will I want to draft today
 
 Seen this way, a will is still a place for confession: a way of recording the most honest version of the present rather than abandoning the past. The emptiness of death dissolves the violation of having one's secrets known by others. Crushes and eccentricities, desires and insecurities can stand before the world in their most exposed form, declaring an indelible sovereignty; and the self, long since reduced to ashes, can at last fly to the top of the cage and reach the meaningless key.
 
-*Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/MVnAXcAbeOVGoYaoYJ0qFQ), August 2018.*
+*Originally published in Chinese as 「[我決定起草一份遺書](https://mp.weixin.qq.com/s/MVnAXcAbeOVGoYaoYJ0qFQ)」 on 阿莫東森的無聊生活.*
 {: .source-note}

@@ -41,5 +41,5 @@ I hope that across these six thousand, eight hundred and seventy-seven days, I h
 
 Mum, happy forty-seventh birthday.
 
-*Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/p0P4DM-iaLFHPNID21K2fw), December 2017.*
+*Originally published in Chinese as 「[我媽](https://mp.weixin.qq.com/s/p0P4DM-iaLFHPNID21K2fw)」 on 阿莫東森的無聊生活.*
 {: .source-note}

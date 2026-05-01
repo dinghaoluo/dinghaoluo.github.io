@@ -3,8 +3,14 @@ title: "Shanwei"
 title_zh: "汕尾"
 category: "journal"
 date: 2020-07-27
+writing_feature: true
+writing_feature_order: 5
 excerpt: "Shark meat, Lighthouse Island, and the sea that will not change."
 image: /assets/images/personal/shanwei.webp
+feature_banner: true
+banner_image: "/assets/images/personal/shanwei-lighthouse-island.webp"
+banner_image_alt: "Lighthouse Island in Red Bay seen from a speedboat, the white lighthouse rising from a green slope"
+banner_position: "center 50%"
 ---
 
 <span class="dropcap">T</span>he shark meat was in my mouth before I remembered that sharks are cartilaginous fish. I chewed twice, crushing the soft bone and swallowing it. The bitter melon added during cooking had left the flesh loose and tender, carrying an astringent trace of bitterness that overpowered the salt of the beef tendon balls and soy sauce.

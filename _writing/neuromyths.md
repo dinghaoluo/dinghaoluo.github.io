@@ -5,10 +5,8 @@ outlet: "果壳"
 outlet_en: "Guokr"
 date: 2019-10-01
 section: "online"
+show_meta_outlet: false
 dropcap: true
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/wyetxNOx5PJPoAvP5apCeQ"
 excerpt: "The 10% brain, left-brain/right-brain, gendered cognition, the Mozart effect: four myths that survive because they are useful excuses, not because they are true."
 ---
 
@@ -75,5 +73,5 @@ Combating neuromyths requires continued progress in research, and a public willi
 13. Schellenberg, E.G. and Hallam, S. (2005). 'Music Listening and Cognitive Abilities in 10- and 11-Year-Olds: The Blur Effect.' *Annals of the New York Academy of Sciences*, 1060, 202–209.
 14. Pietschnig, J., et al. (2010). 'Mozart effect–Shmozart effect: A meta-analysis.' *Intelligence*, 38(3), 314–323.
 
-*Originally published in Chinese on [Guokr (果壳)](https://mp.weixin.qq.com/s/wyetxNOx5PJPoAvP5apCeQ), October 2019.*
+*Originally published in Chinese as 「[神经迷思的持续存在](https://mp.weixin.qq.com/s/wyetxNOx5PJPoAvP5apCeQ)」 on Guokr (果壳).*
 </div>

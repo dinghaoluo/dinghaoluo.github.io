@@ -8,6 +8,7 @@ issue: "March 2021 print issue"
 meta_outlet_first: true
 section: "print"
 show_archive_title_zh: false
+show_meta_outlet: false
 image: "/assets/images/writing/arc-consciousness-card.webp"
 feature_banner: true
 banner_image: "/assets/images/writing/arc-consciousness-banner.webp"
@@ -15,7 +16,7 @@ banner_position: "center 48%"
 banner_bg: "#f2eee5"
 banner_image_alt: "Abstract diagram of competing paths crossing a measured field."
 excerpt: "My March 2021 print feature for <em>Scientific American</em> China on ARC, the Templeton-backed effort to test rival theories of consciousness against shared experimental predictions. It sketches IIT, GNW, and higher-order theory through interviews with Anil Seth, Cyriel Pennartz, Hakwan Lau, and Chinese ARC researchers."
-featured: true
+writing_feature: true
 dropcap: true
 ---
 

@@ -7,7 +7,7 @@ article_style: "analysis"
 date: 2026-04-28
 writing_feature: true
 writing_feature_order: 1
-excerpt: "A reading of Gravity's Rainbow through the V-2's no-warning terror, Brennschluss, colonial distance, Dora, Pökler, and the mathematics of impact."
+excerpt: "The V-2's no-warning terror, Brennschluss, colonial distance, Dora, Pökler, and the mathematics of impact."
 dropcap: true
 feature_banner: true
 banner_image: "/assets/images/writing/gravitys-rainbow-v2-launch.jpg"

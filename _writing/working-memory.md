@@ -7,9 +7,7 @@ outlet: "Neu-Reality"
 date: 2021-03-16
 image: "/assets/images/writing/working_memory.jpg"
 section: "online"
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/5g1V5Mrtwy2rhFLkOj6N4g"
+show_meta_outlet: false
 excerpt: "From Miller's magical number seven to alpha-wave perturbation: how working memory became something one can manipulate without opening the skull."
 ---
 
@@ -73,5 +71,5 @@ The Luo Huan laboratory has thus developed a non-invasive 'dynamic perturbation'
 4. Sreenivasan, K. K. and D'Esposito, M. 'The what, where and how of delay activity.' *Nature Reviews Neuroscience*, 2019, 20(8): 466–481.
 5. Li, J., Huang, Q., Han, Q., Mi, Y., and Luo, H. 'Temporally coherent perturbation of neural dynamics during retention alters human multi-item working memory.' *Progress in Neurobiology*, 2021.
 
-*Originally published in Chinese on [Neu-Reality](https://mp.weixin.qq.com/s/5g1V5Mrtwy2rhFLkOj6N4g), March 2021.*
+*Originally published in Chinese as 「[在颅外操纵工作记忆](https://mp.weixin.qq.com/s/5g1V5Mrtwy2rhFLkOj6N4g)」 on Neu-Reality.*
 </div>

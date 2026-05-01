@@ -22,5 +22,5 @@ Giacomo Leopardi called boredom the noblest of emotions, because it demonstrates
 
 So I thought: an overcast day is fine; who says one cannot go to the sea under cloud?
 
-*Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/TS2lGBaLLbi3HNzcOa7_cw), August 2018.*
+*Originally published in Chinese as 「[无聊](https://mp.weixin.qq.com/s/TS2lGBaLLbi3HNzcOa7_cw)」 on 阿莫東森的無聊生活.*
 {: .source-note}

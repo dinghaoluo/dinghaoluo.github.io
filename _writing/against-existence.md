@@ -20,5 +20,5 @@ Music was the other side of this resistance. Music is collectivity. Music makes 
 
 This state continued for a while. Only recently have I begun, consciously, to try again to talk to people who are not yet friends. How long this effort, perhaps futile, will last, I do not know.
 
-*Originally published in Chinese on [阿莫東森的無聊生活](https://mp.weixin.qq.com/s/OTF1qPxHS8PISF5_W7DLEg), May 2019.*
+*Originally published in Chinese as 「[對抗存在](https://mp.weixin.qq.com/s/OTF1qPxHS8PISF5_W7DLEg)」 on 阿莫東森的無聊生活.*
 {: .source-note}

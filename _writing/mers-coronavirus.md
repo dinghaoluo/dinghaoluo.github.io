@@ -5,10 +5,8 @@ outlet: "Scientific American China"
 date: 2021-02-01
 image: "/assets/images/writing/mers-coronavirus.jpg"
 section: "online"
+show_meta_outlet: false
 writing_page: false
-links:
-  - label: "Original (Chinese)"
-    url: "https://mp.weixin.qq.com/s/-Wa20frfTtu63VU-Yg50Gg"
 excerpt: "MERS kills one in three people it infects, spreads through camels in drought-stricken East Africa, and has no vaccine. Climate change is making the next outbreak more likely."
 ---
 
@@ -65,5 +63,5 @@ Scientists are doing what they can to prevent the next outbreak: deploying more 
 
 And on those long, hungry journeys, the herders still have no choice but to eat the raw flesh of camels that have died of thirst.
 
-*Originally published in Chinese on [Scientific American China](https://mp.weixin.qq.com/s/-Wa20frfTtu63VU-Yg50Gg), February 2021.*
+*Originally published in Chinese as 「[MERS、干旱与骆驼宿主](https://mp.weixin.qq.com/s/-Wa20frfTtu63VU-Yg50Gg)」 on Scientific American China.*
 {: .source-note}
