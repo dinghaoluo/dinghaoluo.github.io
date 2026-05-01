@@ -141,9 +141,9 @@
       leader_h: "0rem"
       leader_opacity: "0.34"
     -
-      label: "elsewhere in china"
-      short_label: "elsewhere"
-      target: "elsewhere in china map"
+      label: "wider china"
+      short_label: "wider china"
+      target: "wider china map"
       accent: "clay"
       x: 84.9
       y: 57.3
@@ -618,7 +618,7 @@
   shape: "pearl-river-delta"
 -
   id: "elsewhere-in-china"
-  title: "elsewhere in china"
+  title: "wider china"
   scope: "local"
   view_box: "0 0 100 100"
   aspect: "1"
