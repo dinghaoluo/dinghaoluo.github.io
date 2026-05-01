@@ -145,7 +145,7 @@ The bet had been made in 1998, in a smoky bar in Bremen, Germany, after a confer
 
 They doubled down immediately: a new bet extending to 2048, when Koch will be ninety-one and Chalmers eighty-two. Chalmers' response carried the dry precision of a man who has been right before: 'I hope I lose, but I suspect I'll win.'
 
-The exchange was theatrical, but the substance was not. The fact that twenty-five years of sustained, well-funded research had not produced a consensus answer to the NCC question was itself a datum. It did not mean the question was unanswerable. It meant the answer was harder than the optimists of 1998 had expected — harder, perhaps, than any single theory currently on the table could provide.
+The exchange was theatrical, but the substance was not. The fact that twenty-five years of sustained, well-funded research had not produced a consensus answer to the NCC question was itself a datum. It did not mean that the question was unanswerable. It meant that the answer was harder than the optimists of 1998 had expected — harder, perhaps, than any single theory currently on the table could provide.
 
 <hr class="section-break">
 

@@ -130,9 +130,29 @@ The *Drama* review introduces each character at the moment of their confession: 
 
 Do not present a conclusion about a scene and then rewind to describe it. The reader should move through the scene and arrive at the conclusion together with the reviewer.
 
+### Subordinate Clause Connectors
+
+Always include 'that' and 'which' in relative and complement clauses, even when grammatically optional. Do not drop the connector: 'the journalist that Abbasi invented', not 'the journalist Abbasi invented'; 'a school shooting that she never carried out', not 'a school shooting she never carried out'. The informal omission reads as journalistic or casual in a way that clashes with the prose register.
+
 ### Transitions
 
 Transitions between scene and analysis should feel like speech — someone guiding the reader through their reasoning. Use first-person, thinking-aloud transitions: 'One central scene exemplifies what I am trying to get at'; 'This is what I meant by...'. Do not use academic signposting: 'The scene that makes this legible is...'; 'The key structural element here is...'.
+
+### Tonal Transitions: Praise To Criticism And Back
+
+When a review shifts from praise to criticism, the transition must not read as a hard cut or surprise turn. The criticism should emerge from the work's own ambitions rather than arrive as an external indictment. The end of the positive section should already contain the seed of the difficulty; the critical section should feel like a natural extension, not a negation.
+
+The transition must match the eval. A 'liked' film's criticism should land with visible reluctance — the reviewer wishes the flaw were not there. A 'loved' film's criticism (if any) should read as a flaw held tenderly. A 'disliked' film's rare praise should read as what makes the failure more frustrating. State what is felt, not where the work sits on a quality spectrum. 'The absence of depth is certainly regrettably palpable' is the register — the 'regrettably' carries the affection inside the criticism. Do not impose evaluative calibration frameworks: 'the distance between a good film and the great one it almost was' places the work on a ranking axis rather than describing the reviewer's actual response.
+
+Useful bridging tools for praise-to-criticism: questions the work raises but does not answer; tensions within the work's own ambitions; 'It is a shame, then, that...' qualifications that open the door without slamming it. The *Holy Spider* review bridges from Rahimi's defiance (positive) to the film's treatment of its victims (critical) with 'It is a shame, then, that the film does not extend the same attention to the sixteen women that Rahimi is fighting for' — the 'shame' names the reviewer's feeling, the 'then' signals consequence, and the criticism emerges from the film's own stated ambitions.
+
+#### Reconciliatory Criticism: Criticism Back To Positive
+
+When a 'liked' or 'loved' film needs criticism that returns to a positive conclusion, the critical paragraph should close with a reconciliatory turn that acknowledges why the flaw exists without dismissing it. The pattern: name the criticism → acknowledge the trade-off → close with a measured, not devastating, assessment.
+
+Use conversational counter-arguments rather than analytical framing: 'On the other hand, though, this may be an understandable trade-off' is how someone actually talks when reconsidering — the 'though' softens the 'on the other hand', and 'may be' is hazier than 'I think', leaving the judgment genuinely open. Essayistic phrases like 'It is, I think' are less effective here because the register needs to feel like reconsideration, not settled analysis.
+
+The *Holy Spider* P3 is the reference: the criticism (women reduced to minutes before death) is followed by 'On the other hand, though, this may be an understandable trade-off: Abbasi's subject is the machinery, not the individuals it destroys' — then closes with 'But the absence of depth is certainly regrettably palpable.' The criticism is not retracted; it is held alongside the film's achievement, so the positive conclusion in P4 arrives naturally.
 
 Lists should build pressure, not flatten it. When a list prepares a central thesis, order the items so they escalate from obvious formal correspondences toward the ethical or conceptual friction that forces the thesis to appear.
 
@@ -166,7 +186,13 @@ Avoid filler and hedging: 'it's worth noting', 'one might argue', 'importantly',
 
 Avoid academic and AI-generic diction. Film-theory terms ('displacement', 'epistemology of judgment'), psychoanalytic labels, and sociological jargon should be replaced by describing the mechanism itself. Formulaic evaluative phrases that any AI text generator would produce ('the sharpest structural move', 'precisely observed failure', 'the mechanism that makes this visible', 'representative, not exceptional') should be rewritten with specificity or removed. The test: if the phrase could appear in a generic film review without modification, it is too generic.
 
+Avoid evaluative calibration frameworks: 'the distance between a good film and the great one it almost was', 'this is a B+ when it could have been an A', 'falls short of greatness'. These place the work on a quality spectrum rather than describing the reviewer's actual response. State what is felt ('the absence of depth is certainly regrettably palpable') rather than mapping the work's position on a hierarchy. This applies even in reconciliatory passages where the temptation to summarise-by-ranking is strong.
+
+Avoid vague attribution of narrative elements. 'Saeed gets war trauma' is unclear about the agent — does the character acquire it diegetically, or does the film allocate it as a narrative device? 'The film gives Saeed interiority' is clear: the subject is the film's allocation. Every claim about a character's treatment should specify whether the agent is the film, the director, the audience, or the character themselves. This is especially important when the argument is about the film's choices (who gets depth, who does not).
+
 Avoid defensive verdicts, generic praise, over-explaining, corporate-speak, and prestige-critical boilerplate.
+
+Avoid ungrounded characterisation. Do not describe a character with qualities the work does not demonstrate. Calling Saeed a 'craftsman' in an early *Holy Spider* draft was wrong because nothing in the film supports craft or cunning — he is a brute who cannot even hide a body properly. Character descriptions must be grounded in what the work actually shows. If the work gives a character no interiority, do not invent some; if the work shows a character as monstrous, do not soften with analytical charity.
 
 Avoid closing on protected admiration: adjective catalogues, over-hedged superlatives, or verdicts that apologise for their own force. If the essay has earned emotional directness, state it cleanly and end on the changed perception or unresolved question.
 

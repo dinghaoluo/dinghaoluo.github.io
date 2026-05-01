@@ -10,10 +10,26 @@ The *Drama* review required five rounds of structural rewriting because the firs
 
 Specific requirements:
 - **Plot and structure**: know the sequence of events, not just the premise. Who does what, in what order, and what triggers each reaction.
-- **Characters**: know relationships, motivations, and arcs. Do not conflate or misattribute actions.
+- **Characters**: know relationships, motivations, and arcs. Do not conflate or misattribute actions. Do not assign qualities the work does not demonstrate — an early *Holy Spider* draft called Saeed a 'craftsman' when he is a brute who cannot hide a body. Character descriptions must be grounded in what the work actually shows.
 - **Critical conversation**: read multiple reviews to understand what the discourse has identified — racial dynamics, tonal choices, structural comparisons to earlier work, directorial patterns. Not all of this enters the review, but understanding it prevents blind spots.
-- **Directorial/authorial context**: know the creator's other work and the through-lines critics have identified. The *Drama* review's opening (thought-crime duology with *Dream Scenario*) came from research, not from the user.
+- **Directorial/authorial context**: know the creator's other work and the through-lines critics have identified. The *Drama* review's opening (thought-crime duology with *Dream Scenario*) came from research, not from the user. The *Holy Spider* review's opening (Abbasi's own 'serial killer society' framing) came from a specific interview — and was hyperlinked as a source.
 - **Do not draft analytical claims until the factual foundation is secure.** A sharp reading built on a misunderstood scene is worse than a modest reading built on accurate recall.
+
+## Question-Asking Workflow
+
+Before rewriting, expanding, or polishing any review, the workflow must be: **research → ask questions → draft**. Asking questions is not optional — it is a mandatory step.
+
+After completing research, ask the user questions before drafting. The questions should cover:
+
+1. **Tone and eval alignment**: confirm the eval (loved/liked/disliked) and what the overall register of the review should be. A 'liked' film should not read as a takedown; a 'loved' film's criticism should be held tenderly.
+2. **What to deepen or change**: which paragraphs or arguments the user wants expanded, compressed, or restructured.
+3. **What to preserve**: which passages the user has already edited to their satisfaction and considers voice benchmarks. These must not be rewritten.
+4. **Character and scene specifics**: any characterisations or scene readings that the user wants handled differently from the obvious interpretation.
+5. **Transition intentions**: how the user wants to move between praise and criticism, especially for 'liked' films where tonal management is critical.
+
+The *Holy Spider* review reached the right structure only after the user asked for questions — earlier attempts at rewriting without consultation produced wrong characterisations (Saeed as 'craftsman'), wrong scene details (closing image), and tone mismatches (criticism front-and-centre for a 'liked' film). The cost of asking questions is low; the cost of a wrong draft that must be torn apart is high.
+
+This workflow applies to every rewrite/expansion task, not just first drafts. Even when the user provides specific instructions, clarify uncertainties before drafting rather than guessing.
 
 ## Review Expansion And Catalogue Work
 
@@ -60,6 +76,11 @@ Specific requirements:
 - Pull quote text in long-form essays must appear verbatim in the main body text so it is searchable and attributable to the prose, not only to the layout.
 - Pull quotes must also work without nearby context. Avoid extracted lines whose key words only make sense because the previous paragraph supplied the referent.
 - Short catalogue reviews should not use headers or bullet points.
+- Always include 'that' and 'which' in relative and complement clauses, even when grammatically optional. See the Subordinate Clause Connectors section in [style.md](style.md).
+
+## Hyperlinked Source Claims In Catalogue Reviews
+
+When a review references a specific director or author statement, hyperlink the word that carries the attribution (typically 'said', 'argued', 'claimed') to the source. The *Holy Spider* review opens with 'Abbasi has [said](URL) he wanted to make not a serial killer film but a film about a *serial killer society*' — the link sits on 'said', not on Abbasi's name, because the claim is about what he said, not who he is. This is distinct from linking a critic's name at first mention (which identifies the critic) and from inline links in long-form essays (which reference external material at point of need). In catalogue reviews, a single hyperlinked attribution is often enough; more than two risks cluttering the prose.
 
 ## Metadata And Translation Conventions
 

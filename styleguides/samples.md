@@ -203,6 +203,36 @@ The *Drama* review in `_data/thoughts.yml` (April 2026) is the canonical referen
 - **Intensifier as contempt.** 'So much easier' rather than 'easier' — the disparity is grotesque, and the intensifier carries that.
 - **No 'liberal' as culture-critique label.** 'Contemporary American culture', not 'contemporary American liberal culture' — the critique comes from the left, not from the centre.
 
+## Catalogue Film Review Reference: *Holy Spider*
+
+The *Holy Spider* review in `_data/thoughts.yml` (April 2026) is the canonical reference for **reconciliatory criticism** in a 'liked' catalogue review. Where the *Drama* reference demonstrates inductive scene-to-analysis structure, the *Holy Spider* reference demonstrates how to manage tonal transitions when a film is good but flawed, how to structure institutional analysis, and how the question-asking workflow produces better drafts.
+
+### What To Notice
+
+- **Hyperlinked source attribution.** P1 opens with 'Abbasi has [said](URL) he wanted to make not a serial killer film but a film about a *serial killer society*' — the director's own framing is sourced and linked on 'said'. This gives the review's thesis an external foundation without turning it into a citation exercise.
+- **P1 as voice benchmark (user-edited).** P1 was edited by the user to their satisfaction before any AI rewriting. It demonstrates the thinking-aloud register: 'This is, I think, the "serial killer society" that Abbasi is trying to capture.' The hedging ('I think'), the quotation callback to the director's own phrase, and the plain diction are all characteristic.
+- **Institutional analysis through accumulation.** P1 builds the 'serial killer society' argument not through abstract claims but through a list of institutional failures: police who will not file reports, a courtroom that tilts toward the defence, a public in solidarity *with the killer*. Each item is specific and escalates. The concluding sentence ('The city does not merely fail to stop the murders; it cannot bring itself to call them wrong') lands as a verdict earned by the list.
+- **Scene description through institutional encounters.** P2 presents Rahimi's experience as a chain of institutional barriers: no hotel room → police chief threatens her → male ally repeats rumours and self-censors. Each encounter reveals a different face of institutional misogyny. The visual detail ('Every man in the institutional chain wears the same carnelian ring that Saeed wears') is observed, not hammered — 'Abbasi does not underline this, but it is hard to miss' lets the reader notice it.
+- **Parenthetical aside as procedural deflation.** '(she poses as bait on her first night out, with Sharifi as her tail; he promptly loses sight of her and Hanaei in the backstreets)' — the plotting's weakness delivered as an aside, which underplays it while simultaneously noting it. The parenthetical does two things: it shows the procedural crumbling, and it shows the reviewer not dwelling on it.
+- **'It is a shame, then, that...' as praise-to-criticism bridge.** The transition names the reviewer's feeling ('shame'), signals consequence ('then'), and frames the criticism in terms of the film's own ambitions (it does not extend 'the same attention' — measured against what the film does well, not against an external standard).
+- **Reconciliatory turn without retraction.** 'On the other hand, though, this may be an understandable trade-off' — the 'though' softens the counter-argument, 'may be' leaves the judgment genuinely open. The reconciliation acknowledges why the flaw exists (Abbasi's subject is the machinery, a different film would be needed) without dismissing the criticism. Then 'But the absence of depth is certainly regrettably palpable' — the 'regrettably' carries affection inside the criticism. The three modifiers ('certainly regrettably palpable') are emphatic and slightly formal in a way that serves the reluctance.
+- **No evaluative calibration.** The criticism does not say 'this is the distance between a good film and a great one'. It states what is felt ('the absence of depth is certainly regrettably palpable') without placing the film on a quality spectrum.
+- **Underlined sentence as film-level observation.** The underlined sentence in P4 passes both tests: general enough to transcend this specific film (directors imposing catharsis on material that resists it), insightful enough that a casual viewer would not articulate it (the relief belonging to 'a different kind of film', the sense that the catharsis is the director's wish rather than the society's production). Note that P4 has only one underlined sentence — maximum discipline.
+- **Closing image: specific and verified.** 'Rahimi, on a bus back to Tehran, watches a video of Saeed's son demonstrating the murders on his little sister, rehearsing the strangling with something that looks like joy.' Every detail is accurate and specific. An earlier draft invented 'rehearsing his father's gestures in the dark' — wrong, and caught only after research. Closing images must be verified against the work.
+- **'The spider's web holds.'** Three-word closing that callbacks the title and lands the argument: the societal web of complicity persists across generations. The brevity works because the preceding image (the son rehearsing) has already done the emotional work.
+- **'That' preserved in subclauses.** 'the journalist that Abbasi invented', 'the fact that nobody would believe her over him' — the connector is never dropped.
+
+### Lessons From The Editing Process
+
+The *Holy Spider* review went through multiple rounds of correction that produced the Question-Asking Workflow now documented in [task_requirements.md](task_requirements.md). Key failures that the workflow prevents:
+
+- **Wrong characterisation**: an early draft called Saeed a 'craftsman' when nothing in the film supports craft or cunning. He is a brute. Character claims must be grounded in what the film shows.
+- **Wrong closing detail**: an early draft said 'rehearsing his father's gestures in the dark' — the actual image is a video of the son demonstrating on his sister. Research must check specific scene details.
+- **Tone mismatch**: an early draft placed P2's criticism front-and-centre, making a 'liked' film read as a takedown. The restructuring — positive P1-P2, reconciliatory P3, positive P4 — matches the eval.
+- **Vague attribution**: 'Saeed gets war trauma' was unclear about the agent. 'The film gives Saeed interiority' specifies that it is the film's allocation. Subjects must be clear.
+
+All of these were caught after the user asked 'I think it would serve you much better if you do your proper research and ask me questions if any first.' The question-asking step is now mandatory.
+
 ## Chinese Sample Notes
 
 Chinese examples should be taken from the live review corpus when possible, especially:

@@ -37,7 +37,7 @@ Taken together, two recent papers ([7], [8]) conclude that evidence for binaural
 
 But as everyone knows, the attitude of commercial strategists towards scientific findings is to say whatever suits the audience. On my path searching for evidence that binaural beats enhance cognition, I encountered many articles urging me to turn back. One, entitled 'Brainwave Entrainment and Binaural Beats' [9], solidified my resolve to write this piece. The author goes by 'Pomodoro', and the article appeared shortly before [7]. It details the effects of binaural beats. The author claims that binaural beats (the two externally delivered pure tones, plus a low-frequency tone generated in the superior olive) constitute noise (they do not), and that the low-frequency tone of binaural beats is produced in the cerebral cortex (it is not). At the end of the article, the author includes a promotional summary linking to an app.
 
-I should not have clicked through. Before clicking, I already knew it would cost money. I wondered how much time and expertise it took to build such an app. My conclusion was: virtually none. Then I clicked. The app costs £1.99.
+I should not have clicked through. Before clicking, I already knew that it would cost money. I wondered how much time and expertise it took to build such an app. My conclusion was: virtually none. Then I clicked. The app costs £1.99.
 
 In the early stages of my search, I was relieved that Baidu returned no results for '雙聲道拍頻'. Only after this app entered my field of vision did I realise that the simplified Chinese world had translated 'binaural beats' as '双耳节拍', where 'beats' has been erroneously rendered as 'rhythm'. Once one searches for '双耳节拍' on Taobao or Baidu, some remarkable results appear.
 
