@@ -101,8 +101,10 @@ Reading was probably my favourite pastime from childhood through my teenage year
 
 Films and television came later than books, but they fit the same habit from another angle: watching rhythm, framing, bodies, rooms, and cuts make an idea felt before it has to be stated. I write about them when a scene keeps its shape afterwards, whether that is a face held too long, a joke with a political aftertaste, or a structure that quietly tells on the world around it.
 
-- ***Interstellar*** (2014) dir. Christopher Nolan
-- ***The Wire*** Season 4 (2006) created by David Simon
+- [***Poetry*** (2010)](/thoughts/#시) dir. Lee Chang-dong
+- [***Aftersun*** (2022)](/thoughts/#aftersun) dir. Charlotte Wells
+- [***Interstellar*** (2014)](/thoughts/#interstellar) dir. Christopher Nolan
+- [***The Wire*** Season 4 (2006)](/thoughts/#the-wire-season-4) created by David Simon
 
 <p class="home-thoughts-links"><a href="/thoughts/?type=film">→ films</a> · <a href="/thoughts/?type=tv">→ tv</a></p>
 </div>
@@ -114,8 +116,9 @@ Films and television came later than books, but they fit the same habit from ano
 
 Games are where the systems part of my brain gets least restrained: maps, loops, boss phases, knowledge-locks, buildcraft, and the exact point where interaction becomes thought rather than ornament. A good game makes its world answer back: mechanics carry pressure the dialogue cannot, and the map knows I have touched it. I am less patient with games that mistake volume for life.
 
-- ***Outer Wilds*** (2019) by Mobius Digital
-- ***Elden Ring*** (2022) by FromSoftware
+- [***Outer Wilds*** (2019)](/thoughts/#outer-wilds) by Mobius Digital
+- [***Alan Wake 2*** (2023)](/thoughts/#alan-wake-2) by Remedy Entertainment
+- [***Elden Ring*** (2022)](/thoughts/#elden-ring) by FromSoftware
 
 <p class="home-thoughts-links"><a href="/thoughts/?type=game">→ games</a></p>
 </div>
