@@ -1,0 +1,194 @@
+# -------------------------------------------------------
+# amoxitoxin — Lyrics (reference, not displayed on site)
+# -------------------------------------------------------
+
+# Pre-album tracks
+# -------------------------------------------------------
+
+- track: "十一點去Sainsbury's買咖啡"
+  track_en: "11pm Sainsbury's coffee run"
+  album: "pre-album"
+  year: 2018
+  language: "zh"
+  lyrics: |
+    三一門口的大麻味道正濃
+    跟著一路的煙味飄進鼻孔
+    路邊流浪漢安靜享受睡夢
+    身邊流浪狗安靜看著夜空
+
+    可是我搞不明白
+    為什麼假期總會結束太快
+    一本書還沒看就收到郵件
+    教授說下星期有mock exam
+
+    你剛說什--麼--？
+    生--活--？
+    咖啡還不錯
+
+    然後呢？
+    其實我不會寫詞誒（笑）
+
+    我尋思什麼才是真的生活
+    每天這樣搞下去也沒結果
+    母親告訴我一定要早睡
+    看起來今天又要完蛋咯
+    看起來今天又要完蛋咯
+    看起來今天又要完蛋咯
+
+    你剛說什--麼--？
+    生--活--？
+    咖啡還不錯
+    假期也不錯
+    頭發要掉光
+    眼睛也散光
+    但是我不管
+    作業要寫完
+
+- track: "surrender"
+  album: "pre-album"
+  year: 2018
+  language: "en"
+  notes: "Written in London during Fisher group internship at UCL. Fiction about an Alzheimer's patient. Lyrics appear only in the second half."
+  lyrics: |
+    I missed the days of loneliness
+    the sea and the forest and the smell of happiness
+    rest on me, your head and your hand
+    the smell of the sea and everything fades away
+
+    the stars, your drumrolls
+    I missed the days
+
+    oh your hand and your head and everything
+    and then there's the smell; your memory fades away
+
+# 迷宮 (The Maze) — album tracks
+# -------------------------------------------------------
+
+- track: "迷宮"
+  track_en: "the maze"
+  album: "迷宮"
+  year: 2020
+  language: "en"
+  notes: "Title track. Written in Guangzhou after quarantine. Seed of the album."
+  lyrics: |
+    no way out
+    stuck within
+    no way out
+    from this maze
+
+    no way out
+    stuck within
+    no way out
+    from this maze
+
+    fly out
+    let me out here
+    i cant take it
+    any longer
+
+    out here
+    take me out here
+    please save me
+    from this loneliness
+
+- track: "雨後康河無人泛舟"
+  track_en: "after the rain, no one on the Cam"
+  album: "迷宮"
+  year: 2019
+  language: "zh"
+  notes: "Written in Cambridge. A real scene, accumulated feeling. Late afternoon, grey sky."
+  lyrics: |
+    河上的雨 落下了
+    天上的雲 飄下了
+
+    河上的雨 落下了
+    天上的雲 飄下了
+    我看見你 走來了
+    心裡的雲 散開了
+
+    雨落下
+
+    河上的雨 落下了
+    天上的雲 飄下了
+    我看見你 走來了
+    心裡的雲 散開了
+
+- track: "倒影"
+  track_en: "reflections"
+  album: "迷宮"
+  year: 2020
+  language: "zh"
+  notes: "Lyrics by Jiangshan Wang (王江山). She posted them on WeChat asking for a composer. 12 minutes, maximum ambition."
+  lyrics: |
+    我踏進空中的腳印
+    也踏入空氣
+    我穿透你行過的風
+    同時穿過你
+    你是比馬匹更顛簸的血液
+    擁抱著
+    比呼吸更沸騰的冰雪
+    你是比答案更無解的問題
+    等待著
+    比真相更幽深的裁決
+
+    誰會面對著荒野醍醐灌頂
+    和我一樣
+    是個不合時宜的人
+    誰能背向著天空一走了之
+    和我一樣
+    是個不著邊際的人
+
+    你也 和我一樣
+    你也 和我一樣
+    你也 和我一樣（不著 邊際的人）
+    你也 和我一樣（不著 邊際的人）（不合 時宜的人）
+
+    你也 和我一樣
+    你也 和我一樣
+    你也 和我一樣
+    你也 和我一樣
+    你也 和我一樣
+    你也 和我一樣
+    你也 和我一樣
+    你也 和我一樣
+    你也 和我一樣
+    你也 和我一樣
+    你也 和我一樣
+    你也 和我一樣
+    你也 和我一樣
+    你也 和我一樣
+    你也 和我一樣
+    你也 和我一樣
+    一樣
+
+    我踏進空中的腳印
+    也踏入空氣
+    我穿透你行過的風
+    同時穿過你
+    你是比馬匹更顛簸的血液
+    擁抱著
+    比呼吸更沸騰的冰雪
+    你是比答案更無解的問題
+    等待著
+    比真相更幽深的裁決
+
+- track: "中樞模式發生器"
+  track_en: "central pattern generator"
+  album: "迷宮"
+  year: 2019
+  language: "instrumental"
+  notes: "Written in Cambridge. One rhythmic motif dominates the track, inspired by CPG neural circuits."
+
+- track: "宇宙貓"
+  track_en: "cosmic cat"
+  album: "迷宮"
+  year: 2020
+  language: "instrumental"
+  notes: "Written first day of COVID quarantine in Panyu motel, March 2020. Heavy but nimble, constant register changes. Cat meows at end added after the title came. Written simultaneously with undergrad thesis."
+
+- track: "我們會在三月的倫敦重逢"
+  track_en: "we will meet again in springtime London"
+  album: "迷宮"
+  year: 2019
+  language: "zh"
+  notes: "Written in Cambridge before departure. Bonus track / coda. A gesture of hope, not addressed to anyone specific."

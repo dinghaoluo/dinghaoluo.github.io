@@ -11,11 +11,11 @@ title: 'thoughts'
 
 <div class="thoughts-filter-strip thoughts-filter-strip--type" id="thoughts-filter-strip">
   <div class="thoughts-filter-pill" id="thoughts-filter-pill"></div>
-  <button class="thoughts-filter-btn active" data-filter="all">ALL</button>
-  <button class="thoughts-filter-btn" data-filter="book">books</button>
-  <button class="thoughts-filter-btn" data-filter="film">films</button>
-  <button class="thoughts-filter-btn" data-filter="tv">tv</button>
-  <button class="thoughts-filter-btn" data-filter="game">games</button>
+  <button class="thoughts-filter-btn active" data-filter="all" type="button">ALL</button>
+  <button class="thoughts-filter-btn" data-filter="book" type="button">books</button>
+  <button class="thoughts-filter-btn" data-filter="film" type="button">films</button>
+  <button class="thoughts-filter-btn" data-filter="tv" type="button">tv</button>
+  <button class="thoughts-filter-btn" data-filter="game" type="button">games</button>
 </div>
 
 <div class="thoughts-controls-row">

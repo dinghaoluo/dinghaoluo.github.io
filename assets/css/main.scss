@@ -199,8 +199,6 @@ code, pre, kbd, samp {
   font-family: 'IBM Plex Mono', $cjk-stack, $intl-stack, monospace;
 }
 
-// no global p font-size override — let everything inherit html base so nav and body match
-
 em, i  { font-style: italic; }
 strong { font-weight: bold; font-style: normal; }
 
@@ -238,9 +236,6 @@ hr {
   opacity: 0.82;
 }
 
-// -------------------------
-// inline page header — replaces the old sticky masthead
-// -------------------------
 // -------------------------
 // stacked subpage navigation — vertical stack with current page prominent
 // -------------------------
@@ -527,29 +522,7 @@ body {
 }
 
 // -------------------------
-// author sidebar width (kept for mobile fallback; sidebar hidden on desktop)
-// -------------------------
-.sidebar {
-  @include breakpoint($large) {
-    width: calc(220px - 1em);
-  }
-  @include breakpoint($x-large) {
-    width: calc(260px - 1em);
-    margin-left: 0.95rem;
-  }
-}
-
-.page {
-  @include breakpoint($large) {
-    padding-right: 0;
-  }
-  @include breakpoint($x-large) {
-    padding-right: 0;
-  }
-}
-
-// -------------------------
-// page layout — single centered column, sidebar hidden
+// page layout — single centered column, sidebar hidden on desktop
 // -------------------------
 .sidebar {
   @include breakpoint($large) {
@@ -627,7 +600,7 @@ body {
 @include breakpoint($x-large) {
   .page .page__inner-wrap {
     float: none;
-    max-width: 720px;
+    max-width: 780px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
@@ -645,8 +618,6 @@ body {
 // page content
 // -------------------------
 .page__content {
-  // font-size for p/li/dl is set to 1em in _page.scss; no override needed here
-
   p,
   li,
   dl {
@@ -2638,7 +2609,7 @@ mark.thoughts-highlight {
   display: grid;
   grid-template-columns: minmax(0, 9.15rem) minmax(0, 12rem) minmax(0, 9.15rem) minmax(0, 9.15rem);
   grid-template-rows: repeat(2, 6rem);
-  justify-content: center;
+  justify-content: start;
   gap: 0.46rem;
   margin: 1.02rem 0 1.16rem;
 }
@@ -2927,21 +2898,35 @@ mark.thoughts-highlight {
 
 @media (max-width: 620px) {
   .home-writing-shelf {
-    grid-template-columns: minmax(0, 7.7rem) minmax(0, 9.6rem) minmax(0, 7.7rem) minmax(0, 7.7rem);
-    grid-template-rows: repeat(2, 4.92rem);
-    gap: 0.38rem;
-    margin: 0.92rem -0.1rem 1.08rem;
-    padding: 0 0.1rem 0.18rem;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    mask-image: linear-gradient(to right, #000 0%, #000 calc(100% - 2rem), transparent 100%);
-    -webkit-mask-image: linear-gradient(to right, #000 0%, #000 calc(100% - 2rem), transparent 100%);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0.42rem;
+    margin: 0.92rem 0 1.08rem;
+    padding: 0;
+    overflow: visible;
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
 
-    &::-webkit-scrollbar {
-      display: none;
-    }
+  .home-writing-tile--gravity,
+  .home-writing-tile--place-cells,
+  .home-writing-tile--solenoid {
+    grid-column: auto;
+    grid-row: auto;
+    aspect-ratio: 3 / 4;
+    height: auto;
+  }
+
+  .home-writing-tile--freedoms,
+  .home-writing-tile--shanwei {
+    grid-column: auto;
+    grid-row: auto;
+    aspect-ratio: 3 / 4;
+  }
+
+  .home-writing-tile--shanwei {
+    grid-column: 1 / -1;
+    max-width: 50%;
   }
 
   .home-writing-tile {
@@ -3055,16 +3040,16 @@ mark.thoughts-highlight {
   font-size: 0.88em;
   line-height: 1.55;
   margin: 0 0 0.4em;
-  color: #6a6360;
+  color: $site-text-subtle;
 }
 
 .home-featured-album__link {
   font-size: 0.82em;
   text-decoration: none;
-  color: #b78e79;
+  color: $morandi-clay;
 
   &:hover {
-    color: #8d6959;
+    color: $morandi-clay-deep;
   }
 }
 
@@ -3404,12 +3389,6 @@ body.writing-page .page__content .writing-entry__title em {
   min-width: 0;
 }
 
-.writing-entry--featured {
-  border-left: 2px solid $overlay-clay-soft;
-  padding-left: 0.85rem;
-  background: linear-gradient(90deg, $overlay-oat-soft, $overlay-white-clear);
-}
-
 .writing-entry__type {
   display: inline-block;
   font-size: 0.72em;
@@ -3549,14 +3528,11 @@ body.writing-page .page__content .writing-entry__title em {
   font-family: $mono-stack;
   font-size: 0.74em;
   line-height: 1.35;
+  margin: 0.18rem 0 0.18rem;
 
   a {
     margin-right: 0.95rem;
   }
-}
-
-.writing-entry__book-links {
-  margin: 0.18rem 0 0.18rem;
 }
 
 .writing-entry__companion-link {
@@ -4369,7 +4345,7 @@ body.writing-page .page__content .writing-entry__title em {
   .page__inner-wrap {
     float: none;
     width: 100%;
-    max-width: 720px;
+    max-width: 780px;
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
