@@ -7,9 +7,9 @@ last_updated: 2026-05-06
 
 *Hi, Dinghao here :)*
 
-I'm finishing my PhD in neuroscience at the Max Planck Florida Institute for Neuroscience, studying how a small brainstem nucleus uses dopamine to rapidly tune memory accuracy in the hippocampus. I'm graduating in December 2026 and looking for data science roles in Europe.
+I'm finishing my PhD in neuroscience at the Max Planck Florida Institute for Neuroscience, studying how a tiny brainstem nucleus uses dopamine to rapidly tune memory accuracy in the hippocampus. I'm graduating in December 2026 and looking for data science roles in Europe.
 
-Recently I've been reading *Mason & Dixon* (1997), learning SQL and intermediate machine learning, and working on a <a href="#the-zone" class="site-nav-link">computational analysis</a> of Pynchon's *Gravity's Rainbow* (1973).
+Recently I've been reading *Mason & Dixon* (1997), learning SQL and intermediate machine learning, and working on a <a href="#the-zone" class="site-nav-link">computational analysis of Pynchon's *Gravity's Rainbow* (1973)</a>.
 
 Reach out to me: <a href="mailto:dinghao.luo@outlook.com" class="site-nav-link">[dinghao.luo@outlook.com]</a><br>Find me: <a href="https://github.com/dinghaoluo" class="site-nav-link">GitHub</a> · <a href="https://www.reddit.com/user/amoxdl24/" class="site-nav-link">Reddit</a> · <a href="https://www.instagram.com/amoxitoxin" class="site-nav-link">Instagram</a> · <a href="https://www.linkedin.com/in/dinghaoluo/" class="site-nav-link">LinkedIn</a> · <a href="/cv/" class="site-nav-link">CV</a>
 
@@ -147,15 +147,15 @@ I stumbled into neuroscience sideways: I started at Cambridge reading psychology
 <div class="home-science-strip" aria-label="Science photos">
   <figure class="home-science-card">
     <img src="/assets/images/science/genetics-society-summer-school-edinburgh-2018.webp" alt="Participants at the Genetics Society Summer School Workshop in Edinburgh, seated in a conference room." loading="lazy" width="1846" height="1299">
-    <figcaption><span>Genetics Society Summer School, Edinburgh, 2018.</span> I realised too late that I had forgotten to get a photo with the Fisher Lab members. I learned so much from such great people that summer at Queen Square.</figcaption>
+    <figcaption><span>Genetics Society Summer School, Edinburgh, 2018</span> I realised too late that I had forgotten to get a photo with the Fisher Lab members. I learned so much from such great people that summer at Queen Square.</figcaption>
   </figure>
   <figure class="home-science-card">
     <img src="/assets/images/science/paulsen-lab-cambridge-2019.webp" alt="Members of the Paulsen lab gathered around a dinner table in Cambridge." loading="lazy" width="1500" height="1000">
-    <figcaption><span>Paulsen lab, Cambridge, 2019.</span> My first real lab. The late afternoon discussions of synaptic plasticity inspired so much of my neuroscience thinking, and my dear mentor showed me that electrophysiology is mostly patience.</figcaption>
+    <figcaption><span>Paulsen lab, Cambridge 2019.</span> My first real lab. The late afternoon discussions of synaptic plasticity inspired so much of my neuroscience thinking, and my dear mentor showed me that electrophysiology is mostly patience.</figcaption>
   </figure>
   <figure class="home-science-card">
     <img src="/assets/images/science/wang-lab-mpfi.webp" alt="Members of the Wang Lab gathered in the Max Planck Florida Institute atrium." loading="lazy" width="1920" height="1280">
-    <figcaption><span>Wang Lab, MPFI.</span> Where I came into the lab carrying my own question and acquired technical independence to chase it: behaviour rigs, two-photon imaging, and a <em>lot</em> of Python.</figcaption>
+    <figcaption><span>Wang Lab, MPFI</span> Where I came into the lab carrying my own question and acquired technical independence to chase it: behaviour rigs, two-photon imaging, and a <em>lot</em> of Python.</figcaption>
   </figure>
 </div>
 
@@ -170,9 +170,8 @@ I stumbled into neuroscience sideways: I started at Cambridge reading psychology
     <img src="/assets/images/the_maze.jpg" alt="amoxitoxin album cover">
   </a>
   <div class="home-featured-album__info">
-    <span class="home-featured-album__title">amoxitoxin</span>
-    <p class="home-featured-album__desc">My one-person prog-rock project. Some singles, 1 EP and 1 full-length album.</p>
-    <p class="home-featured-album__link">Read <a href="/music/" class="site-nav-link">how I made my music</a> or find me on <a href="https://amoxitoxin.bandcamp.com/" class="site-nav-link">Bandcamp</a>.</p>
+    <span class="home-featured-album__title"><code>amoxitoxin</code></span>
+    <p class="home-featured-album__desc">My one-person prog-rock project. Some singles, 1 EP and 1 full-length album. Here is <a href="/music/" class="site-nav-link">how I made my music</a>, and you can find me on <a href="https://amoxitoxin.bandcamp.com/" class="site-nav-link">Bandcamp</a>.</p>
   </div>
 </div>
 

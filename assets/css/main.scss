@@ -831,7 +831,7 @@ body:not(.home) .page__content h6 * {
   box-shadow: none;
 }
 
-@media (min-width: 974px) {
+@media (min-width: 992px) {
   .home .page__content h2[id] {
     scroll-margin-top: 1.4rem;
   }
@@ -839,7 +839,7 @@ body:not(.home) .page__content h6 * {
   .home-section-strip {
     position: fixed;
     top: 50%;
-    left: calc((100vw - #{$content-width}) / 2 - 6.35rem);
+    left: calc((100vw - #{$content-width}) / 2 - 7rem);
     z-index: 60;
     display: flex;
     flex-direction: column;
@@ -896,9 +896,9 @@ body:not(.home) .page__content h6 * {
   .home-section-strip__scroller a {
     display: block;
     width: 100%;
-    padding: 0.08rem 0.56rem 0.08rem 0;
+    padding: 0.08rem 0.28rem 0.08rem 0;
     border-right: 2px solid transparent;
-    font-size: 0.94rem;
+    font-size: 0.98rem;
     line-height: 1.22;
     text-align: right;
     white-space: nowrap;
@@ -917,7 +917,7 @@ body:not(.home) .page__content h6 * {
   }
 }
 
-@media (max-width: 973px) {
+@media (max-width: 992px) {
   .home .page__content h2[id] {
     scroll-margin-top: 5.15rem;
   }
@@ -932,15 +932,13 @@ body:not(.home) .page__content h6 * {
     align-items: center;
     min-height: 3.58rem;
     padding: 0;
-    background: rgba($site-bg, 0.93);
+    background: rgba($site-bg, 1);
     border-bottom: 1px solid rgba($morandi-muted, 0.16);
     box-shadow: 0 1px 10px rgba($morandi-ink, 0.08);
     opacity: 0;
     pointer-events: none;
     transform: translateY(-105%);
     transition: transform 0.24s ease, opacity 0.18s ease;
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
   }
 
   .home-section-strip.is-visible {
@@ -990,7 +988,7 @@ body:not(.home) .page__content h6 * {
     white-space: nowrap;
     letter-spacing: 0;
     opacity: 0.62;
-    filter: saturate(0.5) blur(0.05px);
+    filter: none;
     box-shadow: none;
     -webkit-tap-highlight-color: transparent;
   }
@@ -3215,7 +3213,7 @@ mark.thoughts-highlight {
 .home-writing-tile__kicker {
   color: $morandi-clay-deep;
   font-family: $mono-stack;
-  font-size: 0.62rem;
+  font-size: 0.72rem;
   font-weight: bold;
   line-height: 1;
   letter-spacing: 0.045em;
@@ -3225,52 +3223,23 @@ mark.thoughts-highlight {
 .home-writing-tile__title {
   display: block;
   color: $morandi-ink;
-  font-family: $writing-title-stack;
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  line-height: 1.09;
-  letter-spacing: 0.014em;
+  line-height: 1.16;
   text-transform: none;
   overflow-wrap: anywhere;
 }
 
-.home-writing-tile__title * {
-  font-family: inherit;
+.home .page__content .home-writing-tile__title,
+.home .page__content .home-writing-tile__title * {
+  font-family: $writing-title-stack;
 }
 
-.home-writing-tile__title em {
+.home .page__content .home-writing-tile__title em {
   font-family: $writing-title-italic-stack;
   font-style: italic;
   font-optical-sizing: auto;
   letter-spacing: 0;
-}
-
-.home-writing-tile__title-subtitle {
-  color: rgba($morandi-ink, 0.72);
-  font-family: inherit;
-  font-size: 0.86em;
-  letter-spacing: 0.006em;
-}
-
-.home-writing-tile__title-zh {
-  display: block;
-  color: rgba($morandi-ink, 0.74);
-  font-family: $mono-stack;
-  font-size: 0.74rem;
-  line-height: 1.08;
-  letter-spacing: 0.02em;
-}
-
-.home-writing-tile__note {
-  display: block;
-  color: $site-text-muted;
-  font-size: 0.62rem;
-  line-height: 1.16;
-  letter-spacing: 0;
-}
-
-.home-writing-tile__note em {
-  font-style: italic;
 }
 
 @include breakpoint($x-large) {
@@ -3280,21 +3249,12 @@ mark.thoughts-highlight {
   }
 
   .home-writing-tile__kicker {
-    font-size: 0.64rem;
+    font-size: 0.72rem;
   }
 
   .home-writing-tile__title {
-    font-size: 0.99rem;
-    line-height: 1.09;
-  }
-
-  .home-writing-tile__title-zh {
-    font-size: 0.8rem;
-  }
-
-  .home-writing-tile__note {
-    font-size: 0.66rem;
-    line-height: 1.17;
+    font-size: 0.9rem;
+    line-height: 1.06;
   }
 }
 
@@ -3461,30 +3421,16 @@ mark.thoughts-highlight {
   }
 
   .home-writing-tile__kicker {
-    font-size: 0.73rem;
+    font-size: 0.72rem;
     font-weight: bold;
     line-height: 1.05;
     letter-spacing: 0;
   }
 
   .home-writing-tile__title {
-    font-size: 0.86rem;
+    font-size: 0.90rem;
     line-height: 1.08;
     letter-spacing: 0;
-  }
-
-  .home-writing-tile__title-subtitle {
-    font-size: 0.82em;
-  }
-
-  .home-writing-tile__title-zh {
-    font-size: 0.68rem;
-    letter-spacing: 0;
-  }
-
-  .home-writing-tile__note {
-    font-size: 0.58rem;
-    line-height: 1.12;
   }
 
   .home-writing-award {
@@ -3569,7 +3515,7 @@ mark.thoughts-highlight {
   display: flex;
   gap: 1em;
   align-items: flex-start;
-  margin: 0.8em 0 1em;
+  margin: 0.4em 0 0;
 }
 
 .home-featured-album__cover {
@@ -3600,36 +3546,16 @@ mark.thoughts-highlight {
 
 .home-featured-album__title {
   display: block;
-  font-style: italic;
-  font-size: 1em;
-  margin-bottom: 0.3rem;
+  font-size: 1.1em;
+  margin-bottom: 0.2rem;
   color: inherit;
 }
 
 .home-featured-album__desc {
-  font-size: 0.88em;
-  line-height: 1.55;
-  margin: 0 0 0.4em;
+  font-size: 0.66em;
+  line-height: 1.2;
+  margin: 0 0 0;
   color: $site-text-subtle;
-}
-
-.home-featured-album__link {
-  display: block;
-  font-size: 0.82em;
-  line-height: 1.45;
-  margin: 0;
-  text-decoration: none;
-  color: $morandi-clay;
-
-  a {
-    color: inherit;
-    font-weight: 600;
-  }
-
-  &:hover,
-  &:focus-visible {
-    color: $morandi-clay-deep;
-  }
 }
 
 @media (max-width: 480px) {
@@ -3645,7 +3571,7 @@ mark.thoughts-highlight {
 
   .home-featured-album__desc {
     font-size: 0.66em;
-    line-height: 1.35;
+    line-height: 1.2;
   }
 
   .home-featured-album__link {
@@ -6391,7 +6317,7 @@ body.science-page .page__content .writing-insert-pair {
   }
 
   .home-section-strip {
-    background: rgba(#1c1917, 0.92);
+    background: rgba(#1c1917, 1);
     border-bottom-color: rgba(#9b928a, 0.2);
     box-shadow: 0 1px 10px rgba(#000, 0.28);
   }
@@ -6927,18 +6853,6 @@ body.science-page .page__content .writing-insert-pair {
 
   .home-writing-tile__title {
     color: $dark-heading;
-  }
-
-  .home-writing-tile__title-subtitle {
-    color: rgba(#d4cdc4, 0.78);
-  }
-
-  .home-writing-tile__title-zh {
-    color: rgba(#d4cdc4, 0.72);
-  }
-
-  .home-writing-tile__note {
-    color: $dark-copy-soft;
   }
 
   .home-albums img {

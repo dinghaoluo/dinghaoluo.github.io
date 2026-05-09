@@ -8,7 +8,7 @@
     var scroller = strip.querySelector('.home-section-strip__scroller');
     var links = Array.prototype.slice.call(strip.querySelectorAll('[data-home-section]'));
     var backTop = document.querySelector('[data-home-back-to-top]');
-    var mobileMedia = window.matchMedia('(max-width: 973px)');
+    var mobileMedia = window.matchMedia('(max-width: 992px)');
     var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     var frame = null;
     var activeId = '';
@@ -113,7 +113,7 @@
     }
 
     function revealOffset() {
-      return mobileMedia.matches ? 0 : 72;
+      return mobileMedia.matches ? Math.max(strip.offsetHeight + 12, 72) : 72;
     }
 
     function update() {
