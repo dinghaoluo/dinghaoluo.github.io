@@ -1,0 +1,530 @@
+---
+permalink: /404.html
+layout: default
+---
+
+<style type='text/css' media='screen'>
+  .lost-shell {
+    position: relative;
+    max-width: 44rem;
+    margin: 6.4rem auto 7rem;
+    padding: 0 1.75rem;
+    color: #3f3934;
+  }
+
+  .lost-main {
+    position: relative;
+    z-index: 2;
+    max-width: 33rem;
+  }
+
+  .lost-ghostfield {
+    position: absolute;
+    inset: -3.2rem -8.5rem;
+    z-index: 1;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .lost-ghost {
+    position: absolute;
+    display: inline-block;
+    max-width: 16rem;
+    line-height: 1.08;
+    color: rgba(141, 105, 89, 0.12);
+    filter: blur(11px);
+    opacity: var(--alpha, 0.24);
+    transform: translate3d(0, 0, 0) rotate(var(--rot, 0deg)) scale(var(--scale, 1));
+    transform-origin: center;
+    transition:
+      filter 320ms ease,
+      opacity 320ms ease,
+      transform 340ms ease,
+      color 320ms ease,
+      letter-spacing 320ms ease;
+    pointer-events: auto;
+    user-select: none;
+    white-space: nowrap;
+    letter-spacing: 0.03em;
+    text-shadow: 0 0 18px rgba(250, 247, 242, 0.12);
+  }
+
+  .lost-kicker {
+    margin: 0 0 0.85rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: lowercase;
+    color: #8d6959;
+    opacity: 0.88;
+  }
+
+  .lost-title {
+    margin: 0;
+    font-size: clamp(2.15rem, 5vw, 3.7rem);
+    line-height: 1.02;
+    letter-spacing: -0.045em;
+    font-weight: normal;
+    max-width: 10ch;
+  }
+
+  .lost-title__line {
+    display: block;
+  }
+
+  .lost-title__line--tight {
+    display: block;
+  }
+
+  .lost-lede {
+    margin: 1.4rem 0 0;
+    font-family: 'Mononoki', monospace;
+    font-size: clamp(0.95rem, 2vw, 1.35rem);
+    line-height: 1.08;
+    max-width: none;
+    color: #3f3934;
+    letter-spacing: -0.02em;
+  }
+
+  .lost-lede__line {
+    display: block;
+    font-family: inherit;
+  }
+
+  .lost-record {
+    margin: 2.1rem 0 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .lost-panel {
+    padding: 1.1rem 1.15rem 1.2rem;
+    background: linear-gradient(180deg, rgba(250, 247, 242, 0.9), rgba(250, 247, 242, 0.72));
+    border: 1px solid rgba(127, 118, 111, 0.16);
+    border-radius: 0.36rem;
+    box-shadow: 0 10px 28px rgba(63, 57, 52, 0.045);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .lost-panel-label {
+    margin: 0 0 0.48rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: lowercase;
+    color: #7f766f;
+  }
+
+  .lost-path {
+    display: inline;
+    color: #8d6959;
+    word-break: break-word;
+  }
+
+  .lost-fragment {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.94;
+    color: #3f3934;
+    max-width: 31rem;
+  }
+
+  .lost-actions {
+    margin-top: 0.2rem;
+  }
+
+  .lost-actions__primary {
+    display: inline-block;
+    position: relative;
+    color: #3f3934;
+    font-size: 1.05rem;
+    letter-spacing: -0.008em;
+    text-decoration: none;
+    padding-bottom: 3px;
+    transition: color 0.18s ease;
+  }
+
+  .lost-actions__primary::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.5px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.22s ease;
+    opacity: 0.82;
+  }
+
+  .lost-actions__primary:hover {
+    color: #8d6959;
+    text-decoration: none;
+  }
+
+  .lost-actions__primary:hover::after {
+    transform: scaleX(1);
+  }
+
+  .lost-note {
+    margin: 0.4rem 0 0;
+    font-size: 0.78rem;
+    line-height: 1.6;
+    color: #a79f97;
+    font-style: italic;
+    letter-spacing: 0.005em;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .lost-ghost:hover {
+      filter: blur(7px);
+      opacity: calc(var(--alpha, 0.24) + 0.16);
+      color: rgba(141, 105, 89, 0.18);
+      transform: translate3d(0, -1px, 0) rotate(var(--rot, 0deg)) scale(calc(var(--scale, 1) + 0.03));
+      letter-spacing: 0.038em;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .lost-shell {
+      margin-top: 5rem;
+      margin-bottom: 5.5rem;
+      padding: 0 1.2rem;
+    }
+
+    .lost-main {
+      max-width: none;
+    }
+
+    .lost-ghostfield {
+      inset: -1.7rem -1.3rem;
+    }
+
+    .lost-ghost {
+      max-width: 10rem;
+    }
+
+    .lost-panel {
+      padding: 0.95rem 0.95rem 1rem;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html:not([data-theme="light"]) .lost-shell { color: #ddd3c8; }
+    html:not([data-theme="light"]) .lost-kicker { color: #c49a85; }
+    html:not([data-theme="light"]) .lost-lede { color: #c8c0b6; }
+    html:not([data-theme="light"]) .lost-fragment { color: #c8c0b6; }
+    html:not([data-theme="light"]) .lost-panel {
+      background: linear-gradient(180deg, rgba(42, 39, 36, 0.9), rgba(42, 39, 36, 0.72));
+      border-color: rgba(155, 146, 138, 0.16);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+    }
+    html:not([data-theme="light"]) .lost-panel-label { color: #8b837c; }
+    html:not([data-theme="light"]) .lost-path { color: #c49a85; }
+    html:not([data-theme="light"]) .lost-actions__primary { color: #ddd3c8; }
+    html:not([data-theme="light"]) .lost-actions__primary:hover { color: #c49a85; }
+    html:not([data-theme="light"]) .lost-note { color: #6a6360; }
+    html:not([data-theme="light"]) .lost-ghost {
+      color: rgba(196, 154, 133, 0.12);
+      text-shadow: 0 0 18px rgba(28, 25, 23, 0.12);
+    }
+  }
+
+  html[data-theme="dark"] .lost-shell { color: #ddd3c8; }
+  html[data-theme="dark"] .lost-kicker { color: #c49a85; }
+  html[data-theme="dark"] .lost-lede { color: #c8c0b6; }
+  html[data-theme="dark"] .lost-fragment { color: #c8c0b6; }
+  html[data-theme="dark"] .lost-panel {
+    background: linear-gradient(180deg, rgba(42, 39, 36, 0.9), rgba(42, 39, 36, 0.72));
+    border-color: rgba(155, 146, 138, 0.16);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+  }
+  html[data-theme="dark"] .lost-panel-label { color: #8b837c; }
+  html[data-theme="dark"] .lost-path { color: #c49a85; }
+  html[data-theme="dark"] .lost-actions__primary { color: #ddd3c8; }
+  html[data-theme="dark"] .lost-actions__primary:hover { color: #c49a85; }
+  html[data-theme="dark"] .lost-note { color: #6a6360; }
+  html[data-theme="dark"] .lost-ghost {
+    color: rgba(196, 154, 133, 0.12);
+    text-shadow: 0 0 18px rgba(28, 25, 23, 0.12);
+  }
+</style>
+
+<div class='lost-shell'>
+  <div class='lost-ghostfield' id='lost-ghostfield' aria-hidden='true'></div>
+
+  <div class='lost-main'>
+    <p class='lost-kicker'>404</p>
+    <h1 class='lost-title'>
+      <span class='lost-title__line'>this page</span>
+      <span class='lost-title__line'>is not in</span>
+      <span class='lost-title__line lost-title__line--tight'>t&nbsp;&nbsp;&nbsp;h&nbsp;&nbsp;&nbsp;e</span>
+      <span class='lost-title__line'>catalogue</span>
+    </h1>
+
+    <p class='lost-lede'>
+      <span class='lost-lede__line'>no indexed room exists</span>
+      <span class='lost-lede__line'>at the requested path.</span>
+    </p>
+
+    <section class='lost-record' aria-label='missing catalogue record'>
+      <div class='lost-panel'>
+        <p class='lost-panel-label'>requested path</p>
+        <p class='lost-fragment'><span class='lost-path' id='lost-path'></span></p>
+      </div>
+
+      <div class='lost-panel'>
+        <p class='lost-panel-label'>catalogue fragment</p>
+        <p class='lost-fragment' id='lost-fragment'></p>
+      </div>
+
+      <div class='lost-actions'>
+        <a href='javascript:history.back()' class='lost-actions__primary'>return to the previous page</a>
+      </div>
+
+      <p class='lost-note'>
+        this fragment drifts in from the missing path.
+      </p>
+    </section>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var lexicon = {{ site.data['404_lexicon'] | jsonify }};
+    var path = window.location.pathname || '/404/';
+    var pathEl = document.getElementById('lost-path');
+    var fragEl = document.getElementById('lost-fragment');
+    var ghostfieldEl = document.getElementById('lost-ghostfield');
+
+    if (pathEl) {
+      pathEl.textContent = path;
+    }
+
+    var seed = 0;
+    for (var i = 0; i < path.length; i++) {
+      seed = (seed * 131 + path.charCodeAt(i)) >>> 0;
+    }
+
+    function rand() {
+      seed = (1664525 * seed + 1013904223) >>> 0;
+      return seed / 4294967296;
+    }
+
+    function chance(probability) {
+      return rand() < probability;
+    }
+
+    function pick(list) {
+      if (!list || !list.length) {
+        return '';
+      }
+      return list[Math.floor(rand() * list.length)];
+    }
+
+    function pickFrom(keys) {
+      var merged = [];
+      for (var i = 0; i < keys.length; i++) {
+        var list = lexicon[keys[i]] || [];
+        merged = merged.concat(list);
+      }
+      return pick(merged);
+    }
+
+    function noiseWord() {
+      var out = '';
+      var count = 2 + Math.floor(rand() * 3);
+
+      for (var i = 0; i < count; i++) {
+        out += pick(lexicon.syllables);
+      }
+
+      return out;
+    }
+
+    function nounCore() {
+      return pickFrom([
+        'nouns',
+        'catalogue_terms',
+        'signal_terms',
+        'water_terms'
+      ]);
+    }
+
+    function knownPhrase() {
+      return pickFrom([
+        'threshold_phrases',
+        'memory_phrases',
+        'domestic_images',
+        'narrative_clauses'
+      ]);
+    }
+
+    function nounPhrase() {
+      var mode = Math.floor(rand() * 5);
+
+      if (mode === 0) {
+        return 'the ' + pick(lexicon.adjectives) + ' ' + nounCore();
+      }
+
+      if (mode === 1) {
+        return 'the ' + nounCore();
+      }
+
+      if (mode === 2) {
+        return pick(lexicon.locations);
+      }
+
+      if (mode === 3) {
+        return pick(lexicon.light);
+      }
+
+      return knownPhrase();
+    }
+
+    function strangeUnit() {
+      if (chance(0.58)) {
+        return noiseWord();
+      }
+
+      return knownPhrase();
+    }
+
+    function clause() {
+      var mode = Math.floor(rand() * 8);
+
+      if (mode === 0) {
+        return nounPhrase() + ' beside ' + strangeUnit();
+      }
+
+      if (mode === 1) {
+        return nounPhrase() + ' in ' + pick(lexicon.materials);
+      }
+
+      if (mode === 2) {
+        return strangeUnit() + ' under ' + nounPhrase();
+      }
+
+      if (mode === 3) {
+        return 'there is ' + nounPhrase() + ' where ' + strangeUnit() + ' should be';
+      }
+
+      if (mode === 4) {
+        return nounPhrase() + ', ' + strangeUnit();
+      }
+
+      if (mode === 5) {
+        return pick(lexicon.memory_phrases) + ', ' + nounPhrase();
+      }
+
+      if (mode === 6) {
+        return pick(lexicon.threshold_phrases) + ', ' + pick(lexicon.narrative_clauses);
+      }
+
+      return strangeUnit() + ' beside ' + nounPhrase();
+    }
+
+    function sentence() {
+      var parts = [];
+      var count = 2 + Math.floor(rand() * 2);
+
+      for (var i = 0; i < count; i++) {
+        parts.push(clause());
+      }
+
+      var text = parts.join(', ');
+      text = text.charAt(0).toUpperCase() + text.slice(1);
+
+      if (chance(0.38)) {
+        text += ' ' + pick(lexicon.hard_cuts);
+      } else {
+        text += '.';
+      }
+
+      return text;
+    }
+
+    function buildFragment() {
+      var sentences = [];
+      var count = 2 + Math.floor(rand() * 2);
+
+      for (var i = 0; i < count; i++) {
+        sentences.push(sentence());
+      }
+
+      return sentences.join(' ');
+    }
+
+    function buildGhostTerms() {
+      var terms = [];
+      var count = window.innerWidth < 720 ? 6 : 10;
+
+      for (var i = 0; i < count; i++) {
+        if (chance(0.66)) {
+          terms.push(pick(lexicon.ghost_terms));
+        } else if (chance(0.48)) {
+          terms.push(pick(lexicon.threshold_phrases));
+        } else {
+          terms.push(nounPhrase());
+        }
+      }
+
+      return terms;
+    }
+
+    function placeGhost(span, index) {
+      var top = 7 + rand() * 82;
+      var left;
+
+      if (index % 2 === 0) {
+        left = -4 + rand() * 14;
+      } else {
+        left = 84 + rand() * 14;
+      }
+
+      if (chance(0.14)) {
+        top = rand() * 10;
+      }
+
+      if (chance(0.12)) {
+        top = 86 + rand() * 8;
+      }
+
+      var size = 0.78 + rand() * 0.42;
+      var rot = (rand() * 7) - 3.5;
+      var scale = 0.96 + rand() * 0.12;
+      var alpha = 0.14 + rand() * 0.12;
+
+      span.style.top = top.toFixed(2) + '%';
+      span.style.left = left.toFixed(2) + '%';
+      span.style.fontSize = size.toFixed(2) + 'rem';
+      span.style.setProperty('--rot', rot.toFixed(2) + 'deg');
+      span.style.setProperty('--scale', scale.toFixed(2));
+      span.style.setProperty('--alpha', alpha.toFixed(2));
+    }
+
+    function renderGhosts() {
+      if (!ghostfieldEl) {
+        return;
+      }
+
+      ghostfieldEl.innerHTML = '';
+
+      var terms = buildGhostTerms();
+
+      for (var i = 0; i < terms.length; i++) {
+        var span = document.createElement('span');
+        span.className = 'lost-ghost';
+        span.textContent = terms[i];
+        placeGhost(span, i);
+        ghostfieldEl.appendChild(span);
+      }
+    }
+
+    if (fragEl) {
+      fragEl.textContent = buildFragment();
+    }
+
+    renderGhosts();
+  })();
+</script>

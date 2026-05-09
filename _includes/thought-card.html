@@ -1,0 +1,44 @@
+<div
+  id="{% if include.take.title_en and include.take.type != 'book' %}{{ include.take.title_en | slugify }}{% else %}{{ include.take.title | slugify }}{% endif %}"
+  class="thoughts-card{% if include.take.pin %} thoughts-card--pinned{% endif %}"
+  data-type="{{ include.take.type | downcase }}"
+  data-title="{{ include.take.title | escape }}{% if include.take.title_en %} {{ include.take.title_en | escape }}{% endif %}"
+  data-author="{{ include.take.creator | escape }}"
+  data-year="{{ include.take.year }}"
+  data-reaction="{{ include.take.eval | default: '' | downcase | escape }}"
+  data-pinned="{% if include.take.pin %}true{% else %}false{% endif %}"{% if include.initially_hidden %} style="display:none"{% endif %}>
+  <div class="thoughts-card__img-wrap">
+    {% if include.take.image and include.take.image != '' %}
+      <img class="thoughts-card__img" src="{{ include.take.image | relative_url }}" alt="{{ include.take.title | escape }}" loading="lazy" decoding="async" width="96" height="144">
+    {% else %}
+      <div class="thoughts-card__img--placeholder"></div>
+    {% endif %}
+  </div>
+  <div class="thoughts-card__body">
+    {% assign title_en_lang = include.take.title_en_lang | default: '' %}
+    <div class="thoughts-card__meta">
+      {% if include.take.pin or include.take.eval %}
+      <span class="thoughts-card__badges">
+        {% if include.take.pin %}
+          <span class="thoughts-card__pin">pinned</span>
+        {% endif %}
+        {% if include.take.eval and include.take.eval != '' %}
+          <span class="thoughts-card__eval thoughts-card__eval--{{ include.take.eval | slugify }}">{{ include.take.eval }}</span>
+        {% endif %}
+      </span>
+      {% endif %}
+      <span class="thoughts-card__title-line"><span class="thoughts-card__title">{% assign title_parts = include.take.title | split: ' Season ' %}{% if title_parts.size > 1 %}{{ title_parts[0] }}<span class="thoughts-card__season"> Season {{ title_parts[1] }}</span>{% else %}{{ include.take.title }}{% endif %}{% if include.take.title_en and include.take.title_en != '' %}{% if title_en_lang == 'he' %}<span class="thoughts-card__title-en lang-he" lang="he" dir="rtl">{{ include.take.title_en }}</span>{% else %}<span class="thoughts-card__title-en">{{ include.take.title_en }}</span>{% endif %}{% endif %}{% if include.take.year and include.take.year != '' %}<span class="thoughts-card__year">{{ include.take.year }}</span>{% endif %}</span><span class="thoughts-card__creator-wrap"><span class="thoughts-card__sep">&middot;</span><span class="thoughts-card__creator">{% assign cr_parts = include.take.creator | split: ', trans.' %}{{ include.take.creator_role }} {{ cr_parts[0] }}{% if cr_parts.size > 1 %},<span class="thoughts-card__translator"> trans.{{ cr_parts[1] }}</span>{% endif %}</span></span></span>
+    </div>
+    {% if include.take.posted and include.take.posted != '' %}
+      <div class="thoughts-card__posted">
+        <span class="thoughts-card__posted-date">{{ include.take.posted | date: '%-d %b %Y' }}</span>{% if include.take.text and include.take.text != '' %}<span class="thoughts-card__posted-sep"> · </span><span class="thoughts-card__read-time">{% include read-time.html text=include.take.text %}</span>{% endif %}
+      </div>
+    {% endif %}
+    <div class="thoughts-card__text-wrap">
+      <div class="thoughts-card__text">{{ include.take.text | markdownify }}</div>
+    </div>
+    <div class="thoughts-card__footer">
+      <button class="thoughts-card__toggle" aria-expanded="false" aria-label="expand thought">&darr;</button>
+    </div>
+  </div>
+</div>

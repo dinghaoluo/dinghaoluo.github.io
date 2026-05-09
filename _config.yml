@@ -1,0 +1,224 @@
+# Build and theme settings
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "default"
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-remote-theme
+
+# Site settings
+locale: "en-GB"
+title: "hao things"
+email: dinghao.luo@outlook.com
+description: >-
+  Personal website of Dinghao Luo: neuroscientist, translator, and musician.
+  PhD student at Max Planck Florida Institute for Neuroscience.
+baseurl: ""
+url: "https://dinghaoluo.github.io"
+repository: "dinghaoluo/dinghaoluo.github.io"
+words_per_minute: 200
+
+comments:
+  provider: false
+
+atom_feed:
+  hide: false
+
+search: false
+
+# Social Sharing
+twitter:
+  username: "dinghaoluo"
+
+# Analytics
+analytics:
+  provider: false
+
+
+# Site Author
+author:
+  name             : "Dinghao Luo"
+  name_zh          : "羅 丁豪"
+  avatar           : "/assets/images/avatar.jpg"
+  bio              : "phd in neuroscience<br>data science<br>science journalism"
+  bio_mobile       : "phd in neuroscience<br>data science · sci. journalism"
+  links:
+    - label: "email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:dinghao.luo@outlook.com"
+    - label: "github"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/dinghaoluo"
+    - label: "reddit"
+      icon: "fab fa-fw fa-reddit"
+      url: "https://www.reddit.com/user/amoxdl24/"
+    - label: "linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/dinghaoluo/"
+    - label: "bandcamp"
+      icon: "fab fa-fw fa-bandcamp"
+      url: "https://amoxitoxin.bandcamp.com/"
+    - label: "instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/amoxitoxin"
+
+# Site Footer
+footer:
+  links:
+    - label: "email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:dinghao.luo@outlook.com"
+    - label: "github"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/dinghaoluo"
+    - label: "reddit"
+      icon: "fab fa-fw fa-reddit"
+      url: "https://www.reddit.com/user/amoxdl24/"
+    - label: "linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/dinghaoluo/"
+    - label: "bandcamp"
+      icon: "fab fa-fw fa-bandcamp"
+      url: "https://amoxitoxin.bandcamp.com/"
+    - label: "instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/amoxitoxin"
+
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - README.md
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+  - scripts
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+timezone:
+
+
+# Collections
+collections:
+  writing:
+    output: true
+    permalink: /writing/:title/
+
+
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-remote-theme
+
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+
+# HTML Compression
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: false
+      related: true
+      show_date: true
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      toc: false
+  - scope:
+      path: "_writing"
+      type: writing
+    values:
+      layout: single
+      author_profile: true

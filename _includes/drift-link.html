@@ -1,0 +1,11 @@
+{% assign drift_lines = site.data.drift_lines %}
+{% assign drift_fallback = "the corridor continues after the plan has ended." %}
+
+<div class="page__drift">
+  <a
+    href="{{ '/' | relative_url }}lost-path"
+    class="drift-link js-drift-link"
+    data-drift-base="{{ '/' | relative_url }}"
+    data-drift-lines='{{ drift_lines | jsonify | escape }}'
+  >{{ drift_lines[0] | default: drift_fallback }}</a>
+</div>

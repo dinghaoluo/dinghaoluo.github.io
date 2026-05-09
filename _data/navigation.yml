@@ -1,0 +1,12 @@
+# main links
+main:
+  - title: "writing"
+    url: /writing/
+  - title: "thoughts"
+    url: /thoughts/
+  - title: "science"
+    url: /science/
+  - title: "music"
+    url: /music/
+  - title: "photos"
+    url: /photos/

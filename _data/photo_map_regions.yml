@@ -1,0 +1,541 @@
+# Hierarchical map plates for /photos/.
+# Generated coordinates use calibrated SVG-space positions for the simplified map in _includes/photo-world-map.svg.
+-
+  id: "overview"
+  title: "photo map"
+  scope: "overview"
+  view_box: "135 49 780 212"
+  aspect: "3.68"
+  points:
+    -
+      label: "death valley"
+      target: "death valley"
+      accent: "haze"
+      x: 11.0
+      y: 54.8
+      section: "death-valley"
+      label_x: "-1.2rem"
+      label_y: "-1.4rem"
+    -
+      label: "canada"
+      target: "canada map"
+      accent: "clay"
+      x: 26.37
+      y: 39.31
+      cluster: "canada"
+      label_x: "0.72rem"
+      label_y: "-0.6rem"
+    -
+      label: "northeast us"
+      target: "northeast us map"
+      accent: "clay"
+      x: 24.06
+      y: 45.99
+      cluster: "northeast-us"
+      label_x: "0.72rem"
+      label_y: "-0.4rem"
+    -
+      label: "florida"
+      target: "florida map"
+      accent: "clay"
+      x: 21.2
+      y: 64.8
+      cluster: "florida"
+      label_x: "0.95rem"
+      label_y: "-0.5rem"
+    -
+      label: "scotland"
+      target: "scotland map"
+      accent: "clay"
+      x: 45.5
+      y: 24.0
+      cluster: "scotland"
+      label_x: "-4.4rem"
+      label_y: "-0.35rem"
+    -
+      label: "england"
+      target: "england map"
+      accent: "clay"
+      x: 46.8
+      y: 30.8
+      cluster: "england"
+      label_x: "-4.2rem"
+      label_y: "-0.3rem"
+    -
+      label: "lisbon"
+      target: "lisbon"
+      accent: "haze"
+      x: 44.74
+      y: 49.53
+      section: "lisbon"
+      label_x: "-3.4rem"
+      label_y: "-0.3rem"
+    -
+      label: "chamonix"
+      target: "chamonix"
+      accent: "haze"
+      x: 49.23
+      y: 37.26
+      section: "chamonix"
+      label_x: "0.65rem"
+      label_y: "-0.6rem"
+    -
+      label: "italy"
+      target: "italy map"
+      accent: "clay"
+      x: 52.0
+      y: 47.0
+      cluster: "italy"
+      label_x: "0.65rem"
+    -
+      label: "georgia"
+      target: "georgia map"
+      accent: "clay"
+      x: 62.04
+      y: 43.68
+      cluster: "georgia"
+      label_x: "0.72rem"
+      label_y: "-0.5rem"
+    -
+      label: "jordan"
+      target: "jordan map"
+      accent: "clay"
+      x: 58.46
+      y: 57.65
+      cluster: "jordan"
+      label_x: "0.72rem"
+      label_y: "-0.4rem"
+    -
+      label: "northern china"
+      short_label: "n. china"
+      target: "northern china map"
+      accent: "clay"
+      x: 84.36
+      y: 47.17
+      cluster: "northern-china"
+      label_x: "-4.85rem"
+      label_y: "-0.55rem"
+    -
+      label: "southern china"
+      short_label: "s. china"
+      target: "southern china map"
+      accent: "clay"
+      x: 83.5
+      y: 73.0
+      cluster: "southern-china"
+      label_x: "-4.85rem"
+      label_y: "-0.55rem"
+    -
+      label: "osaka"
+      target: "osaka"
+      accent: "sage"
+      x: 90.0
+      y: 52.74
+      section: "osaka"
+      label_x: "0.68rem"
+      label_y: "-0.55rem"
+    -
+      label: "singapore"
+      target: "singapore"
+      accent: "sage"
+      x: 83.87
+      y: 93.02
+      section: "singapore"
+      label_x: "0.72rem"
+      label_y: "-0.55rem"
+-
+  id: "canada"
+  title: "canada"
+  scope: "local"
+  view_box: "318 120 56 28"
+  aspect: "2.0"
+  points:
+    -
+      label: "toronto"
+      target: "toronto"
+      accent: "blue"
+      x: 14.29
+      y: 71.43
+      section: "toronto"
+      label_x: "-4.45rem"
+    -
+      label: "montreal"
+      target: "montreal"
+      accent: "blue"
+      x: 46.43
+      y: 39.29
+      section: "montreal"
+      label_x: "0.7rem"
+    -
+      label: "quebec city"
+      target: "quebec city"
+      accent: "blue"
+      x: 60.71
+      y: 21.43
+      section: "quebec-city"
+      label_x: "0.7rem"
+-
+  id: "northeast-us"
+  title: "northeast us"
+  scope: "local"
+  view_box: "0 20 100 80"
+  aspect: "1.25"
+  points:
+    -
+      label: "pittsburgh"
+      target: "pittsburgh"
+      accent: "blue"
+      x: 23.11
+      y: 64.11
+      section: "pittsburgh"
+      label_x: "0.7rem"
+    -
+      label: "catskills"
+      target: "catskills"
+      accent: "blue"
+      x: 67.69
+      y: 38.24
+      section: "catskills"
+      label_x: "-5.3rem"
+    -
+      label: "new york"
+      target: "new york"
+      accent: "blue"
+      x: 69.18
+      y: 60.1
+      section: "new-york"
+      label_x: "0.7rem"
+  shape: "northeast-us"
+-
+  id: "florida"
+  title: "florida"
+  scope: "local"
+  view_box: "281 174 29 34"
+  aspect: "0.853"
+  points:
+    -
+      label: "tampa"
+      target: "tampa"
+      accent: "sage"
+      x: 34.0
+      y: 24.71
+      section: "tampa"
+      label_x: "-4.1rem"
+    -
+      label: "palm beach gardens"
+      target: "palm beach gardens"
+      accent: "sage"
+      x: 50.34
+      y: 26.76
+      section: "palm-beach-gardens"
+      label_x: "0.7rem"
+    -
+      label: "jupiter"
+      target: "jupiter"
+      accent: "sage"
+      x: 51.38
+      y: 20.59
+      section: "jupiter"
+      label_x: "0.7rem"
+    -
+      label: "miami"
+      target: "miami"
+      accent: "sage"
+      x: 47.24
+      y: 48.24
+      section: "miami"
+      label_x: "0.7rem"
+    -
+      label: "key west"
+      target: "key west"
+      accent: "sage"
+      x: 31.0
+      y: 78.5
+      section: "key-west"
+      label_x: "0.7rem"
+-
+  id: "england"
+  title: "england"
+  scope: "local"
+  view_box: "481 99 31 18"
+  aspect: "1.72"
+  points:
+    -
+      label: "whitby"
+      target: "whitby"
+      accent: "stone"
+      x: 50.97
+      y: 32.22
+      section: "whitby"
+      label_x: "0.72rem"
+    -
+      label: "stonehenge"
+      target: "stonehenge"
+      accent: "stone"
+      x: 44.84
+      y: 72.78
+      section: "stonehenge"
+      label_x: "-6.0rem"
+    -
+      label: "cambridge"
+      target: "cambridge"
+      accent: "clay"
+      x: 62.26
+      y: 56.67
+      section: "cambridge"
+      label_x: "-5.45rem"
+    -
+      label: "london"
+      target: "london"
+      accent: "stone"
+      x: 60.0
+      y: 67.78
+      section: "london"
+      label_x: "0.72rem"
+    -
+      label: "brighton"
+      target: "brighton"
+      accent: "stone"
+      x: 58.06
+      y: 78.89
+      section: "brighton"
+      label_x: "-5.0rem"
+    -
+      label: "seaford"
+      target: "seaford"
+      accent: "haze"
+      x: 64.52
+      y: 80.0
+      section: "seaford"
+      label_x: "0.52rem"
+-
+  id: "scotland"
+  title: "scotland"
+  scope: "local"
+  view_box: "0 0 100 78"
+  aspect: "1.28"
+  points:
+    -
+      label: "glencoe"
+      target: "glencoe"
+      accent: "haze"
+      x: 37.75
+      y: 60.99
+      section: "glencoe"
+      label_x: "-4.75rem"
+    -
+      label: "glasgow"
+      target: "glasgow"
+      accent: "stone"
+      x: 47.2
+      y: 80.06
+      section: "glasgow"
+      label_x: "-4.55rem"
+    -
+      label: "edinburgh"
+      target: "edinburgh"
+      accent: "stone"
+      x: 59.02
+      y: 78.0
+      section: "edinburgh"
+      label_x: "0.72rem"
+    -
+      label: "st andrews"
+      target: "st andrews"
+      accent: "haze"
+      x: 63.37
+      y: 68.99
+      section: "st-andrews"
+      label_x: "0.72rem"
+  shape: "scotland"
+-
+  id: "northern-china"
+  title: "n. china"
+  scope: "local"
+  view_box: "0 0 100 100"
+  aspect: "1"
+  points:
+    -
+      label: "beijing"
+      target: "beijing"
+      accent: "rose"
+      x: 37.17
+      y: 57.83
+      section: "beijing"
+      label_x: "-4.65rem"
+    -
+      label: "jilin"
+      target: "jilin"
+      accent: "rose"
+      x: 73.39
+      y: 29.73
+      section: "jilin"
+      label_x: "0.72rem"
+  shape: "northern-china"
+-
+  id: "southern-china"
+  title: "s. china"
+  scope: "local"
+  view_box: "0 0 100 100"
+  aspect: "1"
+  points:
+    -
+      label: "chongqing"
+      target: "chongqing"
+      accent: "rose"
+      x: 12.45
+      y: 25.4
+      section: "chongqing"
+      label_x: "0.72rem"
+    -
+      label: "shanghai"
+      target: "shanghai"
+      accent: "rose"
+      x: 85.24
+      y: 14.64
+      section: "shanghai"
+      label_x: "-4.65rem"
+    -
+      label: "hangzhou"
+      target: "hangzhou"
+      accent: "rose"
+      x: 78.81
+      y: 20.81
+      section: "hangzhou"
+      label_x: "0.72rem"
+    -
+      label: "xiamen"
+      target: "xiamen"
+      accent: "rose"
+      x: 68.73
+      y: 58.19
+      section: "xiamen"
+      label_x: "0.72rem"
+    -
+      label: "shanwei"
+      target: "shanwei"
+      accent: "rose"
+      x: 55.49
+      y: 65.0
+      section: "shanwei"
+      label_x: "0.72rem"
+    -
+      label: "guangzhou"
+      target: "guangzhou"
+      accent: "rose"
+      x: 45.19
+      y: 66.91
+      section: "guangzhou"
+      label_x: "-5.15rem"
+    -
+      label: "huazhou"
+      target: "huazhou"
+      accent: "rose"
+      x: 32.39
+      y: 76.37
+      section: "huazhou"
+      label_x: "-4.65rem"
+    -
+      label: "pearl river delta"
+      target: "shenzhen"
+      accent: "rose"
+      x: 48.5
+      y: 71.5
+      section: "shenzhen"
+      label_x: "0.72rem"
+  shape: "southern-china"
+-
+  id: "italy"
+  title: "italy"
+  scope: "local"
+  view_box: "0 0 100 100"
+  aspect: "1"
+  points:
+    -
+      label: "venice"
+      target: "venice"
+      accent: "clay"
+      x: 63.15
+      y: 21.68
+      section: "venice"
+      label_x: "0.72rem"
+    -
+      label: "cinque terre"
+      target: "cinque terre"
+      accent: "clay"
+      x: 37.27
+      y: 35.73
+      section: "cinque-terre"
+      label_x: "-6.0rem"
+    -
+      label: "rome"
+      target: "rome"
+      accent: "clay"
+      x: 64.96
+      y: 58.92
+      section: "rome"
+      label_x: "0.72rem"
+  shape: "italy"
+-
+  id: "jordan"
+  title: "jordan"
+  scope: "local"
+  view_box: "578 161 31 25"
+  aspect: "1.24"
+  points:
+    -
+      label: "amman"
+      target: "amman"
+      accent: "clay"
+      x: 51.61
+      y: 24.0
+      section: "amman"
+      label_x: "0.72rem"
+    -
+      label: "dead sea"
+      target: "dead sea"
+      accent: "clay"
+      x: 35.48
+      y: 29.6
+      section: "dead-sea"
+      label_x: "-5.0rem"
+    -
+      label: "petra"
+      target: "petra"
+      accent: "clay"
+      x: 41.94
+      y: 48.0
+      section: "petra"
+      label_x: "0.72rem"
+    -
+      label: "wadi rum"
+      target: "wadi rum"
+      accent: "clay"
+      x: 38.71
+      y: 62.0
+      section: "wadi-rum"
+      label_x: "-5.2rem"
+-
+  id: "georgia"
+  title: "georgia"
+  scope: "local"
+  view_box: "0 25 100 51"
+  aspect: "1.96"
+  points:
+    -
+      label: "tbilisi"
+      target: "tbilisi"
+      accent: "clay"
+      x: 58.27
+      y: 75.13
+      section: "tbilisi"
+      label_x: "-4.3rem"
+    -
+      label: "kakheti"
+      target: "kakheti"
+      accent: "clay"
+      x: 67.5
+      y: 74.18
+      section: "kakheti"
+      label_x: "0.72rem"
+  shape: "georgia"

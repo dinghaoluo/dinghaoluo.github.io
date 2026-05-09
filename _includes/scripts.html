@@ -1,0 +1,51 @@
+{% if site.footer_scripts %}
+  {% for script in site.footer_scripts %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+{% else %}
+  <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+{% endif %}
+
+{% if site.search == true or page.layout == "search" %}
+  {%- assign search_provider = site.search_provider | default: "lunr" -%}
+  {%- case search_provider -%}
+    {%- when "lunr" -%}
+      {% include_cached search/lunr-search-scripts.html %}
+    {%- when "google" -%}
+      {% include_cached search/google-search-scripts.html %}
+    {%- when "algolia" -%}
+      {% include_cached search/algolia-search-scripts.html %}
+  {%- endcase -%}
+{% endif %}
+
+{% include analytics.html %}
+{% include /comments-providers/scripts.html %}
+
+{% if page.url == "/thoughts/" or page.classes contains "home" or page.url == "/music/" or page.url == "/writing/" %}
+<script src="{{ '/assets/js/list-utils.js' | relative_url }}"></script>
+{% endif %}
+{% if page.url == "/thoughts/" or page.classes contains "home" %}
+  <script src="{{ '/assets/js/thoughts-cards.js' | relative_url }}"></script>
+{% endif %}
+{% if page.classes contains "home" %}
+  <script src="{{ '/assets/js/home-section-nav.js' | relative_url }}"></script>
+{% endif %}
+{% if page.url == "/writing/" %}
+  <script src="{{ '/assets/js/writing-archive.js' | relative_url }}"></script>
+{% endif %}
+{% if page.url == "/music/" %}
+  <script src="{{ '/assets/js/audio-player.js' | relative_url }}"></script>
+{% endif %}
+{% if page.url == "/photos/" %}
+  <script src="{{ '/assets/js/photos-map.js' | relative_url }}"></script>
+{% endif %}
+<script src="{{ '/assets/js/haothings-nav.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/nav-justify.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/drift-link.js' | relative_url }}"></script>
+
+{% if site.after_footer_scripts %}
+  {% for script in site.after_footer_scripts %}
+    <script src="{{ script | relative_url }}"></script>
+  {% endfor %}
+{% endif %}

@@ -1,0 +1,18 @@
+{%- comment -%}
+  CJK-aware read time estimate.
+  Pass text via include.text (raw markdown/text) or include.content (rendered HTML).
+  Returns inline text like "4 min read".
+  Assumes ~240 wpm for Latin, ~400 cpm for CJK.
+{%- endcomment -%}
+{%- assign rt_text = include.text | default: include.content | strip_html | strip_newlines -%}
+{%- assign rt_len = rt_text | size -%}
+{%- if rt_len > 0 -%}
+  {%- assign rt_words = rt_text | number_of_words -%}
+  {%- assign rt_cjk = rt_len | minus: rt_words | divided_by: 3 -%}
+  {%- if rt_cjk < 0 %}{% assign rt_cjk = 0 %}{% endif -%}
+  {%- assign rt_latin_minutes = rt_words | divided_by: 240 -%}
+  {%- assign rt_cjk_minutes = rt_cjk | divided_by: 400 -%}
+  {%- assign rt_total = rt_latin_minutes | plus: rt_cjk_minutes -%}
+  {%- if rt_total < 1 %}{% assign rt_total = 1 %}{% endif -%}
+  {{- rt_total }} min read
+{%- endif -%}
