@@ -1901,7 +1901,8 @@ body.home .page__author-footer {
 .album-tile__artist {
   font-size: 0.74em;
   color: $morandi-muted;
-  line-height: 1.2;
+  line-height: 1.32;
+  padding-bottom: 0.08em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -5481,7 +5482,7 @@ body.music-page .mp-prose {
 
 body.music-page .mp-break {
   display: block;
-  margin-top: 1.45em;
+  margin-top: 0.8em;
 }
 
 body.music-page .mp-prose .wv-player {
