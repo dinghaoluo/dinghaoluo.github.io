@@ -26,20 +26,24 @@ classes: music-page
 .mp-clear::after { content: ""; display: table; clear: both; }
 .mp-clear + .mp-prose { margin-top: 1.4rem; }
 
-/* ── singles/EP covers: compact 3-across row ── */
+/* ── singles/EP covers: compact 3-across row in one block ── */
 .mp-singles {
-  display: flex;
-  gap: var(--media-pair-gap);
   width: calc(100% - 48% - var(--media-float-gutter));
   float: right;
   margin: 0;
-}
-.mp-singles figure {
-  flex: 1 1 0;
-  min-width: 0;
-  margin: 0;
   text-align: center;
 }
+
+.mp-singles__covers {
+  display: flex;
+  gap: var(--media-pair-gap);
+}
+
+.mp-singles__covers img {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
 .mp-singles img {
   display: block;
   width: 100%;
@@ -49,13 +53,6 @@ classes: music-page
   border-radius: var(--media-radius);
   border: 1px solid rgba(155, 146, 138, 0.22);
   box-shadow: 0 3px 16px rgba(63, 57, 52, 0.05);
-}
-.mp-singles figcaption {
-  font-size: clamp(0.74rem, calc(0.7rem + 0.1vw), 0.82rem);
-  font-style: italic;
-  line-height: 1.36;
-  margin-top: var(--media-caption-gap);
-  white-space: nowrap;
 }
 
 .mp-prose--singles {
@@ -79,7 +76,7 @@ classes: music-page
 /* ── reset theme figure defaults ── */
 .mp-setup,
 .mp-album-hero,
-.mp-singles figure {
+.mp-singles {
   display: block;
   margin: 0;
   flex-wrap: unset;
@@ -105,11 +102,6 @@ classes: music-page
   transition: filter 0.22s ease;
 }
 .mp-setup:hover img { filter: saturate(1) contrast(1.04); }
-.mp-setup figcaption {
-  font-size: clamp(0.74rem, calc(0.7rem + 0.1vw), 0.82rem);
-  line-height: 1.22;
-  margin-top: var(--media-caption-gap);
-}
 
 /* ── album track: subtly warmer ── */
 .mp-album .wv-player {
@@ -140,21 +132,6 @@ classes: music-page
   box-shadow: 0 8px 40px rgba(63, 57, 52, 0.10), 0 2px 6px rgba(63, 57, 52, 0.05);
   transform: translateY(-2px);
 }
-.mp-album-hero figcaption {
-  font-size: clamp(0.74rem, calc(0.7rem + 0.1vw), 0.82rem);
-  letter-spacing: 0.04em;
-  margin-top: var(--media-caption-gap);
-  white-space: nowrap;
-}
-.mp-album-hero figcaption a {
-  color: #8d6959;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(141, 105, 89, 0.3);
-  transition: border-color 0.2s ease;
-}
-.mp-album-hero figcaption a:hover {
-  border-bottom-color: #8d6959;
-}
 
 /* ── album wall loader ── */
 .music-album-wall-loader {
@@ -177,13 +154,13 @@ classes: music-page
     float: none;
     width: 100%;
     max-width: 280px;
-    margin: var(--media-block-gap) 0;
+    margin: var(--media-float-gap) 0;
   }
   .mp-album-hero {
     float: none;
     width: 180px;
     max-width: 180px;
-    margin: var(--media-block-gap) 0;
+    margin: var(--media-float-gap) 0;
   }
   .mp-singles {
     float: none;
@@ -215,7 +192,6 @@ classes: music-page
     border-color: rgba(90, 82, 76, 0.4);
     box-shadow: 0 6px 32px rgba(0, 0, 0, 0.18);
   }
-  html:not([data-theme="light"]) .mp-album-hero figcaption a { color: #c49a85; border-bottom-color: rgba(196, 154, 133, 0.3); }
   html:not([data-theme="light"]) .mp-setup img { border-color: rgba(90, 82, 76, 0.4); }
   html:not([data-theme="light"]) .mp-singles img { border-color: rgba(90, 82, 76, 0.4); }
   html:not([data-theme="light"]) .music-album-wall-loader { color: #7a7370; }
@@ -229,7 +205,6 @@ html[data-theme="dark"] .mp-album-hero img {
   border-color: rgba(90, 82, 76, 0.4);
   box-shadow: 0 6px 32px rgba(0, 0, 0, 0.18);
 }
-html[data-theme="dark"] .mp-album-hero figcaption a { color: #c49a85; border-bottom-color: rgba(196, 154, 133, 0.3); }
 html[data-theme="dark"] .mp-setup img { border-color: rgba(90, 82, 76, 0.4); }
 html[data-theme="dark"] .mp-singles img { border-color: rgba(90, 82, 76, 0.4); }
 html[data-theme="dark"] .music-album-wall-loader { color: #7a7370; }
@@ -238,32 +213,35 @@ html[data-theme="dark"] .music-album-wall-loader { color: #7a7370; }
 <div class="mp-prose mp-prose--singles" markdown="0">
 <figure class="mp-setup">
   <img src="/assets/images/music/roli-setup-london-2018.jpg" alt="ROLI Seaboard, Launchpad, and MacBook Pro running Logic on a desk in London, 2018" loading="lazy">
-  <figcaption>the whole studio, London 2018</figcaption>
+  <figcaption>my whole 'studio', London, 2018</figcaption>
 </figure>
-I had been absorbing prog and jazz since secondary school, and by <b>Cambridge</b> the impulse to make something of my own had been building for years. Gear had become cheap and strange; anyone with a laptop could make a record, and expressive MIDI controllers were arriving that made a keyboard feel less like a grid of switches and more like an instrument you could lean into. I ordered a <b>ROLI Seaboard</b> after watching someone play one online: a slab of silicone that responded to pressure, slide, and vibrato under every finger, closer to voice than keyboard. A Launchpad, a MacBook, Logic Pro, and the ROLI on a college desk; that was the entire studio.
+
+I had been absorbing prog and jazz since secondary school, and by Cambridge the impulse to make something of my own had been building for years. Gear was getting cheap and strange: anyone with a laptop could make a record, and expressive MIDI controllers were arriving from nowhere. I ordered a ROLI Seaboard after watching somebody play one on YouTube. And there I was, a MacBook, Logic Pro, and the ROLI on a wooden desk. That was the entire studio, and I sank nights and days into it.
+
+<span class="mp-break"></span>
+
 <div class="mp-player">
 {% include audio-player.html src="/assets/audio/pre_album_20180420_sainsburys_coffee.mp3" title="11pm Sainsbury's coffee run" waveform="/assets/audio/waveforms/pre_album_20180420_sainsburys_coffee.json" duration="4:50" %}
 </div>
 <div class="mp-player">
 {% include audio-player.html src="/assets/audio/pre_album_20180801_surrender.mp3" title="surrender." waveform="/assets/audio/waveforms/pre_album_20180801_surrender.json" duration="6:20" %}
 </div>
-<div class="mp-singles">
-  <figure>
+
+<figure class="mp-singles">
+  <div class="mp-singles__covers">
     <img src="/assets/images/music/on_edamame.jpg" alt="on edamame EP cover" loading="lazy">
-    <figcaption>on edamame</figcaption>
-  </figure>
-  <figure>
     <img src="/assets/images/music/the_cam_after_rain.jpg" alt="the Cam after rain single cover" loading="lazy">
-    <figcaption>the Cam after rain</figcaption>
-  </figure>
-  <figure>
     <img src="/assets/images/music/reflections.jpg" alt="reflections single cover" loading="lazy">
-    <figcaption>reflections</figcaption>
-  </figure>
-</div>
-The first thing I recorded, spring 2018, was a nine-minute track about going to <b>Sainsbury's</b> at eleven at night to buy coffee: mock exams and hair loss and a mother who tells you to sleep early. The door slam at the end is real. Friends loved it; that was enough; I kept going.
+  </div>
+  <figcaption>my early singles and EP</figcaption>
+</figure>
+
+Spring 2018, around Easter, I was preparing for Tripos and would come home from the library around ten in the evening. There was this Costa machine inside the Sainsbury's outside Sidney Sussex, and I would sometimes grab a coffee before going home to keep studying. And that became the first track: mock exams and hair loss and a mother who'd been telling me to go to bed earlier. At the very end, my dorm door (one of those fire doors that would slam hard shut unless eased closed) also makes a cameo.
+
 <span class="mp-break"></span>
-I was playing bass in a band at Cambridge (we played Wanqing's <b>Kill That Man from Shijiazhuang</b>, which counts), but <b>amoxitoxin</b> was mine alone. I had just been to the <b>Pink Floyd</b> exhibition in London; I had just seen <b>Haken</b> live for the first time, <b>Bent Knee</b> opening. A <b>Bitter Sweet Symphony</b> cover came from that impulse, and <em>surrender</em> was written that summer while I was working in an <b>Alzheimer's research group in London</b>: a fiction about a patient dying with their memory dissolving. These were experiments, and the album grew out of them.
+
+My university years were full of exhibitions and shows around the UK. The summer after second year, I went to the Pink Floyd exhibition in London, saw Haken live for the first time with Bent Knee (<em>can you imagine?</em>) opening. All that listening fed the impulse to make my own. At the time I was working at Queen Square as a summer RA on Alzheimer's disease, and 'surrender.' came out of that internship: a patient's memory dissolving, and the song dissolving with it.
+
 </div>
 
 <div class="mp-clear"></div>
@@ -271,10 +249,13 @@ I was playing bass in a band at Cambridge (we played Wanqing's <b>Kill That Man 
 <div class="mp-prose" markdown="0">
 <figure class="mp-album-hero">
   <img src="/assets/images/the_maze.jpg" alt="The Maze album cover" decoding="async">
-  <figcaption>the maze (2020) · <a href="https://amoxitoxin.bandcamp.com/">bandcamp</a></figcaption>
+  <figcaption><em>the maze</em> · <a href="https://amoxitoxin.bandcamp.com/">Bandcamp</a></figcaption>
 </figure>
-<b>COVID</b> arrived and I left Cambridge in March 2020. On the flight home to <b>Guangzhou</b> I was listening to Kaipa's <em>Children of the New Horizon</em> on repeat. The government put me in a quarantine motel in Panyu, close enough to see my parents' building but not to enter it. I asked my mother to bring me a <b>Nektar MIDI keyboard</b>. She did.
+
+Those earlier experiments pointed toward a full-length album. In March 2020, COVID arrived and I left Cambridge for Guangzhou, and after landing I was put in a quarantine motel for a week. On the way home I had been listening to Kaipa's <em>Children of the Sounds</em> (2017) on repeat, and the idea of several tracks united by a loose concept came to me. The motel was close enough to home that I could ask my mother to bring a Nektar MIDI keyboard, which I had bought on the day I landed. She did, and I started writing the album while finishing my undergrad thesis.
+
 <span class="mp-break"></span>
+
 <div class="mp-player mp-album">
 {% include audio-player.html src="/assets/audio/kitty_kat_and_the_stars.mp3" title="cosmic cat" waveform="/assets/audio/waveforms/kitty_kat_and_the_stars.json" duration="1:53" %}
 </div>
@@ -293,11 +274,33 @@ I was playing bass in a band at Cambridge (we played Wanqing's <b>Kill That Man 
 <div class="mp-player mp-album">
 {% include audio-player.html src="/assets/audio/we_will_meet_again_in_springtime_london.mp3" title="we will meet again in springtime London" waveform="/assets/audio/waveforms/we_will_meet_again_in_springtime_london.json" duration="2:24" %}
 </div>
-The first track from that room was <em>cosmic cat</em>, written the same day as my undergraduate thesis: heavy and nimble, constantly changing register. The name arrived first; the meows at the end are deliberate. <em>the maze</em> came after quarantine and became the title track: getting lost inside arrangements, following a passage into a dead end, doubling back. Over time I heard it as something wider, a condition everyone navigates. <em>reflections</em> was the last written and the most ambitious at twelve minutes. <b>Jiangshan Wang</b>, a friend from Neu-Reality, had posted her lyrics on WeChat looking for a composer; she probably did not expect to hear from me. I took them and the song grew out of hand, section after section accruing.
+
+The first track from that room was 'cosmic cat', named after the fact because the track felt both heavy and nimble, constantly changing register. Once the name arrived, I added the heavily reverbed meows at the end. It is short and sweet, and I have grown into it over time.
+
 <span class="mp-break"></span>
-By 2019 I had walked along the <b>Cam</b> enough times to know the exact quality of its emptiness after rain, the punts stacked and dripping, and I wrote a track about that feeling. I named another after a neuroscience concept: one rhythmic motif driving the whole thing forward, looping and sustaining itself the way a <b>central pattern generator</b> does in the spinal cord. The last piece I wrote before leaving Cambridge was not addressed to anyone in particular; just a gesture of hope aimed at a city and a season.
+
+The title track, 'the maze', came after quarantine, when I was back in my childhood room. It was born in those early-COVID days when chaos filled the outside world, out of the feeling of getting lost in all of it. The staggered electronic-piano beeps near the end owe something to the vocal overlay from Gentle Giant's 'Knots' (1972).
+
 <span class="mp-break"></span>
-Everything on the album passed through a ROLI, a Nektar, a laptop, my voice, and not much else: college rooms in Cambridge, a London flat, a quarantine motel in Guangzhou. <b>amoxitoxin</b> is quiet but not done.
+
+I finished 'reflections' last, and at twelve minutes it is the most ambitious thing on the album. Jiangshan Wang, a friend from Neu-Reality, had posted one of her poems on WeChat asking for a composer. She probably did not expect to hear from me. I took the poem and started writing, but the track kept growing, section after section, into my longest composition yet. In the middle is a long instrumental passage, time signatures shifting under layered textures, with a guitar snippet recorded by Mingxuan Huang. It is my proudest musical creation so far.
+
+<span class="mp-break"></span>
+
+'the Cam after rain' was older, but I reworked it for the album in early 2020. I was at Magdalene, right by the Cam, and I had walked along the bank enough times to know its hauntingly beautiful emptiness after rain: the punts stacked and dripping, with far fewer passers-by.
+
+<span class="mp-break"></span>
+
+I named 'central pattern generator' after a neuroscience concept: one rhythmic motif generated by the spinal cord, driving an animal forward. The track loops its opening motif the same way, with layers of instruments added on top like body architectures evolving around the generator.
+
+<span class="mp-break"></span>
+
+And lastly, 'we will meet again in springtime London' is the bonus track, a tiny gesture of hope aimed at a city and a future time.
+
+<span class="mp-break"></span>
+
+Everything on the album passed through a ROLI, a Nektar, a MacBook, Logic Pro, and my voice, recorded across college rooms in Cambridge, a King's Cross student dorm, a quarantine motel, and my childhood room in Guangzhou. <code>amoxitoxin</code> is quiet, but not done.
+
 </div>
 
 <div class="mp-clear"></div>
