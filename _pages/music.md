@@ -241,7 +241,7 @@ My university years were full of exhibitions and shows around the UK. The summer
   <figcaption><em>the maze</em> · <a href="https://amoxitoxin.bandcamp.com/">Bandcamp</a></figcaption>
 </figure>
 
-Those earlier experiments pointed toward a full-length album. In March 2020, COVID arrived and I left Cambridge for Guangzhou, and after landing I was put in a quarantine motel for a week. On the way home I had been listening to Kaipa's <em>Children of the Sounds</em> (2017) on repeat, and the idea of several tracks united by a loose concept came to me. The motel was close enough to home that I could ask my mother to bring a Nektar MIDI keyboard, which I had bought on the day I landed. She did, and I started writing the album while finishing my undergrad thesis.
+Those earlier experiments pointed towards a full-length album. In March 2020, COVID arrived and I left Cambridge for Guangzhou, and after landing I was put in a quarantine motel for a week. On the way home I had been listening to Kaipa's <em>Children of the Sounds</em> (2017) on repeat, and the idea of several tracks united by a loose concept came to me. The motel was close enough to home that I could ask my mother to bring a Nektar MIDI keyboard, which I bought on the day I landed. She did, and I started writing <em>the maze</em> while finishing my undergrad thesis.
 
 <span class="mp-break"></span>
 
@@ -268,7 +268,7 @@ The first track from that room was 'cosmic cat', named after the fact because th
 
 <span class="mp-break"></span>
 
-The title track, 'the maze', came after quarantine, when I was back in my childhood room. It was born in those early-COVID days when chaos filled the outside world, out of the feeling of getting lost in all of it. The staggered electronic-piano beeps near the end owe something to the vocal overlay from Gentle Giant's 'Knots' (1972).
+The title track came after quarantine, when I was back in my childhood room. It was born in those early-COVID days when chaos filled the outside world, out of the feeling of getting lost in all of it. The staggered electronic piano near the end owes something to the vocal overlay from Gentle Giant's 'Knots' (1972).
 
 <span class="mp-break"></span>
 
