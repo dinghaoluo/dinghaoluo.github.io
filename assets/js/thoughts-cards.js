@@ -29,6 +29,15 @@
     if (!cardsRoot) return;
 
     cardsRoot.addEventListener('click', function (event) {
+      var permalink = event.target.closest ? event.target.closest('.thoughts-card__permalink') : null;
+      if (permalink && cardsRoot.contains(permalink)) {
+        event.stopPropagation();
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        copyCardLink(permalink.closest('.thoughts-card'), permalink);
+        return;
+      }
+
       var card = event.target.closest ? event.target.closest('.thoughts-card') : null;
       if (!card || !cardsRoot.contains(card)) return;
 
@@ -55,6 +64,66 @@
         window.scrollTo({ top: targetTop, behavior: 'smooth' });
       }
     });
+
+    function copyText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(text);
+      }
+
+      return new Promise(function (resolve, reject) {
+        var textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.setAttribute('readonly', '');
+        textarea.style.position = 'fixed';
+        textarea.style.top = '-999px';
+        textarea.style.left = '-999px';
+        document.body.appendChild(textarea);
+        textarea.select();
+
+        try {
+          if (document.execCommand('copy')) {
+            resolve();
+          } else {
+            reject(new Error('copy failed'));
+          }
+        } catch (error) {
+          reject(error);
+        } finally {
+          document.body.removeChild(textarea);
+        }
+      });
+    }
+
+    function copyCardLink(card, permalink) {
+      if (!card || !permalink) return;
+      copyText(permalink.href).then(function () {
+        showCopyStatus(card, permalink, true);
+      }, function () {
+        showCopyStatus(card, permalink, false);
+      });
+    }
+
+    function showCopyStatus(card, permalink, copied) {
+      var status = card.querySelector('.thoughts-card__copy-status');
+      var defaultLabel = permalink.dataset.defaultLabel || permalink.getAttribute('aria-label') || 'copy link';
+
+      permalink.dataset.defaultLabel = defaultLabel;
+      clearTimeout(card._copyStatusTimer);
+
+      card.classList.toggle('has-copied-link', copied);
+      card.classList.toggle('has-copy-failed', !copied);
+      permalink.classList.toggle('is-copied', copied);
+      permalink.classList.toggle('is-copy-failed', !copied);
+      permalink.setAttribute('aria-label', copied ? 'link copied' : 'copy failed');
+      if (status) status.textContent = copied ? 'link copied' : 'copy failed';
+
+      card._copyStatusTimer = setTimeout(function () {
+        card.classList.remove('has-copied-link', 'has-copy-failed');
+        permalink.classList.remove('is-copied', 'is-copy-failed');
+        permalink.setAttribute('aria-label', defaultLabel);
+        if (status) status.textContent = '';
+      }, 1600);
+    }
 
     function predictedCardTopAfterCollapse(card) {
       var top = card.getBoundingClientRect().top + window.pageYOffset;
