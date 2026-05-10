@@ -146,11 +146,17 @@ $large:               974px;
 // CJK fallback stack — LXGW WenKai Mono TC at weight 700 only (no 400 loaded,
 // so the browser's font-matching algorithm maps normal-weight text to the
 // 700 face automatically, giving CJK strokes enough density next to Reforma.
+// Keep broader international fallbacks ahead of CJK in the global stacks so
+// Cyrillic, Greek, accented Latin, Arabic, Thai, etc. do not get captured by
+// Chinese/Japanese/Korean faces before reaching a better script match.
 $cjk-stack: 'LXGW WenKai Mono TC', 'Noto Sans Mono CJK TC', 'Noto Sans Mono CJK SC', 'Source Han Mono TC', 'Source Han Mono SC', 'PingFang TC', 'PingFang SC', 'Microsoft JhengHei', 'Microsoft YaHei';
-$intl-stack: 'Noto Sans Arabic', 'Noto Sans Thai', 'Noto Sans';
+$intl-stack: 'Noto Sans', 'Noto Sans Arabic', 'Noto Sans Thai';
+$arabic-stack: 'Noto Sans Arabic', 'Geeza Pro', 'Segoe UI', Tahoma, sans-serif;
 $hebrew-stack: 'Noto Serif Hebrew', 'Noto Sans Hebrew', $intl-stack;
-$mono-stack: 'Mononoki', $cjk-stack, $intl-stack, monospace;
-$reforma-stack: 'Reforma 2018', Georgia, 'Times New Roman', $cjk-stack, serif;
+$japanese-stack: 'Noto Sans JP', 'Noto Sans CJK JP', 'Yu Gothic', 'Hiragino Sans', Meiryo, sans-serif;
+$korean-stack: 'Noto Sans KR', 'Noto Sans CJK KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+$mono-stack: 'Mononoki', $intl-stack, $cjk-stack, monospace;
+$reforma-stack: 'Reforma 2018', $intl-stack, Georgia, 'Times New Roman', $cjk-stack, serif;
 $writing-title-stack: $reforma-stack;
 $writing-title-italic-stack: $reforma-stack;
 $content-width: 760px;
@@ -1462,6 +1468,37 @@ body.home .page__author-footer {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.thoughts-card__title-main[data-title-script='cyrl'],
+.thoughts-card__title-main[data-title-script='grek'] {
+  font-family: $intl-stack, sans-serif;
+}
+
+.thoughts-card__title-main[data-title-script='arab'] {
+  display: inline-block;
+  direction: rtl;
+  font-family: $arabic-stack;
+  unicode-bidi: isolate;
+}
+
+.thoughts-card__title-main[data-title-script='hang'] {
+  font-family: $korean-stack;
+}
+
+.thoughts-card__title-main[data-title-script='jpan'] {
+  font-family: $japanese-stack;
+}
+
+.thoughts-card__title-main[data-title-script='thai'] {
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.thoughts-card__title-main[data-title-script='hebr'] {
+  display: inline-block;
+  direction: rtl;
+  font-family: $hebrew-stack, serif;
+  unicode-bidi: isolate;
 }
 
 .thoughts-card__year {

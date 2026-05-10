@@ -2,6 +2,27 @@
 (function () {
   'use strict';
 
+  function titleScript(text) {
+    text = text || '';
+    if (/[\u3040-\u30ff]/.test(text)) return 'jpan';
+    if (/[\uac00-\ud7af\u1100-\u11ff\u3130-\u318f]/.test(text)) return 'hang';
+    if (/[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff]/.test(text)) return 'arab';
+    if (/[\u0590-\u05ff]/.test(text)) return 'hebr';
+    if (/[\u0400-\u052f]/.test(text)) return 'cyrl';
+    if (/[\u0370-\u03ff\u1f00-\u1fff]/.test(text)) return 'grek';
+    if (/[\u0e00-\u0e7f]/.test(text)) return 'thai';
+    return '';
+  }
+
+  function annotateTitleScripts() {
+    var titles = document.querySelectorAll('.thoughts-card__title-main');
+    titles.forEach(function (title) {
+      var script = titleScript(title.textContent);
+      if (!script) return;
+      title.setAttribute('data-title-script', script);
+    });
+  }
+
   function detectCreatorWrap() {
     var lines = document.querySelectorAll('.thoughts-card__title-line');
     lines.forEach(function (line) {
@@ -15,8 +36,12 @@
   window._detectCreatorWrap = detectCreatorWrap;
 
   document.addEventListener('DOMContentLoaded', function () {
+    annotateTitleScripts();
     detectCreatorWrap();
     window.addEventListener('resize', detectCreatorWrap);
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(detectCreatorWrap);
+    }
 
     var cardsRoot = document.getElementById('thoughts-cards');
     if (!cardsRoot) return;
