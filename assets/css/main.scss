@@ -1435,7 +1435,8 @@ body.home .page__author-footer {
   align-items: center;
   gap: 0.38em;
   width: fit-content;
-  margin: 0 0 0.44em;
+  margin: 0.1em 0 0.36em;
+  line-height: 1;
 }
 
 .thoughts-card__badges .thoughts-card__pin,
@@ -1447,16 +1448,15 @@ body.home .page__author-footer {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
+  margin-left: 0.62em;
 }
 
-.thoughts-card__creator-wrap.is-wrapped .thoughts-card__sep {
-  display: none;
+.thoughts-card__creator-wrap.is-wrapped {
+  margin-left: 0;
 }
 
 .thoughts-card__sep {
-  display: inline-block;
-  margin: 0 0.16em;
-  color: $morandi-stone;
+  display: none;
 }
 
 .thoughts-card__title {
@@ -1597,11 +1597,16 @@ body.home .page__author-footer {
 
 // expand arrow button — pushed down as card expands
 .thoughts-card__toggle {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: none;
   padding: 0;
   margin-top: 0;
+  width: 1.28rem;
+  height: 1.24rem;
+  flex: 0 0 auto;
   font-size: 0.75em;
   color: $morandi-muted-soft;
   cursor: pointer;
@@ -1616,8 +1621,93 @@ body.home .page__author-footer {
 .thoughts-card__footer {
   display: flex;
   align-items: center;
-  gap: 0.55em;
+  gap: 0.32em;
   margin-top: 0.42rem;
+}
+
+.thoughts-card__permalink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.28rem;
+  height: 1.24rem;
+  flex: 0 0 auto;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: rgba($morandi-muted, 0.62);
+  font-family: $mono-stack;
+  font-size: 0.68em;
+  line-height: 1;
+  text-decoration: none !important;
+  transition: opacity 0.18s ease, transform 0.18s ease, color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    background: transparent;
+    color: $morandi-blue-deep;
+    text-decoration: none !important;
+  }
+
+  &.is-copied {
+    background: transparent;
+    color: $morandi-clay-deep;
+  }
+
+  &.is-copy-failed {
+    background: transparent;
+    color: $morandi-rose-deep;
+  }
+}
+
+.thoughts-card__permalink span {
+  display: block;
+  transform: translateY(0.13rem);
+}
+
+.thoughts-card__copy-status {
+  display: inline-flex;
+  align-items: center;
+  width: 7.8em;
+  min-height: 1.24rem;
+  color: $morandi-clay-deep;
+  font-family: $mono-stack;
+  font-size: 0.64em;
+  line-height: 1;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(1px);
+  transition: opacity 0.18s ease, transform 0.18s ease, color 0.15s ease;
+}
+
+.thoughts-card.has-copied-link .thoughts-card__copy-status,
+.thoughts-card.has-copy-failed .thoughts-card__copy-status {
+  opacity: 0.9;
+  transform: translateY(0);
+}
+
+.thoughts-card.has-copy-failed .thoughts-card__copy-status {
+  color: $morandi-rose-deep;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .thoughts-card__permalink {
+    opacity: 0;
+  }
+
+  .thoughts-card:hover .thoughts-card__permalink,
+  .thoughts-card:focus-within .thoughts-card__permalink,
+  .thoughts-card.has-copied-link .thoughts-card__permalink,
+  .thoughts-card.has-copy-failed .thoughts-card__permalink {
+    opacity: 0.72;
+  }
+
+  .thoughts-card__permalink:hover,
+  .thoughts-card__permalink:focus-visible,
+  .thoughts-card__permalink.is-copied,
+  .thoughts-card__permalink.is-copy-failed {
+    opacity: 1;
+  }
 }
 
 .thoughts-card__pin {
@@ -2731,6 +2821,7 @@ mark.thoughts-highlight {
 
   .thoughts-card__creator-wrap {
     display: block;
+    margin-left: 0;
   }
 
   .thoughts-card__badges,

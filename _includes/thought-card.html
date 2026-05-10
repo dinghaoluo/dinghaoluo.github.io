@@ -1,5 +1,9 @@
+{% assign thought_slug = include.take.title | slugify %}
+{% if include.take.title_en and include.take.type != 'book' %}
+  {% assign thought_slug = include.take.title_en | slugify %}
+{% endif %}
 <div
-  id="{% if include.take.title_en and include.take.type != 'book' %}{{ include.take.title_en | slugify }}{% else %}{{ include.take.title | slugify }}{% endif %}"
+  id="{{ thought_slug }}"
   class="thoughts-card{% if include.take.pin %} thoughts-card--pinned{% endif %}"
   data-type="{{ include.take.type | downcase }}"
   data-title="{{ include.take.title | escape }}{% if include.take.title_en %} {{ include.take.title_en | escape }}{% endif %}"
@@ -40,6 +44,10 @@
     </div>
     <div class="thoughts-card__footer">
       <button class="thoughts-card__toggle" aria-expanded="false" aria-label="expand thought">&darr;</button>
+      <a class="thoughts-card__permalink" href="{{ '/thoughts/#' | append: thought_slug | relative_url }}" aria-label="copy link to {{ include.take.title | escape }}" title="copy link">
+        <span aria-hidden="true">#</span>
+      </a>
+      <span class="thoughts-card__copy-status" aria-live="polite" aria-atomic="true"></span>
     </div>
   </div>
 </div>
