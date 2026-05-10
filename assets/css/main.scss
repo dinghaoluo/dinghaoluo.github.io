@@ -1557,6 +1557,10 @@ body.home .page__author-footer {
   color: rgba($morandi-muted, 0.72);
 }
 
+.thoughts-card__posted-sep {
+  margin: 0 0.26em;
+}
+
 
 // text wrap: clipped to ~2 lines with bottom fade; JS animates open/close
 .thoughts-card__text-wrap {
