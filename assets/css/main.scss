@@ -504,7 +504,7 @@ body {
   margin-top: 0.75em;
   font-size: 0.96em;
 
-  // hide the Follow toggle button on desktop — links are always visible
+  // hide the Follow toggle button on desktop
   @include breakpoint($large) {
     .author__urls-toggle { display: none; }
     .author__urls { display: block !important; }
@@ -529,7 +529,7 @@ body {
     line-height: inherit;
   }
 
-  // monochrome icons — suppress all brand colours
+  // monochrome icons
   i.fas, i.fab, i.fa {
     color: $site-text-icon !important;
   }
@@ -564,7 +564,7 @@ body {
   }
 }
 
-// hide Follow button entirely on desktop (redundant on personal site)
+// hide Follow button entirely on desktop
 .btn--inverse {
   @include breakpoint($large) { display: none; }
   font-size: 0.8em;
@@ -599,7 +599,7 @@ body {
 .sidebar { display: none !important; }
 
 // -------------------------
-// page big-title — 404 design language: stark, striking, underlined
+// page big-title — 404 design language
 // -------------------------
 .page-bigtitle {
   display: inline-block;
@@ -652,12 +652,12 @@ body {
   }
 
   p {
-    margin-bottom: 1.12em;
+    margin-bottom: 0.9em;
   }
 
   h2 {
     font-family: $mono-stack;
-    font-size: 1.15em;    // noticeably larger than body text
+    font-size: 1.15em;
     font-weight: normal;
     text-transform: lowercase;
     letter-spacing: 0.02em;
@@ -677,7 +677,7 @@ body {
   }
 
   h3 {
-    font-size: 1.05em;    // between body and h2
+    font-size: 1.05em;
     margin-top: 1.5em;
   }
 }
@@ -919,7 +919,7 @@ body:not(.home) .page__content h6 * {
 
 @media (max-width: 992px) {
   .home .page__content h2[id] {
-    scroll-margin-top: 5.15rem;
+    scroll-margin-top: 4.38rem;
   }
 
   .home-section-strip {
@@ -930,7 +930,7 @@ body:not(.home) .page__content h6 * {
     z-index: 9990;
     display: flex;
     align-items: center;
-    min-height: 3.58rem;
+    min-height: 3.04rem;
     padding: 0;
     background: rgba($site-bg, 1);
     border-bottom: 1px solid rgba($morandi-muted, 0.16);
@@ -953,7 +953,7 @@ body:not(.home) .page__content h6 * {
     align-items: center;
     gap: 1.18rem;
     min-width: 0;
-    padding: 0.45rem 0;
+    padding: 0.38rem 0;
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: none;
@@ -1002,12 +1002,12 @@ body:not(.home) .page__content h6 * {
   .home-section-strip__scroller a {
     flex: 0 0 auto;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    min-height: 2.48rem;
-    padding: 0.18rem 0.18rem 0.22rem;
+    min-height: 2.11rem;
+    padding: 0.24rem 0.18rem 0.1rem;
     border-bottom: 0;
-    font-size: clamp(1.27rem, 4.6vw, 1.36rem);
+    font-size: clamp(1.08rem, 3.91vw, 1.16rem);
     font-weight: bold;
     line-height: 1;
     text-align: center;
@@ -3090,12 +3090,14 @@ mark.thoughts-highlight {
 // homepage writing/science inserts
 // -------------------------
 .home-writing-shelf {
+  --home-writing-shelf-top-gap: 0.2rem;
+  --home-writing-shelf-bottom-gap: 1.16rem;
   display: grid;
   grid-template-columns: minmax(0, 9.15rem) minmax(0, 12rem) minmax(0, 9.15rem) minmax(0, 9.15rem);
   grid-template-rows: repeat(2, 6rem);
   justify-content: start;
   gap: 0.46rem;
-  margin: 1.02rem 0 1.16rem;
+  margin: var(--home-writing-shelf-top-gap) 0 var(--home-writing-shelf-bottom-gap);
 }
 
 @include breakpoint($x-large) {
@@ -3348,6 +3350,8 @@ mark.thoughts-highlight {
 
 @media (max-width: 620px) {
   .home-writing-shelf {
+    --home-writing-shelf-top-gap: 0.92rem;
+    --home-writing-shelf-bottom-gap: 1.08rem;
     --home-writing-gap: 0.34rem;
 
     grid-template-columns: 7.7rem 10.1rem 7.7rem 7.7rem;
@@ -3355,7 +3359,7 @@ mark.thoughts-highlight {
     gap: var(--home-writing-gap);
     width: 100%;
     max-width: none;
-    margin: 0.92rem 0 1.08rem;
+    margin: var(--home-writing-shelf-top-gap) 0 var(--home-writing-shelf-bottom-gap);
     padding: 0 1.2rem 0.26rem 0;
     overflow-x: auto;
     overflow-y: hidden;
@@ -3512,10 +3516,12 @@ mark.thoughts-highlight {
 }
 
 .home-featured-album {
+  --home-featured-album-desc-size: 0.96em;
+  --home-featured-album-desc-line-height: 1.5;
   display: flex;
   gap: 1em;
   align-items: flex-start;
-  margin: 0.4em 0 0;
+  margin: 0.8em 0 1em;
 }
 
 .home-featured-album__cover {
@@ -3546,20 +3552,22 @@ mark.thoughts-highlight {
 
 .home-featured-album__title {
   display: block;
-  font-size: 1.1em;
+  font-size: 1.12em;
   margin-bottom: 0.2rem;
   color: inherit;
 }
 
-.home-featured-album__desc {
-  font-size: 0.66em;
-  line-height: 1.2;
+.home .page__content .home-featured-album__desc {
+  font-size: var(--home-featured-album-desc-size);
+  line-height: var(--home-featured-album-desc-line-height);
   margin: 0 0 0;
   color: $site-text-subtle;
 }
 
 @media (max-width: 480px) {
   .home-featured-album {
+    --home-featured-album-desc-size: 0.74em;
+    --home-featured-album-desc-line-height: 1.2;
     gap: 0.8em;
     align-items: center;
   }
@@ -3569,9 +3577,16 @@ mark.thoughts-highlight {
     height: 90px;
   }
 
-  .home-featured-album__desc {
-    font-size: 0.66em;
-    line-height: 1.2;
+  .home-featured-album__title {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0.2rem;
+    color: inherit;
+  }
+
+  .home .page__content .home-featured-album__desc {
+    font-size: var(--home-featured-album-desc-size);
+    line-height: var(--home-featured-album-desc-line-height);
   }
 
   .home-featured-album__link {
