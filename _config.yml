@@ -21,6 +21,7 @@ baseurl: ""
 url: "https://dinghaoluo.github.io"
 repository: "dinghaoluo/dinghaoluo.github.io"
 words_per_minute: 200
+og_image: "/assets/images/social-card.png?v=1"
 
 comments:
   provider: false
