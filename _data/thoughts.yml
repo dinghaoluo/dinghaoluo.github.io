@@ -6322,6 +6322,8 @@
   creator: "David Simon"
   creator_role: "dir."
   year: 2008
+  pin: true
+  pin_order: "03-tv-02"
   eval: "loved"
   image: "/assets/images/thoughts/tv/wire_season_5.jpg"
   posted: "2026-05-10"
@@ -6370,8 +6372,6 @@
   creator_role: "dir."
   year: 2006
   eval: "loved"
-  pin: true
-  pin_order: "03-tv-02"
   image: "/assets/images/thoughts/tv/wire_season_4.jpg"
   posted: "2026-02-22"
   text: |
