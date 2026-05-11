@@ -903,6 +903,8 @@ body:not(.home) .page__content h6 * {
   background: rgba($site-surface-soft, 0.88);
   color: $morandi-clay-deep;
   opacity: 1;
+  box-shadow: 0 2px 8px rgba(63, 57, 52, 0.1);
+  transform: translateY(-1px);
 }
 
 .home-back-to-top:focus,
@@ -1624,7 +1626,7 @@ body:not(.home) .page__content h6 * {
 }
 
 .thoughts-card__posted-sep {
-  margin: 0 0.3em;
+  margin: 0 0.26em;
 }
 
 // text wrap: clipped to ~2 lines with bottom fade; JS animates open/close
@@ -3454,11 +3456,6 @@ body.writing-page .page__content .writing-entry__title em {
 .writing-meta__sep,
 .writing-meta__read-time {
   color: rgba($morandi-muted, 0.72);
-}
-
-.writing-entry__date-sep,
-.writing-meta__sep {
-  margin: 0 0.3em;
 }
 
 .writing-entry--archive {

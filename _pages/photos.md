@@ -4,8 +4,13 @@ author_profile: true
 permalink: /photos/
 title: "photos"
 classes: photos-page
+header:
+  og_image: "/assets/images/social-card-photos.png"
 ---
 
+<div class="photos-back-to-top-wrap">
+  <button class="home-back-to-top photos-back-to-top" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1" data-photos-back-to-top>&uarr;</button>
+</div>
 
 {% assign overview_region = site.data.photo_map_regions | where: "scope", "overview" | first %}
 {% assign local_regions = site.data.photo_map_regions | where: "scope", "local" %}
@@ -92,7 +97,6 @@ classes: photos-page
         <span class="photo-section__index">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
         <h2 id="{{ section.id }}-title">{{ section.title }}</h2>
         <p class="photo-section__axis">{{ section.axis }}</p>
-        <a class="photo-section__back" href="#" aria-label="Back to top">&uarr; back to top</a>
       </aside>
 
       <div class="photo-cluster">
