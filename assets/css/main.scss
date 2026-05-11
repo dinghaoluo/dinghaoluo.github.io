@@ -3398,7 +3398,7 @@ mark.thoughts-highlight {
   width: 15.2rem;
   max-width: 46%;
   min-width: 11rem;
-  margin: 0.18em 0 0.15rem 1.15em;
+  margin: $media-float-gap 0 $media-float-gap $media-float-gutter;
   padding: 0;
   border: 0;
 }
@@ -3415,7 +3415,7 @@ mark.thoughts-highlight {
 }
 
 .home-writing-award figcaption {
-  margin-top: 0.24rem;
+  margin-top: $media-caption-gap;
   margin-bottom: 0;
   padding-bottom: 0;
   font-size: clamp(0.74rem, calc(0.7rem + 0.1vw), 0.82rem);
@@ -3464,7 +3464,7 @@ mark.thoughts-highlight {
 }
 
 .home-science-card figcaption {
-  margin-top: 0.44rem;
+  margin-top: $media-caption-gap;
   font-size: 0.76rem;
   line-height: 1.4;
 }
@@ -3574,7 +3574,7 @@ mark.thoughts-highlight {
     width: 100%;
     max-width: 19rem;
     min-width: 0;
-    margin: 0.35rem 0 0.9rem;
+    margin: $media-float-gap 0;
   }
 
   .home-science-strip {
@@ -3871,7 +3871,7 @@ mark.thoughts-highlight {
   display: block;
   float: right;
   max-width: 200px;
-  margin: 0.2rem 0 0.15rem 1.2rem;
+  margin: $media-float-gap 0 $media-float-gap $media-float-gutter;
 }
 
 .home-chess-puzzle img,
@@ -3890,7 +3890,7 @@ mark.thoughts-highlight {
   display: block;
   float: left;
   max-width: 320px;
-  margin: 0.3rem 1.2rem 0.15rem 0;
+  margin: $media-float-gap $media-float-gutter $media-float-gap 0;
 }
 
 .home-zone-preview img {
@@ -3901,12 +3901,12 @@ mark.thoughts-highlight {
 .home-chess-puzzle__caption,
 .home-zone-preview figcaption {
   display: block;
+  margin-top: $media-caption-gap;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
 .home-chess-puzzle__caption {
-  margin-top: 0.36rem;
   color: $site-text-muted;
   font-family: $mono-stack;
   font-size: 0.82rem;
@@ -3925,7 +3925,7 @@ mark.thoughts-highlight {
   .home-zone-preview {
     float: none;
     max-width: 100%;
-    margin: 1rem 0 0.35rem;
+    margin: $media-float-gap 0;
   }
 }
 
@@ -3933,7 +3933,7 @@ mark.thoughts-highlight {
   .home-chess-puzzle {
     float: right;
     max-width: 50%;
-    margin: 0.15rem 0 0.45rem 0.85rem;
+    margin: $media-float-gap 0 $media-float-gap 0.85rem;
   }
 
   .home-music-rec__cover img {
