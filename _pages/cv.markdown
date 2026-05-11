@@ -4,6 +4,8 @@ author_profile: true
 permalink: /cv/
 title: "cv"
 classes: cv-page
+header:
+  og_image: "/assets/images/social-card-cv.png"
 last_updated: 2026-05-06
 toc: true
 toc_label: "on this page"

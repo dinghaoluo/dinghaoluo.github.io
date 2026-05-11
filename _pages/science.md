@@ -4,6 +4,8 @@ author_profile: true
 permalink: /science/
 title: "science"
 classes: science-page
+header:
+  og_image: "/assets/images/social-card-science.png"
 last_updated: 2026-05-06
 toc: true
 toc_label: "on this page"

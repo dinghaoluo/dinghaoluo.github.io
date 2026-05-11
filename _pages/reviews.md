@@ -3,6 +3,8 @@ layout: single
 author_profile: true
 permalink: /thoughts/
 title: 'thoughts'
+header:
+  og_image: "/assets/images/social-card-thoughts.png"
 lede: "Books, films, games, and television that refused to leave quietly."
 ---
 
