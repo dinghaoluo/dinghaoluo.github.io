@@ -406,6 +406,8 @@ hr {
 // -------------------------
 #main {
   padding-bottom: 0 !important;
+  padding-left: 1.05em;
+  padding-right: 1.05em;
 
   @include breakpoint($x-large) {
     max-width: 1040px;
@@ -903,8 +905,6 @@ body:not(.home) .page__content h6 * {
   background: rgba($site-surface-soft, 0.88);
   color: $morandi-clay-deep;
   opacity: 1;
-  box-shadow: 0 2px 8px rgba(63, 57, 52, 0.1);
-  transform: translateY(-1px);
 }
 
 .home-back-to-top:focus,
