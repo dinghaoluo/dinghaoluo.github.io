@@ -7822,7 +7822,7 @@ body.photos-page {
     top: 0;
     z-index: 5;
     display: grid;
-    grid-template-columns: 2.4rem minmax(0, 1fr) auto;
+    grid-template-columns: 2.4rem minmax(0, 1fr);
     gap: 0 0.75rem;
     align-items: baseline;
     margin: -0.2rem 0 0;
@@ -7870,23 +7870,6 @@ body.photos-page {
   .photo-section__note-text {
     margin-top: 0.72rem;
     color: $site-text-muted;
-  }
-
-  .photo-section__back {
-    grid-column: 3;
-    grid-row: 2;
-    align-self: baseline;
-    display: block;
-    margin-top: 0;
-    padding: 0.35rem 0.1rem 0.35rem 0.5rem;
-    font-size: 0.82rem;
-    font-family: $reforma-stack;
-    letter-spacing: 0.04em;
-    color: var(--photo-accent);
-    text-decoration: none;
-    opacity: 1;
-    transition: opacity 0.2s ease;
-    &:hover, &:focus-visible { opacity: 1; }
   }
 
   .photo-section__axis,
@@ -8298,7 +8281,7 @@ body.photos-page {
     }
     .photo-section__note {
       display: grid;
-      grid-template-columns: auto minmax(0, 1fr) auto;
+      grid-template-columns: auto minmax(0, 1fr);
       gap: 0 0.5rem;
       align-items: baseline;
       padding: 0.54rem 0 0.58rem;
@@ -8314,17 +8297,6 @@ body.photos-page {
       grid-column: 2;
       grid-row: 1;
       margin: 0.18rem 0 0.08rem;
-    }
-
-    .photo-section__back {
-      grid-column: 3;
-      grid-row: 2;
-      align-self: baseline;
-      margin-top: 0;
-      padding: 0.04rem 0.1rem 0.18rem 0.4rem;
-      font-size: 0.72rem;
-      line-height: 1.22;
-      opacity: 1;
     }
 
     .photo-section__axis {
