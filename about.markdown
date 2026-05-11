@@ -2,6 +2,8 @@
 layout: single
 title: About
 permalink: /about/
+header:
+  og_image: "/assets/images/social-card-about.png"
 ---
 
 I seem to keep ending up somewhere between systems neuroscience, data analysis, translation, and criticism. I am finishing a PhD at the [Max Planck Florida Institute for Neuroscience](https://www.mpfi.org), where I study how rapid locus coeruleus dopamine signals tune hippocampal dynamics during memory-guided navigation. The project moves between experiments, Python analysis pipelines, and computational modelling: a biological question translated into a system one can perturb, measure, and argue with.

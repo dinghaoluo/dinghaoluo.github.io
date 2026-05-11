@@ -32,7 +32,24 @@
   {%- assign author_twitter = author.twitter | replace: "@", "" -%}
 {%- endif -%}
 
-{%- assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image | absolute_url -%}
+{%- assign section_og_image = nil -%}
+{%- if page.url == "/about/" -%}
+  {%- assign section_og_image = "/assets/images/social-card-about.png" -%}
+{%- elsif page.url == "/cv/" -%}
+  {%- assign section_og_image = "/assets/images/social-card-cv.png" -%}
+{%- elsif page.url contains "/science/" -%}
+  {%- assign section_og_image = "/assets/images/social-card-science.png" -%}
+{%- elsif page.url contains "/music/" -%}
+  {%- assign section_og_image = "/assets/images/social-card-music.png" -%}
+{%- elsif page.url contains "/photos/" -%}
+  {%- assign section_og_image = "/assets/images/social-card-photos.png" -%}
+{%- elsif page.url contains "/writing/" -%}
+  {%- assign section_og_image = "/assets/images/social-card-writing.png" -%}
+{%- elsif page.url contains "/thoughts/" -%}
+  {%- assign section_og_image = "/assets/images/social-card-thoughts.png" -%}
+{%- endif -%}
+
+{%- assign page_large_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image | default: section_og_image | absolute_url -%}
 {%- assign page_large_image = page_large_image | escape -%}
 
 {%- assign page_teaser_image = page.header.teaser | default: site.og_image | absolute_url -%}

@@ -4,6 +4,8 @@ author_profile: true
 permalink: /music/
 title: "music"
 classes: music-page
+header:
+  og_image: "/assets/images/social-card-music.png"
 ---
 
 <style>
