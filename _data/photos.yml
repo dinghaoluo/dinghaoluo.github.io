@@ -607,6 +607,7 @@
       slot: "tower-pair"
       width: 1700
       height: 957
+      anchor: "huazhou"
     -
       src: "/assets/images/photos/atlas-huazhou-field-figures-2020-50eb5c88.webp"
       alt: "Small figures working near a Huazhou field and trees."
