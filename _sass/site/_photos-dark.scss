@@ -1,0 +1,32 @@
+html[data-theme="dark"] body.photos-page {
+  .photos-intro { border-bottom-color: rgba(#9b928a, 0.18); }
+  .photo-map-card__title { border-top-color: rgba(#9b928a, 0.18); color: #b8b0a6; }
+  .photo-map-plate { border-color: rgba(#9b928a, 0.16); background: rgba(#2a2724, 0.24); }
+  .photo-map__land { fill: rgba(#9b928a, 0.13); }
+  .photo-map__coast { stroke: rgba(#9b928a, 0.62); }
+  .photo-map-pin__dot { background: #1c1917; box-shadow: 0 0 0 2px rgba(#1c1917, 0.8); }
+  .photo-map-pin__label { background: rgba(#1c1917, 0.78); color: #b8b0a6; }
+  .photo-map-pin--cluster .photo-map-pin__dot { background: rgba(#c49a85, 0.16); box-shadow: 0 0 0 2px rgba(#1c1917, 0.92), 0 0 0 6px rgba(#c49a85, 0.1), inset 0 0 0 3px rgba(#1c1917, 0.34); }
+  .photo-map-pin--cluster .photo-map-pin__label { color: #d4a88f; }
+  @media (hover: hover) {
+    .photo-map-pin:hover .photo-map-pin__dot { box-shadow: 0 0 0 3px rgba(#1c1917, 0.92), 0 0 0 7px rgba(#c49a85, 0.08); }
+    .photo-map-pin:hover .photo-map-pin__label { background: rgba(#1c1917, 0.92); }
+  }
+  .photo-map-pin:focus .photo-map-pin__dot,
+  .photo-map-pin.is-active .photo-map-pin__dot { box-shadow: 0 0 0 3px rgba(#1c1917, 0.92), 0 0 0 7px rgba(#c49a85, 0.08); }
+  .photo-map-pin:focus .photo-map-pin__label,
+  .photo-map-pin.is-active .photo-map-pin__label { background: rgba(#1c1917, 0.92); }
+  .photos-intro p,
+  .photo-section__note-text { color: #9b928a; }
+  .photo-section__note h2 { color: #d4a88f; }
+  @media (max-width: 960px), (orientation: portrait) {
+    .photo-section__note {
+      border-bottom-color: rgba(#9b928a, 0.16);
+      background: rgba(#1c1917, 0.94);
+    }
+  }
+  .photo-frame { background: rgba(#2a2724, 0.5); box-shadow: none; }
+  .photo-frame img { opacity: 0.9; }
+  .photo-frame:hover img { opacity: 1; }
+  .photo-frame figcaption { background: rgba(#1c1917, 0.76); color: #d4cdc4; }
+}

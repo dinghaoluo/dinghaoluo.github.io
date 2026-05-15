@@ -1,0 +1,10 @@
+html[data-theme="dark"] body.cv-page {
+  .cv-entry { border-left-color: rgba(#9b928a, 0.22); }
+  .cv-contact a,
+  .cv-entry__date,
+  .cv-talk__year,
+  .cv-skills dt,
+  .cv-pub a { color: #d8d0c8; }
+  .cv-awards li::marker { color: rgba(#9b928a, 0.4); }
+}
+

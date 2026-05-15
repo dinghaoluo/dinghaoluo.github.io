@@ -1,0 +1,236 @@
+// -------------------------
+// -------------------------
+// CV page
+// -------------------------
+body.cv-page {
+  .page__content {
+    hr { display: none; }
+
+    h2, h3, h4 {
+      font-family: $mono-stack;
+      font-weight: normal;
+      line-height: 1.28;
+      letter-spacing: 0;
+      text-transform: none;
+      margin: 2.2rem 0 0.9rem;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 3.4rem;
+        margin-top: 0.48rem;
+        border-top: 1px solid rgba($morandi-clay, 0.24);
+      }
+    }
+
+    h2 { font-size: 1.36rem; }
+    h3 { font-size: 1.18rem; }
+  }
+
+  .cv-contact {
+    text-align: left;
+    font-family: $reforma-stack;
+    font-size: 0.86rem;
+    line-height: 1.5;
+    color: $site-text-muted;
+    margin-bottom: 1.6rem;
+
+    a, .cv-contact__name, span {
+      display: block;
+    }
+
+    .cv-contact__name {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: $morandi-ink;
+      margin-bottom: 0.3rem;
+    }
+
+    a {
+      color: $morandi-clay-deep;
+      text-decoration: none;
+      &:hover, &:focus-visible { text-decoration: underline; }
+    }
+  }
+
+  .cv-entry {
+    position: relative;
+    padding-left: 1rem;
+    border-left: 2px solid rgba($morandi-clay, 0.22);
+    margin-bottom: 1.4rem;
+
+    &:last-child { margin-bottom: 0; }
+
+    ul {
+      margin-top: 0.3rem;
+      margin-bottom: 0;
+      padding-left: 1.1rem;
+    }
+
+    li { margin-bottom: 0.15rem; }
+
+    > p {
+      margin-top: 0.3rem;
+      margin-bottom: 0;
+    }
+  }
+
+  .cv-entry__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .cv-entry__org {
+    font-weight: bold;
+  }
+
+  .cv-entry__loc {
+    font-family: $reforma-stack;
+    font-size: 0.84rem;
+    color: $site-text-muted;
+  }
+
+  .cv-entry__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.1rem;
+  }
+
+  .cv-entry__role {
+    font-family: $reforma-stack;
+    font-style: italic;
+  }
+
+  .cv-entry__date {
+    font-family: $reforma-stack;
+    font-size: 0.78rem;
+    color: $morandi-clay-deep;
+    white-space: nowrap;
+  }
+
+  .cv-entry,
+  .cv-pub,
+  .cv-talk,
+  .cv-skills,
+  .cv-awards {
+    font-size: 0.88rem;
+    line-height: 1.65;
+  }
+
+  .cv-pub {
+    padding-left: 1.6rem;
+    text-indent: -1.6rem;
+    margin-bottom: 0.8rem;
+
+    &:last-child { margin-bottom: 0; }
+
+    a {
+      color: $morandi-clay-deep;
+      text-decoration: none;
+      &:hover, &:focus-visible { text-decoration: underline; }
+    }
+  }
+
+  .cv-talk {
+    display: grid;
+    grid-template-columns: 2.6rem 1fr;
+    gap: 0 0.7rem;
+    margin-bottom: 0.7rem;
+
+    &:last-child { margin-bottom: 0; }
+  }
+
+  .cv-talk__year {
+    font-family: $reforma-stack;
+    font-size: 0.78rem;
+    font-weight: bold;
+    color: $morandi-clay-deep;
+    padding-top: 0.12rem;
+  }
+
+  .cv-talk__body em {
+    display: block;
+  }
+
+  .cv-talk__venue {
+    display: block;
+    font-size: 0.82rem;
+    color: $site-text-muted;
+    margin-top: 0.1rem;
+  }
+
+  .cv-skills {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1rem;
+    margin: 0;
+
+    dt {
+      font-family: $reforma-stack;
+      font-weight: bold;
+      font-size: 0.88rem;
+      color: $morandi-clay-deep;
+      white-space: nowrap;
+      padding-top: 0.02rem;
+    }
+
+    dd {
+      margin: 0;
+    }
+  }
+
+  .cv-awards {
+    padding-left: 1.1rem;
+
+    li {
+      margin-bottom: 0.25rem;
+      &::marker { color: rgba($morandi-clay, 0.5); }
+    }
+  }
+
+  .cv-download {
+    margin-top: 2.4rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba($morandi-clay, 0.18);
+  }
+
+  .cv-download__link {
+    font-family: $reforma-stack;
+    font-size: 0.86rem;
+    color: $morandi-clay-deep;
+    text-decoration: none;
+    &:hover, &:focus-visible { text-decoration: underline; }
+  }
+
+  @media (max-width: 620px) {
+    .cv-entry__head,
+    .cv-entry__meta {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .cv-entry__date {
+      margin-top: 0.1rem;
+    }
+
+    .cv-talk {
+      grid-template-columns: 1fr;
+    }
+
+    .cv-talk__year {
+      margin-bottom: 0.05rem;
+    }
+
+    .cv-skills {
+      grid-template-columns: 1fr;
+
+      dt { white-space: normal; }
+    }
+  }
+}

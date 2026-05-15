@@ -101,7 +101,7 @@ My mom says I used to devour all the books that I could get my hands on as a kid
 - Mircea Cărtărescu's [***Solenoid*** (2015)](/thoughts/#solenoid) if you want to break the boundary between the real and the surreal
 - Thomas Pynchon's [***Vineland*** (1990)](/thoughts/#vineland) if you wish *One Battle After Another* (2025) were weirder and sadder
 - [***Capitalist Realism*** (2009)](/thoughts/#capitalist-realism-is-there-no-alternative) by Mark Fisher was a 3-hour read that sharpened my politics
-- Grace Lindsay's [***Models of the Mind*** (2021)](/thoughts/#models-of-the-mind-how-physics-engineering-and-mathematics-have-shaped-our-understanding-of-the-brain) is an extraordinary neuroscience book on how the mind and the machine meet
+- Grace Lindsay's [***Models of the Mind*** (2021)](/thoughts/#models-of-the-mind) is an extraordinary neuroscience book on how the mind and the machine meet
 - [***When We Cease to Understand the World*** (2020)](/thoughts/#when-we-cease-to-understand-the-world) by Benjamín Labatut was part physics history, part fever dream, and shook my physics-uninitiated heart
 - ... *and if you read Chinese*, my translation of [***Entangled Life*** (2020)](/thoughts/#entangled-life) by Merlin Sheldrake, which opened my eyes to the secret life of fungi
 
@@ -207,7 +207,7 @@ Different places trigger completely different instincts, but the impulse is alwa
   <a href="/photos/#beijing" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-beijing-ginkgo-street-2020-f5c0d401.webp" alt="A Beijing street lined with golden ginkgo trees." loading="lazy"></a>
   <a href="/photos/#lisbon" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-lisbon-street-tram-2026-48c18cc4.webp" alt="A Lisbon street opening to a small tram and bright buildings." loading="lazy"></a>
   <a href="/photos/#singapore" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-singapore-macaque-family-2021-704730f0.webp" alt="A macaque family grooming with a dark infant between them." loading="lazy"></a>
-  <a href="/photos/#west-coast" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-death-valley-salt-walker-2023-002317b0.webp" alt="A tiny walker on the Death Valley salt flats beneath dark mountains." loading="lazy"></a>
+  <a href="/photos/#death-valley" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-death-valley-salt-walker-2023-002317b0.webp" alt="A tiny walker on the Death Valley salt flats beneath dark mountains." loading="lazy"></a>
 </div>
 
 <a href="/photos/" class="site-nav-link">→ photos</a>
