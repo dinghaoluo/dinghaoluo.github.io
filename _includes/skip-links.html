@@ -1,7 +1,20 @@
+{% assign skip_has_primary_nav = false %}
+{% if page.layout == 'single' or layout.layout == 'single' %}
+  {% assign skip_has_primary_nav = true %}
+{% endif %}
+{% assign skip_has_footer = false %}
+{% if page.author_profile or layout.author_profile %}
+  {% assign skip_has_footer = true %}
+{% endif %}
+
 <nav class="skip-links">
   <ul>
+    {% if skip_has_primary_nav %}
     <li><a href="#site-nav" class="screen-reader-shortcut">{{ site.data.ui-text[site.locale].skip_primary_nav | default: 'Skip to primary navigation' }}</a></li>
+    {% endif %}
     <li><a href="#main" class="screen-reader-shortcut">{{ site.data.ui-text[site.locale].skip_content | default: 'Skip to content' }}</a></li>
+    {% if skip_has_footer %}
     <li><a href="#footer" class="screen-reader-shortcut">{{ site.data.ui-text[site.locale].skip_footer | default: 'Skip to footer' }}</a></li>
+    {% endif %}
   </ul>
 </nav>
