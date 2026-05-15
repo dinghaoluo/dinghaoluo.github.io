@@ -309,6 +309,14 @@ Everything on the album passed through a ROLI, a Nektar, a MacBook, Logic Pro, a
 
 ---
 
+<div class="music-album-wall-fragment-targets" data-album-wall-fragment-targets hidden aria-hidden="true">
+  {% assign albums = site.data.music_thoughts | sort: 'posted' | reverse %}
+  {% for album in albums %}
+    {% assign album_id = album.slug | default: album.title | slugify %}
+    <span id="{{ album_id }}"></span>
+  {% endfor %}
+</div>
+
 <div
   class="music-album-wall-loader"
   id="music-album-wall-loader"

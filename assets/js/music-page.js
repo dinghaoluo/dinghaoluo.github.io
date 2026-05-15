@@ -5,10 +5,22 @@
   var mount = document.getElementById('music-album-wall-loader');
   if (!mount || !window.fetch) return;
 
+  var fragmentTargets = document.querySelector('[data-album-wall-fragment-targets]');
   var loaded = false;
 
   function loadScript(src) {
     if (!src) return;
+    if (window.ListUtils || document.readyState !== 'loading') {
+      appendScript(src);
+      return;
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      appendScript(src);
+    }, { once: true });
+  }
+
+  function appendScript(src) {
     var script = document.createElement('script');
     script.src = src;
     script.async = true;
@@ -25,6 +37,9 @@
         return response.text();
       })
       .then(function (html) {
+        if (fragmentTargets && fragmentTargets.parentNode) {
+          fragmentTargets.parentNode.removeChild(fragmentTargets);
+        }
         mount.innerHTML = html;
         mount.classList.add('is-loaded');
         loadScript(mount.getAttribute('data-script'));
@@ -42,6 +57,11 @@
       }
     }, { rootMargin: '700px 0px' });
     observer.observe(mount);
+  }
+
+  if (window.location.hash) {
+    loadWall();
+    return;
   }
 
   if ('requestIdleCallback' in window) {
