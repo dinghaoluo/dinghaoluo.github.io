@@ -1626,6 +1626,16 @@ body.home .page__author-footer {
 
 }
 
+.thoughts-card__toggle span,
+.thoughts-card__permalink span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+}
+
 .thoughts-card__footer {
   display: flex;
   align-items: center;
@@ -1666,11 +1676,6 @@ body.home .page__author-footer {
     background: transparent;
     color: $morandi-rose-deep;
   }
-}
-
-.thoughts-card__permalink span {
-  display: block;
-  transform: translateY(0.13rem);
 }
 
 .thoughts-card__copy-status {
@@ -1767,10 +1772,6 @@ body.home .page__author-footer {
 .thoughts-card__eval--hated {
   background: mix($morandi-rose, $morandi-stone, 48%);
   color: mix($morandi-rose-deep, $morandi-ink, 82%);
-}
-
-.thoughts-card.is-open .thoughts-card__toggle {
-  transform: rotate(180deg);
 }
 
 // -------------------------
