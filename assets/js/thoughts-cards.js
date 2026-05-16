@@ -150,7 +150,12 @@
       void wrap.offsetHeight;
 
       card.classList.add('is-open');
-      if (toggle) toggle.setAttribute('aria-expanded', 'true');
+      if (toggle) {
+        toggle.setAttribute('aria-expanded', 'true');
+        toggle.setAttribute('aria-label', 'collapse thought');
+        var toggleIcon = toggle.querySelector('[aria-hidden="true"]');
+        if (toggleIcon) toggleIcon.innerHTML = '&uarr;';
+      }
 
       wrap.style.transition = 'max-height 0.42s ease';
       wrap.style.maxHeight  = targetH + 'px';
@@ -169,7 +174,12 @@
       void wrap.offsetHeight;
 
       card.classList.remove('is-open');
-      if (toggle) toggle.setAttribute('aria-expanded', 'false');
+      if (toggle) {
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'expand thought');
+        var toggleIcon = toggle.querySelector('[aria-hidden="true"]');
+        if (toggleIcon) toggleIcon.innerHTML = '&darr;';
+      }
 
       wrap.style.transition = 'max-height 0.32s ease';
       wrap.style.maxHeight  = collapsedH + 'px';

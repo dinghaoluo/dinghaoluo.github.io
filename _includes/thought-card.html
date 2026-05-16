@@ -43,7 +43,7 @@
       <div class="thoughts-card__text">{{ include.take.text | markdownify }}</div>
     </div>
     <div class="thoughts-card__footer">
-      <button class="thoughts-card__toggle" aria-expanded="false" aria-label="expand thought">&darr;</button>
+      <button class="thoughts-card__toggle" aria-expanded="false" aria-label="expand thought"><span aria-hidden="true">&darr;</span></button>
       <a class="thoughts-card__permalink" href="{{ '/thoughts/#' | append: thought_slug | relative_url }}" aria-label="copy link to {{ include.take.title | escape }}" title="copy link">
         <span aria-hidden="true">#</span>
       </a>
