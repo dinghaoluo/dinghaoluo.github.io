@@ -176,7 +176,7 @@ $media-pair-gap: 0.55rem;
 // -------------------------
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 16.25px;
   font-family: $mono-stack;
   --media-block-gap: #{$media-block-gap};
   --media-float-gap: #{$media-float-gap};
@@ -185,9 +185,9 @@ html {
   --media-radius: #{$media-radius};
   --media-pair-gap: #{$media-pair-gap};
 
-  @include breakpoint($medium)  { font-size: 16.25px; }
-  @include breakpoint($large)   { font-size: 16.5px; }
-  @include breakpoint($x-large) { font-size: 16.5px; }
+  @include breakpoint($medium)  { font-size: 16.5px; }
+  @include breakpoint($large)   { font-size: 16.75px; }
+  @include breakpoint($x-large) { font-size: 17px; }
 }
 
 body * {
@@ -228,8 +228,8 @@ figcaption {
   margin-bottom: 0;
   color: $site-text-muted;
   font-family: inherit;
-  font-size: 0.82rem;
-  line-height: 1.45;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 body {
@@ -466,7 +466,7 @@ body {
 }
 
 .author__name-zh {
-  font-size: 0.78em;
+  font-size: 0.82em;
   color: $morandi-muted-soft;
   margin-top: 0.2em;           // tight gap below English name
   margin-bottom: 0.4em;        // slightly tighter gap before bio
@@ -474,7 +474,7 @@ body {
 }
 
 .author__bio {
-  font-size: 0.88em;
+  font-size: 0.92em;
   font-style: normal;
   color: $site-text-nav;
   line-height: 1.24;           // compact the three-line role stack a little more
@@ -522,7 +522,7 @@ body {
 }
 
 .author__urls {
-  font-size: 0.8em;
+  font-size: 0.86em;
   line-height: 1.22;
 
   li, a, .label { font-size: inherit; }
@@ -577,7 +577,7 @@ body {
 // hide Follow button entirely on desktop
 .btn--inverse {
   @include breakpoint($large) { display: none; }
-  font-size: 0.8em;
+  font-size: 0.86em;
   font-weight: normal;
   border-radius: 2px;
   padding: 0.25em 0.65em;
@@ -1357,14 +1357,14 @@ body.home .page__author-footer {
 
   p {
     margin: 0.22em 0 0;
-    font-size: 0.88em;
+    font-size: 0.95em;
     line-height: 1.55;
   }
 }
 
 .thoughts-pin-lead__label {
   display: inline-block;
-  font-size: 0.78em;
+  font-size: 0.84em;
   letter-spacing: 0.08em;
   text-transform: lowercase;
   color: $morandi-clay-deep;
@@ -1445,7 +1445,7 @@ body.home .page__author-footer {
 
 .thoughts-card__badges .thoughts-card__pin,
 .thoughts-card__badges .thoughts-card__eval {
-  font-size: 0.66em;
+  font-size: 0.72em;
 }
 
 .thoughts-card__creator-wrap {
@@ -1534,7 +1534,7 @@ body.home .page__author-footer {
 }
 
 .thoughts-card__creator {
-  font-size: 0.78em;
+  font-size: 0.84em;
   color: $morandi-muted;
   white-space: normal;
   overflow-wrap: anywhere;
@@ -1545,7 +1545,7 @@ body.home .page__author-footer {
 }
 
 .thoughts-card__posted {
-  font-size: 0.78em;
+  font-size: 0.84em;
   color: $morandi-muted;
   margin-top: -0.18em;
   margin-bottom: 0.55em;
@@ -1584,7 +1584,7 @@ body.home .page__author-footer {
 
 .thoughts-card__text {
   font-family: $reforma-stack;
-  font-size: 0.94em;
+  font-size: 0.98em;
   color: $site-text-body;
   line-height: 1.62;
   letter-spacing: 0.008em;
@@ -1594,7 +1594,7 @@ body.home .page__author-footer {
 
 .thoughts-card__text p {
   margin: 0;
-  font-size: 0.98em;
+  font-size: 1em;
   line-height: 1.66;
   letter-spacing: 0.014em;
 }
@@ -1615,10 +1615,10 @@ body.home .page__author-footer {
   width: 1.28rem;
   height: 1.24rem;
   flex: 0 0 auto;
-  font-size: 0.75em;
+  font-size: 0.85em;
   color: $morandi-muted-soft;
   cursor: pointer;
-  transition: transform 0.38s ease, color 0.15s ease;
+  transition: color 0.15s ease;
   line-height: 1;
 
   &:hover,
@@ -1861,7 +1861,7 @@ body.home .page__author-footer {
   height: var(--controls-h);
   box-sizing: border-box;
   font-family: $mono-stack;
-  font-size: 0.82em;
+  font-size: 0.9em;
   background: rgba($morandi-grey-soft, 0.18);
   border: 1px solid rgba($morandi-muted, 0.18);
   border-radius: 1000px;
@@ -1935,7 +1935,7 @@ body.home .page__author-footer {
   height: var(--controls-h);
   box-sizing: border-box;
   font-family: $mono-stack;
-  font-size: 0.82em;
+  font-size: 0.9em;
   color: $morandi-blue-deep;
   background: rgba($morandi-blue, 0.1);
   border: 1px solid rgba($morandi-blue-deep, 0.22);
@@ -2020,7 +2020,7 @@ body.home .page__author-footer {
 
 .album-tile__title {
   font-family: $reforma-stack;
-  font-size: 0.88em;
+  font-size: 0.94em;
   font-weight: normal;
   line-height: 1.22;
   padding-bottom: 0.1em;
@@ -2032,7 +2032,7 @@ body.home .page__author-footer {
 }
 
 .album-tile__artist {
-  font-size: 0.74em;
+  font-size: 0.8em;
   color: $morandi-muted;
   line-height: 1.32;
   padding-bottom: 0.08em;
@@ -2042,7 +2042,7 @@ body.home .page__author-footer {
 }
 
 .album-tile__genre {
-  font-size: 0.70em;
+  font-size: 0.76em;
   color: $morandi-muted-soft;
   line-height: 1.34;
   margin-top: 0.1em;
@@ -2064,7 +2064,7 @@ body.home .page__author-footer {
   justify-content: center;
   padding: 0.28em 0.72em;
   border-radius: 999px;
-  font-size: 0.74em;
+  font-size: 0.8em;
   line-height: 1;
   letter-spacing: 0.01em;
   white-space: nowrap;
@@ -2108,7 +2108,7 @@ body.home .page__author-footer {
 
 .album-tile__preview {
   font-family: $reforma-stack;
-  font-size: 0.86em;
+  font-size: 0.92em;
   line-height: 1.38;
   color: $morandi-muted;
 
@@ -2123,7 +2123,7 @@ body.home .page__author-footer {
   border: none;
   padding: 0;
   margin-top: 0.22em;
-  font-size: 0.68em;
+  font-size: 0.8em;
   color: $morandi-muted-soft;
   cursor: pointer;
   transition: transform 0.38s ease, color 0.15s ease;
@@ -2145,7 +2145,7 @@ body.home .page__author-footer {
   width: 95%;
   margin: 0 auto 1.1em;
   font-family: $mono-stack;
-  font-size: 0.78em;
+  font-size: 0.86em;
   color: $site-text-soft;
 
   &[hidden] { display: none; }
@@ -2225,8 +2225,8 @@ body.home .page__author-footer {
 @include breakpoint($large) {
   .thoughts-card__meta { font-size: 1.2em; }
   .thoughts-card__posted { font-size: 0.85em; }
-  .thoughts-card__text { font-size: 0.94em; }
-  .thoughts-card__text p { font-size: 0.98em; }
+  .thoughts-card__text { font-size: 0.98em; }
+  .thoughts-card__text p { font-size: 1em; }
 
   .thoughts-card__badges .thoughts-card__pin,
   .thoughts-card__badges .thoughts-card__eval {
@@ -2247,7 +2247,7 @@ body.home .page__author-footer {
   a {
     color: $site-text-nav;
     text-decoration: none;
-    font-size: 0.82em;
+    font-size: 0.88em;
     line-height: 1.15;
     position: relative;
     padding-bottom: 2px;
@@ -2322,7 +2322,7 @@ body.home .page__author-footer {
   align-items: center;
   gap: 0.35rem;
   font-family: $mono-stack;
-  font-size: 0.78em;
+  font-size: 0.86em;
   color: $site-text-soft;
 
   &[hidden] { display: none; }
@@ -2403,7 +2403,7 @@ body.home .page__author-footer {
   height: var(--controls-h);
   box-sizing: border-box;
   font-family: $mono-stack;
-  font-size: 0.82em;
+  font-size: 0.9em;
   color: $morandi-blue-deep;
   background: rgba($morandi-blue, 0.1);
   border: 1px solid rgba($morandi-blue-deep, 0.22);
@@ -2439,7 +2439,7 @@ body.home .page__author-footer {
   height: var(--controls-h);
   box-sizing: border-box;
   font-family: $mono-stack;
-  font-size: 0.82em;
+  font-size: 0.9em;
   background: rgba($morandi-grey-soft, 0.18);
   border: 1px solid rgba($morandi-muted, 0.18);
   border-radius: 1000px;
@@ -2852,12 +2852,12 @@ mark.thoughts-highlight {
   }
 
   .thoughts-card__year {
-    font-size: 0.72em;
+    font-size: 0.78em;
   }
 
   .thoughts-card__creator {
     margin-top: 0.08em;
-    font-size: 0.76em;
+    font-size: 0.82em;
     line-height: 1.22;
   }
 
@@ -2869,7 +2869,7 @@ mark.thoughts-highlight {
     align-self: start;
     margin-top: 0.12em;
     margin-bottom: 0;
-    font-size: 0.76em;
+    font-size: 0.82em;
     line-height: 1.22;
   }
 
@@ -2898,7 +2898,7 @@ mark.thoughts-highlight {
   }
 
   .album-wall__filter-btn {
-    font-size: 0.92em;
+    font-size: 0.96em;
   }
 
   .album-wall__filter-label-full {
@@ -3351,7 +3351,7 @@ mark.thoughts-highlight {
 .home-writing-tile__kicker {
   color: $morandi-clay-deep;
   font-family: $mono-stack;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: bold;
   line-height: 1;
   letter-spacing: 0.045em;
@@ -3361,7 +3361,7 @@ mark.thoughts-highlight {
 .home-writing-tile__title {
   display: block;
   color: $morandi-ink;
-  font-size: 0.9rem;
+  font-size: 0.96rem;
   font-weight: 500;
   line-height: 1.16;
   text-transform: none;
@@ -3387,11 +3387,11 @@ mark.thoughts-highlight {
   }
 
   .home-writing-tile__kicker {
-    font-size: 0.72rem;
+    font-size: 0.78rem;
   }
 
   .home-writing-tile__title {
-    font-size: 0.9rem;
+    font-size: 0.96rem;
     line-height: 1.06;
   }
 }
@@ -3422,8 +3422,8 @@ mark.thoughts-highlight {
   margin-top: $media-caption-gap;
   margin-bottom: 0;
   padding-bottom: 0;
-  font-size: clamp(0.74rem, calc(0.7rem + 0.1vw), 0.82rem);
-  line-height: 1.28;
+  font-size: clamp(0.84rem, calc(0.8rem + 0.1vw), 0.92rem);
+  line-height: 1.38;
 }
 
 @include breakpoint($x-large) {
@@ -3433,7 +3433,7 @@ mark.thoughts-highlight {
   }
 
   .home-writing-award figcaption {
-    font-size: clamp(0.76rem, calc(0.72rem + 0.1vw), 0.86rem);
+    font-size: clamp(0.86rem, calc(0.82rem + 0.1vw), 0.94rem);
   }
 }
 
@@ -3469,8 +3469,8 @@ mark.thoughts-highlight {
 
 .home-science-card figcaption {
   margin-top: $media-caption-gap;
-  font-size: 0.76rem;
-  line-height: 1.4;
+  font-size: 0.86rem;
+  line-height: 1.45;
 }
 
 .home-science-card figcaption span {
@@ -3478,7 +3478,7 @@ mark.thoughts-highlight {
   margin-bottom: 0.16rem;
   color: $morandi-clay-deep;
   font-family: $mono-stack;
-  font-size: 0.64rem;
+  font-size: 0.72rem;
   font-weight: bold;
   line-height: 1.18;
   text-transform: lowercase;
@@ -3561,14 +3561,14 @@ mark.thoughts-highlight {
   }
 
   .home-writing-tile__kicker {
-    font-size: 0.72rem;
+    font-size: 0.78rem;
     font-weight: bold;
     line-height: 1.05;
     letter-spacing: 0;
   }
 
   .home-writing-tile__title {
-    font-size: 0.90rem;
+    font-size: 0.96rem;
     line-height: 1.08;
     letter-spacing: 0;
   }
@@ -3702,8 +3702,8 @@ mark.thoughts-highlight {
 
 @media (max-width: 480px) {
   .home-featured-album {
-    --home-featured-album-desc-size: 0.74em;
-    --home-featured-album-desc-line-height: 1.2;
+    --home-featured-album-desc-size: 0.86em;
+    --home-featured-album-desc-line-height: 1.32;
     gap: 0.8em;
     align-items: center;
   }
@@ -3726,7 +3726,7 @@ mark.thoughts-highlight {
   }
 
   .home-featured-album__link {
-    font-size: 0.66em;
+    font-size: 0.78em;
     line-height: 1.35;
   }
 }
@@ -3913,7 +3913,7 @@ mark.thoughts-highlight {
 .home-chess-puzzle__caption {
   color: $site-text-muted;
   font-family: $mono-stack;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   line-height: 1.45;
 }
 
@@ -3969,14 +3969,14 @@ mark.thoughts-highlight {
     width: 48%;
     max-width: none;
     margin-left: 0.8em;
-    font-size: 0.84em;
+    font-size: 0.9em;
   }
 }
 
 .thoughts-preview-inline__label {
   display: block;
   font-family: $mono-stack;
-  font-size: 0.72em;
+  font-size: 0.78em;
   font-weight: bold;
   letter-spacing: 0.06em;
   text-transform: lowercase;
@@ -4005,7 +4005,7 @@ mark.thoughts-highlight {
 
 .thoughts-preview-inline__title {
   display: block;
-  font-size: 0.84em;
+  font-size: 0.9em;
   font-weight: bold;
   font-style: italic;
   color: $morandi-ink;
@@ -4016,7 +4016,7 @@ mark.thoughts-highlight {
 
 .thoughts-preview-inline__text {
   display: block;
-  font-size: 0.76em;
+  font-size: 0.84em;
   color: $morandi-muted;
   line-height: 1.3;
   white-space: nowrap;
@@ -4045,7 +4045,7 @@ mark.thoughts-highlight {
   cursor: pointer;
   padding: 0.42em 0.52em;
   font-family: $mono-stack;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   letter-spacing: 0.12em;
   line-height: 1;
   opacity: 0.7;
@@ -4069,7 +4069,7 @@ mark.thoughts-highlight {
     color: $site-text-muted;
     background: rgba($site-bg, 0.94);
     box-shadow: 0 1px 5px $shadow-faint;
-    font-size: 0.66rem;
+    font-size: 0.74rem;
     font-weight: normal;
     letter-spacing: 0.02em;
     line-height: 1.15;
@@ -4233,7 +4233,7 @@ body.writing-page .page__content .writing-entry__title em {
 
 .writing-entry__type {
   display: inline-block;
-  font-size: 0.72em;
+  font-size: 0.78em;
   line-height: 1.05;
   letter-spacing: 0.08em;
   text-transform: lowercase;
@@ -4301,7 +4301,7 @@ body.writing-page .page__content .writing-entry__title em {
 .writing-entry__title-zh-inline {
   display: inline-block;
   margin-left: 0.58rem;
-  font-size: 0.72em;
+  font-size: 0.78em;
   line-height: 1.45;
 }
 
@@ -4312,7 +4312,7 @@ body.writing-page .page__content .writing-entry__title em {
 .writing-entry__title-zh-subtitle {
   display: block;
   margin: 0.02rem 0 0.34rem;
-  font-size: 0.78em;
+  font-size: 0.84em;
   line-height: 1.45;
 }
 
@@ -4326,7 +4326,7 @@ body.writing-page .page__content .writing-entry__title em {
 }
 
 .writing-entry__meta {
-  font-size: 0.82em;
+  font-size: 0.88em;
   color: $morandi-muted-soft;
   line-height: 1.5;
   margin-bottom: 0.5rem;
@@ -4334,7 +4334,7 @@ body.writing-page .page__content .writing-entry__title em {
 
 .writing-entry__text {
   font-family: $reforma-stack;
-  font-size: 0.92em;
+  font-size: 0.98em;
   color: $site-text-body;
   line-height: 1.58;
   letter-spacing: 0.008em;
@@ -4359,7 +4359,7 @@ body.writing-page .page__content .writing-entry__title em {
 
 .writing-entry__award {
   display: inline-block;
-  font-size: 0.7em;
+  font-size: 0.78em;
   line-height: 1.35;
   color: $morandi-sage-deep;
   border: 1px solid rgba($morandi-sage, 0.4);
@@ -4379,7 +4379,7 @@ body.writing-page .page__content .writing-entry__title em {
 
 .writing-entry__book-links {
   font-family: $reforma-stack;
-  font-size: 0.74em;
+  font-size: 0.82em;
   line-height: 1.48;
   margin: 0.18rem 0 0.18rem;
 
@@ -4391,7 +4391,7 @@ body.writing-page .page__content .writing-entry__title em {
 .writing-entry__companion-link {
   margin: 0.62rem 0 0.58rem;
   font-family: $reforma-stack;
-  font-size: 0.74em;
+  font-size: 0.82em;
   line-height: 1.48;
 
   * {
@@ -4481,7 +4481,7 @@ body.writing-page .page__content .writing-entry__title em {
   .writing-entry__award {
     border: 0;
     padding: 0;
-    font-size: 0.72em;
+    font-size: 0.78em;
     color: $morandi-sage-deep;
   }
 
@@ -4579,7 +4579,7 @@ body.writing-page .page__content .writing-entry__title em {
 .writing-filter-btn {
   padding-top: 0.34em;
   padding-bottom: 0.36em;
-  font-size: 0.91em;
+  font-size: 0.96em;
 }
 
 .writing-controls-row {
@@ -4607,7 +4607,7 @@ body.writing-page .page__content .writing-entry__title em {
   padding: 0 1.6em 0 0.85em;
   color: $site-text-nav;
   font-family: $mono-stack;
-  font-size: 0.82em;
+  font-size: 0.9em;
   background: rgba($morandi-grey-soft, 0.18);
   border: 1px solid rgba($morandi-muted, 0.18);
   border-radius: 1000px;
@@ -4712,7 +4712,7 @@ body.writing-page .page__content .writing-entry__title em {
   display: block;
   color: currentColor;
   font-family: $mono-stack;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   line-height: 1;
   transform: translateY(-0.08em);
 }
@@ -4724,7 +4724,7 @@ body.writing-page .page__content .writing-entry__title em {
   display: block;
   color: currentColor;
   font-family: $mono-stack;
-  font-size: 0.84rem;
+  font-size: 0.95rem;
   font-weight: 400;
   line-height: 1;
   transform: translateY(-0.08em);
@@ -4760,7 +4760,7 @@ body.writing-page .page__content .writing-entry__title em {
   padding: 0 0.9em;
   color: $morandi-blue-deep;
   font-family: $mono-stack;
-  font-size: 0.82em;
+  font-size: 0.9em;
   white-space: nowrap;
   background: rgba($morandi-blue, 0.1);
   border: 1px solid rgba($morandi-blue-deep, 0.22);
@@ -4814,7 +4814,7 @@ body.writing-page .page__content .writing-entry__title em {
   margin: 0 auto 1.1em;
   color: $site-text-soft;
   font-family: $mono-stack;
-  font-size: 0.78em;
+  font-size: 0.86em;
 
   &[hidden] {
     display: none;
@@ -5078,7 +5078,7 @@ body.writing-page .page__content .writing-entry__title em {
   flex: 0 0 auto;
   color: $morandi-muted;
   font-family: $reforma-stack;
-  font-size: 0.72em;
+  font-size: 0.8em;
   line-height: 1;
 }
 
@@ -5375,7 +5375,7 @@ body.science-page {
     margin-bottom: 0.42rem;
     color: $morandi-clay-deep;
     font-family: $mono-stack;
-    font-size: 0.66rem;
+    font-size: 0.76rem;
     line-height: 1.25;
     text-transform: lowercase;
   }
@@ -5595,7 +5595,7 @@ body.music-page .mp-prose .wv-player {
 }
 
 .writing-piece-meta {
-  font-size: 0.82em;
+  font-size: 0.9em;
   color: $morandi-muted-soft;
   margin: 0 0 1.8rem;
   padding: 0.85rem 0 1rem;
@@ -5605,7 +5605,7 @@ body.music-page .mp-prose .wv-player {
 }
 
 .writing-piece-meta__type {
-  font-size: 0.88em;
+  font-size: 0.94em;
   letter-spacing: 0.06em;
   text-transform: lowercase;
   color: $morandi-clay-deep;
@@ -5648,7 +5648,7 @@ body.music-page .mp-prose .wv-player {
   padding: 0.25rem 0;
   color: $morandi-ink;
   font-family: $reforma-stack;
-  font-size: 1.13rem;
+  font-size: 1.18rem;
   font-style: italic;
   line-height: 1.62;
   text-align: center;
@@ -5743,7 +5743,7 @@ body.music-page .mp-prose .wv-player {
   margin: 1.8rem 0;
   padding: 0.75rem 0 0.75rem 1rem;
   color: $site-text-muted;
-  font-size: 0.86rem;
+  font-size: 0.95rem;
   line-height: 1.62;
   border-left: 1px solid rgba($morandi-muted, 0.28);
 }
@@ -5909,7 +5909,7 @@ body.science-page .page__content .writing-insert-pair {
   border-top: 1px solid $overlay-muted-soft;
   color: $site-text-muted;
   font-family: $reforma-stack;
-  font-size: 0.88rem;
+  font-size: 0.96rem;
   line-height: 1.58;
 }
 
@@ -5971,7 +5971,7 @@ body.science-page .page__content .writing-insert-pair {
   border-radius: 3px;
   box-shadow: none;
   font-family: $mono-stack;
-  font-size: 0.9rem;
+  font-size: 0.96rem;
   font-style: italic;
   font-weight: normal;
   letter-spacing: 0.01em;
@@ -6004,13 +6004,13 @@ body.science-page .page__content .writing-insert-pair {
   display: block;
   margin-bottom: 0.23rem;
   color: $morandi-clay-deep;
-  font-size: 0.74rem;
+  font-size: 0.82rem;
   text-transform: lowercase;
 }
 
 .writing-piece-pagination__title {
   display: block;
-  font-size: 0.92rem;
+  font-size: 1rem;
   line-height: 1.32;
 }
 
@@ -6018,7 +6018,7 @@ body.science-page .page__content .writing-insert-pair {
   display: inline-block;
   color: $site-text-muted;
   font-family: $mono-stack;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-style: italic;
   line-height: 1.3;
   text-decoration-color: rgba($morandi-clay-deep, 0.36);
@@ -6204,12 +6204,12 @@ body.science-page .page__content .writing-insert-pair {
 }
 
 .writing-entry--journal .writing-entry__meta {
-  font-size: 0.78em;
+  font-size: 0.86em;
   margin-bottom: 0.6rem;
 }
 
 .writing-entry--journal .writing-entry__text {
-  font-size: 0.88em;
+  font-size: 0.94em;
   line-height: 1.6;
 }
 
@@ -6275,7 +6275,7 @@ body.science-page .page__content .writing-insert-pair {
 }
 
 .wv-player__title {
-  font-size: 0.78em;
+  font-size: 0.88em;
   font-weight: 500;
   color: $morandi-ink;
   white-space: nowrap;
@@ -6286,7 +6286,7 @@ body.science-page .page__content .writing-insert-pair {
 
 .wv-player__time {
   font-family: $mono-stack;
-  font-size: 0.68em;
+  font-size: 0.78em;
   color: $morandi-muted-soft;
   white-space: nowrap;
   flex-shrink: 0;
