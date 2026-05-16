@@ -9,6 +9,12 @@ I'm a PhD student at the Max Planck Florida Institute for Neuroscience, studying
 
 Reach out: [dinghao.luo@outlook.com](mailto:dinghao.luo@outlook.com)<br>Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.com/user/amoxdl24/) · [Instagram](https://www.instagram.com/amoxitoxin) · [CV](https://dinghaoluo.github.io/cv/)
 
+<div class="home-subscribe">
+  <label for="home-email">Get notified of new writing:</label>
+  <input type="email" id="home-email" placeholder="email address">
+  <button type="submit">subscribe</button>
+</div>
+
 ---
 
 <h2 id="writing"><a href="/writing/">writing :)</a></h2>
