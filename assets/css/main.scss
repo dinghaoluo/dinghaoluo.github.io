@@ -182,12 +182,12 @@ $media-pair-gap: 0.55rem;
 // -------------------------
 html {
   box-sizing: border-box;
-  font-size: 15.75px;
+  font-size: 16.25px;
   font-family: $font-ui;
 
-  @include breakpoint($medium)  { font-size: 16px; }
-  @include breakpoint($large)   { font-size: 16.25px; }
-  @include breakpoint($x-large) { font-size: 16px; }
+  @include breakpoint($medium)  { font-size: 17px; }
+  @include breakpoint($large)   { font-size: 16.75px; }
+  @include breakpoint($x-large) { font-size: 17px; }
 }
 
 body * {
