@@ -159,4 +159,4 @@ Wu Y, Mumford P, Noy S, Cleverley K, Mrzyglod A, **Luo D** et al. Cathepsin B ab
 
 Research code and cleaned analysis material will be linked through [GitHub](https://github.com/dinghaoluo) and [ORCID](https://orcid.org/0000-0002-3036-1187) as the manuscript moves toward publication.
 
-{% if page.last_updated %}<p style="font-size: 0.78em; opacity: 0.45; margin-top: 2rem;">Last updated {{ page.last_updated | date: "%B %Y" }}</p>{% endif %}
+{% if page.last_updated %}<p style="font-size: 0.86em; opacity: 0.45; margin-top: 2rem;">Last updated {{ page.last_updated | date: "%B %Y" }}</p>{% endif %}
