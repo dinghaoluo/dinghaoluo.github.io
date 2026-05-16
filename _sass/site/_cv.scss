@@ -30,7 +30,7 @@ body.cv-page {
   .cv-contact {
     text-align: left;
     font-family: $reforma-stack;
-    font-size: 0.86rem;
+    font-size: 0.96rem;
     line-height: 1.5;
     color: $site-text-muted;
     margin-bottom: 1.6rem;
@@ -40,7 +40,7 @@ body.cv-page {
     }
 
     .cv-contact__name {
-      font-size: 1.1rem;
+      font-size: 1.18rem;
       font-weight: bold;
       color: $morandi-ink;
       margin-bottom: 0.3rem;
@@ -89,7 +89,7 @@ body.cv-page {
 
   .cv-entry__loc {
     font-family: $reforma-stack;
-    font-size: 0.84rem;
+    font-size: 0.92rem;
     color: $site-text-muted;
   }
 
@@ -109,7 +109,7 @@ body.cv-page {
 
   .cv-entry__date {
     font-family: $reforma-stack;
-    font-size: 0.78rem;
+    font-size: 0.88rem;
     color: $morandi-clay-deep;
     white-space: nowrap;
   }
@@ -119,7 +119,7 @@ body.cv-page {
   .cv-talk,
   .cv-skills,
   .cv-awards {
-    font-size: 0.88rem;
+    font-size: 0.98rem;
     line-height: 1.65;
   }
 
@@ -148,7 +148,7 @@ body.cv-page {
 
   .cv-talk__year {
     font-family: $reforma-stack;
-    font-size: 0.78rem;
+    font-size: 0.88rem;
     font-weight: bold;
     color: $morandi-clay-deep;
     padding-top: 0.12rem;
@@ -160,7 +160,7 @@ body.cv-page {
 
   .cv-talk__venue {
     display: block;
-    font-size: 0.82rem;
+    font-size: 0.9rem;
     color: $site-text-muted;
     margin-top: 0.1rem;
   }
@@ -174,7 +174,7 @@ body.cv-page {
     dt {
       font-family: $reforma-stack;
       font-weight: bold;
-      font-size: 0.88rem;
+      font-size: 0.96rem;
       color: $morandi-clay-deep;
       white-space: nowrap;
       padding-top: 0.02rem;
@@ -202,7 +202,7 @@ body.cv-page {
 
   .cv-download__link {
     font-family: $reforma-stack;
-    font-size: 0.86rem;
+    font-size: 0.96rem;
     color: $morandi-clay-deep;
     text-decoration: none;
     &:hover, &:focus-visible { text-decoration: underline; }
