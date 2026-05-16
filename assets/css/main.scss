@@ -44,24 +44,28 @@ font block — kept inline because GitHub Pages ignores separate _fonts.scss
   src: url('/assets/fonts/reforma/reforma2018-gris-ro.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  unicode-range: U+0000-00FF, U+2000-206F, U+20A0-20CF, U+2190-21FF;
 }
 @font-face {
   font-family: 'Reforma 2018';
   src: url('/assets/fonts/reforma/reforma2018-gris-italica-ro.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
+  unicode-range: U+0000-00FF, U+2000-206F, U+20A0-20CF, U+2190-21FF;
 }
 @font-face {
   font-family: 'Reforma 2018';
   src: url('/assets/fonts/reforma/reforma2018-negra-ro.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
+  unicode-range: U+0000-00FF, U+2000-206F, U+20A0-20CF, U+2190-21FF;
 }
 @font-face {
   font-family: 'Reforma 2018';
   src: url('/assets/fonts/reforma/reforma2018-negra-italica-ro.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
+  unicode-range: U+0000-00FF, U+2000-206F, U+20A0-20CF, U+2190-21FF;
 }
 
 // -------------------------
@@ -156,7 +160,7 @@ $hebrew-stack: 'Noto Serif Hebrew', 'Noto Sans Hebrew', $intl-stack;
 $japanese-stack: 'Noto Sans JP', 'Noto Sans CJK JP', 'Yu Gothic', 'Hiragino Sans', Meiryo, sans-serif;
 $korean-stack: 'Noto Sans KR', 'Noto Sans CJK KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
 $mono-stack: 'Mononoki', $intl-stack, $cjk-stack, monospace;
-$reforma-stack: 'Reforma 2018', $intl-stack, Georgia, 'Times New Roman', $cjk-stack, serif;
+$reforma-stack: 'Reforma 2018', Georgia, 'Times New Roman', $intl-stack, $cjk-stack, serif;
 $writing-title-stack: $reforma-stack;
 $writing-title-italic-stack: $reforma-stack;
 $content-width: 760px;
