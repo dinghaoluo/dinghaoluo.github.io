@@ -13,6 +13,14 @@ Recently I've been reading *Mason & Dixon* (1997), learning SQL and intermediate
 
 Reach out to me: <a href="mailto:dinghao.luo@outlook.com" class="site-nav-link">[dinghao.luo@outlook.com]</a><br>Find me: <a href="https://github.com/dinghaoluo" class="site-nav-link">GitHub</a> · <a href="https://www.reddit.com/user/amoxdl24/" class="site-nav-link">Reddit</a> · <a href="https://www.instagram.com/amoxitoxin" class="site-nav-link">Instagram</a> · <a href="https://www.linkedin.com/in/dinghaoluo/" class="site-nav-link">LinkedIn</a> · <a href="/cv/" class="site-nav-link">CV</a>
 
+<div class="home-subscribe">
+  <p>...or if you enjoy my writing or projects:</p>
+  <form action="https://buttondown.com/api/emails/embed-subscribe/haothings" method="post" class="home-subscribe__form">
+    <input type="email" name="email" placeholder="you@email.com" required class="home-subscribe__input">
+    <input type="submit" value="subscribe" class="home-subscribe__btn">
+  </form>
+</div>
+
 ---
 
 <nav class="home-section-strip" aria-label="homepage sections">
@@ -103,7 +111,7 @@ My mom says I used to devour all the books that I could get my hands on as a kid
 - [***Capitalist Realism*** (2009)](/thoughts/#capitalist-realism-is-there-no-alternative) by Mark Fisher was a 3-hour read that sharpened my politics
 - Grace Lindsay's [***Models of the Mind*** (2021)](/thoughts/#models-of-the-mind) is an extraordinary neuroscience book on how the mind and the machine meet
 - [***When We Cease to Understand the World*** (2020)](/thoughts/#when-we-cease-to-understand-the-world) by Benjamín Labatut was part physics history, part fever dream, and shook my physics-uninitiated heart
-- ... *and if you read Chinese*, my translation of [***Entangled Life*** (2020)](/thoughts/#entangled-life) by Merlin Sheldrake, which opened my eyes to the secret life of fungi
+- ...*and if you read Chinese*, my translation of [***Entangled Life*** (2020)](/thoughts/#entangled-life) by Merlin Sheldrake, which opened my eyes to the secret life of fungi
 
 <p class="home-thoughts-links"><a href="/thoughts/?type=book">→ books</a></p>
 </div>

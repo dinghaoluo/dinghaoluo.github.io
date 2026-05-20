@@ -140,7 +140,7 @@ header:
   min-height: 14rem;
   margin-top: 1.4rem;
   color: #9b928a;
-  font-size: 0.78rem;
+  font-size: 0.88rem;
 }
 .music-album-wall-loader.is-loaded { font-size: inherit; }
 

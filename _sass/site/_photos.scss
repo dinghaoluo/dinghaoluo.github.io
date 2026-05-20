@@ -4,7 +4,7 @@
 // -------------------------
 body.photos-page {
   .page__content {
-    font-size: 0.96rem;
+    font-size: 1rem;
   }
 
   .photo-map-panel {
@@ -365,7 +365,7 @@ body.photos-page {
   .photo-section__axis,
   .photo-section__note-text {
     margin: 0;
-    font-size: 0.76rem;
+    font-size: 0.84rem;
     line-height: 1.48;
   }
 
@@ -441,8 +441,8 @@ body.photos-page {
     border-radius: 2px;
     background: rgba(#ffffff, 0.82);
     color: $site-text-nav;
-    font-size: 0.66rem;
-    line-height: 1.2;
+    font-size: 0.78rem;
+    line-height: 1.3;
     opacity: 0;
     transform: translateY(0.18rem);
     transition: opacity 0.2s ease, transform 0.2s ease;
@@ -818,7 +818,7 @@ body.photos-page {
     }
 
     .page__content {
-      font-size: 0.91rem;
+      font-size: 1rem;
     }
 
     .photos-intro {
@@ -944,6 +944,8 @@ body.photos-page {
       padding: 0.32rem 0.34rem 0.38rem;
       background: transparent;
       color: $site-text-soft;
+      font-size: 0.84rem;
+      line-height: 1.38;
       opacity: 1;
       transform: none;
     }

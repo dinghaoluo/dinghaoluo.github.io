@@ -212,4 +212,4 @@ toc_icon: ""
   <a href="/assets/docs/dinghao-luo-cv.pdf" class="cv-download__link">Download PDF version</a>
 </div>
 
-{% if page.last_updated %}<p style="font-size: 0.78em; opacity: 0.45; margin-top: 2rem;">Last updated {{ page.last_updated | date: "%B %Y" }}</p>{% endif %}
+{% if page.last_updated %}<p style="font-size: 0.86em; opacity: 0.45; margin-top: 2rem;">Last updated {{ page.last_updated | date: "%B %Y" }}</p>{% endif %}
