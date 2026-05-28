@@ -5,9 +5,11 @@ classes: home
 ---
 *Hi, Dinghao here :)*
 
-I'm a PhD student at the Max Planck Florida Institute for Neuroscience, studying how a tiny brainstem nucleus uses dopamine to tune memory accuracy in the hippocampus. I'm in my fourth year and spend most of my time imaging neurons and running behavioural experiments.
+I'm finishing my PhD in neuroscience at the Max Planck Florida Institute for Neuroscience, studying how a tiny brainstem nucleus uses dopamine to rapidly tune memory accuracy in the hippocampus. I'm graduating in December 2026 and looking for data science roles in Europe.
 
-Reach out: [dinghao.luo@outlook.com](mailto:dinghao.luo@outlook.com)<br>Find me: [GitHub](https://github.com/dinghaoluo) · [Reddit](https://www.reddit.com/user/amoxdl24/) · [Instagram](https://www.instagram.com/amoxitoxin) · [CV](https://dinghaoluo.github.io/cv/)
+Recently I've been reading Pynchon's *Mason & Dixon* (1997), finishing up my <a href="#science" class="site-nav-link">PhD</a> thesis, and working on a computational analysis of *Gravity's Rainbow* (1973).
+
+Reach out to me: <a href="mailto:dinghao.luo@outlook.com" class="site-nav-link">[dinghao.luo@outlook.com]</a><br>Find me: <a href="https://github.com/dinghaoluo" class="site-nav-link">GitHub</a> · <a href="https://www.reddit.com/user/amoxdl24/" class="site-nav-link">Reddit</a> · <a href="https://www.instagram.com/amoxitoxin" class="site-nav-link">Instagram</a> · <a href="https://www.linkedin.com/in/dinghaoluo/" class="site-nav-link">LinkedIn</a> · <a href="/cv/" class="site-nav-link">CV</a>
 
 <div class="home-subscribe">
   <label for="home-email">Get notified of new writing:</label>
@@ -54,7 +56,12 @@ Writing, along with reading, was one of my first true passions. Like many kids, 
 
 Since my undergraduate years at Cambridge, however, and now through my PhD, I have written mostly about science. I was one of the earliest members of Neu-Reality (神经现实), a Chinese-language neuroscience science communication platform, and spent three years as science editor and translator there. After that were seven months at *Scientific American* China, where I wrote weekly news on their digital platform, edited translations of each month's *SciAm* magazine, and finished <a href="/writing/arc-consciousness/" class="site-nav-link">a print feature</a> on Templeton World Charity Foundation's Accelerating Research on Consciousness (ARC) initiative, interviewing researchers like Cyriel Pennartz and Anil Seth.
 
-My longest writing project was translating Merlin Sheldrake's ***Entangled Life*** (2020) into Chinese ([《菌络万象》](https://www.amazon.com/dp/7559677754)), taking almost 3 years as I was juggling my PhD experiments and analyses on the side. The Chinese edition won the 2025 Pingshan Natural History Museum Book Award.
+<figure class="home-writing-award">
+  <img src="/assets/images/writing/entangled-life-pingshan-award.jpg" alt="The Chinese edition of Entangled Life displayed with the Pingshan Natural History Museum Book Award certificate." loading="lazy">
+  <figcaption>My translation of <em>Entangled Life</em> (2020) won the 2025 Pingshan Natural History Museum Book Award.</figcaption>
+</figure>
+
+My longest writing project was translating Merlin Sheldrake's ***Entangled Life*** (2020) into Chinese ([《菌络万象》](https://www.amazon.com/dp/7559677754)), taking almost 3 years as I was juggling my PhD experiments and analyses on the side. The Chinese edition is widely loved ([8.7/10 on Douban](https://book.douban.com/subject/37088268/)) and won the 2025 Pingshan Natural History Museum Book Award amongst others. I sat down with Sheldrake afterwards for <a href="/writing/entangled-life/" class="site-nav-link">a conversation about fungi, translation, and strangeness</a>.
 
 <a href="/writing/" class="site-nav-link">→ writing</a>
 
