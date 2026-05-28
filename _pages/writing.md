@@ -6,7 +6,7 @@ title: "writing"
 classes: writing-page
 header:
   og_image: "/assets/images/social-card-writing.png"
-lede: "Reading gives me obsessions; writing is how I think through them. The work here spans a book translation, science journalism, essays, fiction, and the journal entries that predate all of it."
+lede: "A collection of my writing and translation work, from science communication features to journal entries."
 ---
 
 {% assign articles = site.writing | sort: 'date' | reverse %}
