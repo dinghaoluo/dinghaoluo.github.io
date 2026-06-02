@@ -1,0 +1,20 @@
+# local development override
+# use `bin/jekyll-local build` or `bin/jekyll-local serve` to avoid fetching the remote theme during local preview.
+
+theme: minimal-mistakes-jekyll
+remote_theme:
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
