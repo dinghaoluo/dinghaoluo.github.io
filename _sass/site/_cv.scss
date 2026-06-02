@@ -7,10 +7,10 @@ body.cv-page {
     hr { display: none; }
 
     h2, h3, h4 {
-      font-family: $mono-stack;
-      font-weight: normal;
+      font-family: $font-display;
+      font-weight: 500;
       line-height: 1.28;
-      letter-spacing: 0;
+      letter-spacing: 0.01em;
       text-transform: none;
       margin: 2.2rem 0 0.9rem;
 

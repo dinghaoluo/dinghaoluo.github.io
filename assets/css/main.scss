@@ -161,6 +161,10 @@ $japanese-stack: 'Noto Sans JP', 'Noto Sans CJK JP', 'Yu Gothic', 'Hiragino Sans
 $korean-stack: 'Noto Sans KR', 'Noto Sans CJK KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
 $mono-stack: 'Mononoki', $intl-stack, $cjk-stack, monospace;
 $reforma-stack: 'Reforma 2018', Georgia, 'Times New Roman', $intl-stack, $cjk-stack, serif;
+$font-prose: $reforma-stack;
+$font-display: $reforma-stack;
+$font-ui: $mono-stack;
+$font-code: $mono-stack;
 $writing-title-stack: $reforma-stack;
 $writing-title-italic-stack: $reforma-stack;
 $content-width: 760px;
@@ -177,7 +181,7 @@ $media-pair-gap: 0.55rem;
 html {
   box-sizing: border-box;
   font-size: 16.25px;
-  font-family: $mono-stack;
+  font-family: $font-ui;
   --media-block-gap: #{$media-block-gap};
   --media-float-gap: #{$media-float-gap};
   --media-float-gutter: #{$media-float-gutter};
@@ -244,10 +248,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   letter-spacing: -0.01em;
+  text-decoration: none;
 }
 
 code, pre, kbd, samp {
-  font-family: $mono-stack;
+  font-family: $font-code;
 }
 
 em, i  { font-style: italic; }
@@ -693,7 +698,7 @@ body {
 }
 
 body:not(.home) .page__content {
-  font-family: $reforma-stack;
+  font-family: $font-prose;
 }
 
 body:not(.home) .page__content p,
@@ -708,7 +713,7 @@ body:not(.home) .page__content .thoughts-card__text,
 body:not(.home) .page__content .album-tile__preview,
 body:not(.home) .page__content .photos-intro,
 body:not(.home) .page__content .photo-section__note-text {
-  font-family: $reforma-stack;
+  font-family: $font-prose;
 }
 
 body:not(.home) .page__content p *,
@@ -738,7 +743,7 @@ body:not(.home) .page__content h3 *,
 body:not(.home) .page__content h4 *,
 body:not(.home) .page__content h5 *,
 body:not(.home) .page__content h6 * {
-  font-family: $mono-stack;
+  font-family: $font-display;
 }
 
 .home,
@@ -4173,10 +4178,10 @@ mark.thoughts-highlight {
   gap: 0.85rem;
   margin: 2.3rem 0 1.15rem;
   color: $morandi-ink;
-  font-family: $mono-stack;
+  font-family: $font-display;
   font-size: 1.42rem;
   font-weight: 500;
-  letter-spacing: 0.055em;
+  letter-spacing: 0.012em;
   line-height: 1.15;
   text-decoration: none;
   text-transform: lowercase;
@@ -4190,15 +4195,15 @@ mark.thoughts-highlight {
 }
 
 .page__content .writing-section-title {
-  font-family: $mono-stack;
+  font-family: $font-display;
   font-size: 1.42rem;
   font-weight: 500;
-  letter-spacing: 0.055em;
+  letter-spacing: 0.012em;
 }
 
 body.writing-page .page__title,
 body.writing-page .page__content .writing-section-title {
-  font-family: $mono-stack !important;
+  font-family: $font-display !important;
   font-weight: 500;
 }
 
@@ -4282,6 +4287,7 @@ body.writing-page .page__content .writing-entry__title em {
 
 .writing-entry__type {
   display: inline-block;
+  font-family: $font-ui;
   font-size: 0.78em;
   line-height: 1.05;
   letter-spacing: 0.08em;
@@ -5349,7 +5355,7 @@ body.science-page {
     max-width: 24ch;
     margin-bottom: 1.35rem;
     color: $site-text;
-    font-family: $writing-title-stack;
+    font-family: $font-display;
     font-size: 2rem;
     font-weight: 500;
     text-decoration: none;
@@ -5501,7 +5507,7 @@ body.science-page {
   }
 
   .page__content > p {
-    font-family: $reforma-stack;
+    font-family: $font-prose;
     line-height: 1.88;
     margin-bottom: 1.45em;
   }
@@ -5511,10 +5517,10 @@ body.science-page {
   .page__content > h4 {
     margin: 2.55rem 0 1.05rem;
     color: $morandi-ink;
-    font-family: $mono-stack;
-    font-weight: normal;
+    font-family: $font-display;
+    font-weight: 500;
     line-height: 1.28;
-    letter-spacing: 0;
+    letter-spacing: 0.01em;
     text-transform: none;
   }
 
