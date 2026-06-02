@@ -5942,19 +5942,65 @@ body.music-page .mp-prose .wv-player {
 }
 
 body.science-page .page__content .writing-insert {
-  --media-block-width: 30rem;
-  --media-float-width: 22rem;
+  --media-block-width: 34rem;
+  --media-float-width: 34rem;
+
+  @include breakpoint($large) {
+    float: none;
+    clear: both;
+    width: 100%;
+    max-width: var(--media-block-width);
+    margin: $media-block-gap auto $media-block-gap 0;
+  }
+
+  @include breakpoint($x-large) {
+    --media-block-width: 40rem;
+  }
+}
+
+body.science-page .page__content .writing-insert--right {
+  @include breakpoint($large) {
+    margin: $media-block-gap 0 $media-block-gap auto;
+  }
+}
+
+body.science-page .page__content .writing-insert--left {
+  @include breakpoint($large) {
+    margin: $media-block-gap auto $media-block-gap 0;
+  }
 }
 
 body.science-page .page__content .writing-insert--small {
-  --media-float-width: 14rem;
-  --media-float-max: 32%;
+  --media-block-width: 24rem;
+
+  @include breakpoint($large) {
+    --media-float-width: 24rem;
+    --media-float-max: 100%;
+  }
 }
 
 body.science-page .page__content .writing-insert-pair {
   --media-pair-width: 34rem;
   --media-pair-float-width: 34rem;
-  --media-pair-float-max: 65%;
+  --media-pair-float-max: 100%;
+
+  @include breakpoint($large) {
+    float: none;
+    clear: both;
+    width: 100%;
+    max-width: var(--media-pair-width);
+    margin: $media-block-gap auto $media-block-gap 0;
+  }
+
+  @include breakpoint($x-large) {
+    --media-pair-width: 40rem;
+  }
+}
+
+body.science-page .page__content .writing-insert-pair--right {
+  @include breakpoint($large) {
+    margin: $media-block-gap 0 $media-block-gap auto;
+  }
 }
 
 .page__content .source-note {
