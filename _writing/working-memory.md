@@ -1,5 +1,4 @@
 ---
-published: false
 writing_page: false
 title: "Manipulating working memory from outside the skull"
 type: "feature"

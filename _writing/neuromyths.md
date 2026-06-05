@@ -1,5 +1,4 @@
 ---
-published: false
 writing_page: false
 title: "The persistence of neuromyths"
 type: "feature"
