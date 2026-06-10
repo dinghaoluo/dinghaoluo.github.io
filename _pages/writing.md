@@ -8,7 +8,7 @@ classes:
   - section-nav-page
 header:
   og_image: "/assets/images/social-card-writing.png"
-lede: "A collection of my writing and translation work, from science communication features to journal entries."
+lede: "a collection of my writing and translation work, from science communication features to journal entries"
 section_nav: true
 ---
 
@@ -26,26 +26,20 @@ section_nav: true
 </div>
 
 {% assign articles = site.writing | sort: 'date' | reverse %}
+{% assign print_articles = articles | where_exp: "article", "article.section == 'print' or article.type == 'translation'" | sort: "print_order" %}
 {% assign featured_articles = articles | where: "writing_feature", true | sort: "writing_feature_order" %}
 
 <h2 class="writing-section-title" id="print">print</h2>
 
 <div class="writing-list">
-{% for article in articles %}
-{% assign is_print_article = false %}
-{% if article.section == "print" %}
-  {% assign is_print_article = true %}
-{% endif %}
-{% if article.type == "translation" %}
-  {% assign is_print_article = true %}
-{% endif %}
-{% if is_print_article and article.writing_page != false %}
+{% for article in print_articles %}
+{% if article.writing_page != false %}
 {% assign print_type = article.type %}
 {% if article.type == "feature" %}
   {% assign print_type = "science" %}
 {% endif %}
 {% assign print_title = article.archive_title | default: article.title_display | default: article.title %}
-{% assign print_excerpt = article.archive_excerpt | default: article.excerpt %}
+{% assign print_excerpt = article.excerpt %}
 {% assign title_is_plain = false %}
 {% if article.type == "translation" or article.title_link == false %}
   {% assign title_is_plain = true %}
@@ -56,9 +50,15 @@ section_nav: true
 {% endif %}
 <div id="{{ print_title | strip_html | slugify }}" class="writing-entry writing-entry--print writing-entry--print-{{ print_type | slugify }}{% if article.type == 'translation' %} writing-entry--translation{% endif %}{% if article.image %} writing-entry--has-image{% endif %}{% if article.featured %} writing-entry--featured{% endif %}">
   {% if article.image %}
+  {% if title_is_plain %}
+  <div class="writing-entry__img-wrap">
+    <img src="{{ article.image }}" alt="{{ print_title | strip_html | escape }}" class="writing-entry__img" loading="lazy" width="140" height="210">
+  </div>
+  {% else %}
   <a href="{{ article.url }}" class="writing-entry__img-wrap">
     <img src="{{ article.image }}" alt="{{ print_title | strip_html | escape }}" class="writing-entry__img" loading="lazy" width="140" height="210">
   </a>
+  {% endif %}
   {% endif %}
   <div class="writing-entry__body">
     {% unless article.show_archive_type == false %}
@@ -190,19 +190,19 @@ section_nav: true
 
 <h2 class="writing-section-title" id="other-writing">other writing</h2>
 
-I've written science communication in Chinese that doesn't fit neatly into the categories above. '[The Persistence of Neuromyths](/writing/neuromyths/)' was published on Guokr (果壳), China's most-read digital pop-science platform, and became one of my highest-readership articles in Chinese. '[Manipulating Working Memory from Outside the Skull](/writing/working-memory/)' was co-authored with Lindsay Li for Neu-Reality (神经现实), written at the invitation of Huan Luo, the paper's corresponding author, who asked us to write a sci-comm piece for their publication.
+I've written science communication in Chinese that doesn't fit neatly into the categories above. My article with the highest readership is '[The Persistence of 'Neuromyths' (不是人的脑子只用了10%，而是只有10%的人用了脑子)](https://mp.weixin.qq.com/s/wyetxNOx5PJPoAvP5apCeQ)' was published on Guokr (果壳), China's most-popular digital pop-science platform (at least back in ). '[Can We Manipulate Working Memory from Outside the Skull? (无须开颅，就能操控工作记忆？)](/writing/working-memory/)' was co-authored with [Lindsay Li](https://lishanshan-lss.github.io) for Neu-Reality (神经现实), written at the invitation of Dr. Huan Luo, the paper's corresponding author.
 
 ---
 
 <h2 class="writing-section-title" id="translations">translations</h2>
 
-I also translated and edited work by Michael Graziano, Timothy Lillicrap and Geoffrey Hinton, Jordana Cepelewicz, Alex Mar, and others into Chinese for Neu-Reality.
+I also translated and edited work by Alex Mar, Geoffrey Hinton, Jordana Cepelewicz, Michael Graziano, Timothy Lillicrap, and others into Chinese for Neu-Reality. The selected translations below are ordered by how proud I am of them.
 
-- Michael Graziano, 'Are We Really Conscious?' · *The Atlantic* · [original](https://www.theatlantic.com/science/archive/2016/03/phlegm-theories-of-consciousness/472812/) · [中文](https://mp.weixin.qq.com/s/dUAQ-v7_Xb_uP1znW4f-0g)
-- Timothy P. Lillicrap, Adam Santoro, Luke Marris, Colin J. Akerman and Geoffrey Hinton, 'Backpropagation and the Brain' · *Nature Reviews Neuroscience* · [original](https://www.nature.com/articles/s41583-020-0277-3) · [中文](https://mp.weixin.qq.com/s/n0cNsT_Gf7RZBFjE3rd_hw)
-- Jordana Cepelewicz, 'In Brain's Electrical Ripples, Markers for Memories Appear' · *Quanta Magazine* · [original](https://www.quantamagazine.org/in-brains-electrical-ripples-markers-for-memories-appear-20190806/) · [中文](https://mp.weixin.qq.com/s/gpKgkS9_EMnG7auZKLDuyw)
-- Grigori Guitchounts, 'An Existential Crisis in Neuroscience' · *Nautilus* · [original](https://nautil.us/an-existential-crisis-in-neuroscience-236115/) · [中文](https://mp.weixin.qq.com/s/TWu-VGcNfIg0oQYeXO3mSg)
-- Kevin Berger, 'Gustav Klimt in the Brain Lab' · *Nautilus* · [original](https://nautil.us/gustav-klimt-in-the-brain-lab-237578/) · [中文](https://mp.weixin.qq.com/s/bZJhnXy4RNnYkSdE2kbGUA)
-- Dyani Lewis, 'Optogenetics: Understanding the Brain One Flash of Light at a Time' · *Cosmos Magazine* · [original](https://cosmosmagazine.com/biology/optogenetics-understanding-the-brain-one-flash-of-light-at-a-time) · [中文](https://mp.weixin.qq.com/s?__biz=MzkxNzg2MzkxNg==&mid=2247539537&idx=1&sn=45a1385d9a380990018731b7f3a7dfd7&source=41)
-- Alex Mar, 'The Uncanny Love of Robot-Making' · *WIRED* · [original](https://www.wired.com/2017/10/hiroshi-ishiguro-when-robots-act-just-like-humans/) · [中文](https://mp.weixin.qq.com/s/AB9Pxh-52b7ZJxSDTfaceA)
-- Steve Ayan, 'The Brain's Autopilot Mechanism Steers Consciousness' · *Scientific American* · [original](https://www.scientificamerican.com/article/the-brains-autopilot-mechanism-steers-consciousness/) · [中文](https://mp.weixin.qq.com/s/edW5JRQ2VZF7k6E5daDkYA)
+- Alex Mar, '[Love in the Times of Robots](https://www.wired.com/2017/10/hiroshi-ishiguro-when-robots-act-just-like-humans/)' · *WIRED* · [赛博时期的爱情](https://mp.weixin.qq.com/s/AB9Pxh-52b7ZJxSDTfaceA)
+- Jordana Cepelewicz, '[In Brain's Electrical Ripples, Markers for Memories Appear](https://www.quantamagazine.org/in-brains-electrical-ripples-markers-for-memories-appear-20190806/)' · *Quanta Magazine* · [海马波簇闪烁，照亮记忆幽林](https://mp.weixin.qq.com/s/gpKgkS9_EMnG7auZKLDuyw)
+- Timothy P. Lillicrap, Adam Santoro, Luke Marris, Colin J. Akerman and Geoffrey Hinton, '[Backpropagation and the Brain](https://doi.org/10.1038/s41583-020-0277-3)' · *Nature Reviews Neuroscience* · [大脑中的反向传播](https://mp.weixin.qq.com/s/n0cNsT_Gf7RZBFjE3rd_hw) (co-translated with Lindsay Li)
+- Grigori Guitchounts, '[An Existential Crisis in Neuroscience](https://nautil.us/an-existential-crisis-in-neuroscience-237680)' · *Nautilus* · [神经科学的存在危机](https://mp.weixin.qq.com/s/TWu-VGcNfIg0oQYeXO3mSg)
+- Michael Graziano, '[Most Popular Theories of Consciousness Are Worse Than Wrong](https://www.theatlantic.com/science/archive/2016/03/phlegm-theories-of-consciousness/472812/)' · *The Atlantic* · [一些意识理论，让我们在理解意识的路上“开倒车”?](https://mp.weixin.qq.com/s/dUAQ-v7_Xb_uP1znW4f-0g)
+- Kevin Berger, '[Gustav Klimt in the Brain Lab](https://nautil.us/gustav-klimt-in-the-brain-lab-237324)' · *Nautilus* · [美存在于观看者的神经系统之中](https://mp.weixin.qq.com/s/bZJhnXy4RNnYkSdE2kbGUA)
+- Dyani Lewis, '[Optogenetics: Understanding the Brain One Flash of Light at a Time](https://www.media.mit.edu/articles/optogenetics-understanding-the-brain-one-flash-of-light-at-a-time/)' · *Cosmos Magazine* · [光遗传学——大脑说：“要有光。”](https://mp.weixin.qq.com/s?__biz=MzkxNzg2MzkxNg==&mid=2247539537&idx=1&sn=45a1385d9a380990018731b7f3a7dfd7&source=41)
+- Steve Ayan, '[The Brain's Autopilot Mechanism Steers Consciousness](https://www.scientificamerican.com/article/the-brains-autopilot-mechanism-steers-consciousness/)' · *Scientific American* · [你的大脑在自动驾驶，而你一无所知](https://mp.weixin.qq.com/s/edW5JRQ2VZF7k6E5daDkYA)
