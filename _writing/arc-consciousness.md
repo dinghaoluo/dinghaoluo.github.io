@@ -6,6 +6,7 @@ type: "feature"
 article_style: "analysis"
 outlet: "<em>Scientific American</em> China"
 date: 2021-03-01
+print_order: 2
 last_updated: 2026-04-01
 issue: "March 2021 print issue"
 meta_outlet_first: true
@@ -17,8 +18,8 @@ feature_banner: true
 banner_image: "/assets/images/writing/arc-consciousness-banner.webp"
 banner_position: "center 48%"
 banner_bg: "#f2eee5"
-banner_image_alt: "Abstract diagram of competing paths crossing a measured field."
-excerpt: "My print feature for <em>Scientific American</em> China, with original interviews with Anil Seth, Hakwan Lau, David Rosenthal, and others — tracing three decades of consciousness research from Crick's second revolution to the Templeton adversarial collaborations."
+banner_image_alt: "abstract diagram of competing paths crossing a measured field"
+excerpt: "My print feature for <i>Scientific American</i> China, based on original interviews with Anil Seth, Hakwan Lau, David Rosenthal, and others. I wrote it during a period when I was engulfing consciousness-adjacent books: Hofstadter, Melanie Mitchell's work on analogy and complexity, Dehaene's studies on the global workspace. The piece traces three decades of research from Crick and Koch's neural-correlates programme through the Templeton adversarial collaborations, and asks whether competing theories can even be tested against each other when they disagree about what kind of question consciousness is. The English version here has been revised and substantially expanded in 2026."
 writing_feature: true
 dropcap: true
 ---

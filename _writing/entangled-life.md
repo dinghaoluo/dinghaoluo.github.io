@@ -6,6 +6,7 @@ type: "science"
 article_style: "interview"
 show_archive_type: false
 date: 2025-11-05
+print_order: 1
 last_updated: 2025-11-05
 image: "/assets/images/thoughts/books/entangled_life_chinese.jpg"
 show_page_meta: false
@@ -29,8 +30,7 @@ awards:
     url: "https://book.douban.com/annual/2025/"
 isbn: "9787559677754"
 section: "print"
-excerpt: "Originally published by <em>The Paper</em> on 5 November 2025. Co-conducted with Songyan for Houlang Books' science editorial team."
-archive_excerpt: 'My Chinese translation of <em>Entangled Life</em>, published by Houlang Books: mycelium, decomposition, symbiosis, and sentences that had to stay scientifically exact without losing their strangeness.'
+excerpt: "My Chinese translation of Merlin Sheldrake's <i>Entangled Life</i> (2020), published by Houlang Books. I adored Frodo as a child, and there is a delightful scene early in the <i>Fellowship</i> where the hobbits raid Farmer Maggot's mushroom field and Frodo filches some mushrooms for the road; I think some old fondness from that moment carried into this project when it arrived in my inbox. Translating Sheldrake meant finding Chinese for a prose style that thinks through analogy while staying scientifically exact. I owe thanks to my editor Yanxia, and to Cosmo Sheldrake, whose music I kept returning to while working on the manuscript."
 ---
 
 {% include figure image_path="/assets/images/writing/entangled-life-pingshan-award.jpg" alt="Pingshan Natural History Museum Book Award announcement image for Entangled Life" caption="[Pingshan Natural History Museum Book Award](https://m.sohu.com/a/970954278_122097022), 2025." class="writing-insert writing-insert--right writing-insert--small" %}
