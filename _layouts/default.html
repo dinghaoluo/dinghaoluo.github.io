@@ -22,6 +22,12 @@
       {{ content }}
     </div>
 
+    {% unless page.classes contains "home" or page.section_nav %}
+      <div class="home-back-to-top-wrap">
+        <button class="home-back-to-top" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1" data-home-back-to-top>&uarr;</button>
+      </div>
+    {% endunless %}
+
     {% if site.search == true %}
       <div class="search-content">
         {% include_cached search/search_form.html %}

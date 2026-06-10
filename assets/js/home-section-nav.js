@@ -4,7 +4,7 @@
   function init() {
     var strip = document.querySelector('.home-section-strip');
     var backTop = document.querySelector('[data-home-back-to-top]');
-    var mobileMedia = window.matchMedia('(max-width: 992px)');
+    var mobileMedia = window.matchMedia('(max-width: 991.98px)');
     var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     var frame = null;
     var activeId = '';

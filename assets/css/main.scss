@@ -949,7 +949,7 @@ body:not(.home) .page__content h6 * {
   .home-section-strip__scroller {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: flex-end;
     gap: 0.34rem;
     max-height: calc(100vh - 13rem);
     overflow-x: hidden;
@@ -958,6 +958,7 @@ body:not(.home) .page__content h6 * {
     -ms-overflow-style: none;
     mask-image: none;
     -webkit-mask-image: none;
+    text-align: right;
   }
 
   .home-section-strip__scroller::-webkit-scrollbar {
