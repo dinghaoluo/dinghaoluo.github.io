@@ -15,5 +15,5 @@ show_meta_date: false
 show_meta_author: false
 show_meta_outlet: false
 section: "print"
-excerpt: "From 2023 to 2024, I worked on a Chinese translation of David Redish's <i>The Mind within the Brain</i> (2013); the translation is scheduled to be published around the end of this year. This was quite special to me, since Redish's pervious research on the hippocampus and his <i>Beyond the Cognitive Map</i> (1999) were some of my inspirations to study memory myself. In <i>The Mind</i>, Redish talks about his recent work on decision-making, reinforcement learning, neuroeconomics, and how neural computation breaks down in conditions such as addiction and PTSD."
+excerpt: "From 2023 to 2024, I worked on a Chinese translation of David Redish's <i>The Mind within the Brain</i> (2013); the translation is scheduled to be published around the end of this year. This was quite special to me, since Redish's previous research on the hippocampus and his <i>Beyond the Cognitive Map</i> (1999) were some of my inspirations to study memory myself. In <i>The Mind</i>, Redish talks about his recent work on decision-making, reinforcement learning, neuroeconomics, and how neural computation breaks down in conditions such as addiction and PTSD."
 ---
