@@ -3,14 +3,25 @@ layout: single
 author_profile: true
 permalink: /photos/
 title: "photos"
-classes: photos-page
+classes:
+  - photos-page
+  - section-nav-page
 header:
   og_image: "/assets/images/social-card-photos.png"
+section_nav: true
 ---
 
-<div class="photos-back-to-top-wrap">
-  <button class="home-back-to-top photos-back-to-top" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1" data-photos-back-to-top>&uarr;</button>
+<nav class="home-section-strip" aria-label="photo page sections">
+  <div class="home-section-strip__scroller">
+    {% for section in site.data.photos %}
+      <a href="#{{ section.id }}" data-home-section="{{ section.id }}">{{ section.nav_label | default: section.title }}</a>
+    {% endfor %}
+  </div>
+</nav>
+<div class="home-back-to-top-wrap photos-back-to-top-wrap">
+  <button class="home-back-to-top photos-back-to-top" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1" data-home-back-to-top>&uarr;</button>
 </div>
+
 
 {% assign overview_region = site.data.photo_map_regions | where: "scope", "overview" | first %}
 {% assign local_regions = site.data.photo_map_regions | where: "scope", "local" %}
@@ -92,7 +103,7 @@ header:
 <div class="photo-atlas" aria-label="Curated photo atlas">
   {% for section in site.data.photos %}
     {% assign section_index = forloop.index %}
-    <section id="{{ section.id }}" class="photo-section photo-section--{{ section.accent | default: 'clay' }}{% if section.layout %} photo-section--{{ section.layout }}{% endif %}">
+    <section id="{{ section.id }}" class="photo-section section-nav-anchor photo-section--{{ section.accent | default: 'clay' }}{% if section.layout %} photo-section--{{ section.layout }}{% endif %}">
       <aside class="photo-section__note" aria-labelledby="{{ section.id }}-title">
         <span class="photo-section__index">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
         <h2 id="{{ section.id }}-title">{{ section.title }}</h2>

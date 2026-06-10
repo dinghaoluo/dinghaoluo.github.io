@@ -3,10 +3,24 @@ layout: single
 author_profile: true
 permalink: /music/
 title: "music"
-classes: music-page
+classes:
+  - music-page
+  - section-nav-page
 header:
   og_image: "/assets/images/social-card-music.png"
+section_nav: true
 ---
+
+<nav class="home-section-strip" aria-label="music page sections">
+  <div class="home-section-strip__scroller">
+    <a href="#early-music" data-home-section="early-music">singles</a>
+    <a href="#the-maze" data-home-section="the-maze">the maze</a>
+  </div>
+</nav>
+<div class="home-back-to-top-wrap">
+  <button class="home-back-to-top" type="button" aria-label="Back to top"
+    aria-hidden="true" tabindex="-1" data-home-back-to-top>&uarr;</button>
+</div>
 
 <style>
 
@@ -201,7 +215,7 @@ html[data-theme="dark"] .mp-setup img { border-color: rgba(90, 82, 76, 0.4); }
 html[data-theme="dark"] .mp-singles img { border-color: rgba(90, 82, 76, 0.4); }
 </style>
 
-<div class="mp-prose mp-prose--singles" markdown="0">
+<div id="early-music" class="mp-prose mp-prose--singles section-nav-anchor" markdown="0">
 <figure class="mp-setup">
   <img src="/assets/images/music/roli-setup-london-2018.jpg" alt="ROLI Seaboard, Launchpad, and MacBook Pro running Logic on a desk in London, 2018" loading="lazy">
   <figcaption>my whole 'studio', London, 2018</figcaption>
@@ -237,7 +251,7 @@ My university years were full of exhibitions and shows around the UK. The summer
 
 <div class="mp-clear"></div>
 
-<div class="mp-prose" markdown="0">
+<div id="the-maze" class="mp-prose section-nav-anchor" markdown="0">
 <figure class="mp-album-hero">
   <img src="/assets/images/the_maze.jpg" alt="The Maze album cover" decoding="async">
   <figcaption><em>the maze</em> · <a href="https://amoxitoxin.bandcamp.com/">Bandcamp</a></figcaption>
@@ -295,6 +309,3 @@ Everything on the album passed through a ROLI, a Nektar, a MacBook, Logic Pro, a
 </div>
 
 <div class="mp-clear"></div>
-
----
-</div>

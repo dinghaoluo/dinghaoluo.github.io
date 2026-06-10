@@ -6,33 +6,11 @@
   var clusterPins = Array.prototype.slice.call(document.querySelectorAll('.photo-map-pin[data-map-cluster]'));
   var localMaps = Array.prototype.slice.call(document.querySelectorAll('[data-map-local]'));
   var localDeck = document.querySelector('[data-map-local-deck]');
-  var backTop = document.querySelector('[data-photos-back-to-top]');
-  var sections = Array.prototype.slice.call(document.querySelectorAll('.photo-section'));
-  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  var frame = null;
 
   function setSelectedSection(section) {
     sectionPins.forEach(function (pin) {
       pin.classList.toggle('is-active', pin.getAttribute('data-section') === section);
     });
-  }
-
-  function setBackTopVisible(visible) {
-    if (!backTop) return;
-
-    backTop.classList.toggle('is-visible', visible);
-    backTop.setAttribute('aria-hidden', visible ? 'false' : 'true');
-    backTop.tabIndex = visible ? 0 : -1;
-  }
-
-  function updateBackTop() {
-    frame = null;
-    setBackTopVisible(sections.length ? sections[0].getBoundingClientRect().top <= 72 : window.pageYOffset > 72);
-  }
-
-  function requestUpdateBackTop() {
-    if (frame) return;
-    frame = window.requestAnimationFrame(updateBackTop);
   }
 
   function closeLocalMaps() {
@@ -83,24 +61,4 @@
     });
   });
 
-  if (backTop) {
-    backTop.addEventListener('click', function () {
-      window.scrollTo({
-        top: 0,
-        behavior: reducedMotion.matches ? 'auto' : 'smooth'
-      });
-      if (window.history && window.history.pushState) {
-        window.history.pushState(null, '', '#top');
-      }
-    });
-  }
-
-  document.addEventListener('scroll', requestUpdateBackTop, { passive: true });
-  window.addEventListener('resize', requestUpdateBackTop);
-
-  if (document.fonts && document.fonts.ready) {
-    document.fonts.ready.then(requestUpdateBackTop).catch(function () {});
-  }
-
-  updateBackTop();
 }());
