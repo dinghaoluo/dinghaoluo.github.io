@@ -470,7 +470,7 @@
 -
   id: "southern-china"
   title: "southern china"
-  nav_label: "s. china"
+  nav_label: "s china"
   axis: "2017–2021 / Guangzhou, Chongqing, Hong Kong, Shenzhen, Zhuhai, Xiamen, Hangzhou, Shanghai"
   accent: "rose"
   layout: "scroll"
@@ -1112,7 +1112,7 @@
 -
   id: "death-valley"
   title: "death valley"
-  nav_label: "death v."
+  nav_label: "d. valley"
   axis: "2023"
   accent: "haze"
   photos:
@@ -1568,7 +1568,7 @@
 -
   id: "cats-and-dogs"
   title: "cats and dogs"
-  nav_label: "pets"
+  nav_label: "animals"
   axis: "2017–2026"
   accent: "sage"
   layout: "scroll"
@@ -1749,8 +1749,8 @@
       height: 1700
 -
   id: "two-people"
-  title: "two people"
-  nav_label: "two"
+  title: "two of us"
+  nav_label: "two of us"
   axis: "2023–2024"
   accent: "rose"
   layout: "scroll"

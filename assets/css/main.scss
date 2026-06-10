@@ -840,7 +840,7 @@ body:not(.home) .page__content h6 * {
 
 .home-section-strip {
   display: none;
-  --home-section-rail-width: 5.05rem;
+  --home-section-rail-width: 5.95rem;
   --home-section-rail-gap: 1.95rem;
   font-family: $mono-stack;
 }
@@ -906,6 +906,7 @@ body:not(.home) .page__content h6 * {
   }
 
   .home-section-strip {
+    --home-section-rail-gap: clamp(0.25rem, calc((100vw - #{$content-width}) / 2 - var(--home-section-rail-width)), 1.95rem);
     position: fixed;
     top: 50%;
     left: calc((100vw - #{$content-width}) / 2 - var(--home-section-rail-width) - var(--home-section-rail-gap));
@@ -963,16 +964,26 @@ body:not(.home) .page__content h6 * {
   }
 
   .home-section-strip__scroller a {
-    display: block;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    gap: 0.42rem;
     box-sizing: border-box;
     width: 100%;
-    padding: 0.08rem 0.28rem 0.08rem 0;
-    border-right: 2px solid transparent;
+    padding: 0.08rem 0;
     font-size: 0.98rem;
     line-height: 1.22;
     text-align: right;
     white-space: nowrap;
-    transition: color 0.18s ease, border-color 0.18s ease;
+    transition: color 0.18s ease;
+  }
+
+  .home-section-strip__scroller a::after {
+    content: "";
+    flex: 0 0 2px;
+    margin: 0.12rem 0;
+    background: transparent;
+    transition: background-color 0.18s ease;
   }
 
   .home-section-strip__scroller a:hover,
@@ -982,12 +993,15 @@ body:not(.home) .page__content h6 * {
   }
 
   .home-section-strip__scroller a.is-active {
-    border-right-color: rgba($morandi-clay-deep, 0.72);
     font-weight: bold;
   }
 
+  .home-section-strip__scroller a.is-active::after {
+    background: rgba($morandi-clay-deep, 0.72);
+  }
+
   body.photos-page .home-section-strip {
-    --home-section-rail-gap: 0.95rem;
+    --home-section-rail-gap: 0.25rem;
   }
 
   body.photos-page .home-section-strip__scroller {
@@ -1004,7 +1018,7 @@ body:not(.home) .page__content h6 * {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
   .home .page__content h2[id],
   .science-page .page__content h2[id],
   .section-nav-page .page__content h2[id],
@@ -1130,6 +1144,27 @@ body:not(.home) .page__content h6 * {
   body.photos-page.section-nav-page .page__content h2[id],
   body.photos-page.section-nav-page .page__content .section-nav-anchor {
     scroll-margin-top: 0.75rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .home-section-strip__scroller a {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    gap: 0.42rem;
+    min-height: 0;
+    padding: 0.08rem 0;
+    border-bottom: 0;
+    font-size: 0.98rem;
+    font-weight: normal;
+    line-height: 1.22;
+    text-align: right;
+  }
+
+  .home-section-strip__scroller a.is-active {
+    font-weight: bold;
   }
 }
 
@@ -6652,8 +6687,8 @@ body.science-page .page__content .writing-insert-pair--right {
       color: $dark-link-hover;
     }
 
-    .home-section-strip__scroller a.is-active {
-      border-right-color: rgba(#d4a88f, 0.7);
+    .home-section-strip__scroller a.is-active::after {
+      background: rgba(#d4a88f, 0.7);
     }
   }
 
