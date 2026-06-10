@@ -470,6 +470,7 @@
 -
   id: "southern-china"
   title: "southern china"
+  nav_label: "s. china"
   axis: "2017–2021 / Guangzhou, Chongqing, Hong Kong, Shenzhen, Zhuhai, Xiamen, Hangzhou, Shanghai"
   accent: "rose"
   layout: "scroll"
@@ -835,6 +836,7 @@
 -
   id: "northeast-us"
   title: "northeast us"
+  nav_label: "ne us"
   axis: "2019–2025 / New York, Catskills, Pittsburgh"
   accent: "blue"
   layout: "scroll"
@@ -1110,6 +1112,7 @@
 -
   id: "death-valley"
   title: "death valley"
+  nav_label: "death v."
   axis: "2023"
   accent: "haze"
   photos:
@@ -1565,6 +1568,7 @@
 -
   id: "cats-and-dogs"
   title: "cats and dogs"
+  nav_label: "pets"
   axis: "2017–2026"
   accent: "sage"
   layout: "scroll"
@@ -1746,6 +1750,7 @@
 -
   id: "two-people"
   title: "two people"
+  nav_label: "two"
   axis: "2023–2024"
   accent: "rose"
   layout: "scroll"

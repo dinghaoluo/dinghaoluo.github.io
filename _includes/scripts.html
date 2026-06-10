@@ -27,9 +27,7 @@
 {% if page.url == "/thoughts/" or page.classes contains "home" %}
   <script src="{{ '/assets/js/thoughts-cards.js' | relative_url }}"></script>
 {% endif %}
-{% if page.classes contains "home" or page.section_nav %}
-  <script src="{{ '/assets/js/home-section-nav.js' | relative_url }}"></script>
-{% endif %}
+<script src="{{ '/assets/js/home-section-nav.js' | relative_url }}"></script>
 {% if page.url == "/writing/" %}
   <script src="{{ '/assets/js/writing-archive.js' | relative_url }}"></script>
 {% endif %}
