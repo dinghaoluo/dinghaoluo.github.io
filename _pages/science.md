@@ -7,10 +7,22 @@ classes: science-page
 header:
   og_image: "/assets/images/social-card-science.png"
 last_updated: 2026-05-27
-toc: true
-toc_label: "on this page"
-toc_icon: ""
+section_nav: true
 ---
+
+<nav class="home-section-strip" aria-label="science page sections">
+  <div class="home-section-strip__scroller">
+    <a href="#my-cambridge-years" data-home-section="my-cambridge-years">Cambridge</a>
+    <a href="#across-the-pond" data-home-section="across-the-pond">Florida</a>
+    <a href="#current-project" data-home-section="current-project">PhD</a>
+    <a href="#outputs" data-home-section="outputs">outputs</a>
+    <a href="#publications-and-code" data-home-section="publications-and-code">papers</a>
+  </div>
+</nav>
+<div class="home-back-to-top-wrap">
+  <button class="home-back-to-top" type="button" aria-label="Back to top"
+    aria-hidden="true" tabindex="-1" data-home-back-to-top>&uarr;</button>
+</div>
 
 *The brain does not have a single mode. The same cells, the same synapses, the same brain areas can compute one thing or another depending on the chemical state they happen to be in. Much of my scientific life so far has been an attempt to understand how neuromodulation (by **dopamine**, in particular) reconfigures neural circuits to enable learning and memory.*
 
