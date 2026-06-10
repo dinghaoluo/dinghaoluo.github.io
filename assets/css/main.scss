@@ -840,6 +840,9 @@ body:not(.home) .page__content h6 * {
 
 .home-section-strip {
   display: none;
+  --home-section-rail-width: 5.05rem;
+  --home-section-rail-gap: 1.95rem;
+  font-family: $mono-stack;
 }
 
 .home-back-to-top {
@@ -895,19 +898,20 @@ body:not(.home) .page__content h6 * {
 }
 
 @media (min-width: 992px) {
-  .home .page__content h2[id] {
+  .home .page__content h2[id],
+  .science-page .page__content h2[id] {
     scroll-margin-top: 1.4rem;
   }
 
   .home-section-strip {
     position: fixed;
     top: 50%;
-    left: calc((100vw - #{$content-width}) / 2 - 7rem);
+    left: calc((100vw - #{$content-width}) / 2 - var(--home-section-rail-width) - var(--home-section-rail-gap));
     z-index: 60;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    width: 5.05rem;
+    width: var(--home-section-rail-width);
     padding: 0.06rem 0;
     background: transparent;
     border: 0;
@@ -958,6 +962,7 @@ body:not(.home) .page__content h6 * {
 
   .home-section-strip__scroller a {
     display: block;
+    box-sizing: border-box;
     width: 100%;
     padding: 0.08rem 0.28rem 0.08rem 0;
     border-right: 2px solid transparent;
@@ -981,7 +986,8 @@ body:not(.home) .page__content h6 * {
 }
 
 @media (max-width: 992px) {
-  .home .page__content h2[id] {
+  .home .page__content h2[id],
+  .science-page .page__content h2[id] {
     scroll-margin-top: 4.38rem;
   }
 
@@ -6599,7 +6605,7 @@ body.science-page .page__content .writing-insert-pair--right {
     color: $dark-link-hover;
   }
 
-  @media (min-width: 974px) {
+  @media (min-width: 992px) {
     .home-section-strip {
       background: transparent;
       border-bottom: 0;
