@@ -26,14 +26,21 @@ section_nav: true
 </div>
 
 {% assign articles = site.writing | sort: 'date' | reverse %}
-{% assign print_articles = articles | where_exp: "article", "article.section == 'print' or article.type == 'translation'" | sort: "print_order" %}
+{% assign print_articles = articles | sort: "print_order" %}
 {% assign featured_articles = articles | where: "writing_feature", true | sort: "writing_feature_order" %}
 
 <h2 class="writing-section-title" id="print">print</h2>
 
 <div class="writing-list">
 {% for article in print_articles %}
-{% if article.writing_page != false %}
+{% assign is_print_article = false %}
+{% if article.section == "print" %}
+  {% assign is_print_article = true %}
+{% endif %}
+{% if article.type == "translation" %}
+  {% assign is_print_article = true %}
+{% endif %}
+{% if is_print_article and article.writing_page != false %}
 {% assign print_type = article.type %}
 {% if article.type == "feature" %}
   {% assign print_type = "science" %}
