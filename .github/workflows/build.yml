@@ -26,7 +26,7 @@ jobs:
         run: |
           gem install html-proofer
           htmlproofer _site \
-            --ignore-urls "/fonts.googleapis.com/,/fonts.gstatic.com/,/mp.weixin.qq.com/,/book.douban.com/,/bandcamp.com/,/lichess.org/,/reddit.com/,/#.+/,/\/lost-path/,/\/the_zone_site/,/\/assets\/docs\//,/\/writing\/neuromyths/,/\/writing\/working-memory/" \
+            --ignore-urls "/fonts.googleapis.com/,/fonts.gstatic.com/,/mp.weixin.qq.com/,/book.douban.com/,/bandcamp.com/,/lichess.org/,/reddit.com/,/#.+/,/\/lost-path/,/\/the_zone_site/,/\/the-zone-site/,/\/assets\/docs\//,/\/writing\/neuromyths/,/\/writing\/working-memory/" \
             --ignore-status-codes "403,429,999" \
             --no-enforce-https \
             --swap-urls "^https\://dinghaoluo.github.io:" \
