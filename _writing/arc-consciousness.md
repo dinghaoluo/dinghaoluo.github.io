@@ -19,7 +19,7 @@ banner_image: "/assets/images/writing/arc-consciousness-banner.webp"
 banner_position: "center 48%"
 banner_bg: "#f2eee5"
 banner_image_alt: "abstract diagram of competing paths crossing a measured field"
-excerpt: "My print feature for <i>Scientific American</i> China, based on original interviews with Anil Seth, Hakwan Lau, David Rosenthal, and others. I wrote it during a period when I was engulfing consciousness-adjacent books: Hofstadter, Melanie Mitchell's work on analogy and complexity, Dehaene's studies on the global workspace. The piece traces three decades of research from Crick and Koch's neural-correlates programme through the Templeton adversarial collaborations, and asks whether competing theories can even be tested against each other when they disagree about what kind of question consciousness is. The English version here has been revised and substantially expanded in 2026."
+excerpt: "My print feature for <i>Scientific American</i> China, based on original interviews with Anil Seth, Hakwan Lau, David Rosenthal, and others. I wrote it while engulfing consciousness-adjacent books: Hofstadter, Melanie Mitchell on analogy and complexity, Dehaene on the global workspace. The piece traces three decades of research from Crick and Koch's neural-correlates programme through the Templeton adversarial collaborations, and asks whether rival theories can be tested against each other when they disagree about what kind of question consciousness is. The English version here has been revised and substantially expanded in 2026."
 writing_feature: true
 dropcap: true
 ---

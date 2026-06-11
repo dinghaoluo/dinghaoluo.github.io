@@ -4641,19 +4641,24 @@ body.writing-page .page__content .writing-entry__title em {
 
 .writing-list:not(.writing-list--archive) .writing-entry--print.writing-entry--has-image {
   display: grid;
-  grid-template-columns: 160px minmax(0, 1fr);
-  align-items: end;
+  grid-template-columns: 172px minmax(0, 1fr);
+  align-items: center;
 }
 
 .writing-list:not(.writing-list--archive) .writing-entry--print.writing-entry--has-image .writing-entry__img-wrap {
   grid-column: 1;
-  align-self: end;
-  width: 160px;
+  align-self: center;
+  width: 172px;
+}
+
+.writing-list:not(.writing-list--archive) .writing-entry--print.writing-entry--has-image .writing-entry__img {
+  width: 172px;
+  height: 258px;
 }
 
 .writing-list:not(.writing-list--archive) .writing-entry--print.writing-entry--has-image .writing-entry__body {
   grid-column: 2;
-  align-self: end;
+  align-self: center;
   min-width: 0;
 }
 
