@@ -149,6 +149,13 @@
       return mobileMedia.matches ? Math.max(strip.offsetHeight + 12, 72) : 72;
     }
 
+    function targetOffset(target) {
+      var margin = parseFloat(window.getComputedStyle(target).scrollMarginTop);
+
+      if (isFinite(margin) && margin > 0) return margin;
+      return mobileMedia.matches ? strip.offsetHeight + 16 : 18;
+    }
+
     function update() {
       frame = null;
 
@@ -173,10 +180,10 @@
       var anchor = event.target.closest('a[href^="#"]');
       var id;
       var section;
+      var target;
       var targetTop;
 
       if (!anchor) return;
-      if (!mobileMedia.matches && !anchor.closest('.home-section-strip')) return;
 
       id = anchor.getAttribute('href').slice(1);
 
@@ -188,13 +195,14 @@
       }
 
       section = sectionById[id];
-      if (!section) return;
+      target = section ? section.element : document.getElementById(id);
+
+      if (!target) return;
+      if (!mobileMedia.matches && !anchor.closest('.home-section-strip')) return;
 
       event.preventDefault();
-      setActive(id);
-      targetTop = section.element.getBoundingClientRect().top + window.pageYOffset - (
-        mobileMedia.matches ? strip.offsetHeight + 10 : 18
-      );
+      setActive(section ? id : currentSectionId());
+      targetTop = target.getBoundingClientRect().top + window.pageYOffset - targetOffset(target);
       window.scrollTo({
         top: Math.max(0, targetTop),
         behavior: reducedMotion.matches ? 'auto' : 'smooth'
