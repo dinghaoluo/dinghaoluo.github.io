@@ -68,33 +68,32 @@ section_nav: true
   {% endif %}
   {% endif %}
   <div class="writing-entry__body">
-    {% unless article.show_archive_type == false %}
-    <span class="writing-entry__type">{{ print_type }}</span>
-    {% endunless %}
-    <h3 class="writing-entry__title{% if title_is_plain %} writing-entry__title--plain{% endif %}">
-      {% if title_is_plain %}
-      <span class="writing-entry__title-main">{{ print_title }}</span>
-      {% else %}
-      <a href="{{ article.url }}">{{ print_title }}</a>
+    <div class="writing-entry__header">
+      <h3 class="writing-entry__title{% if title_is_plain %} writing-entry__title--plain{% endif %}">
+        {% if title_is_plain %}
+        <span class="writing-entry__title-main">{{ print_title }}</span>
+        {% else %}
+        <a href="{{ article.url }}">{{ print_title }}</a>
+        {% endif %}
+        {% if article.title_zh and show_archive_title_zh %}
+        <span class="writing-entry__title-zh-inline">{{ article.title_zh }}</span>
+        {% endif %}
+      </h3>
+      {% if article.companion_link %}
+      <div class="writing-entry__companion-link">
+        {% if article.companion_lede %}
+        <span class="writing-entry__companion-lede">{{ article.companion_lede }}</span>
+        {% endif %}
+        <a href="{{ article.companion_link.url }}">{{ article.companion_link.label }}</a>
+      </div>
       {% endif %}
-      {% if article.title_zh and show_archive_title_zh %}
-      <span class="writing-entry__title-zh-inline">{{ article.title_zh }}</span>
-      {% endif %}
-    </h3>
-    {% if article.companion_link %}
-    <div class="writing-entry__companion-link">
-      {% if article.companion_lede %}
-      <span class="writing-entry__companion-lede">{{ article.companion_lede }}</span>
-      {% endif %}
-      <a href="{{ article.companion_link.url }}">{{ article.companion_link.label }}</a>
-    </div>
-    {% endif %}
-    <div class="writing-entry__meta">
-      {% assign show_print_isbn = false %}
-      {% if article.show_archive_isbn == true %}
-        {% assign show_print_isbn = true %}
-      {% endif %}
-      {% include writing-meta.html item=article show_kind=false show_title_zh=false show_isbn=show_print_isbn show_links=true show_updated=false %}
+      <div class="writing-entry__meta">
+        {% assign show_print_isbn = false %}
+        {% if article.show_archive_isbn == true %}
+          {% assign show_print_isbn = true %}
+        {% endif %}
+        {% include writing-meta.html item=article show_kind=false show_title_zh=false show_isbn=show_print_isbn show_links=true show_updated=false %}
+      </div>
     </div>
     {% if print_excerpt %}
     <div class="writing-entry__text">{{ print_excerpt }}</div>
