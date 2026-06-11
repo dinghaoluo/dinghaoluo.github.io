@@ -8,7 +8,7 @@ show_archive_type: false
 date: 2025-11-05
 print_order: 1
 last_updated: 2025-11-05
-image: "/assets/images/thoughts/books/entangled_life_chinese.jpg"
+image: "/assets/images/thoughts/books/entangled-life-chinese.jpg"
 show_page_meta: false
 show_page_awards: false
 show_page_links: false

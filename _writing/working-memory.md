@@ -7,7 +7,7 @@ collaborator: "Lindsay Li"
 outlet: "Neu-Reality"
 date: 2021-03-16
 last_updated: 2021-03-16
-image: "/assets/images/writing/working_memory.jpg"
+image: "/assets/images/writing/working-memory.jpg"
 section: "online"
 show_meta_outlet: false
 excerpt: "From Miller's magical number seven to alpha-wave perturbation: how working memory became something one can manipulate without opening the skull."

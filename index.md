@@ -77,7 +77,7 @@ Writing, along with reading, was one of my first true passions. Like many kids, 
 
 <div class="home-writing-shelf" aria-label="featured writing">
   <a class="home-writing-tile home-writing-tile--gravity" href="/writing/gravitys-rainbow/">
-    <img class="home-writing-tile__image" src="/assets/images/writing/gravitys_rainbow_hardcover.jpg" alt="" loading="lazy">
+    <img class="home-writing-tile__image" src="/assets/images/writing/gravitys-rainbow-hardcover.jpg" alt="" loading="lazy">
     <span class="home-writing-tile__glass">
       <span class="home-writing-tile__kicker">book review</span>
       <span class="home-writing-tile__title">On <em>Gravity's Rainbow</em></span>
@@ -208,7 +208,7 @@ I stumbled into neuroscience sideways: I started at Cambridge reading psychology
 
 <div class="home-featured-album">
   <a href="https://amoxitoxin.bandcamp.com/" class="home-featured-album__cover">
-    <img src="/assets/images/the_maze.jpg" alt="amoxitoxin album cover">
+    <img src="/assets/images/the-maze.jpg" alt="amoxitoxin album cover">
   </a>
   <div class="home-featured-album__info">
     <span class="home-featured-album__title"><code>amoxitoxin</code></span>
@@ -224,7 +224,7 @@ I listen to far more than I make, which is probably healthy. Prog used to be at 
   <a href="/music/#octopus" class="home-covers__link"><img src="/assets/images/music/octopus.jpg" alt="Octopus by Gentle Giant" loading="lazy"></a>
   <a href="/music/#somni" class="home-covers__link"><img src="/assets/images/music/somni.jpg" alt="Somni by Snarky Puppy" loading="lazy"></a>
   <a href="/music/#petrichor" class="home-covers__link"><img src="/assets/images/music/petrichor.jpg" alt="Petrichor by Keor" loading="lazy"></a>
-  <a href="/music/#head-hunters" class="home-covers__link"><img src="/assets/images/music/head_hunters.jpg" alt="Head Hunters by Herbie Hancock" loading="lazy"></a>
+  <a href="/music/#head-hunters" class="home-covers__link"><img src="/assets/images/music/head-hunters.jpg" alt="Head Hunters by Herbie Hancock" loading="lazy"></a>
 </div>
 
 - If you like semi-heavy, mathy, intricate prog metal: [***The Mountain*** (2013)](/music/#the-mountain) by Haken
