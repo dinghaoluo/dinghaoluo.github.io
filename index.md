@@ -9,7 +9,7 @@ last_updated: 2026-05-06
 
 I'm finishing my PhD in neuroscience at the Max Planck Florida Institute for Neuroscience, studying how a tiny brainstem nucleus uses dopamine to rapidly tune memory accuracy in the hippocampus. I'm graduating in December 2026 and looking for data science roles in Europe.
 
-Recently I've been reading *Mason & Dixon* (1997), learning SQL and intermediate machine learning, and working on a <a href="#the-zone" class="site-nav-link">computational analysis of Pynchon's *Gravity's Rainbow* (1973)</a>.
+Recently I've been reading Pynchon's *Mason & Dixon* (1997), finishing up my <a href="#science" class="site-nav-link">PhD</a> thesis, and working on two projects: <a href="#the-zone" class="site-nav-link">a computational analysis</a> of *Gravity's Rainbow* (1973) and <a href="#kairos" class="site-nav-link">kairos</a>, where I look at whether we can quantify a scientific field's 'ripeness' for breakthroughs.
 
 Reach out to me: <a href="mailto:dinghao.luo@outlook.com" class="site-nav-link">[dinghao.luo@outlook.com]</a><br>Find me: <a href="https://github.com/dinghaoluo" class="site-nav-link">GitHub</a> · <a href="https://www.reddit.com/user/amoxdl24/" class="site-nav-link">Reddit</a> · <a href="https://www.instagram.com/amoxitoxin" class="site-nav-link">Instagram</a> · <a href="https://www.linkedin.com/in/dinghaoluo/" class="site-nav-link">LinkedIn</a> · <a href="/cv/" class="site-nav-link">CV</a>
 
@@ -25,18 +25,51 @@ Reach out to me: <a href="mailto:dinghao.luo@outlook.com" class="site-nav-link">
 
 <nav class="home-section-strip" aria-label="homepage sections">
   <div class="home-section-strip__scroller">
+    <a href="#projects" data-home-section="projects">projects</a>
     <a href="#writing" data-home-section="writing">writing</a>
     <a href="#thoughts" data-home-section="thoughts">thoughts</a>
     <a href="#science" data-home-section="science">science</a>
     <a href="#music" data-home-section="music">music</a>
     <a href="#photos" data-home-section="photos">photos</a>
-    <a href="#the-zone" data-home-section="the-zone">the zone</a>
     <a href="#other-stuff" data-home-section="other-stuff">other</a>
   </div>
 </nav>
 <div class="home-back-to-top-wrap">
   <button class="home-back-to-top" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1" data-home-back-to-top>&uarr;</button>
 </div>
+
+<h2 id="projects">projects :)</h2>
+
+Over the past few years I have come to love data. The overwhelming feeling when noisy, high-dimensional data can be decomposed into interpretable statistics and visualisations has mostly come from my PhD, but has spread into all aspects of my life. When I love a book, see an interesting debate, watch a great TV show... I think about how to present it in graphs to help people decompose, understand, and appreciate it. What follows are two projects that I am working on right now, one on my second favourite book, and one on a history of science discussion that I have kept with me from the undergraduate years.
+
+<div class="home-projects">
+  <article class="home-project home-project--zone" id="the-zone">
+    <div class="home-project__body">
+      <h3 class="home-project__title"><a href="https://dinghaoluo.github.io/the-zone-site" class="site-nav-link">The Zone</a></h3>
+      <p>I am building a computational literary analysis of Pynchon's <i>Gravity's Rainbow</i> (1973), using natural language processing (NLP) techniques such as named-entity recognition and alias resolution, graph/network analysis including community detection and centrality analysis, just to list a few. The data are presented in a public-safe manner on the interactive <i>The Zone</i>, while the corrected OCR data and the heavy processing pipelines remain private.</p>
+      <figure class="home-project__preview">
+        <div class="home-project__media home-project__media--zone-row">
+          <img src="/assets/images/projects/the-zone-home.png" alt="" loading="lazy">
+          <img src="/assets/images/projects/the-zone-glossary.png" alt="" loading="lazy">
+          <img src="/assets/images/projects/the-zone-braid.png" alt="" loading="lazy">
+        </div>
+        <figcaption><i>The Zone</i> title page, glossary, and an example theme-character matrix</figcaption>
+      </figure>
+      <p>The site now includes a searchable glossary for the novel's central terms, an episode-by-episode theme-character visualisation, and a reference library for readers wanting more depths. Several sections are in the work, including language analysis, character network visualisation, and geohistorical tracking.</p>
+      <p class="home-project__links"><a href="https://dinghaoluo.github.io/the-zone-site" class="site-nav-link">→ The Zone</a> · <a href="https://github.com/dinghaoluo/the-zone-site" class="site-nav-link">GitHub repo</a></p>
+    </div>
+  </article>
+
+  <article class="home-project home-project--text" id="kairos">
+    <div class="home-project__body">
+      <h3 class="home-project__title"><a href="https://github.com/dinghaoluo/kairos" class="site-nav-link">Kairos</a></h3>
+      <p>Thomas Kuhn in his <i>The Structure of Scientific Revolutions</i> (1962) wrote that paradigm shifts in science arrive when a field is ready for them. Unfortunately at the time when Kuhn observed this, he did not have the information architecture that we have nowadays to quantify this 'readiness'. I wanted to ask whether we could measure a scientific field's 'ripeness' for breakthrough. In <b>Kairos</b> (borrowed from ancient Greek, roughly 'the critical time for action'), I explore whether machine learning can estimate this 'ripeness' and predict, with careful constraints to prevent temporal  leakage, whether a scientific breakthrough would happen at each timepoint. Data mostly come from OpenAlex. You can read more about it in the project repo linked below.</p>
+      <p class="home-project__links"><a href="https://github.com/dinghaoluo/kairos" class="site-nav-link">→ GitHub repo</a></p>
+    </div>
+  </article>
+</div>
+
+---
 
 <h2 id="writing"><a href="/writing/">writing :)</a></h2>
 
@@ -219,23 +252,6 @@ Different places trigger completely different instincts, but the impulse is alwa
 </div>
 
 <a href="/photos/" class="site-nav-link">→ photos</a>
-
----
-
-<h2 id="the-zone"><a href="https://dinghaoluo.github.io/the_zone_site" class="site-nav-link">the zone :)</a></h2>
-
-<figure class="home-zone-preview">
-  <a href="https://dinghaoluo.github.io/the_zone_site">
-    <img src="/assets/images/the-zone-braid.jpg" alt="The Zone: Gravity's Rainbow is a Braid, showing eight plotlines traced across seventy-three episodes." loading="lazy">
-  </a>
-  <figcaption><a href="https://dinghaoluo.github.io/the_zone_site/braid/" class="site-nav-link">The Zone: The Braid</a>. This interactive visualisation shows eight plotlines traced across all 73 episodes of <em>Gravity's Rainbow</em> (1973).</figcaption>
-</figure>
-
-**The Zone.** I am building <a href="https://dinghaoluo.github.io/the_zone_site" class="site-nav-link">a computational visual companion</a> to *Gravity's Rainbow* (1973). So far, <a href="https://dinghaoluo.github.io/the_zone_site/braid/" class="site-nav-link">The Braid</a> traces eight plotlines across seventy-three episodes. Planned sections include scene-level close readings, a visualisation of the protagonist's dissolution of identity, and a character network analysis. The underlying corpus and pipeline are private, but the site publishes stripped, public-safe exports. In doing this computational literature analysis, I've realised that after seven Pynchon novels, I am still finding new threads.
-
-<a href="https://dinghaoluo.github.io/the_zone_site" class="site-nav-link">→ the zone</a>
-
-<div class="home-clear-both"></div>
 
 ---
 
