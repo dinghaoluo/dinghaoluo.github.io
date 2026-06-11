@@ -2,12 +2,14 @@
 layout: single
 author_profile: true
 classes: home
+last_updated: 2026-05-06
 ---
+
 *Hi, Dinghao here :)*
 
 I'm finishing my PhD in neuroscience at the Max Planck Florida Institute for Neuroscience, studying how a tiny brainstem nucleus uses dopamine to rapidly tune memory accuracy in the hippocampus. I'm graduating in December 2026 and looking for data science roles in Europe.
 
-Recently I've been reading Pynchon's *Mason & Dixon* (1997), finishing up my <a href="#science" class="site-nav-link">PhD</a> thesis, and working on a computational analysis of *Gravity's Rainbow* (1973).
+Recently I've been reading Pynchon's *Mason & Dixon* (1997), finishing up my <a href="#science" class="site-nav-link">PhD</a> thesis, and working on two projects: <a href="#the-zone" class="site-nav-link">a computational analysis</a> of *Gravity's Rainbow* (1973) and <a href="#kairos" class="site-nav-link">kairos</a>, where I look at whether we can quantify a scientific field's 'ripeness' for breakthroughs.
 
 Reach out to me: <a href="mailto:dinghao.luo@outlook.com" class="site-nav-link">[dinghao.luo@outlook.com]</a><br>Find me: <a href="https://github.com/dinghaoluo" class="site-nav-link">GitHub</a> · <a href="https://www.reddit.com/user/amoxdl24/" class="site-nav-link">Reddit</a> · <a href="https://www.instagram.com/amoxitoxin" class="site-nav-link">Instagram</a> · <a href="https://www.linkedin.com/in/dinghaoluo/" class="site-nav-link">LinkedIn</a> · <a href="/cv/" class="site-nav-link">CV</a>
 
@@ -19,11 +21,58 @@ Reach out to me: <a href="mailto:dinghao.luo@outlook.com" class="site-nav-link">
 
 ---
 
+<nav class="home-section-strip" aria-label="homepage sections">
+  <div class="home-section-strip__scroller">
+    <a href="#projects" data-home-section="projects">projects</a>
+    <a href="#writing" data-home-section="writing">writing</a>
+    <a href="#thoughts" data-home-section="thoughts">thoughts</a>
+    <a href="#science" data-home-section="science">science</a>
+    <a href="#music" data-home-section="music">music</a>
+    <a href="#photos" data-home-section="photos">photos</a>
+    <a href="#other-stuff" data-home-section="other-stuff">other</a>
+  </div>
+</nav>
+<div class="home-back-to-top-wrap">
+  <button class="home-back-to-top" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1" data-home-back-to-top>&uarr;</button>
+</div>
+
+<h2 id="projects">projects :)</h2>
+
+Over the past few years I have come to love data. The overwhelming feeling when noisy, high-dimensional data are decomposed into interpretable statistics and visualisations has mostly come from my PhD, but has spread into all aspects of my life. What follows are two projects that I am working on right now, one on my second favourite book, and one on a history of science discussion that I have kept with me from my undergraduate years.
+
+<div class="home-projects">
+  <article class="home-project home-project--zone" id="the-zone">
+    <div class="home-project__body">
+      <h3 class="home-project__title"><a href="https://dinghaoluo.github.io/the-zone-site" class="site-nav-link">The Zone</a></h3>
+      <p>I am building a computational literary analysis of Pynchon's <i>Gravity's Rainbow</i> (1973), using natural language processing (NLP) techniques such as named-entity recognition and alias resolution, graph/network analysis including community detection and centrality analysis, just to list a few. The data are presented in a public-safe manner on the interactive <i>The Zone</i>, while the corrected OCR data and the heavy processing pipelines remain private.</p>
+      <p>The site now includes a searchable glossary for the novel's central terms, an episode-by-episode theme-character visualisation, and a reference library for readers wanting more depths. Several sections are in the work, including language analysis, character network visualisation, and geohistorical tracking.</p>
+      <p class="home-project__links"><a href="https://dinghaoluo.github.io/the-zone-site" class="site-nav-link">→ The Zone</a></p>
+    </div>
+  </article>
+
+  <article class="home-project home-project--text" id="kairos">
+    <div class="home-project__body">
+      <h3 class="home-project__title"><a href="https://github.com/dinghaoluo/kairos" class="site-nav-link">Kairos</a></h3>
+      <p>Thomas Kuhn, in <i>The Structure of Scientific Revolutions</i> (1962), wrote that paradigm shifts in science arrive when a field is ready for them. Unfortunately at the time when Kuhn observed this, he did not have the information architecture that we have nowadays to quantify this 'readiness'. I wanted to ask whether we could measure a scientific field's 'ripeness' for breakthrough. In <b>Kairos</b> (borrowed from ancient Greek, roughly 'the critical time for action'), I explore whether machine learning can estimate this 'ripeness' and predict, with careful constraints to prevent temporal  leakage, whether a scientific breakthrough would happen at each timepoint. Data mostly come from OpenAlex. You can read more about it in the project repo linked below.</p>
+      <p class="home-project__links"><a href="https://github.com/dinghaoluo/kairos" class="site-nav-link">→ GitHub repo</a></p>
+    </div>
+  </article>
+</div>
+
+---
+
 <h2 id="writing"><a href="/writing/">writing :)</a></h2>
 
 Writing, along with reading, was one of my first true passions. Like many kids, I kept a journal as I grew up, and the advent of the Internet age allowed me to transform things I wrote in my journal into an online repository. I wrote under the pen-name `amoxitoxin` in both Chinese and English since I was 15, and have translated selected pieces into English, which can be found on the <a href="/writing/" class="site-nav-link">writing</a> page. Here are some of the pieces of which I am proudest:
 
 <div class="home-writing-shelf" aria-label="featured writing">
+  <a class="home-writing-tile home-writing-tile--gravity" href="/writing/gravitys-rainbow/">
+    <img class="home-writing-tile__image" src="/assets/images/writing/gravitys-rainbow-hardcover.jpg" alt="" loading="lazy">
+    <span class="home-writing-tile__glass">
+      <span class="home-writing-tile__kicker">book review</span>
+      <span class="home-writing-tile__title">On <em>Gravity's Rainbow</em></span>
+    </span>
+  </a>
   <a class="home-writing-tile home-writing-tile--place-cells" href="/writing/place-cells/">
     <img class="home-writing-tile__image" src="/assets/images/writing/place-cells-hippocampus-cleaned.jpg" alt="" loading="lazy">
     <span class="home-writing-tile__glass">
@@ -95,7 +144,7 @@ My mom says I used to devour all the books that I could get my hands on as a kid
   {% for t in all_thoughts %}{% if t.image and t.type == 'film' %}<a href="/thoughts/#{% if t.title_en %}{{ t.title_en | slugify }}{% else %}{{ t.title | slugify }}{% endif %}" class="home-covers__link" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% if t.image and t.type == 'tv' %}<a href="/thoughts/#{% if t.title_en %}{{ t.title_en | slugify }}{% else %}{{ t.title | slugify }}{% endif %}" class="home-covers__link" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
 </div>
 
-I came to film late. I write about films and TV shows when their scenes keep coming back afterwards, and here are some:
+I came to film late and mostly through my wife [Lindsay](https://lishanshan-lss.github.io), who knew her directors the way I knew my prog-rock bands: deeply, historically, and with opinions. She taught me to watch differently, and now I find myself noticing framing and cuts as I notice plot. I write about films and TV shows when their scenes keep coming back afterwards, and here are some of them:
 
 - Lee Chang-dong's [***Poetry*** (2010)](/thoughts/#poetry) takes on the almost impossible task of seeing the world clearly and still finding beauty in it
 - [***Aftersun*** (2022)](/thoughts/#aftersun) by Charlotte Wells made me tear up with a remix of Queen and Bowie's 'Under Pressure' (1981)
@@ -147,7 +196,15 @@ I stumbled into neuroscience sideways: I started at Cambridge reading psychology
 
 <h2 id="music"><a href="/music/">music :)</a></h2>
 
-I also make music, under the same name: a one-person prog-rock project with some singles, an EP, and one full-length album. Here is <a href="/music/" class="site-nav-link">how I made my music</a>, and you can find me on <a href="https://amoxitoxin.bandcamp.com/" class="site-nav-link">Bandcamp</a>.
+<div class="home-featured-album">
+  <a href="https://amoxitoxin.bandcamp.com/" class="home-featured-album__cover">
+    <img src="/assets/images/the-maze.jpg" alt="amoxitoxin album cover">
+  </a>
+  <div class="home-featured-album__info">
+    <span class="home-featured-album__title"><code>amoxitoxin</code></span>
+    <p class="home-featured-album__desc">My one-person prog-rock project. Some singles, 1 EP and 1 full-length album. Here is <a href="/music/" class="site-nav-link">how I made my music</a>, and you can find me on <a href="https://amoxitoxin.bandcamp.com/" class="site-nav-link">Bandcamp</a>.</p>
+  </div>
+</div>
 
 I listen to far more than I make, which is probably healthy. Prog used to be at the centre of everything: I grew up on Dream Theater, King Crimson, Genesis and Yes. But I have moved through Canterbury, jazz fusion, electronic etc., and now spend most of my listening time on a diverse roster of bands like Haken, Bent Knee, Sungazer, Keor, Alabama Shakes... Metal, post-rock, classical, and whatever else pulls me in on a given week fill the gaps. Here are a few favourites:
 
@@ -183,3 +240,22 @@ I have photographed things compulsively since middle school, mostly out of an an
 </div>
 
 <a href="/photos/" class="site-nav-link">→ photos</a>
+
+---
+
+<h2 id="other-stuff">other stuff :)</h2>
+
+<p><span class="home-chess-puzzle" role="group" aria-label="Chess puzzle">
+  <img src="/assets/images/chess-puzzle.gif" alt="Chess puzzle" loading="lazy">
+  <span class="home-chess-puzzle__caption">My favourite chess puzzle of all time: it's mate in two, white to move. Rxa7 looks crushing, but after …O-O the Black king escapes. The key is <a href="https://www.reddit.com/r/chess/s/Hq2PYqyZ7Y" class="site-nav-link">Schrödinger's castle</a>.</span>
+</span>
+<strong>Chess.</strong> I play at around 1800 Elo on <a href="https://lichess.org/@/amoxitoxin" class="site-nav-link">Lichess</a> and keep meaning to enter an OTB tournament. Here is a puzzle I love.
+Chess has somehow woven into my life a lot more deeply than I expected when starting out, and one of the events that have impacted me most in the past few years was the passing of GM Daniel (Danya) Naroditsky. I wrote <a href="/writing/danya/" class="site-nav-link">a short remembrance</a> of Danya, who taught me both how to play chess and how to be a better human being.</p>
+
+**Travel.** I travel whenever my studies let me. So far the <a href="/photos/" class="site-nav-link">photo gallery</a> covers Cambridge, the rest of England and Scotland, Beijing, Jilin, southern China, Osaka, Singapore, Canada, the US east and west coasts, Chamonix, Italy, Lisbon, Jordan, and Georgia and the Caucasus. I keep wanting to see more of eastern, northern Europe, Latin America and Africa.
+
+<div class="home-clear-both"></div>
+
+**Languages.** I am bilingual in Cantonese and Mandarin, grew up with English as a *de facto* third mother tongue, and have since picked up intermediate German and started on Spanish. But what I really love collecting is scripts: I taught myself to read Arabic, Georgian, Russian, and Japanese without being able to hold a conversation in any of them, simply because the letterforms were too beautiful for me to resist.
+
+<div class="home-clear-both"></div>

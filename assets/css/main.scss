@@ -3752,16 +3752,11 @@ body.writing-page .page__content .writing-entry__title em {
 
 .writing-entry {
   display: flex;
-  align-items: flex-start;
   gap: 1.2rem;
   padding: 1.3rem 0;
   border-bottom: 1px solid $overlay-muted-soft;
 
   &:last-child { border-bottom: none; }
-}
-
-.writing-entry--print {
-  align-items: flex-start;
 }
 
 .writing-entry--featured {
