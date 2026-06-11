@@ -899,6 +899,7 @@ body:not(.home) .page__content h6 * {
 
 @media (min-width: 992px) {
   .home .page__content h2[id],
+  .home .page__content .home-project[id],
   .science-page .page__content h2[id],
   .section-nav-page .page__content h2[id],
   .section-nav-page .page__content .section-nav-anchor {
@@ -1020,10 +1021,11 @@ body:not(.home) .page__content h6 * {
 
 @media (max-width: 991.98px) {
   .home .page__content h2[id],
+  .home .page__content .home-project[id],
   .science-page .page__content h2[id],
   .section-nav-page .page__content h2[id],
   .section-nav-page .page__content .section-nav-anchor {
-    scroll-margin-top: 4.38rem;
+    scroll-margin-top: 3.0rem;
   }
 
   .home-section-strip {
@@ -3350,6 +3352,75 @@ mark.thoughts-highlight {
 // -------------------------
 // homepage writing/science inserts
 // -------------------------
+.home-projects {
+  display: grid;
+  gap: 1.2rem;
+  margin: 1rem 0 1.35rem;
+}
+
+.home-project {
+  display: grid;
+  grid-template-columns: minmax(13rem, 0.86fr) minmax(0, 1.14fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.home-project--text {
+  grid-template-columns: 1fr;
+}
+
+.home-project + .home-project {
+  padding-top: 1.2rem;
+  border-top: 1px solid $site-separator-soft;
+}
+
+.home-project__media {
+  display: block;
+  min-width: 0;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.home-project__media img {
+  display: block;
+  width: 100%;
+  margin: 0;
+  border-radius: 4px;
+  box-shadow: 0 1px 7px $shadow-ultra-faint;
+  filter: saturate(0.94) contrast(1.02);
+  transition: filter 0.22s ease, transform 0.22s ease;
+}
+
+.home-project__media:hover img,
+.home-project__media:focus-visible img {
+  filter: saturate(1) contrast(1.04);
+  transform: translateY(-1px);
+}
+
+.home-project__media--zone img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.home-project__body {
+  min-width: 0;
+}
+
+.home .page__content .home-project__title {
+  margin: 0 0 0.34rem;
+  font-size: 1.08rem;
+  line-height: 1.22;
+}
+
+.home .page__content .home-project__body p {
+  margin-top: 0;
+}
+
+.home-project__links {
+  margin-bottom: 0;
+  font-size: 0.9em;
+}
+
 .home-writing-shelf {
   --home-writing-shelf-top-gap: 0.2rem;
   --home-writing-shelf-bottom-gap: 1.16rem;
@@ -3610,6 +3681,23 @@ mark.thoughts-highlight {
 }
 
 @media (max-width: 620px) {
+  .home-project {
+    grid-template-columns: 1fr;
+    gap: 0.62rem;
+  }
+
+  .home-project + .home-project {
+    padding-top: 1rem;
+  }
+
+  .home-project__media {
+    max-width: none;
+  }
+
+  .home .page__content .home-project__title {
+    font-size: 1.02rem;
+  }
+
   .home-writing-shelf {
     --home-writing-shelf-top-gap: 0.92rem;
     --home-writing-shelf-bottom-gap: 1.08rem;
@@ -7193,6 +7281,20 @@ body.science-page .page__content .writing-insert-pair--right {
 
   .home-writing-tile__title {
     color: $dark-heading;
+  }
+
+  .home-project + .home-project {
+    border-top-color: rgba(#9b928a, 0.16);
+  }
+
+  .home-project__media img {
+    opacity: 0.88;
+    box-shadow: none;
+  }
+
+  .home-project__media:hover img,
+  .home-project__media:focus-visible img {
+    opacity: 0.96;
   }
 
   .home-albums img {

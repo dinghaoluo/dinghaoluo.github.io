@@ -33,9 +33,7 @@
 {%- endif -%}
 
 {%- assign section_og_image = nil -%}
-{%- if page.url == "/about/" -%}
-  {%- assign section_og_image = "/assets/images/social-card-about.png" -%}
-{%- elsif page.url == "/cv/" -%}
+{%- if page.url == "/cv/" -%}
   {%- assign section_og_image = "/assets/images/social-card-cv.png" -%}
 {%- elsif page.url contains "/science/" -%}
   {%- assign section_og_image = "/assets/images/social-card-science.png" -%}
