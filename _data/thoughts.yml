@@ -9,7 +9,7 @@
   creator_role: "by"
   year: 1925
   eval: "loved"
-  image: "/assets/images/thoughts/books/the_trial.jpg"
+  image: "/assets/images/thoughts/books/the-trial.jpg"
   posted: "2026-05-27"
   revised: "2026-05-27"
   text: |
@@ -25,7 +25,7 @@
   creator_role: "by"
   year: 2005
   eval: "meh..."
-  image: "/assets/images/thoughts/books/brooklyn_follies.jpg"
+  image: "/assets/images/thoughts/books/brooklyn-follies.jpg"
   posted: "2026-05-14"
   revised: "2026-05-15"
   text: |
@@ -39,7 +39,7 @@
   creator_role: "by"
   year: 2025
   eval: "disliked"
-  image: "/assets/images/thoughts/books/is_a_river_alive.jpg"
+  image: "/assets/images/thoughts/books/is-a-river-alive.jpg"
   posted: "2026-03-21"
   revised: "2026-03-22"
   text: |
@@ -68,7 +68,7 @@
   creator_role: "by"
   year: 2009
   eval: "loved"
-  image: "/assets/images/thoughts/books/capitalist_realism.jpg"
+  image: "/assets/images/thoughts/books/capitalist-realism.jpg"
   posted: "2026-03-18"
   revised: "2026-03-18"
   text: |
@@ -84,7 +84,7 @@
   creator_role: "by"
   year: 2013
   eval: "loved"
-  image: "/assets/images/thoughts/books/bleeding_edge.jpg"
+  image: "/assets/images/thoughts/books/bleeding-edge.jpg"
   posted: "2026-03-11"
   revised: "2026-03-11"
   text: |
@@ -98,7 +98,7 @@
   creator_role: "by"
   year: 1973
   eval: "loved"
-  image: "/assets/images/thoughts/books/gravitys_rainbow.jpg"
+  image: "/assets/images/thoughts/books/gravitys-rainbow.jpg"
   posted: "2026-03-01"
   revised: "2026-03-01"
   text: |
@@ -116,7 +116,7 @@
   creator_role: "by"
   year: 2009
   eval: "meh..."
-  image: "/assets/images/thoughts/books/city_the_city.jpg"
+  image: "/assets/images/thoughts/books/city-the-city.jpg"
   posted: "2026-01-18"
   revised: "2026-01-18"
   text: |
@@ -144,7 +144,7 @@
   creator_role: "by"
   year: 1220
   eval: "liked"
-  image: "/assets/images/thoughts/books/prose_edda.jpg"
+  image: "/assets/images/thoughts/books/prose-edda.jpg"
   posted: "2025-12-24"
   revised: "2025-12-24"
   text: |
@@ -158,7 +158,7 @@
   creator_role: "by"
   year: 2009
   eval: "liked"
-  image: "/assets/images/thoughts/books/inherent_vice.jpg"
+  image: "/assets/images/thoughts/books/inherent-vice.jpg"
   posted: "2025-12-19"
   revised: "2025-12-19"
   text: |
@@ -172,7 +172,7 @@
   creator_role: "by"
   year: 2021
   eval: "loved"
-  image: "/assets/images/thoughts/books/models_of_the_mind.jpg"
+  image: "/assets/images/thoughts/books/models-of-the-mind.jpg"
   posted: "2025-12-14"
   revised: "2025-12-14"
   text: |
@@ -186,7 +186,7 @@
   creator_role: "by"
   year: 2016
   eval: "liked"
-  image: "/assets/images/thoughts/books/call_of_cthulhu.jpg"
+  image: "/assets/images/thoughts/books/call-of-cthulhu.jpg"
   posted: "2025-12-08"
   revised: "2025-12-08"
   text: |
@@ -264,7 +264,7 @@
   creator_role: "by"
   year: 1997
   eval: "loved"
-  image: "/assets/images/thoughts/books/as_she_climbed.jpg"
+  image: "/assets/images/thoughts/books/as-she-climbed.jpg"
   posted: "2025-10-31"
   revised: "2025-10-31"
   text: |
@@ -279,7 +279,7 @@
   creator_role: "by"
   year: 1952
   eval: "loved"
-  image: "/assets/images/thoughts/books/waiting_for_godot.jpg"
+  image: "/assets/images/thoughts/books/waiting-for-godot.jpg"
   posted: "2025-10-26"
   revised: "2025-10-26"
   text: |
@@ -293,7 +293,7 @@
   creator_role: "by"
   year: 1992
   eval: "meh..."
-  image: "/assets/images/thoughts/books/secret_history.jpg"
+  image: "/assets/images/thoughts/books/secret-history.jpg"
   posted: "2025-10-25"
   revised: "2025-10-25"
   text: |
@@ -307,7 +307,7 @@
   creator_role: "by"
   year: 2016
   eval: "disliked"
-  image: "/assets/images/thoughts/books/when_breath_becomes_air.jpg"
+  image: "/assets/images/thoughts/books/when-breath-becomes-air.jpg"
   posted: "2025-10-25"
   revised: "2025-10-25"
   text: |
@@ -334,7 +334,7 @@
   creator_role: "by"
   year: 2025
   eval: "liked"
-  image: "/assets/images/thoughts/books/shadow_ticket.jpg"
+  image: "/assets/images/thoughts/books/shadow-ticket.jpg"
   posted: "2025-10-13"
   revised: "2025-10-13"
   text: |
@@ -375,7 +375,7 @@
   creator_role: "by"
   year: 1982
   eval: "loved"
-  image: "/assets/images/thoughts/books/pale_view_of_hills.jpg"
+  image: "/assets/images/thoughts/books/pale-view-of-hills.jpg"
   posted: "2025-08-28"
   revised: "2025-08-28"
   text: |
@@ -390,7 +390,7 @@
   creator_role: "by"
   year: 1987
   eval: "liked"
-  image: "/assets/images/thoughts/books/new_york_trilogy.jpg"
+  image: "/assets/images/thoughts/books/new-york-trilogy.jpg"
   posted: "2025-08-24"
   revised: "2025-08-24"
   text: |
@@ -404,7 +404,7 @@
   creator_role: "by"
   year: 1962
   eval: "liked"
-  image: "/assets/images/thoughts/books/we_have_always_lived_in_the_castle.jpg"
+  image: "/assets/images/thoughts/books/we-have-always-lived-in-the-castle.jpg"
   posted: "2025-08-15"
   revised: "2025-08-15"
   text: |
@@ -433,7 +433,7 @@
   creator_role: "by"
   year: 1966
   eval: "loved"
-  image: "/assets/images/thoughts/books/crying_of_lot_49.jpg"
+  image: "/assets/images/thoughts/books/crying-of-lot-49.jpg"
   posted: "2025-08-11"
   revised: "2025-08-11"
   text: |
@@ -448,7 +448,7 @@
   creator_role: "by"
   year: 1989
   eval: "loved"
-  image: "/assets/images/thoughts/books/moon_palace.jpg"
+  image: "/assets/images/thoughts/books/moon-palace.jpg"
   posted: "2025-08-10"
   revised: "2025-08-10"
   text: |
@@ -462,7 +462,7 @@
   creator_role: "by"
   year: 2012
   eval: "liked"
-  image: "/assets/images/thoughts/books/year_of_dreaming_dangerously.jpg"
+  image: "/assets/images/thoughts/books/year-of-dreaming-dangerously.jpg"
   posted: "2025-07-11"
   revised: "2025-07-11"
   text: |
@@ -475,7 +475,7 @@
   creator_role: "by"
   year: 2001
   eval: "liked"
-  image: "/assets/images/thoughts/books/did_somebody_say_totalitarianism.jpg"
+  image: "/assets/images/thoughts/books/did-somebody-say-totalitarianism.jpg"
   posted: "2025-06-05"
   revised: "2025-06-05"
   text: |
@@ -489,7 +489,7 @@
   creator_role: "by"
   year: 2021
   eval: "loved"
-  image: "/assets/images/thoughts/books/we_do_not_part.jpg"
+  image: "/assets/images/thoughts/books/we-do-not-part.jpg"
   posted: "2025-01-25"
   revised: "2025-01-25"
   text: |
@@ -534,7 +534,7 @@
   creator_role: "by"
   year: 2016
   eval: "liked"
-  image: "/assets/images/thoughts/books/weird_and_the_eerie.jpg"
+  image: "/assets/images/thoughts/books/weird-and-the-eerie.jpg"
   posted: "2024-12-25"
   revised: "2024-12-25"
   text: |
@@ -547,7 +547,7 @@
   creator_role: "by"
   year: 2004
   eval: "meh..."
-  image: "/assets/images/thoughts/books/on_intelligence.jpg"
+  image: "/assets/images/thoughts/books/on-intelligence.jpg"
   posted: "2024-12-07"
   revised: "2024-12-07"
   text: |
@@ -560,7 +560,7 @@
   creator_role: "by"
   year: 1998
   eval: "loved"
-  image: "/assets/images/thoughts/books/phantoms_in_the_brain.jpg"
+  image: "/assets/images/thoughts/books/phantoms-in-the-brain.jpg"
   posted: "2024-11-02"
   revised: "2024-11-02"
   text: |
@@ -574,7 +574,7 @@
   creator_role: "by"
   year: 2020
   eval: "loved"
-  image: "/assets/images/thoughts/books/entangled_life_chinese.jpg"
+  image: "/assets/images/thoughts/books/entangled-life-chinese.jpg"
   posted: "2024-10-01"
   revised: "2024-10-01"
   text: |
@@ -589,7 +589,7 @@
   creator_role: "by"
   year: 2003
   eval: "loved"
-  image: "/assets/images/thoughts/books/short_history_of_nearly_everything.jpg"
+  image: "/assets/images/thoughts/books/short-history-of-nearly-everything.jpg"
   posted: "2024-08-23"
   revised: "2024-08-23"
   text: |
@@ -616,7 +616,7 @@
   creator_role: "by"
   year: 2023
   eval: "liked"
-  image: "/assets/images/thoughts/books/on_women.jpg"
+  image: "/assets/images/thoughts/books/on-women.jpg"
   posted: "2024-01-08"
   revised: "2024-01-08"
   text: |
@@ -631,7 +631,7 @@
   creator_role: "by"
   year: 2020
   eval: "loved"
-  image: "/assets/images/thoughts/books/when_we_cease_to_understand_the_world.jpg"
+  image: "/assets/images/thoughts/books/when-we-cease-to-understand-the-world.jpg"
   posted: "2023-05-31"
   revised: "2023-05-31"
   text: |
@@ -644,7 +644,7 @@
   creator_role: "by"
   year: 1960
   eval: "liked"
-  image: "/assets/images/thoughts/books/rise_and_fall_of_the_third_reich.jpg"
+  image: "/assets/images/thoughts/books/rise-and-fall-of-the-third-reich.jpg"
   posted: "2023-03-04"
   revised: "2023-03-04"
   text: |
@@ -658,7 +658,7 @@
   creator_role: "by"
   year: 1999
   eval: "liked"
-  image: "/assets/images/thoughts/books/time_love_memory.jpg"
+  image: "/assets/images/thoughts/books/time-love-memory.jpg"
   posted: "2022-06-22"
   revised: "2022-06-22"
   text: |
@@ -700,7 +700,7 @@
   creator_role: "by"
   year: 2017
   eval: "loved"
-  image: "/assets/images/thoughts/books/vaccine_race.jpg"
+  image: "/assets/images/thoughts/books/vaccine-race.jpg"
   posted: "2021-05-15"
   revised: "2021-05-15"
   text: |
@@ -717,7 +717,7 @@
   creator_role: "by"
   year: 2019
   eval: "disliked"
-  image: "/assets/images/thoughts/books/bottle_of_lies.jpg"
+  image: "/assets/images/thoughts/books/bottle-of-lies.jpg"
   posted: "2021-04-20"
   revised: "2021-04-20"
   text: |
@@ -732,7 +732,7 @@
   creator_role: "by"
   year: 1989
   eval: "loved"
-  image: "/assets/images/thoughts/books/remains_of_the_day.jpg"
+  image: "/assets/images/thoughts/books/remains-of-the-day.jpg"
   posted: "2021-04-15"
   revised: "2021-04-15"
   text: |
@@ -749,7 +749,7 @@
   creator_role: "by"
   year: 2016
   eval: "loved"
-  image: "/assets/images/thoughts/books/genius_of_birds.jpg"
+  image: "/assets/images/thoughts/books/genius-of-birds.jpg"
   posted: "2021-04-08"
   revised: "2021-04-08"
   text: |
@@ -766,7 +766,7 @@
   creator_role: "by"
   year: 2009
   eval: "disliked"
-  image: "/assets/images/thoughts/books/life_ascending.jpg"
+  image: "/assets/images/thoughts/books/life-ascending.jpg"
   posted: "2021-03-25"
   revised: "2021-03-25"
   text: |
@@ -781,7 +781,7 @@
   creator_role: "by"
   year: 1979
   eval: "meh..."
-  image: "/assets/images/thoughts/books/order_out_of_chaos.jpg"
+  image: "/assets/images/thoughts/books/order-out-of-chaos.jpg"
   posted: "2021-03-22"
   revised: "2021-03-22"
   text: |
@@ -797,7 +797,7 @@
   creator_role: "by"
   year: 2012
   eval: "liked"
-  image: "/assets/images/thoughts/books/self_illusion.jpg"
+  image: "/assets/images/thoughts/books/self-illusion.jpg"
   posted: "2021-03-15"
   revised: "2021-03-15"
   text: |
@@ -829,7 +829,7 @@
   creator_role: "by"
   year: 1958
   eval: "meh..."
-  image: "/assets/images/thoughts/books/irrational_man.jpg"
+  image: "/assets/images/thoughts/books/irrational-man.jpg"
   posted: "2021-03-09"
   revised: "2021-03-09"
   text: |
@@ -842,7 +842,7 @@
   creator_role: "by"
   year: 2014
   eval: "loved"
-  image: "/assets/images/thoughts/books/reality_is_not_what_it_seems.jpg"
+  image: "/assets/images/thoughts/books/reality-is-not-what-it-seems.jpg"
   posted: "2021-02-26"
   revised: "2021-02-26"
   text: |
@@ -857,7 +857,7 @@
   creator_role: "by"
   year: 2014
   eval: "disliked"
-  image: "/assets/images/thoughts/books/we_are_our_brains.jpg"
+  image: "/assets/images/thoughts/books/we-are-our-brains.jpg"
   posted: "2021-02-20"
   revised: "2021-02-20"
   text: |
@@ -871,7 +871,7 @@
   creator_role: "by"
   year: 2020
   eval: "meh..."
-  image: "/assets/images/thoughts/books/self_as_method.jpg"
+  image: "/assets/images/thoughts/books/self-as-method.jpg"
   posted: "2021-02-19"
   revised: "2021-02-19"
   text: |
@@ -885,7 +885,7 @@
   creator_role: "by"
   year: 2017
   eval: "hated"
-  image: "/assets/images/thoughts/books/why_we_sleep.jpg"
+  image: "/assets/images/thoughts/books/why-we-sleep.jpg"
   posted: "2021-02-15"
   revised: "2021-02-15"
   text: |
@@ -899,7 +899,7 @@
   creator_role: "by"
   year: 1979
   eval: "loved"
-  image: "/assets/images/thoughts/books/hitchhikers_guide_to_the_galaxy.jpg"
+  image: "/assets/images/thoughts/books/hitchhikers-guide-to-the-galaxy.jpg"
   posted: "2021-02-01"
   revised: "2021-02-01"
   text: |
@@ -914,7 +914,7 @@
   creator_role: "by"
   year: 2015
   eval: "loved"
-  image: "/assets/images/thoughts/books/vital_question.jpg"
+  image: "/assets/images/thoughts/books/vital-question.jpg"
   posted: "2021-01-22"
   revised: "2021-01-22"
   text: |
@@ -930,7 +930,7 @@
   creator_role: "by"
   year: 1998
   eval: "loved"
-  image: "/assets/images/thoughts/books/case_of_the_speluncean_explorers.jpg"
+  image: "/assets/images/thoughts/books/case-of-the-speluncean-explorers.jpg"
   posted: "2021-01-16"
   revised: "2021-01-16"
   text: |
@@ -965,7 +965,7 @@
   creator_role: "by"
   year: 2020
   eval: "liked"
-  image: "/assets/images/thoughts/books/rules_of_contagion.jpg"
+  image: "/assets/images/thoughts/books/rules-of-contagion.jpg"
   posted: "2021-01-05"
   revised: "2021-01-05"
   text: |
@@ -979,7 +979,7 @@
   creator_role: "by"
   year: 2011
   eval: "loved"
-  image: "/assets/images/thoughts/books/how_we_remember.jpg"
+  image: "/assets/images/thoughts/books/how-we-remember.jpg"
   posted: "2020-11-25"
   revised: "2020-11-25"
   text: |
@@ -994,7 +994,7 @@
   creator_role: "by"
   year: 2017
   eval: "meh..."
-  image: "/assets/images/thoughts/books/your_brain_is_a_time_machine.jpg"
+  image: "/assets/images/thoughts/books/your-brain-is-a-time-machine.jpg"
   posted: "2020-10-25"
   revised: "2020-10-25"
   text: |
@@ -1007,7 +1007,7 @@
   creator_role: "by"
   year: 1994
   eval: "meh..."
-  image: "/assets/images/thoughts/books/language_instinct.jpg"
+  image: "/assets/images/thoughts/books/language-instinct.jpg"
   posted: "2020-08-30"
   revised: "2020-08-30"
   text: |
@@ -1021,7 +1021,7 @@
   creator_role: "by"
   year: 2018
   eval: "disliked"
-  image: "/assets/images/thoughts/books/enlightenment_now.jpg"
+  image: "/assets/images/thoughts/books/enlightenment-now.jpg"
   posted: "2020-08-30"
   revised: "2020-08-30"
   text: |
@@ -1036,7 +1036,7 @@
   creator_role: "by"
   year: 2018
   eval: "disliked"
-  image: "/assets/images/thoughts/books/strange_order_of_things.jpg"
+  image: "/assets/images/thoughts/books/strange-order-of-things.jpg"
   posted: "2020-08-20"
   revised: "2020-08-20"
   text: |
@@ -1051,7 +1051,7 @@
   creator_role: "by"
   year: 2014
   eval: "liked"
-  image: "/assets/images/thoughts/books/consciousness_and_the_brain.jpg"
+  image: "/assets/images/thoughts/books/consciousness-and-the-brain.jpg"
   posted: "2020-08-10"
   revised: "2020-08-10"
   text: |
@@ -1085,7 +1085,7 @@
   creator_role: "by"
   year: 2011
   eval: "liked"
-  image: "/assets/images/thoughts/books/quantum_story.jpg"
+  image: "/assets/images/thoughts/books/quantum-story.jpg"
   posted: "2020-06-15"
   revised: "2020-06-15"
   text: |
@@ -1100,7 +1100,7 @@
   creator_role: "by"
   year: 2010
   eval: "loved"
-  image: "/assets/images/thoughts/books/immortal_life_of_henrietta_lacks.jpg"
+  image: "/assets/images/thoughts/books/immortal-life-of-henrietta-lacks.jpg"
   posted: "2020-05-20"
   revised: "2020-05-20"
   text: |
@@ -1115,7 +1115,7 @@
   creator_role: "by"
   year: 2003
   eval: "meh..."
-  image: "/assets/images/thoughts/books/in_the_blink_of_an_eye.jpg"
+  image: "/assets/images/thoughts/books/in-the-blink-of-an-eye.jpg"
   posted: "2020-05-12"
   revised: "2020-05-12"
   text: |
@@ -1160,7 +1160,7 @@
   creator_role: "by"
   year: 1955
   eval: "loved"
-  image: "/assets/images/thoughts/books/return_of_the_king.jpg"
+  image: "/assets/images/thoughts/books/return-of-the-king.jpg"
   posted: "2020-02-10"
   revised: "2020-02-10"
   text: |
@@ -1175,7 +1175,7 @@
   creator_role: "by"
   year: 1954
   eval: "loved"
-  image: "/assets/images/thoughts/books/two_towers.jpg"
+  image: "/assets/images/thoughts/books/two-towers.jpg"
   posted: "2019-12-20"
   revised: "2019-12-20"
   text: |
@@ -1190,7 +1190,7 @@
   creator_role: "by"
   year: 1954
   eval: "loved"
-  image: "/assets/images/thoughts/books/fellowship_of_the_ring.jpg"
+  image: "/assets/images/thoughts/books/fellowship-of-the-ring.jpg"
   posted: "2019-11-10"
   revised: "2019-11-10"
   text: |
@@ -1222,7 +1222,7 @@
   creator_role: "by"
   year: 1986
   eval: "liked"
-  image: "/assets/images/thoughts/books/journey_to_rodrigues.jpg"
+  image: "/assets/images/thoughts/books/journey-to-rodrigues.jpg"
   posted: "2019-07-10"
   revised: "2019-07-10"
   text: |
@@ -1237,7 +1237,7 @@
   creator_role: "by"
   year: 1940
   eval: "liked"
-  image: "/assets/images/thoughts/books/and_quiet_flows_the_don.jpg"
+  image: "/assets/images/thoughts/books/and-quiet-flows-the-don.jpg"
   posted: "2019-05-10"
   revised: "2019-05-10"
   text: |
@@ -1256,7 +1256,7 @@
   creator_role: "by"
   year: 2006
   eval: "loved"
-  image: "/assets/images/thoughts/books/in_search_of_memory.jpg"
+  image: "/assets/images/thoughts/books/in-search-of-memory.jpg"
   posted: "2019-03-15"
   revised: "2019-03-15"
   text: |
@@ -1273,7 +1273,7 @@
   creator_role: "by"
   year: 2008
   eval: "meh..."
-  image: "/assets/images/thoughts/books/origins_of_human_communication.jpg"
+  image: "/assets/images/thoughts/books/origins-of-human-communication.jpg"
   posted: "2018-10-08"
   revised: "2018-10-08"
   text: |
@@ -1306,7 +1306,7 @@
   creator_role: "by"
   year: 2016
   eval: "loved"
-  image: "/assets/images/thoughts/books/at_the_existentialist_cafe.jpg"
+  image: "/assets/images/thoughts/books/at-the-existentialist-cafe.jpg"
   posted: "2018-07-10"
   revised: "2018-07-10"
   text: |
@@ -1323,7 +1323,7 @@
   creator_role: "by"
   year: 1927
   eval: "liked"
-  image: "/assets/images/thoughts/books/words_of_a_dwarf.jpg"
+  image: "/assets/images/thoughts/books/words-of-a-dwarf.jpg"
   posted: "2018-06-28"
   revised: "2018-06-28"
   text: |
@@ -1373,7 +1373,7 @@
   creator_role: "by"
   year: 2005
   eval: "liked"
-  image: "/assets/images/thoughts/books/a_short_history_of_tractors_in_ukrainian.jpg"
+  image: "/assets/images/thoughts/books/a-short-history-of-tractors-in-ukrainian.jpg"
   posted: "2018-05-30"
   text: |
     ***A Short History of Tractors in Ukrainian*** does the difficult thing that comic novels occasionally manage: it is simultaneously funny and sad, and the two registers do not undercut each other. Valentina, the young Ukrainian woman who arrives to marry the elderly widower Nikolai, is rendered as farce, as opportunist using an old man's loneliness, but Lewycka refuses to let her remain only that; what emerges is also a portrait of a woman in desperate circumstances using the only leverage that she has. The daughters, Vera and Nadia, trying to protect their father while managing their own fractured sisterhood, are the emotional centre.
@@ -1406,7 +1406,7 @@
   creator_role: "by"
   year: 1994
   eval: "meh..."
-  image: "/assets/images/thoughts/books/descartes_error.jpg"
+  image: "/assets/images/thoughts/books/descartes-error.jpg"
   posted: "2018-05-15"
   revised: "2018-05-15"
   text: |
@@ -1437,7 +1437,7 @@
   creator_role: "by"
   year: 1899
   eval: "loved"
-  image: "/assets/images/thoughts/books/heart_of_darkness.jpg"
+  image: "/assets/images/thoughts/books/heart-of-darkness.jpg"
   posted: "2018-04-08"
   revised: "2018-04-08"
   text: |
@@ -1455,7 +1455,7 @@
   creator_role: "by"
   year: 2009
   eval: "liked"
-  image: "/assets/images/thoughts/books/other_brain.jpg"
+  image: "/assets/images/thoughts/books/other-brain.jpg"
   posted: "2018-03-20"
   revised: "2018-03-20"
   text: |
@@ -1471,7 +1471,7 @@
   creator_role: "by"
   year: 1859
   eval: "loved"
-  image: "/assets/images/thoughts/books/on_the_origin_of_species.jpg"
+  image: "/assets/images/thoughts/books/on-the-origin-of-species.jpg"
   posted: "2018-03-08"
   revised: "2018-03-08"
   text: |
@@ -1490,7 +1490,7 @@
   creator_role: "by"
   year: 1883
   eval: "hated"
-  image: "/assets/images/thoughts/books/thus_spoke_zarathustra.jpg"
+  image: "/assets/images/thoughts/books/thus-spoke-zarathustra.jpg"
   posted: "2018-02-20"
   revised: "2018-02-20"
   text: |
@@ -1505,7 +1505,7 @@
   creator_role: "by"
   year: 1984
   eval: "loved"
-  image: "/assets/images/thoughts/books/unbearable_lightness_of_being.jpg"
+  image: "/assets/images/thoughts/books/unbearable-lightness-of-being.jpg"
   posted: "2018-01-20"
   revised: "2018-01-20"
   text: |
@@ -1556,7 +1556,7 @@
   creator_role: "by"
   year: 1973
   eval: "loved"
-  image: "/assets/images/thoughts/books/life_is_elsewhere.jpg"
+  image: "/assets/images/thoughts/books/life-is-elsewhere.jpg"
   posted: "2018-01-06"
   revised: "2018-01-06"
   text: |
@@ -1588,7 +1588,7 @@
   creator_role: "by"
   year: 1982
   eval: "loved"
-  image: "/assets/images/thoughts/books/a_wild_sheep_chase.jpg"
+  image: "/assets/images/thoughts/books/a-wild-sheep-chase.jpg"
   posted: "2017-11-20"
   revised: "2017-11-20"
   text: |
@@ -1604,7 +1604,7 @@
   creator_role: "by"
   year: 2016
   eval: "loved"
-  image: "/assets/images/thoughts/books/other_minds.jpg"
+  image: "/assets/images/thoughts/books/other-minds.jpg"
   posted: "2017-11-15"
   revised: "2017-11-15"
   text: |
@@ -1621,7 +1621,7 @@
   creator_role: "by"
   year: 1897
   eval: "loved"
-  image: "/assets/images/thoughts/books/advice_for_a_young_investigator.jpg"
+  image: "/assets/images/thoughts/books/advice-for-a-young-investigator.jpg"
   posted: "2017-10-08"
   revised: "2017-10-08"
   text: |
@@ -1638,7 +1638,7 @@
   creator_role: "by"
   year: 1917
   eval: "loved"
-  image: "/assets/images/thoughts/books/recollections_of_my_life.jpg"
+  image: "/assets/images/thoughts/books/recollections-of-my-life.jpg"
   posted: "2017-09-15"
   revised: "2017-09-15"
   text: |
@@ -1655,7 +1655,7 @@
   creator_role: "by"
   year: 2010
   eval: "loved"
-  image: "/assets/images/thoughts/books/three_body_problem_trilogy.jpg"
+  image: "/assets/images/thoughts/books/three-body-problem-trilogy.jpg"
   posted: "2017-08-10"
   revised: "2017-08-10"
   text: |
@@ -1671,7 +1671,7 @@
   creator_role: "by"
   year: 1976
   eval: "loved"
-  image: "/assets/images/thoughts/books/origin_of_consciousness_in_the_breakdown_of_the_bicameral_mind.jpg"
+  image: "/assets/images/thoughts/books/origin-of-consciousness-in-the-breakdown-of-the-bicameral-mind.jpg"
   posted: "2017-02-14"
   revised: "2017-02-14"
   text: |
@@ -1687,7 +1687,7 @@
   creator_role: "by"
   year: 1926
   eval: "loved"
-  image: "/assets/images/thoughts/books/sun_also_rises.jpg"
+  image: "/assets/images/thoughts/books/sun-also-rises.jpg"
   posted: "2016-10-20"
   revised: "2016-10-20"
   text: |
@@ -1731,7 +1731,7 @@
   creator_role: "by"
   year: 1925
   eval: "meh..."
-  image: "/assets/images/thoughts/books/great_gatsby.jpg"
+  image: "/assets/images/thoughts/books/great-gatsby.jpg"
   posted: "2016-08-15"
   revised: "2016-08-15"
   text: |
@@ -1764,7 +1764,7 @@
   creator_role: "by"
   year: 1985
   eval: "liked"
-  image: "/assets/images/thoughts/books/hard_boiled_wonderland_and_the_end_of_the_world.jpg"
+  image: "/assets/images/thoughts/books/hard-boiled-wonderland-and-the-end-of-the-world.jpg"
   posted: "2016-07-20"
   revised: "2016-07-20"
   text: |
@@ -1779,7 +1779,7 @@
   creator_role: "by"
   year: 1960
   eval: "meh..."
-  image: "/assets/images/thoughts/books/to_kill_a_mockingbird.jpg"
+  image: "/assets/images/thoughts/books/to-kill-a-mockingbird.jpg"
   posted: "2016-07-08"
   revised: "2016-07-08"
   text: |
@@ -1795,7 +1795,7 @@
   creator_role: "by"
   year: 1992
   eval: "liked"
-  image: "/assets/images/thoughts/books/south_of_the_border_west_of_the_sun.jpg"
+  image: "/assets/images/thoughts/books/south-of-the-border-west-of-the-sun.jpg"
   posted: "2016-07-05"
   revised: "2016-07-05"
   text: |
@@ -1827,7 +1827,7 @@
   creator_role: "by"
   year: 1990
   eval: "loved"
-  image: "/assets/images/thoughts/books/gender_trouble.jpg"
+  image: "/assets/images/thoughts/books/gender-trouble.jpg"
   posted: "2016-06-20"
   revised: "2016-06-20"
   text: |
@@ -1858,7 +1858,7 @@
   creator_role: "by"
   year: 1975
   eval: "loved"
-  image: "/assets/images/thoughts/books/autumn_of_the_patriarch.jpg"
+  image: "/assets/images/thoughts/books/autumn-of-the-patriarch.jpg"
   posted: "2016-06-12"
   revised: "2016-06-12"
   text: |
@@ -1875,7 +1875,7 @@
   creator_role: "by"
   year: 1961
   eval: "loved"
-  image: "/assets/images/thoughts/books/no_one_writes_to_the_colonel.jpg"
+  image: "/assets/images/thoughts/books/no-one-writes-to-the-colonel.jpg"
   posted: "2016-05-22"
   revised: "2016-05-22"
   text: |
@@ -1892,7 +1892,7 @@
   creator_role: "by"
   year: 1985
   eval: "loved"
-  image: "/assets/images/thoughts/books/love_in_the_time_of_cholera.jpg"
+  image: "/assets/images/thoughts/books/love-in-the-time-of-cholera.jpg"
   posted: "2016-05-17"
   revised: "2016-05-17"
   text: |
@@ -1926,7 +1926,7 @@
   creator_role: "by"
   year: 1967
   eval: "loved"
-  image: "/assets/images/thoughts/books/one_hundred_years_of_solitude.jpg"
+  image: "/assets/images/thoughts/books/one-hundred-years-of-solitude.jpg"
   posted: "2016-05-08"
   revised: "2016-05-08"
   text: |
@@ -1943,7 +1943,7 @@
   creator_role: "by"
   year: 1969
   eval: "loved"
-  image: "/assets/images/thoughts/books/book_of_flights.jpg"
+  image: "/assets/images/thoughts/books/book-of-flights.jpg"
   posted: "2016-04-18"
   revised: "2016-04-18"
   text: |
@@ -1959,7 +1959,7 @@
   creator_role: "by"
   year: 1958
   eval: "liked"
-  image: "/assets/images/thoughts/books/things_fall_apart.jpg"
+  image: "/assets/images/thoughts/books/things-fall-apart.jpg"
   posted: "2016-04-10"
   revised: "2016-04-10"
   text: |
@@ -1976,7 +1976,7 @@
   creator_role: "by"
   year: 1988
   eval: "loved"
-  image: "/assets/images/thoughts/books/dance_dance_dance.jpg"
+  image: "/assets/images/thoughts/books/dance-dance-dance.jpg"
   posted: "2016-03-25"
   revised: "2016-03-25"
   text: |
@@ -1992,7 +1992,7 @@
   creator_role: "by"
   year: 2006
   eval: "loved"
-  image: "/assets/images/thoughts/books/god_delusion.jpg"
+  image: "/assets/images/thoughts/books/god-delusion.jpg"
   posted: "2016-02-15"
   revised: "2016-02-15"
   text: |
@@ -2009,7 +2009,7 @@
   creator_role: "by"
   year: 1994
   eval: "liked"
-  image: "/assets/images/thoughts/books/wind_up_bird_chronicle.jpg"
+  image: "/assets/images/thoughts/books/wind-up-bird-chronicle.jpg"
   posted: "2016-01-20"
   revised: "2016-01-20"
   text: |
@@ -2025,7 +2025,7 @@
   creator_role: "by"
   year: 1602
   eval: "loved"
-  image: "/assets/images/thoughts/books/twelfth_night.jpg"
+  image: "/assets/images/thoughts/books/twelfth-night.jpg"
   posted: "2015-09-15"
   revised: "2015-09-15"
   text: |
@@ -2054,7 +2054,7 @@
   creator_role: "by"
   year: 1974
   eval: "loved"
-  image: "/assets/images/thoughts/books/zen_and_the_art_of_motorcycle_maintenance.jpg"
+  image: "/assets/images/thoughts/books/zen-and-the-art-of-motorcycle-maintenance.jpg"
   posted: "2015-04-15"
   revised: "2015-04-15"
   text: |
@@ -2071,7 +2071,7 @@
   creator_role: "by"
   year: 2013
   eval: "liked"
-  image: "/assets/images/thoughts/books/and_the_mountains_echoed.jpg"
+  image: "/assets/images/thoughts/books/and-the-mountains-echoed.jpg"
   posted: "2015-03-20"
   text: |
     ***And the Mountains Echoed*** is Hosseini's most formally ambitious novel: a family tree that branches across decades and continents, each chapter following a different character connected, often at several removes, to a single act of separation at the novel's opening. In a 1952 Afghan village, a father sells his young daughter Pari to a wealthy Kabul family, and the novel spends its remaining pages tracking what that decision sends into the world: through an Afghan-French poet and her estranged daughter, a Greek aid worker, an Afghan-American doctor, and a house in Kabul that changes hands across decades.
@@ -2085,7 +2085,7 @@
   creator_role: "by"
   year: 1945
   eval: "disliked"
-  image: "/assets/images/thoughts/books/animal_farm.jpg"
+  image: "/assets/images/thoughts/books/animal-farm.jpg"
   posted: "2015-03-10"
   revised: "2015-03-10"
   text: |
@@ -2099,7 +2099,7 @@
   creator_role: "by"
   year: 2002
   eval: "liked"
-  image: "/assets/images/thoughts/books/kafka_on_the_shore.jpg"
+  image: "/assets/images/thoughts/books/kafka-on-the-shore.jpg"
   posted: "2015-02-15"
   revised: "2015-02-15"
   text: |
@@ -2115,7 +2115,7 @@
   creator_role: "by"
   year: 1949
   eval: "meh..."
-  image: "/assets/images/thoughts/books/nineteen_eighty_four.jpg"
+  image: "/assets/images/thoughts/books/nineteen-eighty-four.jpg"
   posted: "2015-01-15"
   revised: "2015-01-15"
   text: |
@@ -2129,7 +2129,7 @@
   creator_role: "by"
   year: 1987
   eval: "loved"
-  image: "/assets/images/thoughts/books/norwegian_wood.jpg"
+  image: "/assets/images/thoughts/books/norwegian-wood.jpg"
   posted: "2014-12-20"
   revised: "2014-12-20"
   text: |
@@ -2144,7 +2144,7 @@
   creator_role: "by"
   year: 1996
   eval: "loved"
-  image: "/assets/images/thoughts/books/a_game_of_thrones.jpg"
+  image: "/assets/images/thoughts/books/a-game-of-thrones.jpg"
   posted: "2014-12-10"
   revised: "2014-12-10"
   text: |
@@ -2161,7 +2161,7 @@
   creator_role: "by"
   year: 1996
   eval: "liked"
-  image: "/assets/images/thoughts/books/naive_super.jpg"
+  image: "/assets/images/thoughts/books/naive-super.jpg"
   posted: "2014-11-25"
   revised: "2014-11-25"
   text: |
@@ -2175,7 +2175,7 @@
   creator_role: "by"
   year: 1953
   eval: "liked"
-  image: "/assets/images/thoughts/books/fahrenheit_451.jpg"
+  image: "/assets/images/thoughts/books/fahrenheit-451.jpg"
   posted: "2014-11-20"
   revised: "2014-11-20"
   text: |
@@ -2190,7 +2190,7 @@
   creator_role: "by"
   year: 1988
   eval: "liked"
-  image: "/assets/images/thoughts/books/a_brief_history_of_time.jpg"
+  image: "/assets/images/thoughts/books/a-brief-history-of-time.jpg"
   posted: "2014-10-25"
   revised: "2014-10-25"
   text: |
@@ -2205,7 +2205,7 @@
   creator_role: "by"
   year: 1991
   eval: "liked"
-  image: "/assets/images/thoughts/books/golden_age.jpg"
+  image: "/assets/images/thoughts/books/golden-age.jpg"
   posted: "2014-10-15"
   revised: "2014-10-15"
   text: |
@@ -2220,7 +2220,7 @@
   creator_role: "by"
   year: 1991
   eval: "meh..."
-  image: "/assets/images/thoughts/books/sophies_world.jpg"
+  image: "/assets/images/thoughts/books/sophies-world.jpg"
   posted: "2014-09-25"
   revised: "2014-09-25"
   text: |
@@ -2235,7 +2235,7 @@
   creator_role: "by"
   year: 1966
   eval: "loved"
-  image: "/assets/images/thoughts/books/offending_the_audience.jpg"
+  image: "/assets/images/thoughts/books/offending-the-audience.jpg"
   posted: "2014-06-08"
   revised: "2014-06-08"
   text: |
@@ -2252,7 +2252,7 @@
   creator_role: "by"
   year: 1923
   eval: "liked"
-  image: "/assets/images/thoughts/books/childhood_in_the_world_my_universities.jpg"
+  image: "/assets/images/thoughts/books/childhood-in-the-world-my-universities.jpg"
   posted: "2014-03-10"
   text: |
     The three volumes read together form something different from any of their parts: a record of how a self gets made from scavenged materials, without institutions, without money, without much protection. ***Childhood*** opens in the household of Gorky's maternal grandfather Kashirin, a patriarch whose authority runs on fear; the grandmother Akulina Ivanovna moves through the same space as something entirely different, a teller of folk tales who absorbs blows and keeps a kind of warmth alive by sheer stubbornness. *In the World* puts the adolescent Gorky into successive employments, as dishwasher, icon-painter's assistant, sailor's cook, and the education that he gets there is neither sentimental nor ennobling: it is a systematic acquaintance with how ordinary Russian life grinds through the bodies and spirits of those inside it. *My Universities* closes the trilogy in Kazan, where Gorky arrives hoping for formal education and finds instead revolutionary circles, starvation, and a crisis that brings him close to suicide.
@@ -2267,7 +2267,7 @@
   creator_role: "by"
   year: 2007
   eval: "liked"
-  image: "/assets/images/thoughts/books/a_thousand_splendid_suns.jpg"
+  image: "/assets/images/thoughts/books/a-thousand-splendid-suns.jpg"
   posted: "2014-01-10"
   text: |
     Coming to ***A Thousand Splendid Suns*** immediately after *The Kite Runner* was probably a mistake, because nothing could hit the same way twice. The two women at the centre, Mariam, an illegitimate child married off at fifteen to the abusive Rasheed in Kabul, and Laila, a generation younger and better educated, who ends up in the same house through a particular sequence of catastrophes, carry a different weight than Amir's guilt. What Hosseini captures here is how Afghanistan's twentieth century fell most heavily on women: through the Soviet invasion, the mujahideen civil war, the Taliban years, it is Mariam and Laila who bear the accumulated violence of every regime change, not as history but as domestic fact, as the geometry of the room that they share with a man who beats them.
@@ -2282,7 +2282,7 @@
   creator_role: "by"
   year: 2003
   eval: "loved"
-  image: "/assets/images/thoughts/books/kite_runner.jpg"
+  image: "/assets/images/thoughts/books/kite-runner.jpg"
   posted: "2013-12-15"
   revised: "2013-12-15"
   text: |
@@ -2305,7 +2305,7 @@
   creator_role: "dir."
   year: 2025
   eval: "liked"
-  image: "/assets/images/thoughts/films/stiller_freund.png"
+  image: "/assets/images/thoughts/films/stiller-freund.png"
   posted: "2026-05-25"
   revised: "2026-05-25"
   text: |
@@ -2324,7 +2324,7 @@
   creator_role: "dir."
   year: 2025
   eval: "loved"
-  image: "/assets/images/thoughts/films/un_poeta.jpg"
+  image: "/assets/images/thoughts/films/un-poeta.jpg"
   posted: "2026-04-24"
   revised: "2026-04-24"
   text: |
@@ -2341,7 +2341,7 @@
   creator_role: "dir."
   year: 2025
   eval: "loved"
-  image: "/assets/images/thoughts/films/world_of_love.jpg"
+  image: "/assets/images/thoughts/films/world-of-love.jpg"
   posted: "2026-04-26"
   revised: "2026-04-26"
   text: |
@@ -2358,7 +2358,7 @@
   creator_role: "dir."
   year: 2022
   eval: "liked"
-  image: "/assets/images/thoughts/films/holy_spider.jpg"
+  image: "/assets/images/thoughts/films/holy-spider.jpg"
   posted: "2026-04-28"
   revised: "2026-04-28"
   text: |
@@ -2377,7 +2377,7 @@
   creator_role: "dir."
   year: 2022
   eval: "loved"
-  image: "/assets/images/thoughts/films/leilas_brothers.jpg"
+  image: "/assets/images/thoughts/films/leilas-brothers.jpg"
   posted: "2026-04-26"
   revised: "2026-04-26"
   text: |
@@ -2409,7 +2409,7 @@
   creator_role: "dir."
   year: 2026
   eval: "liked"
-  image: "/assets/images/thoughts/films/project_hail_mary.jpg"
+  image: "/assets/images/thoughts/films/project-hail-mary.jpg"
   posted: "2026-03-28"
   revised: "2026-03-28"
   text: |
@@ -2437,7 +2437,7 @@
   creator_role: "dir."
   year: 2025
   eval: "liked"
-  image: "/assets/images/thoughts/films/marty_supreme.jpg"
+  image: "/assets/images/thoughts/films/marty-supreme.jpg"
   posted: "2026-02-14"
   revised: "2026-02-14"
   text: |
@@ -2468,7 +2468,7 @@
   creator_role: "dir."
   year: 2024
   eval: "loved"
-  image: "/assets/images/thoughts/films/tardes_de_soledad.jpg"
+  image: "/assets/images/thoughts/films/tardes-de-soledad.jpg"
   posted: "2026-01-30"
   revised: "2026-01-30"
   text: |
@@ -2483,7 +2483,7 @@
   creator_role: "dir."
   year: 2025
   eval: "loved"
-  image: "/assets/images/thoughts/films/o_agente_secreto.jpg"
+  image: "/assets/images/thoughts/films/o-agente-secreto.jpg"
   posted: "2026-01-25"
   revised: "2026-01-25"
   text: |
@@ -2497,7 +2497,7 @@
   creator_role: "dir."
   year: 2025
   eval: "loved"
-  image: "/assets/images/thoughts/films/voice_of_hind_rajab.jpg"
+  image: "/assets/images/thoughts/films/voice-of-hind-rajab.jpg"
   posted: "2026-01-24"
   revised: "2026-01-24"
   text: |
@@ -2513,7 +2513,7 @@
   creator_role: "dir."
   year: 2025
   eval: "loved"
-  image: "/assets/images/thoughts/films/blue_moon.jpg"
+  image: "/assets/images/thoughts/films/blue-moon.jpg"
   posted: "2026-01-20"
   revised: "2026-01-20"
   text: |
@@ -2528,7 +2528,7 @@
   creator_role: "dir."
   year: 2025
   eval: "liked"
-  image: "/assets/images/thoughts/films/28_years_later.jpg"
+  image: "/assets/images/thoughts/films/28-years-later.jpg"
   posted: "2026-01-20"
   revised: "2026-01-20"
   text: |
@@ -2575,7 +2575,7 @@
   creator_role: "dir."
   year: 2025
   eval: "loved"
-  image: "/assets/images/thoughts/films/2000_meters_to_andriivka.jpg"
+  image: "/assets/images/thoughts/films/2000-meters-to-andriivka.jpg"
   posted: "2026-01-11"
   revised: "2026-01-11"
   text: |
@@ -2592,7 +2592,7 @@
   creator_role: "dir."
   year: 2025
   eval: "disliked"
-  image: "/assets/images/thoughts/films/it_was_just_an_accident.jpg"
+  image: "/assets/images/thoughts/films/it-was-just-an-accident.jpg"
   posted: "2025-11-30"
   revised: "2025-11-30"
   text: |
@@ -2619,7 +2619,7 @@
   creator_role: "dir."
   year: 2025
   eval: "liked"
-  image: "/assets/images/thoughts/films/cant_help_it.jpg"
+  image: "/assets/images/thoughts/films/cant-help-it.jpg"
   posted: "2025-11-25"
   revised: "2025-11-25"
   text: |
@@ -2632,7 +2632,7 @@
   creator_role: "dir."
   year: 2025
   eval: "loved"
-  image: "/assets/images/thoughts/films/if_i_had_legs_id_kick_you.jpg"
+  image: "/assets/images/thoughts/films/if-i-had-legs-id-kick-you.jpg"
   posted: "2025-11-23"
   revised: "2025-11-23"
   text: |
@@ -2646,7 +2646,7 @@
   creator_role: "dir."
   year: 2025
   eval: "loved"
-  image: "/assets/images/thoughts/films/one_battle_after_another.jpg"
+  image: "/assets/images/thoughts/films/one-battle-after-another.jpg"
   posted: "2025-11-16"
   revised: "2025-11-16"
   text: |
@@ -2675,7 +2675,7 @@
   creator_role: "dir."
   year: 2025
   eval: "loved"
-  image: "/assets/images/thoughts/films/a_house_of_dynamite.jpg"
+  image: "/assets/images/thoughts/films/a-house-of-dynamite.jpg"
   posted: "2025-11-02"
   revised: "2025-11-02"
   text: |
@@ -2749,7 +2749,7 @@
   creator_role: "dir."
   year: 2024
   eval: "loved"
-  image: "/assets/images/thoughts/films/on_becoming_a_guinea_fowl.jpg"
+  image: "/assets/images/thoughts/films/on-becoming-a-guinea-fowl.jpg"
   posted: "2025-09-21"
   revised: "2025-09-21"
   text: |
@@ -2779,7 +2779,7 @@
   creator_role: "dir."
   year: 2025
   eval: "loved"
-  image: "/assets/images/thoughts/films/sorry_baby.jpg"
+  image: "/assets/images/thoughts/films/sorry-baby.jpg"
   posted: "2025-08-10"
   revised: "2025-08-10"
   text: |
@@ -2810,7 +2810,7 @@
   creator_role: "dir."
   year: 2022
   eval: "meh..."
-  image: "/assets/images/thoughts/films/no_bears.jpg"
+  image: "/assets/images/thoughts/films/no-bears.jpg"
   posted: "2025-07-06"
   revised: "2025-07-06"
   text: |
@@ -2824,7 +2824,7 @@
   creator_role: "dir."
   year: 2002
   eval: "loved"
-  image: "/assets/images/thoughts/films/punch_drunk_love.jpg"
+  image: "/assets/images/thoughts/films/punch-drunk-love.jpg"
   posted: "2025-06-29"
   revised: "2025-06-29"
   text: |
@@ -2840,7 +2840,7 @@
   creator_role: "dir."
   year: 2006
   eval: "loved"
-  image: "/assets/images/thoughts/films/little_miss_sunshine.jpg"
+  image: "/assets/images/thoughts/films/little-miss-sunshine.jpg"
   posted: "2025-06-17"
   revised: "2025-06-17"
   text: |
@@ -2869,7 +2869,7 @@
   creator_role: "dir."
   year: 2024
   eval: "loved"
-  image: "/assets/images/thoughts/films/summer_book.jpg"
+  image: "/assets/images/thoughts/films/summer-book.jpg"
   posted: "2025-06-09"
   revised: "2025-06-09"
   text: |
@@ -2885,7 +2885,7 @@
   creator_role: "dir."
   year: 2025
   eval: "liked"
-  image: "/assets/images/thoughts/films/phoenician_scheme.jpg"
+  image: "/assets/images/thoughts/films/phoenician-scheme.jpg"
   posted: "2025-05-31"
   revised: "2025-05-31"
   text: |
@@ -2930,7 +2930,7 @@
   creator_role: "dir."
   year: 2024
   eval: "loved"
-  image: "/assets/images/thoughts/films/desert_of_namibia.jpg"
+  image: "/assets/images/thoughts/films/desert-of-namibia.jpg"
   posted: "2025-04-21"
   revised: "2025-04-21"
   text: |
@@ -2944,7 +2944,7 @@
   creator_role: "dir."
   year: 2025
   eval: "hated"
-  image: "/assets/images/thoughts/films/mickey_17.jpg"
+  image: "/assets/images/thoughts/films/mickey-17.jpg"
   posted: "2025-04-14"
   revised: "2025-04-14"
   text: |
@@ -2957,7 +2957,7 @@
   creator_role: "dir."
   year: 1985
   eval: "loved"
-  image: "/assets/images/thoughts/films/come_and_see.jpg"
+  image: "/assets/images/thoughts/films/come-and-see.jpg"
   posted: "2025-04-13"
   revised: "2025-04-13"
   text: |
@@ -3002,7 +3002,7 @@
   creator_role: "dir."
   year: 2007
   eval: "loved"
-  image: "/assets/images/thoughts/films/4_months_3_weeks_and_2_days.jpg"
+  image: "/assets/images/thoughts/films/4-months-3-weeks-and-2-days.jpg"
   posted: "2025-03-22"
   revised: "2025-03-22"
   text: |
@@ -3017,7 +3017,7 @@
   creator_role: "dir."
   year: 1962
   eval: "liked"
-  image: "/assets/images/thoughts/films/an_autumn_afternoon.jpg"
+  image: "/assets/images/thoughts/films/an-autumn-afternoon.jpg"
   posted: "2025-03-17"
   revised: "2025-03-17"
   text: |
@@ -3044,7 +3044,7 @@
   creator_role: "dir."
   year: 2024
   eval: "liked"
-  image: "/assets/images/thoughts/films/black_box_diaries.jpg"
+  image: "/assets/images/thoughts/films/black-box-diaries.jpg"
   posted: "2025-03-02"
   revised: "2025-03-02"
   text: |
@@ -3058,7 +3058,7 @@
   creator_role: "dir."
   year: 2022
   eval: "loved"
-  image: "/assets/images/thoughts/films/national_theatre_live_prima_facie.jpg"
+  image: "/assets/images/thoughts/films/national-theatre-live-prima-facie.jpg"
   posted: "2025-02-24"
   revised: "2025-02-24"
   text: |
@@ -3075,7 +3075,7 @@
   creator_role: "dir."
   year: 2017
   eval: "meh..."
-  image: "/assets/images/thoughts/films/on_the_beach_at_night_alone.jpg"
+  image: "/assets/images/thoughts/films/on-the-beach-at-night-alone.jpg"
   posted: "2025-02-10"
   revised: "2025-02-10"
   text: |
@@ -3105,7 +3105,7 @@
   creator_role: "dir."
   year: 2018
   eval: "loved"
-  image: "/assets/images/thoughts/films/house_of_hummingbird.jpg"
+  image: "/assets/images/thoughts/films/house-of-hummingbird.jpg"
   posted: "2025-02-04"
   revised: "2025-02-04"
   text: |
@@ -3121,7 +3121,7 @@
   creator_role: "dir."
   year: 2023
   eval: "loved"
-  image: "/assets/images/thoughts/films/sometimes_i_think_about_dying.jpg"
+  image: "/assets/images/thoughts/films/sometimes-i-think-about-dying.jpg"
   posted: "2025-02-02"
   revised: "2025-02-02"
   text: |
@@ -3165,7 +3165,7 @@
   creator_role: "dir."
   year: 2023
   eval: "disliked"
-  image: "/assets/images/thoughts/films/theres_still_tomorrow.jpg"
+  image: "/assets/images/thoughts/films/theres-still-tomorrow.jpg"
   posted: "2025-01-25"
   revised: "2025-01-25"
   text: |
@@ -3177,7 +3177,7 @@
   creator_role: "by"
   year: 2024
   eval: "loved"
-  image: "/assets/images/thoughts/films/jacqueline_novak_get_on_your_knees.jpg"
+  image: "/assets/images/thoughts/films/jacqueline-novak-get-on-your-knees.jpg"
   posted: "2025-01-13"
   revised: "2025-01-13"
   text: |
@@ -3192,7 +3192,7 @@
   creator_role: "dir."
   year: 2024
   eval: "disliked"
-  image: "/assets/images/thoughts/films/i_saw_the_tv_glow.jpg"
+  image: "/assets/images/thoughts/films/i-saw-the-tv-glow.jpg"
   posted: "2025-01-10"
   revised: "2025-01-10"
   text: |
@@ -3223,7 +3223,7 @@
   creator_role: "dir."
   year: 2024
   eval: "liked"
-  image: "/assets/images/thoughts/films/my_favourite_cake.jpg"
+  image: "/assets/images/thoughts/films/my-favourite-cake.jpg"
   posted: "2024-12-31"
   revised: "2024-12-31"
   text: |
@@ -3237,7 +3237,7 @@
   creator_role: "dir."
   year: 2023
   eval: "meh..."
-  image: "/assets/images/thoughts/films/la_bete.jpg"
+  image: "/assets/images/thoughts/films/la-bete.jpg"
   posted: "2024-12-27"
   revised: "2024-12-27"
   text: |
@@ -3305,7 +3305,7 @@
   creator_role: "dir."
   year: 2023
   eval: "loved"
-  image: "/assets/images/thoughts/films/janet_planet.jpg"
+  image: "/assets/images/thoughts/films/janet-planet.jpg"
   posted: "2024-12-16"
   revised: "2024-12-16"
   text: |
@@ -3320,7 +3320,7 @@
   creator_role: "dir."
   year: 2019
   eval: "loved"
-  image: "/assets/images/thoughts/films/kim_ji_young_born_1982.jpg"
+  image: "/assets/images/thoughts/films/kim-ji-young-born-1982.jpg"
   posted: "2024-12-15"
   revised: "2024-12-15"
   text: |
@@ -3334,7 +3334,7 @@
   creator_role: "dir."
   year: 2014
   eval: "liked"
-  image: "/assets/images/thoughts/films/internets_own_boy.jpg"
+  image: "/assets/images/thoughts/films/internets-own-boy.jpg"
   posted: "2024-12-09"
   revised: "2024-12-09"
   text: |
@@ -3349,7 +3349,7 @@
   creator_role: "dir."
   year: 2024
   eval: "liked"
-  image: "/assets/images/thoughts/films/seed_of_the_sacred_fig.jpg"
+  image: "/assets/images/thoughts/films/seed-of-the-sacred-fig.jpg"
   posted: "2024-12-09"
   revised: "2024-12-09"
   text: |
@@ -3362,7 +3362,7 @@
   creator_role: "dir."
   year: 1997
   eval: "liked"
-  image: "/assets/images/thoughts/films/children_of_heaven.jpg"
+  image: "/assets/images/thoughts/films/children-of-heaven.jpg"
   posted: "2024-12-01"
   revised: "2024-12-01"
   text: |
@@ -3377,7 +3377,7 @@
   creator_role: "dir."
   year: 2024
   eval: "loved"
-  image: "/assets/images/thoughts/films/like_a_rolling_stone.jpg"
+  image: "/assets/images/thoughts/films/like-a-rolling-stone.jpg"
   posted: "2024-12-01"
   revised: "2024-12-01"
   text: |
@@ -3390,7 +3390,7 @@
   creator_role: "by"
   year: 2024
   eval: "liked"
-  image: "/assets/images/thoughts/films/bones_and_all.jpg"
+  image: "/assets/images/thoughts/films/bones-and-all.jpg"
   posted: "2024-12-01"
   revised: "2024-12-01"
   text: |
@@ -3403,7 +3403,7 @@
   creator_role: "dir."
   year: 2015
   eval: "liked"
-  image: "/assets/images/thoughts/films/end_of_the_tour.jpg"
+  image: "/assets/images/thoughts/films/end-of-the-tour.jpg"
   posted: "2024-11-25"
   revised: "2024-11-25"
   text: |
@@ -3431,7 +3431,7 @@
   creator_role: "dir."
   year: 1993
   eval: "meh..."
-  image: "/assets/images/thoughts/films/arizona_dream.jpg"
+  image: "/assets/images/thoughts/films/arizona-dream.jpg"
   posted: "2024-11-10"
   revised: "2024-11-10"
   text: |
@@ -3461,7 +3461,7 @@
   creator_role: "dir."
   year: 2024
   eval: "liked"
-  image: "/assets/images/thoughts/films/how_to_make_millions_before_grandma_dies.jpg"
+  image: "/assets/images/thoughts/films/how-to-make-millions-before-grandma-dies.jpg"
   posted: "2024-10-28"
   revised: "2024-10-28"
   text: |
@@ -3475,7 +3475,7 @@
   creator_role: "dir."
   year: 2024
   eval: "meh..."
-  image: "/assets/images/thoughts/films/wild_robot.jpg"
+  image: "/assets/images/thoughts/films/wild-robot.jpg"
   posted: "2024-10-27"
   revised: "2024-10-27"
   text: |
@@ -3487,7 +3487,7 @@
   creator_role: "dir."
   year: 1996
   eval: "loved"
-  image: "/assets/images/thoughts/films/secrets_lies.jpg"
+  image: "/assets/images/thoughts/films/secrets-lies.jpg"
   posted: "2024-10-21"
   revised: "2024-10-21"
   text: |
@@ -3501,7 +3501,7 @@
   creator_role: "dir."
   year: 2023
   eval: "loved"
-  image: "/assets/images/thoughts/films/la_chimera.jpg"
+  image: "/assets/images/thoughts/films/la-chimera.jpg"
   posted: "2024-10-21"
   revised: "2024-10-21"
   text: |
@@ -3516,7 +3516,7 @@
   creator_role: "dir."
   year: 2023
   eval: "disliked"
-  image: "/assets/images/thoughts/films/in_broad_daylight.jpg"
+  image: "/assets/images/thoughts/films/in-broad-daylight.jpg"
   posted: "2024-10-15"
   revised: "2024-10-15"
   text: |
@@ -3530,7 +3530,7 @@
   creator_role: "dir."
   year: 1988
   eval: "loved"
-  image: "/assets/images/thoughts/films/midnight_run.jpg"
+  image: "/assets/images/thoughts/films/midnight-run.jpg"
   posted: "2024-10-12"
   revised: "2024-10-12"
   text: |
@@ -3545,7 +3545,7 @@
   creator_role: "dir."
   year: 2023
   eval: "loved"
-  image: "/assets/images/thoughts/films/time_still_turns_the_pages.jpg"
+  image: "/assets/images/thoughts/films/time-still-turns-the-pages.jpg"
   posted: "2024-10-07"
   revised: "2024-10-07"
   text: |
@@ -3559,7 +3559,7 @@
   creator_role: "dir."
   year: 2024
   eval: "meh..."
-  image: "/assets/images/thoughts/films/billy_molly.jpg"
+  image: "/assets/images/thoughts/films/billy-molly.jpg"
   posted: "2024-10-05"
   revised: "2024-10-05"
   text: |
@@ -3574,7 +3574,7 @@
   creator_role: "dir."
   year: 2007
   eval: "disliked"
-  image: "/assets/images/thoughts/films/rising_star_kindergarten.jpg"
+  image: "/assets/images/thoughts/films/rising-star-kindergarten.jpg"
   posted: "2024-09-30"
   revised: "2024-09-30"
   text: |
@@ -3588,7 +3588,7 @@
   creator_role: "dir."
   year: 2024
   eval: "loved"
-  image: "/assets/images/thoughts/films/alien_romulus.jpg"
+  image: "/assets/images/thoughts/films/alien-romulus.jpg"
   posted: "2024-08-26"
   revised: "2024-08-26"
   text: |
@@ -3606,7 +3606,7 @@
   creator_role: "dir."
   year: 2024
   eval: "meh..."
-  image: "/assets/images/thoughts/films/inside_out_2.jpg"
+  image: "/assets/images/thoughts/films/inside-out-2.jpg"
   posted: "2024-08-03"
   revised: "2024-08-03"
   text: |
@@ -3620,7 +3620,7 @@
   creator_role: "dir."
   year: 2024
   eval: "loved"
-  image: "/assets/images/thoughts/films/kinds_of_kindness.jpg"
+  image: "/assets/images/thoughts/films/kinds-of-kindness.jpg"
   posted: "2024-08-03"
   revised: "2024-08-03"
   text: |
@@ -3652,7 +3652,7 @@
   creator_role: "dir."
   year: 2021
   eval: "liked"
-  image: "/assets/images/thoughts/films/wheel_of_fortune_and_fantasy.jpg"
+  image: "/assets/images/thoughts/films/wheel-of-fortune-and-fantasy.jpg"
   posted: "2024-07-11"
   revised: "2024-07-11"
   text: |
@@ -3682,7 +3682,7 @@
   creator_role: "dir."
   year: 2022
   eval: "loved"
-  image: "/assets/images/thoughts/films/return_to_dust.jpg"
+  image: "/assets/images/thoughts/films/return-to-dust.jpg"
   posted: "2024-06-30"
   revised: "2024-06-30"
   text: |
@@ -3698,7 +3698,7 @@
   creator_role: "dir."
   year: 2016
   eval: "loved"
-  image: "/assets/images/thoughts/films/world_of_us.jpg"
+  image: "/assets/images/thoughts/films/world-of-us.jpg"
   posted: "2024-06-16"
   revised: "2024-06-16"
   text: |
@@ -3713,7 +3713,7 @@
   creator_role: "dir."
   year: 1989
   eval: "disliked"
-  image: "/assets/images/thoughts/films/banana_paradise.jpg"
+  image: "/assets/images/thoughts/films/banana-paradise.jpg"
   posted: "2024-06-10"
   revised: "2024-06-10"
   text: |
@@ -3726,7 +3726,7 @@
   creator_role: "dir."
   year: 2023
   eval: "meh..."
-  image: "/assets/images/thoughts/films/evil_does_not_exist.jpg"
+  image: "/assets/images/thoughts/films/evil-does-not-exist.jpg"
   posted: "2024-05-26"
   revised: "2024-05-26"
   text: |
@@ -3741,7 +3741,7 @@
   creator_role: "dir."
   year: 2007
   eval: "loved"
-  image: "/assets/images/thoughts/films/secret_sunshine.jpg"
+  image: "/assets/images/thoughts/films/secret-sunshine.jpg"
   posted: "2024-05-06"
   revised: "2024-05-06"
   text: |
@@ -3756,7 +3756,7 @@
   creator_role: "dir."
   year: 1997
   eval: "liked"
-  image: "/assets/images/thoughts/films/green_fish.jpg"
+  image: "/assets/images/thoughts/films/green-fish.jpg"
   posted: "2024-04-10"
   revised: "2024-04-10"
   text: |
@@ -3770,7 +3770,7 @@
   creator_role: "dir."
   year: 1984
   eval: "meh..."
-  image: "/assets/images/thoughts/films/paris_texas.jpg"
+  image: "/assets/images/thoughts/films/paris-texas.jpg"
   posted: "2024-04-01"
   revised: "2024-04-01"
   text: |
@@ -3785,7 +3785,7 @@
   creator_role: "dir."
   year: 1995
   eval: "loved"
-  image: "/assets/images/thoughts/films/tropical_fish.jpg"
+  image: "/assets/images/thoughts/films/tropical-fish.jpg"
   posted: "2024-03-19"
   revised: "2024-03-19"
   text: |
@@ -3799,7 +3799,7 @@
   creator_role: "dir."
   year: 2014
   eval: "disliked"
-  image: "/assets/images/thoughts/films/i_origins.jpg"
+  image: "/assets/images/thoughts/films/i-origins.jpg"
   posted: "2024-03-17"
   revised: "2024-03-17"
   text: |
@@ -3813,7 +3813,7 @@
   creator_role: "dir."
   year: 2023
   eval: "loved"
-  image: "/assets/images/thoughts/films/robot_dreams.jpg"
+  image: "/assets/images/thoughts/films/robot-dreams.jpg"
   posted: "2024-03-13"
   revised: "2024-03-13"
   text: |
@@ -3827,7 +3827,7 @@
   creator_role: "dir."
   year: 2024
   eval: "loved"
-  image: "/assets/images/thoughts/films/dune_part_two.jpg"
+  image: "/assets/images/thoughts/films/dune-part-two.jpg"
   posted: "2024-03-03"
   revised: "2024-03-03"
   text: |
@@ -3844,7 +3844,7 @@
   creator_role: "dir."
   year: 2020
   eval: "loved"
-  image: "/assets/images/thoughts/films/man_standing_next.jpg"
+  image: "/assets/images/thoughts/films/man-standing-next.jpg"
   posted: "2024-02-19"
   revised: "2024-02-19"
   text: |
@@ -3873,7 +3873,7 @@
   creator_role: "by"
   year: 2023
   eval: "loved"
-  image: "/assets/images/thoughts/films/louis_ck_back_to_the_garden.jpg"
+  image: "/assets/images/thoughts/films/louis-ck-back-to-the-garden.jpg"
   posted: "2024-02-05"
   revised: "2024-02-05"
   text: |
@@ -3920,7 +3920,7 @@
   creator_role: "dir."
   year: 2023
   eval: "loved"
-  image: "/assets/images/thoughts/films/do_not_expect.jpg"
+  image: "/assets/images/thoughts/films/do-not-expect.jpg"
   posted: "2023-12-27"
   revised: "2023-12-27"
   text: |
@@ -3935,7 +3935,7 @@
   creator_role: "dir."
   year: 2023
   eval: "liked"
-  image: "/assets/images/thoughts/films/zielona_granica.jpg"
+  image: "/assets/images/thoughts/films/zielona-granica.jpg"
   posted: "2023-12-26"
   revised: "2023-12-26"
   text: |
@@ -3949,7 +3949,7 @@
   creator_role: "dir."
   year: 2023
   eval: "loved"
-  image: "/assets/images/thoughts/films/zone_of_interest.jpg"
+  image: "/assets/images/thoughts/films/zone-of-interest.jpg"
   posted: "2023-12-25"
   revised: "2023-12-25"
   text: |
@@ -3965,7 +3965,7 @@
   creator_role: "dir."
   year: 2023
   eval: "loved"
-  image: "/assets/images/thoughts/films/perfect_days.jpg"
+  image: "/assets/images/thoughts/films/perfect-days.jpg"
   posted: "2023-12-20"
   revised: "2023-12-20"
   text: |
@@ -3980,7 +3980,7 @@
   creator_role: "dir."
   year: 1991
   eval: "liked"
-  image: "/assets/images/thoughts/films/a_scene_at_the_sea.jpg"
+  image: "/assets/images/thoughts/films/a-scene-at-the-sea.jpg"
   posted: "2023-12-14"
   revised: "2023-12-14"
   text: |
@@ -4011,7 +4011,7 @@
   creator_role: "dir."
   year: 2023
   eval: "loved"
-  image: "/assets/images/thoughts/films/asteroid_city.jpg"
+  image: "/assets/images/thoughts/films/asteroid-city.jpg"
   posted: "2023-07-24"
   revised: "2023-07-24"
   text: |
@@ -4050,7 +4050,7 @@
   creator_role: "dir."
   year: 2023
   eval: "liked"
-  image: "/assets/images/thoughts/films/spider_man_across_the_spider_verse.jpg"
+  image: "/assets/images/thoughts/films/spider-man-across-the-spider-verse.jpg"
   posted: "2023-07-22"
   revised: "2023-07-22"
   text: |
@@ -4078,7 +4078,7 @@
   creator_role: "by"
   year: 2023
   eval: "loved"
-  image: "/assets/images/thoughts/films/hannah_gadsby_something_special.jpg"
+  image: "/assets/images/thoughts/films/hannah-gadsby-something-special.jpg"
   posted: "2023-05-19"
   revised: "2023-05-19"
   text: |
@@ -4119,7 +4119,7 @@
   creator_role: "dir."
   year: 2021
   eval: "loved"
-  image: "/assets/images/thoughts/films/lost_daughter.jpg"
+  image: "/assets/images/thoughts/films/lost-daughter.jpg"
   posted: "2023-04-23"
   revised: "2023-04-23"
   text: |
@@ -4165,7 +4165,7 @@
   creator_role: "dir."
   year: 2021
   eval: "loved"
-  image: "/assets/images/thoughts/films/a_new_old_play.jpg"
+  image: "/assets/images/thoughts/films/a-new-old-play.jpg"
   posted: "2023-03-21"
   revised: "2023-03-21"
   text: |
@@ -4180,7 +4180,7 @@
   creator_role: "dir."
   year: 2017
   eval: "liked"
-  image: "/assets/images/thoughts/films/florida_project.jpg"
+  image: "/assets/images/thoughts/films/florida-project.jpg"
   posted: "2023-03-20"
   revised: "2023-03-20"
   text: |
@@ -4194,7 +4194,7 @@
   creator_role: "dir."
   year: 2021
   eval: "loved"
-  image: "/assets/images/thoughts/films/drive_my_car.jpg"
+  image: "/assets/images/thoughts/films/drive-my-car.jpg"
   posted: "2023-03-07"
   revised: "2023-03-07"
   text: |
@@ -4208,7 +4208,7 @@
   creator_role: "dir."
   year: 2022
   eval: "loved"
-  image: "/assets/images/thoughts/films/all_quiet_on_the_western_front.jpg"
+  image: "/assets/images/thoughts/films/all-quiet-on-the-western-front.jpg"
   posted: "2023-02-12"
   revised: "2023-02-12"
   text: |
@@ -4235,7 +4235,7 @@
   creator_role: "by"
   year: 2016
   eval: "loved"
-  image: "/assets/images/thoughts/films/make_happy.jpg"
+  image: "/assets/images/thoughts/films/make-happy.jpg"
   posted: "2023-01-29"
   revised: "2023-01-29"
   text: |
@@ -4249,7 +4249,7 @@
   creator_role: "by"
   year: 2022
   eval: "loved"
-  image: "/assets/images/thoughts/films/taylor_tomlinson_look_at_you.jpg"
+  image: "/assets/images/thoughts/films/taylor-tomlinson-look-at-you.jpg"
   posted: "2023-01-27"
   revised: "2023-01-27"
   text: |
@@ -4263,7 +4263,7 @@
   creator_role: "by"
   year: 2021
   eval: "loved"
-  image: "/assets/images/thoughts/films/drew_michael_red_blue_green.jpg"
+  image: "/assets/images/thoughts/films/drew-michael-red-blue-green.jpg"
   posted: "2023-01-23"
   revised: "2023-01-23"
   text: |
@@ -4301,7 +4301,7 @@
   creator_role: "dir."
   year: 2022
   eval: "loved"
-  image: "/assets/images/thoughts/films/banshees_of_inisherin.jpg"
+  image: "/assets/images/thoughts/films/banshees-of-inisherin.jpg"
   posted: "2023-01-01"
   revised: "2023-01-01"
   text: |
@@ -4314,7 +4314,7 @@
   creator_role: "dir."
   year: 1996
   eval: "loved"
-  image: "/assets/images/thoughts/films/english_patient.jpg"
+  image: "/assets/images/thoughts/films/english-patient.jpg"
   posted: "2022-11-21"
   revised: "2022-11-21"
   text: |
@@ -4328,7 +4328,7 @@
   creator_role: "dir."
   year: 1985
   eval: "liked"
-  image: "/assets/images/thoughts/films/when_father_was_away_on_business.jpg"
+  image: "/assets/images/thoughts/films/when-father-was-away-on-business.jpg"
   posted: "2022-10-17"
   revised: "2022-10-17"
   text: |
@@ -4342,7 +4342,7 @@
   creator_role: "by"
   year: 2017
   eval: "loved"
-  image: "/assets/images/thoughts/films/neal_brennan_3_mics.jpg"
+  image: "/assets/images/thoughts/films/neal-brennan-3-mics.jpg"
   posted: "2022-08-26"
   revised: "2022-08-26"
   text: |
@@ -4357,7 +4357,7 @@
   creator_role: "dir."
   year: 2007
   eval: "loved"
-  image: "/assets/images/thoughts/films/lust_caution.jpg"
+  image: "/assets/images/thoughts/films/lust-caution.jpg"
   posted: "2022-08-14"
   revised: "2022-08-14"
   text: |
@@ -4372,7 +4372,7 @@
   creator_role: "dir."
   year: 2013
   eval: "loved"
-  image: "/assets/images/thoughts/films/tale_of_princess_kaguya.jpg"
+  image: "/assets/images/thoughts/films/tale-of-princess-kaguya.jpg"
   posted: "2022-07-29"
   revised: "2022-07-29"
   text: |
@@ -4386,7 +4386,7 @@
   creator_role: "dir."
   year: 2006
   eval: "loved"
-  image: "/assets/images/thoughts/films/painted_veil.jpg"
+  image: "/assets/images/thoughts/films/painted-veil.jpg"
   posted: "2022-07-05"
   revised: "2022-07-05"
   text: |
@@ -4400,7 +4400,7 @@
   creator_role: "by"
   year: 2022
   eval: "loved"
-  image: "/assets/images/thoughts/films/ricky_gervais_supernature.jpg"
+  image: "/assets/images/thoughts/films/ricky-gervais-supernature.jpg"
   posted: "2022-05-26"
   revised: "2022-05-26"
   text: |
@@ -4414,7 +4414,7 @@
   creator_role: "dir."
   year: 2022
   eval: "meh..."
-  image: "/assets/images/thoughts/films/die_wannseekonferenz.jpg"
+  image: "/assets/images/thoughts/films/die-wannseekonferenz.jpg"
   posted: "2022-05-18"
   revised: "2022-05-18"
   text: |
@@ -4428,7 +4428,7 @@
   creator_role: "dir."
   year: 2021
   eval: "loved"
-  image: "/assets/images/thoughts/films/french_dispatch.jpg"
+  image: "/assets/images/thoughts/films/french-dispatch.jpg"
   posted: "2022-01-17"
   revised: "2022-01-17"
   text: |
@@ -4443,7 +4443,7 @@
   creator_role: "dir."
   year: 2021
   eval: "liked"
-  image: "/assets/images/thoughts/films/dont_look_up.jpg"
+  image: "/assets/images/thoughts/films/dont-look-up.jpg"
   posted: "2022-01-11"
   revised: "2022-01-11"
   text: |
@@ -4455,7 +4455,7 @@
   creator_role: "dir."
   year: 2021
   eval: "loved"
-  image: "/assets/images/thoughts/films/last_duel.jpg"
+  image: "/assets/images/thoughts/films/last-duel.jpg"
   posted: "2022-01-02"
   revised: "2022-01-02"
   text: |
@@ -4470,7 +4470,7 @@
   creator_role: "dir."
   year: 2017
   eval: "loved"
-  image: "/assets/images/thoughts/films/blade_runner_2049.jpg"
+  image: "/assets/images/thoughts/films/blade-runner-2049.jpg"
   posted: "2021-08-01"
   revised: "2021-08-01"
   text: |
@@ -4499,7 +4499,7 @@
   creator_role: "dir."
   year: 2012
   eval: "loved"
-  image: "/assets/images/thoughts/films/django_unchained.jpg"
+  image: "/assets/images/thoughts/films/django-unchained.jpg"
   posted: "2021-07-26"
   revised: "2021-07-26"
   text: |
@@ -4513,7 +4513,7 @@
   creator_role: "dir."
   year: 2009
   eval: "loved"
-  image: "/assets/images/thoughts/films/inglourious_basterds.jpg"
+  image: "/assets/images/thoughts/films/inglourious-basterds.jpg"
   posted: "2021-07-19"
   revised: "2021-07-19"
   text: |
@@ -4541,7 +4541,7 @@
   creator_role: "dir."
   year: 1988
   eval: "meh..."
-  image: "/assets/images/thoughts/films/they_live.jpg"
+  image: "/assets/images/thoughts/films/they-live.jpg"
   posted: "2021-07-11"
   revised: "2021-07-11"
   text: |
@@ -4555,7 +4555,7 @@
   creator_role: "dir."
   year: 2013
   eval: "loved"
-  image: "/assets/images/thoughts/films/dallas_buyers_club.jpg"
+  image: "/assets/images/thoughts/films/dallas-buyers-club.jpg"
   posted: "2021-07-09"
   revised: "2021-07-09"
   text: |
@@ -4571,7 +4571,7 @@
   creator_role: "dir."
   year: 1995
   eval: "loved"
-  image: "/assets/images/thoughts/films/mighty_aphrodite.jpg"
+  image: "/assets/images/thoughts/films/mighty-aphrodite.jpg"
   posted: "2021-06-28"
   revised: "2021-06-28"
   text: |
@@ -4584,7 +4584,7 @@
   creator_role: "dir."
   year: 1987
   eval: "loved"
-  image: "/assets/images/thoughts/films/radio_days.jpg"
+  image: "/assets/images/thoughts/films/radio-days.jpg"
   posted: "2021-06-27"
   revised: "2021-06-27"
   text: |
@@ -4598,7 +4598,7 @@
   creator_role: "dir."
   year: 1957
   eval: "loved"
-  image: "/assets/images/thoughts/films/seventh_seal.jpg"
+  image: "/assets/images/thoughts/films/seventh-seal.jpg"
   posted: "2021-06-27"
   revised: "2021-06-27"
   text: |
@@ -4612,7 +4612,7 @@
   creator_role: "dir."
   year: 1993
   eval: "loved"
-  image: "/assets/images/thoughts/films/manhattan_murder_mystery.jpg"
+  image: "/assets/images/thoughts/films/manhattan-murder-mystery.jpg"
   posted: "2021-06-25"
   revised: "2021-06-25"
   text: |
@@ -4626,7 +4626,7 @@
   creator_role: "dir."
   year: 1995
   eval: "liked"
-  image: "/assets/images/thoughts/films/love_letter.jpg"
+  image: "/assets/images/thoughts/films/love-letter.jpg"
   posted: "2021-05-31"
   revised: "2021-05-31"
   text: |
@@ -4655,7 +4655,7 @@
   creator_role: "by"
   year: 2018
   eval: "loved"
-  image: "/assets/images/thoughts/films/hannah_gadsby_nanette.jpg"
+  image: "/assets/images/thoughts/films/hannah-gadsby-nanette.jpg"
   posted: "2021-03-31"
   revised: "2021-03-31"
   text: |
@@ -4670,7 +4670,7 @@
   creator_role: "dir."
   year: 2006
   eval: "loved"
-  image: "/assets/images/thoughts/films/children_of_men.jpg"
+  image: "/assets/images/thoughts/films/children-of-men.jpg"
   posted: "2021-03-28"
   revised: "2021-03-28"
   text: |
@@ -4683,7 +4683,7 @@
   creator_role: "dir."
   year: 2021
   eval: "loved"
-  image: "/assets/images/thoughts/films/allen_v_farrow.jpg"
+  image: "/assets/images/thoughts/films/allen-v-farrow.jpg"
   posted: "2021-03-26"
   revised: "2021-03-26"
   text: |
@@ -4738,7 +4738,7 @@
   creator_role: "dir."
   year: 2014
   eval: "loved"
-  image: "/assets/images/thoughts/films/leviathan_левиафан.jpg"
+  image: "/assets/images/thoughts/films/leviathan-левиафан.jpg"
   posted: "2021-02-21"
   revised: "2021-02-21"
   text: |
@@ -4751,7 +4751,7 @@
   creator_role: "dir."
   year: 2001
   eval: "loved"
-  image: "/assets/images/thoughts/films/human_nature.jpg"
+  image: "/assets/images/thoughts/films/human-nature.jpg"
   posted: "2021-02-19"
   revised: "2021-02-19"
   text: |
@@ -4778,7 +4778,7 @@
   creator_role: "dir."
   year: 2020
   eval: "loved"
-  image: "/assets/images/thoughts/films/im_thinking_of_ending_things.jpg"
+  image: "/assets/images/thoughts/films/im-thinking-of-ending-things.jpg"
   posted: "2021-02-16"
   revised: "2021-02-16"
   text: |
@@ -4820,7 +4820,7 @@
   creator_role: "dir."
   year: 1964
   eval: "loved"
-  image: "/assets/images/thoughts/films/dr_strangelove_or_how_i_learned_to_stop_worrying_and_love_th.jpg"
+  image: "/assets/images/thoughts/films/dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-th.jpg"
   posted: "2021-02-02"
   revised: "2021-02-02"
   text: |
@@ -4835,7 +4835,7 @@
   creator_role: "dir."
   year: 1994
   eval: "loved"
-  image: "/assets/images/thoughts/films/back_to_back_face_to_face.jpg"
+  image: "/assets/images/thoughts/films/back-to-back-face-to-face.jpg"
   posted: "2021-01-31"
   revised: "2021-01-31"
   text: |
@@ -4849,7 +4849,7 @@
   creator_role: "dir."
   year: 2020
   eval: "liked"
-  image: "/assets/images/thoughts/films/persian_lessons_persischstunden.jpg"
+  image: "/assets/images/thoughts/films/persian-lessons-persischstunden.jpg"
   posted: "2021-01-30"
   revised: "2021-01-30"
   text: |
@@ -4874,7 +4874,7 @@
   creator_role: "dir."
   year: 2008
   eval: "loved"
-  image: "/assets/images/thoughts/films/synecdoche_new_york.jpg"
+  image: "/assets/images/thoughts/films/synecdoche-new-york.jpg"
   posted: "2021-01-08"
   revised: "2021-01-08"
   text: |
@@ -4890,7 +4890,7 @@
   creator_role: "dir."
   year: 1997
   eval: "liked"
-  image: "/assets/images/thoughts/films/la_confidential.jpg"
+  image: "/assets/images/thoughts/films/la-confidential.jpg"
   posted: "2021-01-03"
   revised: "2021-01-03"
   text: |
@@ -4943,7 +4943,7 @@
   creator_role: "dir."
   year: 1997
   eval: "loved"
-  image: "/assets/images/thoughts/films/perfect_blue.jpg"
+  image: "/assets/images/thoughts/films/perfect-blue.jpg"
   posted: "2020-12-19"
   revised: "2020-12-19"
   text: |
@@ -4971,7 +4971,7 @@
   creator_role: "dir."
   year: 1959
   eval: "liked"
-  image: "/assets/images/thoughts/films/north_by_northwest.jpg"
+  image: "/assets/images/thoughts/films/north-by-northwest.jpg"
   posted: "2020-12-18"
   revised: "2020-12-18"
   text: |
@@ -4985,7 +4985,7 @@
   creator_role: "dir."
   year: 1954
   eval: "loved"
-  image: "/assets/images/thoughts/films/rear_window.jpg"
+  image: "/assets/images/thoughts/films/rear-window.jpg"
   posted: "2020-12-14"
   revised: "2020-12-14"
   text: |
@@ -4999,7 +4999,7 @@
   creator_role: "dir."
   year: 1973
   eval: "loved"
-  image: "/assets/images/thoughts/films/la_planete_sauvage_fantastic_planet.jpg"
+  image: "/assets/images/thoughts/films/la-planete-sauvage-fantastic-planet.jpg"
   posted: "2020-12-10"
   revised: "2020-12-10"
   text: |
@@ -5075,7 +5075,7 @@
   creator_role: "dir."
   year: 2020
   eval: "loved"
-  image: "/assets/images/thoughts/films/trial_of_the_chicago_7.jpg"
+  image: "/assets/images/thoughts/films/trial-of-the-chicago-7.jpg"
   posted: "2020-11-10"
   revised: "2020-11-10"
   text: |
@@ -5102,7 +5102,7 @@
   creator_role: "dir."
   year: 2012
   eval: "loved"
-  image: "/assets/images/thoughts/films/life_of_pi.jpg"
+  image: "/assets/images/thoughts/films/life-of-pi.jpg"
   posted: "2020-11-07"
   revised: "2020-11-07"
   text: |
@@ -5116,7 +5116,7 @@
   creator_role: "dir."
   year: 2007
   eval: "liked"
-  image: "/assets/images/thoughts/films/stuart_a_life_backwards.jpg"
+  image: "/assets/images/thoughts/films/stuart-a-life-backwards.jpg"
   posted: "2020-11-07"
   revised: "2020-11-07"
   text: |
@@ -5131,7 +5131,7 @@
   creator_role: "dir."
   year: 1991
   eval: "liked"
-  image: "/assets/images/thoughts/films/night_on_earth.jpg"
+  image: "/assets/images/thoughts/films/night-on-earth.jpg"
   posted: "2020-10-31"
   revised: "2020-10-31"
   text: |
@@ -5144,7 +5144,7 @@
   creator_role: "dir."
   year: 1924
   eval: "liked"
-  image: "/assets/images/thoughts/films/sherlock_jr.jpg"
+  image: "/assets/images/thoughts/films/sherlock-jr.jpg"
   posted: "2020-10-28"
   revised: "2020-10-28"
   text: |
@@ -5158,7 +5158,7 @@
   creator_role: "dir."
   year: 2020
   eval: "liked"
-  image: "/assets/images/thoughts/films/my_octopus_teacher.jpg"
+  image: "/assets/images/thoughts/films/my-octopus-teacher.jpg"
   posted: "2020-10-26"
   revised: "2020-10-26"
   text: |
@@ -5172,7 +5172,7 @@
   creator_role: "dir."
   year: 2003
   eval: "loved"
-  image: "/assets/images/thoughts/films/tokyo_godfathers.jpg"
+  image: "/assets/images/thoughts/films/tokyo-godfathers.jpg"
   posted: "2020-10-25"
   revised: "2020-10-25"
   text: |
@@ -5188,7 +5188,7 @@
   creator_role: "dir."
   year: 2019
   eval: "liked"
-  image: "/assets/images/thoughts/films/dark_waters.jpg"
+  image: "/assets/images/thoughts/films/dark-waters.jpg"
   posted: "2020-10-18"
   revised: "2020-10-18"
   text: |
@@ -5203,7 +5203,7 @@
   creator_role: "dir."
   year: 1994
   eval: "loved"
-  image: "/assets/images/thoughts/films/to_live.jpg"
+  image: "/assets/images/thoughts/films/to-live.jpg"
   posted: "2020-10-17"
   revised: "2020-10-17"
   text: |
@@ -5220,7 +5220,7 @@
   creator_role: "dir."
   year: 2010
   eval: "loved"
-  image: "/assets/images/thoughts/films/let_the_bullets_fly.jpg"
+  image: "/assets/images/thoughts/films/let-the-bullets-fly.jpg"
   posted: "2020-10-11"
   revised: "2020-10-11"
   text: |
@@ -5237,7 +5237,7 @@
   creator_role: "dir."
   year: 2000
   eval: "loved"
-  image: "/assets/images/thoughts/films/devils_on_the_doorstep.jpg"
+  image: "/assets/images/thoughts/films/devils-on-the-doorstep.jpg"
   posted: "2020-10-11"
   revised: "2020-10-11"
   text: |
@@ -5254,7 +5254,7 @@
   creator_role: "dir."
   year: 2007
   eval: "loved"
-  image: "/assets/images/thoughts/films/sun_also_rises.jpg"
+  image: "/assets/images/thoughts/films/sun-also-rises.jpg"
   posted: "2020-10-08"
   revised: "2020-10-08"
   text: |
@@ -5268,7 +5268,7 @@
   creator_role: "dir."
   year: 1961
   eval: "meh..."
-  image: "/assets/images/thoughts/films/judgment_at_nuremberg.jpg"
+  image: "/assets/images/thoughts/films/judgment-at-nuremberg.jpg"
   posted: "2020-10-06"
   revised: "2020-10-06"
   text: |
@@ -5282,7 +5282,7 @@
   creator_role: "dir."
   year: 1990
   eval: "meh..."
-  image: "/assets/images/thoughts/films/godfather_part_iii.jpg"
+  image: "/assets/images/thoughts/films/godfather-part-iii.jpg"
   posted: "2020-10-04"
   revised: "2020-10-04"
   text: |
@@ -5295,7 +5295,7 @@
   creator_role: "dir."
   year: 1974
   eval: "loved"
-  image: "/assets/images/thoughts/films/godfather_part_ii.jpg"
+  image: "/assets/images/thoughts/films/godfather-part-ii.jpg"
   posted: "2020-10-04"
   revised: "2020-10-04"
   text: |
@@ -5325,7 +5325,7 @@
   creator_role: "dir."
   year: 1980
   eval: "liked"
-  image: "/assets/images/thoughts/films/stardust_memories.jpg"
+  image: "/assets/images/thoughts/films/stardust-memories.jpg"
   posted: "2020-10-01"
   revised: "2020-10-01"
   text: |
@@ -5367,7 +5367,7 @@
   creator_role: "dir."
   year: 1975
   eval: "liked"
-  image: "/assets/images/thoughts/films/love_and_death.jpg"
+  image: "/assets/images/thoughts/films/love-and-death.jpg"
   posted: "2020-09-20"
   revised: "2020-09-20"
   text: |
@@ -5381,7 +5381,7 @@
   creator_role: "dir."
   year: 1985
   eval: "liked"
-  image: "/assets/images/thoughts/films/purple_rose_of_cairo.jpg"
+  image: "/assets/images/thoughts/films/purple-rose-of-cairo.jpg"
   posted: "2020-09-15"
   revised: "2020-09-15"
   text: |
@@ -5396,7 +5396,7 @@
   creator_role: "dir."
   year: 2007
   eval: "loved"
-  image: "/assets/images/thoughts/films/you_the_living.jpg"
+  image: "/assets/images/thoughts/films/you-the-living.jpg"
   posted: "2020-09-09"
   revised: "2020-09-09"
   text: |
@@ -5409,7 +5409,7 @@
   creator_role: "dir."
   year: 1977
   eval: "loved"
-  image: "/assets/images/thoughts/films/annie_hall.jpg"
+  image: "/assets/images/thoughts/films/annie-hall.jpg"
   posted: "2020-09-09"
   revised: "2020-09-09"
   text: |
@@ -5426,7 +5426,7 @@
   creator_role: "dir."
   year: 2000
   eval: "loved"
-  image: "/assets/images/thoughts/films/songs_from_the_second_floor.jpg"
+  image: "/assets/images/thoughts/films/songs-from-the-second-floor.jpg"
   posted: "2020-08-29"
   revised: "2020-08-29"
   text: |
@@ -5454,7 +5454,7 @@
   creator_role: "dir."
   year: 1997
   eval: "loved"
-  image: "/assets/images/thoughts/films/life_is_beautiful.jpg"
+  image: "/assets/images/thoughts/films/life-is-beautiful.jpg"
   posted: "2020-07-26"
   revised: "2020-07-26"
   text: |
@@ -5481,7 +5481,7 @@
   creator_role: "dir."
   year: 2013
   eval: "loved"
-  image: "/assets/images/thoughts/films/wolf_of_wall_street.jpg"
+  image: "/assets/images/thoughts/films/wolf-of-wall-street.jpg"
   posted: "2020-07-23"
   revised: "2020-07-23"
   text: |
@@ -5508,7 +5508,7 @@
   creator_role: "dir."
   year: 2001
   eval: "liked"
-  image: "/assets/images/thoughts/films/mulholland_dr.jpg"
+  image: "/assets/images/thoughts/films/mulholland-dr.jpg"
   posted: "2020-07-22"
   revised: "2020-07-22"
   text: |
@@ -5536,7 +5536,7 @@
   creator_role: "dir."
   year: 1999
   eval: "loved"
-  image: "/assets/images/thoughts/films/thirteenth_floor.jpg"
+  image: "/assets/images/thoughts/films/thirteenth-floor.jpg"
   posted: "2020-07-21"
   revised: "2020-07-21"
   text: |
@@ -5565,7 +5565,7 @@
   creator_role: "dir."
   year: 1959
   eval: "meh..."
-  image: "/assets/images/thoughts/films/400_blows.jpg"
+  image: "/assets/images/thoughts/films/400-blows.jpg"
   posted: "2020-07-17"
   revised: "2020-07-17"
   text: |
@@ -5579,7 +5579,7 @@
   creator_role: "dir."
   year: 2010
   eval: "loved"
-  image: "/assets/images/thoughts/films/shutter_island.jpg"
+  image: "/assets/images/thoughts/films/shutter-island.jpg"
   posted: "2020-07-15"
   revised: "2020-07-15"
   text: |
@@ -5612,7 +5612,7 @@
   creator_role: "dir."
   year: 1979
   eval: "loved"
-  image: "/assets/images/thoughts/films/apocalypse_now.jpg"
+  image: "/assets/images/thoughts/films/apocalypse-now.jpg"
   posted: "2020-07-08"
   revised: "2020-07-08"
   text: |
@@ -5640,7 +5640,7 @@
   creator_role: "dir."
   year: 1957
   eval: "loved"
-  image: "/assets/images/thoughts/films/12_angry_men.jpg"
+  image: "/assets/images/thoughts/films/12-angry-men.jpg"
   posted: "2020-07-06"
   revised: "2020-07-06"
   text: |
@@ -5655,7 +5655,7 @@
   creator_role: "dir."
   year: 2019
   eval: "meh..."
-  image: "/assets/images/thoughts/films/portrait_of_a_lady_on_fire.jpg"
+  image: "/assets/images/thoughts/films/portrait-of-a-lady-on-fire.jpg"
   posted: "2020-07-06"
   revised: "2020-07-06"
   text: |
@@ -5669,7 +5669,7 @@
   creator_role: "dir."
   year: 2014
   eval: "meh..."
-  image: "/assets/images/thoughts/films/battle_of_the_five_armies.jpg"
+  image: "/assets/images/thoughts/films/battle-of-the-five-armies.jpg"
   posted: "2014-12-18"
   revised: "2014-12-18"
   text: |
@@ -5683,7 +5683,7 @@
   creator_role: "dir."
   year: 2013
   eval: "liked"
-  image: "/assets/images/thoughts/films/desolation_of_smaug.jpg"
+  image: "/assets/images/thoughts/films/desolation-of-smaug.jpg"
   posted: "2013-12-18"
   revised: "2013-12-18"
   text: |
@@ -5697,7 +5697,7 @@
   creator_role: "dir."
   year: 2012
   eval: "liked"
-  image: "/assets/images/thoughts/films/an_unexpected_journey.jpg"
+  image: "/assets/images/thoughts/films/an-unexpected-journey.jpg"
   posted: "2012-12-19"
   revised: "2012-12-19"
   text: |
@@ -5719,7 +5719,7 @@
   pin: true
   pin_order: "03-tv-01"
   eval: "loved"
-  image: "/assets/images/thoughts/tv/wire_season_5.jpg"
+  image: "/assets/images/thoughts/tv/wire-season-5.jpg"
   posted: "2026-05-10"
   revised: "2026-05-10"
   text: |
@@ -5741,7 +5741,7 @@
   creator_role: "dir."
   year: 2026
   eval: "loved"
-  image: "/assets/images/thoughts/tv/capture_season_3.jpg"
+  image: "/assets/images/thoughts/tv/capture-season-3.jpg"
   posted: "2026-04-16"
   revised: "2026-04-16"
   text: |
@@ -5755,7 +5755,7 @@
   creator_role: "dir."
   year: 2026
   eval: "loved"
-  image: "/assets/images/thoughts/tv/a_knight_of_the_seven_kingdoms_season_1.jpg"
+  image: "/assets/images/thoughts/tv/a-knight-of-the-seven-kingdoms-season-1.jpg"
   posted: "2026-03-31"
   revised: "2026-03-31"
   text: |
@@ -5769,7 +5769,7 @@
   creator_role: "dir."
   year: 2006
   eval: "loved"
-  image: "/assets/images/thoughts/tv/wire_season_4.jpg"
+  image: "/assets/images/thoughts/tv/wire-season-4.jpg"
   posted: "2026-02-22"
   revised: "2026-02-22"
   text: |
@@ -5785,7 +5785,7 @@
   creator_role: "dir."
   year: 2004
   eval: "loved"
-  image: "/assets/images/thoughts/tv/wire_season_3.jpg"
+  image: "/assets/images/thoughts/tv/wire-season-3.jpg"
   posted: "2026-02-22"
   revised: "2026-02-22"
   text: |
@@ -5801,7 +5801,7 @@
   creator_role: "dir."
   year: 2003
   eval: "loved"
-  image: "/assets/images/thoughts/tv/wire_season_2.jpg"
+  image: "/assets/images/thoughts/tv/wire-season-2.jpg"
   posted: "2026-02-02"
   revised: "2026-02-02"
   text: |
@@ -5815,7 +5815,7 @@
   creator_role: "dir."
   year: 2025
   eval: "liked"
-  image: "/assets/images/thoughts/tv/pluribus_season_1.jpg"
+  image: "/assets/images/thoughts/tv/pluribus-season-1.jpg"
   posted: "2026-01-06"
   revised: "2026-01-06"
   text: |
@@ -5829,7 +5829,7 @@
   creator_role: "dir."
   year: 2025
   eval: "disliked"
-  image: "/assets/images/thoughts/tv/chair_company_season_1.jpg"
+  image: "/assets/images/thoughts/tv/chair-company-season-1.jpg"
   posted: "2025-12-07"
   revised: "2025-12-07"
   text: |
@@ -5841,7 +5841,7 @@
   creator_role: "dir."
   year: 2002
   eval: "loved"
-  image: "/assets/images/thoughts/tv/wire_season_1.jpg"
+  image: "/assets/images/thoughts/tv/wire-season-1.jpg"
   posted: "2025-11-18"
   revised: "2025-11-18"
   text: |
@@ -5874,7 +5874,7 @@
   creator_role: "dir."
   year: 2022
   eval: "loved"
-  image: "/assets/images/thoughts/tv/better_call_saul_season_6.jpg"
+  image: "/assets/images/thoughts/tv/better-call-saul-season-6.jpg"
   posted: "2025-08-24"
   revised: "2025-08-24"
   text: |
@@ -5890,7 +5890,7 @@
   creator_role: "dir."
   year: 2020
   eval: "loved"
-  image: "/assets/images/thoughts/tv/better_call_saul_season_5.jpg"
+  image: "/assets/images/thoughts/tv/better-call-saul-season-5.jpg"
   posted: "2025-07-25"
   revised: "2025-07-25"
   text: |
@@ -5904,7 +5904,7 @@
   creator_role: "dir."
   year: 2018
   eval: "loved"
-  image: "/assets/images/thoughts/tv/better_call_saul_season_4.jpg"
+  image: "/assets/images/thoughts/tv/better-call-saul-season-4.jpg"
   posted: "2025-07-23"
   revised: "2025-07-23"
   text: |
@@ -5918,7 +5918,7 @@
   creator_role: "dir."
   year: 2025
   eval: "loved"
-  image: "/assets/images/thoughts/tv/bear_season_4.jpg"
+  image: "/assets/images/thoughts/tv/bear-season-4.jpg"
   posted: "2025-07-21"
   revised: "2025-07-21"
   text: |
@@ -5931,7 +5931,7 @@
   creator_role: "dir."
   year: 2025
   eval: "liked"
-  image: "/assets/images/thoughts/tv/poker_face_season_2.jpg"
+  image: "/assets/images/thoughts/tv/poker-face-season-2.jpg"
   posted: "2025-07-16"
   revised: "2025-07-16"
   text: |
@@ -5943,7 +5943,7 @@
   creator_role: "dir."
   year: 2025
   eval: "loved"
-  image: "/assets/images/thoughts/tv/clarksons_farm_season_4.jpg"
+  image: "/assets/images/thoughts/tv/clarksons-farm-season-4.jpg"
   posted: "2025-06-24"
   revised: "2025-06-24"
   text: |
@@ -5957,7 +5957,7 @@
   creator_role: "dir."
   year: 2025
   eval: "loved"
-  image: "/assets/images/thoughts/tv/rehearsal_season_2.jpg"
+  image: "/assets/images/thoughts/tv/rehearsal-season-2.jpg"
   posted: "2025-06-03"
   revised: "2025-06-03"
   text: |
@@ -5972,7 +5972,7 @@
   creator_role: "dir."
   year: 2025
   eval: "disliked"
-  image: "/assets/images/thoughts/tv/love_death_robots_season_4.jpg"
+  image: "/assets/images/thoughts/tv/love-death-robots-season-4.jpg"
   posted: "2025-05-20"
   revised: "2025-05-20"
   text: |
@@ -5985,7 +5985,7 @@
   creator_role: "dir."
   year: 2025
   eval: "liked"
-  image: "/assets/images/thoughts/tv/black_mirror_season_7.jpg"
+  image: "/assets/images/thoughts/tv/black-mirror-season-7.jpg"
   posted: "2025-04-15"
   revised: "2025-04-15"
   text: |
@@ -5999,7 +5999,7 @@
   creator_role: "dir."
   year: 2025
   eval: "loved"
-  image: "/assets/images/thoughts/tv/severance_season_2.jpg"
+  image: "/assets/images/thoughts/tv/severance-season-2.jpg"
   posted: "2025-03-30"
   revised: "2025-03-30"
   text: |
@@ -6029,7 +6029,7 @@
   creator_role: "dir."
   year: 2024
   eval: "loved"
-  image: "/assets/images/thoughts/tv/silo_season_2.jpg"
+  image: "/assets/images/thoughts/tv/silo-season-2.jpg"
   posted: "2025-01-18"
   revised: "2025-01-18"
   text: |
@@ -6043,7 +6043,7 @@
   creator_role: "dir."
   year: 2024
   eval: "loved"
-  image: "/assets/images/thoughts/tv/penguin_season_1.jpg"
+  image: "/assets/images/thoughts/tv/penguin-season-1.jpg"
   posted: "2024-12-27"
   revised: "2024-12-27"
   text: |
@@ -6058,7 +6058,7 @@
   creator_role: "dir."
   year: 2024
   eval: "meh..."
-  image: "/assets/images/thoughts/tv/lotr_rop_season_2.jpg"
+  image: "/assets/images/thoughts/tv/lotr-rop-season-2.jpg"
   posted: "2024-10-20"
   revised: "2024-10-20"
   text: |
@@ -6072,7 +6072,7 @@
   creator_role: "dir."
   year: 2024
   eval: "disliked"
-  image: "/assets/images/thoughts/tv/house_of_the_dragon_season_2.jpg"
+  image: "/assets/images/thoughts/tv/house-of-the-dragon-season-2.jpg"
   posted: "2024-11-18"
   revised: "2024-11-18"
   text: |
@@ -6086,7 +6086,7 @@
   creator_role: "creator"
   year: 2017
   eval: "loved"
-  image: "/assets/images/thoughts/tv/broadchurch_season_3.jpg"
+  image: "/assets/images/thoughts/tv/broadchurch-season-3.jpg"
   posted: "2024-10-13"
   revised: "2024-10-13"
   text: |
@@ -6100,7 +6100,7 @@
   creator_role: "creator"
   year: 2015
   eval: "loved"
-  image: "/assets/images/thoughts/tv/broadchurch_season_2.jpg"
+  image: "/assets/images/thoughts/tv/broadchurch-season-2.jpg"
   posted: "2024-10-08"
   revised: "2024-10-08"
   text: |
@@ -6114,7 +6114,7 @@
   creator_role: "creator"
   year: 2013
   eval: "liked"
-  image: "/assets/images/thoughts/tv/broadchurch_season_1.jpg"
+  image: "/assets/images/thoughts/tv/broadchurch-season-1.jpg"
   posted: "2024-08-03"
   revised: "2024-08-03"
   text: |
@@ -6128,7 +6128,7 @@
   creator_role: "dir."
   year: 2024
   eval: "loved"
-  image: "/assets/images/thoughts/tv/bear_season_3.jpg"
+  image: "/assets/images/thoughts/tv/bear-season-3.jpg"
   posted: "2024-07-11"
   revised: "2024-07-11"
   text: |
@@ -6144,7 +6144,7 @@
   creator_role: "dir."
   year: 2024
   eval: "loved"
-  image: "/assets/images/thoughts/tv/clarksons_farm_season_3.jpg"
+  image: "/assets/images/thoughts/tv/clarksons-farm-season-3.jpg"
   posted: "2024-05-20"
   revised: "2024-05-20"
   text: |
@@ -6172,7 +6172,7 @@
   creator_role: "dir."
   year: 2024
   eval: "loved"
-  image: "/assets/images/thoughts/tv/fallout_season_1.jpg"
+  image: "/assets/images/thoughts/tv/fallout-season-1.jpg"
   posted: "2024-04-28"
   revised: "2024-04-28"
   text: |
@@ -6186,7 +6186,7 @@
   creator_role: "dir."
   year: 2020
   eval: "liked"
-  image: "/assets/images/thoughts/tv/queens_gambit.jpg"
+  image: "/assets/images/thoughts/tv/queens-gambit.jpg"
   posted: "2024-04-18"
   revised: "2024-04-18"
   text: |
@@ -6200,7 +6200,7 @@
   creator_role: "dir."
   year: 2022
   eval: "loved"
-  image: "/assets/images/thoughts/tv/problem_with_jon_stewart_season_2.jpg"
+  image: "/assets/images/thoughts/tv/problem-with-jon-stewart-season-2.jpg"
   posted: "2024-02-20"
   revised: "2024-02-20"
   text: |
@@ -6216,7 +6216,7 @@
   creator_role: "dir."
   year: 2023
   eval: "loved"
-  image: "/assets/images/thoughts/tv/vigil_season_2.jpg"
+  image: "/assets/images/thoughts/tv/vigil-season-2.jpg"
   posted: "2024-01-17"
   revised: "2024-01-17"
   text: |
@@ -6232,7 +6232,7 @@
   creator_role: "dir."
   year: 2023
   eval: "liked"
-  image: "/assets/images/thoughts/tv/for_all_mankind_season_4.jpg"
+  image: "/assets/images/thoughts/tv/for-all-mankind-season-4.jpg"
   posted: "2024-01-07"
   revised: "2024-01-07"
   text: |
@@ -6246,7 +6246,7 @@
   creator_role: "created by"
   year: 2022
   eval: "loved"
-  image: "/assets/images/thoughts/tv/fleishman_is_in_trouble.jpg"
+  image: "/assets/images/thoughts/tv/fleishman-is-in-trouble.jpg"
   posted: "2023-12-02"
   revised: "2023-12-02"
   text: |
@@ -6261,7 +6261,7 @@
   creator_role: "created by"
   year: 2023
   eval: "liked"
-  image: "/assets/images/thoughts/tv/scavengers_reign.jpg"
+  image: "/assets/images/thoughts/tv/scavengers-reign.jpg"
   posted: "2023-11-16"
   revised: "2023-11-16"
   text: |
@@ -6274,7 +6274,7 @@
   creator_role: "dir."
   year: 2023
   eval: "meh..."
-  image: "/assets/images/thoughts/tv/mandalorian_season_3.jpg"
+  image: "/assets/images/thoughts/tv/mandalorian-season-3.jpg"
   posted: "2023-11-08"
   revised: "2023-11-08"
   text: |
@@ -6288,7 +6288,7 @@
   creator_role: "dir."
   year: 2023
   eval: "loved"
-  image: "/assets/images/thoughts/tv/happy_valley_season_3.jpg"
+  image: "/assets/images/thoughts/tv/happy-valley-season-3.jpg"
   posted: "2023-10-04"
   revised: "2023-10-04"
   text: |
@@ -6301,7 +6301,7 @@
   creator_role: "dir."
   year: 2013
   eval: "loved"
-  image: "/assets/images/thoughts/tv/happy_valley_season_1.jpg"
+  image: "/assets/images/thoughts/tv/happy-valley-season-1.jpg"
   posted: "2023-10-04"
   revised: "2023-10-04"
   text: |
@@ -6315,7 +6315,7 @@
   creator_role: "dir."
   year: 2016
   eval: "loved"
-  image: "/assets/images/thoughts/tv/happy_valley_season_2.jpg"
+  image: "/assets/images/thoughts/tv/happy-valley-season-2.jpg"
   posted: "2023-10-01"
   revised: "2023-10-01"
   text: |
@@ -6329,7 +6329,7 @@
   creator_role: "dir."
   year: 2022
   eval: "meh..."
-  image: "/assets/images/thoughts/tv/crown_season_5.jpg"
+  image: "/assets/images/thoughts/tv/crown-season-5.jpg"
   posted: "2023-09-11"
   revised: "2023-09-11"
   text: |
@@ -6343,7 +6343,7 @@
   creator_role: "dir."
   year: 2020
   eval: "loved"
-  image: "/assets/images/thoughts/tv/crown_season_4.jpg"
+  image: "/assets/images/thoughts/tv/crown-season-4.jpg"
   posted: "2023-08-22"
   revised: "2023-08-22"
   text: |
@@ -6357,7 +6357,7 @@
   creator_role: "dir."
   year: 2019
   eval: "loved"
-  image: "/assets/images/thoughts/tv/crown_season_3.jpg"
+  image: "/assets/images/thoughts/tv/crown-season-3.jpg"
   posted: "2023-08-22"
   revised: "2023-08-22"
   text: |
@@ -6370,7 +6370,7 @@
   creator_role: "dir."
   year: 2017
   eval: "loved"
-  image: "/assets/images/thoughts/tv/crown_season_2.jpg"
+  image: "/assets/images/thoughts/tv/crown-season-2.jpg"
   posted: "2023-08-18"
   revised: "2023-08-18"
   text: |
@@ -6383,7 +6383,7 @@
   creator_role: "dir."
   year: 2016
   eval: "loved"
-  image: "/assets/images/thoughts/tv/crown_season_1.jpg"
+  image: "/assets/images/thoughts/tv/crown-season-1.jpg"
   posted: "2023-08-11"
   revised: "2023-08-11"
   text: |
@@ -6397,7 +6397,7 @@
   creator_role: "dir."
   year: 2023
   eval: "loved"
-  image: "/assets/images/thoughts/tv/bear_season_2.jpg"
+  image: "/assets/images/thoughts/tv/bear-season-2.jpg"
   posted: "2023-07-14"
   revised: "2023-07-14"
   text: |
@@ -6411,7 +6411,7 @@
   creator_role: "dir."
   year: 2023
   eval: "loved"
-  image: "/assets/images/thoughts/tv/silo_season_1.jpg"
+  image: "/assets/images/thoughts/tv/silo-season-1.jpg"
   posted: "2023-07-03"
   revised: "2023-07-03"
   text: |
@@ -6425,7 +6425,7 @@
   creator_role: "dir."
   year: 2023
   eval: "meh..."
-  image: "/assets/images/thoughts/tv/black_mirror_season_6.jpg"
+  image: "/assets/images/thoughts/tv/black-mirror-season-6.jpg"
   posted: "2023-06-19"
   revised: "2023-06-19"
   text: |
@@ -6439,7 +6439,7 @@
   creator_role: "dir."
   year: 2022
   eval: "disliked"
-  image: "/assets/images/thoughts/tv/for_all_mankind_season_3.jpg"
+  image: "/assets/images/thoughts/tv/for-all-mankind-season-3.jpg"
   posted: "2023-06-16"
   revised: "2023-06-16"
   text: |
@@ -6454,7 +6454,7 @@
   creator_role: "dir."
   year: 2021
   eval: "loved"
-  image: "/assets/images/thoughts/tv/for_all_mankind_season_2.jpg"
+  image: "/assets/images/thoughts/tv/for-all-mankind-season-2.jpg"
   posted: "2023-06-10"
   revised: "2023-06-10"
   text: |
@@ -6468,7 +6468,7 @@
   creator_role: "dir."
   year: 2019
   eval: "loved"
-  image: "/assets/images/thoughts/tv/for_all_mankind_season_1.jpg"
+  image: "/assets/images/thoughts/tv/for-all-mankind-season-1.jpg"
   posted: "2023-05-29"
   revised: "2023-05-29"
   text: |
@@ -6483,7 +6483,7 @@
   creator_role: "dir."
   year: 2023
   eval: "loved"
-  image: "/assets/images/thoughts/tv/long_season.jpg"
+  image: "/assets/images/thoughts/tv/long-season.jpg"
   posted: "2023-05-12"
   revised: "2023-05-12"
   text: |
@@ -6497,7 +6497,7 @@
   creator_role: "dir."
   year: 2022
   eval: "liked"
-  image: "/assets/images/thoughts/tv/bear_season_1.jpg"
+  image: "/assets/images/thoughts/tv/bear-season-1.jpg"
   posted: "2023-04-27"
   revised: "2023-04-27"
   text: |
@@ -6511,7 +6511,7 @@
   creator_role: "dir."
   year: 2023
   eval: "loved"
-  image: "/assets/images/thoughts/tv/clarksons_farm_season_2.jpg"
+  image: "/assets/images/thoughts/tv/clarksons-farm-season-2.jpg"
   posted: "2023-03-26"
   revised: "2023-03-26"
   text: |
@@ -6525,7 +6525,7 @@
   creator_role: "dir."
   year: 2023
   eval: "liked"
-  image: "/assets/images/thoughts/tv/poker_face_season_1.jpg"
+  image: "/assets/images/thoughts/tv/poker-face-season-1.jpg"
   posted: "2023-03-12"
   revised: "2023-03-12"
   text: |
@@ -6537,7 +6537,7 @@
   creator_role: "dir."
   year: 2022
   eval: "loved"
-  image: "/assets/images/thoughts/tv/capture_season_2.jpg"
+  image: "/assets/images/thoughts/tv/capture-season-2.jpg"
   posted: "2023-02-22"
   revised: "2023-02-22"
   text: |
@@ -6549,7 +6549,7 @@
   creator_role: "dir."
   year: 2019
   eval: "loved"
-  image: "/assets/images/thoughts/tv/capture_season_1.jpg"
+  image: "/assets/images/thoughts/tv/capture-season-1.jpg"
   posted: "2023-02-20"
   revised: "2023-02-20"
   text: |
@@ -6563,7 +6563,7 @@
   creator_role: "dir."
   year: 2023
   eval: "loved"
-  image: "/assets/images/thoughts/tv/why_try_to_change_me_now.jpg"
+  image: "/assets/images/thoughts/tv/why-try-to-change-me-now.jpg"
   posted: "2023-01-20"
   revised: "2023-01-20"
   text: |
@@ -6577,7 +6577,7 @@
   creator_role: "dir."
   year: 2018
   eval: "loved"
-  image: "/assets/images/thoughts/tv/atlanta_season_2.jpg"
+  image: "/assets/images/thoughts/tv/atlanta-season-2.jpg"
   posted: "2022-12-18"
   revised: "2022-12-18"
   text: |
@@ -6591,7 +6591,7 @@
   creator_role: "dir."
   year: 2016
   eval: "loved"
-  image: "/assets/images/thoughts/tv/atlanta_season_1.jpg"
+  image: "/assets/images/thoughts/tv/atlanta-season-1.jpg"
   posted: "2022-12-18"
   revised: "2022-12-18"
   text: |
@@ -6607,7 +6607,7 @@
   creator_role: "dir."
   year: 2019
   eval: "loved"
-  image: "/assets/images/thoughts/tv/a_confession.jpg"
+  image: "/assets/images/thoughts/tv/a-confession.jpg"
   posted: "2022-11-03"
   revised: "2022-11-03"
   text: |
@@ -6621,7 +6621,7 @@
   creator_role: "dir."
   year: 2022
   eval: "loved"
-  image: "/assets/images/thoughts/tv/house_of_the_dragon_season_1.jpg"
+  image: "/assets/images/thoughts/tv/house-of-the-dragon-season-1.jpg"
   posted: "2022-10-30"
   revised: "2022-10-30"
   text: |
@@ -6635,7 +6635,7 @@
   creator_role: "dir."
   year: 2021
   eval: "loved"
-  image: "/assets/images/thoughts/tv/problem_with_jon_stewart_season_1.jpg"
+  image: "/assets/images/thoughts/tv/problem-with-jon-stewart-season-1.jpg"
   posted: "2022-10-26"
   revised: "2022-10-26"
   text: |
@@ -6648,7 +6648,7 @@
   creator_role: "dir."
   year: 2022
   eval: "liked"
-  image: "/assets/images/thoughts/tv/lotr_rop_season_1.jpg"
+  image: "/assets/images/thoughts/tv/lotr-rop-season-1.jpg"
   posted: "2022-10-15"
   revised: "2022-10-15"
   text: |
@@ -6676,7 +6676,7 @@
   creator_role: "dir."
   year: 2022
   eval: "loved"
-  image: "/assets/images/thoughts/tv/rehearsal_season_1.jpg"
+  image: "/assets/images/thoughts/tv/rehearsal-season-1.jpg"
   posted: "2022-08-10"
   revised: "2022-08-10"
   text: |
@@ -6691,7 +6691,7 @@
   creator_role: "dir."
   year: 2021
   eval: "loved"
-  image: "/assets/images/thoughts/tv/how_to_with_john_wilson_season_2.jpg"
+  image: "/assets/images/thoughts/tv/how-to-with-john-wilson-season-2.jpg"
   posted: "2022-08-09"
   revised: "2022-08-09"
   text: |
@@ -6705,7 +6705,7 @@
   creator_role: "dir."
   year: 2017
   eval: "loved"
-  image: "/assets/images/thoughts/tv/better_call_saul_season_3.jpg"
+  image: "/assets/images/thoughts/tv/better-call-saul-season-3.jpg"
   posted: "2022-07-20"
   revised: "2022-07-20"
   text: |
@@ -6719,7 +6719,7 @@
   creator_role: "dir."
   year: 2016
   eval: "loved"
-  image: "/assets/images/thoughts/tv/better_call_saul_season_2.jpg"
+  image: "/assets/images/thoughts/tv/better-call-saul-season-2.jpg"
   posted: "2022-07-14"
   revised: "2022-07-14"
   text: |
@@ -6733,7 +6733,7 @@
   creator_role: "dir."
   year: 2015
   eval: "loved"
-  image: "/assets/images/thoughts/tv/better_call_saul_season_1.jpg"
+  image: "/assets/images/thoughts/tv/better-call-saul-season-1.jpg"
   posted: "2022-07-14"
   revised: "2022-07-14"
   text: |
@@ -6749,7 +6749,7 @@
   creator_role: "dir."
   year: 2012
   eval: "loved"
-  image: "/assets/images/thoughts/tv/breaking_bad_season_5.jpg"
+  image: "/assets/images/thoughts/tv/breaking-bad-season-5.jpg"
   posted: "2022-07-11"
   revised: "2022-07-11"
   text: |
@@ -6763,7 +6763,7 @@
   creator_role: "dir."
   year: 2011
   eval: "loved"
-  image: "/assets/images/thoughts/tv/breaking_bad_season_4.jpg"
+  image: "/assets/images/thoughts/tv/breaking-bad-season-4.jpg"
   posted: "2022-07-09"
   revised: "2022-07-09"
   text: |
@@ -6777,7 +6777,7 @@
   creator_role: "dir."
   year: 2010
   eval: "loved"
-  image: "/assets/images/thoughts/tv/breaking_bad_season_3.jpg"
+  image: "/assets/images/thoughts/tv/breaking-bad-season-3.jpg"
   posted: "2022-07-04"
   revised: "2022-07-04"
   text: |
@@ -6791,7 +6791,7 @@
   creator_role: "dir."
   year: 2009
   eval: "loved"
-  image: "/assets/images/thoughts/tv/breaking_bad_season_2.jpg"
+  image: "/assets/images/thoughts/tv/breaking-bad-season-2.jpg"
   posted: "2022-07-01"
   revised: "2022-07-01"
   text: |
@@ -6805,7 +6805,7 @@
   creator_role: "dir."
   year: 2008
   eval: "liked"
-  image: "/assets/images/thoughts/tv/breaking_bad_season_1.jpg"
+  image: "/assets/images/thoughts/tv/breaking-bad-season-1.jpg"
   posted: "2022-06-28"
   revised: "2022-06-28"
   text: |
@@ -6819,7 +6819,7 @@
   creator_role: "dir."
   year: 2022
   eval: "liked"
-  image: "/assets/images/thoughts/tv/love_death_robots_season_3.jpg"
+  image: "/assets/images/thoughts/tv/love-death-robots-season-3.jpg"
   posted: "2022-05-21"
   revised: "2022-05-21"
   text: |
@@ -6833,7 +6833,7 @@
   creator_role: "dir."
   year: 2022
   eval: "loved"
-  image: "/assets/images/thoughts/tv/severance_season_1.jpg"
+  image: "/assets/images/thoughts/tv/severance-season-1.jpg"
   posted: "2022-05-03"
   revised: "2022-05-03"
   text: |
@@ -6848,7 +6848,7 @@
   creator_role: "dir."
   year: 2021
   eval: "liked"
-  image: "/assets/images/thoughts/tv/clarksons_farm_season_1.jpg"
+  image: "/assets/images/thoughts/tv/clarksons-farm-season-1.jpg"
   posted: "2022-04-21"
   revised: "2022-04-21"
   text: |
@@ -6862,7 +6862,7 @@
   creator_role: "created by"
   year: 2013
   eval: "loved"
-  image: "/assets/images/thoughts/tv/endeavour_season_1.jpg"
+  image: "/assets/images/thoughts/tv/endeavour-season-1.jpg"
   posted: "2022-03-24"
   revised: "2022-03-24"
   text: |
@@ -6875,7 +6875,7 @@
   creator_role: "created by"
   year: 2022
   eval: "loved"
-  image: "/assets/images/thoughts/tv/this_is_going_to_hurt.jpg"
+  image: "/assets/images/thoughts/tv/this-is-going-to-hurt.jpg"
   posted: "2022-03-12"
   revised: "2022-03-12"
   text: |
@@ -6891,7 +6891,7 @@
   creator_role: "dir."
   year: 2014
   eval: "liked"
-  image: "/assets/images/thoughts/tv/silk_season_3.jpg"
+  image: "/assets/images/thoughts/tv/silk-season-3.jpg"
   posted: "2022-01-30"
   revised: "2022-01-30"
   text: |
@@ -6905,7 +6905,7 @@
   creator_role: "dir."
   year: 2012
   eval: "loved"
-  image: "/assets/images/thoughts/tv/silk_season_2.jpg"
+  image: "/assets/images/thoughts/tv/silk-season-2.jpg"
   posted: "2022-01-30"
   revised: "2022-01-30"
   text: |
@@ -6918,7 +6918,7 @@
   creator_role: "dir."
   year: 2011
   eval: "loved"
-  image: "/assets/images/thoughts/tv/silk_season_1.jpg"
+  image: "/assets/images/thoughts/tv/silk-season-1.jpg"
   posted: "2022-01-29"
   revised: "2022-01-29"
   text: |
@@ -6947,7 +6947,7 @@
   creator_role: "dir."
   year: 2021
   eval: "loved"
-  image: "/assets/images/thoughts/tv/vigil_season_1.jpg"
+  image: "/assets/images/thoughts/tv/vigil-season-1.jpg"
   posted: "2021-09-27"
   revised: "2021-09-27"
   text: |
@@ -6961,7 +6961,7 @@
   creator_role: "created by"
   year: 2020
   eval: "loved"
-  image: "/assets/images/thoughts/tv/midnight_gospel.jpg"
+  image: "/assets/images/thoughts/tv/midnight-gospel.jpg"
   posted: "2021-09-05"
   revised: "2021-09-05"
   text: |
@@ -6974,7 +6974,7 @@
   creator_role: "dir."
   year: 2021
   eval: "loved"
-  image: "/assets/images/thoughts/tv/odd_taxi.jpg"
+  image: "/assets/images/thoughts/tv/odd-taxi.jpg"
   posted: "2021-09-03"
   revised: "2021-09-03"
   text: |
@@ -6988,7 +6988,7 @@
   creator_role: "dir."
   year: 2014
   eval: "loved"
-  image: "/assets/images/thoughts/tv/true_detective_season_1.jpg"
+  image: "/assets/images/thoughts/tv/true-detective-season-1.jpg"
   posted: "2021-07-14"
   revised: "2021-07-14"
   text: |
@@ -7002,7 +7002,7 @@
   creator_role: "dir."
   year: 2019
   eval: "meh..."
-  image: "/assets/images/thoughts/tv/mandalorian_season_1.jpg"
+  image: "/assets/images/thoughts/tv/mandalorian-season-1.jpg"
   posted: "2021-06-14"
   revised: "2021-06-14"
   text: |
@@ -7016,7 +7016,7 @@
   creator_role: "dir."
   year: 2021
   eval: "loved"
-  image: "/assets/images/thoughts/tv/love_death_robots_season_2.jpg"
+  image: "/assets/images/thoughts/tv/love-death-robots-season-2.jpg"
   posted: "2021-05-15"
   revised: "2021-05-15"
   text: |
@@ -7032,7 +7032,7 @@
   creator_role: "created by"
   year: 2011
   eval: "loved"
-  image: "/assets/images/thoughts/tv/dont_hug_me_im_scared.jpg"
+  image: "/assets/images/thoughts/tv/dont-hug-me-im-scared.jpg"
   posted: "2021-03-02"
   revised: "2021-03-02"
   text: |
@@ -7047,7 +7047,7 @@
   creator_role: "dir."
   year: 2020
   eval: "loved"
-  image: "/assets/images/thoughts/tv/how_to_with_john_wilson_season_1.jpg"
+  image: "/assets/images/thoughts/tv/how-to-with-john-wilson-season-1.jpg"
   posted: "2021-02-28"
   revised: "2021-02-28"
   text: |
@@ -7062,7 +7062,7 @@
   creator_role: "created by"
   year: 2004
   eval: "loved"
-  image: "/assets/images/thoughts/tv/paranoia_agent.jpg"
+  image: "/assets/images/thoughts/tv/paranoia-agent.jpg"
   posted: "2020-09-19"
   revised: "2020-09-19"
   text: |
@@ -7076,7 +7076,7 @@
   creator_role: "dir."
   year: 2019
   eval: "loved"
-  image: "/assets/images/thoughts/tv/love_death_robots_season_1.jpg"
+  image: "/assets/images/thoughts/tv/love-death-robots-season-1.jpg"
   posted: "2020-07-06"
   revised: "2020-07-06"
   text: |
@@ -7092,7 +7092,7 @@
   creator_role: "dir."
   year: 2018
   eval: "meh..."
-  image: "/assets/images/thoughts/tv/black_mirror_season_bandersnatch.jpg"
+  image: "/assets/images/thoughts/tv/black-mirror-season-bandersnatch.jpg"
   posted: "2019-09-05"
   revised: "2019-09-05"
   text: |
@@ -7106,7 +7106,7 @@
   creator_role: "dir."
   year: 2014
   eval: "loved"
-  image: "/assets/images/thoughts/tv/black_mirror_season_white_christmas.jpg"
+  image: "/assets/images/thoughts/tv/black-mirror-season-white-christmas.jpg"
   posted: "2018-08-31"
   revised: "2018-08-31"
   text: |
@@ -7122,7 +7122,7 @@
   creator_role: "dir."
   year: 2011
   eval: "loved"
-  image: "/assets/images/thoughts/tv/black_mirror_season_1.jpg"
+  image: "/assets/images/thoughts/tv/black-mirror-season-1.jpg"
   posted: "2018-07-19"
   revised: "2018-07-19"
   text: |
@@ -7162,7 +7162,7 @@
   year: 2026
   eval: "liked"
   genre: "metroidvania"
-  image: "/assets/images/thoughts/games/grime_ii.jpg"
+  image: "/assets/images/thoughts/games/grime-ii.jpg"
   posted: "2026-04-09"
   revised: "2026-04-09"
   text: |
@@ -7177,7 +7177,7 @@
   year: 2025
   eval: "loved"
   genre: "rhythm"
-  image: "/assets/images/thoughts/games/rhythm_doctor.jpg"
+  image: "/assets/images/thoughts/games/rhythm-doctor.jpg"
   posted: "2026-03-31"
   revised: "2026-03-31"
   text: |
@@ -7192,7 +7192,7 @@
   year: 2026
   eval: "liked"
   genre: "survival horror"
-  image: "/assets/images/thoughts/games/resident_evil_requiem.jpg"
+  image: "/assets/images/thoughts/games/resident-evil-requiem.jpg"
   posted: "2026-03-10"
   revised: "2026-03-10"
   text: |
@@ -7207,7 +7207,7 @@
   year: 2026
   eval: "loved"
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/nioh_3.jpg"
+  image: "/assets/images/thoughts/games/nioh-3.jpg"
   posted: "2026-02-20"
   revised: "2026-02-20"
   text: |
@@ -7224,7 +7224,7 @@
   year: 2026
   eval: "loved"
   genre: "metroidvania"
-  image: "/assets/images/thoughts/games/mio_memories_in_orbit.jpg"
+  image: "/assets/images/thoughts/games/mio-memories-in-orbit.jpg"
   posted: "2026-02-06"
   revised: "2026-02-06"
   text: |
@@ -7269,7 +7269,7 @@
   year: 2025
   eval: "loved"
   genre: "rhythm"
-  image: "/assets/images/thoughts/games/lumines_arise.jpg"
+  image: "/assets/images/thoughts/games/lumines-arise.jpg"
   posted: "2025-11-29"
   revised: "2025-11-29"
   text: |
@@ -7284,7 +7284,7 @@
   year: 2025
   eval: "meh..."
   genre: "RPG"
-  image: "/assets/images/thoughts/games/outer_worlds_2.jpg"
+  image: "/assets/images/thoughts/games/outer-worlds-2.jpg"
   posted: "2025-11-09"
   revised: "2025-11-09"
   text: |
@@ -7314,7 +7314,7 @@
   year: 2025
   eval: "loved"
   genre: "survival horror"
-  image: "/assets/images/thoughts/games/silent_hill_f.jpg"
+  image: "/assets/images/thoughts/games/silent-hill-f.jpg"
   posted: "2025-10-05"
   revised: "2025-10-05"
   text: |
@@ -7329,7 +7329,7 @@
   year: 2025
   eval: "loved"
   genre: "metroidvania"
-  image: "/assets/images/thoughts/games/hollow_knight_silksong.jpg"
+  image: "/assets/images/thoughts/games/hollow-knight-silksong.jpg"
   posted: "2025-09-25"
   revised: "2025-09-25"
   text: |
@@ -7346,7 +7346,7 @@
   year: 2024
   eval: "disliked"
   genre: "adventure"
-  image: "/assets/images/thoughts/games/phoenix_springs.jpg"
+  image: "/assets/images/thoughts/games/phoenix-springs.jpg"
   posted: "2025-09-01"
   revised: "2025-09-01"
   text: |
@@ -7393,7 +7393,7 @@
   year: 2025
   eval: "meh..."
   genre: "action"
-  image: "/assets/images/thoughts/games/ai_limit.jpg"
+  image: "/assets/images/thoughts/games/ai-limit.jpg"
   posted: "2025-08-15"
   revised: "2025-08-15"
   text: |
@@ -7423,7 +7423,7 @@
   year: 2020
   eval: "loved"
   genre: "interactive fiction"
-  image: "/assets/images/thoughts/games/kentucky_route_zero.jpg"
+  image: "/assets/images/thoughts/games/kentucky-route-zero.jpg"
   posted: "2025-08-06"
   revised: "2025-08-06"
   text: |
@@ -7473,7 +7473,7 @@
   year: 2022
   eval: "disliked"
   genre: "rhythm"
-  image: "/assets/images/thoughts/games/deemo_ii.jpg"
+  image: "/assets/images/thoughts/games/deemo-ii.jpg"
   posted: "2025-07-24"
   revised: "2025-07-24"
   text: |
@@ -7503,7 +7503,7 @@
   year: 2013
   eval: "loved"
   genre: "interactive fiction"
-  image: "/assets/images/thoughts/games/wolf_among_us.jpg"
+  image: "/assets/images/thoughts/games/wolf-among-us.jpg"
   posted: "2025-07-06"
   revised: "2025-07-06"
   text: |
@@ -7520,7 +7520,7 @@
   year: 2021
   eval: "meh..."
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/death_stranding_directors_cut.jpg"
+  image: "/assets/images/thoughts/games/death-stranding-directors-cut.jpg"
   posted: "2025-07-01"
   revised: "2025-07-01"
   text: |
@@ -7535,7 +7535,7 @@
   year: 2024
   eval: "disliked"
   genre: "action"
-  image: "/assets/images/thoughts/games/stellar_blade.jpg"
+  image: "/assets/images/thoughts/games/stellar-blade.jpg"
   posted: "2025-06-25"
   revised: "2025-06-25"
   text: |
@@ -7550,7 +7550,7 @@
   year: 2025
   eval: "loved"
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/lies_of_p_overture.jpg"
+  image: "/assets/images/thoughts/games/lies-of-p-overture.jpg"
   posted: "2025-06-17"
   revised: "2025-06-17"
   text: |
@@ -7567,7 +7567,7 @@
   year: 2025
   eval: "liked"
   genre: "RPG"
-  image: "/assets/images/thoughts/games/clair_obscur_expedition_33.jpg"
+  image: "/assets/images/thoughts/games/clair-obscur-expedition-33.jpg"
   posted: "2025-05-04"
   revised: "2025-05-04"
   text: |
@@ -7612,7 +7612,7 @@
   year: 2025
   eval: "liked"
   genre: "interactive fiction"
-  image: "/assets/images/thoughts/games/lost_records_bloom_and_rage.jpg"
+  image: "/assets/images/thoughts/games/lost-records-bloom-and-rage.jpg"
   posted: "2025-04-20"
   revised: "2025-04-20"
   text: |
@@ -7642,7 +7642,7 @@
   year: 2012
   eval: "loved"
   genre: "adventure"
-  image: "/assets/images/thoughts/games/unfinished_swan.jpg"
+  image: "/assets/images/thoughts/games/unfinished-swan.jpg"
   posted: "2025-04-09"
   revised: "2025-04-09"
   text: |
@@ -7657,7 +7657,7 @@
   year: 2021
   eval: "disliked"
   genre: "platformer"
-  image: "/assets/images/thoughts/games/psychonauts_2.jpg"
+  image: "/assets/images/thoughts/games/psychonauts-2.jpg"
   posted: "2025-04-07"
   revised: "2025-04-07"
   text: |
@@ -7672,7 +7672,7 @@
   year: 2025
   eval: "liked"
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/first_berserker.jpg"
+  image: "/assets/images/thoughts/games/first-berserker.jpg"
   posted: "2025-04-05"
   revised: "2025-04-05"
   text: |
@@ -7687,7 +7687,7 @@
   year: 2025
   eval: "loved"
   genre: "puzzle"
-  image: "/assets/images/thoughts/games/roottrees_are_dead.jpg"
+  image: "/assets/images/thoughts/games/roottrees-are-dead.jpg"
   posted: "2025-03-30"
   revised: "2025-03-30"
   text: |
@@ -7702,7 +7702,7 @@
   year: 2016
   eval: "disliked"
   genre: "action RPG"
-  image: "/assets/images/thoughts/games/hyper_light_drifter.jpg"
+  image: "/assets/images/thoughts/games/hyper-light-drifter.jpg"
   posted: "2025-03-26"
   revised: "2025-03-26"
   text: |
@@ -7717,7 +7717,7 @@
   year: 2025
   eval: "liked"
   genre: "metroidvania"
-  image: "/assets/images/thoughts/games/ender_magnolia.jpg"
+  image: "/assets/images/thoughts/games/ender-magnolia.jpg"
   posted: "2025-03-24"
   revised: "2025-03-24"
   text: |
@@ -7777,7 +7777,7 @@
   year: 2024
   eval: "liked"
   genre: "metroidvania"
-  image: "/assets/images/thoughts/games/crypt_custodian.jpg"
+  image: "/assets/images/thoughts/games/crypt-custodian.jpg"
   posted: "2025-03-08"
   revised: "2025-03-08"
   text: |
@@ -7792,7 +7792,7 @@
   year: 2024
   eval: "disliked"
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/indiana_jones_and_the_great_circle.jpg"
+  image: "/assets/images/thoughts/games/indiana-jones-and-the-great-circle.jpg"
   posted: "2025-03-03"
   revised: "2025-03-03"
   text: |
@@ -7807,7 +7807,7 @@
   year: 2025
   eval: "loved"
   genre: "RPG"
-  image: "/assets/images/thoughts/games/kingdom_come_deliverance_ii.jpg"
+  image: "/assets/images/thoughts/games/kingdom-come-deliverance-ii.jpg"
   posted: "2025-02-26"
   revised: "2025-02-26"
   text: |
@@ -7824,7 +7824,7 @@
   year: 2018
   eval: "loved"
   genre: "RPG"
-  image: "/assets/images/thoughts/games/kingdom_come_deliverance.jpg"
+  image: "/assets/images/thoughts/games/kingdom-come-deliverance.jpg"
   posted: "2025-02-05"
   revised: "2025-02-05"
   text: |
@@ -7839,7 +7839,7 @@
   year: 2024
   eval: "loved"
   genre: "metroidvania"
-  image: "/assets/images/thoughts/games/minishoot_adventures.jpg"
+  image: "/assets/images/thoughts/games/minishoot-adventures.jpg"
   posted: "2025-01-21"
   revised: "2025-01-21"
   text: |
@@ -7854,7 +7854,7 @@
   year: 2023
   eval: "loved"
   genre: "action"
-  image: "/assets/images/thoughts/games/armored_core_vi.jpg"
+  image: "/assets/images/thoughts/games/armored-core-vi.jpg"
   posted: "2024-12-25"
   revised: "2024-12-25"
   text: |
@@ -7887,7 +7887,7 @@
   year: 2011
   eval: "loved"
   genre: "puzzle"
-  image: "/assets/images/thoughts/games/portal_2.jpg"
+  image: "/assets/images/thoughts/games/portal-2.jpg"
   posted: "2024-12-12"
   revised: "2024-12-12"
   text: |
@@ -7932,7 +7932,7 @@
   year: 2021
   eval: "loved"
   genre: "adventure"
-  image: "/assets/images/thoughts/games/outer_wilds_echoes_of_the_eye.jpg"
+  image: "/assets/images/thoughts/games/outer-wilds-echoes-of-the-eye.jpg"
   posted: "2024-11-27"
   revised: "2024-11-27"
   text: |
@@ -7951,7 +7951,7 @@
   pin: true
   pin_order: "04-game-01"
   genre: "adventure"
-  image: "/assets/images/thoughts/games/outer_wilds.jpg"
+  image: "/assets/images/thoughts/games/outer-wilds.jpg"
   posted: "2024-11-26"
   revised: "2024-11-26"
   text: |
@@ -7970,7 +7970,7 @@
   year: 2016
   eval: "loved"
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/quantum_break.jpg"
+  image: "/assets/images/thoughts/games/quantum-break.jpg"
   posted: "2024-11-24"
   revised: "2024-11-24"
   text: |
@@ -7987,7 +7987,7 @@
   year: 2024
   eval: "loved"
   genre: "puzzle"
-  image: "/assets/images/thoughts/games/rise_of_the_golden_idol.jpg"
+  image: "/assets/images/thoughts/games/rise-of-the-golden-idol.jpg"
   posted: "2024-11-18"
   revised: "2024-11-18"
   text: |
@@ -8003,7 +8003,7 @@
   year: 2022
   eval: "loved"
   genre: "puzzle"
-  image: "/assets/images/thoughts/games/word_game.jpg"
+  image: "/assets/images/thoughts/games/word-game.jpg"
   posted: "2024-11-14"
   revised: "2024-11-14"
   text: |
@@ -8018,7 +8018,7 @@
   year: 2024
   eval: "loved"
   genre: "survival horror"
-  image: "/assets/images/thoughts/games/silent_hill_2_remake.jpg"
+  image: "/assets/images/thoughts/games/silent-hill-2-remake.jpg"
   posted: "2024-11-03"
   revised: "2024-11-03"
   text: |
@@ -8033,7 +8033,7 @@
   year: 2018
   eval: "meh..."
   genre: "open world"
-  image: "/assets/images/thoughts/games/red_dead_redemption_2.jpg"
+  image: "/assets/images/thoughts/games/red-dead-redemption-2.jpg"
   posted: "2024-11-02"
   revised: "2024-11-02"
   text: |
@@ -8047,7 +8047,7 @@
   year: 2021
   eval: "meh..."
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/alan_wake_remastered.jpg"
+  image: "/assets/images/thoughts/games/alan-wake-remastered.jpg"
   posted: "2024-10-31"
   revised: "2024-10-31"
   text: |
@@ -8062,7 +8062,7 @@
   year: 2024
   eval: "loved"
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/alan_wake_2_lake_house.jpg"
+  image: "/assets/images/thoughts/games/alan-wake-2-lake-house.jpg"
   posted: "2024-10-26"
   revised: "2024-10-26"
   text: |
@@ -8078,7 +8078,7 @@
   year: 2016
   eval: "meh..."
   genre: "adventure"
-  image: "/assets/images/thoughts/games/event_0.jpg"
+  image: "/assets/images/thoughts/games/event-0.jpg"
   posted: "2024-10-16"
   revised: "2024-10-16"
   text: |
@@ -8093,7 +8093,7 @@
   year: 2024
   eval: "meh..."
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/senuas_saga.jpg"
+  image: "/assets/images/thoughts/games/senuas-saga.jpg"
   posted: "2024-10-08"
   revised: "2024-10-08"
   text: |
@@ -8108,7 +8108,7 @@
   year: 2023
   eval: "disliked"
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/lords_of_the_fallen.jpg"
+  image: "/assets/images/thoughts/games/lords-of-the-fallen.jpg"
   posted: "2024-10-08"
   revised: "2024-10-08"
   text: |
@@ -8123,7 +8123,7 @@
   year: 2024
   eval: "loved"
   genre: "adventure"
-  image: "/assets/images/thoughts/games/thank_goodness_youre_here.jpg"
+  image: "/assets/images/thoughts/games/thank-goodness-youre-here.jpg"
   posted: "2024-10-07"
   revised: "2024-10-07"
   text: |
@@ -8155,7 +8155,7 @@
   year: 2023
   eval: "loved"
   genre: "RPG"
-  image: "/assets/images/thoughts/games/baldurs_gate_3.jpg"
+  image: "/assets/images/thoughts/games/baldurs-gate-3.jpg"
   posted: "2024-09-30"
   revised: "2024-09-30"
   text: |
@@ -8170,7 +8170,7 @@
   year: 2023
   eval: "loved"
   genre: "metroidvania"
-  image: "/assets/images/thoughts/games/blasphemous_2.jpg"
+  image: "/assets/images/thoughts/games/blasphemous-2.jpg"
   posted: "2024-09-24"
   revised: "2024-09-24"
   text: |
@@ -8185,7 +8185,7 @@
   year: 2024
   eval: "loved"
   genre: "platformer"
-  image: "/assets/images/thoughts/games/astro_bot.jpg"
+  image: "/assets/images/thoughts/games/astro-bot.jpg"
   posted: "2024-09-09"
   revised: "2024-09-09"
   text: |
@@ -8230,7 +8230,7 @@
   year: 2024
   eval: "meh..."
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/another_crabs_treasure.jpg"
+  image: "/assets/images/thoughts/games/another-crabs-treasure.jpg"
   posted: "2024-09-01"
   revised: "2024-09-01"
   text: |
@@ -8246,7 +8246,7 @@
   year: 2024
   eval: "disliked"
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/black_myth.jpg"
+  image: "/assets/images/thoughts/games/black-myth.jpg"
   posted: "2024-08-31"
   revised: "2024-08-31"
   text: |
@@ -8261,7 +8261,7 @@
   year: 2018
   eval: "loved"
   genre: "puzzle"
-  image: "/assets/images/thoughts/games/return_of_the_obra_dinn.jpg"
+  image: "/assets/images/thoughts/games/return-of-the-obra-dinn.jpg"
   posted: "2024-08-22"
   revised: "2024-08-22"
   text: |
@@ -8277,7 +8277,7 @@
   year: 2024
   eval: "loved"
   genre: "metroidvania"
-  image: "/assets/images/thoughts/games/nine_sols.jpg"
+  image: "/assets/images/thoughts/games/nine-sols.jpg"
   posted: "2024-08-18"
   revised: "2024-08-18"
   text: |
@@ -8292,7 +8292,7 @@
   year: 2023
   eval: "liked"
   genre: "rhythm action"
-  image: "/assets/images/thoughts/games/hi_fi_rush.jpg"
+  image: "/assets/images/thoughts/games/hi-fi-rush.jpg"
   posted: "2024-08-10"
   revised: "2024-08-10"
   text: |
@@ -8307,7 +8307,7 @@
   year: 2024
   eval: "loved"
   genre: "puzzle platformer"
-  image: "/assets/images/thoughts/games/animal_well.jpg"
+  image: "/assets/images/thoughts/games/animal-well.jpg"
   posted: "2024-08-05"
   revised: "2024-08-05"
   text: |
@@ -8322,7 +8322,7 @@
   year: 2024
   eval: "loved"
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/elden_ring_shadow_of_the_erdtree.jpg"
+  image: "/assets/images/thoughts/games/elden-ring-shadow-of-the-erdtree.jpg"
   posted: "2024-07-04"
   revised: "2024-07-04"
   text: |
@@ -8339,7 +8339,7 @@
   year: 2024
   eval: "liked"
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/alan_wake_2_night_springs.jpg"
+  image: "/assets/images/thoughts/games/alan-wake-2-night-springs.jpg"
   posted: "2024-06-21"
   revised: "2024-06-21"
   text: |
@@ -8354,7 +8354,7 @@
   year: 2024
   eval: "liked"
   genre: "action RPG"
-  image: "/assets/images/thoughts/games/rise_of_the_ronin.jpg"
+  image: "/assets/images/thoughts/games/rise-of-the-ronin.jpg"
   posted: "2024-06-17"
   revised: "2024-06-17"
   text: |
@@ -8399,7 +8399,7 @@
   year: 2022
   eval: "liked"
   genre: "simulation"
-  image: "/assets/images/thoughts/games/not_for_broadcast.jpg"
+  image: "/assets/images/thoughts/games/not-for-broadcast.jpg"
   posted: "2024-03-29"
   revised: "2024-03-29"
   text: |
@@ -8414,7 +8414,7 @@
   year: 2019
   eval: "loved"
   genre: "RPG"
-  image: "/assets/images/thoughts/games/disco_elysium.jpg"
+  image: "/assets/images/thoughts/games/disco-elysium.jpg"
   posted: "2024-02-25"
   revised: "2024-02-25"
   text: |
@@ -8431,7 +8431,7 @@
   year: 2015
   eval: "loved"
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/bloodborne_old_hunters.jpg"
+  image: "/assets/images/thoughts/games/bloodborne-old-hunters.jpg"
   posted: "2023-12-24"
   revised: "2023-12-24"
   text: |
@@ -8460,7 +8460,7 @@
   year: 2023
   eval: "loved"
   genre: "survival horror"
-  image: "/assets/images/thoughts/games/resident_evil_4_remake.jpg"
+  image: "/assets/images/thoughts/games/resident-evil-4-remake.jpg"
   posted: "2023-12-09"
   revised: "2023-12-09"
   text: |
@@ -8490,7 +8490,7 @@
   year: 2023
   eval: "loved"
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/alan_wake_2.jpg"
+  image: "/assets/images/thoughts/games/alan-wake-2.jpg"
   posted: "2023-11-14"
   revised: "2023-11-14"
   text: |
@@ -8524,7 +8524,7 @@
   year: 2010
   eval: "loved"
   genre: "puzzle"
-  image: "/assets/images/thoughts/games/ghost_trick.jpg"
+  image: "/assets/images/thoughts/games/ghost-trick.jpg"
   posted: "2023-10-26"
   revised: "2023-10-26"
   text: |
@@ -8539,7 +8539,7 @@
   year: 2020
   eval: "loved"
   genre: "metroidvania"
-  image: "/assets/images/thoughts/games/ori_and_the_will_of_the_wisps.jpg"
+  image: "/assets/images/thoughts/games/ori-and-the-will-of-the-wisps.jpg"
   posted: "2023-10-23"
   revised: "2023-10-23"
   text: |
@@ -8554,7 +8554,7 @@
   year: 2023
   eval: "loved"
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/lies_of_p.jpg"
+  image: "/assets/images/thoughts/games/lies-of-p.jpg"
   posted: "2023-10-11"
   revised: "2023-10-11"
   text: |
@@ -8569,7 +8569,7 @@
   year: 2023
   eval: "loved"
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/star_wars_jedi_survivor.jpg"
+  image: "/assets/images/thoughts/games/star-wars-jedi-survivor.jpg"
   posted: "2023-09-21"
   revised: "2023-09-21"
   text: |
@@ -8584,7 +8584,7 @@
   year: 2023
   eval: "meh..."
   genre: "action RPG"
-  image: "/assets/images/thoughts/games/remnant_ii.jpg"
+  image: "/assets/images/thoughts/games/remnant-ii.jpg"
   posted: "2023-08-24"
   text: |
     Expected real solo and online play; ten hours in, I fully understand what 'shooting yourself in the foot' means. ***Remnant II***'s procedurally generated maps reduce exploration to a lottery: rooms and corridors feel interchangeable rather than designed, and the environmental storytelling that a handcrafted space would support simply cannot exist in a procedural one. Mob-packing makes solo play nearly impossible past the first zone. The puzzles are unconvincing, with clues unclear and mechanics opaque, nothing like the precision of the triple-A puzzle design they seem to be imitating.
@@ -8599,7 +8599,7 @@
   year: 2023
   eval: "meh..."
   genre: "adventure"
-  image: "/assets/images/thoughts/games/oxenfree_ii.jpg"
+  image: "/assets/images/thoughts/games/oxenfree-ii.jpg"
   posted: "2023-08-12"
   revised: "2023-08-12"
   text: |
@@ -8614,7 +8614,7 @@
   year: 2014
   eval: "meh..."
   genre: "puzzle"
-  image: "/assets/images/thoughts/games/talos_principle.jpg"
+  image: "/assets/images/thoughts/games/talos-principle.jpg"
   posted: "2023-07-12"
   revised: "2023-07-12"
   text: |
@@ -8629,7 +8629,7 @@
   year: 2019
   eval: "loved"
   genre: "action platformer"
-  image: "/assets/images/thoughts/games/katana_zero.jpg"
+  image: "/assets/images/thoughts/games/katana-zero.jpg"
   posted: "2023-07-10"
   revised: "2023-07-10"
   text: |
@@ -8646,7 +8646,7 @@
   year: 2023
   eval: "loved"
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/legend_of_zelda.jpg"
+  image: "/assets/images/thoughts/games/legend-of-zelda.jpg"
   posted: "2023-07-03"
   revised: "2023-07-03"
   text: |
@@ -8678,7 +8678,7 @@
   year: 2017
   eval: "disliked"
   genre: "action RPG"
-  image: "/assets/images/thoughts/games/nier_automata.jpg"
+  image: "/assets/images/thoughts/games/nier-automata.jpg"
   posted: "2023-04-05"
   revised: "2023-04-05"
   text: |
@@ -8693,7 +8693,7 @@
   year: 2017
   eval: "loved"
   genre: "adventure"
-  image: "/assets/images/thoughts/games/night_in_the_woods.jpg"
+  image: "/assets/images/thoughts/games/night-in-the-woods.jpg"
   posted: "2023-03-31"
   revised: "2023-03-31"
   text: |
@@ -8710,7 +8710,7 @@
   year: 2022
   eval: "loved"
   genre: "puzzle"
-  image: "/assets/images/thoughts/games/case_of_the_golden_idol.jpg"
+  image: "/assets/images/thoughts/games/case-of-the-golden-idol.jpg"
   posted: "2023-03-29"
   revised: "2023-03-29"
   text: |
@@ -8725,7 +8725,7 @@
   year: 2023
   eval: "meh..."
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/wo_long_fallen_dynasty.jpg"
+  image: "/assets/images/thoughts/games/wo-long-fallen-dynasty.jpg"
   posted: "2023-03-19"
   revised: "2023-03-19"
   text: |
@@ -8740,7 +8740,7 @@
   year: 2011
   eval: "meh..."
   genre: "adventure"
-  image: "/assets/images/thoughts/games/to_the_moon.jpg"
+  image: "/assets/images/thoughts/games/to-the-moon.jpg"
   posted: "2023-03-06"
   revised: "2023-03-06"
   text: |
@@ -8785,7 +8785,7 @@
   year: 2021
   eval: "loved"
   genre: "co-op adventure"
-  image: "/assets/images/thoughts/games/it_takes_two.jpg"
+  image: "/assets/images/thoughts/games/it-takes-two.jpg"
   posted: "2022-11-26"
   revised: "2022-11-26"
   text: |
@@ -8800,7 +8800,7 @@
   year: 2021
   eval: "disliked"
   genre: "interactive fiction"
-  image: "/assets/images/thoughts/games/life_is_strange.jpg"
+  image: "/assets/images/thoughts/games/life-is-strange.jpg"
   posted: "2022-11-15"
   text: |
     I sleepwalked through the first half on sheer willpower past several crushingly dull 'puzzles'. ***Life Is Strange: True Colors***'s empathy power keeps shifting in definition between chapters, reducing Alex Chen to a plot device rather than a character: she feels what others feel, except when the game needs her not to, except when it needs her to again. *Life Is Strange* (2015)'s writing is not much better, but it makes one care about the characters. True Colors' five vivid colours are an empty shell underneath.
@@ -8815,7 +8815,7 @@
   year: 2015
   eval: "loved"
   genre: "metroidvania"
-  image: "/assets/images/thoughts/games/ori_and_the_blind_forest.jpg"
+  image: "/assets/images/thoughts/games/ori-and-the-blind-forest.jpg"
   posted: "2022-11-08"
   revised: "2022-11-08"
   text: |
@@ -8830,7 +8830,7 @@
   year: 2015
   eval: "disliked"
   genre: "RPG"
-  image: "/assets/images/thoughts/games/fallout_4.jpg"
+  image: "/assets/images/thoughts/games/fallout-4.jpg"
   posted: "2022-11-05"
   revised: "2022-11-05"
   text: |
@@ -8845,7 +8845,7 @@
   year: 2016
   eval: "disliked"
   genre: "RPG"
-  image: "/assets/images/thoughts/games/elder_scrolls_v.jpg"
+  image: "/assets/images/thoughts/games/elder-scrolls-v.jpg"
   posted: "2022-10-26"
   text: |
     This did not age well. In 2011, naturally the best open-world RPG: there were not many. But in 2022, open worlds have *Elden Ring* (2022), *Red Dead Redemption 2* (2018), and *Breath of the Wild* (2017); RPGs have the whole Fallout series and *The Outer Worlds* (2019). ***The Elder Scrolls V: Skyrim***'s mechanics are dated, radiant quests are lazy content generation, the RPG elements are rigid, and the dialogue reads like it was written by committee.
@@ -8877,7 +8877,7 @@
   year: 2020
   eval: "loved"
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/control_awe.jpg"
+  image: "/assets/images/thoughts/games/control-awe.jpg"
   posted: "2022-10-28"
   revised: "2022-10-28"
   text: |
@@ -8892,7 +8892,7 @@
   year: 2020
   eval: "meh..."
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/control_foundation.jpg"
+  image: "/assets/images/thoughts/games/control-foundation.jpg"
   posted: "2022-10-27"
   revised: "2022-10-27"
   text: |
@@ -8905,7 +8905,7 @@
   year: 2017
   eval: "loved"
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/legend_of_zelda_2.jpg"
+  image: "/assets/images/thoughts/games/legend-of-zelda-2.jpg"
   posted: "2022-10-20"
   revised: "2022-10-20"
   text: |
@@ -8922,7 +8922,7 @@
   year: 2015
   eval: "liked"
   genre: "interactive fiction"
-  image: "/assets/images/thoughts/games/life_is_strange_2.jpg"
+  image: "/assets/images/thoughts/games/life-is-strange-2.jpg"
   posted: "2022-09-29"
   revised: "2022-09-29"
   text: |
@@ -8937,7 +8937,7 @@
   year: 2017
   eval: "meh..."
   genre: "visual novel"
-  image: "/assets/images/thoughts/games/doki_doki_literature_club.jpg"
+  image: "/assets/images/thoughts/games/doki-doki-literature-club.jpg"
   posted: "2022-09-27"
   revised: "2022-09-27"
   text: |
@@ -8967,7 +8967,7 @@
   year: 2016
   eval: "liked"
   genre: "puzzle"
-  image: "/assets/images/thoughts/games/pony_island.jpg"
+  image: "/assets/images/thoughts/games/pony-island.jpg"
   posted: "2022-09-24"
   revised: "2022-09-24"
   text: |
@@ -9012,7 +9012,7 @@
   year: 2019
   eval: "meh..."
   genre: "RPG"
-  image: "/assets/images/thoughts/games/outer_worlds.jpg"
+  image: "/assets/images/thoughts/games/outer-worlds.jpg"
   posted: "2022-08-19"
   revised: "2022-08-19"
   text: |
@@ -9027,7 +9027,7 @@
   year: 2019
   eval: "disliked"
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/plague_tale.jpg"
+  image: "/assets/images/thoughts/games/plague-tale.jpg"
   posted: "2022-08-08"
   text: |
     Gameplay too monotonous; enemy AI comparatively thin. ***A Plague Tale: Innocence***'s puzzles are decent, but motivation to push forward shrinks as the story progresses, because the story is too thin to carry the mechanical repetition. The stealth lacks immersion: the protagonist encounters English soldiers carrying lanterns and smashes the lanterns rather than knocking the soldier unconscious and taking one. Logic at this basic a level should not fail.
@@ -9063,7 +9063,7 @@
   year: 2020
   eval: "loved"
   genre: "RPG"
-  image: "/assets/images/thoughts/games/cyberpunk_2077.jpg"
+  image: "/assets/images/thoughts/games/cyberpunk-2077.jpg"
   posted: "2022-07-29"
   revised: "2022-07-29"
   text: |
@@ -9078,7 +9078,7 @@
   year: 2019
   eval: "meh..."
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/days_gone.jpg"
+  image: "/assets/images/thoughts/games/days-gone.jpg"
   posted: "2022-07-10"
   revised: "2022-07-10"
   text: |
@@ -9108,7 +9108,7 @@
   year: 2021
   eval: "liked"
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/ghost_of_tsushima.jpg"
+  image: "/assets/images/thoughts/games/ghost-of-tsushima.jpg"
   posted: "2022-06-28"
   revised: "2022-06-28"
   text: |
@@ -9123,7 +9123,7 @@
   year: 2021
   eval: "loved"
   genre: "adventure"
-  image: "/assets/images/thoughts/games/forgotten_city.jpg"
+  image: "/assets/images/thoughts/games/forgotten-city.jpg"
   posted: "2022-06-22"
   revised: "2022-06-22"
   text: |
@@ -9138,7 +9138,7 @@
   year: 2019
   eval: "disliked"
   genre: "rhythm"
-  image: "/assets/images/thoughts/games/sayonara_wild_hearts.jpg"
+  image: "/assets/images/thoughts/games/sayonara-wild-hearts.jpg"
   posted: "2022-06-19"
   text: |
     As a 3D action-rhythm hybrid, ***Sayonara Wild Hearts***'s acceleration decay on the movement is set too high, and the camera never stays in one place for more than two bars, making the first-encounter experience disorienting. The music is nothing remarkable; those who enjoy shopping-centre pop-rock will love it.
@@ -9176,7 +9176,7 @@
   year: 2017
   eval: "loved"
   genre: "adventure"
-  image: "/assets/images/thoughts/games/what_remains_of_edith_finch.jpg"
+  image: "/assets/images/thoughts/games/what-remains-of-edith-finch.jpg"
   posted: "2022-06-13"
   revised: "2022-06-13"
   text: |
@@ -9191,7 +9191,7 @@
   year: 2016
   eval: "disliked"
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/salt_and_sanctuary.jpg"
+  image: "/assets/images/thoughts/games/salt-and-sanctuary.jpg"
   posted: "2022-06-12"
   text: |
     Finally figured out why ***Salt and Sanctuary***'s feel is so hair-tearingly bad: boss and player collision interact in ways that constantly shove the character around inside a 2D soulslike framework. A boss attack can move the character half a screen with no player input; one can only dodge through the boss during active attack frames, presumably because collision behaves differently during those windows. The bosses themselves are poorly designed; the Kraekan Wyrm is particularly memorable for the wrong reasons.
@@ -9221,7 +9221,7 @@
   year: 2015
   eval: "liked"
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/dark_souls_ii.jpg"
+  image: "/assets/images/thoughts/games/dark-souls-ii.jpg"
   posted: "2022-06-03"
   revised: "2022-06-03"
   text: |
@@ -9236,7 +9236,7 @@
   year: 2014
   eval: "loved"
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/dark_souls_ii_crown_ivory_kin.jpeg"
+  image: "/assets/images/thoughts/games/dark-souls-ii-crown-ivory-kin.jpeg"
   posted: "2022-06-08"
   revised: "2022-06-08"
   text: |
@@ -9249,7 +9249,7 @@
   year: 2014
   eval: "loved"
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/dark_souls_ii_crown_old_iron_king.jpg"
+  image: "/assets/images/thoughts/games/dark-souls-ii-crown-old-iron-king.jpg"
   posted: "2022-06-07"
   revised: "2022-06-07"
   text: |
@@ -9262,7 +9262,7 @@
   year: 2014
   eval: "loved"
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/dark_souls_ii_crown_sunken_king.jpeg"
+  image: "/assets/images/thoughts/games/dark-souls-ii-crown-sunken-king.jpeg"
   posted: "2022-06-06"
   revised: "2022-06-06"
   text: |
@@ -9275,7 +9275,7 @@
   year: 2020
   eval: "liked"
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/last_of_us_part_ii.jpg"
+  image: "/assets/images/thoughts/games/last-of-us-part-ii.jpg"
   posted: "2022-05-19"
   revised: "2022-05-19"
   text: |
@@ -9292,7 +9292,7 @@
   year: 2014
   eval: "loved"
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/last_of_us_left_behind.jpg"
+  image: "/assets/images/thoughts/games/last-of-us-left-behind.jpg"
   posted: "2022-05-08"
   revised: "2022-05-08"
   text: |
@@ -9307,7 +9307,7 @@
   year: 2014
   eval: "loved"
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/last_of_us_remastered.jpg"
+  image: "/assets/images/thoughts/games/last-of-us-remastered.jpg"
   posted: "2022-05-08"
   revised: "2022-05-08"
   text: |
@@ -9322,7 +9322,7 @@
   year: 2022
   eval: "liked"
   genre: "action RPG"
-  image: "/assets/images/thoughts/games/horizon_forbidden_west.jpg"
+  image: "/assets/images/thoughts/games/horizon-forbidden-west.jpg"
   posted: "2022-05-05"
   revised: "2022-05-05"
   text: |
@@ -9337,7 +9337,7 @@
   year: 2020
   eval: "liked"
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/nioh_2.jpg"
+  image: "/assets/images/thoughts/games/nioh-2.jpg"
   posted: "2022-04-27"
   revised: "2022-04-27"
   text: |
@@ -9352,7 +9352,7 @@
   year: 2017
   eval: "loved"
   genre: "metroidvania"
-  image: "/assets/images/thoughts/games/hollow_knight.jpg"
+  image: "/assets/images/thoughts/games/hollow-knight.jpg"
   posted: "2022-04-21"
   revised: "2022-04-21"
   text: |
@@ -9367,7 +9367,7 @@
   year: 2022
   eval: "loved"
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/elden_ring.jpg"
+  image: "/assets/images/thoughts/games/elden-ring.jpg"
   posted: "2022-04-10"
   revised: "2022-04-10"
   text: |
@@ -9401,7 +9401,7 @@
   year: 2019
   eval: "liked"
   genre: "action-adventure"
-  image: "/assets/images/thoughts/games/star_wars_jedi_fallen_order.jpg"
+  image: "/assets/images/thoughts/games/star-wars-jedi-fallen-order.jpg"
   posted: "2022-02-20"
   revised: "2022-02-20"
   text: |
@@ -9431,7 +9431,7 @@
   year: 2018
   eval: "loved"
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/dark_souls_remastered.jpg"
+  image: "/assets/images/thoughts/games/dark-souls-remastered.jpg"
   posted: "2021-12-22"
   revised: "2024-09-01"
   text: |
@@ -9447,7 +9447,7 @@
   year: 2012
   eval: "loved"
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/dark_souls_artorias.jpg"
+  image: "/assets/images/thoughts/games/dark-souls-artorias.jpg"
   posted: "2021-12-25"
   revised: "2024-09-01"
   text: |
@@ -9460,7 +9460,7 @@
   year: 2020
   eval: "liked"
   genre: "soulslike"
-  image: "/assets/images/thoughts/games/demons_souls_remake.jpg"
+  image: "/assets/images/thoughts/games/demons-souls-remake.jpg"
   posted: "2021-11-29"
   revised: "2021-11-29"
   text: |
@@ -9475,7 +9475,7 @@
   year: 2013
   eval: "liked"
   genre: "simulation"
-  image: "/assets/images/thoughts/games/papers_please.jpg"
+  image: "/assets/images/thoughts/games/papers-please.jpg"
   posted: "2021-03-24"
   revised: "2021-03-24"
   text: |
@@ -9490,7 +9490,7 @@
   year: 2015
   eval: "loved"
   genre: "walking simulator"
-  image: "/assets/images/thoughts/games/beginners_guide.jpg"
+  image: "/assets/images/thoughts/games/beginners-guide.jpg"
   posted: "2020-08-05"
   revised: "2020-08-05"
   text: |

@@ -234,8 +234,8 @@ I had been absorbing prog and jazz since secondary school, and by Cambridge the 
 
 <figure class="mp-singles">
   <div class="mp-singles__covers">
-    <img src="/assets/images/music/on_edamame.jpg" alt="on edamame EP cover" loading="lazy">
-    <img src="/assets/images/music/the_cam_after_rain.jpg" alt="the Cam after rain single cover" loading="lazy">
+    <img src="/assets/images/music/on-edamame.jpg" alt="on edamame EP cover" loading="lazy">
+    <img src="/assets/images/music/the-cam-after-rain.jpg" alt="the Cam after rain single cover" loading="lazy">
     <img src="/assets/images/music/reflections.jpg" alt="reflections single cover" loading="lazy">
   </div>
   <figcaption>my early singles and EP</figcaption>
@@ -253,7 +253,7 @@ My university years were full of exhibitions and shows around the UK. The summer
 
 <div id="the-maze" class="mp-prose section-nav-anchor" markdown="0">
 <figure class="mp-album-hero">
-  <img src="/assets/images/the_maze.jpg" alt="The Maze album cover" decoding="async">
+  <img src="/assets/images/the-maze.jpg" alt="The Maze album cover" decoding="async">
   <figcaption><em>the maze</em> · <a href="https://amoxitoxin.bandcamp.com/">Bandcamp</a></figcaption>
 </figure>
 
