@@ -40,7 +40,7 @@ Reach out to me: <a href="mailto:dinghao.luo@outlook.com" class="site-nav-link">
 
 <h2 id="projects">projects :)</h2>
 
-Over the past few years I have come to love data. The overwhelming feeling when noisy, high-dimensional data can be decomposed into interpretable statistics and visualisations has mostly come from my PhD, but has spread into all aspects of my life. When I love a book, see an interesting debate, watch a great TV show... I think about how to present it in graphs to help people decompose, understand, and appreciate it. What follows are two projects that I am working on right now, one on my second favourite book, and one on a history of science discussion that I have kept with me from the undergraduate years.
+Over the past few years I have come to love data. The overwhelming feeling when noisy, high-dimensional data are decomposed into interpretable statistics and visualisations has mostly come from my PhD, but has spread into all aspects of my life. What follows are two projects that I am working on right now, one on my second favourite book, and one on a history of science discussion that I have kept with me from my undergraduate years.
 
 <div class="home-projects">
   <article class="home-project home-project--zone" id="the-zone">
@@ -53,17 +53,17 @@ Over the past few years I have come to love data. The overwhelming feeling when 
           <img src="/assets/images/projects/the-zone-glossary.png" alt="" loading="lazy">
           <img src="/assets/images/projects/the-zone-braid.png" alt="" loading="lazy">
         </div>
-        <figcaption><i>The Zone</i> title page, glossary, and an example theme-character matrix</figcaption>
+        <figcaption>some screenshots from <i>The Zone</i></figcaption>
       </figure>
       <p>The site now includes a searchable glossary for the novel's central terms, an episode-by-episode theme-character visualisation, and a reference library for readers wanting more depths. Several sections are in the work, including language analysis, character network visualisation, and geohistorical tracking.</p>
-      <p class="home-project__links"><a href="https://dinghaoluo.github.io/the-zone-site" class="site-nav-link">→ The Zone</a> · <a href="https://github.com/dinghaoluo/the-zone-site" class="site-nav-link">GitHub repo</a></p>
+      <p class="home-project__links"><a href="https://dinghaoluo.github.io/the-zone-site" class="site-nav-link">→ The Zone</a></p>
     </div>
   </article>
 
   <article class="home-project home-project--text" id="kairos">
     <div class="home-project__body">
       <h3 class="home-project__title"><a href="https://github.com/dinghaoluo/kairos" class="site-nav-link">Kairos</a></h3>
-      <p>Thomas Kuhn in his <i>The Structure of Scientific Revolutions</i> (1962) wrote that paradigm shifts in science arrive when a field is ready for them. Unfortunately at the time when Kuhn observed this, he did not have the information architecture that we have nowadays to quantify this 'readiness'. I wanted to ask whether we could measure a scientific field's 'ripeness' for breakthrough. In <b>Kairos</b> (borrowed from ancient Greek, roughly 'the critical time for action'), I explore whether machine learning can estimate this 'ripeness' and predict, with careful constraints to prevent temporal  leakage, whether a scientific breakthrough would happen at each timepoint. Data mostly come from OpenAlex. You can read more about it in the project repo linked below.</p>
+      <p>Thomas Kuhn, in <i>The Structure of Scientific Revolutions</i> (1962), wrote that paradigm shifts in science arrive when a field is ready for them. Unfortunately at the time when Kuhn observed this, he did not have the information architecture that we have nowadays to quantify this 'readiness'. I wanted to ask whether we could measure a scientific field's 'ripeness' for breakthrough. In <b>Kairos</b> (borrowed from ancient Greek, roughly 'the critical time for action'), I explore whether machine learning can estimate this 'ripeness' and predict, with careful constraints to prevent temporal  leakage, whether a scientific breakthrough would happen at each timepoint. Data mostly come from OpenAlex. You can read more about it in the project repo linked below.</p>
       <p class="home-project__links"><a href="https://github.com/dinghaoluo/kairos" class="site-nav-link">→ GitHub repo</a></p>
     </div>
   </article>
@@ -154,7 +154,7 @@ My mom says I used to devour all the books that I could get my hands on as a kid
   {% for t in all_thoughts %}{% if t.image and t.type == 'film' %}<a href="/thoughts/#{% if t.title_en %}{{ t.title_en | slugify }}{% else %}{{ t.title | slugify }}{% endif %}" class="home-covers__link" data-type="{{ t.type }}" data-eval="{{ t.eval | default: '' | downcase | escape }}" data-title="{{ t.title | escape }}" data-title-en="{{ t.title_en | default: '' | escape }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% if t.image and t.type == 'tv' %}<a href="/thoughts/#{% if t.title_en %}{{ t.title_en | slugify }}{% else %}{{ t.title | slugify }}{% endif %}" class="home-covers__link" data-type="{{ t.type }}" data-eval="{{ t.eval | default: '' | downcase | escape }}" data-title="{{ t.title | escape }}" data-title-en="{{ t.title_en | default: '' | escape }}" style="display:none"><img src="{{ t.image }}" alt="{{ t.title }}" loading="lazy"></a>{% endif %}{% endfor %}
 </div>
 
-I came to film late and mostly through Lindsay, who knew her directors the way I knew my prog-rock bands: deeply, historically, and with opinions. She taught me to watch differently, and now I find myself noticing framing and cuts as I notice plot. I write about films and TV shows when their scenes keep coming back afterwards, and here are some of them:
+I came to film late and mostly through my wife [Lindsay](https://lishanshan-lss.github.io), who knew her directors the way I knew my prog-rock bands: deeply, historically, and with opinions. She taught me to watch differently, and now I find myself noticing framing and cuts as I notice plot. I write about films and TV shows when their scenes keep coming back afterwards, and here are some of them:
 
 - Lee Chang-dong's [***Poetry*** (2010)](/thoughts/#poetry) takes on the almost impossible task of seeing the world clearly and still finding beauty in it
 - [***Aftersun*** (2022)](/thoughts/#aftersun) by Charlotte Wells made me tear up with a remix of Queen and Bowie's 'Under Pressure' (1981)
@@ -257,14 +257,12 @@ Different places trigger completely different instincts, but the impulse is alwa
 
 <h2 id="other-stuff">other stuff :)</h2>
 
-First things first: there is a CV <a href="/cv/" class="site-nav-link">here</a>.
-
 <p><span class="home-chess-puzzle" role="group" aria-label="Chess puzzle">
   <img src="/assets/images/chess-puzzle.gif" alt="Chess puzzle" loading="lazy">
   <span class="home-chess-puzzle__caption">My favourite chess puzzle of all time: it's mate in two, white to move. Rxa7 looks crushing, but after …O-O the Black king escapes. The key is <a href="https://www.reddit.com/r/chess/s/Hq2PYqyZ7Y" class="site-nav-link">Schrödinger's castle</a>.</span>
 </span>
-<strong>Chess.</strong> I play at around 1800 Elo on <a href="https://lichess.org/@/amoxitoxin" class="site-nav-link">Lichess</a> and keep meaning to enter an OTB tournament. Here is a puzzle I like.
-Chess has somehow woven into my life a lot more deeply than I expected when starting out, and one of the events that have impacted me most in the past few years was the passing of GM Daniel (Danya) Naroditsky. I wrote <a href="/writing/danya/" class="site-nav-link">a short remembrance</a> of Danya, who taught me both how to play chess and how to be a good human being.</p>
+<strong>Chess.</strong> I play at around 1800 Elo on <a href="https://lichess.org/@/amoxitoxin" class="site-nav-link">Lichess</a> and keep meaning to enter an OTB tournament. Here is a puzzle I love.
+Chess has somehow woven into my life a lot more deeply than I expected when starting out, and one of the events that have impacted me most in the past few years was the passing of GM Daniel (Danya) Naroditsky. I wrote <a href="/writing/danya/" class="site-nav-link">a short remembrance</a> of Danya, who taught me both how to play chess and how to be a better human being.</p>
 
 **Travel.** I travel whenever my studies let me. So far the <a href="/photos/" class="site-nav-link">photo gallery</a> covers Cambridge, the rest of England and Scotland, Beijing, Jilin, southern China, Osaka, Singapore, Canada, the US east and west coasts, Chamonix, Italy, Lisbon, Jordan, and Georgia and the Caucasus. I keep wanting to see more of eastern, northern Europe, Latin America and Africa.
 
