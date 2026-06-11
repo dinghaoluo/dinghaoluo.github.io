@@ -1,6 +1,22 @@
 # -------------------------------------------------------
-# Book Reviews
+# book reviews
 # -------------------------------------------------------
+
+- title: "The Trial"
+  title_en: "Der Proceß"
+  type: "book"
+  creator: "Franz Kafka, trans. Breon Mitchell (EN)"
+  creator_role: "by"
+  year: 1925
+  eval: "loved"
+  image: "/assets/images/thoughts/books/the_trial.jpg"
+  posted: "2026-05-27"
+  text: |
+    K. is arrested on the morning of his thirtieth birthday and executed on his last day of being thirty; nearly a full year, during which the Court neither imprisons him, nor requires his attendance. But the Court waits and sprawls, spreading into every aspect of K.'s life. And K., who could walk away at any point, who should know the proceedings have no binding force unless he grants them one, unfortunately chooses to submit. He adjusts his Sunday schedule around the hearing times. He prepares his defence. He looks for the Court in attics and tenements and finds it everywhere, because by looking he has already conceded its jurisdiction. The System's invasion is gradual and total: Court personnel appear in his bank, his lodgings, on street corners; the architecture of daily life reveals itself to have been the Court's architecture all along, merely unnoticed until K. began paying the kind of attention that constitutes submission.
+
+    One of Kafka's most famous parables comes from the prison chaplain in ***The Trial***: 'Before the Law' talks about a man who sits before an open door for his entire life, waiting for permission to enter, and dies without entering. Before he dies, the doorkeeper finally tells him that the door was meant only for him and is now being shut. The man's deference to the System is its only lock; control relies on submission. And K. *almost* recognises this; the conversation with the chaplain is the closest that he comes to seeing that the Court's authority is *produced* by the defendant's belief in it, that his own compliance is the engine of his prosecution. He sees it and, being far too late, cannot act on what he sees anymore: he has already internalised the Court's frame so thoroughly that even recognising the absurdity does not release him from it. He walks to his execution like a dog, and the shame, Kafka writes, will outlive him.
+
+    As Breon Mitchell notes in his translation preface, Kafka died before settling the chapter order; Mitchell's translation preserves crossed-out passages and variant wordings in an appendix, so we read the novel knowing it has no authoritative sequence. The effect is that K.'s year feels unfinished in the same way his defence is unfinished: there is no moment where the Court announces a verdict, no scene that closes the case. The execution arrives mid-sentence, mid-life, as casually and comically as the arrest did. And one suspects that this is the point: the shame K. feels as he dies, the shame Kafka says will outlive him, does not require a conclusion. It only requires that enough people, like K., keep showing up to hearings they were never compelled to attend. The System functions by threats and intimidation. I fear that we already know this but simply do not act.
 
 - title: "The Brooklyn Follies"
   type: "book"
@@ -3016,8 +3032,27 @@
     What I understood at thirteen was the story; what I missed was the politics. The Hazara-Pashtun hierarchy, the Soviet invasion, the Taliban's particular cruelty toward ethnic minorities: these were furniture to me then, context that I did not know I needed. The novel's weakness is visible now: Hassan is too saintly, too passive, more instrument of Amir's redemption than a person with his own interiority. But at thirteen, none of that mattered. What mattered was that someone had written a book in which a boy's worst moment followed him for decades, and that the only possible response was to go back. 'For you, a thousand times over.' It was a sentence that changed the way that I understood what sentences could do.
 
 
-# Film Reviews
 # -------------------------------------------------------
+# film reviews
+# -------------------------------------------------------
+
+- title: "Stiller Freund"
+  title_en: "Silent Friend"
+  type: "film"
+  creator: "Ildikó Enyedi"
+  creator_role: "dir."
+  year: 2025
+  eval: "liked"
+  image: "/assets/images/thoughts/films/stiller_freund.png"
+  posted: "2026-05-25"
+  text: |
+    To me, ***Stiller Freund*** is a film about curiosity, boundaries, and how curiosity breaks boundaries to evoke empathy. Enyedi puts braids 3 timelines together, all intersecting at a ginkgo tree in Marburg: a neurologist stranded during COVID (Tony Leung) who pivots from brain research to scanning the tree's electrical activity (and obviously I have deep gripes about the pseudo-science presented here, but that's besides the point); a solitary student in 1972 (Enzo Brumm) who inherits his roommate's geranium and slowly befriends it; and a German university's first female student in 1908 (Luna Wedler) fighting institutional exclusion while discovering photography. On these plotlines Enyedi paints a picture of *communication* across species, across eras, across the gendered and linguistic chasms that have pervaded human society for as long as we have existed.
+
+    What works beautifully is the supporting cast. Brumm and Wedler play curiosity as a bodily process: Hannes goes from knowing nothing about plants to rigging a sensor so the geranium can open the residence gate when it 'hears' voices (probably by sensing mechanical vibrations at certain frequencies); by the end he treats the plant as a companion whose displeasure he takes seriously. The progression is comic and sincere, capturing in an eery sense how scientific curiosity operates: one probes, connects, tries to understand, and in doing so dissolves a boundary one did not know was arbitrary.
+
+    Leung and Seydoux, by contrast, fail to convey that curiosity in any way more interesting than pseudo-scientific 'neuroscience' gimmicks; this is not the actors' fault, but their characters serve merely as vehicles for the film's thesis without undergoing the transformation that would make the thesis convincing. Grete's timeline (shot in black-and-white 35mm, Wedler earning the Mastroianni at Venice) is beautiful in isolation but never overlaps thematically with the other two stories; one admires the craft without feeling the resonance. 
+    
+    Lovely sentences are scattered through the film, about plants existing on timescales that dwarf human attention, about the boundaries of perception being choices rather than facts; they arise naturally and are developed with cleverness, but do not accumulate into an argument. They remain 'aperçus', individually sharp, collectively scattered. I liked ***Stiller Fruend*** in general but still, what a pity.
 
 - title: "Un poeta"
   title_en: "A Poet"
@@ -7734,7 +7769,7 @@
 
 
 # -------------------------------------------------------
-# Game Reviews
+# game reviews
 # -------------------------------------------------------
 
 - title: "Mixtape"
