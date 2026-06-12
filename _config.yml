@@ -12,11 +12,11 @@ plugins:
 
 # site settings
 locale: "en-GB"
-title: "hao things"
+title: "hao things :)"
+title_separator: "|"
 email: dinghao.luo@outlook.com
 description: >-
-  Personal website of Dinghao Luo: neuroscientist, translator, and musician.
-  PhD student at Max Planck Florida Institute for Neuroscience.
+  personal site of Dinghao Luo, neuroscience PhD, translator of Entangled Life into Chinese, musician; writing, science, music, photos, and projects
 baseurl: ""
 url: "https://dinghaoluo.github.io"
 repository: "dinghaoluo/dinghaoluo.github.io"
