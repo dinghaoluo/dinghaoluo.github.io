@@ -1,4 +1,4 @@
-# Build and theme settings
+# build and theme settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "default"
 plugins:
@@ -10,7 +10,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-remote-theme
 
-# Site settings
+# site settings
 locale: "en-GB"
 title: "hao things"
 email: dinghao.luo@outlook.com
@@ -31,16 +31,12 @@ atom_feed:
 
 search: false
 
-# Social Sharing
-twitter:
-  username: "dinghaoluo"
-
-# Analytics
+# analytics
 analytics:
   provider: false
 
 
-# Site Author
+# site author
 author:
   name             : "Dinghao Luo"
   name_zh          : "羅 丁豪"
@@ -67,7 +63,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/amoxitoxin"
 
-# Site Footer
+# site footer
 footer:
   links:
     - label: "email"
@@ -90,10 +86,11 @@ footer:
       url: "https://www.instagram.com/amoxitoxin"
 
 
-# Reading Files
+# reading files
 include:
   - .htaccess
   - _pages
+  - google6e85125fae140679.html
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -120,8 +117,8 @@ exclude:
   - README
   - README.md
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
+  - /docs  # ignore Minimal Mistakes /docs
+  - /test  # ignore Minimal Mistakes /test
   - scripts
 keep_files:
   - .git
@@ -130,7 +127,7 @@ encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 
-# Conversion
+# conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
@@ -138,7 +135,7 @@ excerpt_separator: "\n\n"
 incremental: false
 
 
-# Markdown Processing
+# md processing
 kramdown:
   input: GFM
   hard_wrap: false
@@ -156,14 +153,14 @@ sass:
   style: compressed
 
 
-# Outputting
+# outputting
 permalink: /:categories/:title/
 paginate: 5
 paginate_path: /page:num/
 timezone:
 
 
-# Collections
+# collections
 collections:
   writing:
     output: true
@@ -180,7 +177,7 @@ whitelist:
   - jekyll-remote-theme
 
 
-# Archives
+# archives
 category_archive:
   type: liquid
   path: /categories/
@@ -189,14 +186,14 @@ tag_archive:
   path: /tags/
 
 
-# HTML Compression
+# HTML compression
 compress_html:
   clippings: all
   ignore:
     envs: development
 
 
-# Defaults
+# defaults
 defaults:
   # _posts
   - scope:
