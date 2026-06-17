@@ -1686,7 +1686,7 @@ body.home .page__author-footer {
 }
 
 .thoughts-card__permalink span {
-  transform: translateY(0.16rem);
+  transform: translateY(0.12rem);
 }
 
 .thoughts-card__footer {
@@ -1710,6 +1710,7 @@ body.home .page__author-footer {
   font-family: $mono-stack;
   font-size: 0.68em;
   line-height: 1;
+  margin-left: 0.12em;
   text-decoration: none !important;
   transition: opacity 0.18s ease, transform 0.18s ease, color 0.15s ease, background 0.15s ease, border-color 0.15s ease;
 
@@ -2702,7 +2703,7 @@ mark.thoughts-highlight {
     aspect-ratio: 2 / 3;
     object-fit: cover;
     border-radius: 1px;
-    opacity: 0.9;
+    opacity: 0.92;
     transition: opacity 0.2s ease, transform 0.25s ease;
 
     &:hover,
