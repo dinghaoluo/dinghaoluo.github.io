@@ -196,13 +196,13 @@ section_nav: true
 
 <h2 class="writing-section-title" id="other-writing">other writing</h2>
 
-I've written science communication in Chinese that doesn't fit neatly into the categories above. My article with the highest readership is '[The Persistence of 'Neuromyths' (不是人的脑子只用了10%，而是只有10%的人用了脑子)](https://mp.weixin.qq.com/s/wyetxNOx5PJPoAvP5apCeQ)' was published on Guokr (果壳), China's most-popular digital pop-science platform (at least back in ). '[Can We Manipulate Working Memory from Outside the Skull? (无须开颅，就能操控工作记忆？)](/writing/working-memory/)' was co-authored with [Lindsay Li](https://lishanshan-lss.github.io) for Neu-Reality (神经现实), written at the invitation of Dr. Huan Luo, the paper's corresponding author.
+I've written some commissioned science communication pieces in Chinese, including my article with the highest readership, '[The Persistence of 'Neuromyths' (不是人的脑子只用了10%，而是只有10%的人用了脑子)](https://mp.weixin.qq.com/s/wyetxNOx5PJPoAvP5apCeQ)', which was published on Guokr (果壳), China's most popular digital pop-science platform. '[Can We Manipulate Working Memory from Outside the Skull? (无须开颅，就能操控工作记忆？)](/writing/working-memory/)' was co-authored with [Lindsay Li](https://lishanshan-lss.github.io) for Neu-Reality (神经现实), written at the invitation of Dr. Huan Luo, the paper's corresponding author.
 
 ---
 
 <h2 class="writing-section-title" id="translations">translations</h2>
 
-I also translated and edited work by Alex Mar, Geoffrey Hinton, Jordana Cepelewicz, Michael Graziano, Timothy Lillicrap, and others into Chinese for Neu-Reality. The selected translations below are ordered by how proud I am of them.
+I've also translated and edited work by Alex Mar, Geoffrey Hinton, Jordana Cepelewicz, Michael Graziano, Timothy Lillicrap, and others into Chinese for Neu-Reality. The selected translations below are ordered by how proud I am of them.
 
 - Alex Mar, '[Love in the Times of Robots](https://www.wired.com/2017/10/hiroshi-ishiguro-when-robots-act-just-like-humans/)' · *WIRED* · [赛博时期的爱情](https://mp.weixin.qq.com/s/AB9Pxh-52b7ZJxSDTfaceA)
 - Jordana Cepelewicz, '[In Brain's Electrical Ripples, Markers for Memories Appear](https://www.quantamagazine.org/in-brains-electrical-ripples-markers-for-memories-appear-20190806/)' · *Quanta Magazine* · [海马波簇闪烁，照亮记忆幽林](https://mp.weixin.qq.com/s/gpKgkS9_EMnG7auZKLDuyw)
