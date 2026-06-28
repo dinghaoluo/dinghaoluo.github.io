@@ -2,6 +2,20 @@
 # book reviews
 # -------------------------------------------------------
 
+- title: "The Sense of an Ending"
+  type: "book"
+  creator: "Julian Barnes"
+  creator_role: "by"
+  year: 2011
+  eval: "liked"
+  image: "/assets/images/thoughts/books/sense-of-an-ending.jpg"
+  posted: "2026-06-15"
+  revised: "2026-06-15"
+  text: |
+    It's hard to read ***The Sense of an Ending*** without thinking about the science of memory reconsolidation: every retrieval destabilises the stored trace and re-encodes it, so what returns to storage is not the original but a version shaped by the self doing the recall. Tony Webster has been re-recording his 1960s schooldays, his Bristol relationship with Veronica Ford, Adrian Finn's suicide, for forty years. The Tony who narrates Part One believes he was broadly reasonable, broadly hurt, never unjustified, never cruel; he remembers his letter to Adrian, written when Adrian began dating Veronica, as 'brief, anodyne'. And when we the readers see Veronica return the actual letter in Part Two, it is sexually vicious, calls her a cockteaser, wishes pregnancy on her, instructs Adrian to 'consult the mother'. Each recall has rewritten the trace cycle by cycle into something compatible with the peaceable man Tony *needs* himself to be. Barnes dramatises the process without naming the science. Every review of this book, including this one, ends up supplying the citation he withheld.
+
+    Barnes later [wrote in the Guardian](https://www.theguardian.com/books/2021/jun/14/julian-barnes-on-the-sense-of-an-ending-i-learned-to-do-more-by-saying-less) that the title was *not*, contrary to popular belief, borrowed deliberately from Sir Frank Kermode's 1967 *The Sense of an Ending: Studies in the Theory of Fiction*: he 'had not heard of Kermode's book, let alone read it'. If that's the case, then it is one of the most beautiful coincidences that Kermode's book does offer a valuable insight into Barnes' novel: Kermode argued that we make time bearable by converting *chronos* into *kairos*; that is, converting formless duration of time into key narrative moments (and it is by another wondrous coincidence that I myself happened to be working on a project named *Kairos* when I read Barnes' book). Barnes' narrator carved, from that formless duration, stories and justifications that may have never existed: Adrian is the brilliant friend who chose philosophy over life, Veronica the difficult ex that probably never loved him, himself the moderate observer. Barnes implicates the reader along the same line. We have been reading Tony's re-encoded version as if it were the original recording, sharing (I certainly did as I read Part One) his irritation at Veronica's withholding; the withholding turns out to be the only adequate response to a man whose English reasonableness has been doing the editing for him. Tony, even in the final pages of the novel, remains inside the loop, still re-encoding, and Barnes never grants him the moment of clear recognition the genre would normally supply. The novel, despite being clearly not of the mystery genre, never resolves. 
+
 - title: "The Trial"
   title_en: "Der Proceß"
   type: "book"
@@ -2296,6 +2310,25 @@
 # -------------------------------------------------------
 # film reviews
 # -------------------------------------------------------
+
+
+- title: "Lake Mungo"
+  type: "film"
+  creator: "Joel Anderson"
+  creator_role: "dir."
+  year: 2008
+  eval: "loved"
+  image: "/assets/images/thoughts/films/lake-mungo.jpg"
+  posted: "2026-06-26"
+  revised: "2026-06-26"
+  text: |
+    On the dry lakebed at Lake Mungo, Alice Palmer (a name that definitely was a nod to *Twin Peaks*) accidentally saw her own drowned body through her phone's camera lens: a standing figure with one eye shut, face pale, immediately recognisable as herself. She buried the phone at the site after the encounter and said nothing after returning home from the Lake Mungo school trip. Joel Anderson (whose only film was ***Lake Mungo***) assembled this mockumentary from what the family finds afterwards: home videos, photographs, the parapsychologist's transcripts, everything held in perfect posteriority, with guilt and pain unbeknownst to them yet on the day Alice died.
+
+    Mathew Palmer's ghost photographs turn out to be fabrications; the parapsychologist's sessions yield nothing conclusive; by the time the family has worked through both, they have concluded there is no 'haunting'. Alice had been in the home videos all along, at the edges of frames from evenings that had seemed ordinary, present in footage they had already watched without scrutinising, and the retroactive discovery shows that those exact evenings she was indeed standing at the frame's edge while they were filming something else.
+
+    It's hard to look at the emotional core of ***Lake Mungo*** and not think of some recent found-footage films that made a lot more (***Lake Mungo*** was a box-office disaster at under $30,000 with a 1.4-million-dollar budget) money: *Strange Harvest* and the *Backrooms* are found-footage films in which the grainy texture, the degraded image, and the *form* that the film takes are ends in themselves. In ***Lake Mungo*** the footage fills the gap between the emotional touches, and the form serves the function, where it's clear that Anderson knew that he just *had to* make a found-footage mockumentary and there was no other way to tell this story.
+
+    In Ray Kemeny's office, when asked 'Are you scared of dying?' Alice said: 'Of course, isn't everyone scared of dying?' She turns her fear into a rhetorical universal, unanswerable by definition; Alice probably does not want it answered, either. Was she scared in her last few weeks? What was she thinking over the long days until death? She had filmed her own corpse on a dry lakebed, buried the evidence, and when a psychic gave her an opening, she closed it with 'of course'. The film gives the family no more than this; neither do we come away with more, having watched the same footage they watched.
 
 
 - title: "Backrooms"
