@@ -703,86 +703,10 @@
   }
 })();
 
-/* frontpage cover wall - weighted shuffle tuned per section */
+/* frontpage cover wall - show the newest covers from the Liquid order */
 (function () {
   'use strict';
   var WIDE_SCREEN_MIN = 1412;
-  var COVER_MIN_WEIGHT = 0.15;
-  var BOOK_CHINESE_EDITION_MULTIPLIER = 0.02;
-  var BOOK_CHINESE_EDITION_MIN_WEIGHT = 0.02;
-  var BOOK_NON_CHINESE_EDITION_MULTIPLIER = 1.5;
-  var BOOK_NON_CHINESE_LOVED_MULTIPLIER = 3.2;
-  var EXTREME_REACTION_MULTIPLIER = 3;
-
-  function hasChineseTitleFallback(el) {
-    var text = [
-      el.getAttribute('data-title'),
-      el.getAttribute('data-title-en')
-    ].join(' ');
-    var hasHan = /[\u3400-\u9fff\uf900-\ufaff]/.test(text);
-    var hasJapaneseOrKorean = /[\u3040-\u30ff\uac00-\ud7af]/.test(text);
-    return hasHan && !hasJapaneseOrKorean;
-  }
-
-  function isChineseEdition(el) {
-    return el.getAttribute('data-cn-edition') === 'true' || hasChineseTitleFallback(el);
-  }
-
-  function coverWeight(el, container) {
-    var type = (el.getAttribute('data-type') || '').toLowerCase();
-    var reaction = (el.getAttribute('data-eval') || '').toLowerCase();
-    var weight = 1;
-    var minWeight = COVER_MIN_WEIGHT;
-
-    if (container.classList.contains('home-covers--books')) {
-      if (reaction === 'loved') weight = 6;
-      else if (reaction === 'hated') weight = 5;
-      else if (reaction === 'liked') weight = 1.4;
-      else if (reaction.indexOf('meh') === 0) weight = 0.8;
-      else if (reaction === 'disliked') weight = 1.2;
-
-      if (isChineseEdition(el)) {
-        weight *= BOOK_CHINESE_EDITION_MULTIPLIER;
-        minWeight = BOOK_CHINESE_EDITION_MIN_WEIGHT;
-      } else {
-        weight *= BOOK_NON_CHINESE_EDITION_MULTIPLIER;
-        if (reaction === 'loved') {
-          weight *= BOOK_NON_CHINESE_LOVED_MULTIPLIER;
-        }
-      }
-    } else if (container.classList.contains('home-covers--screen')) {
-      if (type === 'film') weight *= 2.4;
-      if (type === 'tv') weight *= 0.75;
-    }
-
-    if (!container.classList.contains('home-covers--books')) {
-      if (reaction === 'loved' || reaction === 'hated') weight *= EXTREME_REACTION_MULTIPLIER;
-      else if (reaction === 'liked' || reaction === 'disliked') weight *= 1.35;
-      else if (reaction.indexOf('meh') === 0) weight *= 0.75;
-    }
-
-    return Math.max(weight, minWeight);
-  }
-
-  function weightedShuffle(items, container) {
-    var pool = items.map(function (el) {
-      return { el: el, weight: coverWeight(el, container) };
-    });
-    var result = [];
-    while (pool.length) {
-      var total = pool.reduce(function (sum, item) {
-        return sum + item.weight;
-      }, 0);
-      var threshold = Math.random() * total;
-      var idx = pool.length - 1;
-      for (var i = 0; i < pool.length; i++) {
-        threshold -= pool[i].weight;
-        if (threshold <= 0) { idx = i; break; }
-      }
-      result.push(pool.splice(idx, 1)[0].el);
-    }
-    return result;
-  }
 
   function wideCoverCount(container, wideCount, desktopCount) {
     if (!Number.isNaN(wideCount)) return wideCount;
@@ -806,13 +730,11 @@
         : (window.innerWidth <= 1023
           ? (tabletCount || desktopCount || 20)
           : (window.innerWidth >= WIDE_SCREEN_MIN ? wideCoverCount(container, wideCount, desktopCount) : (desktopCount || 20)));
-      var shuffled = weightedShuffle(items, container);
-      for (var k = 0; k < shuffled.length; k++) {
+      for (var k = 0; k < items.length; k++) {
         if (k < count) {
-          shuffled[k].style.display = '';
-          container.appendChild(shuffled[k]);
+          items[k].style.display = '';
         } else {
-          shuffled[k].parentNode.removeChild(shuffled[k]);
+          items[k].parentNode.removeChild(items[k]);
         }
       }
     });
