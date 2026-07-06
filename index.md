@@ -13,12 +13,6 @@ Recently I've been reading Pynchon's *Mason & Dixon* (1997), finishing up my <a 
 
 Reach out to me: <a href="mailto:dinghao.luo@outlook.com" class="site-nav-link">[dinghao.luo@outlook.com]</a><br>Find me: <a href="https://github.com/dinghaoluo" class="site-nav-link">GitHub</a> · <a href="https://www.reddit.com/user/amoxdl24/" class="site-nav-link">Reddit</a> · <a href="https://www.instagram.com/amoxitoxin" class="site-nav-link">Instagram</a> · <a href="https://www.linkedin.com/in/dinghaoluo/" class="site-nav-link">LinkedIn</a> · <a href="/cv/" class="site-nav-link">CV</a>
 
-<div class="home-subscribe">
-  <label for="home-email">Get notified of new writing:</label>
-  <input type="email" id="home-email" placeholder="email address">
-  <button type="submit">subscribe</button>
-</div>
-
 ---
 
 <nav class="home-section-strip" aria-label="homepage sections">
