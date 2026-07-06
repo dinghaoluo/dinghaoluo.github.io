@@ -1473,11 +1473,10 @@ body.home .page__author-footer {
 }
 
 .thoughts-card__meta {
-  font-size: 1.18em;
+  font-size: 1.2em;
   color: $morandi-muted;
-  margin-bottom: 0.22em;
-  line-height: 1.52;
-  letter-spacing: 0.005em;
+  margin-bottom: 0.18em;
+  line-height: 1.55;
 }
 
 .thoughts-card__title-line {
@@ -1634,9 +1633,9 @@ body.home .page__author-footer {
 
 .thoughts-card__text {
   font-family: $reforma-stack;
-  font-size: 0.97em;
+  font-size: 0.98em;
   color: $site-text-body;
-  line-height: 1.64;
+  line-height: 1.62;
   letter-spacing: 0.008em;
 
   * { font-family: inherit; }
