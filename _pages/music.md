@@ -216,11 +216,6 @@ html[data-theme="dark"] .mp-singles img { border-color: rgba(90, 82, 76, 0.4); }
 </style>
 
 <div id="early-music" class="mp-prose mp-prose--singles section-nav-anchor" markdown="0">
-<figure class="mp-setup">
-  <img src="/assets/images/music/roli-setup-london-2018.jpg" alt="ROLI Seaboard, Launchpad, and MacBook Pro running Logic on a desk in London, 2018" loading="lazy">
-  <figcaption>my whole 'studio', London, 2018</figcaption>
-</figure>
-
 I had been absorbing prog and jazz since secondary school, and by Cambridge the impulse to make something of my own had been building for years. Gear was getting cheap and strange: anyone with a laptop could make a record, and expressive MIDI controllers were arriving from nowhere. I ordered a ROLI Seaboard after watching somebody play one on YouTube. And there I was, a MacBook, Logic Pro, and the ROLI on a wooden desk. That was the entire studio, and I sank nights and days into it.
 
 <span class="mp-break"></span>
@@ -231,15 +226,6 @@ I had been absorbing prog and jazz since secondary school, and by Cambridge the 
 <div class="mp-player">
 {% include audio-player.html src="/assets/audio/pre_album_20180801_surrender.mp3" title="surrender." waveform="/assets/audio/waveforms/pre_album_20180801_surrender.json" duration="6:20" %}
 </div>
-
-<figure class="mp-singles">
-  <div class="mp-singles__covers">
-    <img src="/assets/images/music/on-edamame.jpg" alt="on edamame EP cover" loading="lazy">
-    <img src="/assets/images/music/the-cam-after-rain.jpg" alt="the Cam after rain single cover" loading="lazy">
-    <img src="/assets/images/music/reflections.jpg" alt="reflections single cover" loading="lazy">
-  </div>
-  <figcaption>my early singles and EP</figcaption>
-</figure>
 
 Spring 2018, around Easter, I was preparing for Tripos and would come home from the library around ten in the evening. There was this Costa machine inside the Sainsbury's outside Sidney Sussex, and I would sometimes grab a coffee before going home to keep studying. And that became the first track: mock exams and hair loss and a mother who'd been telling me to go to bed earlier. At the very end, my dorm door (one of those fire doors that would slam hard shut unless eased closed) also makes a cameo.
 
