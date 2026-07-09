@@ -2,6 +2,25 @@
 # book reviews
 # -------------------------------------------------------
 
+- title: "Taiwan Travelogue"
+  title_en: "臺灣漫遊錄"
+  type: "book"
+  creator: "Yang Shuang-zi, trans. Lin King (EN)"
+  creator_role: "by"
+  year: 2020
+  eval: "disliked"
+  image: "/assets/images/thoughts/books/taiwan-travelogue.jpeg"
+  posted: "2026-07-06"
+  revised: "2026-07-08"
+  text: |
+    I wrote a full review ([Who won the Booker? On transcreation and *Taiwan Travelogue*](/writing/taiwan-travelogue/)) on Lin King's English translation of the book, which won the International Booker in 2026. These briefer thoughts below are dedicated to the original Chinese text.
+
+    Yang Shuang-zi's ambitious frame narrative sets ***Taiwan Travelogue*** to have been written in 1954 by the fictional Japanese novelist Aoyama Chizuko, whose first book was adapted into a film which brought her the opportunity to travel to colonial Taiwan. However, the ambitious frame immediately collapses the first moment a Chinese reader encounters the manga speech-bubble-style dialogue between Aoyama and her local translator, Chizuru. Aoyama, this supposedly celebrated author, speaks in exclamations like 「太厲害了！」 (which I almost could not help translate as 'sugoi!' instead of 'so great!' since it sounds so cartoonish and anachronistic) and vocalisations such as 「嗚嗯唔哼」 (which can only be approximated in English as 'hmmm... hnnngh...'), with Chizuru who has 'eyes curving into little arcs' and offers 'privilege tickets' as a favour. And by chapter five Yang's Aoyama has thrown grammar out of the window, with sentences whose participles do not agree with the subject at all (e.g. 'As the Empire's southern colony, and its first colony, I am interested in observing the crossed influences of the two places' cultural styles during my time on the Island.'). All of this is the shōjo-manga cadence Yang Shuang-zi's earlier career in yuri light fiction has employed, which in itself is certainly not a problem, but simply destroys any suspension of disbelief when the frame narrative puts the characters in 1930s Taiwan. 
+    
+    ***Taiwan Travelogue*** names each of its chapter with various foods in colonial Taiwan and pre-war Japan, signposting their importance in the narrative. Sadly, the foods are described superficially and mostly bear no connection to the plot at all: we see a numbered sequence of cooking steps for most of these dishes, and the specifications (as they can only be called this) of such dishes fit what cookbooks and tourism brochures would print. Hilariously, the fictional-author frame was itself so unpersuasive that Spring Hill placed 'Aoyama Chizuko' in the author position on the [first Taiwanese edition](https://zh.wikipedia.org/zh-hant/臺灣漫遊錄) and Yang Shuang-zi in the translator slot. Readers later complained of deception until the third printing removed the false author line.
+
+    The novel does, in various places, deliver its colonial thesis, though only as cursory thoughts rather than as scenes. The prologue by the fictional scholar Hiyoshi Sagako goes further, reading Aoyama's chapter-IX 'homage' to Nishikawa Mitsuru (the leading Japanese colonial-literature writer in 1940s Taiwan) as indirectly 'self-critique' of her own earlier serialised Taiwan dispatches which later 'became' this book in our hands. These are the passages English-language critics (Eunice Lim in [*Suspect*](https://singaporeunbound.org/suspect-journal/2025/2/13/a-colonial-taiwan-lost-and-found-in-translation), Chialan Sharon Wang in [*Taiwan Lit*](https://taiwanlit.org/articles/bastardizing-memory-through-sh%C5%8Djo-cultural-and-historical-translation-in-yang-shuang-zis-taiwan-travelogue-a-novel-%E5%8F%B0%E7%81%A3%E6%BC%AB%E9%81%8A%E9%8C%84)) have quoted as the novel's serious achievement in its otherwise yuri light-novel frame, and I tend to agree on these fronts. But most of the book is spent elsewhere, *in* the yuri cadence, where Aoyama presses Chizuru into wearing a kimono, telling her that she will look wonderful in it, and where Aoyama repeats her 'friendship' advances under the plain colonial power differential, despite recognising that the Empire's southwards expansion is aggressive and brute. Yang does not once frame any of it as a problem, even in the afterwords which are supposed to offer reflection. Considering that Yang clearly understands the importance of this subject, the lack of serious discussion thereof seems more like a misplacement of priority. I found it a well-intentioned book, weirdly reminding me of another of my recent reads, Paul Auster's *Brooklyn Follies* (2005), in that it wants to appear politically thoughtful but does not earn its mark.
+
 - title: "The Sense of an Ending"
   type: "book"
   creator: "Julian Barnes"
