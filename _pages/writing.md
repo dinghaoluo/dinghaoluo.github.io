@@ -27,7 +27,6 @@ section_nav: true
 
 {% assign articles = site.writing | sort: 'date' | reverse %}
 {% assign print_articles = articles | sort: "print_order" %}
-{% assign featured_articles = articles | where: "writing_feature", true | sort: "writing_feature_order" %}
 
 <h2 class="writing-section-title" id="print">print</h2>
 
@@ -155,18 +154,6 @@ section_nav: true
 </nav>
 
 <div class="writing-list writing-list--archive" id="writing-archive">
-{% for article in featured_articles %}
-{% assign is_print_article = false %}
-{% if article.section == "print" %}
-  {% assign is_print_article = true %}
-{% endif %}
-{% if article.type == "translation" %}
-  {% assign is_print_article = true %}
-{% endif %}
-{% unless is_print_article or article.writing_page == false %}
-{% include writing-archive-entry.html article=article %}
-{% endunless %}
-{% endfor %}
 {% for article in articles %}
 {% assign is_print_article = false %}
 {% if article.section == "print" %}
@@ -175,11 +162,7 @@ section_nav: true
 {% if article.type == "translation" %}
   {% assign is_print_article = true %}
 {% endif %}
-{% assign hide_from_archive = false %}
-{% if article.writing_page == false or article.writing_feature %}
-  {% assign hide_from_archive = true %}
-{% endif %}
-{% unless is_print_article or hide_from_archive %}
+{% unless is_print_article or article.writing_page == false %}
 {% include writing-archive-entry.html article=article %}
 {% endunless %}
 {% endfor %}
