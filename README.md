@@ -25,3 +25,7 @@ The site has six sections plus a 404.
 **The Zone**: a computational literary analysis of *Gravity's Rainbow* (1973): plotline braids, character network, glossary, and more sections in progress
 
 **404**: generates procedural prose fragments from a lexicon of corridors, catalogues, and drowned pages. Every broken URL gets its own little text.
+
+## Attribution
+
+Theme: [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) 4.24.0 (MIT). Fonts: [Mononoki](https://madmalik.github.io/mononoki/) (OFL), [Reforma](https://pampatype.com/reforma) (PampaType, licensed). Book and film cover images are sourced from publishers and platforms for editorial reference; they are not my original work.
