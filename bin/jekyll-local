@@ -2,11 +2,22 @@
 set -euo pipefail
 
 repo_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-ruby_dir="${RUBY_ROOT:-$HOME/.rubies/ruby-3.3}"
+wanted="$(cat "$repo_dir/.ruby-version")"
+
+# .ruby-version holds a series (3.3), the install holds a patch (ruby-3.3.12),
+# so match on prefix and take the highest.
+if [ -n "${RUBY_ROOT:-}" ]; then
+  ruby_dir="$RUBY_ROOT"
+else
+  ruby_dir="$(find "$HOME/.rubies" -maxdepth 1 -name "ruby-$wanted*" 2>/dev/null | sort -V | tail -1)"
+fi
+
 bundle_bin="$ruby_dir/bin/bundle"
 
 if [ ! -x "$bundle_bin" ]; then
-  bundle_bin="$(command -v bundle)"
+  echo "bin/jekyll-local: no bundler for ruby $wanted under ~/.rubies" >&2
+  echo "  install it with: ruby-install ruby $wanted" >&2
+  exit 1
 fi
 
 cd "$repo_dir"
