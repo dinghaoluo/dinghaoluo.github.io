@@ -119,6 +119,9 @@
 
     function tick() {
       currentEl.textContent = formatTime(audio.currentTime);
+      if (audio.duration) {
+        waveWrap.setAttribute('aria-valuenow', Math.round(100 * audio.currentTime / audio.duration));
+      }
       render();
       if (!audio.paused) {
         animFrame = requestAnimationFrame(tick);
@@ -266,6 +269,26 @@
 
     waveWrap.addEventListener('mouseleave', function () {
       hoverPos = -1;
+      render();
+    });
+
+    waveWrap.addEventListener('keydown', function (e) {
+      if (!audio.duration) return;
+      var step = 0.05 * audio.duration;
+      var t = audio.currentTime;
+      if (e.key === 'ArrowRight' || e.key === 'ArrowUp') {
+        t = Math.min(audio.duration, t + step);
+      } else if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') {
+        t = Math.max(0, t - step);
+      } else if (e.key === 'Home') {
+        t = 0;
+      } else if (e.key === 'End') {
+        t = audio.duration;
+      } else { return; }
+      e.preventDefault();
+      audio.currentTime = t;
+      currentEl.textContent = formatTime(t);
+      waveWrap.setAttribute('aria-valuenow', Math.round(100 * t / audio.duration));
       render();
     });
 
