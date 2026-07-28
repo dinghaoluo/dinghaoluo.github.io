@@ -6,7 +6,7 @@ title: "science"
 classes: science-page
 header:
   og_image: "/assets/images/social-card-science.png"
-last_updated: 2026-06-10
+last_updated: 2026-07-27
 section_nav: true
 ---
 
@@ -98,9 +98,9 @@ The first time I saw multiple neurones firing together on a screen, through a Ne
 
 ## current project
 
-**Rapid locus coeruleus dopamine shapes CA1 dynamics for time/distance estimation**
+**Locus coeruleus dopaminergic control of prospective dynamics in the hippocampus**
 
-*This is my dissertation work. I am preparing a manuscript and will defend my thesis in October 2026.*
+*This is my dissertation work. The manuscript has been submitted to Cell, and I will defend my thesis in October 2026.*
 
 Navigation to learned goals is critical to survival. Once a mouse learns the route from its winter nest to a food post in a snowy field, it repeats that route on a daily basis almost without fail. Remarkably, the mouse can navigate through the route even when a new bout of snow has washed away yesterday's navigation cues; when environmental landmarks become unreliable, an animal still navigates reliably based on memory alone.
 
@@ -156,11 +156,22 @@ This also connects back to what I saw in the Paulsen Lab, that dopamine is not j
   <figcaption>Wang Lab, MPFI</figcaption>
 </figure>
 
-**Manuscript in preparation**
+**Submitted manuscript**
 
-Luo D, Cao J, Heldman R, Tian L, Wang Y (2026). 'A fast, spatially confined dopamine signal from the locus coeruleus tunes hippocampal dynamics to time goal-directed actions.'
+Luo D, Cao J, Heldman R, Tian L, Wang Y (2026). 'Locus coeruleus dopaminergic control of prospective dynamics in the hippocampus.' Submitted to *Cell*.
 
 Most of the analysis code for my PhD project is available through [GitHub](https://github.com/dinghaoluo/lc-ca1-project).
+
+<span id="fibre-sight" class="section-nav-anchor"></span>
+
+**Software**
+
+<figure class="writing-insert writing-insert--right">
+  <img src="/assets/images/projects/fibre-sight-workbench.png" alt="" width="1280" height="820" loading="lazy">
+  <figcaption>FibreSight keeps the predicted ROIs editable before the dictionary is saved.</figcaption>
+</figure>
+
+Segmenting axons in the channel-2 reference images was, for most of my PhD, something I did by hand: MSER proposals where they helped, then clicking through hundreds of candidate ROIs per session, with a result that varied between whoever happened to do the clicking. [**FibreSight**](https://github.com/dinghaoluo/fibre-sight) came out of that tedium. It predicts candidate axon ROIs with a small U-Net trained on 1,296 hand-curated ROIs from 53 of my own imaging sessions, then keeps the curation step, so every proposal can still be inspected, deleted or merged before the dictionary is saved. The released operating point favours recall over precision, on the reasoning that a spurious proposal costs one click whilst a missed axon costs the ROI. The repository ships the checkpoint with a [model card](https://github.com/dinghaoluo/fibre-sight/blob/main/MODEL_CARD.md) and a [methods record](https://github.com/dinghaoluo/fibre-sight/blob/main/METHODS.md), and the training loop is included for anyone whose indicator, microscope or labelling convention needs a model of its own.
 
 **Selected presentations**
 
