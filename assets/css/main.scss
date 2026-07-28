@@ -849,12 +849,12 @@ body:not(.home) .page__content h6 * {
 
 @media (min-width: 992px) {
   .home .page__content h2[id],
-  .home .page__content .home-project[id] {
-    scroll-margin-top: calc(1.4rem + 15px);
+  .home .page__content .home-project[id],
+  .science-page .page__content h2[id],
+  .science-page .page__content .section-nav-anchor {
+    scroll-margin-top: 8px;
   }
 
-  .science-page .page__content h2[id],
-  .science-page .page__content .section-nav-anchor,
   .section-nav-page .page__content h2[id],
   .section-nav-page .page__content .section-nav-anchor {
     scroll-margin-top: 1.4rem;
@@ -975,12 +975,12 @@ body:not(.home) .page__content h6 * {
 
 @media (max-width: 991.98px) {
   .home .page__content h2[id],
-  .home .page__content .home-project[id] {
+  .home .page__content .home-project[id],
+  .science-page .page__content h2[id],
+  .science-page .page__content .section-nav-anchor {
     scroll-margin-top: calc(3rem + 15px);
   }
 
-  .science-page .page__content h2[id],
-  .science-page .page__content .section-nav-anchor,
   .section-nav-page .page__content h2[id],
   .section-nav-page .page__content .section-nav-anchor {
     scroll-margin-top: 3.0rem;

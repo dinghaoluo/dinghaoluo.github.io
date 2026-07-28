@@ -201,7 +201,7 @@
       homeContentLink = homePage && anchor.classList.contains('site-nav-link');
 
       if (!target) return;
-      if (!mobileMedia.matches && !anchor.closest('.home-section-strip') && !homeContentLink) return;
+      if (!mobileMedia.matches && !anchor.closest('.home-section-strip') && !homeContentLink && !section) return;
 
       event.preventDefault();
       setActive(section ? id : currentSectionId());
