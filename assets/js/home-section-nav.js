@@ -6,6 +6,7 @@
     var backTop = document.querySelector('[data-home-back-to-top]');
     var mobileMedia = window.matchMedia('(max-width: 991.98px)');
     var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    var homePage = document.body.classList.contains('home');
     var frame = null;
     var activeId = '';
 
@@ -182,6 +183,7 @@
       var section;
       var target;
       var targetTop;
+      var homeContentLink;
 
       if (!anchor) return;
 
@@ -196,9 +198,10 @@
 
       section = sectionById[id];
       target = section ? section.element : document.getElementById(id);
+      homeContentLink = homePage && anchor.classList.contains('site-nav-link');
 
       if (!target) return;
-      if (!mobileMedia.matches && !anchor.closest('.home-section-strip')) return;
+      if (!mobileMedia.matches && !anchor.closest('.home-section-strip') && !homeContentLink) return;
 
       event.preventDefault();
       setActive(section ? id : currentSectionId());
