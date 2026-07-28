@@ -2,16 +2,17 @@
 layout: single
 author_profile: true
 classes: home
-last_updated: 2026-05-06
+last_updated: 2026-07-27
 ---
 
 *Hi, Dinghao here :)*
 
 I'm finishing my PhD in neuroscience at the Max Planck Florida Institute for Neuroscience, studying how a tiny brainstem nucleus uses dopamine to rapidly tune memory accuracy in the hippocampus. I'm graduating in December 2026 and looking for data science roles in Europe.
 
-Recently I've been reading Pynchon's *Mason & Dixon* (1997), finishing up my <a href="#science" class="site-nav-link">PhD</a> thesis, and working on two projects: <a href="#the-zone" class="site-nav-link">a computational analysis</a> of *Gravity's Rainbow* (1973) and <a href="#kairos" class="site-nav-link">kairos</a>, where I look at whether we can quantify a scientific field's 'ripeness' for breakthroughs.
+Recently I've been reading Pynchon's *Mason & Dixon* (1997), finishing up my <a href="#science" class="site-nav-link">PhD</a> thesis, and working on some fun <a href="#projects" class="site-nav-link">side-projects</a> spanning literature analysis and scientific image segmentation.
 
-Reach out to me: <a href="mailto:dinghao.luo@outlook.com" class="site-nav-link">[dinghao.luo@outlook.com]</a><br>Find me: <a href="https://github.com/dinghaoluo" class="site-nav-link">GitHub</a> · <a href="https://www.reddit.com/user/amoxdl24/" class="site-nav-link">Reddit</a> · <a href="https://www.instagram.com/amoxitoxin" class="site-nav-link">Instagram</a> · <a href="https://www.linkedin.com/in/dinghaoluo/" class="site-nav-link">LinkedIn</a> · <a href="/cv/" class="site-nav-link">CV</a>
+Reach out to me: <a href="mailto:dinghao.luo@outlook.com" class="site-nav-link">[dinghao.luo@outlook.com]</a><br>
+Find me: <a href="https://github.com/dinghaoluo" class="site-nav-link">GitHub</a> · <a href="https://www.linkedin.com/in/dinghaoluo/" class="site-nav-link">LinkedIn</a> · <a href="https://www.reddit.com/user/amoxdl24/" class="site-nav-link">Reddit</a> · <a href="https://www.instagram.com/amoxitoxin" class="site-nav-link">Instagram</a> · <a href="/cv/" class="site-nav-link">CV</a>
 
 ---
 
@@ -30,28 +31,30 @@ Reach out to me: <a href="mailto:dinghao.luo@outlook.com" class="site-nav-link">
   <button class="home-back-to-top" type="button" aria-label="Back to top" aria-hidden="true" tabindex="-1" data-home-back-to-top>&uarr;</button>
 </div>
 
-<h2 id="projects">projects :)</h2>
+<h2 id="projects"><a href="/projects/">projects :)</a></h2>
 
-Over the past few years I have come to love data. The overwhelming feeling when noisy, high-dimensional data are decomposed into interpretable statistics and visualisations has mostly come from my PhD, but has spread into all aspects of my life. What follows are two projects that I am working on right now, one on my second favourite book, and one on a history of science discussion that I have kept with me from my undergraduate years.
+Over the past few years I have come to *love* data. The overwhelming happiness seeing noisy, high-dimensional data decomposed into interpretable statistics and visualisations has mostly come from my PhD, but has gradually spread into all aspects of my life. What follows are four of my projects, two that stemmed out of my PhD experiments and analyses, one on my second favourite book, and one on a history of science discussion that started in a class discussion back in my undergraduate years. More details are on the <a href="/projects/" class="site-nav-link">projects</a> page.
 
-<div class="home-projects">
-  <article class="home-project home-project--zone" id="the-zone">
-    <div class="home-project__body">
-      <h3 class="home-project__title"><a href="https://dinghaoluo.github.io/the-zone-site" class="site-nav-link">The Zone</a></h3>
-      <p>I am building a computational literary analysis of Pynchon's <i>Gravity's Rainbow</i> (1973), using natural language processing (NLP) techniques such as named-entity recognition and alias resolution, graph/network analysis including community detection and centrality analysis, just to list a few. The data are presented in a public-safe manner on the interactive <i>The Zone</i>, while the corrected OCR data and the heavy processing pipelines remain private.</p>
-      <p>The site now includes a searchable glossary for the novel's central terms, an episode-by-episode theme-character visualisation, and a reference library for readers wanting more depths. Several sections are in the work, including language analysis, character network visualisation, and geohistorical tracking.</p>
-      <p class="home-project__links"><a href="https://dinghaoluo.github.io/the-zone-site" class="site-nav-link">→ The Zone</a></p>
-    </div>
-  </article>
+<nav class="home-project-index" aria-label="featured projects">
+  <a href="/projects/#fibre-sight">
+    <strong>FibreSight</strong>
+    <span>U-Net workbench for segmentation of neural fibres in two-photon images</span>
+  </a>
+  <a href="/projects/#kairos">
+    <strong>Kairos</strong>
+    <span><i>Do field states predict scientific breakthroughs?</i></span>
+  </a>
+  <a href="/projects/#lc-ca1">
+    <strong>LC–CA1</strong>
+    <span>multimodal neural data analysis pipelines for ephys and imaging data</span>
+  </a>
+  <a href="/projects/#the-zone">
+    <strong>The Zone</strong>
+    <span>a computational analysis of <em>Gravity's Rainbow</em> (1973).</span>
+  </a>
+</nav>
 
-  <article class="home-project home-project--text" id="kairos">
-    <div class="home-project__body">
-      <h3 class="home-project__title"><a href="https://github.com/dinghaoluo/kairos" class="site-nav-link">Kairos</a></h3>
-      <p>Thomas Kuhn, in <i>The Structure of Scientific Revolutions</i> (1962), wrote that paradigm shifts in science arrive when a field is ready for them. Unfortunately at the time when Kuhn observed this, he did not have the information architecture that we have nowadays to quantify this 'readiness'. I wanted to ask whether we could measure a scientific field's 'ripeness' for breakthrough. In <b>Kairos</b> (borrowed from ancient Greek, roughly 'the critical time for action'), I explore whether machine learning can estimate this 'ripeness' and predict, with careful constraints to prevent temporal  leakage, whether a scientific breakthrough would happen at each timepoint. Data mostly come from OpenAlex. You can read more about it in the project repo linked below.</p>
-      <p class="home-project__links"><a href="https://github.com/dinghaoluo/kairos" class="site-nav-link">→ GitHub repo</a></p>
-    </div>
-  </article>
-</div>
+<a href="/projects/" class="site-nav-link">→ projects</a>
 
 ---
 
@@ -100,7 +103,7 @@ Writing, along with reading, was one of my first true passions. Like many kids, 
 Since my undergraduate years at Cambridge, however, and now through my PhD, I have written mostly about science. I was one of the earliest members of Neu-Reality (神经现实), a Chinese-language neuroscience science communication platform, and spent three years as science editor and translator there. After that were seven months at *Scientific American* China, where I wrote weekly news on their digital platform, edited translations of each month's *SciAm* magazine, and finished <a href="/writing/arc-consciousness/" class="site-nav-link">a print feature</a> on Templeton World Charity Foundation's Accelerating Research on Consciousness (ARC) initiative, interviewing researchers like Cyriel Pennartz and Anil Seth.
 
 <figure class="home-writing-award">
-  <img src="/assets/images/writing/entangled-life-pingshan-award.jpg" alt="The Chinese edition of Entangled Life displayed with the Pingshan Natural History Museum Book Award certificate." loading="lazy">
+  <img src="/assets/images/writing/entangled-life-pingshan-award.jpg" alt="" loading="lazy">
   <figcaption>My translation of <em>Entangled Life</em> (2020) won the 2025 Pingshan Natural History Museum Book Award.</figcaption>
 </figure>
 
@@ -167,19 +170,19 @@ I've played games casually since I was a kid, until *Dark Souls* (2011) made me 
 
 My PhD asks how the brain tunes the accuracy of memory recall on the go, by utilising a fast dopamine signal from the brainstem that modulates hippocampal activity. You can read more about my PhD work <a href="/science/" class="site-nav-link">here</a>.
 
-I stumbled into neuroscience sideways: I started at Cambridge reading psychology, jumped ship to biological natural sciences in my second year, and ended up patching neurons in the Paulsen lab for my undergraduate thesis. My work so far has combined electrophysiology, optogenetics, two-photon imaging, behavioural analysis, end-to-end Python analysis pipelines, and computational modelling. A manuscript is in preparation.
+I stumbled into neuroscience sideways: I started at Cambridge reading psychology, jumped ship to biological natural sciences in my second year, and ended up patching neurons in the Paulsen lab for my undergraduate thesis. My work so far has combined electrophysiology, optogenetics, two-photon imaging, behavioural analysis, end-to-end Python analysis pipelines, and computational modelling. The resulting manuscript has been submitted to *Cell*.
 
 <div class="home-science-strip" aria-label="Science photos">
   <figure class="home-science-card">
-    <img src="/assets/images/science/genetics-society-summer-school-edinburgh-2018.webp" alt="Participants at the Genetics Society Summer School Workshop in Edinburgh, seated in a conference room." loading="lazy" width="1846" height="1299">
+    <img src="/assets/images/science/genetics-society-summer-school-edinburgh-2018.webp" alt="" loading="lazy" width="1846" height="1299">
     <figcaption><span>Genetics Society Summer School, Edinburgh, 2018</span> I realised too late that I had forgotten to get a photo with the Fisher Lab members. I learned so much from such great people that summer at Queen Square.</figcaption>
   </figure>
   <figure class="home-science-card">
-    <img src="/assets/images/science/paulsen-lab-cambridge-2019.webp" alt="Members of the Paulsen lab gathered around a dinner table in Cambridge." loading="lazy" width="1500" height="1000">
+    <img src="/assets/images/science/paulsen-lab-cambridge-2019.webp" alt="" loading="lazy" width="1500" height="1000">
     <figcaption><span>Paulsen lab, Cambridge 2019.</span> My first real lab. The late afternoon discussions of synaptic plasticity inspired so much of my neuroscience thinking, and my dear mentor showed me that electrophysiology is mostly patience.</figcaption>
   </figure>
   <figure class="home-science-card">
-    <img src="/assets/images/science/wang-lab-mpfi.webp" alt="Members of the Wang Lab gathered in the Max Planck Florida Institute atrium." loading="lazy" width="1920" height="1280">
+    <img src="/assets/images/science/wang-lab-mpfi.webp" alt="" loading="lazy" width="1920" height="1280">
     <figcaption><span>Wang Lab, MPFI</span> Where I came into the lab carrying my own question and acquired technical independence to chase it: behaviour rigs, two-photon imaging, and a <em>lot</em> of Python.</figcaption>
   </figure>
 </div>
@@ -225,12 +228,12 @@ I listen to far more than I make, which is probably healthy. Prog used to be at 
 I have photographed things compulsively since middle school, mostly out of an anxiety about losing the texture of precious moments. My dad gave me his Nikon D90 when I was old enough to care about framing, and that was when it became a practice rather than a reflex. I take long camera walks through cities, and places like Cambridge, London, Amman, and New York always surprise me with how alive our world is. On those walks, things keep making me stop: a window, a surface, a pattern of light that will dissipate in a few seconds and never to be seen again...
 
 <div class="home-photo-strip" aria-label="photo preview">
-  <a href="/photos/#london" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-london-tower-cloud-2018-b80bff72.webp" alt="The Tower of London under heavy cloud." loading="lazy"></a>
-  <a href="/photos/#georgia" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-tbilisi-cable-street-2026-4336ced0.webp" alt="A Tbilisi street with cable lines overhead." loading="lazy"></a>
-  <a href="/photos/#beijing" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-beijing-ginkgo-street-2020-f5c0d401.webp" alt="A Beijing street lined with golden ginkgo trees." loading="lazy"></a>
-  <a href="/photos/#lisbon" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-lisbon-street-tram-2026-48c18cc4.webp" alt="A Lisbon street opening to a small tram and bright buildings." loading="lazy"></a>
-  <a href="/photos/#singapore" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-singapore-macaque-family-2021-704730f0.webp" alt="A macaque family grooming with a dark infant between them." loading="lazy"></a>
-  <a href="/photos/#death-valley" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-death-valley-salt-walker-2023-002317b0.webp" alt="A tiny walker on the Death Valley salt flats beneath dark mountains." loading="lazy"></a>
+  <a href="/photos/#london" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-london-tower-cloud-2018-b80bff72.webp" alt="" loading="lazy"></a>
+  <a href="/photos/#georgia" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-tbilisi-cable-street-2026-4336ced0.webp" alt="" loading="lazy"></a>
+  <a href="/photos/#beijing" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-beijing-ginkgo-street-2020-f5c0d401.webp" alt="" loading="lazy"></a>
+  <a href="/photos/#lisbon" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-lisbon-street-tram-2026-48c18cc4.webp" alt="" loading="lazy"></a>
+  <a href="/photos/#singapore" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-singapore-macaque-family-2021-704730f0.webp" alt="" loading="lazy"></a>
+  <a href="/photos/#death-valley" class="home-photo-strip__link"><img src="/assets/images/photos/atlas-death-valley-salt-walker-2023-002317b0.webp" alt="" loading="lazy"></a>
 </div>
 
 <a href="/photos/" class="site-nav-link">→ photos</a>
@@ -240,7 +243,7 @@ I have photographed things compulsively since middle school, mostly out of an an
 <h2 id="other-stuff">other stuff :)</h2>
 
 <p><span class="home-chess-puzzle" role="group" aria-label="Chess puzzle">
-  <img src="/assets/images/chess-puzzle.gif" alt="Chess puzzle" loading="lazy">
+  <img src="/assets/images/chess-puzzle.gif" alt="chess puzzle" loading="lazy">
   <span class="home-chess-puzzle__caption">My favourite chess puzzle of all time: it's mate in two, white to move. Rxa7 looks crushing, but after …O-O the Black king escapes. The key is <a href="https://www.reddit.com/r/chess/s/Hq2PYqyZ7Y" class="site-nav-link">Schrödinger's castle</a>.</span>
 </span>
 <strong>Chess.</strong> I play at around 1800 Elo on <a href="https://lichess.org/@/amoxitoxin" class="site-nav-link">Lichess</a> and keep meaning to enter an OTB tournament. Here is a puzzle I love.

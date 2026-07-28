@@ -2853,6 +2853,116 @@ mark.thoughts-highlight {
   font-size: 0.9em;
 }
 
+// -------------------------
+// compact homepage project index
+// -------------------------
+.home-project-index {
+  display: grid;
+  margin: 0.9rem 0 0.72rem;
+  border-top: 1px solid $site-separator-soft;
+  border-bottom: 1px solid $site-separator-soft;
+}
+
+.home-project-index a {
+  display: grid;
+  grid-template-columns: minmax(9.25rem, 0.72fr) minmax(0, 1.28fr);
+  gap: 0.9rem;
+  align-items: baseline;
+  min-width: 0;
+  padding: 0.48rem 0;
+  color: $site-text-body;
+  text-decoration: none;
+}
+
+.home-project-index a + a {
+  border-top: 1px solid $site-separator-soft;
+}
+
+.home-project-index strong {
+  color: $morandi-clay-deep;
+  font-weight: bold;
+  line-height: 1.32;
+  transition: color 0.18s ease;
+}
+
+.home-project-index span {
+  min-width: 0;
+  color: $site-text-muted;
+  font-size: 0.88rem;
+  line-height: 1.42;
+  overflow-wrap: anywhere;
+}
+
+.home-project-index a:hover,
+.home-project-index a:focus-visible {
+  text-decoration: none;
+}
+
+.home-project-index a:hover strong,
+.home-project-index a:focus-visible strong {
+  color: $morandi-clay;
+}
+
+.home-project-index a:focus-visible {
+  outline: 2px solid $morandi-clay-deep;
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+// -------------------------
+// project landing page
+// -------------------------
+.projects-page .page__content > h2:first-of-type {
+  margin-top: 0;
+}
+
+.projects-page .page__content > h2[id] {
+  scroll-margin-top: 1.25rem;
+}
+
+body.projects-page .page__content > .projects-page__contents-label {
+  margin: 0.35rem 0 0;
+  color: $site-text-muted;
+  font-size: 0.88rem;
+  font-style: italic;
+}
+
+.projects-page__index {
+  margin-top: 0.2rem;
+  margin-bottom: 2.25rem;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  clear: both;
+  gap: 0.25rem 1rem;
+  margin: 0.45rem 0 3.2rem;
+  font-family: $reforma-stack;
+  font-size: 1.08rem;
+  line-height: 1.45;
+}
+
+.projects-page .page__content .project-links a {
+  font-family: inherit;
+}
+
+.project-links a:focus-visible {
+  outline: 2px solid $morandi-clay-deep;
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+.projects-page .page__content > .projects-updated {
+  margin-top: 3.8rem;
+  color: $site-text-muted;
+  font-family: $reforma-stack;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  opacity: 0.68;
+}
+
 .home-writing-shelf {
   --home-writing-shelf-top-gap: 0.2rem;
   --home-writing-shelf-bottom-gap: 1.16rem;
@@ -3113,6 +3223,12 @@ mark.thoughts-highlight {
 }
 
 @media (max-width: 620px) {
+  .home-project-index a {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.04rem;
+    padding: 0.6rem 0;
+  }
+
   .home-project {
     grid-template-columns: 1fr;
     gap: 0.62rem;
@@ -4652,7 +4768,8 @@ body.writing-page .page__content .writing-entry__title em {
 
 // long-form prose pages
 .writing-piece,
-body.science-page {
+body.science-page,
+body.projects-page {
   .page__title {
     max-width: 24ch;
     margin-bottom: 1.35rem;
@@ -5269,6 +5386,101 @@ body.science-page .page__content .writing-insert--right {
 body.science-page .page__content .writing-insert--left {
   @include breakpoint($large) {
     margin: $media-block-gap auto $media-block-gap 0;
+  }
+}
+
+body.projects-page .page__content .project-story__figure {
+  --media-block-width: 22rem;
+  --media-float-width: 22rem;
+  --media-float-max: 46%;
+
+  clear: both;
+  margin-bottom: 0.9rem;
+
+  @include breakpoint($large) {
+    margin-bottom: 0.18rem;
+  }
+}
+
+body.projects-page .page__content .project-story__figure--fibre {
+  --media-block-width: 44rem;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  @include breakpoint($large) {
+    float: none;
+    width: 100%;
+    max-width: var(--media-block-width);
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+body.projects-page .page__content .project-story__figure--kairos {
+  --media-block-width: 32rem;
+
+  @include breakpoint($large) {
+    float: none;
+    width: 100%;
+    max-width: var(--media-block-width);
+  }
+}
+
+body.projects-page .page__content .project-story__figure--kairos.writing-insert--left {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+body.projects-page .page__content .project-story__figure--kairos.writing-insert--right {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+body.projects-page .page__content .project-story__figure--lc-ca1 {
+  --media-block-width: 30rem;
+
+  @include breakpoint($large) {
+    float: none;
+    width: 100%;
+    max-width: var(--media-block-width);
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+body.projects-page .page__content .project-story__figure--zone {
+  --media-block-width: 30rem;
+
+  @include breakpoint($large) {
+    float: none;
+    width: 100%;
+    max-width: var(--media-block-width);
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+
+.project-story__media-row {
+  display: flex;
+  gap: 0.62rem;
+  align-items: flex-start;
+}
+
+.page__content .project-story__media-row img {
+  flex: 1 1 calc(50% - 0.31rem);
+  width: calc(50% - 0.31rem);
+  min-width: 0;
+}
+
+@media (max-width: 620px) {
+  .project-story__media-row {
+    flex-direction: column;
+  }
+
+  .page__content .project-story__media-row img {
+    flex: 0 0 auto;
+    width: 100%;
   }
 }
 
@@ -5966,7 +6178,10 @@ body.science-page .page__content .writing-insert-pair--right {
   .writing-piece .page__content > h4,
   body.science-page .page__content > h2,
   body.science-page .page__content > h3,
-  body.science-page .page__content > h4 {
+  body.science-page .page__content > h4,
+  body.projects-page .page__content > h2,
+  body.projects-page .page__content > h3,
+  body.projects-page .page__content > h4 {
     color: $dark-heading;
   }
 
@@ -5975,7 +6190,10 @@ body.science-page .page__content .writing-insert-pair--right {
   .writing-piece .page__content > h4::after,
   body.science-page .page__content > h2::after,
   body.science-page .page__content > h3::after,
-  body.science-page .page__content > h4::after {
+  body.science-page .page__content > h4::after,
+  body.projects-page .page__content > h2::after,
+  body.projects-page .page__content > h3::after,
+  body.projects-page .page__content > h4::after {
     border-top-color: rgba(#c49a85, 0.36);
   }
 
@@ -6368,6 +6586,35 @@ body.science-page .page__content .writing-insert-pair--right {
   .home-project__media:hover img,
   .home-project__media:focus-visible img {
     opacity: 0.96;
+  }
+
+  .home-project-index span,
+  .projects-page__contents-label,
+  .projects-page .page__content > .projects-updated {
+    color: #9b928a;
+  }
+
+  .home-project-index,
+  .home-project-index a + a {
+    border-color: rgba(#9b928a, 0.16);
+  }
+
+  .home-project-index a {
+    color: $dark-copy;
+  }
+
+  .home-project-index strong {
+    color: $dark-link;
+  }
+
+  .home-project-index a:hover strong,
+  .home-project-index a:focus-visible strong {
+    color: $dark-link-hover;
+  }
+
+  .project-links a:focus-visible,
+  .home-project-index a:focus-visible {
+    outline-color: $dark-link-hover;
   }
 
   .home-photo-strip img {
