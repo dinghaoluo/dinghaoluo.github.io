@@ -3,24 +3,10 @@ layout: single
 author_profile: true
 permalink: /music/
 title: "music"
-classes:
-  - music-page
-  - section-nav-page
+classes: music-page
 header:
   og_image: "/assets/images/social-card-music.png"
-section_nav: true
 ---
-
-<nav class="home-section-strip" aria-label="music page sections">
-  <div class="home-section-strip__scroller">
-    <a href="#early-music" data-home-section="early-music">singles</a>
-    <a href="#the-maze" data-home-section="the-maze">the maze</a>
-  </div>
-</nav>
-<div class="home-back-to-top-wrap">
-  <button class="home-back-to-top" type="button" aria-label="Back to top"
-    aria-hidden="true" tabindex="-1" data-home-back-to-top>&uarr;</button>
-</div>
 
 <style>
 
@@ -215,7 +201,7 @@ html[data-theme="dark"] .mp-setup img { border-color: rgba(90, 82, 76, 0.4); }
 html[data-theme="dark"] .mp-singles img { border-color: rgba(90, 82, 76, 0.4); }
 </style>
 
-<div id="early-music" class="mp-prose mp-prose--singles section-nav-anchor" markdown="0">
+<div id="early-music" class="mp-prose mp-prose--singles" markdown="0">
 I had been absorbing prog and jazz since secondary school, and by Cambridge the impulse to make something of my own had been building for years. Gear was getting cheap and strange: anyone with a laptop could make a record, and expressive MIDI controllers were arriving from nowhere. I ordered a ROLI Seaboard after watching somebody play one on YouTube. And there I was, a MacBook, Logic Pro, and the ROLI on a wooden desk. That was the entire studio, and I sank nights and days into it.
 
 <span class="mp-break"></span>
@@ -237,7 +223,7 @@ My university years were full of exhibitions and shows around the UK. The summer
 
 <div class="mp-clear"></div>
 
-<div id="the-maze" class="mp-prose section-nav-anchor" markdown="0">
+<div id="the-maze" class="mp-prose" markdown="0">
 <figure class="mp-album-hero">
   <img src="/assets/images/the-maze.jpg" alt="The Maze album cover" decoding="async">
   <figcaption><em>the maze</em> · <a href="https://amoxitoxin.bandcamp.com/">Bandcamp</a></figcaption>

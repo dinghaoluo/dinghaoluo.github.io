@@ -3,27 +3,11 @@ layout: single
 author_profile: true
 permalink: /writing/
 title: "writing"
-classes:
-  - writing-page
-  - section-nav-page
+classes: writing-page
 header:
   og_image: "/assets/images/social-card-writing.png"
 lede: "a collection of my writing and translation work, from science communication features to journal entries"
-section_nav: true
 ---
-
-<nav class="home-section-strip" aria-label="writing page sections">
-  <div class="home-section-strip__scroller">
-    <a href="#print" data-home-section="print">print</a>
-    <a href="#digital" data-home-section="digital">digital</a>
-    <a href="#other-writing" data-home-section="other-writing">other</a>
-    <a href="#translations" data-home-section="translations">trans.</a>
-  </div>
-</nav>
-<div class="home-back-to-top-wrap">
-  <button class="home-back-to-top" type="button" aria-label="Back to top"
-    aria-hidden="true" tabindex="-1" data-home-back-to-top>&uarr;</button>
-</div>
 
 {% assign articles = site.writing | sort: 'date' | reverse %}
 {% assign print_articles = articles | sort: "print_order" %}
