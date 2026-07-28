@@ -10,7 +10,7 @@ The tab title is a pun: '好' (*hǎo*, meaning ‘good’) shares its sound with
 
 ## Pages
 
-The site has six sections plus a 404.
+The site has six primary sections, a separately deployed project site, and a 404.
 
 **Writing**: essays, fiction, journal entries, science communication, and translation work
 
@@ -18,11 +18,13 @@ The site has six sections plus a 404.
 
 **Science**: work from my university and PhD years
 
+**Projects**: a prose-led data-science page for FibreSight, Kairos, LC–CA1, and The Zone
+
 **Music**: original tracks (in-site audio, Bandcamp)
 
 **Photos**: a world map of places I have photographed, with a curated gallery
 
-**The Zone**: a computational literary analysis of *Gravity's Rainbow* (1973): plotline braids, character network, glossary, and more sections in progress
+**The Zone**: a separately deployed computational literary analysis of *Gravity's Rainbow* (1973): plotline braids, character network, glossary, and more sections in progress
 
 **404**: generates procedural prose fragments from a lexicon of corridors, catalogues, and drowned pages. Every broken URL gets its own little text.
 
