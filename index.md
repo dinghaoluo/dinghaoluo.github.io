@@ -9,10 +9,13 @@ last_updated: 2026-07-27
 
 I'm finishing my PhD in neuroscience at the Max Planck Florida Institute for Neuroscience, studying how a tiny brainstem nucleus uses dopamine to rapidly tune memory accuracy in the hippocampus. I'm graduating in December 2026 and looking for data science roles in Europe.
 
-Recently I've been reading Pynchon's *Mason & Dixon* (1997), finishing up my <a href="#science" class="site-nav-link">PhD</a> thesis, and working on some fun <a href="#projects" class="site-nav-link">side-projects</a> spanning literature analysis and scientific image segmentation.
+Recently I've been reading Pynchon's *Mason & Dixon* (1997), finishing up my <a href="#science" class="site-nav-link">PhD</a> thesis, and working on some fun <a href="#projects" class="site-nav-link">projects</a> spanning literature analysis and scientific image segmentation.
 
 Reach out to me: <a href="mailto:dinghao.luo@outlook.com" class="site-nav-link">[dinghao.luo@outlook.com]</a><br>
-Find me: <a href="https://github.com/dinghaoluo" class="site-nav-link">GitHub</a> · <a href="https://www.linkedin.com/in/dinghaoluo/" class="site-nav-link">LinkedIn</a> · <a href="https://www.reddit.com/user/amoxdl24/" class="site-nav-link">Reddit</a> · <a href="https://www.instagram.com/amoxitoxin" class="site-nav-link">Instagram</a> · <a href="/cv/" class="site-nav-link">CV</a>
+
+Find me: <a href="https://github.com/dinghaoluo" class="site-nav-link">GitHub</a> · <a href="https://www.linkedin.com/in/dinghaoluo/" class="site-nav-link">LinkedIn</a> · <a href="https://www.reddit.com/user/amoxdl24/" class="site-nav-link">Reddit</a> · <a href="https://www.instagram.com/amoxitoxin" class="site-nav-link">Instagram</a><br>
+
+You can find my CV <a href="/cv/" class="site-nav-link">here</a>.
 
 ---
 
