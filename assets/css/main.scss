@@ -170,8 +170,8 @@ $font-code: $mono-stack;
 $writing-title-stack: $reforma-stack;
 $writing-title-italic-stack: $reforma-stack;
 $content-width: 760px;
-$media-block-gap: 1.45rem;
-$media-float-gap: 0.35rem;
+$media-block-gap: 1.35rem;
+$media-float-gap: 0.27rem;
 $media-float-gutter: 1.55rem;
 $media-caption-gap: 0.32rem;
 $media-radius: 5px;
@@ -661,6 +661,9 @@ body {
 // page content
 // -------------------------
 .page__content {
+  --media-flow-gap: #{$media-block-gap};
+  --media-flow-gap-before: calc(var(--media-flow-gap) + 0.1rem);
+
   p,
   li,
   dl {
@@ -4936,6 +4939,9 @@ body.projects-page {
   .page__content > p {
     font-family: $font-prose;
     line-height: 1.88;
+  }
+
+  .page__content > p:not(:has(+ .writing-insert)):not(:has(+ .writing-insert-pair)) {
     margin-bottom: 1.45em;
   }
 
@@ -5255,13 +5261,13 @@ body.music-page .mp-prose .wv-player {
   display: block;
   width: 100%;
   max-width: var(--media-width, 44rem);
-  margin: $media-block-gap 0;
+  margin: var(--media-flow-gap) 0;
 }
 
 .page__content .writing-insert--right {
   width: 100%;
   max-width: var(--media-block-width, 30rem);
-  margin: $media-block-gap 0 $media-block-gap auto;
+  margin: var(--media-flow-gap) 0 var(--media-flow-gap) auto;
 
   @include breakpoint($large) {
     float: right;
@@ -5275,7 +5281,7 @@ body.music-page .mp-prose .wv-player {
 .page__content .writing-insert--left {
   width: 100%;
   max-width: var(--media-block-width, 30rem);
-  margin: $media-block-gap auto $media-block-gap 0;
+  margin: var(--media-flow-gap) auto var(--media-flow-gap) 0;
 
   @include breakpoint($large) {
     float: left;
@@ -5304,7 +5310,7 @@ body.music-page .mp-prose .wv-player {
   gap: $media-pair-gap;
   width: 100%;
   max-width: var(--media-pair-width);
-  margin: $media-block-gap auto $media-block-gap 0;
+  margin: var(--media-flow-gap) auto var(--media-flow-gap) 0;
   clear: both;
 
   figure {
@@ -5377,7 +5383,10 @@ body.science-page .page__content .writing-insert {
     clear: both;
     width: 100%;
     max-width: var(--media-block-width);
-    margin: $media-block-gap auto $media-block-gap 0;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: $media-block-gap;
+    margin-left: 0;
   }
 
   @include breakpoint($x-large) {
@@ -5387,14 +5396,24 @@ body.science-page .page__content .writing-insert {
 
 body.science-page .page__content .writing-insert--right {
   @include breakpoint($large) {
-    margin: $media-block-gap 0 $media-block-gap auto;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: $media-block-gap;
+    margin-left: auto;
   }
 }
 
 body.science-page .page__content .writing-insert--left {
   @include breakpoint($large) {
-    margin: $media-block-gap auto $media-block-gap 0;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: $media-block-gap;
+    margin-left: 0;
   }
+}
+
+body.projects-page .page__content {
+  --media-flow-gap: 1rem;
 }
 
 body.projects-page .page__content .project-story__figure {
@@ -5403,11 +5422,7 @@ body.projects-page .page__content .project-story__figure {
   --media-float-max: 46%;
 
   clear: both;
-  margin-bottom: 0.9rem;
-
-  @include breakpoint($large) {
-    margin-bottom: 0.18rem;
-  }
+  margin-bottom: var(--media-flow-gap);
 }
 
 body.projects-page .page__content .project-story__figure--fibre {
@@ -5426,7 +5441,7 @@ body.projects-page .page__content .project-story__figure--fibre {
 }
 
 body.projects-page .page__content .project-story__figure--kairos {
-  --media-block-width: 32rem;
+  --media-block-width: 43.2rem;
 
   @include breakpoint($large) {
     float: none;
@@ -5446,7 +5461,7 @@ body.projects-page .page__content .project-story__figure--kairos.writing-insert-
 }
 
 body.projects-page .page__content .project-story__figure--lc-ca1 {
-  --media-block-width: 30rem;
+  --media-block-width: 43.2rem;
 
   @include breakpoint($large) {
     float: none;
@@ -5458,7 +5473,7 @@ body.projects-page .page__content .project-story__figure--lc-ca1 {
 }
 
 body.projects-page .page__content .project-story__figure--zone {
-  --media-block-width: 30rem;
+  --media-block-width: 43.2rem;
 
   @include breakpoint($large) {
     float: none;
@@ -5511,7 +5526,10 @@ body.science-page .page__content .writing-insert-pair {
     clear: both;
     width: 100%;
     max-width: var(--media-pair-width);
-    margin: $media-block-gap auto $media-block-gap 0;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: $media-block-gap;
+    margin-left: 0;
   }
 
   @include breakpoint($x-large) {
@@ -5521,7 +5539,28 @@ body.science-page .page__content .writing-insert-pair {
 
 body.science-page .page__content .writing-insert-pair--right {
   @include breakpoint($large) {
-    margin: $media-block-gap 0 $media-block-gap auto;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: $media-block-gap;
+    margin-left: auto;
+  }
+}
+
+// keep the space on either side of an insert independent of paragraph margins
+body .page__content > p:has(+ .writing-insert),
+body .page__content > p:has(+ .writing-insert-pair) {
+  margin-bottom: var(--media-flow-gap-before);
+}
+
+.page__content p + .writing-insert,
+.page__content p + .writing-insert-pair {
+  margin-top: 0;
+}
+
+@include breakpoint($large) {
+  .writing-piece .page__content p:has(+ .writing-insert--right),
+  .writing-piece .page__content p:has(+ .writing-insert--left) {
+    margin-bottom: $media-float-gap;
   }
 }
 
