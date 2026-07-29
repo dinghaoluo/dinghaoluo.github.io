@@ -67,7 +67,7 @@ However, I am currently running into some issues, the biggest of which being tha
 
 <figure class="writing-insert writing-insert--right project-story__figure project-story__figure--kairos">
   <img src="/assets/images/projects/kairos-score-timeline.png" alt="" width="2200" height="1280" loading="lazy">
-  <figcaption>Out-of-sample scores across gap years; black ticks mark reviewed events within the following three years.</figcaption>
+  <figcaption>out-of-sample scores across 'breakthrough years', which are marked by black ticks on top</figcaption>
 </figure>
 
 But of course frustration was always going to be a given in a project with any ambition at all, and I have thought of some potential solutions that I am going to try out next. I will separate 'an important paper appears' from 'the field changes direction', rebuilding the target labels around human-reviewed field-reorienting papers and field-reorienting episode onsets. This will also need to normalise for the volume of papers coming out in each year, so that quantity no longer confounds our analysis. The neural-network history currently contains only about nine independent burst episodes, so I may have to carry the question across several fields before the sample can support a serious answer.
