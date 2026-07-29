@@ -6843,7 +6843,57 @@ html[data-theme="dark"] {
   @include dark-colors;
 }
 
-@import "site/cv";
 @import "site/photos";
-@import "site/cv-dark";
 @import "site/photos-dark";
+
+// -------------------------
+// CV page
+// -------------------------
+body.cv-page {
+  .page__content {
+    .cv-intro {
+      max-width: 40rem;
+      margin: 0 0 2.6rem;
+      font-size: 1.08rem;
+      line-height: 1.65;
+    }
+
+    .cv-links {
+      max-width: 40rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        margin: 0 0 1.25rem;
+        line-height: 1.5;
+      }
+
+      a {
+        font-family: $reforma-stack;
+        font-size: 1.12rem;
+        font-weight: bold;
+        color: $morandi-clay-deep;
+        text-decoration: none;
+
+        &:hover, &:focus-visible { text-decoration: underline; }
+      }
+    }
+
+    .cv-links__format {
+      font-family: $reforma-stack;
+      color: $site-text-muted;
+    }
+  }
+
+  .cv-last-updated {
+    margin-top: 2rem;
+    font-size: 0.86em;
+    opacity: 0.45;
+  }
+}
+
+html[data-theme="dark"] body.cv-page {
+  .cv-links a { color: #d8d0c8; }
+  .cv-links__format { color: #a9a19a; }
+}
