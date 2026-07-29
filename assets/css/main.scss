@@ -2896,6 +2896,10 @@ mark.thoughts-highlight {
   transition: color 0.18s ease;
 }
 
+.projects-page__index strong {
+  font-weight: normal;
+}
+
 .home-project-index span {
   min-width: 0;
   color: $site-text-muted;
