@@ -26,7 +26,7 @@ last_updated: 2026-07-28
   </a>
   <a href="#the-zone">
     <strong>The Zone</strong>
-    <span>a computational analysis of <em>Gravity's Rainbow</em> (1973).</span>
+    <span>a computational analysis of <em>Gravity's Rainbow</em> (1973)</span>
   </a>
 </nav>
 

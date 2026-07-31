@@ -13,7 +13,7 @@ Recently I've been reading Pynchon's *Mason & Dixon* (1997), finishing up my <a 
 
 Reach out to me: <a href="mailto:dinghao.luo@outlook.com" class="site-nav-link">[dinghao.luo@outlook.com]</a><br>
 
-Find me: <a href="https://github.com/dinghaoluo" class="site-nav-link">GitHub</a> · <a href="https://www.linkedin.com/in/dinghaoluo/" class="site-nav-link">LinkedIn</a> · <a href="https://substack.com/@dinghaoluo" class="site-nav-link">Substack</a> · <a href="https://www.reddit.com/user/amoxdl24/" class="site-nav-link">Reddit</a> · <a href="https://www.instagram.com/amoxitoxin" class="site-nav-link">Instagram</a><br>
+Find me: <a href="https://github.com/dinghaoluo" class="site-nav-link">GitHub</a> <a href="https://www.linkedin.com/in/dinghaoluo/" class="site-nav-link">LinkedIn</a> <a href="https://substack.com/@dinghaoluo" class="site-nav-link">Substack</a> <a href="https://www.reddit.com/user/amoxdl24/" class="site-nav-link">Reddit</a> <a href="https://www.instagram.com/amoxitoxin" class="site-nav-link">Instagram</a><br>
 
 You can find my CV <a href="/cv/" class="site-nav-link">here</a>.
 
@@ -53,7 +53,7 @@ Over the past few years I have come to *love* data. The overwhelming happiness s
   </a>
   <a href="/projects/#the-zone">
     <strong>The Zone</strong>
-    <span>a computational analysis of <em>Gravity's Rainbow</em> (1973).</span>
+    <span>a computational analysis of <em>Gravity's Rainbow</em> (1973)</span>
   </a>
 </nav>
 
@@ -63,44 +63,44 @@ Over the past few years I have come to *love* data. The overwhelming happiness s
 
 <h2 id="writing"><a href="/writing/">writing :)</a></h2>
 
-Writing, along with reading, was one of my first true passions. Like many kids, I kept a journal as I grew up, and the advent of the Internet age allowed me to transform things I wrote in my journal into an online repository. I wrote under the pen-name `amoxitoxin` in both Chinese and English since I was 15, and have translated selected pieces into English, which can be found on the <a href="/writing/" class="site-nav-link">writing</a> page. Here are some of the pieces of which I am proudest:
+Writing, along with reading, was one of my first true passions. Like many kids, I kept a journal as I grew up, and the advent of the Internet age allowed me to transform things I wrote in my journal into an online repository. I wrote under the pen-name `amoxitoxin` in both Chinese and English since I was 15, and have translated selected pieces into English, which can be found on the <a href="/writing/" class="site-nav-link">writing</a> page. Here are my three most recent pieces:
 
-<div class="home-writing-shelf" aria-label="featured writing">
-  <a class="home-writing-tile home-writing-tile--gravity" href="/writing/gravitys-rainbow/">
-    <img class="home-writing-tile__image" src="/assets/images/writing/gravitys-rainbow-hardcover.jpg" alt="" loading="lazy">
-    <span class="home-writing-tile__glass">
-      <span class="home-writing-tile__kicker">book review</span>
-      <span class="home-writing-tile__title">On <em>Gravity's Rainbow</em></span>
+{% assign home_writing_articles = site.writing | sort: 'date' | reverse %}
+{% assign home_writing_count = 0 %}
+<div class="home-writing-list" aria-label="recent writing">
+{% for article in home_writing_articles %}
+  {% if article.writing_page == false %}{% continue %}{% endif %}
+  {% if article.original_writing == false %}{% continue %}{% endif %}
+  {% assign home_writing_title = article.archive_title | default: article.title_display | default: article.title %}
+  {% assign home_writing_kind = "essay" %}
+  {% if article.type == "feature" or article.type == "science" or article.type == "scicomm" or article.section == "online" %}
+    {% assign home_writing_kind = "science" %}
+  {% elsif article.type == "fiction" %}
+    {% assign home_writing_kind = "story" %}
+  {% elsif article.type == "journal" %}
+    {% assign home_writing_kind = "journal" %}
+  {% endif %}
+  {% assign home_writing_type = article.type %}
+  {% if home_writing_kind == "science" %}
+    {% assign home_writing_type = "science" %}
+  {% endif %}
+  {% capture home_writing_preview %}{% include writing-preview.html article=article %}{% endcapture %}
+  {% assign home_writing_preview = home_writing_preview | strip %}
+  <a class="home-writing-entry" href="{{ article.url }}">
+    <span class="home-writing-entry__body">
+      <span class="home-writing-entry__title">{{ home_writing_title }}</span>
+      {% if home_writing_preview != '' %}
+      <span class="home-writing-entry__excerpt">{{ home_writing_preview }}</span>
+      {% endif %}
+    </span>
+    <span class="home-writing-entry__meta">
+      <span class="home-writing-entry__type">{{ home_writing_type }}</span>
+      <span class="home-writing-entry__date"><span>{{ article.date | date: "%-d %b %Y" }}</span><span aria-hidden="true"> · </span><span>{% include read-time.html content=article.content %}</span></span>
     </span>
   </a>
-  <a class="home-writing-tile home-writing-tile--place-cells" href="/writing/place-cells/">
-    <img class="home-writing-tile__image" src="/assets/images/writing/place-cells-hippocampus-cleaned.jpg" alt="" loading="lazy">
-    <span class="home-writing-tile__glass">
-      <span class="home-writing-tile__kicker">sci-comm</span>
-      <span class="home-writing-tile__title">Place Cells and the Brain's Cartography</span>
-    </span>
-  </a>
-  <a class="home-writing-tile home-writing-tile--freedoms" href="/writing/two-freedoms/">
-    <img class="home-writing-tile__image" src="/assets/images/personal/two-freedoms.webp" alt="" loading="lazy">
-    <span class="home-writing-tile__glass">
-      <span class="home-writing-tile__kicker">journal</span>
-      <span class="home-writing-tile__title">Two Freedoms</span>
-    </span>
-  </a>
-  <a class="home-writing-tile home-writing-tile--solenoid" href="/writing/solenoid/">
-    <img class="home-writing-tile__image" src="/assets/images/writing/solenoid.jpg" alt="" loading="lazy">
-    <span class="home-writing-tile__glass">
-      <span class="home-writing-tile__kicker">book review</span>
-      <span class="home-writing-tile__title">On <em>Solenoid</em></span>
-    </span>
-  </a>
-  <a class="home-writing-tile home-writing-tile--shanwei" href="/writing/shanwei/">
-    <img class="home-writing-tile__image" src="/assets/images/personal/shanwei.webp" alt="" loading="lazy">
-    <span class="home-writing-tile__glass">
-      <span class="home-writing-tile__kicker">journal</span>
-      <span class="home-writing-tile__title">Shanwei</span>
-    </span>
-  </a>
+  {% assign home_writing_count = home_writing_count | plus: 1 %}
+  {% if home_writing_count >= 3 %}{% break %}{% endif %}
+{% endfor %}
 </div>
 
 Since my undergraduate years at Cambridge, however, and now through my PhD, I have written mostly about science. I was one of the earliest members of Neu-Reality (神经现实), a Chinese-language neuroscience science communication platform, and spent three years as science editor and translator there. After that were seven months at *Scientific American* China, where I wrote weekly news on their digital platform, edited translations of each month's *SciAm* magazine, and finished <a href="/writing/arc-consciousness/" class="site-nav-link">a print feature</a> on Templeton World Charity Foundation's Accelerating Research on Consciousness (ARC) initiative, interviewing researchers like Cyriel Pennartz and Anil Seth.
