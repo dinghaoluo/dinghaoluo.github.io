@@ -47,9 +47,6 @@ There is no need. Really, there is no need. Before '双耳节拍' has had a chan
 
 In closing: good health to all. See a doctor when one ought to see a doctor; take medication when one ought to take it. I hope we will not see the Chinese internet produce a three-hour binaural-beat video with over 20,000 likes, as YouTube already has. Perhaps binaural beats do work; but given the present evidence, making money from them is not stupidity. It is malice.
 
-> Making money from them is not stupidity.<br>It is malice.
-{: .pullquote .pullquote--compact}
-
 <div class="source-note" markdown="1">
 **References**
 

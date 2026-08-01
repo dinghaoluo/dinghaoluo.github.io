@@ -59,9 +59,6 @@ Following the behavioural results, Luo Huan's laboratory collaborated with Mi Yu
 
 The Luo Huan laboratory has thus developed a non-invasive 'dynamic perturbation' paradigm capable of manipulating human working memory through external stimulation, and, in collaboration with Mi Yuanyuan, has elucidated its putative neural basis. The research team likens the paradigm to a behavioural-level analogue of optogenetic control: a way to reach inside the skull without opening it.
 
-> A way to reach inside the skull without opening it.
-{: .pullquote .pullquote--compact}
-
 <div class="source-note" markdown="1">
 **References**
 

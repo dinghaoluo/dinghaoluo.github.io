@@ -36,10 +36,6 @@ Koch often returned to the problem of solipsism: many philosophers have long hel
 
 Three decades after Crick and Koch's paper, the key they sought remains nowhere in sight. Many believe we understand consciousness no better than we did then, and the field has not even reached consensus on a definition.
 
-> The field has not even reached<br>
-> consensus on a definition.
-{: .pullquote .pullquote--compact .pullquote--wide}
-
 <hr class="section-break">
 
 In 1994, four years after Crick and Koch's foundational paper, a twenty-seven-year-old Australian philosopher named David Chalmers delivered a landmark address at the University of Arizona's 'Toward a Science of Consciousness' conference. Chalmers declared that brain research has only one truly difficult problem: the Hard Problem of Consciousness. Answering it requires not only identifying the neural correlates of consciousness but also addressing a deeper question: how does the operation of those correlates give rise to subjective experience? In Chalmers' view, the programme Crick and Koch had proposed four years earlier ignored this second question. Whatever the neural correlate turns out to be, whether heightened activity in a particular brain region or synchronised oscillation among neurons, it cannot on its own explain why subjective experience exists at all.

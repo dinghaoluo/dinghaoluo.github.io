@@ -13,17 +13,10 @@ banner_image: "/assets/images/writing/solenoid-berceni-aerial-1969.jpg"
 <span class="ro-name" lang="ro">Cărtărescu</span> lays this bare in *Solenoid*:
 
 > Nothing is strange to a child, because he lives in the strange; thus dreams and old memories seem made from the same substance. (p. 148)
-> {: .literary-quote}
 
 Childhood, in this formulation, has little to do with innocence, nostalgia, or a decorative reservoir of wonder. It is a cognitive condition before the world's appearances and happenings have been sorted into permissible and impermissible categories; before dream, memory, shame, illness, hallucination, and fact have been assigned to separate drawers. The adult mind, schooled by language, fear, work, embarrassment, and the ordinary police force called 'other people', later declares that sorting sanity. <span class="ro-name" lang="ro">Cărtărescu</span> writes from before the drawers close.
 
 That is why the loose category of surrealism only gets one so far. It still thinks in terms of breach: reality here, dream there, impossibility arriving as a foreign body. *Solenoid*'s premise is more radical. Irina floating above the bed is not a violation of the room so much as one of the room's hidden laws becoming briefly visible; the solenoids beneath Bucharest do not make the city strange so much as expose the fact that its ordinary surfaces were never sufficient. The impossible events arrive less as intrusions than as belated evidence that the world was never settled.
-
-This principle governs everything that follows. The rest of the novel tests it by dissolving one category after another: city and body, fact and fiction, biography and counterfactual, flesh and metaphysics; each dissolution turning out, on inspection, to be the same operation at a different scale. <span class="ro-name" lang="ro">Cărtărescu</span>'s world does not feel false. It feels too thin for the pressure inside it, as though another version of existence were pressing against this one, separated by bare skin, language, architecture, and some missing word we were never taught to pronounce. One reads *Solenoid* and begins to distrust one's own furniture.
-
-> One reads *Solenoid* and begins<br>
-> to distrust one's own furniture.
-> {: .pullquote .pullquote--compact .pullquote--wide}
 
 {% include figure image_path="/assets/images/writing/solenoid-berceni-aerial-1969-bw-insert.jpg" alt="Black-and-white aerial view of the Berceni housing estate in Bucharest, 1969" caption="Berceni housing estate seen from the air in 1969: repeated apartment blocks, open lots, and arterial roads at the edge of late-socialist Bucharest. Photograph by Florin Vlădescu / Agerpres, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Berceni_housing_estate_seen_from_the_air_in_1969.jpg), public domain." class="writing-insert writing-insert--section" %}
 
@@ -47,9 +40,7 @@ How does the novel hold all of this (childhood, city, failure, body, escape) wit
 
 The solenoid under the house matters first as an object: the thing itself, the hum beneath the ordinary, the force that warps the floorboards and lifts a woman from her bed. But the device also gives the novel its syntax. A solenoid is a coil that produces a magnetic field when current passes through it; <span class="ro-name" lang="ro">Cărtărescu</span> builds narrative current the same way, by making recurrence generate force. At first the returns seem almost formal: episode coils around episode, dream around memory, the fictional Bucharest around the historical one. Then the loops begin to carry ethical and conceptual friction. Failed life coils around successful life; science around mysticism; disgust around tenderness; longing for transcendence around the body that produces the longing. The movement is induction rather than ordinary progression. Repeated scenes accumulate charge before they disclose a system. This is why every category-failure I have described feels like the same operation: the novel is a coil, and each recurrence adds to the field.
 
-> [*Solenoid*] makes ordinary categories fail,<br>
-> then lets that failure become a way of seeing.
-> {: .pullquote .pullquote--compact .pullquote--wide}
+This is also why *Solenoid* feels irreducible to plot. The book's true unit is not the event but the charged scene: the poetry humiliation, the classrooms, the endless corridors, Colentina and the factories along the tramline, the impossible domestic machinery of the house, Palamar's mites under the lens, the sense that Bucharest has always had an underside waiting for the right pressure. Even the most outlandish images retain a practical texture: a button pressed, a route followed, a body placed under observation, a manuscript card found in a library catalogue. These scenes do not assemble into argument in a linear way. They slowly alter what the reader is willing to accept as evidence.
 
 That principle also explains why *Solenoid* feels irreducible to plot. The book's true unit is not the event but the charged scene: the poetry humiliation, the classrooms, the endless corridors, Colentina and the factories along the tramline, the impossible domestic machinery of the house, Palamar's mites under the lens, the sense that Bucharest has always had an underside waiting for the right pressure. Even the most outlandish images retain a practical texture: a button pressed, a route followed, a body placed under observation, a manuscript card found in a library catalogue. These scenes do not assemble into argument in a linear way. They slowly alter what the reader is willing to accept as evidence.
 

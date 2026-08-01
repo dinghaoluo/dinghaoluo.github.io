@@ -66,9 +66,6 @@ AlphaFold's achievements are real, but so are its boundaries. Acknowledging them
 
 AlphaFold predicts static structures. It produces a single set of coordinates for a given sequence, the conformation most likely to represent the folded state. It cannot model dynamics: the conformational fluctuations, allosteric transitions, and population shifts that govern how proteins function in living cells. A protein is not a frozen sculpture; it breathes, flexes, and samples an ensemble of states. AlphaFold captures one frame of a film.
 
-> AlphaFold captures one frame of a film.
-{: .pullquote .pullquote--compact}
-
 Intrinsically disordered proteins pose a particular challenge. Between 30 and 50 per cent of eukaryotic proteins contain disordered regions, stretches that do not adopt a single stable fold but instead remain flexible, often acquiring structure only upon binding a partner. AlphaFold flags these regions with low confidence scores, which is useful as a diagnostic, but it cannot represent their functional dynamics. Disorder is not noise; it is often the mechanism. AlphaFold has no vocabulary for it.
 
 Post-translational modifications, the chemical alterations that cells apply to proteins after they are synthesised, fall outside the model's scope. Phosphorylation, glycosylation, ubiquitination, and dozens of other modifications regulate protein function, localisation, and degradation. AlphaFold predicts the structure of the unmodified chain.
