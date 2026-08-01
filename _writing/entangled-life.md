@@ -1,9 +1,12 @@
 ---
-title: "<em>Entangled Life</em> and a conversation with Merlin Sheldrake"
+title: "Entangled Life and a conversation with Merlin Sheldrake"
+title_display: "<em>Entangled Life</em> and a conversation with Merlin Sheldrake"
 archive_title: "Entangled Life"
 title_zh: "菌络万象"
 type: "science"
+original_writing: false
 date: 2025-11-05
+print_order: 1
 show_page_meta: false
 show_meta_date: false
 show_page_awards: false
@@ -123,8 +126,5 @@ Regarding education: fungal knowledge is almost entirely absent from education a
 **Merlin:** Through fungi, one can see an entirely different world. Fungi shape life on Earth, including ours, in ways we are only beginning to grasp. There is much to learn from fungi themselves. Life continues because organisms collaborate. New symbiotic relationships often form during moments of crisis. Through collaboration, organisms accomplish what none could alone.
 
 We already know that humans have been cooperating with fungi for an immeasurably long time. Fungi sustain the biosphere's regenerative capacity partly through their metabolic wizardry, their astonishing ability to shape and reshape the world. Bread, alcohol, cheese, soy sauce, penicillin, anticancer drugs, immunosuppressants; the list is long.
-
-> A description of the living world that leaves out fungi describes a world that does not exist.
-{: .pullquote .pullquote--compact}
 
 Nevertheless, as a biological kingdom, fungi have never received the attention they deserve. If we fail to notice their constant influence, we stop seeing them, and end up exploiting or destroying them. Caring about fungi, being curious about fungi: this helps reshape our relationship with them. The mysteries they harbour are inexhaustible.
