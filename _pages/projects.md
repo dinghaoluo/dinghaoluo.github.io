@@ -14,19 +14,19 @@ last_updated: 2026-07-28
 <nav class="home-project-index projects-page__index" aria-label="projects on this page">
   <a href="#fibre-sight">
     <strong>FibreSight</strong>
-    <span>U-Net workbench for segmentation of neural fibres in two-photon images</span>
+    <span>U-Net workbench for axon segmentation in two-photon images</span>
   </a>
   <a href="#kairos">
     <strong>Kairos</strong>
     <span><i>Do field states predict scientific breakthroughs?</i></span>
   </a>
-  <a href="#lc-ca1">
-    <strong>LC–CA1</strong>
-    <span>multimodal neural data analysis pipelines for ephys and imaging data</span>
-  </a>
   <a href="#the-zone">
     <strong>The Zone</strong>
-    <span>a computational analysis of <em>Gravity's Rainbow</em> (1973)</span>
+    <span>a computational analysis of <i>Gravity's Rainbow</i> (1973)</span>
+  </a>
+  <a href="#lc-ca1">
+    <strong>LC–CA1</strong>
+    <span>multimodal neural data analysis pipelines</span>
   </a>
 </nav>
 

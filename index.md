@@ -41,19 +41,19 @@ Over the past few years I have come to *love* data. The overwhelming happiness s
 <nav class="home-project-index" aria-label="featured projects">
   <a href="/projects/#fibre-sight">
     <strong>FibreSight</strong>
-    <span>U-Net workbench for segmentation of neural fibres in two-photon images</span>
+    <span>U-Net workbench for axon segmentation in two-photon images</span>
   </a>
   <a href="/projects/#kairos">
     <strong>Kairos</strong>
     <span><i>Do field states predict scientific breakthroughs?</i></span>
   </a>
-  <a href="/projects/#lc-ca1">
-    <strong>LC–CA1</strong>
-    <span>multimodal neural data analysis pipelines for ephys and imaging data</span>
-  </a>
   <a href="/projects/#the-zone">
     <strong>The Zone</strong>
-    <span>a computational analysis of <em>Gravity's Rainbow</em> (1973)</span>
+    <span>a computational analysis of <i>Gravity's Rainbow</i> (1973)</span>
+  </a>
+  <a href="/projects/#lc-ca1">
+    <strong>LC–CA1</strong>
+    <span>multimodal neural data analysis pipelines</span>
   </a>
 </nav>
 
