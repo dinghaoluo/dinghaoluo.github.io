@@ -3,9 +3,6 @@ title: "Shanwei"
 title_zh: "汕尾"
 type: "journal"
 date: 2020-07-27
-feature_banner: true
-banner_image: "/assets/images/personal/shanwei-lighthouse-island.webp"
-banner_position: "center 50%"
 ---
 
 <span class="dropcap">T</span>he shark meat was in my mouth before I remembered that sharks are cartilaginous fish. I chewed twice, crushing the soft bone and swallowing it. The bitter melon added during cooking had left the flesh loose and tender, carrying an astringent trace of bitterness that overpowered the salt of the beef tendon balls and soy sauce.

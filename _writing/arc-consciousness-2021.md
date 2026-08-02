@@ -9,11 +9,6 @@ meta_outlet_first: true
 section: "print"
 writing_page: false
 show_meta_outlet: false
-feature_banner: true
-banner_image: "/assets/images/writing/arc-consciousness-banner.webp"
-banner_position: "center 48%"
-banner_bg: "#f2eee5"
-banner_image_alt: "Abstract diagram of competing paths crossing a measured field."
 excerpt: "The original 2021 print feature for <em>Scientific American</em> China. A snapshot of the field before the COGITATE results, the Koch–Chalmers bet, and the open letter."
 dropcap: true
 ---

@@ -6,10 +6,6 @@ last_updated: 2024-12-08
 section: "online"
 show_meta_outlet: false
 dropcap: true
-feature_banner: true
-banner_image: "/assets/images/writing/alphafold-banner.png"
-banner_position: "center"
-banner_bg: "#1a1a2e"
 ---
 
 {% include figure image_path="/assets/images/writing/alphafold-protein-structure.jpg" alt="Ribbon diagram of a protein's three-dimensional structure predicted by AlphaFold, showing alpha helices, beta sheets, and loop regions" caption="A protein's three-dimensional ribbon structure. AlphaFold predicts such structures from amino acid sequences alone, bypassing years of experimental crystallography. *Wikimedia Commons, public domain.*" class="writing-insert writing-insert--right" %}
@@ -62,7 +58,7 @@ In October 2024, the Nobel Committee awarded the Prize in Chemistry jointly to D
 
 ## Limitations
 
-AlphaFold's achievements are real, but so are its boundaries. Acknowledging them is not a caveat; it is a condition for understanding what the system actually does.
+AlphaFold has done a great deal, but it also has clear boundaries, and acknowledging them is a condition for understanding what the system actually does.
 
 AlphaFold predicts static structures. It produces a single set of coordinates for a given sequence, the conformation most likely to represent the folded state. It cannot model dynamics: the conformational fluctuations, allosteric transitions, and population shifts that govern how proteins function in living cells. A protein is not a frozen sculpture; it breathes, flexes, and samples an ensemble of states. AlphaFold captures one frame of a film.
 

@@ -6,10 +6,6 @@ last_updated: 2026-03-01
 section: "online"
 show_meta_outlet: false
 dropcap: true
-feature_banner: true
-banner_image: "/assets/images/writing/place-cells-hippocampus-unlabeled.jpg"
-banner_position: "center 30%"
-banner_bg: "#f4f1ea"
 ---
 
 *This article originally appeared, in a shorter form, in the 'Neural Musings' column on Neu-Reality. I have since rewritten and expanded it considerably.*

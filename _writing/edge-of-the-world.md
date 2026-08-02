@@ -4,10 +4,6 @@ title_zh: "返回世界边缘"
 type: "fiction"
 date: 2018-11-29
 dropcap: true
-feature_banner: true
-banner_image: "/assets/images/writing/edge-of-the-world-banner.jpg"
-banner_position: "center"
-banner_bg: "#1a2a3a"
 ---
 
 ## 1

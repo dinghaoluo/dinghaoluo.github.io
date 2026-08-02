@@ -3,9 +3,6 @@ title: "Two freedoms"
 title_zh: "兩種自由"
 type: "journal"
 date: 2019-07-12
-feature_banner: true
-banner_image: "/assets/images/personal/two-freedoms-cambridge-dusk.jpg"
-banner_position: "center 45%"
 ---
 
 <span class="dropcap">I</span> finished work at half past five. At the department entrance a middle-aged man was showing two young children the plaque on the building, the one recording where Hodgkin and Huxley first measured a neuron's action potential. On the way home there was a strange smell of paint, probably from the supermarket being refurbished. The weather was not bad: five in the afternoon and only around twenty degrees. I felt that once I got home I would spend a long time thinking about the day's events. So I did not go home. I rode my bicycle to the hill, earphones playing Thank You Scientist's 'Geronimo'. I had been looping this single for days; I knew every note of the solo but was utterly lost on the lab protocols at work. The last time I watched a sunset was before the summer and the exams. During exams one does not need to think about anything; one just studies, and life is entirely study. After exams one is more exhausted than before, swimming in the ocean of living, on the verge of being flattened by a wave. So two months later, I stood again on the castle ramparts of Castle Hill, switched to Radiohead's 'Planet Telex', and queued 'High and Dry' and Wanqing's 'Qinhuangdao'.

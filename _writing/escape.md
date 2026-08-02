@@ -4,10 +4,6 @@ title_zh: "逃"
 type: "fiction"
 date: 2018-04-27
 dropcap: true
-feature_banner: true
-banner_image: "/assets/images/writing/escape-banner.jpg"
-banner_position: "center 70%"
-banner_bg: "#1a1a3e"
 ---
 
 ## 1

@@ -4,10 +4,6 @@ title_zh: "玉子的夏天"
 type: "fiction"
 date: 2018-09-26
 dropcap: true
-feature_banner: true
-banner_image: "/assets/images/writing/tamakos-summer-banner.jpg"
-banner_position: "center"
-banner_bg: "#3a3a2e"
 ---
 
 ## I
