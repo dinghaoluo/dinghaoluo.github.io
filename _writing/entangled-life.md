@@ -26,7 +26,7 @@ awards:
 isbn: "9787559677754"
 section: "print"
 image: "/assets/images/writing/entangled-life-chinese.jpg"
-excerpt: "My Chinese translation of Merlin Sheldrake's <i>Entangled Life</i> (2020), published by Houlang Books. I adored Frodo as a child, and I think some old fondness for Farmer Maggot's mushroom field followed this project into my inbox. Translating Sheldrake meant finding Chinese for a prose style that thinks through analogy while staying scientifically exact; I owe thanks to my editor Yanxia, and to Cosmo Sheldrake, whose music I kept returning to while working on the manuscript."
+excerpt: "My Chinese translation of Merlin Sheldrake's <i>Entangled Life</i> (2020), for Houlang Books. I adored Frodo as a child, and I am grateful that some old fondness for Farmer Maggot's mushroom field followed this project into my inbox. I owe thanks to my editor Yanxia and to Cosmo Sheldrake, whose music I kept returning to."
 ---
 
 {% include figure image_path="/assets/images/writing/entangled-life-pingshan-award.jpg" alt="Pingshan Natural History Museum Book Award announcement image for Entangled Life" caption="[Pingshan Natural History Museum Book Award](https://m.sohu.com/a/970954278_122097022), 2025." class="writing-insert writing-insert--right writing-insert--small" %}
