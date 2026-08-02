@@ -352,7 +352,7 @@ a {
 
 a.site-nav-link {
   color: $morandi-clay-deep;
-  font-weight: 600;
+  font-weight: normal;
   &, &:visited { color: $morandi-clay-deep; }
   &:hover,
   &:focus-visible { color: $morandi-clay; }
@@ -389,22 +389,31 @@ hr {
   }
 }
 
+// 2026-08-01: subpages get a smaller brand so the nav hierarchy reads correctly; hover underline matches writing card titles
 .page-header__home {
   display: block;
   font-weight: normal;
   letter-spacing: -0.02em;
   color: $morandi-clay-deep;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
   font-size: clamp(1.3rem, 2.6vw, 1.7rem);
   line-height: 1;
   margin-bottom: 0.45em;
+  transition: color 0.18s ease, text-decoration-color 0.18s ease;
 
   strong { font-weight: 600; }
 
   &:hover,
   &:focus-visible {
-    color: $morandi-clay;
-    text-decoration: none;
+    color: $link-color;
+    text-decoration-color: currentColor;
+  }
+
+  body:not(.home) & {
+    font-size: clamp(1.05rem, 2vw, 1.28rem);
   }
 }
 
@@ -827,12 +836,33 @@ body:not(.home) .page__content h6 * {
   font-family: $font-display;
 }
 
+// Homepage baseline: chrome and captions in mono, body prose in serif.
+// The section h2s and the reading paragraphs no longer share a family — the
+// h2 stays Mononoki as a "code-comment stamp" on each section (see block below),
+// while running prose adopts the same serif as the essay pages so the reading
+// voice is continuous from homepage to essay.
+// Homepage baseline stays in Mononoki (nav-strip, taglines, section h2s, meta
+// labels, buttons — the chrome layer). Prose surfaces override this to serif
+// so reading matter reads the same way across homepage and essay pages.
+// Captions and figure inserts are NOT special-cased here: the site-wide rule
+// on figcaption/.writing-insert__caption in the shared block above handles
+// them uniformly, so a caption is the same voice on the homepage as inside
+// an essay.
 .home,
-.home .page__content,
-.home .page__content *,
-.home figcaption,
-.home figcaption * {
+.home .page__content {
   font-family: $mono-stack;
+}
+.home .page__content p,
+.home .page__content ul,
+.home .page__content ol,
+.home .page__content blockquote,
+.home .page__content figcaption,
+// project index tiles carry short descriptive prose, so they belong with reading matter
+.home .page__content .home-project-index a,
+.home .page__content .home-project-index strong,
+.home .page__content .home-project-index span {
+  font-family: $font-prose;
+  font-size: var(--prose-size, 1.18rem);
 }
 
 // homepage section headers - bold Mononoki with subtle animation
@@ -973,7 +1003,7 @@ body:not(.home) .page__content h6 * {
     flex-direction: column;
     align-items: stretch;
     gap: 0.34rem;
-    max-height: calc(100vh - 13rem);
+    max-height: calc(100vh - 6rem);
     overflow-x: hidden;
     overflow-y: auto;
     scrollbar-width: none;
@@ -2807,6 +2837,7 @@ mark.thoughts-highlight {
   @media (max-width: 480px) {
     float: none;
     display: flex;
+    gap: 3px;
     width: 100%;
     grid-template-columns: none;
     margin: 0.05em 0 0.85em;
@@ -2817,11 +2848,27 @@ mark.thoughts-highlight {
     scrollbar-width: none;
     -ms-overflow-style: none;
     max-height: none;
+    scroll-snap-type: x proximity;
     mask-image: linear-gradient(to right, #000 0%, #000 calc(100% - 2.15rem), transparent 100%);
     -webkit-mask-image: linear-gradient(to right, #000 0%, #000 calc(100% - 2.15rem), transparent 100%);
 
-    &::-webkit-scrollbar {
-      display: none;
+    &::-webkit-scrollbar { display: none; }
+
+    // Fix each cover to a uniform window so intrinsic image widths can't leak into layout.
+    // Sit the ratio on the link (the flex item), not the img, and let object-fit crop.
+    .home-covers__link {
+      display: block;
+      flex: 0 0 clamp(4.25rem, 22vw, 5.25rem);
+      aspect-ratio: 2 / 3;
+      overflow: hidden;
+      scroll-snap-align: start;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: auto;
+      object-fit: cover;
     }
   }
 
@@ -3132,7 +3179,7 @@ body.projects-page .page__content > .projects-page__contents-label {
   display: block;
   color: $morandi-ink;
   font-size: 1.08rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.22;
   text-decoration-line: underline;
   text-decoration-color: rgba($morandi-clay-deep, 0.34);
@@ -3156,14 +3203,14 @@ body.projects-page .page__content > .projects-page__contents-label {
 .home-writing-entry__excerpt {
   display: block;
   max-width: 38rem;
-  max-height: 2.8em;
+  max-height: 3em;
   margin-top: 0.24rem;
   overflow: hidden;
   color: $site-text-muted;
-  font-size: 0.86rem;
-  line-height: 1.4;
-  -webkit-mask-image: linear-gradient(to bottom, black 52%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 52%, transparent 100%);
+  font-size: 0.9rem;
+  line-height: 1.44;
+  -webkit-mask-image: linear-gradient(to bottom, black 54%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 54%, transparent 100%);
 }
 
 .home-writing-entry__meta {
@@ -3234,8 +3281,8 @@ body.projects-page .page__content > .projects-page__contents-label {
   margin-top: $media-caption-gap;
   margin-bottom: 0;
   padding-bottom: 0;
-  font-size: clamp(0.84rem, calc(0.8rem + 0.1vw), 0.92rem);
-  line-height: 1.38;
+  // size & line-height inherited from the base figcaption rule (line 311)
+  // so award, homepage, and essay captions all set the same way.
 }
 
 @include breakpoint($x-large) {
@@ -3281,19 +3328,18 @@ body.projects-page .page__content > .projects-page__contents-label {
 
 .home-science-card figcaption {
   margin-top: $media-caption-gap;
-  font-size: 0.86rem;
-  line-height: 1.45;
+  // size & line-height inherit from the base figcaption rule so science-card
+  // captions match every other figure caption on the site.
 }
 
 .home-science-card figcaption span {
+  // Label ("Paulsen lab, Cambridge 2019.") uses the same font as the caption
+  // it introduces; hierarchy comes from weight + colour, not typeface swap.
   display: block;
   margin-bottom: 0.16rem;
   color: $morandi-clay-deep;
-  font-family: $mono-stack;
-  font-size: 0.72rem;
   font-weight: bold;
-  line-height: 1.18;
-  text-transform: lowercase;
+  line-height: 1.28;
 }
 
 @media (max-width: 620px) {
@@ -3353,8 +3399,8 @@ body.projects-page .page__content > .projects-page__contents-label {
 
   .home-writing-entry__excerpt {
     margin-top: 0.2rem;
-    font-size: 0.84rem;
-    line-height: 1.38;
+    font-size: 0.88rem;
+    line-height: 1.4;
   }
 
   .home-writing-award {
@@ -3618,19 +3664,11 @@ body.projects-page .page__content > .projects-page__contents-label {
   clear: both;
 }
 
-.home-chess-puzzle figcaption,
-.home-chess-puzzle__caption {
+.home-chess-puzzle figcaption {
   display: block;
   margin-top: $media-caption-gap;
   margin-bottom: 0;
   padding-bottom: 0;
-}
-
-.home-chess-puzzle__caption {
-  color: $site-text-muted;
-  font-family: $mono-stack;
-  font-size: 0.9rem;
-  line-height: 1.45;
 }
 
 .noscript-notice {
@@ -3738,6 +3776,87 @@ body.projects-page .page__content > .projects-page__contents-label {
 }
 
 // =========================================================================
+// Typeface toggle - Aa mark, sits directly below the theme toggle.
+// Shares the visual language of #theme-toggle so the two form a small
+// "reading preferences" cluster in the top-right corner.
+// =========================================================================
+#typeface-toggle {
+  position: absolute;
+  top: 0.55rem;   // same row as #theme-toggle
+  right: calc(0.65rem + 2.6rem + 0.35rem);  // theme-toggle right offset + its min-width + gap
+  z-index: 9999;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.6rem;
+  min-height: 2.35rem;
+  background: rgba($site-bg, 0.72);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 0.42em 0.52em;
+  font-family: $mono-stack;   // same voice as the d/l button so the two read as one cluster
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  opacity: 0.7;
+  transition: opacity 0.18s ease, background-color 0.18s ease;
+
+  &:hover,
+  &:focus-visible { opacity: 1; }
+
+  &:focus-visible {
+    opacity: 1;
+    outline: 1px solid rgba($morandi-clay-deep, 0.5);
+    outline-offset: 2px;
+  }
+
+  // Tooltip mirrors the theme-toggle pattern: appears below the button on
+  // hover/focus. Text is dynamically set by the JS (either "change typeface"
+  // at rest, or the newly-selected typeface name for ~1.6s after a click).
+  &::after {
+    content: attr(data-typeface-label);
+    position: absolute;
+    top: calc(100% + 0.22rem);
+    right: 0;
+    padding: 0.28rem 0.42rem;
+    color: $site-text-muted;
+    background: rgba($site-bg, 0.94);
+    box-shadow: 0 1px 5px $shadow-faint;
+    font-family: $mono-stack;   // tooltip in mono so it reads as chrome
+    font-size: 0.74rem;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    line-height: 1.15;
+    text-transform: lowercase;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-2px);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+  }
+
+  @media (hover: hover) {
+    &:hover::after { opacity: 1; transform: translateY(0); }
+  }
+  &:focus-visible::after { opacity: 1; transform: translateY(0); }
+
+  // "Aa" mark. Capital A quiet, lowercase a bolder for that reader-tool feel
+  // (Medium, iBooks, Readwise all lean on this asymmetry). Uses the mono stack
+  // so it matches d/l typographically.
+  .typeface-toggle__a {
+    color: $site-text;
+    font-weight: bold;
+    transition: color 0.18s ease;
+  }
+  .typeface-toggle__a2 {
+    color: $morandi-muted;
+    font-weight: normal;
+    margin-left: 0.02em;
+    transition: color 0.18s ease;
+  }
+}
+
 // Theme toggle - fixed d / l in top-right corner
 // =========================================================================
 #theme-toggle {
@@ -3819,6 +3938,33 @@ body.projects-page .page__content > .projects-page__contents-label {
     color: $site-text;
     font-weight: bold;
     transition: color 0.18s ease, font-weight 0.18s ease;
+  }
+}
+
+// 2026-08-01: "on this page" lede for /writing/, mirroring the projects page pattern
+body.writing-page .page__content > .writing-page__contents-label {
+  margin: 0.35rem 0 0;
+  padding-bottom: 1.15rem;
+  border-bottom: 1px solid $site-separator;
+  margin-bottom: 2rem;
+  color: $site-text-muted;
+  font-size: 1.01rem;
+  line-height: 1.42;
+  font-style: italic;
+
+  a {
+    color: $morandi-clay-deep;
+    text-decoration: underline;
+    text-decoration-color: rgba($morandi-clay-deep, 0.35);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    transition: color 0.15s ease, text-decoration-color 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      color: $link-color;
+      text-decoration-color: currentColor;
+    }
   }
 }
 
@@ -4828,95 +4974,8 @@ body.projects-page {
   }
 
   .page__content > .page__title,
-  .page__content > .page__title *,
-  .writing-piece-masthead .page__title,
-  .writing-piece-masthead .page__title * {
+  .page__content > .page__title * {
     font-family: $writing-title-stack;
-  }
-
-  .writing-piece-masthead {
-    position: relative;
-    display: block;
-    width: 100%;
-    min-height: 10.5rem;
-    max-height: 13.5rem;
-    margin: 0 0 1.45rem;
-    overflow: hidden;
-    color: $site-text;
-    background-color: var(--writing-banner-bg, #{$site-surface-soft});
-    background-image: var(--writing-banner-image);
-    background-position: var(--writing-banner-position, center);
-    background-repeat: no-repeat;
-    background-size: var(--writing-banner-size, cover);
-    border-radius: 2px;
-    box-shadow: inset 0 0 0 1px rgba($morandi-muted, 0.14), 0 1px 6px $shadow-faint;
-    aspect-ratio: 24 / 5;
-  }
-
-  .writing-piece-masthead__body {
-    position: absolute;
-    left: 0.8rem;
-    bottom: 0.8rem;
-    width: calc(100% - 2rem);
-    max-width: 34rem;
-    padding: 0.72rem 0.88rem 0.8rem;
-    background: $site-bg;
-    border-left: 2px solid $overlay-clay-soft;
-    box-shadow: 0 2px 12px rgba($morandi-ink, 0.16);
-  }
-
-  .writing-piece-masthead__flag {
-    display: inline-flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.42rem;
-    margin-bottom: 0.42rem;
-    color: $morandi-clay-deep;
-    font-family: $mono-stack;
-    font-size: 0.76rem;
-    line-height: 1.25;
-    text-transform: lowercase;
-  }
-
-  .writing-piece-masthead .page__title {
-    max-width: 22ch;
-    margin: 0;
-    color: $site-text;
-    font-size: clamp(1.55rem, 3vw, 2.08rem);
-    line-height: 1.1;
-    text-decoration: underline;
-    text-decoration-color: rgba($morandi-clay-deep, 0.42);
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
-  }
-
-  .writing-piece-masthead .page__title::after {
-    display: none;
-  }
-
-  @media (max-width: 560px) {
-    .writing-piece-masthead {
-      display: flex;
-      align-items: stretch;
-      min-height: 0;
-      max-height: none;
-      padding-top: clamp(6rem, 28vw, 7.5rem);
-      aspect-ratio: auto;
-      background-position: var(--writing-banner-position, center 34%);
-    }
-
-    .writing-piece-masthead__body {
-      position: relative;
-      right: auto;
-      bottom: auto;
-      width: 100%;
-      max-width: none;
-      margin-top: auto;
-      padding: 1rem 0.95rem 1.05rem;
-      border-top: 2px solid $overlay-clay-soft;
-      border-left: 0;
-      box-shadow: 0 -2px 12px rgba($morandi-ink, 0.13);
-    }
   }
 
   .page__content {
@@ -4928,11 +4987,9 @@ body.projects-page {
     margin-right: auto;
     counter-reset: sidenote;
     font-family: $reforma-stack;
-    font-size: 1.12rem;
+    font-size: var(--prose-size, 1.18rem);
     font-kerning: normal;
-    letter-spacing: 0.012em;
     text-rendering: optimizeLegibility;
-    word-spacing: 0.04em;
   }
 
   .page__content > p,
@@ -4951,7 +5008,7 @@ body.projects-page {
 
   .page__content > p {
     font-family: $font-prose;
-    line-height: 1.88;
+    line-height: 1.78;
   }
 
   .page__content > p:not(:has(+ .writing-insert)):not(:has(+ .writing-insert-pair)) {
@@ -4990,7 +5047,7 @@ body.projects-page {
   }
 
   .page__content > h4 {
-    font-size: 1.08rem;
+    font-size: 1.16rem;
   }
 
   .page__content > h2::after,
@@ -5028,7 +5085,9 @@ body.projects-page {
     margin-top: 0.05em;
   }
 
+  // 2026-08-01: explicit 400 — serif body weight reads heavier than mono
   .page__content a:not(.btn) {
+    font-weight: 400;
     text-decoration-thickness: 1px;
     text-underline-offset: 3px;
     text-decoration-color: rgba($morandi-clay-deep, 0.38);
@@ -5039,8 +5098,8 @@ body.projects-page {
     margin-bottom: 1.2rem;
     color: $site-text;
     font-family: $reforma-stack;
-    font-size: 1.04rem;
-    line-height: 1.62;
+    font-size: 1.18rem;
+    line-height: 1.6;
   }
 
   .page__lede p {
@@ -5050,12 +5109,10 @@ body.projects-page {
 
 body.music-page .mp-prose {
   font-family: $reforma-stack;
-  font-size: 1.12rem;
+  font-size: var(--prose-size, 1.18rem);
   font-kerning: normal;
-  letter-spacing: 0.012em;
-  line-height: 1.88;
+  line-height: 1.78;
   text-rendering: optimizeLegibility;
-  word-spacing: 0.04em;
 }
 
 body.music-page .mp-break {
@@ -5070,18 +5127,35 @@ body.music-page .mp-prose .wv-player {
   word-spacing: normal;
 }
 
+// Drop cap must span roughly 3 body lines with its top aligned to the first
+// body line's cap-height. Piazzolla (default) shares Reforma's generous cap
+// proportions, so it uses the original tuning. STIX and Literata have smaller
+// cap-height ratios and need their own adjustments to hit the same 3-line span.
 .writing-piece.has-dropcap .page__content .dropcap {
   float: left;
   display: block;
-  margin: 0.1rem 0.22rem 0 0;
+  margin: 0.1rem 0.31rem 0 0;
   padding: 0;
   color: $morandi-clay-deep;
   font-family: $reforma-stack;
-  font-size: 4.05rem;
+  font-size: 4.12rem;
   font-style: normal;
   font-weight: normal;
-  line-height: 0.98;
+  line-height: 0.84;
   letter-spacing: 0;
+}
+// 2026-08-01: per-serif drop cap tuning — different cap-height ratios
+html[data-serif="stix"] .writing-piece.has-dropcap .page__content .dropcap {
+  font-size: 3.73rem;
+  line-height: 0.93;
+  margin-top: 0.5rem;
+  margin-right: 0.37rem;
+}
+html[data-serif="literata"] .writing-piece.has-dropcap .page__content .dropcap {
+  font-size: 3.96rem;
+  line-height: 0.93;
+  margin-top: 0;
+  margin-right: 0.33rem;
 }
 
 .ro-name {
@@ -5258,8 +5332,8 @@ body.music-page .mp-prose .wv-player {
     margin: 0.25rem -12.7rem 1.2rem 1.7rem;
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
-    font-size: 0.75rem;
-    line-height: 1.55;
+    font-size: 0.83rem;
+    line-height: 1.5;
   }
 }
 
@@ -6133,8 +6207,7 @@ body .page__content > p:has(+ .writing-insert-pair) {
     color: $dark-heading;
   }
 
-  figcaption,
-  .home-chess-puzzle__caption {
+  figcaption {
     color: $dark-copy-soft;
   }
 
@@ -6207,32 +6280,6 @@ body .page__content > p:has(+ .writing-insert-pair) {
     color: $dark-heading;
   }
 
-  .writing-piece .writing-piece-masthead {
-    color: $dark-heading;
-    background-color: #2a2420;
-    background-image: var(--writing-banner-image);
-    box-shadow: inset 0 0 0 1px rgba(#9b928a, 0.14), 0 1px 6px $shadow-dark;
-  }
-
-  .writing-piece .writing-piece-masthead__body {
-    background: #1c1917;
-    border-left-color: rgba(#c49a85, 0.36);
-    box-shadow: 0 2px 12px rgba(#000, 0.34);
-  }
-
-  .writing-piece .writing-piece-masthead__flag {
-    color: $dark-link;
-  }
-
-  .writing-piece .writing-piece-masthead .page__title {
-    color: $dark-heading;
-    text-decoration-color: rgba(#c49a85, 0.45);
-  }
-
-  .writing-piece .writing-piece-masthead .page__title::after {
-    border-top-color: rgba(#c49a85, 0.36);
-  }
-
   .writing-piece .page__content > h2,
   .writing-piece .page__content > h3,
   .writing-piece .page__content > h4,
@@ -6255,14 +6302,6 @@ body .page__content > p:has(+ .writing-insert-pair) {
   body.projects-page .page__content > h3::after,
   body.projects-page .page__content > h4::after {
     border-top-color: rgba(#c49a85, 0.36);
-  }
-
-  @media (max-width: 560px) {
-    .writing-piece .writing-piece-masthead__body {
-      border-top-color: rgba(#c49a85, 0.36);
-      border-left: 0;
-      box-shadow: 0 -2px 12px rgba(#000, 0.3);
-    }
   }
 
   .sidebar {
@@ -6711,8 +6750,20 @@ body .page__content > p:has(+ .writing-insert-pair) {
       box-shadow: 0 1px 5px rgba(#000, 0.24);
     }
   }
-  #theme-toggle .theme-toggle__d { color: $dark-link; font-weight: bold; }
+  // 2026-08-01: toggles are grey/white in dark mode, not link-coloured
+  #theme-toggle .theme-toggle__d { color: #eee9e2; font-weight: bold; }
   #theme-toggle .theme-toggle__l { color: #6a6360; font-weight: normal; }
+
+  #typeface-toggle {
+    background: rgba(#1c1917, 0.72);
+    &::after {
+      color: #d8d0c8;
+      background: rgba(#1c1917, 0.96);
+      box-shadow: 0 1px 5px rgba(#000, 0.24);
+    }
+  }
+  #typeface-toggle .typeface-toggle__a  { color: #eee9e2; font-weight: bold; }
+  #typeface-toggle .typeface-toggle__a2 { color: #6a6360; font-weight: normal; }
 
   // writing list
   .writing-entry {

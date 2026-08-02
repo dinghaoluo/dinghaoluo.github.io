@@ -13,7 +13,7 @@ On this site, you can find my <a href="#projects" class="site-nav-link">projects
 
 Reach out to me: <a href="mailto:dinghao.luo@outlook.com" class="site-nav-link">[dinghao.luo@outlook.com]</a><br>
 
-Find me: <a href="https://github.com/dinghaoluo" class="site-nav-link">GitHub</a> <a href="https://www.linkedin.com/in/dinghaoluo/" class="site-nav-link">LinkedIn</a> <a href="https://substack.com/@dinghaoluo" class="site-nav-link">Substack</a> <a href="https://www.reddit.com/user/amoxdl24/" class="site-nav-link">Reddit</a> <a href="https://www.instagram.com/amoxitoxin" class="site-nav-link">Instagram</a><br>
+Find me on <a href="https://github.com/dinghaoluo" class="site-nav-link">GitHub</a>, <a href="https://www.linkedin.com/in/dinghaoluo/" class="site-nav-link">LinkedIn</a>, <a href="https://substack.com/@dinghaoluo" class="site-nav-link">Substack</a>, <a href="https://www.reddit.com/user/amoxdl24/" class="site-nav-link">Reddit</a>, or <a href="https://www.instagram.com/amoxitoxin" class="site-nav-link">Instagram</a>.<br>
 
 You can find my CV <a href="/cv/" class="site-nav-link">here</a>.
 
@@ -63,7 +63,7 @@ Over the past few years I have come to *love* data. The overwhelming happiness s
 
 <h2 id="writing"><a href="/writing/">writing :)</a></h2>
 
-Writing, along with reading, was one of my first true passions. Like many kids, I kept a journal as I grew up, and the advent of the Internet age allowed me to transform things I wrote in my journal into an online repository. I wrote under the pen-name `amoxitoxin` in both Chinese and English since I was 15, and have translated selected pieces into English, which can be found on the <a href="/writing/" class="site-nav-link">writing</a> page. Here are my three most recent pieces:
+Writing, along with reading, was one of my first true passions. Like many kids, I kept a journal as I grew up, and the advent of the Internet age allowed me to transform things I wrote in my journal into an online repository. I wrote under the pen-name *amoxitoxin* in both Chinese and English since I was 15, and have translated selected pieces into English, which can be found on the <a href="/writing/" class="site-nav-link">writing</a> page. Here are my three most recent pieces:
 
 {% assign home_writing_articles = site.writing | sort: 'date' | reverse %}
 {% assign home_writing_count = 0 %}
@@ -201,7 +201,7 @@ I stumbled into neuroscience sideways: I started at Cambridge reading psychology
     <img src="/assets/images/the-maze.jpg" alt="amoxitoxin album cover">
   </a>
   <div class="home-featured-album__info">
-    <span class="home-featured-album__title"><code>amoxitoxin</code></span>
+    <span class="home-featured-album__title">amoxitoxin</span>
     <p class="home-featured-album__desc">My one-person prog-rock project. Some singles, 1 EP and 1 full-length album. Here is <a href="/music/" class="site-nav-link">how I made my music</a>, and you can find me on <a href="https://amoxitoxin.bandcamp.com/" class="site-nav-link">Bandcamp</a>.</p>
   </div>
 </div>
@@ -245,10 +245,10 @@ I have photographed things compulsively since middle school, mostly out of an an
 
 <h2 id="other-stuff">other stuff :)</h2>
 
-<p><span class="home-chess-puzzle" role="group" aria-label="Chess puzzle">
+<p><figure class="home-chess-puzzle">
   <img src="/assets/images/chess-puzzle.gif" alt="chess puzzle" loading="lazy">
-  <span class="home-chess-puzzle__caption">My favourite chess puzzle of all time: it's mate in two, white to move. Rxa7 looks crushing, but after …O-O the Black king escapes. The key is <a href="https://www.reddit.com/r/chess/s/Hq2PYqyZ7Y" class="site-nav-link">Schrödinger's castle</a>.</span>
-</span>
+  <figcaption>My favourite chess puzzle of all time: it's mate in two, white to move. Rxa7 looks crushing, but after …O-O the Black king escapes. The key is <a href="https://www.reddit.com/r/chess/s/Hq2PYqyZ7Y" class="site-nav-link">Schrödinger's castle</a>.</figcaption>
+</figure>
 <strong>Chess.</strong> I play at around 1800 Elo on <a href="https://lichess.org/@/amoxitoxin" class="site-nav-link">Lichess</a> and keep meaning to enter an OTB tournament. Here is a puzzle I love.
 Chess has somehow woven into my life a lot more deeply than I expected when starting out, and one of the events that have impacted me most in the past few years was the passing of GM Daniel (Danya) Naroditsky. I wrote <a href="/writing/danya/" class="site-nav-link">a short remembrance</a> of Danya, who taught me both how to play chess and how to be a better human being.</p>
 
