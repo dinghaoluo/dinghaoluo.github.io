@@ -6,8 +6,9 @@ title: "writing"
 classes: writing-page
 header:
   og_image: "/assets/images/social-card-writing.png"
-lede: "a collection of my writing and translation work, from science communication features to journal entries"
 ---
+
+<p class="writing-page__contents-label">on this page: <a href="#print">print</a> and <a href="#digital">essays</a></p>
 
 {% assign articles = site.writing | sort: 'date' | reverse %}
 {% assign print_articles = articles | sort: "print_order" %}

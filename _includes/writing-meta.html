@@ -45,7 +45,7 @@
 {%- assign type_class = include.type_class | default: "writing-piece-meta__type" -%}
 {%- assign date_format = include.date_format | default: "%-d %b %Y" -%}
 {%- assign kind = item.type | default: "writing" -%}
-{%- if kind == "feature" or kind == "scicomm" -%}
+{%- if kind == "feature" or kind == "scicomm" or item.section == "online" -%}
   {%- assign kind = "science" -%}
 {%- endif -%}
 {%- assign collaborator_note = item.collaborator | default: "" -%}

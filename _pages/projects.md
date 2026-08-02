@@ -9,26 +9,7 @@ last_updated: 2026-07-28
 
 <h1 class="screen-reader-text">projects</h1>
 
-<p class="projects-page__contents-label">on this page...</p>
-
-<nav class="home-project-index projects-page__index" aria-label="projects on this page">
-  <a href="#fibre-sight">
-    <strong>FibreSight</strong>
-    <span>U-Net workbench for axon segmentation in two-photon images</span>
-  </a>
-  <a href="#kairos">
-    <strong>Kairos</strong>
-    <span><i>Do field states predict scientific breakthroughs?</i></span>
-  </a>
-  <a href="#the-zone">
-    <strong>The Zone</strong>
-    <span>a computational analysis of <i>Gravity's Rainbow</i> (1973)</span>
-  </a>
-  <a href="#lc-ca1">
-    <strong>LC–CA1</strong>
-    <span>multimodal neural data analysis pipelines</span>
-  </a>
-</nav>
+<p class="projects-page__contents-label">on this page: <a href="#fibre-sight">FibreSight</a>, <a href="#kairos">Kairos</a>, <a href="#the-zone">The Zone</a>, and <a href="#lc-ca1">LC–CA1</a></p>
 
 ---
 

@@ -5,7 +5,6 @@ permalink: /thoughts/
 title: 'thoughts'
 header:
   og_image: "/assets/images/social-card-thoughts.png"
-lede: "some books, films, games, and television that refuse to leave quietly"
 ---
 
 <div class="thoughts-filter-strip thoughts-filter-strip--type" id="thoughts-filter-strip">
