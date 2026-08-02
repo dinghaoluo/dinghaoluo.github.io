@@ -18,6 +18,11 @@
 (function(){var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){var s=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';if(t!==s)document.documentElement.setAttribute('data-theme',t);else localStorage.removeItem('theme');}})();
 </script>
 
+<!-- typeface toggle: apply saved preference before first paint to prevent FOUC -->
+<script>
+(function(){var q=location.search.match(/[?&]serif=(stix|piazzolla|literata)/);if(q){document.documentElement.setAttribute('data-serif',q[1]);return;}var t=localStorage.getItem('typeface');if(t==='stix'||t==='piazzolla'||t==='literata'){document.documentElement.setAttribute('data-serif',t);}})();
+</script>
+
 {% if page.classes == 'home' %}
 <link rel="prefetch" href="{{ '/thoughts/' | relative_url }}">
 <link rel="prefetch" href="{{ '/music/' | relative_url }}">

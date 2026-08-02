@@ -38,7 +38,74 @@ font block - kept inline because GitHub Pages ignores separate _fonts.scss
   font-style: italic;
 }
 
-// Reforma 2018 - self-hosted serif for literary body text (thoughts, writing)
+// Body serifs: STIX Two Text (default), Piazzolla, Literata
+// Each ships regular/italic/bold/bold-italic as woff2. The user can cycle
+// between them via the Aa toggle; the choice persists in localStorage.
+@font-face {
+  font-family: 'STIX Two Text';
+  src: url('/assets/fonts/stix-two/STIXTwoText-Regular.woff2') format('woff2');
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'STIX Two Text';
+  src: url('/assets/fonts/stix-two/STIXTwoText-Italic.woff2') format('woff2');
+  font-weight: normal; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: 'STIX Two Text';
+  src: url('/assets/fonts/stix-two/STIXTwoText-Bold.woff2') format('woff2');
+  font-weight: bold; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'STIX Two Text';
+  src: url('/assets/fonts/stix-two/STIXTwoText-BoldItalic.woff2') format('woff2');
+  font-weight: bold; font-style: italic; font-display: swap;
+}
+
+@font-face {
+  font-family: 'Piazzolla';
+  src: url('/assets/fonts/piazzolla/Piazzolla-Regular.woff2') format('woff2');
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Piazzolla';
+  src: url('/assets/fonts/piazzolla/Piazzolla-Italic.woff2') format('woff2');
+  font-weight: normal; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: 'Piazzolla';
+  src: url('/assets/fonts/piazzolla/Piazzolla-Bold.woff2') format('woff2');
+  font-weight: bold; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Piazzolla';
+  src: url('/assets/fonts/piazzolla/Piazzolla-BoldItalic.woff2') format('woff2');
+  font-weight: bold; font-style: italic; font-display: swap;
+}
+
+@font-face {
+  font-family: 'Literata';
+  src: url('/assets/fonts/literata/Literata-Regular.woff2') format('woff2');
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Literata';
+  src: url('/assets/fonts/literata/Literata-Italic.woff2') format('woff2');
+  font-weight: normal; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: 'Literata';
+  src: url('/assets/fonts/literata/Literata-Bold.woff2') format('woff2');
+  font-weight: bold; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Literata';
+  src: url('/assets/fonts/literata/Literata-BoldItalic.woff2') format('woff2');
+  font-weight: bold; font-style: italic; font-display: swap;
+}
+
+// Reforma 2018 - previous body serif; kept loaded but no longer default.
+// Remove these @font-face declarations if you decide to drop Reforma entirely.
 @font-face {
   font-family: 'Reforma 2018';
   src: url('/assets/fonts/reforma/reforma2018-gris-ro.ttf') format('truetype');
@@ -146,6 +213,13 @@ $link-color-visited:  $morandi-clay-deep;
 $background-color:    $site-bg;
 $large:               974px;
 
+// body-serif CSS variables — the Aa toggle rewrites via [data-serif] on <html>
+// --prose-size per-serif compensates for different x-heights
+html { --body-serif: 'Piazzolla'; --prose-size: 1.18rem; }
+html[data-serif="piazzolla"] { --body-serif: 'Piazzolla'; --prose-size: 1.18rem; }
+html[data-serif="literata"]  { --body-serif: 'Literata';  --prose-size: 1.14rem; }
+html[data-serif="stix"]      { --body-serif: 'STIX Two Text'; --prose-size: 1.18rem; }
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
@@ -162,7 +236,12 @@ $hebrew-stack: 'Noto Serif Hebrew', 'Noto Sans Hebrew', $intl-stack;
 $japanese-stack: 'Noto Sans JP', 'Noto Sans CJK JP', 'Yu Gothic', 'Hiragino Sans', Meiryo, sans-serif;
 $korean-stack: 'Noto Sans KR', 'Noto Sans CJK KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
 $mono-stack: 'Mononoki', $intl-stack, $cjk-stack, monospace;
-$reforma-stack: 'Reforma 2018', Georgia, 'Times New Roman', $intl-stack, $cjk-stack, serif;
+// Body-serif stack is switchable via [data-serif] on <html>. Piazzolla is the
+// default; STIX Two Text and Literata are the other two options in the Aa cycle.
+// $reforma-stack was the old alias — kept for compatibility with 20+ call sites,
+// but it now resolves to whichever serif the visitor has selected. Reforma stays
+// in the fallback chain so old caches keep rendering something sensible
+$reforma-stack: var(--body-serif, 'Piazzolla'), 'Reforma 2018', Georgia, 'Times New Roman', $intl-stack, $cjk-stack, serif;
 $font-prose: $reforma-stack;
 $font-display: $reforma-stack;
 $font-ui: $mono-stack;
@@ -2938,13 +3017,24 @@ mark.thoughts-highlight {
 body.projects-page .page__content > .projects-page__contents-label {
   margin: 0.35rem 0 0;
   color: $site-text-muted;
-  font-size: 0.88rem;
+  font-size: 1.01rem;
+  line-height: 1.42;
   font-style: italic;
-}
 
-.projects-page__index {
-  margin-top: 0.2rem;
-  margin-bottom: 2.25rem;
+  a {
+    color: $morandi-clay-deep;
+    text-decoration: underline;
+    text-decoration-color: rgba($morandi-clay-deep, 0.35);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    transition: color 0.15s ease, text-decoration-color 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      color: $link-color;
+      text-decoration-color: currentColor;
+    }
+  }
 }
 
 .project-links {

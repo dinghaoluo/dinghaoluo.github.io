@@ -16,6 +16,7 @@
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
     <button id="theme-toggle" type="button" aria-label="Toggle dark/light mode" data-theme-label="dark / light"><span class="theme-toggle__d">d</span><span class="theme-toggle__sep">/</span><span class="theme-toggle__l">l</span></button>
+    <button id="typeface-toggle" type="button" aria-label="Change typeface" data-typeface-label="change typeface"><span class="typeface-toggle__a">A</span><span class="typeface-toggle__a2">a</span></button>
     {% include skip-links.html %}
 
     <div class="initial-content">
