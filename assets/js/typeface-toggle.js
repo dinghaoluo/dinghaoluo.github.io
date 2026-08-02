@@ -4,11 +4,10 @@
   var btn = document.getElementById('typeface-toggle');
   if (!btn) return;
 
-  // Cycle order: STIX Two Text (default) → Piazzolla → Literata → STIX ...
-  // Each entry is [data-serif value written to <html>, human-readable name].
+  // cycle order: Piazzolla (default) → STIX Two Text → Literata
   var cycle = [
-    ['stix',       'STIX Two Text'],
     ['piazzolla',  'Piazzolla'],
+    ['stix',       'STIX Two Text'],
     ['literata',   'Literata']
   ];
 
