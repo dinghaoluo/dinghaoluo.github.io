@@ -220,6 +220,14 @@ html[data-serif="piazzolla"] { --body-serif: 'Piazzolla'; --prose-size: 1.18rem;
 html[data-serif="literata"]  { --body-serif: 'Literata';  --prose-size: 1.14rem; }
 html[data-serif="stix"]      { --body-serif: 'STIX Two Text'; --prose-size: 1.18rem; }
 
+// mobile: scale prose down slightly — serif x-heights read larger on small screens
+@media (max-width: 480px) {
+  html { --prose-size: 1.1rem; }
+  html[data-serif="piazzolla"] { --prose-size: 1.1rem; }
+  html[data-serif="literata"]  { --prose-size: 1.06rem; }
+  html[data-serif="stix"]      { --prose-size: 1.1rem; }
+}
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
@@ -855,14 +863,21 @@ body:not(.home) .page__content h6 * {
 .home .page__content p,
 .home .page__content ul,
 .home .page__content ol,
-.home .page__content blockquote,
-.home .page__content figcaption,
-// project index tiles carry short descriptive prose, so they belong with reading matter
+.home .page__content blockquote {
+  font-family: $font-prose;
+  font-size: var(--prose-size, 1.18rem);
+}
+
+// project index tiles: serif face, but own font-sizes (not prose-size)
 .home .page__content .home-project-index a,
 .home .page__content .home-project-index strong,
 .home .page__content .home-project-index span {
   font-family: $font-prose;
-  font-size: var(--prose-size, 1.18rem);
+}
+
+// captions inherit serif but stay at the global figcaption size (0.9rem)
+.home .page__content figcaption {
+  font-family: $font-prose;
 }
 
 // homepage section headers - bold Mononoki with subtle animation

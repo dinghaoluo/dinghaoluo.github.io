@@ -245,11 +245,12 @@ I have photographed things compulsively since middle school, mostly out of an an
 
 <h2 id="other-stuff">other stuff :)</h2>
 
-<p><figure class="home-chess-puzzle">
+<figure class="home-chess-puzzle">
   <img src="/assets/images/chess-puzzle.gif" alt="chess puzzle" loading="lazy">
   <figcaption>My favourite chess puzzle of all time: it's mate in two, white to move. Rxa7 looks crushing, but after …O-O the Black king escapes. The key is <a href="https://www.reddit.com/r/chess/s/Hq2PYqyZ7Y" class="site-nav-link">Schrödinger's castle</a>.</figcaption>
 </figure>
-<strong>Chess.</strong> I play at around 1800 Elo on <a href="https://lichess.org/@/amoxitoxin" class="site-nav-link">Lichess</a> and keep meaning to enter an OTB tournament. Here is a puzzle I love.
+
+<p><strong>Chess.</strong> I play at around 1800 Elo on <a href="https://lichess.org/@/amoxitoxin" class="site-nav-link">Lichess</a> and keep meaning to enter an OTB tournament. Here is a puzzle I love.
 Chess has somehow woven into my life a lot more deeply than I expected when starting out, and one of the events that have impacted me most in the past few years was the passing of GM Daniel (Danya) Naroditsky. I wrote <a href="/writing/danya/" class="site-nav-link">a short remembrance</a> of Danya, who taught me both how to play chess and how to be a better human being.</p>
 
 **Travel.** I travel whenever my studies let me. So far the <a href="/photos/" class="site-nav-link">photo gallery</a> covers Cambridge, the rest of England and Scotland, Beijing, Jilin, southern China, Osaka, Singapore, Canada, the US east and west coasts, Chamonix, Italy, Lisbon, Jordan, and Georgia and the Caucasus. I keep wanting to see more of eastern, northern Europe, Latin America and Africa.
