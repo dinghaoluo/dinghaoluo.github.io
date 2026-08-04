@@ -12,7 +12,7 @@ plugins:
 
 # site settings
 locale: "en-GB"
-title: "hao things :)"
+title: "hao things"
 title_separator: "|"
 email: dinghao.luo@outlook.com
 description: >-
