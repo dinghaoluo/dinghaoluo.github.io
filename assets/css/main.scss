@@ -3068,8 +3068,7 @@ mark.thoughts-highlight {
 .home-projects-figure {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 0.62rem;
-  row-gap: 0;
+  gap: 0.62rem;
   align-items: flex-start;
   margin: 0.9rem 0 0;
 
@@ -3078,12 +3077,13 @@ mark.thoughts-highlight {
     width: calc(50% - 0.31rem);
     min-width: 0;
     height: auto;
+    margin-bottom: 0;
     border-radius: 3px;
   }
 
   figcaption {
     flex-basis: 100%;
-    margin-top: $media-caption-gap;
+    margin-top: calc(#{$media-caption-gap} - 0.62rem);
     text-align: right;
   }
 }
