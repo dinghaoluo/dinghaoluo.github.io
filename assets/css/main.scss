@@ -3065,6 +3065,40 @@ mark.thoughts-highlight {
   border-radius: 1px;
 }
 
+.home-projects-figure {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.62rem;
+  row-gap: 0;
+  align-items: flex-start;
+  margin: 0.9rem 0 0;
+
+  img {
+    flex: 1 1 calc(50% - 0.31rem);
+    width: calc(50% - 0.31rem);
+    min-width: 0;
+    height: auto;
+    border-radius: 3px;
+  }
+
+  figcaption {
+    flex-basis: 100%;
+    margin-top: $media-caption-gap;
+    text-align: right;
+  }
+}
+
+@media (max-width: 620px) {
+  .home-projects-figure {
+    gap: 0.5rem;
+
+    img {
+      flex: 1 1 calc(50% - 0.25rem);
+      width: calc(50% - 0.25rem);
+    }
+  }
+}
+
 // -------------------------
 // project landing page
 // -------------------------
@@ -5519,20 +5553,18 @@ body.projects-page .page__content {
 }
 
 body.projects-page .page__content .project-story__figure {
-  --media-block-width: 22rem;
-  --media-float-width: 22rem;
-  --media-float-max: 46%;
+  --media-block-width: 44rem;
 
   clear: both;
+  float: none;
+  width: 100%;
+  max-width: var(--media-block-width);
+  margin-right: auto;
   margin-bottom: var(--media-flow-gap);
+  margin-left: auto;
 }
 
 body.projects-page .page__content .project-story__figure--fibre {
-  --media-block-width: 44rem;
-
-  margin-right: auto;
-  margin-left: auto;
-
   @include breakpoint($large) {
     float: none;
     width: 100%;
@@ -5543,46 +5575,32 @@ body.projects-page .page__content .project-story__figure--fibre {
 }
 
 body.projects-page .page__content .project-story__figure--kairos {
-  --media-block-width: 43.2rem;
-
-  @include breakpoint($large) {
-    float: none;
-    width: 100%;
-    max-width: var(--media-block-width);
-  }
-}
-
-body.projects-page .page__content .project-story__figure--kairos.writing-insert--left {
-  margin-right: auto;
-  margin-left: 0;
-}
-
-body.projects-page .page__content .project-story__figure--kairos.writing-insert--right {
-  margin-right: 0;
-  margin-left: auto;
-}
-
-body.projects-page .page__content .project-story__figure--lc-ca1 {
-  --media-block-width: 43.2rem;
-
-  @include breakpoint($large) {
-    float: none;
-    width: 100%;
-    max-width: var(--media-block-width);
-    margin-right: 0;
-    margin-left: auto;
-  }
-}
-
-body.projects-page .page__content .project-story__figure--zone {
-  --media-block-width: 43.2rem;
-
   @include breakpoint($large) {
     float: none;
     width: 100%;
     max-width: var(--media-block-width);
     margin-right: auto;
-    margin-left: 0;
+    margin-left: auto;
+  }
+}
+
+body.projects-page .page__content .project-story__figure--lc-ca1 {
+  @include breakpoint($large) {
+    float: none;
+    width: 100%;
+    max-width: var(--media-block-width);
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+body.projects-page .page__content .project-story__figure--zone {
+  @include breakpoint($large) {
+    float: none;
+    width: 100%;
+    max-width: var(--media-block-width);
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 

@@ -2,7 +2,7 @@
 layout: single
 author_profile: true
 classes: home
-last_updated: 2026-07-27
+last_updated: 2026-08-04
 ---
 
 *Hi, Dinghao here :)*
@@ -36,26 +36,32 @@ You can find my CV <a href="/cv/" class="site-nav-link">here</a>.
 
 <h2 id="projects"><a href="/projects/">projects :)</a></h2>
 
-Over the past few years I have come to *love* data. The overwhelming happiness seeing noisy, high-dimensional data decomposed into interpretable statistics and visualisations has mostly come from my PhD, but has gradually spread into all aspects of my life. What follows are four of my projects, two that stemmed out of my PhD experiments and analyses, one on my second favourite book, and one on a history of science discussion that started in a class discussion back in my undergraduate years. More details are on the <a href="/projects/" class="site-nav-link">projects</a> page.
+Over the past few years I have come to *love* data. The happiness of seeing noisy, high-dimensional data decomposed into interpretable statistics and visualisations has spread from my PhD into all aspects of my life. What follows are four projects: two from my PhD experiments, one on my second favourite book, and one on a history-of-science question that started in an undergraduate seminar. More details are on the <a href="/projects/" class="site-nav-link">projects</a> page.
 
 <nav class="home-project-index" aria-label="featured projects">
   <a href="/projects/#fibre-sight">
     <strong>FibreSight</strong>
     <span>U-Net workbench for axon segmentation in two-photon images</span>
   </a>
+  <a href="/projects/#the-zone">
+    <strong>The Zone</strong>
+    <span>visual companion to <i>Gravity's Rainbow</i>: glossary, network atlas, references</span>
+  </a>
   <a href="/projects/#kairos">
     <strong>Kairos</strong>
     <span><i>Do field states predict scientific breakthroughs?</i></span>
-  </a>
-  <a href="/projects/#the-zone">
-    <strong>The Zone</strong>
-    <span>a computational analysis of <i>Gravity's Rainbow</i> (1973)</span>
   </a>
   <a href="/projects/#lc-ca1">
     <strong>LC–CA1</strong>
     <span>multimodal neural data analysis pipelines</span>
   </a>
 </nav>
+
+<figure class="home-projects-figure">
+  <img src="/assets/images/projects/fibre-sight-workbench.png" alt="" width="1280" height="820" loading="lazy">
+  <img src="/assets/images/projects/the-zone-network.png" alt="" width="1280" height="820" loading="lazy">
+  <figcaption>FibreSight and <i>The Zone</i></figcaption>
+</figure>
 
 <a href="/projects/" class="site-nav-link">→ projects</a>
 

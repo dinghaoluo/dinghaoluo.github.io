@@ -4,12 +4,12 @@ author_profile: true
 permalink: /projects/
 title: "projects"
 classes: projects-page
-last_updated: 2026-07-28
+last_updated: 2026-08-04
 ---
 
 <h1 class="screen-reader-text">projects</h1>
 
-<p class="projects-page__contents-label">on this page: <a href="#fibre-sight">FibreSight</a>, <a href="#kairos">Kairos</a>, <a href="#the-zone">The Zone</a>, and <a href="#lc-ca1">LC–CA1</a></p>
+<p class="projects-page__contents-label">on this page: <a href="#fibre-sight">FibreSight</a>, <a href="#the-zone">The Zone</a>, <a href="#kairos">Kairos</a>, and <a href="#lc-ca1">LC–CA1</a></p>
 
 ---
 
@@ -33,11 +33,31 @@ This workbench has helped reduce the time it takes for me and my colleagues to s
   <a href="https://github.com/dinghaoluo/fibre-sight" class="site-nav-link">→ repository</a>
 </nav>
 
+<h2 id="the-zone"><a href="https://dinghaoluo.github.io/the-zone-site/">The Zone</a></h2>
+
+Thomas Pynchon's <i>Gravity's Rainbow</i> (1973) is my second favourite book, and weeks after finishing it a second time I thought to myself: the hundreds of characters move around Europe and form such a vast and complicated network... why don't we build some analyses on it? It turned out that <i>Gravity's Rainbow</i> is not only a good book, but also a terrible dataset, where characters blend into aliases and shorthands that took me a while to disentangle, and geographic locations are mentioned in an incredibly scattered way, not to mention the infinitely complex plotlines. That was why, for instance, initially named-entity recognition (NER) trained on ordinary fiction invented a long tail of characters who do not exist, so I had to curate the aliases against the text by hand.
+
+<figure class="writing-insert project-story__figure project-story__figure--zone">
+  <div class="project-story__media-row">
+    <img src="/assets/images/projects/the-zone-glossary-entry.png" alt="" width="1280" height="878" loading="lazy">
+    <img src="/assets/images/projects/the-zone-matrix.png" alt="" width="1280" height="862" loading="lazy">
+  </div>
+  <figcaption>the Character Atlas and the Co-occurrence Matrix on the Network page</figcaption>
+</figure>
+
+But after a lot of preprocessing I was finally able to ask what I wanted to ask: who is present with whom, how the different narratives braid into each other, where the languages and the geography intersect, and the age-old question of 'is <i>Gravity's Rainbow</i> a misogynistic book?' Four of the seven planned sections are now live: a detailed Glossary of the novel's critical terms and recurring motifs, a curated list of References for intrigued readers who want context beyond the text, an interactive Network atlas (WIP) built on character co-presence data across the four parts of the novel (with force-directed and co-occurrence matrix views showing how communities cluster), and a Methods page documenting how the data was collected, structured, and visualised. The remaining sections on episodes, terrain, and language are yet to be developed.
+
+Only the public-safe exports are deployed; the source text and the analytical pipelines are kept in a private repository.
+
+<nav class="project-links" aria-label="The Zone site">
+  <a href="https://dinghaoluo.github.io/the-zone-site/" class="site-nav-link">→ site</a>
+</nav>
+
 <h2 id="kairos"><a href="https://github.com/dinghaoluo/kairos">Kairos</a></h2>
 
 Thomas Kuhn, in <em>The Structure of Scientific Revolutions</em> (1962), wrote that paradigm shifts in science arrive when a field is ready for them. Gregor Mendel published his pea experiments in 1866 and was not properly read until 1900, sixteen years after his own death; Alfred Wegener proposed continental drift in 1912 and had to wait for the seafloor-spreading and magnetic-anomaly evidence of the 1960s before anyone found him persuasive. Unfortunately, at the time when Kuhn observed this, he did not have the information architecture that we have nowadays to quantify this 'readiness'. I wanted to ask whether we could now measure this readiness for a breakthrough. In <b>Kairos</b> (borrowed from ancient Greek, roughly 'the critical time for action'), I explore whether machine learning can estimate this readiness and predict, with careful constraints that prevent temporal leakage, whether a breakthrough would happen at each timepoint. I am currently taking as the first case study the field of neural networks.
 
-<figure class="writing-insert writing-insert--left project-story__figure project-story__figure--kairos">
+<figure class="writing-insert project-story__figure project-story__figure--kairos">
   <img src="/assets/images/projects/kairos-ap-comparison.png" alt="" width="1800" height="1040" loading="lazy">
   <figcaption>selected average-precision comparisons on reviewed gap years; orange line marks outcome prevalence (= positives / all)</figcaption>
 </figure>
@@ -46,7 +66,7 @@ The bibliographic data used in this project mostly come from [OpenAlex](https://
 
 However, I am currently running into some issues, the biggest of which being that because the targets are 'breakthrough year' (say, 1933 would be 1, and 1934 would be 0), the publication volume in each year and the years shortly prior would provide a lot of information about how likely a breakthrough occurs. This turns the model into a volume-predicting device. That is mostly the reason why currently, against baseline, my full 'field-state' vector does not give much better predictions. A flexible spline on the year alone reaches 0.866 average precision, adding the whole field-state vector to it reaches 0.869, and publication volume + the same year spline reaches 0.871, so *counting* the papers does as well as *characterising* them...
 
-<figure class="writing-insert writing-insert--right project-story__figure project-story__figure--kairos">
+<figure class="writing-insert project-story__figure project-story__figure--kairos">
   <img src="/assets/images/projects/kairos-score-timeline.png" alt="" width="2200" height="1280" loading="lazy">
   <figcaption>out-of-sample scores across 'breakthrough years', which are marked by black ticks on top</figcaption>
 </figure>
@@ -61,7 +81,7 @@ But of course frustration was always going to be a given in a project with any a
 
 You can read more about my PhD work [here](/science/#current-project), but in short, I spent most of my PhD on one question: whether a brief burst of dopamine from the locus coeruleus (a tiny brainstem nucleus) improves an animal's performance during goal-directed behaviour.
 
-<figure class="writing-insert writing-insert--right project-story__figure project-story__figure--lc-ca1">
+<figure class="writing-insert project-story__figure project-story__figure--lc-ca1">
   <img src="/assets/images/science/lc-ca1-model-schematic-figure6ab.webp" alt="" width="1400" height="1016" loading="lazy">
   <figcaption>example schematic of the LC–CA1 circuit for the modulation of goal-directed behaviour; bottom shows my computational model</figcaption>
 </figure>
@@ -72,21 +92,5 @@ Answering it took hundreds of animal recording sessions and nearly a hundred ter
   <a href="https://github.com/dinghaoluo/lc-ca1-project" class="site-nav-link">→ repository</a>
 </nav>
 
-<h2 id="the-zone"><a href="https://dinghaoluo.github.io/the-zone-site/">The Zone</a></h2>
-
-Thomas Pynchon's <i>Gravity's Rainbow</i> (1973) is my second favourite book, and weeks after finishing it a second time I thought to myself: the hundreds of characters move around Europe and form such a vast and complicated network... why don't we build some analyses on it? It turned out that <i>Gravity's Rainbow</i> is not only a good book, but also a terrible dataset, where characters blend into aliases and shorthands that took me a while to disentangle, and geographic locations are mentioned in an incredibly scattered way, not to mention the infinitely complex plotlines. That was why, for instance, initially named-entity recognition (NER) trained on ordinary fiction invented a long tail of characters who do not exist, so I had to curate the aliases against the text by hand.
-
-<figure class="writing-insert writing-insert--left project-story__figure project-story__figure--zone">
-  <img src="/assets/images/projects/the-zone-glossary.png" alt="" width="3022" height="1674" loading="lazy">
-  <figcaption>the live site's Glossary page</figcaption>
-</figure>
-
-But after a lot of preprocessing I was finally able to ask what I wanted to ask: who is present with whom, how the different narratives braid into each other, where the languages and the geography intersect, and the age-old question of 'is <i>Gravity's Rainbow</i> a misogynistic book?' Right now, two of the 7 planned sections are live, including a detailed Glossary of the critical terms in the novel as well as a list of strong references for intrigued readers who want extra insight.
-
-Only the public-safe exports are deployed; the source text and the analytical pipelines are kept in a private repository.
-
-<nav class="project-links" aria-label="The Zone site">
-  <a href="https://dinghaoluo.github.io/the-zone-site/" class="site-nav-link">→ site</a>
-</nav>
 
 <p class="projects-updated">Last updated {{ page.last_updated | date: "%B %Y" }}</p>

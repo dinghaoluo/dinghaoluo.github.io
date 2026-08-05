@@ -10,25 +10,25 @@ This repo contains the source code for my personal website, built with Jekyll on
 
 The site has six primary sections, a separately deployed project site, and a 404.
 
+**Projects**: a page for my side-projects, currently including FibreSight, The Zone, Kairos, and LC–CA1
+
 **Writing**: essays, fiction, journal entries, science communication, and translation work
 
-**Thoughts**: several hundred short entries, searchable and shuffleable
+**Thoughts**: several hundred short reviews on books, films, TV, and games
 
-**Science**: work from my university and PhD years
+**Science**: scientific work from my university and PhD years
 
-**Projects**: a prose-led data-science page for FibreSight, Kairos, LC–CA1, and The Zone
-
-**Music**: original tracks (in-site audio, Bandcamp)
+**Music**: original tracks (in-site audio with links to Bandcamp)
 
 **Photos**: a world map of places I have photographed, with a curated gallery
 
-**The Zone**: a separately deployed computational literary analysis of *Gravity's Rainbow* (1973): plotline braids, character network, glossary, and more sections in progress
+**[The Zone](https://dinghaoluo.github.io/the-zone-site/)**: a separately deployed computational literary analysis of *Gravity’s Rainbow* (1973), built with Astro and D3. Four sections are live (Glossary, Reference, Network [WIP], Methods); episodes, terrain, and language are not yet built.
 
 **404**: generates procedural prose fragments from a lexicon of corridors, catalogues, and drowned pages. Every broken URL gets its own little text.
 
 ## notes
 
-The tab title is a pun: '好' (*hǎo*, meaning ‘good’) shares its sound with '豪' in my name.
+The tab title is a pun: ‘好’ (*hǎo*, meaning ‘good’) shares its sound with ‘豪’ in my name.
 
 ## attribution
 
