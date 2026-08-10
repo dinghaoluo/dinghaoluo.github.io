@@ -7,7 +7,7 @@ last_updated: 2026-08-04
 
 *Hi, Dinghao here :)*
 
-I am a neuroscientist finishing my PhD at the Max Planck Institute for Neuroscience later this year, and currently looking for data science roles in Europe. My PhD project looks at how dopamine modulates goal-directed computation and behaviour.
+I am a neuroscientist finishing my PhD at the Max Planck Florida Institute for Neuroscience later this year, and currently looking for data science and applied science roles in Europe. My PhD project looks at how dopamine modulates goal-directed computation and behaviour.
 
 On this site, you can find my <a href="#projects" class="site-nav-link">projects</a> in data science and literary analysis, <a href="#writing" class="site-nav-link">long-form essays</a>, short <a href="#thoughts" class="site-nav-link">reviews</a> of books, films and games, my <a href="#science" class="site-nav-link">science</a>, <a href="#music" class="site-nav-link">music</a>, and some <a href="#photos" class="site-nav-link">photos</a> I've taken.
 
