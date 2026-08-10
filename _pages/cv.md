@@ -6,7 +6,7 @@ title: "cv"
 classes: cv-page
 header:
   og_image: "/assets/images/social-card-cv.png"
-last_updated: 2026-07-28
+last_updated: 2026-08-10
 toc: false
 ---
 
