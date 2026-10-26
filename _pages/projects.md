@@ -27,7 +27,14 @@ As the saying goes, 'if necessity is the mother of invention then laziness is th
 
 I trained a small PyTorch U-Net on the tens of `segmented axon: coordinates` dictionaries and images, and built a Qt GUI around it. The model is tuned to over-propose (prefer false positives over false negatives), since removing a falsely identified axon is easy work whereas adding one in by hand is much more difficult, which is why on nine held-out sessions it reaches 0.93 recall against 0.60 precision, with a 0.83 F<sub>2</sub>.
 
-This workbench has helped reduce the time it takes for me and my colleagues to segment neural fibres from hours or days to mere minutes, and has proven reproducible in images using fluorescent markers other than the original tdTomato.
+This workbench reduced the manual curation time for neural-fibre segmentation in my workflow from days to hours. And since then, due to an insatiable urge to further automate the entire workflow, FibreSight has grown into an integrated TIFF-to-dF/F workbench. Version 0.2.0 now takes a recording through TIFF ingestion, rigid or piecewise registration, frame quality-control, axon ROI segmentation, fluorescence extraction, and dF/F calculation. The released checkpoint was trained on one dLight dataset; other indicators, microscopes, and labelling conventions should be checked and may require retraining.
+
+<figure class="writing-insert project-story__figure project-story__figure--fibre">
+  <img src="/assets/images/projects/fibre-sight-registration-benchmark.png" alt="held-out p95 displacement error for FibreSight, Suite2p, CaImAn, PatchWarp, and PyFlowReg using rigid and piecewise registration" width="1910" height="860" loading="lazy">
+  <figcaption>comparison of registration performance against established algorithms; diamonds show mean held-out p95 displacement error</figcaption>
+</figure>
+
+Registration corrects the movement between frames so that the same axon remains in the same place throughout a recording. FibreSight can estimate one rigid correction for the whole image or a piecewise correction that allows different parts of the image to move locally. To test those two approaches, I took ten public reference images, applied four known motion patterns to each, and scored how closely the registered images returned to their original geometry on the held-out second half of each 2,000-frame movie. Across the 40 cases, the mean 95th-percentile displacement error was 0.443 px for FibreSight's rigid method and 0.514 px for its piecewise method, compared with 0.794 px and 1.267 px for Suite2p; lower values mean less residual movement. CaImAn and PatchWarp were close to FibreSight in the rigid comparison, so these synthetic tests describe a particular comparison, not a universal ranking, and the record keeps failed and incomplete external runs visible.
 
 <nav class="project-links" aria-label="FibreSight repository">
   <a href="https://github.com/dinghaoluo/fibre-sight" class="site-nav-link">→ repository</a>
