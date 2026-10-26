@@ -16,7 +16,7 @@ title: "hao things"
 title_separator: "|"
 email: dinghao.luo@outlook.com
 description: >-
-  Dinghao Luo, neuroscientist and data scientist, translator of Entangled Life into Chinese; projects, writing, reviews, science, music, and photos.
+  Dinghao Luo, PhD, systems neuroscientist and data scientist; statistical modelling, machine learning, scientific software, translation, writing, and visualisation.
 baseurl: ""
 url: "https://dinghaoluo.github.io"
 repository: "dinghaoluo/dinghaoluo.github.io"
@@ -38,11 +38,11 @@ analytics:
 
 # site author
 author:
-  name             : "Dinghao Luo"
+  name             : "Dinghao Luo, PhD"
   name_zh          : "羅 丁豪"
   avatar           : "/assets/images/avatar.jpg"
-  bio              : "phd in neuroscience<br>data science<br>science journalism"
-  bio_mobile       : "phd in neuroscience<br>data science · sci. journalism"
+  bio              : "systems neuroscience<br>data science<br>science journalism"
+  bio_mobile       : "systems neuroscience<br>data science · sci. journalism"
   links:
     - label: "email"
       icon: "fas fa-fw fa-envelope"
@@ -50,18 +50,15 @@ author:
     - label: "github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/dinghaoluo"
-    - label: "reddit"
-      icon: "fab fa-fw fa-reddit"
-      url: "https://www.reddit.com/user/amoxdl24/"
     - label: "linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/dinghaoluo/"
-    - label: "bandcamp"
-      icon: "fab fa-fw fa-bandcamp"
-      url: "https://amoxitoxin.bandcamp.com/"
-    - label: "instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/amoxitoxin"
+    - label: "substack"
+      icon: "fas fa-fw fa-pen-nib"
+      url: "https://substack.com/@dinghaoluo"
+    - label: "cv"
+      icon: "fas fa-fw fa-file"
+      url: "/cv/"
 
 # site footer
 footer:
@@ -72,18 +69,15 @@ footer:
     - label: "github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/dinghaoluo"
-    - label: "reddit"
-      icon: "fab fa-fw fa-reddit"
-      url: "https://www.reddit.com/user/amoxdl24/"
     - label: "linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/dinghaoluo/"
-    - label: "bandcamp"
-      icon: "fab fa-fw fa-bandcamp"
-      url: "https://amoxitoxin.bandcamp.com/"
-    - label: "instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/amoxitoxin"
+    - label: "substack"
+      icon: "fas fa-fw fa-pen-nib"
+      url: "https://substack.com/@dinghaoluo"
+    - label: "cv"
+      icon: "fas fa-fw fa-file"
+      url: "/cv/"
 
 
 # reading files
