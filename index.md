@@ -2,18 +2,18 @@
 layout: single
 author_profile: true
 classes: home
-last_updated: 2026-08-04
+last_updated: 2026-10-26
 ---
 
 *Hi, Dinghao here :)*
 
-I am a neuroscientist finishing my PhD at the Max Planck Florida Institute for Neuroscience later this year, and currently looking for data science and applied science roles in Europe. My PhD project looks at how dopamine modulates goal-directed computation and behaviour.
+I am Dinghao Luo, PhD. I passed my PhD defence in systems neuroscience at the Max Planck Florida Institute for Neuroscience on 19 October 2026; formal completion is expected in December 2026. I build statistical analyses, machine-learning tools, and reproducible scientific pipelines, and remain open to data science and applied science roles in the UK and Europe.
 
 On this site, you can find my <a href="#projects" class="site-nav-link">projects</a> in data science and literary analysis, <a href="#writing" class="site-nav-link">long-form essays</a>, short <a href="#thoughts" class="site-nav-link">reviews</a> of books, films and games, my <a href="#science" class="site-nav-link">science</a>, <a href="#music" class="site-nav-link">music</a>, and some <a href="#photos" class="site-nav-link">photos</a> I've taken.
 
 Reach out to me: <a href="mailto:dinghao.luo@outlook.com" class="site-nav-link">[dinghao.luo@outlook.com]</a><br>
 
-Find me on <a href="https://github.com/dinghaoluo" class="site-nav-link">GitHub</a>, <a href="https://www.linkedin.com/in/dinghaoluo/" class="site-nav-link">LinkedIn</a>, <a href="https://substack.com/@dinghaoluo" class="site-nav-link">Substack</a>, <a href="https://www.reddit.com/user/amoxdl24/" class="site-nav-link">Reddit</a>, or <a href="https://www.instagram.com/amoxitoxin" class="site-nav-link">Instagram</a>.<br>
+Find me on <a href="https://github.com/dinghaoluo" class="site-nav-link">GitHub</a>, <a href="https://www.linkedin.com/in/dinghaoluo/" class="site-nav-link">LinkedIn</a>, and <a href="https://substack.com/@dinghaoluo" class="site-nav-link">Substack</a>.<br>
 
 You can find my CV <a href="/cv/" class="site-nav-link">here</a>.
 
@@ -177,9 +177,9 @@ I've played games casually since I was a kid, until *Dark Souls* (2011) made me 
 
 <h2 id="science"><a href="/science/">science :)</a></h2>
 
-My PhD asks how the brain tunes the accuracy of memory recall on the go, by utilising a fast dopamine signal from the brainstem that modulates hippocampal activity. You can read more about my PhD work <a href="/science/" class="site-nav-link">here</a>.
+My PhD asked how the brain tunes the accuracy of memory recall on the go, by utilising a fast dopamine signal from the brainstem that modulates hippocampal activity. You can read more about my PhD work <a href="/science/" class="site-nav-link">here</a>.
 
-I stumbled into neuroscience sideways: I started at Cambridge reading psychology, jumped ship to biological natural sciences in my second year, and ended up patching neurons in the Paulsen lab for my undergraduate thesis. My work so far has combined electrophysiology, optogenetics, two-photon imaging, behavioural analysis, end-to-end Python analysis pipelines, and computational modelling. The resulting manuscript has been submitted to *Cell*.
+I stumbled into neuroscience sideways: I started at Cambridge reading psychology, jumped ship to biological natural sciences in my second year, and ended up patching neurons in the Paulsen lab for my undergraduate thesis. My work so far has combined electrophysiology, optogenetics, two-photon imaging, behavioural analysis, end-to-end Python analysis pipelines, and computational modelling. The resulting [manuscript](https://www.biorxiv.org/content/10.64898/2026.09.02.748730v1) is available as a bioRxiv preprint and is under review at *Neuron*.
 
 <div class="home-science-strip" aria-label="Science photos">
   <figure class="home-science-card">

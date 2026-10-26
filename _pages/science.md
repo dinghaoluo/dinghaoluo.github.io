@@ -6,7 +6,7 @@ title: "science"
 classes: science-page
 header:
   og_image: "/assets/images/social-card-science.png"
-last_updated: 2026-07-27
+last_updated: 2026-10-26
 section_nav: true
 ---
 
@@ -98,7 +98,7 @@ The first time I saw multiple neurones firing together on a screen, through a Ne
 
 ## current project
 
-**Locus coeruleus dopaminergic control of prospective dynamics in the hippocampus**
+**Spatially confined dopamine from locus coeruleus axons selectively shapes hippocampal dynamics and action timing**
 
 *This is my dissertation work. The manuscript has been submitted to Cell, and I will defend my thesis in October 2026.*
 
@@ -156,9 +156,9 @@ This also connects back to what I saw in the Paulsen Lab, that dopamine is not j
   <figcaption>Wang Lab, MPFI</figcaption>
 </figure>
 
-**Submitted manuscript**
+**Manuscript under review**
 
-Luo D, Cao J, Heldman R, Tian L, Wang Y (2026). 'Locus coeruleus dopaminergic control of prospective dynamics in the hippocampus.' Submitted to *Cell*.
+Luo D, Cao J, Heldman R, Tian L, Wang Y (2026). '[Spatially confined dopamine from locus coeruleus axons selectively shapes hippocampal dynamics and action timing](https://www.biorxiv.org/content/10.64898/2026.09.02.748730v1).' *bioRxiv* preprint, posted 7 September 2026. Under review at *Neuron*.
 
 Most of the analysis code for my PhD project is available through [GitHub](https://github.com/dinghaoluo/lc-ca1-project).
 

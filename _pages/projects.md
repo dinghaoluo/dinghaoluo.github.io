@@ -4,7 +4,7 @@ author_profile: true
 permalink: /projects/
 title: "projects"
 classes: projects-page
-last_updated: 2026-08-04
+last_updated: 2026-10-26
 ---
 
 <h1 class="screen-reader-text">projects</h1>
@@ -86,7 +86,7 @@ You can read more about my PhD work [here](/science/#current-project), but in sh
   <figcaption>example schematic of the LC–CA1 circuit for the modulation of goal-directed behaviour; bottom shows my computational model</figcaption>
 </figure>
 
-Answering it took hundreds of animal recording sessions and nearly a hundred terabytes of behaviour, electrophysiology and dual-colour two-photon imaging, plus optogenetic and pharmacological interventions. The public repository stores my analysis pipelines, reorganised into reproducible code with CLI support. The manuscript, <i>Locus coeruleus dopaminergic control of prospective dynamics in the hippocampus</i>, has been submitted to <i>Cell</i>.
+Answering it took hundreds of animal recording sessions and nearly a hundred terabytes of behaviour, electrophysiology and dual-colour two-photon imaging, plus optogenetic and pharmacological interventions. The public repository stores my analysis pipelines, reorganised into reproducible code with CLI support. The manuscript, <a href="https://www.biorxiv.org/content/10.64898/2026.09.02.748730v1"><i>Spatially confined dopamine from locus coeruleus axons selectively shapes hippocampal dynamics and action timing</i></a>, is available as a bioRxiv preprint and is under review at <i>Neuron</i>.
 
 <nav class="project-links" aria-label="LC–CA1 repository">
   <a href="https://github.com/dinghaoluo/lc-ca1-project" class="site-nav-link">→ repository</a>
