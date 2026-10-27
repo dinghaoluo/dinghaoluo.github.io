@@ -7,7 +7,7 @@ last_updated: 2026-10-26
 
 *Hi, Dinghao here :)*
 
-I am Dinghao Luo, PhD. I passed my PhD defence in systems neuroscience at the Max Planck Florida Institute for Neuroscience on 19 October 2026; formal completion is expected in December 2026. I build statistical analyses, machine-learning tools, and reproducible scientific pipelines, and remain open to data science and applied science roles in the UK and Europe.
+I just passed my PhD viva in systems neuroscience at the Max Planck Florida Institute for Neuroscience in October (yay!), and will relocate to Boston for work in 2027. I am a long-time programmer (statistical modelling, ML tools, end-to-end scientific pipelines...), writer (I worked for the Chinese edition of *SciAm* and still write science articles for Neu-Reality and for fun sometimes), and translator (see the <a href="#writing" class="site-nav-link">writing</a> section for more).
 
 On this site, you can find my <a href="#projects" class="site-nav-link">projects</a> in data science and literary analysis, <a href="#writing" class="site-nav-link">long-form essays</a>, short <a href="#thoughts" class="site-nav-link">reviews</a> of books, films and games, my <a href="#science" class="site-nav-link">science</a>, <a href="#music" class="site-nav-link">music</a>, and some <a href="#photos" class="site-nav-link">photos</a> I've taken.
 
@@ -45,7 +45,7 @@ Over the past few years I have come to *love* data. The happiness of seeing nois
   </a>
   <a href="/projects/#the-zone">
     <strong>The Zone</strong>
-    <span>visual companion to <i>Gravity's Rainbow</i>: glossary, network atlas, references</span>
+    <span>visual companion to <i>Gravity's Rainbow</i></span>
   </a>
   <a href="/projects/#kairos">
     <strong>Kairos</strong>
