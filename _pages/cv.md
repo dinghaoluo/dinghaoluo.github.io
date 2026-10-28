@@ -6,11 +6,11 @@ title: "cv"
 classes: cv-page
 header:
   og_image: "/assets/images/social-card-cv.png"
-last_updated: 2026-08-10
+last_updated: 2026-10-26
 toc: false
 ---
 
-<p class="cv-intro">I am looking for data science and applied science roles in the UK and Europe; I will be available from January 2027.</p>
+<p class="cv-intro">I am Dinghao Luo, PhD, a systems neuroscientist who builds statistical analyses, machine-learning tools, and reproducible scientific pipelines. I passed my PhD defence on 19 October 2026; formal completion is expected in December 2026. I am based in Florida and remain open to data science and applied science roles in the UK and Europe.</p>
 
 <ul class="cv-links" aria-label="CV versions">
   <li>
@@ -18,7 +18,7 @@ toc: false
     <span class="cv-links__format">(PDF)</span>
   </li>
   <li>
-    <a href="/assets/docs/luo-dinghao-cv-biomedical.pdf">biomedical data science CV</a>
+    <a href="/assets/docs/luo-dinghao-cv-consulting.pdf">consulting CV</a>
     <span class="cv-links__format">(PDF)</span>
   </li>
   <li>
