@@ -43,29 +43,13 @@ header:
   <button class="thoughts-pagination__btn thoughts-pagination__next" type="button" aria-label="Next page">&rsaquo;</button>
 </nav>
 
-{% assign pinned_thoughts = site.data.thoughts | where: 'pin', true | sort: 'pin_order' %}
-{% assign regular_thoughts = site.data.thoughts | where_exp: 'thought', 'thought.pin != true' | sort: 'posted' | reverse %}
+{% assign thoughts_by_date = site.data.thoughts | sort: 'posted' | reverse %}
 {% assign thoughts_initial_page_size = 15 %}
-{% assign thoughts_initial_count = 0 %}
 <div class="thoughts-cards" id="thoughts-cards">
-{% if pinned_thoughts.size > 0 %}
-<div class="thoughts-pin-lead" id="thoughts-pin-lead">
-  <span class="thoughts-pin-lead__label">pinned</span>
-</div>
-{% for thought in pinned_thoughts %}
+{% for thought in thoughts_by_date %}
 {% assign hide_initial = true %}
-{% if thoughts_initial_count < thoughts_initial_page_size %}
+{% if forloop.index <= thoughts_initial_page_size %}
   {% assign hide_initial = false %}
-  {% assign thoughts_initial_count = thoughts_initial_count | plus: 1 %}
-{% endif %}
-{% include thought-card.html take=thought initially_hidden=hide_initial %}
-{% endfor %}
-{% endif %}
-{% for thought in regular_thoughts %}
-{% assign hide_initial = true %}
-{% if thoughts_initial_count < thoughts_initial_page_size %}
-  {% assign hide_initial = false %}
-  {% assign thoughts_initial_count = thoughts_initial_count | plus: 1 %}
 {% endif %}
 {% include thought-card.html take=thought initially_hidden=hide_initial %}
 {% endfor %}

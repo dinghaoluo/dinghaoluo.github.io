@@ -205,8 +205,6 @@
   creator: "Mircea Cărtărescu, trans. Sean Cotter (EN)"
   creator_role: "by"
   year: 2015
-  pin: true
-  pin_order: "01-book-01"
   eval: "loved"
   image: "/assets/images/thoughts/books/solenoid.jpg"
   posted: "2025-11-29"
@@ -5651,8 +5649,6 @@
   creator: "Lee Chang-dong"
   creator_role: "dir."
   year: 2010
-  pin: true
-  pin_order: "02-film-01"
   eval: "loved"
   image: "/assets/images/thoughts/films/poetry.jpg"
   posted: "2020-07-14"
@@ -5791,8 +5787,6 @@
   creator: "David Simon"
   creator_role: "dir."
   year: 2008
-  pin: true
-  pin_order: "03-tv-01"
   eval: "loved"
   image: "/assets/images/thoughts/tv/wire-season-5.jpg"
   posted: "2026-05-10"

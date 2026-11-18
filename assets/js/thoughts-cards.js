@@ -213,7 +213,6 @@
 
     var pill = document.getElementById('thoughts-filter-pill');
     var cardsRoot = document.getElementById('thoughts-cards');
-    var pinLead = document.getElementById('thoughts-pin-lead');
     var btns = strip.querySelectorAll('.thoughts-filter-btn');
     var cards = Array.prototype.slice.call(document.querySelectorAll('.thoughts-card'));
     var searchInput = document.getElementById('thoughts-search');
@@ -398,29 +397,15 @@
     function restoreChronologicalOrder() {
       if (!orderDirty) {
         isShuffled = false;
-        updatePinLead();
         return;
       }
       ListUtils.restoreOrder(cards, cardsRoot, 'originalIndex');
       isShuffled = false;
       orderDirty = false;
-      updatePinLead();
     }
 
     function totalPages() {
       return ListUtils.totalPages(matchedCards.length, PAGE_SIZE);
-    }
-
-    function updatePinLead() {
-      if (!pinLead) return;
-      if (isShuffled || currentPage > 1) {
-        pinLead.hidden = true;
-        return;
-      }
-      var hasPinnedInFilter = matchedCards.some(function (card) {
-        return card.getAttribute('data-pinned') === 'true';
-      });
-      pinLead.hidden = !hasPinnedInFilter;
     }
 
     function updateLuckState() {
@@ -510,7 +495,6 @@
       previouslyShown = pageSet;
       updatePagination();
       updateLuckState();
-      updatePinLead();
     }
 
     function switchFilter(filterValue) {
