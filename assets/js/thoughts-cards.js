@@ -41,6 +41,9 @@
       var card = event.target.closest ? event.target.closest('.thoughts-card') : null;
       if (!card || !cardsRoot.contains(card)) return;
 
+      // a click on a spoiler in an open card (e.g. a tap on touch screens) must not close the card
+      if (card.classList.contains('is-open') && event.target.closest('.spoiler')) return;
+
       var wrap   = card.querySelector('.thoughts-card__text-wrap');
       var toggle = card.querySelector('.thoughts-card__toggle');
       if (!wrap) return;
@@ -63,6 +66,11 @@
         openCard(card, wrap, toggle);
         window.scrollTo({ top: targetTop, behavior: 'smooth' });
       }
+    });
+
+    // spoilers reveal on hover in CSS; tabindex lets keyboard users reveal one by focusing it
+    cardsRoot.querySelectorAll('.spoiler').forEach(function (spoiler) {
+      spoiler.setAttribute('tabindex', '0');
     });
 
     function copyText(text) {

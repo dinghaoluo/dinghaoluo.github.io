@@ -2478,6 +2478,26 @@ body.home .page__author-footer {
 @include breakpoint($large) {
 }
 
+// spoilers in thoughts text: <span class="spoiler">...</span>, blurred except while hovered (or focused, for keyboards)
+.spoiler {
+  filter: blur(0.32em);
+  background: rgba($morandi-stone, 0.45);
+  border-radius: 0.2em;
+  cursor: help;
+  transition: filter 0.2s ease, background 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    filter: none;
+    background: none;
+  }
+
+  &:focus-visible { outline: 1px dotted $morandi-clay-deep; outline-offset: 2px; }
+}
+
+// hidden outright while the card is collapsed, so the clipped preview never shows a blurred spoiler
+.thoughts-card:not(.is-open) .spoiler { visibility: hidden; }
+
 mark.thoughts-highlight {
   background: linear-gradient(180deg, rgba($morandi-oat, 0.3), rgba($morandi-clay, 0.28));
   color: $morandi-clay-deep;
@@ -6630,6 +6650,11 @@ body .page__content > p:has(+ .writing-insert-pair) {
     background: #2a2724;
     color: #6a6360;
   }
+
+  .spoiler { background: rgba(#4a4440, 0.55); }
+  .spoiler:focus-visible { outline-color: #d4a88f; }
+  .spoiler:hover,
+  .spoiler:focus-visible { background: none; }
 
   mark.thoughts-highlight {
     background: linear-gradient(180deg, rgba(#2a2724, 0.3), rgba(#c49a85, 0.2));
